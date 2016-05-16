@@ -22,66 +22,66 @@ namespace Doomtrain
             saveAsToolStripMenuItem.Enabled = false;
 
             //MAGIC
-            magicIDcomboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable(2, magicIDcomboBox.SelectedIndex);
-            spellPowerUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(3, spellPowerUpDown.Value);
-            drawResistUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(4, drawResistUpDown.Value);
-            magicElementUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(5, magicElementUpDown.Value);
-            statusUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(6, statusUpDown.Value);
-            HPJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(7, HPJUpDown.Value);
-            STRJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(8, STRJUpDown.Value);
-            VITJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(9, VITJUpDown.Value);
-            MAGJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(10, MAGJUpDown.Value);
-            SPRJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(11, SPRJUpDown.Value);
-            SPDJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(12, SPDJUpDown.Value);
-            EVAJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(13, EVAJUpDown.Value);
-            HITJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(14, HITJUpDown.Value);
-            LUCKJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(15, LUCKJ.Value);
-            fireATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(16, 0x01);
-            iceATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(16, 0x01<<1);
-            thunderATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(16, 0x01<<2);
-            earthATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(16, 0x01<<3);
-            poisonATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(16, 0x01<<4);
-            windATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(16, 0x01<<5);
-            waterATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(16, 0x01<<6);
-            holyATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(16, 0x01<<7);
-            hitCountUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(17, hitCountUpDown.Value);
-            eleATKtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(18, eleATKtrackBar.Value);
-            fireDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(19, /*KernelWorker.GetSelectedMagicData.ElemDefenseEN ^ 0x01*/ 0x01);
-            iceDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(19, 0x02);
-            thunderDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(19, 0x04);
-            earthDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(19, 0x08);
-            poisonDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(19, 0x10);
-            windDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(19, 0x20);
-            waterDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(19,0x40);
-            holyDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(19, 0x80);
-            eleDEFtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(20, eleDEFtrackBar.Value);
-            deathATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x0001);
-            poisonATKst.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x0002);
-            petrifyATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x0004);
-            darknessATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x0008);
-            silenceATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x0010);
-            berserkATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x0020);
-            zombieATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x0040);
-            sleepATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x0080);
-            slowATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x0100);
-            stopATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x0200);
-            confusionATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x0800);
-            drainATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(21, 0x1000);
-            deathDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0001);
-            poisonDEFst.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0002);
-            petrifyDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0004);
-            darknessDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0008);
-            silenceDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0010);
-            berserkDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0020);
-            zombieDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0040);
-            sleepDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0080);
-            slowDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0100);
-            stopDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0200);
-            curseDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0400);
-            confusionDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x0800);
-            drainDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable(22, 0x1000);
-            stATKtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(23, stATKtrackBar.Value);
-            stDEFtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable(24, stATKtrackBar.Value);
+            magicIDcomboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(2, magicIDcomboBox.SelectedIndex);
+            spellPowerUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(3, spellPowerUpDown.Value);
+            drawResistUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(4, drawResistUpDown.Value);
+            magicElementUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(5, magicElementUpDown.Value);
+            statusUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, statusUpDown.Value);
+            HPJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(7, HPJUpDown.Value);
+            STRJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(8, STRJUpDown.Value);
+            VITJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(9, VITJUpDown.Value);
+            MAGJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(10, MAGJUpDown.Value);
+            SPRJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(11, SPRJUpDown.Value);
+            SPDJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(12, SPDJUpDown.Value);
+            EVAJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(13, EVAJUpDown.Value);
+            HITJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(14, HITJUpDown.Value);
+            LUCKJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(15, LUCKJ.Value);
+            fireATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01);
+            iceATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<1);
+            thunderATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<2);
+            earthATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<3);
+            poisonATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<4);
+            windATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<5);
+            waterATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<6);
+            holyATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<7);
+            hitCountUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(17, hitCountUpDown.Value);
+            eleATKtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(18, eleATKtrackBar.Value);
+            fireDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, /*KernelWorker.GetSelectedMagicData.ElemDefenseEN ^ 0x01*/ 0x01);
+            iceDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x02);
+            thunderDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x04);
+            earthDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x08);
+            poisonDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x10);
+            windDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x20);
+            waterDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19,0x40);
+            holyDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x80);
+            eleDEFtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(20, eleDEFtrackBar.Value);
+            deathATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0001);
+            poisonATKst.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0002);
+            petrifyATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0004);
+            darknessATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0008);
+            silenceATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0010);
+            berserkATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0020);
+            zombieATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0040);
+            sleepATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0080);
+            slowATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0100);
+            stopATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0200);
+            confusionATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0800);
+            drainATK.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x1000);
+            deathDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0001);
+            poisonDEFst.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0002);
+            petrifyDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0004);
+            darknessDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0008);
+            silenceDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0010);
+            berserkDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0020);
+            zombieDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0040);
+            sleepDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0080);
+            slowDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0100);
+            stopDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0200);
+            curseDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0400);
+            confusionDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0800);
+            drainDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x1000);
+            stATKtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(23, stATKtrackBar.Value);
+            stDEFtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(24, stATKtrackBar.Value);
             //To do...
         }
 
@@ -475,6 +475,23 @@ namespace Doomtrain
             }
         }
 
+        private void listBoxJGF_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadGF(listBoxJGF.SelectedIndex);
 
+            try
+            {
+                JGFIDcomboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFMagicID;
+                
+            }
+            catch (Exception eeException)
+            {
+                MessageBox.Show(eeException.ToString());
+            }
+            _loaded = true;
+        }
     }
 }

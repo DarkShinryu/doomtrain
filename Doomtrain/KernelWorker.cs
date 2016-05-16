@@ -9,7 +9,11 @@ namespace Doomtrain
         public static int MagicDataOffset = -1;
         public static int OffsetToMagicSelected = -1;
 
+        public static int GFDataOffset = -1;
+        public static int OffsetToGFSelected = -1;
+
         public static MagicData GetSelectedMagicData;
+        public static GFData GetSelectedGFData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -119,21 +123,37 @@ namespace Doomtrain
             public byte[] Unknown6;
         }
 
-
-        /* NOPE
-        public enum Element
+        public struct GFData
         {
-            Fire = 0x01,
-            Ice = 0x02
+            public UInt16 GFMagicID;
+            public byte GFPower;
+            public byte GFHP;
+            public byte GFPowerMod;
+            public byte GFLevelMod;
+            public UInt16 GFAbility1;
+            public UInt16 GFAbility2;
+            public UInt16 GFAbility3;
+            public UInt16 GFAbility4;
+            public UInt16 GFAbility5;
+            public UInt16 GFAbility6;
+            public UInt16 GFAbility7;
+            public UInt16 GFAbility8;
+            public UInt16 GFAbility9;
+            public UInt16 GFAbility10;
+            public UInt16 GFAbility11;
+            public UInt16 GFAbility12;
+            public UInt16 GFAbility13;
+            public UInt16 GFAbility14;
+            public UInt16 GFAbility15;
+            public UInt16 GFAbility16;
+            public UInt16 GFAbility17;
+            public UInt16 GFAbility18;
+            public UInt16 GFAbility19;
+            public UInt16 GFAbility20;
+            public UInt16 GFAbility21;
         }
 
-        public enum Status
-        {
-
-        }
-        */
-
-        public static void UpdateVariable(int index, object variable)
+        public static void UpdateVariable_Magic(int index, object variable)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -283,8 +303,157 @@ namespace Doomtrain
 
         }
 
+        /// <summary>
+        /// Currently unusable, left for future
+        /// </summary>
+        /// <param name="index"></param>
+        /// <param name="variable"></param>
+        public static void UpdateVariable_GF(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 2:
+                    {
+                        UshortToKernel(Convert.ToUInt16(variable), 4); //MagicID
+                        return;
+                    }
+                case 3:
+                    {
+                        Kernel[OffsetToGFSelected + 7] = Convert.ToByte(variable); //GFPower
+                        return;
+                    }
+                case 4:
+                    {
+                        Kernel[OffsetToGFSelected + 20] = Convert.ToByte(variable); //GFHP
+                        return;
+                    }
+                case 5:
+                    {
+                        Kernel[OffsetToGFSelected + 130] = Convert.ToByte(variable); //Power Mod
+                        return;
+                    }
+                case 6:
+                    {
+                        Kernel[OffsetToGFSelected + 131] = Convert.ToByte(variable); //Level Mod
+                        return;
+                    }
 
+                //To do...
+                case 7:
+                    {
+                        return;
+                    }
 
+                case 8:
+                    {
+                        return;
+                    }
+
+                case 9:
+                    {
+                        return;
+                    }
+
+                case 10:
+                    {
+                        return;
+                    }
+
+                case 11:
+                    {
+                        return;
+                    }
+
+                case 12:
+                    {
+                        return;
+                    }
+
+                case 13:
+                    {
+                        return;
+                    }
+
+                case 14:
+                    {
+                        return;
+                    }
+
+                case 15:
+                    {
+                        return;
+                    }
+
+                case 16:
+                    {
+                        return;
+                    }
+
+                case 17:
+                    {
+                        return;
+                    }
+
+                case 18:
+                    {
+                        return;
+                    }
+
+                case 19:
+                    {
+                        return;
+                    }
+
+                case 20:
+                    {
+                        return;
+                    }
+
+                case 21:
+                    {
+                        return;
+                    }
+
+                case 22:
+                    {
+                        return;
+                    }
+
+                case 23:
+                    {
+                        return;
+                    }
+
+                case 24:
+                    {
+                        return;
+                    }
+
+                case 25:
+                    {
+                        return;
+                    }
+                case 26:
+                    {
+                        return;
+                    }
+                case 27:
+                    {
+                        return;
+                    }
+
+                default:
+                    return;
+            }
+        }
+
+        /// <summary>
+        /// This is for MagicID list
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="add"></param>
         private static void UshortToKernel(ushort a, int add)
         {
             byte[] magicIdBytes = BitConverter.GetBytes(a+1);
@@ -295,6 +464,8 @@ namespace Doomtrain
         {
             Kernel = kernel;
             MagicDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.MagicData);
+            GFDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFs);
+
         }
 
         public static void ReadMagic(int MagicID_List)
@@ -360,7 +531,17 @@ namespace Doomtrain
 
         }
 
-     
+        public static void ReadGF(int GFID_List)
+        {
+            GetSelectedGFData = new GFData();
+            int selectedGfOffset = GFDataOffset + (GFID_List * 132);
+            OffsetToMagicSelected = selectedGfOffset;
+            GetSelectedGFData.GFMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfOffset+4) - 1);
+            selectedGfOffset = +4;
+
+            //Go on TODO
+
+        }
 
 
         private static string BuildString(int index)

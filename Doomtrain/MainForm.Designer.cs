@@ -132,8 +132,49 @@
             this.magicIDLabel = new System.Windows.Forms.Label();
             this.listBoxMagic = new System.Windows.Forms.ListBox();
             this.tabPageGF = new System.Windows.Forms.TabPage();
-            this.listBoxJGF = new System.Windows.Forms.ListBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ability21ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability21Label = new System.Windows.Forms.Label();
+            this.ability12ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability15ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability12Label = new System.Windows.Forms.Label();
+            this.ability18ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability6ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability15Label = new System.Windows.Forms.Label();
+            this.ability9ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability20ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability6Label = new System.Windows.Forms.Label();
+            this.ability11ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability18Label = new System.Windows.Forms.Label();
+            this.ability3ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability14ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability9Label = new System.Windows.Forms.Label();
+            this.ability20Label = new System.Windows.Forms.Label();
+            this.ability5ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability11Label = new System.Windows.Forms.Label();
+            this.ability17ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability3Label = new System.Windows.Forms.Label();
+            this.ability14Label = new System.Windows.Forms.Label();
+            this.ability8ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability19ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability5Label = new System.Windows.Forms.Label();
+            this.ability10ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability17Label = new System.Windows.Forms.Label();
+            this.ability2ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability13ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability8Label = new System.Windows.Forms.Label();
+            this.ability19Label = new System.Windows.Forms.Label();
+            this.ability4ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability10Label = new System.Windows.Forms.Label();
+            this.ability16ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability2Label = new System.Windows.Forms.Label();
+            this.ability13Label = new System.Windows.Forms.Label();
+            this.ability7ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability16Label = new System.Windows.Forms.Label();
+            this.ability4Label = new System.Windows.Forms.Label();
+            this.ability7Label = new System.Windows.Forms.Label();
+            this.ability1ComboBox = new System.Windows.Forms.ComboBox();
+            this.ability1Label = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.JGFLevelModUpDown = new System.Windows.Forms.NumericUpDown();
             this.JGFPowerModUpDown = new System.Windows.Forms.NumericUpDown();
@@ -145,49 +186,8 @@
             this.GFHPLabel = new System.Windows.Forms.Label();
             this.GFPowerLabel = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.ability1Label = new System.Windows.Forms.Label();
-            this.ability1ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability2Label = new System.Windows.Forms.Label();
-            this.ability2ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability3Label = new System.Windows.Forms.Label();
-            this.ability3ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability4Label = new System.Windows.Forms.Label();
-            this.ability4ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability5Label = new System.Windows.Forms.Label();
-            this.ability5ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability6Label = new System.Windows.Forms.Label();
-            this.ability6ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability7Label = new System.Windows.Forms.Label();
-            this.ability7ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability10Label = new System.Windows.Forms.Label();
-            this.ability8Label = new System.Windows.Forms.Label();
-            this.ability10ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability8ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability11Label = new System.Windows.Forms.Label();
-            this.ability9Label = new System.Windows.Forms.Label();
-            this.ability11ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability9ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability12Label = new System.Windows.Forms.Label();
-            this.ability12ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability16Label = new System.Windows.Forms.Label();
-            this.ability13Label = new System.Windows.Forms.Label();
-            this.ability16ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability19Label = new System.Windows.Forms.Label();
-            this.ability13ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability17Label = new System.Windows.Forms.Label();
-            this.ability19ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability14Label = new System.Windows.Forms.Label();
-            this.ability17ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability20Label = new System.Windows.Forms.Label();
-            this.ability14ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability18Label = new System.Windows.Forms.Label();
-            this.ability20ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability15Label = new System.Windows.Forms.Label();
-            this.ability18ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability15ComboBox = new System.Windows.Forms.ComboBox();
-            this.ability21Label = new System.Windows.Forms.Label();
-            this.ability21ComboBox = new System.Windows.Forms.ComboBox();
+            this.listBoxJGF = new System.Windows.Forms.ListBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageMagic.SuspendLayout();
@@ -216,12 +216,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.drawResistUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spellPowerUpDown)).BeginInit();
             this.tabPageGF.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.JGFLevelModUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.JGFPowerModUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.JGFHPUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.JGFPowerUpDown)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -255,14 +255,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -270,7 +270,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -278,21 +278,21 @@
             // 
             this.saveAsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveAsToolStripMenuItem.Image")));
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save As...";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.close;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -1255,7 +1255,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label9.Location = new System.Drawing.Point(173, 80);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(28, 15);
+            this.label9.Size = new System.Drawing.Size(29, 15);
             this.label9.TabIndex = 0;
             this.label9.Text = "EVA";
             // 
@@ -1305,7 +1305,7 @@
             this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label8.Location = new System.Drawing.Point(255, 80);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(27, 15);
+            this.label8.Size = new System.Drawing.Size(26, 15);
             this.label8.TabIndex = 0;
             this.label8.Text = "HIT";
             // 
@@ -1341,7 +1341,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label3.Location = new System.Drawing.Point(212, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 15);
+            this.label3.Size = new System.Drawing.Size(25, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "VIT";
             // 
@@ -1879,7 +1879,7 @@
             this.magicIDLabel.ForeColor = System.Drawing.SystemColors.WindowText;
             this.magicIDLabel.Location = new System.Drawing.Point(202, 22);
             this.magicIDLabel.Name = "magicIDLabel";
-            this.magicIDLabel.Size = new System.Drawing.Size(56, 15);
+            this.magicIDLabel.Size = new System.Drawing.Size(55, 15);
             this.magicIDLabel.TabIndex = 0;
             this.magicIDLabel.Text = "Magic ID";
             this.toolTip1.SetToolTip(this.magicIDLabel, "Decides what animation to play.");
@@ -1964,32 +1964,2936 @@
             this.tabPageGF.TabIndex = 1;
             this.tabPageGF.Text = "G-Forces";
             // 
-            // listBoxJGF
+            // groupBox1
             // 
-            this.listBoxJGF.FormattingEnabled = true;
-            this.listBoxJGF.ItemHeight = 15;
-            this.listBoxJGF.Items.AddRange(new object[] {
-            "Quezacotl",
-            "Shiva",
-            "Ifrit",
-            "Siren",
-            "Brothers",
-            "Diablos",
-            "Carbuncle",
-            "Leviathan",
-            "Pandemona",
-            "Cerberus",
-            "Alexander",
-            "Doomtrain",
-            "Bahamut",
-            "Cactuar",
-            "Tonberry",
-            "Eden"});
-            this.listBoxJGF.Location = new System.Drawing.Point(-1, 0);
-            this.listBoxJGF.Name = "listBoxJGF";
-            this.listBoxJGF.Size = new System.Drawing.Size(108, 619);
-            this.listBoxJGF.TabIndex = 1;
-            this.listBoxJGF.TabStop = false;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.ability21ComboBox);
+            this.groupBox1.Controls.Add(this.ability21Label);
+            this.groupBox1.Controls.Add(this.ability12ComboBox);
+            this.groupBox1.Controls.Add(this.ability15ComboBox);
+            this.groupBox1.Controls.Add(this.ability12Label);
+            this.groupBox1.Controls.Add(this.ability18ComboBox);
+            this.groupBox1.Controls.Add(this.ability6ComboBox);
+            this.groupBox1.Controls.Add(this.ability15Label);
+            this.groupBox1.Controls.Add(this.ability9ComboBox);
+            this.groupBox1.Controls.Add(this.ability20ComboBox);
+            this.groupBox1.Controls.Add(this.ability6Label);
+            this.groupBox1.Controls.Add(this.ability11ComboBox);
+            this.groupBox1.Controls.Add(this.ability18Label);
+            this.groupBox1.Controls.Add(this.ability3ComboBox);
+            this.groupBox1.Controls.Add(this.ability14ComboBox);
+            this.groupBox1.Controls.Add(this.ability9Label);
+            this.groupBox1.Controls.Add(this.ability20Label);
+            this.groupBox1.Controls.Add(this.ability5ComboBox);
+            this.groupBox1.Controls.Add(this.ability11Label);
+            this.groupBox1.Controls.Add(this.ability17ComboBox);
+            this.groupBox1.Controls.Add(this.ability3Label);
+            this.groupBox1.Controls.Add(this.ability14Label);
+            this.groupBox1.Controls.Add(this.ability8ComboBox);
+            this.groupBox1.Controls.Add(this.ability19ComboBox);
+            this.groupBox1.Controls.Add(this.ability5Label);
+            this.groupBox1.Controls.Add(this.ability10ComboBox);
+            this.groupBox1.Controls.Add(this.ability17Label);
+            this.groupBox1.Controls.Add(this.ability2ComboBox);
+            this.groupBox1.Controls.Add(this.ability13ComboBox);
+            this.groupBox1.Controls.Add(this.ability8Label);
+            this.groupBox1.Controls.Add(this.ability19Label);
+            this.groupBox1.Controls.Add(this.ability4ComboBox);
+            this.groupBox1.Controls.Add(this.ability10Label);
+            this.groupBox1.Controls.Add(this.ability16ComboBox);
+            this.groupBox1.Controls.Add(this.ability2Label);
+            this.groupBox1.Controls.Add(this.ability13Label);
+            this.groupBox1.Controls.Add(this.ability7ComboBox);
+            this.groupBox1.Controls.Add(this.ability16Label);
+            this.groupBox1.Controls.Add(this.ability4Label);
+            this.groupBox1.Controls.Add(this.ability7Label);
+            this.groupBox1.Controls.Add(this.ability1ComboBox);
+            this.groupBox1.Controls.Add(this.ability1Label);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Red;
+            this.groupBox1.Location = new System.Drawing.Point(115, 144);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(460, 434);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Abilities";
+            // 
+            // ability21ComboBox
+            // 
+            this.ability21ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability21ComboBox.FormattingEnabled = true;
+            this.ability21ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability21ComboBox.Location = new System.Drawing.Point(312, 388);
+            this.ability21ComboBox.Name = "ability21ComboBox";
+            this.ability21ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability21ComboBox.TabIndex = 2;
+            // 
+            // ability21Label
+            // 
+            this.ability21Label.AutoSize = true;
+            this.ability21Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability21Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability21Label.Location = new System.Drawing.Point(343, 370);
+            this.ability21Label.Name = "ability21Label";
+            this.ability21Label.Size = new System.Drawing.Size(58, 15);
+            this.ability21Label.TabIndex = 0;
+            this.ability21Label.Text = "Ability 21";
+            // 
+            // ability12ComboBox
+            // 
+            this.ability12ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability12ComboBox.FormattingEnabled = true;
+            this.ability12ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability12ComboBox.Location = new System.Drawing.Point(312, 215);
+            this.ability12ComboBox.Name = "ability12ComboBox";
+            this.ability12ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability12ComboBox.TabIndex = 2;
+            // 
+            // ability15ComboBox
+            // 
+            this.ability15ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability15ComboBox.FormattingEnabled = true;
+            this.ability15ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability15ComboBox.Location = new System.Drawing.Point(312, 273);
+            this.ability15ComboBox.Name = "ability15ComboBox";
+            this.ability15ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability15ComboBox.TabIndex = 2;
+            // 
+            // ability12Label
+            // 
+            this.ability12Label.AutoSize = true;
+            this.ability12Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability12Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability12Label.Location = new System.Drawing.Point(343, 197);
+            this.ability12Label.Name = "ability12Label";
+            this.ability12Label.Size = new System.Drawing.Size(58, 15);
+            this.ability12Label.TabIndex = 0;
+            this.ability12Label.Text = "Ability 12";
+            // 
+            // ability18ComboBox
+            // 
+            this.ability18ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability18ComboBox.FormattingEnabled = true;
+            this.ability18ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability18ComboBox.Location = new System.Drawing.Point(312, 331);
+            this.ability18ComboBox.Name = "ability18ComboBox";
+            this.ability18ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability18ComboBox.TabIndex = 2;
+            // 
+            // ability6ComboBox
+            // 
+            this.ability6ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability6ComboBox.FormattingEnabled = true;
+            this.ability6ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability6ComboBox.Location = new System.Drawing.Point(312, 100);
+            this.ability6ComboBox.Name = "ability6ComboBox";
+            this.ability6ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability6ComboBox.TabIndex = 2;
+            // 
+            // ability15Label
+            // 
+            this.ability15Label.AutoSize = true;
+            this.ability15Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability15Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability15Label.Location = new System.Drawing.Point(343, 255);
+            this.ability15Label.Name = "ability15Label";
+            this.ability15Label.Size = new System.Drawing.Size(58, 15);
+            this.ability15Label.TabIndex = 0;
+            this.ability15Label.Text = "Ability 15";
+            // 
+            // ability9ComboBox
+            // 
+            this.ability9ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability9ComboBox.FormattingEnabled = true;
+            this.ability9ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability9ComboBox.Location = new System.Drawing.Point(312, 158);
+            this.ability9ComboBox.Name = "ability9ComboBox";
+            this.ability9ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability9ComboBox.TabIndex = 2;
+            // 
+            // ability20ComboBox
+            // 
+            this.ability20ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability20ComboBox.FormattingEnabled = true;
+            this.ability20ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability20ComboBox.Location = new System.Drawing.Point(173, 388);
+            this.ability20ComboBox.Name = "ability20ComboBox";
+            this.ability20ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability20ComboBox.TabIndex = 2;
+            // 
+            // ability6Label
+            // 
+            this.ability6Label.AutoSize = true;
+            this.ability6Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability6Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability6Label.Location = new System.Drawing.Point(345, 82);
+            this.ability6Label.Name = "ability6Label";
+            this.ability6Label.Size = new System.Drawing.Size(51, 15);
+            this.ability6Label.TabIndex = 0;
+            this.ability6Label.Text = "Ability 6";
+            // 
+            // ability11ComboBox
+            // 
+            this.ability11ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability11ComboBox.FormattingEnabled = true;
+            this.ability11ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability11ComboBox.Location = new System.Drawing.Point(173, 215);
+            this.ability11ComboBox.Name = "ability11ComboBox";
+            this.ability11ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability11ComboBox.TabIndex = 2;
+            // 
+            // ability18Label
+            // 
+            this.ability18Label.AutoSize = true;
+            this.ability18Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability18Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability18Label.Location = new System.Drawing.Point(343, 313);
+            this.ability18Label.Name = "ability18Label";
+            this.ability18Label.Size = new System.Drawing.Size(58, 15);
+            this.ability18Label.TabIndex = 0;
+            this.ability18Label.Text = "Ability 18";
+            // 
+            // ability3ComboBox
+            // 
+            this.ability3ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability3ComboBox.FormattingEnabled = true;
+            this.ability3ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability3ComboBox.Location = new System.Drawing.Point(312, 43);
+            this.ability3ComboBox.Name = "ability3ComboBox";
+            this.ability3ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability3ComboBox.TabIndex = 2;
+            // 
+            // ability14ComboBox
+            // 
+            this.ability14ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability14ComboBox.FormattingEnabled = true;
+            this.ability14ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability14ComboBox.Location = new System.Drawing.Point(173, 273);
+            this.ability14ComboBox.Name = "ability14ComboBox";
+            this.ability14ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability14ComboBox.TabIndex = 2;
+            // 
+            // ability9Label
+            // 
+            this.ability9Label.AutoSize = true;
+            this.ability9Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability9Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability9Label.Location = new System.Drawing.Point(345, 140);
+            this.ability9Label.Name = "ability9Label";
+            this.ability9Label.Size = new System.Drawing.Size(51, 15);
+            this.ability9Label.TabIndex = 0;
+            this.ability9Label.Text = "Ability 9";
+            // 
+            // ability20Label
+            // 
+            this.ability20Label.AutoSize = true;
+            this.ability20Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability20Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability20Label.Location = new System.Drawing.Point(203, 370);
+            this.ability20Label.Name = "ability20Label";
+            this.ability20Label.Size = new System.Drawing.Size(58, 15);
+            this.ability20Label.TabIndex = 0;
+            this.ability20Label.Text = "Ability 20";
+            // 
+            // ability5ComboBox
+            // 
+            this.ability5ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability5ComboBox.FormattingEnabled = true;
+            this.ability5ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability5ComboBox.Location = new System.Drawing.Point(173, 100);
+            this.ability5ComboBox.Name = "ability5ComboBox";
+            this.ability5ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability5ComboBox.TabIndex = 2;
+            // 
+            // ability11Label
+            // 
+            this.ability11Label.AutoSize = true;
+            this.ability11Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability11Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability11Label.Location = new System.Drawing.Point(203, 197);
+            this.ability11Label.Name = "ability11Label";
+            this.ability11Label.Size = new System.Drawing.Size(58, 15);
+            this.ability11Label.TabIndex = 0;
+            this.ability11Label.Text = "Ability 11";
+            // 
+            // ability17ComboBox
+            // 
+            this.ability17ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability17ComboBox.FormattingEnabled = true;
+            this.ability17ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability17ComboBox.Location = new System.Drawing.Point(173, 331);
+            this.ability17ComboBox.Name = "ability17ComboBox";
+            this.ability17ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability17ComboBox.TabIndex = 2;
+            // 
+            // ability3Label
+            // 
+            this.ability3Label.AutoSize = true;
+            this.ability3Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability3Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability3Label.Location = new System.Drawing.Point(345, 25);
+            this.ability3Label.Name = "ability3Label";
+            this.ability3Label.Size = new System.Drawing.Size(51, 15);
+            this.ability3Label.TabIndex = 0;
+            this.ability3Label.Text = "Ability 3";
+            // 
+            // ability14Label
+            // 
+            this.ability14Label.AutoSize = true;
+            this.ability14Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability14Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability14Label.Location = new System.Drawing.Point(203, 255);
+            this.ability14Label.Name = "ability14Label";
+            this.ability14Label.Size = new System.Drawing.Size(58, 15);
+            this.ability14Label.TabIndex = 0;
+            this.ability14Label.Text = "Ability 14";
+            // 
+            // ability8ComboBox
+            // 
+            this.ability8ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability8ComboBox.FormattingEnabled = true;
+            this.ability8ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability8ComboBox.Location = new System.Drawing.Point(173, 158);
+            this.ability8ComboBox.Name = "ability8ComboBox";
+            this.ability8ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability8ComboBox.TabIndex = 2;
+            // 
+            // ability19ComboBox
+            // 
+            this.ability19ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability19ComboBox.FormattingEnabled = true;
+            this.ability19ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability19ComboBox.Location = new System.Drawing.Point(34, 388);
+            this.ability19ComboBox.Name = "ability19ComboBox";
+            this.ability19ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability19ComboBox.TabIndex = 2;
+            // 
+            // ability5Label
+            // 
+            this.ability5Label.AutoSize = true;
+            this.ability5Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability5Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability5Label.Location = new System.Drawing.Point(205, 82);
+            this.ability5Label.Name = "ability5Label";
+            this.ability5Label.Size = new System.Drawing.Size(51, 15);
+            this.ability5Label.TabIndex = 0;
+            this.ability5Label.Text = "Ability 5";
+            // 
+            // ability10ComboBox
+            // 
+            this.ability10ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability10ComboBox.FormattingEnabled = true;
+            this.ability10ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability10ComboBox.Location = new System.Drawing.Point(34, 215);
+            this.ability10ComboBox.Name = "ability10ComboBox";
+            this.ability10ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability10ComboBox.TabIndex = 2;
+            // 
+            // ability17Label
+            // 
+            this.ability17Label.AutoSize = true;
+            this.ability17Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability17Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability17Label.Location = new System.Drawing.Point(203, 313);
+            this.ability17Label.Name = "ability17Label";
+            this.ability17Label.Size = new System.Drawing.Size(58, 15);
+            this.ability17Label.TabIndex = 0;
+            this.ability17Label.Text = "Ability 17";
+            // 
+            // ability2ComboBox
+            // 
+            this.ability2ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability2ComboBox.FormattingEnabled = true;
+            this.ability2ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability2ComboBox.Location = new System.Drawing.Point(173, 43);
+            this.ability2ComboBox.Name = "ability2ComboBox";
+            this.ability2ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability2ComboBox.TabIndex = 2;
+            // 
+            // ability13ComboBox
+            // 
+            this.ability13ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability13ComboBox.FormattingEnabled = true;
+            this.ability13ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability13ComboBox.Location = new System.Drawing.Point(34, 273);
+            this.ability13ComboBox.Name = "ability13ComboBox";
+            this.ability13ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability13ComboBox.TabIndex = 2;
+            // 
+            // ability8Label
+            // 
+            this.ability8Label.AutoSize = true;
+            this.ability8Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability8Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability8Label.Location = new System.Drawing.Point(205, 140);
+            this.ability8Label.Name = "ability8Label";
+            this.ability8Label.Size = new System.Drawing.Size(51, 15);
+            this.ability8Label.TabIndex = 0;
+            this.ability8Label.Text = "Ability 8";
+            // 
+            // ability19Label
+            // 
+            this.ability19Label.AutoSize = true;
+            this.ability19Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability19Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability19Label.Location = new System.Drawing.Point(65, 370);
+            this.ability19Label.Name = "ability19Label";
+            this.ability19Label.Size = new System.Drawing.Size(58, 15);
+            this.ability19Label.TabIndex = 0;
+            this.ability19Label.Text = "Ability 19";
+            // 
+            // ability4ComboBox
+            // 
+            this.ability4ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability4ComboBox.FormattingEnabled = true;
+            this.ability4ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability4ComboBox.Location = new System.Drawing.Point(34, 100);
+            this.ability4ComboBox.Name = "ability4ComboBox";
+            this.ability4ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability4ComboBox.TabIndex = 2;
+            // 
+            // ability10Label
+            // 
+            this.ability10Label.AutoSize = true;
+            this.ability10Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability10Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability10Label.Location = new System.Drawing.Point(65, 197);
+            this.ability10Label.Name = "ability10Label";
+            this.ability10Label.Size = new System.Drawing.Size(58, 15);
+            this.ability10Label.TabIndex = 0;
+            this.ability10Label.Text = "Ability 10";
+            // 
+            // ability16ComboBox
+            // 
+            this.ability16ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability16ComboBox.FormattingEnabled = true;
+            this.ability16ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability16ComboBox.Location = new System.Drawing.Point(34, 331);
+            this.ability16ComboBox.Name = "ability16ComboBox";
+            this.ability16ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability16ComboBox.TabIndex = 2;
+            // 
+            // ability2Label
+            // 
+            this.ability2Label.AutoSize = true;
+            this.ability2Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability2Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability2Label.Location = new System.Drawing.Point(205, 25);
+            this.ability2Label.Name = "ability2Label";
+            this.ability2Label.Size = new System.Drawing.Size(51, 15);
+            this.ability2Label.TabIndex = 0;
+            this.ability2Label.Text = "Ability 2";
+            // 
+            // ability13Label
+            // 
+            this.ability13Label.AutoSize = true;
+            this.ability13Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability13Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability13Label.Location = new System.Drawing.Point(65, 255);
+            this.ability13Label.Name = "ability13Label";
+            this.ability13Label.Size = new System.Drawing.Size(58, 15);
+            this.ability13Label.TabIndex = 0;
+            this.ability13Label.Text = "Ability 13";
+            // 
+            // ability7ComboBox
+            // 
+            this.ability7ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability7ComboBox.FormattingEnabled = true;
+            this.ability7ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability7ComboBox.Location = new System.Drawing.Point(34, 158);
+            this.ability7ComboBox.Name = "ability7ComboBox";
+            this.ability7ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability7ComboBox.TabIndex = 2;
+            // 
+            // ability16Label
+            // 
+            this.ability16Label.AutoSize = true;
+            this.ability16Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability16Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability16Label.Location = new System.Drawing.Point(65, 313);
+            this.ability16Label.Name = "ability16Label";
+            this.ability16Label.Size = new System.Drawing.Size(58, 15);
+            this.ability16Label.TabIndex = 0;
+            this.ability16Label.Text = "Ability 16";
+            // 
+            // ability4Label
+            // 
+            this.ability4Label.AutoSize = true;
+            this.ability4Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability4Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability4Label.Location = new System.Drawing.Point(67, 82);
+            this.ability4Label.Name = "ability4Label";
+            this.ability4Label.Size = new System.Drawing.Size(51, 15);
+            this.ability4Label.TabIndex = 0;
+            this.ability4Label.Text = "Ability 4";
+            // 
+            // ability7Label
+            // 
+            this.ability7Label.AutoSize = true;
+            this.ability7Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability7Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability7Label.Location = new System.Drawing.Point(67, 140);
+            this.ability7Label.Name = "ability7Label";
+            this.ability7Label.Size = new System.Drawing.Size(51, 15);
+            this.ability7Label.TabIndex = 0;
+            this.ability7Label.Text = "Ability 7";
+            // 
+            // ability1ComboBox
+            // 
+            this.ability1ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability1ComboBox.FormattingEnabled = true;
+            this.ability1ComboBox.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.ability1ComboBox.Location = new System.Drawing.Point(34, 43);
+            this.ability1ComboBox.Name = "ability1ComboBox";
+            this.ability1ComboBox.Size = new System.Drawing.Size(115, 23);
+            this.ability1ComboBox.TabIndex = 2;
+            // 
+            // ability1Label
+            // 
+            this.ability1Label.AutoSize = true;
+            this.ability1Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ability1Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ability1Label.Location = new System.Drawing.Point(67, 25);
+            this.ability1Label.Name = "ability1Label";
+            this.ability1Label.Size = new System.Drawing.Size(51, 15);
+            this.ability1Label.TabIndex = 0;
+            this.ability1Label.Text = "Ability 1";
             // 
             // groupBox5
             // 
@@ -2476,2940 +5380,37 @@
             this.label15.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label15.Location = new System.Drawing.Point(202, 22);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(56, 15);
+            this.label15.Size = new System.Drawing.Size(55, 15);
             this.label15.TabIndex = 0;
             this.label15.Text = "Magic ID";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Controls.Add(this.ability21ComboBox);
-            this.groupBox1.Controls.Add(this.ability21Label);
-            this.groupBox1.Controls.Add(this.ability12ComboBox);
-            this.groupBox1.Controls.Add(this.ability15ComboBox);
-            this.groupBox1.Controls.Add(this.ability12Label);
-            this.groupBox1.Controls.Add(this.ability18ComboBox);
-            this.groupBox1.Controls.Add(this.ability6ComboBox);
-            this.groupBox1.Controls.Add(this.ability15Label);
-            this.groupBox1.Controls.Add(this.ability9ComboBox);
-            this.groupBox1.Controls.Add(this.ability20ComboBox);
-            this.groupBox1.Controls.Add(this.ability6Label);
-            this.groupBox1.Controls.Add(this.ability11ComboBox);
-            this.groupBox1.Controls.Add(this.ability18Label);
-            this.groupBox1.Controls.Add(this.ability3ComboBox);
-            this.groupBox1.Controls.Add(this.ability14ComboBox);
-            this.groupBox1.Controls.Add(this.ability9Label);
-            this.groupBox1.Controls.Add(this.ability20Label);
-            this.groupBox1.Controls.Add(this.ability5ComboBox);
-            this.groupBox1.Controls.Add(this.ability11Label);
-            this.groupBox1.Controls.Add(this.ability17ComboBox);
-            this.groupBox1.Controls.Add(this.ability3Label);
-            this.groupBox1.Controls.Add(this.ability14Label);
-            this.groupBox1.Controls.Add(this.ability8ComboBox);
-            this.groupBox1.Controls.Add(this.ability19ComboBox);
-            this.groupBox1.Controls.Add(this.ability5Label);
-            this.groupBox1.Controls.Add(this.ability10ComboBox);
-            this.groupBox1.Controls.Add(this.ability17Label);
-            this.groupBox1.Controls.Add(this.ability2ComboBox);
-            this.groupBox1.Controls.Add(this.ability13ComboBox);
-            this.groupBox1.Controls.Add(this.ability8Label);
-            this.groupBox1.Controls.Add(this.ability19Label);
-            this.groupBox1.Controls.Add(this.ability4ComboBox);
-            this.groupBox1.Controls.Add(this.ability10Label);
-            this.groupBox1.Controls.Add(this.ability16ComboBox);
-            this.groupBox1.Controls.Add(this.ability2Label);
-            this.groupBox1.Controls.Add(this.ability13Label);
-            this.groupBox1.Controls.Add(this.ability7ComboBox);
-            this.groupBox1.Controls.Add(this.ability16Label);
-            this.groupBox1.Controls.Add(this.ability4Label);
-            this.groupBox1.Controls.Add(this.ability7Label);
-            this.groupBox1.Controls.Add(this.ability1ComboBox);
-            this.groupBox1.Controls.Add(this.ability1Label);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Red;
-            this.groupBox1.Location = new System.Drawing.Point(115, 144);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(460, 434);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Abilities";
-            // 
-            // ability1Label
-            // 
-            this.ability1Label.AutoSize = true;
-            this.ability1Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability1Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability1Label.Location = new System.Drawing.Point(67, 25);
-            this.ability1Label.Name = "ability1Label";
-            this.ability1Label.Size = new System.Drawing.Size(49, 15);
-            this.ability1Label.TabIndex = 0;
-            this.ability1Label.Text = "Ability 1";
-            // 
-            // ability1ComboBox
-            // 
-            this.ability1ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability1ComboBox.FormattingEnabled = true;
-            this.ability1ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability1ComboBox.Location = new System.Drawing.Point(34, 43);
-            this.ability1ComboBox.Name = "ability1ComboBox";
-            this.ability1ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability1ComboBox.TabIndex = 2;
-            // 
-            // ability2Label
-            // 
-            this.ability2Label.AutoSize = true;
-            this.ability2Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability2Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability2Label.Location = new System.Drawing.Point(205, 25);
-            this.ability2Label.Name = "ability2Label";
-            this.ability2Label.Size = new System.Drawing.Size(51, 15);
-            this.ability2Label.TabIndex = 0;
-            this.ability2Label.Text = "Ability 2";
-            // 
-            // ability2ComboBox
-            // 
-            this.ability2ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability2ComboBox.FormattingEnabled = true;
-            this.ability2ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability2ComboBox.Location = new System.Drawing.Point(173, 43);
-            this.ability2ComboBox.Name = "ability2ComboBox";
-            this.ability2ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability2ComboBox.TabIndex = 2;
-            // 
-            // ability3Label
-            // 
-            this.ability3Label.AutoSize = true;
-            this.ability3Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability3Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability3Label.Location = new System.Drawing.Point(345, 25);
-            this.ability3Label.Name = "ability3Label";
-            this.ability3Label.Size = new System.Drawing.Size(51, 15);
-            this.ability3Label.TabIndex = 0;
-            this.ability3Label.Text = "Ability 3";
-            // 
-            // ability3ComboBox
-            // 
-            this.ability3ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability3ComboBox.FormattingEnabled = true;
-            this.ability3ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability3ComboBox.Location = new System.Drawing.Point(312, 43);
-            this.ability3ComboBox.Name = "ability3ComboBox";
-            this.ability3ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability3ComboBox.TabIndex = 2;
-            // 
-            // ability4Label
-            // 
-            this.ability4Label.AutoSize = true;
-            this.ability4Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability4Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability4Label.Location = new System.Drawing.Point(67, 82);
-            this.ability4Label.Name = "ability4Label";
-            this.ability4Label.Size = new System.Drawing.Size(51, 15);
-            this.ability4Label.TabIndex = 0;
-            this.ability4Label.Text = "Ability 4";
-            // 
-            // ability4ComboBox
-            // 
-            this.ability4ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability4ComboBox.FormattingEnabled = true;
-            this.ability4ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability4ComboBox.Location = new System.Drawing.Point(34, 100);
-            this.ability4ComboBox.Name = "ability4ComboBox";
-            this.ability4ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability4ComboBox.TabIndex = 2;
-            // 
-            // ability5Label
-            // 
-            this.ability5Label.AutoSize = true;
-            this.ability5Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability5Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability5Label.Location = new System.Drawing.Point(205, 82);
-            this.ability5Label.Name = "ability5Label";
-            this.ability5Label.Size = new System.Drawing.Size(51, 15);
-            this.ability5Label.TabIndex = 0;
-            this.ability5Label.Text = "Ability 5";
-            // 
-            // ability5ComboBox
-            // 
-            this.ability5ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability5ComboBox.FormattingEnabled = true;
-            this.ability5ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability5ComboBox.Location = new System.Drawing.Point(173, 100);
-            this.ability5ComboBox.Name = "ability5ComboBox";
-            this.ability5ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability5ComboBox.TabIndex = 2;
-            // 
-            // ability6Label
-            // 
-            this.ability6Label.AutoSize = true;
-            this.ability6Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability6Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability6Label.Location = new System.Drawing.Point(345, 82);
-            this.ability6Label.Name = "ability6Label";
-            this.ability6Label.Size = new System.Drawing.Size(51, 15);
-            this.ability6Label.TabIndex = 0;
-            this.ability6Label.Text = "Ability 6";
-            // 
-            // ability6ComboBox
-            // 
-            this.ability6ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability6ComboBox.FormattingEnabled = true;
-            this.ability6ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability6ComboBox.Location = new System.Drawing.Point(312, 100);
-            this.ability6ComboBox.Name = "ability6ComboBox";
-            this.ability6ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability6ComboBox.TabIndex = 2;
-            // 
-            // ability7Label
-            // 
-            this.ability7Label.AutoSize = true;
-            this.ability7Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability7Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability7Label.Location = new System.Drawing.Point(67, 140);
-            this.ability7Label.Name = "ability7Label";
-            this.ability7Label.Size = new System.Drawing.Size(50, 15);
-            this.ability7Label.TabIndex = 0;
-            this.ability7Label.Text = "Ability 7";
-            // 
-            // ability7ComboBox
-            // 
-            this.ability7ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability7ComboBox.FormattingEnabled = true;
-            this.ability7ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability7ComboBox.Location = new System.Drawing.Point(34, 158);
-            this.ability7ComboBox.Name = "ability7ComboBox";
-            this.ability7ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability7ComboBox.TabIndex = 2;
-            // 
-            // ability10Label
-            // 
-            this.ability10Label.AutoSize = true;
-            this.ability10Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability10Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability10Label.Location = new System.Drawing.Point(65, 197);
-            this.ability10Label.Name = "ability10Label";
-            this.ability10Label.Size = new System.Drawing.Size(56, 15);
-            this.ability10Label.TabIndex = 0;
-            this.ability10Label.Text = "Ability 10";
-            // 
-            // ability8Label
-            // 
-            this.ability8Label.AutoSize = true;
-            this.ability8Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability8Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability8Label.Location = new System.Drawing.Point(205, 140);
-            this.ability8Label.Name = "ability8Label";
-            this.ability8Label.Size = new System.Drawing.Size(51, 15);
-            this.ability8Label.TabIndex = 0;
-            this.ability8Label.Text = "Ability 8";
-            // 
-            // ability10ComboBox
-            // 
-            this.ability10ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability10ComboBox.FormattingEnabled = true;
-            this.ability10ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability10ComboBox.Location = new System.Drawing.Point(34, 215);
-            this.ability10ComboBox.Name = "ability10ComboBox";
-            this.ability10ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability10ComboBox.TabIndex = 2;
-            // 
-            // ability8ComboBox
-            // 
-            this.ability8ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability8ComboBox.FormattingEnabled = true;
-            this.ability8ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability8ComboBox.Location = new System.Drawing.Point(173, 158);
-            this.ability8ComboBox.Name = "ability8ComboBox";
-            this.ability8ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability8ComboBox.TabIndex = 2;
-            // 
-            // ability11Label
-            // 
-            this.ability11Label.AutoSize = true;
-            this.ability11Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability11Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability11Label.Location = new System.Drawing.Point(203, 197);
-            this.ability11Label.Name = "ability11Label";
-            this.ability11Label.Size = new System.Drawing.Size(54, 15);
-            this.ability11Label.TabIndex = 0;
-            this.ability11Label.Text = "Ability 11";
-            // 
-            // ability9Label
-            // 
-            this.ability9Label.AutoSize = true;
-            this.ability9Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability9Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability9Label.Location = new System.Drawing.Point(345, 140);
-            this.ability9Label.Name = "ability9Label";
-            this.ability9Label.Size = new System.Drawing.Size(51, 15);
-            this.ability9Label.TabIndex = 0;
-            this.ability9Label.Text = "Ability 9";
-            // 
-            // ability11ComboBox
-            // 
-            this.ability11ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability11ComboBox.FormattingEnabled = true;
-            this.ability11ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability11ComboBox.Location = new System.Drawing.Point(173, 215);
-            this.ability11ComboBox.Name = "ability11ComboBox";
-            this.ability11ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability11ComboBox.TabIndex = 2;
-            // 
-            // ability9ComboBox
-            // 
-            this.ability9ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability9ComboBox.FormattingEnabled = true;
-            this.ability9ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability9ComboBox.Location = new System.Drawing.Point(312, 158);
-            this.ability9ComboBox.Name = "ability9ComboBox";
-            this.ability9ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability9ComboBox.TabIndex = 2;
-            // 
-            // ability12Label
-            // 
-            this.ability12Label.AutoSize = true;
-            this.ability12Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability12Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability12Label.Location = new System.Drawing.Point(343, 197);
-            this.ability12Label.Name = "ability12Label";
-            this.ability12Label.Size = new System.Drawing.Size(56, 15);
-            this.ability12Label.TabIndex = 0;
-            this.ability12Label.Text = "Ability 12";
-            // 
-            // ability12ComboBox
-            // 
-            this.ability12ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability12ComboBox.FormattingEnabled = true;
-            this.ability12ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability12ComboBox.Location = new System.Drawing.Point(312, 215);
-            this.ability12ComboBox.Name = "ability12ComboBox";
-            this.ability12ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability12ComboBox.TabIndex = 2;
-            // 
-            // ability16Label
-            // 
-            this.ability16Label.AutoSize = true;
-            this.ability16Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability16Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability16Label.Location = new System.Drawing.Point(65, 313);
-            this.ability16Label.Name = "ability16Label";
-            this.ability16Label.Size = new System.Drawing.Size(56, 15);
-            this.ability16Label.TabIndex = 0;
-            this.ability16Label.Text = "Ability 16";
-            // 
-            // ability13Label
-            // 
-            this.ability13Label.AutoSize = true;
-            this.ability13Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability13Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability13Label.Location = new System.Drawing.Point(65, 255);
-            this.ability13Label.Name = "ability13Label";
-            this.ability13Label.Size = new System.Drawing.Size(56, 15);
-            this.ability13Label.TabIndex = 0;
-            this.ability13Label.Text = "Ability 13";
-            // 
-            // ability16ComboBox
-            // 
-            this.ability16ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability16ComboBox.FormattingEnabled = true;
-            this.ability16ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability16ComboBox.Location = new System.Drawing.Point(34, 331);
-            this.ability16ComboBox.Name = "ability16ComboBox";
-            this.ability16ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability16ComboBox.TabIndex = 2;
-            // 
-            // ability19Label
-            // 
-            this.ability19Label.AutoSize = true;
-            this.ability19Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability19Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability19Label.Location = new System.Drawing.Point(65, 370);
-            this.ability19Label.Name = "ability19Label";
-            this.ability19Label.Size = new System.Drawing.Size(56, 15);
-            this.ability19Label.TabIndex = 0;
-            this.ability19Label.Text = "Ability 19";
-            // 
-            // ability13ComboBox
-            // 
-            this.ability13ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability13ComboBox.FormattingEnabled = true;
-            this.ability13ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability13ComboBox.Location = new System.Drawing.Point(34, 273);
-            this.ability13ComboBox.Name = "ability13ComboBox";
-            this.ability13ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability13ComboBox.TabIndex = 2;
-            // 
-            // ability17Label
-            // 
-            this.ability17Label.AutoSize = true;
-            this.ability17Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability17Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability17Label.Location = new System.Drawing.Point(203, 313);
-            this.ability17Label.Name = "ability17Label";
-            this.ability17Label.Size = new System.Drawing.Size(55, 15);
-            this.ability17Label.TabIndex = 0;
-            this.ability17Label.Text = "Ability 17";
-            // 
-            // ability19ComboBox
-            // 
-            this.ability19ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability19ComboBox.FormattingEnabled = true;
-            this.ability19ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability19ComboBox.Location = new System.Drawing.Point(34, 388);
-            this.ability19ComboBox.Name = "ability19ComboBox";
-            this.ability19ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability19ComboBox.TabIndex = 2;
-            // 
-            // ability14Label
-            // 
-            this.ability14Label.AutoSize = true;
-            this.ability14Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability14Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability14Label.Location = new System.Drawing.Point(203, 255);
-            this.ability14Label.Name = "ability14Label";
-            this.ability14Label.Size = new System.Drawing.Size(56, 15);
-            this.ability14Label.TabIndex = 0;
-            this.ability14Label.Text = "Ability 14";
-            // 
-            // ability17ComboBox
-            // 
-            this.ability17ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability17ComboBox.FormattingEnabled = true;
-            this.ability17ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability17ComboBox.Location = new System.Drawing.Point(173, 331);
-            this.ability17ComboBox.Name = "ability17ComboBox";
-            this.ability17ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability17ComboBox.TabIndex = 2;
-            // 
-            // ability20Label
-            // 
-            this.ability20Label.AutoSize = true;
-            this.ability20Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability20Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability20Label.Location = new System.Drawing.Point(203, 370);
-            this.ability20Label.Name = "ability20Label";
-            this.ability20Label.Size = new System.Drawing.Size(58, 15);
-            this.ability20Label.TabIndex = 0;
-            this.ability20Label.Text = "Ability 20";
-            // 
-            // ability14ComboBox
-            // 
-            this.ability14ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability14ComboBox.FormattingEnabled = true;
-            this.ability14ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability14ComboBox.Location = new System.Drawing.Point(173, 273);
-            this.ability14ComboBox.Name = "ability14ComboBox";
-            this.ability14ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability14ComboBox.TabIndex = 2;
-            // 
-            // ability18Label
-            // 
-            this.ability18Label.AutoSize = true;
-            this.ability18Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability18Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability18Label.Location = new System.Drawing.Point(343, 313);
-            this.ability18Label.Name = "ability18Label";
-            this.ability18Label.Size = new System.Drawing.Size(56, 15);
-            this.ability18Label.TabIndex = 0;
-            this.ability18Label.Text = "Ability 18";
-            // 
-            // ability20ComboBox
-            // 
-            this.ability20ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability20ComboBox.FormattingEnabled = true;
-            this.ability20ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability20ComboBox.Location = new System.Drawing.Point(173, 388);
-            this.ability20ComboBox.Name = "ability20ComboBox";
-            this.ability20ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability20ComboBox.TabIndex = 2;
-            // 
-            // ability15Label
-            // 
-            this.ability15Label.AutoSize = true;
-            this.ability15Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability15Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability15Label.Location = new System.Drawing.Point(343, 255);
-            this.ability15Label.Name = "ability15Label";
-            this.ability15Label.Size = new System.Drawing.Size(56, 15);
-            this.ability15Label.TabIndex = 0;
-            this.ability15Label.Text = "Ability 15";
-            // 
-            // ability18ComboBox
-            // 
-            this.ability18ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability18ComboBox.FormattingEnabled = true;
-            this.ability18ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability18ComboBox.Location = new System.Drawing.Point(312, 331);
-            this.ability18ComboBox.Name = "ability18ComboBox";
-            this.ability18ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability18ComboBox.TabIndex = 2;
-            // 
-            // ability15ComboBox
-            // 
-            this.ability15ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability15ComboBox.FormattingEnabled = true;
-            this.ability15ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability15ComboBox.Location = new System.Drawing.Point(312, 273);
-            this.ability15ComboBox.Name = "ability15ComboBox";
-            this.ability15ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability15ComboBox.TabIndex = 2;
-            // 
-            // ability21Label
-            // 
-            this.ability21Label.AutoSize = true;
-            this.ability21Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability21Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ability21Label.Location = new System.Drawing.Point(343, 370);
-            this.ability21Label.Name = "ability21Label";
-            this.ability21Label.Size = new System.Drawing.Size(56, 15);
-            this.ability21Label.TabIndex = 0;
-            this.ability21Label.Text = "Ability 21";
-            // 
-            // ability21ComboBox
-            // 
-            this.ability21ComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ability21ComboBox.FormattingEnabled = true;
-            this.ability21ComboBox.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.ability21ComboBox.Location = new System.Drawing.Point(312, 388);
-            this.ability21ComboBox.Name = "ability21ComboBox";
-            this.ability21ComboBox.Size = new System.Drawing.Size(115, 23);
-            this.ability21ComboBox.TabIndex = 2;
+            // listBoxJGF
+            // 
+            this.listBoxJGF.FormattingEnabled = true;
+            this.listBoxJGF.ItemHeight = 15;
+            this.listBoxJGF.Items.AddRange(new object[] {
+            "Quezacotl",
+            "Shiva",
+            "Ifrit",
+            "Siren",
+            "Brothers",
+            "Diablos",
+            "Carbuncle",
+            "Leviathan",
+            "Pandemona",
+            "Cerberus",
+            "Alexander",
+            "Doomtrain",
+            "Bahamut",
+            "Cactuar",
+            "Tonberry",
+            "Eden"});
+            this.listBoxJGF.Location = new System.Drawing.Point(-1, 0);
+            this.listBoxJGF.Name = "listBoxJGF";
+            this.listBoxJGF.Size = new System.Drawing.Size(108, 619);
+            this.listBoxJGF.TabIndex = 1;
+            this.listBoxJGF.TabStop = false;
+            this.listBoxJGF.SelectedIndexChanged += new System.EventHandler(this.listBoxJGF_SelectedIndexChanged);
             // 
             // mainForm
             // 
@@ -5461,14 +5462,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.drawResistUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spellPowerUpDown)).EndInit();
             this.tabPageGF.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.JGFLevelModUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.JGFPowerModUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.JGFHPUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.JGFPowerUpDown)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
