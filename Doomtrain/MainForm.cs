@@ -82,7 +82,33 @@ namespace Doomtrain
             drainDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x1000);
             stATKtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(23, stATKtrackBar.Value);
             stDEFtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(24, stATKtrackBar.Value);
-            //To do...
+            //GF
+            JGFIDcomboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(0, JGFIDcomboBox.SelectedIndex);
+            JGFPowerUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(1, JGFPowerUpDown.Value);
+            JGFHPUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(2, JGFHPUpDown.Value);
+            JGFPowerModUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(3, JGFPowerModUpDown.Value);
+            JGFLevelModUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(4, JGFLevelModUpDown.Value);
+            ability1ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability1ComboBox.SelectedIndex, 0);
+            ability2ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability2ComboBox.SelectedIndex, 1);
+            ability3ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability3ComboBox.SelectedIndex, 2);
+            ability4ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability4ComboBox.SelectedIndex, 3);
+            ability5ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability5ComboBox.SelectedIndex, 4);
+            ability6ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability6ComboBox.SelectedIndex, 5);
+            ability7ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability7ComboBox.SelectedIndex, 6);
+            ability8ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability8ComboBox.SelectedIndex, 7);
+            ability9ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability9ComboBox.SelectedIndex, 8);
+            ability10ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability10ComboBox.SelectedIndex, 9);
+            ability11ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability11ComboBox.SelectedIndex, 10);
+            ability12ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability12ComboBox.SelectedIndex, 11);
+            ability13ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability13ComboBox.SelectedIndex, 12);
+            ability14ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability14ComboBox.SelectedIndex, 13);
+            ability15ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability15ComboBox.SelectedIndex, 14);
+            ability16ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability16ComboBox.SelectedIndex, 15);
+            ability17ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability17ComboBox.SelectedIndex, 16);
+            ability18ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability18ComboBox.SelectedIndex, 17);
+            ability19ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability19ComboBox.SelectedIndex, 18);
+            ability20ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability20ComboBox.SelectedIndex, 19);
+            ability21ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability21ComboBox.SelectedIndex, 20);
         }
 
 
