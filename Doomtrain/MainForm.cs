@@ -485,7 +485,31 @@ namespace Doomtrain
             try
             {
                 JGFIDcomboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFMagicID;
-                
+                JGFPowerUpDown.Value = KernelWorker.GetSelectedGFData.GFPower;
+                JGFHPUpDown.Value = KernelWorker.GetSelectedGFData.GFHP;
+                JGFPowerModUpDown.Value = KernelWorker.GetSelectedGFData.GFPowerMod;
+                JGFLevelModUpDown.Value = KernelWorker.GetSelectedGFData.GFLevelMod;
+                ability1ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility1;
+                ability2ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility2;
+                ability3ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility3;
+                ability4ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility4;
+                ability5ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility5;
+                ability6ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility6;
+                ability7ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility7;
+                ability8ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility8;
+                ability9ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility9;
+                ability10ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility10;
+                ability11ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility11;
+                ability12ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility12;
+                ability13ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility13;
+                ability14ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility14;
+                ability15ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility15;
+                ability16ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility16;
+                ability17ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility17;
+                ability18ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility18;
+                ability19ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility19;
+                ability20ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility20;
+                ability21ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility21;
             }
             catch (Exception eeException)
             {

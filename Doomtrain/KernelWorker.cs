@@ -536,11 +536,39 @@ namespace Doomtrain
             GetSelectedGFData = new GFData();
             int selectedGfOffset = GFDataOffset + (GFID_List * 132);
             OffsetToMagicSelected = selectedGfOffset;
+
             GetSelectedGFData.GFMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfOffset+4) - 1);
-            selectedGfOffset = +4;
-
-            //Go on TODO
-
+            selectedGfOffset += 4 + 2 + 1; //Unknown + MagicID + Unknown
+            GetSelectedGFData.GFPower = Kernel[selectedGfOffset];
+            selectedGfOffset += 13; //Unknown + GFPower
+            GetSelectedGFData.GFHP = Kernel[selectedGfOffset];
+            selectedGfOffset += 10; //Unknown+GFHP
+            //AbilityRun
+            GetSelectedGFData.GFAbility1 = Kernel[selectedGfOffset];
+            GetSelectedGFData.GFAbility2 = Kernel[selectedGfOffset + (4*1)];
+            GetSelectedGFData.GFAbility3 = Kernel[selectedGfOffset + (4*2)];
+            GetSelectedGFData.GFAbility4 = Kernel[selectedGfOffset + (4*3)];
+            GetSelectedGFData.GFAbility5 = Kernel[selectedGfOffset + (4 * 4)];
+            GetSelectedGFData.GFAbility6 = Kernel[selectedGfOffset + (4 * 5)];
+            GetSelectedGFData.GFAbility7 = Kernel[selectedGfOffset + (4 * 6)];
+            GetSelectedGFData.GFAbility8 = Kernel[selectedGfOffset + (4 * 7)];
+            GetSelectedGFData.GFAbility9 = Kernel[selectedGfOffset + (4 * 8)];
+            GetSelectedGFData.GFAbility10 = Kernel[selectedGfOffset + (4 * 9)];
+            GetSelectedGFData.GFAbility11 = Kernel[selectedGfOffset + (4 * 10)];
+            GetSelectedGFData.GFAbility12 = Kernel[selectedGfOffset + (4 * 11)];
+            GetSelectedGFData.GFAbility13 = Kernel[selectedGfOffset + (4 * 12)];
+            GetSelectedGFData.GFAbility14 = Kernel[selectedGfOffset + (4 * 13)];
+            GetSelectedGFData.GFAbility15 = Kernel[selectedGfOffset + (4 * 14)];
+            GetSelectedGFData.GFAbility16 = Kernel[selectedGfOffset + (4 * 15)];
+            GetSelectedGFData.GFAbility17 = Kernel[selectedGfOffset + (4 * 16)];
+            GetSelectedGFData.GFAbility18 = Kernel[selectedGfOffset + (4 * 17)];
+            GetSelectedGFData.GFAbility19 = Kernel[selectedGfOffset + (4 * 18)];
+            GetSelectedGFData.GFAbility20 = Kernel[selectedGfOffset + (4 * 19)];
+            GetSelectedGFData.GFAbility21 = Kernel[selectedGfOffset + (4 * 20)];
+            //EndofAbility
+            selectedGfOffset += (4*21) + 19;
+            GetSelectedGFData.GFPowerMod = Kernel[selectedGfOffset];
+            GetSelectedGFData.GFLevelMod = Kernel[selectedGfOffset + 1];
         }
 
 
