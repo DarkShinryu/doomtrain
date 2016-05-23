@@ -66,7 +66,7 @@
             // 
             this.labelCredits.AutoSize = true;
             this.labelCredits.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCredits.Location = new System.Drawing.Point(53, 40);
+            this.labelCredits.Location = new System.Drawing.Point(53, 42);
             this.labelCredits.Name = "labelCredits";
             this.labelCredits.Size = new System.Drawing.Size(154, 19);
             this.labelCredits.TabIndex = 2;

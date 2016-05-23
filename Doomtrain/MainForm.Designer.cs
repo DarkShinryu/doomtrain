@@ -133,15 +133,20 @@
             this.listBoxMagic = new System.Windows.Forms.ListBox();
             this.tabPageGF = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.listBoxGFAttacks = new System.Windows.Forms.ListBox();
-            this.GFAttacksLevelModUpDown = new System.Windows.Forms.NumericUpDown();
-            this.GFAttacksPowerModUpDown = new System.Windows.Forms.NumericUpDown();
-            this.GFAttacksPowerUpDown = new System.Windows.Forms.NumericUpDown();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.GFAttacksIDLabel = new System.Windows.Forms.Label();
+            this.GFAttacksStatusComboBox = new System.Windows.Forms.ComboBox();
+            this.GFAttacksElementComboBox = new System.Windows.Forms.ComboBox();
             this.GFAttacksIDcomboBox = new System.Windows.Forms.ComboBox();
             this.GFAttacksPowerLabel = new System.Windows.Forms.Label();
+            this.GFAttacksStatusLabel = new System.Windows.Forms.Label();
             this.GFAttacksPowerModLabel = new System.Windows.Forms.Label();
+            this.GFAttacksLevelModUpDown = new System.Windows.Forms.NumericUpDown();
+            this.GFAttacksPowerUpDown = new System.Windows.Forms.NumericUpDown();
+            this.GFAttacksElementLabel = new System.Windows.Forms.Label();
+            this.GFAttacksPowerModUpDown = new System.Windows.Forms.NumericUpDown();
             this.GFAttacksLevelModLabel = new System.Windows.Forms.Label();
-            this.GFAttacksIDLabel = new System.Windows.Forms.Label();
+            this.listBoxGFAttacks = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.GFAbility21ComboBox = new System.Windows.Forms.ComboBox();
             this.ability21Label = new System.Windows.Forms.Label();
@@ -186,6 +191,10 @@
             this.GFAbility1ComboBox = new System.Windows.Forms.ComboBox();
             this.ability1Label = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.GFStatusComboBox = new System.Windows.Forms.ComboBox();
+            this.GFElementComboBox = new System.Windows.Forms.ComboBox();
+            this.GFStatusLabel = new System.Windows.Forms.Label();
+            this.GFElementLabel = new System.Windows.Forms.Label();
             this.GFLevelModUpDown = new System.Windows.Forms.NumericUpDown();
             this.GFPowerModUpDown = new System.Windows.Forms.NumericUpDown();
             this.GFHPUpDown = new System.Windows.Forms.NumericUpDown();
@@ -198,15 +207,6 @@
             this.label = new System.Windows.Forms.Label();
             this.listBoxGF = new System.Windows.Forms.ListBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.GFStatusComboBox = new System.Windows.Forms.ComboBox();
-            this.GFElementComboBox = new System.Windows.Forms.ComboBox();
-            this.GFStatusLabel = new System.Windows.Forms.Label();
-            this.GFElementLabel = new System.Windows.Forms.Label();
-            this.GFAttacksElementLabel = new System.Windows.Forms.Label();
-            this.GFAttacksStatusLabel = new System.Windows.Forms.Label();
-            this.GFAttacksElementComboBox = new System.Windows.Forms.ComboBox();
-            this.GFAttacksStatusComboBox = new System.Windows.Forms.ComboBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageMagic.SuspendLayout();
@@ -234,16 +234,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.spellPowerUpDown)).BeginInit();
             this.tabPageGF.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GFAttacksLevelModUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GFAttacksPowerModUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GFAttacksPowerUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GFAttacksPowerModUpDown)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GFLevelModUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GFPowerModUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GFHPUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GFPowerUpDown)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -1132,7 +1132,6 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Junction Stats";
-            this.toolTip1.SetToolTip(this.groupBox2, "Junction LUCK.");
             // 
             // SPRJUpDown
             // 
@@ -2016,71 +2015,106 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Non-Junctionable G-Forces Attacks";
             // 
-            // listBoxGFAttacks
+            // panel3
             // 
-            this.listBoxGFAttacks.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxGFAttacks.FormattingEnabled = true;
-            this.listBoxGFAttacks.ItemHeight = 17;
-            this.listBoxGFAttacks.Items.AddRange(new object[] {
-            "Zantetsuken",
-            "Rebirth Flame",
-            "ChocoFire",
-            "ChocoFlare",
-            "ChocoMeteor",
-            "ChocoBocle",
-            "Excalipoor???",
-            "Excalibur",
-            "Moogle Dance",
-            "Masamune",
-            "Moomba???",
+            this.panel3.Controls.Add(this.GFAttacksIDLabel);
+            this.panel3.Controls.Add(this.GFAttacksStatusComboBox);
+            this.panel3.Controls.Add(this.GFAttacksElementComboBox);
+            this.panel3.Controls.Add(this.GFAttacksIDcomboBox);
+            this.panel3.Controls.Add(this.GFAttacksPowerLabel);
+            this.panel3.Controls.Add(this.GFAttacksStatusLabel);
+            this.panel3.Controls.Add(this.GFAttacksPowerModLabel);
+            this.panel3.Controls.Add(this.GFAttacksLevelModUpDown);
+            this.panel3.Controls.Add(this.GFAttacksPowerUpDown);
+            this.panel3.Controls.Add(this.GFAttacksElementLabel);
+            this.panel3.Controls.Add(this.GFAttacksPowerModUpDown);
+            this.panel3.Controls.Add(this.GFAttacksLevelModLabel);
+            this.panel3.Location = new System.Drawing.Point(119, 25);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(460, 189);
+            this.panel3.TabIndex = 14;
+            // 
+            // GFAttacksIDLabel
+            // 
+            this.GFAttacksIDLabel.AutoSize = true;
+            this.GFAttacksIDLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFAttacksIDLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.GFAttacksIDLabel.Location = new System.Drawing.Point(202, 1);
+            this.GFAttacksIDLabel.Name = "GFAttacksIDLabel";
+            this.GFAttacksIDLabel.Size = new System.Drawing.Size(56, 15);
+            this.GFAttacksIDLabel.TabIndex = 0;
+            this.GFAttacksIDLabel.Text = "Magic ID";
+            this.toolTip1.SetToolTip(this.GFAttacksIDLabel, "Decides what animation to play");
+            // 
+            // GFAttacksStatusComboBox
+            // 
+            this.GFAttacksStatusComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFAttacksStatusComboBox.FormattingEnabled = true;
+            this.GFAttacksStatusComboBox.Items.AddRange(new object[] {
+            "None",
+            "Sleep",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Regen",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Curse",
+            "Doom",
+            "Invincible",
+            "Petrifying",
+            "Float",
+            "Confuse",
+            "Drain",
+            "Eject",
+            "Double",
+            "Triple",
+            "Defend",
             "???",
             "???",
             "???",
             "???",
+            "Vit0",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???",
+            "Death",
+            "Poison",
+            "Petrify",
+            "Blind",
+            "Silence",
+            "Berserk",
+            "Zombie",
             "???"});
-            this.listBoxGFAttacks.Location = new System.Drawing.Point(3, 25);
-            this.listBoxGFAttacks.Name = "listBoxGFAttacks";
-            this.listBoxGFAttacks.Size = new System.Drawing.Size(110, 191);
-            this.listBoxGFAttacks.TabIndex = 7;
+            this.GFAttacksStatusComboBox.Location = new System.Drawing.Point(251, 141);
+            this.GFAttacksStatusComboBox.Name = "GFAttacksStatusComboBox";
+            this.GFAttacksStatusComboBox.Size = new System.Drawing.Size(110, 25);
+            this.GFAttacksStatusComboBox.TabIndex = 13;
             // 
-            // GFAttacksLevelModUpDown
+            // GFAttacksElementComboBox
             // 
-            this.GFAttacksLevelModUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFAttacksLevelModUpDown.Location = new System.Drawing.Point(308, 83);
-            this.GFAttacksLevelModUpDown.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.GFAttacksLevelModUpDown.Name = "GFAttacksLevelModUpDown";
-            this.GFAttacksLevelModUpDown.Size = new System.Drawing.Size(47, 25);
-            this.GFAttacksLevelModUpDown.TabIndex = 6;
-            // 
-            // GFAttacksPowerModUpDown
-            // 
-            this.GFAttacksPowerModUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFAttacksPowerModUpDown.Location = new System.Drawing.Point(207, 83);
-            this.GFAttacksPowerModUpDown.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.GFAttacksPowerModUpDown.Name = "GFAttacksPowerModUpDown";
-            this.GFAttacksPowerModUpDown.Size = new System.Drawing.Size(47, 25);
-            this.GFAttacksPowerModUpDown.TabIndex = 5;
-            // 
-            // GFAttacksPowerUpDown
-            // 
-            this.GFAttacksPowerUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFAttacksPowerUpDown.Location = new System.Drawing.Point(106, 83);
-            this.GFAttacksPowerUpDown.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.GFAttacksPowerUpDown.Name = "GFAttacksPowerUpDown";
-            this.GFAttacksPowerUpDown.Size = new System.Drawing.Size(47, 25);
-            this.GFAttacksPowerUpDown.TabIndex = 3;
+            this.GFAttacksElementComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFAttacksElementComboBox.FormattingEnabled = true;
+            this.GFAttacksElementComboBox.Items.AddRange(new object[] {
+            "Fire",
+            "Ice",
+            "Thunder",
+            "Earth",
+            "Poison",
+            "Wind",
+            "Water",
+            "Holy",
+            "Non-Elemental"});
+            this.GFAttacksElementComboBox.Location = new System.Drawing.Point(99, 141);
+            this.GFAttacksElementComboBox.Name = "GFAttacksElementComboBox";
+            this.GFAttacksElementComboBox.Size = new System.Drawing.Size(110, 25);
+            this.GFAttacksElementComboBox.TabIndex = 12;
             // 
             // GFAttacksIDcomboBox
             // 
@@ -2449,6 +2483,18 @@
             this.GFAttacksPowerLabel.Text = "Attack Power";
             this.toolTip1.SetToolTip(this.GFAttacksPowerLabel, "Used in damage calculation");
             // 
+            // GFAttacksStatusLabel
+            // 
+            this.GFAttacksStatusLabel.AutoSize = true;
+            this.GFAttacksStatusLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFAttacksStatusLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.GFAttacksStatusLabel.Location = new System.Drawing.Point(286, 123);
+            this.GFAttacksStatusLabel.Name = "GFAttacksStatusLabel";
+            this.GFAttacksStatusLabel.Size = new System.Drawing.Size(40, 15);
+            this.GFAttacksStatusLabel.TabIndex = 10;
+            this.GFAttacksStatusLabel.Text = "Status";
+            this.toolTip1.SetToolTip(this.GFAttacksStatusLabel, "The status inflicted by the GF Attack");
+            // 
             // GFAttacksPowerModLabel
             // 
             this.GFAttacksPowerModLabel.AutoSize = true;
@@ -2460,6 +2506,57 @@
             this.GFAttacksPowerModLabel.TabIndex = 0;
             this.GFAttacksPowerModLabel.Text = "Power Mod";
             this.toolTip1.SetToolTip(this.GFAttacksPowerModLabel, "Used in damage calculation");
+            // 
+            // GFAttacksLevelModUpDown
+            // 
+            this.GFAttacksLevelModUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFAttacksLevelModUpDown.Location = new System.Drawing.Point(308, 83);
+            this.GFAttacksLevelModUpDown.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.GFAttacksLevelModUpDown.Name = "GFAttacksLevelModUpDown";
+            this.GFAttacksLevelModUpDown.Size = new System.Drawing.Size(47, 25);
+            this.GFAttacksLevelModUpDown.TabIndex = 6;
+            // 
+            // GFAttacksPowerUpDown
+            // 
+            this.GFAttacksPowerUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFAttacksPowerUpDown.Location = new System.Drawing.Point(106, 83);
+            this.GFAttacksPowerUpDown.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.GFAttacksPowerUpDown.Name = "GFAttacksPowerUpDown";
+            this.GFAttacksPowerUpDown.Size = new System.Drawing.Size(47, 25);
+            this.GFAttacksPowerUpDown.TabIndex = 3;
+            // 
+            // GFAttacksElementLabel
+            // 
+            this.GFAttacksElementLabel.AutoSize = true;
+            this.GFAttacksElementLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFAttacksElementLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.GFAttacksElementLabel.Location = new System.Drawing.Point(130, 123);
+            this.GFAttacksElementLabel.Name = "GFAttacksElementLabel";
+            this.GFAttacksElementLabel.Size = new System.Drawing.Size(50, 15);
+            this.GFAttacksElementLabel.TabIndex = 11;
+            this.GFAttacksElementLabel.Text = "Element";
+            this.toolTip1.SetToolTip(this.GFAttacksElementLabel, "The element of the GF attack");
+            // 
+            // GFAttacksPowerModUpDown
+            // 
+            this.GFAttacksPowerModUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFAttacksPowerModUpDown.Location = new System.Drawing.Point(207, 83);
+            this.GFAttacksPowerModUpDown.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.GFAttacksPowerModUpDown.Name = "GFAttacksPowerModUpDown";
+            this.GFAttacksPowerModUpDown.Size = new System.Drawing.Size(47, 25);
+            this.GFAttacksPowerModUpDown.TabIndex = 5;
             // 
             // GFAttacksLevelModLabel
             // 
@@ -2473,17 +2570,32 @@
             this.GFAttacksLevelModLabel.Text = "Level Mod";
             this.toolTip1.SetToolTip(this.GFAttacksLevelModLabel, "Used in damage calculation");
             // 
-            // GFAttacksIDLabel
+            // listBoxGFAttacks
             // 
-            this.GFAttacksIDLabel.AutoSize = true;
-            this.GFAttacksIDLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFAttacksIDLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.GFAttacksIDLabel.Location = new System.Drawing.Point(202, 1);
-            this.GFAttacksIDLabel.Name = "GFAttacksIDLabel";
-            this.GFAttacksIDLabel.Size = new System.Drawing.Size(56, 15);
-            this.GFAttacksIDLabel.TabIndex = 0;
-            this.GFAttacksIDLabel.Text = "Magic ID";
-            this.toolTip1.SetToolTip(this.GFAttacksIDLabel, "Decides what animation to play");
+            this.listBoxGFAttacks.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxGFAttacks.FormattingEnabled = true;
+            this.listBoxGFAttacks.ItemHeight = 17;
+            this.listBoxGFAttacks.Items.AddRange(new object[] {
+            "Zantetsuken",
+            "Rebirth Flame",
+            "ChocoFire",
+            "ChocoFlare",
+            "ChocoMeteor",
+            "ChocoBocle",
+            "Excalipoor???",
+            "Excalibur",
+            "Moogle Dance",
+            "Masamune",
+            "Moomba???",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???"});
+            this.listBoxGFAttacks.Location = new System.Drawing.Point(3, 25);
+            this.listBoxGFAttacks.Name = "listBoxGFAttacks";
+            this.listBoxGFAttacks.Size = new System.Drawing.Size(110, 191);
+            this.listBoxGFAttacks.TabIndex = 7;
             // 
             // groupBox1
             // 
@@ -5463,6 +5575,100 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "General";
             // 
+            // GFStatusComboBox
+            // 
+            this.GFStatusComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFStatusComboBox.FormattingEnabled = true;
+            this.GFStatusComboBox.Items.AddRange(new object[] {
+            "None",
+            "Sleep",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Regen",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Curse",
+            "Doom",
+            "Invincible",
+            "Petrifying",
+            "Float",
+            "Confuse",
+            "Drain",
+            "Eject",
+            "Double",
+            "Triple",
+            "Defend",
+            "???",
+            "???",
+            "???",
+            "???",
+            "Vit0",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???",
+            "Death",
+            "Poison",
+            "Petrify",
+            "Blind",
+            "Silence",
+            "Berserk",
+            "Zombie",
+            "???"});
+            this.GFStatusComboBox.Location = new System.Drawing.Point(251, 156);
+            this.GFStatusComboBox.Name = "GFStatusComboBox";
+            this.GFStatusComboBox.Size = new System.Drawing.Size(110, 25);
+            this.GFStatusComboBox.TabIndex = 13;
+            // 
+            // GFElementComboBox
+            // 
+            this.GFElementComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFElementComboBox.FormattingEnabled = true;
+            this.GFElementComboBox.Items.AddRange(new object[] {
+            "Fire",
+            "Ice",
+            "Thunder",
+            "Earth",
+            "Poison",
+            "Wind",
+            "Water",
+            "Holy",
+            "Non-Elemental"});
+            this.GFElementComboBox.Location = new System.Drawing.Point(99, 156);
+            this.GFElementComboBox.Name = "GFElementComboBox";
+            this.GFElementComboBox.Size = new System.Drawing.Size(110, 25);
+            this.GFElementComboBox.TabIndex = 12;
+            // 
+            // GFStatusLabel
+            // 
+            this.GFStatusLabel.AutoSize = true;
+            this.GFStatusLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFStatusLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.GFStatusLabel.Location = new System.Drawing.Point(286, 138);
+            this.GFStatusLabel.Name = "GFStatusLabel";
+            this.GFStatusLabel.Size = new System.Drawing.Size(40, 15);
+            this.GFStatusLabel.TabIndex = 10;
+            this.GFStatusLabel.Text = "Status";
+            this.toolTip1.SetToolTip(this.GFStatusLabel, "The status inflicted by the GF Attack");
+            // 
+            // GFElementLabel
+            // 
+            this.GFElementLabel.AutoSize = true;
+            this.GFElementLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GFElementLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.GFElementLabel.Location = new System.Drawing.Point(129, 138);
+            this.GFElementLabel.Name = "GFElementLabel";
+            this.GFElementLabel.Size = new System.Drawing.Size(50, 15);
+            this.GFElementLabel.TabIndex = 11;
+            this.GFElementLabel.Text = "Element";
+            this.toolTip1.SetToolTip(this.GFElementLabel, "The element of the GF attack");
+            // 
             // GFLevelModUpDown
             // 
             this.GFLevelModUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -5962,213 +6168,6 @@
             this.listBoxGF.TabStop = false;
             this.listBoxGF.SelectedIndexChanged += new System.EventHandler(this.listBoxGF_SelectedIndexChanged);
             // 
-            // GFStatusComboBox
-            // 
-            this.GFStatusComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFStatusComboBox.FormattingEnabled = true;
-            this.GFStatusComboBox.Items.AddRange(new object[] {
-            "None",
-            "Sleep",
-            "Haste",
-            "Slow",
-            "Stop",
-            "Regen",
-            "Protect",
-            "Shell",
-            "Reflect",
-            "Aura",
-            "Curse",
-            "Doom",
-            "Invincible",
-            "Petrifying",
-            "Float",
-            "Confuse",
-            "Drain",
-            "Eject",
-            "Double",
-            "Triple",
-            "Defend",
-            "???",
-            "???",
-            "???",
-            "???",
-            "Vit0",
-            "???",
-            "???",
-            "???",
-            "???",
-            "???",
-            "???",
-            "???",
-            "Death",
-            "Poison",
-            "Petrify",
-            "Blind",
-            "Silence",
-            "Berserk",
-            "Zombie",
-            "???"});
-            this.GFStatusComboBox.Location = new System.Drawing.Point(251, 156);
-            this.GFStatusComboBox.Name = "GFStatusComboBox";
-            this.GFStatusComboBox.Size = new System.Drawing.Size(110, 25);
-            this.GFStatusComboBox.TabIndex = 13;
-            // 
-            // GFElementComboBox
-            // 
-            this.GFElementComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFElementComboBox.FormattingEnabled = true;
-            this.GFElementComboBox.Items.AddRange(new object[] {
-            "Fire",
-            "Ice",
-            "Thunder",
-            "Earth",
-            "Poison",
-            "Wind",
-            "Water",
-            "Holy",
-            "Non-Elemental"});
-            this.GFElementComboBox.Location = new System.Drawing.Point(99, 156);
-            this.GFElementComboBox.Name = "GFElementComboBox";
-            this.GFElementComboBox.Size = new System.Drawing.Size(110, 25);
-            this.GFElementComboBox.TabIndex = 12;
-            // 
-            // GFStatusLabel
-            // 
-            this.GFStatusLabel.AutoSize = true;
-            this.GFStatusLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFStatusLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.GFStatusLabel.Location = new System.Drawing.Point(286, 138);
-            this.GFStatusLabel.Name = "GFStatusLabel";
-            this.GFStatusLabel.Size = new System.Drawing.Size(40, 15);
-            this.GFStatusLabel.TabIndex = 10;
-            this.GFStatusLabel.Text = "Status";
-            this.toolTip1.SetToolTip(this.GFStatusLabel, "The status inflicted by the GF Attack");
-            // 
-            // GFElementLabel
-            // 
-            this.GFElementLabel.AutoSize = true;
-            this.GFElementLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFElementLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.GFElementLabel.Location = new System.Drawing.Point(129, 138);
-            this.GFElementLabel.Name = "GFElementLabel";
-            this.GFElementLabel.Size = new System.Drawing.Size(50, 15);
-            this.GFElementLabel.TabIndex = 11;
-            this.GFElementLabel.Text = "Element";
-            this.toolTip1.SetToolTip(this.GFElementLabel, "The element of the GF attack");
-            // 
-            // GFAttacksElementLabel
-            // 
-            this.GFAttacksElementLabel.AutoSize = true;
-            this.GFAttacksElementLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFAttacksElementLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.GFAttacksElementLabel.Location = new System.Drawing.Point(130, 123);
-            this.GFAttacksElementLabel.Name = "GFAttacksElementLabel";
-            this.GFAttacksElementLabel.Size = new System.Drawing.Size(50, 15);
-            this.GFAttacksElementLabel.TabIndex = 11;
-            this.GFAttacksElementLabel.Text = "Element";
-            this.toolTip1.SetToolTip(this.GFAttacksElementLabel, "The element of the GF attack");
-            // 
-            // GFAttacksStatusLabel
-            // 
-            this.GFAttacksStatusLabel.AutoSize = true;
-            this.GFAttacksStatusLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFAttacksStatusLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.GFAttacksStatusLabel.Location = new System.Drawing.Point(286, 123);
-            this.GFAttacksStatusLabel.Name = "GFAttacksStatusLabel";
-            this.GFAttacksStatusLabel.Size = new System.Drawing.Size(40, 15);
-            this.GFAttacksStatusLabel.TabIndex = 10;
-            this.GFAttacksStatusLabel.Text = "Status";
-            this.toolTip1.SetToolTip(this.GFAttacksStatusLabel, "The status inflicted by the GF Attack");
-            // 
-            // GFAttacksElementComboBox
-            // 
-            this.GFAttacksElementComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFAttacksElementComboBox.FormattingEnabled = true;
-            this.GFAttacksElementComboBox.Items.AddRange(new object[] {
-            "Fire",
-            "Ice",
-            "Thunder",
-            "Earth",
-            "Poison",
-            "Wind",
-            "Water",
-            "Holy",
-            "Non-Elemental"});
-            this.GFAttacksElementComboBox.Location = new System.Drawing.Point(99, 141);
-            this.GFAttacksElementComboBox.Name = "GFAttacksElementComboBox";
-            this.GFAttacksElementComboBox.Size = new System.Drawing.Size(110, 25);
-            this.GFAttacksElementComboBox.TabIndex = 12;
-            // 
-            // GFAttacksStatusComboBox
-            // 
-            this.GFAttacksStatusComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GFAttacksStatusComboBox.FormattingEnabled = true;
-            this.GFAttacksStatusComboBox.Items.AddRange(new object[] {
-            "None",
-            "Sleep",
-            "Haste",
-            "Slow",
-            "Stop",
-            "Regen",
-            "Protect",
-            "Shell",
-            "Reflect",
-            "Aura",
-            "Curse",
-            "Doom",
-            "Invincible",
-            "Petrifying",
-            "Float",
-            "Confuse",
-            "Drain",
-            "Eject",
-            "Double",
-            "Triple",
-            "Defend",
-            "???",
-            "???",
-            "???",
-            "???",
-            "Vit0",
-            "???",
-            "???",
-            "???",
-            "???",
-            "???",
-            "???",
-            "???",
-            "Death",
-            "Poison",
-            "Petrify",
-            "Blind",
-            "Silence",
-            "Berserk",
-            "Zombie",
-            "???"});
-            this.GFAttacksStatusComboBox.Location = new System.Drawing.Point(251, 141);
-            this.GFAttacksStatusComboBox.Name = "GFAttacksStatusComboBox";
-            this.GFAttacksStatusComboBox.Size = new System.Drawing.Size(110, 25);
-            this.GFAttacksStatusComboBox.TabIndex = 13;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.GFAttacksIDLabel);
-            this.panel3.Controls.Add(this.GFAttacksStatusComboBox);
-            this.panel3.Controls.Add(this.GFAttacksElementComboBox);
-            this.panel3.Controls.Add(this.GFAttacksIDcomboBox);
-            this.panel3.Controls.Add(this.GFAttacksPowerLabel);
-            this.panel3.Controls.Add(this.GFAttacksStatusLabel);
-            this.panel3.Controls.Add(this.GFAttacksPowerModLabel);
-            this.panel3.Controls.Add(this.GFAttacksLevelModUpDown);
-            this.panel3.Controls.Add(this.GFAttacksPowerUpDown);
-            this.panel3.Controls.Add(this.GFAttacksElementLabel);
-            this.panel3.Controls.Add(this.GFAttacksPowerModUpDown);
-            this.panel3.Controls.Add(this.GFAttacksLevelModLabel);
-            this.panel3.Location = new System.Drawing.Point(119, 25);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(460, 189);
-            this.panel3.TabIndex = 14;
-            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -6218,9 +6217,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.spellPowerUpDown)).EndInit();
             this.tabPageGF.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GFAttacksLevelModUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GFAttacksPowerModUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GFAttacksPowerUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GFAttacksPowerModUpDown)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -6229,8 +6230,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GFPowerModUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GFHPUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GFPowerUpDown)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
