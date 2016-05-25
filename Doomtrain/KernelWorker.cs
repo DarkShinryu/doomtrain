@@ -85,8 +85,8 @@ namespace Doomtrain
 
         public struct MagicData
         {
-            public string OffsetName;
-            public string SpellDescription;
+            public string OffsetSpellName;
+            public string OffsetSpellDescription;
             public UInt16 MagicID;
             public UInt16 Unknown1;
             public byte SpellPower;
@@ -126,9 +126,18 @@ namespace Doomtrain
 
         public struct GFData
         {
+            public string OffsetGFName;
+            public string OffsetGFDescription;
             public UInt16 GFMagicID;
             public byte GFPower;
+            public UInt16 GFElement;
+            public UInt16 GFStatus1;
+            public UInt16 GFStatus2;
+            public UInt16 GFStatus3;
+            public UInt16 GFStatus4;
+            public UInt16 GFStatus5;
             public byte GFHP;
+            public byte GFStatusEnabler;
             public byte GFPowerMod;
             public byte GFLevelMod;
             public UInt16 GFAbility1;
@@ -152,8 +161,6 @@ namespace Doomtrain
             public UInt16 GFAbility19;
             public UInt16 GFAbility20;
             public UInt16 GFAbility21;
-            public UInt16 GFElement;
-            public UInt16 GFStatus;
         }
 
 
@@ -180,12 +187,12 @@ namespace Doomtrain
                     }
                 case 5:
                     {
-                        Kernel[OffsetToMagicSelected + 14] = Convert.ToByte(variable); //Element
+//to do again           Kernel[OffsetToMagicSelected + 14] = Convert.ToByte(variable); //Element
                         return;
                     }
                 case 6:
                     {
-                        Kernel[OffsetToMagicSelected + 16] = Convert.ToByte(variable); //Status
+//to do again           Kernel[OffsetToMagicSelected + 16] = Convert.ToByte(variable); //Status
                         return;
                     }
 
@@ -331,12 +338,8 @@ namespace Doomtrain
                 case 5:
                     Kernel[OffsetToGFSelected + 30 + (AbilityIndex*4)] = Convert.ToByte(variable);
                     return;
-                case 6:
-                    //to do - offset is +14
-                    return;
-                case 7:
-                    //to do - offset is +15, 5 bytes long i think
-                    return;
+
+                    //to do gf element and gf status
 
                 default:
                     return;
@@ -387,12 +390,12 @@ namespace Doomtrain
             OffsetToMagicSelected = selectedMagicOffset;
 
             #region UnusedNameRegion functionality. You can use it for future improvements
-            GetSelectedMagicData.OffsetName = BuildString( (ushort)(
+            GetSelectedMagicData.OffsetSpellName = BuildString( (ushort)(
                     BitConverter.ToInt32(Kernel,(int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(Kernel, selectedMagicOffset))));
 					//BELOW DOESN'T WORK?
-            // GetSelectedMagicData.SpellDescription = BuildString((ushort)(
+            // GetSelectedMagicData.OffsetSpellDescription = BuildString((ushort)(
             //BitConverter.ToInt32(kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(kernel, SelectedMagicOffset += 2))));
-            //Console.WriteLine("DEBUG: {0}", GetSelectedMagicData.OffsetName);
+            //Console.WriteLine("DEBUG: {0}", GetSelectedMagicData.OffsetSpellName);
             #endregion
 
 
@@ -404,9 +407,9 @@ namespace Doomtrain
             GetSelectedMagicData.Unknown3 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.DrawResist = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.HitCount = Kernel[selectedMagicOffset++];
-            GetSelectedMagicData.Element = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.Element = Kernel[selectedMagicOffset++]; //i think magic element has to be done again here
             GetSelectedMagicData.Unknown4 = Kernel[selectedMagicOffset++];
-            GetSelectedMagicData.Status1 = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.Status1 = Kernel[selectedMagicOffset++]; //i think magic status has to be done again here
             GetSelectedMagicData.Status2 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.Status3 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.Status4 = Kernel[selectedMagicOffset++];
@@ -474,8 +477,10 @@ namespace Doomtrain
             selectedGfOffset += (4*20) + 19 + 1;
             GetSelectedGFData.GFPowerMod = Kernel[selectedGfOffset];
             GetSelectedGFData.GFLevelMod = Kernel[selectedGfOffset + 1];
-            //to do GF element and status
+
+            //to do GF element, status and status attack enabler
         }
+
 
 
         private static string BuildString(int index)

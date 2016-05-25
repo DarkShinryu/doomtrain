@@ -18,15 +18,26 @@ namespace Doomtrain
         public mainForm()
         {
             InitializeComponent();
+
+
+            //for disabling save buttons when no file is open
             saveToolStripMenuItem.Enabled = false;
             saveAsToolStripMenuItem.Enabled = false;
+            saveAsToolStripButton.Enabled = false;
+            saveToolStripButton.Enabled = false;
+
+
+            //this is for enabling a cool switch with the listboxes in the gf section :)
+            listBoxGFAttacks.Visible = false;
+            tabControlGF.SelectedIndexChanged += new EventHandler(tabControlGF_SelectedIndexChanged);
+
 
             //MAGIC
             magicIDcomboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(2, magicIDcomboBox.SelectedIndex);
             spellPowerUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(3, spellPowerUpDown.Value);
             drawResistUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(4, drawResistUpDown.Value);
-            magicElementComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(5, magicElementComboBox.SelectedIndex);
-            magicStatusComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, magicStatusComboBox.SelectedIndex);
+            magicElementComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(5, magicElementComboBox.SelectedIndex); 
+//to do again   magicStatusComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, magicStatusComboBox.SelectedIndex);
             HPJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(7, HPJUpDown.Value);
             STRJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(8, STRJUpDown.Value);
             VITJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(9, VITJUpDown.Value);
@@ -82,6 +93,8 @@ namespace Doomtrain
             drainDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x1000);
             stATKtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(23, stATKtrackBar.Value);
             stDEFtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(24, stATKtrackBar.Value);
+
+
             //GF
             GFIDcomboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(0, GFIDcomboBox.SelectedIndex);
             GFPowerUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(1, GFPowerUpDown.Value);
@@ -109,15 +122,11 @@ namespace Doomtrain
             GFAbility19ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility19ComboBox.SelectedIndex, 18);
             GFAbility20ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility20ComboBox.SelectedIndex, 19);
             GFAbility21ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility21ComboBox.SelectedIndex, 20);
-            GFElementComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, GFElementComboBox.SelectedIndex);
-            GFStatusComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, GFStatusComboBox.SelectedIndex);
         }
 
 
-
-
-        //used for open/save stuff
-        public string existingFilename;
+        
+        public string existingFilename; //used for open/save stuff
 
 
 
@@ -146,6 +155,8 @@ namespace Doomtrain
                 existingFilename = openFileDialog.FileName;
                 saveToolStripMenuItem.Enabled = true;
                 saveAsToolStripMenuItem.Enabled = true;
+                saveToolStripButton.Enabled = true;
+                saveAsToolStripButton.Enabled = true;
                 return;
             }
         }
@@ -179,13 +190,7 @@ namespace Doomtrain
                     File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
                     return;
                 }
-
             }
-            //else
-            //{
-            //    MessageBox.Show("Please open a file first", "Error");
-            //    return;
-            //}
         }
 
 
@@ -194,6 +199,65 @@ namespace Doomtrain
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+
+
+        //TOOLBAR
+        private void openToolStripButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Open FF8 kernel.bin";
+            openFileDialog.Filter = "FF8 Kernel File|*.bin";
+            openFileDialog.FileName = "kernel.bin";
+
+
+
+            if (openFileDialog.ShowDialog() != DialogResult.OK) return;
+            {
+                using (var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
+                {
+                    using (var BR = new BinaryReader(fileStream))
+                    {
+                        KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
+                    }
+
+                }
+
+
+                existingFilename = openFileDialog.FileName;
+                saveToolStripMenuItem.Enabled = true;
+                saveAsToolStripMenuItem.Enabled = true;
+                saveToolStripButton.Enabled = true;
+                saveAsToolStripButton.Enabled = true;
+                return;
+            }
+        }
+
+        private void saveToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
+            {
+                File.WriteAllBytes(existingFilename, KernelWorker.Kernel);
+                return;
+            }
+        }
+
+        private void saveAsToolStripButton_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveAsDialog = new SaveFileDialog();
+            saveAsDialog.Title = "Save FF8 kernel.bin";
+            saveAsDialog.Filter = "FF8 Kernel File|*.bin";
+            saveAsDialog.FileName = Path.GetFileName(existingFilename);
+
+            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
+            {
+                if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
+                {
+                    File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
+                    return;
+                }
+            }
         }
 
 
@@ -208,19 +272,40 @@ namespace Doomtrain
         // MAGIC TRACKBARS LABEL VALUES
         private void eleATKtrackBar_Scroll(object sender, EventArgs e)
         {
-            eleATKtrackBarValue.Text = eleATKtrackBar.Value+"%".ToString();
+            eleATKtrackBarValue.Text = eleATKtrackBar.Value + "%".ToString();
         }
+
         private void eleDEFtrackBar_Scroll(object sender, EventArgs e)
         {
             eleDEFtrackBarValue.Text = eleDEFtrackBar.Value + "%".ToString();
         }
+
         private void stATKtrackBar_Scroll(object sender, EventArgs e)
         {
             stATKtrackBarValue.Text = stATKtrackBar.Value + "%".ToString();
         }
+
         private void stDEFtrackBar_Scroll(object sender, EventArgs e)
         {
             stDEFtrackBarValue.Text = stDEFtrackBar.Value + "%".ToString();
+        }
+
+
+
+        //GF LISTBOXES SWITCH
+        private void tabControlGF_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControlGF.SelectedIndex == 0)
+            {
+                listBoxGFAttacks.Visible = false;
+                listBoxGF.Visible = true;
+            }
+
+            else if (tabControlGF.SelectedIndex == 1)
+            {
+                listBoxGF.Visible = false;
+                listBoxGFAttacks.Visible = true;
+            }
         }
 
 
@@ -239,7 +324,7 @@ namespace Doomtrain
                 drawResistUpDown.Value = KernelWorker.GetSelectedMagicData.DrawResist;
                 hitCountUpDown.Value = KernelWorker.GetSelectedMagicData.HitCount;
                 magicElementComboBox.SelectedIndex = KernelWorker.GetSelectedMagicData.Element;
-                magicStatusComboBox.SelectedIndex = KernelWorker.GetSelectedMagicData.Status1;
+//to do again   magicStatusComboBox.SelectedIndex = KernelWorker.GetSelectedMagicData.Status1;
 
                 HPJUpDown.Value = KernelWorker.GetSelectedMagicData.HP;
                 VITJUpDown.Value = KernelWorker.GetSelectedMagicData.VIT;
@@ -433,6 +518,8 @@ namespace Doomtrain
             }
         }
 
+
+
         //TRACKBAR VALUES
         private void eleATKtrackBar_ValueChanged(object sender, EventArgs e)
         {
@@ -450,7 +537,6 @@ namespace Doomtrain
         {
             stDEFtrackBarValue.Text = stDEFtrackBar.Value + "%".ToString();
         }
-
 
 
 
@@ -503,6 +589,9 @@ namespace Doomtrain
             }
         }
 
+
+
+        //GFs
         private void listBoxGF_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
@@ -538,8 +627,6 @@ namespace Doomtrain
                 GFAbility19ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility19;
                 GFAbility20ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility20;
                 GFAbility21ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility21;
-                GFElementComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFElement;
-                GFStatusComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFStatus;
             }
             catch (Exception eeException)
             {
@@ -547,5 +634,7 @@ namespace Doomtrain
             }
             _loaded = true;
         }
+
+
     }
 }
