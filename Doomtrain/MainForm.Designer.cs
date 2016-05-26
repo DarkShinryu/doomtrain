@@ -45,34 +45,34 @@
             this.tabPageMagicGeneral = new System.Windows.Forms.TabPage();
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox28 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox26 = new System.Windows.Forms.CheckBox();
-            this.checkBox25 = new System.Windows.Forms.CheckBox();
-            this.checkBox24 = new System.Windows.Forms.CheckBox();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox27 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.darknescheckBox1 = new System.Windows.Forms.CheckBox();
+            this.silencecheckBox2 = new System.Windows.Forms.CheckBox();
+            this.stopcheckBox3 = new System.Windows.Forms.CheckBox();
+            this.confusioncheckBox4 = new System.Windows.Forms.CheckBox();
+            this.petrifycheckBox28 = new System.Windows.Forms.CheckBox();
+            this.petrifyingcheckBox5 = new System.Windows.Forms.CheckBox();
+            this.slowcheckBox6 = new System.Windows.Forms.CheckBox();
+            this.berserkcheckBox7 = new System.Windows.Forms.CheckBox();
+            this.sleepcheckBox8 = new System.Windows.Forms.CheckBox();
+            this.invincicheckBox18 = new System.Windows.Forms.CheckBox();
+            this.cursecheckBox17 = new System.Windows.Forms.CheckBox();
+            this.doomcheckBox16 = new System.Windows.Forms.CheckBox();
+            this.floatcheckBox15 = new System.Windows.Forms.CheckBox();
+            this.auracheckBox14 = new System.Windows.Forms.CheckBox();
+            this.draincheckBox13 = new System.Windows.Forms.CheckBox();
+            this.vit0checkBox26 = new System.Windows.Forms.CheckBox();
+            this.defendcheckBox25 = new System.Windows.Forms.CheckBox();
+            this.triplcheckBox24 = new System.Windows.Forms.CheckBox();
+            this.doublecheckBox23 = new System.Windows.Forms.CheckBox();
+            this.ejectcheckBox9 = new System.Windows.Forms.CheckBox();
+            this.poisoncheckBox27 = new System.Windows.Forms.CheckBox();
+            this.deathcheckBox10 = new System.Windows.Forms.CheckBox();
+            this.protectcheckBox22 = new System.Windows.Forms.CheckBox();
+            this.hastecheckBox21 = new System.Windows.Forms.CheckBox();
+            this.regencheckBox20 = new System.Windows.Forms.CheckBox();
+            this.shellcheckBox19 = new System.Windows.Forms.CheckBox();
+            this.reflectcheckBox11 = new System.Windows.Forms.CheckBox();
+            this.zombiecheckBox12 = new System.Windows.Forms.CheckBox();
             this.magicElementComboBox = new System.Windows.Forms.ComboBox();
             this.hitCountUpDown = new System.Windows.Forms.NumericUpDown();
             this.drawResistUpDown = new System.Windows.Forms.NumericUpDown();
@@ -232,14 +232,14 @@
             this.GFAttacksLevelModLabel = new System.Windows.Forms.Label();
             this.GFAttacksPowerModUpDown = new System.Windows.Forms.NumericUpDown();
             this.GFAttacksPowerLabel = new System.Windows.Forms.Label();
+            this.listBoxGFAttacks = new System.Windows.Forms.ListBox();
+            this.listBoxGF = new System.Windows.Forms.ListBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolbarStrip = new System.Windows.Forms.ToolStrip();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.listBoxGFAttacks = new System.Windows.Forms.ListBox();
-            this.listBoxGF = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageMagic.SuspendLayout();
@@ -369,7 +369,7 @@
             this.tabControlMain.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabControlMain.Controls.Add(this.tabPageMagic);
             this.tabControlMain.Controls.Add(this.tabPageGF);
-            this.tabControlMain.Font = new System.Drawing.Font("Trajan Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlMain.Location = new System.Drawing.Point(0, 52);
             this.tabControlMain.Multiline = true;
             this.tabControlMain.Name = "tabControlMain";
@@ -419,34 +419,34 @@
             // 
             this.groupBox.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox.Controls.Add(this.label6);
-            this.groupBox.Controls.Add(this.checkBox1);
-            this.groupBox.Controls.Add(this.checkBox2);
-            this.groupBox.Controls.Add(this.checkBox3);
-            this.groupBox.Controls.Add(this.checkBox4);
-            this.groupBox.Controls.Add(this.checkBox28);
-            this.groupBox.Controls.Add(this.checkBox5);
-            this.groupBox.Controls.Add(this.checkBox6);
-            this.groupBox.Controls.Add(this.checkBox7);
-            this.groupBox.Controls.Add(this.checkBox8);
-            this.groupBox.Controls.Add(this.checkBox18);
-            this.groupBox.Controls.Add(this.checkBox17);
-            this.groupBox.Controls.Add(this.checkBox16);
-            this.groupBox.Controls.Add(this.checkBox15);
-            this.groupBox.Controls.Add(this.checkBox14);
-            this.groupBox.Controls.Add(this.checkBox13);
-            this.groupBox.Controls.Add(this.checkBox26);
-            this.groupBox.Controls.Add(this.checkBox25);
-            this.groupBox.Controls.Add(this.checkBox24);
-            this.groupBox.Controls.Add(this.checkBox23);
-            this.groupBox.Controls.Add(this.checkBox9);
-            this.groupBox.Controls.Add(this.checkBox27);
-            this.groupBox.Controls.Add(this.checkBox10);
-            this.groupBox.Controls.Add(this.checkBox22);
-            this.groupBox.Controls.Add(this.checkBox21);
-            this.groupBox.Controls.Add(this.checkBox20);
-            this.groupBox.Controls.Add(this.checkBox19);
-            this.groupBox.Controls.Add(this.checkBox11);
-            this.groupBox.Controls.Add(this.checkBox12);
+            this.groupBox.Controls.Add(this.darknescheckBox1);
+            this.groupBox.Controls.Add(this.silencecheckBox2);
+            this.groupBox.Controls.Add(this.stopcheckBox3);
+            this.groupBox.Controls.Add(this.confusioncheckBox4);
+            this.groupBox.Controls.Add(this.petrifycheckBox28);
+            this.groupBox.Controls.Add(this.petrifyingcheckBox5);
+            this.groupBox.Controls.Add(this.slowcheckBox6);
+            this.groupBox.Controls.Add(this.berserkcheckBox7);
+            this.groupBox.Controls.Add(this.sleepcheckBox8);
+            this.groupBox.Controls.Add(this.invincicheckBox18);
+            this.groupBox.Controls.Add(this.cursecheckBox17);
+            this.groupBox.Controls.Add(this.doomcheckBox16);
+            this.groupBox.Controls.Add(this.floatcheckBox15);
+            this.groupBox.Controls.Add(this.auracheckBox14);
+            this.groupBox.Controls.Add(this.draincheckBox13);
+            this.groupBox.Controls.Add(this.vit0checkBox26);
+            this.groupBox.Controls.Add(this.defendcheckBox25);
+            this.groupBox.Controls.Add(this.triplcheckBox24);
+            this.groupBox.Controls.Add(this.doublecheckBox23);
+            this.groupBox.Controls.Add(this.ejectcheckBox9);
+            this.groupBox.Controls.Add(this.poisoncheckBox27);
+            this.groupBox.Controls.Add(this.deathcheckBox10);
+            this.groupBox.Controls.Add(this.protectcheckBox22);
+            this.groupBox.Controls.Add(this.hastecheckBox21);
+            this.groupBox.Controls.Add(this.regencheckBox20);
+            this.groupBox.Controls.Add(this.shellcheckBox19);
+            this.groupBox.Controls.Add(this.reflectcheckBox11);
+            this.groupBox.Controls.Add(this.zombiecheckBox12);
             this.groupBox.Controls.Add(this.magicElementComboBox);
             this.groupBox.Controls.Add(this.hitCountUpDown);
             this.groupBox.Controls.Add(this.drawResistUpDown);
@@ -478,341 +478,341 @@
             this.label6.Text = "Status";
             this.toolTip1.SetToolTip(this.label6, "The status of the magic");
             // 
-            // checkBox1
+            // darknescheckBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox1.Location = new System.Drawing.Point(16, 277);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(73, 19);
-            this.checkBox1.TabIndex = 51;
-            this.checkBox1.Text = "Darkness";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.darknescheckBox1.AutoSize = true;
+            this.darknescheckBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.darknescheckBox1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.darknescheckBox1.Location = new System.Drawing.Point(16, 277);
+            this.darknescheckBox1.Name = "darknescheckBox1";
+            this.darknescheckBox1.Size = new System.Drawing.Size(73, 19);
+            this.darknescheckBox1.TabIndex = 51;
+            this.darknescheckBox1.Text = "Darkness";
+            this.darknescheckBox1.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // silencecheckBox2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox2.Location = new System.Drawing.Point(98, 277);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(63, 19);
-            this.checkBox2.TabIndex = 52;
-            this.checkBox2.Text = "Silence";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.silencecheckBox2.AutoSize = true;
+            this.silencecheckBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.silencecheckBox2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.silencecheckBox2.Location = new System.Drawing.Point(98, 277);
+            this.silencecheckBox2.Name = "silencecheckBox2";
+            this.silencecheckBox2.Size = new System.Drawing.Size(63, 19);
+            this.silencecheckBox2.TabIndex = 52;
+            this.silencecheckBox2.Text = "Silence";
+            this.silencecheckBox2.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // stopcheckBox3
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox3.Location = new System.Drawing.Point(247, 177);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(50, 19);
-            this.checkBox3.TabIndex = 57;
-            this.checkBox3.Text = "Stop";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.stopcheckBox3.AutoSize = true;
+            this.stopcheckBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stopcheckBox3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.stopcheckBox3.Location = new System.Drawing.Point(247, 177);
+            this.stopcheckBox3.Name = "stopcheckBox3";
+            this.stopcheckBox3.Size = new System.Drawing.Size(50, 19);
+            this.stopcheckBox3.TabIndex = 57;
+            this.stopcheckBox3.Text = "Stop";
+            this.stopcheckBox3.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // confusioncheckBox4
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox4.Location = new System.Drawing.Point(166, 227);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(81, 19);
-            this.checkBox4.TabIndex = 58;
-            this.checkBox4.Text = "Confusion";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.confusioncheckBox4.AutoSize = true;
+            this.confusioncheckBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confusioncheckBox4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.confusioncheckBox4.Location = new System.Drawing.Point(166, 227);
+            this.confusioncheckBox4.Name = "confusioncheckBox4";
+            this.confusioncheckBox4.Size = new System.Drawing.Size(81, 19);
+            this.confusioncheckBox4.TabIndex = 58;
+            this.confusioncheckBox4.Text = "Confusion";
+            this.confusioncheckBox4.UseVisualStyleBackColor = true;
             // 
-            // checkBox28
+            // petrifycheckBox28
             // 
-            this.checkBox28.AutoSize = true;
-            this.checkBox28.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox28.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox28.Location = new System.Drawing.Point(381, 252);
-            this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(60, 19);
-            this.checkBox28.TabIndex = 50;
-            this.checkBox28.Text = "Petrify";
-            this.checkBox28.UseVisualStyleBackColor = true;
+            this.petrifycheckBox28.AutoSize = true;
+            this.petrifycheckBox28.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.petrifycheckBox28.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.petrifycheckBox28.Location = new System.Drawing.Point(381, 252);
+            this.petrifycheckBox28.Name = "petrifycheckBox28";
+            this.petrifycheckBox28.Size = new System.Drawing.Size(60, 19);
+            this.petrifycheckBox28.TabIndex = 50;
+            this.petrifycheckBox28.Text = "Petrify";
+            this.petrifycheckBox28.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // petrifyingcheckBox5
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox5.Location = new System.Drawing.Point(16, 202);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(77, 19);
-            this.checkBox5.TabIndex = 50;
-            this.checkBox5.Text = "Petrifying";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.petrifyingcheckBox5.AutoSize = true;
+            this.petrifyingcheckBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.petrifyingcheckBox5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.petrifyingcheckBox5.Location = new System.Drawing.Point(16, 202);
+            this.petrifyingcheckBox5.Name = "petrifyingcheckBox5";
+            this.petrifyingcheckBox5.Size = new System.Drawing.Size(77, 19);
+            this.petrifyingcheckBox5.TabIndex = 50;
+            this.petrifyingcheckBox5.Text = "Petrifying";
+            this.petrifyingcheckBox5.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // slowcheckBox6
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox6.Location = new System.Drawing.Point(166, 177);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(51, 19);
-            this.checkBox6.TabIndex = 56;
-            this.checkBox6.Text = "Slow";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.slowcheckBox6.AutoSize = true;
+            this.slowcheckBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.slowcheckBox6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.slowcheckBox6.Location = new System.Drawing.Point(166, 177);
+            this.slowcheckBox6.Name = "slowcheckBox6";
+            this.slowcheckBox6.Size = new System.Drawing.Size(51, 19);
+            this.slowcheckBox6.TabIndex = 56;
+            this.slowcheckBox6.Text = "Slow";
+            this.slowcheckBox6.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // berserkcheckBox7
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox7.Location = new System.Drawing.Point(166, 277);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(64, 19);
-            this.checkBox7.TabIndex = 53;
-            this.checkBox7.Text = "Berserk";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.berserkcheckBox7.AutoSize = true;
+            this.berserkcheckBox7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.berserkcheckBox7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.berserkcheckBox7.Location = new System.Drawing.Point(166, 277);
+            this.berserkcheckBox7.Name = "berserkcheckBox7";
+            this.berserkcheckBox7.Size = new System.Drawing.Size(64, 19);
+            this.berserkcheckBox7.TabIndex = 53;
+            this.berserkcheckBox7.Text = "Berserk";
+            this.berserkcheckBox7.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // sleepcheckBox8
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox8.Location = new System.Drawing.Point(16, 177);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(54, 19);
-            this.checkBox8.TabIndex = 55;
-            this.checkBox8.Text = "Sleep";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.sleepcheckBox8.AutoSize = true;
+            this.sleepcheckBox8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sleepcheckBox8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.sleepcheckBox8.Location = new System.Drawing.Point(16, 177);
+            this.sleepcheckBox8.Name = "sleepcheckBox8";
+            this.sleepcheckBox8.Size = new System.Drawing.Size(54, 19);
+            this.sleepcheckBox8.TabIndex = 55;
+            this.sleepcheckBox8.Text = "Sleep";
+            this.sleepcheckBox8.UseVisualStyleBackColor = true;
             // 
-            // checkBox18
+            // invincicheckBox18
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox18.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox18.Location = new System.Drawing.Point(16, 227);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(77, 19);
-            this.checkBox18.TabIndex = 59;
-            this.checkBox18.Text = "Invincible";
-            this.checkBox18.UseVisualStyleBackColor = true;
+            this.invincicheckBox18.AutoSize = true;
+            this.invincicheckBox18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invincicheckBox18.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.invincicheckBox18.Location = new System.Drawing.Point(16, 227);
+            this.invincicheckBox18.Name = "invincicheckBox18";
+            this.invincicheckBox18.Size = new System.Drawing.Size(77, 19);
+            this.invincicheckBox18.TabIndex = 59;
+            this.invincicheckBox18.Text = "Invincible";
+            this.invincicheckBox18.UseVisualStyleBackColor = true;
             // 
-            // checkBox17
+            // cursecheckBox17
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox17.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox17.Location = new System.Drawing.Point(317, 202);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(56, 19);
-            this.checkBox17.TabIndex = 59;
-            this.checkBox17.Text = "Curse";
-            this.checkBox17.UseVisualStyleBackColor = true;
+            this.cursecheckBox17.AutoSize = true;
+            this.cursecheckBox17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cursecheckBox17.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cursecheckBox17.Location = new System.Drawing.Point(317, 202);
+            this.cursecheckBox17.Name = "cursecheckBox17";
+            this.cursecheckBox17.Size = new System.Drawing.Size(56, 19);
+            this.cursecheckBox17.TabIndex = 59;
+            this.cursecheckBox17.Text = "Curse";
+            this.cursecheckBox17.UseVisualStyleBackColor = true;
             // 
-            // checkBox16
+            // doomcheckBox16
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox16.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox16.Location = new System.Drawing.Point(381, 202);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(59, 19);
-            this.checkBox16.TabIndex = 59;
-            this.checkBox16.Text = "Doom";
-            this.checkBox16.UseVisualStyleBackColor = true;
+            this.doomcheckBox16.AutoSize = true;
+            this.doomcheckBox16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doomcheckBox16.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.doomcheckBox16.Location = new System.Drawing.Point(381, 202);
+            this.doomcheckBox16.Name = "doomcheckBox16";
+            this.doomcheckBox16.Size = new System.Drawing.Size(59, 19);
+            this.doomcheckBox16.TabIndex = 59;
+            this.doomcheckBox16.Text = "Doom";
+            this.doomcheckBox16.UseVisualStyleBackColor = true;
             // 
-            // checkBox15
+            // floatcheckBox15
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox15.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox15.Location = new System.Drawing.Point(98, 227);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(52, 19);
-            this.checkBox15.TabIndex = 59;
-            this.checkBox15.Text = "Float";
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.floatcheckBox15.AutoSize = true;
+            this.floatcheckBox15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.floatcheckBox15.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.floatcheckBox15.Location = new System.Drawing.Point(98, 227);
+            this.floatcheckBox15.Name = "floatcheckBox15";
+            this.floatcheckBox15.Size = new System.Drawing.Size(52, 19);
+            this.floatcheckBox15.TabIndex = 59;
+            this.floatcheckBox15.Text = "Float";
+            this.floatcheckBox15.UseVisualStyleBackColor = true;
             // 
-            // checkBox14
+            // auracheckBox14
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox14.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox14.Location = new System.Drawing.Point(247, 202);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(51, 19);
-            this.checkBox14.TabIndex = 59;
-            this.checkBox14.Text = "Aura";
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.auracheckBox14.AutoSize = true;
+            this.auracheckBox14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.auracheckBox14.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.auracheckBox14.Location = new System.Drawing.Point(247, 202);
+            this.auracheckBox14.Name = "auracheckBox14";
+            this.auracheckBox14.Size = new System.Drawing.Size(51, 19);
+            this.auracheckBox14.TabIndex = 59;
+            this.auracheckBox14.Text = "Aura";
+            this.auracheckBox14.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
+            // draincheckBox13
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox13.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox13.Location = new System.Drawing.Point(247, 227);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(54, 19);
-            this.checkBox13.TabIndex = 59;
-            this.checkBox13.Text = "Drain";
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.draincheckBox13.AutoSize = true;
+            this.draincheckBox13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.draincheckBox13.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.draincheckBox13.Location = new System.Drawing.Point(247, 227);
+            this.draincheckBox13.Name = "draincheckBox13";
+            this.draincheckBox13.Size = new System.Drawing.Size(54, 19);
+            this.draincheckBox13.TabIndex = 59;
+            this.draincheckBox13.Text = "Drain";
+            this.draincheckBox13.UseVisualStyleBackColor = true;
             // 
-            // checkBox26
+            // vit0checkBox26
             // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox26.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox26.Location = new System.Drawing.Point(166, 252);
-            this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(46, 19);
-            this.checkBox26.TabIndex = 59;
-            this.checkBox26.Text = "Vit0";
-            this.checkBox26.UseVisualStyleBackColor = true;
+            this.vit0checkBox26.AutoSize = true;
+            this.vit0checkBox26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vit0checkBox26.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.vit0checkBox26.Location = new System.Drawing.Point(166, 252);
+            this.vit0checkBox26.Name = "vit0checkBox26";
+            this.vit0checkBox26.Size = new System.Drawing.Size(46, 19);
+            this.vit0checkBox26.TabIndex = 59;
+            this.vit0checkBox26.Text = "Vit0";
+            this.vit0checkBox26.UseVisualStyleBackColor = true;
             // 
-            // checkBox25
+            // defendcheckBox25
             // 
-            this.checkBox25.AutoSize = true;
-            this.checkBox25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox25.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox25.Location = new System.Drawing.Point(98, 252);
-            this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(64, 19);
-            this.checkBox25.TabIndex = 59;
-            this.checkBox25.Text = "Defend";
-            this.checkBox25.UseVisualStyleBackColor = true;
+            this.defendcheckBox25.AutoSize = true;
+            this.defendcheckBox25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.defendcheckBox25.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.defendcheckBox25.Location = new System.Drawing.Point(98, 252);
+            this.defendcheckBox25.Name = "defendcheckBox25";
+            this.defendcheckBox25.Size = new System.Drawing.Size(64, 19);
+            this.defendcheckBox25.TabIndex = 59;
+            this.defendcheckBox25.Text = "Defend";
+            this.defendcheckBox25.UseVisualStyleBackColor = true;
             // 
-            // checkBox24
+            // triplcheckBox24
             // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox24.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox24.Location = new System.Drawing.Point(16, 252);
-            this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(55, 19);
-            this.checkBox24.TabIndex = 59;
-            this.checkBox24.Text = "Triple";
-            this.checkBox24.UseVisualStyleBackColor = true;
+            this.triplcheckBox24.AutoSize = true;
+            this.triplcheckBox24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.triplcheckBox24.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.triplcheckBox24.Location = new System.Drawing.Point(16, 252);
+            this.triplcheckBox24.Name = "triplcheckBox24";
+            this.triplcheckBox24.Size = new System.Drawing.Size(56, 19);
+            this.triplcheckBox24.TabIndex = 59;
+            this.triplcheckBox24.Text = "Triple";
+            this.triplcheckBox24.UseVisualStyleBackColor = true;
             // 
-            // checkBox23
+            // doublecheckBox23
             // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox23.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox23.Location = new System.Drawing.Point(381, 227);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(64, 19);
-            this.checkBox23.TabIndex = 59;
-            this.checkBox23.Text = "Double";
-            this.checkBox23.UseVisualStyleBackColor = true;
+            this.doublecheckBox23.AutoSize = true;
+            this.doublecheckBox23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doublecheckBox23.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.doublecheckBox23.Location = new System.Drawing.Point(381, 227);
+            this.doublecheckBox23.Name = "doublecheckBox23";
+            this.doublecheckBox23.Size = new System.Drawing.Size(64, 19);
+            this.doublecheckBox23.TabIndex = 59;
+            this.doublecheckBox23.Text = "Double";
+            this.doublecheckBox23.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // ejectcheckBox9
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox9.Location = new System.Drawing.Point(317, 227);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(51, 19);
-            this.checkBox9.TabIndex = 59;
-            this.checkBox9.Text = "Eject";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.ejectcheckBox9.AutoSize = true;
+            this.ejectcheckBox9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ejectcheckBox9.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ejectcheckBox9.Location = new System.Drawing.Point(317, 227);
+            this.ejectcheckBox9.Name = "ejectcheckBox9";
+            this.ejectcheckBox9.Size = new System.Drawing.Size(51, 19);
+            this.ejectcheckBox9.TabIndex = 59;
+            this.ejectcheckBox9.Text = "Eject";
+            this.ejectcheckBox9.UseVisualStyleBackColor = true;
             // 
-            // checkBox27
+            // poisoncheckBox27
             // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox27.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox27.Location = new System.Drawing.Point(317, 252);
-            this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(62, 19);
-            this.checkBox27.TabIndex = 49;
-            this.checkBox27.Text = "Poison";
-            this.checkBox27.UseVisualStyleBackColor = true;
+            this.poisoncheckBox27.AutoSize = true;
+            this.poisoncheckBox27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poisoncheckBox27.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.poisoncheckBox27.Location = new System.Drawing.Point(317, 252);
+            this.poisoncheckBox27.Name = "poisoncheckBox27";
+            this.poisoncheckBox27.Size = new System.Drawing.Size(62, 19);
+            this.poisoncheckBox27.TabIndex = 49;
+            this.poisoncheckBox27.Text = "Poison";
+            this.poisoncheckBox27.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // deathcheckBox10
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox10.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox10.Location = new System.Drawing.Point(247, 252);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(57, 19);
-            this.checkBox10.TabIndex = 49;
-            this.checkBox10.Text = "Death";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.deathcheckBox10.AutoSize = true;
+            this.deathcheckBox10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deathcheckBox10.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.deathcheckBox10.Location = new System.Drawing.Point(247, 252);
+            this.deathcheckBox10.Name = "deathcheckBox10";
+            this.deathcheckBox10.Size = new System.Drawing.Size(57, 19);
+            this.deathcheckBox10.TabIndex = 49;
+            this.deathcheckBox10.Text = "Death";
+            this.deathcheckBox10.UseVisualStyleBackColor = true;
             // 
-            // checkBox22
+            // protectcheckBox22
             // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox22.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox22.Location = new System.Drawing.Point(381, 177);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(64, 19);
-            this.checkBox22.TabIndex = 48;
-            this.checkBox22.Text = "Protect";
-            this.checkBox22.UseVisualStyleBackColor = true;
+            this.protectcheckBox22.AutoSize = true;
+            this.protectcheckBox22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.protectcheckBox22.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.protectcheckBox22.Location = new System.Drawing.Point(381, 177);
+            this.protectcheckBox22.Name = "protectcheckBox22";
+            this.protectcheckBox22.Size = new System.Drawing.Size(64, 19);
+            this.protectcheckBox22.TabIndex = 48;
+            this.protectcheckBox22.Text = "Protect";
+            this.protectcheckBox22.UseVisualStyleBackColor = true;
             // 
-            // checkBox21
+            // hastecheckBox21
             // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox21.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox21.Location = new System.Drawing.Point(98, 177);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(56, 19);
-            this.checkBox21.TabIndex = 48;
-            this.checkBox21.Text = "Haste";
-            this.checkBox21.UseVisualStyleBackColor = true;
+            this.hastecheckBox21.AutoSize = true;
+            this.hastecheckBox21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hastecheckBox21.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.hastecheckBox21.Location = new System.Drawing.Point(98, 177);
+            this.hastecheckBox21.Name = "hastecheckBox21";
+            this.hastecheckBox21.Size = new System.Drawing.Size(56, 19);
+            this.hastecheckBox21.TabIndex = 48;
+            this.hastecheckBox21.Text = "Haste";
+            this.hastecheckBox21.UseVisualStyleBackColor = true;
             // 
-            // checkBox20
+            // regencheckBox20
             // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox20.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox20.Location = new System.Drawing.Point(317, 177);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(59, 19);
-            this.checkBox20.TabIndex = 48;
-            this.checkBox20.Text = "Regen";
-            this.checkBox20.UseVisualStyleBackColor = true;
+            this.regencheckBox20.AutoSize = true;
+            this.regencheckBox20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regencheckBox20.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.regencheckBox20.Location = new System.Drawing.Point(317, 177);
+            this.regencheckBox20.Name = "regencheckBox20";
+            this.regencheckBox20.Size = new System.Drawing.Size(59, 19);
+            this.regencheckBox20.TabIndex = 48;
+            this.regencheckBox20.Text = "Regen";
+            this.regencheckBox20.UseVisualStyleBackColor = true;
             // 
-            // checkBox19
+            // shellcheckBox19
             // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox19.Location = new System.Drawing.Point(98, 202);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(51, 19);
-            this.checkBox19.TabIndex = 48;
-            this.checkBox19.Text = "Shell";
-            this.checkBox19.UseVisualStyleBackColor = true;
+            this.shellcheckBox19.AutoSize = true;
+            this.shellcheckBox19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shellcheckBox19.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.shellcheckBox19.Location = new System.Drawing.Point(98, 202);
+            this.shellcheckBox19.Name = "shellcheckBox19";
+            this.shellcheckBox19.Size = new System.Drawing.Size(51, 19);
+            this.shellcheckBox19.TabIndex = 48;
+            this.shellcheckBox19.Text = "Shell";
+            this.shellcheckBox19.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // reflectcheckBox11
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox11.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox11.Location = new System.Drawing.Point(166, 202);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(62, 19);
-            this.checkBox11.TabIndex = 48;
-            this.checkBox11.Text = "Reflect";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.reflectcheckBox11.AutoSize = true;
+            this.reflectcheckBox11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reflectcheckBox11.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.reflectcheckBox11.Location = new System.Drawing.Point(166, 202);
+            this.reflectcheckBox11.Name = "reflectcheckBox11";
+            this.reflectcheckBox11.Size = new System.Drawing.Size(62, 19);
+            this.reflectcheckBox11.TabIndex = 48;
+            this.reflectcheckBox11.Text = "Reflect";
+            this.reflectcheckBox11.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // zombiecheckBox12
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox12.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox12.Location = new System.Drawing.Point(247, 277);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(67, 19);
-            this.checkBox12.TabIndex = 54;
-            this.checkBox12.Text = "Zombie";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.zombiecheckBox12.AutoSize = true;
+            this.zombiecheckBox12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zombiecheckBox12.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.zombiecheckBox12.Location = new System.Drawing.Point(247, 277);
+            this.zombiecheckBox12.Name = "zombiecheckBox12";
+            this.zombiecheckBox12.Size = new System.Drawing.Size(67, 19);
+            this.zombiecheckBox12.TabIndex = 54;
+            this.zombiecheckBox12.Text = "Zombie";
+            this.zombiecheckBox12.UseVisualStyleBackColor = true;
             // 
             // magicElementComboBox
             // 
@@ -2183,7 +2183,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label9.Location = new System.Drawing.Point(172, 78);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 17);
+            this.label9.Size = new System.Drawing.Size(32, 17);
             this.label9.TabIndex = 0;
             this.label9.Text = "EVA";
             this.toolTip1.SetToolTip(this.label9, "Character Junction EVA");
@@ -2593,7 +2593,7 @@
             this.ability21Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability21Label.Location = new System.Drawing.Point(337, 370);
             this.ability21Label.Name = "ability21Label";
-            this.ability21Label.Size = new System.Drawing.Size(56, 15);
+            this.ability21Label.Size = new System.Drawing.Size(58, 15);
             this.ability21Label.TabIndex = 0;
             this.ability21Label.Text = "Ability 21";
             this.toolTip1.SetToolTip(this.ability21Label, "The ability the GF can learn");
@@ -2857,7 +2857,7 @@
             this.ability12Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability12Label.Location = new System.Drawing.Point(337, 197);
             this.ability12Label.Name = "ability12Label";
-            this.ability12Label.Size = new System.Drawing.Size(56, 15);
+            this.ability12Label.Size = new System.Drawing.Size(58, 15);
             this.ability12Label.TabIndex = 0;
             this.ability12Label.Text = "Ability 12";
             this.toolTip1.SetToolTip(this.ability12Label, "The ability the GF can learn");
@@ -3121,7 +3121,7 @@
             this.ability15Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability15Label.Location = new System.Drawing.Point(337, 255);
             this.ability15Label.Name = "ability15Label";
-            this.ability15Label.Size = new System.Drawing.Size(56, 15);
+            this.ability15Label.Size = new System.Drawing.Size(58, 15);
             this.ability15Label.TabIndex = 0;
             this.ability15Label.Text = "Ability 15";
             this.toolTip1.SetToolTip(this.ability15Label, "The ability the GF can learn");
@@ -3523,7 +3523,7 @@
             this.ability18Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability18Label.Location = new System.Drawing.Point(337, 313);
             this.ability18Label.Name = "ability18Label";
-            this.ability18Label.Size = new System.Drawing.Size(56, 15);
+            this.ability18Label.Size = new System.Drawing.Size(58, 15);
             this.ability18Label.TabIndex = 0;
             this.ability18Label.Text = "Ability 18";
             this.toolTip1.SetToolTip(this.ability18Label, "The ability the GF can learn");
@@ -3937,7 +3937,7 @@
             this.ability11Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability11Label.Location = new System.Drawing.Point(197, 197);
             this.ability11Label.Name = "ability11Label";
-            this.ability11Label.Size = new System.Drawing.Size(54, 15);
+            this.ability11Label.Size = new System.Drawing.Size(58, 15);
             this.ability11Label.TabIndex = 0;
             this.ability11Label.Text = "Ability 11";
             this.toolTip1.SetToolTip(this.ability11Label, "The ability the GF can learn");
@@ -4087,7 +4087,7 @@
             this.ability14Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability14Label.Location = new System.Drawing.Point(197, 255);
             this.ability14Label.Name = "ability14Label";
-            this.ability14Label.Size = new System.Drawing.Size(56, 15);
+            this.ability14Label.Size = new System.Drawing.Size(58, 15);
             this.ability14Label.TabIndex = 0;
             this.ability14Label.Text = "Ability 14";
             this.toolTip1.SetToolTip(this.ability14Label, "The ability the GF can learn");
@@ -4489,7 +4489,7 @@
             this.ability17Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability17Label.Location = new System.Drawing.Point(197, 313);
             this.ability17Label.Name = "ability17Label";
-            this.ability17Label.Size = new System.Drawing.Size(55, 15);
+            this.ability17Label.Size = new System.Drawing.Size(58, 15);
             this.ability17Label.TabIndex = 0;
             this.ability17Label.Text = "Ability 17";
             this.toolTip1.SetToolTip(this.ability17Label, "The ability the GF can learn");
@@ -4765,7 +4765,7 @@
             this.ability19Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability19Label.Location = new System.Drawing.Point(59, 370);
             this.ability19Label.Name = "ability19Label";
-            this.ability19Label.Size = new System.Drawing.Size(56, 15);
+            this.ability19Label.Size = new System.Drawing.Size(58, 15);
             this.ability19Label.TabIndex = 0;
             this.ability19Label.Text = "Ability 19";
             this.toolTip1.SetToolTip(this.ability19Label, "The ability the GF can learn");
@@ -4903,7 +4903,7 @@
             this.ability10Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability10Label.Location = new System.Drawing.Point(59, 197);
             this.ability10Label.Name = "ability10Label";
-            this.ability10Label.Size = new System.Drawing.Size(56, 15);
+            this.ability10Label.Size = new System.Drawing.Size(58, 15);
             this.ability10Label.TabIndex = 0;
             this.ability10Label.Text = "Ability 10";
             this.toolTip1.SetToolTip(this.ability10Label, "The ability the GF can learn");
@@ -5053,7 +5053,7 @@
             this.ability13Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability13Label.Location = new System.Drawing.Point(59, 255);
             this.ability13Label.Name = "ability13Label";
-            this.ability13Label.Size = new System.Drawing.Size(56, 15);
+            this.ability13Label.Size = new System.Drawing.Size(58, 15);
             this.ability13Label.TabIndex = 0;
             this.ability13Label.Text = "Ability 13";
             this.toolTip1.SetToolTip(this.ability13Label, "The ability the GF can learn");
@@ -5191,7 +5191,7 @@
             this.ability16Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability16Label.Location = new System.Drawing.Point(59, 313);
             this.ability16Label.Name = "ability16Label";
-            this.ability16Label.Size = new System.Drawing.Size(56, 15);
+            this.ability16Label.Size = new System.Drawing.Size(58, 15);
             this.ability16Label.TabIndex = 0;
             this.ability16Label.Text = "Ability 16";
             this.toolTip1.SetToolTip(this.ability16Label, "The ability the GF can learn");
@@ -5215,7 +5215,7 @@
             this.ability7Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability7Label.Location = new System.Drawing.Point(61, 140);
             this.ability7Label.Name = "ability7Label";
-            this.ability7Label.Size = new System.Drawing.Size(50, 15);
+            this.ability7Label.Size = new System.Drawing.Size(51, 15);
             this.ability7Label.TabIndex = 0;
             this.ability7Label.Text = "Ability 7";
             this.toolTip1.SetToolTip(this.ability7Label, "The ability the GF can learn");
@@ -5353,7 +5353,7 @@
             this.ability1Label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ability1Label.Location = new System.Drawing.Point(61, 25);
             this.ability1Label.Name = "ability1Label";
-            this.ability1Label.Size = new System.Drawing.Size(49, 15);
+            this.ability1Label.Size = new System.Drawing.Size(51, 15);
             this.ability1Label.TabIndex = 0;
             this.ability1Label.Text = "Ability 1";
             this.toolTip1.SetToolTip(this.ability1Label, "The ability the GF can learn");
@@ -5844,7 +5844,7 @@
             this.label.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label.Location = new System.Drawing.Point(196, 17);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(56, 15);
+            this.label.Size = new System.Drawing.Size(55, 15);
             this.label.TabIndex = 0;
             this.label.Text = "Magic ID";
             this.toolTip1.SetToolTip(this.label, "Decides what animation to play");
@@ -5891,7 +5891,7 @@
             this.GFAttacksIDLabel.ForeColor = System.Drawing.SystemColors.WindowText;
             this.GFAttacksIDLabel.Location = new System.Drawing.Point(196, 26);
             this.GFAttacksIDLabel.Name = "GFAttacksIDLabel";
-            this.GFAttacksIDLabel.Size = new System.Drawing.Size(56, 15);
+            this.GFAttacksIDLabel.Size = new System.Drawing.Size(55, 15);
             this.GFAttacksIDLabel.TabIndex = 0;
             this.GFAttacksIDLabel.Text = "Magic ID";
             this.toolTip1.SetToolTip(this.GFAttacksIDLabel, "Decides what animation to play");
@@ -6420,56 +6420,6 @@
             this.GFAttacksPowerLabel.Text = "Attack Power";
             this.toolTip1.SetToolTip(this.GFAttacksPowerLabel, "Used in damage calculation");
             // 
-            // toolbarStrip
-            // 
-            this.toolbarStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openToolStripButton,
-            this.saveToolStripButton,
-            this.saveAsToolStripButton,
-            this.toolStripSeparator2});
-            this.toolbarStrip.Location = new System.Drawing.Point(0, 24);
-            this.toolbarStrip.Name = "toolbarStrip";
-            this.toolbarStrip.Size = new System.Drawing.Size(604, 25);
-            this.toolbarStrip.TabIndex = 1;
-            this.toolbarStrip.Text = "toolbarStrip";
-            // 
-            // openToolStripButton
-            // 
-            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
-            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.openToolStripButton.Text = "&Open";
-            this.openToolStripButton.ToolTipText = "Open...";
-            this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
-            // 
-            // saveToolStripButton
-            // 
-            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
-            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.saveToolStripButton.Text = "&Save";
-            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
-            // 
-            // saveAsToolStripButton
-            // 
-            this.saveAsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveAsToolStripButton.Image = global::Doomtrain.Properties.Resources.saveas;
-            this.saveAsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveAsToolStripButton.Name = "saveAsToolStripButton";
-            this.saveAsToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.saveAsToolStripButton.Text = "saveAs";
-            this.saveAsToolStripButton.ToolTipText = "Save As...";
-            this.saveAsToolStripButton.Click += new System.EventHandler(this.saveAsToolStripButton_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
             // listBoxGFAttacks
             // 
             this.listBoxGFAttacks.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -6528,6 +6478,56 @@
             this.listBoxGF.TabIndex = 1;
             this.listBoxGF.TabStop = false;
             this.listBoxGF.SelectedIndexChanged += new System.EventHandler(this.listBoxGF_SelectedIndexChanged);
+            // 
+            // toolbarStrip
+            // 
+            this.toolbarStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openToolStripButton,
+            this.saveToolStripButton,
+            this.saveAsToolStripButton,
+            this.toolStripSeparator2});
+            this.toolbarStrip.Location = new System.Drawing.Point(0, 24);
+            this.toolbarStrip.Name = "toolbarStrip";
+            this.toolbarStrip.Size = new System.Drawing.Size(604, 25);
+            this.toolbarStrip.TabIndex = 1;
+            this.toolbarStrip.Text = "toolbarStrip";
+            // 
+            // openToolStripButton
+            // 
+            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
+            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripButton.Name = "openToolStripButton";
+            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Text = "&Open";
+            this.openToolStripButton.ToolTipText = "Open...";
+            this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
+            // 
+            // saveToolStripButton
+            // 
+            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
+            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripButton.Name = "saveToolStripButton";
+            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Text = "&Save";
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
+            // 
+            // saveAsToolStripButton
+            // 
+            this.saveAsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveAsToolStripButton.Image = global::Doomtrain.Properties.Resources.saveas;
+            this.saveAsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveAsToolStripButton.Name = "saveAsToolStripButton";
+            this.saveAsToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveAsToolStripButton.Text = "saveAs";
+            this.saveAsToolStripButton.ToolTipText = "Save As...";
+            this.saveAsToolStripButton.Click += new System.EventHandler(this.saveAsToolStripButton_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // mainForm
             // 
@@ -6684,34 +6684,34 @@
         private System.Windows.Forms.TabPage tabPageMagicGeneral;
         private System.Windows.Forms.GroupBox groupBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox28;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox26;
-        private System.Windows.Forms.CheckBox checkBox25;
-        private System.Windows.Forms.CheckBox checkBox24;
-        private System.Windows.Forms.CheckBox checkBox23;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox27;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox22;
-        private System.Windows.Forms.CheckBox checkBox21;
-        private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.CheckBox checkBox19;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.CheckBox darknescheckBox1;
+        private System.Windows.Forms.CheckBox silencecheckBox2;
+        private System.Windows.Forms.CheckBox stopcheckBox3;
+        private System.Windows.Forms.CheckBox confusioncheckBox4;
+        private System.Windows.Forms.CheckBox petrifycheckBox28;
+        private System.Windows.Forms.CheckBox petrifyingcheckBox5;
+        private System.Windows.Forms.CheckBox slowcheckBox6;
+        private System.Windows.Forms.CheckBox berserkcheckBox7;
+        private System.Windows.Forms.CheckBox sleepcheckBox8;
+        private System.Windows.Forms.CheckBox invincicheckBox18;
+        private System.Windows.Forms.CheckBox cursecheckBox17;
+        private System.Windows.Forms.CheckBox doomcheckBox16;
+        private System.Windows.Forms.CheckBox floatcheckBox15;
+        private System.Windows.Forms.CheckBox auracheckBox14;
+        private System.Windows.Forms.CheckBox draincheckBox13;
+        private System.Windows.Forms.CheckBox vit0checkBox26;
+        private System.Windows.Forms.CheckBox defendcheckBox25;
+        private System.Windows.Forms.CheckBox triplcheckBox24;
+        private System.Windows.Forms.CheckBox doublecheckBox23;
+        private System.Windows.Forms.CheckBox ejectcheckBox9;
+        private System.Windows.Forms.CheckBox poisoncheckBox27;
+        private System.Windows.Forms.CheckBox deathcheckBox10;
+        private System.Windows.Forms.CheckBox protectcheckBox22;
+        private System.Windows.Forms.CheckBox hastecheckBox21;
+        private System.Windows.Forms.CheckBox regencheckBox20;
+        private System.Windows.Forms.CheckBox shellcheckBox19;
+        private System.Windows.Forms.CheckBox reflectcheckBox11;
+        private System.Windows.Forms.CheckBox zombiecheckBox12;
         private System.Windows.Forms.ComboBox magicElementComboBox;
         private System.Windows.Forms.NumericUpDown hitCountUpDown;
         private System.Windows.Forms.NumericUpDown drawResistUpDown;

@@ -179,7 +179,7 @@ namespace Doomtrain
         }
 
 
-        public static void UpdateVariable_Magic(int index, object variable)
+        public static void UpdateVariable_Magic(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -207,7 +207,7 @@ namespace Doomtrain
                     }
                 case 6:
                     {
-//to do again           Kernel[OffsetToMagicSelected + 16] = Convert.ToByte(variable); //Status
+                         StatusUpdator(arg0, variable);
                         return;
                     }
 
@@ -327,6 +327,28 @@ namespace Doomtrain
                     return;
             }
 
+        }
+
+        public static void StatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToMagicSelected + 16] = (byte) (Kernel[OffsetToMagicSelected+16] ^ Convert.ToByte(variable)); //PERFORM OR logic for this
+                    return;
+                case 1:
+                    Kernel[OffsetToMagicSelected + 17] = (byte)(Kernel[OffsetToMagicSelected + 17] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToMagicSelected + 18] = (byte)(Kernel[OffsetToMagicSelected + 18] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToMagicSelected + 19] = (byte)(Kernel[OffsetToMagicSelected + 19] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToMagicSelected + 20] = (byte)(Kernel[OffsetToMagicSelected + 20] ^ Convert.ToByte(variable));
+                    return;
+            }
         }
 
         public static void UpdateVariable_GF(int index, object variable, byte AbilityIndex = 0)
@@ -471,7 +493,6 @@ namespace Doomtrain
             selectedMagicOffset += 2;
             GetSelectedMagicData.Unknown6 = new byte[18];
             Array.Copy(Kernel, selectedMagicOffset, GetSelectedMagicData.Unknown6, 0, 18);
-
         }
 
         public static void ReadGF(int GFID_List)

@@ -37,7 +37,6 @@ namespace Doomtrain
             spellPowerUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(3, spellPowerUpDown.Value);
             drawResistUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(4, drawResistUpDown.Value);
             magicElementComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(5, Magic_GetElement(magicElementComboBox.SelectedIndex)); 
-//to do again   magicStatusComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, magicStatusComboBox.SelectedIndex);
             HPJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(7, HPJUpDown.Value);
             STRJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(8, STRJUpDown.Value);
             VITJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(9, VITJUpDown.Value);
@@ -93,6 +92,35 @@ namespace Doomtrain
             drainDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x1000);
             stATKtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(23, stATKtrackBar.Value);
             stDEFtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(24, stATKtrackBar.Value);
+            sleepcheckBox8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x01, 0);
+            hastecheckBox21.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x02, 0);
+            slowcheckBox6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x04, 0);
+            stopcheckBox3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x08, 0);
+            regencheckBox20.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x10, 0);
+            protectcheckBox22.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x20, 0);
+            shellcheckBox19.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x40, 0);
+            reflectcheckBox11.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x80, 0);
+            auracheckBox14.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x01, 1);
+            cursecheckBox17.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x02, 1);
+            doomcheckBox16.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x04, 1);
+            invincicheckBox18.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x08, 1);
+            petrifyingcheckBox5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x10, 1);
+            floatcheckBox15.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x20, 1);
+            confusioncheckBox4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x40, 1);
+            draincheckBox13.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x80, 1);
+            ejectcheckBox9.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x01, 2);
+            doublecheckBox23.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x02, 2);
+            triplcheckBox24.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x04, 2);
+            defendcheckBox25.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x08, 2);
+            vit0checkBox26.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x01, 3);
+            deathcheckBox10.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x01, 4);
+            poisoncheckBox27.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x02, 4);
+            petrifycheckBox28.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x04, 4);
+            darknescheckBox1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x08, 4);
+            silencecheckBox2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x10, 4);
+            berserkcheckBox7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x20, 4);
+            zombiecheckBox12.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x40, 4);
+
 
 
             //GF
@@ -349,6 +377,56 @@ namespace Doomtrain
             return elem;
         }
 
+        private void MagicStatusWorker()
+        {
+//            1 byte -status
+//0x01 - sleep
+//0x02 - haste
+//0x04 - slow
+//0x08 - stop
+//0x10 - regen
+//0x20 - protect
+//0x40 - shell
+//0x80 - reflect
+//1 byte -status
+//0x01 - aura
+//0x02 - curse
+//0x04 - doom
+//0x08 - invincible
+//0x10 - petrifying
+//0x20 - float
+//0x40 - confuse
+//0x80 - drain
+//1 byte -status
+//0x01 - eject
+//0x02 - double
+//0x04 - triple
+//0x08 - defend
+//0x10 - ???
+//0x20 - ???
+//0x40 - ???
+//0x80 - ???
+//1 byte - status
+//0x01 - vit0
+//0x02 - ???
+//0x04 - ???
+//0x08 - ???
+//0x10 - ???
+//0x20 - ???
+//0x40 - ???
+//0x80 - ???
+//1 byte - status
+//0x01 - death
+//0x02 - poison
+//0x04 - petrify
+//0x08 - blind
+//0x10 - silence
+//0x20 - berserk
+//0x40 - zombie
+//0x80 - ???
+
+        }
+
         //MAGIC
         private void listBoxMagic_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -363,7 +441,7 @@ namespace Doomtrain
                 drawResistUpDown.Value = KernelWorker.GetSelectedMagicData.DrawResist;
                 hitCountUpDown.Value = KernelWorker.GetSelectedMagicData.HitCount;
                 magicElementComboBox.SelectedIndex = Magic_GetElement();
-                //to do again   magicStatusComboBox.SelectedIndex = KernelWorker.GetSelectedMagicData.Status1;
+                MagicStatusWorker();
                 HPJUpDown.Value = KernelWorker.GetSelectedMagicData.HP;
                 VITJUpDown.Value = KernelWorker.GetSelectedMagicData.VIT;
                 SPRJUpDown.Value = KernelWorker.GetSelectedMagicData.SPR;
