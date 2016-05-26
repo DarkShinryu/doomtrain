@@ -334,7 +334,7 @@ namespace Doomtrain
             switch (StatusByteIndex)
             {
                 case 0:
-                    Kernel[OffsetToMagicSelected + 16] = (byte) (Kernel[OffsetToMagicSelected+16] ^ Convert.ToByte(variable)); //PERFORM OR logic for this
+                    Kernel[OffsetToMagicSelected + 16] = (byte) (Kernel[OffsetToMagicSelected+16] ^ Convert.ToByte(variable)); //Perform XOR logic for this 
                     return;
                 case 1:
                     Kernel[OffsetToMagicSelected + 17] = (byte)(Kernel[OffsetToMagicSelected + 17] ^ Convert.ToByte(variable));

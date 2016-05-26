@@ -379,52 +379,39 @@ namespace Doomtrain
 
         private void MagicStatusWorker()
         {
-//            1 byte -status
-//0x01 - sleep
-//0x02 - haste
-//0x04 - slow
-//0x08 - stop
-//0x10 - regen
-//0x20 - protect
-//0x40 - shell
-//0x80 - reflect
-//1 byte -status
-//0x01 - aura
-//0x02 - curse
-//0x04 - doom
-//0x08 - invincible
-//0x10 - petrifying
-//0x20 - float
-//0x40 - confuse
-//0x80 - drain
-//1 byte -status
-//0x01 - eject
-//0x02 - double
-//0x04 - triple
-//0x08 - defend
-//0x10 - ???
-//0x20 - ???
-//0x40 - ???
-//0x80 - ???
-//1 byte - status
-//0x01 - vit0
-//0x02 - ???
-//0x04 - ???
-//0x08 - ???
-//0x10 - ???
-//0x20 - ???
-//0x40 - ???
-//0x80 - ???
-//1 byte - status
-//0x01 - death
-//0x02 - poison
-//0x04 - petrify
-//0x08 - blind
-//0x10 - silence
-//0x20 - berserk
-//0x40 - zombie
-//0x80 - ???
+            //sleepcheckBox8.Checked =  ? true : false
+            sleepcheckBox8.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x01) >= 1 ? true : false;
+            hastecheckBox21.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x02) >= 1 ? true : false;
+            slowcheckBox6.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x04) >= 1 ? true : false;
+            stopcheckBox3.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x08) >= 1 ? true : false;
+            regencheckBox20.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x10) >= 1 ? true : false;
+            protectcheckBox22.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x20) >= 1 ? true : false;
+            shellcheckBox19.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x40) >= 1 ? true : false;
+            reflectcheckBox11.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x80) >= 1 ? true : false;
 
+            auracheckBox14.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x01) >= 1 ? true : false;
+            cursecheckBox17.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x02) >= 1 ? true : false;
+            doomcheckBox16.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x04) >= 1 ? true : false;
+            invincicheckBox18.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x08) >= 1 ? true : false;
+            petrifyingcheckBox5.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x10) >= 1 ? true : false;
+            floatcheckBox15.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x20) >= 1 ? true : false;
+            confusioncheckBox4.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x40) >= 1 ? true : false;
+            draincheckBox13.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x80) >= 1 ? true : false;
+
+            ejectcheckBox9.Checked = (KernelWorker.GetSelectedMagicData.Status3 & 0x01) >= 1 ? true : false;
+            doublecheckBox23.Checked = (KernelWorker.GetSelectedMagicData.Status3 & 0x02) >= 1 ? true : false;
+            triplcheckBox24.Checked = (KernelWorker.GetSelectedMagicData.Status3 & 0x04) >= 1 ? true : false;
+            defendcheckBox25.Checked = (KernelWorker.GetSelectedMagicData.Status3 & 0x08) >= 1 ? true : false;
+
+            vit0checkBox26.Checked = (KernelWorker.GetSelectedMagicData.Status4 & 0x01) >= 1 ? true : false;
+
+            deathcheckBox10.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x01) >= 1 ? true : false;
+            poisoncheckBox27.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x02) >= 1 ? true : false;
+            petrifycheckBox28.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x04) >= 1 ? true : false;
+            darknescheckBox1.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x08) >= 1 ? true : false;
+            silencecheckBox2.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x10) >= 1 ? true : false;
+            berserkcheckBox7.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x20) >= 1 ? true : false;
+            zombiecheckBox12.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x40) >= 1 ? true : false;
         }
 
         //MAGIC
