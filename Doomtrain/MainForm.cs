@@ -36,7 +36,7 @@ namespace Doomtrain
             magicIDcomboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(2, magicIDcomboBox.SelectedIndex);
             spellPowerUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(3, spellPowerUpDown.Value);
             drawResistUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(4, drawResistUpDown.Value);
-            magicElementComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(5, magicElementComboBox.SelectedIndex); 
+            magicElementComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(5, Magic_GetElement(magicElementComboBox.SelectedIndex)); 
 //to do again   magicStatusComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, magicStatusComboBox.SelectedIndex);
             HPJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(7, HPJUpDown.Value);
             STRJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(8, STRJUpDown.Value);
@@ -308,7 +308,46 @@ namespace Doomtrain
             }
         }
 
+        private int Magic_GetElement()
+        {
+            return KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Fire
+                        ? 0
+                        : KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Ice
+                            ? 1
+                            : KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Thunder
+                                ? 2
+                                : KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Earth
+                                    ? 3
+                                    : KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Poison
+                                        ? 4
+                                        : KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Wind
+                                            ? 5
+                                            : KernelWorker.GetSelectedMagicData.Element ==
+                                              KernelWorker.Element.Water
+                                                ? 6
+                                                : KernelWorker.GetSelectedMagicData.Element ==
+                                                  KernelWorker.Element.Holy
+                                                    ? 7
+                                                    : KernelWorker.GetSelectedMagicData.Element ==
+                                                      KernelWorker.Element.NonElemental
+                                                        ? magicElementComboBox.Items.Count - 1
+                                                        : 0;
+        }
 
+        private byte Magic_GetElement(int Index)
+        {
+            byte elem = (byte) (Index == 8 ? (byte)KernelWorker.Element.NonElemental :
+                Index == 0 ? (byte)KernelWorker.Element.Fire :
+                Index == 1 ? (byte)KernelWorker.Element.Ice :
+                Index == 2 ? (byte)KernelWorker.Element.Thunder :
+                Index == 3 ? (byte)KernelWorker.Element.Earth :
+                Index == 4 ? (byte)KernelWorker.Element.Poison :
+                Index == 5 ? (byte)KernelWorker.Element.Wind :
+                Index == 6 ? (byte)KernelWorker.Element.Water :
+                Index == 7 ? (byte)KernelWorker.Element.Holy : 
+                0x00 /*ErrorHandler*/);
+            return elem;
+        }
 
         //MAGIC
         private void listBoxMagic_SelectedIndexChanged(object sender, EventArgs e)
@@ -323,9 +362,8 @@ namespace Doomtrain
                 spellPowerUpDown.Value = KernelWorker.GetSelectedMagicData.SpellPower;
                 drawResistUpDown.Value = KernelWorker.GetSelectedMagicData.DrawResist;
                 hitCountUpDown.Value = KernelWorker.GetSelectedMagicData.HitCount;
-                magicElementComboBox.SelectedIndex = KernelWorker.GetSelectedMagicData.Element;
-//to do again   magicStatusComboBox.SelectedIndex = KernelWorker.GetSelectedMagicData.Status1;
-
+                magicElementComboBox.SelectedIndex = Magic_GetElement();
+                //to do again   magicStatusComboBox.SelectedIndex = KernelWorker.GetSelectedMagicData.Status1;
                 HPJUpDown.Value = KernelWorker.GetSelectedMagicData.HP;
                 VITJUpDown.Value = KernelWorker.GetSelectedMagicData.VIT;
                 SPRJUpDown.Value = KernelWorker.GetSelectedMagicData.SPR;
