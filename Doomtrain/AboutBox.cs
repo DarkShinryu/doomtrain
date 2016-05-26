@@ -18,7 +18,6 @@ namespace Doomtrain
         }
 
 
-
         //Link Forum
         private void linkLabelForum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -26,14 +25,10 @@ namespace Doomtrain
         }
 
 
-
         //Link GitHub
         private void linkLabelGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/alexfilth/doomtrain");
         }
-
-
-
     }
 }

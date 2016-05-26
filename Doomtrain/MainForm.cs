@@ -18,15 +18,26 @@ namespace Doomtrain
         public mainForm()
         {
             InitializeComponent();
+
+
+            //for disabling save buttons when no file is open
             saveToolStripMenuItem.Enabled = false;
             saveAsToolStripMenuItem.Enabled = false;
+            saveAsToolStripButton.Enabled = false;
+            saveToolStripButton.Enabled = false;
+
+
+            //this is for enabling a cool switch with the listboxes in the gf section :)
+            listBoxGFAttacks.Visible = false;
+            tabControlGF.SelectedIndexChanged += new EventHandler(tabControlGF_SelectedIndexChanged);
+
 
             //MAGIC
             magicIDcomboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(2, magicIDcomboBox.SelectedIndex);
             spellPowerUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(3, spellPowerUpDown.Value);
             drawResistUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(4, drawResistUpDown.Value);
-            magicElementUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(5, magicElementUpDown.Value);
-            statusUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, statusUpDown.Value);
+            magicElementComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(5, Magic_GetElement(magicElementComboBox.SelectedIndex)); 
+//to do again   magicStatusComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, magicStatusComboBox.SelectedIndex);
             HPJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(7, HPJUpDown.Value);
             STRJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(8, STRJUpDown.Value);
             VITJUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(9, VITJUpDown.Value);
@@ -82,40 +93,40 @@ namespace Doomtrain
             drainDEF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x1000);
             stATKtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(23, stATKtrackBar.Value);
             stDEFtrackBar.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(24, stATKtrackBar.Value);
+
+
             //GF
-            JGFIDcomboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(0, JGFIDcomboBox.SelectedIndex);
-            JGFPowerUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(1, JGFPowerUpDown.Value);
-            JGFHPUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(2, JGFHPUpDown.Value);
-            JGFPowerModUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(3, JGFPowerModUpDown.Value);
-            JGFLevelModUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(4, JGFLevelModUpDown.Value);
-            ability1ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability1ComboBox.SelectedIndex, 0);
-            ability2ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability2ComboBox.SelectedIndex, 1);
-            ability3ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability3ComboBox.SelectedIndex, 2);
-            ability4ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability4ComboBox.SelectedIndex, 3);
-            ability5ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability5ComboBox.SelectedIndex, 4);
-            ability6ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability6ComboBox.SelectedIndex, 5);
-            ability7ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability7ComboBox.SelectedIndex, 6);
-            ability8ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability8ComboBox.SelectedIndex, 7);
-            ability9ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability9ComboBox.SelectedIndex, 8);
-            ability10ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability10ComboBox.SelectedIndex, 9);
-            ability11ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability11ComboBox.SelectedIndex, 10);
-            ability12ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability12ComboBox.SelectedIndex, 11);
-            ability13ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability13ComboBox.SelectedIndex, 12);
-            ability14ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability14ComboBox.SelectedIndex, 13);
-            ability15ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability15ComboBox.SelectedIndex, 14);
-            ability16ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability16ComboBox.SelectedIndex, 15);
-            ability17ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability17ComboBox.SelectedIndex, 16);
-            ability18ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability18ComboBox.SelectedIndex, 17);
-            ability19ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability19ComboBox.SelectedIndex, 18);
-            ability20ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability20ComboBox.SelectedIndex, 19);
-            ability21ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, ability21ComboBox.SelectedIndex, 20);
+            GFIDcomboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(0, GFIDcomboBox.SelectedIndex);
+            GFPowerUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(1, GFPowerUpDown.Value);
+            GFHPUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(2, GFHPUpDown.Value);
+            GFPowerModUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(3, GFPowerModUpDown.Value);
+            GFLevelModUpDown.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(4, GFLevelModUpDown.Value);
+            GFAbility1ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility1ComboBox.SelectedIndex, 0);
+            GFAbility2ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility2ComboBox.SelectedIndex, 1);
+            GFAbility3ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility3ComboBox.SelectedIndex, 2);
+            GFAbility4ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility4ComboBox.SelectedIndex, 3);
+            GFAbility5ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility5ComboBox.SelectedIndex, 4);
+            GFAbility6ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility6ComboBox.SelectedIndex, 5);
+            GFAbility7ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility7ComboBox.SelectedIndex, 6);
+            GFAbility8ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility8ComboBox.SelectedIndex, 7);
+            GFAbility9ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility9ComboBox.SelectedIndex, 8);
+            GFAbility10ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility10ComboBox.SelectedIndex, 9);
+            GFAbility11ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility11ComboBox.SelectedIndex, 10);
+            GFAbility12ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility12ComboBox.SelectedIndex, 11);
+            GFAbility13ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility13ComboBox.SelectedIndex, 12);
+            GFAbility14ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility14ComboBox.SelectedIndex, 13);
+            GFAbility15ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility15ComboBox.SelectedIndex, 14);
+            GFAbility16ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility16ComboBox.SelectedIndex, 15);
+            GFAbility17ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility17ComboBox.SelectedIndex, 16);
+            GFAbility18ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility18ComboBox.SelectedIndex, 17);
+            GFAbility19ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility19ComboBox.SelectedIndex, 18);
+            GFAbility20ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility20ComboBox.SelectedIndex, 19);
+            GFAbility21ComboBox.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, GFAbility21ComboBox.SelectedIndex, 20);
         }
 
 
-
-
-        //used for open/save stuff
-        public string existingFilename;
+        
+        public string existingFilename; //used for open/save stuff
 
 
 
@@ -144,6 +155,8 @@ namespace Doomtrain
                 existingFilename = openFileDialog.FileName;
                 saveToolStripMenuItem.Enabled = true;
                 saveAsToolStripMenuItem.Enabled = true;
+                saveToolStripButton.Enabled = true;
+                saveAsToolStripButton.Enabled = true;
                 return;
             }
         }
@@ -177,13 +190,7 @@ namespace Doomtrain
                     File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
                     return;
                 }
-
             }
-            //else
-            //{
-            //    MessageBox.Show("Please open a file first", "Error");
-            //    return;
-            //}
         }
 
 
@@ -192,6 +199,65 @@ namespace Doomtrain
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+
+
+        //TOOLBAR
+        private void openToolStripButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Open FF8 kernel.bin";
+            openFileDialog.Filter = "FF8 Kernel File|*.bin";
+            openFileDialog.FileName = "kernel.bin";
+
+
+
+            if (openFileDialog.ShowDialog() != DialogResult.OK) return;
+            {
+                using (var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
+                {
+                    using (var BR = new BinaryReader(fileStream))
+                    {
+                        KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
+                    }
+
+                }
+
+
+                existingFilename = openFileDialog.FileName;
+                saveToolStripMenuItem.Enabled = true;
+                saveAsToolStripMenuItem.Enabled = true;
+                saveToolStripButton.Enabled = true;
+                saveAsToolStripButton.Enabled = true;
+                return;
+            }
+        }
+
+        private void saveToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
+            {
+                File.WriteAllBytes(existingFilename, KernelWorker.Kernel);
+                return;
+            }
+        }
+
+        private void saveAsToolStripButton_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveAsDialog = new SaveFileDialog();
+            saveAsDialog.Title = "Save FF8 kernel.bin";
+            saveAsDialog.Filter = "FF8 Kernel File|*.bin";
+            saveAsDialog.FileName = Path.GetFileName(existingFilename);
+
+            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
+            {
+                if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
+                {
+                    File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
+                    return;
+                }
+            }
         }
 
 
@@ -206,22 +272,82 @@ namespace Doomtrain
         // MAGIC TRACKBARS LABEL VALUES
         private void eleATKtrackBar_Scroll(object sender, EventArgs e)
         {
-            eleATKtrackBarValue.Text = eleATKtrackBar.Value+"%".ToString();
+            eleATKtrackBarValue.Text = eleATKtrackBar.Value + "%".ToString();
         }
+
         private void eleDEFtrackBar_Scroll(object sender, EventArgs e)
         {
             eleDEFtrackBarValue.Text = eleDEFtrackBar.Value + "%".ToString();
         }
+
         private void stATKtrackBar_Scroll(object sender, EventArgs e)
         {
             stATKtrackBarValue.Text = stATKtrackBar.Value + "%".ToString();
         }
+
         private void stDEFtrackBar_Scroll(object sender, EventArgs e)
         {
             stDEFtrackBarValue.Text = stDEFtrackBar.Value + "%".ToString();
         }
 
 
+
+        //GF LISTBOXES SWITCH
+        private void tabControlGF_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControlGF.SelectedIndex == 0)
+            {
+                listBoxGFAttacks.Visible = false;
+                listBoxGF.Visible = true;
+            }
+
+            else if (tabControlGF.SelectedIndex == 1)
+            {
+                listBoxGF.Visible = false;
+                listBoxGFAttacks.Visible = true;
+            }
+        }
+
+        private int Magic_GetElement()
+        {
+            return KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Fire
+                        ? 0
+                        : KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Ice
+                            ? 1
+                            : KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Thunder
+                                ? 2
+                                : KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Earth
+                                    ? 3
+                                    : KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Poison
+                                        ? 4
+                                        : KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Wind
+                                            ? 5
+                                            : KernelWorker.GetSelectedMagicData.Element ==
+                                              KernelWorker.Element.Water
+                                                ? 6
+                                                : KernelWorker.GetSelectedMagicData.Element ==
+                                                  KernelWorker.Element.Holy
+                                                    ? 7
+                                                    : KernelWorker.GetSelectedMagicData.Element ==
+                                                      KernelWorker.Element.NonElemental
+                                                        ? magicElementComboBox.Items.Count - 1
+                                                        : 0;
+        }
+
+        private byte Magic_GetElement(int Index)
+        {
+            byte elem = (byte) (Index == 8 ? (byte)KernelWorker.Element.NonElemental :
+                Index == 0 ? (byte)KernelWorker.Element.Fire :
+                Index == 1 ? (byte)KernelWorker.Element.Ice :
+                Index == 2 ? (byte)KernelWorker.Element.Thunder :
+                Index == 3 ? (byte)KernelWorker.Element.Earth :
+                Index == 4 ? (byte)KernelWorker.Element.Poison :
+                Index == 5 ? (byte)KernelWorker.Element.Wind :
+                Index == 6 ? (byte)KernelWorker.Element.Water :
+                Index == 7 ? (byte)KernelWorker.Element.Holy : 
+                0x00 /*ErrorHandler*/);
+            return elem;
+        }
 
         //MAGIC
         private void listBoxMagic_SelectedIndexChanged(object sender, EventArgs e)
@@ -236,9 +362,8 @@ namespace Doomtrain
                 spellPowerUpDown.Value = KernelWorker.GetSelectedMagicData.SpellPower;
                 drawResistUpDown.Value = KernelWorker.GetSelectedMagicData.DrawResist;
                 hitCountUpDown.Value = KernelWorker.GetSelectedMagicData.HitCount;
-                magicElementUpDown.Value = KernelWorker.GetSelectedMagicData.Element;
-                statusUpDown.Value = KernelWorker.GetSelectedMagicData.Status1;
-
+                magicElementComboBox.SelectedIndex = Magic_GetElement();
+                //to do again   magicStatusComboBox.SelectedIndex = KernelWorker.GetSelectedMagicData.Status1;
                 HPJUpDown.Value = KernelWorker.GetSelectedMagicData.HP;
                 VITJUpDown.Value = KernelWorker.GetSelectedMagicData.VIT;
                 SPRJUpDown.Value = KernelWorker.GetSelectedMagicData.SPR;
@@ -431,6 +556,8 @@ namespace Doomtrain
             }
         }
 
+
+
         //TRACKBAR VALUES
         private void eleATKtrackBar_ValueChanged(object sender, EventArgs e)
         {
@@ -448,7 +575,6 @@ namespace Doomtrain
         {
             stDEFtrackBarValue.Text = stDEFtrackBar.Value + "%".ToString();
         }
-
 
 
 
@@ -501,41 +627,44 @@ namespace Doomtrain
             }
         }
 
-        private void listBoxJGF_SelectedIndexChanged(object sender, EventArgs e)
+
+
+        //GFs
+        private void listBoxGF_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadGF(listBoxJGF.SelectedIndex);
+            KernelWorker.ReadGF(listBoxGF.SelectedIndex);
 
             try
             {
-                JGFIDcomboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFMagicID;
-                JGFPowerUpDown.Value = KernelWorker.GetSelectedGFData.GFPower;
-                JGFHPUpDown.Value = KernelWorker.GetSelectedGFData.GFHP;
-                JGFPowerModUpDown.Value = KernelWorker.GetSelectedGFData.GFPowerMod;
-                JGFLevelModUpDown.Value = KernelWorker.GetSelectedGFData.GFLevelMod;
-                ability1ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility1;
-                ability2ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility2;
-                ability3ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility3;
-                ability4ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility4;
-                ability5ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility5;
-                ability6ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility6;
-                ability7ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility7;
-                ability8ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility8;
-                ability9ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility9;
-                ability10ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility10;
-                ability11ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility11;
-                ability12ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility12;
-                ability13ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility13;
-                ability14ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility14;
-                ability15ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility15;
-                ability16ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility16;
-                ability17ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility17;
-                ability18ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility18;
-                ability19ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility19;
-                ability20ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility20;
-                ability21ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility21;
+                GFIDcomboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFMagicID;
+                GFPowerUpDown.Value = KernelWorker.GetSelectedGFData.GFPower;
+                GFHPUpDown.Value = KernelWorker.GetSelectedGFData.GFHP;
+                GFPowerModUpDown.Value = KernelWorker.GetSelectedGFData.GFPowerMod;
+                GFLevelModUpDown.Value = KernelWorker.GetSelectedGFData.GFLevelMod;
+                GFAbility1ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility1;
+                GFAbility2ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility2;
+                GFAbility3ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility3;
+                GFAbility4ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility4;
+                GFAbility5ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility5;
+                GFAbility6ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility6;
+                GFAbility7ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility7;
+                GFAbility8ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility8;
+                GFAbility9ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility9;
+                GFAbility10ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility10;
+                GFAbility11ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility11;
+                GFAbility12ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility12;
+                GFAbility13ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility13;
+                GFAbility14ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility14;
+                GFAbility15ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility15;
+                GFAbility16ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility16;
+                GFAbility17ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility17;
+                GFAbility18ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility18;
+                GFAbility19ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility19;
+                GFAbility20ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility20;
+                GFAbility21ComboBox.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility21;
             }
             catch (Exception eeException)
             {
@@ -543,5 +672,7 @@ namespace Doomtrain
             }
             _loaded = true;
         }
+
+
     }
 }

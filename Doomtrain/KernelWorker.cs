@@ -6,6 +6,7 @@ namespace Doomtrain
     class KernelWorker
     {
         public static byte[] Kernel;
+
         public static int MagicDataOffset = -1;
         public static int OffsetToMagicSelected = -1;
 
@@ -82,10 +83,25 @@ namespace Doomtrain
 
         }
 
+
+        internal enum Element : byte
+        {
+            Fire = 0x01,
+            Ice = 0x02,
+            Thunder = 0x04,
+            Earth = 0x08,
+            Poison = 0x10,
+            Wind = 0x20,
+            Water = 0x40,
+            Holy = 0x80,
+            NonElemental = 0x00
+        }
+
+
         public struct MagicData
         {
-            public string OffsetName;
-            public string SpellDescription;
+            public string OffsetSpellName;
+            //public string OffsetSpellDescription;
             public UInt16 MagicID;
             public UInt16 Unknown1;
             public byte SpellPower;
@@ -94,8 +110,8 @@ namespace Doomtrain
             public byte Unknown3;
             public byte DrawResist;
             public byte HitCount;
-            //public Element element;
-            public byte Element;
+            public Element Element;
+            //public byte Element; This now gets opted
             public byte Unknown4;
             public byte Status1;
             public byte Status2;
@@ -125,9 +141,18 @@ namespace Doomtrain
 
         public struct GFData
         {
+            //public string OffsetGFName;
+            //public string OffsetGFDescription;
             public UInt16 GFMagicID;
             public byte GFPower;
+            //public UInt16 GFElement;
+            //public UInt16 GFStatus1;
+            //public UInt16 GFStatus2;
+            //public UInt16 GFStatus3;
+            //public UInt16 GFStatus4;
+            //public UInt16 GFStatus5;
             public byte GFHP;
+            //public byte GFStatusEnabler;
             public byte GFPowerMod;
             public byte GFLevelMod;
             public UInt16 GFAbility1;
@@ -152,6 +177,7 @@ namespace Doomtrain
             public UInt16 GFAbility20;
             public UInt16 GFAbility21;
         }
+
 
         public static void UpdateVariable_Magic(int index, object variable)
         {
@@ -181,7 +207,7 @@ namespace Doomtrain
                     }
                 case 6:
                     {
-                        Kernel[OffsetToMagicSelected + 16] = Convert.ToByte(variable); //Status
+//to do again           Kernel[OffsetToMagicSelected + 16] = Convert.ToByte(variable); //Status
                         return;
                     }
 
@@ -328,6 +354,8 @@ namespace Doomtrain
                     Kernel[OffsetToGFSelected + 30 + (AbilityIndex*4)] = Convert.ToByte(variable);
                     return;
 
+                    //TODO gf element and gf status
+
                 default:
                     return;
             }
@@ -352,7 +380,7 @@ namespace Doomtrain
         enum Mode : byte
         {
             Mode_Magic,
-            Mode_GF
+            Mode_GF 
         }
 
         public static void ReadKernel(byte[] kernel)
@@ -377,12 +405,12 @@ namespace Doomtrain
             OffsetToMagicSelected = selectedMagicOffset;
 
             #region UnusedNameRegion functionality. You can use it for future improvements
-            GetSelectedMagicData.OffsetName = BuildString( (ushort)(
+            GetSelectedMagicData.OffsetSpellName = BuildString( (ushort)(
                     BitConverter.ToInt32(Kernel,(int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(Kernel, selectedMagicOffset))));
 					//BELOW DOESN'T WORK?
-            // GetSelectedMagicData.SpellDescription = BuildString((ushort)(
+            // GetSelectedMagicData.OffsetSpellDescription = BuildString((ushort)(
             //BitConverter.ToInt32(kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(kernel, SelectedMagicOffset += 2))));
-            //Console.WriteLine("DEBUG: {0}", GetSelectedMagicData.OffsetName);
+            //Console.WriteLine("DEBUG: {0}", GetSelectedMagicData.OffsetSpellName);
             #endregion
 
 
@@ -394,7 +422,27 @@ namespace Doomtrain
             GetSelectedMagicData.Unknown3 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.DrawResist = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.HitCount = Kernel[selectedMagicOffset++];
-            GetSelectedMagicData.Element = Kernel[selectedMagicOffset++];
+            byte b = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.Element =
+                b == (byte) Element.Fire
+                    ? Element.Fire
+                    : b == (byte) Element.Holy
+                        ? Element.Holy
+                        : b == (byte) Element.Ice
+                            ? Element.Ice
+                            : b == (byte) Element.NonElemental
+                                ? Element.NonElemental
+                                : b == (byte) Element.Poison
+                                    ? Element.Poison
+                                    : b == (byte) Element.Thunder
+                                        ? Element.Thunder
+                                        : b == (byte) Element.Water
+                                            ? Element.Water
+                                            : b == (byte) Element.Wind
+                                                ? Element.Wind
+                                                : b == (byte) Element.Earth
+                                                    ? Element.Earth
+                                                    : 0; //Error handler
             GetSelectedMagicData.Unknown4 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.Status1 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.Status2 = Kernel[selectedMagicOffset++];
@@ -464,7 +512,10 @@ namespace Doomtrain
             selectedGfOffset += (4*20) + 19 + 1;
             GetSelectedGFData.GFPowerMod = Kernel[selectedGfOffset];
             GetSelectedGFData.GFLevelMod = Kernel[selectedGfOffset + 1];
+
+            //to do GF element, status and status attack enabler
         }
+
 
 
         private static string BuildString(int index)
@@ -477,7 +528,6 @@ namespace Doomtrain
                 if (Kernel[index] == 0x00)
                     return sb.ToString();
                 char c = _charstable[Kernel[index++] - 31].ToCharArray()[0];
-                //sb.Append((char)kernel[++index]); //nope
                 sb.Append(c);
             }
         }
