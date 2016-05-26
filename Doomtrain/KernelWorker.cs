@@ -179,20 +179,20 @@ namespace Doomtrain
         }
 
 
-        public static void UpdateVariable_Magic(int index, object variable)
+        public static void UpdateVariable_Magic(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
             switch (index)
             {
                 case 2:
-                {
-                    UshortToKernel(Convert.ToUInt16(variable),4, (byte)Mode.Mode_Magic); //MagicID
-                    return;
-                }
+                    {
+                        UshortToKernel(Convert.ToUInt16(variable), 4, (byte)Mode.Mode_Magic); //MagicID
+                        return;
+                    }
                 case 3:
                     {
-                        Kernel[OffsetToMagicSelected+8] = Convert.ToByte(variable); //SpellPower
+                        Kernel[OffsetToMagicSelected + 8] = Convert.ToByte(variable); //SpellPower
                         return;
                     }
                 case 4:
@@ -207,7 +207,7 @@ namespace Doomtrain
                     }
                 case 6:
                     {
-//to do again           Kernel[OffsetToMagicSelected + 16] = Convert.ToByte(variable); //Status
+                        StatusUpdator(arg0, variable); //Status
                         return;
                     }
 
@@ -296,10 +296,10 @@ namespace Doomtrain
                     }
 
                 case 21:
-                {
-                    ushort a = BitConverter.ToUInt16(Kernel, OffsetToMagicSelected + 38);
-                    byte[] temp = BitConverter.GetBytes(a ^= Convert.ToUInt16(variable));
-                        Array.Copy(temp,0, Kernel, OffsetToMagicSelected+38,2);
+                    {
+                        ushort a = BitConverter.ToUInt16(Kernel, OffsetToMagicSelected + 38);
+                        byte[] temp = BitConverter.GetBytes(a ^= Convert.ToUInt16(variable));
+                        Array.Copy(temp, 0, Kernel, OffsetToMagicSelected + 38, 2);
                         return;
                     }
 
@@ -329,6 +329,28 @@ namespace Doomtrain
 
         }
 
+        public static void StatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToMagicSelected + 16] = (byte)(Kernel[OffsetToMagicSelected + 16] ^ Convert.ToByte(variable)); //Perform XOR logic for this 
+                    return;
+                case 1:
+                    Kernel[OffsetToMagicSelected + 17] = (byte)(Kernel[OffsetToMagicSelected + 17] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToMagicSelected + 18] = (byte)(Kernel[OffsetToMagicSelected + 18] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToMagicSelected + 19] = (byte)(Kernel[OffsetToMagicSelected + 19] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToMagicSelected + 20] = (byte)(Kernel[OffsetToMagicSelected + 20] ^ Convert.ToByte(variable));
+                    return;
+            }
+        }
+
         public static void UpdateVariable_GF(int index, object variable, byte AbilityIndex = 0)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -336,25 +358,25 @@ namespace Doomtrain
             switch (index)
             {
                 case 0:
-                        UshortToKernel(Convert.ToUInt16(variable), 4, (byte)Mode.Mode_GF); //MagicID
-                        return;
+                    UshortToKernel(Convert.ToUInt16(variable), 4, (byte)Mode.Mode_GF); //MagicID
+                    return;
                 case 1:
-                        Kernel[OffsetToGFSelected + 7] = Convert.ToByte(variable); //GFPower
-                        return;
+                    Kernel[OffsetToGFSelected + 7] = Convert.ToByte(variable); //GFPower
+                    return;
                 case 2:
-                        Kernel[OffsetToGFSelected + 20] = Convert.ToByte(variable); //GFHP
-                        return;
+                    Kernel[OffsetToGFSelected + 20] = Convert.ToByte(variable); //GFHP
+                    return;
                 case 3:
-                        Kernel[OffsetToGFSelected + 130] = Convert.ToByte(variable); //Power Mod
-                        return;
+                    Kernel[OffsetToGFSelected + 130] = Convert.ToByte(variable); //Power Mod
+                    return;
                 case 4:
-                        Kernel[OffsetToGFSelected + 131] = Convert.ToByte(variable); //Level Mod
-                        return;
+                    Kernel[OffsetToGFSelected + 131] = Convert.ToByte(variable); //Level Mod
+                    return;
                 case 5:
-                    Kernel[OffsetToGFSelected + 30 + (AbilityIndex*4)] = Convert.ToByte(variable);
+                    Kernel[OffsetToGFSelected + 30 + (AbilityIndex * 4)] = Convert.ToByte(variable);
                     return;
 
-                    //TODO gf element and gf status
+                //TODO gf element and gf status
 
                 default:
                     return;
@@ -368,10 +390,10 @@ namespace Doomtrain
         /// <param name="add"></param>
         private static void UshortToKernel(ushort a, int add, byte mode)
         {
-            byte[] magicIdBytes = BitConverter.GetBytes(a+1);
-            if(mode == (byte)Mode.Mode_Magic)
+            byte[] magicIdBytes = BitConverter.GetBytes(a + 1);
+            if (mode == (byte)Mode.Mode_Magic)
                 Array.Copy(magicIdBytes, 0, Kernel, OffsetToMagicSelected + add, 2);
-            else if (mode == (byte) Mode.Mode_GF)
+            else if (mode == (byte)Mode.Mode_GF)
                 Array.Copy(magicIdBytes, 0, Kernel, OffsetToGFSelected + add, 2);
             else
                 return;
@@ -380,7 +402,7 @@ namespace Doomtrain
         enum Mode : byte
         {
             Mode_Magic,
-            Mode_GF 
+            Mode_GF
         }
 
         public static void ReadKernel(byte[] kernel)
@@ -393,7 +415,7 @@ namespace Doomtrain
 
         public static void ReadMagic(int MagicID_List)
         {
-            
+
             GetSelectedMagicData = new MagicData();
             MagicID_List++;
             /*
@@ -405,9 +427,9 @@ namespace Doomtrain
             OffsetToMagicSelected = selectedMagicOffset;
 
             #region UnusedNameRegion functionality. You can use it for future improvements
-            GetSelectedMagicData.OffsetSpellName = BuildString( (ushort)(
-                    BitConverter.ToInt32(Kernel,(int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(Kernel, selectedMagicOffset))));
-					//BELOW DOESN'T WORK?
+            GetSelectedMagicData.OffsetSpellName = BuildString((ushort)(
+                    BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(Kernel, selectedMagicOffset))));
+            //BELOW DOESN'T WORK?
             // GetSelectedMagicData.OffsetSpellDescription = BuildString((ushort)(
             //BitConverter.ToInt32(kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(kernel, SelectedMagicOffset += 2))));
             //Console.WriteLine("DEBUG: {0}", GetSelectedMagicData.OffsetSpellName);
@@ -424,23 +446,23 @@ namespace Doomtrain
             GetSelectedMagicData.HitCount = Kernel[selectedMagicOffset++];
             byte b = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.Element =
-                b == (byte) Element.Fire
+                b == (byte)Element.Fire
                     ? Element.Fire
-                    : b == (byte) Element.Holy
+                    : b == (byte)Element.Holy
                         ? Element.Holy
-                        : b == (byte) Element.Ice
+                        : b == (byte)Element.Ice
                             ? Element.Ice
-                            : b == (byte) Element.NonElemental
+                            : b == (byte)Element.NonElemental
                                 ? Element.NonElemental
-                                : b == (byte) Element.Poison
+                                : b == (byte)Element.Poison
                                     ? Element.Poison
-                                    : b == (byte) Element.Thunder
+                                    : b == (byte)Element.Thunder
                                         ? Element.Thunder
-                                        : b == (byte) Element.Water
+                                        : b == (byte)Element.Water
                                             ? Element.Water
-                                            : b == (byte) Element.Wind
+                                            : b == (byte)Element.Wind
                                                 ? Element.Wind
-                                                : b == (byte) Element.Earth
+                                                : b == (byte)Element.Earth
                                                     ? Element.Earth
                                                     : 0; //Error handler
             GetSelectedMagicData.Unknown4 = Kernel[selectedMagicOffset++];
@@ -471,7 +493,6 @@ namespace Doomtrain
             selectedMagicOffset += 2;
             GetSelectedMagicData.Unknown6 = new byte[18];
             Array.Copy(Kernel, selectedMagicOffset, GetSelectedMagicData.Unknown6, 0, 18);
-
         }
 
         public static void ReadGF(int GFID_List)
@@ -480,7 +501,7 @@ namespace Doomtrain
             int selectedGfOffset = GFDataOffset + (GFID_List * 132);
             OffsetToGFSelected = selectedGfOffset;
 
-            GetSelectedGFData.GFMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfOffset+4) - 1);
+            GetSelectedGFData.GFMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfOffset + 4) - 1);
             selectedGfOffset += 4 + 2 + 1; //Unknown + MagicID + Unknown
             GetSelectedGFData.GFPower = Kernel[selectedGfOffset];
             selectedGfOffset += 13; //Unknown + GFPower
@@ -488,9 +509,9 @@ namespace Doomtrain
             selectedGfOffset += 10; //Unknown+GFHP
             //AbilityRun
             GetSelectedGFData.GFAbility1 = Kernel[selectedGfOffset];
-            GetSelectedGFData.GFAbility2 = Kernel[selectedGfOffset + (4*1)];
-            GetSelectedGFData.GFAbility3 = Kernel[selectedGfOffset + (4*2)];
-            GetSelectedGFData.GFAbility4 = Kernel[selectedGfOffset + (4*3)];
+            GetSelectedGFData.GFAbility2 = Kernel[selectedGfOffset + (4 * 1)];
+            GetSelectedGFData.GFAbility3 = Kernel[selectedGfOffset + (4 * 2)];
+            GetSelectedGFData.GFAbility4 = Kernel[selectedGfOffset + (4 * 3)];
             GetSelectedGFData.GFAbility5 = Kernel[selectedGfOffset + (4 * 4)];
             GetSelectedGFData.GFAbility6 = Kernel[selectedGfOffset + (4 * 5)];
             GetSelectedGFData.GFAbility7 = Kernel[selectedGfOffset + (4 * 6)];
@@ -509,7 +530,7 @@ namespace Doomtrain
             GetSelectedGFData.GFAbility20 = Kernel[selectedGfOffset + (4 * 19)];
             GetSelectedGFData.GFAbility21 = Kernel[selectedGfOffset + (4 * 20)];
             //EndofAbility
-            selectedGfOffset += (4*20) + 19 + 1;
+            selectedGfOffset += (4 * 20) + 19 + 1;
             GetSelectedGFData.GFPowerMod = Kernel[selectedGfOffset];
             GetSelectedGFData.GFLevelMod = Kernel[selectedGfOffset + 1];
 
@@ -523,7 +544,7 @@ namespace Doomtrain
             if (_charstable == null)
                 _charstable = Chartable.Split(',');
             StringBuilder sb = new StringBuilder();
-            while(true)
+            while (true)
             {
                 if (Kernel[index] == 0x00)
                     return sb.ToString();
@@ -532,7 +553,8 @@ namespace Doomtrain
             }
         }
 
-        
-        
+
+
     }
 }
+
