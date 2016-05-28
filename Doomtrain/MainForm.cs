@@ -31,8 +31,7 @@ namespace Doomtrain
             listBoxGFAttack.Visible = false;
             tabControlGF.SelectedIndexChanged += new EventHandler(tabControlGF_SelectedIndexChanged);
 
-
-            //for disabling status checkboxes when status enablers are unchecked
+#region for disabling status checkboxes when status enablers are unchecked
             checkBoxMagicSleep.Enabled = false;
             checkBoxMagicHaste.Enabled = false;
             checkBoxMagicSlow.Enabled = false;
@@ -90,7 +89,6 @@ namespace Doomtrain
             checkBoxGFSilence.Enabled = false;
             checkBoxGFBerserk.Enabled = false;
             checkBoxGFZombie.Enabled = false;
-            checkBoxGFStatus.CheckedChanged += new EventHandler(checkBoxGFStatus_Checked);
             checkBoxGFAttackSleep.Enabled = false;
             checkBoxGFAttackHaste.Enabled = false;
             checkBoxGFAttackSlow.Enabled = false;
@@ -120,6 +118,7 @@ namespace Doomtrain
             checkBoxGFAttackBerserk.Enabled = false;
             checkBoxGFAttackZombie.Enabled = false;
             //checkBoxGFAttackStatus.CheckedChanged += new EventHandler(checkBoxGFAttackStatus_Checked);
+#endregion
 
 
             //MAGIC
@@ -137,13 +136,13 @@ namespace Doomtrain
             numericUpDownHITJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(14, numericUpDownHITJ.Value);
             numericUpDownLUCKJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(15, numericUpDownLUCKJ.Value);
             radioButtonJElemAttackFire.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01);
-            radioButtonJElemAttackIce.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<1);
-            radioButtonJElemAttackThunder.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<2);
-            radioButtonJElemAttackEarth.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<3);
-            radioButtonJElemAttackPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<4);
-            radioButtonJElemAttackWind.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<5);
-            radioButtonJElemAttackWater.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<6);
-            radioButtonJElemAttackHoly.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01<<7);
+            radioButtonJElemAttackIce.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 1);
+            radioButtonJElemAttackThunder.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 2);
+            radioButtonJElemAttackEarth.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 3);
+            radioButtonJElemAttackPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 4);
+            radioButtonJElemAttackWind.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 5);
+            radioButtonJElemAttackWater.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 6);
+            radioButtonJElemAttackHoly.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 7);
             numericUpDownHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(17, numericUpDownHitCount.Value);
             trackBarJElemAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(18, trackBarJElemAttack.Value);
             checkBoxJElemDefenseFire.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, /*KernelWorker.GetSelectedMagicData.ElemDefenseEN ^ 0x01*/ 0x01);
@@ -152,7 +151,7 @@ namespace Doomtrain
             checkBoxJElemDefenseEarth.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x08);
             checkBoxJElemDefensePoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x10);
             checkBoxJElemDefenseWind.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x20);
-            checkBoxJElemDefenseWater.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19,0x40);
+            checkBoxJElemDefenseWater.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x40);
             checkBoxJElemDefenseHoly.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x80);
             trackBarJElemDefense.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(20, trackBarJElemDefense.Value);
             radioButtonJStatAttackDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0001);
@@ -214,30 +213,60 @@ namespace Doomtrain
             //GF
             comboBoxGFMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(0, comboBoxGFMagicID.SelectedIndex);
             numericUpDownGFPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(1, numericUpDownGFPower.Value);
-            numericUpDownGFHP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(2, numericUpDownGFHP.Value);
-            numericUpDownGFPowerMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(3, numericUpDownGFPowerMod.Value);
-            numericUpDownGFLevelMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(4, numericUpDownGFLevelMod.Value);
-            comboBoxGFAbility1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility1.SelectedIndex, 0);
-            comboBoxGFAbility2.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility2.SelectedIndex, 1);
-            comboBoxGFAbility3.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility3.SelectedIndex, 2);
-            comboBoxGFAbility4.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility4.SelectedIndex, 3);
-            comboBoxGFAbility5.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility5.SelectedIndex, 4);
-            comboBoxGFAbility6.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility6.SelectedIndex, 5);
-            comboBoxGFAbility7.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility7.SelectedIndex, 6);
-            comboBoxGFAbility8.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility8.SelectedIndex, 7);
-            comboBoxGFAbility9.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility9.SelectedIndex, 8);
-            comboBoxGFAbility10.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility10.SelectedIndex, 9);
-            comboBoxGFAbility11.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility11.SelectedIndex, 10);
-            comboBoxGFAbility12.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility12.SelectedIndex, 11);
-            comboBoxGFAbility13.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility13.SelectedIndex, 12);
-            comboBoxGFAbility14.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility14.SelectedIndex, 13);
-            comboBoxGFAbility15.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility15.SelectedIndex, 14);
-            comboBoxGFAbility16.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility16.SelectedIndex, 15);
-            comboBoxGFAbility17.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility17.SelectedIndex, 16);
-            comboBoxGFAbility18.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility18.SelectedIndex, 17);
-            comboBoxGFAbility19.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility19.SelectedIndex, 18);
-            comboBoxGFAbility20.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility20.SelectedIndex, 19);
-            comboBoxGFAbility21.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, comboBoxGFAbility21.SelectedIndex, 20);
+            comboBoxGFElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(2, GF_GetElement(comboBoxGFElement.SelectedIndex));
+            numericUpDownGFHP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(3, numericUpDownGFHP.Value);
+            numericUpDownGFPowerMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(4, numericUpDownGFPowerMod.Value);
+            numericUpDownGFLevelMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, numericUpDownGFLevelMod.Value);
+            comboBoxGFAbility1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility1.SelectedIndex, 0);
+            comboBoxGFAbility2.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility2.SelectedIndex, 1);
+            comboBoxGFAbility3.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility3.SelectedIndex, 2);
+            comboBoxGFAbility4.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility4.SelectedIndex, 3);
+            comboBoxGFAbility5.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility5.SelectedIndex, 4);
+            comboBoxGFAbility6.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility6.SelectedIndex, 5);
+            comboBoxGFAbility7.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility7.SelectedIndex, 6);
+            comboBoxGFAbility8.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility8.SelectedIndex, 7);
+            comboBoxGFAbility9.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility9.SelectedIndex, 8);
+            comboBoxGFAbility10.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility10.SelectedIndex, 9);
+            comboBoxGFAbility11.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility11.SelectedIndex, 10);
+            comboBoxGFAbility12.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility12.SelectedIndex, 11);
+            comboBoxGFAbility13.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility13.SelectedIndex, 12);
+            comboBoxGFAbility14.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility14.SelectedIndex, 13);
+            comboBoxGFAbility15.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility15.SelectedIndex, 14);
+            comboBoxGFAbility16.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility16.SelectedIndex, 15);
+            comboBoxGFAbility17.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility17.SelectedIndex, 16);
+            comboBoxGFAbility18.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility18.SelectedIndex, 17);
+            comboBoxGFAbility19.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility19.SelectedIndex, 18);
+            comboBoxGFAbility20.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility20.SelectedIndex, 19);
+            comboBoxGFAbility21.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility21.SelectedIndex, 20);
+            checkBoxGFSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01,0,1);
+            checkBoxGFHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02,0,1);
+            checkBoxGFSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04,0,1);
+            checkBoxGFStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08,0,1);
+            checkBoxGFRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x10,0,1);
+            checkBoxGFProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x20,0,1);
+            checkBoxGFShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x40,0, 1);
+            checkBoxGFReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x80,0, 1);
+            checkBoxGFAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01, 0,2);
+            checkBoxGFCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02, 0,2);
+            checkBoxGFDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04, 0,2);
+            checkBoxGFInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08,0 ,2);
+            checkBoxGFPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x10,0 ,2);
+            checkBoxGFFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x20,0 ,2);
+            checkBoxGFConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, 0x40,0 ,2);
+            checkBoxGFDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x80, 0,2);
+            checkBoxGFEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01,0 ,3);
+            checkBoxGFDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02,0 ,3);
+            checkBoxGFTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04, 0,3);
+            checkBoxGFDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08, 0,3);
+            checkBoxGFVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01, 0,4);
+            checkBoxGFDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01,0 ,0);
+            checkBoxGFPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02,0 ,0);
+            checkBoxGFPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04,0 ,0);
+            checkBoxGFDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08,0 ,0);
+            checkBoxGFSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x10, 0,0);
+            checkBoxGFBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x20, 0,0);
+            checkBoxGFZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x40, 0, 0);
+            checkBoxGFStatus.CheckedChanged += new EventHandler(checkBoxGFStatus_Checked);
         }
 
 
@@ -466,36 +495,7 @@ namespace Doomtrain
             }
 
             else if (checkBoxMagicStatus.Checked == false)
-            {   
-                checkBoxMagicSleep.Enabled = false;
-                checkBoxMagicHaste.Enabled = false;
-                checkBoxMagicSlow.Enabled = false;
-                checkBoxMagicStop.Enabled = false;
-                checkBoxMagicRegen.Enabled = false;
-                checkBoxMagicProtect.Enabled = false;
-                checkBoxMagicShell.Enabled = false;
-                checkBoxMagicReflect.Enabled = false;
-                checkBoxMagicAura.Enabled = false;
-                checkBoxMagicCurse.Enabled = false;
-                checkBoxMagicDoom.Enabled = false;
-                checkBoxMagicInvincible.Enabled = false;
-                checkBoxMagicPetrifying.Enabled = false;
-                checkBoxMagicFloat.Enabled = false;
-                checkBoxMagicConfusion.Enabled = false;
-                checkBoxMagicDrain.Enabled = false;
-                checkBoxMagicEject.Enabled = false;
-                checkBoxMagicDouble.Enabled = false;
-                checkBoxMagicTriple.Enabled = false;
-                checkBoxMagicDefend.Enabled = false;
-                checkBoxMagicVit0.Enabled = false;
-                checkBoxMagicDeath.Enabled = false;
-                checkBoxMagicPoison.Enabled = false;
-                checkBoxMagicPetrify.Enabled = false;
-                checkBoxMagicDarkness.Enabled = false;
-                checkBoxMagicSilence.Enabled = false;
-                checkBoxMagicBerserk.Enabled = false;
-                checkBoxMagicZombie.Enabled = false;
-                //when unchecking the enabler the following also unchecks all the statuses
+            {
                 checkBoxMagicSleep.Checked = false;
                 checkBoxMagicHaste.Checked = false;
                 checkBoxMagicSlow.Checked = false;
@@ -524,6 +524,35 @@ namespace Doomtrain
                 checkBoxMagicSilence.Checked = false;
                 checkBoxMagicBerserk.Checked = false;
                 checkBoxMagicZombie.Checked = false;
+                //when unchecking the enabler the following also unchecks all the statuses
+                checkBoxMagicSleep.Enabled = false;
+                checkBoxMagicHaste.Enabled = false;
+                checkBoxMagicSlow.Enabled = false;
+                checkBoxMagicStop.Enabled = false;
+                checkBoxMagicRegen.Enabled = false;
+                checkBoxMagicProtect.Enabled = false;
+                checkBoxMagicShell.Enabled = false;
+                checkBoxMagicReflect.Enabled = false;
+                checkBoxMagicAura.Enabled = false;
+                checkBoxMagicCurse.Enabled = false;
+                checkBoxMagicDoom.Enabled = false;
+                checkBoxMagicInvincible.Enabled = false;
+                checkBoxMagicPetrifying.Enabled = false;
+                checkBoxMagicFloat.Enabled = false;
+                checkBoxMagicConfusion.Enabled = false;
+                checkBoxMagicDrain.Enabled = false;
+                checkBoxMagicEject.Enabled = false;
+                checkBoxMagicDouble.Enabled = false;
+                checkBoxMagicTriple.Enabled = false;
+                checkBoxMagicDefend.Enabled = false;
+                checkBoxMagicVit0.Enabled = false;
+                checkBoxMagicDeath.Enabled = false;
+                checkBoxMagicPoison.Enabled = false;
+                checkBoxMagicPetrify.Enabled = false;
+                checkBoxMagicDarkness.Enabled = false;
+                checkBoxMagicSilence.Enabled = false;
+                checkBoxMagicBerserk.Enabled = false;
+                checkBoxMagicZombie.Enabled = false;
             }
         }
 
@@ -573,38 +602,38 @@ namespace Doomtrain
         private void MagicStatusWorker()
         {
             //checkBoxMagicSleep.Checked =  ? true : false
-            checkBoxMagicSleep.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x01) >= 1 ? true : false;
-            checkBoxMagicHaste.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x02) >= 1 ? true : false;
-            checkBoxMagicSlow.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x04) >= 1 ? true : false;
-            checkBoxMagicStop.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x08) >= 1 ? true : false;
-            checkBoxMagicRegen.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x10) >= 1 ? true : false;
-            checkBoxMagicProtect.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x20) >= 1 ? true : false;
-            checkBoxMagicShell.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x40) >= 1 ? true : false;
-            checkBoxMagicReflect.Checked = (KernelWorker.GetSelectedMagicData.Status1 & 0x80) >= 1 ? true : false;
+            checkBoxMagicSleep.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic1 & 0x01) >= 1 ? true : false;
+            checkBoxMagicHaste.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic1 & 0x02) >= 1 ? true : false;
+            checkBoxMagicSlow.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic1 & 0x04) >= 1 ? true : false;
+            checkBoxMagicStop.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic1 & 0x08) >= 1 ? true : false;
+            checkBoxMagicRegen.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic1 & 0x10) >= 1 ? true : false;
+            checkBoxMagicProtect.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic1 & 0x20) >= 1 ? true : false;
+            checkBoxMagicShell.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic1 & 0x40) >= 1 ? true : false;
+            checkBoxMagicReflect.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic1 & 0x80) >= 1 ? true : false;
 
-            checkBoxMagicAura.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x01) >= 1 ? true : false;
-            checkBoxMagicCurse.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x02) >= 1 ? true : false;
-            checkBoxMagicDoom.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x04) >= 1 ? true : false;
-            checkBoxMagicInvincible.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x08) >= 1 ? true : false;
-            checkBoxMagicPetrifying.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x10) >= 1 ? true : false;
-            checkBoxMagicFloat.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x20) >= 1 ? true : false;
-            checkBoxMagicConfusion.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x40) >= 1 ? true : false;
-            checkBoxMagicDrain.Checked = (KernelWorker.GetSelectedMagicData.Status2 & 0x80) >= 1 ? true : false;
+            checkBoxMagicAura.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic2 & 0x01) >= 1 ? true : false;
+            checkBoxMagicCurse.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic2 & 0x02) >= 1 ? true : false;
+            checkBoxMagicDoom.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic2 & 0x04) >= 1 ? true : false;
+            checkBoxMagicInvincible.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic2 & 0x08) >= 1 ? true : false;
+            checkBoxMagicPetrifying.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic2 & 0x10) >= 1 ? true : false;
+            checkBoxMagicFloat.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic2 & 0x20) >= 1 ? true : false;
+            checkBoxMagicConfusion.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic2 & 0x40) >= 1 ? true : false;
+            checkBoxMagicDrain.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic2 & 0x80) >= 1 ? true : false;
 
-            checkBoxMagicEject.Checked = (KernelWorker.GetSelectedMagicData.Status3 & 0x01) >= 1 ? true : false;
-            checkBoxMagicDouble.Checked = (KernelWorker.GetSelectedMagicData.Status3 & 0x02) >= 1 ? true : false;
-            checkBoxMagicTriple.Checked = (KernelWorker.GetSelectedMagicData.Status3 & 0x04) >= 1 ? true : false;
-            checkBoxMagicDefend.Checked = (KernelWorker.GetSelectedMagicData.Status3 & 0x08) >= 1 ? true : false;
+            checkBoxMagicEject.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic3 & 0x01) >= 1 ? true : false;
+            checkBoxMagicDouble.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic3 & 0x02) >= 1 ? true : false;
+            checkBoxMagicTriple.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic3 & 0x04) >= 1 ? true : false;
+            checkBoxMagicDefend.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic3 & 0x08) >= 1 ? true : false;
 
-            checkBoxMagicVit0.Checked = (KernelWorker.GetSelectedMagicData.Status4 & 0x01) >= 1 ? true : false;
+            checkBoxMagicVit0.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic4 & 0x01) >= 1 ? true : false;
 
-            checkBoxMagicDeath.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x01) >= 1 ? true : false;
-            checkBoxMagicPoison.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x02) >= 1 ? true : false;
-            checkBoxMagicPetrify.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x04) >= 1 ? true : false;
-            checkBoxMagicDarkness.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x08) >= 1 ? true : false;
-            checkBoxMagicSilence.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x10) >= 1 ? true : false;
-            checkBoxMagicBerserk.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x20) >= 1 ? true : false;
-            checkBoxMagicZombie.Checked = (KernelWorker.GetSelectedMagicData.Status5 & 0x40) >= 1 ? true : false;
+            checkBoxMagicDeath.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x01) >= 1 ? true : false;
+            checkBoxMagicPoison.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x02) >= 1 ? true : false;
+            checkBoxMagicPetrify.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x04) >= 1 ? true : false;
+            checkBoxMagicDarkness.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x08) >= 1 ? true : false;
+            checkBoxMagicSilence.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x10) >= 1 ? true : false;
+            checkBoxMagicBerserk.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x20) >= 1 ? true : false;
+            checkBoxMagicZombie.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x40) >= 1 ? true : false;
         }
 
 
@@ -635,9 +664,9 @@ namespace Doomtrain
                 trackBarJElemAttack.Value = KernelWorker.GetSelectedMagicData.ElemAttackVAL;
                 StatusHoldWorker(1, KernelWorker.GetSelectedMagicData.ElemDefenseEN);
                 trackBarJElemDefense.Value = KernelWorker.GetSelectedMagicData.ElemDefenseVAL;
-                StatusHoldWorker(2,KernelWorker.GetSelectedMagicData.Status1, KernelWorker.GetSelectedMagicData.StatusATKEN, KernelWorker.GetSelectedMagicData.Status2, KernelWorker.GetSelectedMagicData.Status3, KernelWorker.GetSelectedMagicData.Status4, KernelWorker.GetSelectedMagicData.Status5);
+                StatusHoldWorker(2,KernelWorker.GetSelectedMagicData.StatusMagic1, KernelWorker.GetSelectedMagicData.StatusATKEN, KernelWorker.GetSelectedMagicData.StatusMagic2, KernelWorker.GetSelectedMagicData.StatusMagic3, KernelWorker.GetSelectedMagicData.StatusMagic4, KernelWorker.GetSelectedMagicData.StatusMagic5);
                 trackBarJStatAttack.Value = KernelWorker.GetSelectedMagicData.StatusATKval;
-                StatusHoldWorker(3, KernelWorker.GetSelectedMagicData.Status1,KernelWorker.GetSelectedMagicData.StatusDefEN , KernelWorker.GetSelectedMagicData.Status2, KernelWorker.GetSelectedMagicData.Status3, KernelWorker.GetSelectedMagicData.Status4, KernelWorker.GetSelectedMagicData.Status5);
+                StatusHoldWorker(3, KernelWorker.GetSelectedMagicData.StatusMagic1,KernelWorker.GetSelectedMagicData.StatusDefEN , KernelWorker.GetSelectedMagicData.StatusMagic2, KernelWorker.GetSelectedMagicData.StatusMagic3, KernelWorker.GetSelectedMagicData.StatusMagic4, KernelWorker.GetSelectedMagicData.StatusMagic5);
                 trackBarJStatDefense.Value = KernelWorker.GetSelectedMagicData.StatusDEFval;
             }
             catch(Exception e_)
@@ -905,35 +934,6 @@ namespace Doomtrain
 
             else if (checkBoxGFStatus.Checked == false)
             {
-                checkBoxGFSleep.Enabled = false;
-                checkBoxGFHaste.Enabled = false;
-                checkBoxGFSlow.Enabled = false;
-                checkBoxGFStop.Enabled = false;
-                checkBoxGFRegen.Enabled = false;
-                checkBoxGFProtect.Enabled = false;
-                checkBoxGFShell.Enabled = false;
-                checkBoxGFReflect.Enabled = false;
-                checkBoxGFAura.Enabled = false;
-                checkBoxGFCurse.Enabled = false;
-                checkBoxGFDoom.Enabled = false;
-                checkBoxGFInvincible.Enabled = false;
-                checkBoxGFPetrifying.Enabled = false;
-                checkBoxGFFloat.Enabled = false;
-                checkBoxGFConfusion.Enabled = false;
-                checkBoxGFDrain.Enabled = false;
-                checkBoxGFEject.Enabled = false;
-                checkBoxGFDouble.Enabled = false;
-                checkBoxGFTriple.Enabled = false;
-                checkBoxGFDefend.Enabled = false;
-                checkBoxGFVit0.Enabled = false;
-                checkBoxGFDeath.Enabled = false;
-                checkBoxGFPoison.Enabled = false;
-                checkBoxGFPetrify.Enabled = false;
-                checkBoxGFDarkness.Enabled = false;
-                checkBoxGFSilence.Enabled = false;
-                checkBoxGFBerserk.Enabled = false;
-                checkBoxGFZombie.Enabled = false;
-                //when unchecking the enabler the following also unchecks all the statuses
                 checkBoxGFSleep.Checked = false;
                 checkBoxGFHaste.Checked = false;
                 checkBoxGFSlow.Checked = false;
@@ -962,9 +962,120 @@ namespace Doomtrain
                 checkBoxGFSilence.Checked = false;
                 checkBoxGFBerserk.Checked = false;
                 checkBoxGFZombie.Checked = false;
+                //when unchecking the enabler the following also unchecks all the statuses
+                checkBoxGFSleep.Enabled = false;
+                checkBoxGFHaste.Enabled = false;
+                checkBoxGFSlow.Enabled = false;
+                checkBoxGFStop.Enabled = false;
+                checkBoxGFRegen.Enabled = false;
+                checkBoxGFProtect.Enabled = false;
+                checkBoxGFShell.Enabled = false;
+                checkBoxGFReflect.Enabled = false;
+                checkBoxGFAura.Enabled = false;
+                checkBoxGFCurse.Enabled = false;
+                checkBoxGFDoom.Enabled = false;
+                checkBoxGFInvincible.Enabled = false;
+                checkBoxGFPetrifying.Enabled = false;
+                checkBoxGFFloat.Enabled = false;
+                checkBoxGFConfusion.Enabled = false;
+                checkBoxGFDrain.Enabled = false;
+                checkBoxGFEject.Enabled = false;
+                checkBoxGFDouble.Enabled = false;
+                checkBoxGFTriple.Enabled = false;
+                checkBoxGFDefend.Enabled = false;
+                checkBoxGFVit0.Enabled = false;
+                checkBoxGFDeath.Enabled = false;
+                checkBoxGFPoison.Enabled = false;
+                checkBoxGFPetrify.Enabled = false;
+                checkBoxGFDarkness.Enabled = false;
+                checkBoxGFSilence.Enabled = false;
+                checkBoxGFBerserk.Enabled = false;
+                checkBoxGFZombie.Enabled = false;
+                
+                KernelWorker.UpdateVariable_GF(9, 0);
             }
+            KernelWorker.UpdateVariable_GF(8, checkBoxGFStatus.Checked ? 0xFF : 0x00); 
         }
 
+        
+
+        private int GF_GetElement()
+        {
+            return KernelWorker.GetSelectedGFData.ElementGF == KernelWorker.Element.Fire
+                        ? 0
+                        : KernelWorker.GetSelectedGFData.ElementGF == KernelWorker.Element.Ice
+                            ? 1
+                            : KernelWorker.GetSelectedGFData.ElementGF == KernelWorker.Element.Thunder
+                                ? 2
+                                : KernelWorker.GetSelectedGFData.ElementGF == KernelWorker.Element.Earth
+                                    ? 3
+                                    : KernelWorker.GetSelectedGFData.ElementGF == KernelWorker.Element.Poison
+                                        ? 4
+                                        : KernelWorker.GetSelectedGFData.ElementGF == KernelWorker.Element.Wind
+                                            ? 5
+                                            : KernelWorker.GetSelectedGFData.ElementGF ==
+                                              KernelWorker.Element.Water
+                                                ? 6
+                                                : KernelWorker.GetSelectedGFData.ElementGF ==
+                                                  KernelWorker.Element.Holy
+                                                    ? 7
+                                                    : KernelWorker.GetSelectedGFData.ElementGF ==
+                                                      KernelWorker.Element.NonElemental
+                                                        ? comboBoxGFElement.Items.Count - 1
+                                                        : 0;
+        }
+
+        private byte GF_GetElement(int Index)
+        {
+            byte elem = (byte)(Index == 8 ? (byte)KernelWorker.Element.NonElemental :
+                Index == 0 ? (byte)KernelWorker.Element.Fire :
+                Index == 1 ? (byte)KernelWorker.Element.Ice :
+                Index == 2 ? (byte)KernelWorker.Element.Thunder :
+                Index == 3 ? (byte)KernelWorker.Element.Earth :
+                Index == 4 ? (byte)KernelWorker.Element.Poison :
+                Index == 5 ? (byte)KernelWorker.Element.Wind :
+                Index == 6 ? (byte)KernelWorker.Element.Water :
+                Index == 7 ? (byte)KernelWorker.Element.Holy :
+                0x00 /*ErrorHandler*/);
+            return elem;
+        }
+
+        private void GFStatusWorker()
+        {
+            //checkBoxMagicSleep.Checked =  ? true : false
+            checkBoxGFSleep.Checked = (KernelWorker.GetSelectedGFData.StatusGF2 & 0x01) >= 1 ? true : false;
+            checkBoxGFHaste.Checked = (KernelWorker.GetSelectedGFData.StatusGF2 & 0x02) >= 1 ? true : false;
+            checkBoxGFSlow.Checked = (KernelWorker.GetSelectedGFData.StatusGF2 & 0x04) >= 1 ? true : false;
+            checkBoxGFStop.Checked = (KernelWorker.GetSelectedGFData.StatusGF2 & 0x08) >= 1 ? true : false;
+            checkBoxGFRegen.Checked = (KernelWorker.GetSelectedGFData.StatusGF2 & 0x10) >= 1 ? true : false;
+            checkBoxGFProtect.Checked = (KernelWorker.GetSelectedGFData.StatusGF2 & 0x20) >= 1 ? true : false;
+            checkBoxGFShell.Checked = (KernelWorker.GetSelectedGFData.StatusGF2 & 0x40) >= 1 ? true : false;
+            checkBoxGFReflect.Checked = (KernelWorker.GetSelectedGFData.StatusGF2 & 0x80) >= 1 ? true : false;
+                  
+            checkBoxGFAura.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x01) >= 1 ? true : false;
+            checkBoxGFCurse.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x02) >= 1 ? true : false;
+            checkBoxGFDoom.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x04) >= 1 ? true : false;
+            checkBoxGFInvincible.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x08) >= 1 ? true : false;
+            checkBoxGFPetrifying.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x10) >= 1 ? true : false;
+            checkBoxGFFloat.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x20) >= 1 ? true : false;
+            checkBoxGFConfusion.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x40) >= 1 ? true : false;
+            checkBoxGFDrain.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x80) >= 1 ? true : false;
+                   
+            checkBoxGFEject.Checked = (KernelWorker.GetSelectedGFData.StatusGF4 & 0x01) >= 1 ? true : false;
+            checkBoxGFDouble.Checked = (KernelWorker.GetSelectedGFData.StatusGF4 & 0x02) >= 1 ? true : false;
+            checkBoxGFTriple.Checked = (KernelWorker.GetSelectedGFData.StatusGF4 & 0x04) >= 1 ? true : false;
+            checkBoxGFDefend.Checked = (KernelWorker.GetSelectedGFData.StatusGF4 & 0x08) >= 1 ? true : false;
+                    
+            checkBoxGFVit0.Checked = (KernelWorker.GetSelectedGFData.StatusGF5 & 0x01) >= 1 ? true : false;
+                   
+            checkBoxGFDeath.Checked = (KernelWorker.GetSelectedGFData.StatusGF1 & 0x01) >= 1 ? true : false;
+            checkBoxGFPoison.Checked = (KernelWorker.GetSelectedGFData.StatusGF1 & 0x02) >= 1 ? true : false;
+            checkBoxGFPetrify.Checked = (KernelWorker.GetSelectedGFData.StatusGF1 & 0x04) >= 1 ? true : false;
+            checkBoxGFDarkness.Checked = (KernelWorker.GetSelectedGFData.StatusGF1 & 0x08) >= 1 ? true : false;
+            checkBoxGFSilence.Checked = (KernelWorker.GetSelectedGFData.StatusGF1 & 0x10) >= 1 ? true : false;
+            checkBoxGFBerserk.Checked = (KernelWorker.GetSelectedGFData.StatusGF1 & 0x20) >= 1 ? true : false;
+            checkBoxGFZombie.Checked = (KernelWorker.GetSelectedGFData.StatusGF1 & 0x40) >= 1 ? true : false;
+        }
 
 
         private void listBoxGF_SelectedIndexChanged(object sender, EventArgs e)
@@ -1002,6 +1113,9 @@ namespace Doomtrain
                 comboBoxGFAbility19.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility19;
                 comboBoxGFAbility20.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility20;
                 comboBoxGFAbility21.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility21;
+                comboBoxGFElement.SelectedIndex = GF_GetElement();
+                checkBoxGFStatus.Checked = KernelWorker.GetSelectedGFData.GFStatusEnabler > 0x00 ? true : false;
+                GFStatusWorker();
             }
             catch (Exception eeException)
             {
