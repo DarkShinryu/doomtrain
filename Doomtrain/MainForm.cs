@@ -440,6 +440,13 @@ namespace Doomtrain
 
 
 
+        //ABILITIES TRACKBARS LABELS VALUE
+        private void trackBarStatsIncrementValue_Scroll(object sender, EventArgs e)
+        {
+            labelStatsIncrementValueTrackBar.Text = trackBarStatsIncrementValue.Value + "%".ToString();
+        }
+
+
 
         //GF LISTBOXES SWITCH
         private void tabControlGF_SelectedIndexChanged(object sender, EventArgs e)
@@ -1123,7 +1130,5 @@ namespace Doomtrain
             }
             _loaded = true;
         }
-
-
     }
 }

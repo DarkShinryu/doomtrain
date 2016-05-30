@@ -208,6 +208,7 @@
             this.comboBoxGFAbility1 = new System.Windows.Forms.ComboBox();
             this.labelGFAbility1 = new System.Windows.Forms.Label();
             this.groupBoxGFGeneral = new System.Windows.Forms.GroupBox();
+            this.checkBoxGFStatus = new System.Windows.Forms.CheckBox();
             this.comboBoxGFElement = new System.Windows.Forms.ComboBox();
             this.labelGFElement = new System.Windows.Forms.Label();
             this.checkBoxGFDarkness = new System.Windows.Forms.CheckBox();
@@ -250,6 +251,7 @@
             this.labelGFMagicID = new System.Windows.Forms.Label();
             this.tabPageGFAttack = new System.Windows.Forms.TabPage();
             this.groupBoxGFAttackGeneral = new System.Windows.Forms.GroupBox();
+            this.checkBoxGFAttackStatus = new System.Windows.Forms.CheckBox();
             this.comboBoxGFAttackElement = new System.Windows.Forms.ComboBox();
             this.labelGFAttackElement = new System.Windows.Forms.Label();
             this.checkBoxGFAttackDarkness = new System.Windows.Forms.CheckBox();
@@ -296,8 +298,18 @@
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.checkBoxGFStatus = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFAttackStatus = new System.Windows.Forms.CheckBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPageStatsIncrement = new System.Windows.Forms.TabPage();
+            this.groupBoxStatsIncrement = new System.Windows.Forms.GroupBox();
+            this.listBoxStatsIncrement = new System.Windows.Forms.ListBox();
+            this.labelStatsIncrementName = new System.Windows.Forms.Label();
+            this.labelStatsIncrementDescription = new System.Windows.Forms.Label();
+            this.textBoxStatsIncrementName = new System.Windows.Forms.TextBox();
+            this.textBoxStatsIncrementDescription = new System.Windows.Forms.TextBox();
+            this.labelStatsIncrementValue = new System.Windows.Forms.Label();
+            this.labelStatsIncrementValueTrackBar = new System.Windows.Forms.Label();
+            this.trackBarStatsIncrementValue = new System.Windows.Forms.TrackBar();
             this.menuStrip1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageMagic.SuspendLayout();
@@ -341,6 +353,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAttackPowerMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAttackPower)).BeginInit();
             this.toolbarStrip.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPageStatsIncrement.SuspendLayout();
+            this.groupBoxStatsIncrement.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarStatsIncrementValue)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -427,6 +444,7 @@
             this.tabControlMain.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabControlMain.Controls.Add(this.tabPageMagic);
             this.tabControlMain.Controls.Add(this.tabPageGF);
+            this.tabControlMain.Controls.Add(this.tabPage1);
             this.tabControlMain.Font = new System.Drawing.Font("Trajan Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlMain.Location = new System.Drawing.Point(0, 52);
             this.tabControlMain.Multiline = true;
@@ -5474,6 +5492,18 @@
             this.groupBoxGFGeneral.TabStop = false;
             this.groupBoxGFGeneral.Text = "General";
             // 
+            // checkBoxGFStatus
+            // 
+            this.checkBoxGFStatus.AutoSize = true;
+            this.checkBoxGFStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFStatus.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFStatus.Location = new System.Drawing.Point(179, 125);
+            this.checkBoxGFStatus.Name = "checkBoxGFStatus";
+            this.checkBoxGFStatus.Size = new System.Drawing.Size(109, 21);
+            this.checkBoxGFStatus.TabIndex = 90;
+            this.checkBoxGFStatus.Text = "Enable Status";
+            this.checkBoxGFStatus.UseVisualStyleBackColor = true;
+            // 
             // comboBoxGFElement
             // 
             this.comboBoxGFElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -6371,6 +6401,18 @@
             this.groupBoxGFAttackGeneral.TabIndex = 3;
             this.groupBoxGFAttackGeneral.TabStop = false;
             this.groupBoxGFAttackGeneral.Text = "General";
+            // 
+            // checkBoxGFAttackStatus
+            // 
+            this.checkBoxGFAttackStatus.AutoSize = true;
+            this.checkBoxGFAttackStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFAttackStatus.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFAttackStatus.Location = new System.Drawing.Point(179, 158);
+            this.checkBoxGFAttackStatus.Name = "checkBoxGFAttackStatus";
+            this.checkBoxGFAttackStatus.Size = new System.Drawing.Size(109, 21);
+            this.checkBoxGFAttackStatus.TabIndex = 91;
+            this.checkBoxGFAttackStatus.Text = "Enable Status";
+            this.checkBoxGFAttackStatus.UseVisualStyleBackColor = true;
             // 
             // comboBoxGFAttackElement
             // 
@@ -7290,29 +7332,165 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // checkBoxGFStatus
+            // tabPage1
             // 
-            this.checkBoxGFStatus.AutoSize = true;
-            this.checkBoxGFStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFStatus.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFStatus.Location = new System.Drawing.Point(179, 125);
-            this.checkBoxGFStatus.Name = "checkBoxGFStatus";
-            this.checkBoxGFStatus.Size = new System.Drawing.Size(109, 21);
-            this.checkBoxGFStatus.TabIndex = 90;
-            this.checkBoxGFStatus.Text = "Enable Status";
-            this.checkBoxGFStatus.UseVisualStyleBackColor = true;
+            this.tabPage1.Controls.Add(this.tabControl1);
+            this.tabPage1.Controls.Add(this.listBoxStatsIncrement);
+            this.tabPage1.Location = new System.Drawing.Point(4, 32);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(584, 745);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Abilities";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // checkBoxGFAttackStatus
+            // tabControl1
             // 
-            this.checkBoxGFAttackStatus.AutoSize = true;
-            this.checkBoxGFAttackStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFAttackStatus.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFAttackStatus.Location = new System.Drawing.Point(179, 158);
-            this.checkBoxGFAttackStatus.Name = "checkBoxGFAttackStatus";
-            this.checkBoxGFAttackStatus.Size = new System.Drawing.Size(109, 21);
-            this.checkBoxGFAttackStatus.TabIndex = 91;
-            this.checkBoxGFAttackStatus.Text = "Enable Status";
-            this.checkBoxGFAttackStatus.UseVisualStyleBackColor = true;
+            this.tabControl1.Controls.Add(this.tabPageStatsIncrement);
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(111, 0);
+            this.tabControl1.Multiline = true;
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(477, 736);
+            this.tabControl1.TabIndex = 2;
+            this.tabControl1.TabStop = false;
+            // 
+            // tabPageStatsIncrement
+            // 
+            this.tabPageStatsIncrement.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageStatsIncrement.Controls.Add(this.groupBoxStatsIncrement);
+            this.tabPageStatsIncrement.Location = new System.Drawing.Point(4, 26);
+            this.tabPageStatsIncrement.Name = "tabPageStatsIncrement";
+            this.tabPageStatsIncrement.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageStatsIncrement.Size = new System.Drawing.Size(469, 706);
+            this.tabPageStatsIncrement.TabIndex = 0;
+            this.tabPageStatsIncrement.Text = "Stats Increment";
+            // 
+            // groupBoxStatsIncrement
+            // 
+            this.groupBoxStatsIncrement.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementValueTrackBar);
+            this.groupBoxStatsIncrement.Controls.Add(this.trackBarStatsIncrementValue);
+            this.groupBoxStatsIncrement.Controls.Add(this.textBoxStatsIncrementDescription);
+            this.groupBoxStatsIncrement.Controls.Add(this.textBoxStatsIncrementName);
+            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementDescription);
+            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementValue);
+            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementName);
+            this.groupBoxStatsIncrement.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxStatsIncrement.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxStatsIncrement.Location = new System.Drawing.Point(0, 6);
+            this.groupBoxStatsIncrement.Name = "groupBoxStatsIncrement";
+            this.groupBoxStatsIncrement.Size = new System.Drawing.Size(466, 285);
+            this.groupBoxStatsIncrement.TabIndex = 2;
+            this.groupBoxStatsIncrement.TabStop = false;
+            this.groupBoxStatsIncrement.Text = "General";
+            // 
+            // listBoxStatsIncrement
+            // 
+            this.listBoxStatsIncrement.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxStatsIncrement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxStatsIncrement.FormattingEnabled = true;
+            this.listBoxStatsIncrement.ItemHeight = 17;
+            this.listBoxStatsIncrement.Items.AddRange(new object[] {
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "STR+20%",
+            "STR+40%",
+            "STR+60%",
+            "VIT+20%",
+            "VIT+40%",
+            "VIT+60%",
+            "MAG+20%",
+            "MAG+40%",
+            "MAG+60%",
+            "SPR+20%",
+            "SPR+40%",
+            "SPR+60%",
+            "SPD+20%",
+            "SPD+40%",
+            "EVA+30%",
+            "LUCK+50%"});
+            this.listBoxStatsIncrement.Location = new System.Drawing.Point(0, 0);
+            this.listBoxStatsIncrement.Name = "listBoxStatsIncrement";
+            this.listBoxStatsIncrement.ScrollAlwaysVisible = true;
+            this.listBoxStatsIncrement.Size = new System.Drawing.Size(109, 327);
+            this.listBoxStatsIncrement.TabIndex = 3;
+            // 
+            // labelStatsIncrementName
+            // 
+            this.labelStatsIncrementName.AutoSize = true;
+            this.labelStatsIncrementName.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelStatsIncrementName.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatsIncrementName.Location = new System.Drawing.Point(211, 31);
+            this.labelStatsIncrementName.Name = "labelStatsIncrementName";
+            this.labelStatsIncrementName.Size = new System.Drawing.Size(44, 17);
+            this.labelStatsIncrementName.TabIndex = 1;
+            this.labelStatsIncrementName.Text = "Name";
+            this.toolTip1.SetToolTip(this.labelStatsIncrementName, "Used in damage calculation");
+            // 
+            // labelStatsIncrementDescription
+            // 
+            this.labelStatsIncrementDescription.AutoSize = true;
+            this.labelStatsIncrementDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelStatsIncrementDescription.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatsIncrementDescription.Location = new System.Drawing.Point(195, 100);
+            this.labelStatsIncrementDescription.Name = "labelStatsIncrementDescription";
+            this.labelStatsIncrementDescription.Size = new System.Drawing.Size(76, 17);
+            this.labelStatsIncrementDescription.TabIndex = 1;
+            this.labelStatsIncrementDescription.Text = "Description";
+            // 
+            // textBoxStatsIncrementName
+            // 
+            this.textBoxStatsIncrementName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStatsIncrementName.Location = new System.Drawing.Point(145, 51);
+            this.textBoxStatsIncrementName.Name = "textBoxStatsIncrementName";
+            this.textBoxStatsIncrementName.Size = new System.Drawing.Size(176, 25);
+            this.textBoxStatsIncrementName.TabIndex = 2;
+            // 
+            // textBoxStatsIncrementDescription
+            // 
+            this.textBoxStatsIncrementDescription.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStatsIncrementDescription.Location = new System.Drawing.Point(111, 120);
+            this.textBoxStatsIncrementDescription.Name = "textBoxStatsIncrementDescription";
+            this.textBoxStatsIncrementDescription.Size = new System.Drawing.Size(245, 25);
+            this.textBoxStatsIncrementDescription.TabIndex = 2;
+            // 
+            // labelStatsIncrementValue
+            // 
+            this.labelStatsIncrementValue.AutoSize = true;
+            this.labelStatsIncrementValue.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelStatsIncrementValue.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatsIncrementValue.Location = new System.Drawing.Point(170, 185);
+            this.labelStatsIncrementValue.Name = "labelStatsIncrementValue";
+            this.labelStatsIncrementValue.Size = new System.Drawing.Size(126, 17);
+            this.labelStatsIncrementValue.TabIndex = 1;
+            this.labelStatsIncrementValue.Text = "Increasement Value";
+            // 
+            // labelStatsIncrementValueTrackBar
+            // 
+            this.labelStatsIncrementValueTrackBar.AutoSize = true;
+            this.labelStatsIncrementValueTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatsIncrementValueTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatsIncrementValueTrackBar.Location = new System.Drawing.Point(219, 232);
+            this.labelStatsIncrementValueTrackBar.Name = "labelStatsIncrementValueTrackBar";
+            this.labelStatsIncrementValueTrackBar.Size = new System.Drawing.Size(28, 19);
+            this.labelStatsIncrementValueTrackBar.TabIndex = 28;
+            this.labelStatsIncrementValueTrackBar.Text = "0%";
+            this.labelStatsIncrementValueTrackBar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // trackBarStatsIncrementValue
+            // 
+            this.trackBarStatsIncrementValue.LargeChange = 10;
+            this.trackBarStatsIncrementValue.Location = new System.Drawing.Point(17, 205);
+            this.trackBarStatsIncrementValue.Maximum = 255;
+            this.trackBarStatsIncrementValue.Name = "trackBarStatsIncrementValue";
+            this.trackBarStatsIncrementValue.Size = new System.Drawing.Size(432, 45);
+            this.trackBarStatsIncrementValue.TabIndex = 27;
+            this.trackBarStatsIncrementValue.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.trackBarStatsIncrementValue.Scroll += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
+            this.trackBarStatsIncrementValue.ValueChanged += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
             // 
             // mainForm
             // 
@@ -7384,6 +7562,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAttackPower)).EndInit();
             this.toolbarStrip.ResumeLayout(false);
             this.toolbarStrip.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPageStatsIncrement.ResumeLayout(false);
+            this.groupBoxStatsIncrement.ResumeLayout(false);
+            this.groupBoxStatsIncrement.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarStatsIncrementValue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7659,6 +7843,18 @@
         private System.Windows.Forms.CheckBox checkBoxMagicStatus;
         private System.Windows.Forms.CheckBox checkBoxGFStatus;
         private System.Windows.Forms.CheckBox checkBoxGFAttackStatus;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPageStatsIncrement;
+        private System.Windows.Forms.GroupBox groupBoxStatsIncrement;
+        private System.Windows.Forms.TextBox textBoxStatsIncrementDescription;
+        private System.Windows.Forms.TextBox textBoxStatsIncrementName;
+        private System.Windows.Forms.Label labelStatsIncrementDescription;
+        private System.Windows.Forms.Label labelStatsIncrementName;
+        private System.Windows.Forms.ListBox listBoxStatsIncrement;
+        private System.Windows.Forms.Label labelStatsIncrementValueTrackBar;
+        private System.Windows.Forms.TrackBar trackBarStatsIncrementValue;
+        private System.Windows.Forms.Label labelStatsIncrementValue;
     }
 }
 
