@@ -702,8 +702,8 @@ namespace Doomtrain
             selectedGfAttacksOffset += 2 + 2 + 1;
             GetSelectedGFAttacksData.GFAttacksPower = Kernel[selectedGfAttacksOffset++];            
             GetSelectedGFAttacksData.GFAttacksStatusEnabler = Kernel[selectedGfAttacksOffset++];
-            selectedGfAttacksOffset += 1 + 4;
-            byte b = Kernel[selectedGfAttacksOffset];
+            selectedGfAttacksOffset += 4;
+            byte b = Kernel[selectedGfAttacksOffset++];
             GetSelectedGFAttacksData.ElementGFAttacks =
                 b == (byte)Element.Fire
                     ? Element.Fire
