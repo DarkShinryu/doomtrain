@@ -28,7 +28,7 @@ namespace Doomtrain
 
 
             //this is for enabling a cool switch with the listboxes in the gf section :)
-            listBoxGFAttack.Visible = false;
+            listBoxGFAttacks.Visible = false;
             tabControlGF.SelectedIndexChanged += new EventHandler(tabControlGF_SelectedIndexChanged);
 
 #region for disabling status checkboxes when status enablers are unchecked
@@ -89,34 +89,34 @@ namespace Doomtrain
             checkBoxGFSilence.Enabled = false;
             checkBoxGFBerserk.Enabled = false;
             checkBoxGFZombie.Enabled = false;
-            checkBoxGFAttackSleep.Enabled = false;
-            checkBoxGFAttackHaste.Enabled = false;
-            checkBoxGFAttackSlow.Enabled = false;
-            checkBoxGFAttackStop.Enabled = false;
-            checkBoxGFAttackRegen.Enabled = false;
-            checkBoxGFAttackProtect.Enabled = false;
-            checkBoxGFAttackShell.Enabled = false;
-            checkBoxGFAttackReflect.Enabled = false;
-            checkBoxGFAttackAura.Enabled = false;
-            checkBoxGFAttackCurse.Enabled = false;
-            checkBoxGFAttackDoom.Enabled = false;
-            checkBoxGFAttackInvincible.Enabled = false;
-            checkBoxGFAttackPetrifying.Enabled = false;
-            checkBoxGFAttackFloat.Enabled = false;
-            checkBoxGFAttackConfusion.Enabled = false;
-            checkBoxGFAttackDrain.Enabled = false;
-            checkBoxGFAttackEject.Enabled = false;
-            checkBoxGFAttackDouble.Enabled = false;
-            checkBoxGFAttackTriple.Enabled = false;
-            checkBoxGFAttackDefend.Enabled = false;
-            checkBoxGFAttackVit0.Enabled = false;
-            checkBoxGFAttackDeath.Enabled = false;
-            checkBoxGFAttackPoison.Enabled = false;
-            checkBoxGFAttackPetrify.Enabled = false;
-            checkBoxGFAttackDarkness.Enabled = false;
-            checkBoxGFAttackSilence.Enabled = false;
-            checkBoxGFAttackBerserk.Enabled = false;
-            checkBoxGFAttackZombie.Enabled = false;
+            checkBoxGFAttacksSleep.Enabled = false;
+            checkBoxGFAttacksHaste.Enabled = false;
+            checkBoxGFAttacksSlow.Enabled = false;
+            checkBoxGFAttacksStop.Enabled = false;
+            checkBoxGFAttacksRegen.Enabled = false;
+            checkBoxGFAttacksProtect.Enabled = false;
+            checkBoxGFAttacksShell.Enabled = false;
+            checkBoxGFAttacksReflect.Enabled = false;
+            checkBoxGFAttacksAura.Enabled = false;
+            checkBoxGFAttacksCurse.Enabled = false;
+            checkBoxGFAttacksDoom.Enabled = false;
+            checkBoxGFAttacksInvincible.Enabled = false;
+            checkBoxGFAttacksPetrifying.Enabled = false;
+            checkBoxGFAttacksFloat.Enabled = false;
+            checkBoxGFAttacksConfusion.Enabled = false;
+            checkBoxGFAttacksDrain.Enabled = false;
+            checkBoxGFAttacksEject.Enabled = false;
+            checkBoxGFAttacksDouble.Enabled = false;
+            checkBoxGFAttacksTriple.Enabled = false;
+            checkBoxGFAttacksDefend.Enabled = false;
+            checkBoxGFAttacksVit0.Enabled = false;
+            checkBoxGFAttacksDeath.Enabled = false;
+            checkBoxGFAttacksPoison.Enabled = false;
+            checkBoxGFAttacksPetrify.Enabled = false;
+            checkBoxGFAttacksDarkness.Enabled = false;
+            checkBoxGFAttacksSilence.Enabled = false;
+            checkBoxGFAttacksBerserk.Enabled = false;
+            checkBoxGFAttacksZombie.Enabled = false;
             //checkBoxGFAttackStatus.CheckedChanged += new EventHandler(checkBoxGFAttackStatus_Checked);
 #endregion
 
@@ -267,6 +267,42 @@ namespace Doomtrain
             checkBoxGFBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x20, 0,0);
             checkBoxGFZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x40, 0, 0);
             checkBoxGFStatus.CheckedChanged += new EventHandler(checkBoxGFStatus_Checked);
+
+            //Non-Junctionable GFs Attacks
+            comboBoxGFAttacksMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(0, comboBoxGFAttacksMagicID.SelectedIndex);
+            numericUpDownGFAttacksPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(1, numericUpDownGFAttacksPower.Value);
+            checkBoxGFAttacksStatus.CheckedChanged += new EventHandler(checkBoxGFAttacksStatus_Checked);
+            comboBoxGFAttacksElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(3, GFAttacks_GetElement(comboBoxGFAttacksElement.SelectedIndex));
+            checkBoxGFAttacksSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x01, 0);
+            checkBoxGFAttacksHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x02, 0);
+            checkBoxGFAttacksSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x04, 0);
+            checkBoxGFAttacksStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x08, 0);
+            checkBoxGFAttacksRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x10, 0);
+            checkBoxGFAttacksProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x20, 0);
+            checkBoxGFAttacksShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x40, 0);
+            checkBoxGFAttacksReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x80, 0);
+            checkBoxGFAttacksAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x01, 1);
+            checkBoxGFAttacksCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x02, 1);
+            checkBoxGFAttacksDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x04, 1);
+            checkBoxGFAttacksInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x08, 1);
+            checkBoxGFAttacksPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x10, 1);
+            checkBoxGFAttacksFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x20, 1);
+            checkBoxGFAttacksConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x40, 1);
+            checkBoxGFAttacksDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x80, 1);
+            checkBoxGFAttacksEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x01, 2);
+            checkBoxGFAttacksDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x02, 2);
+            checkBoxGFAttacksTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x04, 2);
+            checkBoxGFAttacksDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x08, 2);
+            checkBoxGFAttacksVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x01, 3);
+            checkBoxGFAttacksDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x01, 4);
+            checkBoxGFAttacksPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x02, 4);
+            checkBoxGFAttacksPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x04, 4);
+            checkBoxGFAttacksDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x08, 4);
+            checkBoxGFAttacksSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x10, 4);
+            checkBoxGFAttacksBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x20, 4);
+            checkBoxGFAttacksZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x40, 4);
+            numericUpDownGFAttacksPowerMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(5, numericUpDownGFAttacksPowerMod.Value);
+            numericUpDownGFAttacksLevelMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(6, numericUpDownGFAttacksLevelMod.Value);
         }
 
 
@@ -453,14 +489,14 @@ namespace Doomtrain
         {
             if (tabControlGF.SelectedIndex == 0)
             {
-                listBoxGFAttack.Visible = false;
+                listBoxGFAttacks.Visible = false;
                 listBoxGF.Visible = true;
             }
 
             else if (tabControlGF.SelectedIndex == 1)
             {
                 listBoxGF.Visible = false;
-                listBoxGFAttack.Visible = true;
+                listBoxGFAttacks.Visible = true;
             }
         }
 
@@ -1127,6 +1163,211 @@ namespace Doomtrain
             catch (Exception eeException)
             {
                 MessageBox.Show(eeException.ToString());
+            }
+            _loaded = true;
+        }
+
+
+        //Non Junctionable GFs Attacks
+        private void checkBoxGFAttacksStatus_Checked(object sender, EventArgs e)
+        {
+            if (checkBoxGFAttacksStatus.Checked == true)
+            {
+                checkBoxGFAttacksSleep.Enabled = true;
+                checkBoxGFAttacksHaste.Enabled = true;
+                checkBoxGFAttacksSlow.Enabled = true;
+                checkBoxGFAttacksStop.Enabled = true;
+                checkBoxGFAttacksRegen.Enabled = true;
+                checkBoxGFAttacksProtect.Enabled = true;
+                checkBoxGFAttacksShell.Enabled = true;
+                checkBoxGFAttacksReflect.Enabled = true;
+                checkBoxGFAttacksAura.Enabled = true;
+                checkBoxGFAttacksCurse.Enabled = true;
+                checkBoxGFAttacksDoom.Enabled = true;
+                checkBoxGFAttacksInvincible.Enabled = true;
+                checkBoxGFAttacksPetrifying.Enabled = true;
+                checkBoxGFAttacksFloat.Enabled = true;
+                checkBoxGFAttacksConfusion.Enabled = true;
+                checkBoxGFAttacksDrain.Enabled = true;
+                checkBoxGFAttacksEject.Enabled = true;
+                checkBoxGFAttacksDouble.Enabled = true;
+                checkBoxGFAttacksTriple.Enabled = true;
+                checkBoxGFAttacksDefend.Enabled = true;
+                checkBoxGFAttacksVit0.Enabled = true;
+                checkBoxGFAttacksDeath.Enabled = true;
+                checkBoxGFAttacksPoison.Enabled = true;
+                checkBoxGFAttacksPetrify.Enabled = true;
+                checkBoxGFAttacksDarkness.Enabled = true;
+                checkBoxGFAttacksSilence.Enabled = true;
+                checkBoxGFAttacksBerserk.Enabled = true;
+                checkBoxGFAttacksZombie.Enabled = true;
+            }
+
+            else if (checkBoxGFAttacksStatus.Checked == false)
+            {
+                checkBoxGFAttacksSleep.Checked = false;
+                checkBoxGFAttacksHaste.Checked = false;
+                checkBoxGFAttacksSlow.Checked = false;
+                checkBoxGFAttacksStop.Checked = false;
+                checkBoxGFAttacksRegen.Checked = false;
+                checkBoxGFAttacksProtect.Checked = false;
+                checkBoxGFAttacksShell.Checked = false;
+                checkBoxGFAttacksReflect.Checked = false;
+                checkBoxGFAttacksAura.Checked = false;
+                checkBoxGFAttacksCurse.Checked = false;
+                checkBoxGFAttacksDoom.Checked = false;
+                checkBoxGFAttacksInvincible.Checked = false;
+                checkBoxGFAttacksPetrifying.Checked = false;
+                checkBoxGFAttacksFloat.Checked = false;
+                checkBoxGFAttacksConfusion.Checked = false;
+                checkBoxGFAttacksDrain.Checked = false;
+                checkBoxGFAttacksEject.Checked = false;
+                checkBoxGFAttacksDouble.Checked = false;
+                checkBoxGFAttacksTriple.Checked = false;
+                checkBoxGFAttacksDefend.Checked = false;
+                checkBoxGFAttacksVit0.Checked = false;
+                checkBoxGFAttacksDeath.Checked = false;
+                checkBoxGFAttacksPoison.Checked = false;
+                checkBoxGFAttacksPetrify.Checked = false;
+                checkBoxGFAttacksDarkness.Checked = false;
+                checkBoxGFAttacksSilence.Checked = false;
+                checkBoxGFAttacksBerserk.Checked = false;
+                checkBoxGFAttacksZombie.Checked = false;
+                //when unchecking the enabler the following also unchecks all the statuses
+                checkBoxGFAttacksSleep.Enabled = false;
+                checkBoxGFAttacksHaste.Enabled = false;
+                checkBoxGFAttacksSlow.Enabled = false;
+                checkBoxGFAttacksStop.Enabled = false;
+                checkBoxGFAttacksRegen.Enabled = false;
+                checkBoxGFAttacksProtect.Enabled = false;
+                checkBoxGFAttacksShell.Enabled = false;
+                checkBoxGFAttacksReflect.Enabled = false;
+                checkBoxGFAttacksAura.Enabled = false;
+                checkBoxGFAttacksCurse.Enabled = false;
+                checkBoxGFAttacksDoom.Enabled = false;
+                checkBoxGFAttacksInvincible.Enabled = false;
+                checkBoxGFAttacksPetrifying.Enabled = false;
+                checkBoxGFAttacksFloat.Enabled = false;
+                checkBoxGFAttacksConfusion.Enabled = false;
+                checkBoxGFAttacksDrain.Enabled = false;
+                checkBoxGFAttacksEject.Enabled = false;
+                checkBoxGFAttacksDouble.Enabled = false;
+                checkBoxGFAttacksTriple.Enabled = false;
+                checkBoxGFAttacksDefend.Enabled = false;
+                checkBoxGFAttacksVit0.Enabled = false;
+                checkBoxGFAttacksDeath.Enabled = false;
+                checkBoxGFAttacksPoison.Enabled = false;
+                checkBoxGFAttacksPetrify.Enabled = false;
+                checkBoxGFAttacksDarkness.Enabled = false;
+                checkBoxGFAttacksSilence.Enabled = false;
+                checkBoxGFAttacksBerserk.Enabled = false;
+                checkBoxGFAttacksZombie.Enabled = false;
+
+                KernelWorker.UpdateVariable_GFAttacks(7, 0);
+            }
+            KernelWorker.UpdateVariable_GFAttacks(2, checkBoxGFAttacksStatus.Checked ? 0xFF : 0x00);
+        }
+
+
+
+        private int GFAttacks_GetElement()
+        {
+            return KernelWorker.GetSelectedGFAttacksData.ElementGFAttacks == KernelWorker.Element.Fire
+                        ? 0
+                        : KernelWorker.GetSelectedGFAttacksData.ElementGFAttacks == KernelWorker.Element.Ice
+                            ? 1
+                            : KernelWorker.GetSelectedGFAttacksData.ElementGFAttacks == KernelWorker.Element.Thunder
+                                ? 2
+                                : KernelWorker.GetSelectedGFAttacksData.ElementGFAttacks == KernelWorker.Element.Earth
+                                    ? 3
+                                    : KernelWorker.GetSelectedGFAttacksData.ElementGFAttacks == KernelWorker.Element.Poison
+                                        ? 4
+                                        : KernelWorker.GetSelectedGFAttacksData.ElementGFAttacks == KernelWorker.Element.Wind
+                                            ? 5
+                                            : KernelWorker.GetSelectedGFAttacksData.ElementGFAttacks ==
+                                              KernelWorker.Element.Water
+                                                ? 6
+                                                : KernelWorker.GetSelectedGFAttacksData.ElementGFAttacks ==
+                                                  KernelWorker.Element.Holy
+                                                    ? 7
+                                                    : KernelWorker.GetSelectedGFAttacksData.ElementGFAttacks ==
+                                                      KernelWorker.Element.NonElemental
+                                                        ? comboBoxGFAttacksElement.Items.Count - 1
+                                                        : 0;
+        }
+
+        private byte GFAttacks_GetElement(int Index)
+        {
+            byte elem = (byte)(Index == 8 ? (byte)KernelWorker.Element.NonElemental :
+                Index == 0 ? (byte)KernelWorker.Element.Fire :
+                Index == 1 ? (byte)KernelWorker.Element.Ice :
+                Index == 2 ? (byte)KernelWorker.Element.Thunder :
+                Index == 3 ? (byte)KernelWorker.Element.Earth :
+                Index == 4 ? (byte)KernelWorker.Element.Poison :
+                Index == 5 ? (byte)KernelWorker.Element.Wind :
+                Index == 6 ? (byte)KernelWorker.Element.Water :
+                Index == 7 ? (byte)KernelWorker.Element.Holy :
+                0x00 /*ErrorHandler*/);
+            return elem;
+        }
+
+        private void GFAttacksStatusWorker()
+        {
+            //checkBoxMagicSleep.Checked =  ? true : false
+            checkBoxGFAttacksSleep.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x01) >= 1 ? true : false;
+            checkBoxGFAttacksHaste.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x02) >= 1 ? true : false;
+            checkBoxGFAttacksSlow.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x04) >= 1 ? true : false;
+            checkBoxGFAttacksStop.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x08) >= 1 ? true : false;
+            checkBoxGFAttacksRegen.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x10) >= 1 ? true : false;
+            checkBoxGFAttacksProtect.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x20) >= 1 ? true : false;
+            checkBoxGFAttacksShell.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x40) >= 1 ? true : false;
+            checkBoxGFAttacksReflect.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x80) >= 1 ? true : false;
+
+            checkBoxGFAttacksAura.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x01) >= 1 ? true : false;
+            checkBoxGFAttacksCurse.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x02) >= 1 ? true : false;
+            checkBoxGFAttacksDoom.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x04) >= 1 ? true : false;
+            checkBoxGFAttacksInvincible.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x08) >= 1 ? true : false;
+            checkBoxGFAttacksPetrifying.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x10) >= 1 ? true : false;
+            checkBoxGFAttacksFloat.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x20) >= 1 ? true : false;
+            checkBoxGFAttacksConfusion.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x40) >= 1 ? true : false;
+            checkBoxGFAttacksDrain.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x80) >= 1 ? true : false;
+
+            checkBoxGFAttacksEject.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x01) >= 1 ? true : false;
+            checkBoxGFAttacksDouble.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x02) >= 1 ? true : false;
+            checkBoxGFAttacksTriple.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x04) >= 1 ? true : false;
+            checkBoxGFAttacksDefend.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x08) >= 1 ? true : false;
+
+            checkBoxGFAttacksVit0.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x01) >= 1 ? true : false;
+
+            checkBoxGFAttacksDeath.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x01) >= 1 ? true : false;
+            checkBoxGFAttacksPoison.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x02) >= 1 ? true : false;
+            checkBoxGFAttacksPetrify.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x04) >= 1 ? true : false;
+            checkBoxGFAttacksDarkness.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x08) >= 1 ? true : false;
+            checkBoxGFAttacksSilence.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x10) >= 1 ? true : false;
+            checkBoxGFAttacksBerserk.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x20) >= 1 ? true : false;
+            checkBoxGFAttacksZombie.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x40) >= 1 ? true : false;
+        }
+
+        private void listBoxGFAttacks_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadGFAttacks(listBoxGFAttacks.SelectedIndex);
+
+            try
+            {
+                comboBoxGFAttacksMagicID.SelectedIndex = KernelWorker.GetSelectedGFAttacksData.GFAttacksMagicID;
+                numericUpDownGFAttacksPower.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksPower;
+                checkBoxGFAttacksStatus.Checked = KernelWorker.GetSelectedGFAttacksData.GFAttacksStatusEnabler > 0x00 ? true : false;
+                comboBoxGFAttacksElement.SelectedIndex = GFAttacks_GetElement();
+                GFAttacksStatusWorker();
+                numericUpDownGFAttacksPowerMod.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksPowerMod;
+                numericUpDownGFAttacksLevelMod.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksLevelMod;                                             
+            }
+            catch (Exception eeeException)
+            {
+                MessageBox.Show(eeeException.ToString());
             }
             _loaded = true;
         }

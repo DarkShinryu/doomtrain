@@ -13,8 +13,12 @@ namespace Doomtrain
         public static int GFDataOffset = -1;
         public static int OffsetToGFSelected = -1;
 
+        public static int GFAttacksDataOffset = -1;
+        public static int OffsetToGFAttacksSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
+        public static GFAttacksData GetSelectedGFAttacksData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -176,6 +180,22 @@ namespace Doomtrain
             public UInt16 GFAbility19;
             public UInt16 GFAbility20;
             public UInt16 GFAbility21;            
+        }
+
+        public struct GFAttacksData
+        {
+            //public string OffsetGFAttacksName;
+            public UInt16 GFAttacksMagicID;
+            public byte GFAttacksPower;
+            public byte GFAttacksStatusEnabler;
+            public Element ElementGFAttacks;
+            public byte StatusGFAttacks1;
+            public byte StatusGFAttacks2;
+            public byte StatusGFAttacks3;
+            public byte StatusGFAttacks4;
+            public byte StatusGFAttacks5;
+            public byte GFAttacksPowerMod;
+            public byte GFAttacksLevelMod;
         }
 
 
@@ -418,6 +438,69 @@ namespace Doomtrain
             }
         }
 
+        public static void UpdateVariable_GFAttacks(int index, object variable, byte arg0 = 127)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    UshortToKernel(Convert.ToUInt16(variable), 2, (byte)Mode.Mode_GFAttacks); //MagicID
+                    return;
+                case 1:
+                    Kernel[OffsetToGFAttacksSelected + 5] = Convert.ToByte(variable); //GFPower
+                    return;
+                case 2:
+                    Kernel[OffsetToGFAttacksSelected + 6] = Convert.ToByte(variable); //enable modifier
+                    return;
+                case 3:
+                    Kernel[OffsetToGFAttacksSelected + 11] = Convert.ToByte(variable); //Element
+                    return;
+                case 4:
+                    GFAttacksStatusUpdator(arg0, variable); //Status
+                    return;
+                case 5:
+                    Kernel[OffsetToGFAttacksSelected + 18] = Convert.ToByte(variable); //Power Mod
+                    return;
+                case 6:
+                    Kernel[OffsetToGFAttacksSelected + 19] = Convert.ToByte(variable); //Level Mod
+                    return;
+                case 7: //Reset Status
+                    Kernel[OffsetToGFAttacksSelected + 12] = 0x00;
+                    Kernel[OffsetToGFAttacksSelected + 13] = 0x00;
+                    Kernel[OffsetToGFAttacksSelected + 14] = 0x00;
+                    Kernel[OffsetToGFAttacksSelected + 15] = 0x00;
+                    Kernel[OffsetToGFAttacksSelected + 16] = 0x00;
+                    return;
+                default:
+
+                    return;
+            }
+        }
+
+        private static void GFAttacksStatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToGFAttacksSelected + 12] = (byte)(Kernel[OffsetToGFAttacksSelected + 12] ^ Convert.ToByte(variable)); //Perform XOR logic for this 
+                    return;
+                case 1:
+                    Kernel[OffsetToGFAttacksSelected + 13] = (byte)(Kernel[OffsetToGFAttacksSelected + 13] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToGFAttacksSelected + 14] = (byte)(Kernel[OffsetToGFAttacksSelected + 14] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToGFAttacksSelected + 15] = (byte)(Kernel[OffsetToGFAttacksSelected + 15] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToGFAttacksSelected + 16] = (byte)(Kernel[OffsetToGFAttacksSelected + 16] ^ Convert.ToByte(variable));
+                    return;
+            }
+        }
+
+
         /// <summary>
         /// This is for MagicID list
         /// </summary>
@@ -434,6 +517,9 @@ namespace Doomtrain
                 case (byte) Mode.Mode_GF:
                     Array.Copy(magicIdBytes, 0, Kernel, OffsetToGFSelected + add, 2);
                     break;
+                case (byte)Mode.Mode_GFAttacks:
+                    Array.Copy(magicIdBytes, 0, Kernel, OffsetToGFAttacksSelected + add, 2);
+                    break;
                 default:
                     return;
             }
@@ -442,7 +528,8 @@ namespace Doomtrain
         enum Mode : byte
         {
             Mode_Magic,
-            Mode_GF
+            Mode_GF,
+            Mode_GFAttacks
         }
 
         public static void ReadKernel(byte[] kernel)
@@ -450,6 +537,7 @@ namespace Doomtrain
             Kernel = kernel;
             MagicDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.MagicData);
             GFDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFs);
+            GFAttacksDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFAttacks);
 
         }
 
@@ -604,6 +692,47 @@ namespace Doomtrain
             GetSelectedGFData.GFLevelMod = Kernel[selectedGfOffset + 1];
         }
 
+        public static void ReadGFAttacks(int GFAttacksID_List)
+        {
+            GetSelectedGFAttacksData = new GFAttacksData();
+            int selectedGfAttacksOffset = GFAttacksDataOffset + (GFAttacksID_List * 20);
+            OffsetToGFAttacksSelected = selectedGfAttacksOffset;
+
+            GetSelectedGFAttacksData.GFAttacksMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfAttacksOffset + 2) - 1);
+            selectedGfAttacksOffset += 2 + 2 + 1;
+            GetSelectedGFAttacksData.GFAttacksPower = Kernel[selectedGfAttacksOffset++];            
+            GetSelectedGFAttacksData.GFAttacksStatusEnabler = Kernel[selectedGfAttacksOffset++];
+            selectedGfAttacksOffset += 1 + 4;
+            byte b = Kernel[selectedGfAttacksOffset];
+            GetSelectedGFAttacksData.ElementGFAttacks =
+                b == (byte)Element.Fire
+                    ? Element.Fire
+                    : b == (byte)Element.Holy
+                        ? Element.Holy
+                        : b == (byte)Element.Ice
+                            ? Element.Ice
+                            : b == (byte)Element.NonElemental
+                                ? Element.NonElemental
+                                : b == (byte)Element.Poison
+                                    ? Element.Poison
+                                    : b == (byte)Element.Thunder
+                                        ? Element.Thunder
+                                        : b == (byte)Element.Water
+                                            ? Element.Water
+                                            : b == (byte)Element.Wind
+                                                ? Element.Wind
+                                                : b == (byte)Element.Earth
+                                                    ? Element.Earth
+                                                    : 0; //Error handler
+            GetSelectedGFAttacksData.StatusGFAttacks1 = Kernel[selectedGfAttacksOffset++];
+            GetSelectedGFAttacksData.StatusGFAttacks2 = Kernel[selectedGfAttacksOffset++];
+            GetSelectedGFAttacksData.StatusGFAttacks3 = Kernel[selectedGfAttacksOffset++];
+            GetSelectedGFAttacksData.StatusGFAttacks4 = Kernel[selectedGfAttacksOffset++];
+            GetSelectedGFAttacksData.StatusGFAttacks5 = Kernel[selectedGfAttacksOffset++];
+            selectedGfAttacksOffset += 1;
+            GetSelectedGFAttacksData.GFAttacksPowerMod = Kernel[selectedGfAttacksOffset];
+            GetSelectedGFAttacksData.GFAttacksLevelMod = Kernel[selectedGfAttacksOffset + 1];
+        }
 
 
         private static string BuildString(int index)
