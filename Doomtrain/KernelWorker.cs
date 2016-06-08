@@ -140,6 +140,23 @@ namespace Doomtrain
             public byte StatusDEFval;
             public UInt16 StatusATKEN;
             public UInt16 StatusDefEN;
+            public byte StatusAttackEnabler;
+            public byte QuezacoltCompatibility;
+            public byte ShivaCompatibility;
+            public byte IfritCompatibility;
+            public byte SirenCompatibility;
+            public byte BrothersCompatibility;
+            public byte DiablosCompatibility;
+            public byte CarbuncleCompatibility;
+            public byte LeviathanCompatibility;
+            public byte PandemonaCompatibility;
+            public byte CerberusCompatibility;
+            public byte AlexanderCompatibility;
+            public byte DoomtrainCompatibility;
+            public byte BahamutCompatibility;
+            public byte CactuarCompatibility;
+            public byte TonberryCompatibility;
+            public byte EdenCompatibility;
             public byte[] Unknown6;
         }
 
@@ -287,7 +304,7 @@ namespace Doomtrain
 
                 case 16:
                     {
-                        Kernel[OffsetToMagicSelected + 32] = Convert.ToByte(variable); //STATUS ATTACK Modifier
+                        Kernel[OffsetToMagicSelected + 32] = Convert.ToByte(variable); // J-Elem attack enabler
                         return;
                     }
 
@@ -299,7 +316,7 @@ namespace Doomtrain
 
                 case 18:
                     {
-                        Kernel[OffsetToMagicSelected + 33] = Convert.ToByte(variable); //Status Attack Variable
+                        Kernel[OffsetToMagicSelected + 33] = Convert.ToByte(variable); //Characters J-Elem attack value
                         return;
                     }
 
@@ -319,7 +336,7 @@ namespace Doomtrain
                     {
                         ushort a = BitConverter.ToUInt16(Kernel, OffsetToMagicSelected + 38);
                         byte[] temp = BitConverter.GetBytes(a ^= Convert.ToUInt16(variable));
-                        Array.Copy(temp, 0, Kernel, OffsetToMagicSelected + 38, 2);
+                        Array.Copy(temp, 0, Kernel, OffsetToMagicSelected + 36, 2);
                         return;
                     }
 
@@ -327,21 +344,112 @@ namespace Doomtrain
                     {
                         ushort a = BitConverter.ToUInt16(Kernel, OffsetToMagicSelected + 40);
                         byte[] temp = BitConverter.GetBytes(a ^= Convert.ToUInt16(variable));
-                        Array.Copy(temp, 0, Kernel, OffsetToMagicSelected + 40, 2);
+                        Array.Copy(temp, 0, Kernel, OffsetToMagicSelected + 39, 2);
                         return;
                     }
 
                 case 23:
                     {
-                        Kernel[OffsetToMagicSelected + 36] = Convert.ToByte(variable); //Status Attack Value
+                        Kernel[OffsetToMagicSelected + 36] = Convert.ToByte(variable); //J-Status Attack Value
                         return;
                     }
 
                 case 24:
                     {
-                        Kernel[OffsetToMagicSelected + 37] = Convert.ToByte(variable); //Status Defense Value
+                        Kernel[OffsetToMagicSelected + 37] = Convert.ToByte(variable); //J-Status Defense Value
                         return;
                     }
+                case 25:
+                    {
+                        Kernel[OffsetToMagicSelected + 22] = Convert.ToByte(variable); //Status Attack Enabler
+                        return;
+                    }
+                case 26:
+                    {
+                        Kernel[OffsetToMagicSelected + 42] = Convert.ToByte(variable); //Quezacolt Compatibility
+                        return;
+                    }
+                case 27:
+                    {
+                        Kernel[OffsetToMagicSelected + 43] = Convert.ToByte(variable); //Shiva Compatibility
+                        return;
+                    }
+                case 28:
+                    {
+                        Kernel[OffsetToMagicSelected + 44] = Convert.ToByte(variable); //Ifrit Compatibility
+                        return;
+                    }
+                case 29:
+                    {
+                        Kernel[OffsetToMagicSelected + 45] = Convert.ToByte(variable); //Siren Compatibility
+                        return;
+                    }
+                case 30:
+                    {
+                        Kernel[OffsetToMagicSelected + 46] = Convert.ToByte(variable); //Brothers Compatibility
+                        return;
+                    }
+                case 31:
+                    {
+                        Kernel[OffsetToMagicSelected + 47] = Convert.ToByte(variable); //Diablos Compatibility
+                        return;
+                    }
+                case 32:
+                    {
+                        Kernel[OffsetToMagicSelected + 48] = Convert.ToByte(variable); //Carbuncle Compatibility
+                        return;
+                    }
+                case 33:
+                    {
+                        Kernel[OffsetToMagicSelected + 49] = Convert.ToByte(variable); //Leviathan Compatibility
+                        return;
+                    }
+                case 34:
+                    {
+                        Kernel[OffsetToMagicSelected + 50] = Convert.ToByte(variable); //Pandemona Compatibility
+                        return;
+                    }
+                case 35:
+                    {
+                        Kernel[OffsetToMagicSelected + 51] = Convert.ToByte(variable); //Cerberus Compatibility
+                        return;
+                    }
+                case 36:
+                    {
+                        Kernel[OffsetToMagicSelected + 52] = Convert.ToByte(variable); //Alexander Compatibility
+                        return;
+                    }
+                case 37:
+                    {
+                        Kernel[OffsetToMagicSelected + 53] = Convert.ToByte(variable); //Doomtrain Compatibility
+                        return;
+                    }
+                case 38:
+                    {
+                        Kernel[OffsetToMagicSelected + 54] = Convert.ToByte(variable); //Bahamut Compatibility
+                        return;
+                    }
+                case 39:
+                    {
+                        Kernel[OffsetToMagicSelected + 55] = Convert.ToByte(variable); //Cactuar Compatibility
+                        return;
+                    }
+                case 40:
+                    {
+                        Kernel[OffsetToMagicSelected + 56] = Convert.ToByte(variable); //Tonberry Compatibility
+                        return;
+                    }
+                case 41:
+                    {
+                        Kernel[OffsetToMagicSelected + 57] = Convert.ToByte(variable); //Eden Compatibility
+                        return;
+                    }
+                case 42:
+                    {
+                        Kernel[OffsetToMagicSelected + 10] = Convert.ToByte(variable); //default target
+                        return;
+                    }
+
 
                 default:
                     return;
@@ -599,7 +707,8 @@ namespace Doomtrain
             GetSelectedMagicData.StatusMagic3 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.StatusMagic4 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.StatusMagic5 = Kernel[selectedMagicOffset++];
-            GetSelectedMagicData.Unknown5 = BitConverter.ToUInt16(Kernel, selectedMagicOffset += 2);
+            GetSelectedMagicData.Unknown5 = BitConverter.ToUInt16(Kernel, selectedMagicOffset ++);
+            GetSelectedMagicData.StatusAttackEnabler = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.HP = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.STR = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.VIT = Kernel[selectedMagicOffset++];
@@ -619,8 +728,24 @@ namespace Doomtrain
             selectedMagicOffset += 2;
             GetSelectedMagicData.StatusDefEN = BitConverter.ToUInt16(Kernel, selectedMagicOffset);
             selectedMagicOffset += 2;
-            GetSelectedMagicData.Unknown6 = new byte[18];
-            Array.Copy(Kernel, selectedMagicOffset, GetSelectedMagicData.Unknown6, 0, 18);
+            GetSelectedMagicData.QuezacoltCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.ShivaCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.IfritCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.SirenCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.BrothersCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.DiablosCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.CarbuncleCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.LeviathanCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.PandemonaCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.CerberusCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.AlexanderCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.DoomtrainCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.BahamutCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.CactuarCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.TonberryCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.EdenCompatibility = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.Unknown6 = new byte[2];
+            Array.Copy(Kernel, selectedMagicOffset, GetSelectedMagicData.Unknown6, 0, 2);
         }
 
         public static void ReadGF(int GFID_List)

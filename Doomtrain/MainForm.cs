@@ -31,110 +31,22 @@ namespace Doomtrain
             listBoxGFAttacks.Visible = false;
             tabControlGF.SelectedIndexChanged += new EventHandler(tabControlGF_SelectedIndexChanged);
 
-#region for disabling status checkboxes when status enablers are unchecked
-            checkBoxMagicSleep.Enabled = false;
-            checkBoxMagicHaste.Enabled = false;
-            checkBoxMagicSlow.Enabled = false;
-            checkBoxMagicStop.Enabled = false;
-            checkBoxMagicRegen.Enabled = false;
-            checkBoxMagicProtect.Enabled = false;
-            checkBoxMagicShell.Enabled = false;
-            checkBoxMagicReflect.Enabled = false;
-            checkBoxMagicAura.Enabled = false;
-            checkBoxMagicCurse.Enabled = false;
-            checkBoxMagicDoom.Enabled = false;
-            checkBoxMagicInvincible.Enabled = false;
-            checkBoxMagicPetrifying.Enabled = false;
-            checkBoxMagicFloat.Enabled = false;
-            checkBoxMagicConfusion.Enabled = false;
-            checkBoxMagicDrain.Enabled = false;
-            checkBoxMagicEject.Enabled = false;
-            checkBoxMagicDouble.Enabled = false;
-            checkBoxMagicTriple.Enabled = false;
-            checkBoxMagicDefend.Enabled = false;
-            checkBoxMagicVit0.Enabled = false;
-            checkBoxMagicDeath.Enabled = false;
-            checkBoxMagicPoison.Enabled = false;
-            checkBoxMagicPetrify.Enabled = false;
-            checkBoxMagicDarkness.Enabled = false;
-            checkBoxMagicSilence.Enabled = false;
-            checkBoxMagicBerserk.Enabled = false;
-            checkBoxMagicZombie.Enabled = false;
-            checkBoxMagicStatus.CheckedChanged += new EventHandler(checkBoxMagicStatus_Checked);
-            checkBoxGFSleep.Enabled = false;
-            checkBoxGFHaste.Enabled = false;
-            checkBoxGFSlow.Enabled = false;
-            checkBoxGFStop.Enabled = false;
-            checkBoxGFRegen.Enabled = false;
-            checkBoxGFProtect.Enabled = false;
-            checkBoxGFShell.Enabled = false;
-            checkBoxGFReflect.Enabled = false;
-            checkBoxGFAura.Enabled = false;
-            checkBoxGFCurse.Enabled = false;
-            checkBoxGFDoom.Enabled = false;
-            checkBoxGFInvincible.Enabled = false;
-            checkBoxGFPetrifying.Enabled = false;
-            checkBoxGFFloat.Enabled = false;
-            checkBoxGFConfusion.Enabled = false;
-            checkBoxGFDrain.Enabled = false;
-            checkBoxGFEject.Enabled = false;
-            checkBoxGFDouble.Enabled = false;
-            checkBoxGFTriple.Enabled = false;
-            checkBoxGFDefend.Enabled = false;
-            checkBoxGFVit0.Enabled = false;
-            checkBoxGFDeath.Enabled = false;
-            checkBoxGFPoison.Enabled = false;
-            checkBoxGFPetrify.Enabled = false;
-            checkBoxGFDarkness.Enabled = false;
-            checkBoxGFSilence.Enabled = false;
-            checkBoxGFBerserk.Enabled = false;
-            checkBoxGFZombie.Enabled = false;
-            checkBoxGFAttacksSleep.Enabled = false;
-            checkBoxGFAttacksHaste.Enabled = false;
-            checkBoxGFAttacksSlow.Enabled = false;
-            checkBoxGFAttacksStop.Enabled = false;
-            checkBoxGFAttacksRegen.Enabled = false;
-            checkBoxGFAttacksProtect.Enabled = false;
-            checkBoxGFAttacksShell.Enabled = false;
-            checkBoxGFAttacksReflect.Enabled = false;
-            checkBoxGFAttacksAura.Enabled = false;
-            checkBoxGFAttacksCurse.Enabled = false;
-            checkBoxGFAttacksDoom.Enabled = false;
-            checkBoxGFAttacksInvincible.Enabled = false;
-            checkBoxGFAttacksPetrifying.Enabled = false;
-            checkBoxGFAttacksFloat.Enabled = false;
-            checkBoxGFAttacksConfusion.Enabled = false;
-            checkBoxGFAttacksDrain.Enabled = false;
-            checkBoxGFAttacksEject.Enabled = false;
-            checkBoxGFAttacksDouble.Enabled = false;
-            checkBoxGFAttacksTriple.Enabled = false;
-            checkBoxGFAttacksDefend.Enabled = false;
-            checkBoxGFAttacksVit0.Enabled = false;
-            checkBoxGFAttacksDeath.Enabled = false;
-            checkBoxGFAttacksPoison.Enabled = false;
-            checkBoxGFAttacksPetrify.Enabled = false;
-            checkBoxGFAttacksDarkness.Enabled = false;
-            checkBoxGFAttacksSilence.Enabled = false;
-            checkBoxGFAttacksBerserk.Enabled = false;
-            checkBoxGFAttacksZombie.Enabled = false;
-            //checkBoxGFAttackStatus.CheckedChanged += new EventHandler(checkBoxGFAttackStatus_Checked);
-#endregion
 
 
             //MAGIC
-            comboBoxMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(2, comboBoxMagicID.SelectedIndex);
-            numericUpDownSpellPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(3, numericUpDownSpellPower.Value);
-            numericUpDownDrawResist.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(4, numericUpDownDrawResist.Value);
+            comboBoxMagicMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(2, comboBoxMagicMagicID.SelectedIndex);
+            numericUpDownMagicSpellPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(3, numericUpDownMagicSpellPower.Value);
+            numericUpDownMagicDrawResist.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(4, numericUpDownMagicDrawResist.Value);
             comboBoxMagicElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(5, Magic_GetElement(comboBoxMagicElement.SelectedIndex));
-            numericUpDownHPJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(7, numericUpDownHPJ.Value);
-            numericUpDownSTRJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(8, numericUpDownSTRJ.Value);
-            numericUpDownVITJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(9, numericUpDownVITJ.Value);
-            numericUpDownMAGJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(10, numericUpDownMAGJ.Value);
-            numericUpDownSPRJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(11, numericUpDownSPRJ.Value);
-            numericUpDownSPDJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(12, numericUpDownSPDJ.Value);
-            numericUpDownEVAJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(13, numericUpDownEVAJ.Value);
-            numericUpDownHITJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(14, numericUpDownHITJ.Value);
-            numericUpDownLUCKJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(15, numericUpDownLUCKJ.Value);
+            numericUpDownMagicHPJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(7, numericUpDownMagicHPJ.Value);
+            numericUpDownMagicSTRJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(8, numericUpDownMagicSTRJ.Value);
+            numericUpDownMagicVITJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(9, numericUpDownMagicVITJ.Value);
+            numericUpDownMagicMAGJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(10, numericUpDownMagicMAGJ.Value);
+            numericUpDownMagicSPRJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(11, numericUpDownMagicSPRJ.Value);
+            numericUpDownMagicSPDJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(12, numericUpDownMagicSPDJ.Value);
+            numericUpDownMagicEVAJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(13, numericUpDownMagicEVAJ.Value);
+            numericUpDownMagicHITJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(14, numericUpDownMagicHITJ.Value);
+            numericUpDownMagicLUCKJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(15, numericUpDownMagicLUCKJ.Value);
             radioButtonJElemAttackFire.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01);
             radioButtonJElemAttackIce.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 1);
             radioButtonJElemAttackThunder.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 2);
@@ -143,7 +55,7 @@ namespace Doomtrain
             radioButtonJElemAttackWind.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 5);
             radioButtonJElemAttackWater.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 6);
             radioButtonJElemAttackHoly.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 7);
-            numericUpDownHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(17, numericUpDownHitCount.Value);
+            numericUpDownMagicHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(17, numericUpDownMagicHitCount.Value);
             trackBarJElemAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(18, trackBarJElemAttack.Value);
             checkBoxJElemDefenseFire.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, /*KernelWorker.GetSelectedMagicData.ElemDefenseEN ^ 0x01*/ 0x01);
             checkBoxJElemDefenseIce.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x02);
@@ -209,6 +121,25 @@ namespace Doomtrain
             checkBoxMagicSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x10, 4);
             checkBoxMagicBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x20, 4);
             checkBoxMagicZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x40, 4);
+            numericUpDownMagicStatusAttackEnabler.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(25, numericUpDownMagicStatusAttackEnabler.Value);
+            numericUpDownMagicDefaultTarget.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(42, numericUpDownMagicDefaultTarget.Value);
+            numericUpDownMagicQuezacoltComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(26, numericUpDownMagicQuezacoltComp.Value);
+            numericUpDownMagicShivaComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(27, numericUpDownMagicShivaComp.Value);
+            numericUpDownMagicIfritComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(28, numericUpDownMagicIfritComp.Value);
+            numericUpDownMagicSirenComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(29, numericUpDownMagicSirenComp.Value);
+            numericUpDownMagicBrothersComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(30, numericUpDownMagicBrothersComp.Value);
+            numericUpDownMagicDiablosComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(31, numericUpDownMagicDiablosComp.Value);
+            numericUpDownMagicCarbuncleComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(32, numericUpDownMagicCarbuncleComp.Value);
+            numericUpDownMagicLeviathanComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(33, numericUpDownMagicLeviathanComp.Value);
+            numericUpDownMagicPandemonaComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(34, numericUpDownMagicPandemonaComp.Value);
+            numericUpDownMagicCerberusComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(35, numericUpDownMagicCerberusComp.Value);
+            numericUpDownMagicAlexanderComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(36, numericUpDownMagicAlexanderComp.Value);
+            numericUpDownMagicDoomtrainComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(37, numericUpDownMagicDoomtrainComp.Value);
+            numericUpDownMagicBahamutComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(38, numericUpDownMagicBahamutComp.Value);
+            numericUpDownMagicCactuarComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(39, numericUpDownMagicCactuarComp.Value);
+            numericUpDownMagicTonberryComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(40, numericUpDownMagicTonberryComp.Value);
+            numericUpDownMagicEdenComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(41, numericUpDownMagicEdenComp.Value);
+
 
             //GF
             comboBoxGFMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(0, comboBoxGFMagicID.SelectedIndex);
@@ -503,103 +434,6 @@ namespace Doomtrain
 
 
         //MAGIC
-        private void checkBoxMagicStatus_Checked(object sender, EventArgs e)
-        {
-            if (checkBoxMagicStatus.Checked == true)
-            {
-                checkBoxMagicSleep.Enabled = true;
-                checkBoxMagicHaste.Enabled = true;
-                checkBoxMagicSlow.Enabled = true;
-                checkBoxMagicStop.Enabled = true;
-                checkBoxMagicRegen.Enabled = true;
-                checkBoxMagicProtect.Enabled = true;
-                checkBoxMagicShell.Enabled = true;
-                checkBoxMagicReflect.Enabled = true;
-                checkBoxMagicAura.Enabled = true;
-                checkBoxMagicCurse.Enabled = true;
-                checkBoxMagicDoom.Enabled = true;
-                checkBoxMagicInvincible.Enabled = true;
-                checkBoxMagicPetrifying.Enabled = true;
-                checkBoxMagicFloat.Enabled = true;
-                checkBoxMagicConfusion.Enabled = true;
-                checkBoxMagicDrain.Enabled = true;
-                checkBoxMagicEject.Enabled = true;
-                checkBoxMagicDouble.Enabled = true;
-                checkBoxMagicTriple.Enabled = true;
-                checkBoxMagicDefend.Enabled = true;
-                checkBoxMagicVit0.Enabled = true;
-                checkBoxMagicDeath.Enabled = true;
-                checkBoxMagicPoison.Enabled = true;
-                checkBoxMagicPetrify.Enabled = true;
-                checkBoxMagicDarkness.Enabled = true;
-                checkBoxMagicSilence.Enabled = true;
-                checkBoxMagicBerserk.Enabled = true;
-                checkBoxMagicZombie.Enabled = true;
-            }
-
-            else if (checkBoxMagicStatus.Checked == false)
-            {
-                checkBoxMagicSleep.Checked = false;
-                checkBoxMagicHaste.Checked = false;
-                checkBoxMagicSlow.Checked = false;
-                checkBoxMagicStop.Checked = false;
-                checkBoxMagicRegen.Checked = false;
-                checkBoxMagicProtect.Checked = false;
-                checkBoxMagicShell.Checked = false;
-                checkBoxMagicReflect.Checked = false;
-                checkBoxMagicAura.Checked = false;
-                checkBoxMagicCurse.Checked = false;
-                checkBoxMagicDoom.Checked = false;
-                checkBoxMagicInvincible.Checked = false;
-                checkBoxMagicPetrifying.Checked = false;
-                checkBoxMagicFloat.Checked = false;
-                checkBoxMagicConfusion.Checked = false;
-                checkBoxMagicDrain.Checked = false;
-                checkBoxMagicEject.Checked = false;
-                checkBoxMagicDouble.Checked = false;
-                checkBoxMagicTriple.Checked = false;
-                checkBoxMagicDefend.Checked = false;
-                checkBoxMagicVit0.Checked = false;
-                checkBoxMagicDeath.Checked = false;
-                checkBoxMagicPoison.Checked = false;
-                checkBoxMagicPetrify.Checked = false;
-                checkBoxMagicDarkness.Checked = false;
-                checkBoxMagicSilence.Checked = false;
-                checkBoxMagicBerserk.Checked = false;
-                checkBoxMagicZombie.Checked = false;
-                //when unchecking the enabler the following also unchecks all the statuses
-                checkBoxMagicSleep.Enabled = false;
-                checkBoxMagicHaste.Enabled = false;
-                checkBoxMagicSlow.Enabled = false;
-                checkBoxMagicStop.Enabled = false;
-                checkBoxMagicRegen.Enabled = false;
-                checkBoxMagicProtect.Enabled = false;
-                checkBoxMagicShell.Enabled = false;
-                checkBoxMagicReflect.Enabled = false;
-                checkBoxMagicAura.Enabled = false;
-                checkBoxMagicCurse.Enabled = false;
-                checkBoxMagicDoom.Enabled = false;
-                checkBoxMagicInvincible.Enabled = false;
-                checkBoxMagicPetrifying.Enabled = false;
-                checkBoxMagicFloat.Enabled = false;
-                checkBoxMagicConfusion.Enabled = false;
-                checkBoxMagicDrain.Enabled = false;
-                checkBoxMagicEject.Enabled = false;
-                checkBoxMagicDouble.Enabled = false;
-                checkBoxMagicTriple.Enabled = false;
-                checkBoxMagicDefend.Enabled = false;
-                checkBoxMagicVit0.Enabled = false;
-                checkBoxMagicDeath.Enabled = false;
-                checkBoxMagicPoison.Enabled = false;
-                checkBoxMagicPetrify.Enabled = false;
-                checkBoxMagicDarkness.Enabled = false;
-                checkBoxMagicSilence.Enabled = false;
-                checkBoxMagicBerserk.Enabled = false;
-                checkBoxMagicZombie.Enabled = false;
-            }
-        }
-
-
         private int Magic_GetElement()
         {
             return KernelWorker.GetSelectedMagicData.Element == KernelWorker.Element.Fire
@@ -688,21 +522,22 @@ namespace Doomtrain
             KernelWorker.ReadMagic(listBoxMagic.SelectedIndex);
             try
             {
-                comboBoxMagicID.SelectedIndex = KernelWorker.GetSelectedMagicData.MagicID-1; //As in Vanilla FF8.exe: sub ESI, 1
-                numericUpDownSpellPower.Value = KernelWorker.GetSelectedMagicData.SpellPower;
-                numericUpDownDrawResist.Value = KernelWorker.GetSelectedMagicData.DrawResist;
-                numericUpDownHitCount.Value = KernelWorker.GetSelectedMagicData.HitCount;
+                comboBoxMagicMagicID.SelectedIndex = KernelWorker.GetSelectedMagicData.MagicID-1; //As in Vanilla FF8.exe: sub ESI, 1
+                numericUpDownMagicSpellPower.Value = KernelWorker.GetSelectedMagicData.SpellPower;
+                numericUpDownMagicDefaultTarget.Value = KernelWorker.GetSelectedMagicData.DefaultTarget;
+                numericUpDownMagicDrawResist.Value = KernelWorker.GetSelectedMagicData.DrawResist;
+                numericUpDownMagicHitCount.Value = KernelWorker.GetSelectedMagicData.HitCount;
                 comboBoxMagicElement.SelectedIndex = Magic_GetElement();
                 MagicStatusWorker();
-                numericUpDownHPJ.Value = KernelWorker.GetSelectedMagicData.HP;
-                numericUpDownVITJ.Value = KernelWorker.GetSelectedMagicData.VIT;
-                numericUpDownSPRJ.Value = KernelWorker.GetSelectedMagicData.SPR;
-                numericUpDownSTRJ.Value = KernelWorker.GetSelectedMagicData.STR;
-                numericUpDownMAGJ.Value = KernelWorker.GetSelectedMagicData.MAG;
-                numericUpDownSPDJ.Value = KernelWorker.GetSelectedMagicData.SPD;
-                numericUpDownEVAJ.Value = KernelWorker.GetSelectedMagicData.EVA;
-                numericUpDownHITJ.Value = KernelWorker.GetSelectedMagicData.HIT;
-                numericUpDownLUCKJ.Value = KernelWorker.GetSelectedMagicData.LUCK;
+                numericUpDownMagicHPJ.Value = KernelWorker.GetSelectedMagicData.HP;
+                numericUpDownMagicVITJ.Value = KernelWorker.GetSelectedMagicData.VIT;
+                numericUpDownMagicSPRJ.Value = KernelWorker.GetSelectedMagicData.SPR;
+                numericUpDownMagicSTRJ.Value = KernelWorker.GetSelectedMagicData.STR;
+                numericUpDownMagicMAGJ.Value = KernelWorker.GetSelectedMagicData.MAG;
+                numericUpDownMagicSPDJ.Value = KernelWorker.GetSelectedMagicData.SPD;
+                numericUpDownMagicEVAJ.Value = KernelWorker.GetSelectedMagicData.EVA;
+                numericUpDownMagicHITJ.Value = KernelWorker.GetSelectedMagicData.HIT;
+                numericUpDownMagicLUCKJ.Value = KernelWorker.GetSelectedMagicData.LUCK;
                 StatusHoldWorker(0,KernelWorker.GetSelectedMagicData.ElemAttackEN);
                 trackBarJElemAttack.Value = KernelWorker.GetSelectedMagicData.ElemAttackVAL;
                 StatusHoldWorker(1, KernelWorker.GetSelectedMagicData.ElemDefenseEN);
@@ -711,8 +546,26 @@ namespace Doomtrain
                 trackBarJStatAttack.Value = KernelWorker.GetSelectedMagicData.StatusATKval;
                 StatusHoldWorker(3, KernelWorker.GetSelectedMagicData.StatusMagic1,KernelWorker.GetSelectedMagicData.StatusDefEN , KernelWorker.GetSelectedMagicData.StatusMagic2, KernelWorker.GetSelectedMagicData.StatusMagic3, KernelWorker.GetSelectedMagicData.StatusMagic4, KernelWorker.GetSelectedMagicData.StatusMagic5);
                 trackBarJStatDefense.Value = KernelWorker.GetSelectedMagicData.StatusDEFval;
+                numericUpDownMagicStatusAttackEnabler.Value = KernelWorker.GetSelectedMagicData.StatusAttackEnabler;
+                numericUpDownMagicQuezacoltComp.Value = KernelWorker.GetSelectedMagicData.QuezacoltCompatibility;
+                numericUpDownMagicShivaComp.Value = KernelWorker.GetSelectedMagicData.ShivaCompatibility;
+                numericUpDownMagicIfritComp.Value = KernelWorker.GetSelectedMagicData.IfritCompatibility;
+                numericUpDownMagicSirenComp.Value = KernelWorker.GetSelectedMagicData.SirenCompatibility;
+                numericUpDownMagicBrothersComp.Value = KernelWorker.GetSelectedMagicData.BrothersCompatibility;
+                numericUpDownMagicDiablosComp.Value = KernelWorker.GetSelectedMagicData.DiablosCompatibility;
+                numericUpDownMagicCarbuncleComp.Value = KernelWorker.GetSelectedMagicData.CarbuncleCompatibility;
+                numericUpDownMagicLeviathanComp.Value = KernelWorker.GetSelectedMagicData.LeviathanCompatibility;
+                numericUpDownMagicPandemonaComp.Value = KernelWorker.GetSelectedMagicData.PandemonaCompatibility;
+                numericUpDownMagicCerberusComp.Value = KernelWorker.GetSelectedMagicData.CerberusCompatibility;
+                numericUpDownMagicAlexanderComp.Value = KernelWorker.GetSelectedMagicData.AlexanderCompatibility;
+                numericUpDownMagicDoomtrainComp.Value = KernelWorker.GetSelectedMagicData.DoomtrainCompatibility;
+                numericUpDownMagicBahamutComp.Value = KernelWorker.GetSelectedMagicData.BahamutCompatibility;
+                numericUpDownMagicCactuarComp.Value = KernelWorker.GetSelectedMagicData.CactuarCompatibility;
+                numericUpDownMagicTonberryComp.Value = KernelWorker.GetSelectedMagicData.TonberryCompatibility;
+                numericUpDownMagicEdenComp.Value = KernelWorker.GetSelectedMagicData.EdenCompatibility;
+
             }
-            catch(Exception e_)
+            catch (Exception e_)
             {
                 Console.WriteLine(e_.ToString());
             }
