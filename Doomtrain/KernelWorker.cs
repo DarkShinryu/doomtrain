@@ -173,7 +173,7 @@ namespace Doomtrain
             public byte StatusGF4;
             public byte StatusGF5;
             public byte GFHP;
-            public byte GFStatusEnabler;
+            public byte GFStatusAttackEnabler;
             public byte GFPowerMod;
             public byte GFLevelMod;
             public UInt16 GFAbility1;
@@ -196,7 +196,23 @@ namespace Doomtrain
             public UInt16 GFAbility18;
             public UInt16 GFAbility19;
             public UInt16 GFAbility20;
-            public UInt16 GFAbility21;            
+            public UInt16 GFAbility21;
+            public byte GFQuezacoltCompatibility;
+            public byte GFShivaCompatibility;
+            public byte GFIfritCompatibility;
+            public byte GFSirenCompatibility;
+            public byte GFBrothersCompatibility;
+            public byte GFDiablosCompatibility;
+            public byte GFCarbuncleCompatibility;
+            public byte GFLeviathanCompatibility;
+            public byte GFPandemonaCompatibility;
+            public byte GFCerberusCompatibility;
+            public byte GFAlexanderCompatibility;
+            public byte GFDoomtrainCompatibility;
+            public byte GFBahamutCompatibility;
+            public byte GFCactuarCompatibility;
+            public byte GFTonberryCompatibility;
+            public byte GFEdenCompatibility;
         }
 
         public struct GFAttacksData
@@ -519,6 +535,55 @@ namespace Doomtrain
                     Kernel[OffsetToGFSelected + 18] = 0x00;
                     Kernel[OffsetToGFSelected + 19] = 0x00;
                     return;
+                case 10:
+                        Kernel[OffsetToGFSelected + 112] = Convert.ToByte(variable); //Quezacolt Compatibility
+                        return;
+                case 11:
+                        Kernel[OffsetToGFSelected + 113] = Convert.ToByte(variable); //Shiva Compatibility
+                        return;
+                case 12:
+                        Kernel[OffsetToGFSelected + 114] = Convert.ToByte(variable); //Ifrit Compatibility
+                        return;
+                case 13:
+                        Kernel[OffsetToGFSelected + 115] = Convert.ToByte(variable); //Siren Compatibility
+                        return;
+                case 14:
+                        Kernel[OffsetToGFSelected + 116] = Convert.ToByte(variable); //Brothers Compatibility
+                        return;
+                case 15:
+                        Kernel[OffsetToGFSelected + 117] = Convert.ToByte(variable); //Diablos Compatibility
+                        return;
+                case 16:
+                        Kernel[OffsetToGFSelected + 118] = Convert.ToByte(variable); //Carbuncle Compatibility
+                        return;
+                case 17:
+                        Kernel[OffsetToGFSelected + 119] = Convert.ToByte(variable); //Leviathan Compatibility
+                        return;
+                case 18:
+                        Kernel[OffsetToGFSelected + 120] = Convert.ToByte(variable); //Pandemona Compatibility
+                        return;
+                case 19:
+                        Kernel[OffsetToGFSelected + 121] = Convert.ToByte(variable); //Cerberus Compatibility
+                        return;
+                case 20:
+                        Kernel[OffsetToGFSelected + 122] = Convert.ToByte(variable); //Alexander Compatibility
+                        return;
+                case 21:
+                        Kernel[OffsetToGFSelected + 123] = Convert.ToByte(variable); //Doomtrain Compatibility
+                        return;
+                case 22:
+                        Kernel[OffsetToGFSelected + 124] = Convert.ToByte(variable); //Bahamut Compatibility
+                        return;
+                case 23:
+                        Kernel[OffsetToGFSelected + 125] = Convert.ToByte(variable); //Cactuar Compatibility
+                        return;
+                case 24:
+                        Kernel[OffsetToGFSelected + 126] = Convert.ToByte(variable); //Tonberry Compatibility
+                        return;
+                case 25:
+                        Kernel[OffsetToGFSelected + 127] = Convert.ToByte(variable); //Eden Compatibility
+                        return;
+
                 default:
                     return;
             }
@@ -787,7 +852,7 @@ namespace Doomtrain
             GetSelectedGFData.StatusGF5 = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFHP = Kernel[selectedGfOffset];
             selectedGfOffset += 7; //Unknown+GFHP
-            GetSelectedGFData.GFStatusEnabler = Kernel[selectedGfOffset];
+            GetSelectedGFData.GFStatusAttackEnabler = Kernel[selectedGfOffset];
             selectedGfOffset += 3; //Status + unknown
             //AbilityRun
             GetSelectedGFData.GFAbility1 = Kernel[selectedGfOffset];
@@ -812,9 +877,26 @@ namespace Doomtrain
             GetSelectedGFData.GFAbility20 = Kernel[selectedGfOffset + (4 * 19)];
             GetSelectedGFData.GFAbility21 = Kernel[selectedGfOffset + (4 * 20)];
             //EndofAbility
-            selectedGfOffset += (4 * 20) + 19 + 1;
-            GetSelectedGFData.GFPowerMod = Kernel[selectedGfOffset];
-            GetSelectedGFData.GFLevelMod = Kernel[selectedGfOffset + 1];
+            selectedGfOffset += (4 * 20) + 2;
+            GetSelectedGFData.GFQuezacoltCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFShivaCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFIfritCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFSirenCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFBrothersCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFDiablosCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFCarbuncleCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFLeviathanCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFPandemonaCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFCerberusCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFAlexanderCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFDoomtrainCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFBahamutCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFCactuarCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFTonberryCompatibility = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFEdenCompatibility = Kernel[selectedGfOffset++];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFPowerMod = Kernel[selectedGfOffset++];
+            GetSelectedGFData.GFLevelMod = Kernel[selectedGfOffset++];
         }
 
         public static void ReadGFAttacks(int GFAttacksID_List)

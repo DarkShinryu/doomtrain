@@ -30,5 +30,10 @@ namespace Doomtrain
         {
             System.Diagnostics.Process.Start("https://github.com/alexfilth/doomtrain");
         }
+
+        private void linkLabelWiki_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/alexfilth/doomtrain/wiki");
+        }
     }
 }

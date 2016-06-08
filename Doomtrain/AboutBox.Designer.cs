@@ -31,10 +31,10 @@
             this.buttonClose = new System.Windows.Forms.Button();
             this.labelDoomtrain = new System.Windows.Forms.Label();
             this.labelCredits = new System.Windows.Forms.Label();
-            this.labelThanks = new System.Windows.Forms.Label();
             this.linkLabelGitHub = new System.Windows.Forms.LinkLabel();
             this.linkLabelForum = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.linkLabelWiki = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +42,7 @@
             // 
             this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClose.Location = new System.Drawing.Point(93, 145);
+            this.buttonClose.Location = new System.Drawing.Point(93, 138);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(74, 23);
@@ -53,33 +53,24 @@
             // labelDoomtrain
             // 
             this.labelDoomtrain.AutoSize = true;
-            this.labelDoomtrain.Font = new System.Drawing.Font("SF Slapstick Comic Shaded", 23F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDoomtrain.Font = new System.Drawing.Font("SF Slapstick Comic Shaded", 21F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDoomtrain.ForeColor = System.Drawing.Color.Brown;
-            this.labelDoomtrain.Location = new System.Drawing.Point(2, 0);
+            this.labelDoomtrain.Location = new System.Drawing.Point(0, 0);
             this.labelDoomtrain.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDoomtrain.Name = "labelDoomtrain";
-            this.labelDoomtrain.Size = new System.Drawing.Size(256, 46);
+            this.labelDoomtrain.Size = new System.Drawing.Size(261, 42);
             this.labelDoomtrain.TabIndex = 1;
-            this.labelDoomtrain.Text = "Doomtrain 0.1";
+            this.labelDoomtrain.Text = "Doomtrain 0.1.0";
             // 
             // labelCredits
             // 
             this.labelCredits.AutoSize = true;
             this.labelCredits.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCredits.Location = new System.Drawing.Point(53, 42);
+            this.labelCredits.Location = new System.Drawing.Point(35, 37);
             this.labelCredits.Name = "labelCredits";
-            this.labelCredits.Size = new System.Drawing.Size(154, 19);
+            this.labelCredits.Size = new System.Drawing.Size(191, 19);
             this.labelCredits.TabIndex = 2;
-            this.labelCredits.Text = "by alexfilth && MaKiPL";
-            // 
-            // labelThanks
-            // 
-            this.labelThanks.AutoSize = true;
-            this.labelThanks.Location = new System.Drawing.Point(9, 124);
-            this.labelThanks.Name = "labelThanks";
-            this.labelThanks.Size = new System.Drawing.Size(243, 13);
-            this.labelThanks.TabIndex = 5;
-            this.labelThanks.Text = "Thanks to JWP for documenting the kernel.bin file";
+            this.labelCredits.Text = "by alexfilth, MaKiPL && JWP";
             // 
             // linkLabelGitHub
             // 
@@ -105,16 +96,27 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.linkLabelWiki);
             this.panel1.Controls.Add(this.labelDoomtrain);
             this.panel1.Controls.Add(this.linkLabelGitHub);
             this.panel1.Controls.Add(this.buttonClose);
             this.panel1.Controls.Add(this.linkLabelForum);
             this.panel1.Controls.Add(this.labelCredits);
-            this.panel1.Controls.Add(this.labelThanks);
             this.panel1.Location = new System.Drawing.Point(286, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 176);
             this.panel1.TabIndex = 8;
+            // 
+            // linkLabelWiki
+            // 
+            this.linkLabelWiki.AutoSize = true;
+            this.linkLabelWiki.Location = new System.Drawing.Point(116, 107);
+            this.linkLabelWiki.Name = "linkLabelWiki";
+            this.linkLabelWiki.Size = new System.Drawing.Size(28, 13);
+            this.linkLabelWiki.TabIndex = 8;
+            this.linkLabelWiki.TabStop = true;
+            this.linkLabelWiki.Text = "Wiki";
+            this.linkLabelWiki.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelWiki_LinkClicked);
             // 
             // AboutBox
             // 
@@ -124,7 +126,7 @@
             this.BackgroundImage = global::Doomtrain.Properties.Resources.doomtrainbig;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.CancelButton = this.buttonClose;
-            this.ClientSize = new System.Drawing.Size(546, 175);
+            this.ClientSize = new System.Drawing.Size(560, 170);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -145,9 +147,9 @@
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Label labelDoomtrain;
         private System.Windows.Forms.Label labelCredits;
-        private System.Windows.Forms.Label labelThanks;
         private System.Windows.Forms.LinkLabel linkLabelGitHub;
         private System.Windows.Forms.LinkLabel linkLabelForum;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.LinkLabel linkLabelWiki;
     }
 }
