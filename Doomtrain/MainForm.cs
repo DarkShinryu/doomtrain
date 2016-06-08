@@ -42,6 +42,7 @@ namespace Doomtrain
             numericUpDownMagicEVAJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(13, numericUpDownMagicEVAJ.Value);
             numericUpDownMagicHITJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(14, numericUpDownMagicHITJ.Value);
             numericUpDownMagicLUCKJ.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(15, numericUpDownMagicLUCKJ.Value);
+            radioButtonJElemAttackNElem.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x00);
             radioButtonJElemAttackFire.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01);
             radioButtonJElemAttackIce.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 1);
             radioButtonJElemAttackThunder.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(16, 0x01 << 2);
@@ -61,31 +62,31 @@ namespace Doomtrain
             checkBoxJElemDefenseWater.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x40);
             checkBoxJElemDefenseHoly.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(19, 0x80);
             trackBarJElemDefense.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(20, trackBarJElemDefense.Value);
-            radioButtonJStatAttackDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0001);
-            radioButtonJStatAttackPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0002);
-            radioButtonJStatAttackPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0004);
-            radioButtonJStatAttackDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0008);
-            radioButtonJStatAttackSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0010);
-            radioButtonJStatAttackBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0020);
-            radioButtonJStatAttackZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0040);
-            radioButtonJStatAttackSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0080);
-            radioButtonJStatAttackSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0100);
-            radioButtonJStatAttackStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0200);
-            radioButtonJStatAttackConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0800);
-            radioButtonJStatAttackDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x1000);
-            radioButtonJStatDefenseDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0001);
-            radioButtonJStatDefensePoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0002);
-            radioButtonJStatDefensePetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0004);
-            radioButtonJStatDefenseDarnkess.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0008);
-            radioButtonJStatDefenseSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0010);
-            radioButtonJStatDefenseBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0020);
-            radioButtonJStatDefenseZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0040);
-            radioButtonJStatDefenseSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0080);
-            radioButtonJStatDefenseSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0100);
-            radioButtonJStatDefenseStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0200);
-            radioButtonJStatDefenseCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0400);
-            radioButtonJStatDefenseConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0800);
-            radioButtonJStatDefenseDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x1000);
+            checkBoxJStatAttackDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0001);
+            checkBoxJStatAttackPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0002);
+            checkBoxJStatAttackPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0004);
+            checkBoxJStatAttackDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0008);
+            checkBoxJStatAttackSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0010);
+            checkBoxJStatAttackBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0020);
+            checkBoxJStatAttackZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0040);
+            checkBoxJStatAttackSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0080);
+            checkBoxJStatAttackSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0100);
+            checkBoxJStatAttackStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0200);
+            checkBoxJStatAttackConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x0800);
+            checkBoxJStatAttackDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(21, 0x1000);
+            checkBoxJStatDefenseDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0001);
+            checkBoxJStatDefensePoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0002);
+            checkBoxJStatDefensePetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0004);
+            checkBoxJStatDefenseDarnkess.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0008);
+            checkBoxJStatDefenseSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0010);
+            checkBoxJStatDefenseBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0020);
+            checkBoxJStatDefenseZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0040);
+            checkBoxJStatDefenseSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0080);
+            checkBoxJStatDefenseSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0100);
+            checkBoxJStatDefenseStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0200);
+            checkBoxJStatDefenseCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0400);
+            checkBoxJStatDefenseConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x0800);
+            checkBoxJStatDefenseDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(22, 0x1000);
             trackBarJStatAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(23, trackBarJStatAttack.Value);
             trackBarJStatDefense.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(24, trackBarJStatAttack.Value);
             checkBoxMagicSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x01, 0);
@@ -621,8 +622,9 @@ namespace Doomtrain
                         radioButtonJElemAttackHoly.Checked = true;
                         return;
                     default:
-                        radioButtonJElemAttackFire.Checked = true; //A trick to not loop every control
-                        radioButtonJElemAttackFire.Checked = false;
+                        //radioButtonJElemAttackFire.Checked = true; //A trick to not loop every control
+                        //radioButtonJElemAttackFire.Checked = false;
+                        radioButtonJElemAttackNElem.Checked = true;
                         return;
                 }
             }
@@ -672,29 +674,29 @@ namespace Doomtrain
             {
                 ResetUI(2);
                 if ((Stat & 0x0001) > 0)
-                    radioButtonJStatAttackDeath.Checked = true; //DEATH
+                    checkBoxJStatAttackDeath.Checked = true; //DEATH
                 if ((Stat & 0x0002) > 0)
-                    radioButtonJStatAttackPoison.Checked = true; //POISON
+                    checkBoxJStatAttackPoison.Checked = true; //POISON
                 if ((Stat & 0x0004) > 0)
-                    radioButtonJStatAttackPetrify.Checked = true; //PETRIFY
+                    checkBoxJStatAttackPetrify.Checked = true; //PETRIFY
                 if ((Stat & 0x0008) > 0)
-                    radioButtonJStatAttackDarkness.Checked = true; //DARKNESS
+                    checkBoxJStatAttackDarkness.Checked = true; //DARKNESS
                 if ((Stat & 0x0010) > 0)
-                    radioButtonJStatAttackSilence.Checked = true; //SILENCE
+                    checkBoxJStatAttackSilence.Checked = true; //SILENCE
                 if ((Stat & 0x0020) > 0)
-                    radioButtonJStatAttackBerserk.Checked = true; //BERSERK
+                    checkBoxJStatAttackBerserk.Checked = true; //BERSERK
                 if ((Stat & 0x0040) > 0)
-                    radioButtonJStatAttackZombie.Checked = true; //ZOMBIE
+                    checkBoxJStatAttackZombie.Checked = true; //ZOMBIE
                 if ((Stat & 0x0080) > 0)
-                    radioButtonJStatAttackSleep.Checked = true; //SLEEP
+                    checkBoxJStatAttackSleep.Checked = true; //SLEEP
                 if ((Stat & 0x0100) > 0)
-                    radioButtonJStatAttackSlow.Checked = true; //SLOW
+                    checkBoxJStatAttackSlow.Checked = true; //SLOW
                 if ((Stat & 0x0200) > 0)
-                    radioButtonJStatAttackStop.Checked = true; //STOP
+                    checkBoxJStatAttackStop.Checked = true; //STOP
                 if ((Stat & 0x0800) > 0)
-                    radioButtonJStatAttackConfusion.Checked = true; //CONFUSE
+                    checkBoxJStatAttackConfusion.Checked = true; //CONFUSE
                 if ((Stat & 0x1000) > 0)
-                    radioButtonJStatAttackDrain.Checked = true; //DRAIN
+                    checkBoxJStatAttackDrain.Checked = true; //DRAIN
 
                 /*  ===UNUSED/IMPOSSIBLE CASE
                 if ((Stat & 0x0080 << 6) > 0)
@@ -712,31 +714,31 @@ namespace Doomtrain
             {
                 ResetUI(3);
                 if ((Stat & 0x01) > 0)
-                    radioButtonJStatDefenseDeath.Checked = true; //DEATH
+                    checkBoxJStatDefenseDeath.Checked = true; //DEATH
                 if ((Stat & 0x02) > 0)
-                    radioButtonJStatDefensePoison.Checked = true; //POISON
+                    checkBoxJStatDefensePoison.Checked = true; //POISON
                 if ((Stat & 0x04) > 0)
-                    radioButtonJStatDefensePetrify.Checked = true; //PETRIFY
+                    checkBoxJStatDefensePetrify.Checked = true; //PETRIFY
                 if ((Stat & 0x08) > 0)
-                    radioButtonJStatDefenseDarnkess.Checked = true; //DARKNESS
+                    checkBoxJStatDefenseDarnkess.Checked = true; //DARKNESS
                 if ((Stat & 0x10) > 0)
-                    radioButtonJStatDefenseSilence.Checked = true; //SILENCE
+                    checkBoxJStatDefenseSilence.Checked = true; //SILENCE
                 if ((Stat & 0x20) > 0)
-                    radioButtonJStatDefenseBerserk.Checked = true; //BERSERK
+                    checkBoxJStatDefenseBerserk.Checked = true; //BERSERK
                 if ((Stat & 0x40) > 0)
-                    radioButtonJStatDefenseZombie.Checked = true; //ZOMBIE
+                    checkBoxJStatDefenseZombie.Checked = true; //ZOMBIE
                 if ((Stat & 0x80) > 0)
-                    radioButtonJStatDefenseSleep.Checked = true; //SLEEP
+                    checkBoxJStatDefenseSleep.Checked = true; //SLEEP
                 if ((Stat & 0x100) > 0)
-                    radioButtonJStatDefenseSlow.Checked = true; //SLOW
+                    checkBoxJStatDefenseSlow.Checked = true; //SLOW
                 if ((Stat & 0x0200) > 0)
-                    radioButtonJStatDefenseStop.Checked = true; //STOP
+                    checkBoxJStatDefenseStop.Checked = true; //STOP
                 if ((Stat & 0x0400 ) > 0)
-                    radioButtonJStatDefenseCurse.Checked = true; //PAIN
+                    checkBoxJStatDefenseCurse.Checked = true; //PAIN
                 if ((Stat & 0x0800) > 0)
-                    radioButtonJStatDefenseConfusion.Checked = true; //CONFUSE
+                    checkBoxJStatDefenseConfusion.Checked = true; //CONFUSE
                 if ((Stat & 0x1000) > 0)
-                    radioButtonJStatDefenseDrain.Checked = true; //DRAIN
+                    checkBoxJStatDefenseDrain.Checked = true; //DRAIN
 
                 /*
                 if ((Stat & 0x0080 << 7) > 0)
@@ -769,36 +771,36 @@ namespace Doomtrain
             }
             if(State==2)
             {
-                radioButtonJStatAttackBerserk.Checked = false;
-                radioButtonJStatAttackConfusion.Checked = false;
-                radioButtonJStatAttackDarkness.Checked = false;
-                radioButtonJStatAttackDeath.Checked = false;
-                radioButtonJStatAttackDrain.Checked = false;
-                radioButtonJStatAttackPetrify.Checked = false;
-                radioButtonJStatAttackPoison.Checked = false;
-                radioButtonJStatAttackSilence.Checked = false;
-                radioButtonJStatAttackSleep.Checked = false;
-                radioButtonJStatAttackSlow.Checked = false;
-                radioButtonJStatAttackStop.Checked = false;
-                radioButtonJStatAttackZombie.Checked = false;
+                checkBoxJStatAttackBerserk.Checked = false;
+                checkBoxJStatAttackConfusion.Checked = false;
+                checkBoxJStatAttackDarkness.Checked = false;
+                checkBoxJStatAttackDeath.Checked = false;
+                checkBoxJStatAttackDrain.Checked = false;
+                checkBoxJStatAttackPetrify.Checked = false;
+                checkBoxJStatAttackPoison.Checked = false;
+                checkBoxJStatAttackSilence.Checked = false;
+                checkBoxJStatAttackSleep.Checked = false;
+                checkBoxJStatAttackSlow.Checked = false;
+                checkBoxJStatAttackStop.Checked = false;
+                checkBoxJStatAttackZombie.Checked = false;
 
             }
             if(State==3)
             {
-                radioButtonJStatDefenseBerserk.Checked = false;
-                radioButtonJStatDefenseConfusion.Checked = false;
-                radioButtonJStatDefenseDarnkess.Checked = false;
-                radioButtonJStatDefenseDeath.Checked = false;
-                radioButtonJStatDefenseDrain.Checked = false;
-                radioButtonJStatDefensePetrify.Checked = false;
-                radioButtonJStatDefensePoison.Checked = false;
-                radioButtonJStatDefenseSilence.Checked = false;
-                radioButtonJStatDefenseSleep.Checked = false;
-                radioButtonJStatDefenseSlow.Checked = false;
-                radioButtonJStatDefenseStop.Checked = false;
-                radioButtonJStatDefenseZombie.Checked = false;
-                radioButtonJStatDefenseCurse.Checked = false;
-                radioButtonJStatDefenseDarnkess.Checked = false;
+                checkBoxJStatDefenseBerserk.Checked = false;
+                checkBoxJStatDefenseConfusion.Checked = false;
+                checkBoxJStatDefenseDarnkess.Checked = false;
+                checkBoxJStatDefenseDeath.Checked = false;
+                checkBoxJStatDefenseDrain.Checked = false;
+                checkBoxJStatDefensePetrify.Checked = false;
+                checkBoxJStatDefensePoison.Checked = false;
+                checkBoxJStatDefenseSilence.Checked = false;
+                checkBoxJStatDefenseSleep.Checked = false;
+                checkBoxJStatDefenseSlow.Checked = false;
+                checkBoxJStatDefenseStop.Checked = false;
+                checkBoxJStatDefenseZombie.Checked = false;
+                checkBoxJStatDefenseCurse.Checked = false;
+                checkBoxJStatDefenseDarnkess.Checked = false;
             }
         }
 

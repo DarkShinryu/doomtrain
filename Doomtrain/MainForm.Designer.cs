@@ -124,35 +124,35 @@
             this.groupBoxMagicJStatus = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelValueStatDefenseTrackBar = new System.Windows.Forms.Label();
-            this.radioButtonJStatDefenseStop = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefenseStop = new System.Windows.Forms.CheckBox();
             this.labelMagicStatDefense = new System.Windows.Forms.Label();
-            this.radioButtonJStatDefenseSleep = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatDefenseDeath = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatDefenseZombie = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatDefensePoison = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatDefenseDrain = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatDefenseBerserk = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatDefenseSlow = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatDefensePetrify = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatDefenseConfusion = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatDefenseCurse = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatDefenseSilence = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatDefenseDarnkess = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefenseSleep = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefenseDeath = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefenseZombie = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefensePoison = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefenseDrain = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefenseBerserk = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefenseSlow = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefensePetrify = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefenseConfusion = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefenseCurse = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefenseSilence = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatDefenseDarnkess = new System.Windows.Forms.CheckBox();
             this.labelMagicStatAttack = new System.Windows.Forms.Label();
             this.labelValueStatAttackTrackBar = new System.Windows.Forms.Label();
-            this.radioButtonJStatAttackDarkness = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatAttackSilence = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackDarkness = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackSilence = new System.Windows.Forms.CheckBox();
             this.trackBarJStatAttack = new System.Windows.Forms.TrackBar();
-            this.radioButtonJStatAttackStop = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatAttackConfusion = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatAttackPetrify = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatAttackSlow = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatAttackBerserk = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatAttackSleep = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatAttackDrain = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatAttackPoison = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatAttackDeath = new System.Windows.Forms.CheckBox();
-            this.radioButtonJStatAttackZombie = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackStop = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackConfusion = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackPetrify = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackSlow = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackBerserk = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackSleep = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackDrain = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackPoison = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackDeath = new System.Windows.Forms.CheckBox();
+            this.checkBoxJStatAttackZombie = new System.Windows.Forms.CheckBox();
             this.trackBarJStatDefense = new System.Windows.Forms.TrackBar();
             this.groupBoxMagicJElem = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -380,12 +380,6 @@
             this.labelStatsIncrementName = new System.Windows.Forms.Label();
             this.listBoxStatsIncrement = new System.Windows.Forms.ListBox();
             this.tabPageWeapons = new System.Windows.Forms.TabPage();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.toolbarStrip = new System.Windows.Forms.ToolStrip();
-            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBoxWeaponsGeneral = new System.Windows.Forms.GroupBox();
             this.checkBoxWeaponsRenzoFinLion = new System.Windows.Forms.CheckBox();
             this.checkBoxWeaponsRenzoFinBlasting = new System.Windows.Forms.CheckBox();
@@ -401,6 +395,13 @@
             this.labelWeaponsRenzoFin = new System.Windows.Forms.Label();
             this.labelWeaponsCharacterID = new System.Windows.Forms.Label();
             this.listBoxWeapons = new System.Windows.Forms.ListBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolbarStrip = new System.Windows.Forms.ToolStrip();
+            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.radioButtonJElemAttackNElem = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageMagic.SuspendLayout();
@@ -491,11 +492,11 @@
             this.groupBoxStatsIncrement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarStatsIncrementValue)).BeginInit();
             this.tabPageWeapons.SuspendLayout();
-            this.toolbarStrip.SuspendLayout();
             this.groupBoxWeaponsGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsSTRBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackPower)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
+            this.toolbarStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -590,7 +591,7 @@
             this.tabControlMain.Multiline = true;
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(592, 781);
+            this.tabControlMain.Size = new System.Drawing.Size(592, 809);
             this.tabControlMain.TabIndex = 0;
             this.tabControlMain.TabStop = false;
             // 
@@ -602,7 +603,7 @@
             this.tabPageMagic.Location = new System.Drawing.Point(4, 32);
             this.tabPageMagic.Name = "tabPageMagic";
             this.tabPageMagic.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMagic.Size = new System.Drawing.Size(584, 745);
+            this.tabPageMagic.Size = new System.Drawing.Size(584, 773);
             this.tabPageMagic.TabIndex = 0;
             this.tabPageMagic.Text = "Magic";
             // 
@@ -615,7 +616,7 @@
             this.tabControlMagic.Multiline = true;
             this.tabControlMagic.Name = "tabControlMagic";
             this.tabControlMagic.SelectedIndex = 0;
-            this.tabControlMagic.Size = new System.Drawing.Size(477, 736);
+            this.tabControlMagic.Size = new System.Drawing.Size(477, 771);
             this.tabControlMagic.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControlMagic.TabIndex = 1;
             this.tabControlMagic.TabStop = false;
@@ -629,7 +630,7 @@
             this.tabPageMagicGeneral.Location = new System.Drawing.Point(4, 26);
             this.tabPageMagicGeneral.Name = "tabPageMagicGeneral";
             this.tabPageMagicGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMagicGeneral.Size = new System.Drawing.Size(469, 706);
+            this.tabPageMagicGeneral.Size = new System.Drawing.Size(469, 741);
             this.tabPageMagicGeneral.TabIndex = 0;
             this.tabPageMagicGeneral.Text = "General";
             // 
@@ -1994,7 +1995,7 @@
             this.tabPageMagicJunction.Location = new System.Drawing.Point(4, 26);
             this.tabPageMagicJunction.Name = "tabPageMagicJunction";
             this.tabPageMagicJunction.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMagicJunction.Size = new System.Drawing.Size(469, 706);
+            this.tabPageMagicJunction.Size = new System.Drawing.Size(469, 741);
             this.tabPageMagicJunction.TabIndex = 1;
             this.tabPageMagicJunction.Text = "Junction";
             // 
@@ -2004,9 +2005,9 @@
             this.groupBoxMagicJStatus.Controls.Add(this.panel2);
             this.groupBoxMagicJStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxMagicJStatus.ForeColor = System.Drawing.Color.DarkOrange;
-            this.groupBoxMagicJStatus.Location = new System.Drawing.Point(7, 401);
+            this.groupBoxMagicJStatus.Location = new System.Drawing.Point(2, 436);
             this.groupBoxMagicJStatus.Name = "groupBoxMagicJStatus";
-            this.groupBoxMagicJStatus.Size = new System.Drawing.Size(454, 305);
+            this.groupBoxMagicJStatus.Size = new System.Drawing.Size(462, 305);
             this.groupBoxMagicJStatus.TabIndex = 5;
             this.groupBoxMagicJStatus.TabStop = false;
             this.groupBoxMagicJStatus.Text = "Junction Status";
@@ -2014,40 +2015,40 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.labelValueStatDefenseTrackBar);
-            this.panel2.Controls.Add(this.radioButtonJStatDefenseStop);
+            this.panel2.Controls.Add(this.checkBoxJStatDefenseStop);
             this.panel2.Controls.Add(this.labelMagicStatDefense);
-            this.panel2.Controls.Add(this.radioButtonJStatDefenseSleep);
-            this.panel2.Controls.Add(this.radioButtonJStatDefenseDeath);
-            this.panel2.Controls.Add(this.radioButtonJStatDefenseZombie);
-            this.panel2.Controls.Add(this.radioButtonJStatDefensePoison);
-            this.panel2.Controls.Add(this.radioButtonJStatDefenseDrain);
-            this.panel2.Controls.Add(this.radioButtonJStatDefenseBerserk);
-            this.panel2.Controls.Add(this.radioButtonJStatDefenseSlow);
-            this.panel2.Controls.Add(this.radioButtonJStatDefensePetrify);
-            this.panel2.Controls.Add(this.radioButtonJStatDefenseConfusion);
-            this.panel2.Controls.Add(this.radioButtonJStatDefenseCurse);
-            this.panel2.Controls.Add(this.radioButtonJStatDefenseSilence);
-            this.panel2.Controls.Add(this.radioButtonJStatDefenseDarnkess);
+            this.panel2.Controls.Add(this.checkBoxJStatDefenseSleep);
+            this.panel2.Controls.Add(this.checkBoxJStatDefenseDeath);
+            this.panel2.Controls.Add(this.checkBoxJStatDefenseZombie);
+            this.panel2.Controls.Add(this.checkBoxJStatDefensePoison);
+            this.panel2.Controls.Add(this.checkBoxJStatDefenseDrain);
+            this.panel2.Controls.Add(this.checkBoxJStatDefenseBerserk);
+            this.panel2.Controls.Add(this.checkBoxJStatDefenseSlow);
+            this.panel2.Controls.Add(this.checkBoxJStatDefensePetrify);
+            this.panel2.Controls.Add(this.checkBoxJStatDefenseConfusion);
+            this.panel2.Controls.Add(this.checkBoxJStatDefenseCurse);
+            this.panel2.Controls.Add(this.checkBoxJStatDefenseSilence);
+            this.panel2.Controls.Add(this.checkBoxJStatDefenseDarnkess);
             this.panel2.Controls.Add(this.labelMagicStatAttack);
             this.panel2.Controls.Add(this.labelValueStatAttackTrackBar);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackDarkness);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackSilence);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackDarkness);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackSilence);
             this.panel2.Controls.Add(this.trackBarJStatAttack);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackStop);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackConfusion);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackPetrify);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackSlow);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackBerserk);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackSleep);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackDrain);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackPoison);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackDeath);
-            this.panel2.Controls.Add(this.radioButtonJStatAttackZombie);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackStop);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackConfusion);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackPetrify);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackSlow);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackBerserk);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackSleep);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackDrain);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackPoison);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackDeath);
+            this.panel2.Controls.Add(this.checkBoxJStatAttackZombie);
             this.panel2.Controls.Add(this.trackBarJStatDefense);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 26);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(448, 276);
+            this.panel2.Size = new System.Drawing.Size(456, 276);
             this.panel2.TabIndex = 62;
             // 
             // labelValueStatDefenseTrackBar
@@ -2055,187 +2056,186 @@
             this.labelValueStatDefenseTrackBar.AutoSize = true;
             this.labelValueStatDefenseTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelValueStatDefenseTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelValueStatDefenseTrackBar.Location = new System.Drawing.Point(210, 255);
+            this.labelValueStatDefenseTrackBar.Location = new System.Drawing.Point(214, 255);
             this.labelValueStatDefenseTrackBar.Name = "labelValueStatDefenseTrackBar";
             this.labelValueStatDefenseTrackBar.Size = new System.Drawing.Size(28, 19);
             this.labelValueStatDefenseTrackBar.TabIndex = 78;
             this.labelValueStatDefenseTrackBar.Text = "0%";
-            this.labelValueStatDefenseTrackBar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // radioButtonJStatDefenseStop
+            // checkBoxJStatDefenseStop
             // 
-            this.radioButtonJStatDefenseStop.AutoSize = true;
-            this.radioButtonJStatDefenseStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefenseStop.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefenseStop.Location = new System.Drawing.Point(155, 199);
-            this.radioButtonJStatDefenseStop.Name = "radioButtonJStatDefenseStop";
-            this.radioButtonJStatDefenseStop.Size = new System.Drawing.Size(50, 19);
-            this.radioButtonJStatDefenseStop.TabIndex = 50;
-            this.radioButtonJStatDefenseStop.Text = "Stop";
-            this.radioButtonJStatDefenseStop.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefenseStop.AutoSize = true;
+            this.checkBoxJStatDefenseStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefenseStop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefenseStop.Location = new System.Drawing.Point(159, 199);
+            this.checkBoxJStatDefenseStop.Name = "checkBoxJStatDefenseStop";
+            this.checkBoxJStatDefenseStop.Size = new System.Drawing.Size(50, 19);
+            this.checkBoxJStatDefenseStop.TabIndex = 50;
+            this.checkBoxJStatDefenseStop.Text = "Stop";
+            this.checkBoxJStatDefenseStop.UseVisualStyleBackColor = true;
             // 
             // labelMagicStatDefense
             // 
             this.labelMagicStatDefense.AutoSize = true;
             this.labelMagicStatDefense.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMagicStatDefense.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicStatDefense.Location = new System.Drawing.Point(173, 147);
+            this.labelMagicStatDefense.Location = new System.Drawing.Point(177, 147);
             this.labelMagicStatDefense.Name = "labelMagicStatDefense";
             this.labelMagicStatDefense.Size = new System.Drawing.Size(102, 19);
             this.labelMagicStatDefense.TabIndex = 62;
             this.labelMagicStatDefense.Text = "Status Defense";
             this.toolTip1.SetToolTip(this.labelMagicStatDefense, "Characters junction status defense enabler");
             // 
-            // radioButtonJStatDefenseSleep
+            // checkBoxJStatDefenseSleep
             // 
-            this.radioButtonJStatDefenseSleep.AutoSize = true;
-            this.radioButtonJStatDefenseSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefenseSleep.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefenseSleep.Location = new System.Drawing.Point(46, 199);
-            this.radioButtonJStatDefenseSleep.Name = "radioButtonJStatDefenseSleep";
-            this.radioButtonJStatDefenseSleep.Size = new System.Drawing.Size(54, 19);
-            this.radioButtonJStatDefenseSleep.TabIndex = 48;
-            this.radioButtonJStatDefenseSleep.Text = "Sleep";
-            this.radioButtonJStatDefenseSleep.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefenseSleep.AutoSize = true;
+            this.checkBoxJStatDefenseSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefenseSleep.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefenseSleep.Location = new System.Drawing.Point(50, 199);
+            this.checkBoxJStatDefenseSleep.Name = "checkBoxJStatDefenseSleep";
+            this.checkBoxJStatDefenseSleep.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxJStatDefenseSleep.TabIndex = 48;
+            this.checkBoxJStatDefenseSleep.Text = "Sleep";
+            this.checkBoxJStatDefenseSleep.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatDefenseDeath
+            // checkBoxJStatDefenseDeath
             // 
-            this.radioButtonJStatDefenseDeath.AutoSize = true;
-            this.radioButtonJStatDefenseDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefenseDeath.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefenseDeath.Location = new System.Drawing.Point(1, 174);
-            this.radioButtonJStatDefenseDeath.Name = "radioButtonJStatDefenseDeath";
-            this.radioButtonJStatDefenseDeath.Size = new System.Drawing.Size(57, 19);
-            this.radioButtonJStatDefenseDeath.TabIndex = 41;
-            this.radioButtonJStatDefenseDeath.Text = "Death";
-            this.radioButtonJStatDefenseDeath.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefenseDeath.AutoSize = true;
+            this.checkBoxJStatDefenseDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefenseDeath.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefenseDeath.Location = new System.Drawing.Point(5, 174);
+            this.checkBoxJStatDefenseDeath.Name = "checkBoxJStatDefenseDeath";
+            this.checkBoxJStatDefenseDeath.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxJStatDefenseDeath.TabIndex = 41;
+            this.checkBoxJStatDefenseDeath.Text = "Death";
+            this.checkBoxJStatDefenseDeath.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatDefenseZombie
+            // checkBoxJStatDefenseZombie
             // 
-            this.radioButtonJStatDefenseZombie.AutoSize = true;
-            this.radioButtonJStatDefenseZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefenseZombie.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefenseZombie.Location = new System.Drawing.Point(380, 174);
-            this.radioButtonJStatDefenseZombie.Name = "radioButtonJStatDefenseZombie";
-            this.radioButtonJStatDefenseZombie.Size = new System.Drawing.Size(67, 19);
-            this.radioButtonJStatDefenseZombie.TabIndex = 47;
-            this.radioButtonJStatDefenseZombie.Text = "Zombie";
-            this.radioButtonJStatDefenseZombie.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefenseZombie.AutoSize = true;
+            this.checkBoxJStatDefenseZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefenseZombie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefenseZombie.Location = new System.Drawing.Point(384, 174);
+            this.checkBoxJStatDefenseZombie.Name = "checkBoxJStatDefenseZombie";
+            this.checkBoxJStatDefenseZombie.Size = new System.Drawing.Size(67, 19);
+            this.checkBoxJStatDefenseZombie.TabIndex = 47;
+            this.checkBoxJStatDefenseZombie.Text = "Zombie";
+            this.checkBoxJStatDefenseZombie.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatDefensePoison
+            // checkBoxJStatDefensePoison
             // 
-            this.radioButtonJStatDefensePoison.AutoSize = true;
-            this.radioButtonJStatDefensePoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefensePoison.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefensePoison.Location = new System.Drawing.Point(58, 174);
-            this.radioButtonJStatDefensePoison.Name = "radioButtonJStatDefensePoison";
-            this.radioButtonJStatDefensePoison.Size = new System.Drawing.Size(62, 19);
-            this.radioButtonJStatDefensePoison.TabIndex = 42;
-            this.radioButtonJStatDefensePoison.Text = "Poison";
-            this.radioButtonJStatDefensePoison.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefensePoison.AutoSize = true;
+            this.checkBoxJStatDefensePoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefensePoison.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefensePoison.Location = new System.Drawing.Point(62, 174);
+            this.checkBoxJStatDefensePoison.Name = "checkBoxJStatDefensePoison";
+            this.checkBoxJStatDefensePoison.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxJStatDefensePoison.TabIndex = 42;
+            this.checkBoxJStatDefensePoison.Text = "Poison";
+            this.checkBoxJStatDefensePoison.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatDefenseDrain
+            // checkBoxJStatDefenseDrain
             // 
-            this.radioButtonJStatDefenseDrain.AutoSize = true;
-            this.radioButtonJStatDefenseDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefenseDrain.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefenseDrain.Location = new System.Drawing.Point(348, 199);
-            this.radioButtonJStatDefenseDrain.Name = "radioButtonJStatDefenseDrain";
-            this.radioButtonJStatDefenseDrain.Size = new System.Drawing.Size(54, 19);
-            this.radioButtonJStatDefenseDrain.TabIndex = 53;
-            this.radioButtonJStatDefenseDrain.Text = "Drain";
-            this.radioButtonJStatDefenseDrain.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefenseDrain.AutoSize = true;
+            this.checkBoxJStatDefenseDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefenseDrain.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefenseDrain.Location = new System.Drawing.Point(352, 199);
+            this.checkBoxJStatDefenseDrain.Name = "checkBoxJStatDefenseDrain";
+            this.checkBoxJStatDefenseDrain.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxJStatDefenseDrain.TabIndex = 53;
+            this.checkBoxJStatDefenseDrain.Text = "Drain";
+            this.checkBoxJStatDefenseDrain.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatDefenseBerserk
+            // checkBoxJStatDefenseBerserk
             // 
-            this.radioButtonJStatDefenseBerserk.AutoSize = true;
-            this.radioButtonJStatDefenseBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefenseBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefenseBerserk.Location = new System.Drawing.Point(316, 174);
-            this.radioButtonJStatDefenseBerserk.Name = "radioButtonJStatDefenseBerserk";
-            this.radioButtonJStatDefenseBerserk.Size = new System.Drawing.Size(64, 19);
-            this.radioButtonJStatDefenseBerserk.TabIndex = 46;
-            this.radioButtonJStatDefenseBerserk.Text = "Berserk";
-            this.radioButtonJStatDefenseBerserk.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefenseBerserk.AutoSize = true;
+            this.checkBoxJStatDefenseBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefenseBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefenseBerserk.Location = new System.Drawing.Point(320, 174);
+            this.checkBoxJStatDefenseBerserk.Name = "checkBoxJStatDefenseBerserk";
+            this.checkBoxJStatDefenseBerserk.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxJStatDefenseBerserk.TabIndex = 46;
+            this.checkBoxJStatDefenseBerserk.Text = "Berserk";
+            this.checkBoxJStatDefenseBerserk.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatDefenseSlow
+            // checkBoxJStatDefenseSlow
             // 
-            this.radioButtonJStatDefenseSlow.AutoSize = true;
-            this.radioButtonJStatDefenseSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefenseSlow.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefenseSlow.Location = new System.Drawing.Point(102, 199);
-            this.radioButtonJStatDefenseSlow.Name = "radioButtonJStatDefenseSlow";
-            this.radioButtonJStatDefenseSlow.Size = new System.Drawing.Size(51, 19);
-            this.radioButtonJStatDefenseSlow.TabIndex = 49;
-            this.radioButtonJStatDefenseSlow.Text = "Slow";
-            this.radioButtonJStatDefenseSlow.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefenseSlow.AutoSize = true;
+            this.checkBoxJStatDefenseSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefenseSlow.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefenseSlow.Location = new System.Drawing.Point(106, 199);
+            this.checkBoxJStatDefenseSlow.Name = "checkBoxJStatDefenseSlow";
+            this.checkBoxJStatDefenseSlow.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxJStatDefenseSlow.TabIndex = 49;
+            this.checkBoxJStatDefenseSlow.Text = "Slow";
+            this.checkBoxJStatDefenseSlow.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatDefensePetrify
+            // checkBoxJStatDefensePetrify
             // 
-            this.radioButtonJStatDefensePetrify.AutoSize = true;
-            this.radioButtonJStatDefensePetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefensePetrify.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefensePetrify.Location = new System.Drawing.Point(120, 174);
-            this.radioButtonJStatDefensePetrify.Name = "radioButtonJStatDefensePetrify";
-            this.radioButtonJStatDefensePetrify.Size = new System.Drawing.Size(60, 19);
-            this.radioButtonJStatDefensePetrify.TabIndex = 43;
-            this.radioButtonJStatDefensePetrify.Text = "Petrify";
-            this.radioButtonJStatDefensePetrify.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefensePetrify.AutoSize = true;
+            this.checkBoxJStatDefensePetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefensePetrify.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefensePetrify.Location = new System.Drawing.Point(124, 174);
+            this.checkBoxJStatDefensePetrify.Name = "checkBoxJStatDefensePetrify";
+            this.checkBoxJStatDefensePetrify.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxJStatDefensePetrify.TabIndex = 43;
+            this.checkBoxJStatDefensePetrify.Text = "Petrify";
+            this.checkBoxJStatDefensePetrify.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatDefenseConfusion
+            // checkBoxJStatDefenseConfusion
             // 
-            this.radioButtonJStatDefenseConfusion.AutoSize = true;
-            this.radioButtonJStatDefenseConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefenseConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefenseConfusion.Location = new System.Drawing.Point(265, 199);
-            this.radioButtonJStatDefenseConfusion.Name = "radioButtonJStatDefenseConfusion";
-            this.radioButtonJStatDefenseConfusion.Size = new System.Drawing.Size(81, 19);
-            this.radioButtonJStatDefenseConfusion.TabIndex = 52;
-            this.radioButtonJStatDefenseConfusion.Text = "Confusion";
-            this.radioButtonJStatDefenseConfusion.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefenseConfusion.AutoSize = true;
+            this.checkBoxJStatDefenseConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefenseConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefenseConfusion.Location = new System.Drawing.Point(269, 199);
+            this.checkBoxJStatDefenseConfusion.Name = "checkBoxJStatDefenseConfusion";
+            this.checkBoxJStatDefenseConfusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxJStatDefenseConfusion.TabIndex = 52;
+            this.checkBoxJStatDefenseConfusion.Text = "Confusion";
+            this.checkBoxJStatDefenseConfusion.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatDefenseCurse
+            // checkBoxJStatDefenseCurse
             // 
-            this.radioButtonJStatDefenseCurse.AutoSize = true;
-            this.radioButtonJStatDefenseCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefenseCurse.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefenseCurse.Location = new System.Drawing.Point(207, 199);
-            this.radioButtonJStatDefenseCurse.Name = "radioButtonJStatDefenseCurse";
-            this.radioButtonJStatDefenseCurse.Size = new System.Drawing.Size(56, 19);
-            this.radioButtonJStatDefenseCurse.TabIndex = 51;
-            this.radioButtonJStatDefenseCurse.Text = "Curse";
-            this.radioButtonJStatDefenseCurse.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefenseCurse.AutoSize = true;
+            this.checkBoxJStatDefenseCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefenseCurse.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefenseCurse.Location = new System.Drawing.Point(211, 199);
+            this.checkBoxJStatDefenseCurse.Name = "checkBoxJStatDefenseCurse";
+            this.checkBoxJStatDefenseCurse.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxJStatDefenseCurse.TabIndex = 51;
+            this.checkBoxJStatDefenseCurse.Text = "Curse";
+            this.checkBoxJStatDefenseCurse.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatDefenseSilence
+            // checkBoxJStatDefenseSilence
             // 
-            this.radioButtonJStatDefenseSilence.AutoSize = true;
-            this.radioButtonJStatDefenseSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefenseSilence.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefenseSilence.Location = new System.Drawing.Point(253, 174);
-            this.radioButtonJStatDefenseSilence.Name = "radioButtonJStatDefenseSilence";
-            this.radioButtonJStatDefenseSilence.Size = new System.Drawing.Size(63, 19);
-            this.radioButtonJStatDefenseSilence.TabIndex = 45;
-            this.radioButtonJStatDefenseSilence.Text = "Silence";
-            this.radioButtonJStatDefenseSilence.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefenseSilence.AutoSize = true;
+            this.checkBoxJStatDefenseSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefenseSilence.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefenseSilence.Location = new System.Drawing.Point(257, 174);
+            this.checkBoxJStatDefenseSilence.Name = "checkBoxJStatDefenseSilence";
+            this.checkBoxJStatDefenseSilence.Size = new System.Drawing.Size(63, 19);
+            this.checkBoxJStatDefenseSilence.TabIndex = 45;
+            this.checkBoxJStatDefenseSilence.Text = "Silence";
+            this.checkBoxJStatDefenseSilence.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatDefenseDarnkess
+            // checkBoxJStatDefenseDarnkess
             // 
-            this.radioButtonJStatDefenseDarnkess.AutoSize = true;
-            this.radioButtonJStatDefenseDarnkess.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatDefenseDarnkess.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatDefenseDarnkess.Location = new System.Drawing.Point(180, 174);
-            this.radioButtonJStatDefenseDarnkess.Name = "radioButtonJStatDefenseDarnkess";
-            this.radioButtonJStatDefenseDarnkess.Size = new System.Drawing.Size(73, 19);
-            this.radioButtonJStatDefenseDarnkess.TabIndex = 44;
-            this.radioButtonJStatDefenseDarnkess.Text = "Darkness";
-            this.radioButtonJStatDefenseDarnkess.UseVisualStyleBackColor = true;
+            this.checkBoxJStatDefenseDarnkess.AutoSize = true;
+            this.checkBoxJStatDefenseDarnkess.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatDefenseDarnkess.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatDefenseDarnkess.Location = new System.Drawing.Point(184, 174);
+            this.checkBoxJStatDefenseDarnkess.Name = "checkBoxJStatDefenseDarnkess";
+            this.checkBoxJStatDefenseDarnkess.Size = new System.Drawing.Size(73, 19);
+            this.checkBoxJStatDefenseDarnkess.TabIndex = 44;
+            this.checkBoxJStatDefenseDarnkess.Text = "Darkness";
+            this.checkBoxJStatDefenseDarnkess.UseVisualStyleBackColor = true;
             // 
             // labelMagicStatAttack
             // 
             this.labelMagicStatAttack.AutoSize = true;
             this.labelMagicStatAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMagicStatAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicStatAttack.Location = new System.Drawing.Point(178, 1);
+            this.labelMagicStatAttack.Location = new System.Drawing.Point(182, 1);
             this.labelMagicStatAttack.Name = "labelMagicStatAttack";
             this.labelMagicStatAttack.Size = new System.Drawing.Size(92, 19);
             this.labelMagicStatAttack.TabIndex = 0;
@@ -2247,41 +2247,40 @@
             this.labelValueStatAttackTrackBar.AutoSize = true;
             this.labelValueStatAttackTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelValueStatAttackTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelValueStatAttackTrackBar.Location = new System.Drawing.Point(210, 109);
+            this.labelValueStatAttackTrackBar.Location = new System.Drawing.Point(214, 109);
             this.labelValueStatAttackTrackBar.Name = "labelValueStatAttackTrackBar";
             this.labelValueStatAttackTrackBar.Size = new System.Drawing.Size(28, 19);
             this.labelValueStatAttackTrackBar.TabIndex = 26;
             this.labelValueStatAttackTrackBar.Text = "0%";
-            this.labelValueStatAttackTrackBar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // radioButtonJStatAttackDarkness
+            // checkBoxJStatAttackDarkness
             // 
-            this.radioButtonJStatAttackDarkness.AutoSize = true;
-            this.radioButtonJStatAttackDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackDarkness.Location = new System.Drawing.Point(180, 28);
-            this.radioButtonJStatAttackDarkness.Name = "radioButtonJStatAttackDarkness";
-            this.radioButtonJStatAttackDarkness.Size = new System.Drawing.Size(73, 19);
-            this.radioButtonJStatAttackDarkness.TabIndex = 31;
-            this.radioButtonJStatAttackDarkness.Text = "Darkness";
-            this.radioButtonJStatAttackDarkness.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackDarkness.AutoSize = true;
+            this.checkBoxJStatAttackDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackDarkness.Location = new System.Drawing.Point(184, 28);
+            this.checkBoxJStatAttackDarkness.Name = "checkBoxJStatAttackDarkness";
+            this.checkBoxJStatAttackDarkness.Size = new System.Drawing.Size(73, 19);
+            this.checkBoxJStatAttackDarkness.TabIndex = 31;
+            this.checkBoxJStatAttackDarkness.Text = "Darkness";
+            this.checkBoxJStatAttackDarkness.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatAttackSilence
+            // checkBoxJStatAttackSilence
             // 
-            this.radioButtonJStatAttackSilence.AutoSize = true;
-            this.radioButtonJStatAttackSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackSilence.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackSilence.Location = new System.Drawing.Point(253, 28);
-            this.radioButtonJStatAttackSilence.Name = "radioButtonJStatAttackSilence";
-            this.radioButtonJStatAttackSilence.Size = new System.Drawing.Size(63, 19);
-            this.radioButtonJStatAttackSilence.TabIndex = 32;
-            this.radioButtonJStatAttackSilence.Text = "Silence";
-            this.radioButtonJStatAttackSilence.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackSilence.AutoSize = true;
+            this.checkBoxJStatAttackSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackSilence.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackSilence.Location = new System.Drawing.Point(257, 28);
+            this.checkBoxJStatAttackSilence.Name = "checkBoxJStatAttackSilence";
+            this.checkBoxJStatAttackSilence.Size = new System.Drawing.Size(63, 19);
+            this.checkBoxJStatAttackSilence.TabIndex = 32;
+            this.checkBoxJStatAttackSilence.Text = "Silence";
+            this.checkBoxJStatAttackSilence.UseVisualStyleBackColor = true;
             // 
             // trackBarJStatAttack
             // 
             this.trackBarJStatAttack.LargeChange = 10;
-            this.trackBarJStatAttack.Location = new System.Drawing.Point(8, 78);
+            this.trackBarJStatAttack.Location = new System.Drawing.Point(12, 78);
             this.trackBarJStatAttack.Maximum = 255;
             this.trackBarJStatAttack.Name = "trackBarJStatAttack";
             this.trackBarJStatAttack.Size = new System.Drawing.Size(432, 45);
@@ -2290,130 +2289,130 @@
             this.trackBarJStatAttack.Scroll += new System.EventHandler(this.trackBarJStatAttack_Scroll);
             this.trackBarJStatAttack.ValueChanged += new System.EventHandler(this.trackBarJStatAttack_Scroll);
             // 
-            // radioButtonJStatAttackStop
+            // checkBoxJStatAttackStop
             // 
-            this.radioButtonJStatAttackStop.AutoSize = true;
-            this.radioButtonJStatAttackStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackStop.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackStop.Location = new System.Drawing.Point(184, 53);
-            this.radioButtonJStatAttackStop.Name = "radioButtonJStatAttackStop";
-            this.radioButtonJStatAttackStop.Size = new System.Drawing.Size(50, 19);
-            this.radioButtonJStatAttackStop.TabIndex = 37;
-            this.radioButtonJStatAttackStop.Text = "Stop";
-            this.radioButtonJStatAttackStop.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackStop.AutoSize = true;
+            this.checkBoxJStatAttackStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackStop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackStop.Location = new System.Drawing.Point(184, 53);
+            this.checkBoxJStatAttackStop.Name = "checkBoxJStatAttackStop";
+            this.checkBoxJStatAttackStop.Size = new System.Drawing.Size(50, 19);
+            this.checkBoxJStatAttackStop.TabIndex = 37;
+            this.checkBoxJStatAttackStop.Text = "Stop";
+            this.checkBoxJStatAttackStop.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatAttackConfusion
+            // checkBoxJStatAttackConfusion
             // 
-            this.radioButtonJStatAttackConfusion.AutoSize = true;
-            this.radioButtonJStatAttackConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackConfusion.Location = new System.Drawing.Point(236, 53);
-            this.radioButtonJStatAttackConfusion.Name = "radioButtonJStatAttackConfusion";
-            this.radioButtonJStatAttackConfusion.Size = new System.Drawing.Size(81, 19);
-            this.radioButtonJStatAttackConfusion.TabIndex = 38;
-            this.radioButtonJStatAttackConfusion.Text = "Confusion";
-            this.radioButtonJStatAttackConfusion.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackConfusion.AutoSize = true;
+            this.checkBoxJStatAttackConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackConfusion.Location = new System.Drawing.Point(236, 53);
+            this.checkBoxJStatAttackConfusion.Name = "checkBoxJStatAttackConfusion";
+            this.checkBoxJStatAttackConfusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxJStatAttackConfusion.TabIndex = 38;
+            this.checkBoxJStatAttackConfusion.Text = "Confusion";
+            this.checkBoxJStatAttackConfusion.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatAttackPetrify
+            // checkBoxJStatAttackPetrify
             // 
-            this.radioButtonJStatAttackPetrify.AutoSize = true;
-            this.radioButtonJStatAttackPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackPetrify.Location = new System.Drawing.Point(120, 28);
-            this.radioButtonJStatAttackPetrify.Name = "radioButtonJStatAttackPetrify";
-            this.radioButtonJStatAttackPetrify.Size = new System.Drawing.Size(60, 19);
-            this.radioButtonJStatAttackPetrify.TabIndex = 30;
-            this.radioButtonJStatAttackPetrify.Text = "Petrify";
-            this.radioButtonJStatAttackPetrify.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackPetrify.AutoSize = true;
+            this.checkBoxJStatAttackPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackPetrify.Location = new System.Drawing.Point(124, 28);
+            this.checkBoxJStatAttackPetrify.Name = "checkBoxJStatAttackPetrify";
+            this.checkBoxJStatAttackPetrify.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxJStatAttackPetrify.TabIndex = 30;
+            this.checkBoxJStatAttackPetrify.Text = "Petrify";
+            this.checkBoxJStatAttackPetrify.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatAttackSlow
+            // checkBoxJStatAttackSlow
             // 
-            this.radioButtonJStatAttackSlow.AutoSize = true;
-            this.radioButtonJStatAttackSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackSlow.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackSlow.Location = new System.Drawing.Point(131, 53);
-            this.radioButtonJStatAttackSlow.Name = "radioButtonJStatAttackSlow";
-            this.radioButtonJStatAttackSlow.Size = new System.Drawing.Size(51, 19);
-            this.radioButtonJStatAttackSlow.TabIndex = 36;
-            this.radioButtonJStatAttackSlow.Text = "Slow";
-            this.radioButtonJStatAttackSlow.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackSlow.AutoSize = true;
+            this.checkBoxJStatAttackSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackSlow.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackSlow.Location = new System.Drawing.Point(131, 53);
+            this.checkBoxJStatAttackSlow.Name = "checkBoxJStatAttackSlow";
+            this.checkBoxJStatAttackSlow.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxJStatAttackSlow.TabIndex = 36;
+            this.checkBoxJStatAttackSlow.Text = "Slow";
+            this.checkBoxJStatAttackSlow.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatAttackBerserk
+            // checkBoxJStatAttackBerserk
             // 
-            this.radioButtonJStatAttackBerserk.AutoSize = true;
-            this.radioButtonJStatAttackBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackBerserk.Location = new System.Drawing.Point(316, 28);
-            this.radioButtonJStatAttackBerserk.Name = "radioButtonJStatAttackBerserk";
-            this.radioButtonJStatAttackBerserk.Size = new System.Drawing.Size(64, 19);
-            this.radioButtonJStatAttackBerserk.TabIndex = 33;
-            this.radioButtonJStatAttackBerserk.Text = "Berserk";
-            this.radioButtonJStatAttackBerserk.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackBerserk.AutoSize = true;
+            this.checkBoxJStatAttackBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackBerserk.Location = new System.Drawing.Point(320, 28);
+            this.checkBoxJStatAttackBerserk.Name = "checkBoxJStatAttackBerserk";
+            this.checkBoxJStatAttackBerserk.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxJStatAttackBerserk.TabIndex = 33;
+            this.checkBoxJStatAttackBerserk.Text = "Berserk";
+            this.checkBoxJStatAttackBerserk.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatAttackSleep
+            // checkBoxJStatAttackSleep
             // 
-            this.radioButtonJStatAttackSleep.AutoSize = true;
-            this.radioButtonJStatAttackSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackSleep.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackSleep.Location = new System.Drawing.Point(75, 53);
-            this.radioButtonJStatAttackSleep.Name = "radioButtonJStatAttackSleep";
-            this.radioButtonJStatAttackSleep.Size = new System.Drawing.Size(54, 19);
-            this.radioButtonJStatAttackSleep.TabIndex = 35;
-            this.radioButtonJStatAttackSleep.Text = "Sleep";
-            this.radioButtonJStatAttackSleep.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackSleep.AutoSize = true;
+            this.checkBoxJStatAttackSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackSleep.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackSleep.Location = new System.Drawing.Point(75, 53);
+            this.checkBoxJStatAttackSleep.Name = "checkBoxJStatAttackSleep";
+            this.checkBoxJStatAttackSleep.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxJStatAttackSleep.TabIndex = 35;
+            this.checkBoxJStatAttackSleep.Text = "Sleep";
+            this.checkBoxJStatAttackSleep.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatAttackDrain
+            // checkBoxJStatAttackDrain
             // 
-            this.radioButtonJStatAttackDrain.AutoSize = true;
-            this.radioButtonJStatAttackDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackDrain.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackDrain.Location = new System.Drawing.Point(319, 53);
-            this.radioButtonJStatAttackDrain.Name = "radioButtonJStatAttackDrain";
-            this.radioButtonJStatAttackDrain.Size = new System.Drawing.Size(54, 19);
-            this.radioButtonJStatAttackDrain.TabIndex = 39;
-            this.radioButtonJStatAttackDrain.Text = "Drain";
-            this.radioButtonJStatAttackDrain.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackDrain.AutoSize = true;
+            this.checkBoxJStatAttackDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackDrain.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackDrain.Location = new System.Drawing.Point(319, 53);
+            this.checkBoxJStatAttackDrain.Name = "checkBoxJStatAttackDrain";
+            this.checkBoxJStatAttackDrain.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxJStatAttackDrain.TabIndex = 39;
+            this.checkBoxJStatAttackDrain.Text = "Drain";
+            this.checkBoxJStatAttackDrain.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatAttackPoison
+            // checkBoxJStatAttackPoison
             // 
-            this.radioButtonJStatAttackPoison.AutoSize = true;
-            this.radioButtonJStatAttackPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackPoison.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackPoison.Location = new System.Drawing.Point(58, 28);
-            this.radioButtonJStatAttackPoison.Name = "radioButtonJStatAttackPoison";
-            this.radioButtonJStatAttackPoison.Size = new System.Drawing.Size(62, 19);
-            this.radioButtonJStatAttackPoison.TabIndex = 29;
-            this.radioButtonJStatAttackPoison.Text = "Poison";
-            this.radioButtonJStatAttackPoison.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackPoison.AutoSize = true;
+            this.checkBoxJStatAttackPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackPoison.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackPoison.Location = new System.Drawing.Point(62, 28);
+            this.checkBoxJStatAttackPoison.Name = "checkBoxJStatAttackPoison";
+            this.checkBoxJStatAttackPoison.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxJStatAttackPoison.TabIndex = 29;
+            this.checkBoxJStatAttackPoison.Text = "Poison";
+            this.checkBoxJStatAttackPoison.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatAttackDeath
+            // checkBoxJStatAttackDeath
             // 
-            this.radioButtonJStatAttackDeath.AutoSize = true;
-            this.radioButtonJStatAttackDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackDeath.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackDeath.Location = new System.Drawing.Point(1, 28);
-            this.radioButtonJStatAttackDeath.Name = "radioButtonJStatAttackDeath";
-            this.radioButtonJStatAttackDeath.Size = new System.Drawing.Size(57, 19);
-            this.radioButtonJStatAttackDeath.TabIndex = 28;
-            this.radioButtonJStatAttackDeath.Text = "Death";
-            this.radioButtonJStatAttackDeath.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackDeath.AutoSize = true;
+            this.checkBoxJStatAttackDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackDeath.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackDeath.Location = new System.Drawing.Point(5, 28);
+            this.checkBoxJStatAttackDeath.Name = "checkBoxJStatAttackDeath";
+            this.checkBoxJStatAttackDeath.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxJStatAttackDeath.TabIndex = 28;
+            this.checkBoxJStatAttackDeath.Text = "Death";
+            this.checkBoxJStatAttackDeath.UseVisualStyleBackColor = true;
             // 
-            // radioButtonJStatAttackZombie
+            // checkBoxJStatAttackZombie
             // 
-            this.radioButtonJStatAttackZombie.AutoSize = true;
-            this.radioButtonJStatAttackZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJStatAttackZombie.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJStatAttackZombie.Location = new System.Drawing.Point(380, 28);
-            this.radioButtonJStatAttackZombie.Name = "radioButtonJStatAttackZombie";
-            this.radioButtonJStatAttackZombie.Size = new System.Drawing.Size(67, 19);
-            this.radioButtonJStatAttackZombie.TabIndex = 34;
-            this.radioButtonJStatAttackZombie.Text = "Zombie";
-            this.radioButtonJStatAttackZombie.UseVisualStyleBackColor = true;
+            this.checkBoxJStatAttackZombie.AutoSize = true;
+            this.checkBoxJStatAttackZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxJStatAttackZombie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxJStatAttackZombie.Location = new System.Drawing.Point(384, 28);
+            this.checkBoxJStatAttackZombie.Name = "checkBoxJStatAttackZombie";
+            this.checkBoxJStatAttackZombie.Size = new System.Drawing.Size(67, 19);
+            this.checkBoxJStatAttackZombie.TabIndex = 34;
+            this.checkBoxJStatAttackZombie.Text = "Zombie";
+            this.checkBoxJStatAttackZombie.UseVisualStyleBackColor = true;
             // 
             // trackBarJStatDefense
             // 
             this.trackBarJStatDefense.LargeChange = 10;
-            this.trackBarJStatDefense.Location = new System.Drawing.Point(8, 225);
+            this.trackBarJStatDefense.Location = new System.Drawing.Point(12, 225);
             this.trackBarJStatDefense.Maximum = 255;
             this.trackBarJStatDefense.Name = "trackBarJStatDefense";
             this.trackBarJStatDefense.Size = new System.Drawing.Size(432, 45);
@@ -2428,9 +2427,9 @@
             this.groupBoxMagicJElem.Controls.Add(this.panel1);
             this.groupBoxMagicJElem.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxMagicJElem.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBoxMagicJElem.Location = new System.Drawing.Point(4, 145);
+            this.groupBoxMagicJElem.Location = new System.Drawing.Point(2, 145);
             this.groupBoxMagicJElem.Name = "groupBoxMagicJElem";
-            this.groupBoxMagicJElem.Size = new System.Drawing.Size(456, 253);
+            this.groupBoxMagicJElem.Size = new System.Drawing.Size(462, 285);
             this.groupBoxMagicJElem.TabIndex = 4;
             this.groupBoxMagicJElem.TabStop = false;
             this.groupBoxMagicJElem.Text = "Junction Elemental";
@@ -2455,6 +2454,7 @@
             this.panel1.Controls.Add(this.radioButtonJElemAttackEarth);
             this.panel1.Controls.Add(this.radioButtonJElemAttackThunder);
             this.panel1.Controls.Add(this.radioButtonJElemAttackIce);
+            this.panel1.Controls.Add(this.radioButtonJElemAttackNElem);
             this.panel1.Controls.Add(this.radioButtonJElemAttackFire);
             this.panel1.Controls.Add(this.labelValueElemAttackTrackBar);
             this.panel1.Controls.Add(this.labelMagicElemAttack);
@@ -2462,7 +2462,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 26);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(450, 224);
+            this.panel1.Size = new System.Drawing.Size(456, 256);
             this.panel1.TabIndex = 42;
             // 
             // labelValueElemDefenseTrackBar
@@ -2470,17 +2470,16 @@
             this.labelValueElemDefenseTrackBar.AutoSize = true;
             this.labelValueElemDefenseTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelValueElemDefenseTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelValueElemDefenseTrackBar.Location = new System.Drawing.Point(211, 202);
+            this.labelValueElemDefenseTrackBar.Location = new System.Drawing.Point(214, 229);
             this.labelValueElemDefenseTrackBar.Name = "labelValueElemDefenseTrackBar";
             this.labelValueElemDefenseTrackBar.Size = new System.Drawing.Size(28, 19);
             this.labelValueElemDefenseTrackBar.TabIndex = 37;
             this.labelValueElemDefenseTrackBar.Text = "0%";
-            this.labelValueElemDefenseTrackBar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // trackBarJElemDefense
             // 
             this.trackBarJElemDefense.LargeChange = 10;
-            this.trackBarJElemDefense.Location = new System.Drawing.Point(9, 170);
+            this.trackBarJElemDefense.Location = new System.Drawing.Point(12, 197);
             this.trackBarJElemDefense.Maximum = 255;
             this.trackBarJElemDefense.Name = "trackBarJElemDefense";
             this.trackBarJElemDefense.Size = new System.Drawing.Size(432, 45);
@@ -2495,7 +2494,7 @@
             this.labelMagicElemDefense.AutoSize = true;
             this.labelMagicElemDefense.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMagicElemDefense.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicElemDefense.Location = new System.Drawing.Point(163, 118);
+            this.labelMagicElemDefense.Location = new System.Drawing.Point(166, 145);
             this.labelMagicElemDefense.Name = "labelMagicElemDefense";
             this.labelMagicElemDefense.Size = new System.Drawing.Size(124, 19);
             this.labelMagicElemDefense.TabIndex = 36;
@@ -2507,7 +2506,7 @@
             this.checkBoxJElemDefenseHoly.AutoSize = true;
             this.checkBoxJElemDefenseHoly.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxJElemDefenseHoly.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxJElemDefenseHoly.Location = new System.Drawing.Point(391, 145);
+            this.checkBoxJElemDefenseHoly.Location = new System.Drawing.Point(394, 172);
             this.checkBoxJElemDefenseHoly.Name = "checkBoxJElemDefenseHoly";
             this.checkBoxJElemDefenseHoly.Size = new System.Drawing.Size(51, 19);
             this.checkBoxJElemDefenseHoly.TabIndex = 26;
@@ -2520,7 +2519,7 @@
             this.checkBoxJElemDefenseFire.AutoSize = true;
             this.checkBoxJElemDefenseFire.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxJElemDefenseFire.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxJElemDefenseFire.Location = new System.Drawing.Point(8, 145);
+            this.checkBoxJElemDefenseFire.Location = new System.Drawing.Point(11, 172);
             this.checkBoxJElemDefenseFire.Name = "checkBoxJElemDefenseFire";
             this.checkBoxJElemDefenseFire.Size = new System.Drawing.Size(45, 19);
             this.checkBoxJElemDefenseFire.TabIndex = 19;
@@ -2533,7 +2532,7 @@
             this.checkBoxJElemDefenseWater.AutoSize = true;
             this.checkBoxJElemDefenseWater.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxJElemDefenseWater.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxJElemDefenseWater.Location = new System.Drawing.Point(334, 145);
+            this.checkBoxJElemDefenseWater.Location = new System.Drawing.Point(337, 172);
             this.checkBoxJElemDefenseWater.Name = "checkBoxJElemDefenseWater";
             this.checkBoxJElemDefenseWater.Size = new System.Drawing.Size(57, 19);
             this.checkBoxJElemDefenseWater.TabIndex = 25;
@@ -2546,7 +2545,7 @@
             this.checkBoxJElemDefenseIce.AutoSize = true;
             this.checkBoxJElemDefenseIce.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxJElemDefenseIce.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxJElemDefenseIce.Location = new System.Drawing.Point(53, 145);
+            this.checkBoxJElemDefenseIce.Location = new System.Drawing.Point(56, 172);
             this.checkBoxJElemDefenseIce.Name = "checkBoxJElemDefenseIce";
             this.checkBoxJElemDefenseIce.Size = new System.Drawing.Size(41, 19);
             this.checkBoxJElemDefenseIce.TabIndex = 20;
@@ -2559,7 +2558,7 @@
             this.checkBoxJElemDefenseWind.AutoSize = true;
             this.checkBoxJElemDefenseWind.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxJElemDefenseWind.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxJElemDefenseWind.Location = new System.Drawing.Point(280, 145);
+            this.checkBoxJElemDefenseWind.Location = new System.Drawing.Point(283, 172);
             this.checkBoxJElemDefenseWind.Name = "checkBoxJElemDefenseWind";
             this.checkBoxJElemDefenseWind.Size = new System.Drawing.Size(54, 19);
             this.checkBoxJElemDefenseWind.TabIndex = 24;
@@ -2572,7 +2571,7 @@
             this.checkBoxJElemDefenseThunder.AutoSize = true;
             this.checkBoxJElemDefenseThunder.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxJElemDefenseThunder.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxJElemDefenseThunder.Location = new System.Drawing.Point(94, 145);
+            this.checkBoxJElemDefenseThunder.Location = new System.Drawing.Point(97, 172);
             this.checkBoxJElemDefenseThunder.Name = "checkBoxJElemDefenseThunder";
             this.checkBoxJElemDefenseThunder.Size = new System.Drawing.Size(71, 19);
             this.checkBoxJElemDefenseThunder.TabIndex = 21;
@@ -2585,7 +2584,7 @@
             this.checkBoxJElemDefensePoison.AutoSize = true;
             this.checkBoxJElemDefensePoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxJElemDefensePoison.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxJElemDefensePoison.Location = new System.Drawing.Point(218, 145);
+            this.checkBoxJElemDefensePoison.Location = new System.Drawing.Point(221, 172);
             this.checkBoxJElemDefensePoison.Name = "checkBoxJElemDefensePoison";
             this.checkBoxJElemDefensePoison.Size = new System.Drawing.Size(62, 19);
             this.checkBoxJElemDefensePoison.TabIndex = 23;
@@ -2598,7 +2597,7 @@
             this.checkBoxJElemDefenseEarth.AutoSize = true;
             this.checkBoxJElemDefenseEarth.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxJElemDefenseEarth.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxJElemDefenseEarth.Location = new System.Drawing.Point(165, 145);
+            this.checkBoxJElemDefenseEarth.Location = new System.Drawing.Point(168, 172);
             this.checkBoxJElemDefenseEarth.Name = "checkBoxJElemDefenseEarth";
             this.checkBoxJElemDefenseEarth.Size = new System.Drawing.Size(53, 19);
             this.checkBoxJElemDefenseEarth.TabIndex = 22;
@@ -2611,7 +2610,7 @@
             this.radioButtonJElemAttackHoly.AutoSize = true;
             this.radioButtonJElemAttackHoly.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonJElemAttackHoly.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJElemAttackHoly.Location = new System.Drawing.Point(388, 26);
+            this.radioButtonJElemAttackHoly.Location = new System.Drawing.Point(391, 26);
             this.radioButtonJElemAttackHoly.Name = "radioButtonJElemAttackHoly";
             this.radioButtonJElemAttackHoly.Size = new System.Drawing.Size(50, 19);
             this.radioButtonJElemAttackHoly.TabIndex = 17;
@@ -2624,7 +2623,7 @@
             this.radioButtonJElemAttackWater.AutoSize = true;
             this.radioButtonJElemAttackWater.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonJElemAttackWater.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJElemAttackWater.Location = new System.Drawing.Point(332, 26);
+            this.radioButtonJElemAttackWater.Location = new System.Drawing.Point(335, 26);
             this.radioButtonJElemAttackWater.Name = "radioButtonJElemAttackWater";
             this.radioButtonJElemAttackWater.Size = new System.Drawing.Size(56, 19);
             this.radioButtonJElemAttackWater.TabIndex = 16;
@@ -2637,7 +2636,7 @@
             this.radioButtonJElemAttackWind.AutoSize = true;
             this.radioButtonJElemAttackWind.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonJElemAttackWind.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJElemAttackWind.Location = new System.Drawing.Point(279, 26);
+            this.radioButtonJElemAttackWind.Location = new System.Drawing.Point(282, 26);
             this.radioButtonJElemAttackWind.Name = "radioButtonJElemAttackWind";
             this.radioButtonJElemAttackWind.Size = new System.Drawing.Size(53, 19);
             this.radioButtonJElemAttackWind.TabIndex = 15;
@@ -2650,7 +2649,7 @@
             this.radioButtonJElemAttackPoison.AutoSize = true;
             this.radioButtonJElemAttackPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonJElemAttackPoison.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJElemAttackPoison.Location = new System.Drawing.Point(218, 26);
+            this.radioButtonJElemAttackPoison.Location = new System.Drawing.Point(221, 26);
             this.radioButtonJElemAttackPoison.Name = "radioButtonJElemAttackPoison";
             this.radioButtonJElemAttackPoison.Size = new System.Drawing.Size(61, 19);
             this.radioButtonJElemAttackPoison.TabIndex = 14;
@@ -2663,7 +2662,7 @@
             this.radioButtonJElemAttackEarth.AutoSize = true;
             this.radioButtonJElemAttackEarth.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonJElemAttackEarth.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJElemAttackEarth.Location = new System.Drawing.Point(166, 26);
+            this.radioButtonJElemAttackEarth.Location = new System.Drawing.Point(169, 26);
             this.radioButtonJElemAttackEarth.Name = "radioButtonJElemAttackEarth";
             this.radioButtonJElemAttackEarth.Size = new System.Drawing.Size(52, 19);
             this.radioButtonJElemAttackEarth.TabIndex = 13;
@@ -2676,7 +2675,7 @@
             this.radioButtonJElemAttackThunder.AutoSize = true;
             this.radioButtonJElemAttackThunder.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonJElemAttackThunder.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJElemAttackThunder.Location = new System.Drawing.Point(96, 26);
+            this.radioButtonJElemAttackThunder.Location = new System.Drawing.Point(99, 26);
             this.radioButtonJElemAttackThunder.Name = "radioButtonJElemAttackThunder";
             this.radioButtonJElemAttackThunder.Size = new System.Drawing.Size(70, 19);
             this.radioButtonJElemAttackThunder.TabIndex = 12;
@@ -2689,7 +2688,7 @@
             this.radioButtonJElemAttackIce.AutoSize = true;
             this.radioButtonJElemAttackIce.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonJElemAttackIce.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJElemAttackIce.Location = new System.Drawing.Point(56, 26);
+            this.radioButtonJElemAttackIce.Location = new System.Drawing.Point(59, 26);
             this.radioButtonJElemAttackIce.Name = "radioButtonJElemAttackIce";
             this.radioButtonJElemAttackIce.Size = new System.Drawing.Size(40, 19);
             this.radioButtonJElemAttackIce.TabIndex = 11;
@@ -2702,7 +2701,7 @@
             this.radioButtonJElemAttackFire.AutoSize = true;
             this.radioButtonJElemAttackFire.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonJElemAttackFire.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJElemAttackFire.Location = new System.Drawing.Point(12, 26);
+            this.radioButtonJElemAttackFire.Location = new System.Drawing.Point(15, 26);
             this.radioButtonJElemAttackFire.Name = "radioButtonJElemAttackFire";
             this.radioButtonJElemAttackFire.Size = new System.Drawing.Size(44, 19);
             this.radioButtonJElemAttackFire.TabIndex = 10;
@@ -2715,19 +2714,18 @@
             this.labelValueElemAttackTrackBar.AutoSize = true;
             this.labelValueElemAttackTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelValueElemAttackTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelValueElemAttackTrackBar.Location = new System.Drawing.Point(211, 78);
+            this.labelValueElemAttackTrackBar.Location = new System.Drawing.Point(212, 103);
             this.labelValueElemAttackTrackBar.Name = "labelValueElemAttackTrackBar";
             this.labelValueElemAttackTrackBar.Size = new System.Drawing.Size(28, 19);
             this.labelValueElemAttackTrackBar.TabIndex = 26;
             this.labelValueElemAttackTrackBar.Text = "0%";
-            this.labelValueElemAttackTrackBar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // labelMagicElemAttack
             // 
             this.labelMagicElemAttack.AutoSize = true;
             this.labelMagicElemAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMagicElemAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicElemAttack.Location = new System.Drawing.Point(168, 1);
+            this.labelMagicElemAttack.Location = new System.Drawing.Point(171, 1);
             this.labelMagicElemAttack.Name = "labelMagicElemAttack";
             this.labelMagicElemAttack.Size = new System.Drawing.Size(114, 19);
             this.labelMagicElemAttack.TabIndex = 0;
@@ -2737,7 +2735,7 @@
             // trackBarJElemAttack
             // 
             this.trackBarJElemAttack.LargeChange = 10;
-            this.trackBarJElemAttack.Location = new System.Drawing.Point(9, 51);
+            this.trackBarJElemAttack.Location = new System.Drawing.Point(10, 76);
             this.trackBarJElemAttack.Maximum = 255;
             this.trackBarJElemAttack.Name = "trackBarJElemAttack";
             this.trackBarJElemAttack.Size = new System.Drawing.Size(432, 45);
@@ -3067,7 +3065,7 @@
             this.listBoxMagic.Location = new System.Drawing.Point(0, 0);
             this.listBoxMagic.Name = "listBoxMagic";
             this.listBoxMagic.ScrollAlwaysVisible = true;
-            this.listBoxMagic.Size = new System.Drawing.Size(109, 735);
+            this.listBoxMagic.Size = new System.Drawing.Size(109, 769);
             this.listBoxMagic.TabIndex = 1;
             this.listBoxMagic.SelectedIndexChanged += new System.EventHandler(this.listBoxMagic_SelectedIndexChanged);
             // 
@@ -8566,56 +8564,6 @@
             this.tabPageWeapons.Text = "Weapons";
             this.tabPageWeapons.UseVisualStyleBackColor = true;
             // 
-            // toolbarStrip
-            // 
-            this.toolbarStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openToolStripButton,
-            this.saveToolStripButton,
-            this.saveAsToolStripButton,
-            this.toolStripSeparator2});
-            this.toolbarStrip.Location = new System.Drawing.Point(0, 24);
-            this.toolbarStrip.Name = "toolbarStrip";
-            this.toolbarStrip.Size = new System.Drawing.Size(609, 25);
-            this.toolbarStrip.TabIndex = 1;
-            this.toolbarStrip.Text = "toolbarStrip";
-            // 
-            // openToolStripButton
-            // 
-            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
-            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.openToolStripButton.Text = "&Open";
-            this.openToolStripButton.ToolTipText = "Open...";
-            this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
-            // 
-            // saveToolStripButton
-            // 
-            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
-            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.saveToolStripButton.Text = "&Save";
-            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
-            // 
-            // saveAsToolStripButton
-            // 
-            this.saveAsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveAsToolStripButton.Image = global::Doomtrain.Properties.Resources.saveas;
-            this.saveAsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveAsToolStripButton.Name = "saveAsToolStripButton";
-            this.saveAsToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.saveAsToolStripButton.Text = "saveAs";
-            this.saveAsToolStripButton.ToolTipText = "Save As...";
-            this.saveAsToolStripButton.Click += new System.EventHandler(this.saveAsToolStripButton_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
             // groupBoxWeaponsGeneral
             // 
             this.groupBoxWeaponsGeneral.BackColor = System.Drawing.SystemColors.Control;
@@ -8856,11 +8804,74 @@
             this.listBoxWeapons.Size = new System.Drawing.Size(109, 499);
             this.listBoxWeapons.TabIndex = 5;
             // 
+            // toolbarStrip
+            // 
+            this.toolbarStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openToolStripButton,
+            this.saveToolStripButton,
+            this.saveAsToolStripButton,
+            this.toolStripSeparator2});
+            this.toolbarStrip.Location = new System.Drawing.Point(0, 24);
+            this.toolbarStrip.Name = "toolbarStrip";
+            this.toolbarStrip.Size = new System.Drawing.Size(609, 25);
+            this.toolbarStrip.TabIndex = 1;
+            this.toolbarStrip.Text = "toolbarStrip";
+            // 
+            // openToolStripButton
+            // 
+            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
+            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripButton.Name = "openToolStripButton";
+            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Text = "&Open";
+            this.openToolStripButton.ToolTipText = "Open...";
+            this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
+            // 
+            // saveToolStripButton
+            // 
+            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
+            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripButton.Name = "saveToolStripButton";
+            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Text = "&Save";
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
+            // 
+            // saveAsToolStripButton
+            // 
+            this.saveAsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveAsToolStripButton.Image = global::Doomtrain.Properties.Resources.saveas;
+            this.saveAsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveAsToolStripButton.Name = "saveAsToolStripButton";
+            this.saveAsToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveAsToolStripButton.Text = "saveAs";
+            this.saveAsToolStripButton.ToolTipText = "Save As...";
+            this.saveAsToolStripButton.Click += new System.EventHandler(this.saveAsToolStripButton_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // radioButtonJElemAttackNElem
+            // 
+            this.radioButtonJElemAttackNElem.AutoSize = true;
+            this.radioButtonJElemAttackNElem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonJElemAttackNElem.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonJElemAttackNElem.Location = new System.Drawing.Point(176, 51);
+            this.radioButtonJElemAttackNElem.Name = "radioButtonJElemAttackNElem";
+            this.radioButtonJElemAttackNElem.Size = new System.Drawing.Size(105, 19);
+            this.radioButtonJElemAttackNElem.TabIndex = 10;
+            this.radioButtonJElemAttackNElem.TabStop = true;
+            this.radioButtonJElemAttackNElem.Text = "Non-Elemental";
+            this.radioButtonJElemAttackNElem.UseVisualStyleBackColor = true;
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(609, 836);
+            this.ClientSize = new System.Drawing.Size(609, 861);
             this.Controls.Add(this.toolbarStrip);
             this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.menuStrip1);
@@ -8869,7 +8880,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(625, 875);
+            this.MaximumSize = new System.Drawing.Size(625, 900);
             this.MinimumSize = new System.Drawing.Size(625, 200);
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -8978,13 +8989,13 @@
             this.groupBoxStatsIncrement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarStatsIncrementValue)).EndInit();
             this.tabPageWeapons.ResumeLayout(false);
-            this.toolbarStrip.ResumeLayout(false);
-            this.toolbarStrip.PerformLayout();
             this.groupBoxWeaponsGeneral.ResumeLayout(false);
             this.groupBoxWeaponsGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsSTRBonus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackPower)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).EndInit();
+            this.toolbarStrip.ResumeLayout(false);
+            this.toolbarStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -9012,19 +9023,19 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelMagicStatAttack;
         private System.Windows.Forms.Label labelValueStatAttackTrackBar;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackDarkness;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackSilence;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackDarkness;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackSilence;
         private System.Windows.Forms.TrackBar trackBarJStatAttack;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackStop;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackConfusion;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackPetrify;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackSlow;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackBerserk;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackSleep;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackDrain;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackPoison;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackDeath;
-        private System.Windows.Forms.CheckBox radioButtonJStatAttackZombie;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackStop;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackConfusion;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackPetrify;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackSlow;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackBerserk;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackSleep;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackDrain;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackPoison;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackDeath;
+        private System.Windows.Forms.CheckBox checkBoxJStatAttackZombie;
         private System.Windows.Forms.GroupBox groupBoxMagicJElem;
         private System.Windows.Forms.GroupBox groupBoxMagicJStats;
         private System.Windows.Forms.NumericUpDown numericUpDownMagicSPRJ;
@@ -9060,20 +9071,20 @@
         private System.Windows.Forms.ToolStrip toolbarStrip;
         private System.Windows.Forms.ToolStripButton openToolStripButton;
         private System.Windows.Forms.ToolStripButton saveToolStripButton;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefenseStop;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefenseStop;
         private System.Windows.Forms.Label labelMagicStatDefense;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefenseSleep;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefenseDeath;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefenseZombie;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefensePoison;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefenseDrain;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefenseBerserk;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefenseSlow;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefensePetrify;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefenseConfusion;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefenseCurse;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefenseSilence;
-        private System.Windows.Forms.CheckBox radioButtonJStatDefenseDarnkess;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefenseSleep;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefenseDeath;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefenseZombie;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefensePoison;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefenseDrain;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefenseBerserk;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefenseSlow;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefensePetrify;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefenseConfusion;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefenseCurse;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefenseSilence;
+        private System.Windows.Forms.CheckBox checkBoxJStatDefenseDarnkess;
         private System.Windows.Forms.Label labelValueStatDefenseTrackBar;
         private System.Windows.Forms.TrackBar trackBarJStatDefense;
         private System.Windows.Forms.ToolStripButton saveAsToolStripButton;
@@ -9363,6 +9374,7 @@
         private System.Windows.Forms.Label labelWeaponsRenzoFin;
         private System.Windows.Forms.Label labelWeaponsCharacterID;
         private System.Windows.Forms.ListBox listBoxWeapons;
+        private System.Windows.Forms.RadioButton radioButtonJElemAttackNElem;
     }
 }
 
