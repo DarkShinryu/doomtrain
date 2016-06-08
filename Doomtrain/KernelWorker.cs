@@ -536,52 +536,52 @@ namespace Doomtrain
                     Kernel[OffsetToGFSelected + 19] = 0x00;
                     return;
                 case 10:
-                        Kernel[OffsetToGFSelected + 112] = Convert.ToByte(variable); //Quezacolt Compatibility
+                        Kernel[OffsetToMagicSelected + 112] = Convert.ToByte(variable); //Quezacolt Compatibility
                         return;
                 case 11:
-                        Kernel[OffsetToGFSelected + 113] = Convert.ToByte(variable); //Shiva Compatibility
+                        Kernel[OffsetToMagicSelected + 113] = Convert.ToByte(variable); //Shiva Compatibility
                         return;
                 case 12:
-                        Kernel[OffsetToGFSelected + 114] = Convert.ToByte(variable); //Ifrit Compatibility
+                        Kernel[OffsetToMagicSelected + 114] = Convert.ToByte(variable); //Ifrit Compatibility
                         return;
                 case 13:
-                        Kernel[OffsetToGFSelected + 115] = Convert.ToByte(variable); //Siren Compatibility
+                        Kernel[OffsetToMagicSelected + 115] = Convert.ToByte(variable); //Siren Compatibility
                         return;
                 case 14:
-                        Kernel[OffsetToGFSelected + 116] = Convert.ToByte(variable); //Brothers Compatibility
+                        Kernel[OffsetToMagicSelected + 116] = Convert.ToByte(variable); //Brothers Compatibility
                         return;
                 case 15:
-                        Kernel[OffsetToGFSelected + 117] = Convert.ToByte(variable); //Diablos Compatibility
+                        Kernel[OffsetToMagicSelected + 117] = Convert.ToByte(variable); //Diablos Compatibility
                         return;
                 case 16:
-                        Kernel[OffsetToGFSelected + 118] = Convert.ToByte(variable); //Carbuncle Compatibility
+                        Kernel[OffsetToMagicSelected + 118] = Convert.ToByte(variable); //Carbuncle Compatibility
                         return;
                 case 17:
-                        Kernel[OffsetToGFSelected + 119] = Convert.ToByte(variable); //Leviathan Compatibility
+                        Kernel[OffsetToMagicSelected + 119] = Convert.ToByte(variable); //Leviathan Compatibility
                         return;
                 case 18:
-                        Kernel[OffsetToGFSelected + 120] = Convert.ToByte(variable); //Pandemona Compatibility
+                        Kernel[OffsetToMagicSelected + 120] = Convert.ToByte(variable); //Pandemona Compatibility
                         return;
                 case 19:
-                        Kernel[OffsetToGFSelected + 121] = Convert.ToByte(variable); //Cerberus Compatibility
+                        Kernel[OffsetToMagicSelected + 121] = Convert.ToByte(variable); //Cerberus Compatibility
                         return;
                 case 20:
-                        Kernel[OffsetToGFSelected + 122] = Convert.ToByte(variable); //Alexander Compatibility
+                        Kernel[OffsetToMagicSelected + 122] = Convert.ToByte(variable); //Alexander Compatibility
                         return;
                 case 21:
-                        Kernel[OffsetToGFSelected + 123] = Convert.ToByte(variable); //Doomtrain Compatibility
+                        Kernel[OffsetToMagicSelected + 123] = Convert.ToByte(variable); //Doomtrain Compatibility
                         return;
                 case 22:
-                        Kernel[OffsetToGFSelected + 124] = Convert.ToByte(variable); //Bahamut Compatibility
+                        Kernel[OffsetToMagicSelected + 124] = Convert.ToByte(variable); //Bahamut Compatibility
                         return;
                 case 23:
-                        Kernel[OffsetToGFSelected + 125] = Convert.ToByte(variable); //Cactuar Compatibility
+                        Kernel[OffsetToMagicSelected + 125] = Convert.ToByte(variable); //Cactuar Compatibility
                         return;
                 case 24:
-                        Kernel[OffsetToGFSelected + 126] = Convert.ToByte(variable); //Tonberry Compatibility
+                        Kernel[OffsetToMagicSelected + 126] = Convert.ToByte(variable); //Tonberry Compatibility
                         return;
                 case 25:
-                        Kernel[OffsetToGFSelected + 127] = Convert.ToByte(variable); //Eden Compatibility
+                        Kernel[OffsetToMagicSelected + 127] = Convert.ToByte(variable); //Eden Compatibility
                         return;
 
                 default:
