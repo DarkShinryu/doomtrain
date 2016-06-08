@@ -382,82 +382,82 @@ namespace Doomtrain
                     }
                 case 26:
                     {
-                        Kernel[OffsetToMagicSelected + 42] = Convert.ToByte(variable); //Quezacolt Compatibility
+                        Kernel[OffsetToMagicSelected + 42] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Quezacolt Compatibility
                         return;
                     }
                 case 27:
                     {
-                        Kernel[OffsetToMagicSelected + 43] = Convert.ToByte(variable); //Shiva Compatibility
+                        Kernel[OffsetToMagicSelected + 43] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Shiva Compatibility
                         return;
                     }
                 case 28:
                     {
-                        Kernel[OffsetToMagicSelected + 44] = Convert.ToByte(variable); //Ifrit Compatibility
+                        Kernel[OffsetToMagicSelected + 44] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Ifrit Compatibility
                         return;
                     }
                 case 29:
                     {
-                        Kernel[OffsetToMagicSelected + 45] = Convert.ToByte(variable); //Siren Compatibility
+                        Kernel[OffsetToMagicSelected + 45] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Siren Compatibility
                         return;
                     }
                 case 30:
                     {
-                        Kernel[OffsetToMagicSelected + 46] = Convert.ToByte(variable); //Brothers Compatibility
+                        Kernel[OffsetToMagicSelected + 46] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Brothers Compatibility
                         return;
                     }
                 case 31:
                     {
-                        Kernel[OffsetToMagicSelected + 47] = Convert.ToByte(variable); //Diablos Compatibility
+                        Kernel[OffsetToMagicSelected + 47] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Diablos Compatibility
                         return;
                     }
                 case 32:
                     {
-                        Kernel[OffsetToMagicSelected + 48] = Convert.ToByte(variable); //Carbuncle Compatibility
+                        Kernel[OffsetToMagicSelected + 48] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Carbuncle Compatibility
                         return;
                     }
                 case 33:
                     {
-                        Kernel[OffsetToMagicSelected + 49] = Convert.ToByte(variable); //Leviathan Compatibility
+                        Kernel[OffsetToMagicSelected + 49] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Leviathan Compatibility
                         return;
                     }
                 case 34:
                     {
-                        Kernel[OffsetToMagicSelected + 50] = Convert.ToByte(variable); //Pandemona Compatibility
+                        Kernel[OffsetToMagicSelected + 50] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Pandemona Compatibility
                         return;
                     }
                 case 35:
                     {
-                        Kernel[OffsetToMagicSelected + 51] = Convert.ToByte(variable); //Cerberus Compatibility
+                        Kernel[OffsetToMagicSelected + 51] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Cerberus Compatibility
                         return;
                     }
                 case 36:
                     {
-                        Kernel[OffsetToMagicSelected + 52] = Convert.ToByte(variable); //Alexander Compatibility
+                        Kernel[OffsetToMagicSelected + 52] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Alexander Compatibility
                         return;
                     }
                 case 37:
                     {
-                        Kernel[OffsetToMagicSelected + 53] = Convert.ToByte(variable); //Doomtrain Compatibility
+                        Kernel[OffsetToMagicSelected + 53] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Doomtrain Compatibility
                         return;
                     }
                 case 38:
                     {
-                        Kernel[OffsetToMagicSelected + 54] = Convert.ToByte(variable); //Bahamut Compatibility
+                        Kernel[OffsetToMagicSelected + 54] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Bahamut Compatibility
                         return;
                     }
                 case 39:
                     {
-                        Kernel[OffsetToMagicSelected + 55] = Convert.ToByte(variable); //Cactuar Compatibility
+                        Kernel[OffsetToMagicSelected + 55] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Cactuar Compatibility
                         return;
                     }
                 case 40:
                     {
-                        Kernel[OffsetToMagicSelected + 56] = Convert.ToByte(variable); //Tonberry Compatibility
+                        Kernel[OffsetToMagicSelected + 56] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Tonberry Compatibility
                         return;
                     }
                 case 41:
                     {
-                        Kernel[OffsetToMagicSelected + 57] = Convert.ToByte(variable); //Eden Compatibility
+                        Kernel[OffsetToMagicSelected + 57] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Eden Compatibility
                         return;
                     }
                 case 42:
@@ -536,52 +536,52 @@ namespace Doomtrain
                     Kernel[OffsetToGFSelected + 19] = 0x00;
                     return;
                 case 10:
-                        Kernel[OffsetToMagicSelected + 112] = Convert.ToByte(variable); //Quezacolt Compatibility
+                        Kernel[OffsetToMagicSelected + 112] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Quezacolt Compatibility
                         return;
                 case 11:
-                        Kernel[OffsetToMagicSelected + 113] = Convert.ToByte(variable); //Shiva Compatibility
+                        Kernel[OffsetToMagicSelected + 113] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Shiva Compatibility
                         return;
                 case 12:
-                        Kernel[OffsetToMagicSelected + 114] = Convert.ToByte(variable); //Ifrit Compatibility
+                        Kernel[OffsetToMagicSelected + 114] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Ifrit Compatibility
                         return;
                 case 13:
-                        Kernel[OffsetToMagicSelected + 115] = Convert.ToByte(variable); //Siren Compatibility
+                        Kernel[OffsetToMagicSelected + 115] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Siren Compatibility
                         return;
                 case 14:
-                        Kernel[OffsetToMagicSelected + 116] = Convert.ToByte(variable); //Brothers Compatibility
+                        Kernel[OffsetToMagicSelected + 116] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Brothers Compatibility
                         return;
                 case 15:
-                        Kernel[OffsetToMagicSelected + 117] = Convert.ToByte(variable); //Diablos Compatibility
+                        Kernel[OffsetToMagicSelected + 117] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Diablos Compatibility
                         return;
                 case 16:
-                        Kernel[OffsetToMagicSelected + 118] = Convert.ToByte(variable); //Carbuncle Compatibility
+                        Kernel[OffsetToMagicSelected + 118] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Carbuncle Compatibility
                         return;
                 case 17:
-                        Kernel[OffsetToMagicSelected + 119] = Convert.ToByte(variable); //Leviathan Compatibility
+                        Kernel[OffsetToMagicSelected + 119] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Leviathan Compatibility
                         return;
                 case 18:
-                        Kernel[OffsetToMagicSelected + 120] = Convert.ToByte(variable); //Pandemona Compatibility
+                        Kernel[OffsetToMagicSelected + 120] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Pandemona Compatibility
                         return;
                 case 19:
-                        Kernel[OffsetToMagicSelected + 121] = Convert.ToByte(variable); //Cerberus Compatibility
+                        Kernel[OffsetToMagicSelected + 121] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Cerberus Compatibility
                         return;
                 case 20:
-                        Kernel[OffsetToMagicSelected + 122] = Convert.ToByte(variable); //Alexander Compatibility
+                        Kernel[OffsetToMagicSelected + 122] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Alexander Compatibility
                         return;
                 case 21:
-                        Kernel[OffsetToMagicSelected + 123] = Convert.ToByte(variable); //Doomtrain Compatibility
+                        Kernel[OffsetToMagicSelected + 123] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Doomtrain Compatibility
                         return;
                 case 22:
-                        Kernel[OffsetToMagicSelected + 124] = Convert.ToByte(variable); //Bahamut Compatibility
+                        Kernel[OffsetToMagicSelected + 124] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Bahamut Compatibility
                         return;
                 case 23:
-                        Kernel[OffsetToMagicSelected + 125] = Convert.ToByte(variable); //Cactuar Compatibility
+                        Kernel[OffsetToMagicSelected + 125] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Cactuar Compatibility
                         return;
                 case 24:
-                        Kernel[OffsetToMagicSelected + 126] = Convert.ToByte(variable); //Tonberry Compatibility
+                        Kernel[OffsetToMagicSelected + 126] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Tonberry Compatibility
                         return;
                 case 25:
-                        Kernel[OffsetToMagicSelected + 127] = Convert.ToByte(variable); //Eden Compatibility
+                        Kernel[OffsetToMagicSelected + 127] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Eden Compatibility
                         return;
 
                 default:

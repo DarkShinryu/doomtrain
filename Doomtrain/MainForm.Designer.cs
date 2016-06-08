@@ -174,6 +174,7 @@
             this.radioButtonJElemAttackEarth = new System.Windows.Forms.RadioButton();
             this.radioButtonJElemAttackThunder = new System.Windows.Forms.RadioButton();
             this.radioButtonJElemAttackIce = new System.Windows.Forms.RadioButton();
+            this.radioButtonJElemAttackNElem = new System.Windows.Forms.RadioButton();
             this.radioButtonJElemAttackFire = new System.Windows.Forms.RadioButton();
             this.labelValueElemAttackTrackBar = new System.Windows.Forms.Label();
             this.labelMagicElemAttack = new System.Windows.Forms.Label();
@@ -401,7 +402,6 @@
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.radioButtonJElemAttackNElem = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageMagic.SuspendLayout();
@@ -586,7 +586,7 @@
             this.tabControlMain.Controls.Add(this.tabPageGFAttacks);
             this.tabControlMain.Controls.Add(this.tabPageAbilities);
             this.tabControlMain.Controls.Add(this.tabPageWeapons);
-            this.tabControlMain.Font = new System.Drawing.Font("Trajan Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlMain.Location = new System.Drawing.Point(0, 52);
             this.tabControlMain.Multiline = true;
             this.tabControlMain.Name = "tabControlMain";
@@ -680,13 +680,24 @@
             // 
             // numericUpDownMagicEdenComp
             // 
+            this.numericUpDownMagicEdenComp.DecimalPlaces = 1;
             this.numericUpDownMagicEdenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicEdenComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicEdenComp.Location = new System.Drawing.Point(366, 250);
             this.numericUpDownMagicEdenComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicEdenComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicEdenComp.Name = "numericUpDownMagicEdenComp";
             this.numericUpDownMagicEdenComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicEdenComp.TabIndex = 3;
@@ -704,13 +715,24 @@
             // 
             // numericUpDownMagicDoomtrainComp
             // 
+            this.numericUpDownMagicDoomtrainComp.DecimalPlaces = 1;
             this.numericUpDownMagicDoomtrainComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicDoomtrainComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicDoomtrainComp.Location = new System.Drawing.Point(366, 185);
             this.numericUpDownMagicDoomtrainComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicDoomtrainComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicDoomtrainComp.Name = "numericUpDownMagicDoomtrainComp";
             this.numericUpDownMagicDoomtrainComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicDoomtrainComp.TabIndex = 3;
@@ -728,26 +750,48 @@
             // 
             // numericUpDownMagicLeviathanComp
             // 
+            this.numericUpDownMagicLeviathanComp.DecimalPlaces = 1;
             this.numericUpDownMagicLeviathanComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicLeviathanComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicLeviathanComp.Location = new System.Drawing.Point(366, 121);
             this.numericUpDownMagicLeviathanComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicLeviathanComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicLeviathanComp.Name = "numericUpDownMagicLeviathanComp";
             this.numericUpDownMagicLeviathanComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicLeviathanComp.TabIndex = 3;
             // 
             // numericUpDownMagicTonberryComp
             // 
+            this.numericUpDownMagicTonberryComp.DecimalPlaces = 1;
             this.numericUpDownMagicTonberryComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicTonberryComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicTonberryComp.Location = new System.Drawing.Point(262, 250);
             this.numericUpDownMagicTonberryComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicTonberryComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicTonberryComp.Name = "numericUpDownMagicTonberryComp";
             this.numericUpDownMagicTonberryComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicTonberryComp.TabIndex = 3;
@@ -765,26 +809,48 @@
             // 
             // numericUpDownMagicAlexanderComp
             // 
+            this.numericUpDownMagicAlexanderComp.DecimalPlaces = 1;
             this.numericUpDownMagicAlexanderComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicAlexanderComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicAlexanderComp.Location = new System.Drawing.Point(262, 185);
             this.numericUpDownMagicAlexanderComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicAlexanderComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicAlexanderComp.Name = "numericUpDownMagicAlexanderComp";
             this.numericUpDownMagicAlexanderComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicAlexanderComp.TabIndex = 3;
             // 
             // numericUpDownMagicSirenComp
             // 
+            this.numericUpDownMagicSirenComp.DecimalPlaces = 1;
             this.numericUpDownMagicSirenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicSirenComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicSirenComp.Location = new System.Drawing.Point(366, 58);
             this.numericUpDownMagicSirenComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicSirenComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicSirenComp.Name = "numericUpDownMagicSirenComp";
             this.numericUpDownMagicSirenComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicSirenComp.TabIndex = 3;
@@ -802,13 +868,24 @@
             // 
             // numericUpDownMagicCarbuncleComp
             // 
+            this.numericUpDownMagicCarbuncleComp.DecimalPlaces = 1;
             this.numericUpDownMagicCarbuncleComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicCarbuncleComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicCarbuncleComp.Location = new System.Drawing.Point(262, 121);
             this.numericUpDownMagicCarbuncleComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicCarbuncleComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicCarbuncleComp.Name = "numericUpDownMagicCarbuncleComp";
             this.numericUpDownMagicCarbuncleComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicCarbuncleComp.TabIndex = 3;
@@ -837,13 +914,24 @@
             // 
             // numericUpDownMagicCactuarComp
             // 
+            this.numericUpDownMagicCactuarComp.DecimalPlaces = 1;
             this.numericUpDownMagicCactuarComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicCactuarComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicCactuarComp.Location = new System.Drawing.Point(158, 250);
             this.numericUpDownMagicCactuarComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicCactuarComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicCactuarComp.Name = "numericUpDownMagicCactuarComp";
             this.numericUpDownMagicCactuarComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicCactuarComp.TabIndex = 3;
@@ -861,26 +949,48 @@
             // 
             // numericUpDownMagicCerberusComp
             // 
+            this.numericUpDownMagicCerberusComp.DecimalPlaces = 1;
             this.numericUpDownMagicCerberusComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicCerberusComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicCerberusComp.Location = new System.Drawing.Point(158, 185);
             this.numericUpDownMagicCerberusComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicCerberusComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicCerberusComp.Name = "numericUpDownMagicCerberusComp";
             this.numericUpDownMagicCerberusComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicCerberusComp.TabIndex = 3;
             // 
             // numericUpDownMagicIfritComp
             // 
+            this.numericUpDownMagicIfritComp.DecimalPlaces = 1;
             this.numericUpDownMagicIfritComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicIfritComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicIfritComp.Location = new System.Drawing.Point(262, 58);
             this.numericUpDownMagicIfritComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicIfritComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicIfritComp.Name = "numericUpDownMagicIfritComp";
             this.numericUpDownMagicIfritComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicIfritComp.TabIndex = 3;
@@ -898,13 +1008,24 @@
             // 
             // numericUpDownMagicDiablosComp
             // 
+            this.numericUpDownMagicDiablosComp.DecimalPlaces = 1;
             this.numericUpDownMagicDiablosComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicDiablosComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicDiablosComp.Location = new System.Drawing.Point(158, 121);
             this.numericUpDownMagicDiablosComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicDiablosComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicDiablosComp.Name = "numericUpDownMagicDiablosComp";
             this.numericUpDownMagicDiablosComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicDiablosComp.TabIndex = 3;
@@ -933,13 +1054,24 @@
             // 
             // numericUpDownMagicBahamutComp
             // 
+            this.numericUpDownMagicBahamutComp.DecimalPlaces = 1;
             this.numericUpDownMagicBahamutComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicBahamutComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicBahamutComp.Location = new System.Drawing.Point(54, 250);
             this.numericUpDownMagicBahamutComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicBahamutComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicBahamutComp.Name = "numericUpDownMagicBahamutComp";
             this.numericUpDownMagicBahamutComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicBahamutComp.TabIndex = 3;
@@ -957,26 +1089,48 @@
             // 
             // numericUpDownMagicPandemonaComp
             // 
+            this.numericUpDownMagicPandemonaComp.DecimalPlaces = 1;
             this.numericUpDownMagicPandemonaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicPandemonaComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicPandemonaComp.Location = new System.Drawing.Point(54, 185);
             this.numericUpDownMagicPandemonaComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicPandemonaComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicPandemonaComp.Name = "numericUpDownMagicPandemonaComp";
             this.numericUpDownMagicPandemonaComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicPandemonaComp.TabIndex = 3;
             // 
             // numericUpDownMagicShivaComp
             // 
+            this.numericUpDownMagicShivaComp.DecimalPlaces = 1;
             this.numericUpDownMagicShivaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicShivaComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicShivaComp.Location = new System.Drawing.Point(158, 58);
             this.numericUpDownMagicShivaComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicShivaComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicShivaComp.Name = "numericUpDownMagicShivaComp";
             this.numericUpDownMagicShivaComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicShivaComp.TabIndex = 3;
@@ -994,13 +1148,24 @@
             // 
             // numericUpDownMagicBrothersComp
             // 
+            this.numericUpDownMagicBrothersComp.DecimalPlaces = 1;
             this.numericUpDownMagicBrothersComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicBrothersComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicBrothersComp.Location = new System.Drawing.Point(54, 121);
             this.numericUpDownMagicBrothersComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicBrothersComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicBrothersComp.Name = "numericUpDownMagicBrothersComp";
             this.numericUpDownMagicBrothersComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicBrothersComp.TabIndex = 3;
@@ -1040,13 +1205,24 @@
             // 
             // numericUpDownMagicQuezacoltComp
             // 
+            this.numericUpDownMagicQuezacoltComp.DecimalPlaces = 1;
             this.numericUpDownMagicQuezacoltComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicQuezacoltComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownMagicQuezacoltComp.Location = new System.Drawing.Point(54, 58);
             this.numericUpDownMagicQuezacoltComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownMagicQuezacoltComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownMagicQuezacoltComp.Name = "numericUpDownMagicQuezacoltComp";
             this.numericUpDownMagicQuezacoltComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicQuezacoltComp.TabIndex = 3;
@@ -2696,6 +2872,19 @@
             this.radioButtonJElemAttackIce.Text = "Ice";
             this.radioButtonJElemAttackIce.UseVisualStyleBackColor = true;
             // 
+            // radioButtonJElemAttackNElem
+            // 
+            this.radioButtonJElemAttackNElem.AutoSize = true;
+            this.radioButtonJElemAttackNElem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonJElemAttackNElem.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonJElemAttackNElem.Location = new System.Drawing.Point(176, 51);
+            this.radioButtonJElemAttackNElem.Name = "radioButtonJElemAttackNElem";
+            this.radioButtonJElemAttackNElem.Size = new System.Drawing.Size(105, 19);
+            this.radioButtonJElemAttackNElem.TabIndex = 10;
+            this.radioButtonJElemAttackNElem.TabStop = true;
+            this.radioButtonJElemAttackNElem.Text = "Non-Elemental";
+            this.radioButtonJElemAttackNElem.UseVisualStyleBackColor = true;
+            // 
             // radioButtonJElemAttackFire
             // 
             this.radioButtonJElemAttackFire.AutoSize = true;
@@ -3078,7 +3267,7 @@
             this.tabPageGF.Location = new System.Drawing.Point(4, 32);
             this.tabPageGF.Name = "tabPageGF";
             this.tabPageGF.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGF.Size = new System.Drawing.Size(584, 745);
+            this.tabPageGF.Size = new System.Drawing.Size(584, 773);
             this.tabPageGF.TabIndex = 1;
             this.tabPageGF.Text = "G-Forces";
             // 
@@ -3153,13 +3342,24 @@
             // 
             // numericUpDownGFEdenComp
             // 
+            this.numericUpDownGFEdenComp.DecimalPlaces = 1;
             this.numericUpDownGFEdenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFEdenComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFEdenComp.Location = new System.Drawing.Point(366, 250);
             this.numericUpDownGFEdenComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFEdenComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFEdenComp.Name = "numericUpDownGFEdenComp";
             this.numericUpDownGFEdenComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFEdenComp.TabIndex = 3;
@@ -3177,13 +3377,24 @@
             // 
             // numericUpDownGFDoomtrainComp
             // 
+            this.numericUpDownGFDoomtrainComp.DecimalPlaces = 1;
             this.numericUpDownGFDoomtrainComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFDoomtrainComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFDoomtrainComp.Location = new System.Drawing.Point(366, 185);
             this.numericUpDownGFDoomtrainComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFDoomtrainComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFDoomtrainComp.Name = "numericUpDownGFDoomtrainComp";
             this.numericUpDownGFDoomtrainComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFDoomtrainComp.TabIndex = 3;
@@ -3201,26 +3412,48 @@
             // 
             // numericUpDownGFLeviathanComp
             // 
+            this.numericUpDownGFLeviathanComp.DecimalPlaces = 1;
             this.numericUpDownGFLeviathanComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFLeviathanComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFLeviathanComp.Location = new System.Drawing.Point(366, 121);
             this.numericUpDownGFLeviathanComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFLeviathanComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFLeviathanComp.Name = "numericUpDownGFLeviathanComp";
             this.numericUpDownGFLeviathanComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFLeviathanComp.TabIndex = 3;
             // 
             // numericUpDownGFTonberryComp
             // 
+            this.numericUpDownGFTonberryComp.DecimalPlaces = 1;
             this.numericUpDownGFTonberryComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFTonberryComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFTonberryComp.Location = new System.Drawing.Point(262, 250);
             this.numericUpDownGFTonberryComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFTonberryComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFTonberryComp.Name = "numericUpDownGFTonberryComp";
             this.numericUpDownGFTonberryComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFTonberryComp.TabIndex = 3;
@@ -3238,26 +3471,48 @@
             // 
             // numericUpDownGFAlexanderComp
             // 
+            this.numericUpDownGFAlexanderComp.DecimalPlaces = 1;
             this.numericUpDownGFAlexanderComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFAlexanderComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFAlexanderComp.Location = new System.Drawing.Point(262, 185);
             this.numericUpDownGFAlexanderComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFAlexanderComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFAlexanderComp.Name = "numericUpDownGFAlexanderComp";
             this.numericUpDownGFAlexanderComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFAlexanderComp.TabIndex = 3;
             // 
             // numericUpDownGFSirenComp
             // 
+            this.numericUpDownGFSirenComp.DecimalPlaces = 1;
             this.numericUpDownGFSirenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFSirenComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFSirenComp.Location = new System.Drawing.Point(366, 58);
             this.numericUpDownGFSirenComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFSirenComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFSirenComp.Name = "numericUpDownGFSirenComp";
             this.numericUpDownGFSirenComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFSirenComp.TabIndex = 3;
@@ -3275,13 +3530,24 @@
             // 
             // numericUpDownGFCarbuncleComp
             // 
+            this.numericUpDownGFCarbuncleComp.DecimalPlaces = 1;
             this.numericUpDownGFCarbuncleComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFCarbuncleComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFCarbuncleComp.Location = new System.Drawing.Point(262, 121);
             this.numericUpDownGFCarbuncleComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFCarbuncleComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFCarbuncleComp.Name = "numericUpDownGFCarbuncleComp";
             this.numericUpDownGFCarbuncleComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFCarbuncleComp.TabIndex = 3;
@@ -3310,13 +3576,24 @@
             // 
             // numericUpDownGFCactuarComp
             // 
+            this.numericUpDownGFCactuarComp.DecimalPlaces = 1;
             this.numericUpDownGFCactuarComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFCactuarComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFCactuarComp.Location = new System.Drawing.Point(158, 250);
             this.numericUpDownGFCactuarComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFCactuarComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFCactuarComp.Name = "numericUpDownGFCactuarComp";
             this.numericUpDownGFCactuarComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFCactuarComp.TabIndex = 3;
@@ -3334,26 +3611,48 @@
             // 
             // numericUpDownGFCerberusComp
             // 
+            this.numericUpDownGFCerberusComp.DecimalPlaces = 1;
             this.numericUpDownGFCerberusComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFCerberusComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFCerberusComp.Location = new System.Drawing.Point(158, 185);
             this.numericUpDownGFCerberusComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFCerberusComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFCerberusComp.Name = "numericUpDownGFCerberusComp";
             this.numericUpDownGFCerberusComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFCerberusComp.TabIndex = 3;
             // 
             // numericUpDownGFIfritComp
             // 
+            this.numericUpDownGFIfritComp.DecimalPlaces = 1;
             this.numericUpDownGFIfritComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFIfritComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFIfritComp.Location = new System.Drawing.Point(262, 58);
             this.numericUpDownGFIfritComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFIfritComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFIfritComp.Name = "numericUpDownGFIfritComp";
             this.numericUpDownGFIfritComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFIfritComp.TabIndex = 3;
@@ -3371,13 +3670,24 @@
             // 
             // numericUpDownGFDiablosComp
             // 
+            this.numericUpDownGFDiablosComp.DecimalPlaces = 1;
             this.numericUpDownGFDiablosComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFDiablosComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFDiablosComp.Location = new System.Drawing.Point(158, 121);
             this.numericUpDownGFDiablosComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFDiablosComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFDiablosComp.Name = "numericUpDownGFDiablosComp";
             this.numericUpDownGFDiablosComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFDiablosComp.TabIndex = 3;
@@ -3406,13 +3716,24 @@
             // 
             // numericUpDownGFBahamutComp
             // 
+            this.numericUpDownGFBahamutComp.DecimalPlaces = 1;
             this.numericUpDownGFBahamutComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFBahamutComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFBahamutComp.Location = new System.Drawing.Point(54, 250);
             this.numericUpDownGFBahamutComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFBahamutComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFBahamutComp.Name = "numericUpDownGFBahamutComp";
             this.numericUpDownGFBahamutComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFBahamutComp.TabIndex = 3;
@@ -3430,26 +3751,48 @@
             // 
             // numericUpDownGFPandemonaComp
             // 
+            this.numericUpDownGFPandemonaComp.DecimalPlaces = 1;
             this.numericUpDownGFPandemonaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFPandemonaComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFPandemonaComp.Location = new System.Drawing.Point(54, 185);
             this.numericUpDownGFPandemonaComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFPandemonaComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFPandemonaComp.Name = "numericUpDownGFPandemonaComp";
             this.numericUpDownGFPandemonaComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFPandemonaComp.TabIndex = 3;
             // 
             // numericUpDownGFShivaComp
             // 
+            this.numericUpDownGFShivaComp.DecimalPlaces = 1;
             this.numericUpDownGFShivaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFShivaComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFShivaComp.Location = new System.Drawing.Point(158, 58);
             this.numericUpDownGFShivaComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFShivaComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFShivaComp.Name = "numericUpDownGFShivaComp";
             this.numericUpDownGFShivaComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFShivaComp.TabIndex = 3;
@@ -3467,13 +3810,24 @@
             // 
             // numericUpDownGFBrothersComp
             // 
+            this.numericUpDownGFBrothersComp.DecimalPlaces = 1;
             this.numericUpDownGFBrothersComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFBrothersComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFBrothersComp.Location = new System.Drawing.Point(54, 121);
             this.numericUpDownGFBrothersComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFBrothersComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFBrothersComp.Name = "numericUpDownGFBrothersComp";
             this.numericUpDownGFBrothersComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFBrothersComp.TabIndex = 3;
@@ -3513,13 +3867,24 @@
             // 
             // numericUpDownGFQuezacoltComp
             // 
+            this.numericUpDownGFQuezacoltComp.DecimalPlaces = 1;
             this.numericUpDownGFQuezacoltComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFQuezacoltComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numericUpDownGFQuezacoltComp.Location = new System.Drawing.Point(54, 58);
             this.numericUpDownGFQuezacoltComp.Maximum = new decimal(new int[] {
-            255,
+            20,
             0,
             0,
             0});
+            this.numericUpDownGFQuezacoltComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownGFQuezacoltComp.Name = "numericUpDownGFQuezacoltComp";
             this.numericUpDownGFQuezacoltComp.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFQuezacoltComp.TabIndex = 3;
@@ -7461,7 +7826,7 @@
             this.tabPageGFAttacks.Controls.Add(this.listBoxGFAttacks);
             this.tabPageGFAttacks.Location = new System.Drawing.Point(4, 32);
             this.tabPageGFAttacks.Name = "tabPageGFAttacks";
-            this.tabPageGFAttacks.Size = new System.Drawing.Size(584, 745);
+            this.tabPageGFAttacks.Size = new System.Drawing.Size(584, 773);
             this.tabPageGFAttacks.TabIndex = 3;
             this.tabPageGFAttacks.Text = "NJ G-Forces";
             this.tabPageGFAttacks.UseVisualStyleBackColor = true;
@@ -8400,7 +8765,7 @@
             this.tabPageAbilities.Location = new System.Drawing.Point(4, 32);
             this.tabPageAbilities.Name = "tabPageAbilities";
             this.tabPageAbilities.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAbilities.Size = new System.Drawing.Size(584, 745);
+            this.tabPageAbilities.Size = new System.Drawing.Size(584, 773);
             this.tabPageAbilities.TabIndex = 2;
             this.tabPageAbilities.Text = "Abilities";
             this.tabPageAbilities.UseVisualStyleBackColor = true;
@@ -8559,7 +8924,7 @@
             this.tabPageWeapons.Controls.Add(this.listBoxWeapons);
             this.tabPageWeapons.Location = new System.Drawing.Point(4, 32);
             this.tabPageWeapons.Name = "tabPageWeapons";
-            this.tabPageWeapons.Size = new System.Drawing.Size(584, 745);
+            this.tabPageWeapons.Size = new System.Drawing.Size(584, 773);
             this.tabPageWeapons.TabIndex = 4;
             this.tabPageWeapons.Text = "Weapons";
             this.tabPageWeapons.UseVisualStyleBackColor = true;
@@ -8853,19 +9218,6 @@
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // radioButtonJElemAttackNElem
-            // 
-            this.radioButtonJElemAttackNElem.AutoSize = true;
-            this.radioButtonJElemAttackNElem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonJElemAttackNElem.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonJElemAttackNElem.Location = new System.Drawing.Point(176, 51);
-            this.radioButtonJElemAttackNElem.Name = "radioButtonJElemAttackNElem";
-            this.radioButtonJElemAttackNElem.Size = new System.Drawing.Size(105, 19);
-            this.radioButtonJElemAttackNElem.TabIndex = 10;
-            this.radioButtonJElemAttackNElem.TabStop = true;
-            this.radioButtonJElemAttackNElem.Text = "Non-Elemental";
-            this.radioButtonJElemAttackNElem.UseVisualStyleBackColor = true;
             // 
             // mainForm
             // 

@@ -559,22 +559,22 @@ namespace Doomtrain
                 StatusHoldWorker(3, KernelWorker.GetSelectedMagicData.StatusMagic1,KernelWorker.GetSelectedMagicData.StatusDefEN , KernelWorker.GetSelectedMagicData.StatusMagic2, KernelWorker.GetSelectedMagicData.StatusMagic3, KernelWorker.GetSelectedMagicData.StatusMagic4, KernelWorker.GetSelectedMagicData.StatusMagic5);
                 trackBarJStatDefense.Value = KernelWorker.GetSelectedMagicData.StatusDEFval;
                 numericUpDownMagicStatusAttackEnabler.Value = KernelWorker.GetSelectedMagicData.StatusAttackEnabler;
-                numericUpDownMagicQuezacoltComp.Value = KernelWorker.GetSelectedMagicData.QuezacoltCompatibility;
-                numericUpDownMagicShivaComp.Value = KernelWorker.GetSelectedMagicData.ShivaCompatibility;
-                numericUpDownMagicIfritComp.Value = KernelWorker.GetSelectedMagicData.IfritCompatibility;
-                numericUpDownMagicSirenComp.Value = KernelWorker.GetSelectedMagicData.SirenCompatibility;
-                numericUpDownMagicBrothersComp.Value = KernelWorker.GetSelectedMagicData.BrothersCompatibility;
-                numericUpDownMagicDiablosComp.Value = KernelWorker.GetSelectedMagicData.DiablosCompatibility;
-                numericUpDownMagicCarbuncleComp.Value = KernelWorker.GetSelectedMagicData.CarbuncleCompatibility;
-                numericUpDownMagicLeviathanComp.Value = KernelWorker.GetSelectedMagicData.LeviathanCompatibility;
-                numericUpDownMagicPandemonaComp.Value = KernelWorker.GetSelectedMagicData.PandemonaCompatibility;
-                numericUpDownMagicCerberusComp.Value = KernelWorker.GetSelectedMagicData.CerberusCompatibility;
-                numericUpDownMagicAlexanderComp.Value = KernelWorker.GetSelectedMagicData.AlexanderCompatibility;
-                numericUpDownMagicDoomtrainComp.Value = KernelWorker.GetSelectedMagicData.DoomtrainCompatibility;
-                numericUpDownMagicBahamutComp.Value = KernelWorker.GetSelectedMagicData.BahamutCompatibility;
-                numericUpDownMagicCactuarComp.Value = KernelWorker.GetSelectedMagicData.CactuarCompatibility;
-                numericUpDownMagicTonberryComp.Value = KernelWorker.GetSelectedMagicData.TonberryCompatibility;
-                numericUpDownMagicEdenComp.Value = KernelWorker.GetSelectedMagicData.EdenCompatibility;
+                numericUpDownMagicQuezacoltComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.QuezacoltCompatibility)) / 5;
+                numericUpDownMagicShivaComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.ShivaCompatibility)) / 5;
+                numericUpDownMagicIfritComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.IfritCompatibility)) / 5;
+                numericUpDownMagicSirenComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.SirenCompatibility)) / 5;
+                numericUpDownMagicBrothersComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.BrothersCompatibility)) / 5;
+                numericUpDownMagicDiablosComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.DiablosCompatibility)) / 5;
+                numericUpDownMagicCarbuncleComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.CarbuncleCompatibility)) / 5;
+                numericUpDownMagicLeviathanComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.LeviathanCompatibility)) / 5;
+                numericUpDownMagicPandemonaComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.PandemonaCompatibility)) / 5;
+                numericUpDownMagicCerberusComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.CerberusCompatibility)) / 5;
+                numericUpDownMagicAlexanderComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.AlexanderCompatibility)) / 5;
+                numericUpDownMagicDoomtrainComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.DoomtrainCompatibility)) / 5;
+                numericUpDownMagicBahamutComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.BahamutCompatibility)) / 5;
+                numericUpDownMagicCactuarComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.CactuarCompatibility)) / 5;
+                numericUpDownMagicTonberryComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.TonberryCompatibility)) / 5;
+                numericUpDownMagicEdenComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.EdenCompatibility)) / 5;
 
             }
             catch (Exception e_)
@@ -1027,22 +1027,22 @@ namespace Doomtrain
                 //checkBoxGFStatus.Checked = KernelWorker.GetSelectedGFData.GFStatusEnabler > 0x00 ? true : false;
                 GFStatusWorker();
                 numericUpDownGFStatusAttackEnabler.Value = KernelWorker.GetSelectedGFData.GFStatusAttackEnabler;
-                numericUpDownGFQuezacoltComp.Value = KernelWorker.GetSelectedGFData.GFQuezacoltCompatibility;
-                numericUpDownGFShivaComp.Value = KernelWorker.GetSelectedGFData.GFShivaCompatibility;
-                numericUpDownGFIfritComp.Value = KernelWorker.GetSelectedGFData.GFIfritCompatibility;
-                numericUpDownGFSirenComp.Value = KernelWorker.GetSelectedGFData.GFSirenCompatibility;
-                numericUpDownGFBrothersComp.Value = KernelWorker.GetSelectedGFData.GFBrothersCompatibility;
-                numericUpDownGFDiablosComp.Value = KernelWorker.GetSelectedGFData.GFDiablosCompatibility;
-                numericUpDownGFCarbuncleComp.Value = KernelWorker.GetSelectedGFData.GFCarbuncleCompatibility;
-                numericUpDownGFLeviathanComp.Value = KernelWorker.GetSelectedGFData.GFLeviathanCompatibility;
-                numericUpDownGFPandemonaComp.Value = KernelWorker.GetSelectedGFData.GFPandemonaCompatibility;
-                numericUpDownGFCerberusComp.Value = KernelWorker.GetSelectedGFData.GFCerberusCompatibility;
-                numericUpDownGFAlexanderComp.Value = KernelWorker.GetSelectedGFData.GFAlexanderCompatibility;
-                numericUpDownGFDoomtrainComp.Value = KernelWorker.GetSelectedGFData.GFDoomtrainCompatibility;
-                numericUpDownGFBahamutComp.Value = KernelWorker.GetSelectedGFData.GFBahamutCompatibility;
-                numericUpDownGFCactuarComp.Value = KernelWorker.GetSelectedGFData.GFCactuarCompatibility;
-                numericUpDownGFTonberryComp.Value = KernelWorker.GetSelectedGFData.GFTonberryCompatibility;
-                numericUpDownGFEdenComp.Value = KernelWorker.GetSelectedGFData.GFEdenCompatibility;
+                numericUpDownGFQuezacoltComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFQuezacoltCompatibility)) / 5;
+                numericUpDownGFShivaComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFShivaCompatibility)) / 5;
+                numericUpDownGFIfritComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFIfritCompatibility)) / 5;
+                numericUpDownGFSirenComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFSirenCompatibility)) / 5;
+                numericUpDownGFBrothersComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFBrothersCompatibility)) / 5;
+                numericUpDownGFDiablosComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFDiablosCompatibility)) / 5;
+                numericUpDownGFCarbuncleComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFCarbuncleCompatibility)) / 5;
+                numericUpDownGFLeviathanComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFLeviathanCompatibility)) / 5;
+                numericUpDownGFPandemonaComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFPandemonaCompatibility)) / 5;
+                numericUpDownGFCerberusComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFCerberusCompatibility)) / 5;
+                numericUpDownGFAlexanderComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFAlexanderCompatibility)) / 5;
+                numericUpDownGFDoomtrainComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFDoomtrainCompatibility)) / 5;
+                numericUpDownGFBahamutComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFBahamutCompatibility)) / 5;
+                numericUpDownGFCactuarComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFCactuarCompatibility)) / 5;
+                numericUpDownGFTonberryComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFTonberryCompatibility)) / 5;
+                numericUpDownGFEdenComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFEdenCompatibility)) / 5;
             }
             catch (Exception eeException)
             {
