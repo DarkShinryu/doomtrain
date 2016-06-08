@@ -713,7 +713,7 @@ namespace Doomtrain
                     RenzokukenFinishersUpdator(arg0, variable); //renzokuken finishers
                     return;
                 case 1:
-                    Kernel[OffsetToWeaponsSelected + 3] = Convert.ToByte(variable); //character id
+                    Kernel[OffsetToWeaponsSelected + 4] = Convert.ToByte(variable); //character id
                     return;
                 case 2:
                     Kernel[OffsetToWeaponsSelected + 6] = Convert.ToByte(variable); //attack power
@@ -1019,7 +1019,7 @@ namespace Doomtrain
             OffsetToWeaponsSelected = selectedWeaponsOffset;
 
             GetSelectedWeaponsData.RenzokukenFinishers = Kernel[selectedWeaponsOffset + 2];
-            selectedWeaponsOffset += 2 + 1 + 1;
+            selectedWeaponsOffset += 4;
             byte c = Kernel[selectedWeaponsOffset];
             GetSelectedWeaponsData.CharacterID =
                 c == (byte)Characters.Squall
