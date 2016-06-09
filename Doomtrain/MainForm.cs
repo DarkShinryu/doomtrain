@@ -245,7 +245,17 @@ namespace Doomtrain
             checkBoxGFAttacksBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x20, 4);
             checkBoxGFAttacksZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x40, 4);
             numericUpDownGFAttacksPowerMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(5, numericUpDownGFAttacksPowerMod.Value);
-            numericUpDownGFAttacksLevelMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(6, numericUpDownGFAttacksLevelMod.Value);            
+            numericUpDownGFAttacksLevelMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(6, numericUpDownGFAttacksLevelMod.Value);
+
+            //Weapons
+            checkBoxWeaponsRenzoFinRough.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x01, 0);
+            checkBoxWeaponsRenzoFinFated.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x02, 0);
+            checkBoxWeaponsRenzoFinBlasting.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x04, 0);
+            checkBoxWeaponsRenzoFinLion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x08, 0);
+            comboBoxWeaponsCharacterID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(1, Weapons_GetCharacter(comboBoxWeaponsCharacterID.SelectedIndex));
+            numericUpDownWeaponsAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(2, numericUpDownWeaponsAttackPower.Value);
+            numericUpDownWeaponsHITBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(3, numericUpDownWeaponsHITBonus.Value);
+            numericUpDownWeaponsSTRBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(4, numericUpDownWeaponsSTRBonus.Value);
         }
 
 
@@ -1154,7 +1164,6 @@ namespace Doomtrain
         //opted out for now
 
 
-
         private int GFAttacks_GetElement()
         {
             return KernelWorker.GetSelectedGFAttacksData.ElementGFAttacks == KernelWorker.Element.Fire
@@ -1254,6 +1263,86 @@ namespace Doomtrain
             catch (Exception eeeException)
             {
                 MessageBox.Show(eeeException.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+
+
+
+
+        private int Weapons_GetCharacter()
+        {
+            return KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Squall
+                        ? 0
+                        : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Zell
+                            ? 1
+                            : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Irvine
+                                ? 2
+                                : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Quistis
+                                    ? 3
+                                    : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Rinoa
+                                        ? 4
+                                        : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Selphie
+                                            ? 5
+                                            : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Seifer
+                                                ? 6
+                                                : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Edea
+                                                    ? 7
+                                                    : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Laguna
+                                                         ? 8
+                                                         : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Kiros
+                                                             ? 9
+                                                             : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Ward
+                                                                 ? comboBoxWeaponsCharacterID.Items.Count - 1
+                                                                 : 0;
+        }
+
+        private byte Weapons_GetCharacter(int Index)
+        {
+            byte character = (byte)(Index == 10 ? (byte)KernelWorker.Characters.Squall :
+                Index == 0 ? (byte)KernelWorker.Characters.Zell :
+                Index == 1 ? (byte)KernelWorker.Characters.Irvine :
+                Index == 2 ? (byte)KernelWorker.Characters.Quistis :
+                Index == 3 ? (byte)KernelWorker.Characters.Rinoa :
+                Index == 4 ? (byte)KernelWorker.Characters.Selphie :
+                Index == 5 ? (byte)KernelWorker.Characters.Seifer :
+                Index == 6 ? (byte)KernelWorker.Characters.Edea :
+                Index == 7 ? (byte)KernelWorker.Characters.Laguna :
+                Index == 8 ? (byte)KernelWorker.Characters.Kiros :
+                Index == 9 ? (byte)KernelWorker.Characters.Ward :
+                0x00 /*ErrorHandler*/);
+            return character;
+        }
+
+        private void RenzokukenFinishersWorker()
+        {
+            checkBoxWeaponsRenzoFinRough.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x01) >= 1 ? true : false;
+            checkBoxWeaponsRenzoFinFated.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x02) >= 1 ? true : false;
+            checkBoxWeaponsRenzoFinBlasting.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x04) >= 1 ? true : false;
+            checkBoxWeaponsRenzoFinLion.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x08) >= 1 ? true : false;
+        }
+
+        private void listBoxWeapons_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadWeapons(listBoxWeapons.SelectedIndex);
+
+            try
+            {
+                RenzokukenFinishersWorker();
+                comboBoxWeaponsCharacterID.SelectedIndex = Weapons_GetCharacter();
+                numericUpDownWeaponsAttackPower.Value = KernelWorker.GetSelectedWeaponsData.AttackPower;
+                numericUpDownWeaponsHITBonus.Value = KernelWorker.GetSelectedWeaponsData.HITBonus;
+                numericUpDownWeaponsSTRBonus.Value = KernelWorker.GetSelectedWeaponsData.STRBonus;
+            }
+            catch (Exception eeeeException)
+            {
+                MessageBox.Show(eeeeException.ToString());
             }
             _loaded = true;
         }

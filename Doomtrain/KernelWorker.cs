@@ -16,9 +16,13 @@ namespace Doomtrain
         public static int GFAttacksDataOffset = -1;
         public static int OffsetToGFAttacksSelected = -1;
 
+        public static int WeaponsDataOffset = -1;
+        public static int OffsetToWeaponsSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
+        public static WeaponsData GetSelectedWeaponsData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -99,6 +103,21 @@ namespace Doomtrain
             Water = 0x40,
             Holy = 0x80,
             NonElemental = 0x00
+        }
+
+        internal enum Characters : byte
+        {
+            Squall = 0x00,
+            Zell = 0x01,
+            Irvine = 0x02,
+            Quistis = 0x03,
+            Rinoa = 0x04,
+            Selphie = 0x05,
+            Seifer = 0x06,
+            Edea = 0x07,
+            Laguna = 0x08,
+            Kiros = 0x09,
+            Ward = 0x0A
         }
 
 
@@ -229,6 +248,16 @@ namespace Doomtrain
             public byte StatusGFAttacks5;
             public byte GFAttacksPowerMod;
             public byte GFAttacksLevelMod;
+        }
+
+        public struct WeaponsData
+        {
+            //public string WeaponsName;
+            public byte RenzokukenFinishers;
+            public Characters CharacterID;
+            public byte AttackPower;
+            public byte HITBonus;
+            public byte STRBonus;
         }
 
 
@@ -674,6 +703,45 @@ namespace Doomtrain
         }
 
 
+        public static void UpdateVariable_Weapons(int index, object variable, byte arg0 = 127)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    RenzokukenFinishersUpdator(arg0, variable); //renzokuken finishers
+                    return;
+                case 1:
+                    Kernel[OffsetToWeaponsSelected + 3] = Convert.ToByte(variable); //character id
+                    return;
+                case 2:
+                    Kernel[OffsetToWeaponsSelected + 6] = Convert.ToByte(variable); //attack power
+                    return;
+                case 3:
+                    Kernel[OffsetToWeaponsSelected + 7] = Convert.ToByte(variable); //hit bonus
+                    return;
+                case 4:
+                    Kernel[OffsetToWeaponsSelected + 8] = Convert.ToByte(variable); //str bonus
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
+        private static void RenzokukenFinishersUpdator(byte FinisherByteIndex, object variable)
+        {
+            switch (FinisherByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToWeaponsSelected + 2] = (byte)(Kernel[OffsetToWeaponsSelected + 2] ^ Convert.ToByte(variable)); //Perform XOR logic for this 
+                    return;
+            }
+        }
+
+
+
         /// <summary>
         /// This is for MagicID list
         /// </summary>
@@ -705,14 +773,16 @@ namespace Doomtrain
             Mode_GFAttacks
         }
 
+
         public static void ReadKernel(byte[] kernel)
         {
             Kernel = kernel;
             MagicDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.MagicData);
             GFDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFs);
             GFAttacksDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFAttacks);
-
+            WeaponsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Weapons);
         }
+
 
         public static void ReadMagic(int MagicID_List)
         {
@@ -939,6 +1009,46 @@ namespace Doomtrain
             selectedGfAttacksOffset += 1;
             GetSelectedGFAttacksData.GFAttacksPowerMod = Kernel[selectedGfAttacksOffset];
             GetSelectedGFAttacksData.GFAttacksLevelMod = Kernel[selectedGfAttacksOffset + 1];
+        }
+
+
+        public static void ReadWeapons(int WeaponsID_List)
+        {
+            GetSelectedWeaponsData = new WeaponsData();
+            int selectedWeaponsOffset = WeaponsDataOffset + (WeaponsID_List * 12);
+            OffsetToWeaponsSelected = selectedWeaponsOffset;
+
+            GetSelectedWeaponsData.RenzokukenFinishers = Kernel[selectedWeaponsOffset + 2];
+            selectedWeaponsOffset += 2 + 1 + 1;
+            byte c = Kernel[selectedWeaponsOffset];
+            GetSelectedWeaponsData.CharacterID =
+                c == (byte)Characters.Squall
+                    ? Characters.Squall
+                    : c == (byte)Characters.Edea
+                        ? Characters.Edea
+                        : c == (byte)Characters.Irvine
+                            ? Characters.Irvine
+                            : c == (byte)Characters.Kiros
+                                ? Characters.Kiros
+                                : c == (byte)Characters.Laguna
+                                    ? Characters.Laguna
+                                    : c == (byte)Characters.Quistis
+                                        ? Characters.Quistis
+                                        : c == (byte)Characters.Rinoa
+                                            ? Characters.Rinoa
+                                            : c == (byte)Characters.Seifer
+                                                ? Characters.Seifer
+                                                : c == (byte)Characters.Selphie
+                                                    ? Characters.Selphie
+                                                    : c == (byte)Characters.Ward
+                                                        ? Characters.Ward
+                                                        : c == (byte)Characters.Zell
+                                                            ? Characters.Zell
+                                                           : 0; //Error handler
+            selectedWeaponsOffset += 2;
+            GetSelectedWeaponsData.AttackPower = Kernel[selectedWeaponsOffset++];
+            GetSelectedWeaponsData.HITBonus = Kernel[selectedWeaponsOffset++];
+            GetSelectedWeaponsData.STRBonus = Kernel[selectedWeaponsOffset++];
         }
 
 

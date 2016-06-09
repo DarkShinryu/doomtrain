@@ -9168,6 +9168,7 @@
             this.listBoxWeapons.ScrollAlwaysVisible = true;
             this.listBoxWeapons.Size = new System.Drawing.Size(109, 499);
             this.listBoxWeapons.TabIndex = 5;
+            this.listBoxWeapons.SelectedIndexChanged += new System.EventHandler(this.listBoxWeapons_SelectedIndexChanged);
             // 
             // toolbarStrip
             // 
