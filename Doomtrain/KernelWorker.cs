@@ -51,16 +51,16 @@ namespace Doomtrain
             MenuAbilities = 18 << 2,
             CharacterLimitBreakes = 19 << 2,
             BlueMagic = 20 << 2,
-            UNKNOWN1 = 21 << 2,
+            BlueMagicParam = 21 << 2,
             Shot_Irvine = 22 << 2,
             Duel_Zell = 23 << 2,
-            UNKNOWN2 = 24 << 2,
+            Duel_ZellParam = 24 << 2,
             RinoaLimit1 = 25 << 2,
             RinoaLimit2 = 26 << 2,
-            UNKNOWN3 = 27 << 2,
-            UNKNOWN4 = 28 << 2,
+            SelphieSlotArray = 27 << 2,
+            SelphieSlotSets = 28 << 2,
             Devour = 29 << 2,
-            UNKNOWN5 = 30 << 2,
+            Misc = 30 << 2,
             MiscTextPointers = 31 << 2,
             Text_BattleCommand = 32 << 2,
             Text_Magictext = 33 << 2,
@@ -120,13 +120,61 @@ namespace Doomtrain
             Ward = 0x0A
         }
 
+        internal enum Status0 : UInt16 //Statuses 0-7 - How the game stores this data - upper bits are unused
+        {
+            Death = 0x0001,
+            Poison = 0x0002,
+            Petrify = 0x0004,
+            Darkness = 0x0008,
+            Silence = 0x0010,
+            Berserk = 0x0020,
+            Zombie = 0x0040,
+            Unknown = 0x0080 //possibly unused - causing this status leaves you unable to cure it
+        }
+
+        internal enum Status1 : UInt32 //Statuses 8-39 - How the game stores this data
+        {
+            Sleep = 0x00000001,
+            Haste = 0x00000002,
+            Slow = 0x00000004,
+            Stop = 0x00000008,
+            Regen = 0x00000010,
+            Protect = 0x00000020,
+            Shell = 0x00000040,
+            Reflect = 0x00000080,
+            Aura = 0x00000100,
+            Curse = 0x00000200,
+            Doom = 0x00000400,
+            Invincible = 0x00000800,
+            Petrifying = 0x00001000,
+            Float = 0x00002000,
+            Confusion = 0x00004000,
+            Drain = 0x00008000,
+            Eject = 0x00010000,
+            Double = 0x00020000,
+            Triple = 0x00040000,
+            Defend = 0x00080000,
+            Unknown1 = 0x00100000,
+            Unknown2 = 0x00200000,
+            Unknown3 = 0x00400000,
+            BackAttacked = 0x00800000,
+            Vit0 = 0x01000000,
+            AngelWing = 0x02000000,
+            Unknown4 = 0x04000000,
+            Unknown5 = 0x08000000,
+            Unknown6 = 0x10000000,
+            Unknown7 = 0x20000000,
+            Unknown8 = 0x40000000,
+            Unknown9 = 0x80000000
+        }
 
         public struct MagicData
         {
             public string OffsetSpellName;
             //public string OffsetSpellDescription;
             public UInt16 MagicID;
-            public UInt16 Unknown1;
+            public byte Unknown1;
+            public byte AttackType;
             public byte SpellPower;
             public byte Unknown2;
             public byte DefaultTarget;
@@ -184,6 +232,7 @@ namespace Doomtrain
             //public string OffsetGFName;
             //public string OffsetGFDescription;
             public UInt16 GFMagicID;
+            public byte GFAttackType;
             public byte GFPower;
             public Element ElementGF;
             public byte StatusGF1;
@@ -238,6 +287,7 @@ namespace Doomtrain
         {
             //public string OffsetGFAttacksName;
             public UInt16 GFAttacksMagicID;
+            public byte GFAttacksType;
             public byte GFAttacksPower;
             public byte GFAttacksStatusEnabler;
             public Element ElementGFAttacks;
@@ -255,12 +305,12 @@ namespace Doomtrain
             //public string WeaponsName;
             public byte RenzokukenFinishers;
             public Characters CharacterID;
+            public byte AttackType;
             public byte AttackPower;
             public byte HITBonus;
             public byte STRBonus;
         }
-
-
+        
         public static void UpdateVariable_Magic(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -808,7 +858,8 @@ namespace Doomtrain
 
 
             GetSelectedMagicData.MagicID = BitConverter.ToUInt16(Kernel, selectedMagicOffset += 4);
-            GetSelectedMagicData.Unknown1 = BitConverter.ToUInt16(Kernel, selectedMagicOffset += 2); selectedMagicOffset += 2; //Weird one...
+            GetSelectedMagicData.Unknown1 = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.AttackType = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.SpellPower = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.Unknown2 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.DefaultTarget = Kernel[selectedMagicOffset++];
@@ -890,7 +941,8 @@ namespace Doomtrain
             OffsetToGFSelected = selectedGfOffset;
 
             GetSelectedGFData.GFMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfOffset + 4) - 1);
-            selectedGfOffset += 4 + 2 + 1; //Unknown + MagicID + Unknown
+            selectedGfOffset += 4 + 2; //Name Offset + Description Offset + MagicID
+            GetSelectedGFData.GFAttackType = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFPower = Kernel[selectedGfOffset];
             selectedGfOffset += 1 + 5; //Unknown + GFPower
             byte b = Kernel[selectedGfOffset++];
@@ -976,7 +1028,8 @@ namespace Doomtrain
             OffsetToGFAttacksSelected = selectedGfAttacksOffset;
 
             GetSelectedGFAttacksData.GFAttacksMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfAttacksOffset + 2) - 1);
-            selectedGfAttacksOffset += 2 + 2 + 1;
+            selectedGfAttacksOffset += 4;
+            GetSelectedGFAttacksData.GFAttacksType = Kernel[selectedGfAttacksOffset++];
             GetSelectedGFAttacksData.GFAttacksPower = Kernel[selectedGfAttacksOffset++];            
             GetSelectedGFAttacksData.GFAttacksStatusEnabler = Kernel[selectedGfAttacksOffset++];
             selectedGfAttacksOffset += 4;
@@ -1020,7 +1073,7 @@ namespace Doomtrain
 
             GetSelectedWeaponsData.RenzokukenFinishers = Kernel[selectedWeaponsOffset + 2];
             selectedWeaponsOffset += 4;
-            byte c = Kernel[selectedWeaponsOffset];
+            byte c = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.CharacterID =
                 c == (byte)Characters.Squall
                     ? Characters.Squall
@@ -1045,7 +1098,7 @@ namespace Doomtrain
                                                         : c == (byte)Characters.Zell
                                                             ? Characters.Zell
                                                            : 0; //Error handler
-            selectedWeaponsOffset += 2;
+            GetSelectedWeaponsData.AttackType = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.AttackPower = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.HITBonus = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.STRBonus = Kernel[selectedWeaponsOffset++];
