@@ -858,6 +858,7 @@ namespace Doomtrain
 
 
             GetSelectedMagicData.MagicID = BitConverter.ToUInt16(Kernel, selectedMagicOffset += 4);
+            selectedMagicOffset += 2;
             GetSelectedMagicData.Unknown1 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.AttackType = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.SpellPower = Kernel[selectedMagicOffset++];
