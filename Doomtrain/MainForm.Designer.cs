@@ -40,6 +40,121 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlMain = new System.Windows.Forms.TabControl();
+            this.tabPageCharacters = new System.Windows.Forms.TabPage();
+            this.tabControlCharacters = new System.Windows.Forms.TabControl();
+            this.tabPageCharGeneral = new System.Windows.Forms.TabPage();
+            this.groupBoxCharGeneral = new System.Windows.Forms.GroupBox();
+            this.comboBoxCharGender = new System.Windows.Forms.ComboBox();
+            this.labelCharGender = new System.Windows.Forms.Label();
+            this.numericUpDownCharLimitParam = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharCrisisLevelHP = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharLimitID = new System.Windows.Forms.NumericUpDown();
+            this.labelCharLimitParam = new System.Windows.Forms.Label();
+            this.labelCharLimitID = new System.Windows.Forms.Label();
+            this.labelCharCrisisLevelHP = new System.Windows.Forms.Label();
+            this.tabPageCharStats = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.buttonCharSPDChart = new System.Windows.Forms.Button();
+            this.numericUpDownCharSPD4 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSPDD = new System.Windows.Forms.Label();
+            this.numericUpDownCharSPD3 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSPDC = new System.Windows.Forms.Label();
+            this.numericUpDownCharSPD2 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSPDB = new System.Windows.Forms.Label();
+            this.numericUpDownCharSPD1 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSPDA = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonCharVITChart = new System.Windows.Forms.Button();
+            this.numericUpDownCharVIT4 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharVITD = new System.Windows.Forms.Label();
+            this.numericUpDownCharVIT3 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharVITC = new System.Windows.Forms.Label();
+            this.numericUpDownCharVIT2 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharVITB = new System.Windows.Forms.Label();
+            this.numericUpDownCharVIT1 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharVITA = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.buttonCharLUCKChart = new System.Windows.Forms.Button();
+            this.numericUpDownCharLUCK4 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharLUCKD = new System.Windows.Forms.Label();
+            this.numericUpDownCharLUCK3 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharLUCKC = new System.Windows.Forms.Label();
+            this.numericUpDownCharLUCK2 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharLUCKB = new System.Windows.Forms.Label();
+            this.numericUpDownCharLUCK1 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharLUCKA = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.buttonCharSPRChart = new System.Windows.Forms.Button();
+            this.numericUpDownCharSPR4 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSPRD = new System.Windows.Forms.Label();
+            this.numericUpDownCharSPR3 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSPRC = new System.Windows.Forms.Label();
+            this.numericUpDownCharSPR2 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSPRB = new System.Windows.Forms.Label();
+            this.numericUpDownCharSPR1 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSPRA = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonCharSTRChart = new System.Windows.Forms.Button();
+            this.numericUpDownCharSTR4 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSTRD = new System.Windows.Forms.Label();
+            this.numericUpDownCharSTR3 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSTRC = new System.Windows.Forms.Label();
+            this.numericUpDownCharSTR2 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSTRB = new System.Windows.Forms.Label();
+            this.numericUpDownCharSTR1 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharSTRA = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.buttonCharMAGChart = new System.Windows.Forms.Button();
+            this.numericUpDownCharMAG4 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharMAGD = new System.Windows.Forms.Label();
+            this.numericUpDownCharMAG3 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharMAGC = new System.Windows.Forms.Label();
+            this.numericUpDownCharMAG2 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharMAGB = new System.Windows.Forms.Label();
+            this.numericUpDownCharMAG1 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharMAGA = new System.Windows.Forms.Label();
+            this.groupBoxCharHP = new System.Windows.Forms.GroupBox();
+            this.buttonCharHPFormula = new System.Windows.Forms.Button();
+            this.buttonCharHPChart = new System.Windows.Forms.Button();
+            this.numericUpDownCharHP4 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharHPD = new System.Windows.Forms.Label();
+            this.numericUpDownCharHP3 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharHPC = new System.Windows.Forms.Label();
+            this.numericUpDownCharHP2 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharHPB = new System.Windows.Forms.Label();
+            this.numericUpDownCharHP1 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharHPA = new System.Windows.Forms.Label();
+            this.listBoxCharacters = new System.Windows.Forms.ListBox();
+            this.tabPageWeapons = new System.Windows.Forms.TabPage();
+            this.groupBoxWeaponsGeneral = new System.Windows.Forms.GroupBox();
+            this.checkBoxWeaponsRenzoFinLion = new System.Windows.Forms.CheckBox();
+            this.checkBoxWeaponsRenzoFinBlasting = new System.Windows.Forms.CheckBox();
+            this.checkBoxWeaponsRenzoFinFated = new System.Windows.Forms.CheckBox();
+            this.checkBoxWeaponsRenzoFinRough = new System.Windows.Forms.CheckBox();
+            this.comboBoxWeaponsCharacterID = new System.Windows.Forms.ComboBox();
+            this.labelWeaponsHITBonus = new System.Windows.Forms.Label();
+            this.numericUpDownWeaponsSTRBonus = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownWeaponsTier = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownWeaponsAttackPower = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownWeaponsHITBonus = new System.Windows.Forms.NumericUpDown();
+            this.labelWeaponsTier = new System.Windows.Forms.Label();
+            this.labelWeaponsSTRBonus = new System.Windows.Forms.Label();
+            this.labelWeaponsAttackPower = new System.Windows.Forms.Label();
+            this.labelWeaponsRenzoFin = new System.Windows.Forms.Label();
+            this.labelWeaponsCharacterID = new System.Windows.Forms.Label();
+            this.listBoxWeapons = new System.Windows.Forms.ListBox();
+            this.tabPageAbilities = new System.Windows.Forms.TabPage();
+            this.tabControlAbilities = new System.Windows.Forms.TabControl();
+            this.tabPageStatsIncrement = new System.Windows.Forms.TabPage();
+            this.groupBoxStatsIncrement = new System.Windows.Forms.GroupBox();
+            this.labelStatsIncrementValueTrackBar = new System.Windows.Forms.Label();
+            this.trackBarStatsIncrementValue = new System.Windows.Forms.TrackBar();
+            this.textBoxStatsIncrementDescription = new System.Windows.Forms.TextBox();
+            this.textBoxStatsIncrementName = new System.Windows.Forms.TextBox();
+            this.labelStatsIncrementDescription = new System.Windows.Forms.Label();
+            this.labelStatsIncrementValue = new System.Windows.Forms.Label();
+            this.labelStatsIncrementName = new System.Windows.Forms.Label();
+            this.listBoxStatsIncrement = new System.Windows.Forms.ListBox();
             this.tabPageMagic = new System.Windows.Forms.TabPage();
             this.tabControlMagic = new System.Windows.Forms.TabControl();
             this.tabPageMagicGeneral = new System.Windows.Forms.TabPage();
@@ -368,42 +483,81 @@
             this.labelGFAttacksPower = new System.Windows.Forms.Label();
             this.labelGFAttacksMagicID = new System.Windows.Forms.Label();
             this.listBoxGFAttacks = new System.Windows.Forms.ListBox();
-            this.tabPageAbilities = new System.Windows.Forms.TabPage();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPageStatsIncrement = new System.Windows.Forms.TabPage();
-            this.groupBoxStatsIncrement = new System.Windows.Forms.GroupBox();
-            this.labelStatsIncrementValueTrackBar = new System.Windows.Forms.Label();
-            this.trackBarStatsIncrementValue = new System.Windows.Forms.TrackBar();
-            this.textBoxStatsIncrementDescription = new System.Windows.Forms.TextBox();
-            this.textBoxStatsIncrementName = new System.Windows.Forms.TextBox();
-            this.labelStatsIncrementDescription = new System.Windows.Forms.Label();
-            this.labelStatsIncrementValue = new System.Windows.Forms.Label();
-            this.labelStatsIncrementName = new System.Windows.Forms.Label();
-            this.listBoxStatsIncrement = new System.Windows.Forms.ListBox();
-            this.tabPageWeapons = new System.Windows.Forms.TabPage();
-            this.groupBoxWeaponsGeneral = new System.Windows.Forms.GroupBox();
-            this.checkBoxWeaponsRenzoFinLion = new System.Windows.Forms.CheckBox();
-            this.checkBoxWeaponsRenzoFinBlasting = new System.Windows.Forms.CheckBox();
-            this.checkBoxWeaponsRenzoFinFated = new System.Windows.Forms.CheckBox();
-            this.checkBoxWeaponsRenzoFinRough = new System.Windows.Forms.CheckBox();
-            this.comboBoxWeaponsCharacterID = new System.Windows.Forms.ComboBox();
-            this.labelWeaponsHITBonus = new System.Windows.Forms.Label();
-            this.numericUpDownWeaponsSTRBonus = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownWeaponsAttackPower = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownWeaponsHITBonus = new System.Windows.Forms.NumericUpDown();
-            this.labelWeaponsSTRBonus = new System.Windows.Forms.Label();
-            this.labelWeaponsAttackPower = new System.Windows.Forms.Label();
-            this.labelWeaponsRenzoFin = new System.Windows.Forms.Label();
-            this.labelWeaponsCharacterID = new System.Windows.Forms.Label();
-            this.listBoxWeapons = new System.Windows.Forms.ListBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolbarStrip = new System.Windows.Forms.ToolStrip();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.buttonCharSTRFormula = new System.Windows.Forms.Button();
+            this.buttonCharVITFormula = new System.Windows.Forms.Button();
+            this.buttonCharMAGFormula = new System.Windows.Forms.Button();
+            this.buttonCharSPRFormula = new System.Windows.Forms.Button();
+            this.buttonCharSPDFormula = new System.Windows.Forms.Button();
+            this.buttonCharLUCKFormula = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.buttonCharEXPFormula = new System.Windows.Forms.Button();
+            this.buttonCharEXPChart = new System.Windows.Forms.Button();
+            this.numericUpDownCharEXP2 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharEXPB = new System.Windows.Forms.Label();
+            this.numericUpDownCharEXP1 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharEXPA = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
+            this.tabPageCharacters.SuspendLayout();
+            this.tabControlCharacters.SuspendLayout();
+            this.tabPageCharGeneral.SuspendLayout();
+            this.groupBoxCharGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLimitParam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharCrisisLevelHP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLimitID)).BeginInit();
+            this.tabPageCharStats.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPD4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPD3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPD2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPD1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharVIT4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharVIT3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharVIT2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharVIT1)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLUCK4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLUCK3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLUCK2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLUCK1)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPR4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPR3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPR2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPR1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSTR4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSTR3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSTR2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSTR1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharMAG4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharMAG3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharMAG2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharMAG1)).BeginInit();
+            this.groupBoxCharHP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP1)).BeginInit();
+            this.tabPageWeapons.SuspendLayout();
+            this.groupBoxWeaponsGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsSTRBonus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsTier)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackPower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
+            this.tabPageAbilities.SuspendLayout();
+            this.tabControlAbilities.SuspendLayout();
+            this.tabPageStatsIncrement.SuspendLayout();
+            this.groupBoxStatsIncrement.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarStatsIncrementValue)).BeginInit();
             this.tabPageMagic.SuspendLayout();
             this.tabControlMagic.SuspendLayout();
             this.tabPageMagicGeneral.SuspendLayout();
@@ -486,17 +640,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAttacksLevelMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAttacksPowerMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAttacksPower)).BeginInit();
-            this.tabPageAbilities.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPageStatsIncrement.SuspendLayout();
-            this.groupBoxStatsIncrement.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarStatsIncrementValue)).BeginInit();
-            this.tabPageWeapons.SuspendLayout();
-            this.groupBoxWeaponsGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsSTRBonus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackPower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             this.toolbarStrip.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -581,11 +728,12 @@
             // tabControlMain
             // 
             this.tabControlMain.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabControlMain.Controls.Add(this.tabPageCharacters);
+            this.tabControlMain.Controls.Add(this.tabPageWeapons);
+            this.tabControlMain.Controls.Add(this.tabPageAbilities);
             this.tabControlMain.Controls.Add(this.tabPageMagic);
             this.tabControlMain.Controls.Add(this.tabPageGF);
             this.tabControlMain.Controls.Add(this.tabPageGFAttacks);
-            this.tabControlMain.Controls.Add(this.tabPageAbilities);
-            this.tabControlMain.Controls.Add(this.tabPageWeapons);
             this.tabControlMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlMain.Location = new System.Drawing.Point(0, 52);
             this.tabControlMain.Multiline = true;
@@ -594,6 +742,1561 @@
             this.tabControlMain.Size = new System.Drawing.Size(592, 809);
             this.tabControlMain.TabIndex = 0;
             this.tabControlMain.TabStop = false;
+            // 
+            // tabPageCharacters
+            // 
+            this.tabPageCharacters.Controls.Add(this.tabControlCharacters);
+            this.tabPageCharacters.Controls.Add(this.listBoxCharacters);
+            this.tabPageCharacters.Location = new System.Drawing.Point(4, 32);
+            this.tabPageCharacters.Name = "tabPageCharacters";
+            this.tabPageCharacters.Size = new System.Drawing.Size(584, 773);
+            this.tabPageCharacters.TabIndex = 5;
+            this.tabPageCharacters.Text = "Characters";
+            this.tabPageCharacters.UseVisualStyleBackColor = true;
+            // 
+            // tabControlCharacters
+            // 
+            this.tabControlCharacters.Controls.Add(this.tabPageCharGeneral);
+            this.tabControlCharacters.Controls.Add(this.tabPageCharStats);
+            this.tabControlCharacters.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlCharacters.Location = new System.Drawing.Point(111, 0);
+            this.tabControlCharacters.Name = "tabControlCharacters";
+            this.tabControlCharacters.SelectedIndex = 0;
+            this.tabControlCharacters.Size = new System.Drawing.Size(477, 743);
+            this.tabControlCharacters.TabIndex = 21;
+            this.tabControlCharacters.TabStop = false;
+            // 
+            // tabPageCharGeneral
+            // 
+            this.tabPageCharGeneral.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageCharGeneral.Controls.Add(this.groupBox7);
+            this.tabPageCharGeneral.Controls.Add(this.groupBoxCharGeneral);
+            this.tabPageCharGeneral.Location = new System.Drawing.Point(4, 26);
+            this.tabPageCharGeneral.Name = "tabPageCharGeneral";
+            this.tabPageCharGeneral.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCharGeneral.Size = new System.Drawing.Size(469, 713);
+            this.tabPageCharGeneral.TabIndex = 0;
+            this.tabPageCharGeneral.Text = "General";
+            // 
+            // groupBoxCharGeneral
+            // 
+            this.groupBoxCharGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxCharGeneral.Controls.Add(this.comboBoxCharGender);
+            this.groupBoxCharGeneral.Controls.Add(this.labelCharGender);
+            this.groupBoxCharGeneral.Controls.Add(this.numericUpDownCharLimitParam);
+            this.groupBoxCharGeneral.Controls.Add(this.numericUpDownCharCrisisLevelHP);
+            this.groupBoxCharGeneral.Controls.Add(this.numericUpDownCharLimitID);
+            this.groupBoxCharGeneral.Controls.Add(this.labelCharLimitParam);
+            this.groupBoxCharGeneral.Controls.Add(this.labelCharLimitID);
+            this.groupBoxCharGeneral.Controls.Add(this.labelCharCrisisLevelHP);
+            this.groupBoxCharGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
+            this.groupBoxCharGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxCharGeneral.Location = new System.Drawing.Point(0, 6);
+            this.groupBoxCharGeneral.Name = "groupBoxCharGeneral";
+            this.groupBoxCharGeneral.Size = new System.Drawing.Size(466, 167);
+            this.groupBoxCharGeneral.TabIndex = 1;
+            this.groupBoxCharGeneral.TabStop = false;
+            this.groupBoxCharGeneral.Text = "General";
+            // 
+            // comboBoxCharGender
+            // 
+            this.comboBoxCharGender.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCharGender.FormattingEnabled = true;
+            this.comboBoxCharGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBoxCharGender.Location = new System.Drawing.Point(277, 50);
+            this.comboBoxCharGender.Name = "comboBoxCharGender";
+            this.comboBoxCharGender.Size = new System.Drawing.Size(69, 25);
+            this.comboBoxCharGender.TabIndex = 6;
+            // 
+            // labelCharGender
+            // 
+            this.labelCharGender.AutoSize = true;
+            this.labelCharGender.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharGender.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharGender.Location = new System.Drawing.Point(285, 30);
+            this.labelCharGender.Name = "labelCharGender";
+            this.labelCharGender.Size = new System.Drawing.Size(52, 17);
+            this.labelCharGender.TabIndex = 89;
+            this.labelCharGender.Text = "Gender";
+            this.toolTip1.SetToolTip(this.labelCharGender, "The element of the GF attack");
+            // 
+            // numericUpDownCharLimitParam
+            // 
+            this.numericUpDownCharLimitParam.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharLimitParam.Location = new System.Drawing.Point(290, 118);
+            this.numericUpDownCharLimitParam.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharLimitParam.Name = "numericUpDownCharLimitParam";
+            this.numericUpDownCharLimitParam.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharLimitParam.TabIndex = 4;
+            // 
+            // numericUpDownCharCrisisLevelHP
+            // 
+            this.numericUpDownCharCrisisLevelHP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharCrisisLevelHP.Location = new System.Drawing.Point(129, 50);
+            this.numericUpDownCharCrisisLevelHP.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharCrisisLevelHP.Name = "numericUpDownCharCrisisLevelHP";
+            this.numericUpDownCharCrisisLevelHP.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharCrisisLevelHP.TabIndex = 3;
+            // 
+            // numericUpDownCharLimitID
+            // 
+            this.numericUpDownCharLimitID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharLimitID.Location = new System.Drawing.Point(129, 118);
+            this.numericUpDownCharLimitID.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharLimitID.Name = "numericUpDownCharLimitID";
+            this.numericUpDownCharLimitID.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharLimitID.TabIndex = 3;
+            // 
+            // labelCharLimitParam
+            // 
+            this.labelCharLimitParam.AutoSize = true;
+            this.labelCharLimitParam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharLimitParam.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharLimitParam.Location = new System.Drawing.Point(256, 98);
+            this.labelCharLimitParam.Name = "labelCharLimitParam";
+            this.labelCharLimitParam.Size = new System.Drawing.Size(118, 17);
+            this.labelCharLimitParam.TabIndex = 0;
+            this.labelCharLimitParam.Text = "Limit Break Param";
+            this.toolTip1.SetToolTip(this.labelCharLimitParam, "Used in damage calculation");
+            // 
+            // labelCharLimitID
+            // 
+            this.labelCharLimitID.AutoSize = true;
+            this.labelCharLimitID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharLimitID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharLimitID.Location = new System.Drawing.Point(108, 98);
+            this.labelCharLimitID.Name = "labelCharLimitID";
+            this.labelCharLimitID.Size = new System.Drawing.Size(92, 17);
+            this.labelCharLimitID.TabIndex = 0;
+            this.labelCharLimitID.Text = "Limit Break ID";
+            this.toolTip1.SetToolTip(this.labelCharLimitID, "Used in damage calculation");
+            // 
+            // labelCharCrisisLevelHP
+            // 
+            this.labelCharCrisisLevelHP.AutoSize = true;
+            this.labelCharCrisisLevelHP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharCrisisLevelHP.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharCrisisLevelHP.Location = new System.Drawing.Point(72, 30);
+            this.labelCharCrisisLevelHP.Name = "labelCharCrisisLevelHP";
+            this.labelCharCrisisLevelHP.Size = new System.Drawing.Size(156, 17);
+            this.labelCharCrisisLevelHP.TabIndex = 0;
+            this.labelCharCrisisLevelHP.Text = "Crisis Level HP Multiplier";
+            this.toolTip1.SetToolTip(this.labelCharCrisisLevelHP, "Decides what animation to play");
+            // 
+            // tabPageCharStats
+            // 
+            this.tabPageCharStats.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageCharStats.Controls.Add(this.groupBox5);
+            this.tabPageCharStats.Controls.Add(this.groupBox2);
+            this.tabPageCharStats.Controls.Add(this.groupBox6);
+            this.tabPageCharStats.Controls.Add(this.groupBox4);
+            this.tabPageCharStats.Controls.Add(this.groupBox1);
+            this.tabPageCharStats.Controls.Add(this.groupBox3);
+            this.tabPageCharStats.Controls.Add(this.groupBoxCharHP);
+            this.tabPageCharStats.Location = new System.Drawing.Point(4, 26);
+            this.tabPageCharStats.Name = "tabPageCharStats";
+            this.tabPageCharStats.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCharStats.Size = new System.Drawing.Size(469, 713);
+            this.tabPageCharStats.TabIndex = 1;
+            this.tabPageCharStats.Text = "Statistics";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox5.Controls.Add(this.buttonCharSPDFormula);
+            this.groupBox5.Controls.Add(this.buttonCharSPDChart);
+            this.groupBox5.Controls.Add(this.numericUpDownCharSPD4);
+            this.groupBox5.Controls.Add(this.labelCharSPDD);
+            this.groupBox5.Controls.Add(this.numericUpDownCharSPD3);
+            this.groupBox5.Controls.Add(this.labelCharSPDC);
+            this.groupBox5.Controls.Add(this.numericUpDownCharSPD2);
+            this.groupBox5.Controls.Add(this.labelCharSPDB);
+            this.groupBox5.Controls.Add(this.numericUpDownCharSPD1);
+            this.groupBox5.Controls.Add(this.labelCharSPDA);
+            this.groupBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
+            this.groupBox5.ForeColor = System.Drawing.Color.DimGray;
+            this.groupBox5.Location = new System.Drawing.Point(0, 451);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(466, 83);
+            this.groupBox5.TabIndex = 3;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "SPD";
+            // 
+            // buttonCharSPDChart
+            // 
+            this.buttonCharSPDChart.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCharSPDChart.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharSPDChart.Location = new System.Drawing.Point(388, 39);
+            this.buttonCharSPDChart.Name = "buttonCharSPDChart";
+            this.buttonCharSPDChart.Size = new System.Drawing.Size(56, 25);
+            this.buttonCharSPDChart.TabIndex = 7;
+            this.buttonCharSPDChart.Text = "Chart";
+            this.buttonCharSPDChart.UseVisualStyleBackColor = true;
+            this.buttonCharSPDChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            // 
+            // numericUpDownCharSPD4
+            // 
+            this.numericUpDownCharSPD4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSPD4.Location = new System.Drawing.Point(278, 39);
+            this.numericUpDownCharSPD4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSPD4.Name = "numericUpDownCharSPD4";
+            this.numericUpDownCharSPD4.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSPD4.TabIndex = 6;
+            // 
+            // labelCharSPDD
+            // 
+            this.labelCharSPDD.AutoSize = true;
+            this.labelCharSPDD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSPDD.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSPDD.Location = new System.Drawing.Point(293, 19);
+            this.labelCharSPDD.Name = "labelCharSPDD";
+            this.labelCharSPDD.Size = new System.Drawing.Size(17, 17);
+            this.labelCharSPDD.TabIndex = 5;
+            this.labelCharSPDD.Text = "D";
+            // 
+            // numericUpDownCharSPD3
+            // 
+            this.numericUpDownCharSPD3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSPD3.Location = new System.Drawing.Point(193, 39);
+            this.numericUpDownCharSPD3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSPD3.Name = "numericUpDownCharSPD3";
+            this.numericUpDownCharSPD3.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSPD3.TabIndex = 6;
+            // 
+            // labelCharSPDC
+            // 
+            this.labelCharSPDC.AutoSize = true;
+            this.labelCharSPDC.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSPDC.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSPDC.Location = new System.Drawing.Point(208, 19);
+            this.labelCharSPDC.Name = "labelCharSPDC";
+            this.labelCharSPDC.Size = new System.Drawing.Size(16, 17);
+            this.labelCharSPDC.TabIndex = 5;
+            this.labelCharSPDC.Text = "C";
+            // 
+            // numericUpDownCharSPD2
+            // 
+            this.numericUpDownCharSPD2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSPD2.Location = new System.Drawing.Point(108, 39);
+            this.numericUpDownCharSPD2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSPD2.Name = "numericUpDownCharSPD2";
+            this.numericUpDownCharSPD2.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSPD2.TabIndex = 6;
+            // 
+            // labelCharSPDB
+            // 
+            this.labelCharSPDB.AutoSize = true;
+            this.labelCharSPDB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSPDB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSPDB.Location = new System.Drawing.Point(123, 19);
+            this.labelCharSPDB.Name = "labelCharSPDB";
+            this.labelCharSPDB.Size = new System.Drawing.Size(16, 17);
+            this.labelCharSPDB.TabIndex = 5;
+            this.labelCharSPDB.Text = "B";
+            // 
+            // numericUpDownCharSPD1
+            // 
+            this.numericUpDownCharSPD1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSPD1.Location = new System.Drawing.Point(23, 39);
+            this.numericUpDownCharSPD1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSPD1.Name = "numericUpDownCharSPD1";
+            this.numericUpDownCharSPD1.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSPD1.TabIndex = 6;
+            // 
+            // labelCharSPDA
+            // 
+            this.labelCharSPDA.AutoSize = true;
+            this.labelCharSPDA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSPDA.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSPDA.Location = new System.Drawing.Point(38, 19);
+            this.labelCharSPDA.Name = "labelCharSPDA";
+            this.labelCharSPDA.Size = new System.Drawing.Size(17, 17);
+            this.labelCharSPDA.TabIndex = 5;
+            this.labelCharSPDA.Text = "A";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox2.Controls.Add(this.buttonCharVITFormula);
+            this.groupBox2.Controls.Add(this.buttonCharVITChart);
+            this.groupBox2.Controls.Add(this.numericUpDownCharVIT4);
+            this.groupBox2.Controls.Add(this.labelCharVITD);
+            this.groupBox2.Controls.Add(this.numericUpDownCharVIT3);
+            this.groupBox2.Controls.Add(this.labelCharVITC);
+            this.groupBox2.Controls.Add(this.numericUpDownCharVIT2);
+            this.groupBox2.Controls.Add(this.labelCharVITB);
+            this.groupBox2.Controls.Add(this.numericUpDownCharVIT1);
+            this.groupBox2.Controls.Add(this.labelCharVITA);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.ForeColor = System.Drawing.Color.Coral;
+            this.groupBox2.Location = new System.Drawing.Point(0, 184);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(466, 83);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "VIT";
+            // 
+            // buttonCharVITChart
+            // 
+            this.buttonCharVITChart.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCharVITChart.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharVITChart.Location = new System.Drawing.Point(388, 39);
+            this.buttonCharVITChart.Name = "buttonCharVITChart";
+            this.buttonCharVITChart.Size = new System.Drawing.Size(56, 25);
+            this.buttonCharVITChart.TabIndex = 7;
+            this.buttonCharVITChart.Text = "Chart";
+            this.buttonCharVITChart.UseVisualStyleBackColor = true;
+            this.buttonCharVITChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            // 
+            // numericUpDownCharVIT4
+            // 
+            this.numericUpDownCharVIT4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharVIT4.Location = new System.Drawing.Point(278, 39);
+            this.numericUpDownCharVIT4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharVIT4.Name = "numericUpDownCharVIT4";
+            this.numericUpDownCharVIT4.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharVIT4.TabIndex = 6;
+            // 
+            // labelCharVITD
+            // 
+            this.labelCharVITD.AutoSize = true;
+            this.labelCharVITD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharVITD.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharVITD.Location = new System.Drawing.Point(293, 19);
+            this.labelCharVITD.Name = "labelCharVITD";
+            this.labelCharVITD.Size = new System.Drawing.Size(17, 17);
+            this.labelCharVITD.TabIndex = 5;
+            this.labelCharVITD.Text = "D";
+            // 
+            // numericUpDownCharVIT3
+            // 
+            this.numericUpDownCharVIT3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharVIT3.Location = new System.Drawing.Point(193, 39);
+            this.numericUpDownCharVIT3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharVIT3.Name = "numericUpDownCharVIT3";
+            this.numericUpDownCharVIT3.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharVIT3.TabIndex = 6;
+            // 
+            // labelCharVITC
+            // 
+            this.labelCharVITC.AutoSize = true;
+            this.labelCharVITC.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharVITC.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharVITC.Location = new System.Drawing.Point(208, 19);
+            this.labelCharVITC.Name = "labelCharVITC";
+            this.labelCharVITC.Size = new System.Drawing.Size(16, 17);
+            this.labelCharVITC.TabIndex = 5;
+            this.labelCharVITC.Text = "C";
+            // 
+            // numericUpDownCharVIT2
+            // 
+            this.numericUpDownCharVIT2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharVIT2.Location = new System.Drawing.Point(108, 39);
+            this.numericUpDownCharVIT2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharVIT2.Name = "numericUpDownCharVIT2";
+            this.numericUpDownCharVIT2.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharVIT2.TabIndex = 6;
+            // 
+            // labelCharVITB
+            // 
+            this.labelCharVITB.AutoSize = true;
+            this.labelCharVITB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharVITB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharVITB.Location = new System.Drawing.Point(123, 19);
+            this.labelCharVITB.Name = "labelCharVITB";
+            this.labelCharVITB.Size = new System.Drawing.Size(16, 17);
+            this.labelCharVITB.TabIndex = 5;
+            this.labelCharVITB.Text = "B";
+            // 
+            // numericUpDownCharVIT1
+            // 
+            this.numericUpDownCharVIT1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharVIT1.Location = new System.Drawing.Point(23, 39);
+            this.numericUpDownCharVIT1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharVIT1.Name = "numericUpDownCharVIT1";
+            this.numericUpDownCharVIT1.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharVIT1.TabIndex = 6;
+            // 
+            // labelCharVITA
+            // 
+            this.labelCharVITA.AutoSize = true;
+            this.labelCharVITA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharVITA.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharVITA.Location = new System.Drawing.Point(38, 19);
+            this.labelCharVITA.Name = "labelCharVITA";
+            this.labelCharVITA.Size = new System.Drawing.Size(17, 17);
+            this.labelCharVITA.TabIndex = 5;
+            this.labelCharVITA.Text = "A";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox6.Controls.Add(this.buttonCharLUCKFormula);
+            this.groupBox6.Controls.Add(this.buttonCharLUCKChart);
+            this.groupBox6.Controls.Add(this.numericUpDownCharLUCK4);
+            this.groupBox6.Controls.Add(this.labelCharLUCKD);
+            this.groupBox6.Controls.Add(this.numericUpDownCharLUCK3);
+            this.groupBox6.Controls.Add(this.labelCharLUCKC);
+            this.groupBox6.Controls.Add(this.numericUpDownCharLUCK2);
+            this.groupBox6.Controls.Add(this.labelCharLUCKB);
+            this.groupBox6.Controls.Add(this.numericUpDownCharLUCK1);
+            this.groupBox6.Controls.Add(this.labelCharLUCKA);
+            this.groupBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
+            this.groupBox6.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox6.Location = new System.Drawing.Point(0, 540);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(466, 83);
+            this.groupBox6.TabIndex = 3;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "LUCK";
+            // 
+            // buttonCharLUCKChart
+            // 
+            this.buttonCharLUCKChart.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCharLUCKChart.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharLUCKChart.Location = new System.Drawing.Point(388, 39);
+            this.buttonCharLUCKChart.Name = "buttonCharLUCKChart";
+            this.buttonCharLUCKChart.Size = new System.Drawing.Size(56, 25);
+            this.buttonCharLUCKChart.TabIndex = 7;
+            this.buttonCharLUCKChart.Text = "Chart";
+            this.buttonCharLUCKChart.UseVisualStyleBackColor = true;
+            this.buttonCharLUCKChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            // 
+            // numericUpDownCharLUCK4
+            // 
+            this.numericUpDownCharLUCK4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharLUCK4.Location = new System.Drawing.Point(278, 39);
+            this.numericUpDownCharLUCK4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharLUCK4.Name = "numericUpDownCharLUCK4";
+            this.numericUpDownCharLUCK4.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharLUCK4.TabIndex = 6;
+            // 
+            // labelCharLUCKD
+            // 
+            this.labelCharLUCKD.AutoSize = true;
+            this.labelCharLUCKD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharLUCKD.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharLUCKD.Location = new System.Drawing.Point(293, 19);
+            this.labelCharLUCKD.Name = "labelCharLUCKD";
+            this.labelCharLUCKD.Size = new System.Drawing.Size(17, 17);
+            this.labelCharLUCKD.TabIndex = 5;
+            this.labelCharLUCKD.Text = "D";
+            // 
+            // numericUpDownCharLUCK3
+            // 
+            this.numericUpDownCharLUCK3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharLUCK3.Location = new System.Drawing.Point(193, 39);
+            this.numericUpDownCharLUCK3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharLUCK3.Name = "numericUpDownCharLUCK3";
+            this.numericUpDownCharLUCK3.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharLUCK3.TabIndex = 6;
+            // 
+            // labelCharLUCKC
+            // 
+            this.labelCharLUCKC.AutoSize = true;
+            this.labelCharLUCKC.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharLUCKC.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharLUCKC.Location = new System.Drawing.Point(208, 19);
+            this.labelCharLUCKC.Name = "labelCharLUCKC";
+            this.labelCharLUCKC.Size = new System.Drawing.Size(16, 17);
+            this.labelCharLUCKC.TabIndex = 5;
+            this.labelCharLUCKC.Text = "C";
+            // 
+            // numericUpDownCharLUCK2
+            // 
+            this.numericUpDownCharLUCK2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharLUCK2.Location = new System.Drawing.Point(108, 39);
+            this.numericUpDownCharLUCK2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharLUCK2.Name = "numericUpDownCharLUCK2";
+            this.numericUpDownCharLUCK2.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharLUCK2.TabIndex = 6;
+            // 
+            // labelCharLUCKB
+            // 
+            this.labelCharLUCKB.AutoSize = true;
+            this.labelCharLUCKB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharLUCKB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharLUCKB.Location = new System.Drawing.Point(123, 19);
+            this.labelCharLUCKB.Name = "labelCharLUCKB";
+            this.labelCharLUCKB.Size = new System.Drawing.Size(16, 17);
+            this.labelCharLUCKB.TabIndex = 5;
+            this.labelCharLUCKB.Text = "B";
+            // 
+            // numericUpDownCharLUCK1
+            // 
+            this.numericUpDownCharLUCK1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharLUCK1.Location = new System.Drawing.Point(23, 39);
+            this.numericUpDownCharLUCK1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharLUCK1.Name = "numericUpDownCharLUCK1";
+            this.numericUpDownCharLUCK1.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharLUCK1.TabIndex = 6;
+            // 
+            // labelCharLUCKA
+            // 
+            this.labelCharLUCKA.AutoSize = true;
+            this.labelCharLUCKA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharLUCKA.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharLUCKA.Location = new System.Drawing.Point(38, 19);
+            this.labelCharLUCKA.Name = "labelCharLUCKA";
+            this.labelCharLUCKA.Size = new System.Drawing.Size(17, 17);
+            this.labelCharLUCKA.TabIndex = 5;
+            this.labelCharLUCKA.Text = "A";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox4.Controls.Add(this.buttonCharSPRFormula);
+            this.groupBox4.Controls.Add(this.buttonCharSPRChart);
+            this.groupBox4.Controls.Add(this.numericUpDownCharSPR4);
+            this.groupBox4.Controls.Add(this.labelCharSPRD);
+            this.groupBox4.Controls.Add(this.numericUpDownCharSPR3);
+            this.groupBox4.Controls.Add(this.labelCharSPRC);
+            this.groupBox4.Controls.Add(this.numericUpDownCharSPR2);
+            this.groupBox4.Controls.Add(this.labelCharSPRB);
+            this.groupBox4.Controls.Add(this.numericUpDownCharSPR1);
+            this.groupBox4.Controls.Add(this.labelCharSPRA);
+            this.groupBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
+            this.groupBox4.ForeColor = System.Drawing.Color.MediumAquamarine;
+            this.groupBox4.Location = new System.Drawing.Point(0, 362);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(466, 83);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "SPR";
+            // 
+            // buttonCharSPRChart
+            // 
+            this.buttonCharSPRChart.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCharSPRChart.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharSPRChart.Location = new System.Drawing.Point(388, 39);
+            this.buttonCharSPRChart.Name = "buttonCharSPRChart";
+            this.buttonCharSPRChart.Size = new System.Drawing.Size(56, 25);
+            this.buttonCharSPRChart.TabIndex = 7;
+            this.buttonCharSPRChart.Text = "Chart";
+            this.buttonCharSPRChart.UseVisualStyleBackColor = true;
+            this.buttonCharSPRChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            // 
+            // numericUpDownCharSPR4
+            // 
+            this.numericUpDownCharSPR4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSPR4.Location = new System.Drawing.Point(278, 39);
+            this.numericUpDownCharSPR4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSPR4.Name = "numericUpDownCharSPR4";
+            this.numericUpDownCharSPR4.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSPR4.TabIndex = 6;
+            // 
+            // labelCharSPRD
+            // 
+            this.labelCharSPRD.AutoSize = true;
+            this.labelCharSPRD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSPRD.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSPRD.Location = new System.Drawing.Point(293, 19);
+            this.labelCharSPRD.Name = "labelCharSPRD";
+            this.labelCharSPRD.Size = new System.Drawing.Size(17, 17);
+            this.labelCharSPRD.TabIndex = 5;
+            this.labelCharSPRD.Text = "D";
+            // 
+            // numericUpDownCharSPR3
+            // 
+            this.numericUpDownCharSPR3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSPR3.Location = new System.Drawing.Point(193, 39);
+            this.numericUpDownCharSPR3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSPR3.Name = "numericUpDownCharSPR3";
+            this.numericUpDownCharSPR3.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSPR3.TabIndex = 6;
+            // 
+            // labelCharSPRC
+            // 
+            this.labelCharSPRC.AutoSize = true;
+            this.labelCharSPRC.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSPRC.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSPRC.Location = new System.Drawing.Point(208, 19);
+            this.labelCharSPRC.Name = "labelCharSPRC";
+            this.labelCharSPRC.Size = new System.Drawing.Size(16, 17);
+            this.labelCharSPRC.TabIndex = 5;
+            this.labelCharSPRC.Text = "C";
+            // 
+            // numericUpDownCharSPR2
+            // 
+            this.numericUpDownCharSPR2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSPR2.Location = new System.Drawing.Point(108, 39);
+            this.numericUpDownCharSPR2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSPR2.Name = "numericUpDownCharSPR2";
+            this.numericUpDownCharSPR2.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSPR2.TabIndex = 6;
+            // 
+            // labelCharSPRB
+            // 
+            this.labelCharSPRB.AutoSize = true;
+            this.labelCharSPRB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSPRB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSPRB.Location = new System.Drawing.Point(123, 19);
+            this.labelCharSPRB.Name = "labelCharSPRB";
+            this.labelCharSPRB.Size = new System.Drawing.Size(16, 17);
+            this.labelCharSPRB.TabIndex = 5;
+            this.labelCharSPRB.Text = "B";
+            // 
+            // numericUpDownCharSPR1
+            // 
+            this.numericUpDownCharSPR1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSPR1.Location = new System.Drawing.Point(23, 39);
+            this.numericUpDownCharSPR1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSPR1.Name = "numericUpDownCharSPR1";
+            this.numericUpDownCharSPR1.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSPR1.TabIndex = 6;
+            // 
+            // labelCharSPRA
+            // 
+            this.labelCharSPRA.AutoSize = true;
+            this.labelCharSPRA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSPRA.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSPRA.Location = new System.Drawing.Point(38, 19);
+            this.labelCharSPRA.Name = "labelCharSPRA";
+            this.labelCharSPRA.Size = new System.Drawing.Size(17, 17);
+            this.labelCharSPRA.TabIndex = 5;
+            this.labelCharSPRA.Text = "A";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.buttonCharSTRFormula);
+            this.groupBox1.Controls.Add(this.buttonCharSTRChart);
+            this.groupBox1.Controls.Add(this.numericUpDownCharSTR4);
+            this.groupBox1.Controls.Add(this.labelCharSTRD);
+            this.groupBox1.Controls.Add(this.numericUpDownCharSTR3);
+            this.groupBox1.Controls.Add(this.labelCharSTRC);
+            this.groupBox1.Controls.Add(this.numericUpDownCharSTR2);
+            this.groupBox1.Controls.Add(this.labelCharSTRB);
+            this.groupBox1.Controls.Add(this.numericUpDownCharSTR1);
+            this.groupBox1.Controls.Add(this.labelCharSTRA);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.Crimson;
+            this.groupBox1.Location = new System.Drawing.Point(0, 95);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(466, 83);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "STR";
+            // 
+            // buttonCharSTRChart
+            // 
+            this.buttonCharSTRChart.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCharSTRChart.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharSTRChart.Location = new System.Drawing.Point(388, 39);
+            this.buttonCharSTRChart.Name = "buttonCharSTRChart";
+            this.buttonCharSTRChart.Size = new System.Drawing.Size(56, 25);
+            this.buttonCharSTRChart.TabIndex = 7;
+            this.buttonCharSTRChart.Text = "Chart";
+            this.buttonCharSTRChart.UseVisualStyleBackColor = true;
+            this.buttonCharSTRChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            // 
+            // numericUpDownCharSTR4
+            // 
+            this.numericUpDownCharSTR4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSTR4.Location = new System.Drawing.Point(278, 39);
+            this.numericUpDownCharSTR4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSTR4.Name = "numericUpDownCharSTR4";
+            this.numericUpDownCharSTR4.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSTR4.TabIndex = 6;
+            // 
+            // labelCharSTRD
+            // 
+            this.labelCharSTRD.AutoSize = true;
+            this.labelCharSTRD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSTRD.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSTRD.Location = new System.Drawing.Point(293, 19);
+            this.labelCharSTRD.Name = "labelCharSTRD";
+            this.labelCharSTRD.Size = new System.Drawing.Size(17, 17);
+            this.labelCharSTRD.TabIndex = 5;
+            this.labelCharSTRD.Text = "D";
+            // 
+            // numericUpDownCharSTR3
+            // 
+            this.numericUpDownCharSTR3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSTR3.Location = new System.Drawing.Point(193, 39);
+            this.numericUpDownCharSTR3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSTR3.Name = "numericUpDownCharSTR3";
+            this.numericUpDownCharSTR3.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSTR3.TabIndex = 6;
+            // 
+            // labelCharSTRC
+            // 
+            this.labelCharSTRC.AutoSize = true;
+            this.labelCharSTRC.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSTRC.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSTRC.Location = new System.Drawing.Point(208, 19);
+            this.labelCharSTRC.Name = "labelCharSTRC";
+            this.labelCharSTRC.Size = new System.Drawing.Size(16, 17);
+            this.labelCharSTRC.TabIndex = 5;
+            this.labelCharSTRC.Text = "C";
+            // 
+            // numericUpDownCharSTR2
+            // 
+            this.numericUpDownCharSTR2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSTR2.Location = new System.Drawing.Point(108, 39);
+            this.numericUpDownCharSTR2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSTR2.Name = "numericUpDownCharSTR2";
+            this.numericUpDownCharSTR2.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSTR2.TabIndex = 6;
+            // 
+            // labelCharSTRB
+            // 
+            this.labelCharSTRB.AutoSize = true;
+            this.labelCharSTRB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSTRB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSTRB.Location = new System.Drawing.Point(123, 19);
+            this.labelCharSTRB.Name = "labelCharSTRB";
+            this.labelCharSTRB.Size = new System.Drawing.Size(16, 17);
+            this.labelCharSTRB.TabIndex = 5;
+            this.labelCharSTRB.Text = "B";
+            // 
+            // numericUpDownCharSTR1
+            // 
+            this.numericUpDownCharSTR1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharSTR1.Location = new System.Drawing.Point(23, 39);
+            this.numericUpDownCharSTR1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharSTR1.Name = "numericUpDownCharSTR1";
+            this.numericUpDownCharSTR1.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharSTR1.TabIndex = 6;
+            // 
+            // labelCharSTRA
+            // 
+            this.labelCharSTRA.AutoSize = true;
+            this.labelCharSTRA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharSTRA.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharSTRA.Location = new System.Drawing.Point(38, 19);
+            this.labelCharSTRA.Name = "labelCharSTRA";
+            this.labelCharSTRA.Size = new System.Drawing.Size(17, 17);
+            this.labelCharSTRA.TabIndex = 5;
+            this.labelCharSTRA.Text = "A";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox3.Controls.Add(this.buttonCharMAGFormula);
+            this.groupBox3.Controls.Add(this.buttonCharMAGChart);
+            this.groupBox3.Controls.Add(this.numericUpDownCharMAG4);
+            this.groupBox3.Controls.Add(this.labelCharMAGD);
+            this.groupBox3.Controls.Add(this.numericUpDownCharMAG3);
+            this.groupBox3.Controls.Add(this.labelCharMAGC);
+            this.groupBox3.Controls.Add(this.numericUpDownCharMAG2);
+            this.groupBox3.Controls.Add(this.labelCharMAGB);
+            this.groupBox3.Controls.Add(this.numericUpDownCharMAG1);
+            this.groupBox3.Controls.Add(this.labelCharMAGA);
+            this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
+            this.groupBox3.ForeColor = System.Drawing.Color.Green;
+            this.groupBox3.Location = new System.Drawing.Point(0, 273);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(466, 83);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "MAG";
+            // 
+            // buttonCharMAGChart
+            // 
+            this.buttonCharMAGChart.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCharMAGChart.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharMAGChart.Location = new System.Drawing.Point(388, 39);
+            this.buttonCharMAGChart.Name = "buttonCharMAGChart";
+            this.buttonCharMAGChart.Size = new System.Drawing.Size(56, 25);
+            this.buttonCharMAGChart.TabIndex = 7;
+            this.buttonCharMAGChart.Text = "Chart";
+            this.buttonCharMAGChart.UseVisualStyleBackColor = true;
+            this.buttonCharMAGChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            // 
+            // numericUpDownCharMAG4
+            // 
+            this.numericUpDownCharMAG4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharMAG4.Location = new System.Drawing.Point(278, 39);
+            this.numericUpDownCharMAG4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharMAG4.Name = "numericUpDownCharMAG4";
+            this.numericUpDownCharMAG4.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharMAG4.TabIndex = 6;
+            // 
+            // labelCharMAGD
+            // 
+            this.labelCharMAGD.AutoSize = true;
+            this.labelCharMAGD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharMAGD.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharMAGD.Location = new System.Drawing.Point(293, 19);
+            this.labelCharMAGD.Name = "labelCharMAGD";
+            this.labelCharMAGD.Size = new System.Drawing.Size(17, 17);
+            this.labelCharMAGD.TabIndex = 5;
+            this.labelCharMAGD.Text = "D";
+            // 
+            // numericUpDownCharMAG3
+            // 
+            this.numericUpDownCharMAG3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharMAG3.Location = new System.Drawing.Point(193, 39);
+            this.numericUpDownCharMAG3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharMAG3.Name = "numericUpDownCharMAG3";
+            this.numericUpDownCharMAG3.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharMAG3.TabIndex = 6;
+            // 
+            // labelCharMAGC
+            // 
+            this.labelCharMAGC.AutoSize = true;
+            this.labelCharMAGC.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharMAGC.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharMAGC.Location = new System.Drawing.Point(208, 19);
+            this.labelCharMAGC.Name = "labelCharMAGC";
+            this.labelCharMAGC.Size = new System.Drawing.Size(16, 17);
+            this.labelCharMAGC.TabIndex = 5;
+            this.labelCharMAGC.Text = "C";
+            // 
+            // numericUpDownCharMAG2
+            // 
+            this.numericUpDownCharMAG2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharMAG2.Location = new System.Drawing.Point(108, 39);
+            this.numericUpDownCharMAG2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharMAG2.Name = "numericUpDownCharMAG2";
+            this.numericUpDownCharMAG2.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharMAG2.TabIndex = 6;
+            // 
+            // labelCharMAGB
+            // 
+            this.labelCharMAGB.AutoSize = true;
+            this.labelCharMAGB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharMAGB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharMAGB.Location = new System.Drawing.Point(123, 19);
+            this.labelCharMAGB.Name = "labelCharMAGB";
+            this.labelCharMAGB.Size = new System.Drawing.Size(16, 17);
+            this.labelCharMAGB.TabIndex = 5;
+            this.labelCharMAGB.Text = "B";
+            // 
+            // numericUpDownCharMAG1
+            // 
+            this.numericUpDownCharMAG1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharMAG1.Location = new System.Drawing.Point(23, 39);
+            this.numericUpDownCharMAG1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharMAG1.Name = "numericUpDownCharMAG1";
+            this.numericUpDownCharMAG1.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharMAG1.TabIndex = 6;
+            // 
+            // labelCharMAGA
+            // 
+            this.labelCharMAGA.AutoSize = true;
+            this.labelCharMAGA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharMAGA.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharMAGA.Location = new System.Drawing.Point(38, 19);
+            this.labelCharMAGA.Name = "labelCharMAGA";
+            this.labelCharMAGA.Size = new System.Drawing.Size(17, 17);
+            this.labelCharMAGA.TabIndex = 5;
+            this.labelCharMAGA.Text = "A";
+            // 
+            // groupBoxCharHP
+            // 
+            this.groupBoxCharHP.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxCharHP.Controls.Add(this.buttonCharHPFormula);
+            this.groupBoxCharHP.Controls.Add(this.buttonCharHPChart);
+            this.groupBoxCharHP.Controls.Add(this.numericUpDownCharHP4);
+            this.groupBoxCharHP.Controls.Add(this.labelCharHPD);
+            this.groupBoxCharHP.Controls.Add(this.numericUpDownCharHP3);
+            this.groupBoxCharHP.Controls.Add(this.labelCharHPC);
+            this.groupBoxCharHP.Controls.Add(this.numericUpDownCharHP2);
+            this.groupBoxCharHP.Controls.Add(this.labelCharHPB);
+            this.groupBoxCharHP.Controls.Add(this.numericUpDownCharHP1);
+            this.groupBoxCharHP.Controls.Add(this.labelCharHPA);
+            this.groupBoxCharHP.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
+            this.groupBoxCharHP.ForeColor = System.Drawing.Color.Magenta;
+            this.groupBoxCharHP.Location = new System.Drawing.Point(0, 6);
+            this.groupBoxCharHP.Name = "groupBoxCharHP";
+            this.groupBoxCharHP.Size = new System.Drawing.Size(466, 83);
+            this.groupBoxCharHP.TabIndex = 3;
+            this.groupBoxCharHP.TabStop = false;
+            this.groupBoxCharHP.Text = "HP";
+            // 
+            // buttonCharHPFormula
+            // 
+            this.buttonCharHPFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            this.buttonCharHPFormula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharHPFormula.Location = new System.Drawing.Point(356, 39);
+            this.buttonCharHPFormula.Name = "buttonCharHPFormula";
+            this.buttonCharHPFormula.Size = new System.Drawing.Size(25, 25);
+            this.buttonCharHPFormula.TabIndex = 8;
+            this.buttonCharHPFormula.Text = "F";
+            this.buttonCharHPFormula.UseVisualStyleBackColor = true;
+            this.buttonCharHPFormula.Click += new System.EventHandler(this.buttonCharHPFormula_Click);
+            // 
+            // buttonCharHPChart
+            // 
+            this.buttonCharHPChart.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCharHPChart.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharHPChart.Location = new System.Drawing.Point(388, 39);
+            this.buttonCharHPChart.Name = "buttonCharHPChart";
+            this.buttonCharHPChart.Size = new System.Drawing.Size(56, 25);
+            this.buttonCharHPChart.TabIndex = 7;
+            this.buttonCharHPChart.Text = "Chart";
+            this.buttonCharHPChart.UseVisualStyleBackColor = true;
+            this.buttonCharHPChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            // 
+            // numericUpDownCharHP4
+            // 
+            this.numericUpDownCharHP4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharHP4.Location = new System.Drawing.Point(278, 39);
+            this.numericUpDownCharHP4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharHP4.Name = "numericUpDownCharHP4";
+            this.numericUpDownCharHP4.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharHP4.TabIndex = 6;
+            // 
+            // labelCharHPD
+            // 
+            this.labelCharHPD.AutoSize = true;
+            this.labelCharHPD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharHPD.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharHPD.Location = new System.Drawing.Point(293, 19);
+            this.labelCharHPD.Name = "labelCharHPD";
+            this.labelCharHPD.Size = new System.Drawing.Size(17, 17);
+            this.labelCharHPD.TabIndex = 5;
+            this.labelCharHPD.Text = "D";
+            // 
+            // numericUpDownCharHP3
+            // 
+            this.numericUpDownCharHP3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharHP3.Location = new System.Drawing.Point(193, 39);
+            this.numericUpDownCharHP3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharHP3.Name = "numericUpDownCharHP3";
+            this.numericUpDownCharHP3.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharHP3.TabIndex = 6;
+            // 
+            // labelCharHPC
+            // 
+            this.labelCharHPC.AutoSize = true;
+            this.labelCharHPC.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharHPC.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharHPC.Location = new System.Drawing.Point(208, 19);
+            this.labelCharHPC.Name = "labelCharHPC";
+            this.labelCharHPC.Size = new System.Drawing.Size(16, 17);
+            this.labelCharHPC.TabIndex = 5;
+            this.labelCharHPC.Text = "C";
+            // 
+            // numericUpDownCharHP2
+            // 
+            this.numericUpDownCharHP2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharHP2.Location = new System.Drawing.Point(108, 39);
+            this.numericUpDownCharHP2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharHP2.Name = "numericUpDownCharHP2";
+            this.numericUpDownCharHP2.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharHP2.TabIndex = 6;
+            // 
+            // labelCharHPB
+            // 
+            this.labelCharHPB.AutoSize = true;
+            this.labelCharHPB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharHPB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharHPB.Location = new System.Drawing.Point(123, 19);
+            this.labelCharHPB.Name = "labelCharHPB";
+            this.labelCharHPB.Size = new System.Drawing.Size(16, 17);
+            this.labelCharHPB.TabIndex = 5;
+            this.labelCharHPB.Text = "B";
+            // 
+            // numericUpDownCharHP1
+            // 
+            this.numericUpDownCharHP1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharHP1.Location = new System.Drawing.Point(23, 39);
+            this.numericUpDownCharHP1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharHP1.Name = "numericUpDownCharHP1";
+            this.numericUpDownCharHP1.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharHP1.TabIndex = 6;
+            // 
+            // labelCharHPA
+            // 
+            this.labelCharHPA.AutoSize = true;
+            this.labelCharHPA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharHPA.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharHPA.Location = new System.Drawing.Point(38, 19);
+            this.labelCharHPA.Name = "labelCharHPA";
+            this.labelCharHPA.Size = new System.Drawing.Size(17, 17);
+            this.labelCharHPA.TabIndex = 5;
+            this.labelCharHPA.Text = "A";
+            // 
+            // listBoxCharacters
+            // 
+            this.listBoxCharacters.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxCharacters.FormattingEnabled = true;
+            this.listBoxCharacters.ItemHeight = 17;
+            this.listBoxCharacters.Items.AddRange(new object[] {
+            "Squall",
+            "Zell",
+            "Irvine",
+            "Quistis",
+            "Rinoa",
+            "Selphie",
+            "Seifer",
+            "Edea",
+            "Laguna",
+            "Kiros",
+            "Ward"});
+            this.listBoxCharacters.Location = new System.Drawing.Point(0, 0);
+            this.listBoxCharacters.Name = "listBoxCharacters";
+            this.listBoxCharacters.ScrollAlwaysVisible = true;
+            this.listBoxCharacters.Size = new System.Drawing.Size(109, 735);
+            this.listBoxCharacters.TabIndex = 20;
+            this.listBoxCharacters.SelectedIndexChanged += new System.EventHandler(this.listBoxCharacters_SelectedIndexChanged);
+            // 
+            // tabPageWeapons
+            // 
+            this.tabPageWeapons.Controls.Add(this.groupBoxWeaponsGeneral);
+            this.tabPageWeapons.Controls.Add(this.listBoxWeapons);
+            this.tabPageWeapons.Location = new System.Drawing.Point(4, 32);
+            this.tabPageWeapons.Name = "tabPageWeapons";
+            this.tabPageWeapons.Size = new System.Drawing.Size(584, 773);
+            this.tabPageWeapons.TabIndex = 4;
+            this.tabPageWeapons.Text = "Weapons";
+            this.tabPageWeapons.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxWeaponsGeneral
+            // 
+            this.groupBoxWeaponsGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxWeaponsGeneral.Controls.Add(this.checkBoxWeaponsRenzoFinLion);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.checkBoxWeaponsRenzoFinBlasting);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.checkBoxWeaponsRenzoFinFated);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.checkBoxWeaponsRenzoFinRough);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.comboBoxWeaponsCharacterID);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsHITBonus);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsSTRBonus);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsTier);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsAttackPower);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsHITBonus);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsTier);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsSTRBonus);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsAttackPower);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsRenzoFin);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsCharacterID);
+            this.groupBoxWeaponsGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
+            this.groupBoxWeaponsGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxWeaponsGeneral.Location = new System.Drawing.Point(112, 6);
+            this.groupBoxWeaponsGeneral.Name = "groupBoxWeaponsGeneral";
+            this.groupBoxWeaponsGeneral.Size = new System.Drawing.Size(466, 231);
+            this.groupBoxWeaponsGeneral.TabIndex = 4;
+            this.groupBoxWeaponsGeneral.TabStop = false;
+            this.groupBoxWeaponsGeneral.Text = "General";
+            // 
+            // checkBoxWeaponsRenzoFinLion
+            // 
+            this.checkBoxWeaponsRenzoFinLion.AutoSize = true;
+            this.checkBoxWeaponsRenzoFinLion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxWeaponsRenzoFinLion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxWeaponsRenzoFinLion.Location = new System.Drawing.Point(355, 190);
+            this.checkBoxWeaponsRenzoFinLion.Name = "checkBoxWeaponsRenzoFinLion";
+            this.checkBoxWeaponsRenzoFinLion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxWeaponsRenzoFinLion.TabIndex = 91;
+            this.checkBoxWeaponsRenzoFinLion.Text = "Lion Heart";
+            this.checkBoxWeaponsRenzoFinLion.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxWeaponsRenzoFinBlasting
+            // 
+            this.checkBoxWeaponsRenzoFinBlasting.AutoSize = true;
+            this.checkBoxWeaponsRenzoFinBlasting.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxWeaponsRenzoFinBlasting.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxWeaponsRenzoFinBlasting.Location = new System.Drawing.Point(243, 190);
+            this.checkBoxWeaponsRenzoFinBlasting.Name = "checkBoxWeaponsRenzoFinBlasting";
+            this.checkBoxWeaponsRenzoFinBlasting.Size = new System.Drawing.Size(98, 19);
+            this.checkBoxWeaponsRenzoFinBlasting.TabIndex = 91;
+            this.checkBoxWeaponsRenzoFinBlasting.Text = "Blasting Zone";
+            this.checkBoxWeaponsRenzoFinBlasting.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxWeaponsRenzoFinFated
+            // 
+            this.checkBoxWeaponsRenzoFinFated.AutoSize = true;
+            this.checkBoxWeaponsRenzoFinFated.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxWeaponsRenzoFinFated.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxWeaponsRenzoFinFated.Location = new System.Drawing.Point(141, 190);
+            this.checkBoxWeaponsRenzoFinFated.Name = "checkBoxWeaponsRenzoFinFated";
+            this.checkBoxWeaponsRenzoFinFated.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxWeaponsRenzoFinFated.TabIndex = 91;
+            this.checkBoxWeaponsRenzoFinFated.Text = "Fated Circle";
+            this.checkBoxWeaponsRenzoFinFated.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxWeaponsRenzoFinRough
+            // 
+            this.checkBoxWeaponsRenzoFinRough.AutoSize = true;
+            this.checkBoxWeaponsRenzoFinRough.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxWeaponsRenzoFinRough.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxWeaponsRenzoFinRough.Location = new System.Drawing.Point(30, 190);
+            this.checkBoxWeaponsRenzoFinRough.Name = "checkBoxWeaponsRenzoFinRough";
+            this.checkBoxWeaponsRenzoFinRough.Size = new System.Drawing.Size(97, 19);
+            this.checkBoxWeaponsRenzoFinRough.TabIndex = 91;
+            this.checkBoxWeaponsRenzoFinRough.Text = "Rough Divide";
+            this.checkBoxWeaponsRenzoFinRough.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxWeaponsCharacterID
+            // 
+            this.comboBoxWeaponsCharacterID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxWeaponsCharacterID.FormattingEnabled = true;
+            this.comboBoxWeaponsCharacterID.Items.AddRange(new object[] {
+            "Squall",
+            "Zell",
+            "Irvine",
+            "Quistis",
+            "Rinoa",
+            "Selphie",
+            "Seifer",
+            "Edea",
+            "Laguna",
+            "Kiros",
+            "Ward"});
+            this.comboBoxWeaponsCharacterID.Location = new System.Drawing.Point(116, 46);
+            this.comboBoxWeaponsCharacterID.Name = "comboBoxWeaponsCharacterID";
+            this.comboBoxWeaponsCharacterID.Size = new System.Drawing.Size(130, 25);
+            this.comboBoxWeaponsCharacterID.TabIndex = 6;
+            // 
+            // labelWeaponsHITBonus
+            // 
+            this.labelWeaponsHITBonus.AutoSize = true;
+            this.labelWeaponsHITBonus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelWeaponsHITBonus.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsHITBonus.Location = new System.Drawing.Point(326, 97);
+            this.labelWeaponsHITBonus.Name = "labelWeaponsHITBonus";
+            this.labelWeaponsHITBonus.Size = new System.Drawing.Size(71, 17);
+            this.labelWeaponsHITBonus.TabIndex = 89;
+            this.labelWeaponsHITBonus.Text = "HIT Bonus";
+            this.toolTip1.SetToolTip(this.labelWeaponsHITBonus, "Character HIT Bonus");
+            // 
+            // numericUpDownWeaponsSTRBonus
+            // 
+            this.numericUpDownWeaponsSTRBonus.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownWeaponsSTRBonus.Location = new System.Drawing.Point(210, 117);
+            this.numericUpDownWeaponsSTRBonus.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownWeaponsSTRBonus.Name = "numericUpDownWeaponsSTRBonus";
+            this.numericUpDownWeaponsSTRBonus.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownWeaponsSTRBonus.TabIndex = 5;
+            // 
+            // numericUpDownWeaponsTier
+            // 
+            this.numericUpDownWeaponsTier.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownWeaponsTier.Location = new System.Drawing.Point(303, 46);
+            this.numericUpDownWeaponsTier.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownWeaponsTier.Name = "numericUpDownWeaponsTier";
+            this.numericUpDownWeaponsTier.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownWeaponsTier.TabIndex = 4;
+            // 
+            // numericUpDownWeaponsAttackPower
+            // 
+            this.numericUpDownWeaponsAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownWeaponsAttackPower.Location = new System.Drawing.Point(82, 117);
+            this.numericUpDownWeaponsAttackPower.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownWeaponsAttackPower.Name = "numericUpDownWeaponsAttackPower";
+            this.numericUpDownWeaponsAttackPower.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownWeaponsAttackPower.TabIndex = 4;
+            // 
+            // numericUpDownWeaponsHITBonus
+            // 
+            this.numericUpDownWeaponsHITBonus.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownWeaponsHITBonus.Location = new System.Drawing.Point(338, 117);
+            this.numericUpDownWeaponsHITBonus.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownWeaponsHITBonus.Name = "numericUpDownWeaponsHITBonus";
+            this.numericUpDownWeaponsHITBonus.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownWeaponsHITBonus.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.numericUpDownWeaponsHITBonus, "Default: 0");
+            // 
+            // labelWeaponsTier
+            // 
+            this.labelWeaponsTier.AutoSize = true;
+            this.labelWeaponsTier.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelWeaponsTier.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsTier.Location = new System.Drawing.Point(311, 26);
+            this.labelWeaponsTier.Name = "labelWeaponsTier";
+            this.labelWeaponsTier.Size = new System.Drawing.Size(30, 17);
+            this.labelWeaponsTier.TabIndex = 0;
+            this.labelWeaponsTier.Text = "Tier";
+            // 
+            // labelWeaponsSTRBonus
+            // 
+            this.labelWeaponsSTRBonus.AutoSize = true;
+            this.labelWeaponsSTRBonus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelWeaponsSTRBonus.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsSTRBonus.Location = new System.Drawing.Point(199, 97);
+            this.labelWeaponsSTRBonus.Name = "labelWeaponsSTRBonus";
+            this.labelWeaponsSTRBonus.Size = new System.Drawing.Size(72, 17);
+            this.labelWeaponsSTRBonus.TabIndex = 0;
+            this.labelWeaponsSTRBonus.Text = "STR Bonus";
+            this.toolTip1.SetToolTip(this.labelWeaponsSTRBonus, "Character STR bonus");
+            // 
+            // labelWeaponsAttackPower
+            // 
+            this.labelWeaponsAttackPower.AutoSize = true;
+            this.labelWeaponsAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelWeaponsAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsAttackPower.Location = new System.Drawing.Point(63, 97);
+            this.labelWeaponsAttackPower.Name = "labelWeaponsAttackPower";
+            this.labelWeaponsAttackPower.Size = new System.Drawing.Size(89, 17);
+            this.labelWeaponsAttackPower.TabIndex = 0;
+            this.labelWeaponsAttackPower.Text = "Attack Power";
+            this.toolTip1.SetToolTip(this.labelWeaponsAttackPower, "Attack power of the weapon");
+            // 
+            // labelWeaponsRenzoFin
+            // 
+            this.labelWeaponsRenzoFin.AutoSize = true;
+            this.labelWeaponsRenzoFin.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelWeaponsRenzoFin.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsRenzoFin.Location = new System.Drawing.Point(164, 168);
+            this.labelWeaponsRenzoFin.Name = "labelWeaponsRenzoFin";
+            this.labelWeaponsRenzoFin.Size = new System.Drawing.Size(139, 17);
+            this.labelWeaponsRenzoFin.TabIndex = 0;
+            this.labelWeaponsRenzoFin.Text = "Renzokuken Finishers";
+            this.toolTip1.SetToolTip(this.labelWeaponsRenzoFin, "If and what renzokuken finisher the weapon teaches (use only with Squall Weapons)" +
+        "");
+            // 
+            // labelWeaponsCharacterID
+            // 
+            this.labelWeaponsCharacterID.AutoSize = true;
+            this.labelWeaponsCharacterID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelWeaponsCharacterID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsCharacterID.Location = new System.Drawing.Point(148, 26);
+            this.labelWeaponsCharacterID.Name = "labelWeaponsCharacterID";
+            this.labelWeaponsCharacterID.Size = new System.Drawing.Size(66, 17);
+            this.labelWeaponsCharacterID.TabIndex = 0;
+            this.labelWeaponsCharacterID.Text = "Character";
+            this.toolTip1.SetToolTip(this.labelWeaponsCharacterID, "Character ID");
+            // 
+            // listBoxWeapons
+            // 
+            this.listBoxWeapons.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxWeapons.FormattingEnabled = true;
+            this.listBoxWeapons.ItemHeight = 15;
+            this.listBoxWeapons.Items.AddRange(new object[] {
+            "Revolver",
+            "Shear Trigger",
+            "Cutting Trigger",
+            "Flame Saber",
+            "Twin Lance",
+            "Punishment",
+            "Lion Heart",
+            "Metal Knuckle",
+            "Maverick",
+            "Gauntlet",
+            "Ehrgeiz",
+            "Valiant",
+            "Ulysses",
+            "Bismark",
+            "Exeter",
+            "Chain Whip",
+            "Slaying Tail",
+            "Red Scorpion",
+            "Save the Queen",
+            "Pinwheel",
+            "Valkyrie",
+            "Rising Sun",
+            "Cardinal",
+            "Shooting Star",
+            "Flail",
+            "Morning Star",
+            "Crescent Wish",
+            "Strange Vision",
+            "Hyperion",
+            "None",
+            "Machine Gun",
+            "Katal",
+            "Harpoon"});
+            this.listBoxWeapons.Location = new System.Drawing.Point(0, 0);
+            this.listBoxWeapons.Name = "listBoxWeapons";
+            this.listBoxWeapons.ScrollAlwaysVisible = true;
+            this.listBoxWeapons.Size = new System.Drawing.Size(109, 499);
+            this.listBoxWeapons.TabIndex = 5;
+            this.listBoxWeapons.SelectedIndexChanged += new System.EventHandler(this.listBoxWeapons_SelectedIndexChanged);
+            // 
+            // tabPageAbilities
+            // 
+            this.tabPageAbilities.Controls.Add(this.tabControlAbilities);
+            this.tabPageAbilities.Controls.Add(this.listBoxStatsIncrement);
+            this.tabPageAbilities.Location = new System.Drawing.Point(4, 32);
+            this.tabPageAbilities.Name = "tabPageAbilities";
+            this.tabPageAbilities.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAbilities.Size = new System.Drawing.Size(584, 773);
+            this.tabPageAbilities.TabIndex = 2;
+            this.tabPageAbilities.Text = "Abilities";
+            this.tabPageAbilities.UseVisualStyleBackColor = true;
+            // 
+            // tabControlAbilities
+            // 
+            this.tabControlAbilities.Controls.Add(this.tabPageStatsIncrement);
+            this.tabControlAbilities.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlAbilities.Location = new System.Drawing.Point(111, 0);
+            this.tabControlAbilities.Multiline = true;
+            this.tabControlAbilities.Name = "tabControlAbilities";
+            this.tabControlAbilities.SelectedIndex = 0;
+            this.tabControlAbilities.Size = new System.Drawing.Size(477, 736);
+            this.tabControlAbilities.TabIndex = 2;
+            this.tabControlAbilities.TabStop = false;
+            // 
+            // tabPageStatsIncrement
+            // 
+            this.tabPageStatsIncrement.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageStatsIncrement.Controls.Add(this.groupBoxStatsIncrement);
+            this.tabPageStatsIncrement.Location = new System.Drawing.Point(4, 26);
+            this.tabPageStatsIncrement.Name = "tabPageStatsIncrement";
+            this.tabPageStatsIncrement.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageStatsIncrement.Size = new System.Drawing.Size(469, 706);
+            this.tabPageStatsIncrement.TabIndex = 0;
+            this.tabPageStatsIncrement.Text = "Stats Increment";
+            // 
+            // groupBoxStatsIncrement
+            // 
+            this.groupBoxStatsIncrement.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementValueTrackBar);
+            this.groupBoxStatsIncrement.Controls.Add(this.trackBarStatsIncrementValue);
+            this.groupBoxStatsIncrement.Controls.Add(this.textBoxStatsIncrementDescription);
+            this.groupBoxStatsIncrement.Controls.Add(this.textBoxStatsIncrementName);
+            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementDescription);
+            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementValue);
+            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementName);
+            this.groupBoxStatsIncrement.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxStatsIncrement.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxStatsIncrement.Location = new System.Drawing.Point(0, 6);
+            this.groupBoxStatsIncrement.Name = "groupBoxStatsIncrement";
+            this.groupBoxStatsIncrement.Size = new System.Drawing.Size(466, 285);
+            this.groupBoxStatsIncrement.TabIndex = 2;
+            this.groupBoxStatsIncrement.TabStop = false;
+            this.groupBoxStatsIncrement.Text = "General";
+            // 
+            // labelStatsIncrementValueTrackBar
+            // 
+            this.labelStatsIncrementValueTrackBar.AutoSize = true;
+            this.labelStatsIncrementValueTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatsIncrementValueTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatsIncrementValueTrackBar.Location = new System.Drawing.Point(219, 232);
+            this.labelStatsIncrementValueTrackBar.Name = "labelStatsIncrementValueTrackBar";
+            this.labelStatsIncrementValueTrackBar.Size = new System.Drawing.Size(28, 19);
+            this.labelStatsIncrementValueTrackBar.TabIndex = 28;
+            this.labelStatsIncrementValueTrackBar.Text = "0%";
+            this.labelStatsIncrementValueTrackBar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // trackBarStatsIncrementValue
+            // 
+            this.trackBarStatsIncrementValue.LargeChange = 10;
+            this.trackBarStatsIncrementValue.Location = new System.Drawing.Point(17, 205);
+            this.trackBarStatsIncrementValue.Maximum = 255;
+            this.trackBarStatsIncrementValue.Name = "trackBarStatsIncrementValue";
+            this.trackBarStatsIncrementValue.Size = new System.Drawing.Size(432, 45);
+            this.trackBarStatsIncrementValue.TabIndex = 27;
+            this.trackBarStatsIncrementValue.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.trackBarStatsIncrementValue.Scroll += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
+            this.trackBarStatsIncrementValue.ValueChanged += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
+            // 
+            // textBoxStatsIncrementDescription
+            // 
+            this.textBoxStatsIncrementDescription.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStatsIncrementDescription.Location = new System.Drawing.Point(111, 120);
+            this.textBoxStatsIncrementDescription.Name = "textBoxStatsIncrementDescription";
+            this.textBoxStatsIncrementDescription.Size = new System.Drawing.Size(245, 25);
+            this.textBoxStatsIncrementDescription.TabIndex = 2;
+            // 
+            // textBoxStatsIncrementName
+            // 
+            this.textBoxStatsIncrementName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxStatsIncrementName.Location = new System.Drawing.Point(145, 51);
+            this.textBoxStatsIncrementName.Name = "textBoxStatsIncrementName";
+            this.textBoxStatsIncrementName.Size = new System.Drawing.Size(176, 25);
+            this.textBoxStatsIncrementName.TabIndex = 2;
+            // 
+            // labelStatsIncrementDescription
+            // 
+            this.labelStatsIncrementDescription.AutoSize = true;
+            this.labelStatsIncrementDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelStatsIncrementDescription.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatsIncrementDescription.Location = new System.Drawing.Point(195, 100);
+            this.labelStatsIncrementDescription.Name = "labelStatsIncrementDescription";
+            this.labelStatsIncrementDescription.Size = new System.Drawing.Size(76, 17);
+            this.labelStatsIncrementDescription.TabIndex = 1;
+            this.labelStatsIncrementDescription.Text = "Description";
+            // 
+            // labelStatsIncrementValue
+            // 
+            this.labelStatsIncrementValue.AutoSize = true;
+            this.labelStatsIncrementValue.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelStatsIncrementValue.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatsIncrementValue.Location = new System.Drawing.Point(170, 185);
+            this.labelStatsIncrementValue.Name = "labelStatsIncrementValue";
+            this.labelStatsIncrementValue.Size = new System.Drawing.Size(126, 17);
+            this.labelStatsIncrementValue.TabIndex = 1;
+            this.labelStatsIncrementValue.Text = "Increasement Value";
+            // 
+            // labelStatsIncrementName
+            // 
+            this.labelStatsIncrementName.AutoSize = true;
+            this.labelStatsIncrementName.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelStatsIncrementName.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatsIncrementName.Location = new System.Drawing.Point(211, 31);
+            this.labelStatsIncrementName.Name = "labelStatsIncrementName";
+            this.labelStatsIncrementName.Size = new System.Drawing.Size(44, 17);
+            this.labelStatsIncrementName.TabIndex = 1;
+            this.labelStatsIncrementName.Text = "Name";
+            this.toolTip1.SetToolTip(this.labelStatsIncrementName, "Used in damage calculation");
+            // 
+            // listBoxStatsIncrement
+            // 
+            this.listBoxStatsIncrement.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxStatsIncrement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxStatsIncrement.FormattingEnabled = true;
+            this.listBoxStatsIncrement.ItemHeight = 17;
+            this.listBoxStatsIncrement.Items.AddRange(new object[] {
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "STR+20%",
+            "STR+40%",
+            "STR+60%",
+            "VIT+20%",
+            "VIT+40%",
+            "VIT+60%",
+            "MAG+20%",
+            "MAG+40%",
+            "MAG+60%",
+            "SPR+20%",
+            "SPR+40%",
+            "SPR+60%",
+            "SPD+20%",
+            "SPD+40%",
+            "EVA+30%",
+            "LUCK+50%"});
+            this.listBoxStatsIncrement.Location = new System.Drawing.Point(0, 0);
+            this.listBoxStatsIncrement.Name = "listBoxStatsIncrement";
+            this.listBoxStatsIncrement.ScrollAlwaysVisible = true;
+            this.listBoxStatsIncrement.Size = new System.Drawing.Size(109, 327);
+            this.listBoxStatsIncrement.TabIndex = 3;
             // 
             // tabPageMagic
             // 
@@ -8758,418 +10461,6 @@
             this.listBoxGFAttacks.TabIndex = 4;
             this.listBoxGFAttacks.SelectedIndexChanged += new System.EventHandler(this.listBoxGFAttacks_SelectedIndexChanged);
             // 
-            // tabPageAbilities
-            // 
-            this.tabPageAbilities.Controls.Add(this.tabControl1);
-            this.tabPageAbilities.Controls.Add(this.listBoxStatsIncrement);
-            this.tabPageAbilities.Location = new System.Drawing.Point(4, 32);
-            this.tabPageAbilities.Name = "tabPageAbilities";
-            this.tabPageAbilities.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAbilities.Size = new System.Drawing.Size(584, 773);
-            this.tabPageAbilities.TabIndex = 2;
-            this.tabPageAbilities.Text = "Abilities";
-            this.tabPageAbilities.UseVisualStyleBackColor = true;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPageStatsIncrement);
-            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(111, 0);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(477, 736);
-            this.tabControl1.TabIndex = 2;
-            this.tabControl1.TabStop = false;
-            // 
-            // tabPageStatsIncrement
-            // 
-            this.tabPageStatsIncrement.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageStatsIncrement.Controls.Add(this.groupBoxStatsIncrement);
-            this.tabPageStatsIncrement.Location = new System.Drawing.Point(4, 26);
-            this.tabPageStatsIncrement.Name = "tabPageStatsIncrement";
-            this.tabPageStatsIncrement.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageStatsIncrement.Size = new System.Drawing.Size(469, 706);
-            this.tabPageStatsIncrement.TabIndex = 0;
-            this.tabPageStatsIncrement.Text = "Stats Increment";
-            // 
-            // groupBoxStatsIncrement
-            // 
-            this.groupBoxStatsIncrement.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementValueTrackBar);
-            this.groupBoxStatsIncrement.Controls.Add(this.trackBarStatsIncrementValue);
-            this.groupBoxStatsIncrement.Controls.Add(this.textBoxStatsIncrementDescription);
-            this.groupBoxStatsIncrement.Controls.Add(this.textBoxStatsIncrementName);
-            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementDescription);
-            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementValue);
-            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementName);
-            this.groupBoxStatsIncrement.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxStatsIncrement.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBoxStatsIncrement.Location = new System.Drawing.Point(0, 6);
-            this.groupBoxStatsIncrement.Name = "groupBoxStatsIncrement";
-            this.groupBoxStatsIncrement.Size = new System.Drawing.Size(466, 285);
-            this.groupBoxStatsIncrement.TabIndex = 2;
-            this.groupBoxStatsIncrement.TabStop = false;
-            this.groupBoxStatsIncrement.Text = "General";
-            // 
-            // labelStatsIncrementValueTrackBar
-            // 
-            this.labelStatsIncrementValueTrackBar.AutoSize = true;
-            this.labelStatsIncrementValueTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatsIncrementValueTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatsIncrementValueTrackBar.Location = new System.Drawing.Point(219, 232);
-            this.labelStatsIncrementValueTrackBar.Name = "labelStatsIncrementValueTrackBar";
-            this.labelStatsIncrementValueTrackBar.Size = new System.Drawing.Size(28, 19);
-            this.labelStatsIncrementValueTrackBar.TabIndex = 28;
-            this.labelStatsIncrementValueTrackBar.Text = "0%";
-            this.labelStatsIncrementValueTrackBar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // trackBarStatsIncrementValue
-            // 
-            this.trackBarStatsIncrementValue.LargeChange = 10;
-            this.trackBarStatsIncrementValue.Location = new System.Drawing.Point(17, 205);
-            this.trackBarStatsIncrementValue.Maximum = 255;
-            this.trackBarStatsIncrementValue.Name = "trackBarStatsIncrementValue";
-            this.trackBarStatsIncrementValue.Size = new System.Drawing.Size(432, 45);
-            this.trackBarStatsIncrementValue.TabIndex = 27;
-            this.trackBarStatsIncrementValue.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.trackBarStatsIncrementValue.Scroll += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
-            this.trackBarStatsIncrementValue.ValueChanged += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
-            // 
-            // textBoxStatsIncrementDescription
-            // 
-            this.textBoxStatsIncrementDescription.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStatsIncrementDescription.Location = new System.Drawing.Point(111, 120);
-            this.textBoxStatsIncrementDescription.Name = "textBoxStatsIncrementDescription";
-            this.textBoxStatsIncrementDescription.Size = new System.Drawing.Size(245, 25);
-            this.textBoxStatsIncrementDescription.TabIndex = 2;
-            // 
-            // textBoxStatsIncrementName
-            // 
-            this.textBoxStatsIncrementName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStatsIncrementName.Location = new System.Drawing.Point(145, 51);
-            this.textBoxStatsIncrementName.Name = "textBoxStatsIncrementName";
-            this.textBoxStatsIncrementName.Size = new System.Drawing.Size(176, 25);
-            this.textBoxStatsIncrementName.TabIndex = 2;
-            // 
-            // labelStatsIncrementDescription
-            // 
-            this.labelStatsIncrementDescription.AutoSize = true;
-            this.labelStatsIncrementDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelStatsIncrementDescription.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatsIncrementDescription.Location = new System.Drawing.Point(195, 100);
-            this.labelStatsIncrementDescription.Name = "labelStatsIncrementDescription";
-            this.labelStatsIncrementDescription.Size = new System.Drawing.Size(76, 17);
-            this.labelStatsIncrementDescription.TabIndex = 1;
-            this.labelStatsIncrementDescription.Text = "Description";
-            // 
-            // labelStatsIncrementValue
-            // 
-            this.labelStatsIncrementValue.AutoSize = true;
-            this.labelStatsIncrementValue.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelStatsIncrementValue.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatsIncrementValue.Location = new System.Drawing.Point(170, 185);
-            this.labelStatsIncrementValue.Name = "labelStatsIncrementValue";
-            this.labelStatsIncrementValue.Size = new System.Drawing.Size(126, 17);
-            this.labelStatsIncrementValue.TabIndex = 1;
-            this.labelStatsIncrementValue.Text = "Increasement Value";
-            // 
-            // labelStatsIncrementName
-            // 
-            this.labelStatsIncrementName.AutoSize = true;
-            this.labelStatsIncrementName.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelStatsIncrementName.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatsIncrementName.Location = new System.Drawing.Point(211, 31);
-            this.labelStatsIncrementName.Name = "labelStatsIncrementName";
-            this.labelStatsIncrementName.Size = new System.Drawing.Size(44, 17);
-            this.labelStatsIncrementName.TabIndex = 1;
-            this.labelStatsIncrementName.Text = "Name";
-            this.toolTip1.SetToolTip(this.labelStatsIncrementName, "Used in damage calculation");
-            // 
-            // listBoxStatsIncrement
-            // 
-            this.listBoxStatsIncrement.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxStatsIncrement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxStatsIncrement.FormattingEnabled = true;
-            this.listBoxStatsIncrement.ItemHeight = 17;
-            this.listBoxStatsIncrement.Items.AddRange(new object[] {
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "STR+20%",
-            "STR+40%",
-            "STR+60%",
-            "VIT+20%",
-            "VIT+40%",
-            "VIT+60%",
-            "MAG+20%",
-            "MAG+40%",
-            "MAG+60%",
-            "SPR+20%",
-            "SPR+40%",
-            "SPR+60%",
-            "SPD+20%",
-            "SPD+40%",
-            "EVA+30%",
-            "LUCK+50%"});
-            this.listBoxStatsIncrement.Location = new System.Drawing.Point(0, 0);
-            this.listBoxStatsIncrement.Name = "listBoxStatsIncrement";
-            this.listBoxStatsIncrement.ScrollAlwaysVisible = true;
-            this.listBoxStatsIncrement.Size = new System.Drawing.Size(109, 327);
-            this.listBoxStatsIncrement.TabIndex = 3;
-            // 
-            // tabPageWeapons
-            // 
-            this.tabPageWeapons.Controls.Add(this.groupBoxWeaponsGeneral);
-            this.tabPageWeapons.Controls.Add(this.listBoxWeapons);
-            this.tabPageWeapons.Location = new System.Drawing.Point(4, 32);
-            this.tabPageWeapons.Name = "tabPageWeapons";
-            this.tabPageWeapons.Size = new System.Drawing.Size(584, 773);
-            this.tabPageWeapons.TabIndex = 4;
-            this.tabPageWeapons.Text = "Weapons";
-            this.tabPageWeapons.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxWeaponsGeneral
-            // 
-            this.groupBoxWeaponsGeneral.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxWeaponsGeneral.Controls.Add(this.checkBoxWeaponsRenzoFinLion);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.checkBoxWeaponsRenzoFinBlasting);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.checkBoxWeaponsRenzoFinFated);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.checkBoxWeaponsRenzoFinRough);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.comboBoxWeaponsCharacterID);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsHITBonus);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsSTRBonus);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsAttackPower);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsHITBonus);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsSTRBonus);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsAttackPower);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsRenzoFin);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsCharacterID);
-            this.groupBoxWeaponsGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
-            this.groupBoxWeaponsGeneral.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBoxWeaponsGeneral.Location = new System.Drawing.Point(112, 6);
-            this.groupBoxWeaponsGeneral.Name = "groupBoxWeaponsGeneral";
-            this.groupBoxWeaponsGeneral.Size = new System.Drawing.Size(466, 231);
-            this.groupBoxWeaponsGeneral.TabIndex = 4;
-            this.groupBoxWeaponsGeneral.TabStop = false;
-            this.groupBoxWeaponsGeneral.Text = "General";
-            // 
-            // checkBoxWeaponsRenzoFinLion
-            // 
-            this.checkBoxWeaponsRenzoFinLion.AutoSize = true;
-            this.checkBoxWeaponsRenzoFinLion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxWeaponsRenzoFinLion.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxWeaponsRenzoFinLion.Location = new System.Drawing.Point(355, 190);
-            this.checkBoxWeaponsRenzoFinLion.Name = "checkBoxWeaponsRenzoFinLion";
-            this.checkBoxWeaponsRenzoFinLion.Size = new System.Drawing.Size(81, 19);
-            this.checkBoxWeaponsRenzoFinLion.TabIndex = 91;
-            this.checkBoxWeaponsRenzoFinLion.Text = "Lion Heart";
-            this.checkBoxWeaponsRenzoFinLion.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxWeaponsRenzoFinBlasting
-            // 
-            this.checkBoxWeaponsRenzoFinBlasting.AutoSize = true;
-            this.checkBoxWeaponsRenzoFinBlasting.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxWeaponsRenzoFinBlasting.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxWeaponsRenzoFinBlasting.Location = new System.Drawing.Point(243, 190);
-            this.checkBoxWeaponsRenzoFinBlasting.Name = "checkBoxWeaponsRenzoFinBlasting";
-            this.checkBoxWeaponsRenzoFinBlasting.Size = new System.Drawing.Size(98, 19);
-            this.checkBoxWeaponsRenzoFinBlasting.TabIndex = 91;
-            this.checkBoxWeaponsRenzoFinBlasting.Text = "Blasting Zone";
-            this.checkBoxWeaponsRenzoFinBlasting.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxWeaponsRenzoFinFated
-            // 
-            this.checkBoxWeaponsRenzoFinFated.AutoSize = true;
-            this.checkBoxWeaponsRenzoFinFated.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxWeaponsRenzoFinFated.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxWeaponsRenzoFinFated.Location = new System.Drawing.Point(141, 190);
-            this.checkBoxWeaponsRenzoFinFated.Name = "checkBoxWeaponsRenzoFinFated";
-            this.checkBoxWeaponsRenzoFinFated.Size = new System.Drawing.Size(88, 19);
-            this.checkBoxWeaponsRenzoFinFated.TabIndex = 91;
-            this.checkBoxWeaponsRenzoFinFated.Text = "Fated Circle";
-            this.checkBoxWeaponsRenzoFinFated.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxWeaponsRenzoFinRough
-            // 
-            this.checkBoxWeaponsRenzoFinRough.AutoSize = true;
-            this.checkBoxWeaponsRenzoFinRough.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxWeaponsRenzoFinRough.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxWeaponsRenzoFinRough.Location = new System.Drawing.Point(30, 190);
-            this.checkBoxWeaponsRenzoFinRough.Name = "checkBoxWeaponsRenzoFinRough";
-            this.checkBoxWeaponsRenzoFinRough.Size = new System.Drawing.Size(97, 19);
-            this.checkBoxWeaponsRenzoFinRough.TabIndex = 91;
-            this.checkBoxWeaponsRenzoFinRough.Text = "Rough Divide";
-            this.checkBoxWeaponsRenzoFinRough.UseVisualStyleBackColor = true;
-            // 
-            // comboBoxWeaponsCharacterID
-            // 
-            this.comboBoxWeaponsCharacterID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxWeaponsCharacterID.FormattingEnabled = true;
-            this.comboBoxWeaponsCharacterID.Items.AddRange(new object[] {
-            "Squall",
-            "Zell",
-            "Irvine",
-            "Quistis",
-            "Rinoa",
-            "Selphie",
-            "Seifer",
-            "Edea",
-            "Laguna",
-            "Kiros",
-            "Ward"});
-            this.comboBoxWeaponsCharacterID.Location = new System.Drawing.Point(168, 46);
-            this.comboBoxWeaponsCharacterID.Name = "comboBoxWeaponsCharacterID";
-            this.comboBoxWeaponsCharacterID.Size = new System.Drawing.Size(130, 25);
-            this.comboBoxWeaponsCharacterID.TabIndex = 6;
-            // 
-            // labelWeaponsHITBonus
-            // 
-            this.labelWeaponsHITBonus.AutoSize = true;
-            this.labelWeaponsHITBonus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelWeaponsHITBonus.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsHITBonus.Location = new System.Drawing.Point(326, 97);
-            this.labelWeaponsHITBonus.Name = "labelWeaponsHITBonus";
-            this.labelWeaponsHITBonus.Size = new System.Drawing.Size(71, 17);
-            this.labelWeaponsHITBonus.TabIndex = 89;
-            this.labelWeaponsHITBonus.Text = "HIT Bonus";
-            this.toolTip1.SetToolTip(this.labelWeaponsHITBonus, "Character HIT Bonus");
-            // 
-            // numericUpDownWeaponsSTRBonus
-            // 
-            this.numericUpDownWeaponsSTRBonus.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWeaponsSTRBonus.Location = new System.Drawing.Point(210, 117);
-            this.numericUpDownWeaponsSTRBonus.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownWeaponsSTRBonus.Name = "numericUpDownWeaponsSTRBonus";
-            this.numericUpDownWeaponsSTRBonus.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownWeaponsSTRBonus.TabIndex = 5;
-            // 
-            // numericUpDownWeaponsAttackPower
-            // 
-            this.numericUpDownWeaponsAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWeaponsAttackPower.Location = new System.Drawing.Point(82, 117);
-            this.numericUpDownWeaponsAttackPower.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownWeaponsAttackPower.Name = "numericUpDownWeaponsAttackPower";
-            this.numericUpDownWeaponsAttackPower.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownWeaponsAttackPower.TabIndex = 4;
-            // 
-            // numericUpDownWeaponsHITBonus
-            // 
-            this.numericUpDownWeaponsHITBonus.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWeaponsHITBonus.Location = new System.Drawing.Point(338, 117);
-            this.numericUpDownWeaponsHITBonus.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownWeaponsHITBonus.Name = "numericUpDownWeaponsHITBonus";
-            this.numericUpDownWeaponsHITBonus.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownWeaponsHITBonus.TabIndex = 7;
-            this.toolTip1.SetToolTip(this.numericUpDownWeaponsHITBonus, "Default: 0");
-            // 
-            // labelWeaponsSTRBonus
-            // 
-            this.labelWeaponsSTRBonus.AutoSize = true;
-            this.labelWeaponsSTRBonus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelWeaponsSTRBonus.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsSTRBonus.Location = new System.Drawing.Point(199, 97);
-            this.labelWeaponsSTRBonus.Name = "labelWeaponsSTRBonus";
-            this.labelWeaponsSTRBonus.Size = new System.Drawing.Size(72, 17);
-            this.labelWeaponsSTRBonus.TabIndex = 0;
-            this.labelWeaponsSTRBonus.Text = "STR Bonus";
-            this.toolTip1.SetToolTip(this.labelWeaponsSTRBonus, "Character STR bonus");
-            // 
-            // labelWeaponsAttackPower
-            // 
-            this.labelWeaponsAttackPower.AutoSize = true;
-            this.labelWeaponsAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelWeaponsAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsAttackPower.Location = new System.Drawing.Point(63, 97);
-            this.labelWeaponsAttackPower.Name = "labelWeaponsAttackPower";
-            this.labelWeaponsAttackPower.Size = new System.Drawing.Size(89, 17);
-            this.labelWeaponsAttackPower.TabIndex = 0;
-            this.labelWeaponsAttackPower.Text = "Attack Power";
-            this.toolTip1.SetToolTip(this.labelWeaponsAttackPower, "Attack power of the weapon");
-            // 
-            // labelWeaponsRenzoFin
-            // 
-            this.labelWeaponsRenzoFin.AutoSize = true;
-            this.labelWeaponsRenzoFin.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelWeaponsRenzoFin.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsRenzoFin.Location = new System.Drawing.Point(164, 168);
-            this.labelWeaponsRenzoFin.Name = "labelWeaponsRenzoFin";
-            this.labelWeaponsRenzoFin.Size = new System.Drawing.Size(139, 17);
-            this.labelWeaponsRenzoFin.TabIndex = 0;
-            this.labelWeaponsRenzoFin.Text = "Renzokuken Finishers";
-            this.toolTip1.SetToolTip(this.labelWeaponsRenzoFin, "If and what renzokuken finisher the weapon teaches (use only with Squall Weapons)" +
-        "");
-            // 
-            // labelWeaponsCharacterID
-            // 
-            this.labelWeaponsCharacterID.AutoSize = true;
-            this.labelWeaponsCharacterID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelWeaponsCharacterID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsCharacterID.Location = new System.Drawing.Point(200, 26);
-            this.labelWeaponsCharacterID.Name = "labelWeaponsCharacterID";
-            this.labelWeaponsCharacterID.Size = new System.Drawing.Size(66, 17);
-            this.labelWeaponsCharacterID.TabIndex = 0;
-            this.labelWeaponsCharacterID.Text = "Character";
-            this.toolTip1.SetToolTip(this.labelWeaponsCharacterID, "Character ID");
-            // 
-            // listBoxWeapons
-            // 
-            this.listBoxWeapons.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxWeapons.FormattingEnabled = true;
-            this.listBoxWeapons.ItemHeight = 15;
-            this.listBoxWeapons.Items.AddRange(new object[] {
-            "Revolver",
-            "Shear Trigger",
-            "Cutting Trigger",
-            "Flame Saber",
-            "Twin Lance",
-            "Punishment",
-            "Lion Heart",
-            "Metal Knuckle",
-            "Maverick",
-            "Gauntlet",
-            "Ehrgeiz",
-            "Valiant",
-            "Ulysses",
-            "Bismark",
-            "Exeter",
-            "Chain Whip",
-            "Slaying Tail",
-            "Red Scorpion",
-            "Save the Queen",
-            "Pinwheel",
-            "Valkyrie",
-            "Rising Sun",
-            "Cardinal",
-            "Shooting Star",
-            "Flail",
-            "Morning Star",
-            "Crescent Wish",
-            "Strange Vision",
-            "Hyperion",
-            "None",
-            "Machine Gun",
-            "Katal",
-            "Harpoon"});
-            this.listBoxWeapons.Location = new System.Drawing.Point(0, 0);
-            this.listBoxWeapons.Name = "listBoxWeapons";
-            this.listBoxWeapons.ScrollAlwaysVisible = true;
-            this.listBoxWeapons.Size = new System.Drawing.Size(109, 499);
-            this.listBoxWeapons.TabIndex = 5;
-            this.listBoxWeapons.SelectedIndexChanged += new System.EventHandler(this.listBoxWeapons_SelectedIndexChanged);
-            // 
             // toolbarStrip
             // 
             this.toolbarStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -9220,6 +10511,166 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
+            // buttonCharSTRFormula
+            // 
+            this.buttonCharSTRFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            this.buttonCharSTRFormula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharSTRFormula.Location = new System.Drawing.Point(356, 39);
+            this.buttonCharSTRFormula.Name = "buttonCharSTRFormula";
+            this.buttonCharSTRFormula.Size = new System.Drawing.Size(25, 25);
+            this.buttonCharSTRFormula.TabIndex = 8;
+            this.buttonCharSTRFormula.Text = "F";
+            this.buttonCharSTRFormula.UseVisualStyleBackColor = true;
+            this.buttonCharSTRFormula.Click += new System.EventHandler(this.buttonCharSTRFormula_Click);
+            // 
+            // buttonCharVITFormula
+            // 
+            this.buttonCharVITFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            this.buttonCharVITFormula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharVITFormula.Location = new System.Drawing.Point(356, 39);
+            this.buttonCharVITFormula.Name = "buttonCharVITFormula";
+            this.buttonCharVITFormula.Size = new System.Drawing.Size(25, 25);
+            this.buttonCharVITFormula.TabIndex = 8;
+            this.buttonCharVITFormula.Text = "F";
+            this.buttonCharVITFormula.UseVisualStyleBackColor = true;
+            this.buttonCharVITFormula.Click += new System.EventHandler(this.buttonCharVITFormula_Click);
+            // 
+            // buttonCharMAGFormula
+            // 
+            this.buttonCharMAGFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            this.buttonCharMAGFormula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharMAGFormula.Location = new System.Drawing.Point(356, 39);
+            this.buttonCharMAGFormula.Name = "buttonCharMAGFormula";
+            this.buttonCharMAGFormula.Size = new System.Drawing.Size(25, 25);
+            this.buttonCharMAGFormula.TabIndex = 8;
+            this.buttonCharMAGFormula.Text = "F";
+            this.buttonCharMAGFormula.UseVisualStyleBackColor = true;
+            this.buttonCharMAGFormula.Click += new System.EventHandler(this.buttonCharMAGFormula_Click);
+            // 
+            // buttonCharSPRFormula
+            // 
+            this.buttonCharSPRFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            this.buttonCharSPRFormula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharSPRFormula.Location = new System.Drawing.Point(356, 39);
+            this.buttonCharSPRFormula.Name = "buttonCharSPRFormula";
+            this.buttonCharSPRFormula.Size = new System.Drawing.Size(25, 25);
+            this.buttonCharSPRFormula.TabIndex = 8;
+            this.buttonCharSPRFormula.Text = "F";
+            this.buttonCharSPRFormula.UseVisualStyleBackColor = true;
+            this.buttonCharSPRFormula.Click += new System.EventHandler(this.buttonCharSPRFormula_Click);
+            // 
+            // buttonCharSPDFormula
+            // 
+            this.buttonCharSPDFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            this.buttonCharSPDFormula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharSPDFormula.Location = new System.Drawing.Point(356, 39);
+            this.buttonCharSPDFormula.Name = "buttonCharSPDFormula";
+            this.buttonCharSPDFormula.Size = new System.Drawing.Size(25, 25);
+            this.buttonCharSPDFormula.TabIndex = 8;
+            this.buttonCharSPDFormula.Text = "F";
+            this.buttonCharSPDFormula.UseVisualStyleBackColor = true;
+            this.buttonCharSPDFormula.Click += new System.EventHandler(this.buttonCharSPDFormula_Click);
+            // 
+            // buttonCharLUCKFormula
+            // 
+            this.buttonCharLUCKFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            this.buttonCharLUCKFormula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharLUCKFormula.Location = new System.Drawing.Point(356, 39);
+            this.buttonCharLUCKFormula.Name = "buttonCharLUCKFormula";
+            this.buttonCharLUCKFormula.Size = new System.Drawing.Size(25, 25);
+            this.buttonCharLUCKFormula.TabIndex = 8;
+            this.buttonCharLUCKFormula.Text = "F";
+            this.buttonCharLUCKFormula.UseVisualStyleBackColor = true;
+            this.buttonCharLUCKFormula.Click += new System.EventHandler(this.buttonCharLUCKFormula_Click);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox7.Controls.Add(this.buttonCharEXPFormula);
+            this.groupBox7.Controls.Add(this.buttonCharEXPChart);
+            this.groupBox7.Controls.Add(this.numericUpDownCharEXP2);
+            this.groupBox7.Controls.Add(this.labelCharEXPB);
+            this.groupBox7.Controls.Add(this.numericUpDownCharEXP1);
+            this.groupBox7.Controls.Add(this.labelCharEXPA);
+            this.groupBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
+            this.groupBox7.ForeColor = System.Drawing.Color.Black;
+            this.groupBox7.Location = new System.Drawing.Point(0, 179);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(466, 83);
+            this.groupBox7.TabIndex = 4;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "EXP";
+            // 
+            // buttonCharEXPFormula
+            // 
+            this.buttonCharEXPFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
+            this.buttonCharEXPFormula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharEXPFormula.Location = new System.Drawing.Point(356, 39);
+            this.buttonCharEXPFormula.Name = "buttonCharEXPFormula";
+            this.buttonCharEXPFormula.Size = new System.Drawing.Size(25, 25);
+            this.buttonCharEXPFormula.TabIndex = 8;
+            this.buttonCharEXPFormula.Text = "F";
+            this.buttonCharEXPFormula.UseVisualStyleBackColor = true;
+            // 
+            // buttonCharEXPChart
+            // 
+            this.buttonCharEXPChart.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCharEXPChart.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonCharEXPChart.Location = new System.Drawing.Point(388, 39);
+            this.buttonCharEXPChart.Name = "buttonCharEXPChart";
+            this.buttonCharEXPChart.Size = new System.Drawing.Size(56, 25);
+            this.buttonCharEXPChart.TabIndex = 7;
+            this.buttonCharEXPChart.Text = "Chart";
+            this.buttonCharEXPChart.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownCharEXP2
+            // 
+            this.numericUpDownCharEXP2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharEXP2.Location = new System.Drawing.Point(252, 39);
+            this.numericUpDownCharEXP2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharEXP2.Name = "numericUpDownCharEXP2";
+            this.numericUpDownCharEXP2.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharEXP2.TabIndex = 6;
+            // 
+            // labelCharEXPB
+            // 
+            this.labelCharEXPB.AutoSize = true;
+            this.labelCharEXPB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharEXPB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharEXPB.Location = new System.Drawing.Point(267, 19);
+            this.labelCharEXPB.Name = "labelCharEXPB";
+            this.labelCharEXPB.Size = new System.Drawing.Size(16, 17);
+            this.labelCharEXPB.TabIndex = 5;
+            this.labelCharEXPB.Text = "B";
+            // 
+            // numericUpDownCharEXP1
+            // 
+            this.numericUpDownCharEXP1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharEXP1.Location = new System.Drawing.Point(167, 39);
+            this.numericUpDownCharEXP1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharEXP1.Name = "numericUpDownCharEXP1";
+            this.numericUpDownCharEXP1.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharEXP1.TabIndex = 6;
+            // 
+            // labelCharEXPA
+            // 
+            this.labelCharEXPA.AutoSize = true;
+            this.labelCharEXPA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharEXPA.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharEXPA.Location = new System.Drawing.Point(182, 19);
+            this.labelCharEXPA.Name = "labelCharEXPA";
+            this.labelCharEXPA.Size = new System.Drawing.Size(17, 17);
+            this.labelCharEXPA.TabIndex = 5;
+            this.labelCharEXPA.Text = "A";
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -9241,6 +10692,70 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControlMain.ResumeLayout(false);
+            this.tabPageCharacters.ResumeLayout(false);
+            this.tabControlCharacters.ResumeLayout(false);
+            this.tabPageCharGeneral.ResumeLayout(false);
+            this.groupBoxCharGeneral.ResumeLayout(false);
+            this.groupBoxCharGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLimitParam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharCrisisLevelHP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLimitID)).EndInit();
+            this.tabPageCharStats.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPD4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPD3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPD2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPD1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharVIT4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharVIT3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharVIT2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharVIT1)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLUCK4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLUCK3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLUCK2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLUCK1)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPR4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPR3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPR2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSPR1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSTR4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSTR3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSTR2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharSTR1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharMAG4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharMAG3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharMAG2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharMAG1)).EndInit();
+            this.groupBoxCharHP.ResumeLayout(false);
+            this.groupBoxCharHP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP1)).EndInit();
+            this.tabPageWeapons.ResumeLayout(false);
+            this.groupBoxWeaponsGeneral.ResumeLayout(false);
+            this.groupBoxWeaponsGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsSTRBonus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsTier)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackPower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).EndInit();
+            this.tabPageAbilities.ResumeLayout(false);
+            this.tabControlAbilities.ResumeLayout(false);
+            this.tabPageStatsIncrement.ResumeLayout(false);
+            this.groupBoxStatsIncrement.ResumeLayout(false);
+            this.groupBoxStatsIncrement.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarStatsIncrementValue)).EndInit();
             this.tabPageMagic.ResumeLayout(false);
             this.tabControlMagic.ResumeLayout(false);
             this.tabPageMagicGeneral.ResumeLayout(false);
@@ -9335,20 +10850,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAttacksLevelMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAttacksPowerMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAttacksPower)).EndInit();
-            this.tabPageAbilities.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPageStatsIncrement.ResumeLayout(false);
-            this.groupBoxStatsIncrement.ResumeLayout(false);
-            this.groupBoxStatsIncrement.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarStatsIncrementValue)).EndInit();
-            this.tabPageWeapons.ResumeLayout(false);
-            this.groupBoxWeaponsGeneral.ResumeLayout(false);
-            this.groupBoxWeaponsGeneral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsSTRBonus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackPower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).EndInit();
             this.toolbarStrip.ResumeLayout(false);
             this.toolbarStrip.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -9511,7 +11018,7 @@
         private System.Windows.Forms.Label labelMagicElemAttack;
         private System.Windows.Forms.TrackBar trackBarJElemAttack;
         private System.Windows.Forms.TabPage tabPageAbilities;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControlAbilities;
         private System.Windows.Forms.TabPage tabPageStatsIncrement;
         private System.Windows.Forms.GroupBox groupBoxStatsIncrement;
         private System.Windows.Forms.TextBox textBoxStatsIncrementDescription;
@@ -9728,6 +11235,106 @@
         private System.Windows.Forms.Label labelWeaponsCharacterID;
         private System.Windows.Forms.ListBox listBoxWeapons;
         private System.Windows.Forms.RadioButton radioButtonJElemAttackNElem;
+        private System.Windows.Forms.NumericUpDown numericUpDownWeaponsTier;
+        private System.Windows.Forms.Label labelWeaponsTier;
+        private System.Windows.Forms.TabPage tabPageCharacters;
+        private System.Windows.Forms.TabControl tabControlCharacters;
+        private System.Windows.Forms.TabPage tabPageCharGeneral;
+        private System.Windows.Forms.GroupBox groupBoxCharGeneral;
+        private System.Windows.Forms.ComboBox comboBoxCharGender;
+        private System.Windows.Forms.Label labelCharGender;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharLimitParam;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharLimitID;
+        private System.Windows.Forms.Label labelCharLimitParam;
+        private System.Windows.Forms.Label labelCharLimitID;
+        private System.Windows.Forms.Label labelCharCrisisLevelHP;
+        private System.Windows.Forms.ListBox listBoxCharacters;
+        private System.Windows.Forms.TabPage tabPageCharStats;
+        private System.Windows.Forms.GroupBox groupBoxCharHP;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharCrisisLevelHP;
+        private System.Windows.Forms.Button buttonCharHPChart;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharHP4;
+        private System.Windows.Forms.Label labelCharHPD;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharHP3;
+        private System.Windows.Forms.Label labelCharHPC;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharHP2;
+        private System.Windows.Forms.Label labelCharHPB;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharHP1;
+        private System.Windows.Forms.Label labelCharHPA;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button buttonCharSPDChart;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSPD4;
+        private System.Windows.Forms.Label labelCharSPDD;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSPD3;
+        private System.Windows.Forms.Label labelCharSPDC;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSPD2;
+        private System.Windows.Forms.Label labelCharSPDB;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSPD1;
+        private System.Windows.Forms.Label labelCharSPDA;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button buttonCharVITChart;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharVIT4;
+        private System.Windows.Forms.Label labelCharVITD;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharVIT3;
+        private System.Windows.Forms.Label labelCharVITC;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharVIT2;
+        private System.Windows.Forms.Label labelCharVITB;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharVIT1;
+        private System.Windows.Forms.Label labelCharVITA;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button buttonCharLUCKChart;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharLUCK4;
+        private System.Windows.Forms.Label labelCharLUCKD;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharLUCK3;
+        private System.Windows.Forms.Label labelCharLUCKC;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharLUCK2;
+        private System.Windows.Forms.Label labelCharLUCKB;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharLUCK1;
+        private System.Windows.Forms.Label labelCharLUCKA;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button buttonCharSPRChart;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSPR4;
+        private System.Windows.Forms.Label labelCharSPRD;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSPR3;
+        private System.Windows.Forms.Label labelCharSPRC;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSPR2;
+        private System.Windows.Forms.Label labelCharSPRB;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSPR1;
+        private System.Windows.Forms.Label labelCharSPRA;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button buttonCharSTRChart;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSTR4;
+        private System.Windows.Forms.Label labelCharSTRD;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSTR3;
+        private System.Windows.Forms.Label labelCharSTRC;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSTR2;
+        private System.Windows.Forms.Label labelCharSTRB;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharSTR1;
+        private System.Windows.Forms.Label labelCharSTRA;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button buttonCharMAGChart;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharMAG4;
+        private System.Windows.Forms.Label labelCharMAGD;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharMAG3;
+        private System.Windows.Forms.Label labelCharMAGC;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharMAG2;
+        private System.Windows.Forms.Label labelCharMAGB;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharMAG1;
+        private System.Windows.Forms.Label labelCharMAGA;
+        private System.Windows.Forms.Button buttonCharHPFormula;
+        private System.Windows.Forms.Button buttonCharSPDFormula;
+        private System.Windows.Forms.Button buttonCharVITFormula;
+        private System.Windows.Forms.Button buttonCharLUCKFormula;
+        private System.Windows.Forms.Button buttonCharSPRFormula;
+        private System.Windows.Forms.Button buttonCharSTRFormula;
+        private System.Windows.Forms.Button buttonCharMAGFormula;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Button buttonCharEXPFormula;
+        private System.Windows.Forms.Button buttonCharEXPChart;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharEXP2;
+        private System.Windows.Forms.Label labelCharEXPB;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharEXP1;
+        private System.Windows.Forms.Label labelCharEXPA;
     }
 }
 

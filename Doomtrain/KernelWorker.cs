@@ -19,10 +19,14 @@ namespace Doomtrain
         public static int WeaponsDataOffset = -1;
         public static int OffsetToWeaponsSelected = -1;
 
+        public static int CharactersDataOffset = -1;
+        public static int OffsetToCharactersSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
         public static WeaponsData GetSelectedWeaponsData;
+        public static CharactersData GetSelectedCharactersData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -118,6 +122,12 @@ namespace Doomtrain
             Laguna = 0x08,
             Kiros = 0x09,
             Ward = 0x0A
+        }
+
+        internal enum Genders : byte
+        {
+            Male = 0x00,
+            Female = 0x01
         }
 
 
@@ -258,6 +268,46 @@ namespace Doomtrain
             public byte AttackPower;
             public byte HITBonus;
             public byte STRBonus;
+            public byte Tier;
+        }
+
+        public struct CharactersData
+        {
+            //public string Name;
+            public byte CrisisLevel;
+            public Genders Gender;
+            public byte LimitID;
+            public byte LimitParam;
+            public byte EXP1;
+            public byte EXP2;
+            public byte HP1;
+            public byte HP2;
+            public byte HP3;
+            public byte HP4;
+            public byte STR1;
+            public byte STR2;
+            public byte STR3;
+            public byte STR4;
+            public byte VIT1;
+            public byte VIT2;
+            public byte VIT3;
+            public byte VIT4;
+            public byte MAG1;
+            public byte MAG2;
+            public byte MAG3;
+            public byte MAG4;
+            public byte SPR1;
+            public byte SPR2;
+            public byte SPR3;
+            public byte SPR4;
+            public byte SPD1;
+            public byte SPD2;
+            public byte SPD3;
+            public byte SPD4;
+            public byte LUCK1;
+            public byte LUCK2;
+            public byte LUCK3;
+            public byte LUCK4;
         }
 
 
@@ -724,6 +774,9 @@ namespace Doomtrain
                 case 4:
                     Kernel[OffsetToWeaponsSelected + 8] = Convert.ToByte(variable); //str bonus
                     return;
+                case 5:
+                    Kernel[OffsetToWeaponsSelected + 9] = Convert.ToByte(variable); //weapon tier
+                    return;
 
                 default:
                     return;
@@ -740,6 +793,121 @@ namespace Doomtrain
             }
         }
 
+
+
+        public static void UpdateVariable_Characters(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToCharactersSelected + 2] = Convert.ToByte(variable); //crisis level mult
+                    return;
+                case 1:
+                    Kernel[OffsetToCharactersSelected + 3] = Convert.ToByte(variable); //gender
+                    return;
+                case 2:
+                    Kernel[OffsetToCharactersSelected + 4] = Convert.ToByte(variable); //limit id
+                    return;
+                case 3:
+                    Kernel[OffsetToCharactersSelected + 5] = Convert.ToByte(variable); //limit param
+                    return;
+                case 4:
+                    Kernel[OffsetToCharactersSelected + 6] = Convert.ToByte(variable); //exp 1
+                    return;
+                case 5:
+                    Kernel[OffsetToCharactersSelected + 7] = Convert.ToByte(variable); //exp 2
+                    return;
+                case 6:
+                    Kernel[OffsetToCharactersSelected + 8] = Convert.ToByte(variable); //hp 1
+                    return;
+                case 7:
+                    Kernel[OffsetToCharactersSelected + 9] = Convert.ToByte(variable); //hp 2
+                    return;
+                case 8:
+                    Kernel[OffsetToCharactersSelected + 10] = Convert.ToByte(variable); //hp 3
+                    return;
+                case 9:
+                    Kernel[OffsetToCharactersSelected + 11] = Convert.ToByte(variable); //hp 4
+                    return;
+                case 10:
+                    Kernel[OffsetToCharactersSelected + 12] = Convert.ToByte(variable); //str 1
+                    return;
+                case 11:
+                    Kernel[OffsetToCharactersSelected + 13] = Convert.ToByte(variable); //str 2
+                    return;
+                case 12:
+                    Kernel[OffsetToCharactersSelected + 14] = Convert.ToByte(variable); //str 3
+                    return;
+                case 13:
+                    Kernel[OffsetToCharactersSelected + 15] = Convert.ToByte(variable); //str 4
+                    return;
+                case 14:
+                    Kernel[OffsetToCharactersSelected + 16] = Convert.ToByte(variable); //vit 1
+                    return;
+                case 15:
+                    Kernel[OffsetToCharactersSelected + 17] = Convert.ToByte(variable); //vit 2
+                    return;
+                case 16:
+                    Kernel[OffsetToCharactersSelected + 18] = Convert.ToByte(variable); //vit 3
+                    return;
+                case 17:
+                    Kernel[OffsetToCharactersSelected + 19] = Convert.ToByte(variable); //vit 4
+                    return;
+                case 18:
+                    Kernel[OffsetToCharactersSelected + 20] = Convert.ToByte(variable); //mag 1
+                    return;
+                case 19:
+                    Kernel[OffsetToCharactersSelected + 21] = Convert.ToByte(variable); //mag 2
+                    return;
+                case 20:
+                    Kernel[OffsetToCharactersSelected + 22] = Convert.ToByte(variable); //mag 3
+                    return;
+                case 21:
+                    Kernel[OffsetToCharactersSelected + 23] = Convert.ToByte(variable); //mag 4
+                    return;
+                case 22:
+                    Kernel[OffsetToCharactersSelected + 24] = Convert.ToByte(variable); //spr 1
+                    return;
+                case 23:
+                    Kernel[OffsetToCharactersSelected + 25] = Convert.ToByte(variable); //spr 2
+                    return;
+                case 24:
+                    Kernel[OffsetToCharactersSelected + 26] = Convert.ToByte(variable); //spr 3
+                    return;
+                case 25:
+                    Kernel[OffsetToCharactersSelected + 27] = Convert.ToByte(variable); //spr 4
+                    return;
+                case 26:
+                    Kernel[OffsetToCharactersSelected + 28] = Convert.ToByte(variable); //spd 1
+                    return;
+                case 27:
+                    Kernel[OffsetToCharactersSelected + 29] = Convert.ToByte(variable); //spd 2
+                    return;
+                case 28:
+                    Kernel[OffsetToCharactersSelected + 30] = Convert.ToByte(variable); //spd 3
+                    return;
+                case 29:
+                    Kernel[OffsetToCharactersSelected + 31] = Convert.ToByte(variable); //spd 4
+                    return;
+                case 30:
+                    Kernel[OffsetToCharactersSelected + 32] = Convert.ToByte(variable); //luck 1
+                    return;
+                case 31:
+                    Kernel[OffsetToCharactersSelected + 33] = Convert.ToByte(variable); //luck 2
+                    return;
+                case 32:
+                    Kernel[OffsetToCharactersSelected + 34] = Convert.ToByte(variable); //luck 3
+                    return;
+                case 33:
+                    Kernel[OffsetToCharactersSelected + 35] = Convert.ToByte(variable); //luck 4
+                    return;
+
+                default:
+                    return;
+            }
+        }
 
 
         /// <summary>
@@ -781,6 +949,7 @@ namespace Doomtrain
             GFDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFs);
             GFAttacksDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFAttacks);
             WeaponsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Weapons);
+            CharactersDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Characters);
         }
 
 
@@ -1049,8 +1218,59 @@ namespace Doomtrain
             GetSelectedWeaponsData.AttackPower = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.HITBonus = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.STRBonus = Kernel[selectedWeaponsOffset++];
+            GetSelectedWeaponsData.Tier = Kernel[selectedWeaponsOffset++];
         }
 
+
+
+        public static void ReadCharacters(int CharactersID_List)
+        {
+            GetSelectedCharactersData = new CharactersData();
+            int selectedCharactersOffset = CharactersDataOffset + (CharactersID_List * 36);
+            OffsetToCharactersSelected = selectedCharactersOffset;
+
+            GetSelectedCharactersData.CrisisLevel = Kernel[selectedCharactersOffset + 2];
+            selectedCharactersOffset += 3;
+            byte d = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.Gender =
+                d == (byte)Genders.Male
+                    ? Genders.Male
+                    : d == (byte)Genders.Female
+                        ? Genders.Female
+                        : 0; //Error handler
+            GetSelectedCharactersData.LimitID = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.LimitParam = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.EXP1 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.EXP2 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.HP1 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.HP2 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.HP3 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.HP4 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.STR1 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.STR2 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.STR3 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.STR4 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.VIT1 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.VIT2 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.VIT3 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.VIT4 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.MAG1 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.MAG2 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.MAG3 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.MAG4 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.SPR1 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.SPR2 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.SPR3 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.SPR4 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.SPD1 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.SPD2 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.SPD3 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.SPD4 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.LUCK1 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.LUCK2 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.LUCK3 = Kernel[selectedCharactersOffset++];
+            GetSelectedCharactersData.LUCK4 = Kernel[selectedCharactersOffset++];
+        }
 
         private static string BuildString(int index)
         {

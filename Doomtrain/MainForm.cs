@@ -19,7 +19,6 @@ namespace Doomtrain
         {
             InitializeComponent();
 
-
             //for disabling save buttons when no file is open
             saveToolStripMenuItem.Enabled = false;
             saveAsToolStripMenuItem.Enabled = false;
@@ -165,33 +164,33 @@ namespace Doomtrain
             comboBoxGFAbility19.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility19.SelectedIndex, 18);
             comboBoxGFAbility20.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility20.SelectedIndex, 19);
             comboBoxGFAbility21.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility21.SelectedIndex, 20);
-            checkBoxGFSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01,0,1);
-            checkBoxGFHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02,0,1);
-            checkBoxGFSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04,0,1);
-            checkBoxGFStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08,0,1);
-            checkBoxGFRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x10,0,1);
-            checkBoxGFProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x20,0,1);
-            checkBoxGFShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x40,0, 1);
-            checkBoxGFReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x80,0, 1);
-            checkBoxGFAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01, 0,2);
-            checkBoxGFCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02, 0,2);
-            checkBoxGFDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04, 0,2);
-            checkBoxGFInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08,0 ,2);
-            checkBoxGFPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x10,0 ,2);
-            checkBoxGFFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x20,0 ,2);
-            checkBoxGFConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, 0x40,0 ,2);
-            checkBoxGFDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x80, 0,2);
-            checkBoxGFEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01,0 ,3);
-            checkBoxGFDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02,0 ,3);
-            checkBoxGFTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04, 0,3);
-            checkBoxGFDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08, 0,3);
-            checkBoxGFVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01, 0,4);
-            checkBoxGFDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01,0 ,0);
-            checkBoxGFPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02,0 ,0);
-            checkBoxGFPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04,0 ,0);
-            checkBoxGFDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08,0 ,0);
-            checkBoxGFSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x10, 0,0);
-            checkBoxGFBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x20, 0,0);
+            checkBoxGFSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01, 0, 1);
+            checkBoxGFHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02, 0, 1);
+            checkBoxGFSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04, 0, 1);
+            checkBoxGFStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08, 0, 1);
+            checkBoxGFRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x10, 0, 1);
+            checkBoxGFProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x20, 0, 1);
+            checkBoxGFShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x40, 0, 1);
+            checkBoxGFReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x80, 0, 1);
+            checkBoxGFAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01, 0, 2);
+            checkBoxGFCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02, 0, 2);
+            checkBoxGFDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04, 0, 2);
+            checkBoxGFInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08, 0, 2);
+            checkBoxGFPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x10, 0, 2);
+            checkBoxGFFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x20, 0, 2);
+            checkBoxGFConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, 0x40, 0, 2);
+            checkBoxGFDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x80, 0, 2);
+            checkBoxGFEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01, 0, 3);
+            checkBoxGFDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02, 0, 3);
+            checkBoxGFTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04, 0, 3);
+            checkBoxGFDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08, 0, 3);
+            checkBoxGFVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01, 0, 4);
+            checkBoxGFDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x01, 0, 0);
+            checkBoxGFPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x02, 0, 0);
+            checkBoxGFPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x04, 0, 0);
+            checkBoxGFDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x08, 0, 0);
+            checkBoxGFSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x10, 0, 0);
+            checkBoxGFBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x20, 0, 0);
             checkBoxGFZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x40, 0, 0);
             numericUpDownGFStatusAttackEnabler.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(8, numericUpDownGFStatusAttackEnabler.Value);
             numericUpDownGFQuezacoltComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(10, numericUpDownGFQuezacoltComp.Value);
@@ -256,10 +255,48 @@ namespace Doomtrain
             numericUpDownWeaponsAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(2, numericUpDownWeaponsAttackPower.Value);
             numericUpDownWeaponsHITBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(3, numericUpDownWeaponsHITBonus.Value);
             numericUpDownWeaponsSTRBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(4, numericUpDownWeaponsSTRBonus.Value);
+            numericUpDownWeaponsTier.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(5, numericUpDownWeaponsTier.Value);
+
+            //Characters
+            numericUpDownCharCrisisLevelHP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(0, numericUpDownCharCrisisLevelHP.Value);
+            comboBoxCharGender.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(1, Characters_GetGender(comboBoxCharGender.SelectedIndex - 1));
+            numericUpDownCharLimitID.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(2, numericUpDownCharLimitID.Value);
+            numericUpDownCharLimitParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(3, numericUpDownCharLimitParam.Value);
+            numericUpDownCharEXP1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(4, numericUpDownCharEXP1.Value);
+            numericUpDownCharEXP2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(5, numericUpDownCharEXP2.Value);
+            numericUpDownCharHP1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(6, numericUpDownCharHP1.Value);
+            numericUpDownCharHP2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(7, numericUpDownCharHP2.Value);
+            numericUpDownCharHP3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(8, numericUpDownCharHP3.Value);
+            numericUpDownCharHP4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(9, numericUpDownCharHP4.Value);
+            numericUpDownCharSTR1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(10, numericUpDownCharSTR1.Value);
+            numericUpDownCharSTR2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(11, numericUpDownCharSTR2.Value);
+            numericUpDownCharSTR3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(12, numericUpDownCharSTR3.Value);
+            numericUpDownCharSTR4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(13, numericUpDownCharSTR4.Value);
+            numericUpDownCharVIT1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(14, numericUpDownCharVIT1.Value);
+            numericUpDownCharVIT2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(15, numericUpDownCharVIT2.Value);
+            numericUpDownCharVIT3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(16, numericUpDownCharVIT3.Value);
+            numericUpDownCharVIT4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(17, numericUpDownCharVIT4.Value);
+            numericUpDownCharMAG1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(18, numericUpDownCharMAG1.Value);
+            numericUpDownCharMAG2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(19, numericUpDownCharMAG2.Value);
+            numericUpDownCharMAG3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(20, numericUpDownCharMAG3.Value);
+            numericUpDownCharMAG4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(21, numericUpDownCharMAG4.Value);
+            numericUpDownCharSPR1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(22, numericUpDownCharSPR1.Value);
+            numericUpDownCharSPR2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(23, numericUpDownCharSPR2.Value);
+            numericUpDownCharSPR3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(24, numericUpDownCharSPR3.Value);
+            numericUpDownCharSPR4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(25, numericUpDownCharSPR4.Value);
+            numericUpDownCharSPD1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(26, numericUpDownCharSPD1.Value);
+            numericUpDownCharSPD2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(27, numericUpDownCharSPD2.Value);
+            numericUpDownCharSPD3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(28, numericUpDownCharSPD3.Value);
+            numericUpDownCharSPD4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(29, numericUpDownCharSPD4.Value);
+            numericUpDownCharLUCK1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(30, numericUpDownCharLUCK1.Value);
+            numericUpDownCharLUCK2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(31, numericUpDownCharLUCK2.Value);
+            numericUpDownCharLUCK3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(32, numericUpDownCharLUCK3.Value);
+            numericUpDownCharLUCK4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(33, numericUpDownCharLUCK4.Value);
+
         }
 
 
-        
+
         public string existingFilename; //used for open/save stuff
 
 
@@ -282,9 +319,9 @@ namespace Doomtrain
                     {
                         KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
                     }
-                        
+
                 }
-                    
+
 
                 existingFilename = openFileDialog.FileName;
                 saveToolStripMenuItem.Enabled = true;
@@ -402,12 +439,58 @@ namespace Doomtrain
             new AboutBox().ShowDialog();
         }
 
+        //CHARACTERS STATS CHARTS AND FORMULA BUTTONS
+        private void buttonCharHPFormula_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("HP = ((stat_magic_J_value*magic_count + stat_bonus + lvl*a - (10*lvl^2)/b +c)*percent_modifier)/100", "HP Formula");
+        }
+
+        private void buttonCharSTRFormula_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("STR = ((X + (stat_magic_J_value*magic_count)/100 + stat_bonus + ((lvl*a)/10 + lvl/b - (lvl*lvl)/d/2 + c)/4)*percent_modifier)/100", "STR Formula");
+        }
+
+        private void buttonCharVITFormula_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("VIT = ((X + (stat_magic_J_value*magic_count)/100 + stat_bonus + ((lvl*a)/10 + lvl/b - (lvl*lvl)/d/2 + c)/4)*percent_modifier)/100", "VIT Formula");
+        }
+
+        private void buttonCharMAGFormula_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("MAG = ((X + (stat_magic_J_value * magic_count) / 100 + stat_bonus + ((lvl * a) / 10 + lvl / b - (lvl * lvl) / d / 2 + c) / 4) * percent_modifier) / 100", "MAG Formula");
+        }
+
+        private void buttonCharSPRFormula_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("SPR = ((X + (stat_magic_J_value*magic_count)/100 + stat_bonus + ((lvl*a)/10 + lvl/b - (lvl*lvl)/d/2 + c)/4)*percent_modifier)/100", "SPR Formula");
+        }
+
+        private void buttonCharSPDFormula_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("SPD = ((X + (stat_magic_J_value*magic_count)/100 + stat_bonus + lvl/b - lvl/d + lvl*a +c)*percent_modifier)/100", "SPD Formula");
+        }
+
+        private void buttonCharLUCKFormula_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("LUCK = ((X + (stat_magic_J_value*magic_count)/100 + stat_bonus + lvl/b - lvl/d + lvl*a +c)*percent_modifier)/100", "LUCK Formula");
+        }
+
+        private void buttonCharEXPFormula_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("EXP for level x = ((lvl-1)^2*exp_b)/256 + (lvl-1)*exp_a*10", "EXP Formula");
+        }
+
+        private void buttonCharHPChart_Click(object sender, EventArgs e)
+        {
+            new CharChartHP().ShowDialog();
+        }
 
 
 
-        // MAGIC TRACKBARS LABELS VALUE
-        //I added this.trackBar.ValueChanged += (this.trackBarJXY_Scroll) to MainForm.Designer, only this 4 are necessary here now
-        private void trackBarJElemAttack_Scroll(object sender, EventArgs e)
+
+    // MAGIC TRACKBARS LABELS VALUE
+    //I added this.trackBar.ValueChanged += (this.trackBarJXY_Scroll) to MainForm.Designer, only this 4 are necessary here now
+    private void trackBarJElemAttack_Scroll(object sender, EventArgs e)
         {
             labelValueElemAttackTrackBar.Text = trackBarJElemAttack.Value + "%".ToString();
         }
@@ -544,7 +627,7 @@ namespace Doomtrain
             KernelWorker.ReadMagic(listBoxMagic.SelectedIndex);
             try
             {
-                comboBoxMagicMagicID.SelectedIndex = KernelWorker.GetSelectedMagicData.MagicID-1; //As in Vanilla FF8.exe: sub ESI, 1
+                comboBoxMagicMagicID.SelectedIndex = KernelWorker.GetSelectedMagicData.MagicID - 1; //As in Vanilla FF8.exe: sub ESI, 1
                 numericUpDownMagicSpellPower.Value = KernelWorker.GetSelectedMagicData.SpellPower;
                 numericUpDownMagicDefaultTarget.Value = KernelWorker.GetSelectedMagicData.DefaultTarget;
                 numericUpDownMagicDrawResist.Value = KernelWorker.GetSelectedMagicData.DrawResist;
@@ -560,13 +643,13 @@ namespace Doomtrain
                 numericUpDownMagicEVAJ.Value = KernelWorker.GetSelectedMagicData.EVA;
                 numericUpDownMagicHITJ.Value = KernelWorker.GetSelectedMagicData.HIT;
                 numericUpDownMagicLUCKJ.Value = KernelWorker.GetSelectedMagicData.LUCK;
-                StatusHoldWorker(0,KernelWorker.GetSelectedMagicData.ElemAttackEN);
+                StatusHoldWorker(0, KernelWorker.GetSelectedMagicData.ElemAttackEN);
                 trackBarJElemAttack.Value = KernelWorker.GetSelectedMagicData.ElemAttackVAL;
                 StatusHoldWorker(1, KernelWorker.GetSelectedMagicData.ElemDefenseEN);
                 trackBarJElemDefense.Value = KernelWorker.GetSelectedMagicData.ElemDefenseVAL;
-                StatusHoldWorker(2,KernelWorker.GetSelectedMagicData.StatusMagic1, KernelWorker.GetSelectedMagicData.StatusATKEN, KernelWorker.GetSelectedMagicData.StatusMagic2, KernelWorker.GetSelectedMagicData.StatusMagic3, KernelWorker.GetSelectedMagicData.StatusMagic4, KernelWorker.GetSelectedMagicData.StatusMagic5);
+                StatusHoldWorker(2, KernelWorker.GetSelectedMagicData.StatusMagic1, KernelWorker.GetSelectedMagicData.StatusATKEN, KernelWorker.GetSelectedMagicData.StatusMagic2, KernelWorker.GetSelectedMagicData.StatusMagic3, KernelWorker.GetSelectedMagicData.StatusMagic4, KernelWorker.GetSelectedMagicData.StatusMagic5);
                 trackBarJStatAttack.Value = KernelWorker.GetSelectedMagicData.StatusATKval;
-                StatusHoldWorker(3, KernelWorker.GetSelectedMagicData.StatusMagic1,KernelWorker.GetSelectedMagicData.StatusDefEN , KernelWorker.GetSelectedMagicData.StatusMagic2, KernelWorker.GetSelectedMagicData.StatusMagic3, KernelWorker.GetSelectedMagicData.StatusMagic4, KernelWorker.GetSelectedMagicData.StatusMagic5);
+                StatusHoldWorker(3, KernelWorker.GetSelectedMagicData.StatusMagic1, KernelWorker.GetSelectedMagicData.StatusDefEN, KernelWorker.GetSelectedMagicData.StatusMagic2, KernelWorker.GetSelectedMagicData.StatusMagic3, KernelWorker.GetSelectedMagicData.StatusMagic4, KernelWorker.GetSelectedMagicData.StatusMagic5);
                 trackBarJStatDefense.Value = KernelWorker.GetSelectedMagicData.StatusDEFval;
                 numericUpDownMagicStatusAttackEnabler.Value = KernelWorker.GetSelectedMagicData.StatusAttackEnabler;
                 numericUpDownMagicQuezacoltComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.QuezacoltCompatibility)) / 5;
@@ -599,11 +682,11 @@ namespace Doomtrain
         /// </summary>
         /// <param name="State">0= Elemental Attack; 1=Elemental Defense; 2=Status Attack; 3=Status Defense</param>
         /// <param name="Element">Byte or ushort with bitvalue</param>
-        private void StatusHoldWorker(byte State, byte Element = 0, ushort Stat=0, byte Status2 = 0, byte Status3 = 0, byte Status4= 0, byte Status5=0)
+        private void StatusHoldWorker(byte State, byte Element = 0, ushort Stat = 0, byte Status2 = 0, byte Status3 = 0, byte Status4 = 0, byte Status5 = 0)
         {
-            if(State==0)
+            if (State == 0)
             {
-                switch(Element)
+                switch (Element)
                 {
                     case 0x00:
                         goto default;
@@ -641,7 +724,7 @@ namespace Doomtrain
             if (State == 1)
             {
                 ResetUI(1);
-                if((Element & 0x01) > 0) //If Element AND 01 is bigger than 0 - Classic bitwise logic operation. :)
+                if ((Element & 0x01) > 0) //If Element AND 01 is bigger than 0 - Classic bitwise logic operation. :)
                 {//Extreme better/faster than checking BitArray or making all possible cases (255 cases!)
                     checkBoxJElemDefenseFire.Checked = true;
                 }
@@ -673,7 +756,7 @@ namespace Doomtrain
                 {
                     checkBoxJElemDefenseHoly.Checked = true;
                 }
-                if(Element == 0x00) //null case, no magic trick this time. (Although there is one, but it's slow)
+                if (Element == 0x00) //null case, no magic trick this time. (Although there is one, but it's slow)
                 {
                     ResetUI(1);
                 }
@@ -743,7 +826,7 @@ namespace Doomtrain
                     checkBoxJStatDefenseSlow.Checked = true; //SLOW
                 if ((Stat & 0x0200) > 0)
                     checkBoxJStatDefenseStop.Checked = true; //STOP
-                if ((Stat & 0x0400 ) > 0)
+                if ((Stat & 0x0400) > 0)
                     checkBoxJStatDefenseCurse.Checked = true; //PAIN
                 if ((Stat & 0x0800) > 0)
                     checkBoxJStatDefenseConfusion.Checked = true; //CONFUSE
@@ -768,7 +851,7 @@ namespace Doomtrain
         //RESET UI
         private void ResetUI(byte State)
         {
-            if(State==1)
+            if (State == 1)
             {
                 checkBoxJElemDefenseIce.Checked = false;
                 checkBoxJElemDefenseEarth.Checked = false;
@@ -779,7 +862,7 @@ namespace Doomtrain
                 checkBoxJElemDefenseFire.Checked = false;
                 checkBoxJElemDefenseThunder.Checked = false;
             }
-            if(State==2)
+            if (State == 2)
             {
                 checkBoxJStatAttackBerserk.Checked = false;
                 checkBoxJStatAttackConfusion.Checked = false;
@@ -795,7 +878,7 @@ namespace Doomtrain
                 checkBoxJStatAttackZombie.Checked = false;
 
             }
-            if(State==3)
+            if (State == 3)
             {
                 checkBoxJStatDefenseBerserk.Checked = false;
                 checkBoxJStatDefenseConfusion.Checked = false;
@@ -917,7 +1000,7 @@ namespace Doomtrain
         }*/
         //opted out for now
 
-        
+
 
         private int GF_GetElement()
         {
@@ -971,7 +1054,7 @@ namespace Doomtrain
             checkBoxGFProtect.Checked = (KernelWorker.GetSelectedGFData.StatusGF2 & 0x20) >= 1 ? true : false;
             checkBoxGFShell.Checked = (KernelWorker.GetSelectedGFData.StatusGF2 & 0x40) >= 1 ? true : false;
             checkBoxGFReflect.Checked = (KernelWorker.GetSelectedGFData.StatusGF2 & 0x80) >= 1 ? true : false;
-                  
+
             checkBoxGFAura.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x01) >= 1 ? true : false;
             checkBoxGFCurse.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x02) >= 1 ? true : false;
             checkBoxGFDoom.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x04) >= 1 ? true : false;
@@ -980,14 +1063,14 @@ namespace Doomtrain
             checkBoxGFFloat.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x20) >= 1 ? true : false;
             checkBoxGFConfusion.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x40) >= 1 ? true : false;
             checkBoxGFDrain.Checked = (KernelWorker.GetSelectedGFData.StatusGF3 & 0x80) >= 1 ? true : false;
-                   
+
             checkBoxGFEject.Checked = (KernelWorker.GetSelectedGFData.StatusGF4 & 0x01) >= 1 ? true : false;
             checkBoxGFDouble.Checked = (KernelWorker.GetSelectedGFData.StatusGF4 & 0x02) >= 1 ? true : false;
             checkBoxGFTriple.Checked = (KernelWorker.GetSelectedGFData.StatusGF4 & 0x04) >= 1 ? true : false;
             checkBoxGFDefend.Checked = (KernelWorker.GetSelectedGFData.StatusGF4 & 0x08) >= 1 ? true : false;
-                    
+
             checkBoxGFVit0.Checked = (KernelWorker.GetSelectedGFData.StatusGF5 & 0x01) >= 1 ? true : false;
-                   
+
             checkBoxGFDeath.Checked = (KernelWorker.GetSelectedGFData.StatusGF1 & 0x01) >= 1 ? true : false;
             checkBoxGFPoison.Checked = (KernelWorker.GetSelectedGFData.StatusGF1 & 0x02) >= 1 ? true : false;
             checkBoxGFPetrify.Checked = (KernelWorker.GetSelectedGFData.StatusGF1 & 0x04) >= 1 ? true : false;
@@ -1339,10 +1422,82 @@ namespace Doomtrain
                 numericUpDownWeaponsAttackPower.Value = KernelWorker.GetSelectedWeaponsData.AttackPower;
                 numericUpDownWeaponsHITBonus.Value = KernelWorker.GetSelectedWeaponsData.HITBonus;
                 numericUpDownWeaponsSTRBonus.Value = KernelWorker.GetSelectedWeaponsData.STRBonus;
+                numericUpDownWeaponsTier.Value = KernelWorker.GetSelectedWeaponsData.Tier;
             }
             catch (Exception eeeeException)
             {
                 MessageBox.Show(eeeeException.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+
+        private int Characters_GetGender()
+        {
+            return KernelWorker.GetSelectedCharactersData.Gender == KernelWorker.Genders.Male
+                        ? 0
+                        : KernelWorker.GetSelectedCharactersData.Gender == KernelWorker.Genders.Female
+                        ? comboBoxCharGender.Items.Count - 1
+                        : 0;
+        }
+
+        private byte Characters_GetGender(int Index)
+        {
+            byte character = (byte)(Index == 1 ? (byte)KernelWorker.Genders.Male :
+                Index == 0 ? (byte)KernelWorker.Genders.Female :
+                0x00 /*ErrorHandler*/);
+            return character;
+        }
+
+        private void listBoxCharacters_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadCharacters(listBoxCharacters.SelectedIndex);
+
+            try
+            {
+                numericUpDownCharCrisisLevelHP.Value = KernelWorker.GetSelectedCharactersData.CrisisLevel;
+                comboBoxCharGender.SelectedIndex = Characters_GetGender();
+                numericUpDownCharLimitID.Value = KernelWorker.GetSelectedCharactersData.LimitID;
+                numericUpDownCharLimitParam.Value = KernelWorker.GetSelectedCharactersData.LimitParam;
+                numericUpDownCharEXP1.Value = KernelWorker.GetSelectedCharactersData.EXP1;
+                numericUpDownCharEXP2.Value = KernelWorker.GetSelectedCharactersData.EXP2;
+                numericUpDownCharHP1.Value = KernelWorker.GetSelectedCharactersData.HP1;
+                numericUpDownCharHP2.Value = KernelWorker.GetSelectedCharactersData.HP2;
+                numericUpDownCharHP3.Value = KernelWorker.GetSelectedCharactersData.HP3;
+                numericUpDownCharHP4.Value = KernelWorker.GetSelectedCharactersData.HP4;
+                numericUpDownCharSTR1.Value = KernelWorker.GetSelectedCharactersData.STR1;
+                numericUpDownCharSTR2.Value = KernelWorker.GetSelectedCharactersData.STR2;
+                numericUpDownCharSTR3.Value = KernelWorker.GetSelectedCharactersData.STR3;
+                numericUpDownCharSTR4.Value = KernelWorker.GetSelectedCharactersData.STR4;
+                numericUpDownCharVIT1.Value = KernelWorker.GetSelectedCharactersData.VIT1;
+                numericUpDownCharVIT2.Value = KernelWorker.GetSelectedCharactersData.VIT2;
+                numericUpDownCharVIT3.Value = KernelWorker.GetSelectedCharactersData.VIT3;
+                numericUpDownCharVIT4.Value = KernelWorker.GetSelectedCharactersData.VIT4;
+                numericUpDownCharMAG1.Value = KernelWorker.GetSelectedCharactersData.MAG1;
+                numericUpDownCharMAG2.Value = KernelWorker.GetSelectedCharactersData.MAG2;
+                numericUpDownCharMAG3.Value = KernelWorker.GetSelectedCharactersData.MAG3;
+                numericUpDownCharMAG4.Value = KernelWorker.GetSelectedCharactersData.MAG4;
+                numericUpDownCharSPR1.Value = KernelWorker.GetSelectedCharactersData.SPR1;
+                numericUpDownCharSPR2.Value = KernelWorker.GetSelectedCharactersData.SPR2;
+                numericUpDownCharSPR3.Value = KernelWorker.GetSelectedCharactersData.SPR3;
+                numericUpDownCharSPR4.Value = KernelWorker.GetSelectedCharactersData.SPR4;
+                numericUpDownCharSPD1.Value = KernelWorker.GetSelectedCharactersData.SPD1;
+                numericUpDownCharSPD2.Value = KernelWorker.GetSelectedCharactersData.SPD2;
+                numericUpDownCharSPD3.Value = KernelWorker.GetSelectedCharactersData.SPD3;
+                numericUpDownCharSPD4.Value = KernelWorker.GetSelectedCharactersData.SPD4;
+                numericUpDownCharLUCK1.Value = KernelWorker.GetSelectedCharactersData.LUCK1;
+                numericUpDownCharLUCK2.Value = KernelWorker.GetSelectedCharactersData.LUCK2;
+                numericUpDownCharLUCK3.Value = KernelWorker.GetSelectedCharactersData.LUCK3;
+                numericUpDownCharLUCK4.Value = KernelWorker.GetSelectedCharactersData.LUCK4;
+            }
+            catch (Exception eeeeeException)
+            {
+                MessageBox.Show(eeeeeException.ToString());
             }
             _loaded = true;
         }
