@@ -11292,9 +11292,9 @@
             this.checkBoxMagicFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxMagicFlag5.Location = new System.Drawing.Point(90, 212);
             this.checkBoxMagicFlag5.Name = "checkBoxMagicFlag5";
-            this.checkBoxMagicFlag5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxMagicFlag5.Size = new System.Drawing.Size(75, 19);
             this.checkBoxMagicFlag5.TabIndex = 49;
-            this.checkBoxMagicFlag5.Text = "???";
+            this.checkBoxMagicFlag5.Text = "Reflected";
             this.checkBoxMagicFlag5.UseVisualStyleBackColor = true;
             // 
             // checkBoxMagicFlag6
