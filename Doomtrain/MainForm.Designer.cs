@@ -756,7 +756,6 @@
             this.tabControlMain.Controls.Add(this.tabBlueMagic);
             this.tabControlMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlMain.Location = new System.Drawing.Point(0, 52);
-            this.tabControlMain.Multiline = true;
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
             this.tabControlMain.Size = new System.Drawing.Size(592, 809);
@@ -767,9 +766,9 @@
             // 
             this.tabPageCharacters.Controls.Add(this.tabControlCharacters);
             this.tabPageCharacters.Controls.Add(this.listBoxCharacters);
-            this.tabPageCharacters.Location = new System.Drawing.Point(4, 63);
+            this.tabPageCharacters.Location = new System.Drawing.Point(4, 32);
             this.tabPageCharacters.Name = "tabPageCharacters";
-            this.tabPageCharacters.Size = new System.Drawing.Size(584, 742);
+            this.tabPageCharacters.Size = new System.Drawing.Size(584, 773);
             this.tabPageCharacters.TabIndex = 5;
             this.tabPageCharacters.Text = "Characters";
             this.tabPageCharacters.UseVisualStyleBackColor = true;
@@ -2044,9 +2043,9 @@
             // 
             this.tabPageWeapons.Controls.Add(this.groupBoxWeaponsGeneral);
             this.tabPageWeapons.Controls.Add(this.listBoxWeapons);
-            this.tabPageWeapons.Location = new System.Drawing.Point(4, 63);
+            this.tabPageWeapons.Location = new System.Drawing.Point(4, 32);
             this.tabPageWeapons.Name = "tabPageWeapons";
-            this.tabPageWeapons.Size = new System.Drawing.Size(584, 742);
+            this.tabPageWeapons.Size = new System.Drawing.Size(584, 773);
             this.tabPageWeapons.TabIndex = 4;
             this.tabPageWeapons.Text = "Weapons";
             this.tabPageWeapons.UseVisualStyleBackColor = true;
@@ -2322,10 +2321,10 @@
             // 
             this.tabPageAbilities.Controls.Add(this.tabControlAbilities);
             this.tabPageAbilities.Controls.Add(this.listBoxStatsIncrement);
-            this.tabPageAbilities.Location = new System.Drawing.Point(4, 63);
+            this.tabPageAbilities.Location = new System.Drawing.Point(4, 32);
             this.tabPageAbilities.Name = "tabPageAbilities";
             this.tabPageAbilities.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAbilities.Size = new System.Drawing.Size(584, 742);
+            this.tabPageAbilities.Size = new System.Drawing.Size(584, 773);
             this.tabPageAbilities.TabIndex = 2;
             this.tabPageAbilities.Text = "Abilities";
             this.tabPageAbilities.UseVisualStyleBackColor = true;
@@ -2483,10 +2482,10 @@
             this.tabPageMagic.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPageMagic.Controls.Add(this.tabControlMagic);
             this.tabPageMagic.Controls.Add(this.listBoxMagic);
-            this.tabPageMagic.Location = new System.Drawing.Point(4, 63);
+            this.tabPageMagic.Location = new System.Drawing.Point(4, 32);
             this.tabPageMagic.Name = "tabPageMagic";
             this.tabPageMagic.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMagic.Size = new System.Drawing.Size(584, 742);
+            this.tabPageMagic.Size = new System.Drawing.Size(584, 773);
             this.tabPageMagic.TabIndex = 0;
             this.tabPageMagic.Text = "Magic";
             // 
@@ -2556,7 +2555,7 @@
             this.groupBoxMagicGFComp.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.groupBoxMagicGFComp.Location = new System.Drawing.Point(0, 471);
             this.groupBoxMagicGFComp.Name = "groupBoxMagicGFComp";
-            this.groupBoxMagicGFComp.Size = new System.Drawing.Size(466, 241);
+            this.groupBoxMagicGFComp.Size = new System.Drawing.Size(466, 238);
             this.groupBoxMagicGFComp.TabIndex = 4;
             this.groupBoxMagicGFComp.TabStop = false;
             this.groupBoxMagicGFComp.Text = "GFs Compatibility";
@@ -5147,7 +5146,7 @@
             this.listBoxMagic.Location = new System.Drawing.Point(0, 0);
             this.listBoxMagic.Name = "listBoxMagic";
             this.listBoxMagic.ScrollAlwaysVisible = true;
-            this.listBoxMagic.Size = new System.Drawing.Size(109, 735);
+            this.listBoxMagic.Size = new System.Drawing.Size(109, 769);
             this.listBoxMagic.TabIndex = 1;
             this.listBoxMagic.SelectedIndexChanged += new System.EventHandler(this.listBoxMagic_SelectedIndexChanged);
             // 
@@ -5157,10 +5156,10 @@
             this.tabPageGF.Controls.Add(this.tabControlGF);
             this.tabPageGF.Controls.Add(this.listBoxGF);
             this.tabPageGF.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageGF.Location = new System.Drawing.Point(4, 63);
+            this.tabPageGF.Location = new System.Drawing.Point(4, 32);
             this.tabPageGF.Name = "tabPageGF";
             this.tabPageGF.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGF.Size = new System.Drawing.Size(584, 742);
+            this.tabPageGF.Size = new System.Drawing.Size(584, 773);
             this.tabPageGF.TabIndex = 1;
             this.tabPageGF.Text = "G-Forces";
             // 
@@ -9717,9 +9716,9 @@
             this.tabPageGFAttacks.Controls.Add(this.groupBoxGFAttacksStatusAttack);
             this.tabPageGFAttacks.Controls.Add(this.groupBoxGFAttacksGeneral);
             this.tabPageGFAttacks.Controls.Add(this.listBoxGFAttacks);
-            this.tabPageGFAttacks.Location = new System.Drawing.Point(4, 63);
+            this.tabPageGFAttacks.Location = new System.Drawing.Point(4, 32);
             this.tabPageGFAttacks.Name = "tabPageGFAttacks";
-            this.tabPageGFAttacks.Size = new System.Drawing.Size(584, 742);
+            this.tabPageGFAttacks.Size = new System.Drawing.Size(584, 773);
             this.tabPageGFAttacks.TabIndex = 3;
             this.tabPageGFAttacks.Text = "NJ G-Forces";
             this.tabPageGFAttacks.UseVisualStyleBackColor = true;
@@ -10705,10 +10704,10 @@
             // 
             this.tabBlueMagic.Controls.Add(this.groupBox8);
             this.tabBlueMagic.Controls.Add(this.listBox1);
-            this.tabBlueMagic.Location = new System.Drawing.Point(4, 63);
+            this.tabBlueMagic.Location = new System.Drawing.Point(4, 32);
             this.tabBlueMagic.Name = "tabBlueMagic";
             this.tabBlueMagic.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBlueMagic.Size = new System.Drawing.Size(584, 742);
+            this.tabBlueMagic.Size = new System.Drawing.Size(584, 773);
             this.tabBlueMagic.TabIndex = 6;
             this.tabBlueMagic.Text = "Blue Magic";
             this.tabBlueMagic.UseVisualStyleBackColor = true;
@@ -11244,9 +11243,9 @@
             this.checkBoxMagicFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxMagicFlag1.Location = new System.Drawing.Point(90, 187);
             this.checkBoxMagicFlag1.Name = "checkBoxMagicFlag1";
-            this.checkBoxMagicFlag1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxMagicFlag1.Size = new System.Drawing.Size(64, 19);
             this.checkBoxMagicFlag1.TabIndex = 45;
-            this.checkBoxMagicFlag1.Text = "???";
+            this.checkBoxMagicFlag1.Text = "Shelled";
             this.checkBoxMagicFlag1.UseVisualStyleBackColor = true;
             // 
             // checkBoxMagicFlag8
