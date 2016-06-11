@@ -141,7 +141,7 @@ namespace Doomtrain
             public byte SpellPower;
             public byte Unknown2;
             public byte DefaultTarget;
-            public byte Unknown3;
+            public byte Flags;
             public byte DrawResist;
             public byte HitCount;
             public Element Element;
@@ -170,7 +170,7 @@ namespace Doomtrain
             public byte StatusDEFval;
             public UInt16 StatusATKEN;
             public UInt16 StatusDefEN;
-            public byte StatusAttackEnabler;
+            public byte StatusAttack;
             public byte QuezacoltCompatibility;
             public byte ShivaCompatibility;
             public byte IfritCompatibility;
@@ -548,7 +548,16 @@ namespace Doomtrain
                         Kernel[OffsetToMagicSelected + 10] = Convert.ToByte(variable); //default target
                         return;
                     }
-
+                case 43:
+                    {
+                        Kernel[OffsetToMagicSelected + 7] = Convert.ToByte(variable); //attack type
+                        return;
+                    }
+                case 44:
+                    {
+                        Kernel[OffsetToMagicSelected + 11] ^= Convert.ToByte(variable); //flags
+                        return;
+                    }
 
                 default:
                     return;
@@ -987,7 +996,7 @@ namespace Doomtrain
             GetSelectedMagicData.SpellPower = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.Unknown2 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.DefaultTarget = Kernel[selectedMagicOffset++];
-            GetSelectedMagicData.Unknown3 = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.Flags = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.DrawResist = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.HitCount = Kernel[selectedMagicOffset++];
             byte b = Kernel[selectedMagicOffset++];
@@ -1018,7 +1027,7 @@ namespace Doomtrain
             GetSelectedMagicData.StatusMagic4 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.StatusMagic5 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.Unknown5 = BitConverter.ToUInt16(Kernel, selectedMagicOffset ++);
-            GetSelectedMagicData.StatusAttackEnabler = Kernel[selectedMagicOffset++];
+            GetSelectedMagicData.StatusAttack = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.HP = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.STR = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.VIT = Kernel[selectedMagicOffset++];
