@@ -197,6 +197,7 @@ namespace Doomtrain
             public UInt16 GFMagicID;
             public byte GFAttackType;
             public byte GFPower;
+            public byte GFFlags;
             public Element ElementGF;
             public byte StatusGF1;
             public byte StatusGF2;
@@ -628,54 +629,59 @@ namespace Doomtrain
                     Kernel[OffsetToGFSelected + 19] = 0x00;
                     return;
                 case 10:
-                        Kernel[OffsetToMagicSelected + 112] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Quezacolt Compatibility
+                        Kernel[OffsetToGFSelected + 112] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Quezacolt Compatibility
                         return;
                 case 11:
-                        Kernel[OffsetToMagicSelected + 113] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Shiva Compatibility
+                        Kernel[OffsetToGFSelected + 113] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Shiva Compatibility
                         return;
                 case 12:
-                        Kernel[OffsetToMagicSelected + 114] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Ifrit Compatibility
+                        Kernel[OffsetToGFSelected + 114] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Ifrit Compatibility
                         return;
                 case 13:
-                        Kernel[OffsetToMagicSelected + 115] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Siren Compatibility
+                        Kernel[OffsetToGFSelected + 115] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Siren Compatibility
                         return;
                 case 14:
-                        Kernel[OffsetToMagicSelected + 116] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Brothers Compatibility
+                        Kernel[OffsetToGFSelected + 116] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Brothers Compatibility
                         return;
                 case 15:
-                        Kernel[OffsetToMagicSelected + 117] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Diablos Compatibility
+                        Kernel[OffsetToGFSelected + 117] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Diablos Compatibility
                         return;
                 case 16:
-                        Kernel[OffsetToMagicSelected + 118] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Carbuncle Compatibility
+                        Kernel[OffsetToGFSelected + 118] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Carbuncle Compatibility
                         return;
                 case 17:
-                        Kernel[OffsetToMagicSelected + 119] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Leviathan Compatibility
+                        Kernel[OffsetToGFSelected + 119] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Leviathan Compatibility
                         return;
                 case 18:
-                        Kernel[OffsetToMagicSelected + 120] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Pandemona Compatibility
+                        Kernel[OffsetToGFSelected + 120] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Pandemona Compatibility
                         return;
                 case 19:
-                        Kernel[OffsetToMagicSelected + 121] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Cerberus Compatibility
+                        Kernel[OffsetToGFSelected + 121] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Cerberus Compatibility
                         return;
                 case 20:
-                        Kernel[OffsetToMagicSelected + 122] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Alexander Compatibility
+                        Kernel[OffsetToGFSelected + 122] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Alexander Compatibility
                         return;
                 case 21:
-                        Kernel[OffsetToMagicSelected + 123] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Doomtrain Compatibility
+                        Kernel[OffsetToGFSelected + 123] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Doomtrain Compatibility
                         return;
                 case 22:
-                        Kernel[OffsetToMagicSelected + 124] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Bahamut Compatibility
+                        Kernel[OffsetToGFSelected + 124] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Bahamut Compatibility
                         return;
                 case 23:
-                        Kernel[OffsetToMagicSelected + 125] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Cactuar Compatibility
+                        Kernel[OffsetToGFSelected + 125] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Cactuar Compatibility
                         return;
                 case 24:
-                        Kernel[OffsetToMagicSelected + 126] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Tonberry Compatibility
+                        Kernel[OffsetToGFSelected + 126] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Tonberry Compatibility
                         return;
                 case 25:
-                        Kernel[OffsetToMagicSelected + 127] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Eden Compatibility
+                        Kernel[OffsetToGFSelected + 127] = Convert.ToByte(100 - 5 * Convert.ToDecimal(variable)); //Eden Compatibility
                         return;
-
+                case 26:
+                        Kernel[OffsetToGFSelected + 6] = Convert.ToByte(variable); //attack type
+                        return;
+                case 27:
+                        Kernel[OffsetToGFSelected + 10] ^= Convert.ToByte(variable); //flags
+                        return;
                 default:
                     return;
             }
@@ -1077,7 +1083,9 @@ namespace Doomtrain
             selectedGfOffset += 4 + 2; //Name Offset + Description Offset + MagicID
             GetSelectedGFData.GFAttackType = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFPower = Kernel[selectedGfOffset];
-            selectedGfOffset += 1 + 5; //Unknown + GFPower
+            selectedGfOffset += 3; //Unknown + GFPower
+            GetSelectedGFData.GFFlags = Kernel[selectedGfOffset];
+            selectedGfOffset += 3;
             byte b = Kernel[selectedGfOffset++];
             GetSelectedGFData.ElementGF =
                 b == (byte)Element.Fire
