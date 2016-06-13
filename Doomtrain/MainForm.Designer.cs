@@ -78,7 +78,7 @@
             this.labelMagicElement = new System.Windows.Forms.Label();
             this.labelMagicAttackType = new System.Windows.Forms.Label();
             this.labelMagicQuezacoltComp = new System.Windows.Forms.Label();
-            this.labelStatsIncrementName = new System.Windows.Forms.Label();
+            this.labelAbStatsName = new System.Windows.Forms.Label();
             this.labelWeaponsCharacterID = new System.Windows.Forms.Label();
             this.labelWeaponsRenzoFin = new System.Windows.Forms.Label();
             this.labelWeaponsAttackPower = new System.Windows.Forms.Label();
@@ -371,15 +371,15 @@
             this.listBoxMagic = new System.Windows.Forms.ListBox();
             this.tabPageAbilities = new System.Windows.Forms.TabPage();
             this.tabControlAbilities = new System.Windows.Forms.TabControl();
-            this.tabPageStatsIncrement = new System.Windows.Forms.TabPage();
+            this.tabPageAbStats = new System.Windows.Forms.TabPage();
             this.groupBoxStatsIncrement = new System.Windows.Forms.GroupBox();
-            this.labelStatsIncrementValueTrackBar = new System.Windows.Forms.Label();
-            this.trackBarStatsIncrementValue = new System.Windows.Forms.TrackBar();
-            this.textBoxStatsIncrementDescription = new System.Windows.Forms.TextBox();
-            this.textBoxStatsIncrementName = new System.Windows.Forms.TextBox();
-            this.labelStatsIncrementDescription = new System.Windows.Forms.Label();
-            this.labelStatsIncrementValue = new System.Windows.Forms.Label();
-            this.listBoxStatsIncrement = new System.Windows.Forms.ListBox();
+            this.labelAbStatsValueTrackBar = new System.Windows.Forms.Label();
+            this.trackBarAbStatsIncrementValue = new System.Windows.Forms.TrackBar();
+            this.textBoxAbStatsDescription = new System.Windows.Forms.TextBox();
+            this.textBoxAbStatsName = new System.Windows.Forms.TextBox();
+            this.labelStatsDescription = new System.Windows.Forms.Label();
+            this.labelAbStatsIncrementValue = new System.Windows.Forms.Label();
+            this.listBoxAbStats = new System.Windows.Forms.ListBox();
             this.tabPageWeapons = new System.Windows.Forms.TabPage();
             this.groupBoxWeaponsGeneral = new System.Windows.Forms.GroupBox();
             this.checkBoxWeaponsRenzoFinLion = new System.Windows.Forms.CheckBox();
@@ -658,6 +658,26 @@
             this.labelSlotSetsN = new System.Windows.Forms.Label();
             this.labelSlotSetsMagic = new System.Windows.Forms.Label();
             this.labelSlotSetsList = new System.Windows.Forms.Label();
+            this.tabPageAbJunction = new System.Windows.Forms.TabPage();
+            this.tabPageAbCommand = new System.Windows.Forms.TabPage();
+            this.tabPageAbCharacters = new System.Windows.Forms.TabPage();
+            this.tabPageABParty = new System.Windows.Forms.TabPage();
+            this.tabPageAbGF = new System.Windows.Forms.TabPage();
+            this.tabPageAbMenu = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.listBoxAbCharacters = new System.Windows.Forms.ListBox();
+            this.comboBoxAbStatsStatToIncrease = new System.Windows.Forms.ComboBox();
+            this.labelAbStatsStatToIncrease = new System.Windows.Forms.Label();
+            this.listBoxAbJunction = new System.Windows.Forms.ListBox();
+            this.listBoxAbCommand = new System.Windows.Forms.ListBox();
+            this.listBoxAbGF = new System.Windows.Forms.ListBox();
+            this.listBoxAbParty = new System.Windows.Forms.ListBox();
+            this.listBoxAbMenu = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
@@ -747,9 +767,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicSTRJ)).BeginInit();
             this.tabPageAbilities.SuspendLayout();
             this.tabControlAbilities.SuspendLayout();
-            this.tabPageStatsIncrement.SuspendLayout();
+            this.tabPageAbStats.SuspendLayout();
             this.groupBoxStatsIncrement.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarStatsIncrementValue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarAbStatsIncrementValue)).BeginInit();
             this.tabPageWeapons.SuspendLayout();
             this.groupBoxWeaponsGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsSTRBonus)).BeginInit();
@@ -876,6 +896,8 @@
             this.panelGFAbilities.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP1)).BeginInit();
+            this.tabPageAbCharacters.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelBlueMagicMagicID
@@ -2141,17 +2163,17 @@
             this.labelMagicQuezacoltComp.Text = "Quezacotl";
             this.toolTip1.SetToolTip(this.labelMagicQuezacoltComp, "Modifies compatibility with this GF when the magic is used");
             // 
-            // labelStatsIncrementName
+            // labelAbStatsName
             // 
-            this.labelStatsIncrementName.AutoSize = true;
-            this.labelStatsIncrementName.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelStatsIncrementName.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatsIncrementName.Location = new System.Drawing.Point(211, 31);
-            this.labelStatsIncrementName.Name = "labelStatsIncrementName";
-            this.labelStatsIncrementName.Size = new System.Drawing.Size(44, 17);
-            this.labelStatsIncrementName.TabIndex = 1;
-            this.labelStatsIncrementName.Text = "Name";
-            this.toolTip1.SetToolTip(this.labelStatsIncrementName, "Used in damage calculation");
+            this.labelAbStatsName.AutoSize = true;
+            this.labelAbStatsName.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbStatsName.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbStatsName.Location = new System.Drawing.Point(201, 31);
+            this.labelAbStatsName.Name = "labelAbStatsName";
+            this.labelAbStatsName.Size = new System.Drawing.Size(44, 17);
+            this.labelAbStatsName.TabIndex = 1;
+            this.labelAbStatsName.Text = "Name";
+            this.toolTip1.SetToolTip(this.labelAbStatsName, "Used in damage calculation");
             // 
             // labelWeaponsCharacterID
             // 
@@ -7151,7 +7173,13 @@
             // tabPageAbilities
             // 
             this.tabPageAbilities.Controls.Add(this.tabControlAbilities);
-            this.tabPageAbilities.Controls.Add(this.listBoxStatsIncrement);
+            this.tabPageAbilities.Controls.Add(this.listBoxAbCharacters);
+            this.tabPageAbilities.Controls.Add(this.listBoxAbStats);
+            this.tabPageAbilities.Controls.Add(this.listBoxAbMenu);
+            this.tabPageAbilities.Controls.Add(this.listBoxAbParty);
+            this.tabPageAbilities.Controls.Add(this.listBoxAbGF);
+            this.tabPageAbilities.Controls.Add(this.listBoxAbCommand);
+            this.tabPageAbilities.Controls.Add(this.listBoxAbJunction);
             this.tabPageAbilities.Location = new System.Drawing.Point(4, 32);
             this.tabPageAbilities.Name = "tabPageAbilities";
             this.tabPageAbilities.Padding = new System.Windows.Forms.Padding(3);
@@ -7162,115 +7190,122 @@
             // 
             // tabControlAbilities
             // 
-            this.tabControlAbilities.Controls.Add(this.tabPageStatsIncrement);
+            this.tabControlAbilities.Controls.Add(this.tabPageAbCharacters);
+            this.tabControlAbilities.Controls.Add(this.tabPageAbStats);
+            this.tabControlAbilities.Controls.Add(this.tabPageAbJunction);
+            this.tabControlAbilities.Controls.Add(this.tabPageAbCommand);
+            this.tabControlAbilities.Controls.Add(this.tabPageAbGF);
+            this.tabControlAbilities.Controls.Add(this.tabPageABParty);
+            this.tabControlAbilities.Controls.Add(this.tabPageAbMenu);
             this.tabControlAbilities.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlAbilities.Location = new System.Drawing.Point(111, 0);
-            this.tabControlAbilities.Multiline = true;
+            this.tabControlAbilities.Location = new System.Drawing.Point(126, 0);
             this.tabControlAbilities.Name = "tabControlAbilities";
             this.tabControlAbilities.SelectedIndex = 0;
-            this.tabControlAbilities.Size = new System.Drawing.Size(477, 736);
+            this.tabControlAbilities.Size = new System.Drawing.Size(458, 736);
             this.tabControlAbilities.TabIndex = 2;
             this.tabControlAbilities.TabStop = false;
             // 
-            // tabPageStatsIncrement
+            // tabPageAbStats
             // 
-            this.tabPageStatsIncrement.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageStatsIncrement.Controls.Add(this.groupBoxStatsIncrement);
-            this.tabPageStatsIncrement.Location = new System.Drawing.Point(4, 26);
-            this.tabPageStatsIncrement.Name = "tabPageStatsIncrement";
-            this.tabPageStatsIncrement.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageStatsIncrement.Size = new System.Drawing.Size(469, 706);
-            this.tabPageStatsIncrement.TabIndex = 0;
-            this.tabPageStatsIncrement.Text = "Stats Increment";
+            this.tabPageAbStats.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbStats.Controls.Add(this.groupBoxStatsIncrement);
+            this.tabPageAbStats.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbStats.Name = "tabPageAbStats";
+            this.tabPageAbStats.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAbStats.Size = new System.Drawing.Size(450, 706);
+            this.tabPageAbStats.TabIndex = 0;
+            this.tabPageAbStats.Text = "Stats";
             // 
             // groupBoxStatsIncrement
             // 
             this.groupBoxStatsIncrement.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementValueTrackBar);
-            this.groupBoxStatsIncrement.Controls.Add(this.trackBarStatsIncrementValue);
-            this.groupBoxStatsIncrement.Controls.Add(this.textBoxStatsIncrementDescription);
-            this.groupBoxStatsIncrement.Controls.Add(this.textBoxStatsIncrementName);
-            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementDescription);
-            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementValue);
-            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsIncrementName);
+            this.groupBoxStatsIncrement.Controls.Add(this.comboBoxAbStatsStatToIncrease);
+            this.groupBoxStatsIncrement.Controls.Add(this.labelAbStatsStatToIncrease);
+            this.groupBoxStatsIncrement.Controls.Add(this.labelAbStatsValueTrackBar);
+            this.groupBoxStatsIncrement.Controls.Add(this.trackBarAbStatsIncrementValue);
+            this.groupBoxStatsIncrement.Controls.Add(this.textBoxAbStatsDescription);
+            this.groupBoxStatsIncrement.Controls.Add(this.textBoxAbStatsName);
+            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsDescription);
+            this.groupBoxStatsIncrement.Controls.Add(this.labelAbStatsIncrementValue);
+            this.groupBoxStatsIncrement.Controls.Add(this.labelAbStatsName);
             this.groupBoxStatsIncrement.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxStatsIncrement.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxStatsIncrement.Location = new System.Drawing.Point(0, 6);
             this.groupBoxStatsIncrement.Name = "groupBoxStatsIncrement";
-            this.groupBoxStatsIncrement.Size = new System.Drawing.Size(466, 285);
+            this.groupBoxStatsIncrement.Size = new System.Drawing.Size(447, 262);
             this.groupBoxStatsIncrement.TabIndex = 2;
             this.groupBoxStatsIncrement.TabStop = false;
             this.groupBoxStatsIncrement.Text = "General";
             // 
-            // labelStatsIncrementValueTrackBar
+            // labelAbStatsValueTrackBar
             // 
-            this.labelStatsIncrementValueTrackBar.AutoSize = true;
-            this.labelStatsIncrementValueTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatsIncrementValueTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatsIncrementValueTrackBar.Location = new System.Drawing.Point(219, 232);
-            this.labelStatsIncrementValueTrackBar.Name = "labelStatsIncrementValueTrackBar";
-            this.labelStatsIncrementValueTrackBar.Size = new System.Drawing.Size(28, 19);
-            this.labelStatsIncrementValueTrackBar.TabIndex = 28;
-            this.labelStatsIncrementValueTrackBar.Text = "0%";
-            this.labelStatsIncrementValueTrackBar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.labelAbStatsValueTrackBar.AutoSize = true;
+            this.labelAbStatsValueTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAbStatsValueTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbStatsValueTrackBar.Location = new System.Drawing.Point(260, 224);
+            this.labelAbStatsValueTrackBar.Name = "labelAbStatsValueTrackBar";
+            this.labelAbStatsValueTrackBar.Size = new System.Drawing.Size(28, 19);
+            this.labelAbStatsValueTrackBar.TabIndex = 28;
+            this.labelAbStatsValueTrackBar.Text = "0%";
+            this.labelAbStatsValueTrackBar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // trackBarStatsIncrementValue
+            // trackBarAbStatsIncrementValue
             // 
-            this.trackBarStatsIncrementValue.LargeChange = 10;
-            this.trackBarStatsIncrementValue.Location = new System.Drawing.Point(17, 205);
-            this.trackBarStatsIncrementValue.Maximum = 255;
-            this.trackBarStatsIncrementValue.Name = "trackBarStatsIncrementValue";
-            this.trackBarStatsIncrementValue.Size = new System.Drawing.Size(432, 45);
-            this.trackBarStatsIncrementValue.TabIndex = 27;
-            this.trackBarStatsIncrementValue.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.trackBarStatsIncrementValue.Scroll += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
-            this.trackBarStatsIncrementValue.ValueChanged += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
+            this.trackBarAbStatsIncrementValue.LargeChange = 10;
+            this.trackBarAbStatsIncrementValue.Location = new System.Drawing.Point(122, 198);
+            this.trackBarAbStatsIncrementValue.Maximum = 255;
+            this.trackBarAbStatsIncrementValue.Name = "trackBarAbStatsIncrementValue";
+            this.trackBarAbStatsIncrementValue.Size = new System.Drawing.Size(318, 45);
+            this.trackBarAbStatsIncrementValue.TabIndex = 27;
+            this.trackBarAbStatsIncrementValue.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.trackBarAbStatsIncrementValue.Scroll += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
+            this.trackBarAbStatsIncrementValue.ValueChanged += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
             // 
-            // textBoxStatsIncrementDescription
+            // textBoxAbStatsDescription
             // 
-            this.textBoxStatsIncrementDescription.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStatsIncrementDescription.Location = new System.Drawing.Point(111, 120);
-            this.textBoxStatsIncrementDescription.Name = "textBoxStatsIncrementDescription";
-            this.textBoxStatsIncrementDescription.Size = new System.Drawing.Size(245, 25);
-            this.textBoxStatsIncrementDescription.TabIndex = 2;
+            this.textBoxAbStatsDescription.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAbStatsDescription.Location = new System.Drawing.Point(101, 120);
+            this.textBoxAbStatsDescription.Name = "textBoxAbStatsDescription";
+            this.textBoxAbStatsDescription.Size = new System.Drawing.Size(245, 25);
+            this.textBoxAbStatsDescription.TabIndex = 2;
             // 
-            // textBoxStatsIncrementName
+            // textBoxAbStatsName
             // 
-            this.textBoxStatsIncrementName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStatsIncrementName.Location = new System.Drawing.Point(145, 51);
-            this.textBoxStatsIncrementName.Name = "textBoxStatsIncrementName";
-            this.textBoxStatsIncrementName.Size = new System.Drawing.Size(176, 25);
-            this.textBoxStatsIncrementName.TabIndex = 2;
+            this.textBoxAbStatsName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAbStatsName.Location = new System.Drawing.Point(135, 51);
+            this.textBoxAbStatsName.Name = "textBoxAbStatsName";
+            this.textBoxAbStatsName.Size = new System.Drawing.Size(176, 25);
+            this.textBoxAbStatsName.TabIndex = 2;
             // 
-            // labelStatsIncrementDescription
+            // labelStatsDescription
             // 
-            this.labelStatsIncrementDescription.AutoSize = true;
-            this.labelStatsIncrementDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelStatsIncrementDescription.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatsIncrementDescription.Location = new System.Drawing.Point(195, 100);
-            this.labelStatsIncrementDescription.Name = "labelStatsIncrementDescription";
-            this.labelStatsIncrementDescription.Size = new System.Drawing.Size(76, 17);
-            this.labelStatsIncrementDescription.TabIndex = 1;
-            this.labelStatsIncrementDescription.Text = "Description";
+            this.labelStatsDescription.AutoSize = true;
+            this.labelStatsDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelStatsDescription.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatsDescription.Location = new System.Drawing.Point(185, 100);
+            this.labelStatsDescription.Name = "labelStatsDescription";
+            this.labelStatsDescription.Size = new System.Drawing.Size(76, 17);
+            this.labelStatsDescription.TabIndex = 1;
+            this.labelStatsDescription.Text = "Description";
             // 
-            // labelStatsIncrementValue
+            // labelAbStatsIncrementValue
             // 
-            this.labelStatsIncrementValue.AutoSize = true;
-            this.labelStatsIncrementValue.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelStatsIncrementValue.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatsIncrementValue.Location = new System.Drawing.Point(170, 185);
-            this.labelStatsIncrementValue.Name = "labelStatsIncrementValue";
-            this.labelStatsIncrementValue.Size = new System.Drawing.Size(126, 17);
-            this.labelStatsIncrementValue.TabIndex = 1;
-            this.labelStatsIncrementValue.Text = "Increasement Value";
+            this.labelAbStatsIncrementValue.AutoSize = true;
+            this.labelAbStatsIncrementValue.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbStatsIncrementValue.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbStatsIncrementValue.Location = new System.Drawing.Point(211, 178);
+            this.labelAbStatsIncrementValue.Name = "labelAbStatsIncrementValue";
+            this.labelAbStatsIncrementValue.Size = new System.Drawing.Size(126, 17);
+            this.labelAbStatsIncrementValue.TabIndex = 1;
+            this.labelAbStatsIncrementValue.Text = "Increasement Value";
             // 
-            // listBoxStatsIncrement
+            // listBoxAbStats
             // 
-            this.listBoxStatsIncrement.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxStatsIncrement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxStatsIncrement.FormattingEnabled = true;
-            this.listBoxStatsIncrement.ItemHeight = 17;
-            this.listBoxStatsIncrement.Items.AddRange(new object[] {
+            this.listBoxAbStats.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbStats.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbStats.FormattingEnabled = true;
+            this.listBoxAbStats.ItemHeight = 17;
+            this.listBoxAbStats.Items.AddRange(new object[] {
             "HP+20%",
             "HP+40%",
             "HP+80%",
@@ -7290,11 +7325,11 @@
             "SPD+40%",
             "EVA+30%",
             "LUCK+50%"});
-            this.listBoxStatsIncrement.Location = new System.Drawing.Point(0, 0);
-            this.listBoxStatsIncrement.Name = "listBoxStatsIncrement";
-            this.listBoxStatsIncrement.ScrollAlwaysVisible = true;
-            this.listBoxStatsIncrement.Size = new System.Drawing.Size(109, 327);
-            this.listBoxStatsIncrement.TabIndex = 3;
+            this.listBoxAbStats.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbStats.Name = "listBoxAbStats";
+            this.listBoxAbStats.ScrollAlwaysVisible = true;
+            this.listBoxAbStats.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbStats.TabIndex = 3;
             // 
             // tabPageWeapons
             // 
@@ -16464,6 +16499,332 @@
             this.labelSlotSetsList.TabIndex = 29;
             this.labelSlotSetsList.Text = "Set List";
             // 
+            // tabPageAbJunction
+            // 
+            this.tabPageAbJunction.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbJunction.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbJunction.Name = "tabPageAbJunction";
+            this.tabPageAbJunction.Size = new System.Drawing.Size(450, 706);
+            this.tabPageAbJunction.TabIndex = 1;
+            this.tabPageAbJunction.Text = "Junction";
+            // 
+            // tabPageAbCommand
+            // 
+            this.tabPageAbCommand.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbCommand.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbCommand.Name = "tabPageAbCommand";
+            this.tabPageAbCommand.Size = new System.Drawing.Size(450, 706);
+            this.tabPageAbCommand.TabIndex = 2;
+            this.tabPageAbCommand.Text = "Command";
+            // 
+            // tabPageAbCharacters
+            // 
+            this.tabPageAbCharacters.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbCharacters.Controls.Add(this.groupBox8);
+            this.tabPageAbCharacters.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbCharacters.Name = "tabPageAbCharacters";
+            this.tabPageAbCharacters.Size = new System.Drawing.Size(450, 706);
+            this.tabPageAbCharacters.TabIndex = 3;
+            this.tabPageAbCharacters.Text = "Character";
+            // 
+            // tabPageABParty
+            // 
+            this.tabPageABParty.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageABParty.Location = new System.Drawing.Point(4, 26);
+            this.tabPageABParty.Name = "tabPageABParty";
+            this.tabPageABParty.Size = new System.Drawing.Size(450, 706);
+            this.tabPageABParty.TabIndex = 4;
+            this.tabPageABParty.Text = "Party";
+            // 
+            // tabPageAbGF
+            // 
+            this.tabPageAbGF.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbGF.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbGF.Name = "tabPageAbGF";
+            this.tabPageAbGF.Size = new System.Drawing.Size(450, 706);
+            this.tabPageAbGF.TabIndex = 5;
+            this.tabPageAbGF.Text = "GF";
+            // 
+            // tabPageAbMenu
+            // 
+            this.tabPageAbMenu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbMenu.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbMenu.Name = "tabPageAbMenu";
+            this.tabPageAbMenu.Size = new System.Drawing.Size(450, 706);
+            this.tabPageAbMenu.TabIndex = 6;
+            this.tabPageAbMenu.Text = "Menu";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox8.Controls.Add(this.textBox1);
+            this.groupBox8.Controls.Add(this.textBox2);
+            this.groupBox8.Controls.Add(this.label2);
+            this.groupBox8.Controls.Add(this.label3);
+            this.groupBox8.Controls.Add(this.label4);
+            this.groupBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBox8.Location = new System.Drawing.Point(0, 6);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(447, 285);
+            this.groupBox8.TabIndex = 3;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "General";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(101, 120);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(245, 25);
+            this.textBox1.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(135, 51);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(176, 25);
+            this.textBox2.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label2.Location = new System.Drawing.Point(185, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Description";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label3.Location = new System.Drawing.Point(160, 185);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Increasement Value";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label4.Location = new System.Drawing.Point(201, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 17);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Name";
+            this.toolTip1.SetToolTip(this.label4, "Used in damage calculation");
+            // 
+            // listBoxAbCharacters
+            // 
+            this.listBoxAbCharacters.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbCharacters.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbCharacters.FormattingEnabled = true;
+            this.listBoxAbCharacters.ItemHeight = 17;
+            this.listBoxAbCharacters.Items.AddRange(new object[] {
+            "Mug",
+            "Med Data",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HP Up",
+            "HP Bonus",
+            "Str Bonus",
+            "Vit Bonus",
+            "Mag Bonus",
+            "Spr Bonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto-Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon"});
+            this.listBoxAbCharacters.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbCharacters.Name = "listBoxAbCharacters";
+            this.listBoxAbCharacters.ScrollAlwaysVisible = true;
+            this.listBoxAbCharacters.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbCharacters.TabIndex = 3;
+            // 
+            // comboBoxAbStatsStatToIncrease
+            // 
+            this.comboBoxAbStatsStatToIncrease.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAbStatsStatToIncrease.FormattingEnabled = true;
+            this.comboBoxAbStatsStatToIncrease.Items.AddRange(new object[] {
+            "HP",
+            "STR",
+            "VIT",
+            "MAG",
+            "SPR",
+            "SPD",
+            "EVA",
+            "HIT",
+            "LUCK"});
+            this.comboBoxAbStatsStatToIncrease.Location = new System.Drawing.Point(27, 202);
+            this.comboBoxAbStatsStatToIncrease.Name = "comboBoxAbStatsStatToIncrease";
+            this.comboBoxAbStatsStatToIncrease.Size = new System.Drawing.Size(59, 25);
+            this.comboBoxAbStatsStatToIncrease.TabIndex = 30;
+            // 
+            // labelAbStatsStatToIncrease
+            // 
+            this.labelAbStatsStatToIncrease.AutoSize = true;
+            this.labelAbStatsStatToIncrease.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbStatsStatToIncrease.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbStatsStatToIncrease.Location = new System.Drawing.Point(6, 178);
+            this.labelAbStatsStatToIncrease.Name = "labelAbStatsStatToIncrease";
+            this.labelAbStatsStatToIncrease.Size = new System.Drawing.Size(102, 17);
+            this.labelAbStatsStatToIncrease.TabIndex = 29;
+            this.labelAbStatsStatToIncrease.Text = "Stat to increase";
+            // 
+            // listBoxAbJunction
+            // 
+            this.listBoxAbJunction.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbJunction.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbJunction.FormattingEnabled = true;
+            this.listBoxAbJunction.ItemHeight = 17;
+            this.listBoxAbJunction.Items.AddRange(new object[] {
+            "HP-J",
+            "Str-J",
+            "Vit-J",
+            "Mag-J",
+            "Spr-J",
+            "Spd-J",
+            "Eva-J",
+            "Hit-J",
+            "Luck-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4"});
+            this.listBoxAbJunction.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbJunction.Name = "listBoxAbJunction";
+            this.listBoxAbJunction.ScrollAlwaysVisible = true;
+            this.listBoxAbJunction.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbJunction.TabIndex = 3;
+            // 
+            // listBoxAbCommand
+            // 
+            this.listBoxAbCommand.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbCommand.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbCommand.FormattingEnabled = true;
+            this.listBoxAbCommand.ItemHeight = 17;
+            this.listBoxAbCommand.Items.AddRange(new object[] {
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty",
+            "Card",
+            "Doom",
+            "Mad Rush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LV Down",
+            "LV Up",
+            "Kamikaze",
+            "Devour",
+            "MiniMog"});
+            this.listBoxAbCommand.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbCommand.Name = "listBoxAbCommand";
+            this.listBoxAbCommand.ScrollAlwaysVisible = true;
+            this.listBoxAbCommand.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbCommand.TabIndex = 3;
+            // 
+            // listBoxAbGF
+            // 
+            this.listBoxAbGF.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbGF.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbGF.FormattingEnabled = true;
+            this.listBoxAbGF.ItemHeight = 17;
+            this.listBoxAbGF.Items.AddRange(new object[] {
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost"});
+            this.listBoxAbGF.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbGF.Name = "listBoxAbGF";
+            this.listBoxAbGF.ScrollAlwaysVisible = true;
+            this.listBoxAbGF.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbGF.TabIndex = 3;
+            // 
+            // listBoxAbParty
+            // 
+            this.listBoxAbParty.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbParty.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbParty.FormattingEnabled = true;
+            this.listBoxAbParty.ItemHeight = 17;
+            this.listBoxAbParty.Items.AddRange(new object[] {
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "Rare Item"});
+            this.listBoxAbParty.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbParty.Name = "listBoxAbParty";
+            this.listBoxAbParty.ScrollAlwaysVisible = true;
+            this.listBoxAbParty.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbParty.TabIndex = 3;
+            // 
+            // listBoxAbMenu
+            // 
+            this.listBoxAbMenu.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbMenu.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbMenu.FormattingEnabled = true;
+            this.listBoxAbMenu.ItemHeight = 17;
+            this.listBoxAbMenu.Items.AddRange(new object[] {
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "Call Shop",
+            "Junk Shop",
+            "T Mag-RF",
+            "I Mag-RF",
+            "F Mag-RF",
+            "L Mag-RF",
+            "Time Mag-RF",
+            "ST Mag-RF",
+            "Supt Mag-RF",
+            "Forbid Mag-RF",
+            "Recov Med-RF",
+            "ST Med-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "Forbid Med-RF",
+            "GFRecov Med-RF",
+            "GFAbl Med-RF",
+            "Mid Mag-RF",
+            "High Mag-RF",
+            "Med LV Up",
+            "Card Mod"});
+            this.listBoxAbMenu.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbMenu.Name = "listBoxAbMenu";
+            this.listBoxAbMenu.ScrollAlwaysVisible = true;
+            this.listBoxAbMenu.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbMenu.TabIndex = 3;
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -16586,10 +16947,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicSTRJ)).EndInit();
             this.tabPageAbilities.ResumeLayout(false);
             this.tabControlAbilities.ResumeLayout(false);
-            this.tabPageStatsIncrement.ResumeLayout(false);
+            this.tabPageAbStats.ResumeLayout(false);
             this.groupBoxStatsIncrement.ResumeLayout(false);
             this.groupBoxStatsIncrement.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarStatsIncrementValue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarAbStatsIncrementValue)).EndInit();
             this.tabPageWeapons.ResumeLayout(false);
             this.groupBoxWeaponsGeneral.ResumeLayout(false);
             this.groupBoxWeaponsGeneral.PerformLayout();
@@ -16729,6 +17090,9 @@
             this.panelGFAbilities.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP1)).EndInit();
+            this.tabPageAbCharacters.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -17065,16 +17429,16 @@
         private System.Windows.Forms.ListBox listBoxMagic;
         private System.Windows.Forms.TabPage tabPageAbilities;
         private System.Windows.Forms.TabControl tabControlAbilities;
-        private System.Windows.Forms.TabPage tabPageStatsIncrement;
+        private System.Windows.Forms.TabPage tabPageAbStats;
         private System.Windows.Forms.GroupBox groupBoxStatsIncrement;
-        private System.Windows.Forms.Label labelStatsIncrementValueTrackBar;
-        private System.Windows.Forms.TrackBar trackBarStatsIncrementValue;
-        private System.Windows.Forms.TextBox textBoxStatsIncrementDescription;
-        private System.Windows.Forms.TextBox textBoxStatsIncrementName;
-        private System.Windows.Forms.Label labelStatsIncrementDescription;
-        private System.Windows.Forms.Label labelStatsIncrementValue;
-        private System.Windows.Forms.Label labelStatsIncrementName;
-        private System.Windows.Forms.ListBox listBoxStatsIncrement;
+        private System.Windows.Forms.Label labelAbStatsValueTrackBar;
+        private System.Windows.Forms.TrackBar trackBarAbStatsIncrementValue;
+        private System.Windows.Forms.TextBox textBoxAbStatsDescription;
+        private System.Windows.Forms.TextBox textBoxAbStatsName;
+        private System.Windows.Forms.Label labelStatsDescription;
+        private System.Windows.Forms.Label labelAbStatsIncrementValue;
+        private System.Windows.Forms.Label labelAbStatsName;
+        private System.Windows.Forms.ListBox listBoxAbStats;
         private System.Windows.Forms.TabPage tabPageWeapons;
         private System.Windows.Forms.GroupBox groupBoxWeaponsGeneral;
         private System.Windows.Forms.CheckBox checkBoxWeaponsRenzoFinLion;
@@ -17363,6 +17727,26 @@
         private System.Windows.Forms.Label labelSlotSetsMagic;
         private System.Windows.Forms.Label labelSlotSetsList;
         private System.Windows.Forms.Label labelSlotSetsN;
+        private System.Windows.Forms.TabPage tabPageAbJunction;
+        private System.Windows.Forms.TabPage tabPageAbCommand;
+        private System.Windows.Forms.TabPage tabPageAbCharacters;
+        private System.Windows.Forms.TabPage tabPageABParty;
+        private System.Windows.Forms.TabPage tabPageAbGF;
+        private System.Windows.Forms.TabPage tabPageAbMenu;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox listBoxAbCharacters;
+        private System.Windows.Forms.ComboBox comboBoxAbStatsStatToIncrease;
+        private System.Windows.Forms.Label labelAbStatsStatToIncrease;
+        private System.Windows.Forms.ListBox listBoxAbJunction;
+        private System.Windows.Forms.ListBox listBoxAbCommand;
+        private System.Windows.Forms.ListBox listBoxAbGF;
+        private System.Windows.Forms.ListBox listBoxAbParty;
+        private System.Windows.Forms.ListBox listBoxAbMenu;
     }
 }
 

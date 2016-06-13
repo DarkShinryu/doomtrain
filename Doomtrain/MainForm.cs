@@ -26,6 +26,16 @@ namespace Doomtrain
             saveToolStripButton.Enabled = false;
 
 
+            //this is for enabling the switching of listboxes in the ability section
+            listBoxAbStats.Visible = false;
+            listBoxAbJunction.Visible = false;
+            listBoxAbCommand.Visible = false;
+            listBoxAbGF.Visible = false;
+            listBoxAbParty.Visible = false;
+            listBoxAbMenu.Visible = false;
+            tabControlAbilities.SelectedIndexChanged += new EventHandler(tabControlAbilities_SelectedIndexChanged);
+
+
 
             //MAGIC
             comboBoxMagicMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(2, comboBoxMagicMagicID.SelectedIndex);
@@ -533,24 +543,89 @@ namespace Doomtrain
         //ABILITIES TRACKBARS LABELS VALUE
         private void trackBarStatsIncrementValue_Scroll(object sender, EventArgs e)
         {
-            labelStatsIncrementValueTrackBar.Text = trackBarStatsIncrementValue.Value + "%".ToString();
+            labelAbStatsValueTrackBar.Text = trackBarAbStatsIncrementValue.Value + "%".ToString();
         }
 
 
 
-        //GF LISTBOXES SWITCH
-        private void tabControlGF_SelectedIndexChanged(object sender, EventArgs e)
+        //ABILITIES LISTBOXES SWITCH
+        private void tabControlAbilities_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (tabControlGF.SelectedIndex == 0)
+            if (tabControlAbilities.SelectedIndex == 0)
             {
-                listBoxGFAttacks.Visible = false;
-                listBoxGF.Visible = true;
+                listBoxAbCharacters.Visible = true;
+                listBoxAbStats.Visible = false;
+                listBoxAbJunction.Visible = false;
+                listBoxAbCommand.Visible = false;
+                listBoxAbGF.Visible = false;
+                listBoxAbParty.Visible = false;
+                listBoxAbMenu.Visible = false;
             }
 
-            else if (tabControlGF.SelectedIndex == 1)
+            if (tabControlAbilities.SelectedIndex == 1)
             {
-                listBoxGF.Visible = false;
-                listBoxGFAttacks.Visible = true;
+                listBoxAbCharacters.Visible = false;
+                listBoxAbStats.Visible = true;
+                listBoxAbJunction.Visible = false;
+                listBoxAbCommand.Visible = false;
+                listBoxAbGF.Visible = false;
+                listBoxAbParty.Visible = false;
+                listBoxAbMenu.Visible = false;
+            }
+
+            if (tabControlAbilities.SelectedIndex == 2)
+            {
+                listBoxAbCharacters.Visible = false;
+                listBoxAbStats.Visible = false;
+                listBoxAbJunction.Visible = true;
+                listBoxAbCommand.Visible = false;
+                listBoxAbGF.Visible = false;
+                listBoxAbParty.Visible = false;
+                listBoxAbMenu.Visible = false;
+            }
+
+            if (tabControlAbilities.SelectedIndex == 3)
+            {
+                listBoxAbCharacters.Visible = false;
+                listBoxAbStats.Visible = false;
+                listBoxAbJunction.Visible = false;
+                listBoxAbCommand.Visible = true;
+                listBoxAbGF.Visible = false;
+                listBoxAbParty.Visible = false;
+                listBoxAbMenu.Visible = false;
+            }
+
+            if (tabControlAbilities.SelectedIndex == 4)
+            {
+                listBoxAbCharacters.Visible = false;
+                listBoxAbStats.Visible = false;
+                listBoxAbJunction.Visible = false;
+                listBoxAbCommand.Visible = false;
+                listBoxAbGF.Visible = true;
+                listBoxAbParty.Visible = false;
+                listBoxAbMenu.Visible = false;
+            }
+
+            if (tabControlAbilities.SelectedIndex == 5)
+            {
+                listBoxAbCharacters.Visible = false;
+                listBoxAbStats.Visible = false;
+                listBoxAbJunction.Visible = false;
+                listBoxAbCommand.Visible = false;
+                listBoxAbGF.Visible = false;
+                listBoxAbParty.Visible = true;
+                listBoxAbMenu.Visible = false;
+            }
+
+            if (tabControlAbilities.SelectedIndex == 6)
+            {
+                listBoxAbCharacters.Visible = false;
+                listBoxAbStats.Visible = false;
+                listBoxAbJunction.Visible = false;
+                listBoxAbCommand.Visible = false;
+                listBoxAbGF.Visible = false;
+                listBoxAbParty.Visible = false;
+                listBoxAbMenu.Visible = true;
             }
         }
 
