@@ -205,7 +205,7 @@ namespace Doomtrain
             public byte StatusGF4;
             public byte StatusGF5;
             public byte GFHP;
-            public byte GFStatusAttackEnabler;
+            public byte GFStatusAttack;
             public byte GFPowerMod;
             public byte GFLevelMod;
             public UInt16 GFAbility1;
@@ -251,9 +251,10 @@ namespace Doomtrain
         {
             //public string OffsetGFAttacksName;
             public UInt16 GFAttacksMagicID;
-            public byte GFAttacksType;
+            public byte GFAttacksAttackType;
             public byte GFAttacksPower;
-            public byte GFAttacksStatusEnabler;
+            public byte GFAttacksStatus;
+            public byte GFAttacksFlags;
             public Element ElementGFAttacks;
             public byte StatusGFAttacks1;
             public byte StatusGFAttacks2;
@@ -461,7 +462,7 @@ namespace Doomtrain
                     }
                 case 25:
                     {
-                        Kernel[OffsetToMagicSelected + 22] = Convert.ToByte(variable); //Status Attack Enabler
+                        Kernel[OffsetToMagicSelected + 22] = Convert.ToByte(variable); //Status Attack 
                         return;
                     }
                 case 26:
@@ -742,6 +743,12 @@ namespace Doomtrain
                     Kernel[OffsetToGFAttacksSelected + 14] = 0x00;
                     Kernel[OffsetToGFAttacksSelected + 15] = 0x00;
                     Kernel[OffsetToGFAttacksSelected + 16] = 0x00;
+                    return;
+                case 8:
+                    Kernel[OffsetToGFAttacksSelected + 4] = Convert.ToByte(variable); //attack type
+                    return;
+                case 9:
+                    Kernel[OffsetToGFAttacksSelected + 8] ^= Convert.ToByte(variable); //flags
                     return;
                 default:
 
@@ -1115,7 +1122,7 @@ namespace Doomtrain
             GetSelectedGFData.StatusGF5 = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFHP = Kernel[selectedGfOffset];
             selectedGfOffset += 7; //Unknown+GFHP
-            GetSelectedGFData.GFStatusAttackEnabler = Kernel[selectedGfOffset];
+            GetSelectedGFData.GFStatusAttack = Kernel[selectedGfOffset];
             selectedGfOffset += 3; //Status + unknown
             //AbilityRun
             GetSelectedGFData.GFAbility1 = Kernel[selectedGfOffset];
@@ -1170,10 +1177,12 @@ namespace Doomtrain
 
             GetSelectedGFAttacksData.GFAttacksMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfAttacksOffset + 2) - 1);
             selectedGfAttacksOffset += 4;
-            GetSelectedGFAttacksData.GFAttacksType = Kernel[selectedGfAttacksOffset++];
+            GetSelectedGFAttacksData.GFAttacksAttackType = Kernel[selectedGfAttacksOffset++];
             GetSelectedGFAttacksData.GFAttacksPower = Kernel[selectedGfAttacksOffset++];            
-            GetSelectedGFAttacksData.GFAttacksStatusEnabler = Kernel[selectedGfAttacksOffset++];
-            selectedGfAttacksOffset += 4;
+            GetSelectedGFAttacksData.GFAttacksStatus = Kernel[selectedGfAttacksOffset++];
+            selectedGfAttacksOffset += 1;
+            GetSelectedGFAttacksData.GFAttacksFlags = Kernel[selectedGfAttacksOffset++];
+            selectedGfAttacksOffset += 2;
             byte b = Kernel[selectedGfAttacksOffset++];
             GetSelectedGFAttacksData.ElementGFAttacks =
                 b == (byte)Element.Fire

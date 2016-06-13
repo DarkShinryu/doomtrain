@@ -135,7 +135,7 @@ namespace Doomtrain
             checkBoxMagicSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x10, 4);
             checkBoxMagicBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x20, 4);
             checkBoxMagicZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x40, 4);
-            numericUpDownMagicStatusAttackEnabler.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(25, numericUpDownMagicStatusAttackEnabler.Value);
+            numericUpDownMagicStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(25, numericUpDownMagicStatusAttack.Value);
             numericUpDownMagicDefaultTarget.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(42, numericUpDownMagicDefaultTarget.Value);
             numericUpDownMagicQuezacoltComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(26, numericUpDownMagicQuezacoltComp.Value);
             numericUpDownMagicShivaComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(27, numericUpDownMagicShivaComp.Value);
@@ -220,7 +220,7 @@ namespace Doomtrain
             checkBoxGFSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x10, 0, 0);
             checkBoxGFBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x20, 0, 0);
             checkBoxGFZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(7, 0x40, 0, 0);
-            numericUpDownGFStatusAttackEnabler.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(8, numericUpDownGFStatusAttackEnabler.Value);
+            numericUpDownGFStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(8, numericUpDownGFStatusAttack.Value);
             numericUpDownGFQuezacoltComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(10, numericUpDownGFQuezacoltComp.Value);
             numericUpDownGFShivaComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(11, numericUpDownGFShivaComp.Value);
             numericUpDownGFIfritComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(12, numericUpDownGFIfritComp.Value);
@@ -240,8 +240,17 @@ namespace Doomtrain
 
             //Non-Junctionable GFs Attacks
             comboBoxGFAttacksMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(0, comboBoxGFAttacksMagicID.SelectedIndex);
+            comboBoxGFAttacksAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(8, comboBoxGFAttacksAttackType.SelectedIndex + 1);
             numericUpDownGFAttacksPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(1, numericUpDownGFAttacksPower.Value);
-            numericUpDownGFAttacksStatusAttackEnabler.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(2, numericUpDownGFAttacksStatusAttackEnabler.Value);
+            numericUpDownGFAttacksStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(2, numericUpDownGFAttacksStatusAttack.Value);
+            checkBoxGFAttacksFlagShelled.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(9, 0x01);
+            checkBoxGFAttacksFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(9, 0x02);
+            checkBoxGFAttacksFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(9, 0x04);
+            checkBoxGFAttacksFlagBreakDamageLimit.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(9, 0x08);
+            checkBoxGFAttacksFlagReflected.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(9, 0x10);
+            checkBoxGFAttacksFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(9, 0x20);
+            checkBoxGFAttacksFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(9, 0x40);
+            checkBoxGFAttacksFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(9, 0x80);
             comboBoxGFAttacksElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(3, GFAttacks_GetElement(comboBoxGFAttacksElement.SelectedIndex));
             checkBoxGFAttacksSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x01, 0);
             checkBoxGFAttacksHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(4, 0x02, 0);
@@ -753,7 +762,7 @@ namespace Doomtrain
                 trackBarJStatAttack.Value = KernelWorker.GetSelectedMagicData.StatusATKval;
                 StatusHoldWorker(3, KernelWorker.GetSelectedMagicData.StatusMagic1, KernelWorker.GetSelectedMagicData.StatusDefEN, KernelWorker.GetSelectedMagicData.StatusMagic2, KernelWorker.GetSelectedMagicData.StatusMagic3, KernelWorker.GetSelectedMagicData.StatusMagic4, KernelWorker.GetSelectedMagicData.StatusMagic5);
                 trackBarJStatDefense.Value = KernelWorker.GetSelectedMagicData.StatusDEFval;
-                numericUpDownMagicStatusAttackEnabler.Value = KernelWorker.GetSelectedMagicData.StatusAttack;
+                numericUpDownMagicStatusAttack.Value = KernelWorker.GetSelectedMagicData.StatusAttack;
                 numericUpDownMagicQuezacoltComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.QuezacoltCompatibility)) / 5;
                 numericUpDownMagicShivaComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.ShivaCompatibility)) / 5;
                 numericUpDownMagicIfritComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.IfritCompatibility)) / 5;
@@ -1230,7 +1239,7 @@ namespace Doomtrain
                 comboBoxGFElement.SelectedIndex = GF_GetElement();
                 //checkBoxGFStatus.Checked = KernelWorker.GetSelectedGFData.GFStatusEnabler > 0x00 ? true : false;
                 GFStatusWorker();
-                numericUpDownGFStatusAttackEnabler.Value = KernelWorker.GetSelectedGFData.GFStatusAttackEnabler;
+                numericUpDownGFStatusAttack.Value = KernelWorker.GetSelectedGFData.GFStatusAttack;
                 numericUpDownGFQuezacoltComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFQuezacoltCompatibility)) / 5;
                 numericUpDownGFShivaComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFShivaCompatibility)) / 5;
                 numericUpDownGFIfritComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFIfritCompatibility)) / 5;
@@ -1446,9 +1455,17 @@ namespace Doomtrain
             try
             {
                 comboBoxGFAttacksMagicID.SelectedIndex = KernelWorker.GetSelectedGFAttacksData.GFAttacksMagicID;
+                comboBoxGFAttacksAttackType.SelectedIndex = KernelWorker.GetSelectedGFAttacksData.GFAttacksAttackType - 1;
                 numericUpDownGFAttacksPower.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksPower;
-                //checkBoxGFAttacksStatus.Checked = KernelWorker.GetSelectedGFAttacksData.GFAttacksStatusEnabler > 0x00 ? true : false;
-                numericUpDownGFAttacksStatusAttackEnabler.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksStatusEnabler;
+                numericUpDownGFAttacksStatusAttack.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksStatus;
+                checkBoxGFAttacksFlagShelled.Checked = (KernelWorker.GetSelectedGFAttacksData.GFAttacksFlags & 0x01) >= 1 ? true : false;
+                checkBoxGFAttacksFlag2.Checked = (KernelWorker.GetSelectedGFAttacksData.GFAttacksFlags & 0x02) >= 1 ? true : false;
+                checkBoxGFAttacksFlag3.Checked = (KernelWorker.GetSelectedGFAttacksData.GFAttacksFlags & 0x04) >= 1 ? true : false;
+                checkBoxGFAttacksFlagBreakDamageLimit.Checked = (KernelWorker.GetSelectedGFAttacksData.GFAttacksFlags & 0x08) >= 1 ? true : false;
+                checkBoxGFAttacksFlagReflected.Checked = (KernelWorker.GetSelectedGFAttacksData.GFAttacksFlags & 0x10) >= 1 ? true : false;
+                checkBoxGFAttacksFlag6.Checked = (KernelWorker.GetSelectedGFAttacksData.GFAttacksFlags & 0x20) >= 1 ? true : false;
+                checkBoxGFAttacksFlag7.Checked = (KernelWorker.GetSelectedGFAttacksData.GFAttacksFlags & 0x40) >= 1 ? true : false;
+                checkBoxGFAttacksFlag8.Checked = (KernelWorker.GetSelectedGFAttacksData.GFAttacksFlags & 0x80) >= 1 ? true : false;
                 comboBoxGFAttacksElement.SelectedIndex = GFAttacks_GetElement();
                 GFAttacksStatusWorker();
                 numericUpDownGFAttacksPowerMod.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksPowerMod;
