@@ -22,11 +22,18 @@ namespace Doomtrain
         public static int CharactersDataOffset = -1;
         public static int OffsetToCharactersSelected = -1;
 
+        public static int BlueMagicDataOffset = -1;
+        public static int OffsetToBlueMagicSelected = -1;
+        public static int BlueMagicParamDataOffset = -1;
+        public static int OffsetToBlueMagicParamSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
         public static WeaponsData GetSelectedWeaponsData;
         public static CharactersData GetSelectedCharactersData;
+        public static BlueMagicData GetSelectedBlueMagicData;
+        public static BlueMagicParamData GetSelectedBlueMagicParamData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -316,6 +323,29 @@ namespace Doomtrain
             public byte LUCK4;
         }
 
+        public struct BlueMagicData
+        {
+            //public string OffsetToBlueMagicName;
+            //public string OffsetToBlueMagicDescription;
+            public UInt16 MagicID;
+            public byte AttackType;
+            public byte Flags;
+            public Element Element;
+            public byte StatusAttack;
+        }
+
+        public struct BlueMagicParamData
+        {
+            public byte Status1;
+            public byte Status2;
+            public byte Status3;
+            public byte Status4;
+            public byte Status5;
+            //public byte Status6; does nothing but it's read in game with Status5, no point in adding it
+            public byte AttackPower;
+            public byte DeathLevel;
+        }
+
 
         public static void UpdateVariable_Magic(int index, object variable, byte arg0 = 127)
         {
@@ -547,7 +577,7 @@ namespace Doomtrain
                     }
                 case 42:
                     {
-                        Kernel[OffsetToMagicSelected + 10] = Convert.ToByte(variable); //default target
+                        Kernel[OffsetToMagicSelected + 10] = (byte)(Kernel[OffsetToMagicSelected + 10] ^ Convert.ToByte(variable)); //default target
                         return;
                     }
                 case 43:
@@ -936,6 +966,81 @@ namespace Doomtrain
         }
 
 
+        public static void UpdateVariable_BlueMagic(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    UshortToKernel(Convert.ToUInt16(variable), 4, (byte)Mode.Mode_BlueMagic); //MagicID
+                    return;
+                case 1:
+                    Kernel[OffsetToBlueMagicSelected + 6] = Convert.ToByte(variable); //attack type
+                    return;
+                case 2:
+                    Kernel[OffsetToBlueMagicSelected + 8] ^= Convert.ToByte(variable); //flags
+                    return;
+                case 3:
+                    Kernel[OffsetToBlueMagicSelected + 10] = Convert.ToByte(variable); //element
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
+
+
+        public static void UpdateVariable_BlueMagicParam(int index, object variable, byte arg0 = 127)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToBlueMagicParamSelected] = Convert.ToByte(variable); //attack type
+                    return;
+                case 1:
+                    BlueMagicParamStatusUpdator(arg0, variable); //status
+                    return;
+                case 2:
+                    Kernel[OffsetToBlueMagicParamSelected + 6] = Convert.ToByte(variable); //attack power
+                    return;
+                case 3:
+                    Kernel[OffsetToBlueMagicParamSelected + 7] = Convert.ToByte(variable); //death level
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
+        private static void BlueMagicParamStatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToBlueMagicParamSelected + 1] = (byte)(Kernel[OffsetToBlueMagicParamSelected + 1] ^ Convert.ToByte(variable));
+                    return;
+                case 1:
+                    Kernel[OffsetToBlueMagicParamSelected + 2] = (byte)(Kernel[OffsetToBlueMagicParamSelected + 2] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToBlueMagicParamSelected + 3] = (byte)(Kernel[OffsetToBlueMagicParamSelected + 3] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToBlueMagicParamSelected + 4] = (byte)(Kernel[OffsetToBlueMagicParamSelected + 4] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToBlueMagicParamSelected + 5] = (byte)(Kernel[OffsetToBlueMagicParamSelected + 5] ^ Convert.ToByte(variable));
+                    return;
+            }
+        }
+
+
+
+
         /// <summary>
         /// This is for MagicID list
         /// </summary>
@@ -955,6 +1060,9 @@ namespace Doomtrain
                 case (byte)Mode.Mode_GFAttacks:
                     Array.Copy(magicIdBytes, 0, Kernel, OffsetToGFAttacksSelected + add, 2);
                     break;
+                case (byte)Mode.Mode_BlueMagic:
+                    Array.Copy(magicIdBytes, 0, Kernel, OffsetToBlueMagicSelected + add, 2);
+                    break;
                 default:
                     return;
             }
@@ -964,7 +1072,8 @@ namespace Doomtrain
         {
             Mode_Magic,
             Mode_GF,
-            Mode_GFAttacks
+            Mode_GFAttacks,
+            Mode_BlueMagic
         }
 
 
@@ -976,6 +1085,8 @@ namespace Doomtrain
             GFAttacksDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFAttacks);
             WeaponsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Weapons);
             CharactersDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Characters);
+            BlueMagicDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BlueMagic);
+            BlueMagicParamDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BlueMagicParam);
         }
 
 
@@ -1305,6 +1416,64 @@ namespace Doomtrain
             GetSelectedCharactersData.LUCK3 = Kernel[selectedCharactersOffset++];
             GetSelectedCharactersData.LUCK4 = Kernel[selectedCharactersOffset++];
         }
+
+
+        public static void ReadBlueMagic(int BlueMagicID_List)
+        {
+            GetSelectedBlueMagicData = new BlueMagicData();
+            int selectedBlueMagicOffset = BlueMagicDataOffset + (BlueMagicID_List * 16);
+            OffsetToBlueMagicSelected = selectedBlueMagicOffset;
+
+            GetSelectedBlueMagicData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedBlueMagicOffset + 4) - 1);
+            selectedBlueMagicOffset += 7;
+            GetSelectedBlueMagicData.AttackType = Kernel[selectedBlueMagicOffset++];
+            selectedBlueMagicOffset += 2;
+            GetSelectedBlueMagicData.Flags = Kernel[selectedBlueMagicOffset++];
+            selectedBlueMagicOffset += 1;
+            byte b = Kernel[selectedBlueMagicOffset++];
+            GetSelectedBlueMagicData.Element =
+                b == (byte)Element.Fire
+                    ? Element.Fire
+                    : b == (byte)Element.Holy
+                        ? Element.Holy
+                        : b == (byte)Element.Ice
+                            ? Element.Ice
+                            : b == (byte)Element.NonElemental
+                                ? Element.NonElemental
+                                : b == (byte)Element.Poison
+                                    ? Element.Poison
+                                    : b == (byte)Element.Thunder
+                                        ? Element.Thunder
+                                        : b == (byte)Element.Water
+                                            ? Element.Water
+                                            : b == (byte)Element.Wind
+                                                ? Element.Wind
+                                                : b == (byte)Element.Earth
+                                                    ? Element.Earth
+                                                    : 0; //Error handler
+            GetSelectedBlueMagicData.StatusAttack = Kernel[selectedBlueMagicOffset++];
+        }
+
+
+        public static void ReadBlueMagicParam(int BlueMagicParamID_List)
+        {
+            GetSelectedBlueMagicParamData = new BlueMagicParamData();
+            int selectedBlueMagicParamOffset = BlueMagicParamDataOffset + (BlueMagicParamID_List * 8);
+            OffsetToBlueMagicParamSelected = selectedBlueMagicParamOffset;
+
+            GetSelectedBlueMagicParamData.Status1 = Kernel[selectedBlueMagicParamOffset];
+            selectedBlueMagicParamOffset += 1;
+            GetSelectedBlueMagicParamData.Status2 = Kernel[selectedBlueMagicParamOffset++];
+            GetSelectedBlueMagicParamData.Status3 = Kernel[selectedBlueMagicParamOffset++];
+            GetSelectedBlueMagicParamData.Status4 = Kernel[selectedBlueMagicParamOffset++];
+            GetSelectedBlueMagicParamData.Status5 = Kernel[selectedBlueMagicParamOffset++];
+            selectedBlueMagicParamOffset += 1;
+            GetSelectedBlueMagicParamData.AttackPower = Kernel[selectedBlueMagicParamOffset++];
+            GetSelectedBlueMagicParamData.DeathLevel = Kernel[selectedBlueMagicParamOffset++];
+        }
+
+
+
 
         private static string BuildString(int index)
         {

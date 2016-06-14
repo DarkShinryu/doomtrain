@@ -127,7 +127,18 @@ namespace Doomtrain
             checkBoxMagicDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x02, 2);
             checkBoxMagicTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x04, 2);
             checkBoxMagicDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x08, 2);
+            checkBoxMagicUnk1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x10, 2);
+            checkBoxMagicUnk2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x20, 2);
+            checkBoxMagicCharged.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x40, 2);
+            checkBoxMagicBackAttack.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x80, 2);
             checkBoxMagicVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x01, 3);
+            checkBoxMagicAngelWing.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x02, 3);
+            checkBoxMagicUnk3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x04, 3);
+            checkBoxMagicUnk4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x08, 3);
+            checkBoxMagicUnk5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x10, 3);
+            checkBoxMagicUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x20, 3);
+            checkBoxMagicPlayerChar.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x40, 3);
+            checkBoxMagicSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x80, 3);
             checkBoxMagicDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x01, 4);
             checkBoxMagicPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x02, 4);
             checkBoxMagicPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x04, 4);
@@ -135,8 +146,16 @@ namespace Doomtrain
             checkBoxMagicSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x10, 4);
             checkBoxMagicBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x20, 4);
             checkBoxMagicZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x40, 4);
+            checkBoxMagicUnk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(6, 0x80, 4);
             numericUpDownMagicStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(25, numericUpDownMagicStatusAttack.Value);
-            numericUpDownMagicDefaultTarget.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(42, numericUpDownMagicDefaultTarget.Value);
+            checkBoxMagicTarget1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(42, 0x01);
+            checkBoxMagicTarget2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(42, 0x02);
+            checkBoxMagicTarget3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(42, 0x04);
+            checkBoxMagicTarget4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(42, 0x08);
+            checkBoxMagicTarget5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(42, 0x10);
+            checkBoxMagicTarget6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(42, 0x20);
+            checkBoxMagicTarget7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(42, 0x40);
+            checkBoxMagicTarget8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(42, 0x80);
             numericUpDownMagicQuezacoltComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(26, numericUpDownMagicQuezacoltComp.Value);
             numericUpDownMagicShivaComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(27, numericUpDownMagicShivaComp.Value);
             numericUpDownMagicIfritComp.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(28, numericUpDownMagicIfritComp.Value);
@@ -708,8 +727,19 @@ namespace Doomtrain
             checkBoxMagicDouble.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic3 & 0x02) >= 1 ? true : false;
             checkBoxMagicTriple.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic3 & 0x04) >= 1 ? true : false;
             checkBoxMagicDefend.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic3 & 0x08) >= 1 ? true : false;
+            checkBoxMagicUnk1.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic3 & 0x10) >= 1 ? true : false;
+            checkBoxMagicUnk2.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic3 & 0x20) >= 1 ? true : false;
+            checkBoxMagicCharged.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic3 & 0x40) >= 1 ? true : false;
+            checkBoxMagicBackAttack.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic3 & 0x80) >= 1 ? true : false;
 
             checkBoxMagicVit0.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic4 & 0x01) >= 1 ? true : false;
+            checkBoxMagicAngelWing.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic4 & 0x02) >= 1 ? true : false;
+            checkBoxMagicUnk3.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic4 & 0x04) >= 1 ? true : false;
+            checkBoxMagicUnk4.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic4 & 0x08) >= 1 ? true : false;
+            checkBoxMagicUnk5.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic4 & 0x10) >= 1 ? true : false;
+            checkBoxMagicUnk6.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic4 & 0x20) >= 1 ? true : false;
+            checkBoxMagicPlayerChar.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic4 & 0x40) >= 1 ? true : false;
+            checkBoxMagicSummonGF.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic4 & 0x80) >= 1 ? true : false;
 
             checkBoxMagicDeath.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x01) >= 1 ? true : false;
             checkBoxMagicPoison.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x02) >= 1 ? true : false;
@@ -718,6 +748,7 @@ namespace Doomtrain
             checkBoxMagicSilence.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x10) >= 1 ? true : false;
             checkBoxMagicBerserk.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x20) >= 1 ? true : false;
             checkBoxMagicZombie.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x40) >= 1 ? true : false;
+            checkBoxMagicUnk7.Checked = (KernelWorker.GetSelectedMagicData.StatusMagic5 & 0x80) >= 1 ? true : false;
         }
 
 
@@ -732,7 +763,14 @@ namespace Doomtrain
                 comboBoxMagicMagicID.SelectedIndex = KernelWorker.GetSelectedMagicData.MagicID - 1; //As in Vanilla FF8.exe: sub ESI, 1
                 numericUpDownMagicSpellPower.Value = KernelWorker.GetSelectedMagicData.SpellPower;
                 comboBoxMagicAttackType.SelectedIndex = KernelWorker.GetSelectedMagicData.AttackType - 1;
-                numericUpDownMagicDefaultTarget.Value = KernelWorker.GetSelectedMagicData.DefaultTarget;
+                checkBoxMagicTarget1.Checked = (KernelWorker.GetSelectedMagicData.DefaultTarget & 0x01) >= 1 ? true : false;
+                checkBoxMagicTarget2.Checked = (KernelWorker.GetSelectedMagicData.DefaultTarget & 0x02) >= 1 ? true : false;
+                checkBoxMagicTarget3.Checked = (KernelWorker.GetSelectedMagicData.DefaultTarget & 0x04) >= 1 ? true : false;
+                checkBoxMagicTarget4.Checked = (KernelWorker.GetSelectedMagicData.DefaultTarget & 0x08) >= 1 ? true : false;
+                checkBoxMagicTarget5.Checked = (KernelWorker.GetSelectedMagicData.DefaultTarget & 0x10) >= 1 ? true : false;
+                checkBoxMagicTarget6.Checked = (KernelWorker.GetSelectedMagicData.DefaultTarget & 0x20) >= 1 ? true : false;
+                checkBoxMagicTarget7.Checked = (KernelWorker.GetSelectedMagicData.DefaultTarget & 0x40) >= 1 ? true : false;
+                checkBoxMagicTarget8.Checked = (KernelWorker.GetSelectedMagicData.DefaultTarget & 0x80) >= 1 ? true : false;
                 checkBoxMagicFlag1.Checked = (KernelWorker.GetSelectedMagicData.Flags & 0x01) >= 1 ? true : false;
                 checkBoxMagicFlag2.Checked = (KernelWorker.GetSelectedMagicData.Flags & 0x02) >= 1 ? true : false;
                 checkBoxMagicFlag3.Checked = (KernelWorker.GetSelectedMagicData.Flags & 0x04) >= 1 ? true : false;
