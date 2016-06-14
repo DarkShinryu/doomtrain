@@ -87,6 +87,53 @@
             this.labelCharLimitID = new System.Windows.Forms.Label();
             this.labelCharLimitParam = new System.Windows.Forms.Label();
             this.labelCharGender = new System.Windows.Forms.Label();
+            this.labelGFAbility21 = new System.Windows.Forms.Label();
+            this.labelGFAbility12 = new System.Windows.Forms.Label();
+            this.labelGFAbility15 = new System.Windows.Forms.Label();
+            this.labelGFAbility6 = new System.Windows.Forms.Label();
+            this.labelGFAbility18 = new System.Windows.Forms.Label();
+            this.labelGFAbility9 = new System.Windows.Forms.Label();
+            this.labelGFAbility20 = new System.Windows.Forms.Label();
+            this.labelGFAbility11 = new System.Windows.Forms.Label();
+            this.labelGFAbility3 = new System.Windows.Forms.Label();
+            this.labelGFAbility14 = new System.Windows.Forms.Label();
+            this.labelGFAbility5 = new System.Windows.Forms.Label();
+            this.labelGFAbility17 = new System.Windows.Forms.Label();
+            this.labelGFAbility8 = new System.Windows.Forms.Label();
+            this.labelGFAbility19 = new System.Windows.Forms.Label();
+            this.labelGFAbility10 = new System.Windows.Forms.Label();
+            this.labelGFAbility2 = new System.Windows.Forms.Label();
+            this.labelGFAbility13 = new System.Windows.Forms.Label();
+            this.labelGFAbility16 = new System.Windows.Forms.Label();
+            this.labelGFAbility4 = new System.Windows.Forms.Label();
+            this.labelGFAbility7 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock1 = new System.Windows.Forms.Label();
+            this.labelGFAbility1 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock2 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock3 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock4 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock5 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock6 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock7 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock8 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock9 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock10 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock11 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock12 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock13 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock14 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock15 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock16 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock17 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock18 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock19 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock20 = new System.Windows.Forms.Label();
+            this.labelGFAbilityUnlock21 = new System.Windows.Forms.Label();
+            this.labelSlotSetsN = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.labelGFAttacksAttackType = new System.Windows.Forms.Label();
+            this.labelMagicQuezacoltComp = new System.Windows.Forms.Label();
+            this.labelGFQuezacoltComp = new System.Windows.Forms.Label();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -107,6 +154,15 @@
             this.comboBoxBlueMagicMagicID = new System.Windows.Forms.ComboBox();
             this.listBoxBlueMagic = new System.Windows.Forms.ListBox();
             this.tabPageGFAttacks = new System.Windows.Forms.TabPage();
+            this.groupBoxGFAttacksFlags = new System.Windows.Forms.GroupBox();
+            this.checkBoxGFAttacksFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFAttacksFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFAttacksFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFAttacksFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFAttacksFlagShelled = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFAttacksFlagReflected = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFAttacksFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFAttacksFlag7 = new System.Windows.Forms.CheckBox();
             this.groupBoxGFAttacksStatusAttack = new System.Windows.Forms.GroupBox();
             this.numericUpDownGFAttacksStatusAttack = new System.Windows.Forms.NumericUpDown();
             this.labelGFAttacksStatusAttack = new System.Windows.Forms.Label();
@@ -139,6 +195,7 @@
             this.checkBoxGFAttacksAura = new System.Windows.Forms.CheckBox();
             this.checkBoxGFAttacksFloat = new System.Windows.Forms.CheckBox();
             this.groupBoxGFAttacksGeneral = new System.Windows.Forms.GroupBox();
+            this.comboBoxGFAttacksAttackType = new System.Windows.Forms.ComboBox();
             this.comboBoxGFAttacksElement = new System.Windows.Forms.ComboBox();
             this.numericUpDownGFAttacksLevelMod = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownGFAttacksPowerMod = new System.Windows.Forms.NumericUpDown();
@@ -147,6 +204,15 @@
             this.tabPageGF = new System.Windows.Forms.TabPage();
             this.tabControlGF = new System.Windows.Forms.TabControl();
             this.tabPageJGF = new System.Windows.Forms.TabPage();
+            this.groupBoxGFFlags = new System.Windows.Forms.GroupBox();
+            this.checkBoxGFFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFFlagShelled = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFFlagReflected = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFFlag7 = new System.Windows.Forms.CheckBox();
             this.groupBoxGFStatusAttack = new System.Windows.Forms.GroupBox();
             this.numericUpDownGFStatusAttack = new System.Windows.Forms.NumericUpDown();
             this.labelGFStatusAttackEnabler = new System.Windows.Forms.Label();
@@ -186,10 +252,95 @@
             this.numericUpDownGFPower = new System.Windows.Forms.NumericUpDown();
             this.tabPageGFAbilities = new System.Windows.Forms.TabPage();
             this.groupBoxGFAbilities = new System.Windows.Forms.GroupBox();
+            this.panelGFAbilities = new System.Windows.Forms.Panel();
+            this.comboBoxGFAbilityUnlock21 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility21 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock12 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility12 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock15 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility15 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock18 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility18 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock6 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility6 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock9 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility9 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock20 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility20 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock11 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility11 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock14 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility14 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock5 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility5 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock17 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility17 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock19 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock8 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility8 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility19 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock10 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility10 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock13 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility13 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock4 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility4 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock16 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility16 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock7 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility7 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbilityUnlock1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGFAbility1 = new System.Windows.Forms.ComboBox();
+            this.tabPageGFComp = new System.Windows.Forms.TabPage();
+            this.groupBoxGFCompatibility = new System.Windows.Forms.GroupBox();
+            this.numericUpDownGFEdenComp = new System.Windows.Forms.NumericUpDown();
+            this.labelGFEdenComp = new System.Windows.Forms.Label();
+            this.numericUpDownGFDoomtrainComp = new System.Windows.Forms.NumericUpDown();
+            this.labelGFDoomtrainComp = new System.Windows.Forms.Label();
+            this.numericUpDownGFLeviathanComp = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGFTonberryComp = new System.Windows.Forms.NumericUpDown();
+            this.labelGFLeviathanComp = new System.Windows.Forms.Label();
+            this.numericUpDownGFAlexanderComp = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGFSirenComp = new System.Windows.Forms.NumericUpDown();
+            this.labelGFTonberryComp = new System.Windows.Forms.Label();
+            this.numericUpDownGFCarbuncleComp = new System.Windows.Forms.NumericUpDown();
+            this.labelGFAlexanderComp = new System.Windows.Forms.Label();
+            this.labelGFSirenComp = new System.Windows.Forms.Label();
+            this.numericUpDownGFCactuarComp = new System.Windows.Forms.NumericUpDown();
+            this.labelGFCarbuncleComp = new System.Windows.Forms.Label();
+            this.numericUpDownGFCerberusComp = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGFIfritComp = new System.Windows.Forms.NumericUpDown();
+            this.labelGFCactuarComp = new System.Windows.Forms.Label();
+            this.numericUpDownGFDiablosComp = new System.Windows.Forms.NumericUpDown();
+            this.labelGFCerberusComp = new System.Windows.Forms.Label();
+            this.labelGFIfritComp = new System.Windows.Forms.Label();
+            this.numericUpDownGFBahamutComp = new System.Windows.Forms.NumericUpDown();
+            this.labelGFDiablosComp = new System.Windows.Forms.Label();
+            this.numericUpDownGFPandemonaComp = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGFShivaComp = new System.Windows.Forms.NumericUpDown();
+            this.labelGFBahamutComp = new System.Windows.Forms.Label();
+            this.numericUpDownGFBrothersComp = new System.Windows.Forms.NumericUpDown();
+            this.labelGFPandemonaComp = new System.Windows.Forms.Label();
+            this.labelGFShivaComp = new System.Windows.Forms.Label();
+            this.labelGFBrothersComp = new System.Windows.Forms.Label();
+            this.numericUpDownGFQuezacoltComp = new System.Windows.Forms.NumericUpDown();
             this.listBoxGF = new System.Windows.Forms.ListBox();
             this.tabPageMagic = new System.Windows.Forms.TabPage();
             this.tabControlMagic = new System.Windows.Forms.TabControl();
             this.tabPageMagicGeneral = new System.Windows.Forms.TabPage();
+            this.groupBoxMagicFlags = new System.Windows.Forms.GroupBox();
+            this.checkBoxMagicBreakDamageLimit = new System.Windows.Forms.CheckBox();
+            this.checkBoxMagicFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMagicFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMagicFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMagicFlag1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMagicFlag5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMagicFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMagicFlag7 = new System.Windows.Forms.CheckBox();
             this.groupBoxMagicStatusAttack = new System.Windows.Forms.GroupBox();
             this.checkBoxMagicPetrifying = new System.Windows.Forms.CheckBox();
             this.checkBoxMagicDarkness = new System.Windows.Forms.CheckBox();
@@ -222,14 +373,6 @@
             this.checkBoxMagicReflect = new System.Windows.Forms.CheckBox();
             this.checkBoxMagicZombie = new System.Windows.Forms.CheckBox();
             this.groupBoxMagicGeneral = new System.Windows.Forms.GroupBox();
-            this.checkBoxMagicBreakDamageLimit = new System.Windows.Forms.CheckBox();
-            this.checkBoxMagicFlag3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxMagicFlag1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxMagicFlag8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxMagicFlag7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxMagicFlag2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxMagicFlag5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxMagicFlag6 = new System.Windows.Forms.CheckBox();
             this.comboBoxMagicAttackType = new System.Windows.Forms.ComboBox();
             this.comboBoxMagicElement = new System.Windows.Forms.ComboBox();
             this.numericUpDownMagicHitCount = new System.Windows.Forms.NumericUpDown();
@@ -294,18 +437,69 @@
             this.numericUpDownMagicVITJ = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownMagicEVAJ = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownMagicSTRJ = new System.Windows.Forms.NumericUpDown();
+            this.tabPageMagicGFsComp = new System.Windows.Forms.TabPage();
+            this.groupBoxMagicGFComp = new System.Windows.Forms.GroupBox();
+            this.numericUpDownMagicEdenComp = new System.Windows.Forms.NumericUpDown();
+            this.labelMagicEdenComp = new System.Windows.Forms.Label();
+            this.numericUpDownMagicDoomtrainComp = new System.Windows.Forms.NumericUpDown();
+            this.labelMagicDoomtrainComp = new System.Windows.Forms.Label();
+            this.numericUpDownMagicLeviathanComp = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownMagicTonberryComp = new System.Windows.Forms.NumericUpDown();
+            this.labelMagicLeviathanComp = new System.Windows.Forms.Label();
+            this.numericUpDownMagicAlexanderComp = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownMagicSirenComp = new System.Windows.Forms.NumericUpDown();
+            this.labelMagicTonberryComp = new System.Windows.Forms.Label();
+            this.numericUpDownMagicCarbuncleComp = new System.Windows.Forms.NumericUpDown();
+            this.labelMagicAlexanderComp = new System.Windows.Forms.Label();
+            this.labelMagicSirenComp = new System.Windows.Forms.Label();
+            this.numericUpDownMagicCactuarComp = new System.Windows.Forms.NumericUpDown();
+            this.labelMagicCarbuncleComp = new System.Windows.Forms.Label();
+            this.numericUpDownMagicCerberusComp = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownMagicIfritComp = new System.Windows.Forms.NumericUpDown();
+            this.labelMagicCactuarComp = new System.Windows.Forms.Label();
+            this.numericUpDownMagicDiablosComp = new System.Windows.Forms.NumericUpDown();
+            this.labelMagicCerberusComp = new System.Windows.Forms.Label();
+            this.labelMagicIfritComp = new System.Windows.Forms.Label();
+            this.numericUpDownMagicBahamutComp = new System.Windows.Forms.NumericUpDown();
+            this.labelMagicDiablosComp = new System.Windows.Forms.Label();
+            this.numericUpDownMagicPandemonaComp = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownMagicShivaComp = new System.Windows.Forms.NumericUpDown();
+            this.labelMagicBahamutComp = new System.Windows.Forms.Label();
+            this.numericUpDownMagicBrothersComp = new System.Windows.Forms.NumericUpDown();
+            this.labelMagicPandemonaComp = new System.Windows.Forms.Label();
+            this.labelMagicShivaComp = new System.Windows.Forms.Label();
+            this.labelMagicBrothersComp = new System.Windows.Forms.Label();
+            this.numericUpDownMagicQuezacoltComp = new System.Windows.Forms.NumericUpDown();
             this.listBoxMagic = new System.Windows.Forms.ListBox();
             this.tabPageAbilities = new System.Windows.Forms.TabPage();
             this.tabControlAbilities = new System.Windows.Forms.TabControl();
+            this.tabPageAbCharacters = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabPageAbStats = new System.Windows.Forms.TabPage();
             this.groupBoxStatsIncrement = new System.Windows.Forms.GroupBox();
+            this.comboBoxAbStatsStatToIncrease = new System.Windows.Forms.ComboBox();
+            this.labelAbStatsStatToIncrease = new System.Windows.Forms.Label();
             this.labelAbStatsValueTrackBar = new System.Windows.Forms.Label();
             this.trackBarAbStatsIncrementValue = new System.Windows.Forms.TrackBar();
             this.textBoxAbStatsDescription = new System.Windows.Forms.TextBox();
             this.textBoxAbStatsName = new System.Windows.Forms.TextBox();
             this.labelStatsDescription = new System.Windows.Forms.Label();
             this.labelAbStatsIncrementValue = new System.Windows.Forms.Label();
+            this.tabPageAbJunction = new System.Windows.Forms.TabPage();
+            this.tabPageAbCommand = new System.Windows.Forms.TabPage();
+            this.tabPageAbGF = new System.Windows.Forms.TabPage();
+            this.tabPageABParty = new System.Windows.Forms.TabPage();
+            this.tabPageAbMenu = new System.Windows.Forms.TabPage();
+            this.listBoxAbCharacters = new System.Windows.Forms.ListBox();
             this.listBoxAbStats = new System.Windows.Forms.ListBox();
+            this.listBoxAbMenu = new System.Windows.Forms.ListBox();
+            this.listBoxAbParty = new System.Windows.Forms.ListBox();
+            this.listBoxAbGF = new System.Windows.Forms.ListBox();
+            this.listBoxAbCommand = new System.Windows.Forms.ListBox();
+            this.listBoxAbJunction = new System.Windows.Forms.ListBox();
             this.tabPageWeapons = new System.Windows.Forms.TabPage();
             this.groupBoxWeaponsGeneral = new System.Windows.Forms.GroupBox();
             this.checkBoxWeaponsRenzoFinLion = new System.Windows.Forms.CheckBox();
@@ -322,6 +516,10 @@
             this.tabControlCharacters = new System.Windows.Forms.TabControl();
             this.tabPageCharGeneral = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownCharEXP2 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharEXPB = new System.Windows.Forms.Label();
+            this.numericUpDownCharEXP1 = new System.Windows.Forms.NumericUpDown();
+            this.labelCharEXPA = new System.Windows.Forms.Label();
             this.buttonCharEXPFormula = new System.Windows.Forms.Button();
             this.buttonCharEXPChart = new System.Windows.Forms.Button();
             this.groupBoxCharGeneral = new System.Windows.Forms.GroupBox();
@@ -411,6 +609,8 @@
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabSlots = new System.Windows.Forms.TabPage();
             this.groupBoxSlotSets = new System.Windows.Forms.GroupBox();
+            this.labelSlotSetsMagic = new System.Windows.Forms.Label();
+            this.labelSlotSetsList = new System.Windows.Forms.Label();
             this.comboBoxSlotMagic5 = new System.Windows.Forms.ComboBox();
             this.listBoxSlotSets = new System.Windows.Forms.ListBox();
             this.comboBoxSlotMagic2 = new System.Windows.Forms.ComboBox();
@@ -492,206 +692,52 @@
             this.numericUpDownSlotArray50 = new System.Windows.Forms.NumericUpDown();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.panelGFAbilities = new System.Windows.Forms.Panel();
-            this.comboBoxGFAbilityUnlock21 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility21 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility21 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbilityUnlock12 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility12 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbilityUnlock15 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility15 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility12 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbilityUnlock18 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility18 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbilityUnlock6 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility6 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility15 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbilityUnlock9 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility9 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbilityUnlock20 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility20 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbilityUnlock11 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility6 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbility11 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility18 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbilityUnlock14 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbilityUnlock3 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility3 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility14 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility9 = new System.Windows.Forms.Label();
-            this.labelGFAbility20 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbilityUnlock5 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility5 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbilityUnlock17 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility11 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbility17 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility3 = new System.Windows.Forms.Label();
-            this.labelGFAbility14 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbilityUnlock19 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbilityUnlock8 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility8 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility19 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility5 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbilityUnlock10 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility10 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility17 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbilityUnlock2 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbilityUnlock13 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility2 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility13 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility8 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbilityUnlock4 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility19 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbility4 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbilityUnlock16 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility10 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbility16 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility2 = new System.Windows.Forms.Label();
-            this.labelGFAbility13 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbilityUnlock7 = new System.Windows.Forms.ComboBox();
-            this.comboBoxGFAbility7 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility16 = new System.Windows.Forms.Label();
-            this.labelGFAbility4 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbilityUnlock1 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility7 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock1 = new System.Windows.Forms.Label();
-            this.comboBoxGFAbility1 = new System.Windows.Forms.ComboBox();
-            this.labelGFAbility1 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock2 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock3 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock4 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock5 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock6 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock7 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock8 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock9 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock10 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock11 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock12 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock13 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock14 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock15 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock16 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock17 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock18 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock19 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock20 = new System.Windows.Forms.Label();
-            this.labelGFAbilityUnlock21 = new System.Windows.Forms.Label();
-            this.numericUpDownCharEXP2 = new System.Windows.Forms.NumericUpDown();
-            this.labelCharEXPB = new System.Windows.Forms.Label();
-            this.numericUpDownCharEXP1 = new System.Windows.Forms.NumericUpDown();
-            this.labelCharEXPA = new System.Windows.Forms.Label();
-            this.labelSlotSetsN = new System.Windows.Forms.Label();
-            this.labelSlotSetsMagic = new System.Windows.Forms.Label();
-            this.labelSlotSetsList = new System.Windows.Forms.Label();
-            this.tabPageAbJunction = new System.Windows.Forms.TabPage();
-            this.tabPageAbCommand = new System.Windows.Forms.TabPage();
-            this.tabPageAbCharacters = new System.Windows.Forms.TabPage();
-            this.tabPageABParty = new System.Windows.Forms.TabPage();
-            this.tabPageAbGF = new System.Windows.Forms.TabPage();
-            this.tabPageAbMenu = new System.Windows.Forms.TabPage();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.listBoxAbCharacters = new System.Windows.Forms.ListBox();
-            this.comboBoxAbStatsStatToIncrease = new System.Windows.Forms.ComboBox();
-            this.labelAbStatsStatToIncrease = new System.Windows.Forms.Label();
-            this.listBoxAbJunction = new System.Windows.Forms.ListBox();
-            this.listBoxAbCommand = new System.Windows.Forms.ListBox();
-            this.listBoxAbGF = new System.Windows.Forms.ListBox();
-            this.listBoxAbParty = new System.Windows.Forms.ListBox();
-            this.listBoxAbMenu = new System.Windows.Forms.ListBox();
-            this.labelGFAttacksAttackType = new System.Windows.Forms.Label();
-            this.comboBoxGFAttacksAttackType = new System.Windows.Forms.ComboBox();
-            this.tabPageMagicGFsComp = new System.Windows.Forms.TabPage();
-            this.groupBoxMagicGFComp = new System.Windows.Forms.GroupBox();
-            this.numericUpDownMagicEdenComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicEdenComp = new System.Windows.Forms.Label();
-            this.numericUpDownMagicDoomtrainComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicDoomtrainComp = new System.Windows.Forms.Label();
-            this.numericUpDownMagicLeviathanComp = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownMagicTonberryComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicLeviathanComp = new System.Windows.Forms.Label();
-            this.numericUpDownMagicAlexanderComp = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownMagicSirenComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicTonberryComp = new System.Windows.Forms.Label();
-            this.numericUpDownMagicCarbuncleComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicAlexanderComp = new System.Windows.Forms.Label();
-            this.labelMagicSirenComp = new System.Windows.Forms.Label();
-            this.numericUpDownMagicCactuarComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicCarbuncleComp = new System.Windows.Forms.Label();
-            this.numericUpDownMagicCerberusComp = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownMagicIfritComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicCactuarComp = new System.Windows.Forms.Label();
-            this.numericUpDownMagicDiablosComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicCerberusComp = new System.Windows.Forms.Label();
-            this.labelMagicIfritComp = new System.Windows.Forms.Label();
-            this.numericUpDownMagicBahamutComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicDiablosComp = new System.Windows.Forms.Label();
-            this.numericUpDownMagicPandemonaComp = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownMagicShivaComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicBahamutComp = new System.Windows.Forms.Label();
-            this.numericUpDownMagicBrothersComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicPandemonaComp = new System.Windows.Forms.Label();
-            this.labelMagicShivaComp = new System.Windows.Forms.Label();
-            this.labelMagicBrothersComp = new System.Windows.Forms.Label();
-            this.numericUpDownMagicQuezacoltComp = new System.Windows.Forms.NumericUpDown();
-            this.labelMagicQuezacoltComp = new System.Windows.Forms.Label();
-            this.groupBoxMagicFlags = new System.Windows.Forms.GroupBox();
-            this.tabPageGFComp = new System.Windows.Forms.TabPage();
-            this.groupBoxGFCompatibility = new System.Windows.Forms.GroupBox();
-            this.numericUpDownGFEdenComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFEdenComp = new System.Windows.Forms.Label();
-            this.numericUpDownGFDoomtrainComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFDoomtrainComp = new System.Windows.Forms.Label();
-            this.numericUpDownGFLeviathanComp = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGFTonberryComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFLeviathanComp = new System.Windows.Forms.Label();
-            this.numericUpDownGFAlexanderComp = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGFSirenComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFTonberryComp = new System.Windows.Forms.Label();
-            this.numericUpDownGFCarbuncleComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFAlexanderComp = new System.Windows.Forms.Label();
-            this.labelGFSirenComp = new System.Windows.Forms.Label();
-            this.numericUpDownGFCactuarComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFCarbuncleComp = new System.Windows.Forms.Label();
-            this.numericUpDownGFCerberusComp = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGFIfritComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFCactuarComp = new System.Windows.Forms.Label();
-            this.numericUpDownGFDiablosComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFCerberusComp = new System.Windows.Forms.Label();
-            this.labelGFIfritComp = new System.Windows.Forms.Label();
-            this.numericUpDownGFBahamutComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFDiablosComp = new System.Windows.Forms.Label();
-            this.numericUpDownGFPandemonaComp = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGFShivaComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFBahamutComp = new System.Windows.Forms.Label();
-            this.numericUpDownGFBrothersComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFPandemonaComp = new System.Windows.Forms.Label();
-            this.labelGFShivaComp = new System.Windows.Forms.Label();
-            this.labelGFBrothersComp = new System.Windows.Forms.Label();
-            this.numericUpDownGFQuezacoltComp = new System.Windows.Forms.NumericUpDown();
-            this.labelGFQuezacoltComp = new System.Windows.Forms.Label();
-            this.groupBoxGFFlags = new System.Windows.Forms.GroupBox();
-            this.checkBoxGFFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFFlag8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFFlag3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFFlag6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFFlagShelled = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFFlagReflected = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFFlag2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFFlag7 = new System.Windows.Forms.CheckBox();
-            this.groupBoxGFAttacksFlags = new System.Windows.Forms.GroupBox();
-            this.checkBoxGFAttacksFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFAttacksFlag8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFAttacksFlag3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFAttacksFlag6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFAttacksFlagShelled = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFAttacksFlagReflected = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFAttacksFlag2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFAttacksFlag7 = new System.Windows.Forms.CheckBox();
+            this.labelBlueMagicAttackType = new System.Windows.Forms.Label();
+            this.comboBoxBlueMagicAttackType = new System.Windows.Forms.ComboBox();
+            this.numericUpDownBlueMagicDeathLevel = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownBlueMagicAttackPower = new System.Windows.Forms.NumericUpDown();
+            this.labelBlueMagicDeathLevel = new System.Windows.Forms.Label();
+            this.labelBlueMagicAttackPower = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.checkBoxBlueMagicFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicFlagShelled = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicFlagReflected = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicFlag7 = new System.Windows.Forms.CheckBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownBlueMagicStatusAttack = new System.Windows.Forms.NumericUpDown();
+            this.labelBlueMagicStatusAttack = new System.Windows.Forms.Label();
+            this.checkBoxBlueMagicZombie = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicReflect = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicShell = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicDarkness = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicRegen = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicSilence = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicHaste = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicStop = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicProtect = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicConfusion = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicDeath = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicPetrify = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicPoison = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicPetrifying = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicEject = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicSlow = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicDouble = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicBerserk = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicTriple = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicSleep = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicDefend = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicInvincible = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicVit0 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCurse = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicDrain = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicDoom = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicAura = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicFloat = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
@@ -700,6 +746,7 @@
             this.tabBlueMagic.SuspendLayout();
             this.groupBoxBlueMagicGeneral.SuspendLayout();
             this.tabPageGFAttacks.SuspendLayout();
+            this.groupBoxGFAttacksFlags.SuspendLayout();
             this.groupBoxGFAttacksStatusAttack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAttacksStatusAttack)).BeginInit();
             this.groupBoxGFAttacksGeneral.SuspendLayout();
@@ -709,6 +756,7 @@
             this.tabPageGF.SuspendLayout();
             this.tabControlGF.SuspendLayout();
             this.tabPageJGF.SuspendLayout();
+            this.groupBoxGFFlags.SuspendLayout();
             this.groupBoxGFStatusAttack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFStatusAttack)).BeginInit();
             this.groupBoxGFGeneral.SuspendLayout();
@@ -717,9 +765,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFPower)).BeginInit();
             this.tabPageGFAbilities.SuspendLayout();
             this.groupBoxGFAbilities.SuspendLayout();
+            this.panelGFAbilities.SuspendLayout();
+            this.tabPageGFComp.SuspendLayout();
+            this.groupBoxGFCompatibility.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFEdenComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFDoomtrainComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFLeviathanComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFTonberryComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAlexanderComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFSirenComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCarbuncleComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCactuarComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCerberusComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFIfritComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFDiablosComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFBahamutComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFPandemonaComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFShivaComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFBrothersComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFQuezacoltComp)).BeginInit();
             this.tabPageMagic.SuspendLayout();
             this.tabControlMagic.SuspendLayout();
             this.tabPageMagicGeneral.SuspendLayout();
+            this.groupBoxMagicFlags.SuspendLayout();
             this.groupBoxMagicStatusAttack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicStatusAttack)).BeginInit();
             this.groupBoxMagicGeneral.SuspendLayout();
@@ -745,8 +813,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicVITJ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicEVAJ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicSTRJ)).BeginInit();
+            this.tabPageMagicGFsComp.SuspendLayout();
+            this.groupBoxMagicGFComp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicEdenComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicDoomtrainComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicLeviathanComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicTonberryComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicAlexanderComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicSirenComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCarbuncleComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCactuarComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCerberusComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicIfritComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicDiablosComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicBahamutComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicPandemonaComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicShivaComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicBrothersComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicQuezacoltComp)).BeginInit();
             this.tabPageAbilities.SuspendLayout();
             this.tabControlAbilities.SuspendLayout();
+            this.tabPageAbCharacters.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.tabPageAbStats.SuspendLayout();
             this.groupBoxStatsIncrement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAbStatsIncrementValue)).BeginInit();
@@ -759,6 +847,8 @@
             this.tabControlCharacters.SuspendLayout();
             this.tabPageCharGeneral.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP1)).BeginInit();
             this.groupBoxCharGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLimitParam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharCrisisLevelHP)).BeginInit();
@@ -873,50 +963,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray49)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray50)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            this.panelGFAbilities.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP1)).BeginInit();
-            this.tabPageAbCharacters.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.tabPageMagicGFsComp.SuspendLayout();
-            this.groupBoxMagicGFComp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicEdenComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicDoomtrainComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicLeviathanComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicTonberryComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicAlexanderComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicSirenComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCarbuncleComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCactuarComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCerberusComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicIfritComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicDiablosComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicBahamutComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicPandemonaComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicShivaComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicBrothersComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicQuezacoltComp)).BeginInit();
-            this.groupBoxMagicFlags.SuspendLayout();
-            this.tabPageGFComp.SuspendLayout();
-            this.groupBoxGFCompatibility.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFEdenComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFDoomtrainComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFLeviathanComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFTonberryComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAlexanderComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFSirenComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCarbuncleComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCactuarComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCerberusComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFIfritComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFDiablosComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFBahamutComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFPandemonaComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFShivaComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFBrothersComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFQuezacoltComp)).BeginInit();
-            this.groupBoxGFFlags.SuspendLayout();
-            this.groupBoxGFAttacksFlags.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicDeathLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicAttackPower)).BeginInit();
+            this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicStatusAttack)).BeginInit();
             this.SuspendLayout();
             // 
             // labelBlueMagicMagicID
@@ -924,7 +975,7 @@
             this.labelBlueMagicMagicID.AutoSize = true;
             this.labelBlueMagicMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelBlueMagicMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicMagicID.Location = new System.Drawing.Point(131, 29);
+            this.labelBlueMagicMagicID.Location = new System.Drawing.Point(120, 29);
             this.labelBlueMagicMagicID.Name = "labelBlueMagicMagicID";
             this.labelBlueMagicMagicID.Size = new System.Drawing.Size(61, 17);
             this.labelBlueMagicMagicID.TabIndex = 0;
@@ -936,7 +987,7 @@
             this.labelBlueMagicElement.AutoSize = true;
             this.labelBlueMagicElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelBlueMagicElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicElement.Location = new System.Drawing.Point(353, 29);
+            this.labelBlueMagicElement.Location = new System.Drawing.Point(342, 29);
             this.labelBlueMagicElement.Name = "labelBlueMagicElement";
             this.labelBlueMagicElement.Size = new System.Drawing.Size(57, 17);
             this.labelBlueMagicElement.TabIndex = 0;
@@ -2293,6 +2344,570 @@
             this.labelCharGender.Text = "Gender";
             this.toolTip1.SetToolTip(this.labelCharGender, "The element of the GF attack");
             // 
+            // labelGFAbility21
+            // 
+            this.labelGFAbility21.AutoSize = true;
+            this.labelGFAbility21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility21.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility21.Location = new System.Drawing.Point(56, 1063);
+            this.labelGFAbility21.Name = "labelGFAbility21";
+            this.labelGFAbility21.Size = new System.Drawing.Size(62, 17);
+            this.labelGFAbility21.TabIndex = 95;
+            this.labelGFAbility21.Text = "Ability 21";
+            this.toolTip1.SetToolTip(this.labelGFAbility21, "The ability the GF can learn");
+            // 
+            // labelGFAbility12
+            // 
+            this.labelGFAbility12.AutoSize = true;
+            this.labelGFAbility12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility12.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility12.Location = new System.Drawing.Point(56, 574);
+            this.labelGFAbility12.Name = "labelGFAbility12";
+            this.labelGFAbility12.Size = new System.Drawing.Size(62, 17);
+            this.labelGFAbility12.TabIndex = 88;
+            this.labelGFAbility12.Text = "Ability 12";
+            this.toolTip1.SetToolTip(this.labelGFAbility12, "The ability the GF can learn");
+            // 
+            // labelGFAbility15
+            // 
+            this.labelGFAbility15.AutoSize = true;
+            this.labelGFAbility15.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility15.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility15.Location = new System.Drawing.Point(56, 737);
+            this.labelGFAbility15.Name = "labelGFAbility15";
+            this.labelGFAbility15.Size = new System.Drawing.Size(62, 17);
+            this.labelGFAbility15.TabIndex = 93;
+            this.labelGFAbility15.Text = "Ability 15";
+            this.toolTip1.SetToolTip(this.labelGFAbility15, "The ability the GF can learn");
+            // 
+            // labelGFAbility6
+            // 
+            this.labelGFAbility6.AutoSize = true;
+            this.labelGFAbility6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility6.Location = new System.Drawing.Point(58, 259);
+            this.labelGFAbility6.Name = "labelGFAbility6";
+            this.labelGFAbility6.Size = new System.Drawing.Size(57, 17);
+            this.labelGFAbility6.TabIndex = 90;
+            this.labelGFAbility6.Text = "Ability 6";
+            this.toolTip1.SetToolTip(this.labelGFAbility6, "The ability the GF can learn");
+            // 
+            // labelGFAbility18
+            // 
+            this.labelGFAbility18.AutoSize = true;
+            this.labelGFAbility18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility18.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility18.Location = new System.Drawing.Point(56, 899);
+            this.labelGFAbility18.Name = "labelGFAbility18";
+            this.labelGFAbility18.Size = new System.Drawing.Size(62, 17);
+            this.labelGFAbility18.TabIndex = 94;
+            this.labelGFAbility18.Text = "Ability 18";
+            this.toolTip1.SetToolTip(this.labelGFAbility18, "The ability the GF can learn");
+            // 
+            // labelGFAbility9
+            // 
+            this.labelGFAbility9.AutoSize = true;
+            this.labelGFAbility9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility9.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility9.Location = new System.Drawing.Point(59, 412);
+            this.labelGFAbility9.Name = "labelGFAbility9";
+            this.labelGFAbility9.Size = new System.Drawing.Size(57, 17);
+            this.labelGFAbility9.TabIndex = 85;
+            this.labelGFAbility9.Text = "Ability 9";
+            this.toolTip1.SetToolTip(this.labelGFAbility9, "The ability the GF can learn");
+            // 
+            // labelGFAbility20
+            // 
+            this.labelGFAbility20.AutoSize = true;
+            this.labelGFAbility20.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility20.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility20.Location = new System.Drawing.Point(56, 1009);
+            this.labelGFAbility20.Name = "labelGFAbility20";
+            this.labelGFAbility20.Size = new System.Drawing.Size(64, 17);
+            this.labelGFAbility20.TabIndex = 58;
+            this.labelGFAbility20.Text = "Ability 20";
+            this.toolTip1.SetToolTip(this.labelGFAbility20, "The ability the GF can learn");
+            // 
+            // labelGFAbility11
+            // 
+            this.labelGFAbility11.AutoSize = true;
+            this.labelGFAbility11.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility11.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility11.Location = new System.Drawing.Point(56, 522);
+            this.labelGFAbility11.Name = "labelGFAbility11";
+            this.labelGFAbility11.Size = new System.Drawing.Size(60, 17);
+            this.labelGFAbility11.TabIndex = 60;
+            this.labelGFAbility11.Text = "Ability 11";
+            this.toolTip1.SetToolTip(this.labelGFAbility11, "The ability the GF can learn");
+            // 
+            // labelGFAbility3
+            // 
+            this.labelGFAbility3.AutoSize = true;
+            this.labelGFAbility3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility3.Location = new System.Drawing.Point(59, 105);
+            this.labelGFAbility3.Name = "labelGFAbility3";
+            this.labelGFAbility3.Size = new System.Drawing.Size(57, 17);
+            this.labelGFAbility3.TabIndex = 62;
+            this.labelGFAbility3.Text = "Ability 3";
+            this.toolTip1.SetToolTip(this.labelGFAbility3, "The ability the GF can learn");
+            // 
+            // labelGFAbility14
+            // 
+            this.labelGFAbility14.AutoSize = true;
+            this.labelGFAbility14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility14.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility14.Location = new System.Drawing.Point(56, 684);
+            this.labelGFAbility14.Name = "labelGFAbility14";
+            this.labelGFAbility14.Size = new System.Drawing.Size(62, 17);
+            this.labelGFAbility14.TabIndex = 63;
+            this.labelGFAbility14.Text = "Ability 14";
+            this.toolTip1.SetToolTip(this.labelGFAbility14, "The ability the GF can learn");
+            // 
+            // labelGFAbility5
+            // 
+            this.labelGFAbility5.AutoSize = true;
+            this.labelGFAbility5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility5.Location = new System.Drawing.Point(58, 208);
+            this.labelGFAbility5.Name = "labelGFAbility5";
+            this.labelGFAbility5.Size = new System.Drawing.Size(57, 17);
+            this.labelGFAbility5.TabIndex = 65;
+            this.labelGFAbility5.Text = "Ability 5";
+            this.toolTip1.SetToolTip(this.labelGFAbility5, "The ability the GF can learn");
+            // 
+            // labelGFAbility17
+            // 
+            this.labelGFAbility17.AutoSize = true;
+            this.labelGFAbility17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility17.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility17.Location = new System.Drawing.Point(56, 845);
+            this.labelGFAbility17.Name = "labelGFAbility17";
+            this.labelGFAbility17.Size = new System.Drawing.Size(62, 17);
+            this.labelGFAbility17.TabIndex = 67;
+            this.labelGFAbility17.Text = "Ability 17";
+            this.toolTip1.SetToolTip(this.labelGFAbility17, "The ability the GF can learn");
+            // 
+            // labelGFAbility8
+            // 
+            this.labelGFAbility8.AutoSize = true;
+            this.labelGFAbility8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility8.Location = new System.Drawing.Point(58, 362);
+            this.labelGFAbility8.Name = "labelGFAbility8";
+            this.labelGFAbility8.Size = new System.Drawing.Size(57, 17);
+            this.labelGFAbility8.TabIndex = 70;
+            this.labelGFAbility8.Text = "Ability 8";
+            this.toolTip1.SetToolTip(this.labelGFAbility8, "The ability the GF can learn");
+            // 
+            // labelGFAbility19
+            // 
+            this.labelGFAbility19.AutoSize = true;
+            this.labelGFAbility19.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility19.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility19.Location = new System.Drawing.Point(56, 953);
+            this.labelGFAbility19.Name = "labelGFAbility19";
+            this.labelGFAbility19.Size = new System.Drawing.Size(62, 17);
+            this.labelGFAbility19.TabIndex = 71;
+            this.labelGFAbility19.Text = "Ability 19";
+            this.toolTip1.SetToolTip(this.labelGFAbility19, "The ability the GF can learn");
+            // 
+            // labelGFAbility10
+            // 
+            this.labelGFAbility10.AutoSize = true;
+            this.labelGFAbility10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility10.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility10.Location = new System.Drawing.Point(56, 467);
+            this.labelGFAbility10.Name = "labelGFAbility10";
+            this.labelGFAbility10.Size = new System.Drawing.Size(62, 17);
+            this.labelGFAbility10.TabIndex = 73;
+            this.labelGFAbility10.Text = "Ability 10";
+            this.toolTip1.SetToolTip(this.labelGFAbility10, "The ability the GF can learn");
+            // 
+            // labelGFAbility2
+            // 
+            this.labelGFAbility2.AutoSize = true;
+            this.labelGFAbility2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility2.Location = new System.Drawing.Point(58, 53);
+            this.labelGFAbility2.Name = "labelGFAbility2";
+            this.labelGFAbility2.Size = new System.Drawing.Size(57, 17);
+            this.labelGFAbility2.TabIndex = 76;
+            this.labelGFAbility2.Text = "Ability 2";
+            this.toolTip1.SetToolTip(this.labelGFAbility2, "The ability the GF can learn");
+            // 
+            // labelGFAbility13
+            // 
+            this.labelGFAbility13.AutoSize = true;
+            this.labelGFAbility13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility13.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility13.Location = new System.Drawing.Point(56, 628);
+            this.labelGFAbility13.Name = "labelGFAbility13";
+            this.labelGFAbility13.Size = new System.Drawing.Size(62, 17);
+            this.labelGFAbility13.TabIndex = 77;
+            this.labelGFAbility13.Text = "Ability 13";
+            this.toolTip1.SetToolTip(this.labelGFAbility13, "The ability the GF can learn");
+            // 
+            // labelGFAbility16
+            // 
+            this.labelGFAbility16.AutoSize = true;
+            this.labelGFAbility16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility16.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility16.Location = new System.Drawing.Point(56, 791);
+            this.labelGFAbility16.Name = "labelGFAbility16";
+            this.labelGFAbility16.Size = new System.Drawing.Size(62, 17);
+            this.labelGFAbility16.TabIndex = 80;
+            this.labelGFAbility16.Text = "Ability 16";
+            this.toolTip1.SetToolTip(this.labelGFAbility16, "The ability the GF can learn");
+            // 
+            // labelGFAbility4
+            // 
+            this.labelGFAbility4.AutoSize = true;
+            this.labelGFAbility4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility4.Location = new System.Drawing.Point(59, 157);
+            this.labelGFAbility4.Name = "labelGFAbility4";
+            this.labelGFAbility4.Size = new System.Drawing.Size(57, 17);
+            this.labelGFAbility4.TabIndex = 82;
+            this.labelGFAbility4.Text = "Ability 4";
+            this.toolTip1.SetToolTip(this.labelGFAbility4, "The ability the GF can learn");
+            // 
+            // labelGFAbility7
+            // 
+            this.labelGFAbility7.AutoSize = true;
+            this.labelGFAbility7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility7.Location = new System.Drawing.Point(59, 310);
+            this.labelGFAbility7.Name = "labelGFAbility7";
+            this.labelGFAbility7.Size = new System.Drawing.Size(57, 17);
+            this.labelGFAbility7.TabIndex = 83;
+            this.labelGFAbility7.Text = "Ability 7";
+            this.toolTip1.SetToolTip(this.labelGFAbility7, "The ability the GF can learn");
+            // 
+            // labelGFAbilityUnlock1
+            // 
+            this.labelGFAbilityUnlock1.AutoSize = true;
+            this.labelGFAbilityUnlock1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock1.Location = new System.Drawing.Point(174, 5);
+            this.labelGFAbilityUnlock1.Name = "labelGFAbilityUnlock1";
+            this.labelGFAbilityUnlock1.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock1.TabIndex = 84;
+            this.labelGFAbilityUnlock1.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock1, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbility1
+            // 
+            this.labelGFAbility1.AutoSize = true;
+            this.labelGFAbility1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbility1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbility1.Location = new System.Drawing.Point(59, 5);
+            this.labelGFAbility1.Name = "labelGFAbility1";
+            this.labelGFAbility1.Size = new System.Drawing.Size(55, 17);
+            this.labelGFAbility1.TabIndex = 87;
+            this.labelGFAbility1.Text = "Ability 1";
+            this.toolTip1.SetToolTip(this.labelGFAbility1, "The ability the GF can learn");
+            // 
+            // labelGFAbilityUnlock2
+            // 
+            this.labelGFAbilityUnlock2.AutoSize = true;
+            this.labelGFAbilityUnlock2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock2.Location = new System.Drawing.Point(174, 53);
+            this.labelGFAbilityUnlock2.Name = "labelGFAbilityUnlock2";
+            this.labelGFAbilityUnlock2.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock2.TabIndex = 84;
+            this.labelGFAbilityUnlock2.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock2, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock3
+            // 
+            this.labelGFAbilityUnlock3.AutoSize = true;
+            this.labelGFAbilityUnlock3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock3.Location = new System.Drawing.Point(174, 105);
+            this.labelGFAbilityUnlock3.Name = "labelGFAbilityUnlock3";
+            this.labelGFAbilityUnlock3.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock3.TabIndex = 84;
+            this.labelGFAbilityUnlock3.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock3, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock4
+            // 
+            this.labelGFAbilityUnlock4.AutoSize = true;
+            this.labelGFAbilityUnlock4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock4.Location = new System.Drawing.Point(174, 157);
+            this.labelGFAbilityUnlock4.Name = "labelGFAbilityUnlock4";
+            this.labelGFAbilityUnlock4.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock4.TabIndex = 84;
+            this.labelGFAbilityUnlock4.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock4, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock5
+            // 
+            this.labelGFAbilityUnlock5.AutoSize = true;
+            this.labelGFAbilityUnlock5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock5.Location = new System.Drawing.Point(174, 208);
+            this.labelGFAbilityUnlock5.Name = "labelGFAbilityUnlock5";
+            this.labelGFAbilityUnlock5.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock5.TabIndex = 84;
+            this.labelGFAbilityUnlock5.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock5, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock6
+            // 
+            this.labelGFAbilityUnlock6.AutoSize = true;
+            this.labelGFAbilityUnlock6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock6.Location = new System.Drawing.Point(174, 259);
+            this.labelGFAbilityUnlock6.Name = "labelGFAbilityUnlock6";
+            this.labelGFAbilityUnlock6.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock6.TabIndex = 84;
+            this.labelGFAbilityUnlock6.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock6, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock7
+            // 
+            this.labelGFAbilityUnlock7.AutoSize = true;
+            this.labelGFAbilityUnlock7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock7.Location = new System.Drawing.Point(174, 310);
+            this.labelGFAbilityUnlock7.Name = "labelGFAbilityUnlock7";
+            this.labelGFAbilityUnlock7.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock7.TabIndex = 84;
+            this.labelGFAbilityUnlock7.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock7, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock8
+            // 
+            this.labelGFAbilityUnlock8.AutoSize = true;
+            this.labelGFAbilityUnlock8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock8.Location = new System.Drawing.Point(174, 362);
+            this.labelGFAbilityUnlock8.Name = "labelGFAbilityUnlock8";
+            this.labelGFAbilityUnlock8.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock8.TabIndex = 84;
+            this.labelGFAbilityUnlock8.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock8, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock9
+            // 
+            this.labelGFAbilityUnlock9.AutoSize = true;
+            this.labelGFAbilityUnlock9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock9.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock9.Location = new System.Drawing.Point(174, 412);
+            this.labelGFAbilityUnlock9.Name = "labelGFAbilityUnlock9";
+            this.labelGFAbilityUnlock9.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock9.TabIndex = 84;
+            this.labelGFAbilityUnlock9.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock9, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock10
+            // 
+            this.labelGFAbilityUnlock10.AutoSize = true;
+            this.labelGFAbilityUnlock10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock10.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock10.Location = new System.Drawing.Point(174, 467);
+            this.labelGFAbilityUnlock10.Name = "labelGFAbilityUnlock10";
+            this.labelGFAbilityUnlock10.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock10.TabIndex = 84;
+            this.labelGFAbilityUnlock10.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock10, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock11
+            // 
+            this.labelGFAbilityUnlock11.AutoSize = true;
+            this.labelGFAbilityUnlock11.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock11.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock11.Location = new System.Drawing.Point(174, 522);
+            this.labelGFAbilityUnlock11.Name = "labelGFAbilityUnlock11";
+            this.labelGFAbilityUnlock11.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock11.TabIndex = 84;
+            this.labelGFAbilityUnlock11.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock11, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock12
+            // 
+            this.labelGFAbilityUnlock12.AutoSize = true;
+            this.labelGFAbilityUnlock12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock12.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock12.Location = new System.Drawing.Point(174, 574);
+            this.labelGFAbilityUnlock12.Name = "labelGFAbilityUnlock12";
+            this.labelGFAbilityUnlock12.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock12.TabIndex = 84;
+            this.labelGFAbilityUnlock12.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock12, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock13
+            // 
+            this.labelGFAbilityUnlock13.AutoSize = true;
+            this.labelGFAbilityUnlock13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock13.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock13.Location = new System.Drawing.Point(174, 628);
+            this.labelGFAbilityUnlock13.Name = "labelGFAbilityUnlock13";
+            this.labelGFAbilityUnlock13.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock13.TabIndex = 84;
+            this.labelGFAbilityUnlock13.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock13, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock14
+            // 
+            this.labelGFAbilityUnlock14.AutoSize = true;
+            this.labelGFAbilityUnlock14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock14.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock14.Location = new System.Drawing.Point(174, 684);
+            this.labelGFAbilityUnlock14.Name = "labelGFAbilityUnlock14";
+            this.labelGFAbilityUnlock14.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock14.TabIndex = 84;
+            this.labelGFAbilityUnlock14.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock14, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock15
+            // 
+            this.labelGFAbilityUnlock15.AutoSize = true;
+            this.labelGFAbilityUnlock15.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock15.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock15.Location = new System.Drawing.Point(174, 737);
+            this.labelGFAbilityUnlock15.Name = "labelGFAbilityUnlock15";
+            this.labelGFAbilityUnlock15.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock15.TabIndex = 84;
+            this.labelGFAbilityUnlock15.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock15, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock16
+            // 
+            this.labelGFAbilityUnlock16.AutoSize = true;
+            this.labelGFAbilityUnlock16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock16.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock16.Location = new System.Drawing.Point(174, 791);
+            this.labelGFAbilityUnlock16.Name = "labelGFAbilityUnlock16";
+            this.labelGFAbilityUnlock16.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock16.TabIndex = 84;
+            this.labelGFAbilityUnlock16.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock16, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock17
+            // 
+            this.labelGFAbilityUnlock17.AutoSize = true;
+            this.labelGFAbilityUnlock17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock17.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock17.Location = new System.Drawing.Point(174, 845);
+            this.labelGFAbilityUnlock17.Name = "labelGFAbilityUnlock17";
+            this.labelGFAbilityUnlock17.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock17.TabIndex = 84;
+            this.labelGFAbilityUnlock17.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock17, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock18
+            // 
+            this.labelGFAbilityUnlock18.AutoSize = true;
+            this.labelGFAbilityUnlock18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock18.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock18.Location = new System.Drawing.Point(174, 899);
+            this.labelGFAbilityUnlock18.Name = "labelGFAbilityUnlock18";
+            this.labelGFAbilityUnlock18.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock18.TabIndex = 84;
+            this.labelGFAbilityUnlock18.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock18, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock19
+            // 
+            this.labelGFAbilityUnlock19.AutoSize = true;
+            this.labelGFAbilityUnlock19.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock19.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock19.Location = new System.Drawing.Point(174, 953);
+            this.labelGFAbilityUnlock19.Name = "labelGFAbilityUnlock19";
+            this.labelGFAbilityUnlock19.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock19.TabIndex = 84;
+            this.labelGFAbilityUnlock19.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock19, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock20
+            // 
+            this.labelGFAbilityUnlock20.AutoSize = true;
+            this.labelGFAbilityUnlock20.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock20.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock20.Location = new System.Drawing.Point(174, 1009);
+            this.labelGFAbilityUnlock20.Name = "labelGFAbilityUnlock20";
+            this.labelGFAbilityUnlock20.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock20.TabIndex = 84;
+            this.labelGFAbilityUnlock20.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock20, "Prerequisite needed to unlock the ability");
+            // 
+            // labelGFAbilityUnlock21
+            // 
+            this.labelGFAbilityUnlock21.AutoSize = true;
+            this.labelGFAbilityUnlock21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAbilityUnlock21.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAbilityUnlock21.Location = new System.Drawing.Point(174, 1063);
+            this.labelGFAbilityUnlock21.Name = "labelGFAbilityUnlock21";
+            this.labelGFAbilityUnlock21.Size = new System.Drawing.Size(116, 17);
+            this.labelGFAbilityUnlock21.TabIndex = 84;
+            this.labelGFAbilityUnlock21.Text = "Needed to unlock";
+            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock21, "Prerequisite needed to unlock the ability");
+            // 
+            // labelSlotSetsN
+            // 
+            this.labelSlotSetsN.AutoSize = true;
+            this.labelSlotSetsN.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelSlotSetsN.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelSlotSetsN.Location = new System.Drawing.Point(267, 25);
+            this.labelSlotSetsN.Name = "labelSlotSetsN";
+            this.labelSlotSetsN.Size = new System.Drawing.Size(23, 17);
+            this.labelSlotSetsN.TabIndex = 29;
+            this.labelSlotSetsN.Text = "N°";
+            this.toolTip1.SetToolTip(this.labelSlotSetsN, "How many spells");
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label4.Location = new System.Drawing.Point(201, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 17);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Name";
+            this.toolTip1.SetToolTip(this.label4, "Used in damage calculation");
+            // 
+            // labelGFAttacksAttackType
+            // 
+            this.labelGFAttacksAttackType.AutoSize = true;
+            this.labelGFAttacksAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAttacksAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAttacksAttackType.Location = new System.Drawing.Point(120, 87);
+            this.labelGFAttacksAttackType.Name = "labelGFAttacksAttackType";
+            this.labelGFAttacksAttackType.Size = new System.Drawing.Size(79, 17);
+            this.labelGFAttacksAttackType.TabIndex = 93;
+            this.labelGFAttacksAttackType.Text = "Attack Type";
+            this.toolTip1.SetToolTip(this.labelGFAttacksAttackType, "Decides what animation to play");
+            // 
+            // labelMagicQuezacoltComp
+            // 
+            this.labelMagicQuezacoltComp.AutoSize = true;
+            this.labelMagicQuezacoltComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicQuezacoltComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicQuezacoltComp.Location = new System.Drawing.Point(42, 27);
+            this.labelMagicQuezacoltComp.Name = "labelMagicQuezacoltComp";
+            this.labelMagicQuezacoltComp.Size = new System.Drawing.Size(68, 17);
+            this.labelMagicQuezacoltComp.TabIndex = 0;
+            this.labelMagicQuezacoltComp.Text = "Quezacotl";
+            this.toolTip1.SetToolTip(this.labelMagicQuezacoltComp, "Modifies compatibility with this GF when the magic is used");
+            // 
+            // labelGFQuezacoltComp
+            // 
+            this.labelGFQuezacoltComp.AutoSize = true;
+            this.labelGFQuezacoltComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFQuezacoltComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFQuezacoltComp.Location = new System.Drawing.Point(42, 27);
+            this.labelGFQuezacoltComp.Name = "labelGFQuezacoltComp";
+            this.labelGFQuezacoltComp.Size = new System.Drawing.Size(68, 17);
+            this.labelGFQuezacoltComp.TabIndex = 0;
+            this.labelGFQuezacoltComp.Text = "Quezacotl";
+            this.toolTip1.SetToolTip(this.labelGFQuezacoltComp, "Modifies compatibility with this GF when the magic is used");
+            // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -2424,6 +3039,8 @@
             // 
             // tabBlueMagic
             // 
+            this.tabBlueMagic.Controls.Add(this.groupBox9);
+            this.tabBlueMagic.Controls.Add(this.groupBox10);
             this.tabBlueMagic.Controls.Add(this.groupBoxBlueMagicGeneral);
             this.tabBlueMagic.Controls.Add(this.listBoxBlueMagic);
             this.tabBlueMagic.Location = new System.Drawing.Point(4, 32);
@@ -2437,7 +3054,13 @@
             // groupBoxBlueMagicGeneral
             // 
             this.groupBoxBlueMagicGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxBlueMagicGeneral.Controls.Add(this.numericUpDownBlueMagicDeathLevel);
+            this.groupBoxBlueMagicGeneral.Controls.Add(this.labelBlueMagicAttackType);
+            this.groupBoxBlueMagicGeneral.Controls.Add(this.numericUpDownBlueMagicAttackPower);
+            this.groupBoxBlueMagicGeneral.Controls.Add(this.labelBlueMagicDeathLevel);
             this.groupBoxBlueMagicGeneral.Controls.Add(this.comboBoxBlueMagicElement);
+            this.groupBoxBlueMagicGeneral.Controls.Add(this.labelBlueMagicAttackPower);
+            this.groupBoxBlueMagicGeneral.Controls.Add(this.comboBoxBlueMagicAttackType);
             this.groupBoxBlueMagicGeneral.Controls.Add(this.comboBoxBlueMagicMagicID);
             this.groupBoxBlueMagicGeneral.Controls.Add(this.labelBlueMagicElement);
             this.groupBoxBlueMagicGeneral.Controls.Add(this.labelBlueMagicMagicID);
@@ -2445,7 +3068,7 @@
             this.groupBoxBlueMagicGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxBlueMagicGeneral.Location = new System.Drawing.Point(134, 3);
             this.groupBoxBlueMagicGeneral.Name = "groupBoxBlueMagicGeneral";
-            this.groupBoxBlueMagicGeneral.Size = new System.Drawing.Size(444, 167);
+            this.groupBoxBlueMagicGeneral.Size = new System.Drawing.Size(444, 232);
             this.groupBoxBlueMagicGeneral.TabIndex = 7;
             this.groupBoxBlueMagicGeneral.TabStop = false;
             this.groupBoxBlueMagicGeneral.Text = "General";
@@ -2464,7 +3087,7 @@
             "Water",
             "Holy",
             "Non-Elemental"});
-            this.comboBoxBlueMagicElement.Location = new System.Drawing.Point(327, 49);
+            this.comboBoxBlueMagicElement.Location = new System.Drawing.Point(316, 49);
             this.comboBoxBlueMagicElement.Name = "comboBoxBlueMagicElement";
             this.comboBoxBlueMagicElement.Size = new System.Drawing.Size(110, 25);
             this.comboBoxBlueMagicElement.TabIndex = 4;
@@ -2819,7 +3442,7 @@
             "Renzokuken (vs Griever)",
             "Final Battle Music",
             "LV5 Death"});
-            this.comboBoxBlueMagicMagicID.Location = new System.Drawing.Point(29, 49);
+            this.comboBoxBlueMagicMagicID.Location = new System.Drawing.Point(18, 49);
             this.comboBoxBlueMagicMagicID.Name = "comboBoxBlueMagicMagicID";
             this.comboBoxBlueMagicMagicID.Size = new System.Drawing.Size(265, 25);
             this.comboBoxBlueMagicMagicID.TabIndex = 2;
@@ -2864,6 +3487,122 @@
             this.tabPageGFAttacks.TabIndex = 3;
             this.tabPageGFAttacks.Text = "NJ G-Forces";
             this.tabPageGFAttacks.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxGFAttacksFlags
+            // 
+            this.groupBoxGFAttacksFlags.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlagBreakDamageLimit);
+            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlag8);
+            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlag3);
+            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlag6);
+            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlagShelled);
+            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlagReflected);
+            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlag2);
+            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlag7);
+            this.groupBoxGFAttacksFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxGFAttacksFlags.ForeColor = System.Drawing.Color.Sienna;
+            this.groupBoxGFAttacksFlags.Location = new System.Drawing.Point(126, 471);
+            this.groupBoxGFAttacksFlags.Name = "groupBoxGFAttacksFlags";
+            this.groupBoxGFAttacksFlags.Size = new System.Drawing.Size(455, 226);
+            this.groupBoxGFAttacksFlags.TabIndex = 7;
+            this.groupBoxGFAttacksFlags.TabStop = false;
+            this.groupBoxGFAttacksFlags.Text = "Flags";
+            // 
+            // checkBoxGFAttacksFlagBreakDamageLimit
+            // 
+            this.checkBoxGFAttacksFlagBreakDamageLimit.AutoSize = true;
+            this.checkBoxGFAttacksFlagBreakDamageLimit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFAttacksFlagBreakDamageLimit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFAttacksFlagBreakDamageLimit.Location = new System.Drawing.Point(300, 38);
+            this.checkBoxGFAttacksFlagBreakDamageLimit.Name = "checkBoxGFAttacksFlagBreakDamageLimit";
+            this.checkBoxGFAttacksFlagBreakDamageLimit.Size = new System.Drawing.Size(132, 19);
+            this.checkBoxGFAttacksFlagBreakDamageLimit.TabIndex = 48;
+            this.checkBoxGFAttacksFlagBreakDamageLimit.Text = "Break Damage Limit";
+            this.checkBoxGFAttacksFlagBreakDamageLimit.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFAttacksFlag8
+            // 
+            this.checkBoxGFAttacksFlag8.AutoSize = true;
+            this.checkBoxGFAttacksFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFAttacksFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFAttacksFlag8.Location = new System.Drawing.Point(300, 63);
+            this.checkBoxGFAttacksFlag8.Name = "checkBoxGFAttacksFlag8";
+            this.checkBoxGFAttacksFlag8.Size = new System.Drawing.Size(65, 19);
+            this.checkBoxGFAttacksFlag8.TabIndex = 52;
+            this.checkBoxGFAttacksFlag8.Text = "Revive?";
+            this.checkBoxGFAttacksFlag8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFAttacksFlag3
+            // 
+            this.checkBoxGFAttacksFlag3.AutoSize = true;
+            this.checkBoxGFAttacksFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFAttacksFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFAttacksFlag3.Location = new System.Drawing.Point(215, 38);
+            this.checkBoxGFAttacksFlag3.Name = "checkBoxGFAttacksFlag3";
+            this.checkBoxGFAttacksFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxGFAttacksFlag3.TabIndex = 47;
+            this.checkBoxGFAttacksFlag3.Text = "???";
+            this.checkBoxGFAttacksFlag3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFAttacksFlag6
+            // 
+            this.checkBoxGFAttacksFlag6.AutoSize = true;
+            this.checkBoxGFAttacksFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFAttacksFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFAttacksFlag6.Location = new System.Drawing.Point(130, 63);
+            this.checkBoxGFAttacksFlag6.Name = "checkBoxGFAttacksFlag6";
+            this.checkBoxGFAttacksFlag6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxGFAttacksFlag6.TabIndex = 50;
+            this.checkBoxGFAttacksFlag6.Text = "???";
+            this.checkBoxGFAttacksFlag6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFAttacksFlagShelled
+            // 
+            this.checkBoxGFAttacksFlagShelled.AutoSize = true;
+            this.checkBoxGFAttacksFlagShelled.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFAttacksFlagShelled.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFAttacksFlagShelled.Location = new System.Drawing.Point(22, 38);
+            this.checkBoxGFAttacksFlagShelled.Name = "checkBoxGFAttacksFlagShelled";
+            this.checkBoxGFAttacksFlagShelled.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxGFAttacksFlagShelled.TabIndex = 45;
+            this.checkBoxGFAttacksFlagShelled.Text = "Shelled";
+            this.checkBoxGFAttacksFlagShelled.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFAttacksFlagReflected
+            // 
+            this.checkBoxGFAttacksFlagReflected.AutoSize = true;
+            this.checkBoxGFAttacksFlagReflected.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFAttacksFlagReflected.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFAttacksFlagReflected.Location = new System.Drawing.Point(22, 63);
+            this.checkBoxGFAttacksFlagReflected.Name = "checkBoxGFAttacksFlagReflected";
+            this.checkBoxGFAttacksFlagReflected.Size = new System.Drawing.Size(75, 19);
+            this.checkBoxGFAttacksFlagReflected.TabIndex = 49;
+            this.checkBoxGFAttacksFlagReflected.Text = "Reflected";
+            this.checkBoxGFAttacksFlagReflected.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFAttacksFlag2
+            // 
+            this.checkBoxGFAttacksFlag2.AutoSize = true;
+            this.checkBoxGFAttacksFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFAttacksFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFAttacksFlag2.Location = new System.Drawing.Point(130, 38);
+            this.checkBoxGFAttacksFlag2.Name = "checkBoxGFAttacksFlag2";
+            this.checkBoxGFAttacksFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxGFAttacksFlag2.TabIndex = 46;
+            this.checkBoxGFAttacksFlag2.Text = "???";
+            this.checkBoxGFAttacksFlag2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFAttacksFlag7
+            // 
+            this.checkBoxGFAttacksFlag7.AutoSize = true;
+            this.checkBoxGFAttacksFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFAttacksFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFAttacksFlag7.Location = new System.Drawing.Point(215, 63);
+            this.checkBoxGFAttacksFlag7.Name = "checkBoxGFAttacksFlag7";
+            this.checkBoxGFAttacksFlag7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxGFAttacksFlag7.TabIndex = 51;
+            this.checkBoxGFAttacksFlag7.Text = "???";
+            this.checkBoxGFAttacksFlag7.UseVisualStyleBackColor = true;
             // 
             // groupBoxGFAttacksStatusAttack
             // 
@@ -3291,6 +4030,52 @@
             this.groupBoxGFAttacksGeneral.TabStop = false;
             this.groupBoxGFAttacksGeneral.Text = "General";
             // 
+            // comboBoxGFAttacksAttackType
+            // 
+            this.comboBoxGFAttacksAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAttacksAttackType.FormattingEnabled = true;
+            this.comboBoxGFAttacksAttackType.Items.AddRange(new object[] {
+            "Basic Attack",
+            "Magic Attack",
+            "Curative Magic",
+            "Curative Item",
+            "Revive",
+            "Revive At Full HP",
+            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "Demi",
+            "Renzokuken Finisher",
+            "Squall Gunblade Attack",
+            "GF",
+            "Scan",
+            "LV Down",
+            "Summon Item?",
+            "Ignore SPR",
+            "LV Up",
+            "Card",
+            "Kamikaze",
+            "Devour",
+            "Diablos Gravity Attack",
+            "",
+            "Mega Spark/Mega Flare",
+            "Angelo Search",
+            "Moogle Dance",
+            "White Wind (Quistis)",
+            "LV5 Death/LV? Death",
+            "Fixed Damage",
+            "Corona/Hell\'s Judgement",
+            "Cactuar Summon",
+            "",
+            "",
+            "Give Percentage HP",
+            "",
+            "Everyone\'s Grudge",
+            "Excalipoor",
+            "Terra Break/Great Attractor"});
+            this.comboBoxGFAttacksAttackType.Location = new System.Drawing.Point(29, 107);
+            this.comboBoxGFAttacksAttackType.Name = "comboBoxGFAttacksAttackType";
+            this.comboBoxGFAttacksAttackType.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxGFAttacksAttackType.TabIndex = 92;
+            // 
             // comboBoxGFAttacksElement
             // 
             this.comboBoxGFAttacksElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3416,6 +4201,122 @@
             this.tabPageJGF.Size = new System.Drawing.Size(469, 706);
             this.tabPageJGF.TabIndex = 0;
             this.tabPageJGF.Text = "General";
+            // 
+            // groupBoxGFFlags
+            // 
+            this.groupBoxGFFlags.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlagBreakDamageLimit);
+            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag8);
+            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag3);
+            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag6);
+            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlagShelled);
+            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlagReflected);
+            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag2);
+            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag7);
+            this.groupBoxGFFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxGFFlags.ForeColor = System.Drawing.Color.Sienna;
+            this.groupBoxGFFlags.Location = new System.Drawing.Point(0, 480);
+            this.groupBoxGFFlags.Name = "groupBoxGFFlags";
+            this.groupBoxGFFlags.Size = new System.Drawing.Size(466, 226);
+            this.groupBoxGFFlags.TabIndex = 6;
+            this.groupBoxGFFlags.TabStop = false;
+            this.groupBoxGFFlags.Text = "Flags";
+            // 
+            // checkBoxGFFlagBreakDamageLimit
+            // 
+            this.checkBoxGFFlagBreakDamageLimit.AutoSize = true;
+            this.checkBoxGFFlagBreakDamageLimit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFFlagBreakDamageLimit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFFlagBreakDamageLimit.Location = new System.Drawing.Point(306, 38);
+            this.checkBoxGFFlagBreakDamageLimit.Name = "checkBoxGFFlagBreakDamageLimit";
+            this.checkBoxGFFlagBreakDamageLimit.Size = new System.Drawing.Size(132, 19);
+            this.checkBoxGFFlagBreakDamageLimit.TabIndex = 48;
+            this.checkBoxGFFlagBreakDamageLimit.Text = "Break Damage Limit";
+            this.checkBoxGFFlagBreakDamageLimit.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFFlag8
+            // 
+            this.checkBoxGFFlag8.AutoSize = true;
+            this.checkBoxGFFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFFlag8.Location = new System.Drawing.Point(306, 63);
+            this.checkBoxGFFlag8.Name = "checkBoxGFFlag8";
+            this.checkBoxGFFlag8.Size = new System.Drawing.Size(65, 19);
+            this.checkBoxGFFlag8.TabIndex = 52;
+            this.checkBoxGFFlag8.Text = "Revive?";
+            this.checkBoxGFFlag8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFFlag3
+            // 
+            this.checkBoxGFFlag3.AutoSize = true;
+            this.checkBoxGFFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFFlag3.Location = new System.Drawing.Point(221, 38);
+            this.checkBoxGFFlag3.Name = "checkBoxGFFlag3";
+            this.checkBoxGFFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxGFFlag3.TabIndex = 47;
+            this.checkBoxGFFlag3.Text = "???";
+            this.checkBoxGFFlag3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFFlag6
+            // 
+            this.checkBoxGFFlag6.AutoSize = true;
+            this.checkBoxGFFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFFlag6.Location = new System.Drawing.Point(136, 63);
+            this.checkBoxGFFlag6.Name = "checkBoxGFFlag6";
+            this.checkBoxGFFlag6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxGFFlag6.TabIndex = 50;
+            this.checkBoxGFFlag6.Text = "???";
+            this.checkBoxGFFlag6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFFlagShelled
+            // 
+            this.checkBoxGFFlagShelled.AutoSize = true;
+            this.checkBoxGFFlagShelled.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFFlagShelled.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFFlagShelled.Location = new System.Drawing.Point(28, 38);
+            this.checkBoxGFFlagShelled.Name = "checkBoxGFFlagShelled";
+            this.checkBoxGFFlagShelled.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxGFFlagShelled.TabIndex = 45;
+            this.checkBoxGFFlagShelled.Text = "Shelled";
+            this.checkBoxGFFlagShelled.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFFlagReflected
+            // 
+            this.checkBoxGFFlagReflected.AutoSize = true;
+            this.checkBoxGFFlagReflected.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFFlagReflected.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFFlagReflected.Location = new System.Drawing.Point(28, 63);
+            this.checkBoxGFFlagReflected.Name = "checkBoxGFFlagReflected";
+            this.checkBoxGFFlagReflected.Size = new System.Drawing.Size(75, 19);
+            this.checkBoxGFFlagReflected.TabIndex = 49;
+            this.checkBoxGFFlagReflected.Text = "Reflected";
+            this.checkBoxGFFlagReflected.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFFlag2
+            // 
+            this.checkBoxGFFlag2.AutoSize = true;
+            this.checkBoxGFFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFFlag2.Location = new System.Drawing.Point(136, 38);
+            this.checkBoxGFFlag2.Name = "checkBoxGFFlag2";
+            this.checkBoxGFFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxGFFlag2.TabIndex = 46;
+            this.checkBoxGFFlag2.Text = "???";
+            this.checkBoxGFFlag2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGFFlag7
+            // 
+            this.checkBoxGFFlag7.AutoSize = true;
+            this.checkBoxGFFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFFlag7.Location = new System.Drawing.Point(221, 63);
+            this.checkBoxGFFlag7.Name = "checkBoxGFFlag7";
+            this.checkBoxGFFlag7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxGFFlag7.TabIndex = 51;
+            this.checkBoxGFFlag7.Text = "???";
+            this.checkBoxGFFlag7.UseVisualStyleBackColor = true;
             // 
             // groupBoxGFStatusAttack
             // 
@@ -3973,6 +4874,6119 @@
             this.groupBoxGFAbilities.TabStop = false;
             this.groupBoxGFAbilities.Text = "Abilities";
             // 
+            // panelGFAbilities
+            // 
+            this.panelGFAbilities.AutoScroll = true;
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock21);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility21);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility21);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock12);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility12);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock15);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility15);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility12);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock18);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility18);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock6);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility6);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility15);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock9);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility9);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock20);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility20);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock11);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility6);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility11);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility18);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock14);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock3);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility3);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility14);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility9);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility20);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock5);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility5);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock17);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility11);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility17);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility3);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility14);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock19);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock8);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility8);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility19);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility5);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock10);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility10);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility17);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock2);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock13);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility2);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility13);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility8);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock4);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility19);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility4);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock16);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility10);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility16);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility2);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility13);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock7);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility7);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility16);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility4);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock1);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility7);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock21);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock20);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock19);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock18);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock17);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock16);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock15);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock14);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock13);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock12);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock11);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock10);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock9);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock8);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock7);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock6);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock5);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock4);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock3);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock2);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock1);
+            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility1);
+            this.panelGFAbilities.Controls.Add(this.labelGFAbility1);
+            this.panelGFAbilities.Location = new System.Drawing.Point(0, 20);
+            this.panelGFAbilities.Name = "panelGFAbilities";
+            this.panelGFAbilities.Size = new System.Drawing.Size(466, 674);
+            this.panelGFAbilities.TabIndex = 0;
+            // 
+            // comboBoxGFAbilityUnlock21
+            // 
+            this.comboBoxGFAbilityUnlock21.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock21.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock21.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock21.Location = new System.Drawing.Point(172, 1083);
+            this.comboBoxGFAbilityUnlock21.Name = "comboBoxGFAbilityUnlock21";
+            this.comboBoxGFAbilityUnlock21.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock21.TabIndex = 140;
+            // 
+            // comboBoxGFAbility21
+            // 
+            this.comboBoxGFAbility21.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility21.FormattingEnabled = true;
+            this.comboBoxGFAbility21.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility21.Location = new System.Drawing.Point(26, 1083);
+            this.comboBoxGFAbility21.Name = "comboBoxGFAbility21";
+            this.comboBoxGFAbility21.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility21.TabIndex = 139;
+            // 
+            // comboBoxGFAbilityUnlock12
+            // 
+            this.comboBoxGFAbilityUnlock12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock12.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock12.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock12.Location = new System.Drawing.Point(172, 594);
+            this.comboBoxGFAbilityUnlock12.Name = "comboBoxGFAbilityUnlock12";
+            this.comboBoxGFAbilityUnlock12.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock12.TabIndex = 122;
+            // 
+            // comboBoxGFAbility12
+            // 
+            this.comboBoxGFAbility12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility12.FormattingEnabled = true;
+            this.comboBoxGFAbility12.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility12.Location = new System.Drawing.Point(26, 594);
+            this.comboBoxGFAbility12.Name = "comboBoxGFAbility12";
+            this.comboBoxGFAbility12.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility12.TabIndex = 121;
+            // 
+            // comboBoxGFAbilityUnlock15
+            // 
+            this.comboBoxGFAbilityUnlock15.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock15.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock15.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock15.Location = new System.Drawing.Point(172, 757);
+            this.comboBoxGFAbilityUnlock15.Name = "comboBoxGFAbilityUnlock15";
+            this.comboBoxGFAbilityUnlock15.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock15.TabIndex = 128;
+            // 
+            // comboBoxGFAbility15
+            // 
+            this.comboBoxGFAbility15.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility15.FormattingEnabled = true;
+            this.comboBoxGFAbility15.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility15.Location = new System.Drawing.Point(26, 757);
+            this.comboBoxGFAbility15.Name = "comboBoxGFAbility15";
+            this.comboBoxGFAbility15.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility15.TabIndex = 127;
+            // 
+            // comboBoxGFAbilityUnlock18
+            // 
+            this.comboBoxGFAbilityUnlock18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock18.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock18.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock18.Location = new System.Drawing.Point(172, 919);
+            this.comboBoxGFAbilityUnlock18.Name = "comboBoxGFAbilityUnlock18";
+            this.comboBoxGFAbilityUnlock18.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock18.TabIndex = 133;
+            // 
+            // comboBoxGFAbility18
+            // 
+            this.comboBoxGFAbility18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility18.FormattingEnabled = true;
+            this.comboBoxGFAbility18.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility18.Location = new System.Drawing.Point(26, 919);
+            this.comboBoxGFAbility18.Name = "comboBoxGFAbility18";
+            this.comboBoxGFAbility18.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility18.TabIndex = 134;
+            // 
+            // comboBoxGFAbilityUnlock6
+            // 
+            this.comboBoxGFAbilityUnlock6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock6.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock6.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock6.Location = new System.Drawing.Point(171, 279);
+            this.comboBoxGFAbilityUnlock6.Name = "comboBoxGFAbilityUnlock6";
+            this.comboBoxGFAbilityUnlock6.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock6.TabIndex = 109;
+            // 
+            // comboBoxGFAbility6
+            // 
+            this.comboBoxGFAbility6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility6.FormattingEnabled = true;
+            this.comboBoxGFAbility6.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility6.Location = new System.Drawing.Point(25, 279);
+            this.comboBoxGFAbility6.Name = "comboBoxGFAbility6";
+            this.comboBoxGFAbility6.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility6.TabIndex = 110;
+            // 
+            // comboBoxGFAbilityUnlock9
+            // 
+            this.comboBoxGFAbilityUnlock9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock9.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock9.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock9.Location = new System.Drawing.Point(172, 432);
+            this.comboBoxGFAbilityUnlock9.Name = "comboBoxGFAbilityUnlock9";
+            this.comboBoxGFAbilityUnlock9.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock9.TabIndex = 116;
+            // 
+            // comboBoxGFAbility9
+            // 
+            this.comboBoxGFAbility9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility9.FormattingEnabled = true;
+            this.comboBoxGFAbility9.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility9.Location = new System.Drawing.Point(26, 432);
+            this.comboBoxGFAbility9.Name = "comboBoxGFAbility9";
+            this.comboBoxGFAbility9.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility9.TabIndex = 115;
+            // 
+            // comboBoxGFAbilityUnlock20
+            // 
+            this.comboBoxGFAbilityUnlock20.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock20.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock20.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock20.Location = new System.Drawing.Point(172, 1029);
+            this.comboBoxGFAbilityUnlock20.Name = "comboBoxGFAbilityUnlock20";
+            this.comboBoxGFAbilityUnlock20.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock20.TabIndex = 137;
+            // 
+            // comboBoxGFAbility20
+            // 
+            this.comboBoxGFAbility20.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility20.FormattingEnabled = true;
+            this.comboBoxGFAbility20.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility20.Location = new System.Drawing.Point(26, 1029);
+            this.comboBoxGFAbility20.Name = "comboBoxGFAbility20";
+            this.comboBoxGFAbility20.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility20.TabIndex = 138;
+            // 
+            // comboBoxGFAbilityUnlock11
+            // 
+            this.comboBoxGFAbilityUnlock11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock11.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock11.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock11.Location = new System.Drawing.Point(172, 542);
+            this.comboBoxGFAbilityUnlock11.Name = "comboBoxGFAbilityUnlock11";
+            this.comboBoxGFAbilityUnlock11.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock11.TabIndex = 119;
+            // 
+            // comboBoxGFAbility11
+            // 
+            this.comboBoxGFAbility11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility11.FormattingEnabled = true;
+            this.comboBoxGFAbility11.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility11.Location = new System.Drawing.Point(26, 542);
+            this.comboBoxGFAbility11.Name = "comboBoxGFAbility11";
+            this.comboBoxGFAbility11.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility11.TabIndex = 120;
+            // 
+            // comboBoxGFAbilityUnlock14
+            // 
+            this.comboBoxGFAbilityUnlock14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock14.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock14.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock14.Location = new System.Drawing.Point(172, 704);
+            this.comboBoxGFAbilityUnlock14.Name = "comboBoxGFAbilityUnlock14";
+            this.comboBoxGFAbilityUnlock14.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock14.TabIndex = 126;
+            // 
+            // comboBoxGFAbilityUnlock3
+            // 
+            this.comboBoxGFAbilityUnlock3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock3.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock3.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock3.Location = new System.Drawing.Point(172, 125);
+            this.comboBoxGFAbilityUnlock3.Name = "comboBoxGFAbilityUnlock3";
+            this.comboBoxGFAbilityUnlock3.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock3.TabIndex = 103;
+            // 
+            // comboBoxGFAbility3
+            // 
+            this.comboBoxGFAbility3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility3.FormattingEnabled = true;
+            this.comboBoxGFAbility3.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility3.Location = new System.Drawing.Point(26, 125);
+            this.comboBoxGFAbility3.Name = "comboBoxGFAbility3";
+            this.comboBoxGFAbility3.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility3.TabIndex = 104;
+            // 
+            // comboBoxGFAbility14
+            // 
+            this.comboBoxGFAbility14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility14.FormattingEnabled = true;
+            this.comboBoxGFAbility14.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility14.Location = new System.Drawing.Point(26, 704);
+            this.comboBoxGFAbility14.Name = "comboBoxGFAbility14";
+            this.comboBoxGFAbility14.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility14.TabIndex = 125;
+            // 
+            // comboBoxGFAbilityUnlock5
+            // 
+            this.comboBoxGFAbilityUnlock5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock5.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock5.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock5.Location = new System.Drawing.Point(172, 228);
+            this.comboBoxGFAbilityUnlock5.Name = "comboBoxGFAbilityUnlock5";
+            this.comboBoxGFAbilityUnlock5.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock5.TabIndex = 108;
+            // 
+            // comboBoxGFAbility5
+            // 
+            this.comboBoxGFAbility5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility5.FormattingEnabled = true;
+            this.comboBoxGFAbility5.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility5.Location = new System.Drawing.Point(26, 228);
+            this.comboBoxGFAbility5.Name = "comboBoxGFAbility5";
+            this.comboBoxGFAbility5.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility5.TabIndex = 107;
+            // 
+            // comboBoxGFAbilityUnlock17
+            // 
+            this.comboBoxGFAbilityUnlock17.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock17.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock17.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock17.Location = new System.Drawing.Point(172, 865);
+            this.comboBoxGFAbilityUnlock17.Name = "comboBoxGFAbilityUnlock17";
+            this.comboBoxGFAbilityUnlock17.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock17.TabIndex = 132;
+            // 
+            // comboBoxGFAbility17
+            // 
+            this.comboBoxGFAbility17.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility17.FormattingEnabled = true;
+            this.comboBoxGFAbility17.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility17.Location = new System.Drawing.Point(26, 865);
+            this.comboBoxGFAbility17.Name = "comboBoxGFAbility17";
+            this.comboBoxGFAbility17.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility17.TabIndex = 131;
+            // 
+            // comboBoxGFAbilityUnlock19
+            // 
+            this.comboBoxGFAbilityUnlock19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock19.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock19.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock19.Location = new System.Drawing.Point(172, 973);
+            this.comboBoxGFAbilityUnlock19.Name = "comboBoxGFAbilityUnlock19";
+            this.comboBoxGFAbilityUnlock19.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock19.TabIndex = 136;
+            // 
+            // comboBoxGFAbilityUnlock8
+            // 
+            this.comboBoxGFAbilityUnlock8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock8.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock8.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock8.Location = new System.Drawing.Point(172, 382);
+            this.comboBoxGFAbilityUnlock8.Name = "comboBoxGFAbilityUnlock8";
+            this.comboBoxGFAbilityUnlock8.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock8.TabIndex = 113;
+            // 
+            // comboBoxGFAbility8
+            // 
+            this.comboBoxGFAbility8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility8.FormattingEnabled = true;
+            this.comboBoxGFAbility8.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility8.Location = new System.Drawing.Point(26, 382);
+            this.comboBoxGFAbility8.Name = "comboBoxGFAbility8";
+            this.comboBoxGFAbility8.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility8.TabIndex = 114;
+            // 
+            // comboBoxGFAbility19
+            // 
+            this.comboBoxGFAbility19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility19.FormattingEnabled = true;
+            this.comboBoxGFAbility19.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility19.Location = new System.Drawing.Point(26, 973);
+            this.comboBoxGFAbility19.Name = "comboBoxGFAbility19";
+            this.comboBoxGFAbility19.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility19.TabIndex = 135;
+            // 
+            // comboBoxGFAbilityUnlock10
+            // 
+            this.comboBoxGFAbilityUnlock10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock10.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock10.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock10.Location = new System.Drawing.Point(172, 487);
+            this.comboBoxGFAbilityUnlock10.Name = "comboBoxGFAbilityUnlock10";
+            this.comboBoxGFAbilityUnlock10.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock10.TabIndex = 117;
+            // 
+            // comboBoxGFAbility10
+            // 
+            this.comboBoxGFAbility10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility10.FormattingEnabled = true;
+            this.comboBoxGFAbility10.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility10.Location = new System.Drawing.Point(26, 487);
+            this.comboBoxGFAbility10.Name = "comboBoxGFAbility10";
+            this.comboBoxGFAbility10.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility10.TabIndex = 118;
+            // 
+            // comboBoxGFAbilityUnlock2
+            // 
+            this.comboBoxGFAbilityUnlock2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock2.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock2.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock2.Location = new System.Drawing.Point(172, 73);
+            this.comboBoxGFAbilityUnlock2.Name = "comboBoxGFAbilityUnlock2";
+            this.comboBoxGFAbilityUnlock2.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock2.TabIndex = 102;
+            // 
+            // comboBoxGFAbilityUnlock13
+            // 
+            this.comboBoxGFAbilityUnlock13.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock13.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock13.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock13.Location = new System.Drawing.Point(172, 648);
+            this.comboBoxGFAbilityUnlock13.Name = "comboBoxGFAbilityUnlock13";
+            this.comboBoxGFAbilityUnlock13.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock13.TabIndex = 123;
+            // 
+            // comboBoxGFAbility2
+            // 
+            this.comboBoxGFAbility2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility2.FormattingEnabled = true;
+            this.comboBoxGFAbility2.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility2.Location = new System.Drawing.Point(26, 73);
+            this.comboBoxGFAbility2.Name = "comboBoxGFAbility2";
+            this.comboBoxGFAbility2.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility2.TabIndex = 101;
+            // 
+            // comboBoxGFAbility13
+            // 
+            this.comboBoxGFAbility13.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility13.FormattingEnabled = true;
+            this.comboBoxGFAbility13.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility13.Location = new System.Drawing.Point(26, 648);
+            this.comboBoxGFAbility13.Name = "comboBoxGFAbility13";
+            this.comboBoxGFAbility13.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility13.TabIndex = 124;
+            // 
+            // comboBoxGFAbilityUnlock4
+            // 
+            this.comboBoxGFAbilityUnlock4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock4.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock4.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock4.Location = new System.Drawing.Point(172, 177);
+            this.comboBoxGFAbilityUnlock4.Name = "comboBoxGFAbilityUnlock4";
+            this.comboBoxGFAbilityUnlock4.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock4.TabIndex = 105;
+            // 
+            // comboBoxGFAbility4
+            // 
+            this.comboBoxGFAbility4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility4.FormattingEnabled = true;
+            this.comboBoxGFAbility4.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility4.Location = new System.Drawing.Point(26, 177);
+            this.comboBoxGFAbility4.Name = "comboBoxGFAbility4";
+            this.comboBoxGFAbility4.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility4.TabIndex = 106;
+            // 
+            // comboBoxGFAbilityUnlock16
+            // 
+            this.comboBoxGFAbilityUnlock16.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock16.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock16.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock16.Location = new System.Drawing.Point(172, 811);
+            this.comboBoxGFAbilityUnlock16.Name = "comboBoxGFAbilityUnlock16";
+            this.comboBoxGFAbilityUnlock16.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock16.TabIndex = 130;
+            // 
+            // comboBoxGFAbility16
+            // 
+            this.comboBoxGFAbility16.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility16.FormattingEnabled = true;
+            this.comboBoxGFAbility16.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility16.Location = new System.Drawing.Point(26, 811);
+            this.comboBoxGFAbility16.Name = "comboBoxGFAbility16";
+            this.comboBoxGFAbility16.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility16.TabIndex = 129;
+            // 
+            // comboBoxGFAbilityUnlock7
+            // 
+            this.comboBoxGFAbilityUnlock7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock7.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock7.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock7.Location = new System.Drawing.Point(172, 330);
+            this.comboBoxGFAbilityUnlock7.Name = "comboBoxGFAbilityUnlock7";
+            this.comboBoxGFAbilityUnlock7.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock7.TabIndex = 112;
+            // 
+            // comboBoxGFAbility7
+            // 
+            this.comboBoxGFAbility7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility7.FormattingEnabled = true;
+            this.comboBoxGFAbility7.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility7.Location = new System.Drawing.Point(26, 330);
+            this.comboBoxGFAbility7.Name = "comboBoxGFAbility7";
+            this.comboBoxGFAbility7.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility7.TabIndex = 111;
+            // 
+            // comboBoxGFAbilityUnlock1
+            // 
+            this.comboBoxGFAbilityUnlock1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbilityUnlock1.FormattingEnabled = true;
+            this.comboBoxGFAbilityUnlock1.Items.AddRange(new object[] {
+            "None",
+            "GF Level 1 ",
+            "GF Level 2 ",
+            "GF Level 3 ",
+            "GF Level 4 ",
+            "GF Level 5 ",
+            "GF Level 6 ",
+            "GF Level 7 ",
+            "GF Level 8 ",
+            "GF Level 9 ",
+            "GF Level 10",
+            "GF Level 11",
+            "GF Level 12",
+            "GF Level 13",
+            "GF Level 14",
+            "GF Level 15",
+            "GF Level 16",
+            "GF Level 17",
+            "GF Level 18",
+            "GF Level 19",
+            "GF Level 20",
+            "GF Level 21",
+            "GF Level 22",
+            "GF Level 23",
+            "GF Level 24",
+            "GF Level 25",
+            "GF Level 26",
+            "GF Level 27",
+            "GF Level 28",
+            "GF Level 29",
+            "GF Level 30",
+            "GF Level 31",
+            "GF Level 32",
+            "GF Level 33",
+            "GF Level 34",
+            "GF Level 35",
+            "GF Level 36",
+            "GF Level 37",
+            "GF Level 38",
+            "GF Level 39",
+            "GF Level 40",
+            "GF Level 41",
+            "GF Level 42",
+            "GF Level 43",
+            "GF Level 44",
+            "GF Level 45",
+            "GF Level 46",
+            "GF Level 47",
+            "GF Level 48",
+            "GF Level 49",
+            "GF Level 50",
+            "GF Level 51",
+            "GF Level 52",
+            "GF Level 53",
+            "GF Level 54",
+            "GF Level 55",
+            "GF Level 56",
+            "GF Level 57",
+            "GF Level 58",
+            "GF Level 59",
+            "GF Level 60",
+            "GF Level 61",
+            "GF Level 62",
+            "GF Level 63",
+            "GF Level 64",
+            "GF Level 65",
+            "GF Level 66",
+            "GF Level 67",
+            "GF Level 68",
+            "GF Level 69",
+            "GF Level 70",
+            "GF Level 71",
+            "GF Level 72",
+            "GF Level 73",
+            "GF Level 74",
+            "GF Level 75",
+            "GF Level 76",
+            "GF Level 77",
+            "GF Level 78",
+            "GF Level 79",
+            "GF Level 80",
+            "GF Level 81",
+            "GF Level 82",
+            "GF Level 83",
+            "GF Level 84",
+            "GF Level 85",
+            "GF Level 86",
+            "GF Level 87",
+            "GF Level 88",
+            "GF Level 89",
+            "GF Level 90",
+            "GF Level 91",
+            "GF Level 92",
+            "GF Level 93",
+            "GF Level 94",
+            "GF Level 95",
+            "GF Level 96",
+            "GF Level 97",
+            "GF Level 98",
+            "GF Level 99",
+            "GF Level 100",
+            "Ability 1 ",
+            "Ability 2 ",
+            "Ability 3 ",
+            "Ability 4 ",
+            "Ability 5 ",
+            "Ability 6 ",
+            "Ability 7 ",
+            "Ability 8 ",
+            "Ability 9 ",
+            "Ability 10",
+            "Ability 11",
+            "Ability 12",
+            "Ability 13",
+            "Ability 14",
+            "Ability 15",
+            "Ability 16",
+            "Ability 17",
+            "Ability 18",
+            "Ability 19",
+            "Ability 20",
+            "Ability 21"});
+            this.comboBoxGFAbilityUnlock1.Location = new System.Drawing.Point(172, 25);
+            this.comboBoxGFAbilityUnlock1.Name = "comboBoxGFAbilityUnlock1";
+            this.comboBoxGFAbilityUnlock1.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbilityUnlock1.TabIndex = 100;
+            // 
+            // comboBoxGFAbility1
+            // 
+            this.comboBoxGFAbility1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGFAbility1.FormattingEnabled = true;
+            this.comboBoxGFAbility1.Items.AddRange(new object[] {
+            "None",
+            "HP-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4",
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty*",
+            "Card",
+            "Doom",
+            "MadRush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LVDown",
+            "LVUp",
+            "Kamikaze",
+            "Devour",
+            "MiniMog",
+            "HP+20%",
+            "HP+40%",
+            "HP+80%",
+            "Str+20%",
+            "Str+40%",
+            "Str+60%",
+            "Vit+20%",
+            "Vit+40%",
+            "Vit+60%",
+            "Mag+20%",
+            "Mag+40%",
+            "Mag+60%",
+            "Spr+20%",
+            "Spr+40%",
+            "Spr+60%",
+            "Spd+20%",
+            "Spd+40%",
+            "Eva+30%",
+            "Luck+50%",
+            "Mug",
+            "MedData",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HPUp",
+            "HPBonus",
+            "StrBonus",
+            "VitBonus",
+            "MagBonus",
+            "SprBonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon",
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "RareItem",
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost",
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "CallShop",
+            "JunkShop",
+            "T Mag-RF",
+            "IMag-RF",
+            "FMag-RF",
+            "LMag-RF",
+            "TimeMag-RF",
+            "STMag-RF",
+            "SuptMag-RF",
+            "ForbidMag-RF",
+            "RecovMed-RF",
+            "STMed-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "ForbidMed-RF",
+            "GFRecovMed-RF",
+            "GFAblMed-RF",
+            "Mid Mag-RF",
+            "HighMag-RF",
+            "MedLVUp",
+            "Card Mod"});
+            this.comboBoxGFAbility1.Location = new System.Drawing.Point(26, 25);
+            this.comboBoxGFAbility1.Name = "comboBoxGFAbility1";
+            this.comboBoxGFAbility1.Size = new System.Drawing.Size(120, 25);
+            this.comboBoxGFAbility1.TabIndex = 99;
+            // 
+            // tabPageGFComp
+            // 
+            this.tabPageGFComp.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageGFComp.Controls.Add(this.groupBoxGFCompatibility);
+            this.tabPageGFComp.Location = new System.Drawing.Point(4, 26);
+            this.tabPageGFComp.Name = "tabPageGFComp";
+            this.tabPageGFComp.Size = new System.Drawing.Size(469, 706);
+            this.tabPageGFComp.TabIndex = 2;
+            this.tabPageGFComp.Text = "GFs Compatibility";
+            // 
+            // groupBoxGFCompatibility
+            // 
+            this.groupBoxGFCompatibility.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFEdenComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFEdenComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFDoomtrainComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFDoomtrainComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFLeviathanComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFTonberryComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFLeviathanComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFAlexanderComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFSirenComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFTonberryComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFCarbuncleComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFAlexanderComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFSirenComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFCactuarComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFCarbuncleComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFCerberusComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFIfritComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFCactuarComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFDiablosComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFCerberusComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFIfritComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFBahamutComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFDiablosComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFPandemonaComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFShivaComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFBahamutComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFBrothersComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFPandemonaComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFShivaComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFBrothersComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFQuezacoltComp);
+            this.groupBoxGFCompatibility.Controls.Add(this.labelGFQuezacoltComp);
+            this.groupBoxGFCompatibility.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxGFCompatibility.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.groupBoxGFCompatibility.Location = new System.Drawing.Point(0, 6);
+            this.groupBoxGFCompatibility.Name = "groupBoxGFCompatibility";
+            this.groupBoxGFCompatibility.Size = new System.Drawing.Size(466, 236);
+            this.groupBoxGFCompatibility.TabIndex = 7;
+            this.groupBoxGFCompatibility.TabStop = false;
+            this.groupBoxGFCompatibility.Text = "GFs Compatibility";
+            // 
+            // numericUpDownGFEdenComp
+            // 
+            this.numericUpDownGFEdenComp.DecimalPlaces = 1;
+            this.numericUpDownGFEdenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFEdenComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFEdenComp.Location = new System.Drawing.Point(366, 203);
+            this.numericUpDownGFEdenComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFEdenComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFEdenComp.Name = "numericUpDownGFEdenComp";
+            this.numericUpDownGFEdenComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFEdenComp.TabIndex = 3;
+            // 
+            // labelGFEdenComp
+            // 
+            this.labelGFEdenComp.AutoSize = true;
+            this.labelGFEdenComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFEdenComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFEdenComp.Location = new System.Drawing.Point(370, 183);
+            this.labelGFEdenComp.Name = "labelGFEdenComp";
+            this.labelGFEdenComp.Size = new System.Drawing.Size(38, 17);
+            this.labelGFEdenComp.TabIndex = 0;
+            this.labelGFEdenComp.Text = "Eden";
+            // 
+            // numericUpDownGFDoomtrainComp
+            // 
+            this.numericUpDownGFDoomtrainComp.DecimalPlaces = 1;
+            this.numericUpDownGFDoomtrainComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFDoomtrainComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFDoomtrainComp.Location = new System.Drawing.Point(366, 150);
+            this.numericUpDownGFDoomtrainComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFDoomtrainComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFDoomtrainComp.Name = "numericUpDownGFDoomtrainComp";
+            this.numericUpDownGFDoomtrainComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFDoomtrainComp.TabIndex = 3;
+            // 
+            // labelGFDoomtrainComp
+            // 
+            this.labelGFDoomtrainComp.AutoSize = true;
+            this.labelGFDoomtrainComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFDoomtrainComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFDoomtrainComp.Location = new System.Drawing.Point(354, 130);
+            this.labelGFDoomtrainComp.Name = "labelGFDoomtrainComp";
+            this.labelGFDoomtrainComp.Size = new System.Drawing.Size(73, 17);
+            this.labelGFDoomtrainComp.TabIndex = 0;
+            this.labelGFDoomtrainComp.Text = "Doomtrain";
+            // 
+            // numericUpDownGFLeviathanComp
+            // 
+            this.numericUpDownGFLeviathanComp.DecimalPlaces = 1;
+            this.numericUpDownGFLeviathanComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFLeviathanComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFLeviathanComp.Location = new System.Drawing.Point(366, 98);
+            this.numericUpDownGFLeviathanComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFLeviathanComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFLeviathanComp.Name = "numericUpDownGFLeviathanComp";
+            this.numericUpDownGFLeviathanComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFLeviathanComp.TabIndex = 3;
+            // 
+            // numericUpDownGFTonberryComp
+            // 
+            this.numericUpDownGFTonberryComp.DecimalPlaces = 1;
+            this.numericUpDownGFTonberryComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFTonberryComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFTonberryComp.Location = new System.Drawing.Point(262, 203);
+            this.numericUpDownGFTonberryComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFTonberryComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFTonberryComp.Name = "numericUpDownGFTonberryComp";
+            this.numericUpDownGFTonberryComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFTonberryComp.TabIndex = 3;
+            // 
+            // labelGFLeviathanComp
+            // 
+            this.labelGFLeviathanComp.AutoSize = true;
+            this.labelGFLeviathanComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFLeviathanComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFLeviathanComp.Location = new System.Drawing.Point(356, 78);
+            this.labelGFLeviathanComp.Name = "labelGFLeviathanComp";
+            this.labelGFLeviathanComp.Size = new System.Drawing.Size(66, 17);
+            this.labelGFLeviathanComp.TabIndex = 0;
+            this.labelGFLeviathanComp.Text = "Leviathan";
+            // 
+            // numericUpDownGFAlexanderComp
+            // 
+            this.numericUpDownGFAlexanderComp.DecimalPlaces = 1;
+            this.numericUpDownGFAlexanderComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFAlexanderComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFAlexanderComp.Location = new System.Drawing.Point(262, 150);
+            this.numericUpDownGFAlexanderComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFAlexanderComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFAlexanderComp.Name = "numericUpDownGFAlexanderComp";
+            this.numericUpDownGFAlexanderComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFAlexanderComp.TabIndex = 3;
+            // 
+            // numericUpDownGFSirenComp
+            // 
+            this.numericUpDownGFSirenComp.DecimalPlaces = 1;
+            this.numericUpDownGFSirenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFSirenComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFSirenComp.Location = new System.Drawing.Point(366, 47);
+            this.numericUpDownGFSirenComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFSirenComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFSirenComp.Name = "numericUpDownGFSirenComp";
+            this.numericUpDownGFSirenComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFSirenComp.TabIndex = 3;
+            // 
+            // labelGFTonberryComp
+            // 
+            this.labelGFTonberryComp.AutoSize = true;
+            this.labelGFTonberryComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFTonberryComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFTonberryComp.Location = new System.Drawing.Point(254, 183);
+            this.labelGFTonberryComp.Name = "labelGFTonberryComp";
+            this.labelGFTonberryComp.Size = new System.Drawing.Size(63, 17);
+            this.labelGFTonberryComp.TabIndex = 0;
+            this.labelGFTonberryComp.Text = "Tonberry";
+            // 
+            // numericUpDownGFCarbuncleComp
+            // 
+            this.numericUpDownGFCarbuncleComp.DecimalPlaces = 1;
+            this.numericUpDownGFCarbuncleComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFCarbuncleComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFCarbuncleComp.Location = new System.Drawing.Point(262, 98);
+            this.numericUpDownGFCarbuncleComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFCarbuncleComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFCarbuncleComp.Name = "numericUpDownGFCarbuncleComp";
+            this.numericUpDownGFCarbuncleComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFCarbuncleComp.TabIndex = 3;
+            // 
+            // labelGFAlexanderComp
+            // 
+            this.labelGFAlexanderComp.AutoSize = true;
+            this.labelGFAlexanderComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFAlexanderComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFAlexanderComp.Location = new System.Drawing.Point(251, 130);
+            this.labelGFAlexanderComp.Name = "labelGFAlexanderComp";
+            this.labelGFAlexanderComp.Size = new System.Drawing.Size(69, 17);
+            this.labelGFAlexanderComp.TabIndex = 0;
+            this.labelGFAlexanderComp.Text = "Alexander";
+            // 
+            // labelGFSirenComp
+            // 
+            this.labelGFSirenComp.AutoSize = true;
+            this.labelGFSirenComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFSirenComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFSirenComp.Location = new System.Drawing.Point(370, 27);
+            this.labelGFSirenComp.Name = "labelGFSirenComp";
+            this.labelGFSirenComp.Size = new System.Drawing.Size(38, 17);
+            this.labelGFSirenComp.TabIndex = 0;
+            this.labelGFSirenComp.Text = "Siren";
+            // 
+            // numericUpDownGFCactuarComp
+            // 
+            this.numericUpDownGFCactuarComp.DecimalPlaces = 1;
+            this.numericUpDownGFCactuarComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFCactuarComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFCactuarComp.Location = new System.Drawing.Point(158, 203);
+            this.numericUpDownGFCactuarComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFCactuarComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFCactuarComp.Name = "numericUpDownGFCactuarComp";
+            this.numericUpDownGFCactuarComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFCactuarComp.TabIndex = 3;
+            // 
+            // labelGFCarbuncleComp
+            // 
+            this.labelGFCarbuncleComp.AutoSize = true;
+            this.labelGFCarbuncleComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFCarbuncleComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFCarbuncleComp.Location = new System.Drawing.Point(252, 78);
+            this.labelGFCarbuncleComp.Name = "labelGFCarbuncleComp";
+            this.labelGFCarbuncleComp.Size = new System.Drawing.Size(68, 17);
+            this.labelGFCarbuncleComp.TabIndex = 0;
+            this.labelGFCarbuncleComp.Text = "Carbuncle";
+            // 
+            // numericUpDownGFCerberusComp
+            // 
+            this.numericUpDownGFCerberusComp.DecimalPlaces = 1;
+            this.numericUpDownGFCerberusComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFCerberusComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFCerberusComp.Location = new System.Drawing.Point(158, 150);
+            this.numericUpDownGFCerberusComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFCerberusComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFCerberusComp.Name = "numericUpDownGFCerberusComp";
+            this.numericUpDownGFCerberusComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFCerberusComp.TabIndex = 3;
+            // 
+            // numericUpDownGFIfritComp
+            // 
+            this.numericUpDownGFIfritComp.DecimalPlaces = 1;
+            this.numericUpDownGFIfritComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFIfritComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFIfritComp.Location = new System.Drawing.Point(262, 47);
+            this.numericUpDownGFIfritComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFIfritComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFIfritComp.Name = "numericUpDownGFIfritComp";
+            this.numericUpDownGFIfritComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFIfritComp.TabIndex = 3;
+            // 
+            // labelGFCactuarComp
+            // 
+            this.labelGFCactuarComp.AutoSize = true;
+            this.labelGFCactuarComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFCactuarComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFCactuarComp.Location = new System.Drawing.Point(154, 183);
+            this.labelGFCactuarComp.Name = "labelGFCactuarComp";
+            this.labelGFCactuarComp.Size = new System.Drawing.Size(54, 17);
+            this.labelGFCactuarComp.TabIndex = 0;
+            this.labelGFCactuarComp.Text = "Cactuar";
+            // 
+            // numericUpDownGFDiablosComp
+            // 
+            this.numericUpDownGFDiablosComp.DecimalPlaces = 1;
+            this.numericUpDownGFDiablosComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFDiablosComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFDiablosComp.Location = new System.Drawing.Point(158, 98);
+            this.numericUpDownGFDiablosComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFDiablosComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFDiablosComp.Name = "numericUpDownGFDiablosComp";
+            this.numericUpDownGFDiablosComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFDiablosComp.TabIndex = 3;
+            // 
+            // labelGFCerberusComp
+            // 
+            this.labelGFCerberusComp.AutoSize = true;
+            this.labelGFCerberusComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFCerberusComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFCerberusComp.Location = new System.Drawing.Point(150, 130);
+            this.labelGFCerberusComp.Name = "labelGFCerberusComp";
+            this.labelGFCerberusComp.Size = new System.Drawing.Size(62, 17);
+            this.labelGFCerberusComp.TabIndex = 0;
+            this.labelGFCerberusComp.Text = "Cerberus";
+            // 
+            // labelGFIfritComp
+            // 
+            this.labelGFIfritComp.AutoSize = true;
+            this.labelGFIfritComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFIfritComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFIfritComp.Location = new System.Drawing.Point(271, 27);
+            this.labelGFIfritComp.Name = "labelGFIfritComp";
+            this.labelGFIfritComp.Size = new System.Drawing.Size(29, 17);
+            this.labelGFIfritComp.TabIndex = 0;
+            this.labelGFIfritComp.Text = "Ifrit";
+            // 
+            // numericUpDownGFBahamutComp
+            // 
+            this.numericUpDownGFBahamutComp.DecimalPlaces = 1;
+            this.numericUpDownGFBahamutComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFBahamutComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFBahamutComp.Location = new System.Drawing.Point(54, 203);
+            this.numericUpDownGFBahamutComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFBahamutComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFBahamutComp.Name = "numericUpDownGFBahamutComp";
+            this.numericUpDownGFBahamutComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFBahamutComp.TabIndex = 3;
+            // 
+            // labelGFDiablosComp
+            // 
+            this.labelGFDiablosComp.AutoSize = true;
+            this.labelGFDiablosComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFDiablosComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFDiablosComp.Location = new System.Drawing.Point(156, 78);
+            this.labelGFDiablosComp.Name = "labelGFDiablosComp";
+            this.labelGFDiablosComp.Size = new System.Drawing.Size(52, 17);
+            this.labelGFDiablosComp.TabIndex = 0;
+            this.labelGFDiablosComp.Text = "Diablos";
+            // 
+            // numericUpDownGFPandemonaComp
+            // 
+            this.numericUpDownGFPandemonaComp.DecimalPlaces = 1;
+            this.numericUpDownGFPandemonaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFPandemonaComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFPandemonaComp.Location = new System.Drawing.Point(54, 150);
+            this.numericUpDownGFPandemonaComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFPandemonaComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFPandemonaComp.Name = "numericUpDownGFPandemonaComp";
+            this.numericUpDownGFPandemonaComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFPandemonaComp.TabIndex = 3;
+            // 
+            // numericUpDownGFShivaComp
+            // 
+            this.numericUpDownGFShivaComp.DecimalPlaces = 1;
+            this.numericUpDownGFShivaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFShivaComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFShivaComp.Location = new System.Drawing.Point(158, 47);
+            this.numericUpDownGFShivaComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFShivaComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFShivaComp.Name = "numericUpDownGFShivaComp";
+            this.numericUpDownGFShivaComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFShivaComp.TabIndex = 3;
+            // 
+            // labelGFBahamutComp
+            // 
+            this.labelGFBahamutComp.AutoSize = true;
+            this.labelGFBahamutComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFBahamutComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFBahamutComp.Location = new System.Drawing.Point(46, 183);
+            this.labelGFBahamutComp.Name = "labelGFBahamutComp";
+            this.labelGFBahamutComp.Size = new System.Drawing.Size(63, 17);
+            this.labelGFBahamutComp.TabIndex = 0;
+            this.labelGFBahamutComp.Text = "Bahamut";
+            // 
+            // numericUpDownGFBrothersComp
+            // 
+            this.numericUpDownGFBrothersComp.DecimalPlaces = 1;
+            this.numericUpDownGFBrothersComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFBrothersComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFBrothersComp.Location = new System.Drawing.Point(54, 98);
+            this.numericUpDownGFBrothersComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFBrothersComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFBrothersComp.Name = "numericUpDownGFBrothersComp";
+            this.numericUpDownGFBrothersComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFBrothersComp.TabIndex = 3;
+            // 
+            // labelGFPandemonaComp
+            // 
+            this.labelGFPandemonaComp.AutoSize = true;
+            this.labelGFPandemonaComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFPandemonaComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFPandemonaComp.Location = new System.Drawing.Point(37, 130);
+            this.labelGFPandemonaComp.Name = "labelGFPandemonaComp";
+            this.labelGFPandemonaComp.Size = new System.Drawing.Size(81, 17);
+            this.labelGFPandemonaComp.TabIndex = 0;
+            this.labelGFPandemonaComp.Text = "Pandemona";
+            // 
+            // labelGFShivaComp
+            // 
+            this.labelGFShivaComp.AutoSize = true;
+            this.labelGFShivaComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFShivaComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFShivaComp.Location = new System.Drawing.Point(161, 27);
+            this.labelGFShivaComp.Name = "labelGFShivaComp";
+            this.labelGFShivaComp.Size = new System.Drawing.Size(40, 17);
+            this.labelGFShivaComp.TabIndex = 0;
+            this.labelGFShivaComp.Text = "Shiva";
+            // 
+            // labelGFBrothersComp
+            // 
+            this.labelGFBrothersComp.AutoSize = true;
+            this.labelGFBrothersComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFBrothersComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFBrothersComp.Location = new System.Drawing.Point(47, 78);
+            this.labelGFBrothersComp.Name = "labelGFBrothersComp";
+            this.labelGFBrothersComp.Size = new System.Drawing.Size(60, 17);
+            this.labelGFBrothersComp.TabIndex = 0;
+            this.labelGFBrothersComp.Text = "Brothers";
+            // 
+            // numericUpDownGFQuezacoltComp
+            // 
+            this.numericUpDownGFQuezacoltComp.DecimalPlaces = 1;
+            this.numericUpDownGFQuezacoltComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFQuezacoltComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownGFQuezacoltComp.Location = new System.Drawing.Point(54, 47);
+            this.numericUpDownGFQuezacoltComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownGFQuezacoltComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGFQuezacoltComp.Name = "numericUpDownGFQuezacoltComp";
+            this.numericUpDownGFQuezacoltComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFQuezacoltComp.TabIndex = 3;
+            // 
             // listBoxGF
             // 
             this.listBoxGF.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -4041,6 +11055,122 @@
             this.tabPageMagicGeneral.Size = new System.Drawing.Size(469, 706);
             this.tabPageMagicGeneral.TabIndex = 0;
             this.tabPageMagicGeneral.Text = "General";
+            // 
+            // groupBoxMagicFlags
+            // 
+            this.groupBoxMagicFlags.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicBreakDamageLimit);
+            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag8);
+            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag3);
+            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag6);
+            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag1);
+            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag5);
+            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag2);
+            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag7);
+            this.groupBoxMagicFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxMagicFlags.ForeColor = System.Drawing.Color.Sienna;
+            this.groupBoxMagicFlags.Location = new System.Drawing.Point(0, 480);
+            this.groupBoxMagicFlags.Name = "groupBoxMagicFlags";
+            this.groupBoxMagicFlags.Size = new System.Drawing.Size(466, 226);
+            this.groupBoxMagicFlags.TabIndex = 2;
+            this.groupBoxMagicFlags.TabStop = false;
+            this.groupBoxMagicFlags.Text = "Flags";
+            // 
+            // checkBoxMagicBreakDamageLimit
+            // 
+            this.checkBoxMagicBreakDamageLimit.AutoSize = true;
+            this.checkBoxMagicBreakDamageLimit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMagicBreakDamageLimit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxMagicBreakDamageLimit.Location = new System.Drawing.Point(306, 38);
+            this.checkBoxMagicBreakDamageLimit.Name = "checkBoxMagicBreakDamageLimit";
+            this.checkBoxMagicBreakDamageLimit.Size = new System.Drawing.Size(132, 19);
+            this.checkBoxMagicBreakDamageLimit.TabIndex = 48;
+            this.checkBoxMagicBreakDamageLimit.Text = "Break Damage Limit";
+            this.checkBoxMagicBreakDamageLimit.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMagicFlag8
+            // 
+            this.checkBoxMagicFlag8.AutoSize = true;
+            this.checkBoxMagicFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMagicFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxMagicFlag8.Location = new System.Drawing.Point(306, 63);
+            this.checkBoxMagicFlag8.Name = "checkBoxMagicFlag8";
+            this.checkBoxMagicFlag8.Size = new System.Drawing.Size(65, 19);
+            this.checkBoxMagicFlag8.TabIndex = 52;
+            this.checkBoxMagicFlag8.Text = "Revive?";
+            this.checkBoxMagicFlag8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMagicFlag3
+            // 
+            this.checkBoxMagicFlag3.AutoSize = true;
+            this.checkBoxMagicFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMagicFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxMagicFlag3.Location = new System.Drawing.Point(221, 38);
+            this.checkBoxMagicFlag3.Name = "checkBoxMagicFlag3";
+            this.checkBoxMagicFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxMagicFlag3.TabIndex = 47;
+            this.checkBoxMagicFlag3.Text = "???";
+            this.checkBoxMagicFlag3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMagicFlag6
+            // 
+            this.checkBoxMagicFlag6.AutoSize = true;
+            this.checkBoxMagicFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMagicFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxMagicFlag6.Location = new System.Drawing.Point(136, 63);
+            this.checkBoxMagicFlag6.Name = "checkBoxMagicFlag6";
+            this.checkBoxMagicFlag6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxMagicFlag6.TabIndex = 50;
+            this.checkBoxMagicFlag6.Text = "???";
+            this.checkBoxMagicFlag6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMagicFlag1
+            // 
+            this.checkBoxMagicFlag1.AutoSize = true;
+            this.checkBoxMagicFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMagicFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxMagicFlag1.Location = new System.Drawing.Point(28, 38);
+            this.checkBoxMagicFlag1.Name = "checkBoxMagicFlag1";
+            this.checkBoxMagicFlag1.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxMagicFlag1.TabIndex = 45;
+            this.checkBoxMagicFlag1.Text = "Shelled";
+            this.checkBoxMagicFlag1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMagicFlag5
+            // 
+            this.checkBoxMagicFlag5.AutoSize = true;
+            this.checkBoxMagicFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMagicFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxMagicFlag5.Location = new System.Drawing.Point(28, 63);
+            this.checkBoxMagicFlag5.Name = "checkBoxMagicFlag5";
+            this.checkBoxMagicFlag5.Size = new System.Drawing.Size(75, 19);
+            this.checkBoxMagicFlag5.TabIndex = 49;
+            this.checkBoxMagicFlag5.Text = "Reflected";
+            this.checkBoxMagicFlag5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMagicFlag2
+            // 
+            this.checkBoxMagicFlag2.AutoSize = true;
+            this.checkBoxMagicFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMagicFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxMagicFlag2.Location = new System.Drawing.Point(136, 38);
+            this.checkBoxMagicFlag2.Name = "checkBoxMagicFlag2";
+            this.checkBoxMagicFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxMagicFlag2.TabIndex = 46;
+            this.checkBoxMagicFlag2.Text = "???";
+            this.checkBoxMagicFlag2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMagicFlag7
+            // 
+            this.checkBoxMagicFlag7.AutoSize = true;
+            this.checkBoxMagicFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMagicFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxMagicFlag7.Location = new System.Drawing.Point(221, 63);
+            this.checkBoxMagicFlag7.Name = "checkBoxMagicFlag7";
+            this.checkBoxMagicFlag7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxMagicFlag7.TabIndex = 51;
+            this.checkBoxMagicFlag7.Text = "???";
+            this.checkBoxMagicFlag7.UseVisualStyleBackColor = true;
             // 
             // groupBoxMagicStatusAttack
             // 
@@ -4469,102 +11599,6 @@
             this.groupBoxMagicGeneral.TabIndex = 2;
             this.groupBoxMagicGeneral.TabStop = false;
             this.groupBoxMagicGeneral.Text = "General";
-            // 
-            // checkBoxMagicBreakDamageLimit
-            // 
-            this.checkBoxMagicBreakDamageLimit.AutoSize = true;
-            this.checkBoxMagicBreakDamageLimit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMagicBreakDamageLimit.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicBreakDamageLimit.Location = new System.Drawing.Point(306, 38);
-            this.checkBoxMagicBreakDamageLimit.Name = "checkBoxMagicBreakDamageLimit";
-            this.checkBoxMagicBreakDamageLimit.Size = new System.Drawing.Size(132, 19);
-            this.checkBoxMagicBreakDamageLimit.TabIndex = 48;
-            this.checkBoxMagicBreakDamageLimit.Text = "Break Damage Limit";
-            this.checkBoxMagicBreakDamageLimit.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxMagicFlag3
-            // 
-            this.checkBoxMagicFlag3.AutoSize = true;
-            this.checkBoxMagicFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMagicFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicFlag3.Location = new System.Drawing.Point(221, 38);
-            this.checkBoxMagicFlag3.Name = "checkBoxMagicFlag3";
-            this.checkBoxMagicFlag3.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxMagicFlag3.TabIndex = 47;
-            this.checkBoxMagicFlag3.Text = "???";
-            this.checkBoxMagicFlag3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxMagicFlag1
-            // 
-            this.checkBoxMagicFlag1.AutoSize = true;
-            this.checkBoxMagicFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMagicFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicFlag1.Location = new System.Drawing.Point(28, 38);
-            this.checkBoxMagicFlag1.Name = "checkBoxMagicFlag1";
-            this.checkBoxMagicFlag1.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxMagicFlag1.TabIndex = 45;
-            this.checkBoxMagicFlag1.Text = "Shelled";
-            this.checkBoxMagicFlag1.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxMagicFlag8
-            // 
-            this.checkBoxMagicFlag8.AutoSize = true;
-            this.checkBoxMagicFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMagicFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicFlag8.Location = new System.Drawing.Point(306, 63);
-            this.checkBoxMagicFlag8.Name = "checkBoxMagicFlag8";
-            this.checkBoxMagicFlag8.Size = new System.Drawing.Size(65, 19);
-            this.checkBoxMagicFlag8.TabIndex = 52;
-            this.checkBoxMagicFlag8.Text = "Revive?";
-            this.checkBoxMagicFlag8.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxMagicFlag7
-            // 
-            this.checkBoxMagicFlag7.AutoSize = true;
-            this.checkBoxMagicFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMagicFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicFlag7.Location = new System.Drawing.Point(221, 63);
-            this.checkBoxMagicFlag7.Name = "checkBoxMagicFlag7";
-            this.checkBoxMagicFlag7.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxMagicFlag7.TabIndex = 51;
-            this.checkBoxMagicFlag7.Text = "???";
-            this.checkBoxMagicFlag7.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxMagicFlag2
-            // 
-            this.checkBoxMagicFlag2.AutoSize = true;
-            this.checkBoxMagicFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMagicFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicFlag2.Location = new System.Drawing.Point(136, 38);
-            this.checkBoxMagicFlag2.Name = "checkBoxMagicFlag2";
-            this.checkBoxMagicFlag2.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxMagicFlag2.TabIndex = 46;
-            this.checkBoxMagicFlag2.Text = "???";
-            this.checkBoxMagicFlag2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxMagicFlag5
-            // 
-            this.checkBoxMagicFlag5.AutoSize = true;
-            this.checkBoxMagicFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMagicFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicFlag5.Location = new System.Drawing.Point(28, 63);
-            this.checkBoxMagicFlag5.Name = "checkBoxMagicFlag5";
-            this.checkBoxMagicFlag5.Size = new System.Drawing.Size(75, 19);
-            this.checkBoxMagicFlag5.TabIndex = 49;
-            this.checkBoxMagicFlag5.Text = "Reflected";
-            this.checkBoxMagicFlag5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxMagicFlag6
-            // 
-            this.checkBoxMagicFlag6.AutoSize = true;
-            this.checkBoxMagicFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMagicFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicFlag6.Location = new System.Drawing.Point(136, 63);
-            this.checkBoxMagicFlag6.Name = "checkBoxMagicFlag6";
-            this.checkBoxMagicFlag6.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxMagicFlag6.TabIndex = 50;
-            this.checkBoxMagicFlag6.Text = "???";
-            this.checkBoxMagicFlag6.UseVisualStyleBackColor = true;
             // 
             // comboBoxMagicAttackType
             // 
@@ -5802,6 +12836,609 @@
             this.numericUpDownMagicSTRJ.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicSTRJ.TabIndex = 2;
             // 
+            // tabPageMagicGFsComp
+            // 
+            this.tabPageMagicGFsComp.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageMagicGFsComp.Controls.Add(this.groupBoxMagicGFComp);
+            this.tabPageMagicGFsComp.Location = new System.Drawing.Point(4, 26);
+            this.tabPageMagicGFsComp.Name = "tabPageMagicGFsComp";
+            this.tabPageMagicGFsComp.Size = new System.Drawing.Size(469, 706);
+            this.tabPageMagicGFsComp.TabIndex = 2;
+            this.tabPageMagicGFsComp.Text = "GFs Compatibility";
+            // 
+            // groupBoxMagicGFComp
+            // 
+            this.groupBoxMagicGFComp.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicEdenComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicEdenComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicDoomtrainComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicDoomtrainComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicLeviathanComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicTonberryComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicLeviathanComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicAlexanderComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicSirenComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicTonberryComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicCarbuncleComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicAlexanderComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicSirenComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicCactuarComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicCarbuncleComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicCerberusComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicIfritComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicCactuarComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicDiablosComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicCerberusComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicIfritComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicBahamutComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicDiablosComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicPandemonaComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicShivaComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicBahamutComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicBrothersComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicPandemonaComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicShivaComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicBrothersComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicQuezacoltComp);
+            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicQuezacoltComp);
+            this.groupBoxMagicGFComp.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxMagicGFComp.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.groupBoxMagicGFComp.Location = new System.Drawing.Point(0, 6);
+            this.groupBoxMagicGFComp.Name = "groupBoxMagicGFComp";
+            this.groupBoxMagicGFComp.Size = new System.Drawing.Size(466, 235);
+            this.groupBoxMagicGFComp.TabIndex = 5;
+            this.groupBoxMagicGFComp.TabStop = false;
+            this.groupBoxMagicGFComp.Text = "GFs Compatibility";
+            // 
+            // numericUpDownMagicEdenComp
+            // 
+            this.numericUpDownMagicEdenComp.DecimalPlaces = 1;
+            this.numericUpDownMagicEdenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicEdenComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicEdenComp.Location = new System.Drawing.Point(366, 203);
+            this.numericUpDownMagicEdenComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicEdenComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicEdenComp.Name = "numericUpDownMagicEdenComp";
+            this.numericUpDownMagicEdenComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicEdenComp.TabIndex = 3;
+            // 
+            // labelMagicEdenComp
+            // 
+            this.labelMagicEdenComp.AutoSize = true;
+            this.labelMagicEdenComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicEdenComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicEdenComp.Location = new System.Drawing.Point(370, 183);
+            this.labelMagicEdenComp.Name = "labelMagicEdenComp";
+            this.labelMagicEdenComp.Size = new System.Drawing.Size(38, 17);
+            this.labelMagicEdenComp.TabIndex = 0;
+            this.labelMagicEdenComp.Text = "Eden";
+            // 
+            // numericUpDownMagicDoomtrainComp
+            // 
+            this.numericUpDownMagicDoomtrainComp.DecimalPlaces = 1;
+            this.numericUpDownMagicDoomtrainComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicDoomtrainComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicDoomtrainComp.Location = new System.Drawing.Point(366, 150);
+            this.numericUpDownMagicDoomtrainComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicDoomtrainComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicDoomtrainComp.Name = "numericUpDownMagicDoomtrainComp";
+            this.numericUpDownMagicDoomtrainComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicDoomtrainComp.TabIndex = 3;
+            // 
+            // labelMagicDoomtrainComp
+            // 
+            this.labelMagicDoomtrainComp.AutoSize = true;
+            this.labelMagicDoomtrainComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicDoomtrainComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicDoomtrainComp.Location = new System.Drawing.Point(354, 130);
+            this.labelMagicDoomtrainComp.Name = "labelMagicDoomtrainComp";
+            this.labelMagicDoomtrainComp.Size = new System.Drawing.Size(73, 17);
+            this.labelMagicDoomtrainComp.TabIndex = 0;
+            this.labelMagicDoomtrainComp.Text = "Doomtrain";
+            // 
+            // numericUpDownMagicLeviathanComp
+            // 
+            this.numericUpDownMagicLeviathanComp.DecimalPlaces = 1;
+            this.numericUpDownMagicLeviathanComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicLeviathanComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicLeviathanComp.Location = new System.Drawing.Point(366, 98);
+            this.numericUpDownMagicLeviathanComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicLeviathanComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicLeviathanComp.Name = "numericUpDownMagicLeviathanComp";
+            this.numericUpDownMagicLeviathanComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicLeviathanComp.TabIndex = 3;
+            // 
+            // numericUpDownMagicTonberryComp
+            // 
+            this.numericUpDownMagicTonberryComp.DecimalPlaces = 1;
+            this.numericUpDownMagicTonberryComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicTonberryComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicTonberryComp.Location = new System.Drawing.Point(262, 203);
+            this.numericUpDownMagicTonberryComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicTonberryComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicTonberryComp.Name = "numericUpDownMagicTonberryComp";
+            this.numericUpDownMagicTonberryComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicTonberryComp.TabIndex = 3;
+            // 
+            // labelMagicLeviathanComp
+            // 
+            this.labelMagicLeviathanComp.AutoSize = true;
+            this.labelMagicLeviathanComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicLeviathanComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicLeviathanComp.Location = new System.Drawing.Point(356, 78);
+            this.labelMagicLeviathanComp.Name = "labelMagicLeviathanComp";
+            this.labelMagicLeviathanComp.Size = new System.Drawing.Size(66, 17);
+            this.labelMagicLeviathanComp.TabIndex = 0;
+            this.labelMagicLeviathanComp.Text = "Leviathan";
+            // 
+            // numericUpDownMagicAlexanderComp
+            // 
+            this.numericUpDownMagicAlexanderComp.DecimalPlaces = 1;
+            this.numericUpDownMagicAlexanderComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicAlexanderComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicAlexanderComp.Location = new System.Drawing.Point(262, 150);
+            this.numericUpDownMagicAlexanderComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicAlexanderComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicAlexanderComp.Name = "numericUpDownMagicAlexanderComp";
+            this.numericUpDownMagicAlexanderComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicAlexanderComp.TabIndex = 3;
+            // 
+            // numericUpDownMagicSirenComp
+            // 
+            this.numericUpDownMagicSirenComp.DecimalPlaces = 1;
+            this.numericUpDownMagicSirenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicSirenComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicSirenComp.Location = new System.Drawing.Point(366, 47);
+            this.numericUpDownMagicSirenComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicSirenComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicSirenComp.Name = "numericUpDownMagicSirenComp";
+            this.numericUpDownMagicSirenComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicSirenComp.TabIndex = 3;
+            // 
+            // labelMagicTonberryComp
+            // 
+            this.labelMagicTonberryComp.AutoSize = true;
+            this.labelMagicTonberryComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicTonberryComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicTonberryComp.Location = new System.Drawing.Point(254, 183);
+            this.labelMagicTonberryComp.Name = "labelMagicTonberryComp";
+            this.labelMagicTonberryComp.Size = new System.Drawing.Size(63, 17);
+            this.labelMagicTonberryComp.TabIndex = 0;
+            this.labelMagicTonberryComp.Text = "Tonberry";
+            // 
+            // numericUpDownMagicCarbuncleComp
+            // 
+            this.numericUpDownMagicCarbuncleComp.DecimalPlaces = 1;
+            this.numericUpDownMagicCarbuncleComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicCarbuncleComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicCarbuncleComp.Location = new System.Drawing.Point(262, 98);
+            this.numericUpDownMagicCarbuncleComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicCarbuncleComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicCarbuncleComp.Name = "numericUpDownMagicCarbuncleComp";
+            this.numericUpDownMagicCarbuncleComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicCarbuncleComp.TabIndex = 3;
+            // 
+            // labelMagicAlexanderComp
+            // 
+            this.labelMagicAlexanderComp.AutoSize = true;
+            this.labelMagicAlexanderComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicAlexanderComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicAlexanderComp.Location = new System.Drawing.Point(251, 130);
+            this.labelMagicAlexanderComp.Name = "labelMagicAlexanderComp";
+            this.labelMagicAlexanderComp.Size = new System.Drawing.Size(69, 17);
+            this.labelMagicAlexanderComp.TabIndex = 0;
+            this.labelMagicAlexanderComp.Text = "Alexander";
+            // 
+            // labelMagicSirenComp
+            // 
+            this.labelMagicSirenComp.AutoSize = true;
+            this.labelMagicSirenComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicSirenComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicSirenComp.Location = new System.Drawing.Point(370, 27);
+            this.labelMagicSirenComp.Name = "labelMagicSirenComp";
+            this.labelMagicSirenComp.Size = new System.Drawing.Size(38, 17);
+            this.labelMagicSirenComp.TabIndex = 0;
+            this.labelMagicSirenComp.Text = "Siren";
+            // 
+            // numericUpDownMagicCactuarComp
+            // 
+            this.numericUpDownMagicCactuarComp.DecimalPlaces = 1;
+            this.numericUpDownMagicCactuarComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicCactuarComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicCactuarComp.Location = new System.Drawing.Point(158, 203);
+            this.numericUpDownMagicCactuarComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicCactuarComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicCactuarComp.Name = "numericUpDownMagicCactuarComp";
+            this.numericUpDownMagicCactuarComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicCactuarComp.TabIndex = 3;
+            // 
+            // labelMagicCarbuncleComp
+            // 
+            this.labelMagicCarbuncleComp.AutoSize = true;
+            this.labelMagicCarbuncleComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicCarbuncleComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicCarbuncleComp.Location = new System.Drawing.Point(252, 78);
+            this.labelMagicCarbuncleComp.Name = "labelMagicCarbuncleComp";
+            this.labelMagicCarbuncleComp.Size = new System.Drawing.Size(68, 17);
+            this.labelMagicCarbuncleComp.TabIndex = 0;
+            this.labelMagicCarbuncleComp.Text = "Carbuncle";
+            // 
+            // numericUpDownMagicCerberusComp
+            // 
+            this.numericUpDownMagicCerberusComp.DecimalPlaces = 1;
+            this.numericUpDownMagicCerberusComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicCerberusComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicCerberusComp.Location = new System.Drawing.Point(158, 150);
+            this.numericUpDownMagicCerberusComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicCerberusComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicCerberusComp.Name = "numericUpDownMagicCerberusComp";
+            this.numericUpDownMagicCerberusComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicCerberusComp.TabIndex = 3;
+            // 
+            // numericUpDownMagicIfritComp
+            // 
+            this.numericUpDownMagicIfritComp.DecimalPlaces = 1;
+            this.numericUpDownMagicIfritComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicIfritComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicIfritComp.Location = new System.Drawing.Point(262, 47);
+            this.numericUpDownMagicIfritComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicIfritComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicIfritComp.Name = "numericUpDownMagicIfritComp";
+            this.numericUpDownMagicIfritComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicIfritComp.TabIndex = 3;
+            // 
+            // labelMagicCactuarComp
+            // 
+            this.labelMagicCactuarComp.AutoSize = true;
+            this.labelMagicCactuarComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicCactuarComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicCactuarComp.Location = new System.Drawing.Point(154, 183);
+            this.labelMagicCactuarComp.Name = "labelMagicCactuarComp";
+            this.labelMagicCactuarComp.Size = new System.Drawing.Size(54, 17);
+            this.labelMagicCactuarComp.TabIndex = 0;
+            this.labelMagicCactuarComp.Text = "Cactuar";
+            // 
+            // numericUpDownMagicDiablosComp
+            // 
+            this.numericUpDownMagicDiablosComp.DecimalPlaces = 1;
+            this.numericUpDownMagicDiablosComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicDiablosComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicDiablosComp.Location = new System.Drawing.Point(158, 98);
+            this.numericUpDownMagicDiablosComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicDiablosComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicDiablosComp.Name = "numericUpDownMagicDiablosComp";
+            this.numericUpDownMagicDiablosComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicDiablosComp.TabIndex = 3;
+            // 
+            // labelMagicCerberusComp
+            // 
+            this.labelMagicCerberusComp.AutoSize = true;
+            this.labelMagicCerberusComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicCerberusComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicCerberusComp.Location = new System.Drawing.Point(150, 130);
+            this.labelMagicCerberusComp.Name = "labelMagicCerberusComp";
+            this.labelMagicCerberusComp.Size = new System.Drawing.Size(62, 17);
+            this.labelMagicCerberusComp.TabIndex = 0;
+            this.labelMagicCerberusComp.Text = "Cerberus";
+            // 
+            // labelMagicIfritComp
+            // 
+            this.labelMagicIfritComp.AutoSize = true;
+            this.labelMagicIfritComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicIfritComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicIfritComp.Location = new System.Drawing.Point(271, 27);
+            this.labelMagicIfritComp.Name = "labelMagicIfritComp";
+            this.labelMagicIfritComp.Size = new System.Drawing.Size(29, 17);
+            this.labelMagicIfritComp.TabIndex = 0;
+            this.labelMagicIfritComp.Text = "Ifrit";
+            // 
+            // numericUpDownMagicBahamutComp
+            // 
+            this.numericUpDownMagicBahamutComp.DecimalPlaces = 1;
+            this.numericUpDownMagicBahamutComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicBahamutComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicBahamutComp.Location = new System.Drawing.Point(54, 203);
+            this.numericUpDownMagicBahamutComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicBahamutComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicBahamutComp.Name = "numericUpDownMagicBahamutComp";
+            this.numericUpDownMagicBahamutComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicBahamutComp.TabIndex = 3;
+            // 
+            // labelMagicDiablosComp
+            // 
+            this.labelMagicDiablosComp.AutoSize = true;
+            this.labelMagicDiablosComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicDiablosComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicDiablosComp.Location = new System.Drawing.Point(156, 78);
+            this.labelMagicDiablosComp.Name = "labelMagicDiablosComp";
+            this.labelMagicDiablosComp.Size = new System.Drawing.Size(52, 17);
+            this.labelMagicDiablosComp.TabIndex = 0;
+            this.labelMagicDiablosComp.Text = "Diablos";
+            // 
+            // numericUpDownMagicPandemonaComp
+            // 
+            this.numericUpDownMagicPandemonaComp.DecimalPlaces = 1;
+            this.numericUpDownMagicPandemonaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicPandemonaComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicPandemonaComp.Location = new System.Drawing.Point(54, 150);
+            this.numericUpDownMagicPandemonaComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicPandemonaComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicPandemonaComp.Name = "numericUpDownMagicPandemonaComp";
+            this.numericUpDownMagicPandemonaComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicPandemonaComp.TabIndex = 3;
+            // 
+            // numericUpDownMagicShivaComp
+            // 
+            this.numericUpDownMagicShivaComp.DecimalPlaces = 1;
+            this.numericUpDownMagicShivaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicShivaComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicShivaComp.Location = new System.Drawing.Point(158, 47);
+            this.numericUpDownMagicShivaComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicShivaComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicShivaComp.Name = "numericUpDownMagicShivaComp";
+            this.numericUpDownMagicShivaComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicShivaComp.TabIndex = 3;
+            // 
+            // labelMagicBahamutComp
+            // 
+            this.labelMagicBahamutComp.AutoSize = true;
+            this.labelMagicBahamutComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicBahamutComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicBahamutComp.Location = new System.Drawing.Point(46, 183);
+            this.labelMagicBahamutComp.Name = "labelMagicBahamutComp";
+            this.labelMagicBahamutComp.Size = new System.Drawing.Size(63, 17);
+            this.labelMagicBahamutComp.TabIndex = 0;
+            this.labelMagicBahamutComp.Text = "Bahamut";
+            // 
+            // numericUpDownMagicBrothersComp
+            // 
+            this.numericUpDownMagicBrothersComp.DecimalPlaces = 1;
+            this.numericUpDownMagicBrothersComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicBrothersComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicBrothersComp.Location = new System.Drawing.Point(54, 98);
+            this.numericUpDownMagicBrothersComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicBrothersComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicBrothersComp.Name = "numericUpDownMagicBrothersComp";
+            this.numericUpDownMagicBrothersComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicBrothersComp.TabIndex = 3;
+            // 
+            // labelMagicPandemonaComp
+            // 
+            this.labelMagicPandemonaComp.AutoSize = true;
+            this.labelMagicPandemonaComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicPandemonaComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicPandemonaComp.Location = new System.Drawing.Point(37, 130);
+            this.labelMagicPandemonaComp.Name = "labelMagicPandemonaComp";
+            this.labelMagicPandemonaComp.Size = new System.Drawing.Size(81, 17);
+            this.labelMagicPandemonaComp.TabIndex = 0;
+            this.labelMagicPandemonaComp.Text = "Pandemona";
+            // 
+            // labelMagicShivaComp
+            // 
+            this.labelMagicShivaComp.AutoSize = true;
+            this.labelMagicShivaComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicShivaComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicShivaComp.Location = new System.Drawing.Point(161, 27);
+            this.labelMagicShivaComp.Name = "labelMagicShivaComp";
+            this.labelMagicShivaComp.Size = new System.Drawing.Size(40, 17);
+            this.labelMagicShivaComp.TabIndex = 0;
+            this.labelMagicShivaComp.Text = "Shiva";
+            // 
+            // labelMagicBrothersComp
+            // 
+            this.labelMagicBrothersComp.AutoSize = true;
+            this.labelMagicBrothersComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMagicBrothersComp.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMagicBrothersComp.Location = new System.Drawing.Point(47, 78);
+            this.labelMagicBrothersComp.Name = "labelMagicBrothersComp";
+            this.labelMagicBrothersComp.Size = new System.Drawing.Size(60, 17);
+            this.labelMagicBrothersComp.TabIndex = 0;
+            this.labelMagicBrothersComp.Text = "Brothers";
+            // 
+            // numericUpDownMagicQuezacoltComp
+            // 
+            this.numericUpDownMagicQuezacoltComp.DecimalPlaces = 1;
+            this.numericUpDownMagicQuezacoltComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownMagicQuezacoltComp.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
+            this.numericUpDownMagicQuezacoltComp.Location = new System.Drawing.Point(54, 47);
+            this.numericUpDownMagicQuezacoltComp.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMagicQuezacoltComp.Minimum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMagicQuezacoltComp.Name = "numericUpDownMagicQuezacoltComp";
+            this.numericUpDownMagicQuezacoltComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicQuezacoltComp.TabIndex = 3;
+            // 
             // listBoxMagic
             // 
             this.listBoxMagic.BackColor = System.Drawing.SystemColors.Window;
@@ -5908,6 +13545,59 @@
             this.tabControlAbilities.TabIndex = 2;
             this.tabControlAbilities.TabStop = false;
             // 
+            // tabPageAbCharacters
+            // 
+            this.tabPageAbCharacters.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbCharacters.Controls.Add(this.groupBox8);
+            this.tabPageAbCharacters.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbCharacters.Name = "tabPageAbCharacters";
+            this.tabPageAbCharacters.Size = new System.Drawing.Size(450, 706);
+            this.tabPageAbCharacters.TabIndex = 3;
+            this.tabPageAbCharacters.Text = "Character";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox8.Controls.Add(this.textBox1);
+            this.groupBox8.Controls.Add(this.textBox2);
+            this.groupBox8.Controls.Add(this.label2);
+            this.groupBox8.Controls.Add(this.label4);
+            this.groupBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBox8.Location = new System.Drawing.Point(0, 6);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(447, 285);
+            this.groupBox8.TabIndex = 3;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "General";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(101, 120);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(245, 25);
+            this.textBox1.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(135, 51);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(176, 25);
+            this.textBox2.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label2.Location = new System.Drawing.Point(185, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Description";
+            // 
             // tabPageAbStats
             // 
             this.tabPageAbStats.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -5939,6 +13629,36 @@
             this.groupBoxStatsIncrement.TabIndex = 2;
             this.groupBoxStatsIncrement.TabStop = false;
             this.groupBoxStatsIncrement.Text = "General";
+            // 
+            // comboBoxAbStatsStatToIncrease
+            // 
+            this.comboBoxAbStatsStatToIncrease.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAbStatsStatToIncrease.FormattingEnabled = true;
+            this.comboBoxAbStatsStatToIncrease.Items.AddRange(new object[] {
+            "HP",
+            "STR",
+            "VIT",
+            "MAG",
+            "SPR",
+            "SPD",
+            "EVA",
+            "HIT",
+            "LUCK"});
+            this.comboBoxAbStatsStatToIncrease.Location = new System.Drawing.Point(27, 202);
+            this.comboBoxAbStatsStatToIncrease.Name = "comboBoxAbStatsStatToIncrease";
+            this.comboBoxAbStatsStatToIncrease.Size = new System.Drawing.Size(59, 25);
+            this.comboBoxAbStatsStatToIncrease.TabIndex = 30;
+            // 
+            // labelAbStatsStatToIncrease
+            // 
+            this.labelAbStatsStatToIncrease.AutoSize = true;
+            this.labelAbStatsStatToIncrease.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbStatsStatToIncrease.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbStatsStatToIncrease.Location = new System.Drawing.Point(6, 178);
+            this.labelAbStatsStatToIncrease.Name = "labelAbStatsStatToIncrease";
+            this.labelAbStatsStatToIncrease.Size = new System.Drawing.Size(102, 17);
+            this.labelAbStatsStatToIncrease.TabIndex = 29;
+            this.labelAbStatsStatToIncrease.Text = "Stat to increase";
             // 
             // labelAbStatsValueTrackBar
             // 
@@ -6002,6 +13722,84 @@
             this.labelAbStatsIncrementValue.TabIndex = 1;
             this.labelAbStatsIncrementValue.Text = "Increasement Value";
             // 
+            // tabPageAbJunction
+            // 
+            this.tabPageAbJunction.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbJunction.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbJunction.Name = "tabPageAbJunction";
+            this.tabPageAbJunction.Size = new System.Drawing.Size(450, 706);
+            this.tabPageAbJunction.TabIndex = 1;
+            this.tabPageAbJunction.Text = "Junction";
+            // 
+            // tabPageAbCommand
+            // 
+            this.tabPageAbCommand.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbCommand.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbCommand.Name = "tabPageAbCommand";
+            this.tabPageAbCommand.Size = new System.Drawing.Size(450, 706);
+            this.tabPageAbCommand.TabIndex = 2;
+            this.tabPageAbCommand.Text = "Command";
+            // 
+            // tabPageAbGF
+            // 
+            this.tabPageAbGF.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbGF.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbGF.Name = "tabPageAbGF";
+            this.tabPageAbGF.Size = new System.Drawing.Size(450, 706);
+            this.tabPageAbGF.TabIndex = 5;
+            this.tabPageAbGF.Text = "GF";
+            // 
+            // tabPageABParty
+            // 
+            this.tabPageABParty.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageABParty.Location = new System.Drawing.Point(4, 26);
+            this.tabPageABParty.Name = "tabPageABParty";
+            this.tabPageABParty.Size = new System.Drawing.Size(450, 706);
+            this.tabPageABParty.TabIndex = 4;
+            this.tabPageABParty.Text = "Party";
+            // 
+            // tabPageAbMenu
+            // 
+            this.tabPageAbMenu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbMenu.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbMenu.Name = "tabPageAbMenu";
+            this.tabPageAbMenu.Size = new System.Drawing.Size(450, 706);
+            this.tabPageAbMenu.TabIndex = 6;
+            this.tabPageAbMenu.Text = "Menu";
+            // 
+            // listBoxAbCharacters
+            // 
+            this.listBoxAbCharacters.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbCharacters.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbCharacters.FormattingEnabled = true;
+            this.listBoxAbCharacters.ItemHeight = 17;
+            this.listBoxAbCharacters.Items.AddRange(new object[] {
+            "Mug",
+            "Med Data",
+            "Counter",
+            "Return Damage",
+            "Cover",
+            "Initiative",
+            "Move-HP Up",
+            "HP Bonus",
+            "Str Bonus",
+            "Vit Bonus",
+            "Mag Bonus",
+            "Spr Bonus",
+            "Auto-Protect",
+            "Auto-Shell",
+            "Auto-Reflect",
+            "Auto-Haste",
+            "Auto-Potion",
+            "Expendx2-1",
+            "Expendx3-1",
+            "Ribbon"});
+            this.listBoxAbCharacters.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbCharacters.Name = "listBoxAbCharacters";
+            this.listBoxAbCharacters.ScrollAlwaysVisible = true;
+            this.listBoxAbCharacters.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbCharacters.TabIndex = 3;
+            // 
             // listBoxAbStats
             // 
             this.listBoxAbStats.BackColor = System.Drawing.SystemColors.Window;
@@ -6033,6 +13831,147 @@
             this.listBoxAbStats.ScrollAlwaysVisible = true;
             this.listBoxAbStats.Size = new System.Drawing.Size(124, 735);
             this.listBoxAbStats.TabIndex = 3;
+            // 
+            // listBoxAbMenu
+            // 
+            this.listBoxAbMenu.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbMenu.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbMenu.FormattingEnabled = true;
+            this.listBoxAbMenu.ItemHeight = 17;
+            this.listBoxAbMenu.Items.AddRange(new object[] {
+            "Haggle",
+            "Sell-High",
+            "Familiar",
+            "Call Shop",
+            "Junk Shop",
+            "T Mag-RF",
+            "I Mag-RF",
+            "F Mag-RF",
+            "L Mag-RF",
+            "Time Mag-RF",
+            "ST Mag-RF",
+            "Supt Mag-RF",
+            "Forbid Mag-RF",
+            "Recov Med-RF",
+            "ST Med-RF",
+            "Ammo-RF",
+            "Tool-RF",
+            "Forbid Med-RF",
+            "GFRecov Med-RF",
+            "GFAbl Med-RF",
+            "Mid Mag-RF",
+            "High Mag-RF",
+            "Med LV Up",
+            "Card Mod"});
+            this.listBoxAbMenu.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbMenu.Name = "listBoxAbMenu";
+            this.listBoxAbMenu.ScrollAlwaysVisible = true;
+            this.listBoxAbMenu.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbMenu.TabIndex = 3;
+            // 
+            // listBoxAbParty
+            // 
+            this.listBoxAbParty.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbParty.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbParty.FormattingEnabled = true;
+            this.listBoxAbParty.ItemHeight = 17;
+            this.listBoxAbParty.Items.AddRange(new object[] {
+            "Alert",
+            "Move-Find",
+            "Enc-Half",
+            "Enc-None",
+            "Rare Item"});
+            this.listBoxAbParty.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbParty.Name = "listBoxAbParty";
+            this.listBoxAbParty.ScrollAlwaysVisible = true;
+            this.listBoxAbParty.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbParty.TabIndex = 3;
+            // 
+            // listBoxAbGF
+            // 
+            this.listBoxAbGF.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbGF.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbGF.FormattingEnabled = true;
+            this.listBoxAbGF.ItemHeight = 17;
+            this.listBoxAbGF.Items.AddRange(new object[] {
+            "SumMag+10%",
+            "SumMag+20%",
+            "SumMag+30%",
+            "SumMag+40%",
+            "GFHP+10%",
+            "GFHP+20%",
+            "GFHP+30%",
+            "GFHP+40%",
+            "Boost"});
+            this.listBoxAbGF.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbGF.Name = "listBoxAbGF";
+            this.listBoxAbGF.ScrollAlwaysVisible = true;
+            this.listBoxAbGF.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbGF.TabIndex = 3;
+            // 
+            // listBoxAbCommand
+            // 
+            this.listBoxAbCommand.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbCommand.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbCommand.FormattingEnabled = true;
+            this.listBoxAbCommand.ItemHeight = 17;
+            this.listBoxAbCommand.Items.AddRange(new object[] {
+            "Magic",
+            "GF",
+            "Draw",
+            "Item",
+            "Empty",
+            "Card",
+            "Doom",
+            "Mad Rush",
+            "Treatment",
+            "Defend",
+            "Darkside",
+            "Recover",
+            "Absorb",
+            "Revive",
+            "LV Down",
+            "LV Up",
+            "Kamikaze",
+            "Devour",
+            "MiniMog"});
+            this.listBoxAbCommand.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbCommand.Name = "listBoxAbCommand";
+            this.listBoxAbCommand.ScrollAlwaysVisible = true;
+            this.listBoxAbCommand.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbCommand.TabIndex = 3;
+            // 
+            // listBoxAbJunction
+            // 
+            this.listBoxAbJunction.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbJunction.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbJunction.FormattingEnabled = true;
+            this.listBoxAbJunction.ItemHeight = 17;
+            this.listBoxAbJunction.Items.AddRange(new object[] {
+            "HP-J",
+            "Str-J",
+            "Vit-J",
+            "Mag-J",
+            "Spr-J",
+            "Spd-J",
+            "Eva-J",
+            "Hit-J",
+            "Luck-J",
+            "Elem-Atk-J",
+            "ST-Atk-J",
+            "Elem-Def-J",
+            "ST-Def-J",
+            "Elem-Defx2",
+            "Elem-Defx4",
+            "ST-Def-Jx2",
+            "ST-Def-Jx4",
+            "Abilityx3",
+            "Abilityx4"});
+            this.listBoxAbJunction.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbJunction.Name = "listBoxAbJunction";
+            this.listBoxAbJunction.ScrollAlwaysVisible = true;
+            this.listBoxAbJunction.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbJunction.TabIndex = 3;
             // 
             // tabPageWeapons
             // 
@@ -6289,6 +14228,54 @@
             this.groupBox7.TabIndex = 4;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "EXP";
+            // 
+            // numericUpDownCharEXP2
+            // 
+            this.numericUpDownCharEXP2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharEXP2.Location = new System.Drawing.Point(196, 39);
+            this.numericUpDownCharEXP2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharEXP2.Name = "numericUpDownCharEXP2";
+            this.numericUpDownCharEXP2.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharEXP2.TabIndex = 13;
+            // 
+            // labelCharEXPB
+            // 
+            this.labelCharEXPB.AutoSize = true;
+            this.labelCharEXPB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharEXPB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharEXPB.Location = new System.Drawing.Point(211, 19);
+            this.labelCharEXPB.Name = "labelCharEXPB";
+            this.labelCharEXPB.Size = new System.Drawing.Size(16, 17);
+            this.labelCharEXPB.TabIndex = 11;
+            this.labelCharEXPB.Text = "B";
+            // 
+            // numericUpDownCharEXP1
+            // 
+            this.numericUpDownCharEXP1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharEXP1.Location = new System.Drawing.Point(111, 39);
+            this.numericUpDownCharEXP1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharEXP1.Name = "numericUpDownCharEXP1";
+            this.numericUpDownCharEXP1.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCharEXP1.TabIndex = 14;
+            // 
+            // labelCharEXPA
+            // 
+            this.labelCharEXPA.AutoSize = true;
+            this.labelCharEXPA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCharEXPA.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCharEXPA.Location = new System.Drawing.Point(126, 19);
+            this.labelCharEXPA.Name = "labelCharEXPA";
+            this.labelCharEXPA.Size = new System.Drawing.Size(17, 17);
+            this.labelCharEXPA.TabIndex = 12;
+            this.labelCharEXPA.Text = "A";
             // 
             // buttonCharEXPFormula
             // 
@@ -7479,6 +15466,28 @@
             this.groupBoxSlotSets.TabIndex = 29;
             this.groupBoxSlotSets.TabStop = false;
             this.groupBoxSlotSets.Text = "Slot Sets";
+            // 
+            // labelSlotSetsMagic
+            // 
+            this.labelSlotSetsMagic.AutoSize = true;
+            this.labelSlotSetsMagic.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelSlotSetsMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelSlotSetsMagic.Location = new System.Drawing.Point(364, 25);
+            this.labelSlotSetsMagic.Name = "labelSlotSetsMagic";
+            this.labelSlotSetsMagic.Size = new System.Drawing.Size(44, 17);
+            this.labelSlotSetsMagic.TabIndex = 29;
+            this.labelSlotSetsMagic.Text = "Magic";
+            // 
+            // labelSlotSetsList
+            // 
+            this.labelSlotSetsList.AutoSize = true;
+            this.labelSlotSetsList.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelSlotSetsList.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelSlotSetsList.Location = new System.Drawing.Point(122, 25);
+            this.labelSlotSetsList.Name = "labelSlotSetsList";
+            this.labelSlotSetsList.Size = new System.Drawing.Size(51, 17);
+            this.labelSlotSetsList.TabIndex = 29;
+            this.labelSlotSetsList.Text = "Set List";
             // 
             // comboBoxSlotMagic5
             // 
@@ -9106,6433 +17115,23 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel1.Text = "Ready";
             // 
-            // panelGFAbilities
-            // 
-            this.panelGFAbilities.AutoScroll = true;
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock21);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility21);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility21);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock12);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility12);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock15);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility15);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility12);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock18);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility18);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock6);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility6);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility15);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock9);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility9);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock20);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility20);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock11);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility6);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility11);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility18);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock14);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock3);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility3);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility14);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility9);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility20);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock5);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility5);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock17);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility11);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility17);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility3);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility14);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock19);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock8);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility8);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility19);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility5);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock10);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility10);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility17);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock2);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock13);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility2);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility13);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility8);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock4);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility19);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility4);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock16);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility10);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility16);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility2);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility13);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock7);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility7);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility16);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility4);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbilityUnlock1);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility7);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock21);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock20);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock19);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock18);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock17);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock16);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock15);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock14);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock13);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock12);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock11);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock10);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock9);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock8);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock7);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock6);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock5);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock4);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock3);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock2);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbilityUnlock1);
-            this.panelGFAbilities.Controls.Add(this.comboBoxGFAbility1);
-            this.panelGFAbilities.Controls.Add(this.labelGFAbility1);
-            this.panelGFAbilities.Location = new System.Drawing.Point(0, 20);
-            this.panelGFAbilities.Name = "panelGFAbilities";
-            this.panelGFAbilities.Size = new System.Drawing.Size(466, 674);
-            this.panelGFAbilities.TabIndex = 0;
-            // 
-            // comboBoxGFAbilityUnlock21
-            // 
-            this.comboBoxGFAbilityUnlock21.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock21.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock21.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock21.Location = new System.Drawing.Point(172, 1083);
-            this.comboBoxGFAbilityUnlock21.Name = "comboBoxGFAbilityUnlock21";
-            this.comboBoxGFAbilityUnlock21.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock21.TabIndex = 140;
-            // 
-            // comboBoxGFAbility21
-            // 
-            this.comboBoxGFAbility21.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility21.FormattingEnabled = true;
-            this.comboBoxGFAbility21.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility21.Location = new System.Drawing.Point(26, 1083);
-            this.comboBoxGFAbility21.Name = "comboBoxGFAbility21";
-            this.comboBoxGFAbility21.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility21.TabIndex = 139;
-            // 
-            // labelGFAbility21
-            // 
-            this.labelGFAbility21.AutoSize = true;
-            this.labelGFAbility21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility21.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility21.Location = new System.Drawing.Point(56, 1063);
-            this.labelGFAbility21.Name = "labelGFAbility21";
-            this.labelGFAbility21.Size = new System.Drawing.Size(62, 17);
-            this.labelGFAbility21.TabIndex = 95;
-            this.labelGFAbility21.Text = "Ability 21";
-            this.toolTip1.SetToolTip(this.labelGFAbility21, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbilityUnlock12
-            // 
-            this.comboBoxGFAbilityUnlock12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock12.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock12.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock12.Location = new System.Drawing.Point(172, 594);
-            this.comboBoxGFAbilityUnlock12.Name = "comboBoxGFAbilityUnlock12";
-            this.comboBoxGFAbilityUnlock12.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock12.TabIndex = 122;
-            // 
-            // comboBoxGFAbility12
-            // 
-            this.comboBoxGFAbility12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility12.FormattingEnabled = true;
-            this.comboBoxGFAbility12.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility12.Location = new System.Drawing.Point(26, 594);
-            this.comboBoxGFAbility12.Name = "comboBoxGFAbility12";
-            this.comboBoxGFAbility12.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility12.TabIndex = 121;
-            // 
-            // comboBoxGFAbilityUnlock15
-            // 
-            this.comboBoxGFAbilityUnlock15.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock15.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock15.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock15.Location = new System.Drawing.Point(172, 757);
-            this.comboBoxGFAbilityUnlock15.Name = "comboBoxGFAbilityUnlock15";
-            this.comboBoxGFAbilityUnlock15.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock15.TabIndex = 128;
-            // 
-            // comboBoxGFAbility15
-            // 
-            this.comboBoxGFAbility15.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility15.FormattingEnabled = true;
-            this.comboBoxGFAbility15.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility15.Location = new System.Drawing.Point(26, 757);
-            this.comboBoxGFAbility15.Name = "comboBoxGFAbility15";
-            this.comboBoxGFAbility15.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility15.TabIndex = 127;
-            // 
-            // labelGFAbility12
-            // 
-            this.labelGFAbility12.AutoSize = true;
-            this.labelGFAbility12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility12.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility12.Location = new System.Drawing.Point(56, 574);
-            this.labelGFAbility12.Name = "labelGFAbility12";
-            this.labelGFAbility12.Size = new System.Drawing.Size(62, 17);
-            this.labelGFAbility12.TabIndex = 88;
-            this.labelGFAbility12.Text = "Ability 12";
-            this.toolTip1.SetToolTip(this.labelGFAbility12, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbilityUnlock18
-            // 
-            this.comboBoxGFAbilityUnlock18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock18.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock18.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock18.Location = new System.Drawing.Point(172, 919);
-            this.comboBoxGFAbilityUnlock18.Name = "comboBoxGFAbilityUnlock18";
-            this.comboBoxGFAbilityUnlock18.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock18.TabIndex = 133;
-            // 
-            // comboBoxGFAbility18
-            // 
-            this.comboBoxGFAbility18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility18.FormattingEnabled = true;
-            this.comboBoxGFAbility18.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility18.Location = new System.Drawing.Point(26, 919);
-            this.comboBoxGFAbility18.Name = "comboBoxGFAbility18";
-            this.comboBoxGFAbility18.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility18.TabIndex = 134;
-            // 
-            // comboBoxGFAbilityUnlock6
-            // 
-            this.comboBoxGFAbilityUnlock6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock6.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock6.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock6.Location = new System.Drawing.Point(171, 279);
-            this.comboBoxGFAbilityUnlock6.Name = "comboBoxGFAbilityUnlock6";
-            this.comboBoxGFAbilityUnlock6.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock6.TabIndex = 109;
-            // 
-            // comboBoxGFAbility6
-            // 
-            this.comboBoxGFAbility6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility6.FormattingEnabled = true;
-            this.comboBoxGFAbility6.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility6.Location = new System.Drawing.Point(25, 279);
-            this.comboBoxGFAbility6.Name = "comboBoxGFAbility6";
-            this.comboBoxGFAbility6.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility6.TabIndex = 110;
-            // 
-            // labelGFAbility15
-            // 
-            this.labelGFAbility15.AutoSize = true;
-            this.labelGFAbility15.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility15.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility15.Location = new System.Drawing.Point(56, 737);
-            this.labelGFAbility15.Name = "labelGFAbility15";
-            this.labelGFAbility15.Size = new System.Drawing.Size(62, 17);
-            this.labelGFAbility15.TabIndex = 93;
-            this.labelGFAbility15.Text = "Ability 15";
-            this.toolTip1.SetToolTip(this.labelGFAbility15, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbilityUnlock9
-            // 
-            this.comboBoxGFAbilityUnlock9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock9.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock9.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock9.Location = new System.Drawing.Point(172, 432);
-            this.comboBoxGFAbilityUnlock9.Name = "comboBoxGFAbilityUnlock9";
-            this.comboBoxGFAbilityUnlock9.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock9.TabIndex = 116;
-            // 
-            // comboBoxGFAbility9
-            // 
-            this.comboBoxGFAbility9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility9.FormattingEnabled = true;
-            this.comboBoxGFAbility9.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility9.Location = new System.Drawing.Point(26, 432);
-            this.comboBoxGFAbility9.Name = "comboBoxGFAbility9";
-            this.comboBoxGFAbility9.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility9.TabIndex = 115;
-            // 
-            // comboBoxGFAbilityUnlock20
-            // 
-            this.comboBoxGFAbilityUnlock20.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock20.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock20.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock20.Location = new System.Drawing.Point(172, 1029);
-            this.comboBoxGFAbilityUnlock20.Name = "comboBoxGFAbilityUnlock20";
-            this.comboBoxGFAbilityUnlock20.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock20.TabIndex = 137;
-            // 
-            // comboBoxGFAbility20
-            // 
-            this.comboBoxGFAbility20.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility20.FormattingEnabled = true;
-            this.comboBoxGFAbility20.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility20.Location = new System.Drawing.Point(26, 1029);
-            this.comboBoxGFAbility20.Name = "comboBoxGFAbility20";
-            this.comboBoxGFAbility20.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility20.TabIndex = 138;
-            // 
-            // comboBoxGFAbilityUnlock11
-            // 
-            this.comboBoxGFAbilityUnlock11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock11.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock11.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock11.Location = new System.Drawing.Point(172, 542);
-            this.comboBoxGFAbilityUnlock11.Name = "comboBoxGFAbilityUnlock11";
-            this.comboBoxGFAbilityUnlock11.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock11.TabIndex = 119;
-            // 
-            // labelGFAbility6
-            // 
-            this.labelGFAbility6.AutoSize = true;
-            this.labelGFAbility6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility6.Location = new System.Drawing.Point(58, 259);
-            this.labelGFAbility6.Name = "labelGFAbility6";
-            this.labelGFAbility6.Size = new System.Drawing.Size(57, 17);
-            this.labelGFAbility6.TabIndex = 90;
-            this.labelGFAbility6.Text = "Ability 6";
-            this.toolTip1.SetToolTip(this.labelGFAbility6, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbility11
-            // 
-            this.comboBoxGFAbility11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility11.FormattingEnabled = true;
-            this.comboBoxGFAbility11.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility11.Location = new System.Drawing.Point(26, 542);
-            this.comboBoxGFAbility11.Name = "comboBoxGFAbility11";
-            this.comboBoxGFAbility11.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility11.TabIndex = 120;
-            // 
-            // labelGFAbility18
-            // 
-            this.labelGFAbility18.AutoSize = true;
-            this.labelGFAbility18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility18.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility18.Location = new System.Drawing.Point(56, 899);
-            this.labelGFAbility18.Name = "labelGFAbility18";
-            this.labelGFAbility18.Size = new System.Drawing.Size(62, 17);
-            this.labelGFAbility18.TabIndex = 94;
-            this.labelGFAbility18.Text = "Ability 18";
-            this.toolTip1.SetToolTip(this.labelGFAbility18, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbilityUnlock14
-            // 
-            this.comboBoxGFAbilityUnlock14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock14.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock14.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock14.Location = new System.Drawing.Point(172, 704);
-            this.comboBoxGFAbilityUnlock14.Name = "comboBoxGFAbilityUnlock14";
-            this.comboBoxGFAbilityUnlock14.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock14.TabIndex = 126;
-            // 
-            // comboBoxGFAbilityUnlock3
-            // 
-            this.comboBoxGFAbilityUnlock3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock3.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock3.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock3.Location = new System.Drawing.Point(172, 125);
-            this.comboBoxGFAbilityUnlock3.Name = "comboBoxGFAbilityUnlock3";
-            this.comboBoxGFAbilityUnlock3.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock3.TabIndex = 103;
-            // 
-            // comboBoxGFAbility3
-            // 
-            this.comboBoxGFAbility3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility3.FormattingEnabled = true;
-            this.comboBoxGFAbility3.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility3.Location = new System.Drawing.Point(26, 125);
-            this.comboBoxGFAbility3.Name = "comboBoxGFAbility3";
-            this.comboBoxGFAbility3.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility3.TabIndex = 104;
-            // 
-            // comboBoxGFAbility14
-            // 
-            this.comboBoxGFAbility14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility14.FormattingEnabled = true;
-            this.comboBoxGFAbility14.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility14.Location = new System.Drawing.Point(26, 704);
-            this.comboBoxGFAbility14.Name = "comboBoxGFAbility14";
-            this.comboBoxGFAbility14.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility14.TabIndex = 125;
-            // 
-            // labelGFAbility9
-            // 
-            this.labelGFAbility9.AutoSize = true;
-            this.labelGFAbility9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility9.Location = new System.Drawing.Point(59, 412);
-            this.labelGFAbility9.Name = "labelGFAbility9";
-            this.labelGFAbility9.Size = new System.Drawing.Size(57, 17);
-            this.labelGFAbility9.TabIndex = 85;
-            this.labelGFAbility9.Text = "Ability 9";
-            this.toolTip1.SetToolTip(this.labelGFAbility9, "The ability the GF can learn");
-            // 
-            // labelGFAbility20
-            // 
-            this.labelGFAbility20.AutoSize = true;
-            this.labelGFAbility20.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility20.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility20.Location = new System.Drawing.Point(56, 1009);
-            this.labelGFAbility20.Name = "labelGFAbility20";
-            this.labelGFAbility20.Size = new System.Drawing.Size(64, 17);
-            this.labelGFAbility20.TabIndex = 58;
-            this.labelGFAbility20.Text = "Ability 20";
-            this.toolTip1.SetToolTip(this.labelGFAbility20, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbilityUnlock5
-            // 
-            this.comboBoxGFAbilityUnlock5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock5.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock5.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock5.Location = new System.Drawing.Point(172, 228);
-            this.comboBoxGFAbilityUnlock5.Name = "comboBoxGFAbilityUnlock5";
-            this.comboBoxGFAbilityUnlock5.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock5.TabIndex = 108;
-            // 
-            // comboBoxGFAbility5
-            // 
-            this.comboBoxGFAbility5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility5.FormattingEnabled = true;
-            this.comboBoxGFAbility5.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility5.Location = new System.Drawing.Point(26, 228);
-            this.comboBoxGFAbility5.Name = "comboBoxGFAbility5";
-            this.comboBoxGFAbility5.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility5.TabIndex = 107;
-            // 
-            // comboBoxGFAbilityUnlock17
-            // 
-            this.comboBoxGFAbilityUnlock17.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock17.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock17.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock17.Location = new System.Drawing.Point(172, 865);
-            this.comboBoxGFAbilityUnlock17.Name = "comboBoxGFAbilityUnlock17";
-            this.comboBoxGFAbilityUnlock17.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock17.TabIndex = 132;
-            // 
-            // labelGFAbility11
-            // 
-            this.labelGFAbility11.AutoSize = true;
-            this.labelGFAbility11.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility11.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility11.Location = new System.Drawing.Point(56, 522);
-            this.labelGFAbility11.Name = "labelGFAbility11";
-            this.labelGFAbility11.Size = new System.Drawing.Size(60, 17);
-            this.labelGFAbility11.TabIndex = 60;
-            this.labelGFAbility11.Text = "Ability 11";
-            this.toolTip1.SetToolTip(this.labelGFAbility11, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbility17
-            // 
-            this.comboBoxGFAbility17.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility17.FormattingEnabled = true;
-            this.comboBoxGFAbility17.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility17.Location = new System.Drawing.Point(26, 865);
-            this.comboBoxGFAbility17.Name = "comboBoxGFAbility17";
-            this.comboBoxGFAbility17.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility17.TabIndex = 131;
-            // 
-            // labelGFAbility3
-            // 
-            this.labelGFAbility3.AutoSize = true;
-            this.labelGFAbility3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility3.Location = new System.Drawing.Point(59, 105);
-            this.labelGFAbility3.Name = "labelGFAbility3";
-            this.labelGFAbility3.Size = new System.Drawing.Size(57, 17);
-            this.labelGFAbility3.TabIndex = 62;
-            this.labelGFAbility3.Text = "Ability 3";
-            this.toolTip1.SetToolTip(this.labelGFAbility3, "The ability the GF can learn");
-            // 
-            // labelGFAbility14
-            // 
-            this.labelGFAbility14.AutoSize = true;
-            this.labelGFAbility14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility14.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility14.Location = new System.Drawing.Point(56, 684);
-            this.labelGFAbility14.Name = "labelGFAbility14";
-            this.labelGFAbility14.Size = new System.Drawing.Size(62, 17);
-            this.labelGFAbility14.TabIndex = 63;
-            this.labelGFAbility14.Text = "Ability 14";
-            this.toolTip1.SetToolTip(this.labelGFAbility14, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbilityUnlock19
-            // 
-            this.comboBoxGFAbilityUnlock19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock19.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock19.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock19.Location = new System.Drawing.Point(172, 973);
-            this.comboBoxGFAbilityUnlock19.Name = "comboBoxGFAbilityUnlock19";
-            this.comboBoxGFAbilityUnlock19.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock19.TabIndex = 136;
-            // 
-            // comboBoxGFAbilityUnlock8
-            // 
-            this.comboBoxGFAbilityUnlock8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock8.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock8.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock8.Location = new System.Drawing.Point(172, 382);
-            this.comboBoxGFAbilityUnlock8.Name = "comboBoxGFAbilityUnlock8";
-            this.comboBoxGFAbilityUnlock8.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock8.TabIndex = 113;
-            // 
-            // comboBoxGFAbility8
-            // 
-            this.comboBoxGFAbility8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility8.FormattingEnabled = true;
-            this.comboBoxGFAbility8.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility8.Location = new System.Drawing.Point(26, 382);
-            this.comboBoxGFAbility8.Name = "comboBoxGFAbility8";
-            this.comboBoxGFAbility8.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility8.TabIndex = 114;
-            // 
-            // comboBoxGFAbility19
-            // 
-            this.comboBoxGFAbility19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility19.FormattingEnabled = true;
-            this.comboBoxGFAbility19.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility19.Location = new System.Drawing.Point(26, 973);
-            this.comboBoxGFAbility19.Name = "comboBoxGFAbility19";
-            this.comboBoxGFAbility19.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility19.TabIndex = 135;
-            // 
-            // labelGFAbility5
-            // 
-            this.labelGFAbility5.AutoSize = true;
-            this.labelGFAbility5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility5.Location = new System.Drawing.Point(58, 208);
-            this.labelGFAbility5.Name = "labelGFAbility5";
-            this.labelGFAbility5.Size = new System.Drawing.Size(57, 17);
-            this.labelGFAbility5.TabIndex = 65;
-            this.labelGFAbility5.Text = "Ability 5";
-            this.toolTip1.SetToolTip(this.labelGFAbility5, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbilityUnlock10
-            // 
-            this.comboBoxGFAbilityUnlock10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock10.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock10.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock10.Location = new System.Drawing.Point(172, 487);
-            this.comboBoxGFAbilityUnlock10.Name = "comboBoxGFAbilityUnlock10";
-            this.comboBoxGFAbilityUnlock10.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock10.TabIndex = 117;
-            // 
-            // comboBoxGFAbility10
-            // 
-            this.comboBoxGFAbility10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility10.FormattingEnabled = true;
-            this.comboBoxGFAbility10.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility10.Location = new System.Drawing.Point(26, 487);
-            this.comboBoxGFAbility10.Name = "comboBoxGFAbility10";
-            this.comboBoxGFAbility10.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility10.TabIndex = 118;
-            // 
-            // labelGFAbility17
-            // 
-            this.labelGFAbility17.AutoSize = true;
-            this.labelGFAbility17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility17.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility17.Location = new System.Drawing.Point(56, 845);
-            this.labelGFAbility17.Name = "labelGFAbility17";
-            this.labelGFAbility17.Size = new System.Drawing.Size(62, 17);
-            this.labelGFAbility17.TabIndex = 67;
-            this.labelGFAbility17.Text = "Ability 17";
-            this.toolTip1.SetToolTip(this.labelGFAbility17, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbilityUnlock2
-            // 
-            this.comboBoxGFAbilityUnlock2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock2.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock2.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock2.Location = new System.Drawing.Point(172, 73);
-            this.comboBoxGFAbilityUnlock2.Name = "comboBoxGFAbilityUnlock2";
-            this.comboBoxGFAbilityUnlock2.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock2.TabIndex = 102;
-            // 
-            // comboBoxGFAbilityUnlock13
-            // 
-            this.comboBoxGFAbilityUnlock13.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock13.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock13.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock13.Location = new System.Drawing.Point(172, 648);
-            this.comboBoxGFAbilityUnlock13.Name = "comboBoxGFAbilityUnlock13";
-            this.comboBoxGFAbilityUnlock13.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock13.TabIndex = 123;
-            // 
-            // comboBoxGFAbility2
-            // 
-            this.comboBoxGFAbility2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility2.FormattingEnabled = true;
-            this.comboBoxGFAbility2.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility2.Location = new System.Drawing.Point(26, 73);
-            this.comboBoxGFAbility2.Name = "comboBoxGFAbility2";
-            this.comboBoxGFAbility2.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility2.TabIndex = 101;
-            // 
-            // comboBoxGFAbility13
-            // 
-            this.comboBoxGFAbility13.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility13.FormattingEnabled = true;
-            this.comboBoxGFAbility13.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility13.Location = new System.Drawing.Point(26, 648);
-            this.comboBoxGFAbility13.Name = "comboBoxGFAbility13";
-            this.comboBoxGFAbility13.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility13.TabIndex = 124;
-            // 
-            // labelGFAbility8
-            // 
-            this.labelGFAbility8.AutoSize = true;
-            this.labelGFAbility8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility8.Location = new System.Drawing.Point(58, 362);
-            this.labelGFAbility8.Name = "labelGFAbility8";
-            this.labelGFAbility8.Size = new System.Drawing.Size(57, 17);
-            this.labelGFAbility8.TabIndex = 70;
-            this.labelGFAbility8.Text = "Ability 8";
-            this.toolTip1.SetToolTip(this.labelGFAbility8, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbilityUnlock4
-            // 
-            this.comboBoxGFAbilityUnlock4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock4.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock4.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock4.Location = new System.Drawing.Point(172, 177);
-            this.comboBoxGFAbilityUnlock4.Name = "comboBoxGFAbilityUnlock4";
-            this.comboBoxGFAbilityUnlock4.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock4.TabIndex = 105;
-            // 
-            // labelGFAbility19
-            // 
-            this.labelGFAbility19.AutoSize = true;
-            this.labelGFAbility19.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility19.Location = new System.Drawing.Point(56, 953);
-            this.labelGFAbility19.Name = "labelGFAbility19";
-            this.labelGFAbility19.Size = new System.Drawing.Size(62, 17);
-            this.labelGFAbility19.TabIndex = 71;
-            this.labelGFAbility19.Text = "Ability 19";
-            this.toolTip1.SetToolTip(this.labelGFAbility19, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbility4
-            // 
-            this.comboBoxGFAbility4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility4.FormattingEnabled = true;
-            this.comboBoxGFAbility4.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility4.Location = new System.Drawing.Point(26, 177);
-            this.comboBoxGFAbility4.Name = "comboBoxGFAbility4";
-            this.comboBoxGFAbility4.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility4.TabIndex = 106;
-            // 
-            // comboBoxGFAbilityUnlock16
-            // 
-            this.comboBoxGFAbilityUnlock16.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock16.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock16.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock16.Location = new System.Drawing.Point(172, 811);
-            this.comboBoxGFAbilityUnlock16.Name = "comboBoxGFAbilityUnlock16";
-            this.comboBoxGFAbilityUnlock16.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock16.TabIndex = 130;
-            // 
-            // labelGFAbility10
-            // 
-            this.labelGFAbility10.AutoSize = true;
-            this.labelGFAbility10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility10.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility10.Location = new System.Drawing.Point(56, 467);
-            this.labelGFAbility10.Name = "labelGFAbility10";
-            this.labelGFAbility10.Size = new System.Drawing.Size(62, 17);
-            this.labelGFAbility10.TabIndex = 73;
-            this.labelGFAbility10.Text = "Ability 10";
-            this.toolTip1.SetToolTip(this.labelGFAbility10, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbility16
-            // 
-            this.comboBoxGFAbility16.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility16.FormattingEnabled = true;
-            this.comboBoxGFAbility16.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility16.Location = new System.Drawing.Point(26, 811);
-            this.comboBoxGFAbility16.Name = "comboBoxGFAbility16";
-            this.comboBoxGFAbility16.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility16.TabIndex = 129;
-            // 
-            // labelGFAbility2
-            // 
-            this.labelGFAbility2.AutoSize = true;
-            this.labelGFAbility2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility2.Location = new System.Drawing.Point(58, 53);
-            this.labelGFAbility2.Name = "labelGFAbility2";
-            this.labelGFAbility2.Size = new System.Drawing.Size(57, 17);
-            this.labelGFAbility2.TabIndex = 76;
-            this.labelGFAbility2.Text = "Ability 2";
-            this.toolTip1.SetToolTip(this.labelGFAbility2, "The ability the GF can learn");
-            // 
-            // labelGFAbility13
-            // 
-            this.labelGFAbility13.AutoSize = true;
-            this.labelGFAbility13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility13.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility13.Location = new System.Drawing.Point(56, 628);
-            this.labelGFAbility13.Name = "labelGFAbility13";
-            this.labelGFAbility13.Size = new System.Drawing.Size(62, 17);
-            this.labelGFAbility13.TabIndex = 77;
-            this.labelGFAbility13.Text = "Ability 13";
-            this.toolTip1.SetToolTip(this.labelGFAbility13, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbilityUnlock7
-            // 
-            this.comboBoxGFAbilityUnlock7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock7.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock7.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock7.Location = new System.Drawing.Point(172, 330);
-            this.comboBoxGFAbilityUnlock7.Name = "comboBoxGFAbilityUnlock7";
-            this.comboBoxGFAbilityUnlock7.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock7.TabIndex = 112;
-            // 
-            // comboBoxGFAbility7
-            // 
-            this.comboBoxGFAbility7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility7.FormattingEnabled = true;
-            this.comboBoxGFAbility7.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility7.Location = new System.Drawing.Point(26, 330);
-            this.comboBoxGFAbility7.Name = "comboBoxGFAbility7";
-            this.comboBoxGFAbility7.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility7.TabIndex = 111;
-            // 
-            // labelGFAbility16
-            // 
-            this.labelGFAbility16.AutoSize = true;
-            this.labelGFAbility16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility16.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility16.Location = new System.Drawing.Point(56, 791);
-            this.labelGFAbility16.Name = "labelGFAbility16";
-            this.labelGFAbility16.Size = new System.Drawing.Size(62, 17);
-            this.labelGFAbility16.TabIndex = 80;
-            this.labelGFAbility16.Text = "Ability 16";
-            this.toolTip1.SetToolTip(this.labelGFAbility16, "The ability the GF can learn");
-            // 
-            // labelGFAbility4
-            // 
-            this.labelGFAbility4.AutoSize = true;
-            this.labelGFAbility4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility4.Location = new System.Drawing.Point(59, 157);
-            this.labelGFAbility4.Name = "labelGFAbility4";
-            this.labelGFAbility4.Size = new System.Drawing.Size(57, 17);
-            this.labelGFAbility4.TabIndex = 82;
-            this.labelGFAbility4.Text = "Ability 4";
-            this.toolTip1.SetToolTip(this.labelGFAbility4, "The ability the GF can learn");
-            // 
-            // comboBoxGFAbilityUnlock1
-            // 
-            this.comboBoxGFAbilityUnlock1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbilityUnlock1.FormattingEnabled = true;
-            this.comboBoxGFAbilityUnlock1.Items.AddRange(new object[] {
-            "None",
-            "GF Level 1 ",
-            "GF Level 2 ",
-            "GF Level 3 ",
-            "GF Level 4 ",
-            "GF Level 5 ",
-            "GF Level 6 ",
-            "GF Level 7 ",
-            "GF Level 8 ",
-            "GF Level 9 ",
-            "GF Level 10",
-            "GF Level 11",
-            "GF Level 12",
-            "GF Level 13",
-            "GF Level 14",
-            "GF Level 15",
-            "GF Level 16",
-            "GF Level 17",
-            "GF Level 18",
-            "GF Level 19",
-            "GF Level 20",
-            "GF Level 21",
-            "GF Level 22",
-            "GF Level 23",
-            "GF Level 24",
-            "GF Level 25",
-            "GF Level 26",
-            "GF Level 27",
-            "GF Level 28",
-            "GF Level 29",
-            "GF Level 30",
-            "GF Level 31",
-            "GF Level 32",
-            "GF Level 33",
-            "GF Level 34",
-            "GF Level 35",
-            "GF Level 36",
-            "GF Level 37",
-            "GF Level 38",
-            "GF Level 39",
-            "GF Level 40",
-            "GF Level 41",
-            "GF Level 42",
-            "GF Level 43",
-            "GF Level 44",
-            "GF Level 45",
-            "GF Level 46",
-            "GF Level 47",
-            "GF Level 48",
-            "GF Level 49",
-            "GF Level 50",
-            "GF Level 51",
-            "GF Level 52",
-            "GF Level 53",
-            "GF Level 54",
-            "GF Level 55",
-            "GF Level 56",
-            "GF Level 57",
-            "GF Level 58",
-            "GF Level 59",
-            "GF Level 60",
-            "GF Level 61",
-            "GF Level 62",
-            "GF Level 63",
-            "GF Level 64",
-            "GF Level 65",
-            "GF Level 66",
-            "GF Level 67",
-            "GF Level 68",
-            "GF Level 69",
-            "GF Level 70",
-            "GF Level 71",
-            "GF Level 72",
-            "GF Level 73",
-            "GF Level 74",
-            "GF Level 75",
-            "GF Level 76",
-            "GF Level 77",
-            "GF Level 78",
-            "GF Level 79",
-            "GF Level 80",
-            "GF Level 81",
-            "GF Level 82",
-            "GF Level 83",
-            "GF Level 84",
-            "GF Level 85",
-            "GF Level 86",
-            "GF Level 87",
-            "GF Level 88",
-            "GF Level 89",
-            "GF Level 90",
-            "GF Level 91",
-            "GF Level 92",
-            "GF Level 93",
-            "GF Level 94",
-            "GF Level 95",
-            "GF Level 96",
-            "GF Level 97",
-            "GF Level 98",
-            "GF Level 99",
-            "GF Level 100",
-            "Ability 1 ",
-            "Ability 2 ",
-            "Ability 3 ",
-            "Ability 4 ",
-            "Ability 5 ",
-            "Ability 6 ",
-            "Ability 7 ",
-            "Ability 8 ",
-            "Ability 9 ",
-            "Ability 10",
-            "Ability 11",
-            "Ability 12",
-            "Ability 13",
-            "Ability 14",
-            "Ability 15",
-            "Ability 16",
-            "Ability 17",
-            "Ability 18",
-            "Ability 19",
-            "Ability 20",
-            "Ability 21"});
-            this.comboBoxGFAbilityUnlock1.Location = new System.Drawing.Point(172, 25);
-            this.comboBoxGFAbilityUnlock1.Name = "comboBoxGFAbilityUnlock1";
-            this.comboBoxGFAbilityUnlock1.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbilityUnlock1.TabIndex = 100;
-            // 
-            // labelGFAbility7
-            // 
-            this.labelGFAbility7.AutoSize = true;
-            this.labelGFAbility7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility7.Location = new System.Drawing.Point(59, 310);
-            this.labelGFAbility7.Name = "labelGFAbility7";
-            this.labelGFAbility7.Size = new System.Drawing.Size(57, 17);
-            this.labelGFAbility7.TabIndex = 83;
-            this.labelGFAbility7.Text = "Ability 7";
-            this.toolTip1.SetToolTip(this.labelGFAbility7, "The ability the GF can learn");
-            // 
-            // labelGFAbilityUnlock1
-            // 
-            this.labelGFAbilityUnlock1.AutoSize = true;
-            this.labelGFAbilityUnlock1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock1.Location = new System.Drawing.Point(174, 5);
-            this.labelGFAbilityUnlock1.Name = "labelGFAbilityUnlock1";
-            this.labelGFAbilityUnlock1.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock1.TabIndex = 84;
-            this.labelGFAbilityUnlock1.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock1, "Prerequisite needed to unlock the ability");
-            // 
-            // comboBoxGFAbility1
-            // 
-            this.comboBoxGFAbility1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAbility1.FormattingEnabled = true;
-            this.comboBoxGFAbility1.Items.AddRange(new object[] {
-            "None",
-            "HP-J",
-            "STR-J",
-            "VIT-J",
-            "MAG-J",
-            "SPR-J",
-            "SPD-J",
-            "EVA-J",
-            "HIT-J",
-            "LUCK-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4",
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty*",
-            "Card",
-            "Doom",
-            "MadRush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LVDown",
-            "LVUp",
-            "Kamikaze",
-            "Devour",
-            "MiniMog",
-            "HP+20%",
-            "HP+40%",
-            "HP+80%",
-            "Str+20%",
-            "Str+40%",
-            "Str+60%",
-            "Vit+20%",
-            "Vit+40%",
-            "Vit+60%",
-            "Mag+20%",
-            "Mag+40%",
-            "Mag+60%",
-            "Spr+20%",
-            "Spr+40%",
-            "Spr+60%",
-            "Spd+20%",
-            "Spd+40%",
-            "Eva+30%",
-            "Luck+50%",
-            "Mug",
-            "MedData",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HPUp",
-            "HPBonus",
-            "StrBonus",
-            "VitBonus",
-            "MagBonus",
-            "SprBonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon",
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "RareItem",
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost",
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "CallShop",
-            "JunkShop",
-            "T Mag-RF",
-            "IMag-RF",
-            "FMag-RF",
-            "LMag-RF",
-            "TimeMag-RF",
-            "STMag-RF",
-            "SuptMag-RF",
-            "ForbidMag-RF",
-            "RecovMed-RF",
-            "STMed-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "ForbidMed-RF",
-            "GFRecovMed-RF",
-            "GFAblMed-RF",
-            "Mid Mag-RF",
-            "HighMag-RF",
-            "MedLVUp",
-            "Card Mod"});
-            this.comboBoxGFAbility1.Location = new System.Drawing.Point(26, 25);
-            this.comboBoxGFAbility1.Name = "comboBoxGFAbility1";
-            this.comboBoxGFAbility1.Size = new System.Drawing.Size(120, 25);
-            this.comboBoxGFAbility1.TabIndex = 99;
-            // 
-            // labelGFAbility1
-            // 
-            this.labelGFAbility1.AutoSize = true;
-            this.labelGFAbility1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbility1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbility1.Location = new System.Drawing.Point(59, 5);
-            this.labelGFAbility1.Name = "labelGFAbility1";
-            this.labelGFAbility1.Size = new System.Drawing.Size(55, 17);
-            this.labelGFAbility1.TabIndex = 87;
-            this.labelGFAbility1.Text = "Ability 1";
-            this.toolTip1.SetToolTip(this.labelGFAbility1, "The ability the GF can learn");
-            // 
-            // labelGFAbilityUnlock2
-            // 
-            this.labelGFAbilityUnlock2.AutoSize = true;
-            this.labelGFAbilityUnlock2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock2.Location = new System.Drawing.Point(174, 53);
-            this.labelGFAbilityUnlock2.Name = "labelGFAbilityUnlock2";
-            this.labelGFAbilityUnlock2.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock2.TabIndex = 84;
-            this.labelGFAbilityUnlock2.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock2, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock3
-            // 
-            this.labelGFAbilityUnlock3.AutoSize = true;
-            this.labelGFAbilityUnlock3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock3.Location = new System.Drawing.Point(174, 105);
-            this.labelGFAbilityUnlock3.Name = "labelGFAbilityUnlock3";
-            this.labelGFAbilityUnlock3.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock3.TabIndex = 84;
-            this.labelGFAbilityUnlock3.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock3, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock4
-            // 
-            this.labelGFAbilityUnlock4.AutoSize = true;
-            this.labelGFAbilityUnlock4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock4.Location = new System.Drawing.Point(174, 157);
-            this.labelGFAbilityUnlock4.Name = "labelGFAbilityUnlock4";
-            this.labelGFAbilityUnlock4.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock4.TabIndex = 84;
-            this.labelGFAbilityUnlock4.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock4, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock5
-            // 
-            this.labelGFAbilityUnlock5.AutoSize = true;
-            this.labelGFAbilityUnlock5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock5.Location = new System.Drawing.Point(174, 208);
-            this.labelGFAbilityUnlock5.Name = "labelGFAbilityUnlock5";
-            this.labelGFAbilityUnlock5.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock5.TabIndex = 84;
-            this.labelGFAbilityUnlock5.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock5, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock6
-            // 
-            this.labelGFAbilityUnlock6.AutoSize = true;
-            this.labelGFAbilityUnlock6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock6.Location = new System.Drawing.Point(174, 259);
-            this.labelGFAbilityUnlock6.Name = "labelGFAbilityUnlock6";
-            this.labelGFAbilityUnlock6.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock6.TabIndex = 84;
-            this.labelGFAbilityUnlock6.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock6, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock7
-            // 
-            this.labelGFAbilityUnlock7.AutoSize = true;
-            this.labelGFAbilityUnlock7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock7.Location = new System.Drawing.Point(174, 310);
-            this.labelGFAbilityUnlock7.Name = "labelGFAbilityUnlock7";
-            this.labelGFAbilityUnlock7.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock7.TabIndex = 84;
-            this.labelGFAbilityUnlock7.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock7, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock8
-            // 
-            this.labelGFAbilityUnlock8.AutoSize = true;
-            this.labelGFAbilityUnlock8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock8.Location = new System.Drawing.Point(174, 362);
-            this.labelGFAbilityUnlock8.Name = "labelGFAbilityUnlock8";
-            this.labelGFAbilityUnlock8.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock8.TabIndex = 84;
-            this.labelGFAbilityUnlock8.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock8, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock9
-            // 
-            this.labelGFAbilityUnlock9.AutoSize = true;
-            this.labelGFAbilityUnlock9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock9.Location = new System.Drawing.Point(174, 412);
-            this.labelGFAbilityUnlock9.Name = "labelGFAbilityUnlock9";
-            this.labelGFAbilityUnlock9.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock9.TabIndex = 84;
-            this.labelGFAbilityUnlock9.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock9, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock10
-            // 
-            this.labelGFAbilityUnlock10.AutoSize = true;
-            this.labelGFAbilityUnlock10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock10.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock10.Location = new System.Drawing.Point(174, 467);
-            this.labelGFAbilityUnlock10.Name = "labelGFAbilityUnlock10";
-            this.labelGFAbilityUnlock10.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock10.TabIndex = 84;
-            this.labelGFAbilityUnlock10.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock10, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock11
-            // 
-            this.labelGFAbilityUnlock11.AutoSize = true;
-            this.labelGFAbilityUnlock11.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock11.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock11.Location = new System.Drawing.Point(174, 522);
-            this.labelGFAbilityUnlock11.Name = "labelGFAbilityUnlock11";
-            this.labelGFAbilityUnlock11.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock11.TabIndex = 84;
-            this.labelGFAbilityUnlock11.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock11, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock12
-            // 
-            this.labelGFAbilityUnlock12.AutoSize = true;
-            this.labelGFAbilityUnlock12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock12.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock12.Location = new System.Drawing.Point(174, 574);
-            this.labelGFAbilityUnlock12.Name = "labelGFAbilityUnlock12";
-            this.labelGFAbilityUnlock12.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock12.TabIndex = 84;
-            this.labelGFAbilityUnlock12.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock12, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock13
-            // 
-            this.labelGFAbilityUnlock13.AutoSize = true;
-            this.labelGFAbilityUnlock13.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock13.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock13.Location = new System.Drawing.Point(174, 628);
-            this.labelGFAbilityUnlock13.Name = "labelGFAbilityUnlock13";
-            this.labelGFAbilityUnlock13.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock13.TabIndex = 84;
-            this.labelGFAbilityUnlock13.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock13, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock14
-            // 
-            this.labelGFAbilityUnlock14.AutoSize = true;
-            this.labelGFAbilityUnlock14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock14.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock14.Location = new System.Drawing.Point(174, 684);
-            this.labelGFAbilityUnlock14.Name = "labelGFAbilityUnlock14";
-            this.labelGFAbilityUnlock14.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock14.TabIndex = 84;
-            this.labelGFAbilityUnlock14.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock14, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock15
-            // 
-            this.labelGFAbilityUnlock15.AutoSize = true;
-            this.labelGFAbilityUnlock15.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock15.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock15.Location = new System.Drawing.Point(174, 737);
-            this.labelGFAbilityUnlock15.Name = "labelGFAbilityUnlock15";
-            this.labelGFAbilityUnlock15.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock15.TabIndex = 84;
-            this.labelGFAbilityUnlock15.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock15, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock16
-            // 
-            this.labelGFAbilityUnlock16.AutoSize = true;
-            this.labelGFAbilityUnlock16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock16.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock16.Location = new System.Drawing.Point(174, 791);
-            this.labelGFAbilityUnlock16.Name = "labelGFAbilityUnlock16";
-            this.labelGFAbilityUnlock16.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock16.TabIndex = 84;
-            this.labelGFAbilityUnlock16.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock16, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock17
-            // 
-            this.labelGFAbilityUnlock17.AutoSize = true;
-            this.labelGFAbilityUnlock17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock17.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock17.Location = new System.Drawing.Point(174, 845);
-            this.labelGFAbilityUnlock17.Name = "labelGFAbilityUnlock17";
-            this.labelGFAbilityUnlock17.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock17.TabIndex = 84;
-            this.labelGFAbilityUnlock17.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock17, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock18
-            // 
-            this.labelGFAbilityUnlock18.AutoSize = true;
-            this.labelGFAbilityUnlock18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock18.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock18.Location = new System.Drawing.Point(174, 899);
-            this.labelGFAbilityUnlock18.Name = "labelGFAbilityUnlock18";
-            this.labelGFAbilityUnlock18.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock18.TabIndex = 84;
-            this.labelGFAbilityUnlock18.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock18, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock19
-            // 
-            this.labelGFAbilityUnlock19.AutoSize = true;
-            this.labelGFAbilityUnlock19.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock19.Location = new System.Drawing.Point(174, 953);
-            this.labelGFAbilityUnlock19.Name = "labelGFAbilityUnlock19";
-            this.labelGFAbilityUnlock19.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock19.TabIndex = 84;
-            this.labelGFAbilityUnlock19.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock19, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock20
-            // 
-            this.labelGFAbilityUnlock20.AutoSize = true;
-            this.labelGFAbilityUnlock20.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock20.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock20.Location = new System.Drawing.Point(174, 1009);
-            this.labelGFAbilityUnlock20.Name = "labelGFAbilityUnlock20";
-            this.labelGFAbilityUnlock20.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock20.TabIndex = 84;
-            this.labelGFAbilityUnlock20.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock20, "Prerequisite needed to unlock the ability");
-            // 
-            // labelGFAbilityUnlock21
-            // 
-            this.labelGFAbilityUnlock21.AutoSize = true;
-            this.labelGFAbilityUnlock21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAbilityUnlock21.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAbilityUnlock21.Location = new System.Drawing.Point(174, 1063);
-            this.labelGFAbilityUnlock21.Name = "labelGFAbilityUnlock21";
-            this.labelGFAbilityUnlock21.Size = new System.Drawing.Size(116, 17);
-            this.labelGFAbilityUnlock21.TabIndex = 84;
-            this.labelGFAbilityUnlock21.Text = "Needed to unlock";
-            this.toolTip1.SetToolTip(this.labelGFAbilityUnlock21, "Prerequisite needed to unlock the ability");
-            // 
-            // numericUpDownCharEXP2
-            // 
-            this.numericUpDownCharEXP2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownCharEXP2.Location = new System.Drawing.Point(196, 39);
-            this.numericUpDownCharEXP2.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownCharEXP2.Name = "numericUpDownCharEXP2";
-            this.numericUpDownCharEXP2.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownCharEXP2.TabIndex = 13;
-            // 
-            // labelCharEXPB
-            // 
-            this.labelCharEXPB.AutoSize = true;
-            this.labelCharEXPB.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelCharEXPB.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelCharEXPB.Location = new System.Drawing.Point(211, 19);
-            this.labelCharEXPB.Name = "labelCharEXPB";
-            this.labelCharEXPB.Size = new System.Drawing.Size(16, 17);
-            this.labelCharEXPB.TabIndex = 11;
-            this.labelCharEXPB.Text = "B";
-            // 
-            // numericUpDownCharEXP1
-            // 
-            this.numericUpDownCharEXP1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownCharEXP1.Location = new System.Drawing.Point(111, 39);
-            this.numericUpDownCharEXP1.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownCharEXP1.Name = "numericUpDownCharEXP1";
-            this.numericUpDownCharEXP1.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownCharEXP1.TabIndex = 14;
-            // 
-            // labelCharEXPA
-            // 
-            this.labelCharEXPA.AutoSize = true;
-            this.labelCharEXPA.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelCharEXPA.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelCharEXPA.Location = new System.Drawing.Point(126, 19);
-            this.labelCharEXPA.Name = "labelCharEXPA";
-            this.labelCharEXPA.Size = new System.Drawing.Size(17, 17);
-            this.labelCharEXPA.TabIndex = 12;
-            this.labelCharEXPA.Text = "A";
-            // 
-            // labelSlotSetsN
-            // 
-            this.labelSlotSetsN.AutoSize = true;
-            this.labelSlotSetsN.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelSlotSetsN.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelSlotSetsN.Location = new System.Drawing.Point(267, 25);
-            this.labelSlotSetsN.Name = "labelSlotSetsN";
-            this.labelSlotSetsN.Size = new System.Drawing.Size(23, 17);
-            this.labelSlotSetsN.TabIndex = 29;
-            this.labelSlotSetsN.Text = "N°";
-            this.toolTip1.SetToolTip(this.labelSlotSetsN, "How many spells");
-            // 
-            // labelSlotSetsMagic
-            // 
-            this.labelSlotSetsMagic.AutoSize = true;
-            this.labelSlotSetsMagic.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelSlotSetsMagic.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelSlotSetsMagic.Location = new System.Drawing.Point(364, 25);
-            this.labelSlotSetsMagic.Name = "labelSlotSetsMagic";
-            this.labelSlotSetsMagic.Size = new System.Drawing.Size(44, 17);
-            this.labelSlotSetsMagic.TabIndex = 29;
-            this.labelSlotSetsMagic.Text = "Magic";
-            // 
-            // labelSlotSetsList
-            // 
-            this.labelSlotSetsList.AutoSize = true;
-            this.labelSlotSetsList.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelSlotSetsList.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelSlotSetsList.Location = new System.Drawing.Point(122, 25);
-            this.labelSlotSetsList.Name = "labelSlotSetsList";
-            this.labelSlotSetsList.Size = new System.Drawing.Size(51, 17);
-            this.labelSlotSetsList.TabIndex = 29;
-            this.labelSlotSetsList.Text = "Set List";
-            // 
-            // tabPageAbJunction
-            // 
-            this.tabPageAbJunction.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageAbJunction.Location = new System.Drawing.Point(4, 26);
-            this.tabPageAbJunction.Name = "tabPageAbJunction";
-            this.tabPageAbJunction.Size = new System.Drawing.Size(450, 706);
-            this.tabPageAbJunction.TabIndex = 1;
-            this.tabPageAbJunction.Text = "Junction";
-            // 
-            // tabPageAbCommand
-            // 
-            this.tabPageAbCommand.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageAbCommand.Location = new System.Drawing.Point(4, 26);
-            this.tabPageAbCommand.Name = "tabPageAbCommand";
-            this.tabPageAbCommand.Size = new System.Drawing.Size(450, 706);
-            this.tabPageAbCommand.TabIndex = 2;
-            this.tabPageAbCommand.Text = "Command";
-            // 
-            // tabPageAbCharacters
-            // 
-            this.tabPageAbCharacters.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageAbCharacters.Controls.Add(this.groupBox8);
-            this.tabPageAbCharacters.Location = new System.Drawing.Point(4, 26);
-            this.tabPageAbCharacters.Name = "tabPageAbCharacters";
-            this.tabPageAbCharacters.Size = new System.Drawing.Size(450, 706);
-            this.tabPageAbCharacters.TabIndex = 3;
-            this.tabPageAbCharacters.Text = "Character";
-            // 
-            // tabPageABParty
-            // 
-            this.tabPageABParty.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageABParty.Location = new System.Drawing.Point(4, 26);
-            this.tabPageABParty.Name = "tabPageABParty";
-            this.tabPageABParty.Size = new System.Drawing.Size(450, 706);
-            this.tabPageABParty.TabIndex = 4;
-            this.tabPageABParty.Text = "Party";
-            // 
-            // tabPageAbGF
-            // 
-            this.tabPageAbGF.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageAbGF.Location = new System.Drawing.Point(4, 26);
-            this.tabPageAbGF.Name = "tabPageAbGF";
-            this.tabPageAbGF.Size = new System.Drawing.Size(450, 706);
-            this.tabPageAbGF.TabIndex = 5;
-            this.tabPageAbGF.Text = "GF";
-            // 
-            // tabPageAbMenu
-            // 
-            this.tabPageAbMenu.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageAbMenu.Location = new System.Drawing.Point(4, 26);
-            this.tabPageAbMenu.Name = "tabPageAbMenu";
-            this.tabPageAbMenu.Size = new System.Drawing.Size(450, 706);
-            this.tabPageAbMenu.TabIndex = 6;
-            this.tabPageAbMenu.Text = "Menu";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox8.Controls.Add(this.textBox1);
-            this.groupBox8.Controls.Add(this.textBox2);
-            this.groupBox8.Controls.Add(this.label2);
-            this.groupBox8.Controls.Add(this.label4);
-            this.groupBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox8.Location = new System.Drawing.Point(0, 6);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(447, 285);
-            this.groupBox8.TabIndex = 3;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "General";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(101, 120);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 25);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(135, 51);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(176, 25);
-            this.textBox2.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label2.Location = new System.Drawing.Point(185, 100);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Description";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label4.Location = new System.Drawing.Point(201, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 17);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Name";
-            this.toolTip1.SetToolTip(this.label4, "Used in damage calculation");
-            // 
-            // listBoxAbCharacters
-            // 
-            this.listBoxAbCharacters.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxAbCharacters.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxAbCharacters.FormattingEnabled = true;
-            this.listBoxAbCharacters.ItemHeight = 17;
-            this.listBoxAbCharacters.Items.AddRange(new object[] {
-            "Mug",
-            "Med Data",
-            "Counter",
-            "Return Damage",
-            "Cover",
-            "Initiative",
-            "Move-HP Up",
-            "HP Bonus",
-            "Str Bonus",
-            "Vit Bonus",
-            "Mag Bonus",
-            "Spr Bonus",
-            "Auto-Protect",
-            "Auto-Shell",
-            "Auto-Reflect",
-            "Auto-Haste",
-            "Auto-Potion",
-            "Expendx2-1",
-            "Expendx3-1",
-            "Ribbon"});
-            this.listBoxAbCharacters.Location = new System.Drawing.Point(0, 0);
-            this.listBoxAbCharacters.Name = "listBoxAbCharacters";
-            this.listBoxAbCharacters.ScrollAlwaysVisible = true;
-            this.listBoxAbCharacters.Size = new System.Drawing.Size(124, 735);
-            this.listBoxAbCharacters.TabIndex = 3;
-            // 
-            // comboBoxAbStatsStatToIncrease
-            // 
-            this.comboBoxAbStatsStatToIncrease.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxAbStatsStatToIncrease.FormattingEnabled = true;
-            this.comboBoxAbStatsStatToIncrease.Items.AddRange(new object[] {
-            "HP",
-            "STR",
-            "VIT",
-            "MAG",
-            "SPR",
-            "SPD",
-            "EVA",
-            "HIT",
-            "LUCK"});
-            this.comboBoxAbStatsStatToIncrease.Location = new System.Drawing.Point(27, 202);
-            this.comboBoxAbStatsStatToIncrease.Name = "comboBoxAbStatsStatToIncrease";
-            this.comboBoxAbStatsStatToIncrease.Size = new System.Drawing.Size(59, 25);
-            this.comboBoxAbStatsStatToIncrease.TabIndex = 30;
-            // 
-            // labelAbStatsStatToIncrease
-            // 
-            this.labelAbStatsStatToIncrease.AutoSize = true;
-            this.labelAbStatsStatToIncrease.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelAbStatsStatToIncrease.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbStatsStatToIncrease.Location = new System.Drawing.Point(6, 178);
-            this.labelAbStatsStatToIncrease.Name = "labelAbStatsStatToIncrease";
-            this.labelAbStatsStatToIncrease.Size = new System.Drawing.Size(102, 17);
-            this.labelAbStatsStatToIncrease.TabIndex = 29;
-            this.labelAbStatsStatToIncrease.Text = "Stat to increase";
-            // 
-            // listBoxAbJunction
-            // 
-            this.listBoxAbJunction.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxAbJunction.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxAbJunction.FormattingEnabled = true;
-            this.listBoxAbJunction.ItemHeight = 17;
-            this.listBoxAbJunction.Items.AddRange(new object[] {
-            "HP-J",
-            "Str-J",
-            "Vit-J",
-            "Mag-J",
-            "Spr-J",
-            "Spd-J",
-            "Eva-J",
-            "Hit-J",
-            "Luck-J",
-            "Elem-Atk-J",
-            "ST-Atk-J",
-            "Elem-Def-J",
-            "ST-Def-J",
-            "Elem-Defx2",
-            "Elem-Defx4",
-            "ST-Def-Jx2",
-            "ST-Def-Jx4",
-            "Abilityx3",
-            "Abilityx4"});
-            this.listBoxAbJunction.Location = new System.Drawing.Point(0, 0);
-            this.listBoxAbJunction.Name = "listBoxAbJunction";
-            this.listBoxAbJunction.ScrollAlwaysVisible = true;
-            this.listBoxAbJunction.Size = new System.Drawing.Size(124, 735);
-            this.listBoxAbJunction.TabIndex = 3;
-            // 
-            // listBoxAbCommand
-            // 
-            this.listBoxAbCommand.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxAbCommand.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxAbCommand.FormattingEnabled = true;
-            this.listBoxAbCommand.ItemHeight = 17;
-            this.listBoxAbCommand.Items.AddRange(new object[] {
-            "Magic",
-            "GF",
-            "Draw",
-            "Item",
-            "Empty",
-            "Card",
-            "Doom",
-            "Mad Rush",
-            "Treatment",
-            "Defend",
-            "Darkside",
-            "Recover",
-            "Absorb",
-            "Revive",
-            "LV Down",
-            "LV Up",
-            "Kamikaze",
-            "Devour",
-            "MiniMog"});
-            this.listBoxAbCommand.Location = new System.Drawing.Point(0, 0);
-            this.listBoxAbCommand.Name = "listBoxAbCommand";
-            this.listBoxAbCommand.ScrollAlwaysVisible = true;
-            this.listBoxAbCommand.Size = new System.Drawing.Size(124, 735);
-            this.listBoxAbCommand.TabIndex = 3;
-            // 
-            // listBoxAbGF
-            // 
-            this.listBoxAbGF.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxAbGF.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxAbGF.FormattingEnabled = true;
-            this.listBoxAbGF.ItemHeight = 17;
-            this.listBoxAbGF.Items.AddRange(new object[] {
-            "SumMag+10%",
-            "SumMag+20%",
-            "SumMag+30%",
-            "SumMag+40%",
-            "GFHP+10%",
-            "GFHP+20%",
-            "GFHP+30%",
-            "GFHP+40%",
-            "Boost"});
-            this.listBoxAbGF.Location = new System.Drawing.Point(0, 0);
-            this.listBoxAbGF.Name = "listBoxAbGF";
-            this.listBoxAbGF.ScrollAlwaysVisible = true;
-            this.listBoxAbGF.Size = new System.Drawing.Size(124, 735);
-            this.listBoxAbGF.TabIndex = 3;
-            // 
-            // listBoxAbParty
-            // 
-            this.listBoxAbParty.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxAbParty.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxAbParty.FormattingEnabled = true;
-            this.listBoxAbParty.ItemHeight = 17;
-            this.listBoxAbParty.Items.AddRange(new object[] {
-            "Alert",
-            "Move-Find",
-            "Enc-Half",
-            "Enc-None",
-            "Rare Item"});
-            this.listBoxAbParty.Location = new System.Drawing.Point(0, 0);
-            this.listBoxAbParty.Name = "listBoxAbParty";
-            this.listBoxAbParty.ScrollAlwaysVisible = true;
-            this.listBoxAbParty.Size = new System.Drawing.Size(124, 735);
-            this.listBoxAbParty.TabIndex = 3;
-            // 
-            // listBoxAbMenu
-            // 
-            this.listBoxAbMenu.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxAbMenu.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxAbMenu.FormattingEnabled = true;
-            this.listBoxAbMenu.ItemHeight = 17;
-            this.listBoxAbMenu.Items.AddRange(new object[] {
-            "Haggle",
-            "Sell-High",
-            "Familiar",
-            "Call Shop",
-            "Junk Shop",
-            "T Mag-RF",
-            "I Mag-RF",
-            "F Mag-RF",
-            "L Mag-RF",
-            "Time Mag-RF",
-            "ST Mag-RF",
-            "Supt Mag-RF",
-            "Forbid Mag-RF",
-            "Recov Med-RF",
-            "ST Med-RF",
-            "Ammo-RF",
-            "Tool-RF",
-            "Forbid Med-RF",
-            "GFRecov Med-RF",
-            "GFAbl Med-RF",
-            "Mid Mag-RF",
-            "High Mag-RF",
-            "Med LV Up",
-            "Card Mod"});
-            this.listBoxAbMenu.Location = new System.Drawing.Point(0, 0);
-            this.listBoxAbMenu.Name = "listBoxAbMenu";
-            this.listBoxAbMenu.ScrollAlwaysVisible = true;
-            this.listBoxAbMenu.Size = new System.Drawing.Size(124, 735);
-            this.listBoxAbMenu.TabIndex = 3;
-            // 
-            // labelGFAttacksAttackType
-            // 
-            this.labelGFAttacksAttackType.AutoSize = true;
-            this.labelGFAttacksAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAttacksAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAttacksAttackType.Location = new System.Drawing.Point(120, 87);
-            this.labelGFAttacksAttackType.Name = "labelGFAttacksAttackType";
-            this.labelGFAttacksAttackType.Size = new System.Drawing.Size(79, 17);
-            this.labelGFAttacksAttackType.TabIndex = 93;
-            this.labelGFAttacksAttackType.Text = "Attack Type";
-            this.toolTip1.SetToolTip(this.labelGFAttacksAttackType, "Decides what animation to play");
-            // 
-            // comboBoxGFAttacksAttackType
-            // 
-            this.comboBoxGFAttacksAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGFAttacksAttackType.FormattingEnabled = true;
-            this.comboBoxGFAttacksAttackType.Items.AddRange(new object[] {
+            // labelBlueMagicAttackType
+            // 
+            this.labelBlueMagicAttackType.AutoSize = true;
+            this.labelBlueMagicAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicAttackType.Location = new System.Drawing.Point(109, 91);
+            this.labelBlueMagicAttackType.Name = "labelBlueMagicAttackType";
+            this.labelBlueMagicAttackType.Size = new System.Drawing.Size(79, 17);
+            this.labelBlueMagicAttackType.TabIndex = 103;
+            this.labelBlueMagicAttackType.Text = "Attack Type";
+            this.toolTip1.SetToolTip(this.labelBlueMagicAttackType, "Decides what animation to play");
+            // 
+            // comboBoxBlueMagicAttackType
+            // 
+            this.comboBoxBlueMagicAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxBlueMagicAttackType.FormattingEnabled = true;
+            this.comboBoxBlueMagicAttackType.Items.AddRange(new object[] {
             "Basic Attack",
             "Magic Attack",
             "Curative Magic",
@@ -15569,1492 +17168,578 @@
             "Everyone\'s Grudge",
             "Excalipoor",
             "Terra Break/Great Attractor"});
-            this.comboBoxGFAttacksAttackType.Location = new System.Drawing.Point(29, 107);
-            this.comboBoxGFAttacksAttackType.Name = "comboBoxGFAttacksAttackType";
-            this.comboBoxGFAttacksAttackType.Size = new System.Drawing.Size(265, 25);
-            this.comboBoxGFAttacksAttackType.TabIndex = 92;
+            this.comboBoxBlueMagicAttackType.Location = new System.Drawing.Point(18, 111);
+            this.comboBoxBlueMagicAttackType.Name = "comboBoxBlueMagicAttackType";
+            this.comboBoxBlueMagicAttackType.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxBlueMagicAttackType.TabIndex = 102;
             // 
-            // tabPageMagicGFsComp
+            // numericUpDownBlueMagicDeathLevel
             // 
-            this.tabPageMagicGFsComp.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageMagicGFsComp.Controls.Add(this.groupBoxMagicGFComp);
-            this.tabPageMagicGFsComp.Location = new System.Drawing.Point(4, 26);
-            this.tabPageMagicGFsComp.Name = "tabPageMagicGFsComp";
-            this.tabPageMagicGFsComp.Size = new System.Drawing.Size(469, 706);
-            this.tabPageMagicGFsComp.TabIndex = 2;
-            this.tabPageMagicGFsComp.Text = "GFs Compatibility";
-            // 
-            // groupBoxMagicGFComp
-            // 
-            this.groupBoxMagicGFComp.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicEdenComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicEdenComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicDoomtrainComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicDoomtrainComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicLeviathanComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicTonberryComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicLeviathanComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicAlexanderComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicSirenComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicTonberryComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicCarbuncleComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicAlexanderComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicSirenComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicCactuarComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicCarbuncleComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicCerberusComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicIfritComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicCactuarComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicDiablosComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicCerberusComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicIfritComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicBahamutComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicDiablosComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicPandemonaComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicShivaComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicBahamutComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicBrothersComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicPandemonaComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicShivaComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicBrothersComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.numericUpDownMagicQuezacoltComp);
-            this.groupBoxMagicGFComp.Controls.Add(this.labelMagicQuezacoltComp);
-            this.groupBoxMagicGFComp.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxMagicGFComp.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.groupBoxMagicGFComp.Location = new System.Drawing.Point(0, 6);
-            this.groupBoxMagicGFComp.Name = "groupBoxMagicGFComp";
-            this.groupBoxMagicGFComp.Size = new System.Drawing.Size(466, 235);
-            this.groupBoxMagicGFComp.TabIndex = 5;
-            this.groupBoxMagicGFComp.TabStop = false;
-            this.groupBoxMagicGFComp.Text = "GFs Compatibility";
-            // 
-            // numericUpDownMagicEdenComp
-            // 
-            this.numericUpDownMagicEdenComp.DecimalPlaces = 1;
-            this.numericUpDownMagicEdenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicEdenComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicEdenComp.Location = new System.Drawing.Point(366, 203);
-            this.numericUpDownMagicEdenComp.Maximum = new decimal(new int[] {
-            20,
+            this.numericUpDownBlueMagicDeathLevel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBlueMagicDeathLevel.Location = new System.Drawing.Point(262, 185);
+            this.numericUpDownBlueMagicDeathLevel.Maximum = new decimal(new int[] {
+            255,
             0,
             0,
             0});
-            this.numericUpDownMagicEdenComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicEdenComp.Name = "numericUpDownMagicEdenComp";
-            this.numericUpDownMagicEdenComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicEdenComp.TabIndex = 3;
+            this.numericUpDownBlueMagicDeathLevel.Name = "numericUpDownBlueMagicDeathLevel";
+            this.numericUpDownBlueMagicDeathLevel.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBlueMagicDeathLevel.TabIndex = 97;
             // 
-            // labelMagicEdenComp
+            // numericUpDownBlueMagicAttackPower
             // 
-            this.labelMagicEdenComp.AutoSize = true;
-            this.labelMagicEdenComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicEdenComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicEdenComp.Location = new System.Drawing.Point(370, 183);
-            this.labelMagicEdenComp.Name = "labelMagicEdenComp";
-            this.labelMagicEdenComp.Size = new System.Drawing.Size(38, 17);
-            this.labelMagicEdenComp.TabIndex = 0;
-            this.labelMagicEdenComp.Text = "Eden";
-            // 
-            // numericUpDownMagicDoomtrainComp
-            // 
-            this.numericUpDownMagicDoomtrainComp.DecimalPlaces = 1;
-            this.numericUpDownMagicDoomtrainComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicDoomtrainComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicDoomtrainComp.Location = new System.Drawing.Point(366, 150);
-            this.numericUpDownMagicDoomtrainComp.Maximum = new decimal(new int[] {
-            20,
+            this.numericUpDownBlueMagicAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBlueMagicAttackPower.Location = new System.Drawing.Point(141, 185);
+            this.numericUpDownBlueMagicAttackPower.Maximum = new decimal(new int[] {
+            255,
             0,
             0,
             0});
-            this.numericUpDownMagicDoomtrainComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicDoomtrainComp.Name = "numericUpDownMagicDoomtrainComp";
-            this.numericUpDownMagicDoomtrainComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicDoomtrainComp.TabIndex = 3;
+            this.numericUpDownBlueMagicAttackPower.Name = "numericUpDownBlueMagicAttackPower";
+            this.numericUpDownBlueMagicAttackPower.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBlueMagicAttackPower.TabIndex = 96;
             // 
-            // labelMagicDoomtrainComp
+            // labelBlueMagicDeathLevel
             // 
-            this.labelMagicDoomtrainComp.AutoSize = true;
-            this.labelMagicDoomtrainComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicDoomtrainComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicDoomtrainComp.Location = new System.Drawing.Point(354, 130);
-            this.labelMagicDoomtrainComp.Name = "labelMagicDoomtrainComp";
-            this.labelMagicDoomtrainComp.Size = new System.Drawing.Size(73, 17);
-            this.labelMagicDoomtrainComp.TabIndex = 0;
-            this.labelMagicDoomtrainComp.Text = "Doomtrain";
+            this.labelBlueMagicDeathLevel.AutoSize = true;
+            this.labelBlueMagicDeathLevel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicDeathLevel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicDeathLevel.Location = new System.Drawing.Point(247, 165);
+            this.labelBlueMagicDeathLevel.Name = "labelBlueMagicDeathLevel";
+            this.labelBlueMagicDeathLevel.Size = new System.Drawing.Size(78, 17);
+            this.labelBlueMagicDeathLevel.TabIndex = 94;
+            this.labelBlueMagicDeathLevel.Text = "Death Level";
+            this.toolTip1.SetToolTip(this.labelBlueMagicDeathLevel, "Used in damage calculation");
             // 
-            // numericUpDownMagicLeviathanComp
+            // labelBlueMagicAttackPower
             // 
-            this.numericUpDownMagicLeviathanComp.DecimalPlaces = 1;
-            this.numericUpDownMagicLeviathanComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicLeviathanComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicLeviathanComp.Location = new System.Drawing.Point(366, 98);
-            this.numericUpDownMagicLeviathanComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicLeviathanComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicLeviathanComp.Name = "numericUpDownMagicLeviathanComp";
-            this.numericUpDownMagicLeviathanComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicLeviathanComp.TabIndex = 3;
+            this.labelBlueMagicAttackPower.AutoSize = true;
+            this.labelBlueMagicAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicAttackPower.Location = new System.Drawing.Point(120, 165);
+            this.labelBlueMagicAttackPower.Name = "labelBlueMagicAttackPower";
+            this.labelBlueMagicAttackPower.Size = new System.Drawing.Size(89, 17);
+            this.labelBlueMagicAttackPower.TabIndex = 95;
+            this.labelBlueMagicAttackPower.Text = "Attack Power";
+            this.toolTip1.SetToolTip(this.labelBlueMagicAttackPower, "Used in damage calculation");
             // 
-            // numericUpDownMagicTonberryComp
+            // groupBox9
             // 
-            this.numericUpDownMagicTonberryComp.DecimalPlaces = 1;
-            this.numericUpDownMagicTonberryComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicTonberryComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicTonberryComp.Location = new System.Drawing.Point(262, 203);
-            this.numericUpDownMagicTonberryComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicTonberryComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicTonberryComp.Name = "numericUpDownMagicTonberryComp";
-            this.numericUpDownMagicTonberryComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicTonberryComp.TabIndex = 3;
+            this.groupBox9.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox9.Controls.Add(this.checkBoxBlueMagicFlagBreakDamageLimit);
+            this.groupBox9.Controls.Add(this.checkBoxBlueMagicFlag8);
+            this.groupBox9.Controls.Add(this.checkBoxBlueMagicFlag3);
+            this.groupBox9.Controls.Add(this.checkBoxBlueMagicFlag6);
+            this.groupBox9.Controls.Add(this.checkBoxBlueMagicFlagShelled);
+            this.groupBox9.Controls.Add(this.checkBoxBlueMagicFlagReflected);
+            this.groupBox9.Controls.Add(this.checkBoxBlueMagicFlag2);
+            this.groupBox9.Controls.Add(this.checkBoxBlueMagicFlag7);
+            this.groupBox9.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.ForeColor = System.Drawing.Color.Sienna;
+            this.groupBox9.Location = new System.Drawing.Point(134, 509);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(444, 226);
+            this.groupBox9.TabIndex = 100;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Flags";
             // 
-            // labelMagicLeviathanComp
+            // checkBoxBlueMagicFlagBreakDamageLimit
             // 
-            this.labelMagicLeviathanComp.AutoSize = true;
-            this.labelMagicLeviathanComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicLeviathanComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicLeviathanComp.Location = new System.Drawing.Point(356, 78);
-            this.labelMagicLeviathanComp.Name = "labelMagicLeviathanComp";
-            this.labelMagicLeviathanComp.Size = new System.Drawing.Size(66, 17);
-            this.labelMagicLeviathanComp.TabIndex = 0;
-            this.labelMagicLeviathanComp.Text = "Leviathan";
+            this.checkBoxBlueMagicFlagBreakDamageLimit.AutoSize = true;
+            this.checkBoxBlueMagicFlagBreakDamageLimit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFlagBreakDamageLimit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFlagBreakDamageLimit.Location = new System.Drawing.Point(295, 38);
+            this.checkBoxBlueMagicFlagBreakDamageLimit.Name = "checkBoxBlueMagicFlagBreakDamageLimit";
+            this.checkBoxBlueMagicFlagBreakDamageLimit.Size = new System.Drawing.Size(132, 19);
+            this.checkBoxBlueMagicFlagBreakDamageLimit.TabIndex = 48;
+            this.checkBoxBlueMagicFlagBreakDamageLimit.Text = "Break Damage Limit";
+            this.checkBoxBlueMagicFlagBreakDamageLimit.UseVisualStyleBackColor = true;
             // 
-            // numericUpDownMagicAlexanderComp
+            // checkBoxBlueMagicFlag8
             // 
-            this.numericUpDownMagicAlexanderComp.DecimalPlaces = 1;
-            this.numericUpDownMagicAlexanderComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicAlexanderComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicAlexanderComp.Location = new System.Drawing.Point(262, 150);
-            this.numericUpDownMagicAlexanderComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicAlexanderComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicAlexanderComp.Name = "numericUpDownMagicAlexanderComp";
-            this.numericUpDownMagicAlexanderComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicAlexanderComp.TabIndex = 3;
+            this.checkBoxBlueMagicFlag8.AutoSize = true;
+            this.checkBoxBlueMagicFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFlag8.Location = new System.Drawing.Point(295, 63);
+            this.checkBoxBlueMagicFlag8.Name = "checkBoxBlueMagicFlag8";
+            this.checkBoxBlueMagicFlag8.Size = new System.Drawing.Size(65, 19);
+            this.checkBoxBlueMagicFlag8.TabIndex = 52;
+            this.checkBoxBlueMagicFlag8.Text = "Revive?";
+            this.checkBoxBlueMagicFlag8.UseVisualStyleBackColor = true;
             // 
-            // numericUpDownMagicSirenComp
+            // checkBoxBlueMagicFlag3
             // 
-            this.numericUpDownMagicSirenComp.DecimalPlaces = 1;
-            this.numericUpDownMagicSirenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicSirenComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicSirenComp.Location = new System.Drawing.Point(366, 47);
-            this.numericUpDownMagicSirenComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicSirenComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicSirenComp.Name = "numericUpDownMagicSirenComp";
-            this.numericUpDownMagicSirenComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicSirenComp.TabIndex = 3;
+            this.checkBoxBlueMagicFlag3.AutoSize = true;
+            this.checkBoxBlueMagicFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFlag3.Location = new System.Drawing.Point(210, 38);
+            this.checkBoxBlueMagicFlag3.Name = "checkBoxBlueMagicFlag3";
+            this.checkBoxBlueMagicFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicFlag3.TabIndex = 47;
+            this.checkBoxBlueMagicFlag3.Text = "???";
+            this.checkBoxBlueMagicFlag3.UseVisualStyleBackColor = true;
             // 
-            // labelMagicTonberryComp
+            // checkBoxBlueMagicFlag6
             // 
-            this.labelMagicTonberryComp.AutoSize = true;
-            this.labelMagicTonberryComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicTonberryComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicTonberryComp.Location = new System.Drawing.Point(254, 183);
-            this.labelMagicTonberryComp.Name = "labelMagicTonberryComp";
-            this.labelMagicTonberryComp.Size = new System.Drawing.Size(63, 17);
-            this.labelMagicTonberryComp.TabIndex = 0;
-            this.labelMagicTonberryComp.Text = "Tonberry";
+            this.checkBoxBlueMagicFlag6.AutoSize = true;
+            this.checkBoxBlueMagicFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFlag6.Location = new System.Drawing.Point(125, 63);
+            this.checkBoxBlueMagicFlag6.Name = "checkBoxBlueMagicFlag6";
+            this.checkBoxBlueMagicFlag6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicFlag6.TabIndex = 50;
+            this.checkBoxBlueMagicFlag6.Text = "???";
+            this.checkBoxBlueMagicFlag6.UseVisualStyleBackColor = true;
             // 
-            // numericUpDownMagicCarbuncleComp
+            // checkBoxBlueMagicFlagShelled
             // 
-            this.numericUpDownMagicCarbuncleComp.DecimalPlaces = 1;
-            this.numericUpDownMagicCarbuncleComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicCarbuncleComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicCarbuncleComp.Location = new System.Drawing.Point(262, 98);
-            this.numericUpDownMagicCarbuncleComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicCarbuncleComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicCarbuncleComp.Name = "numericUpDownMagicCarbuncleComp";
-            this.numericUpDownMagicCarbuncleComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicCarbuncleComp.TabIndex = 3;
+            this.checkBoxBlueMagicFlagShelled.AutoSize = true;
+            this.checkBoxBlueMagicFlagShelled.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFlagShelled.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFlagShelled.Location = new System.Drawing.Point(17, 38);
+            this.checkBoxBlueMagicFlagShelled.Name = "checkBoxBlueMagicFlagShelled";
+            this.checkBoxBlueMagicFlagShelled.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBlueMagicFlagShelled.TabIndex = 45;
+            this.checkBoxBlueMagicFlagShelled.Text = "Shelled";
+            this.checkBoxBlueMagicFlagShelled.UseVisualStyleBackColor = true;
             // 
-            // labelMagicAlexanderComp
+            // checkBoxBlueMagicFlagReflected
             // 
-            this.labelMagicAlexanderComp.AutoSize = true;
-            this.labelMagicAlexanderComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicAlexanderComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicAlexanderComp.Location = new System.Drawing.Point(251, 130);
-            this.labelMagicAlexanderComp.Name = "labelMagicAlexanderComp";
-            this.labelMagicAlexanderComp.Size = new System.Drawing.Size(69, 17);
-            this.labelMagicAlexanderComp.TabIndex = 0;
-            this.labelMagicAlexanderComp.Text = "Alexander";
+            this.checkBoxBlueMagicFlagReflected.AutoSize = true;
+            this.checkBoxBlueMagicFlagReflected.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFlagReflected.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFlagReflected.Location = new System.Drawing.Point(17, 63);
+            this.checkBoxBlueMagicFlagReflected.Name = "checkBoxBlueMagicFlagReflected";
+            this.checkBoxBlueMagicFlagReflected.Size = new System.Drawing.Size(75, 19);
+            this.checkBoxBlueMagicFlagReflected.TabIndex = 49;
+            this.checkBoxBlueMagicFlagReflected.Text = "Reflected";
+            this.checkBoxBlueMagicFlagReflected.UseVisualStyleBackColor = true;
             // 
-            // labelMagicSirenComp
+            // checkBoxBlueMagicFlag2
             // 
-            this.labelMagicSirenComp.AutoSize = true;
-            this.labelMagicSirenComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicSirenComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicSirenComp.Location = new System.Drawing.Point(370, 27);
-            this.labelMagicSirenComp.Name = "labelMagicSirenComp";
-            this.labelMagicSirenComp.Size = new System.Drawing.Size(38, 17);
-            this.labelMagicSirenComp.TabIndex = 0;
-            this.labelMagicSirenComp.Text = "Siren";
+            this.checkBoxBlueMagicFlag2.AutoSize = true;
+            this.checkBoxBlueMagicFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFlag2.Location = new System.Drawing.Point(125, 38);
+            this.checkBoxBlueMagicFlag2.Name = "checkBoxBlueMagicFlag2";
+            this.checkBoxBlueMagicFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicFlag2.TabIndex = 46;
+            this.checkBoxBlueMagicFlag2.Text = "???";
+            this.checkBoxBlueMagicFlag2.UseVisualStyleBackColor = true;
             // 
-            // numericUpDownMagicCactuarComp
+            // checkBoxBlueMagicFlag7
             // 
-            this.numericUpDownMagicCactuarComp.DecimalPlaces = 1;
-            this.numericUpDownMagicCactuarComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicCactuarComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicCactuarComp.Location = new System.Drawing.Point(158, 203);
-            this.numericUpDownMagicCactuarComp.Maximum = new decimal(new int[] {
-            20,
+            this.checkBoxBlueMagicFlag7.AutoSize = true;
+            this.checkBoxBlueMagicFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFlag7.Location = new System.Drawing.Point(210, 63);
+            this.checkBoxBlueMagicFlag7.Name = "checkBoxBlueMagicFlag7";
+            this.checkBoxBlueMagicFlag7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicFlag7.TabIndex = 51;
+            this.checkBoxBlueMagicFlag7.Text = "???";
+            this.checkBoxBlueMagicFlag7.UseVisualStyleBackColor = true;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox10.Controls.Add(this.numericUpDownBlueMagicStatusAttack);
+            this.groupBox10.Controls.Add(this.labelBlueMagicStatusAttack);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicZombie);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicReflect);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicShell);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicDarkness);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicRegen);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicSilence);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicHaste);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicStop);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicProtect);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicConfusion);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicDeath);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicPetrify);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicPoison);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicPetrifying);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicEject);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicSlow);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicDouble);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicBerserk);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicTriple);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicSleep);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicDefend);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicInvincible);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicVit0);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicCurse);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicDrain);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicDoom);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicAura);
+            this.groupBox10.Controls.Add(this.checkBoxBlueMagicFloat);
+            this.groupBox10.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox10.ForeColor = System.Drawing.Color.DarkViolet;
+            this.groupBox10.Location = new System.Drawing.Point(134, 241);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(444, 262);
+            this.groupBox10.TabIndex = 99;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Status Attack";
+            // 
+            // numericUpDownBlueMagicStatusAttack
+            // 
+            this.numericUpDownBlueMagicStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBlueMagicStatusAttack.Location = new System.Drawing.Point(199, 46);
+            this.numericUpDownBlueMagicStatusAttack.Maximum = new decimal(new int[] {
+            255,
             0,
             0,
             0});
-            this.numericUpDownMagicCactuarComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicCactuarComp.Name = "numericUpDownMagicCactuarComp";
-            this.numericUpDownMagicCactuarComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicCactuarComp.TabIndex = 3;
-            // 
-            // labelMagicCarbuncleComp
-            // 
-            this.labelMagicCarbuncleComp.AutoSize = true;
-            this.labelMagicCarbuncleComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicCarbuncleComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicCarbuncleComp.Location = new System.Drawing.Point(252, 78);
-            this.labelMagicCarbuncleComp.Name = "labelMagicCarbuncleComp";
-            this.labelMagicCarbuncleComp.Size = new System.Drawing.Size(68, 17);
-            this.labelMagicCarbuncleComp.TabIndex = 0;
-            this.labelMagicCarbuncleComp.Text = "Carbuncle";
-            // 
-            // numericUpDownMagicCerberusComp
-            // 
-            this.numericUpDownMagicCerberusComp.DecimalPlaces = 1;
-            this.numericUpDownMagicCerberusComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicCerberusComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicCerberusComp.Location = new System.Drawing.Point(158, 150);
-            this.numericUpDownMagicCerberusComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicCerberusComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicCerberusComp.Name = "numericUpDownMagicCerberusComp";
-            this.numericUpDownMagicCerberusComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicCerberusComp.TabIndex = 3;
-            // 
-            // numericUpDownMagicIfritComp
-            // 
-            this.numericUpDownMagicIfritComp.DecimalPlaces = 1;
-            this.numericUpDownMagicIfritComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicIfritComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicIfritComp.Location = new System.Drawing.Point(262, 47);
-            this.numericUpDownMagicIfritComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicIfritComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicIfritComp.Name = "numericUpDownMagicIfritComp";
-            this.numericUpDownMagicIfritComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicIfritComp.TabIndex = 3;
-            // 
-            // labelMagicCactuarComp
-            // 
-            this.labelMagicCactuarComp.AutoSize = true;
-            this.labelMagicCactuarComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicCactuarComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicCactuarComp.Location = new System.Drawing.Point(154, 183);
-            this.labelMagicCactuarComp.Name = "labelMagicCactuarComp";
-            this.labelMagicCactuarComp.Size = new System.Drawing.Size(54, 17);
-            this.labelMagicCactuarComp.TabIndex = 0;
-            this.labelMagicCactuarComp.Text = "Cactuar";
-            // 
-            // numericUpDownMagicDiablosComp
-            // 
-            this.numericUpDownMagicDiablosComp.DecimalPlaces = 1;
-            this.numericUpDownMagicDiablosComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicDiablosComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicDiablosComp.Location = new System.Drawing.Point(158, 98);
-            this.numericUpDownMagicDiablosComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicDiablosComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicDiablosComp.Name = "numericUpDownMagicDiablosComp";
-            this.numericUpDownMagicDiablosComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicDiablosComp.TabIndex = 3;
-            // 
-            // labelMagicCerberusComp
-            // 
-            this.labelMagicCerberusComp.AutoSize = true;
-            this.labelMagicCerberusComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicCerberusComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicCerberusComp.Location = new System.Drawing.Point(150, 130);
-            this.labelMagicCerberusComp.Name = "labelMagicCerberusComp";
-            this.labelMagicCerberusComp.Size = new System.Drawing.Size(62, 17);
-            this.labelMagicCerberusComp.TabIndex = 0;
-            this.labelMagicCerberusComp.Text = "Cerberus";
-            // 
-            // labelMagicIfritComp
-            // 
-            this.labelMagicIfritComp.AutoSize = true;
-            this.labelMagicIfritComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicIfritComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicIfritComp.Location = new System.Drawing.Point(271, 27);
-            this.labelMagicIfritComp.Name = "labelMagicIfritComp";
-            this.labelMagicIfritComp.Size = new System.Drawing.Size(29, 17);
-            this.labelMagicIfritComp.TabIndex = 0;
-            this.labelMagicIfritComp.Text = "Ifrit";
-            // 
-            // numericUpDownMagicBahamutComp
-            // 
-            this.numericUpDownMagicBahamutComp.DecimalPlaces = 1;
-            this.numericUpDownMagicBahamutComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicBahamutComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicBahamutComp.Location = new System.Drawing.Point(54, 203);
-            this.numericUpDownMagicBahamutComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicBahamutComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicBahamutComp.Name = "numericUpDownMagicBahamutComp";
-            this.numericUpDownMagicBahamutComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicBahamutComp.TabIndex = 3;
-            // 
-            // labelMagicDiablosComp
-            // 
-            this.labelMagicDiablosComp.AutoSize = true;
-            this.labelMagicDiablosComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicDiablosComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicDiablosComp.Location = new System.Drawing.Point(156, 78);
-            this.labelMagicDiablosComp.Name = "labelMagicDiablosComp";
-            this.labelMagicDiablosComp.Size = new System.Drawing.Size(52, 17);
-            this.labelMagicDiablosComp.TabIndex = 0;
-            this.labelMagicDiablosComp.Text = "Diablos";
-            // 
-            // numericUpDownMagicPandemonaComp
-            // 
-            this.numericUpDownMagicPandemonaComp.DecimalPlaces = 1;
-            this.numericUpDownMagicPandemonaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicPandemonaComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicPandemonaComp.Location = new System.Drawing.Point(54, 150);
-            this.numericUpDownMagicPandemonaComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicPandemonaComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicPandemonaComp.Name = "numericUpDownMagicPandemonaComp";
-            this.numericUpDownMagicPandemonaComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicPandemonaComp.TabIndex = 3;
-            // 
-            // numericUpDownMagicShivaComp
-            // 
-            this.numericUpDownMagicShivaComp.DecimalPlaces = 1;
-            this.numericUpDownMagicShivaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicShivaComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicShivaComp.Location = new System.Drawing.Point(158, 47);
-            this.numericUpDownMagicShivaComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicShivaComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicShivaComp.Name = "numericUpDownMagicShivaComp";
-            this.numericUpDownMagicShivaComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicShivaComp.TabIndex = 3;
-            // 
-            // labelMagicBahamutComp
-            // 
-            this.labelMagicBahamutComp.AutoSize = true;
-            this.labelMagicBahamutComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicBahamutComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicBahamutComp.Location = new System.Drawing.Point(46, 183);
-            this.labelMagicBahamutComp.Name = "labelMagicBahamutComp";
-            this.labelMagicBahamutComp.Size = new System.Drawing.Size(63, 17);
-            this.labelMagicBahamutComp.TabIndex = 0;
-            this.labelMagicBahamutComp.Text = "Bahamut";
-            // 
-            // numericUpDownMagicBrothersComp
-            // 
-            this.numericUpDownMagicBrothersComp.DecimalPlaces = 1;
-            this.numericUpDownMagicBrothersComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicBrothersComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicBrothersComp.Location = new System.Drawing.Point(54, 98);
-            this.numericUpDownMagicBrothersComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicBrothersComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicBrothersComp.Name = "numericUpDownMagicBrothersComp";
-            this.numericUpDownMagicBrothersComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicBrothersComp.TabIndex = 3;
-            // 
-            // labelMagicPandemonaComp
-            // 
-            this.labelMagicPandemonaComp.AutoSize = true;
-            this.labelMagicPandemonaComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicPandemonaComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicPandemonaComp.Location = new System.Drawing.Point(37, 130);
-            this.labelMagicPandemonaComp.Name = "labelMagicPandemonaComp";
-            this.labelMagicPandemonaComp.Size = new System.Drawing.Size(81, 17);
-            this.labelMagicPandemonaComp.TabIndex = 0;
-            this.labelMagicPandemonaComp.Text = "Pandemona";
-            // 
-            // labelMagicShivaComp
-            // 
-            this.labelMagicShivaComp.AutoSize = true;
-            this.labelMagicShivaComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicShivaComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicShivaComp.Location = new System.Drawing.Point(161, 27);
-            this.labelMagicShivaComp.Name = "labelMagicShivaComp";
-            this.labelMagicShivaComp.Size = new System.Drawing.Size(40, 17);
-            this.labelMagicShivaComp.TabIndex = 0;
-            this.labelMagicShivaComp.Text = "Shiva";
-            // 
-            // labelMagicBrothersComp
-            // 
-            this.labelMagicBrothersComp.AutoSize = true;
-            this.labelMagicBrothersComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicBrothersComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicBrothersComp.Location = new System.Drawing.Point(47, 78);
-            this.labelMagicBrothersComp.Name = "labelMagicBrothersComp";
-            this.labelMagicBrothersComp.Size = new System.Drawing.Size(60, 17);
-            this.labelMagicBrothersComp.TabIndex = 0;
-            this.labelMagicBrothersComp.Text = "Brothers";
-            // 
-            // numericUpDownMagicQuezacoltComp
-            // 
-            this.numericUpDownMagicQuezacoltComp.DecimalPlaces = 1;
-            this.numericUpDownMagicQuezacoltComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicQuezacoltComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownMagicQuezacoltComp.Location = new System.Drawing.Point(54, 47);
-            this.numericUpDownMagicQuezacoltComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownMagicQuezacoltComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMagicQuezacoltComp.Name = "numericUpDownMagicQuezacoltComp";
-            this.numericUpDownMagicQuezacoltComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicQuezacoltComp.TabIndex = 3;
-            // 
-            // labelMagicQuezacoltComp
-            // 
-            this.labelMagicQuezacoltComp.AutoSize = true;
-            this.labelMagicQuezacoltComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMagicQuezacoltComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicQuezacoltComp.Location = new System.Drawing.Point(42, 27);
-            this.labelMagicQuezacoltComp.Name = "labelMagicQuezacoltComp";
-            this.labelMagicQuezacoltComp.Size = new System.Drawing.Size(68, 17);
-            this.labelMagicQuezacoltComp.TabIndex = 0;
-            this.labelMagicQuezacoltComp.Text = "Quezacotl";
-            this.toolTip1.SetToolTip(this.labelMagicQuezacoltComp, "Modifies compatibility with this GF when the magic is used");
-            // 
-            // groupBoxMagicFlags
-            // 
-            this.groupBoxMagicFlags.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicBreakDamageLimit);
-            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag8);
-            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag3);
-            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag6);
-            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag1);
-            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag5);
-            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag2);
-            this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag7);
-            this.groupBoxMagicFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxMagicFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxMagicFlags.Location = new System.Drawing.Point(0, 480);
-            this.groupBoxMagicFlags.Name = "groupBoxMagicFlags";
-            this.groupBoxMagicFlags.Size = new System.Drawing.Size(466, 226);
-            this.groupBoxMagicFlags.TabIndex = 2;
-            this.groupBoxMagicFlags.TabStop = false;
-            this.groupBoxMagicFlags.Text = "Flags";
-            // 
-            // tabPageGFComp
-            // 
-            this.tabPageGFComp.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageGFComp.Controls.Add(this.groupBoxGFCompatibility);
-            this.tabPageGFComp.Location = new System.Drawing.Point(4, 26);
-            this.tabPageGFComp.Name = "tabPageGFComp";
-            this.tabPageGFComp.Size = new System.Drawing.Size(469, 706);
-            this.tabPageGFComp.TabIndex = 2;
-            this.tabPageGFComp.Text = "GFs Compatibility";
-            // 
-            // groupBoxGFCompatibility
-            // 
-            this.groupBoxGFCompatibility.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFEdenComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFEdenComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFDoomtrainComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFDoomtrainComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFLeviathanComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFTonberryComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFLeviathanComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFAlexanderComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFSirenComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFTonberryComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFCarbuncleComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFAlexanderComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFSirenComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFCactuarComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFCarbuncleComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFCerberusComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFIfritComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFCactuarComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFDiablosComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFCerberusComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFIfritComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFBahamutComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFDiablosComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFPandemonaComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFShivaComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFBahamutComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFBrothersComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFPandemonaComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFShivaComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFBrothersComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.numericUpDownGFQuezacoltComp);
-            this.groupBoxGFCompatibility.Controls.Add(this.labelGFQuezacoltComp);
-            this.groupBoxGFCompatibility.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxGFCompatibility.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.groupBoxGFCompatibility.Location = new System.Drawing.Point(0, 6);
-            this.groupBoxGFCompatibility.Name = "groupBoxGFCompatibility";
-            this.groupBoxGFCompatibility.Size = new System.Drawing.Size(466, 236);
-            this.groupBoxGFCompatibility.TabIndex = 7;
-            this.groupBoxGFCompatibility.TabStop = false;
-            this.groupBoxGFCompatibility.Text = "GFs Compatibility";
-            // 
-            // numericUpDownGFEdenComp
-            // 
-            this.numericUpDownGFEdenComp.DecimalPlaces = 1;
-            this.numericUpDownGFEdenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFEdenComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFEdenComp.Location = new System.Drawing.Point(366, 203);
-            this.numericUpDownGFEdenComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFEdenComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFEdenComp.Name = "numericUpDownGFEdenComp";
-            this.numericUpDownGFEdenComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFEdenComp.TabIndex = 3;
-            // 
-            // labelGFEdenComp
-            // 
-            this.labelGFEdenComp.AutoSize = true;
-            this.labelGFEdenComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFEdenComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFEdenComp.Location = new System.Drawing.Point(370, 183);
-            this.labelGFEdenComp.Name = "labelGFEdenComp";
-            this.labelGFEdenComp.Size = new System.Drawing.Size(38, 17);
-            this.labelGFEdenComp.TabIndex = 0;
-            this.labelGFEdenComp.Text = "Eden";
-            // 
-            // numericUpDownGFDoomtrainComp
-            // 
-            this.numericUpDownGFDoomtrainComp.DecimalPlaces = 1;
-            this.numericUpDownGFDoomtrainComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFDoomtrainComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFDoomtrainComp.Location = new System.Drawing.Point(366, 150);
-            this.numericUpDownGFDoomtrainComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFDoomtrainComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFDoomtrainComp.Name = "numericUpDownGFDoomtrainComp";
-            this.numericUpDownGFDoomtrainComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFDoomtrainComp.TabIndex = 3;
-            // 
-            // labelGFDoomtrainComp
-            // 
-            this.labelGFDoomtrainComp.AutoSize = true;
-            this.labelGFDoomtrainComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFDoomtrainComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFDoomtrainComp.Location = new System.Drawing.Point(354, 130);
-            this.labelGFDoomtrainComp.Name = "labelGFDoomtrainComp";
-            this.labelGFDoomtrainComp.Size = new System.Drawing.Size(73, 17);
-            this.labelGFDoomtrainComp.TabIndex = 0;
-            this.labelGFDoomtrainComp.Text = "Doomtrain";
-            // 
-            // numericUpDownGFLeviathanComp
-            // 
-            this.numericUpDownGFLeviathanComp.DecimalPlaces = 1;
-            this.numericUpDownGFLeviathanComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFLeviathanComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFLeviathanComp.Location = new System.Drawing.Point(366, 98);
-            this.numericUpDownGFLeviathanComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFLeviathanComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFLeviathanComp.Name = "numericUpDownGFLeviathanComp";
-            this.numericUpDownGFLeviathanComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFLeviathanComp.TabIndex = 3;
-            // 
-            // numericUpDownGFTonberryComp
-            // 
-            this.numericUpDownGFTonberryComp.DecimalPlaces = 1;
-            this.numericUpDownGFTonberryComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFTonberryComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFTonberryComp.Location = new System.Drawing.Point(262, 203);
-            this.numericUpDownGFTonberryComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFTonberryComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFTonberryComp.Name = "numericUpDownGFTonberryComp";
-            this.numericUpDownGFTonberryComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFTonberryComp.TabIndex = 3;
-            // 
-            // labelGFLeviathanComp
-            // 
-            this.labelGFLeviathanComp.AutoSize = true;
-            this.labelGFLeviathanComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFLeviathanComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFLeviathanComp.Location = new System.Drawing.Point(356, 78);
-            this.labelGFLeviathanComp.Name = "labelGFLeviathanComp";
-            this.labelGFLeviathanComp.Size = new System.Drawing.Size(66, 17);
-            this.labelGFLeviathanComp.TabIndex = 0;
-            this.labelGFLeviathanComp.Text = "Leviathan";
-            // 
-            // numericUpDownGFAlexanderComp
-            // 
-            this.numericUpDownGFAlexanderComp.DecimalPlaces = 1;
-            this.numericUpDownGFAlexanderComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFAlexanderComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFAlexanderComp.Location = new System.Drawing.Point(262, 150);
-            this.numericUpDownGFAlexanderComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFAlexanderComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFAlexanderComp.Name = "numericUpDownGFAlexanderComp";
-            this.numericUpDownGFAlexanderComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFAlexanderComp.TabIndex = 3;
-            // 
-            // numericUpDownGFSirenComp
-            // 
-            this.numericUpDownGFSirenComp.DecimalPlaces = 1;
-            this.numericUpDownGFSirenComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFSirenComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFSirenComp.Location = new System.Drawing.Point(366, 47);
-            this.numericUpDownGFSirenComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFSirenComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFSirenComp.Name = "numericUpDownGFSirenComp";
-            this.numericUpDownGFSirenComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFSirenComp.TabIndex = 3;
-            // 
-            // labelGFTonberryComp
-            // 
-            this.labelGFTonberryComp.AutoSize = true;
-            this.labelGFTonberryComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFTonberryComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFTonberryComp.Location = new System.Drawing.Point(254, 183);
-            this.labelGFTonberryComp.Name = "labelGFTonberryComp";
-            this.labelGFTonberryComp.Size = new System.Drawing.Size(63, 17);
-            this.labelGFTonberryComp.TabIndex = 0;
-            this.labelGFTonberryComp.Text = "Tonberry";
-            // 
-            // numericUpDownGFCarbuncleComp
-            // 
-            this.numericUpDownGFCarbuncleComp.DecimalPlaces = 1;
-            this.numericUpDownGFCarbuncleComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFCarbuncleComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFCarbuncleComp.Location = new System.Drawing.Point(262, 98);
-            this.numericUpDownGFCarbuncleComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFCarbuncleComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFCarbuncleComp.Name = "numericUpDownGFCarbuncleComp";
-            this.numericUpDownGFCarbuncleComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFCarbuncleComp.TabIndex = 3;
-            // 
-            // labelGFAlexanderComp
-            // 
-            this.labelGFAlexanderComp.AutoSize = true;
-            this.labelGFAlexanderComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAlexanderComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAlexanderComp.Location = new System.Drawing.Point(251, 130);
-            this.labelGFAlexanderComp.Name = "labelGFAlexanderComp";
-            this.labelGFAlexanderComp.Size = new System.Drawing.Size(69, 17);
-            this.labelGFAlexanderComp.TabIndex = 0;
-            this.labelGFAlexanderComp.Text = "Alexander";
-            // 
-            // labelGFSirenComp
-            // 
-            this.labelGFSirenComp.AutoSize = true;
-            this.labelGFSirenComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFSirenComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFSirenComp.Location = new System.Drawing.Point(370, 27);
-            this.labelGFSirenComp.Name = "labelGFSirenComp";
-            this.labelGFSirenComp.Size = new System.Drawing.Size(38, 17);
-            this.labelGFSirenComp.TabIndex = 0;
-            this.labelGFSirenComp.Text = "Siren";
-            // 
-            // numericUpDownGFCactuarComp
-            // 
-            this.numericUpDownGFCactuarComp.DecimalPlaces = 1;
-            this.numericUpDownGFCactuarComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFCactuarComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFCactuarComp.Location = new System.Drawing.Point(158, 203);
-            this.numericUpDownGFCactuarComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFCactuarComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFCactuarComp.Name = "numericUpDownGFCactuarComp";
-            this.numericUpDownGFCactuarComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFCactuarComp.TabIndex = 3;
-            // 
-            // labelGFCarbuncleComp
-            // 
-            this.labelGFCarbuncleComp.AutoSize = true;
-            this.labelGFCarbuncleComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFCarbuncleComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFCarbuncleComp.Location = new System.Drawing.Point(252, 78);
-            this.labelGFCarbuncleComp.Name = "labelGFCarbuncleComp";
-            this.labelGFCarbuncleComp.Size = new System.Drawing.Size(68, 17);
-            this.labelGFCarbuncleComp.TabIndex = 0;
-            this.labelGFCarbuncleComp.Text = "Carbuncle";
-            // 
-            // numericUpDownGFCerberusComp
-            // 
-            this.numericUpDownGFCerberusComp.DecimalPlaces = 1;
-            this.numericUpDownGFCerberusComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFCerberusComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFCerberusComp.Location = new System.Drawing.Point(158, 150);
-            this.numericUpDownGFCerberusComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFCerberusComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFCerberusComp.Name = "numericUpDownGFCerberusComp";
-            this.numericUpDownGFCerberusComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFCerberusComp.TabIndex = 3;
-            // 
-            // numericUpDownGFIfritComp
-            // 
-            this.numericUpDownGFIfritComp.DecimalPlaces = 1;
-            this.numericUpDownGFIfritComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFIfritComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFIfritComp.Location = new System.Drawing.Point(262, 47);
-            this.numericUpDownGFIfritComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFIfritComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFIfritComp.Name = "numericUpDownGFIfritComp";
-            this.numericUpDownGFIfritComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFIfritComp.TabIndex = 3;
-            // 
-            // labelGFCactuarComp
-            // 
-            this.labelGFCactuarComp.AutoSize = true;
-            this.labelGFCactuarComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFCactuarComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFCactuarComp.Location = new System.Drawing.Point(154, 183);
-            this.labelGFCactuarComp.Name = "labelGFCactuarComp";
-            this.labelGFCactuarComp.Size = new System.Drawing.Size(54, 17);
-            this.labelGFCactuarComp.TabIndex = 0;
-            this.labelGFCactuarComp.Text = "Cactuar";
-            // 
-            // numericUpDownGFDiablosComp
-            // 
-            this.numericUpDownGFDiablosComp.DecimalPlaces = 1;
-            this.numericUpDownGFDiablosComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFDiablosComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFDiablosComp.Location = new System.Drawing.Point(158, 98);
-            this.numericUpDownGFDiablosComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFDiablosComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFDiablosComp.Name = "numericUpDownGFDiablosComp";
-            this.numericUpDownGFDiablosComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFDiablosComp.TabIndex = 3;
-            // 
-            // labelGFCerberusComp
-            // 
-            this.labelGFCerberusComp.AutoSize = true;
-            this.labelGFCerberusComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFCerberusComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFCerberusComp.Location = new System.Drawing.Point(150, 130);
-            this.labelGFCerberusComp.Name = "labelGFCerberusComp";
-            this.labelGFCerberusComp.Size = new System.Drawing.Size(62, 17);
-            this.labelGFCerberusComp.TabIndex = 0;
-            this.labelGFCerberusComp.Text = "Cerberus";
-            // 
-            // labelGFIfritComp
-            // 
-            this.labelGFIfritComp.AutoSize = true;
-            this.labelGFIfritComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFIfritComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFIfritComp.Location = new System.Drawing.Point(271, 27);
-            this.labelGFIfritComp.Name = "labelGFIfritComp";
-            this.labelGFIfritComp.Size = new System.Drawing.Size(29, 17);
-            this.labelGFIfritComp.TabIndex = 0;
-            this.labelGFIfritComp.Text = "Ifrit";
-            // 
-            // numericUpDownGFBahamutComp
-            // 
-            this.numericUpDownGFBahamutComp.DecimalPlaces = 1;
-            this.numericUpDownGFBahamutComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFBahamutComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFBahamutComp.Location = new System.Drawing.Point(54, 203);
-            this.numericUpDownGFBahamutComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFBahamutComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFBahamutComp.Name = "numericUpDownGFBahamutComp";
-            this.numericUpDownGFBahamutComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFBahamutComp.TabIndex = 3;
-            // 
-            // labelGFDiablosComp
-            // 
-            this.labelGFDiablosComp.AutoSize = true;
-            this.labelGFDiablosComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFDiablosComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFDiablosComp.Location = new System.Drawing.Point(156, 78);
-            this.labelGFDiablosComp.Name = "labelGFDiablosComp";
-            this.labelGFDiablosComp.Size = new System.Drawing.Size(52, 17);
-            this.labelGFDiablosComp.TabIndex = 0;
-            this.labelGFDiablosComp.Text = "Diablos";
-            // 
-            // numericUpDownGFPandemonaComp
-            // 
-            this.numericUpDownGFPandemonaComp.DecimalPlaces = 1;
-            this.numericUpDownGFPandemonaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFPandemonaComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFPandemonaComp.Location = new System.Drawing.Point(54, 150);
-            this.numericUpDownGFPandemonaComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFPandemonaComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFPandemonaComp.Name = "numericUpDownGFPandemonaComp";
-            this.numericUpDownGFPandemonaComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFPandemonaComp.TabIndex = 3;
-            // 
-            // numericUpDownGFShivaComp
-            // 
-            this.numericUpDownGFShivaComp.DecimalPlaces = 1;
-            this.numericUpDownGFShivaComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFShivaComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFShivaComp.Location = new System.Drawing.Point(158, 47);
-            this.numericUpDownGFShivaComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFShivaComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFShivaComp.Name = "numericUpDownGFShivaComp";
-            this.numericUpDownGFShivaComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFShivaComp.TabIndex = 3;
-            // 
-            // labelGFBahamutComp
-            // 
-            this.labelGFBahamutComp.AutoSize = true;
-            this.labelGFBahamutComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFBahamutComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFBahamutComp.Location = new System.Drawing.Point(46, 183);
-            this.labelGFBahamutComp.Name = "labelGFBahamutComp";
-            this.labelGFBahamutComp.Size = new System.Drawing.Size(63, 17);
-            this.labelGFBahamutComp.TabIndex = 0;
-            this.labelGFBahamutComp.Text = "Bahamut";
-            // 
-            // numericUpDownGFBrothersComp
-            // 
-            this.numericUpDownGFBrothersComp.DecimalPlaces = 1;
-            this.numericUpDownGFBrothersComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFBrothersComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFBrothersComp.Location = new System.Drawing.Point(54, 98);
-            this.numericUpDownGFBrothersComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFBrothersComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFBrothersComp.Name = "numericUpDownGFBrothersComp";
-            this.numericUpDownGFBrothersComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFBrothersComp.TabIndex = 3;
-            // 
-            // labelGFPandemonaComp
-            // 
-            this.labelGFPandemonaComp.AutoSize = true;
-            this.labelGFPandemonaComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFPandemonaComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFPandemonaComp.Location = new System.Drawing.Point(37, 130);
-            this.labelGFPandemonaComp.Name = "labelGFPandemonaComp";
-            this.labelGFPandemonaComp.Size = new System.Drawing.Size(81, 17);
-            this.labelGFPandemonaComp.TabIndex = 0;
-            this.labelGFPandemonaComp.Text = "Pandemona";
-            // 
-            // labelGFShivaComp
-            // 
-            this.labelGFShivaComp.AutoSize = true;
-            this.labelGFShivaComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFShivaComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFShivaComp.Location = new System.Drawing.Point(161, 27);
-            this.labelGFShivaComp.Name = "labelGFShivaComp";
-            this.labelGFShivaComp.Size = new System.Drawing.Size(40, 17);
-            this.labelGFShivaComp.TabIndex = 0;
-            this.labelGFShivaComp.Text = "Shiva";
-            // 
-            // labelGFBrothersComp
-            // 
-            this.labelGFBrothersComp.AutoSize = true;
-            this.labelGFBrothersComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFBrothersComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFBrothersComp.Location = new System.Drawing.Point(47, 78);
-            this.labelGFBrothersComp.Name = "labelGFBrothersComp";
-            this.labelGFBrothersComp.Size = new System.Drawing.Size(60, 17);
-            this.labelGFBrothersComp.TabIndex = 0;
-            this.labelGFBrothersComp.Text = "Brothers";
-            // 
-            // numericUpDownGFQuezacoltComp
-            // 
-            this.numericUpDownGFQuezacoltComp.DecimalPlaces = 1;
-            this.numericUpDownGFQuezacoltComp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFQuezacoltComp.Increment = new decimal(new int[] {
-            2,
-            0,
-            0,
-            65536});
-            this.numericUpDownGFQuezacoltComp.Location = new System.Drawing.Point(54, 47);
-            this.numericUpDownGFQuezacoltComp.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.numericUpDownGFQuezacoltComp.Minimum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGFQuezacoltComp.Name = "numericUpDownGFQuezacoltComp";
-            this.numericUpDownGFQuezacoltComp.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownGFQuezacoltComp.TabIndex = 3;
-            // 
-            // labelGFQuezacoltComp
-            // 
-            this.labelGFQuezacoltComp.AutoSize = true;
-            this.labelGFQuezacoltComp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFQuezacoltComp.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFQuezacoltComp.Location = new System.Drawing.Point(42, 27);
-            this.labelGFQuezacoltComp.Name = "labelGFQuezacoltComp";
-            this.labelGFQuezacoltComp.Size = new System.Drawing.Size(68, 17);
-            this.labelGFQuezacoltComp.TabIndex = 0;
-            this.labelGFQuezacoltComp.Text = "Quezacotl";
-            this.toolTip1.SetToolTip(this.labelGFQuezacoltComp, "Modifies compatibility with this GF when the magic is used");
-            // 
-            // groupBoxGFFlags
-            // 
-            this.groupBoxGFFlags.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlagBreakDamageLimit);
-            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag8);
-            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag3);
-            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag6);
-            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlagShelled);
-            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlagReflected);
-            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag2);
-            this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag7);
-            this.groupBoxGFFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxGFFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxGFFlags.Location = new System.Drawing.Point(0, 480);
-            this.groupBoxGFFlags.Name = "groupBoxGFFlags";
-            this.groupBoxGFFlags.Size = new System.Drawing.Size(466, 226);
-            this.groupBoxGFFlags.TabIndex = 6;
-            this.groupBoxGFFlags.TabStop = false;
-            this.groupBoxGFFlags.Text = "Flags";
-            // 
-            // checkBoxGFFlagBreakDamageLimit
-            // 
-            this.checkBoxGFFlagBreakDamageLimit.AutoSize = true;
-            this.checkBoxGFFlagBreakDamageLimit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFFlagBreakDamageLimit.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFFlagBreakDamageLimit.Location = new System.Drawing.Point(306, 38);
-            this.checkBoxGFFlagBreakDamageLimit.Name = "checkBoxGFFlagBreakDamageLimit";
-            this.checkBoxGFFlagBreakDamageLimit.Size = new System.Drawing.Size(132, 19);
-            this.checkBoxGFFlagBreakDamageLimit.TabIndex = 48;
-            this.checkBoxGFFlagBreakDamageLimit.Text = "Break Damage Limit";
-            this.checkBoxGFFlagBreakDamageLimit.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFFlag8
-            // 
-            this.checkBoxGFFlag8.AutoSize = true;
-            this.checkBoxGFFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFFlag8.Location = new System.Drawing.Point(306, 63);
-            this.checkBoxGFFlag8.Name = "checkBoxGFFlag8";
-            this.checkBoxGFFlag8.Size = new System.Drawing.Size(65, 19);
-            this.checkBoxGFFlag8.TabIndex = 52;
-            this.checkBoxGFFlag8.Text = "Revive?";
-            this.checkBoxGFFlag8.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFFlag3
-            // 
-            this.checkBoxGFFlag3.AutoSize = true;
-            this.checkBoxGFFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFFlag3.Location = new System.Drawing.Point(221, 38);
-            this.checkBoxGFFlag3.Name = "checkBoxGFFlag3";
-            this.checkBoxGFFlag3.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxGFFlag3.TabIndex = 47;
-            this.checkBoxGFFlag3.Text = "???";
-            this.checkBoxGFFlag3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFFlag6
-            // 
-            this.checkBoxGFFlag6.AutoSize = true;
-            this.checkBoxGFFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFFlag6.Location = new System.Drawing.Point(136, 63);
-            this.checkBoxGFFlag6.Name = "checkBoxGFFlag6";
-            this.checkBoxGFFlag6.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxGFFlag6.TabIndex = 50;
-            this.checkBoxGFFlag6.Text = "???";
-            this.checkBoxGFFlag6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFFlagShelled
-            // 
-            this.checkBoxGFFlagShelled.AutoSize = true;
-            this.checkBoxGFFlagShelled.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFFlagShelled.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFFlagShelled.Location = new System.Drawing.Point(28, 38);
-            this.checkBoxGFFlagShelled.Name = "checkBoxGFFlagShelled";
-            this.checkBoxGFFlagShelled.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxGFFlagShelled.TabIndex = 45;
-            this.checkBoxGFFlagShelled.Text = "Shelled";
-            this.checkBoxGFFlagShelled.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFFlagReflected
-            // 
-            this.checkBoxGFFlagReflected.AutoSize = true;
-            this.checkBoxGFFlagReflected.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFFlagReflected.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFFlagReflected.Location = new System.Drawing.Point(28, 63);
-            this.checkBoxGFFlagReflected.Name = "checkBoxGFFlagReflected";
-            this.checkBoxGFFlagReflected.Size = new System.Drawing.Size(75, 19);
-            this.checkBoxGFFlagReflected.TabIndex = 49;
-            this.checkBoxGFFlagReflected.Text = "Reflected";
-            this.checkBoxGFFlagReflected.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFFlag2
-            // 
-            this.checkBoxGFFlag2.AutoSize = true;
-            this.checkBoxGFFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFFlag2.Location = new System.Drawing.Point(136, 38);
-            this.checkBoxGFFlag2.Name = "checkBoxGFFlag2";
-            this.checkBoxGFFlag2.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxGFFlag2.TabIndex = 46;
-            this.checkBoxGFFlag2.Text = "???";
-            this.checkBoxGFFlag2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFFlag7
-            // 
-            this.checkBoxGFFlag7.AutoSize = true;
-            this.checkBoxGFFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFFlag7.Location = new System.Drawing.Point(221, 63);
-            this.checkBoxGFFlag7.Name = "checkBoxGFFlag7";
-            this.checkBoxGFFlag7.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxGFFlag7.TabIndex = 51;
-            this.checkBoxGFFlag7.Text = "???";
-            this.checkBoxGFFlag7.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxGFAttacksFlags
-            // 
-            this.groupBoxGFAttacksFlags.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlagBreakDamageLimit);
-            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlag8);
-            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlag3);
-            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlag6);
-            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlagShelled);
-            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlagReflected);
-            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlag2);
-            this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlag7);
-            this.groupBoxGFAttacksFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxGFAttacksFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxGFAttacksFlags.Location = new System.Drawing.Point(126, 471);
-            this.groupBoxGFAttacksFlags.Name = "groupBoxGFAttacksFlags";
-            this.groupBoxGFAttacksFlags.Size = new System.Drawing.Size(455, 226);
-            this.groupBoxGFAttacksFlags.TabIndex = 7;
-            this.groupBoxGFAttacksFlags.TabStop = false;
-            this.groupBoxGFAttacksFlags.Text = "Flags";
-            // 
-            // checkBoxGFAttacksFlagBreakDamageLimit
-            // 
-            this.checkBoxGFAttacksFlagBreakDamageLimit.AutoSize = true;
-            this.checkBoxGFAttacksFlagBreakDamageLimit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFAttacksFlagBreakDamageLimit.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFAttacksFlagBreakDamageLimit.Location = new System.Drawing.Point(300, 38);
-            this.checkBoxGFAttacksFlagBreakDamageLimit.Name = "checkBoxGFAttacksFlagBreakDamageLimit";
-            this.checkBoxGFAttacksFlagBreakDamageLimit.Size = new System.Drawing.Size(132, 19);
-            this.checkBoxGFAttacksFlagBreakDamageLimit.TabIndex = 48;
-            this.checkBoxGFAttacksFlagBreakDamageLimit.Text = "Break Damage Limit";
-            this.checkBoxGFAttacksFlagBreakDamageLimit.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFAttacksFlag8
-            // 
-            this.checkBoxGFAttacksFlag8.AutoSize = true;
-            this.checkBoxGFAttacksFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFAttacksFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFAttacksFlag8.Location = new System.Drawing.Point(300, 63);
-            this.checkBoxGFAttacksFlag8.Name = "checkBoxGFAttacksFlag8";
-            this.checkBoxGFAttacksFlag8.Size = new System.Drawing.Size(65, 19);
-            this.checkBoxGFAttacksFlag8.TabIndex = 52;
-            this.checkBoxGFAttacksFlag8.Text = "Revive?";
-            this.checkBoxGFAttacksFlag8.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFAttacksFlag3
-            // 
-            this.checkBoxGFAttacksFlag3.AutoSize = true;
-            this.checkBoxGFAttacksFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFAttacksFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFAttacksFlag3.Location = new System.Drawing.Point(215, 38);
-            this.checkBoxGFAttacksFlag3.Name = "checkBoxGFAttacksFlag3";
-            this.checkBoxGFAttacksFlag3.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxGFAttacksFlag3.TabIndex = 47;
-            this.checkBoxGFAttacksFlag3.Text = "???";
-            this.checkBoxGFAttacksFlag3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFAttacksFlag6
-            // 
-            this.checkBoxGFAttacksFlag6.AutoSize = true;
-            this.checkBoxGFAttacksFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFAttacksFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFAttacksFlag6.Location = new System.Drawing.Point(130, 63);
-            this.checkBoxGFAttacksFlag6.Name = "checkBoxGFAttacksFlag6";
-            this.checkBoxGFAttacksFlag6.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxGFAttacksFlag6.TabIndex = 50;
-            this.checkBoxGFAttacksFlag6.Text = "???";
-            this.checkBoxGFAttacksFlag6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFAttacksFlagShelled
-            // 
-            this.checkBoxGFAttacksFlagShelled.AutoSize = true;
-            this.checkBoxGFAttacksFlagShelled.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFAttacksFlagShelled.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFAttacksFlagShelled.Location = new System.Drawing.Point(22, 38);
-            this.checkBoxGFAttacksFlagShelled.Name = "checkBoxGFAttacksFlagShelled";
-            this.checkBoxGFAttacksFlagShelled.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxGFAttacksFlagShelled.TabIndex = 45;
-            this.checkBoxGFAttacksFlagShelled.Text = "Shelled";
-            this.checkBoxGFAttacksFlagShelled.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFAttacksFlagReflected
-            // 
-            this.checkBoxGFAttacksFlagReflected.AutoSize = true;
-            this.checkBoxGFAttacksFlagReflected.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFAttacksFlagReflected.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFAttacksFlagReflected.Location = new System.Drawing.Point(22, 63);
-            this.checkBoxGFAttacksFlagReflected.Name = "checkBoxGFAttacksFlagReflected";
-            this.checkBoxGFAttacksFlagReflected.Size = new System.Drawing.Size(75, 19);
-            this.checkBoxGFAttacksFlagReflected.TabIndex = 49;
-            this.checkBoxGFAttacksFlagReflected.Text = "Reflected";
-            this.checkBoxGFAttacksFlagReflected.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFAttacksFlag2
-            // 
-            this.checkBoxGFAttacksFlag2.AutoSize = true;
-            this.checkBoxGFAttacksFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFAttacksFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFAttacksFlag2.Location = new System.Drawing.Point(130, 38);
-            this.checkBoxGFAttacksFlag2.Name = "checkBoxGFAttacksFlag2";
-            this.checkBoxGFAttacksFlag2.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxGFAttacksFlag2.TabIndex = 46;
-            this.checkBoxGFAttacksFlag2.Text = "???";
-            this.checkBoxGFAttacksFlag2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxGFAttacksFlag7
-            // 
-            this.checkBoxGFAttacksFlag7.AutoSize = true;
-            this.checkBoxGFAttacksFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFAttacksFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFAttacksFlag7.Location = new System.Drawing.Point(215, 63);
-            this.checkBoxGFAttacksFlag7.Name = "checkBoxGFAttacksFlag7";
-            this.checkBoxGFAttacksFlag7.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxGFAttacksFlag7.TabIndex = 51;
-            this.checkBoxGFAttacksFlag7.Text = "???";
-            this.checkBoxGFAttacksFlag7.UseVisualStyleBackColor = true;
+            this.numericUpDownBlueMagicStatusAttack.Name = "numericUpDownBlueMagicStatusAttack";
+            this.numericUpDownBlueMagicStatusAttack.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBlueMagicStatusAttack.TabIndex = 91;
+            // 
+            // labelBlueMagicStatusAttack
+            // 
+            this.labelBlueMagicStatusAttack.AutoSize = true;
+            this.labelBlueMagicStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicStatusAttack.Location = new System.Drawing.Point(178, 26);
+            this.labelBlueMagicStatusAttack.Name = "labelBlueMagicStatusAttack";
+            this.labelBlueMagicStatusAttack.Size = new System.Drawing.Size(89, 17);
+            this.labelBlueMagicStatusAttack.TabIndex = 90;
+            this.labelBlueMagicStatusAttack.Text = "Status Attack";
+            // 
+            // checkBoxBlueMagicZombie
+            // 
+            this.checkBoxBlueMagicZombie.AutoSize = true;
+            this.checkBoxBlueMagicZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicZombie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicZombie.Location = new System.Drawing.Point(239, 186);
+            this.checkBoxBlueMagicZombie.Name = "checkBoxBlueMagicZombie";
+            this.checkBoxBlueMagicZombie.Size = new System.Drawing.Size(67, 19);
+            this.checkBoxBlueMagicZombie.TabIndex = 34;
+            this.checkBoxBlueMagicZombie.Text = "Zombie";
+            this.checkBoxBlueMagicZombie.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicReflect
+            // 
+            this.checkBoxBlueMagicReflect.AutoSize = true;
+            this.checkBoxBlueMagicReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicReflect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicReflect.Location = new System.Drawing.Point(158, 111);
+            this.checkBoxBlueMagicReflect.Name = "checkBoxBlueMagicReflect";
+            this.checkBoxBlueMagicReflect.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxBlueMagicReflect.TabIndex = 15;
+            this.checkBoxBlueMagicReflect.Text = "Reflect";
+            this.checkBoxBlueMagicReflect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicShell
+            // 
+            this.checkBoxBlueMagicShell.AutoSize = true;
+            this.checkBoxBlueMagicShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicShell.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicShell.Location = new System.Drawing.Point(90, 111);
+            this.checkBoxBlueMagicShell.Name = "checkBoxBlueMagicShell";
+            this.checkBoxBlueMagicShell.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBlueMagicShell.TabIndex = 14;
+            this.checkBoxBlueMagicShell.Text = "Shell";
+            this.checkBoxBlueMagicShell.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicDarkness
+            // 
+            this.checkBoxBlueMagicDarkness.AutoSize = true;
+            this.checkBoxBlueMagicDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicDarkness.Location = new System.Drawing.Point(8, 186);
+            this.checkBoxBlueMagicDarkness.Name = "checkBoxBlueMagicDarkness";
+            this.checkBoxBlueMagicDarkness.Size = new System.Drawing.Size(73, 19);
+            this.checkBoxBlueMagicDarkness.TabIndex = 31;
+            this.checkBoxBlueMagicDarkness.Text = "Darkness";
+            this.checkBoxBlueMagicDarkness.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicRegen
+            // 
+            this.checkBoxBlueMagicRegen.AutoSize = true;
+            this.checkBoxBlueMagicRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicRegen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicRegen.Location = new System.Drawing.Point(309, 86);
+            this.checkBoxBlueMagicRegen.Name = "checkBoxBlueMagicRegen";
+            this.checkBoxBlueMagicRegen.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxBlueMagicRegen.TabIndex = 11;
+            this.checkBoxBlueMagicRegen.Text = "Regen";
+            this.checkBoxBlueMagicRegen.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicSilence
+            // 
+            this.checkBoxBlueMagicSilence.AutoSize = true;
+            this.checkBoxBlueMagicSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicSilence.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicSilence.Location = new System.Drawing.Point(90, 186);
+            this.checkBoxBlueMagicSilence.Name = "checkBoxBlueMagicSilence";
+            this.checkBoxBlueMagicSilence.Size = new System.Drawing.Size(63, 19);
+            this.checkBoxBlueMagicSilence.TabIndex = 32;
+            this.checkBoxBlueMagicSilence.Text = "Silence";
+            this.checkBoxBlueMagicSilence.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicHaste
+            // 
+            this.checkBoxBlueMagicHaste.AutoSize = true;
+            this.checkBoxBlueMagicHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicHaste.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicHaste.Location = new System.Drawing.Point(90, 86);
+            this.checkBoxBlueMagicHaste.Name = "checkBoxBlueMagicHaste";
+            this.checkBoxBlueMagicHaste.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxBlueMagicHaste.TabIndex = 8;
+            this.checkBoxBlueMagicHaste.Text = "Haste";
+            this.checkBoxBlueMagicHaste.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicStop
+            // 
+            this.checkBoxBlueMagicStop.AutoSize = true;
+            this.checkBoxBlueMagicStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicStop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicStop.Location = new System.Drawing.Point(239, 86);
+            this.checkBoxBlueMagicStop.Name = "checkBoxBlueMagicStop";
+            this.checkBoxBlueMagicStop.Size = new System.Drawing.Size(50, 19);
+            this.checkBoxBlueMagicStop.TabIndex = 10;
+            this.checkBoxBlueMagicStop.Text = "Stop";
+            this.checkBoxBlueMagicStop.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicProtect
+            // 
+            this.checkBoxBlueMagicProtect.AutoSize = true;
+            this.checkBoxBlueMagicProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicProtect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicProtect.Location = new System.Drawing.Point(373, 86);
+            this.checkBoxBlueMagicProtect.Name = "checkBoxBlueMagicProtect";
+            this.checkBoxBlueMagicProtect.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBlueMagicProtect.TabIndex = 12;
+            this.checkBoxBlueMagicProtect.Text = "Protect";
+            this.checkBoxBlueMagicProtect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicConfusion
+            // 
+            this.checkBoxBlueMagicConfusion.AutoSize = true;
+            this.checkBoxBlueMagicConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicConfusion.Location = new System.Drawing.Point(158, 136);
+            this.checkBoxBlueMagicConfusion.Name = "checkBoxBlueMagicConfusion";
+            this.checkBoxBlueMagicConfusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxBlueMagicConfusion.TabIndex = 21;
+            this.checkBoxBlueMagicConfusion.Text = "Confusion";
+            this.checkBoxBlueMagicConfusion.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicDeath
+            // 
+            this.checkBoxBlueMagicDeath.AutoSize = true;
+            this.checkBoxBlueMagicDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicDeath.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicDeath.Location = new System.Drawing.Point(239, 161);
+            this.checkBoxBlueMagicDeath.Name = "checkBoxBlueMagicDeath";
+            this.checkBoxBlueMagicDeath.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxBlueMagicDeath.TabIndex = 28;
+            this.checkBoxBlueMagicDeath.Text = "Death";
+            this.checkBoxBlueMagicDeath.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicPetrify
+            // 
+            this.checkBoxBlueMagicPetrify.AutoSize = true;
+            this.checkBoxBlueMagicPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicPetrify.Location = new System.Drawing.Point(373, 161);
+            this.checkBoxBlueMagicPetrify.Name = "checkBoxBlueMagicPetrify";
+            this.checkBoxBlueMagicPetrify.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxBlueMagicPetrify.TabIndex = 30;
+            this.checkBoxBlueMagicPetrify.Text = "Petrify";
+            this.checkBoxBlueMagicPetrify.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicPoison
+            // 
+            this.checkBoxBlueMagicPoison.AutoSize = true;
+            this.checkBoxBlueMagicPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicPoison.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicPoison.Location = new System.Drawing.Point(309, 161);
+            this.checkBoxBlueMagicPoison.Name = "checkBoxBlueMagicPoison";
+            this.checkBoxBlueMagicPoison.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxBlueMagicPoison.TabIndex = 29;
+            this.checkBoxBlueMagicPoison.Text = "Poison";
+            this.checkBoxBlueMagicPoison.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicPetrifying
+            // 
+            this.checkBoxBlueMagicPetrifying.AutoSize = true;
+            this.checkBoxBlueMagicPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicPetrifying.Location = new System.Drawing.Point(8, 111);
+            this.checkBoxBlueMagicPetrifying.Name = "checkBoxBlueMagicPetrifying";
+            this.checkBoxBlueMagicPetrifying.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxBlueMagicPetrifying.TabIndex = 13;
+            this.checkBoxBlueMagicPetrifying.Text = "Petrifying";
+            this.checkBoxBlueMagicPetrifying.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicEject
+            // 
+            this.checkBoxBlueMagicEject.AutoSize = true;
+            this.checkBoxBlueMagicEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicEject.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicEject.Location = new System.Drawing.Point(309, 136);
+            this.checkBoxBlueMagicEject.Name = "checkBoxBlueMagicEject";
+            this.checkBoxBlueMagicEject.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBlueMagicEject.TabIndex = 23;
+            this.checkBoxBlueMagicEject.Text = "Eject";
+            this.checkBoxBlueMagicEject.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicSlow
+            // 
+            this.checkBoxBlueMagicSlow.AutoSize = true;
+            this.checkBoxBlueMagicSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicSlow.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicSlow.Location = new System.Drawing.Point(158, 86);
+            this.checkBoxBlueMagicSlow.Name = "checkBoxBlueMagicSlow";
+            this.checkBoxBlueMagicSlow.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBlueMagicSlow.TabIndex = 9;
+            this.checkBoxBlueMagicSlow.Text = "Slow";
+            this.checkBoxBlueMagicSlow.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicDouble
+            // 
+            this.checkBoxBlueMagicDouble.AutoSize = true;
+            this.checkBoxBlueMagicDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicDouble.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicDouble.Location = new System.Drawing.Point(373, 136);
+            this.checkBoxBlueMagicDouble.Name = "checkBoxBlueMagicDouble";
+            this.checkBoxBlueMagicDouble.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBlueMagicDouble.TabIndex = 24;
+            this.checkBoxBlueMagicDouble.Text = "Double";
+            this.checkBoxBlueMagicDouble.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicBerserk
+            // 
+            this.checkBoxBlueMagicBerserk.AutoSize = true;
+            this.checkBoxBlueMagicBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicBerserk.Location = new System.Drawing.Point(158, 186);
+            this.checkBoxBlueMagicBerserk.Name = "checkBoxBlueMagicBerserk";
+            this.checkBoxBlueMagicBerserk.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBlueMagicBerserk.TabIndex = 33;
+            this.checkBoxBlueMagicBerserk.Text = "Berserk";
+            this.checkBoxBlueMagicBerserk.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicTriple
+            // 
+            this.checkBoxBlueMagicTriple.AutoSize = true;
+            this.checkBoxBlueMagicTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicTriple.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicTriple.Location = new System.Drawing.Point(8, 161);
+            this.checkBoxBlueMagicTriple.Name = "checkBoxBlueMagicTriple";
+            this.checkBoxBlueMagicTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxBlueMagicTriple.TabIndex = 25;
+            this.checkBoxBlueMagicTriple.Text = "Triple";
+            this.checkBoxBlueMagicTriple.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicSleep
+            // 
+            this.checkBoxBlueMagicSleep.AutoSize = true;
+            this.checkBoxBlueMagicSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicSleep.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicSleep.Location = new System.Drawing.Point(8, 86);
+            this.checkBoxBlueMagicSleep.Name = "checkBoxBlueMagicSleep";
+            this.checkBoxBlueMagicSleep.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxBlueMagicSleep.TabIndex = 7;
+            this.checkBoxBlueMagicSleep.Text = "Sleep";
+            this.checkBoxBlueMagicSleep.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicDefend
+            // 
+            this.checkBoxBlueMagicDefend.AutoSize = true;
+            this.checkBoxBlueMagicDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicDefend.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicDefend.Location = new System.Drawing.Point(90, 161);
+            this.checkBoxBlueMagicDefend.Name = "checkBoxBlueMagicDefend";
+            this.checkBoxBlueMagicDefend.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBlueMagicDefend.TabIndex = 26;
+            this.checkBoxBlueMagicDefend.Text = "Defend";
+            this.checkBoxBlueMagicDefend.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicInvincible
+            // 
+            this.checkBoxBlueMagicInvincible.AutoSize = true;
+            this.checkBoxBlueMagicInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicInvincible.Location = new System.Drawing.Point(8, 136);
+            this.checkBoxBlueMagicInvincible.Name = "checkBoxBlueMagicInvincible";
+            this.checkBoxBlueMagicInvincible.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxBlueMagicInvincible.TabIndex = 19;
+            this.checkBoxBlueMagicInvincible.Text = "Invincible";
+            this.checkBoxBlueMagicInvincible.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicVit0
+            // 
+            this.checkBoxBlueMagicVit0.AutoSize = true;
+            this.checkBoxBlueMagicVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicVit0.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicVit0.Location = new System.Drawing.Point(158, 161);
+            this.checkBoxBlueMagicVit0.Name = "checkBoxBlueMagicVit0";
+            this.checkBoxBlueMagicVit0.Size = new System.Drawing.Size(46, 19);
+            this.checkBoxBlueMagicVit0.TabIndex = 27;
+            this.checkBoxBlueMagicVit0.Text = "Vit0";
+            this.checkBoxBlueMagicVit0.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCurse
+            // 
+            this.checkBoxBlueMagicCurse.AutoSize = true;
+            this.checkBoxBlueMagicCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCurse.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCurse.Location = new System.Drawing.Point(309, 111);
+            this.checkBoxBlueMagicCurse.Name = "checkBoxBlueMagicCurse";
+            this.checkBoxBlueMagicCurse.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxBlueMagicCurse.TabIndex = 17;
+            this.checkBoxBlueMagicCurse.Text = "Curse";
+            this.checkBoxBlueMagicCurse.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicDrain
+            // 
+            this.checkBoxBlueMagicDrain.AutoSize = true;
+            this.checkBoxBlueMagicDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicDrain.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicDrain.Location = new System.Drawing.Point(239, 136);
+            this.checkBoxBlueMagicDrain.Name = "checkBoxBlueMagicDrain";
+            this.checkBoxBlueMagicDrain.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxBlueMagicDrain.TabIndex = 22;
+            this.checkBoxBlueMagicDrain.Text = "Drain";
+            this.checkBoxBlueMagicDrain.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicDoom
+            // 
+            this.checkBoxBlueMagicDoom.AutoSize = true;
+            this.checkBoxBlueMagicDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicDoom.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicDoom.Location = new System.Drawing.Point(373, 111);
+            this.checkBoxBlueMagicDoom.Name = "checkBoxBlueMagicDoom";
+            this.checkBoxBlueMagicDoom.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxBlueMagicDoom.TabIndex = 18;
+            this.checkBoxBlueMagicDoom.Text = "Doom";
+            this.checkBoxBlueMagicDoom.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicAura
+            // 
+            this.checkBoxBlueMagicAura.AutoSize = true;
+            this.checkBoxBlueMagicAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicAura.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicAura.Location = new System.Drawing.Point(239, 111);
+            this.checkBoxBlueMagicAura.Name = "checkBoxBlueMagicAura";
+            this.checkBoxBlueMagicAura.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBlueMagicAura.TabIndex = 16;
+            this.checkBoxBlueMagicAura.Text = "Aura";
+            this.checkBoxBlueMagicAura.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicFloat
+            // 
+            this.checkBoxBlueMagicFloat.AutoSize = true;
+            this.checkBoxBlueMagicFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFloat.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFloat.Location = new System.Drawing.Point(90, 136);
+            this.checkBoxBlueMagicFloat.Name = "checkBoxBlueMagicFloat";
+            this.checkBoxBlueMagicFloat.Size = new System.Drawing.Size(52, 19);
+            this.checkBoxBlueMagicFloat.TabIndex = 20;
+            this.checkBoxBlueMagicFloat.Text = "Float";
+            this.checkBoxBlueMagicFloat.UseVisualStyleBackColor = true;
             // 
             // mainForm
             // 
@@ -17086,6 +17771,8 @@
             this.groupBoxBlueMagicGeneral.ResumeLayout(false);
             this.groupBoxBlueMagicGeneral.PerformLayout();
             this.tabPageGFAttacks.ResumeLayout(false);
+            this.groupBoxGFAttacksFlags.ResumeLayout(false);
+            this.groupBoxGFAttacksFlags.PerformLayout();
             this.groupBoxGFAttacksStatusAttack.ResumeLayout(false);
             this.groupBoxGFAttacksStatusAttack.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAttacksStatusAttack)).EndInit();
@@ -17097,6 +17784,8 @@
             this.tabPageGF.ResumeLayout(false);
             this.tabControlGF.ResumeLayout(false);
             this.tabPageJGF.ResumeLayout(false);
+            this.groupBoxGFFlags.ResumeLayout(false);
+            this.groupBoxGFFlags.PerformLayout();
             this.groupBoxGFStatusAttack.ResumeLayout(false);
             this.groupBoxGFStatusAttack.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFStatusAttack)).EndInit();
@@ -17107,9 +17796,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFPower)).EndInit();
             this.tabPageGFAbilities.ResumeLayout(false);
             this.groupBoxGFAbilities.ResumeLayout(false);
+            this.panelGFAbilities.ResumeLayout(false);
+            this.panelGFAbilities.PerformLayout();
+            this.tabPageGFComp.ResumeLayout(false);
+            this.groupBoxGFCompatibility.ResumeLayout(false);
+            this.groupBoxGFCompatibility.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFEdenComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFDoomtrainComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFLeviathanComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFTonberryComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAlexanderComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFSirenComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCarbuncleComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCactuarComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCerberusComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFIfritComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFDiablosComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFBahamutComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFPandemonaComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFShivaComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFBrothersComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFQuezacoltComp)).EndInit();
             this.tabPageMagic.ResumeLayout(false);
             this.tabControlMagic.ResumeLayout(false);
             this.tabPageMagicGeneral.ResumeLayout(false);
+            this.groupBoxMagicFlags.ResumeLayout(false);
+            this.groupBoxMagicFlags.PerformLayout();
             this.groupBoxMagicStatusAttack.ResumeLayout(false);
             this.groupBoxMagicStatusAttack.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicStatusAttack)).EndInit();
@@ -17140,8 +17852,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicVITJ)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicEVAJ)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicSTRJ)).EndInit();
+            this.tabPageMagicGFsComp.ResumeLayout(false);
+            this.groupBoxMagicGFComp.ResumeLayout(false);
+            this.groupBoxMagicGFComp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicEdenComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicDoomtrainComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicLeviathanComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicTonberryComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicAlexanderComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicSirenComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCarbuncleComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCactuarComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCerberusComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicIfritComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicDiablosComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicBahamutComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicPandemonaComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicShivaComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicBrothersComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicQuezacoltComp)).EndInit();
             this.tabPageAbilities.ResumeLayout(false);
             this.tabControlAbilities.ResumeLayout(false);
+            this.tabPageAbCharacters.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.tabPageAbStats.ResumeLayout(false);
             this.groupBoxStatsIncrement.ResumeLayout(false);
             this.groupBoxStatsIncrement.PerformLayout();
@@ -17157,6 +17891,8 @@
             this.tabPageCharGeneral.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP1)).EndInit();
             this.groupBoxCharGeneral.ResumeLayout(false);
             this.groupBoxCharGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharLimitParam)).EndInit();
@@ -17281,57 +18017,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray50)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.panelGFAbilities.ResumeLayout(false);
-            this.panelGFAbilities.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharEXP1)).EndInit();
-            this.tabPageAbCharacters.ResumeLayout(false);
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.tabPageMagicGFsComp.ResumeLayout(false);
-            this.groupBoxMagicGFComp.ResumeLayout(false);
-            this.groupBoxMagicGFComp.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicEdenComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicDoomtrainComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicLeviathanComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicTonberryComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicAlexanderComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicSirenComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCarbuncleComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCactuarComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCerberusComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicIfritComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicDiablosComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicBahamutComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicPandemonaComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicShivaComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicBrothersComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicQuezacoltComp)).EndInit();
-            this.groupBoxMagicFlags.ResumeLayout(false);
-            this.groupBoxMagicFlags.PerformLayout();
-            this.tabPageGFComp.ResumeLayout(false);
-            this.groupBoxGFCompatibility.ResumeLayout(false);
-            this.groupBoxGFCompatibility.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFEdenComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFDoomtrainComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFLeviathanComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFTonberryComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFAlexanderComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFSirenComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCarbuncleComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCactuarComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFCerberusComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFIfritComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFDiablosComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFBahamutComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFPandemonaComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFShivaComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFBrothersComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFQuezacoltComp)).EndInit();
-            this.groupBoxGFFlags.ResumeLayout(false);
-            this.groupBoxGFFlags.PerformLayout();
-            this.groupBoxGFAttacksFlags.ResumeLayout(false);
-            this.groupBoxGFAttacksFlags.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicDeathLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicAttackPower)).EndInit();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicStatusAttack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -18000,6 +18692,52 @@
         private System.Windows.Forms.Label labelMagicBrothersComp;
         private System.Windows.Forms.NumericUpDown numericUpDownMagicQuezacoltComp;
         private System.Windows.Forms.Label labelMagicQuezacoltComp;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlagBreakDamageLimit;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag8;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag3;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag6;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlagShelled;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlagReflected;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag2;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag7;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicStatusAttack;
+        private System.Windows.Forms.Label labelBlueMagicStatusAttack;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicZombie;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicReflect;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicShell;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicDarkness;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicRegen;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicSilence;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicHaste;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicStop;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicProtect;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicConfusion;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicDeath;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicPetrify;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicPoison;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicPetrifying;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicEject;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicSlow;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicDouble;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicBerserk;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicTriple;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicSleep;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicDefend;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicInvincible;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicVit0;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicCurse;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicDrain;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicDoom;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicAura;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFloat;
+        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicDeathLevel;
+        private System.Windows.Forms.Label labelBlueMagicAttackType;
+        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicAttackPower;
+        private System.Windows.Forms.Label labelBlueMagicDeathLevel;
+        private System.Windows.Forms.Label labelBlueMagicAttackPower;
+        private System.Windows.Forms.ComboBox comboBoxBlueMagicAttackType;
     }
 }
 
