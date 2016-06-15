@@ -1027,7 +1027,7 @@ namespace Doomtrain
                     Kernel[OffsetToEnemyAttacksSelected + 7] = Convert.ToByte(variable); //attack power
                     return;
                 case 3:
-                    Kernel[OffsetToEnemyAttacksSelected + 8] = Convert.ToByte(variable); //attack flags
+                    Kernel[OffsetToEnemyAttacksSelected + 8] ^= Convert.ToByte(variable); //attack flags
                     return;
                 case 4:
                     Kernel[OffsetToEnemyAttacksSelected + 10] = Convert.ToByte(variable); //element
@@ -1049,19 +1049,19 @@ namespace Doomtrain
             switch (StatusByteIndex)
             {
                 case 0:
-                    Kernel[OffsetToEnemyAttacksSelected + 14] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 12] ^ Convert.ToByte(variable));
+                    Kernel[OffsetToEnemyAttacksSelected + 14] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 14] ^ Convert.ToByte(variable));
                     return;
                 case 1:
-                    Kernel[OffsetToEnemyAttacksSelected + 16] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 13] ^ Convert.ToByte(variable));
+                    Kernel[OffsetToEnemyAttacksSelected + 16] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 16] ^ Convert.ToByte(variable));
                     return;
                 case 2:
-                    Kernel[OffsetToEnemyAttacksSelected + 17] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 14] ^ Convert.ToByte(variable));
+                    Kernel[OffsetToEnemyAttacksSelected + 17] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 17] ^ Convert.ToByte(variable));
                     return;
                 case 3:
-                    Kernel[OffsetToEnemyAttacksSelected + 18] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 15] ^ Convert.ToByte(variable));
+                    Kernel[OffsetToEnemyAttacksSelected + 18] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 18] ^ Convert.ToByte(variable));
                     return;
                 case 4:
-                    Kernel[OffsetToEnemyAttacksSelected + 19] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 16] ^ Convert.ToByte(variable));
+                    Kernel[OffsetToEnemyAttacksSelected + 19] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 19] ^ Convert.ToByte(variable));
                     return;
             }
         }
@@ -1124,7 +1124,7 @@ namespace Doomtrain
         /// <param name="add"></param>
         private static void UshortToKernel(ushort a, int add, byte mode)
         {
-            byte[] magicIdBytes = BitConverter.GetBytes(a + 1);
+            byte[] magicIdBytes = BitConverter.GetBytes(a);
             switch (mode)
             {
                 case (byte) Mode.Mode_Magic:
