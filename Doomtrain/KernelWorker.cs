@@ -22,6 +22,9 @@ namespace Doomtrain
         public static int CharactersDataOffset = -1;
         public static int OffsetToCharactersSelected = -1;
 
+        public static int EnemyAttacksDataOffset = -1;
+        public static int OffsetToEnemyAttacksSelected = -1;
+
         public static int BlueMagicDataOffset = -1;
         public static int OffsetToBlueMagicSelected = -1;
         public static int BlueMagicParamDataOffset = -1;
@@ -32,6 +35,7 @@ namespace Doomtrain
         public static GFAttacksData GetSelectedGFAttacksData;
         public static WeaponsData GetSelectedWeaponsData;
         public static CharactersData GetSelectedCharactersData;
+        public static EnemyAttacksData GetSelectedEnemyAttacksData;
         public static BlueMagicData GetSelectedBlueMagicData;
         public static BlueMagicParamData GetSelectedBlueMagicParamData;
 
@@ -321,6 +325,22 @@ namespace Doomtrain
             public byte LUCK2;
             public byte LUCK3;
             public byte LUCK4;
+        }
+
+        public struct EnemyAttacksData
+        {
+            //public string OffsetToName
+            public UInt16 MagicID;
+            public byte AttackType;
+            public byte AttackPower;
+            public byte AttackFlags;
+            public Element Element;
+            public byte StatusAttack;
+            public byte Status1;
+            public byte Status2;
+            public byte Status3;
+            public byte Status4;
+            public byte Status5;
         }
 
         public struct BlueMagicData
@@ -991,6 +1011,62 @@ namespace Doomtrain
         }
 
 
+        public static void UpdateVariable_EnemyAttacks(int index, object variable, byte arg0 = 127)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    UshortToKernel(Convert.ToUInt16(variable), 2, (byte)Mode.Mode_EnemyAttacks); //MagicID
+                    return;
+                case 1:
+                    Kernel[OffsetToEnemyAttacksSelected + 6] = Convert.ToByte(variable); //attack type
+                    return;
+                case 2:
+                    Kernel[OffsetToEnemyAttacksSelected + 7] = Convert.ToByte(variable); //attack power
+                    return;
+                case 3:
+                    Kernel[OffsetToEnemyAttacksSelected + 8] = Convert.ToByte(variable); //attack flags
+                    return;
+                case 4:
+                    Kernel[OffsetToEnemyAttacksSelected + 10] = Convert.ToByte(variable); //element
+                    return;
+                case 5:
+                    Kernel[OffsetToEnemyAttacksSelected + 12] = Convert.ToByte(variable); //status attack
+                    return;
+                case 6:
+                    EnemyAttacksStatusUpdator(arg0, variable); //Status
+                    return;
+
+                    default:
+                    return;
+            }
+        }
+
+        private static void EnemyAttacksStatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToEnemyAttacksSelected + 14] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 12] ^ Convert.ToByte(variable));
+                    return;
+                case 1:
+                    Kernel[OffsetToEnemyAttacksSelected + 16] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 13] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToEnemyAttacksSelected + 17] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 14] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToEnemyAttacksSelected + 18] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 15] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToEnemyAttacksSelected + 19] = (byte)(Kernel[OffsetToEnemyAttacksSelected + 16] ^ Convert.ToByte(variable));
+                    return;
+            }
+        }
+
+
 
         public static void UpdateVariable_BlueMagicParam(int index, object variable, byte arg0 = 127)
         {
@@ -1060,6 +1136,9 @@ namespace Doomtrain
                 case (byte)Mode.Mode_GFAttacks:
                     Array.Copy(magicIdBytes, 0, Kernel, OffsetToGFAttacksSelected + add, 2);
                     break;
+                case (byte)Mode.Mode_EnemyAttacks:
+                    Array.Copy(magicIdBytes, 0, Kernel, OffsetToEnemyAttacksSelected + add, 2);
+                    break;
                 case (byte)Mode.Mode_BlueMagic:
                     Array.Copy(magicIdBytes, 0, Kernel, OffsetToBlueMagicSelected + add, 2);
                     break;
@@ -1073,6 +1152,7 @@ namespace Doomtrain
             Mode_Magic,
             Mode_GF,
             Mode_GFAttacks,
+            Mode_EnemyAttacks,
             Mode_BlueMagic
         }
 
@@ -1085,6 +1165,7 @@ namespace Doomtrain
             GFAttacksDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFAttacks);
             WeaponsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Weapons);
             CharactersDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Characters);
+            EnemyAttacksDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.EnemyAttacks);
             BlueMagicDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BlueMagic);
             BlueMagicParamDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BlueMagicParam);
         }
@@ -1197,7 +1278,7 @@ namespace Doomtrain
             int selectedGfOffset = GFDataOffset + (GFID_List * 132);
             OffsetToGFSelected = selectedGfOffset;
 
-            GetSelectedGFData.GFMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfOffset + 4) - 1);
+            GetSelectedGFData.GFMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfOffset + 4));
             selectedGfOffset += 4 + 2; //Name Offset + Description Offset + MagicID
             GetSelectedGFData.GFAttackType = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFPower = Kernel[selectedGfOffset];
@@ -1286,7 +1367,7 @@ namespace Doomtrain
             int selectedGfAttacksOffset = GFAttacksDataOffset + (GFAttacksID_List * 20);
             OffsetToGFAttacksSelected = selectedGfAttacksOffset;
 
-            GetSelectedGFAttacksData.GFAttacksMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfAttacksOffset + 2) - 1);
+            GetSelectedGFAttacksData.GFAttacksMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfAttacksOffset + 2));
             selectedGfAttacksOffset += 4;
             GetSelectedGFAttacksData.GFAttacksAttackType = Kernel[selectedGfAttacksOffset++];
             GetSelectedGFAttacksData.GFAttacksPower = Kernel[selectedGfAttacksOffset++];            
@@ -1418,13 +1499,59 @@ namespace Doomtrain
         }
 
 
+        public static void ReadEnemyAttacks(int EnemyAttacksID_List)
+        {
+            GetSelectedEnemyAttacksData = new EnemyAttacksData();
+            int selectedEnemyAttacksOffset = EnemyAttacksDataOffset + (EnemyAttacksID_List * 20);
+            OffsetToEnemyAttacksSelected = selectedEnemyAttacksOffset;
+
+            GetSelectedEnemyAttacksData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedEnemyAttacksOffset + 2));
+            selectedEnemyAttacksOffset += 6;
+            GetSelectedEnemyAttacksData.AttackType = Kernel[selectedEnemyAttacksOffset++];
+            GetSelectedEnemyAttacksData.AttackPower = Kernel[selectedEnemyAttacksOffset++];
+            GetSelectedEnemyAttacksData.AttackFlags = Kernel[selectedEnemyAttacksOffset++];
+            selectedEnemyAttacksOffset += 1;
+            byte b = Kernel[selectedEnemyAttacksOffset++];
+            GetSelectedEnemyAttacksData.Element =
+                b == (byte)Element.Fire
+                    ? Element.Fire
+                    : b == (byte)Element.Holy
+                        ? Element.Holy
+                        : b == (byte)Element.Ice
+                            ? Element.Ice
+                            : b == (byte)Element.NonElemental
+                                ? Element.NonElemental
+                                : b == (byte)Element.Poison
+                                    ? Element.Poison
+                                    : b == (byte)Element.Thunder
+                                        ? Element.Thunder
+                                        : b == (byte)Element.Water
+                                            ? Element.Water
+                                            : b == (byte)Element.Wind
+                                                ? Element.Wind
+                                                : b == (byte)Element.Earth
+                                                    ? Element.Earth
+                                                    : 0; //Error handler
+            selectedEnemyAttacksOffset += 1;
+            GetSelectedEnemyAttacksData.StatusAttack = Kernel[selectedEnemyAttacksOffset++];
+            selectedEnemyAttacksOffset += 1;
+            GetSelectedEnemyAttacksData.Status1 = Kernel[selectedEnemyAttacksOffset++];
+            selectedEnemyAttacksOffset += 1;
+            GetSelectedEnemyAttacksData.Status2 = Kernel[selectedEnemyAttacksOffset++];
+            GetSelectedEnemyAttacksData.Status3 = Kernel[selectedEnemyAttacksOffset++];
+            GetSelectedEnemyAttacksData.Status4 = Kernel[selectedEnemyAttacksOffset++];
+            GetSelectedEnemyAttacksData.Status5 = Kernel[selectedEnemyAttacksOffset++];
+        }
+
+
+
         public static void ReadBlueMagic(int BlueMagicID_List)
         {
             GetSelectedBlueMagicData = new BlueMagicData();
             int selectedBlueMagicOffset = BlueMagicDataOffset + (BlueMagicID_List * 16);
             OffsetToBlueMagicSelected = selectedBlueMagicOffset;
 
-            GetSelectedBlueMagicData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedBlueMagicOffset + 4) - 1);
+            GetSelectedBlueMagicData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedBlueMagicOffset + 4));
             selectedBlueMagicOffset += 7;
             GetSelectedBlueMagicData.AttackType = Kernel[selectedBlueMagicOffset++];
             selectedBlueMagicOffset += 2;
