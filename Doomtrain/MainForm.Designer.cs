@@ -146,6 +146,8 @@
             this.comboBoxEnemyAttacksMagicID = new System.Windows.Forms.ComboBox();
             this.labelEnemyAttacksAttackPower = new System.Windows.Forms.Label();
             this.labelEnemyAttacksMagicID = new System.Windows.Forms.Label();
+            this.labelBlueMagicCL2DeathLevel = new System.Windows.Forms.Label();
+            this.labelBlueMagicCL2AttackPower = new System.Windows.Forms.Label();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -224,6 +226,50 @@
             this.labelBlueMagicCL1StatusAttack = new System.Windows.Forms.Label();
             this.numericUpDownBlueMagicCL1AttackPower = new System.Windows.Forms.NumericUpDown();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBoxBlueMagicCS2 = new System.Windows.Forms.GroupBox();
+            this.checkBoxBlueMagicCL2Petrifying = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Darkness = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Silence = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Stop = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Confusion = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Petrify = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Slow = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Berserk = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Sleep = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Invicible = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Curse = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Doom = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Float = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Aura = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Drain = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2SummonGF = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2PlayerChar = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Unk6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Unk5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Unk4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Unk3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2AngelWing = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Vit0 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2BackAttack = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Charged = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Unk2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Unk1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Defend = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Triple = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Double = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Eject = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Poison = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Death = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Protect = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Haste = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Regen = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Shell = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Reflect = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Unk7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Zombie = new System.Windows.Forms.CheckBox();
+            this.numericUpDownBlueMagicCL2DeathLevel = new System.Windows.Forms.NumericUpDown();
+            this.labelBlueMagicCL2StatusAttack = new System.Windows.Forms.Label();
+            this.numericUpDownBlueMagicCL2AttackPower = new System.Windows.Forms.NumericUpDown();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBoxBlueMagicCS3 = new System.Windows.Forms.GroupBox();
             this.checkBoxBlueMagicCL3Petrifying = new System.Windows.Forms.CheckBox();
@@ -955,52 +1001,6 @@
             this.listBoxEnemyAttacks = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.labelBlueMagicCL2DeathLevel = new System.Windows.Forms.Label();
-            this.numericUpDownBlueMagicCL2AttackPower = new System.Windows.Forms.NumericUpDown();
-            this.labelBlueMagicCL2AttackPower = new System.Windows.Forms.Label();
-            this.labelBlueMagicCL2StatusAttack = new System.Windows.Forms.Label();
-            this.numericUpDownBlueMagicCL2DeathLevel = new System.Windows.Forms.NumericUpDown();
-            this.checkBoxBlueMagicCL2Zombie = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Unk7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Reflect = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Shell = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Regen = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Haste = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Protect = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Death = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Poison = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Eject = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Double = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Triple = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Defend = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Unk1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Unk2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Charged = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2BackAttack = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Vit0 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2AngelWing = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Unk3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Unk4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Unk5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Unk6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2PlayerChar = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2SummonGF = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Drain = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Aura = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Float = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Doom = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Curse = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Invicible = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Sleep = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Berserk = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Slow = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Petrify = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Confusion = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Stop = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Silence = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Darkness = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Petrifying = new System.Windows.Forms.CheckBox();
-            this.groupBoxBlueMagicCS2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
@@ -1017,6 +1017,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL1DeathLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL1AttackPower)).BeginInit();
             this.tabPage1.SuspendLayout();
+            this.groupBoxBlueMagicCS2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2DeathLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2AttackPower)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.groupBoxBlueMagicCS3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL3DeathLevel)).BeginInit();
@@ -1248,9 +1251,6 @@
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackPower)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2AttackPower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2DeathLevel)).BeginInit();
-            this.groupBoxBlueMagicCS2.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -3682,6 +3682,30 @@
             this.labelEnemyAttacksMagicID.Text = "Magic ID";
             this.toolTip1.SetToolTip(this.labelEnemyAttacksMagicID, "Decides what animation to play");
             // 
+            // labelBlueMagicCL2DeathLevel
+            // 
+            this.labelBlueMagicCL2DeathLevel.AutoSize = true;
+            this.labelBlueMagicCL2DeathLevel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicCL2DeathLevel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicCL2DeathLevel.Location = new System.Drawing.Point(243, 31);
+            this.labelBlueMagicCL2DeathLevel.Name = "labelBlueMagicCL2DeathLevel";
+            this.labelBlueMagicCL2DeathLevel.Size = new System.Drawing.Size(78, 17);
+            this.labelBlueMagicCL2DeathLevel.TabIndex = 98;
+            this.labelBlueMagicCL2DeathLevel.Text = "Death Level";
+            this.toolTip1.SetToolTip(this.labelBlueMagicCL2DeathLevel, "Used in damage calculation");
+            // 
+            // labelBlueMagicCL2AttackPower
+            // 
+            this.labelBlueMagicCL2AttackPower.AutoSize = true;
+            this.labelBlueMagicCL2AttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicCL2AttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicCL2AttackPower.Location = new System.Drawing.Point(116, 31);
+            this.labelBlueMagicCL2AttackPower.Name = "labelBlueMagicCL2AttackPower";
+            this.labelBlueMagicCL2AttackPower.Size = new System.Drawing.Size(89, 17);
+            this.labelBlueMagicCL2AttackPower.TabIndex = 99;
+            this.labelBlueMagicCL2AttackPower.Text = "Attack Power";
+            this.toolTip1.SetToolTip(this.labelBlueMagicCL2AttackPower, "Used in damage calculation");
+            // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -5028,6 +5052,581 @@
             this.tabPage1.Size = new System.Drawing.Size(451, 706);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Crisis Level 2";
+            // 
+            // groupBoxBlueMagicCS2
+            // 
+            this.groupBoxBlueMagicCS2.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Petrifying);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Darkness);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Silence);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Stop);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Confusion);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Petrify);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Slow);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Berserk);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Sleep);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Invicible);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Curse);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Doom);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Float);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Aura);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Drain);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2SummonGF);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2PlayerChar);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk6);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk5);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk4);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk3);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2AngelWing);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Vit0);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2BackAttack);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Charged);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk2);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk1);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Defend);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Triple);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Double);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Eject);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Poison);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Death);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Protect);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Haste);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Regen);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Shell);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Reflect);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk7);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Zombie);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.numericUpDownBlueMagicCL2DeathLevel);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.labelBlueMagicCL2StatusAttack);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.labelBlueMagicCL2AttackPower);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.numericUpDownBlueMagicCL2AttackPower);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.labelBlueMagicCL2DeathLevel);
+            this.groupBoxBlueMagicCS2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxBlueMagicCS2.ForeColor = System.Drawing.Color.Green;
+            this.groupBoxBlueMagicCS2.Location = new System.Drawing.Point(3, 6);
+            this.groupBoxBlueMagicCS2.Name = "groupBoxBlueMagicCS2";
+            this.groupBoxBlueMagicCS2.Size = new System.Drawing.Size(444, 308);
+            this.groupBoxBlueMagicCS2.TabIndex = 104;
+            this.groupBoxBlueMagicCS2.TabStop = false;
+            this.groupBoxBlueMagicCS2.Text = "Crisis Level 2 Parameters";
+            // 
+            // checkBoxBlueMagicCL2Petrifying
+            // 
+            this.checkBoxBlueMagicCL2Petrifying.AutoSize = true;
+            this.checkBoxBlueMagicCL2Petrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Petrifying.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Petrifying.Location = new System.Drawing.Point(278, 160);
+            this.checkBoxBlueMagicCL2Petrifying.Name = "checkBoxBlueMagicCL2Petrifying";
+            this.checkBoxBlueMagicCL2Petrifying.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxBlueMagicCL2Petrifying.TabIndex = 155;
+            this.checkBoxBlueMagicCL2Petrifying.Text = "Petrifying";
+            this.checkBoxBlueMagicCL2Petrifying.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Darkness
+            // 
+            this.checkBoxBlueMagicCL2Darkness.AutoSize = true;
+            this.checkBoxBlueMagicCL2Darkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Darkness.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Darkness.Location = new System.Drawing.Point(3, 285);
+            this.checkBoxBlueMagicCL2Darkness.Name = "checkBoxBlueMagicCL2Darkness";
+            this.checkBoxBlueMagicCL2Darkness.Size = new System.Drawing.Size(73, 19);
+            this.checkBoxBlueMagicCL2Darkness.TabIndex = 178;
+            this.checkBoxBlueMagicCL2Darkness.Text = "Darkness";
+            this.checkBoxBlueMagicCL2Darkness.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Silence
+            // 
+            this.checkBoxBlueMagicCL2Silence.AutoSize = true;
+            this.checkBoxBlueMagicCL2Silence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Silence.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Silence.Location = new System.Drawing.Point(95, 285);
+            this.checkBoxBlueMagicCL2Silence.Name = "checkBoxBlueMagicCL2Silence";
+            this.checkBoxBlueMagicCL2Silence.Size = new System.Drawing.Size(63, 19);
+            this.checkBoxBlueMagicCL2Silence.TabIndex = 179;
+            this.checkBoxBlueMagicCL2Silence.Text = "Silence";
+            this.checkBoxBlueMagicCL2Silence.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Stop
+            // 
+            this.checkBoxBlueMagicCL2Stop.AutoSize = true;
+            this.checkBoxBlueMagicCL2Stop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Stop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Stop.Location = new System.Drawing.Point(278, 110);
+            this.checkBoxBlueMagicCL2Stop.Name = "checkBoxBlueMagicCL2Stop";
+            this.checkBoxBlueMagicCL2Stop.Size = new System.Drawing.Size(50, 19);
+            this.checkBoxBlueMagicCL2Stop.TabIndex = 146;
+            this.checkBoxBlueMagicCL2Stop.Text = "Stop";
+            this.checkBoxBlueMagicCL2Stop.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Confusion
+            // 
+            this.checkBoxBlueMagicCL2Confusion.AutoSize = true;
+            this.checkBoxBlueMagicCL2Confusion.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxBlueMagicCL2Confusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Confusion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Confusion.Location = new System.Drawing.Point(366, 160);
+            this.checkBoxBlueMagicCL2Confusion.Name = "checkBoxBlueMagicCL2Confusion";
+            this.checkBoxBlueMagicCL2Confusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxBlueMagicCL2Confusion.TabIndex = 157;
+            this.checkBoxBlueMagicCL2Confusion.Text = "Confusion";
+            this.checkBoxBlueMagicCL2Confusion.UseVisualStyleBackColor = false;
+            // 
+            // checkBoxBlueMagicCL2Petrify
+            // 
+            this.checkBoxBlueMagicCL2Petrify.AutoSize = true;
+            this.checkBoxBlueMagicCL2Petrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Petrify.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Petrify.Location = new System.Drawing.Point(366, 260);
+            this.checkBoxBlueMagicCL2Petrify.Name = "checkBoxBlueMagicCL2Petrify";
+            this.checkBoxBlueMagicCL2Petrify.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxBlueMagicCL2Petrify.TabIndex = 177;
+            this.checkBoxBlueMagicCL2Petrify.Text = "Petrify";
+            this.checkBoxBlueMagicCL2Petrify.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Slow
+            // 
+            this.checkBoxBlueMagicCL2Slow.AutoSize = true;
+            this.checkBoxBlueMagicCL2Slow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Slow.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Slow.Location = new System.Drawing.Point(189, 110);
+            this.checkBoxBlueMagicCL2Slow.Name = "checkBoxBlueMagicCL2Slow";
+            this.checkBoxBlueMagicCL2Slow.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBlueMagicCL2Slow.TabIndex = 145;
+            this.checkBoxBlueMagicCL2Slow.Text = "Slow";
+            this.checkBoxBlueMagicCL2Slow.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Berserk
+            // 
+            this.checkBoxBlueMagicCL2Berserk.AutoSize = true;
+            this.checkBoxBlueMagicCL2Berserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Berserk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Berserk.Location = new System.Drawing.Point(189, 285);
+            this.checkBoxBlueMagicCL2Berserk.Name = "checkBoxBlueMagicCL2Berserk";
+            this.checkBoxBlueMagicCL2Berserk.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBlueMagicCL2Berserk.TabIndex = 180;
+            this.checkBoxBlueMagicCL2Berserk.Text = "Berserk";
+            this.checkBoxBlueMagicCL2Berserk.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Sleep
+            // 
+            this.checkBoxBlueMagicCL2Sleep.AutoSize = true;
+            this.checkBoxBlueMagicCL2Sleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Sleep.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Sleep.Location = new System.Drawing.Point(3, 110);
+            this.checkBoxBlueMagicCL2Sleep.Name = "checkBoxBlueMagicCL2Sleep";
+            this.checkBoxBlueMagicCL2Sleep.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxBlueMagicCL2Sleep.TabIndex = 143;
+            this.checkBoxBlueMagicCL2Sleep.Text = "Sleep";
+            this.checkBoxBlueMagicCL2Sleep.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Invicible
+            // 
+            this.checkBoxBlueMagicCL2Invicible.AutoSize = true;
+            this.checkBoxBlueMagicCL2Invicible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Invicible.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Invicible.Location = new System.Drawing.Point(95, 160);
+            this.checkBoxBlueMagicCL2Invicible.Name = "checkBoxBlueMagicCL2Invicible";
+            this.checkBoxBlueMagicCL2Invicible.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxBlueMagicCL2Invicible.TabIndex = 154;
+            this.checkBoxBlueMagicCL2Invicible.Text = "Invincible";
+            this.checkBoxBlueMagicCL2Invicible.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Curse
+            // 
+            this.checkBoxBlueMagicCL2Curse.AutoSize = true;
+            this.checkBoxBlueMagicCL2Curse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Curse.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Curse.Location = new System.Drawing.Point(366, 135);
+            this.checkBoxBlueMagicCL2Curse.Name = "checkBoxBlueMagicCL2Curse";
+            this.checkBoxBlueMagicCL2Curse.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxBlueMagicCL2Curse.TabIndex = 152;
+            this.checkBoxBlueMagicCL2Curse.Text = "Curse";
+            this.checkBoxBlueMagicCL2Curse.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Doom
+            // 
+            this.checkBoxBlueMagicCL2Doom.AutoSize = true;
+            this.checkBoxBlueMagicCL2Doom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Doom.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Doom.Location = new System.Drawing.Point(3, 160);
+            this.checkBoxBlueMagicCL2Doom.Name = "checkBoxBlueMagicCL2Doom";
+            this.checkBoxBlueMagicCL2Doom.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxBlueMagicCL2Doom.TabIndex = 153;
+            this.checkBoxBlueMagicCL2Doom.Text = "Doom";
+            this.checkBoxBlueMagicCL2Doom.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Float
+            // 
+            this.checkBoxBlueMagicCL2Float.AutoSize = true;
+            this.checkBoxBlueMagicCL2Float.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Float.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Float.Location = new System.Drawing.Point(189, 160);
+            this.checkBoxBlueMagicCL2Float.Name = "checkBoxBlueMagicCL2Float";
+            this.checkBoxBlueMagicCL2Float.Size = new System.Drawing.Size(52, 19);
+            this.checkBoxBlueMagicCL2Float.TabIndex = 156;
+            this.checkBoxBlueMagicCL2Float.Text = "Float";
+            this.checkBoxBlueMagicCL2Float.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Aura
+            // 
+            this.checkBoxBlueMagicCL2Aura.AutoSize = true;
+            this.checkBoxBlueMagicCL2Aura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Aura.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Aura.Location = new System.Drawing.Point(278, 135);
+            this.checkBoxBlueMagicCL2Aura.Name = "checkBoxBlueMagicCL2Aura";
+            this.checkBoxBlueMagicCL2Aura.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBlueMagicCL2Aura.TabIndex = 151;
+            this.checkBoxBlueMagicCL2Aura.Text = "Aura";
+            this.checkBoxBlueMagicCL2Aura.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Drain
+            // 
+            this.checkBoxBlueMagicCL2Drain.AutoSize = true;
+            this.checkBoxBlueMagicCL2Drain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Drain.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Drain.Location = new System.Drawing.Point(3, 185);
+            this.checkBoxBlueMagicCL2Drain.Name = "checkBoxBlueMagicCL2Drain";
+            this.checkBoxBlueMagicCL2Drain.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxBlueMagicCL2Drain.TabIndex = 158;
+            this.checkBoxBlueMagicCL2Drain.Text = "Drain";
+            this.checkBoxBlueMagicCL2Drain.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2SummonGF
+            // 
+            this.checkBoxBlueMagicCL2SummonGF.AutoSize = true;
+            this.checkBoxBlueMagicCL2SummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2SummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2SummonGF.Location = new System.Drawing.Point(95, 260);
+            this.checkBoxBlueMagicCL2SummonGF.Name = "checkBoxBlueMagicCL2SummonGF";
+            this.checkBoxBlueMagicCL2SummonGF.Size = new System.Drawing.Size(92, 19);
+            this.checkBoxBlueMagicCL2SummonGF.TabIndex = 173;
+            this.checkBoxBlueMagicCL2SummonGF.Text = "Summon GF";
+            this.checkBoxBlueMagicCL2SummonGF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2PlayerChar
+            // 
+            this.checkBoxBlueMagicCL2PlayerChar.AutoSize = true;
+            this.checkBoxBlueMagicCL2PlayerChar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2PlayerChar.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2PlayerChar.Location = new System.Drawing.Point(3, 260);
+            this.checkBoxBlueMagicCL2PlayerChar.Name = "checkBoxBlueMagicCL2PlayerChar";
+            this.checkBoxBlueMagicCL2PlayerChar.Size = new System.Drawing.Size(91, 19);
+            this.checkBoxBlueMagicCL2PlayerChar.TabIndex = 172;
+            this.checkBoxBlueMagicCL2PlayerChar.Text = "Player Char?";
+            this.checkBoxBlueMagicCL2PlayerChar.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Unk6
+            // 
+            this.checkBoxBlueMagicCL2Unk6.AutoSize = true;
+            this.checkBoxBlueMagicCL2Unk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Unk6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Unk6.Location = new System.Drawing.Point(366, 235);
+            this.checkBoxBlueMagicCL2Unk6.Name = "checkBoxBlueMagicCL2Unk6";
+            this.checkBoxBlueMagicCL2Unk6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicCL2Unk6.TabIndex = 171;
+            this.checkBoxBlueMagicCL2Unk6.Text = "???";
+            this.checkBoxBlueMagicCL2Unk6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Unk5
+            // 
+            this.checkBoxBlueMagicCL2Unk5.AutoSize = true;
+            this.checkBoxBlueMagicCL2Unk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Unk5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Unk5.Location = new System.Drawing.Point(278, 235);
+            this.checkBoxBlueMagicCL2Unk5.Name = "checkBoxBlueMagicCL2Unk5";
+            this.checkBoxBlueMagicCL2Unk5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicCL2Unk5.TabIndex = 170;
+            this.checkBoxBlueMagicCL2Unk5.Text = "???";
+            this.checkBoxBlueMagicCL2Unk5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Unk4
+            // 
+            this.checkBoxBlueMagicCL2Unk4.AutoSize = true;
+            this.checkBoxBlueMagicCL2Unk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Unk4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Unk4.Location = new System.Drawing.Point(189, 235);
+            this.checkBoxBlueMagicCL2Unk4.Name = "checkBoxBlueMagicCL2Unk4";
+            this.checkBoxBlueMagicCL2Unk4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicCL2Unk4.TabIndex = 167;
+            this.checkBoxBlueMagicCL2Unk4.Text = "???";
+            this.checkBoxBlueMagicCL2Unk4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Unk3
+            // 
+            this.checkBoxBlueMagicCL2Unk3.AutoSize = true;
+            this.checkBoxBlueMagicCL2Unk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Unk3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Unk3.Location = new System.Drawing.Point(95, 235);
+            this.checkBoxBlueMagicCL2Unk3.Name = "checkBoxBlueMagicCL2Unk3";
+            this.checkBoxBlueMagicCL2Unk3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicCL2Unk3.TabIndex = 169;
+            this.checkBoxBlueMagicCL2Unk3.Text = "???";
+            this.checkBoxBlueMagicCL2Unk3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2AngelWing
+            // 
+            this.checkBoxBlueMagicCL2AngelWing.AutoSize = true;
+            this.checkBoxBlueMagicCL2AngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2AngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2AngelWing.Location = new System.Drawing.Point(3, 235);
+            this.checkBoxBlueMagicCL2AngelWing.Name = "checkBoxBlueMagicCL2AngelWing";
+            this.checkBoxBlueMagicCL2AngelWing.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxBlueMagicCL2AngelWing.TabIndex = 168;
+            this.checkBoxBlueMagicCL2AngelWing.Text = "Angel Wing";
+            this.checkBoxBlueMagicCL2AngelWing.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Vit0
+            // 
+            this.checkBoxBlueMagicCL2Vit0.AutoSize = true;
+            this.checkBoxBlueMagicCL2Vit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Vit0.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Vit0.Location = new System.Drawing.Point(366, 210);
+            this.checkBoxBlueMagicCL2Vit0.Name = "checkBoxBlueMagicCL2Vit0";
+            this.checkBoxBlueMagicCL2Vit0.Size = new System.Drawing.Size(46, 19);
+            this.checkBoxBlueMagicCL2Vit0.TabIndex = 174;
+            this.checkBoxBlueMagicCL2Vit0.Text = "Vit0";
+            this.checkBoxBlueMagicCL2Vit0.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2BackAttack
+            // 
+            this.checkBoxBlueMagicCL2BackAttack.AutoSize = true;
+            this.checkBoxBlueMagicCL2BackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2BackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2BackAttack.Location = new System.Drawing.Point(278, 210);
+            this.checkBoxBlueMagicCL2BackAttack.Name = "checkBoxBlueMagicCL2BackAttack";
+            this.checkBoxBlueMagicCL2BackAttack.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxBlueMagicCL2BackAttack.TabIndex = 166;
+            this.checkBoxBlueMagicCL2BackAttack.Text = "Back Attack";
+            this.checkBoxBlueMagicCL2BackAttack.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Charged
+            // 
+            this.checkBoxBlueMagicCL2Charged.AutoSize = true;
+            this.checkBoxBlueMagicCL2Charged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Charged.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Charged.Location = new System.Drawing.Point(189, 210);
+            this.checkBoxBlueMagicCL2Charged.Name = "checkBoxBlueMagicCL2Charged";
+            this.checkBoxBlueMagicCL2Charged.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxBlueMagicCL2Charged.TabIndex = 162;
+            this.checkBoxBlueMagicCL2Charged.Text = "Charged";
+            this.checkBoxBlueMagicCL2Charged.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Unk2
+            // 
+            this.checkBoxBlueMagicCL2Unk2.AutoSize = true;
+            this.checkBoxBlueMagicCL2Unk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Unk2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Unk2.Location = new System.Drawing.Point(95, 210);
+            this.checkBoxBlueMagicCL2Unk2.Name = "checkBoxBlueMagicCL2Unk2";
+            this.checkBoxBlueMagicCL2Unk2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicCL2Unk2.TabIndex = 165;
+            this.checkBoxBlueMagicCL2Unk2.Text = "???";
+            this.checkBoxBlueMagicCL2Unk2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Unk1
+            // 
+            this.checkBoxBlueMagicCL2Unk1.AutoSize = true;
+            this.checkBoxBlueMagicCL2Unk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Unk1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Unk1.Location = new System.Drawing.Point(3, 210);
+            this.checkBoxBlueMagicCL2Unk1.Name = "checkBoxBlueMagicCL2Unk1";
+            this.checkBoxBlueMagicCL2Unk1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicCL2Unk1.TabIndex = 164;
+            this.checkBoxBlueMagicCL2Unk1.Text = "???";
+            this.checkBoxBlueMagicCL2Unk1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Defend
+            // 
+            this.checkBoxBlueMagicCL2Defend.AutoSize = true;
+            this.checkBoxBlueMagicCL2Defend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Defend.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Defend.Location = new System.Drawing.Point(366, 185);
+            this.checkBoxBlueMagicCL2Defend.Name = "checkBoxBlueMagicCL2Defend";
+            this.checkBoxBlueMagicCL2Defend.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBlueMagicCL2Defend.TabIndex = 163;
+            this.checkBoxBlueMagicCL2Defend.Text = "Defend";
+            this.checkBoxBlueMagicCL2Defend.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Triple
+            // 
+            this.checkBoxBlueMagicCL2Triple.AutoSize = true;
+            this.checkBoxBlueMagicCL2Triple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Triple.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Triple.Location = new System.Drawing.Point(278, 185);
+            this.checkBoxBlueMagicCL2Triple.Name = "checkBoxBlueMagicCL2Triple";
+            this.checkBoxBlueMagicCL2Triple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxBlueMagicCL2Triple.TabIndex = 161;
+            this.checkBoxBlueMagicCL2Triple.Text = "Triple";
+            this.checkBoxBlueMagicCL2Triple.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Double
+            // 
+            this.checkBoxBlueMagicCL2Double.AutoSize = true;
+            this.checkBoxBlueMagicCL2Double.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Double.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Double.Location = new System.Drawing.Point(189, 185);
+            this.checkBoxBlueMagicCL2Double.Name = "checkBoxBlueMagicCL2Double";
+            this.checkBoxBlueMagicCL2Double.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBlueMagicCL2Double.TabIndex = 160;
+            this.checkBoxBlueMagicCL2Double.Text = "Double";
+            this.checkBoxBlueMagicCL2Double.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Eject
+            // 
+            this.checkBoxBlueMagicCL2Eject.AutoSize = true;
+            this.checkBoxBlueMagicCL2Eject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Eject.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Eject.Location = new System.Drawing.Point(95, 185);
+            this.checkBoxBlueMagicCL2Eject.Name = "checkBoxBlueMagicCL2Eject";
+            this.checkBoxBlueMagicCL2Eject.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBlueMagicCL2Eject.TabIndex = 159;
+            this.checkBoxBlueMagicCL2Eject.Text = "Eject";
+            this.checkBoxBlueMagicCL2Eject.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Poison
+            // 
+            this.checkBoxBlueMagicCL2Poison.AutoSize = true;
+            this.checkBoxBlueMagicCL2Poison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Poison.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Poison.Location = new System.Drawing.Point(278, 260);
+            this.checkBoxBlueMagicCL2Poison.Name = "checkBoxBlueMagicCL2Poison";
+            this.checkBoxBlueMagicCL2Poison.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxBlueMagicCL2Poison.TabIndex = 176;
+            this.checkBoxBlueMagicCL2Poison.Text = "Poison";
+            this.checkBoxBlueMagicCL2Poison.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Death
+            // 
+            this.checkBoxBlueMagicCL2Death.AutoSize = true;
+            this.checkBoxBlueMagicCL2Death.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Death.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Death.Location = new System.Drawing.Point(189, 260);
+            this.checkBoxBlueMagicCL2Death.Name = "checkBoxBlueMagicCL2Death";
+            this.checkBoxBlueMagicCL2Death.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxBlueMagicCL2Death.TabIndex = 175;
+            this.checkBoxBlueMagicCL2Death.Text = "Death";
+            this.checkBoxBlueMagicCL2Death.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Protect
+            // 
+            this.checkBoxBlueMagicCL2Protect.AutoSize = true;
+            this.checkBoxBlueMagicCL2Protect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Protect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Protect.Location = new System.Drawing.Point(3, 135);
+            this.checkBoxBlueMagicCL2Protect.Name = "checkBoxBlueMagicCL2Protect";
+            this.checkBoxBlueMagicCL2Protect.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBlueMagicCL2Protect.TabIndex = 148;
+            this.checkBoxBlueMagicCL2Protect.Text = "Protect";
+            this.checkBoxBlueMagicCL2Protect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Haste
+            // 
+            this.checkBoxBlueMagicCL2Haste.AutoSize = true;
+            this.checkBoxBlueMagicCL2Haste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Haste.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Haste.Location = new System.Drawing.Point(95, 110);
+            this.checkBoxBlueMagicCL2Haste.Name = "checkBoxBlueMagicCL2Haste";
+            this.checkBoxBlueMagicCL2Haste.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxBlueMagicCL2Haste.TabIndex = 144;
+            this.checkBoxBlueMagicCL2Haste.Text = "Haste";
+            this.checkBoxBlueMagicCL2Haste.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Regen
+            // 
+            this.checkBoxBlueMagicCL2Regen.AutoSize = true;
+            this.checkBoxBlueMagicCL2Regen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Regen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Regen.Location = new System.Drawing.Point(366, 110);
+            this.checkBoxBlueMagicCL2Regen.Name = "checkBoxBlueMagicCL2Regen";
+            this.checkBoxBlueMagicCL2Regen.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxBlueMagicCL2Regen.TabIndex = 147;
+            this.checkBoxBlueMagicCL2Regen.Text = "Regen";
+            this.checkBoxBlueMagicCL2Regen.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Shell
+            // 
+            this.checkBoxBlueMagicCL2Shell.AutoSize = true;
+            this.checkBoxBlueMagicCL2Shell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Shell.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Shell.Location = new System.Drawing.Point(95, 135);
+            this.checkBoxBlueMagicCL2Shell.Name = "checkBoxBlueMagicCL2Shell";
+            this.checkBoxBlueMagicCL2Shell.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBlueMagicCL2Shell.TabIndex = 149;
+            this.checkBoxBlueMagicCL2Shell.Text = "Shell";
+            this.checkBoxBlueMagicCL2Shell.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Reflect
+            // 
+            this.checkBoxBlueMagicCL2Reflect.AutoSize = true;
+            this.checkBoxBlueMagicCL2Reflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Reflect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Reflect.Location = new System.Drawing.Point(189, 135);
+            this.checkBoxBlueMagicCL2Reflect.Name = "checkBoxBlueMagicCL2Reflect";
+            this.checkBoxBlueMagicCL2Reflect.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxBlueMagicCL2Reflect.TabIndex = 150;
+            this.checkBoxBlueMagicCL2Reflect.Text = "Reflect";
+            this.checkBoxBlueMagicCL2Reflect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Unk7
+            // 
+            this.checkBoxBlueMagicCL2Unk7.AutoSize = true;
+            this.checkBoxBlueMagicCL2Unk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Unk7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Unk7.Location = new System.Drawing.Point(366, 285);
+            this.checkBoxBlueMagicCL2Unk7.Name = "checkBoxBlueMagicCL2Unk7";
+            this.checkBoxBlueMagicCL2Unk7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicCL2Unk7.TabIndex = 181;
+            this.checkBoxBlueMagicCL2Unk7.Text = "???";
+            this.checkBoxBlueMagicCL2Unk7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicCL2Zombie
+            // 
+            this.checkBoxBlueMagicCL2Zombie.AutoSize = true;
+            this.checkBoxBlueMagicCL2Zombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Zombie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Zombie.Location = new System.Drawing.Point(278, 285);
+            this.checkBoxBlueMagicCL2Zombie.Name = "checkBoxBlueMagicCL2Zombie";
+            this.checkBoxBlueMagicCL2Zombie.Size = new System.Drawing.Size(67, 19);
+            this.checkBoxBlueMagicCL2Zombie.TabIndex = 182;
+            this.checkBoxBlueMagicCL2Zombie.Text = "Zombie";
+            this.checkBoxBlueMagicCL2Zombie.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownBlueMagicCL2DeathLevel
+            // 
+            this.numericUpDownBlueMagicCL2DeathLevel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBlueMagicCL2DeathLevel.Location = new System.Drawing.Point(259, 51);
+            this.numericUpDownBlueMagicCL2DeathLevel.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownBlueMagicCL2DeathLevel.Name = "numericUpDownBlueMagicCL2DeathLevel";
+            this.numericUpDownBlueMagicCL2DeathLevel.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBlueMagicCL2DeathLevel.TabIndex = 101;
+            // 
+            // labelBlueMagicCL2StatusAttack
+            // 
+            this.labelBlueMagicCL2StatusAttack.AutoSize = true;
+            this.labelBlueMagicCL2StatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicCL2StatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicCL2StatusAttack.Location = new System.Drawing.Point(178, 90);
+            this.labelBlueMagicCL2StatusAttack.Name = "labelBlueMagicCL2StatusAttack";
+            this.labelBlueMagicCL2StatusAttack.Size = new System.Drawing.Size(89, 17);
+            this.labelBlueMagicCL2StatusAttack.TabIndex = 99;
+            this.labelBlueMagicCL2StatusAttack.Text = "Status Attack";
+            // 
+            // numericUpDownBlueMagicCL2AttackPower
+            // 
+            this.numericUpDownBlueMagicCL2AttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBlueMagicCL2AttackPower.Location = new System.Drawing.Point(138, 51);
+            this.numericUpDownBlueMagicCL2AttackPower.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownBlueMagicCL2AttackPower.Name = "numericUpDownBlueMagicCL2AttackPower";
+            this.numericUpDownBlueMagicCL2AttackPower.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBlueMagicCL2AttackPower.TabIndex = 100;
             // 
             // tabPage4
             // 
@@ -17603,6 +18202,7 @@
             this.buttonCharEXPFormula.TabIndex = 8;
             this.buttonCharEXPFormula.Text = "F";
             this.buttonCharEXPFormula.UseVisualStyleBackColor = true;
+            this.buttonCharEXPFormula.Click += new System.EventHandler(this.buttonCharEXPFormula_Click);
             // 
             // buttonCharEXPChart
             // 
@@ -21617,605 +22217,6 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel1.Text = "Ready";
             // 
-            // labelBlueMagicCL2DeathLevel
-            // 
-            this.labelBlueMagicCL2DeathLevel.AutoSize = true;
-            this.labelBlueMagicCL2DeathLevel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBlueMagicCL2DeathLevel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicCL2DeathLevel.Location = new System.Drawing.Point(243, 31);
-            this.labelBlueMagicCL2DeathLevel.Name = "labelBlueMagicCL2DeathLevel";
-            this.labelBlueMagicCL2DeathLevel.Size = new System.Drawing.Size(78, 17);
-            this.labelBlueMagicCL2DeathLevel.TabIndex = 98;
-            this.labelBlueMagicCL2DeathLevel.Text = "Death Level";
-            this.toolTip1.SetToolTip(this.labelBlueMagicCL2DeathLevel, "Used in damage calculation");
-            // 
-            // numericUpDownBlueMagicCL2AttackPower
-            // 
-            this.numericUpDownBlueMagicCL2AttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBlueMagicCL2AttackPower.Location = new System.Drawing.Point(138, 51);
-            this.numericUpDownBlueMagicCL2AttackPower.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownBlueMagicCL2AttackPower.Name = "numericUpDownBlueMagicCL2AttackPower";
-            this.numericUpDownBlueMagicCL2AttackPower.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownBlueMagicCL2AttackPower.TabIndex = 100;
-            // 
-            // labelBlueMagicCL2AttackPower
-            // 
-            this.labelBlueMagicCL2AttackPower.AutoSize = true;
-            this.labelBlueMagicCL2AttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBlueMagicCL2AttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicCL2AttackPower.Location = new System.Drawing.Point(116, 31);
-            this.labelBlueMagicCL2AttackPower.Name = "labelBlueMagicCL2AttackPower";
-            this.labelBlueMagicCL2AttackPower.Size = new System.Drawing.Size(89, 17);
-            this.labelBlueMagicCL2AttackPower.TabIndex = 99;
-            this.labelBlueMagicCL2AttackPower.Text = "Attack Power";
-            this.toolTip1.SetToolTip(this.labelBlueMagicCL2AttackPower, "Used in damage calculation");
-            // 
-            // labelBlueMagicCL2StatusAttack
-            // 
-            this.labelBlueMagicCL2StatusAttack.AutoSize = true;
-            this.labelBlueMagicCL2StatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBlueMagicCL2StatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicCL2StatusAttack.Location = new System.Drawing.Point(178, 90);
-            this.labelBlueMagicCL2StatusAttack.Name = "labelBlueMagicCL2StatusAttack";
-            this.labelBlueMagicCL2StatusAttack.Size = new System.Drawing.Size(89, 17);
-            this.labelBlueMagicCL2StatusAttack.TabIndex = 99;
-            this.labelBlueMagicCL2StatusAttack.Text = "Status Attack";
-            // 
-            // numericUpDownBlueMagicCL2DeathLevel
-            // 
-            this.numericUpDownBlueMagicCL2DeathLevel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBlueMagicCL2DeathLevel.Location = new System.Drawing.Point(259, 51);
-            this.numericUpDownBlueMagicCL2DeathLevel.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownBlueMagicCL2DeathLevel.Name = "numericUpDownBlueMagicCL2DeathLevel";
-            this.numericUpDownBlueMagicCL2DeathLevel.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownBlueMagicCL2DeathLevel.TabIndex = 101;
-            // 
-            // checkBoxBlueMagicCL2Zombie
-            // 
-            this.checkBoxBlueMagicCL2Zombie.AutoSize = true;
-            this.checkBoxBlueMagicCL2Zombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Zombie.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Zombie.Location = new System.Drawing.Point(278, 285);
-            this.checkBoxBlueMagicCL2Zombie.Name = "checkBoxBlueMagicCL2Zombie";
-            this.checkBoxBlueMagicCL2Zombie.Size = new System.Drawing.Size(67, 19);
-            this.checkBoxBlueMagicCL2Zombie.TabIndex = 182;
-            this.checkBoxBlueMagicCL2Zombie.Text = "Zombie";
-            this.checkBoxBlueMagicCL2Zombie.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Unk7
-            // 
-            this.checkBoxBlueMagicCL2Unk7.AutoSize = true;
-            this.checkBoxBlueMagicCL2Unk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Unk7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Unk7.Location = new System.Drawing.Point(366, 285);
-            this.checkBoxBlueMagicCL2Unk7.Name = "checkBoxBlueMagicCL2Unk7";
-            this.checkBoxBlueMagicCL2Unk7.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBlueMagicCL2Unk7.TabIndex = 181;
-            this.checkBoxBlueMagicCL2Unk7.Text = "???";
-            this.checkBoxBlueMagicCL2Unk7.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Reflect
-            // 
-            this.checkBoxBlueMagicCL2Reflect.AutoSize = true;
-            this.checkBoxBlueMagicCL2Reflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Reflect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Reflect.Location = new System.Drawing.Point(189, 135);
-            this.checkBoxBlueMagicCL2Reflect.Name = "checkBoxBlueMagicCL2Reflect";
-            this.checkBoxBlueMagicCL2Reflect.Size = new System.Drawing.Size(62, 19);
-            this.checkBoxBlueMagicCL2Reflect.TabIndex = 150;
-            this.checkBoxBlueMagicCL2Reflect.Text = "Reflect";
-            this.checkBoxBlueMagicCL2Reflect.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Shell
-            // 
-            this.checkBoxBlueMagicCL2Shell.AutoSize = true;
-            this.checkBoxBlueMagicCL2Shell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Shell.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Shell.Location = new System.Drawing.Point(95, 135);
-            this.checkBoxBlueMagicCL2Shell.Name = "checkBoxBlueMagicCL2Shell";
-            this.checkBoxBlueMagicCL2Shell.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxBlueMagicCL2Shell.TabIndex = 149;
-            this.checkBoxBlueMagicCL2Shell.Text = "Shell";
-            this.checkBoxBlueMagicCL2Shell.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Regen
-            // 
-            this.checkBoxBlueMagicCL2Regen.AutoSize = true;
-            this.checkBoxBlueMagicCL2Regen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Regen.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Regen.Location = new System.Drawing.Point(366, 110);
-            this.checkBoxBlueMagicCL2Regen.Name = "checkBoxBlueMagicCL2Regen";
-            this.checkBoxBlueMagicCL2Regen.Size = new System.Drawing.Size(59, 19);
-            this.checkBoxBlueMagicCL2Regen.TabIndex = 147;
-            this.checkBoxBlueMagicCL2Regen.Text = "Regen";
-            this.checkBoxBlueMagicCL2Regen.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Haste
-            // 
-            this.checkBoxBlueMagicCL2Haste.AutoSize = true;
-            this.checkBoxBlueMagicCL2Haste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Haste.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Haste.Location = new System.Drawing.Point(95, 110);
-            this.checkBoxBlueMagicCL2Haste.Name = "checkBoxBlueMagicCL2Haste";
-            this.checkBoxBlueMagicCL2Haste.Size = new System.Drawing.Size(56, 19);
-            this.checkBoxBlueMagicCL2Haste.TabIndex = 144;
-            this.checkBoxBlueMagicCL2Haste.Text = "Haste";
-            this.checkBoxBlueMagicCL2Haste.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Protect
-            // 
-            this.checkBoxBlueMagicCL2Protect.AutoSize = true;
-            this.checkBoxBlueMagicCL2Protect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Protect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Protect.Location = new System.Drawing.Point(3, 135);
-            this.checkBoxBlueMagicCL2Protect.Name = "checkBoxBlueMagicCL2Protect";
-            this.checkBoxBlueMagicCL2Protect.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxBlueMagicCL2Protect.TabIndex = 148;
-            this.checkBoxBlueMagicCL2Protect.Text = "Protect";
-            this.checkBoxBlueMagicCL2Protect.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Death
-            // 
-            this.checkBoxBlueMagicCL2Death.AutoSize = true;
-            this.checkBoxBlueMagicCL2Death.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Death.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Death.Location = new System.Drawing.Point(189, 260);
-            this.checkBoxBlueMagicCL2Death.Name = "checkBoxBlueMagicCL2Death";
-            this.checkBoxBlueMagicCL2Death.Size = new System.Drawing.Size(57, 19);
-            this.checkBoxBlueMagicCL2Death.TabIndex = 175;
-            this.checkBoxBlueMagicCL2Death.Text = "Death";
-            this.checkBoxBlueMagicCL2Death.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Poison
-            // 
-            this.checkBoxBlueMagicCL2Poison.AutoSize = true;
-            this.checkBoxBlueMagicCL2Poison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Poison.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Poison.Location = new System.Drawing.Point(278, 260);
-            this.checkBoxBlueMagicCL2Poison.Name = "checkBoxBlueMagicCL2Poison";
-            this.checkBoxBlueMagicCL2Poison.Size = new System.Drawing.Size(62, 19);
-            this.checkBoxBlueMagicCL2Poison.TabIndex = 176;
-            this.checkBoxBlueMagicCL2Poison.Text = "Poison";
-            this.checkBoxBlueMagicCL2Poison.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Eject
-            // 
-            this.checkBoxBlueMagicCL2Eject.AutoSize = true;
-            this.checkBoxBlueMagicCL2Eject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Eject.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Eject.Location = new System.Drawing.Point(95, 185);
-            this.checkBoxBlueMagicCL2Eject.Name = "checkBoxBlueMagicCL2Eject";
-            this.checkBoxBlueMagicCL2Eject.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxBlueMagicCL2Eject.TabIndex = 159;
-            this.checkBoxBlueMagicCL2Eject.Text = "Eject";
-            this.checkBoxBlueMagicCL2Eject.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Double
-            // 
-            this.checkBoxBlueMagicCL2Double.AutoSize = true;
-            this.checkBoxBlueMagicCL2Double.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Double.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Double.Location = new System.Drawing.Point(189, 185);
-            this.checkBoxBlueMagicCL2Double.Name = "checkBoxBlueMagicCL2Double";
-            this.checkBoxBlueMagicCL2Double.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxBlueMagicCL2Double.TabIndex = 160;
-            this.checkBoxBlueMagicCL2Double.Text = "Double";
-            this.checkBoxBlueMagicCL2Double.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Triple
-            // 
-            this.checkBoxBlueMagicCL2Triple.AutoSize = true;
-            this.checkBoxBlueMagicCL2Triple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Triple.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Triple.Location = new System.Drawing.Point(278, 185);
-            this.checkBoxBlueMagicCL2Triple.Name = "checkBoxBlueMagicCL2Triple";
-            this.checkBoxBlueMagicCL2Triple.Size = new System.Drawing.Size(55, 19);
-            this.checkBoxBlueMagicCL2Triple.TabIndex = 161;
-            this.checkBoxBlueMagicCL2Triple.Text = "Triple";
-            this.checkBoxBlueMagicCL2Triple.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Defend
-            // 
-            this.checkBoxBlueMagicCL2Defend.AutoSize = true;
-            this.checkBoxBlueMagicCL2Defend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Defend.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Defend.Location = new System.Drawing.Point(366, 185);
-            this.checkBoxBlueMagicCL2Defend.Name = "checkBoxBlueMagicCL2Defend";
-            this.checkBoxBlueMagicCL2Defend.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxBlueMagicCL2Defend.TabIndex = 163;
-            this.checkBoxBlueMagicCL2Defend.Text = "Defend";
-            this.checkBoxBlueMagicCL2Defend.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Unk1
-            // 
-            this.checkBoxBlueMagicCL2Unk1.AutoSize = true;
-            this.checkBoxBlueMagicCL2Unk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Unk1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Unk1.Location = new System.Drawing.Point(3, 210);
-            this.checkBoxBlueMagicCL2Unk1.Name = "checkBoxBlueMagicCL2Unk1";
-            this.checkBoxBlueMagicCL2Unk1.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBlueMagicCL2Unk1.TabIndex = 164;
-            this.checkBoxBlueMagicCL2Unk1.Text = "???";
-            this.checkBoxBlueMagicCL2Unk1.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Unk2
-            // 
-            this.checkBoxBlueMagicCL2Unk2.AutoSize = true;
-            this.checkBoxBlueMagicCL2Unk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Unk2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Unk2.Location = new System.Drawing.Point(95, 210);
-            this.checkBoxBlueMagicCL2Unk2.Name = "checkBoxBlueMagicCL2Unk2";
-            this.checkBoxBlueMagicCL2Unk2.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBlueMagicCL2Unk2.TabIndex = 165;
-            this.checkBoxBlueMagicCL2Unk2.Text = "???";
-            this.checkBoxBlueMagicCL2Unk2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Charged
-            // 
-            this.checkBoxBlueMagicCL2Charged.AutoSize = true;
-            this.checkBoxBlueMagicCL2Charged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Charged.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Charged.Location = new System.Drawing.Point(189, 210);
-            this.checkBoxBlueMagicCL2Charged.Name = "checkBoxBlueMagicCL2Charged";
-            this.checkBoxBlueMagicCL2Charged.Size = new System.Drawing.Size(71, 19);
-            this.checkBoxBlueMagicCL2Charged.TabIndex = 162;
-            this.checkBoxBlueMagicCL2Charged.Text = "Charged";
-            this.checkBoxBlueMagicCL2Charged.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2BackAttack
-            // 
-            this.checkBoxBlueMagicCL2BackAttack.AutoSize = true;
-            this.checkBoxBlueMagicCL2BackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2BackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2BackAttack.Location = new System.Drawing.Point(278, 210);
-            this.checkBoxBlueMagicCL2BackAttack.Name = "checkBoxBlueMagicCL2BackAttack";
-            this.checkBoxBlueMagicCL2BackAttack.Size = new System.Drawing.Size(88, 19);
-            this.checkBoxBlueMagicCL2BackAttack.TabIndex = 166;
-            this.checkBoxBlueMagicCL2BackAttack.Text = "Back Attack";
-            this.checkBoxBlueMagicCL2BackAttack.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Vit0
-            // 
-            this.checkBoxBlueMagicCL2Vit0.AutoSize = true;
-            this.checkBoxBlueMagicCL2Vit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Vit0.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Vit0.Location = new System.Drawing.Point(366, 210);
-            this.checkBoxBlueMagicCL2Vit0.Name = "checkBoxBlueMagicCL2Vit0";
-            this.checkBoxBlueMagicCL2Vit0.Size = new System.Drawing.Size(46, 19);
-            this.checkBoxBlueMagicCL2Vit0.TabIndex = 174;
-            this.checkBoxBlueMagicCL2Vit0.Text = "Vit0";
-            this.checkBoxBlueMagicCL2Vit0.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2AngelWing
-            // 
-            this.checkBoxBlueMagicCL2AngelWing.AutoSize = true;
-            this.checkBoxBlueMagicCL2AngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2AngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2AngelWing.Location = new System.Drawing.Point(3, 235);
-            this.checkBoxBlueMagicCL2AngelWing.Name = "checkBoxBlueMagicCL2AngelWing";
-            this.checkBoxBlueMagicCL2AngelWing.Size = new System.Drawing.Size(88, 19);
-            this.checkBoxBlueMagicCL2AngelWing.TabIndex = 168;
-            this.checkBoxBlueMagicCL2AngelWing.Text = "Angel Wing";
-            this.checkBoxBlueMagicCL2AngelWing.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Unk3
-            // 
-            this.checkBoxBlueMagicCL2Unk3.AutoSize = true;
-            this.checkBoxBlueMagicCL2Unk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Unk3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Unk3.Location = new System.Drawing.Point(95, 235);
-            this.checkBoxBlueMagicCL2Unk3.Name = "checkBoxBlueMagicCL2Unk3";
-            this.checkBoxBlueMagicCL2Unk3.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBlueMagicCL2Unk3.TabIndex = 169;
-            this.checkBoxBlueMagicCL2Unk3.Text = "???";
-            this.checkBoxBlueMagicCL2Unk3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Unk4
-            // 
-            this.checkBoxBlueMagicCL2Unk4.AutoSize = true;
-            this.checkBoxBlueMagicCL2Unk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Unk4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Unk4.Location = new System.Drawing.Point(189, 235);
-            this.checkBoxBlueMagicCL2Unk4.Name = "checkBoxBlueMagicCL2Unk4";
-            this.checkBoxBlueMagicCL2Unk4.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBlueMagicCL2Unk4.TabIndex = 167;
-            this.checkBoxBlueMagicCL2Unk4.Text = "???";
-            this.checkBoxBlueMagicCL2Unk4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Unk5
-            // 
-            this.checkBoxBlueMagicCL2Unk5.AutoSize = true;
-            this.checkBoxBlueMagicCL2Unk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Unk5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Unk5.Location = new System.Drawing.Point(278, 235);
-            this.checkBoxBlueMagicCL2Unk5.Name = "checkBoxBlueMagicCL2Unk5";
-            this.checkBoxBlueMagicCL2Unk5.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBlueMagicCL2Unk5.TabIndex = 170;
-            this.checkBoxBlueMagicCL2Unk5.Text = "???";
-            this.checkBoxBlueMagicCL2Unk5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Unk6
-            // 
-            this.checkBoxBlueMagicCL2Unk6.AutoSize = true;
-            this.checkBoxBlueMagicCL2Unk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Unk6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Unk6.Location = new System.Drawing.Point(366, 235);
-            this.checkBoxBlueMagicCL2Unk6.Name = "checkBoxBlueMagicCL2Unk6";
-            this.checkBoxBlueMagicCL2Unk6.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBlueMagicCL2Unk6.TabIndex = 171;
-            this.checkBoxBlueMagicCL2Unk6.Text = "???";
-            this.checkBoxBlueMagicCL2Unk6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2PlayerChar
-            // 
-            this.checkBoxBlueMagicCL2PlayerChar.AutoSize = true;
-            this.checkBoxBlueMagicCL2PlayerChar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2PlayerChar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2PlayerChar.Location = new System.Drawing.Point(3, 260);
-            this.checkBoxBlueMagicCL2PlayerChar.Name = "checkBoxBlueMagicCL2PlayerChar";
-            this.checkBoxBlueMagicCL2PlayerChar.Size = new System.Drawing.Size(91, 19);
-            this.checkBoxBlueMagicCL2PlayerChar.TabIndex = 172;
-            this.checkBoxBlueMagicCL2PlayerChar.Text = "Player Char?";
-            this.checkBoxBlueMagicCL2PlayerChar.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2SummonGF
-            // 
-            this.checkBoxBlueMagicCL2SummonGF.AutoSize = true;
-            this.checkBoxBlueMagicCL2SummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2SummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2SummonGF.Location = new System.Drawing.Point(95, 260);
-            this.checkBoxBlueMagicCL2SummonGF.Name = "checkBoxBlueMagicCL2SummonGF";
-            this.checkBoxBlueMagicCL2SummonGF.Size = new System.Drawing.Size(92, 19);
-            this.checkBoxBlueMagicCL2SummonGF.TabIndex = 173;
-            this.checkBoxBlueMagicCL2SummonGF.Text = "Summon GF";
-            this.checkBoxBlueMagicCL2SummonGF.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Drain
-            // 
-            this.checkBoxBlueMagicCL2Drain.AutoSize = true;
-            this.checkBoxBlueMagicCL2Drain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Drain.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Drain.Location = new System.Drawing.Point(3, 185);
-            this.checkBoxBlueMagicCL2Drain.Name = "checkBoxBlueMagicCL2Drain";
-            this.checkBoxBlueMagicCL2Drain.Size = new System.Drawing.Size(54, 19);
-            this.checkBoxBlueMagicCL2Drain.TabIndex = 158;
-            this.checkBoxBlueMagicCL2Drain.Text = "Drain";
-            this.checkBoxBlueMagicCL2Drain.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Aura
-            // 
-            this.checkBoxBlueMagicCL2Aura.AutoSize = true;
-            this.checkBoxBlueMagicCL2Aura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Aura.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Aura.Location = new System.Drawing.Point(278, 135);
-            this.checkBoxBlueMagicCL2Aura.Name = "checkBoxBlueMagicCL2Aura";
-            this.checkBoxBlueMagicCL2Aura.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxBlueMagicCL2Aura.TabIndex = 151;
-            this.checkBoxBlueMagicCL2Aura.Text = "Aura";
-            this.checkBoxBlueMagicCL2Aura.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Float
-            // 
-            this.checkBoxBlueMagicCL2Float.AutoSize = true;
-            this.checkBoxBlueMagicCL2Float.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Float.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Float.Location = new System.Drawing.Point(189, 160);
-            this.checkBoxBlueMagicCL2Float.Name = "checkBoxBlueMagicCL2Float";
-            this.checkBoxBlueMagicCL2Float.Size = new System.Drawing.Size(52, 19);
-            this.checkBoxBlueMagicCL2Float.TabIndex = 156;
-            this.checkBoxBlueMagicCL2Float.Text = "Float";
-            this.checkBoxBlueMagicCL2Float.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Doom
-            // 
-            this.checkBoxBlueMagicCL2Doom.AutoSize = true;
-            this.checkBoxBlueMagicCL2Doom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Doom.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Doom.Location = new System.Drawing.Point(3, 160);
-            this.checkBoxBlueMagicCL2Doom.Name = "checkBoxBlueMagicCL2Doom";
-            this.checkBoxBlueMagicCL2Doom.Size = new System.Drawing.Size(59, 19);
-            this.checkBoxBlueMagicCL2Doom.TabIndex = 153;
-            this.checkBoxBlueMagicCL2Doom.Text = "Doom";
-            this.checkBoxBlueMagicCL2Doom.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Curse
-            // 
-            this.checkBoxBlueMagicCL2Curse.AutoSize = true;
-            this.checkBoxBlueMagicCL2Curse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Curse.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Curse.Location = new System.Drawing.Point(366, 135);
-            this.checkBoxBlueMagicCL2Curse.Name = "checkBoxBlueMagicCL2Curse";
-            this.checkBoxBlueMagicCL2Curse.Size = new System.Drawing.Size(56, 19);
-            this.checkBoxBlueMagicCL2Curse.TabIndex = 152;
-            this.checkBoxBlueMagicCL2Curse.Text = "Curse";
-            this.checkBoxBlueMagicCL2Curse.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Invicible
-            // 
-            this.checkBoxBlueMagicCL2Invicible.AutoSize = true;
-            this.checkBoxBlueMagicCL2Invicible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Invicible.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Invicible.Location = new System.Drawing.Point(95, 160);
-            this.checkBoxBlueMagicCL2Invicible.Name = "checkBoxBlueMagicCL2Invicible";
-            this.checkBoxBlueMagicCL2Invicible.Size = new System.Drawing.Size(77, 19);
-            this.checkBoxBlueMagicCL2Invicible.TabIndex = 154;
-            this.checkBoxBlueMagicCL2Invicible.Text = "Invincible";
-            this.checkBoxBlueMagicCL2Invicible.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Sleep
-            // 
-            this.checkBoxBlueMagicCL2Sleep.AutoSize = true;
-            this.checkBoxBlueMagicCL2Sleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Sleep.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Sleep.Location = new System.Drawing.Point(3, 110);
-            this.checkBoxBlueMagicCL2Sleep.Name = "checkBoxBlueMagicCL2Sleep";
-            this.checkBoxBlueMagicCL2Sleep.Size = new System.Drawing.Size(54, 19);
-            this.checkBoxBlueMagicCL2Sleep.TabIndex = 143;
-            this.checkBoxBlueMagicCL2Sleep.Text = "Sleep";
-            this.checkBoxBlueMagicCL2Sleep.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Berserk
-            // 
-            this.checkBoxBlueMagicCL2Berserk.AutoSize = true;
-            this.checkBoxBlueMagicCL2Berserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Berserk.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Berserk.Location = new System.Drawing.Point(189, 285);
-            this.checkBoxBlueMagicCL2Berserk.Name = "checkBoxBlueMagicCL2Berserk";
-            this.checkBoxBlueMagicCL2Berserk.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxBlueMagicCL2Berserk.TabIndex = 180;
-            this.checkBoxBlueMagicCL2Berserk.Text = "Berserk";
-            this.checkBoxBlueMagicCL2Berserk.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Slow
-            // 
-            this.checkBoxBlueMagicCL2Slow.AutoSize = true;
-            this.checkBoxBlueMagicCL2Slow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Slow.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Slow.Location = new System.Drawing.Point(189, 110);
-            this.checkBoxBlueMagicCL2Slow.Name = "checkBoxBlueMagicCL2Slow";
-            this.checkBoxBlueMagicCL2Slow.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxBlueMagicCL2Slow.TabIndex = 145;
-            this.checkBoxBlueMagicCL2Slow.Text = "Slow";
-            this.checkBoxBlueMagicCL2Slow.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Petrify
-            // 
-            this.checkBoxBlueMagicCL2Petrify.AutoSize = true;
-            this.checkBoxBlueMagicCL2Petrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Petrify.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Petrify.Location = new System.Drawing.Point(366, 260);
-            this.checkBoxBlueMagicCL2Petrify.Name = "checkBoxBlueMagicCL2Petrify";
-            this.checkBoxBlueMagicCL2Petrify.Size = new System.Drawing.Size(60, 19);
-            this.checkBoxBlueMagicCL2Petrify.TabIndex = 177;
-            this.checkBoxBlueMagicCL2Petrify.Text = "Petrify";
-            this.checkBoxBlueMagicCL2Petrify.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Confusion
-            // 
-            this.checkBoxBlueMagicCL2Confusion.AutoSize = true;
-            this.checkBoxBlueMagicCL2Confusion.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxBlueMagicCL2Confusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Confusion.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Confusion.Location = new System.Drawing.Point(366, 160);
-            this.checkBoxBlueMagicCL2Confusion.Name = "checkBoxBlueMagicCL2Confusion";
-            this.checkBoxBlueMagicCL2Confusion.Size = new System.Drawing.Size(81, 19);
-            this.checkBoxBlueMagicCL2Confusion.TabIndex = 157;
-            this.checkBoxBlueMagicCL2Confusion.Text = "Confusion";
-            this.checkBoxBlueMagicCL2Confusion.UseVisualStyleBackColor = false;
-            // 
-            // checkBoxBlueMagicCL2Stop
-            // 
-            this.checkBoxBlueMagicCL2Stop.AutoSize = true;
-            this.checkBoxBlueMagicCL2Stop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Stop.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Stop.Location = new System.Drawing.Point(278, 110);
-            this.checkBoxBlueMagicCL2Stop.Name = "checkBoxBlueMagicCL2Stop";
-            this.checkBoxBlueMagicCL2Stop.Size = new System.Drawing.Size(50, 19);
-            this.checkBoxBlueMagicCL2Stop.TabIndex = 146;
-            this.checkBoxBlueMagicCL2Stop.Text = "Stop";
-            this.checkBoxBlueMagicCL2Stop.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Silence
-            // 
-            this.checkBoxBlueMagicCL2Silence.AutoSize = true;
-            this.checkBoxBlueMagicCL2Silence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Silence.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Silence.Location = new System.Drawing.Point(95, 285);
-            this.checkBoxBlueMagicCL2Silence.Name = "checkBoxBlueMagicCL2Silence";
-            this.checkBoxBlueMagicCL2Silence.Size = new System.Drawing.Size(63, 19);
-            this.checkBoxBlueMagicCL2Silence.TabIndex = 179;
-            this.checkBoxBlueMagicCL2Silence.Text = "Silence";
-            this.checkBoxBlueMagicCL2Silence.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Darkness
-            // 
-            this.checkBoxBlueMagicCL2Darkness.AutoSize = true;
-            this.checkBoxBlueMagicCL2Darkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Darkness.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Darkness.Location = new System.Drawing.Point(3, 285);
-            this.checkBoxBlueMagicCL2Darkness.Name = "checkBoxBlueMagicCL2Darkness";
-            this.checkBoxBlueMagicCL2Darkness.Size = new System.Drawing.Size(73, 19);
-            this.checkBoxBlueMagicCL2Darkness.TabIndex = 178;
-            this.checkBoxBlueMagicCL2Darkness.Text = "Darkness";
-            this.checkBoxBlueMagicCL2Darkness.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBlueMagicCL2Petrifying
-            // 
-            this.checkBoxBlueMagicCL2Petrifying.AutoSize = true;
-            this.checkBoxBlueMagicCL2Petrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Petrifying.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Petrifying.Location = new System.Drawing.Point(278, 160);
-            this.checkBoxBlueMagicCL2Petrifying.Name = "checkBoxBlueMagicCL2Petrifying";
-            this.checkBoxBlueMagicCL2Petrifying.Size = new System.Drawing.Size(77, 19);
-            this.checkBoxBlueMagicCL2Petrifying.TabIndex = 155;
-            this.checkBoxBlueMagicCL2Petrifying.Text = "Petrifying";
-            this.checkBoxBlueMagicCL2Petrifying.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxBlueMagicCS2
-            // 
-            this.groupBoxBlueMagicCS2.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Petrifying);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Darkness);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Silence);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Stop);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Confusion);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Petrify);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Slow);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Berserk);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Sleep);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Invicible);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Curse);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Doom);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Float);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Aura);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Drain);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2SummonGF);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2PlayerChar);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk6);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk5);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk4);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk3);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2AngelWing);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Vit0);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2BackAttack);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Charged);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk2);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk1);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Defend);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Triple);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Double);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Eject);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Poison);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Death);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Protect);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Haste);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Regen);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Shell);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Reflect);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk7);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Zombie);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.numericUpDownBlueMagicCL2DeathLevel);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.labelBlueMagicCL2StatusAttack);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.labelBlueMagicCL2AttackPower);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.numericUpDownBlueMagicCL2AttackPower);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.labelBlueMagicCL2DeathLevel);
-            this.groupBoxBlueMagicCS2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxBlueMagicCS2.ForeColor = System.Drawing.Color.Green;
-            this.groupBoxBlueMagicCS2.Location = new System.Drawing.Point(3, 6);
-            this.groupBoxBlueMagicCS2.Name = "groupBoxBlueMagicCS2";
-            this.groupBoxBlueMagicCS2.Size = new System.Drawing.Size(444, 308);
-            this.groupBoxBlueMagicCS2.TabIndex = 104;
-            this.groupBoxBlueMagicCS2.TabStop = false;
-            this.groupBoxBlueMagicCS2.Text = "Crisis Level 2 Parameters";
-            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -22256,6 +22257,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL1DeathLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL1AttackPower)).EndInit();
             this.tabPage1.ResumeLayout(false);
+            this.groupBoxBlueMagicCS2.ResumeLayout(false);
+            this.groupBoxBlueMagicCS2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2DeathLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2AttackPower)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.groupBoxBlueMagicCS3.ResumeLayout(false);
             this.groupBoxBlueMagicCS3.PerformLayout();
@@ -22521,10 +22526,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackPower)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2AttackPower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2DeathLevel)).EndInit();
-            this.groupBoxBlueMagicCS2.ResumeLayout(false);
-            this.groupBoxBlueMagicCS2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

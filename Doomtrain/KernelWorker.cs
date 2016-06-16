@@ -5,6 +5,8 @@ namespace Doomtrain
 {
     class KernelWorker
     {
+        #region DECLARATIONS
+
         public static byte[] Kernel;
 
         public static int MagicDataOffset = -1;
@@ -366,6 +368,9 @@ namespace Doomtrain
             public byte DeathLevel;
         }
 
+        #endregion
+
+        #region WRITE KERNEL VARIABLES
 
         public static void UpdateVariable_Magic(int index, object variable, byte arg0 = 127)
         {
@@ -616,7 +621,6 @@ namespace Doomtrain
             }
 
         }
-
         public static void MagicStatusUpdator(byte StatusByteIndex, object variable)
         {
             switch (StatusByteIndex)
@@ -737,7 +741,6 @@ namespace Doomtrain
                     return;
             }
         }
-
         private static void GFStatusUpdator(byte StatusByteIndex, object variable)
         {
             switch (StatusByteIndex)
@@ -805,7 +808,6 @@ namespace Doomtrain
                     return;
             }
         }
-
         private static void GFAttacksStatusUpdator(byte StatusByteIndex, object variable)
         {
             switch (StatusByteIndex)
@@ -827,7 +829,6 @@ namespace Doomtrain
                     return;
             }
         }
-
 
         public static void UpdateVariable_Weapons(int index, object variable, byte arg0 = 127)
         {
@@ -858,7 +859,6 @@ namespace Doomtrain
                     return;
             }
         }
-
         private static void RenzokukenFinishersUpdator(byte FinisherByteIndex, object variable)
         {
             switch (FinisherByteIndex)
@@ -868,8 +868,6 @@ namespace Doomtrain
                     return;
             }
         }
-
-
 
         public static void UpdateVariable_Characters(int index, object variable)
         {
@@ -985,32 +983,6 @@ namespace Doomtrain
             }
         }
 
-
-        public static void UpdateVariable_BlueMagic(int index, object variable)
-        {
-            if (!mainForm._loaded || Kernel == null)
-                return;
-            switch (index)
-            {
-                case 0:
-                    UshortToKernel(Convert.ToUInt16(variable), 4, (byte)Mode.Mode_BlueMagic); //MagicID
-                    return;
-                case 1:
-                    Kernel[OffsetToBlueMagicSelected + 6] = Convert.ToByte(variable); //attack type
-                    return;
-                case 2:
-                    Kernel[OffsetToBlueMagicSelected + 8] ^= Convert.ToByte(variable); //flags
-                    return;
-                case 3:
-                    Kernel[OffsetToBlueMagicSelected + 10] = Convert.ToByte(variable); //element
-                    return;
-
-                default:
-                    return;
-            }
-        }
-
-
         public static void UpdateVariable_EnemyAttacks(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -1043,7 +1015,6 @@ namespace Doomtrain
                     return;
             }
         }
-
         private static void EnemyAttacksStatusUpdator(byte StatusByteIndex, object variable)
         {
             switch (StatusByteIndex)
@@ -1066,8 +1037,29 @@ namespace Doomtrain
             }
         }
 
+        public static void UpdateVariable_BlueMagic(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    UshortToKernel(Convert.ToUInt16(variable), 4, (byte)Mode.Mode_BlueMagic); //MagicID
+                    return;
+                case 1:
+                    Kernel[OffsetToBlueMagicSelected + 6] = Convert.ToByte(variable); //attack type
+                    return;
+                case 2:
+                    Kernel[OffsetToBlueMagicSelected + 8] ^= Convert.ToByte(variable); //flags
+                    return;
+                case 3:
+                    Kernel[OffsetToBlueMagicSelected + 10] = Convert.ToByte(variable); //element
+                    return;
 
-
+                default:
+                    return;
+            }
+        }
         public static void UpdateVariable_BlueMagicParam(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -1091,7 +1083,6 @@ namespace Doomtrain
                     return;
             }
         }
-
         private static void BlueMagicParamStatusUpdator(byte StatusByteIndex, object variable)
         {
             switch (StatusByteIndex)
@@ -1114,8 +1105,9 @@ namespace Doomtrain
             }
         }
 
+        #endregion
 
-
+        #region MAGIC ID
 
         /// <summary>
         /// This is for MagicID list
@@ -1156,6 +1148,9 @@ namespace Doomtrain
             Mode_BlueMagic
         }
 
+        #endregion
+
+        #region READ KERNEL VARIABLES
 
         public static void ReadKernel(byte[] kernel)
         {
@@ -1406,7 +1401,6 @@ namespace Doomtrain
             GetSelectedGFAttacksData.GFAttacksLevelMod = Kernel[selectedGfAttacksOffset + 1];
         }
 
-
         public static void ReadWeapons(int WeaponsID_List)
         {
             GetSelectedWeaponsData = new WeaponsData();
@@ -1446,8 +1440,6 @@ namespace Doomtrain
             GetSelectedWeaponsData.STRBonus = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.Tier = Kernel[selectedWeaponsOffset++];
         }
-
-
 
         public static void ReadCharacters(int CharactersID_List)
         {
@@ -1498,7 +1490,6 @@ namespace Doomtrain
             GetSelectedCharactersData.LUCK4 = Kernel[selectedCharactersOffset++];
         }
 
-
         public static void ReadEnemyAttacks(int EnemyAttacksID_List)
         {
             GetSelectedEnemyAttacksData = new EnemyAttacksData();
@@ -1543,8 +1534,6 @@ namespace Doomtrain
             GetSelectedEnemyAttacksData.Status5 = Kernel[selectedEnemyAttacksOffset++];
         }
 
-
-
         public static void ReadBlueMagic(int BlueMagicID_List)
         {
             GetSelectedBlueMagicData = new BlueMagicData();
@@ -1581,7 +1570,6 @@ namespace Doomtrain
             GetSelectedBlueMagicData.StatusAttack = Kernel[selectedBlueMagicOffset++];
         }
 
-
         public static void ReadBlueMagicParam(int BlueMagicParamID_List)
         {
             GetSelectedBlueMagicParamData = new BlueMagicParamData();
@@ -1599,7 +1587,7 @@ namespace Doomtrain
             GetSelectedBlueMagicParamData.DeathLevel = Kernel[selectedBlueMagicParamOffset++];
         }
 
-
+        #endregion
 
 
         private static string BuildString(int index)
@@ -1615,8 +1603,6 @@ namespace Doomtrain
                 sb.Append(c);
             }
         }
-
-
 
     }
 }
