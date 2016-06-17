@@ -148,6 +148,11 @@
             this.labelEnemyAttacksMagicID = new System.Windows.Forms.Label();
             this.labelBlueMagicCL2DeathLevel = new System.Windows.Forms.Label();
             this.labelBlueMagicCL2AttackPower = new System.Windows.Forms.Label();
+            this.labelRenzoFinAttackType = new System.Windows.Forms.Label();
+            this.labelRenzoFinHitCount = new System.Windows.Forms.Label();
+            this.labelRenzoFinAttackPower = new System.Windows.Forms.Label();
+            this.labelRenzoFinMagicID = new System.Windows.Forms.Label();
+            this.checkBoxRenzoFinTarget4 = new System.Windows.Forms.CheckBox();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -858,6 +863,23 @@
             this.labelCharHPA = new System.Windows.Forms.Label();
             this.listBoxCharacters = new System.Windows.Forms.ListBox();
             this.tabControlMain = new System.Windows.Forms.TabControl();
+            this.tabPageRenzokukenFinishers = new System.Windows.Forms.TabPage();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBoxRenzoFinGeneral = new System.Windows.Forms.GroupBox();
+            this.comboBoxRenzoFinAttackType = new System.Windows.Forms.ComboBox();
+            this.numericUpDownRenzoFinHitCount = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownRenzoFinAttackPower = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxRenzoFinMagicID = new System.Windows.Forms.ComboBox();
+            this.checkBoxRenzoFinTarget3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinTarget1 = new System.Windows.Forms.CheckBox();
+            this.labelRenzoFinDefaultTarget = new System.Windows.Forms.Label();
+            this.checkBoxRenzoFinTarget7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinTarget6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinTarget8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinTarget2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinTarget5 = new System.Windows.Forms.CheckBox();
+            this.listBoxRenzoFin = new System.Windows.Forms.ListBox();
             this.tabSlots = new System.Windows.Forms.TabPage();
             this.groupBoxSlotSets = new System.Windows.Forms.GroupBox();
             this.labelSlotSetsMagic = new System.Windows.Forms.Label();
@@ -1172,6 +1194,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP1)).BeginInit();
             this.tabControlMain.SuspendLayout();
+            this.tabPageRenzokukenFinishers.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.groupBoxRenzoFinGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinHitCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinAttackPower)).BeginInit();
             this.tabSlots.SuspendLayout();
             this.groupBoxSlotSets.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN3)).BeginInit();
@@ -3705,6 +3733,67 @@
             this.labelBlueMagicCL2AttackPower.TabIndex = 99;
             this.labelBlueMagicCL2AttackPower.Text = "Attack Power";
             this.toolTip1.SetToolTip(this.labelBlueMagicCL2AttackPower, "Used in damage calculation");
+            // 
+            // labelRenzoFinAttackType
+            // 
+            this.labelRenzoFinAttackType.AutoSize = true;
+            this.labelRenzoFinAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelRenzoFinAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelRenzoFinAttackType.Location = new System.Drawing.Point(120, 80);
+            this.labelRenzoFinAttackType.Name = "labelRenzoFinAttackType";
+            this.labelRenzoFinAttackType.Size = new System.Drawing.Size(79, 17);
+            this.labelRenzoFinAttackType.TabIndex = 7;
+            this.labelRenzoFinAttackType.Text = "Attack Type";
+            this.toolTip1.SetToolTip(this.labelRenzoFinAttackType, "Decides what animation to play");
+            // 
+            // labelRenzoFinHitCount
+            // 
+            this.labelRenzoFinHitCount.AutoSize = true;
+            this.labelRenzoFinHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelRenzoFinHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelRenzoFinHitCount.Location = new System.Drawing.Point(355, 80);
+            this.labelRenzoFinHitCount.Name = "labelRenzoFinHitCount";
+            this.labelRenzoFinHitCount.Size = new System.Drawing.Size(67, 17);
+            this.labelRenzoFinHitCount.TabIndex = 0;
+            this.labelRenzoFinHitCount.Text = "Hit Count";
+            this.toolTip1.SetToolTip(this.labelRenzoFinHitCount, "Number of hits");
+            // 
+            // labelRenzoFinAttackPower
+            // 
+            this.labelRenzoFinAttackPower.AutoSize = true;
+            this.labelRenzoFinAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelRenzoFinAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelRenzoFinAttackPower.Location = new System.Drawing.Point(343, 29);
+            this.labelRenzoFinAttackPower.Name = "labelRenzoFinAttackPower";
+            this.labelRenzoFinAttackPower.Size = new System.Drawing.Size(89, 17);
+            this.labelRenzoFinAttackPower.TabIndex = 0;
+            this.labelRenzoFinAttackPower.Text = "Attack Power";
+            this.toolTip1.SetToolTip(this.labelRenzoFinAttackPower, "Used in damage calculation");
+            // 
+            // labelRenzoFinMagicID
+            // 
+            this.labelRenzoFinMagicID.AutoSize = true;
+            this.labelRenzoFinMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelRenzoFinMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelRenzoFinMagicID.Location = new System.Drawing.Point(131, 29);
+            this.labelRenzoFinMagicID.Name = "labelRenzoFinMagicID";
+            this.labelRenzoFinMagicID.Size = new System.Drawing.Size(61, 17);
+            this.labelRenzoFinMagicID.TabIndex = 0;
+            this.labelRenzoFinMagicID.Text = "Magic ID";
+            this.toolTip1.SetToolTip(this.labelRenzoFinMagicID, "Decides what animation to play");
+            // 
+            // checkBoxRenzoFinTarget4
+            // 
+            this.checkBoxRenzoFinTarget4.AutoSize = true;
+            this.checkBoxRenzoFinTarget4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinTarget4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinTarget4.Location = new System.Drawing.Point(352, 186);
+            this.checkBoxRenzoFinTarget4.Name = "checkBoxRenzoFinTarget4";
+            this.checkBoxRenzoFinTarget4.Size = new System.Drawing.Size(83, 19);
+            this.checkBoxRenzoFinTarget4.TabIndex = 38;
+            this.checkBoxRenzoFinTarget4.Text = "Single Side";
+            this.toolTip1.SetToolTip(this.checkBoxRenzoFinTarget4, "Enemy decides which side");
+            this.checkBoxRenzoFinTarget4.UseVisualStyleBackColor = true;
             // 
             // fileToolStripMenuItem
             // 
@@ -15514,11 +15603,12 @@
             this.checkBoxMagicTarget4.AutoSize = true;
             this.checkBoxMagicTarget4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget4.Location = new System.Drawing.Point(365, 218);
+            this.checkBoxMagicTarget4.Location = new System.Drawing.Point(353, 218);
             this.checkBoxMagicTarget4.Name = "checkBoxMagicTarget4";
-            this.checkBoxMagicTarget4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxMagicTarget4.Size = new System.Drawing.Size(83, 19);
             this.checkBoxMagicTarget4.TabIndex = 38;
-            this.checkBoxMagicTarget4.Text = "???";
+            this.checkBoxMagicTarget4.Text = "Single Side";
+            this.toolTip1.SetToolTip(this.checkBoxMagicTarget4, "Enemy decides which side");
             this.checkBoxMagicTarget4.UseVisualStyleBackColor = true;
             // 
             // numericUpDownMagicDrawResist
@@ -15908,7 +15998,7 @@
             this.checkBoxMagicTarget3.AutoSize = true;
             this.checkBoxMagicTarget3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget3.Location = new System.Drawing.Point(260, 218);
+            this.checkBoxMagicTarget3.Location = new System.Drawing.Point(248, 218);
             this.checkBoxMagicTarget3.Name = "checkBoxMagicTarget3";
             this.checkBoxMagicTarget3.Size = new System.Drawing.Size(41, 19);
             this.checkBoxMagicTarget3.TabIndex = 37;
@@ -15920,7 +16010,7 @@
             this.checkBoxMagicTarget1.AutoSize = true;
             this.checkBoxMagicTarget1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget1.Location = new System.Drawing.Point(42, 218);
+            this.checkBoxMagicTarget1.Location = new System.Drawing.Point(30, 218);
             this.checkBoxMagicTarget1.Name = "checkBoxMagicTarget1";
             this.checkBoxMagicTarget1.Size = new System.Drawing.Size(53, 19);
             this.checkBoxMagicTarget1.TabIndex = 35;
@@ -15943,7 +16033,7 @@
             this.checkBoxMagicTarget7.AutoSize = true;
             this.checkBoxMagicTarget7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget7.Location = new System.Drawing.Point(260, 243);
+            this.checkBoxMagicTarget7.Location = new System.Drawing.Point(248, 243);
             this.checkBoxMagicTarget7.Name = "checkBoxMagicTarget7";
             this.checkBoxMagicTarget7.Size = new System.Drawing.Size(62, 19);
             this.checkBoxMagicTarget7.TabIndex = 42;
@@ -15955,7 +16045,7 @@
             this.checkBoxMagicTarget6.AutoSize = true;
             this.checkBoxMagicTarget6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget6.Location = new System.Drawing.Point(150, 243);
+            this.checkBoxMagicTarget6.Location = new System.Drawing.Point(138, 243);
             this.checkBoxMagicTarget6.Name = "checkBoxMagicTarget6";
             this.checkBoxMagicTarget6.Size = new System.Drawing.Size(41, 19);
             this.checkBoxMagicTarget6.TabIndex = 41;
@@ -15967,7 +16057,7 @@
             this.checkBoxMagicTarget8.AutoSize = true;
             this.checkBoxMagicTarget8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget8.Location = new System.Drawing.Point(365, 243);
+            this.checkBoxMagicTarget8.Location = new System.Drawing.Point(353, 243);
             this.checkBoxMagicTarget8.Name = "checkBoxMagicTarget8";
             this.checkBoxMagicTarget8.Size = new System.Drawing.Size(41, 19);
             this.checkBoxMagicTarget8.TabIndex = 39;
@@ -15979,7 +16069,7 @@
             this.checkBoxMagicTarget2.AutoSize = true;
             this.checkBoxMagicTarget2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget2.Location = new System.Drawing.Point(150, 218);
+            this.checkBoxMagicTarget2.Location = new System.Drawing.Point(138, 218);
             this.checkBoxMagicTarget2.Name = "checkBoxMagicTarget2";
             this.checkBoxMagicTarget2.Size = new System.Drawing.Size(41, 19);
             this.checkBoxMagicTarget2.TabIndex = 36;
@@ -15991,7 +16081,7 @@
             this.checkBoxMagicTarget5.AutoSize = true;
             this.checkBoxMagicTarget5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget5.Location = new System.Drawing.Point(42, 243);
+            this.checkBoxMagicTarget5.Location = new System.Drawing.Point(30, 243);
             this.checkBoxMagicTarget5.Name = "checkBoxMagicTarget5";
             this.checkBoxMagicTarget5.Size = new System.Drawing.Size(58, 19);
             this.checkBoxMagicTarget5.TabIndex = 40;
@@ -17712,7 +17802,7 @@
             this.listBoxAbCharacters.Location = new System.Drawing.Point(0, 0);
             this.listBoxAbCharacters.Name = "listBoxAbCharacters";
             this.listBoxAbCharacters.ScrollAlwaysVisible = true;
-            this.listBoxAbCharacters.Size = new System.Drawing.Size(124, 259);
+            this.listBoxAbCharacters.Size = new System.Drawing.Size(124, 735);
             this.listBoxAbCharacters.TabIndex = 3;
             // 
             // listBoxAbStats
@@ -19332,6 +19422,7 @@
             this.tabControlMain.Controls.Add(this.tabPageGF);
             this.tabControlMain.Controls.Add(this.tabPageGFAttacks);
             this.tabControlMain.Controls.Add(this.tabBlueMagic);
+            this.tabControlMain.Controls.Add(this.tabPageRenzokukenFinishers);
             this.tabControlMain.Controls.Add(this.tabSlots);
             this.tabControlMain.Controls.Add(this.tabEnemyAttacks);
             this.tabControlMain.Font = new System.Drawing.Font("Calisto MT", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -19342,6 +19433,612 @@
             this.tabControlMain.Size = new System.Drawing.Size(592, 777);
             this.tabControlMain.TabIndex = 0;
             this.tabControlMain.TabStop = false;
+            // 
+            // tabPageRenzokukenFinishers
+            // 
+            this.tabPageRenzokukenFinishers.Controls.Add(this.tabControl1);
+            this.tabPageRenzokukenFinishers.Controls.Add(this.listBoxRenzoFin);
+            this.tabPageRenzokukenFinishers.Location = new System.Drawing.Point(4, 34);
+            this.tabPageRenzokukenFinishers.Name = "tabPageRenzokukenFinishers";
+            this.tabPageRenzokukenFinishers.Size = new System.Drawing.Size(584, 739);
+            this.tabPageRenzokukenFinishers.TabIndex = 9;
+            this.tabPageRenzokukenFinishers.Text = "Renzokuken Finishers";
+            this.tabPageRenzokukenFinishers.UseVisualStyleBackColor = true;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.ItemSize = new System.Drawing.Size(110, 22);
+            this.tabControl1.Location = new System.Drawing.Point(111, 0);
+            this.tabControl1.Multiline = true;
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(477, 736);
+            this.tabControl1.TabIndex = 2;
+            this.tabControl1.TabStop = false;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage6.Controls.Add(this.groupBoxRenzoFinGeneral);
+            this.tabPage6.Location = new System.Drawing.Point(4, 26);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(469, 706);
+            this.tabPage6.TabIndex = 0;
+            this.tabPage6.Text = "General";
+            // 
+            // groupBoxRenzoFinGeneral
+            // 
+            this.groupBoxRenzoFinGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.comboBoxRenzoFinAttackType);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.labelRenzoFinAttackType);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.numericUpDownRenzoFinHitCount);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.checkBoxRenzoFinTarget4);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.numericUpDownRenzoFinAttackPower);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.comboBoxRenzoFinMagicID);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.checkBoxRenzoFinTarget3);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.labelRenzoFinHitCount);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.checkBoxRenzoFinTarget1);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.labelRenzoFinDefaultTarget);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.labelRenzoFinAttackPower);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.labelRenzoFinMagicID);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.checkBoxRenzoFinTarget7);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.checkBoxRenzoFinTarget6);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.checkBoxRenzoFinTarget8);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.checkBoxRenzoFinTarget2);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.checkBoxRenzoFinTarget5);
+            this.groupBoxRenzoFinGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxRenzoFinGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxRenzoFinGeneral.Location = new System.Drawing.Point(0, 6);
+            this.groupBoxRenzoFinGeneral.Name = "groupBoxRenzoFinGeneral";
+            this.groupBoxRenzoFinGeneral.Size = new System.Drawing.Size(465, 240);
+            this.groupBoxRenzoFinGeneral.TabIndex = 2;
+            this.groupBoxRenzoFinGeneral.TabStop = false;
+            this.groupBoxRenzoFinGeneral.Text = "General";
+            // 
+            // comboBoxRenzoFinAttackType
+            // 
+            this.comboBoxRenzoFinAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxRenzoFinAttackType.FormattingEnabled = true;
+            this.comboBoxRenzoFinAttackType.Items.AddRange(new object[] {
+            "None",
+            "Basic Attack",
+            "Magic Attack",
+            "Curative Magic",
+            "Curative Item",
+            "Revive",
+            "Revive At Full HP",
+            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "Demi",
+            "Renzokuken Finisher",
+            "Squall Gunblade Attack",
+            "GF",
+            "Scan",
+            "LV Down",
+            "Summon Item?",
+            "Ignore SPR",
+            "LV Up",
+            "Card",
+            "Kamikaze",
+            "Devour",
+            "Diablos Gravity Attack",
+            "",
+            "Mega Spark/Mega Flare",
+            "Angelo Search",
+            "Moogle Dance",
+            "White Wind (Quistis)",
+            "LV5 Death/LV? Death",
+            "Fixed Damage",
+            "Corona/Hell\'s Judgement",
+            "Cactuar Summon",
+            "",
+            "",
+            "Give Percentage HP",
+            "",
+            "Everyone\'s Grudge",
+            "Excalipoor",
+            "Terra Break/Great Attractor"});
+            this.comboBoxRenzoFinAttackType.Location = new System.Drawing.Point(29, 100);
+            this.comboBoxRenzoFinAttackType.Name = "comboBoxRenzoFinAttackType";
+            this.comboBoxRenzoFinAttackType.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxRenzoFinAttackType.TabIndex = 8;
+            // 
+            // numericUpDownRenzoFinHitCount
+            // 
+            this.numericUpDownRenzoFinHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownRenzoFinHitCount.Location = new System.Drawing.Point(365, 100);
+            this.numericUpDownRenzoFinHitCount.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownRenzoFinHitCount.Name = "numericUpDownRenzoFinHitCount";
+            this.numericUpDownRenzoFinHitCount.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownRenzoFinHitCount.TabIndex = 6;
+            // 
+            // numericUpDownRenzoFinAttackPower
+            // 
+            this.numericUpDownRenzoFinAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownRenzoFinAttackPower.Location = new System.Drawing.Point(365, 49);
+            this.numericUpDownRenzoFinAttackPower.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownRenzoFinAttackPower.Name = "numericUpDownRenzoFinAttackPower";
+            this.numericUpDownRenzoFinAttackPower.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownRenzoFinAttackPower.TabIndex = 3;
+            // 
+            // comboBoxRenzoFinMagicID
+            // 
+            this.comboBoxRenzoFinMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxRenzoFinMagicID.FormattingEnabled = true;
+            this.comboBoxRenzoFinMagicID.Items.AddRange(new object[] {
+            "None",
+            "Cure",
+            "Fire",
+            "Thunder",
+            "Double",
+            "Phoenix Down",
+            "Leviathan Summon (Tsunami)",
+            "Mega Phoenix",
+            "Doom",
+            "Doom Activation",
+            "Ray-Bomb",
+            "Storm Breath",
+            "Blade Shot",
+            "Dark Mist/Poison Mist",
+            "Death/Death Stone",
+            "Draw",
+            "Recover",
+            "Elvoret Entrance",
+            "Elvoret Death",
+            "",
+            "NORG Pod Opening",
+            "Triple",
+            "Bio",
+            "Psycho Blast",
+            "Esuna",
+            "Cura",
+            "Clash",
+            "Full-Life",
+            "Curaga",
+            "Wind Blast",
+            "Counter Laser-Eye",
+            "Heartbreak",
+            "Protect",
+            "Shell",
+            "Pain",
+            "Life",
+            "Confuse",
+            "Drink Magic",
+            "Quake",
+            "Drain",
+            "Scan",
+            "Dribble",
+            "Shoot",
+            "Melting Bubble",
+            "Junk",
+            "Stare",
+            "Sigh",
+            "Curse",
+            "Magma Breath",
+            "Resonance",
+            "Potion/Potion+",
+            "Hi-Potion/Hi-Potion+",
+            "X-Potion",
+            "Mega-Potion",
+            "Everyone\'s Grudge",
+            "Aqua Breath",
+            "Absorb",
+            "Treatment",
+            "Elixir",
+            "Megalixir",
+            "",
+            "Revive",
+            "Devour",
+            "",
+            "Griever Tail Falling Off",
+            "Great Attractor",
+            "Griever + Ultimecia Death",
+            "Remedy/Remedy+",
+            "",
+            "Griever Summon",
+            "Shockwave Pulsar",
+            "Laser Eye (Quistis)",
+            "Aqua Breath (Quistis)",
+            "Mighty Guard (Quistis)",
+            "LV?Death (Quistis)",
+            "Hell\'s Judgement",
+            "Ultimecia Final Form Spawn",
+            "Ultimecia Final Form Death",
+            "Mighty Guard",
+            "Griever Death",
+            "Ultimecia Junctioning to Griever",
+            "",
+            "Ultimecia Blow Away Magic",
+            "Absorbed into time...",
+            "Angel Wing",
+            "The End",
+            "Angelo Cannon",
+            "Angelo Strike",
+            "Invincible Moon",
+            "Wishing Star",
+            "Tonberry Summon (Chef\'s Knife)",
+            "Angelo Rush",
+            "Angelo Search",
+            "Angelo Recover",
+            "Angelo Reverse",
+            "Siren Summon (Silent Voice)",
+            "Moogle Dance",
+            "ChocoFire",
+            "ChocoFlare",
+            "ChocoMeteor",
+            "ChocoBocle",
+            "",
+            "Thundara",
+            "Blizzara",
+            "Blizzaga",
+            "Thundaga",
+            "Reflect",
+            "Demi",
+            "Berserk",
+            "Dispel",
+            "Biggs + Wedge 1st Death",
+            "Aura",
+            "",
+            "Bad Breath",
+            "Zombie",
+            "Float",
+            "Quezacotl Summon (Thunder Storm)",
+            "Break",
+            "Aero",
+            "Stop",
+            "Petrify Stare",
+            "Blind",
+            "Silence",
+            "Slow",
+            "Flare",
+            "Haste",
+            "Electric Discharge",
+            "Petrify Stare",
+            "Gastric Juice",
+            "Breath",
+            "Eerie Sound Wave",
+            "Bad Breath",
+            "Disolving Acid",
+            "Hypnotize",
+            "Beam Laser",
+            "Reflect Beam",
+            "Oil Shot",
+            "Oil Blast",
+            "Saliva",
+            "Sonic Wave",
+            "Phoenix Pinion (Rebirth Flame)",
+            "Renzokuken - 5 Hits",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Sleep",
+            "Tornado",
+            "Regen",
+            "Meltdown",
+            "Ultima",
+            "Gatling Gun",
+            "Cannon Blow",
+            "Ultrasonic Waves",
+            "Sticky Web",
+            "Ultra Waves",
+            "Sand Storm",
+            "Wild Cannon Blow",
+            "Breath",
+            "Melt-Eye",
+            "Renzokuken (vs X-ATM092)",
+            "Renzokuken - 4 Hits",
+            "Renzokuken (vs Elnoyle/Elvoret)",
+            "Fated Circle",
+            "Rough Divide",
+            "Blasting Zone",
+            "Lion Heart",
+            "Megido Flame",
+            "Zantetsuken",
+            "Sleeping Gas",
+            "Gastric Juice",
+            "Acid",
+            "Poison Gas",
+            "Morph",
+            "Ice Breath",
+            "Degenerator",
+            "Holy",
+            "Sand Storm",
+            "1,000 Needles",
+            "10,000 Needles",
+            "",
+            "Suicide",
+            "Kamikaze",
+            "Card",
+            "Defend",
+            "Ultra Waves (Quistis)",
+            "Shiva Summon (Diamond Dust)",
+            "Blaster",
+            "Odin Summon (Zantetsuken)",
+            "Shot - Normal Shot",
+            "Wall",
+            "Chain Gun",
+            "Doomtrain Summon (Runaway Train)",
+            "Shot - Scatter Shot",
+            "Shot - Dark Shot",
+            "Shot - Flame Shot",
+            "Shot - Canister Shot",
+            "Shot - Quick Shot",
+            "Shot - Armor Shot",
+            "Shot - Hyper Shot",
+            "Cactuar Summon (1,000 Needles)",
+            "No Mercy",
+            "Ifrit Summon (Hell Fire)",
+            "Bahamut Summon (Mega Flare)",
+            "Cerberus Summon (Counter Rockets)",
+            "Alexander Summon (Holy Judgment)",
+            "Brothers Summon (Brotherly Love)",
+            "Eden Summon (Eternal Breath)",
+            "Maelstrom",
+            "Final \"Sorceress\" Death",
+            "\"Sorceress\" Spawn",
+            "Bloodfest",
+            "Adel Death",
+            "",
+            "Storm Breath",
+            "Gravija",
+            "",
+            "",
+            "Energy Bomber",
+            "",
+            "Terra Break",
+            "Light Pillar",
+            "Apocalypse",
+            "Water",
+            "Meteor",
+            "",
+            "",
+            "White Wind",
+            "Ultimecia First Death",
+            "Ice Strike",
+            "Homing Laser (Quistis)",
+            "Fire Breath (Quistis)",
+            "Disease Breath",
+            "Breath of Death",
+            "Earthquake",
+            "Fart",
+            "Breath",
+            "Gas",
+            "Explosion",
+            "Breath",
+            "Ochu Dance",
+            "Earthquake",
+            "BGH251F2 Gatling Gun",
+            "Beam Cannon",
+            "BGH251F2 1st Turret Exploding",
+            "BGH251F2 2nd Turret Exploding",
+            "BGH251F2 3rd Turret Exploding",
+            "BGH251F2 4th Turret Exploding",
+            "BGH251F2 Death",
+            "Soldier Entrance After BGH251F2 Death",
+            "",
+            "Beam Cannon",
+            "Demon Slice",
+            "Corona",
+            "Twin Homing Laser",
+            "Homing Laser",
+            "Homing Laser",
+            "Sand Shake",
+            "Mega Flare",
+            "Mad Cow Special",
+            "Renzokuken - 6 Hits",
+            "Shockwave Pulsar (Quistis)",
+            "Desperado",
+            "Blood Pain",
+            "Massive Anchor",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Ultima Weapon Death",
+            "LV Up",
+            "LV Down",
+            "Mad Rush",
+            "Duel",
+            "Electrocute (Quistis)",
+            "",
+            "",
+            "Carbuncle Summon (Ruby Light)",
+            "Mega Spark",
+            "Full Cure",
+            "Shotgun",
+            "Evil-Eye",
+            "Magic Summon",
+            "Micro Missiles",
+            "Thunder Summon",
+            "Mini Pulse Cannon",
+            "Mega Pulse Cannon",
+            "Rapture",
+            "\"Brrawghh!\"",
+            "",
+            "Pandemona Summon (Tornado Zone)",
+            "Soft",
+            "Eye Drops",
+            "Antidote",
+            "Echo Screen",
+            "Holy Water",
+            "White Wind (Quistis)",
+            "",
+            "Micro Missiles (Quistis)",
+            "Bad Breath (Quistis)",
+            "",
+            "Snipe Laser",
+            "",
+            "Boomerang Sword",
+            "Gatling Gun (Quistis)",
+            "Degenerator (Quistis)",
+            "Ray-Bomb (Quistis)",
+            "",
+            "Hero-trial/Hero",
+            "Holy War-trial/Holy War",
+            "",
+            "",
+            "",
+            "",
+            "Fake President Death",
+            "",
+            "Acid (Quistis)",
+            "",
+            "",
+            "Dark Flare",
+            "Ker Plunk",
+            "Zan",
+            "Metsu",
+            "Tonberry King Death",
+            "Diablos Summon (Dark Messenger)",
+            "Zantetsuken Reverse",
+            "Gilgamesh - Zantetsuken",
+            "Gilgamesh - Masamune",
+            "Gilgamesh - Excaliber",
+            "Gilgamesh - Excalipoor",
+            "",
+            "Renzokuken - 7 Hits",
+            "Renzokuken - 8 Hits",
+            "Renzokuken (vs Bahamut)",
+            "Renzokuken (vs NORG)",
+            "Renzokuken (vs Ultima Weapon)",
+            "Renzokuken (vs Final \"Sorceress\")",
+            "Friendship (MoombaMoomba)",
+            "Renzokuken (vs Adel)",
+            "Renzokuken (vs Ultimecia Final Form)",
+            "Renzokuken (vs Jumbo Cactuar)",
+            "Renzokuken (vs Griever + Ultimecia)",
+            "Renzokuken (vs Griever)",
+            "Final Battle Music",
+            "LV5 Death"});
+            this.comboBoxRenzoFinMagicID.Location = new System.Drawing.Point(29, 49);
+            this.comboBoxRenzoFinMagicID.Name = "comboBoxRenzoFinMagicID";
+            this.comboBoxRenzoFinMagicID.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxRenzoFinMagicID.TabIndex = 2;
+            // 
+            // checkBoxRenzoFinTarget3
+            // 
+            this.checkBoxRenzoFinTarget3.AutoSize = true;
+            this.checkBoxRenzoFinTarget3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinTarget3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinTarget3.Location = new System.Drawing.Point(247, 186);
+            this.checkBoxRenzoFinTarget3.Name = "checkBoxRenzoFinTarget3";
+            this.checkBoxRenzoFinTarget3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxRenzoFinTarget3.TabIndex = 37;
+            this.checkBoxRenzoFinTarget3.Text = "???";
+            this.checkBoxRenzoFinTarget3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinTarget1
+            // 
+            this.checkBoxRenzoFinTarget1.AutoSize = true;
+            this.checkBoxRenzoFinTarget1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinTarget1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinTarget1.Location = new System.Drawing.Point(29, 186);
+            this.checkBoxRenzoFinTarget1.Name = "checkBoxRenzoFinTarget1";
+            this.checkBoxRenzoFinTarget1.Size = new System.Drawing.Size(53, 19);
+            this.checkBoxRenzoFinTarget1.TabIndex = 35;
+            this.checkBoxRenzoFinTarget1.Text = "Dead";
+            this.checkBoxRenzoFinTarget1.UseVisualStyleBackColor = true;
+            // 
+            // labelRenzoFinDefaultTarget
+            // 
+            this.labelRenzoFinDefaultTarget.AutoSize = true;
+            this.labelRenzoFinDefaultTarget.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelRenzoFinDefaultTarget.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelRenzoFinDefaultTarget.Location = new System.Drawing.Point(186, 163);
+            this.labelRenzoFinDefaultTarget.Name = "labelRenzoFinDefaultTarget";
+            this.labelRenzoFinDefaultTarget.Size = new System.Drawing.Size(93, 17);
+            this.labelRenzoFinDefaultTarget.TabIndex = 0;
+            this.labelRenzoFinDefaultTarget.Text = "Default Target";
+            // 
+            // checkBoxRenzoFinTarget7
+            // 
+            this.checkBoxRenzoFinTarget7.AutoSize = true;
+            this.checkBoxRenzoFinTarget7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinTarget7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinTarget7.Location = new System.Drawing.Point(247, 211);
+            this.checkBoxRenzoFinTarget7.Name = "checkBoxRenzoFinTarget7";
+            this.checkBoxRenzoFinTarget7.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxRenzoFinTarget7.TabIndex = 42;
+            this.checkBoxRenzoFinTarget7.Text = "Enemy";
+            this.checkBoxRenzoFinTarget7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinTarget6
+            // 
+            this.checkBoxRenzoFinTarget6.AutoSize = true;
+            this.checkBoxRenzoFinTarget6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinTarget6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinTarget6.Location = new System.Drawing.Point(137, 211);
+            this.checkBoxRenzoFinTarget6.Name = "checkBoxRenzoFinTarget6";
+            this.checkBoxRenzoFinTarget6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxRenzoFinTarget6.TabIndex = 41;
+            this.checkBoxRenzoFinTarget6.Text = "???";
+            this.checkBoxRenzoFinTarget6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinTarget8
+            // 
+            this.checkBoxRenzoFinTarget8.AutoSize = true;
+            this.checkBoxRenzoFinTarget8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinTarget8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinTarget8.Location = new System.Drawing.Point(352, 211);
+            this.checkBoxRenzoFinTarget8.Name = "checkBoxRenzoFinTarget8";
+            this.checkBoxRenzoFinTarget8.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxRenzoFinTarget8.TabIndex = 39;
+            this.checkBoxRenzoFinTarget8.Text = "???";
+            this.checkBoxRenzoFinTarget8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinTarget2
+            // 
+            this.checkBoxRenzoFinTarget2.AutoSize = true;
+            this.checkBoxRenzoFinTarget2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinTarget2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinTarget2.Location = new System.Drawing.Point(137, 186);
+            this.checkBoxRenzoFinTarget2.Name = "checkBoxRenzoFinTarget2";
+            this.checkBoxRenzoFinTarget2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxRenzoFinTarget2.TabIndex = 36;
+            this.checkBoxRenzoFinTarget2.Text = "???";
+            this.checkBoxRenzoFinTarget2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinTarget5
+            // 
+            this.checkBoxRenzoFinTarget5.AutoSize = true;
+            this.checkBoxRenzoFinTarget5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinTarget5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinTarget5.Location = new System.Drawing.Point(29, 211);
+            this.checkBoxRenzoFinTarget5.Name = "checkBoxRenzoFinTarget5";
+            this.checkBoxRenzoFinTarget5.Size = new System.Drawing.Size(58, 19);
+            this.checkBoxRenzoFinTarget5.TabIndex = 40;
+            this.checkBoxRenzoFinTarget5.Text = "Single";
+            this.checkBoxRenzoFinTarget5.UseVisualStyleBackColor = true;
+            // 
+            // listBoxRenzoFin
+            // 
+            this.listBoxRenzoFin.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxRenzoFin.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxRenzoFin.FormattingEnabled = true;
+            this.listBoxRenzoFin.ItemHeight = 17;
+            this.listBoxRenzoFin.Items.AddRange(new object[] {
+            "Rough Divide",
+            "Fated Circle",
+            "Blasting Zone",
+            "Lion Heart"});
+            this.listBoxRenzoFin.Location = new System.Drawing.Point(0, 0);
+            this.listBoxRenzoFin.Name = "listBoxRenzoFin";
+            this.listBoxRenzoFin.ScrollAlwaysVisible = true;
+            this.listBoxRenzoFin.Size = new System.Drawing.Size(109, 735);
+            this.listBoxRenzoFin.TabIndex = 3;
+            this.listBoxRenzoFin.SelectedIndexChanged += new System.EventHandler(this.listBoxRenzoFin_SelectedIndexChanged);
             // 
             // tabSlots
             // 
@@ -22443,6 +23140,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP1)).EndInit();
             this.tabControlMain.ResumeLayout(false);
+            this.tabPageRenzokukenFinishers.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.groupBoxRenzoFinGeneral.ResumeLayout(false);
+            this.groupBoxRenzoFinGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinHitCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinAttackPower)).EndInit();
             this.tabSlots.ResumeLayout(false);
             this.groupBoxSlotSets.ResumeLayout(false);
             this.groupBoxSlotSets.PerformLayout();
@@ -23504,6 +24208,28 @@
         private System.Windows.Forms.Label labelBlueMagicCL2AttackPower;
         private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL2AttackPower;
         private System.Windows.Forms.Label labelBlueMagicCL2DeathLevel;
+        private System.Windows.Forms.TabPage tabPageRenzokukenFinishers;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.GroupBox groupBoxRenzoFinGeneral;
+        private System.Windows.Forms.ComboBox comboBoxRenzoFinAttackType;
+        private System.Windows.Forms.Label labelRenzoFinAttackType;
+        private System.Windows.Forms.NumericUpDown numericUpDownRenzoFinHitCount;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinTarget4;
+        private System.Windows.Forms.NumericUpDown numericUpDownRenzoFinAttackPower;
+        private System.Windows.Forms.ComboBox comboBoxRenzoFinMagicID;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinTarget3;
+        private System.Windows.Forms.Label labelRenzoFinHitCount;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinTarget1;
+        private System.Windows.Forms.Label labelRenzoFinDefaultTarget;
+        private System.Windows.Forms.Label labelRenzoFinAttackPower;
+        private System.Windows.Forms.Label labelRenzoFinMagicID;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinTarget7;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinTarget6;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinTarget8;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinTarget2;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinTarget5;
+        private System.Windows.Forms.ListBox listBoxRenzoFin;
     }
 }
 

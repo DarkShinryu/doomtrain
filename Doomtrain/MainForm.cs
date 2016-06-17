@@ -471,6 +471,22 @@ namespace Doomtrain
 
             #endregion
 
+            #region EVENT HANDLERS RENZOKUKEN FINISHERS
+
+            comboBoxRenzoFinMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(0, comboBoxRenzoFinMagicID.SelectedIndex);
+            comboBoxRenzoFinAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(1, comboBoxRenzoFinAttackType.SelectedIndex);
+            numericUpDownRenzoFinAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(2, numericUpDownRenzoFinAttackPower.Value);
+            checkBoxRenzoFinTarget1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(3, 0x01);
+            checkBoxRenzoFinTarget2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(3, 0x02);
+            checkBoxRenzoFinTarget3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(3, 0x04);
+            checkBoxRenzoFinTarget4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(3, 0x08);
+            checkBoxRenzoFinTarget5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(3, 0x10);
+            checkBoxRenzoFinTarget6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(3, 0x20);
+            checkBoxRenzoFinTarget7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(3, 0x40);
+            checkBoxRenzoFinTarget8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(3, 0x80);
+            numericUpDownRenzoFinHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(4, numericUpDownRenzoFinHitCount.Value);
+
+            #endregion
         }
 
 
@@ -1783,6 +1799,40 @@ namespace Doomtrain
             catch (Exception eeeeeeeException)
             {
                 Console.WriteLine(eeeeeeeException.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+
+        #region RENZOKUKEN FINISHERS
+
+        private void listBoxRenzoFin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadRenzoFin(listBoxRenzoFin.SelectedIndex);
+            try
+            {
+                comboBoxRenzoFinMagicID.SelectedIndex = KernelWorker.GetSelectedRenzoFinData.MagicID;                
+                comboBoxRenzoFinAttackType.SelectedIndex = KernelWorker.GetSelectedRenzoFinData.AttackType;
+                numericUpDownRenzoFinAttackPower.Value = KernelWorker.GetSelectedRenzoFinData.AttackPower;
+                checkBoxRenzoFinTarget1.Checked = (KernelWorker.GetSelectedRenzoFinData.DefaultTarget & 0x01) >= 1 ? true : false;
+                checkBoxRenzoFinTarget2.Checked = (KernelWorker.GetSelectedRenzoFinData.DefaultTarget & 0x02) >= 1 ? true : false;
+                checkBoxRenzoFinTarget3.Checked = (KernelWorker.GetSelectedRenzoFinData.DefaultTarget & 0x04) >= 1 ? true : false;
+                checkBoxRenzoFinTarget4.Checked = (KernelWorker.GetSelectedRenzoFinData.DefaultTarget & 0x08) >= 1 ? true : false;
+                checkBoxRenzoFinTarget5.Checked = (KernelWorker.GetSelectedRenzoFinData.DefaultTarget & 0x10) >= 1 ? true : false;
+                checkBoxRenzoFinTarget6.Checked = (KernelWorker.GetSelectedRenzoFinData.DefaultTarget & 0x20) >= 1 ? true : false;
+                checkBoxRenzoFinTarget7.Checked = (KernelWorker.GetSelectedRenzoFinData.DefaultTarget & 0x40) >= 1 ? true : false;
+                checkBoxRenzoFinTarget8.Checked = (KernelWorker.GetSelectedRenzoFinData.DefaultTarget & 0x80) >= 1 ? true : false;
+                numericUpDownRenzoFinHitCount.Value = KernelWorker.GetSelectedRenzoFinData.HitCount;
+            }
+
+            catch (Exception eeeeeeeeException)
+            {
+                Console.WriteLine(eeeeeeeeException.ToString());
             }
             _loaded = true;
         }

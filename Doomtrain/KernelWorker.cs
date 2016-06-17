@@ -35,6 +35,9 @@ namespace Doomtrain
         public static int StatPercentageAbilitiesDataOffset = -1;
         public static int OffsetToStatPercentageAbilitiesSelected = -1;
 
+        public static int RenzoFinDataOffset = -1;
+        public static int OffsetToRenzoFinSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -44,6 +47,7 @@ namespace Doomtrain
         public static BlueMagicData GetSelectedBlueMagicData;
         public static BlueMagicParamData GetSelectedBlueMagicParamData;
         public static StatPercentageAbilitiesData GetSelectedStatPercentageAbilitiesData;
+        public static RenzoFinData GetSelectedRenzoFinData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -370,8 +374,8 @@ namespace Doomtrain
 
         public struct BlueMagicData
         {
-            //public string OffsetToBlueMagicName;
-            //public string OffsetToBlueMagicDescription;
+            //public string OffsetToName;
+            //public string OffsetToDescription;
             public UInt16 MagicID;
             public byte AttackType;
             public byte Flags;
@@ -395,6 +399,17 @@ namespace Doomtrain
         {
             public byte StatToincrease;
             public byte IncreasementValue;
+        }
+
+        public struct RenzoFinData
+        {
+            //public string OffsetToName;
+            //public string OffsetToDescription;
+            public UInt16 MagicID;
+            public byte AttackType;
+            public byte AttackPower;
+            public byte DefaultTarget;
+            public byte HitCount;
         }
 
         #endregion
@@ -1156,6 +1171,33 @@ namespace Doomtrain
             }
         }
 
+        public static void UpdateVariable_RenzoFin(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    UshortToKernel(Convert.ToUInt16(variable), 4, (byte)Mode.Mode_RenzoFin); //MagicID
+                    return;
+                case 1:
+                    Kernel[OffsetToRenzoFinSelected + 6] = Convert.ToByte(variable); //Attack type
+                    return;
+                case 2:
+                    Kernel[OffsetToRenzoFinSelected + 8] = Convert.ToByte(variable); //Attack power
+                    return;
+                case 3:
+                    Kernel[OffsetToRenzoFinSelected + 10] = (byte)(Kernel[OffsetToRenzoFinSelected + 10] ^ Convert.ToByte(variable)); //default target
+                    return;
+                case 4:
+                    Kernel[OffsetToRenzoFinSelected + 12] = Convert.ToByte(variable); //Hit Count
+                    return;
+
+                    default:
+                    return;
+            }
+        }
+
         #endregion
 
         #region MAGIC ID
@@ -1185,6 +1227,9 @@ namespace Doomtrain
                 case (byte)Mode.Mode_BlueMagic:
                     Array.Copy(magicIdBytes, 0, Kernel, OffsetToBlueMagicSelected + add, 2);
                     break;
+                case (byte)Mode.Mode_RenzoFin:
+                    Array.Copy(magicIdBytes, 0, Kernel, OffsetToRenzoFinSelected + add, 2);
+                    break;
                 default:
                     return;
             }
@@ -1196,7 +1241,8 @@ namespace Doomtrain
             Mode_GF,
             Mode_GFAttacks,
             Mode_EnemyAttacks,
-            Mode_BlueMagic
+            Mode_BlueMagic,
+            Mode_RenzoFin
         }
 
         #endregion
@@ -1214,6 +1260,7 @@ namespace Doomtrain
             EnemyAttacksDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.EnemyAttacks);
             BlueMagicDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BlueMagic);
             StatPercentageAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.StatPercentageIncreasingAbilities);
+            RenzoFinDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RenzokukenFinisher);
 
         }
 
@@ -1234,6 +1281,7 @@ namespace Doomtrain
             #region UnusedNameRegion functionality. You can use it for future improvements
             GetSelectedMagicData.OffsetSpellName = BuildString((ushort)(
                     BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(Kernel, selectedMagicOffset))));
+
             //BELOW DOESN'T WORK?
             // GetSelectedMagicData.OffsetSpellDescription = BuildString((ushort)(
             //BitConverter.ToInt32(kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(kernel, SelectedMagicOffset += 2))));
@@ -1711,6 +1759,23 @@ namespace Doomtrain
             selectedStatPercentageAbilitiesOffset += 5;
             GetSelectedStatPercentageAbilitiesData.StatToincrease = Kernel[selectedStatPercentageAbilitiesOffset++];
             GetSelectedStatPercentageAbilitiesData.IncreasementValue = Kernel[selectedStatPercentageAbilitiesOffset++];
+        }
+
+        public static void ReadRenzoFin(int RenzoFinID_List)
+        {
+            GetSelectedRenzoFinData = new RenzoFinData();
+            int selectedRenzoFinOffset = RenzoFinDataOffset + (RenzoFinID_List * 24);
+            OffsetToRenzoFinSelected = selectedRenzoFinOffset;
+
+            GetSelectedRenzoFinData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedRenzoFinOffset + 4));
+            selectedRenzoFinOffset += 4 + 2;
+            GetSelectedRenzoFinData.AttackType = Kernel[selectedRenzoFinOffset++];
+            selectedRenzoFinOffset += 1;
+            GetSelectedRenzoFinData.AttackPower = Kernel[selectedRenzoFinOffset++];
+            selectedRenzoFinOffset += 1;
+            GetSelectedRenzoFinData.DefaultTarget = Kernel[selectedRenzoFinOffset++];
+            selectedRenzoFinOffset += 1;
+            GetSelectedRenzoFinData.HitCount = Kernel[selectedRenzoFinOffset++];
         }
 
         #endregion
