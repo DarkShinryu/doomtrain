@@ -17580,7 +17580,7 @@
             this.labelAbStatsValueTrackBar.AutoSize = true;
             this.labelAbStatsValueTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAbStatsValueTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbStatsValueTrackBar.Location = new System.Drawing.Point(260, 224);
+            this.labelAbStatsValueTrackBar.Location = new System.Drawing.Point(260, 227);
             this.labelAbStatsValueTrackBar.Name = "labelAbStatsValueTrackBar";
             this.labelAbStatsValueTrackBar.Size = new System.Drawing.Size(28, 19);
             this.labelAbStatsValueTrackBar.TabIndex = 28;
@@ -17712,7 +17712,7 @@
             this.listBoxAbCharacters.Location = new System.Drawing.Point(0, 0);
             this.listBoxAbCharacters.Name = "listBoxAbCharacters";
             this.listBoxAbCharacters.ScrollAlwaysVisible = true;
-            this.listBoxAbCharacters.Size = new System.Drawing.Size(124, 735);
+            this.listBoxAbCharacters.Size = new System.Drawing.Size(124, 259);
             this.listBoxAbCharacters.TabIndex = 3;
             // 
             // listBoxAbStats
@@ -17746,6 +17746,7 @@
             this.listBoxAbStats.ScrollAlwaysVisible = true;
             this.listBoxAbStats.Size = new System.Drawing.Size(124, 735);
             this.listBoxAbStats.TabIndex = 3;
+            this.listBoxAbStats.SelectedIndexChanged += new System.EventHandler(this.listBoxAbStats_SelectedIndexChanged);
             // 
             // listBoxAbMenu
             // 

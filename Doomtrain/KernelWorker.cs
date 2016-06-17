@@ -32,6 +32,9 @@ namespace Doomtrain
         public static int BlueMagicParamDataOffset = -1;
         public static int OffsetToBlueMagicParamSelected = -1;
 
+        public static int StatPercentageAbilitiesDataOffset = -1;
+        public static int OffsetToStatPercentageAbilitiesSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -40,6 +43,7 @@ namespace Doomtrain
         public static EnemyAttacksData GetSelectedEnemyAttacksData;
         public static BlueMagicData GetSelectedBlueMagicData;
         public static BlueMagicParamData GetSelectedBlueMagicParamData;
+        public static StatPercentageAbilitiesData GetSelectedStatPercentageAbilitiesData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -104,8 +108,6 @@ namespace Doomtrain
             Text_Rinoalimitbreaktext2 = 54 << 2,
             Text_Devourtext = 55 << 2,
             Text_Misctext = 56 << 2,
-
-
         }
 
 
@@ -242,6 +244,27 @@ namespace Doomtrain
             public UInt16 GFAbility19;
             public UInt16 GFAbility20;
             public UInt16 GFAbility21;
+            public UInt16 GFAbilityUnlock1;
+            public UInt16 GFAbilityUnlock2;
+            public UInt16 GFAbilityUnlock3;
+            public UInt16 GFAbilityUnlock4;
+            public UInt16 GFAbilityUnlock5;
+            public UInt16 GFAbilityUnlock6;
+            public UInt16 GFAbilityUnlock7;
+            public UInt16 GFAbilityUnlock8;
+            public UInt16 GFAbilityUnlock9;
+            public UInt16 GFAbilityUnlock10;
+            public UInt16 GFAbilityUnlock11;
+            public UInt16 GFAbilityUnlock12;
+            public UInt16 GFAbilityUnlock13;
+            public UInt16 GFAbilityUnlock14;
+            public UInt16 GFAbilityUnlock15;
+            public UInt16 GFAbilityUnlock16;
+            public UInt16 GFAbilityUnlock17;
+            public UInt16 GFAbilityUnlock18;
+            public UInt16 GFAbilityUnlock19;
+            public UInt16 GFAbilityUnlock20;
+            public UInt16 GFAbilityUnlock21;
             public byte GFQuezacoltCompatibility;
             public byte GFShivaCompatibility;
             public byte GFIfritCompatibility;
@@ -366,6 +389,12 @@ namespace Doomtrain
             //public byte Status6; does nothing but it's read in game with Status5, no point in adding it
             public byte AttackPower;
             public byte DeathLevel;
+        }
+
+        public struct StatPercentageAbilitiesData
+        {
+            public byte StatToincrease;
+            public byte IncreasementValue;
         }
 
         #endregion
@@ -737,8 +766,12 @@ namespace Doomtrain
                 case 27:
                         Kernel[OffsetToGFSelected + 10] ^= Convert.ToByte(variable); //flags
                         return;
-                default:
-                    return;
+                case 28:
+                        Kernel[OffsetToGFSelected + 28 + (AbilityIndex * 4)] = Convert.ToByte(variable); //GF abilities
+                        return;
+
+                        default:
+                        return;
             }
         }
         private static void GFStatusUpdator(byte StatusByteIndex, object variable)
@@ -1105,6 +1138,24 @@ namespace Doomtrain
             }
         }
 
+        public static void UpdateVariable_StatPercentageAbilities(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToStatPercentageAbilitiesSelected + 5] = Convert.ToByte(variable); //stat to increase
+                    return;
+                case 1:
+                    Kernel[OffsetToStatPercentageAbilitiesSelected + 6] = Convert.ToByte(variable); //increasement value
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
         #endregion
 
         #region MAGIC ID
@@ -1162,7 +1213,8 @@ namespace Doomtrain
             CharactersDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Characters);
             EnemyAttacksDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.EnemyAttacks);
             BlueMagicDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BlueMagic);
-            BlueMagicParamDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BlueMagicParam);
+            StatPercentageAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.StatPercentageIncreasingAbilities);
+
         }
 
 
@@ -1309,32 +1361,95 @@ namespace Doomtrain
             GetSelectedGFData.StatusGF5 = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFHP = Kernel[selectedGfOffset];
             selectedGfOffset += 7; //Unknown+GFHP
-            GetSelectedGFData.GFStatusAttack = Kernel[selectedGfOffset];
-            selectedGfOffset += 3; //Status + unknown
+            GetSelectedGFData.GFStatusAttack = Kernel[selectedGfOffset++];        
+                
             //AbilityRun
+            GetSelectedGFData.GFAbilityUnlock1 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
             GetSelectedGFData.GFAbility1 = Kernel[selectedGfOffset];
-            GetSelectedGFData.GFAbility2 = Kernel[selectedGfOffset + (4 * 1)];
-            GetSelectedGFData.GFAbility3 = Kernel[selectedGfOffset + (4 * 2)];
-            GetSelectedGFData.GFAbility4 = Kernel[selectedGfOffset + (4 * 3)];
-            GetSelectedGFData.GFAbility5 = Kernel[selectedGfOffset + (4 * 4)];
-            GetSelectedGFData.GFAbility6 = Kernel[selectedGfOffset + (4 * 5)];
-            GetSelectedGFData.GFAbility7 = Kernel[selectedGfOffset + (4 * 6)];
-            GetSelectedGFData.GFAbility8 = Kernel[selectedGfOffset + (4 * 7)];
-            GetSelectedGFData.GFAbility9 = Kernel[selectedGfOffset + (4 * 8)];
-            GetSelectedGFData.GFAbility10 = Kernel[selectedGfOffset + (4 * 9)];
-            GetSelectedGFData.GFAbility11 = Kernel[selectedGfOffset + (4 * 10)];
-            GetSelectedGFData.GFAbility12 = Kernel[selectedGfOffset + (4 * 11)];
-            GetSelectedGFData.GFAbility13 = Kernel[selectedGfOffset + (4 * 12)];
-            GetSelectedGFData.GFAbility14 = Kernel[selectedGfOffset + (4 * 13)];
-            GetSelectedGFData.GFAbility15 = Kernel[selectedGfOffset + (4 * 14)];
-            GetSelectedGFData.GFAbility16 = Kernel[selectedGfOffset + (4 * 15)];
-            GetSelectedGFData.GFAbility17 = Kernel[selectedGfOffset + (4 * 16)];
-            GetSelectedGFData.GFAbility18 = Kernel[selectedGfOffset + (4 * 17)];
-            GetSelectedGFData.GFAbility19 = Kernel[selectedGfOffset + (4 * 18)];
-            GetSelectedGFData.GFAbility20 = Kernel[selectedGfOffset + (4 * 19)];
-            GetSelectedGFData.GFAbility21 = Kernel[selectedGfOffset + (4 * 20)];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock2 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility2 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock3 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility3 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock4 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility4 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock5 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility5 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock6 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility6 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock7 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility7 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock8 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility8 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock9 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility9 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock10 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility10 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock11 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility11 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock12 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility12 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock13 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility13 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock14 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility14 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock15 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility15 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock16 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility16 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock17 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility17 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock18 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility18 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock19 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility19 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock20 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility20 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbilityUnlock21 = Kernel[selectedGfOffset];
+            selectedGfOffset += 2;
+            GetSelectedGFData.GFAbility21 = Kernel[selectedGfOffset++];
             //EndofAbility
-            selectedGfOffset += (4 * 20) + 2;
+
+            selectedGfOffset += 2;
             GetSelectedGFData.GFQuezacoltCompatibility = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFShivaCompatibility = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFIfritCompatibility = Kernel[selectedGfOffset++];
@@ -1585,6 +1700,17 @@ namespace Doomtrain
             selectedBlueMagicParamOffset += 1;
             GetSelectedBlueMagicParamData.AttackPower = Kernel[selectedBlueMagicParamOffset++];
             GetSelectedBlueMagicParamData.DeathLevel = Kernel[selectedBlueMagicParamOffset++];
+        }
+
+        public static void ReadStatPercentageAbilities(int StatPercentageAbilitiesID_List)
+        {
+            GetSelectedStatPercentageAbilitiesData = new StatPercentageAbilitiesData();
+            int selectedStatPercentageAbilitiesOffset = StatPercentageAbilitiesDataOffset + (StatPercentageAbilitiesID_List * 8);
+            OffsetToStatPercentageAbilitiesSelected = selectedStatPercentageAbilitiesOffset;
+
+            selectedStatPercentageAbilitiesOffset += 5;
+            GetSelectedStatPercentageAbilitiesData.StatToincrease = Kernel[selectedStatPercentageAbilitiesOffset++];
+            GetSelectedStatPercentageAbilitiesData.IncreasementValue = Kernel[selectedStatPercentageAbilitiesOffset++];
         }
 
         #endregion
