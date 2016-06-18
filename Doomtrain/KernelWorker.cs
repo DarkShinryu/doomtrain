@@ -38,6 +38,9 @@ namespace Doomtrain
         public static int RenzoFinDataOffset = -1;
         public static int OffsetToRenzoFinSelected = -1;
 
+        public static int TempCharLBDataOffset = -1;
+        public static int OffsetToTempCharLBSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -48,6 +51,7 @@ namespace Doomtrain
         public static BlueMagicParamData GetSelectedBlueMagicParamData;
         public static StatPercentageAbilitiesData GetSelectedStatPercentageAbilitiesData;
         public static RenzoFinData GetSelectedRenzoFinData;
+        public static TempCharLBData GetSelectedTempCharLBData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -74,7 +78,7 @@ namespace Doomtrain
             PartyAbilities = 16 << 2,
             GFAbilities = 17 << 2,
             MenuAbilities = 18 << 2,
-            CharacterLimitBreakes = 19 << 2,
+            TempCharacterLimitBreakes = 19 << 2,
             BlueMagic = 20 << 2,
             BlueMagicParam = 21 << 2,
             Shot_Irvine = 22 << 2,
@@ -408,10 +412,22 @@ namespace Doomtrain
             public UInt16 MagicID;
             public byte AttackType;
             public byte AttackPower;
-            public byte DefaultTarget;
+            public byte Target;
+            public byte AttackFlags;
             public byte HitCount;
         }
-
+        
+        public struct TempCharLBData
+        {
+            //public string OffsetToName;
+            //public string OffsetToDescription;
+            public UInt16 MagicID;
+            public byte AttackType;
+            public byte AttackPower;
+            public byte Target;
+            public byte AttackFlags;
+            public byte HitCount;
+        }
         #endregion
 
         #region WRITE KERNEL VARIABLES
@@ -1187,9 +1203,12 @@ namespace Doomtrain
                     Kernel[OffsetToRenzoFinSelected + 8] = Convert.ToByte(variable); //Attack power
                     return;
                 case 3:
-                    Kernel[OffsetToRenzoFinSelected + 10] = (byte)(Kernel[OffsetToRenzoFinSelected + 10] ^ Convert.ToByte(variable)); //default target
+                    Kernel[OffsetToRenzoFinSelected + 10] = (byte)(Kernel[OffsetToRenzoFinSelected + 10] ^ Convert.ToByte(variable)); //target
                     return;
                 case 4:
+                    Kernel[OffsetToRenzoFinSelected + 11] = (byte)(Kernel[OffsetToRenzoFinSelected + 11] ^ Convert.ToByte(variable)); //attack flags
+                    return;
+                case 5:
                     Kernel[OffsetToRenzoFinSelected + 12] = Convert.ToByte(variable); //Hit Count
                     return;
 
@@ -1197,7 +1216,36 @@ namespace Doomtrain
                     return;
             }
         }
+        
+        public static void UpdateVariable_TempCharLB(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    UshortToKernel(Convert.ToUInt16(variable), 4, (byte)Mode.Mode_TempCharLB); //MagicID
+                    return;
+                case 1:
+                    Kernel[OffsetToTempCharLBSelected + 6] = Convert.ToByte(variable); //Attack type
+                    return;
+                case 2:
+                    Kernel[OffsetToTempCharLBSelected + 7] = Convert.ToByte(variable); //Attack power
+                    return;
+                case 3:
+                    Kernel[OffsetToTempCharLBSelected + 10] = (byte)(Kernel[OffsetToTempCharLBSelected + 10] ^ Convert.ToByte(variable)); //default target
+                    return;
+                case 4:
+                    Kernel[OffsetToTempCharLBSelected + 11] = (byte)(Kernel[OffsetToTempCharLBSelected + 11] ^ Convert.ToByte(variable)); //attack flags
+                    return;
+                case 5:
+                    Kernel[OffsetToTempCharLBSelected + 12] = Convert.ToByte(variable); //Hit Count
+                    return;
 
+                default:
+                    return;
+            }
+        }
         #endregion
 
         #region MAGIC ID
@@ -1230,6 +1278,9 @@ namespace Doomtrain
                 case (byte)Mode.Mode_RenzoFin:
                     Array.Copy(magicIdBytes, 0, Kernel, OffsetToRenzoFinSelected + add, 2);
                     break;
+                case (byte)Mode.Mode_TempCharLB:
+                    Array.Copy(magicIdBytes, 0, Kernel, OffsetToTempCharLBSelected + add, 2);
+                    break;
                 default:
                     return;
             }
@@ -1242,7 +1293,8 @@ namespace Doomtrain
             Mode_GFAttacks,
             Mode_EnemyAttacks,
             Mode_BlueMagic,
-            Mode_RenzoFin
+            Mode_RenzoFin,
+            Mode_TempCharLB
         }
 
         #endregion
@@ -1261,6 +1313,7 @@ namespace Doomtrain
             BlueMagicDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BlueMagic);
             StatPercentageAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.StatPercentageIncreasingAbilities);
             RenzoFinDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RenzokukenFinisher);
+            TempCharLBDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.TempCharacterLimitBreakes);
 
         }
 
@@ -1773,11 +1826,26 @@ namespace Doomtrain
             selectedRenzoFinOffset += 1;
             GetSelectedRenzoFinData.AttackPower = Kernel[selectedRenzoFinOffset++];
             selectedRenzoFinOffset += 1;
-            GetSelectedRenzoFinData.DefaultTarget = Kernel[selectedRenzoFinOffset++];
-            selectedRenzoFinOffset += 1;
+            GetSelectedRenzoFinData.Target = Kernel[selectedRenzoFinOffset++];
+            GetSelectedRenzoFinData.AttackFlags = Kernel[selectedRenzoFinOffset++];
             GetSelectedRenzoFinData.HitCount = Kernel[selectedRenzoFinOffset++];
         }
+       
+        public static void ReadTempCharLB(int TempCharLBID_List)
+        {
+            GetSelectedTempCharLBData = new TempCharLBData();
+            int selectedTempCharLBOffset = TempCharLBDataOffset + (TempCharLBID_List * 24);
+            OffsetToTempCharLBSelected = selectedTempCharLBOffset;
 
+            GetSelectedTempCharLBData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedTempCharLBOffset + 4));
+            selectedTempCharLBOffset += 4 + 2;
+            GetSelectedTempCharLBData.AttackType = Kernel[selectedTempCharLBOffset++];
+            GetSelectedTempCharLBData.AttackPower = Kernel[selectedTempCharLBOffset++];
+            selectedTempCharLBOffset += 2;
+            GetSelectedTempCharLBData.Target = Kernel[selectedTempCharLBOffset++];
+            GetSelectedTempCharLBData.AttackFlags = Kernel[selectedTempCharLBOffset++];
+            GetSelectedTempCharLBData.HitCount = Kernel[selectedTempCharLBOffset++];
+        }
         #endregion
 
 
