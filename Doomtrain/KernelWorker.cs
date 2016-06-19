@@ -472,6 +472,7 @@ namespace Doomtrain
             public byte AttackFlags;
             public byte HitCount;
             public Element Element;
+            public byte ElementPerc;
             public byte StatusAttack;
             public byte Status1;
             public byte Status2;
@@ -1391,12 +1392,15 @@ namespace Doomtrain
                     Kernel[OffsetToShotSelected + 13] = Convert.ToByte(variable); //Element
                     return;
                 case 7:
-                    Kernel[OffsetToShotSelected + 15] = Convert.ToByte(variable); //Status Attack
+                    Kernel[OffsetToShotSelected + 14] = Convert.ToByte(variable); //Element %
                     return;
                 case 8:
-                    Kernel[OffsetToShotSelected + 18] = Convert.ToByte(variable); //Used Item
+                    Kernel[OffsetToShotSelected + 15] = Convert.ToByte(variable); //Status Attack
                     return;
                 case 9:
+                    Kernel[OffsetToShotSelected + 18] = Convert.ToByte(variable); //Used Item
+                    return;
+                case 10:
                     ShotStatusUpdator(arg0, variable); //Status
                     return;
 
@@ -2088,7 +2092,7 @@ namespace Doomtrain
                                                 : b == (byte)Element.Earth
                                                     ? Element.Earth
                                                     : 0; //Error handler
-            selectedShotOffset += 1;
+            GetSelectedShotData.ElementPerc = Kernel[selectedShotOffset++];
             GetSelectedShotData.StatusAttack = Kernel[selectedShotOffset++];
             GetSelectedShotData.Status1 = Kernel[selectedShotOffset++];
             selectedShotOffset += 1;

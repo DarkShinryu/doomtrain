@@ -1221,6 +1221,8 @@
             this.labelShotItem = new System.Windows.Forms.Label();
             this.comboBoxShotElement = new System.Windows.Forms.ComboBox();
             this.labelShotElement = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.numericUpDownShotElementPerc = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
@@ -1497,6 +1499,7 @@
             this.groupBoxShotGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).BeginInit();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -25919,12 +25922,14 @@
             // groupBoxShotGeneral
             // 
             this.groupBoxShotGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotGeneral.Controls.Add(this.label5);
             this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotElement);
             this.groupBoxShotGeneral.Controls.Add(this.labelShotElement);
             this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotItem);
             this.groupBoxShotGeneral.Controls.Add(this.labelShotItem);
             this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotAttackType);
             this.groupBoxShotGeneral.Controls.Add(this.labelShotAttackType);
+            this.groupBoxShotGeneral.Controls.Add(this.numericUpDownShotElementPerc);
             this.groupBoxShotGeneral.Controls.Add(this.numericUpDownShotHitCount);
             this.groupBoxShotGeneral.Controls.Add(this.numericUpDownShotAttackPower);
             this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotMagicID);
@@ -25982,7 +25987,7 @@
             "Everyone\'s Grudge",
             "Excalipoor",
             "Terra Break/Great Attractor"});
-            this.comboBoxShotAttackType.Location = new System.Drawing.Point(29, 100);
+            this.comboBoxShotAttackType.Location = new System.Drawing.Point(29, 103);
             this.comboBoxShotAttackType.Name = "comboBoxShotAttackType";
             this.comboBoxShotAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxShotAttackType.TabIndex = 8;
@@ -25992,7 +25997,7 @@
             this.labelShotAttackType.AutoSize = true;
             this.labelShotAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotAttackType.Location = new System.Drawing.Point(120, 80);
+            this.labelShotAttackType.Location = new System.Drawing.Point(120, 83);
             this.labelShotAttackType.Name = "labelShotAttackType";
             this.labelShotAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelShotAttackType.TabIndex = 7;
@@ -26002,7 +26007,7 @@
             // numericUpDownShotHitCount
             // 
             this.numericUpDownShotHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotHitCount.Location = new System.Drawing.Point(365, 100);
+            this.numericUpDownShotHitCount.Location = new System.Drawing.Point(365, 104);
             this.numericUpDownShotHitCount.Maximum = new decimal(new int[] {
             255,
             0,
@@ -26386,7 +26391,7 @@
             this.labelShotHitCount.AutoSize = true;
             this.labelShotHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotHitCount.Location = new System.Drawing.Point(355, 80);
+            this.labelShotHitCount.Location = new System.Drawing.Point(355, 84);
             this.labelShotHitCount.Name = "labelShotHitCount";
             this.labelShotHitCount.Size = new System.Drawing.Size(67, 17);
             this.labelShotHitCount.TabIndex = 0;
@@ -26643,7 +26648,7 @@
             "Occult Fan II",
             "Occult Fan III",
             "Occult Fan IV"});
-            this.comboBoxShotItem.Location = new System.Drawing.Point(242, 160);
+            this.comboBoxShotItem.Location = new System.Drawing.Point(266, 160);
             this.comboBoxShotItem.Name = "comboBoxShotItem";
             this.comboBoxShotItem.Size = new System.Drawing.Size(146, 25);
             this.comboBoxShotItem.TabIndex = 11;
@@ -26653,7 +26658,7 @@
             this.labelShotItem.AutoSize = true;
             this.labelShotItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotItem.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotItem.Location = new System.Drawing.Point(280, 140);
+            this.labelShotItem.Location = new System.Drawing.Point(304, 140);
             this.labelShotItem.Name = "labelShotItem";
             this.labelShotItem.Size = new System.Drawing.Size(70, 17);
             this.labelShotItem.TabIndex = 12;
@@ -26673,7 +26678,7 @@
             "Water",
             "Holy",
             "Non-Elemental"});
-            this.comboBoxShotElement.Location = new System.Drawing.Point(77, 160);
+            this.comboBoxShotElement.Location = new System.Drawing.Point(29, 160);
             this.comboBoxShotElement.Name = "comboBoxShotElement";
             this.comboBoxShotElement.Size = new System.Drawing.Size(110, 25);
             this.comboBoxShotElement.TabIndex = 90;
@@ -26683,12 +26688,36 @@
             this.labelShotElement.AutoSize = true;
             this.labelShotElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotElement.Location = new System.Drawing.Point(104, 140);
+            this.labelShotElement.Location = new System.Drawing.Point(56, 140);
             this.labelShotElement.Name = "labelShotElement";
             this.labelShotElement.Size = new System.Drawing.Size(57, 17);
             this.labelShotElement.TabIndex = 91;
             this.labelShotElement.Text = "Element";
             this.toolTip1.SetToolTip(this.labelShotElement, "The element of the GF attack");
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.label5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label5.Location = new System.Drawing.Point(158, 140);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(19, 17);
+            this.label5.TabIndex = 91;
+            this.label5.Text = "%";
+            // 
+            // numericUpDownShotElementPerc
+            // 
+            this.numericUpDownShotElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownShotElementPerc.Location = new System.Drawing.Point(145, 160);
+            this.numericUpDownShotElementPerc.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownShotElementPerc.Name = "numericUpDownShotElementPerc";
+            this.numericUpDownShotElementPerc.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownShotElementPerc.TabIndex = 6;
             // 
             // mainForm
             // 
@@ -27039,6 +27068,7 @@
             this.groupBoxShotGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -28236,6 +28266,8 @@
         private System.Windows.Forms.Label labelShotItem;
         private System.Windows.Forms.ComboBox comboBoxShotElement;
         private System.Windows.Forms.Label labelShotElement;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.NumericUpDown numericUpDownShotElementPerc;
     }
 }
 
