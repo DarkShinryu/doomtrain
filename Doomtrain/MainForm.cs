@@ -1095,7 +1095,24 @@ namespace Doomtrain
             }
         }
 
+
+        //DISABLE ELEMENT% WHEN NON-ELEMENTAL IS SELECTED
+        private void comboBoxShotElement_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (comboBoxShotElement.SelectedIndex == 8)
+            {
+                numericUpDownShotElementPerc.Value = 0;
+                numericUpDownShotElementPerc.Enabled = false;
+            }
+            else
+            {
+                numericUpDownShotElementPerc.Enabled = true;
+            }           
+        }
+
         #endregion
+
 
 
         #region MAGIC
@@ -2578,6 +2595,7 @@ namespace Doomtrain
             }
             _loaded = true;
         }
+
 
         #endregion
 

@@ -26682,6 +26682,7 @@
             this.comboBoxShotElement.Name = "comboBoxShotElement";
             this.comboBoxShotElement.Size = new System.Drawing.Size(110, 25);
             this.comboBoxShotElement.TabIndex = 90;
+            this.comboBoxShotElement.SelectedIndexChanged += new System.EventHandler(this.comboBoxShotElement_SelectedIndexChanged);
             // 
             // labelShotElement
             // 
