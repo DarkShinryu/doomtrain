@@ -164,15 +164,15 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolbarStrip = new System.Windows.Forms.ToolStrip();
             this.tabBlueMagic = new System.Windows.Forms.TabPage();
-            this.groupBoxBlueMagicCS4 = new System.Windows.Forms.TabControl();
+            this.tabControlBlueMagic = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBoxBlueMagicAttackFlags = new System.Windows.Forms.GroupBox();
-            this.checkBoxBlueMagicFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicFlag4 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicFlag8 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicFlag3 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicFlag6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicFlagShelled = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicFlagReflected = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicFlag1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicFlag5 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicFlag2 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicFlag7 = new System.Windows.Forms.CheckBox();
             this.groupBoxBlueMagicGeneral = new System.Windows.Forms.GroupBox();
@@ -192,7 +192,7 @@
             this.checkBoxBlueMagicCL1Slow = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Berserk = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Sleep = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL1Invicible = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL1Invincible = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Curse = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Doom = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Float = new System.Windows.Forms.CheckBox();
@@ -218,7 +218,7 @@
             this.checkBoxBlueMagicCL1Death = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Protect = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Haste = new System.Windows.Forms.CheckBox();
-            this.BlueMagicCL1Regen = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL1Regen = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Shell = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Reflect = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Unk7 = new System.Windows.Forms.CheckBox();
@@ -237,7 +237,7 @@
             this.checkBoxBlueMagicCL2Slow = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2Berserk = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2Sleep = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2Invicible = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2Invincible = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2Curse = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2Doom = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2Float = new System.Windows.Forms.CheckBox();
@@ -1065,7 +1065,7 @@
             this.menuStrip1.SuspendLayout();
             this.toolbarStrip.SuspendLayout();
             this.tabBlueMagic.SuspendLayout();
-            this.groupBoxBlueMagicCS4.SuspendLayout();
+            this.tabControlBlueMagic.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBoxBlueMagicAttackFlags.SuspendLayout();
             this.groupBoxBlueMagicGeneral.SuspendLayout();
@@ -3920,7 +3920,7 @@
             // 
             // tabBlueMagic
             // 
-            this.tabBlueMagic.Controls.Add(this.groupBoxBlueMagicCS4);
+            this.tabBlueMagic.Controls.Add(this.tabControlBlueMagic);
             this.tabBlueMagic.Controls.Add(this.listBoxBlueMagic);
             this.tabBlueMagic.Location = new System.Drawing.Point(4, 34);
             this.tabBlueMagic.Name = "tabBlueMagic";
@@ -3930,20 +3930,20 @@
             this.tabBlueMagic.Text = "Blue Magic";
             this.tabBlueMagic.UseVisualStyleBackColor = true;
             // 
-            // groupBoxBlueMagicCS4
+            // tabControlBlueMagic
             // 
-            this.groupBoxBlueMagicCS4.Controls.Add(this.tabPage2);
-            this.groupBoxBlueMagicCS4.Controls.Add(this.tabPage3);
-            this.groupBoxBlueMagicCS4.Controls.Add(this.tabPage1);
-            this.groupBoxBlueMagicCS4.Controls.Add(this.tabPage4);
-            this.groupBoxBlueMagicCS4.Controls.Add(this.tabPage5);
-            this.groupBoxBlueMagicCS4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxBlueMagicCS4.Location = new System.Drawing.Point(129, 0);
-            this.groupBoxBlueMagicCS4.Name = "groupBoxBlueMagicCS4";
-            this.groupBoxBlueMagicCS4.SelectedIndex = 0;
-            this.groupBoxBlueMagicCS4.Size = new System.Drawing.Size(459, 736);
-            this.groupBoxBlueMagicCS4.TabIndex = 21;
-            this.groupBoxBlueMagicCS4.TabStop = false;
+            this.tabControlBlueMagic.Controls.Add(this.tabPage2);
+            this.tabControlBlueMagic.Controls.Add(this.tabPage3);
+            this.tabControlBlueMagic.Controls.Add(this.tabPage1);
+            this.tabControlBlueMagic.Controls.Add(this.tabPage4);
+            this.tabControlBlueMagic.Controls.Add(this.tabPage5);
+            this.tabControlBlueMagic.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlBlueMagic.Location = new System.Drawing.Point(129, 0);
+            this.tabControlBlueMagic.Name = "tabControlBlueMagic";
+            this.tabControlBlueMagic.SelectedIndex = 0;
+            this.tabControlBlueMagic.Size = new System.Drawing.Size(459, 736);
+            this.tabControlBlueMagic.TabIndex = 21;
+            this.tabControlBlueMagic.TabStop = false;
             // 
             // tabPage2
             // 
@@ -3960,34 +3960,34 @@
             // groupBoxBlueMagicAttackFlags
             // 
             this.groupBoxBlueMagicAttackFlags.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlagBreakDamageLimit);
+            this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlag4);
             this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlag8);
             this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlag3);
             this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlag6);
-            this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlagShelled);
-            this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlagReflected);
+            this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlag1);
+            this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlag5);
             this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlag2);
             this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlag7);
             this.groupBoxBlueMagicAttackFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxBlueMagicAttackFlags.ForeColor = System.Drawing.Color.Sienna;
             this.groupBoxBlueMagicAttackFlags.Location = new System.Drawing.Point(3, 172);
             this.groupBoxBlueMagicAttackFlags.Name = "groupBoxBlueMagicAttackFlags";
-            this.groupBoxBlueMagicAttackFlags.Size = new System.Drawing.Size(444, 188);
+            this.groupBoxBlueMagicAttackFlags.Size = new System.Drawing.Size(444, 96);
             this.groupBoxBlueMagicAttackFlags.TabIndex = 103;
             this.groupBoxBlueMagicAttackFlags.TabStop = false;
             this.groupBoxBlueMagicAttackFlags.Text = "Attack Flags";
             // 
-            // checkBoxBlueMagicFlagBreakDamageLimit
+            // checkBoxBlueMagicFlag4
             // 
-            this.checkBoxBlueMagicFlagBreakDamageLimit.AutoSize = true;
-            this.checkBoxBlueMagicFlagBreakDamageLimit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicFlagBreakDamageLimit.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicFlagBreakDamageLimit.Location = new System.Drawing.Point(295, 38);
-            this.checkBoxBlueMagicFlagBreakDamageLimit.Name = "checkBoxBlueMagicFlagBreakDamageLimit";
-            this.checkBoxBlueMagicFlagBreakDamageLimit.Size = new System.Drawing.Size(132, 19);
-            this.checkBoxBlueMagicFlagBreakDamageLimit.TabIndex = 48;
-            this.checkBoxBlueMagicFlagBreakDamageLimit.Text = "Break Damage Limit";
-            this.checkBoxBlueMagicFlagBreakDamageLimit.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagicFlag4.AutoSize = true;
+            this.checkBoxBlueMagicFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFlag4.Location = new System.Drawing.Point(295, 38);
+            this.checkBoxBlueMagicFlag4.Name = "checkBoxBlueMagicFlag4";
+            this.checkBoxBlueMagicFlag4.Size = new System.Drawing.Size(132, 19);
+            this.checkBoxBlueMagicFlag4.TabIndex = 48;
+            this.checkBoxBlueMagicFlag4.Text = "Break Damage Limit";
+            this.checkBoxBlueMagicFlag4.UseVisualStyleBackColor = true;
             // 
             // checkBoxBlueMagicFlag8
             // 
@@ -4025,29 +4025,29 @@
             this.checkBoxBlueMagicFlag6.Text = "???";
             this.checkBoxBlueMagicFlag6.UseVisualStyleBackColor = true;
             // 
-            // checkBoxBlueMagicFlagShelled
+            // checkBoxBlueMagicFlag1
             // 
-            this.checkBoxBlueMagicFlagShelled.AutoSize = true;
-            this.checkBoxBlueMagicFlagShelled.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicFlagShelled.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicFlagShelled.Location = new System.Drawing.Point(17, 38);
-            this.checkBoxBlueMagicFlagShelled.Name = "checkBoxBlueMagicFlagShelled";
-            this.checkBoxBlueMagicFlagShelled.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxBlueMagicFlagShelled.TabIndex = 45;
-            this.checkBoxBlueMagicFlagShelled.Text = "Shelled";
-            this.checkBoxBlueMagicFlagShelled.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagicFlag1.AutoSize = true;
+            this.checkBoxBlueMagicFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFlag1.Location = new System.Drawing.Point(17, 38);
+            this.checkBoxBlueMagicFlag1.Name = "checkBoxBlueMagicFlag1";
+            this.checkBoxBlueMagicFlag1.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBlueMagicFlag1.TabIndex = 45;
+            this.checkBoxBlueMagicFlag1.Text = "Shelled";
+            this.checkBoxBlueMagicFlag1.UseVisualStyleBackColor = true;
             // 
-            // checkBoxBlueMagicFlagReflected
+            // checkBoxBlueMagicFlag5
             // 
-            this.checkBoxBlueMagicFlagReflected.AutoSize = true;
-            this.checkBoxBlueMagicFlagReflected.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicFlagReflected.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicFlagReflected.Location = new System.Drawing.Point(17, 63);
-            this.checkBoxBlueMagicFlagReflected.Name = "checkBoxBlueMagicFlagReflected";
-            this.checkBoxBlueMagicFlagReflected.Size = new System.Drawing.Size(75, 19);
-            this.checkBoxBlueMagicFlagReflected.TabIndex = 49;
-            this.checkBoxBlueMagicFlagReflected.Text = "Reflected";
-            this.checkBoxBlueMagicFlagReflected.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagicFlag5.AutoSize = true;
+            this.checkBoxBlueMagicFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicFlag5.Location = new System.Drawing.Point(17, 63);
+            this.checkBoxBlueMagicFlag5.Name = "checkBoxBlueMagicFlag5";
+            this.checkBoxBlueMagicFlag5.Size = new System.Drawing.Size(75, 19);
+            this.checkBoxBlueMagicFlag5.TabIndex = 49;
+            this.checkBoxBlueMagicFlag5.Text = "Reflected";
+            this.checkBoxBlueMagicFlag5.UseVisualStyleBackColor = true;
             // 
             // checkBoxBlueMagicFlag2
             // 
@@ -4562,7 +4562,7 @@
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Slow);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Berserk);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Sleep);
-            this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Invicible);
+            this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Invincible);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Curse);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Doom);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Float);
@@ -4588,7 +4588,7 @@
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Death);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Protect);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Haste);
-            this.groupBoxBlueMagicCS1.Controls.Add(this.BlueMagicCL1Regen);
+            this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Regen);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Shell);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Reflect);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Unk7);
@@ -4716,17 +4716,17 @@
             this.checkBoxBlueMagicCL1Sleep.Text = "Sleep";
             this.checkBoxBlueMagicCL1Sleep.UseVisualStyleBackColor = true;
             // 
-            // checkBoxBlueMagicCL1Invicible
+            // checkBoxBlueMagicCL1Invincible
             // 
-            this.checkBoxBlueMagicCL1Invicible.AutoSize = true;
-            this.checkBoxBlueMagicCL1Invicible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL1Invicible.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL1Invicible.Location = new System.Drawing.Point(95, 160);
-            this.checkBoxBlueMagicCL1Invicible.Name = "checkBoxBlueMagicCL1Invicible";
-            this.checkBoxBlueMagicCL1Invicible.Size = new System.Drawing.Size(77, 19);
-            this.checkBoxBlueMagicCL1Invicible.TabIndex = 154;
-            this.checkBoxBlueMagicCL1Invicible.Text = "Invincible";
-            this.checkBoxBlueMagicCL1Invicible.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagicCL1Invincible.AutoSize = true;
+            this.checkBoxBlueMagicCL1Invincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL1Invincible.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL1Invincible.Location = new System.Drawing.Point(95, 160);
+            this.checkBoxBlueMagicCL1Invincible.Name = "checkBoxBlueMagicCL1Invincible";
+            this.checkBoxBlueMagicCL1Invincible.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxBlueMagicCL1Invincible.TabIndex = 154;
+            this.checkBoxBlueMagicCL1Invincible.Text = "Invincible";
+            this.checkBoxBlueMagicCL1Invincible.UseVisualStyleBackColor = true;
             // 
             // checkBoxBlueMagicCL1Curse
             // 
@@ -5028,17 +5028,17 @@
             this.checkBoxBlueMagicCL1Haste.Text = "Haste";
             this.checkBoxBlueMagicCL1Haste.UseVisualStyleBackColor = true;
             // 
-            // BlueMagicCL1Regen
+            // checkBoxBlueMagicCL1Regen
             // 
-            this.BlueMagicCL1Regen.AutoSize = true;
-            this.BlueMagicCL1Regen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BlueMagicCL1Regen.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.BlueMagicCL1Regen.Location = new System.Drawing.Point(366, 110);
-            this.BlueMagicCL1Regen.Name = "BlueMagicCL1Regen";
-            this.BlueMagicCL1Regen.Size = new System.Drawing.Size(59, 19);
-            this.BlueMagicCL1Regen.TabIndex = 147;
-            this.BlueMagicCL1Regen.Text = "Regen";
-            this.BlueMagicCL1Regen.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagicCL1Regen.AutoSize = true;
+            this.checkBoxBlueMagicCL1Regen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL1Regen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL1Regen.Location = new System.Drawing.Point(366, 110);
+            this.checkBoxBlueMagicCL1Regen.Name = "checkBoxBlueMagicCL1Regen";
+            this.checkBoxBlueMagicCL1Regen.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxBlueMagicCL1Regen.TabIndex = 147;
+            this.checkBoxBlueMagicCL1Regen.Text = "Regen";
+            this.checkBoxBlueMagicCL1Regen.UseVisualStyleBackColor = true;
             // 
             // checkBoxBlueMagicCL1Shell
             // 
@@ -5148,7 +5148,7 @@
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Slow);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Berserk);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Sleep);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Invicible);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Invincible);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Curse);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Doom);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Float);
@@ -5302,17 +5302,17 @@
             this.checkBoxBlueMagicCL2Sleep.Text = "Sleep";
             this.checkBoxBlueMagicCL2Sleep.UseVisualStyleBackColor = true;
             // 
-            // checkBoxBlueMagicCL2Invicible
+            // checkBoxBlueMagicCL2Invincible
             // 
-            this.checkBoxBlueMagicCL2Invicible.AutoSize = true;
-            this.checkBoxBlueMagicCL2Invicible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2Invicible.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2Invicible.Location = new System.Drawing.Point(95, 160);
-            this.checkBoxBlueMagicCL2Invicible.Name = "checkBoxBlueMagicCL2Invicible";
-            this.checkBoxBlueMagicCL2Invicible.Size = new System.Drawing.Size(77, 19);
-            this.checkBoxBlueMagicCL2Invicible.TabIndex = 154;
-            this.checkBoxBlueMagicCL2Invicible.Text = "Invincible";
-            this.checkBoxBlueMagicCL2Invicible.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagicCL2Invincible.AutoSize = true;
+            this.checkBoxBlueMagicCL2Invincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2Invincible.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2Invincible.Location = new System.Drawing.Point(95, 160);
+            this.checkBoxBlueMagicCL2Invincible.Name = "checkBoxBlueMagicCL2Invincible";
+            this.checkBoxBlueMagicCL2Invincible.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxBlueMagicCL2Invincible.TabIndex = 154;
+            this.checkBoxBlueMagicCL2Invincible.Text = "Invincible";
+            this.checkBoxBlueMagicCL2Invincible.UseVisualStyleBackColor = true;
             // 
             // checkBoxBlueMagicCL2Curse
             // 
@@ -6910,6 +6910,7 @@
             this.listBoxBlueMagic.ScrollAlwaysVisible = true;
             this.listBoxBlueMagic.Size = new System.Drawing.Size(128, 735);
             this.listBoxBlueMagic.TabIndex = 6;
+            this.listBoxBlueMagic.SelectedIndexChanged += new System.EventHandler(this.listBoxBlueMagic_SelectedIndexChanged);
             // 
             // tabPageGFAttacks
             // 
@@ -19402,8 +19403,8 @@
             this.tabControlMain.Controls.Add(this.tabPageMagic);
             this.tabControlMain.Controls.Add(this.tabPageGF);
             this.tabControlMain.Controls.Add(this.tabPageGFAttacks);
-            this.tabControlMain.Controls.Add(this.tabBlueMagic);
             this.tabControlMain.Controls.Add(this.tabPageRenzokukenFinishers);
+            this.tabControlMain.Controls.Add(this.tabBlueMagic);
             this.tabControlMain.Controls.Add(this.tabSlots);
             this.tabControlMain.Controls.Add(this.tabPageTempCharLB);
             this.tabControlMain.Controls.Add(this.tabEnemyAttacks);
@@ -23841,7 +23842,7 @@
             this.toolbarStrip.ResumeLayout(false);
             this.toolbarStrip.PerformLayout();
             this.tabBlueMagic.ResumeLayout(false);
-            this.groupBoxBlueMagicCS4.ResumeLayout(false);
+            this.tabControlBlueMagic.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.groupBoxBlueMagicAttackFlags.ResumeLayout(false);
             this.groupBoxBlueMagicAttackFlags.PerformLayout();
@@ -24747,15 +24748,15 @@
         private System.Windows.Forms.Label labelMagicBrothersComp;
         private System.Windows.Forms.NumericUpDown numericUpDownMagicQuezacoltComp;
         private System.Windows.Forms.Label labelMagicQuezacoltComp;
-        private System.Windows.Forms.TabControl groupBoxBlueMagicCS4;
+        private System.Windows.Forms.TabControl tabControlBlueMagic;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBoxBlueMagicAttackFlags;
-        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlagBreakDamageLimit;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag4;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag8;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag3;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag6;
-        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlagShelled;
-        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlagReflected;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag1;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag5;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag2;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag7;
         private System.Windows.Forms.GroupBox groupBoxBlueMagicGeneral;
@@ -24886,7 +24887,7 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Slow;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Berserk;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Sleep;
-        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Invicible;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Invincible;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Curse;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Doom;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Float;
@@ -24912,7 +24913,7 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Death;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Protect;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Haste;
-        private System.Windows.Forms.CheckBox BlueMagicCL1Regen;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Regen;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Shell;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Reflect;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Unk7;
@@ -25082,7 +25083,7 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Slow;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Berserk;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Sleep;
-        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Invicible;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Invincible;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Curse;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Doom;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Float;
