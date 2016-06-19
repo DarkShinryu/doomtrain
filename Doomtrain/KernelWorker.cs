@@ -41,6 +41,9 @@ namespace Doomtrain
         public static int TempCharLBDataOffset = -1;
         public static int OffsetToTempCharLBSelected = -1;
 
+        public static int ShotDataOffset = -1;
+        public static int OffsetToShotSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -52,6 +55,7 @@ namespace Doomtrain
         public static StatPercentageAbilitiesData GetSelectedStatPercentageAbilitiesData;
         public static RenzoFinData GetSelectedRenzoFinData;
         public static TempCharLBData GetSelectedTempCharLBData;
+        public static ShotData GetSelectedShotData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -145,12 +149,6 @@ namespace Doomtrain
             Laguna = 0x08,
             Kiros = 0x09,
             Ward = 0x0A
-        }
-
-        internal enum Genders : byte
-        {
-            Male = 0x00,
-            Female = 0x01
         }
 
 
@@ -325,7 +323,7 @@ namespace Doomtrain
         {
             //public string Name;
             public byte CrisisLevel;
-            public Genders Gender;
+            public byte Gender;
             public byte LimitID;
             public byte LimitParam;
             public byte EXP1;
@@ -435,6 +433,13 @@ namespace Doomtrain
             public byte Target;
             public byte AttackFlags;
             public byte HitCount;
+            public byte Element;
+            public byte StatusAttack;
+            public byte Status1;
+            public byte Status2;
+            public byte Status3;
+            public byte Status4;
+            public byte Status5;
         }
         
         public struct TempCharLBData
@@ -447,7 +452,35 @@ namespace Doomtrain
             public byte Target;
             public byte AttackFlags;
             public byte HitCount;
+            public byte Element;
+            public byte StatusAttack;
+            public byte Status1;
+            public byte Status2;
+            public byte Status3;
+            public byte Status4;
+            public byte Status5;
         }
+
+        public struct ShotData
+        {
+            //public string OffsetToName;
+            //public string OffsetToDescription;
+            public UInt16 MagicID;
+            public byte AttackType;
+            public byte AttackPower;
+            public byte Target;
+            public byte AttackFlags;
+            public byte HitCount;
+            public Element Element;
+            public byte StatusAttack;
+            public byte Status1;
+            public byte Status2;
+            public byte Status3;
+            public byte Status4;
+            public byte Status5;
+            public byte UsedItem;
+        }
+
         #endregion
 
         #region WRITE KERNEL VARIABLES
@@ -1270,7 +1303,7 @@ namespace Doomtrain
             }
         }
 
-        public static void UpdateVariable_RenzoFin(int index, object variable)
+        public static void UpdateVariable_RenzoFin(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -1300,7 +1333,7 @@ namespace Doomtrain
             }
         }
         
-        public static void UpdateVariable_TempCharLB(int index, object variable)
+        public static void UpdateVariable_TempCharLB(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -1329,6 +1362,70 @@ namespace Doomtrain
                     return;
             }
         }
+
+        public static void UpdateVariable_Shot(int index, object variable, byte arg0 = 127)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    UshortToKernel(Convert.ToUInt16(variable), 4, (byte)Mode.Mode_Shot); //MagicID
+                    return;
+                case 1:
+                    Kernel[OffsetToShotSelected + 6] = Convert.ToByte(variable); //Attack type
+                    return;
+                case 2:
+                    Kernel[OffsetToShotSelected + 7] = Convert.ToByte(variable); //Attack power
+                    return;
+                case 3:
+                    Kernel[OffsetToShotSelected + 10] = (byte)(Kernel[OffsetToShotSelected + 10] ^ Convert.ToByte(variable)); //default target
+                    return;
+                case 4:
+                    Kernel[OffsetToShotSelected + 11] = (byte)(Kernel[OffsetToShotSelected + 11] ^ Convert.ToByte(variable)); //attack flags
+                    return;
+                case 5:
+                    Kernel[OffsetToShotSelected + 12] = Convert.ToByte(variable); //Hit Count
+                    return;
+                case 6:
+                    Kernel[OffsetToShotSelected + 13] = Convert.ToByte(variable); //Element
+                    return;
+                case 7:
+                    Kernel[OffsetToShotSelected + 15] = Convert.ToByte(variable); //Status Attack
+                    return;
+                case 8:
+                    Kernel[OffsetToShotSelected + 18] = Convert.ToByte(variable); //Used Item
+                    return;
+                case 9:
+                    ShotStatusUpdator(arg0, variable); //Status
+                    return;
+
+                    default:
+                    return;
+            }
+        }
+        private static void ShotStatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToShotSelected + 16] = (byte)(Kernel[OffsetToShotSelected + 16] ^ Convert.ToByte(variable));
+                    return;
+                case 1:
+                    Kernel[OffsetToShotSelected + 20] = (byte)(Kernel[OffsetToShotSelected + 20] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToShotSelected + 21] = (byte)(Kernel[OffsetToShotSelected + 21] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToShotSelected + 22] = (byte)(Kernel[OffsetToShotSelected + 22] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToShotSelected + 23] = (byte)(Kernel[OffsetToShotSelected + 23] ^ Convert.ToByte(variable));
+                    return;
+            }
+        }
+
         #endregion
 
         #region MAGIC ID
@@ -1364,6 +1461,10 @@ namespace Doomtrain
                 case (byte)Mode.Mode_TempCharLB:
                     Array.Copy(magicIdBytes, 0, Kernel, OffsetToTempCharLBSelected + add, 2);
                     break;
+                case (byte)Mode.Mode_Shot:
+                    Array.Copy(magicIdBytes, 0, Kernel, OffsetToShotSelected + add, 2);
+                    break;
+
                 default:
                     return;
             }
@@ -1377,7 +1478,8 @@ namespace Doomtrain
             Mode_EnemyAttacks,
             Mode_BlueMagic,
             Mode_RenzoFin,
-            Mode_TempCharLB
+            Mode_TempCharLB,
+            Mode_Shot
         }
 
         #endregion
@@ -1398,7 +1500,7 @@ namespace Doomtrain
             StatPercentageAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.StatPercentageIncreasingAbilities);
             RenzoFinDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RenzokukenFinisher);
             TempCharLBDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.TempCharacterLimitBreakes);
-
+            ShotDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Shot_Irvine);
         }
 
 
@@ -1749,13 +1851,7 @@ namespace Doomtrain
 
             GetSelectedCharactersData.CrisisLevel = Kernel[selectedCharactersOffset + 2];
             selectedCharactersOffset += 3;
-            byte d = Kernel[selectedCharactersOffset++];
-            GetSelectedCharactersData.Gender =
-                d == (byte)Genders.Male
-                    ? Genders.Male
-                    : d == (byte)Genders.Female
-                        ? Genders.Female
-                        : 0; //Error handler
+            GetSelectedCharactersData.Gender = Kernel[selectedCharactersOffset++];
             GetSelectedCharactersData.LimitID = Kernel[selectedCharactersOffset++];
             GetSelectedCharactersData.LimitParam = Kernel[selectedCharactersOffset++];
             GetSelectedCharactersData.EXP1 = Kernel[selectedCharactersOffset++];
@@ -1955,6 +2051,53 @@ namespace Doomtrain
             GetSelectedTempCharLBData.Target = Kernel[selectedTempCharLBOffset++];
             GetSelectedTempCharLBData.AttackFlags = Kernel[selectedTempCharLBOffset++];
             GetSelectedTempCharLBData.HitCount = Kernel[selectedTempCharLBOffset++];
+        }
+
+        public static void ReadShot(int ShotID_List)
+        {
+            GetSelectedShotData = new ShotData();
+            int selectedShotOffset = ShotDataOffset + (ShotID_List * 24);
+            OffsetToShotSelected = selectedShotOffset;
+
+            GetSelectedShotData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedShotOffset + 4));
+            selectedShotOffset += 4 + 2;
+            GetSelectedShotData.AttackType = Kernel[selectedShotOffset++];
+            GetSelectedShotData.AttackPower = Kernel[selectedShotOffset++];
+            selectedShotOffset += 2;
+            GetSelectedShotData.Target = Kernel[selectedShotOffset++];
+            GetSelectedShotData.AttackFlags = Kernel[selectedShotOffset++];
+            GetSelectedShotData.HitCount = Kernel[selectedShotOffset++];
+            byte b = Kernel[selectedShotOffset++];
+            GetSelectedShotData.Element =
+                b == (byte)Element.Fire
+                    ? Element.Fire
+                    : b == (byte)Element.Holy
+                        ? Element.Holy
+                        : b == (byte)Element.Ice
+                            ? Element.Ice
+                            : b == (byte)Element.NonElemental
+                                ? Element.NonElemental
+                                : b == (byte)Element.Poison
+                                    ? Element.Poison
+                                    : b == (byte)Element.Thunder
+                                        ? Element.Thunder
+                                        : b == (byte)Element.Water
+                                            ? Element.Water
+                                            : b == (byte)Element.Wind
+                                                ? Element.Wind
+                                                : b == (byte)Element.Earth
+                                                    ? Element.Earth
+                                                    : 0; //Error handler
+            selectedShotOffset += 1;
+            GetSelectedShotData.StatusAttack = Kernel[selectedShotOffset++];
+            GetSelectedShotData.Status1 = Kernel[selectedShotOffset++];
+            selectedShotOffset += 1;
+            GetSelectedShotData.UsedItem = Kernel[selectedShotOffset++];
+            selectedShotOffset += 1;
+            GetSelectedShotData.Status2 = Kernel[selectedShotOffset++];
+            GetSelectedShotData.Status3 = Kernel[selectedShotOffset++];
+            GetSelectedShotData.Status4 = Kernel[selectedShotOffset++];
+            GetSelectedShotData.Status5 = Kernel[selectedShotOffset++];
         }
         #endregion
 
