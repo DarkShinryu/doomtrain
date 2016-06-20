@@ -433,7 +433,8 @@ namespace Doomtrain
             public byte Target;
             public byte AttackFlags;
             public byte HitCount;
-            public byte Element;
+            public Element Element;
+            public byte ElementPerc;
             public byte StatusAttack;
             public byte Status1;
             public byte Status2;
@@ -452,7 +453,8 @@ namespace Doomtrain
             public byte Target;
             public byte AttackFlags;
             public byte HitCount;
-            public byte Element;
+            public Element Element;
+            public byte ElementPerc;
             public byte StatusAttack;
             public byte Status1;
             public byte Status2;
@@ -1328,12 +1330,45 @@ namespace Doomtrain
                 case 5:
                     Kernel[OffsetToRenzoFinSelected + 12] = Convert.ToByte(variable); //Hit Count
                     return;
+                case 6:
+                    Kernel[OffsetToRenzoFinSelected + 13] = Convert.ToByte(variable); //Element
+                    return;
+                case 7:
+                    Kernel[OffsetToRenzoFinSelected + 14] = Convert.ToByte(variable); //Element %
+                    return;
+                case 8:
+                    Kernel[OffsetToRenzoFinSelected + 15] = Convert.ToByte(variable); //Attack Status
+                    return;
+                case 9:
+                    RenzoFinStatusUpdator(arg0, variable); //Status
+                    return;
 
-                    default:
+                default:
                     return;
             }
         }
-        
+        private static void RenzoFinStatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToRenzoFinSelected + 18] = (byte)(Kernel[OffsetToRenzoFinSelected + 18] ^ Convert.ToByte(variable));
+                    return;
+                case 1:
+                    Kernel[OffsetToRenzoFinSelected + 20] = (byte)(Kernel[OffsetToRenzoFinSelected + 20] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToRenzoFinSelected + 21] = (byte)(Kernel[OffsetToRenzoFinSelected + 21] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToRenzoFinSelected + 22] = (byte)(Kernel[OffsetToRenzoFinSelected + 22] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToRenzoFinSelected + 23] = (byte)(Kernel[OffsetToRenzoFinSelected + 23] ^ Convert.ToByte(variable));
+                    return;
+            }
+        }
+
         public static void UpdateVariable_TempCharLB(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -1358,8 +1393,41 @@ namespace Doomtrain
                 case 5:
                     Kernel[OffsetToTempCharLBSelected + 12] = Convert.ToByte(variable); //Hit Count
                     return;
+                case 6:
+                    Kernel[OffsetToTempCharLBSelected + 13] = Convert.ToByte(variable); //Element
+                    return;
+                case 7:
+                    Kernel[OffsetToTempCharLBSelected + 14] = Convert.ToByte(variable); //Element %
+                    return;
+                case 8:
+                    Kernel[OffsetToTempCharLBSelected + 15] = Convert.ToByte(variable); //Status Attack
+                    return;
+                case 9:
+                    TempCharLBStatusUpdator(arg0, variable); //Status
+                    return;
 
                 default:
+                    return;
+            }
+        }
+        private static void TempCharLBStatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToTempCharLBSelected + 16] = (byte)(Kernel[OffsetToTempCharLBSelected + 16] ^ Convert.ToByte(variable));
+                    return;
+                case 1:
+                    Kernel[OffsetToTempCharLBSelected + 20] = (byte)(Kernel[OffsetToTempCharLBSelected + 20] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToTempCharLBSelected + 21] = (byte)(Kernel[OffsetToTempCharLBSelected + 21] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToTempCharLBSelected + 22] = (byte)(Kernel[OffsetToTempCharLBSelected + 22] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToTempCharLBSelected + 23] = (byte)(Kernel[OffsetToTempCharLBSelected + 23] ^ Convert.ToByte(variable));
                     return;
             }
         }
@@ -2039,6 +2107,36 @@ namespace Doomtrain
             GetSelectedRenzoFinData.Target = Kernel[selectedRenzoFinOffset++];
             GetSelectedRenzoFinData.AttackFlags = Kernel[selectedRenzoFinOffset++];
             GetSelectedRenzoFinData.HitCount = Kernel[selectedRenzoFinOffset++];
+            byte b = Kernel[selectedRenzoFinOffset++];
+            GetSelectedRenzoFinData.Element =
+                b == (byte)Element.Fire
+                    ? Element.Fire
+                    : b == (byte)Element.Holy
+                        ? Element.Holy
+                        : b == (byte)Element.Ice
+                            ? Element.Ice
+                            : b == (byte)Element.NonElemental
+                                ? Element.NonElemental
+                                : b == (byte)Element.Poison
+                                    ? Element.Poison
+                                    : b == (byte)Element.Thunder
+                                        ? Element.Thunder
+                                        : b == (byte)Element.Water
+                                            ? Element.Water
+                                            : b == (byte)Element.Wind
+                                                ? Element.Wind
+                                                : b == (byte)Element.Earth
+                                                    ? Element.Earth
+                                                    : 0; //Error handler
+            GetSelectedRenzoFinData.ElementPerc = Kernel[selectedRenzoFinOffset++];
+            GetSelectedRenzoFinData.StatusAttack = Kernel[selectedRenzoFinOffset++];
+            selectedRenzoFinOffset += 2;
+            GetSelectedRenzoFinData.Status1 = Kernel[selectedRenzoFinOffset++];
+            selectedRenzoFinOffset += 1;
+            GetSelectedRenzoFinData.Status2 = Kernel[selectedRenzoFinOffset++];
+            GetSelectedRenzoFinData.Status3 = Kernel[selectedRenzoFinOffset++];
+            GetSelectedRenzoFinData.Status4 = Kernel[selectedRenzoFinOffset++];
+            GetSelectedRenzoFinData.Status5 = Kernel[selectedRenzoFinOffset++];
         }
        
         public static void ReadTempCharLB(int TempCharLBID_List)
@@ -2055,6 +2153,35 @@ namespace Doomtrain
             GetSelectedTempCharLBData.Target = Kernel[selectedTempCharLBOffset++];
             GetSelectedTempCharLBData.AttackFlags = Kernel[selectedTempCharLBOffset++];
             GetSelectedTempCharLBData.HitCount = Kernel[selectedTempCharLBOffset++];
+            byte b = Kernel[selectedTempCharLBOffset++];
+            GetSelectedTempCharLBData.Element =
+                b == (byte)Element.Fire
+                    ? Element.Fire
+                    : b == (byte)Element.Holy
+                        ? Element.Holy
+                        : b == (byte)Element.Ice
+                            ? Element.Ice
+                            : b == (byte)Element.NonElemental
+                                ? Element.NonElemental
+                                : b == (byte)Element.Poison
+                                    ? Element.Poison
+                                    : b == (byte)Element.Thunder
+                                        ? Element.Thunder
+                                        : b == (byte)Element.Water
+                                            ? Element.Water
+                                            : b == (byte)Element.Wind
+                                                ? Element.Wind
+                                                : b == (byte)Element.Earth
+                                                    ? Element.Earth
+                                                    : 0; //Error handler
+            GetSelectedTempCharLBData.ElementPerc = Kernel[selectedTempCharLBOffset++];
+            GetSelectedTempCharLBData.StatusAttack = Kernel[selectedTempCharLBOffset++];
+            GetSelectedTempCharLBData.Status1 = Kernel[selectedTempCharLBOffset++];
+            selectedTempCharLBOffset += 3;
+            GetSelectedTempCharLBData.Status2 = Kernel[selectedTempCharLBOffset++];
+            GetSelectedTempCharLBData.Status3 = Kernel[selectedTempCharLBOffset++];
+            GetSelectedTempCharLBData.Status4 = Kernel[selectedTempCharLBOffset++];
+            GetSelectedTempCharLBData.Status5 = Kernel[selectedTempCharLBOffset++];
         }
 
         public static void ReadShot(int ShotID_List)
@@ -2103,6 +2230,7 @@ namespace Doomtrain
             GetSelectedShotData.Status4 = Kernel[selectedShotOffset++];
             GetSelectedShotData.Status5 = Kernel[selectedShotOffset++];
         }
+
         #endregion
 
 

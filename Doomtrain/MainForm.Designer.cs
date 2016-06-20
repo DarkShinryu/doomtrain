@@ -158,6 +158,12 @@
             this.labelTempCharLBAttackPower = new System.Windows.Forms.Label();
             this.labelTempCharLBMagicID = new System.Windows.Forms.Label();
             this.checkBoxMagicTarget4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotTarget4 = new System.Windows.Forms.CheckBox();
+            this.labelShotAttackType = new System.Windows.Forms.Label();
+            this.labelShotHitCount = new System.Windows.Forms.Label();
+            this.labelShotAttackPower = new System.Windows.Forms.Label();
+            this.labelShotMagicID = new System.Windows.Forms.Label();
+            this.labelShotElement = new System.Windows.Forms.Label();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -208,7 +214,7 @@
             this.checkBoxBlueMagicCL1Aura = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Drain = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1SummonGF = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL1PlayerChar = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL1HasMagic = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Unk6 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Unk5 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Unk4 = new System.Windows.Forms.CheckBox();
@@ -253,7 +259,7 @@
             this.checkBoxBlueMagicCL2Aura = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2Drain = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2SummonGF = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL2PlayerChar = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL2HasMagic = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2Unk6 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2Unk5 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2Unk4 = new System.Windows.Forms.CheckBox();
@@ -298,7 +304,7 @@
             this.checkBoxBlueMagicCL3Aura = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL3Drain = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL3SummonGF = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL3PlayerChar = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL3HasMagic = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL3Unk6 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL3Unk5 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL3Unk4 = new System.Windows.Forms.CheckBox();
@@ -343,7 +349,7 @@
             this.checkBoxBlueMagicCL4Aura = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL4Drain = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL4SummonGF = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagicCL4PlayerChar = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicCL4HasMagic = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL4Unk6 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL4Unk5 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL4Unk4 = new System.Windows.Forms.CheckBox();
@@ -398,7 +404,7 @@
             this.checkBoxGFAttacksAura = new System.Windows.Forms.CheckBox();
             this.checkBoxGFAttacksDrain = new System.Windows.Forms.CheckBox();
             this.checkBoxGFAttacksSummonGF = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFAttacksPlayerChar = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFAttacksHasMagic = new System.Windows.Forms.CheckBox();
             this.checkBoxGFAttacksUnk6 = new System.Windows.Forms.CheckBox();
             this.checkBoxGFAttacksUnk5 = new System.Windows.Forms.CheckBox();
             this.checkBoxGFAttacksUnk4 = new System.Windows.Forms.CheckBox();
@@ -460,7 +466,7 @@
             this.checkBoxGFAura = new System.Windows.Forms.CheckBox();
             this.checkBoxGFDrain = new System.Windows.Forms.CheckBox();
             this.checkBoxGFSummonGF = new System.Windows.Forms.CheckBox();
-            this.checkBoxGFPlayerChar = new System.Windows.Forms.CheckBox();
+            this.checkBoxGFHasMagic = new System.Windows.Forms.CheckBox();
             this.checkBoxGFUnk6 = new System.Windows.Forms.CheckBox();
             this.checkBoxGFUnk5 = new System.Windows.Forms.CheckBox();
             this.checkBoxGFUnk4 = new System.Windows.Forms.CheckBox();
@@ -610,7 +616,7 @@
             this.checkBoxMagicAura = new System.Windows.Forms.CheckBox();
             this.checkBoxMagicDrain = new System.Windows.Forms.CheckBox();
             this.checkBoxMagicSummonGF = new System.Windows.Forms.CheckBox();
-            this.checkBoxMagicPlayerChar = new System.Windows.Forms.CheckBox();
+            this.checkBoxMagicHasMagic = new System.Windows.Forms.CheckBox();
             this.checkBoxMagicUnk6 = new System.Windows.Forms.CheckBox();
             this.checkBoxMagicUnk5 = new System.Windows.Forms.CheckBox();
             this.checkBoxMagicUnk4 = new System.Windows.Forms.CheckBox();
@@ -869,6 +875,49 @@
             this.listBoxCharacters = new System.Windows.Forms.ListBox();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageRenzokukenFinishers = new System.Windows.Forms.TabPage();
+            this.groupBoxRenzoFinStatusAttack = new System.Windows.Forms.GroupBox();
+            this.checkBoxRenzoFinPetrifying = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinDarkness = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinSilence = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinStop = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinConfusion = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinPetrify = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinSlow = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinBerserk = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinSleep = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinInvincible = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinCurse = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinDoom = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinFloat = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinAura = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinDrain = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinSummonGF = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinHasMagic = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinUnk6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinUnk5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinUnk4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinUnk3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinAngelWing = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinVit0 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinBackAttack = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinCharged = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinUnk2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinUnk1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinDefend = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinTriple = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinDouble = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinEject = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinPoison = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinDeath = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinProtect = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinHaste = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinRegen = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinShell = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinReflect = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinUnk7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRenzoFinZombie = new System.Windows.Forms.CheckBox();
+            this.numericUpDownRenzoFinStatusAttack = new System.Windows.Forms.NumericUpDown();
+            this.labelRenzoFinStatusAttack = new System.Windows.Forms.Label();
             this.groupBoxRenzoFinTargetInfo = new System.Windows.Forms.GroupBox();
             this.checkBoxRenzoFinTarget8 = new System.Windows.Forms.CheckBox();
             this.checkBoxRenzoFinTarget5 = new System.Windows.Forms.CheckBox();
@@ -892,6 +941,78 @@
             this.numericUpDownRenzoFinAttackPower = new System.Windows.Forms.NumericUpDown();
             this.comboBoxRenzoFinMagicID = new System.Windows.Forms.ComboBox();
             this.listBoxRenzoFin = new System.Windows.Forms.ListBox();
+            this.tabPageShot = new System.Windows.Forms.TabPage();
+            this.groupBoxShotStatusAttack = new System.Windows.Forms.GroupBox();
+            this.checkBoxShotPetrifying = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotDarkness = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotSilence = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotStop = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotConfusion = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotPetrify = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotSlow = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotBerserk = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotSleep = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotInvincible = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotCurse = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotDoom = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotFloat = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotAura = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotDrain = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotSummonGF = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotHasMagic = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotUnk6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotUnk5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotUnk4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotUnk3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotAngelWing = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotVit0 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotBackAttack = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotCharged = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotUnk2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotUnk1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotDefend = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotTriple = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotDouble = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotEject = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotPoison = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotDeath = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotProtect = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotHaste = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotRegen = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotShell = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotReflect = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotUnk7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotZombie = new System.Windows.Forms.CheckBox();
+            this.numericUpDownShotStatusAttack = new System.Windows.Forms.NumericUpDown();
+            this.labelShotStatusAttack = new System.Windows.Forms.Label();
+            this.groupBoxShotTargetInfo = new System.Windows.Forms.GroupBox();
+            this.checkBoxShotTarget8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotTarget5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotTarget2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotTarget6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotTarget7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotTarget1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotTarget3 = new System.Windows.Forms.CheckBox();
+            this.groupBoxShotAttackFlags = new System.Windows.Forms.GroupBox();
+            this.checkBoxShotFlag4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotFlag1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotFlag5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShotFlag7 = new System.Windows.Forms.CheckBox();
+            this.groupBoxShotGeneral = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBoxShotElement = new System.Windows.Forms.ComboBox();
+            this.comboBoxShotItem = new System.Windows.Forms.ComboBox();
+            this.labelShotItem = new System.Windows.Forms.Label();
+            this.comboBoxShotAttackType = new System.Windows.Forms.ComboBox();
+            this.numericUpDownShotElementPerc = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownShotHitCount = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownShotAttackPower = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxShotMagicID = new System.Windows.Forms.ComboBox();
+            this.listBoxShot = new System.Windows.Forms.ListBox();
             this.tabSlots = new System.Windows.Forms.TabPage();
             this.groupBoxSlotSets = new System.Windows.Forms.GroupBox();
             this.labelSlotSetsMagic = new System.Windows.Forms.Label();
@@ -976,6 +1097,49 @@
             this.numericUpDownSlotArray49 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownSlotArray50 = new System.Windows.Forms.NumericUpDown();
             this.tabPageTempCharLB = new System.Windows.Forms.TabPage();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.checkBoxTempCharLBPetrifying = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBDarkness = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBSilence = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBStop = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBConfusion = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBPetrify = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBSlow = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBBerserk = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBSleep = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBInvincible = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBCurse = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBDoom = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBFloat = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBAura = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBDrain = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBSummonGF = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBHasMagic = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBUnk6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBUnk5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBUnk4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBUnk3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBAngelWing = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBVit0 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBBackAttack = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBCharged = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBUnk2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBUnk1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBDefend = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBTriple = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBDouble = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBEject = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBPoison = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBDeath = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBProtect = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBHaste = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBRegen = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBShell = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBReflect = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBUnk7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTempCharLBZombie = new System.Windows.Forms.CheckBox();
+            this.numericUpDownTempCharLBStatusAttack = new System.Windows.Forms.NumericUpDown();
+            this.labelTempCharLBStatusAttack = new System.Windows.Forms.Label();
             this.groupBoxTempCharLBTarget = new System.Windows.Forms.GroupBox();
             this.checkBoxTempCharLBTarget1 = new System.Windows.Forms.CheckBox();
             this.checkBoxTempCharLBTarget5 = new System.Windows.Forms.CheckBox();
@@ -1026,7 +1190,7 @@
             this.checkBoxEnemyAttacksAura = new System.Windows.Forms.CheckBox();
             this.checkBoxEnemyAttacksDrain = new System.Windows.Forms.CheckBox();
             this.checkBoxEnemyAttacksSummonGF = new System.Windows.Forms.CheckBox();
-            this.checkBoxEnemyAttacksPlayerChar = new System.Windows.Forms.CheckBox();
+            this.checkBoxEnemyAttacksHasMagic = new System.Windows.Forms.CheckBox();
             this.checkBoxEnemyAttacksUnk6 = new System.Windows.Forms.CheckBox();
             this.checkBoxEnemyAttacksUnk5 = new System.Windows.Forms.CheckBox();
             this.checkBoxEnemyAttacksUnk4 = new System.Windows.Forms.CheckBox();
@@ -1059,170 +1223,14 @@
             this.listBoxEnemyAttacks = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tabPageShot = new System.Windows.Forms.TabPage();
-            this.groupBoxRenzoFinStatusAttack = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.checkBox24 = new System.Windows.Forms.CheckBox();
-            this.checkBox25 = new System.Windows.Forms.CheckBox();
-            this.checkBox26 = new System.Windows.Forms.CheckBox();
-            this.checkBox27 = new System.Windows.Forms.CheckBox();
-            this.checkBox28 = new System.Windows.Forms.CheckBox();
-            this.checkBox29 = new System.Windows.Forms.CheckBox();
-            this.checkBox30 = new System.Windows.Forms.CheckBox();
-            this.checkBox31 = new System.Windows.Forms.CheckBox();
-            this.checkBox32 = new System.Windows.Forms.CheckBox();
-            this.checkBox33 = new System.Windows.Forms.CheckBox();
-            this.checkBox34 = new System.Windows.Forms.CheckBox();
-            this.checkBox35 = new System.Windows.Forms.CheckBox();
-            this.checkBox36 = new System.Windows.Forms.CheckBox();
-            this.checkBox37 = new System.Windows.Forms.CheckBox();
-            this.checkBox38 = new System.Windows.Forms.CheckBox();
-            this.checkBox39 = new System.Windows.Forms.CheckBox();
-            this.checkBox40 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.checkBox41 = new System.Windows.Forms.CheckBox();
-            this.checkBox42 = new System.Windows.Forms.CheckBox();
-            this.checkBox43 = new System.Windows.Forms.CheckBox();
-            this.checkBox44 = new System.Windows.Forms.CheckBox();
-            this.checkBox45 = new System.Windows.Forms.CheckBox();
-            this.checkBox46 = new System.Windows.Forms.CheckBox();
-            this.checkBox47 = new System.Windows.Forms.CheckBox();
-            this.checkBox48 = new System.Windows.Forms.CheckBox();
-            this.checkBox49 = new System.Windows.Forms.CheckBox();
-            this.checkBox50 = new System.Windows.Forms.CheckBox();
-            this.checkBox51 = new System.Windows.Forms.CheckBox();
-            this.checkBox52 = new System.Windows.Forms.CheckBox();
-            this.checkBox53 = new System.Windows.Forms.CheckBox();
-            this.checkBox54 = new System.Windows.Forms.CheckBox();
-            this.checkBox55 = new System.Windows.Forms.CheckBox();
-            this.checkBox56 = new System.Windows.Forms.CheckBox();
-            this.checkBox57 = new System.Windows.Forms.CheckBox();
-            this.checkBox58 = new System.Windows.Forms.CheckBox();
-            this.checkBox59 = new System.Windows.Forms.CheckBox();
-            this.checkBox60 = new System.Windows.Forms.CheckBox();
-            this.checkBox61 = new System.Windows.Forms.CheckBox();
-            this.checkBox62 = new System.Windows.Forms.CheckBox();
-            this.checkBox63 = new System.Windows.Forms.CheckBox();
-            this.checkBox64 = new System.Windows.Forms.CheckBox();
-            this.checkBox65 = new System.Windows.Forms.CheckBox();
-            this.checkBox66 = new System.Windows.Forms.CheckBox();
-            this.checkBox67 = new System.Windows.Forms.CheckBox();
-            this.checkBox68 = new System.Windows.Forms.CheckBox();
-            this.checkBox69 = new System.Windows.Forms.CheckBox();
-            this.checkBox70 = new System.Windows.Forms.CheckBox();
-            this.checkBox71 = new System.Windows.Forms.CheckBox();
-            this.checkBox72 = new System.Windows.Forms.CheckBox();
-            this.checkBox73 = new System.Windows.Forms.CheckBox();
-            this.checkBox74 = new System.Windows.Forms.CheckBox();
-            this.checkBox75 = new System.Windows.Forms.CheckBox();
-            this.checkBox76 = new System.Windows.Forms.CheckBox();
-            this.checkBox77 = new System.Windows.Forms.CheckBox();
-            this.checkBox78 = new System.Windows.Forms.CheckBox();
-            this.checkBox79 = new System.Windows.Forms.CheckBox();
-            this.checkBox80 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBoxShotStatusAttack = new System.Windows.Forms.GroupBox();
-            this.checkBoxShotPetrifying = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotDarkness = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotSilence = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotStop = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotConfusion = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotPetrify = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotSlow = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotBerserk = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotSleep = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotInvincible = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotCurse = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotDoom = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotFloat = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotAura = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotDrain = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotSummonGF = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotPlayerChar = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotUnk6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotUnk5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotUnk4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotUnk3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotAngelWing = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotVit0 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotBackAttack = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotCharged = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotUnk2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotUnk1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotDefend = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotTriple = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotDouble = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotEject = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotPoison = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotDeath = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotProtect = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotHaste = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotRegen = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotShell = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotReflect = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotUnk7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotZombie = new System.Windows.Forms.CheckBox();
-            this.numericUpDownShotStatusAttack = new System.Windows.Forms.NumericUpDown();
-            this.labelShotStatusAttack = new System.Windows.Forms.Label();
-            this.groupBoxShotTargetInfo = new System.Windows.Forms.GroupBox();
-            this.checkBoxShotTarget8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotTarget5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotTarget2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotTarget4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotTarget6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotTarget7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotTarget1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotTarget3 = new System.Windows.Forms.CheckBox();
-            this.groupBoxShotAttackFlags = new System.Windows.Forms.GroupBox();
-            this.checkBoxShotFlag4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotFlag8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotFlag3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotFlag6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotFlag1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotFlag5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotFlag2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShotFlag7 = new System.Windows.Forms.CheckBox();
-            this.groupBoxShotGeneral = new System.Windows.Forms.GroupBox();
-            this.comboBoxShotAttackType = new System.Windows.Forms.ComboBox();
-            this.labelShotAttackType = new System.Windows.Forms.Label();
-            this.numericUpDownShotHitCount = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownShotAttackPower = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxShotMagicID = new System.Windows.Forms.ComboBox();
-            this.labelShotHitCount = new System.Windows.Forms.Label();
-            this.labelShotAttackPower = new System.Windows.Forms.Label();
-            this.labelShotMagicID = new System.Windows.Forms.Label();
-            this.listBoxShot = new System.Windows.Forms.ListBox();
-            this.comboBoxShotItem = new System.Windows.Forms.ComboBox();
-            this.labelShotItem = new System.Windows.Forms.Label();
-            this.comboBoxShotElement = new System.Windows.Forms.ComboBox();
-            this.labelShotElement = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDownShotElementPerc = new System.Windows.Forms.NumericUpDown();
+            this.labelRenzoFinElementPerc = new System.Windows.Forms.Label();
+            this.comboBoxRenzoFinElement = new System.Windows.Forms.ComboBox();
+            this.labelRenzoFinElement = new System.Windows.Forms.Label();
+            this.numericUpDownRenzoFinElementPerc = new System.Windows.Forms.NumericUpDown();
+            this.labelTempCharLBElementPerc = new System.Windows.Forms.Label();
+            this.comboBoxTempCharLBElement = new System.Windows.Forms.ComboBox();
+            this.labelTempCharLBElement = new System.Windows.Forms.Label();
+            this.numericUpDownTempCharLBElementPerc = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
@@ -1397,11 +1405,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP1)).BeginInit();
             this.tabControlMain.SuspendLayout();
             this.tabPageRenzokukenFinishers.SuspendLayout();
+            this.groupBoxRenzoFinStatusAttack.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinStatusAttack)).BeginInit();
             this.groupBoxRenzoFinTargetInfo.SuspendLayout();
             this.groupBoxRenzoFinFlags.SuspendLayout();
             this.groupBoxRenzoFinGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinAttackPower)).BeginInit();
+            this.tabPageShot.SuspendLayout();
+            this.groupBoxShotStatusAttack.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotStatusAttack)).BeginInit();
+            this.groupBoxShotTargetInfo.SuspendLayout();
+            this.groupBoxShotAttackFlags.SuspendLayout();
+            this.groupBoxShotGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).BeginInit();
             this.tabSlots.SuspendLayout();
             this.groupBoxSlotSets.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN3)).BeginInit();
@@ -1475,6 +1494,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray49)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray50)).BeginInit();
             this.tabPageTempCharLB.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBStatusAttack)).BeginInit();
             this.groupBoxTempCharLBTarget.SuspendLayout();
             this.groupBoxTempCharLBFlags.SuspendLayout();
             this.groupBoxTempCharLBGeneral.SuspendLayout();
@@ -1487,19 +1508,8 @@
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackPower)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            this.tabPageShot.SuspendLayout();
-            this.groupBoxRenzoFinStatusAttack.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.groupBox11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            this.groupBoxShotStatusAttack.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotStatusAttack)).BeginInit();
-            this.groupBoxShotTargetInfo.SuspendLayout();
-            this.groupBoxShotAttackFlags.SuspendLayout();
-            this.groupBoxShotGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinElementPerc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBElementPerc)).BeginInit();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -3947,7 +3957,7 @@
             this.labelRenzoFinAttackType.AutoSize = true;
             this.labelRenzoFinAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelRenzoFinAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelRenzoFinAttackType.Location = new System.Drawing.Point(120, 80);
+            this.labelRenzoFinAttackType.Location = new System.Drawing.Point(120, 83);
             this.labelRenzoFinAttackType.Name = "labelRenzoFinAttackType";
             this.labelRenzoFinAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelRenzoFinAttackType.TabIndex = 7;
@@ -3972,7 +3982,7 @@
             this.labelRenzoFinHitCount.AutoSize = true;
             this.labelRenzoFinHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelRenzoFinHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelRenzoFinHitCount.Location = new System.Drawing.Point(355, 80);
+            this.labelRenzoFinHitCount.Location = new System.Drawing.Point(355, 83);
             this.labelRenzoFinHitCount.Name = "labelRenzoFinHitCount";
             this.labelRenzoFinHitCount.Size = new System.Drawing.Size(67, 17);
             this.labelRenzoFinHitCount.TabIndex = 0;
@@ -4076,6 +4086,79 @@
             this.checkBoxMagicTarget4.Text = "Single Side";
             this.toolTip1.SetToolTip(this.checkBoxMagicTarget4, "Enemy decides which side");
             this.checkBoxMagicTarget4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotTarget4
+            // 
+            this.checkBoxShotTarget4.AutoSize = true;
+            this.checkBoxShotTarget4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotTarget4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotTarget4.Location = new System.Drawing.Point(352, 35);
+            this.checkBoxShotTarget4.Name = "checkBoxShotTarget4";
+            this.checkBoxShotTarget4.Size = new System.Drawing.Size(83, 19);
+            this.checkBoxShotTarget4.TabIndex = 38;
+            this.checkBoxShotTarget4.Text = "Single Side";
+            this.toolTip1.SetToolTip(this.checkBoxShotTarget4, "Enemy decides which side");
+            this.checkBoxShotTarget4.UseVisualStyleBackColor = true;
+            // 
+            // labelShotAttackType
+            // 
+            this.labelShotAttackType.AutoSize = true;
+            this.labelShotAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotAttackType.Location = new System.Drawing.Point(120, 83);
+            this.labelShotAttackType.Name = "labelShotAttackType";
+            this.labelShotAttackType.Size = new System.Drawing.Size(79, 17);
+            this.labelShotAttackType.TabIndex = 7;
+            this.labelShotAttackType.Text = "Attack Type";
+            this.toolTip1.SetToolTip(this.labelShotAttackType, "Decides what animation to play");
+            // 
+            // labelShotHitCount
+            // 
+            this.labelShotHitCount.AutoSize = true;
+            this.labelShotHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotHitCount.Location = new System.Drawing.Point(355, 84);
+            this.labelShotHitCount.Name = "labelShotHitCount";
+            this.labelShotHitCount.Size = new System.Drawing.Size(67, 17);
+            this.labelShotHitCount.TabIndex = 0;
+            this.labelShotHitCount.Text = "Hit Count";
+            this.toolTip1.SetToolTip(this.labelShotHitCount, "Number of hits");
+            // 
+            // labelShotAttackPower
+            // 
+            this.labelShotAttackPower.AutoSize = true;
+            this.labelShotAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotAttackPower.Location = new System.Drawing.Point(343, 29);
+            this.labelShotAttackPower.Name = "labelShotAttackPower";
+            this.labelShotAttackPower.Size = new System.Drawing.Size(89, 17);
+            this.labelShotAttackPower.TabIndex = 0;
+            this.labelShotAttackPower.Text = "Attack Power";
+            this.toolTip1.SetToolTip(this.labelShotAttackPower, "Used in damage calculation");
+            // 
+            // labelShotMagicID
+            // 
+            this.labelShotMagicID.AutoSize = true;
+            this.labelShotMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotMagicID.Location = new System.Drawing.Point(131, 29);
+            this.labelShotMagicID.Name = "labelShotMagicID";
+            this.labelShotMagicID.Size = new System.Drawing.Size(61, 17);
+            this.labelShotMagicID.TabIndex = 0;
+            this.labelShotMagicID.Text = "Magic ID";
+            this.toolTip1.SetToolTip(this.labelShotMagicID, "Decides what animation to play");
+            // 
+            // labelShotElement
+            // 
+            this.labelShotElement.AutoSize = true;
+            this.labelShotElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotElement.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotElement.Location = new System.Drawing.Point(56, 140);
+            this.labelShotElement.Name = "labelShotElement";
+            this.labelShotElement.Size = new System.Drawing.Size(57, 17);
+            this.labelShotElement.TabIndex = 91;
+            this.labelShotElement.Text = "Element";
+            this.toolTip1.SetToolTip(this.labelShotElement, "The element of the GF attack");
             // 
             // fileToolStripMenuItem
             // 
@@ -4857,7 +4940,7 @@
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Aura);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Drain);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1SummonGF);
-            this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1PlayerChar);
+            this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1HasMagic);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Unk6);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Unk5);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Unk4);
@@ -5088,17 +5171,17 @@
             this.checkBoxBlueMagicCL1SummonGF.Text = "Summon GF";
             this.checkBoxBlueMagicCL1SummonGF.UseVisualStyleBackColor = true;
             // 
-            // checkBoxBlueMagicCL1PlayerChar
+            // checkBoxBlueMagicCL1HasMagic
             // 
-            this.checkBoxBlueMagicCL1PlayerChar.AutoSize = true;
-            this.checkBoxBlueMagicCL1PlayerChar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL1PlayerChar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL1PlayerChar.Location = new System.Drawing.Point(3, 260);
-            this.checkBoxBlueMagicCL1PlayerChar.Name = "checkBoxBlueMagicCL1PlayerChar";
-            this.checkBoxBlueMagicCL1PlayerChar.Size = new System.Drawing.Size(91, 19);
-            this.checkBoxBlueMagicCL1PlayerChar.TabIndex = 172;
-            this.checkBoxBlueMagicCL1PlayerChar.Text = "Player Char?";
-            this.checkBoxBlueMagicCL1PlayerChar.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagicCL1HasMagic.AutoSize = true;
+            this.checkBoxBlueMagicCL1HasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL1HasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL1HasMagic.Location = new System.Drawing.Point(3, 260);
+            this.checkBoxBlueMagicCL1HasMagic.Name = "checkBoxBlueMagicCL1HasMagic";
+            this.checkBoxBlueMagicCL1HasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxBlueMagicCL1HasMagic.TabIndex = 172;
+            this.checkBoxBlueMagicCL1HasMagic.Text = "Has Magic";
+            this.checkBoxBlueMagicCL1HasMagic.UseVisualStyleBackColor = true;
             // 
             // checkBoxBlueMagicCL1Unk6
             // 
@@ -5443,7 +5526,7 @@
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Aura);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Drain);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2SummonGF);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2PlayerChar);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2HasMagic);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk6);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk5);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk4);
@@ -5674,17 +5757,17 @@
             this.checkBoxBlueMagicCL2SummonGF.Text = "Summon GF";
             this.checkBoxBlueMagicCL2SummonGF.UseVisualStyleBackColor = true;
             // 
-            // checkBoxBlueMagicCL2PlayerChar
+            // checkBoxBlueMagicCL2HasMagic
             // 
-            this.checkBoxBlueMagicCL2PlayerChar.AutoSize = true;
-            this.checkBoxBlueMagicCL2PlayerChar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL2PlayerChar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL2PlayerChar.Location = new System.Drawing.Point(3, 260);
-            this.checkBoxBlueMagicCL2PlayerChar.Name = "checkBoxBlueMagicCL2PlayerChar";
-            this.checkBoxBlueMagicCL2PlayerChar.Size = new System.Drawing.Size(91, 19);
-            this.checkBoxBlueMagicCL2PlayerChar.TabIndex = 172;
-            this.checkBoxBlueMagicCL2PlayerChar.Text = "Player Char?";
-            this.checkBoxBlueMagicCL2PlayerChar.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagicCL2HasMagic.AutoSize = true;
+            this.checkBoxBlueMagicCL2HasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL2HasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL2HasMagic.Location = new System.Drawing.Point(3, 260);
+            this.checkBoxBlueMagicCL2HasMagic.Name = "checkBoxBlueMagicCL2HasMagic";
+            this.checkBoxBlueMagicCL2HasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxBlueMagicCL2HasMagic.TabIndex = 172;
+            this.checkBoxBlueMagicCL2HasMagic.Text = "Has Magic";
+            this.checkBoxBlueMagicCL2HasMagic.UseVisualStyleBackColor = true;
             // 
             // checkBoxBlueMagicCL2Unk6
             // 
@@ -6029,7 +6112,7 @@
             this.groupBoxBlueMagicCS3.Controls.Add(this.checkBoxBlueMagicCL3Aura);
             this.groupBoxBlueMagicCS3.Controls.Add(this.checkBoxBlueMagicCL3Drain);
             this.groupBoxBlueMagicCS3.Controls.Add(this.checkBoxBlueMagicCL3SummonGF);
-            this.groupBoxBlueMagicCS3.Controls.Add(this.checkBoxBlueMagicCL3PlayerChar);
+            this.groupBoxBlueMagicCS3.Controls.Add(this.checkBoxBlueMagicCL3HasMagic);
             this.groupBoxBlueMagicCS3.Controls.Add(this.checkBoxBlueMagicCL3Unk6);
             this.groupBoxBlueMagicCS3.Controls.Add(this.checkBoxBlueMagicCL3Unk5);
             this.groupBoxBlueMagicCS3.Controls.Add(this.checkBoxBlueMagicCL3Unk4);
@@ -6260,17 +6343,17 @@
             this.checkBoxBlueMagicCL3SummonGF.Text = "Summon GF";
             this.checkBoxBlueMagicCL3SummonGF.UseVisualStyleBackColor = true;
             // 
-            // checkBoxBlueMagicCL3PlayerChar
+            // checkBoxBlueMagicCL3HasMagic
             // 
-            this.checkBoxBlueMagicCL3PlayerChar.AutoSize = true;
-            this.checkBoxBlueMagicCL3PlayerChar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL3PlayerChar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL3PlayerChar.Location = new System.Drawing.Point(3, 260);
-            this.checkBoxBlueMagicCL3PlayerChar.Name = "checkBoxBlueMagicCL3PlayerChar";
-            this.checkBoxBlueMagicCL3PlayerChar.Size = new System.Drawing.Size(91, 19);
-            this.checkBoxBlueMagicCL3PlayerChar.TabIndex = 172;
-            this.checkBoxBlueMagicCL3PlayerChar.Text = "Player Char?";
-            this.checkBoxBlueMagicCL3PlayerChar.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagicCL3HasMagic.AutoSize = true;
+            this.checkBoxBlueMagicCL3HasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL3HasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL3HasMagic.Location = new System.Drawing.Point(3, 260);
+            this.checkBoxBlueMagicCL3HasMagic.Name = "checkBoxBlueMagicCL3HasMagic";
+            this.checkBoxBlueMagicCL3HasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxBlueMagicCL3HasMagic.TabIndex = 172;
+            this.checkBoxBlueMagicCL3HasMagic.Text = "Has Magic";
+            this.checkBoxBlueMagicCL3HasMagic.UseVisualStyleBackColor = true;
             // 
             // checkBoxBlueMagicCL3Unk6
             // 
@@ -6615,7 +6698,7 @@
             this.groupBox13.Controls.Add(this.checkBoxBlueMagicCL4Aura);
             this.groupBox13.Controls.Add(this.checkBoxBlueMagicCL4Drain);
             this.groupBox13.Controls.Add(this.checkBoxBlueMagicCL4SummonGF);
-            this.groupBox13.Controls.Add(this.checkBoxBlueMagicCL4PlayerChar);
+            this.groupBox13.Controls.Add(this.checkBoxBlueMagicCL4HasMagic);
             this.groupBox13.Controls.Add(this.checkBoxBlueMagicCL4Unk6);
             this.groupBox13.Controls.Add(this.checkBoxBlueMagicCL4Unk5);
             this.groupBox13.Controls.Add(this.checkBoxBlueMagicCL4Unk4);
@@ -6846,17 +6929,17 @@
             this.checkBoxBlueMagicCL4SummonGF.Text = "Summon GF";
             this.checkBoxBlueMagicCL4SummonGF.UseVisualStyleBackColor = true;
             // 
-            // checkBoxBlueMagicCL4PlayerChar
+            // checkBoxBlueMagicCL4HasMagic
             // 
-            this.checkBoxBlueMagicCL4PlayerChar.AutoSize = true;
-            this.checkBoxBlueMagicCL4PlayerChar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBlueMagicCL4PlayerChar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBlueMagicCL4PlayerChar.Location = new System.Drawing.Point(3, 260);
-            this.checkBoxBlueMagicCL4PlayerChar.Name = "checkBoxBlueMagicCL4PlayerChar";
-            this.checkBoxBlueMagicCL4PlayerChar.Size = new System.Drawing.Size(91, 19);
-            this.checkBoxBlueMagicCL4PlayerChar.TabIndex = 172;
-            this.checkBoxBlueMagicCL4PlayerChar.Text = "Player Char?";
-            this.checkBoxBlueMagicCL4PlayerChar.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagicCL4HasMagic.AutoSize = true;
+            this.checkBoxBlueMagicCL4HasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicCL4HasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicCL4HasMagic.Location = new System.Drawing.Point(3, 260);
+            this.checkBoxBlueMagicCL4HasMagic.Name = "checkBoxBlueMagicCL4HasMagic";
+            this.checkBoxBlueMagicCL4HasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxBlueMagicCL4HasMagic.TabIndex = 172;
+            this.checkBoxBlueMagicCL4HasMagic.Text = "Has Magic";
+            this.checkBoxBlueMagicCL4HasMagic.UseVisualStyleBackColor = true;
             // 
             // checkBoxBlueMagicCL4Unk6
             // 
@@ -7348,7 +7431,7 @@
             this.groupBoxGFAttacksStatusAttack.Controls.Add(this.checkBoxGFAttacksAura);
             this.groupBoxGFAttacksStatusAttack.Controls.Add(this.checkBoxGFAttacksDrain);
             this.groupBoxGFAttacksStatusAttack.Controls.Add(this.checkBoxGFAttacksSummonGF);
-            this.groupBoxGFAttacksStatusAttack.Controls.Add(this.checkBoxGFAttacksPlayerChar);
+            this.groupBoxGFAttacksStatusAttack.Controls.Add(this.checkBoxGFAttacksHasMagic);
             this.groupBoxGFAttacksStatusAttack.Controls.Add(this.checkBoxGFAttacksUnk6);
             this.groupBoxGFAttacksStatusAttack.Controls.Add(this.checkBoxGFAttacksUnk5);
             this.groupBoxGFAttacksStatusAttack.Controls.Add(this.checkBoxGFAttacksUnk4);
@@ -7575,17 +7658,17 @@
             this.checkBoxGFAttacksSummonGF.Text = "Summon GF";
             this.checkBoxGFAttacksSummonGF.UseVisualStyleBackColor = true;
             // 
-            // checkBoxGFAttacksPlayerChar
+            // checkBoxGFAttacksHasMagic
             // 
-            this.checkBoxGFAttacksPlayerChar.AutoSize = true;
-            this.checkBoxGFAttacksPlayerChar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFAttacksPlayerChar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFAttacksPlayerChar.Location = new System.Drawing.Point(9, 236);
-            this.checkBoxGFAttacksPlayerChar.Name = "checkBoxGFAttacksPlayerChar";
-            this.checkBoxGFAttacksPlayerChar.Size = new System.Drawing.Size(91, 19);
-            this.checkBoxGFAttacksPlayerChar.TabIndex = 132;
-            this.checkBoxGFAttacksPlayerChar.Text = "Player Char?";
-            this.checkBoxGFAttacksPlayerChar.UseVisualStyleBackColor = true;
+            this.checkBoxGFAttacksHasMagic.AutoSize = true;
+            this.checkBoxGFAttacksHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFAttacksHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFAttacksHasMagic.Location = new System.Drawing.Point(9, 236);
+            this.checkBoxGFAttacksHasMagic.Name = "checkBoxGFAttacksHasMagic";
+            this.checkBoxGFAttacksHasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxGFAttacksHasMagic.TabIndex = 132;
+            this.checkBoxGFAttacksHasMagic.Text = "Has Magic";
+            this.checkBoxGFAttacksHasMagic.UseVisualStyleBackColor = true;
             // 
             // checkBoxGFAttacksUnk6
             // 
@@ -8219,7 +8302,7 @@
             this.groupBoxGFStatusAttack.Controls.Add(this.checkBoxGFAura);
             this.groupBoxGFStatusAttack.Controls.Add(this.checkBoxGFDrain);
             this.groupBoxGFStatusAttack.Controls.Add(this.checkBoxGFSummonGF);
-            this.groupBoxGFStatusAttack.Controls.Add(this.checkBoxGFPlayerChar);
+            this.groupBoxGFStatusAttack.Controls.Add(this.checkBoxGFHasMagic);
             this.groupBoxGFStatusAttack.Controls.Add(this.checkBoxGFUnk6);
             this.groupBoxGFStatusAttack.Controls.Add(this.checkBoxGFUnk5);
             this.groupBoxGFStatusAttack.Controls.Add(this.checkBoxGFUnk4);
@@ -8446,17 +8529,17 @@
             this.checkBoxGFSummonGF.Text = "Summon GF";
             this.checkBoxGFSummonGF.UseVisualStyleBackColor = true;
             // 
-            // checkBoxGFPlayerChar
+            // checkBoxGFHasMagic
             // 
-            this.checkBoxGFPlayerChar.AutoSize = true;
-            this.checkBoxGFPlayerChar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxGFPlayerChar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxGFPlayerChar.Location = new System.Drawing.Point(11, 228);
-            this.checkBoxGFPlayerChar.Name = "checkBoxGFPlayerChar";
-            this.checkBoxGFPlayerChar.Size = new System.Drawing.Size(91, 19);
-            this.checkBoxGFPlayerChar.TabIndex = 92;
-            this.checkBoxGFPlayerChar.Text = "Player Char?";
-            this.checkBoxGFPlayerChar.UseVisualStyleBackColor = true;
+            this.checkBoxGFHasMagic.AutoSize = true;
+            this.checkBoxGFHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGFHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxGFHasMagic.Location = new System.Drawing.Point(11, 228);
+            this.checkBoxGFHasMagic.Name = "checkBoxGFHasMagic";
+            this.checkBoxGFHasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxGFHasMagic.TabIndex = 92;
+            this.checkBoxGFHasMagic.Text = "Has Magic";
+            this.checkBoxGFHasMagic.UseVisualStyleBackColor = true;
             // 
             // checkBoxGFUnk6
             // 
@@ -15337,7 +15420,7 @@
             this.groupBoxMagicStatusAttack.Controls.Add(this.checkBoxMagicAura);
             this.groupBoxMagicStatusAttack.Controls.Add(this.checkBoxMagicDrain);
             this.groupBoxMagicStatusAttack.Controls.Add(this.checkBoxMagicSummonGF);
-            this.groupBoxMagicStatusAttack.Controls.Add(this.checkBoxMagicPlayerChar);
+            this.groupBoxMagicStatusAttack.Controls.Add(this.checkBoxMagicHasMagic);
             this.groupBoxMagicStatusAttack.Controls.Add(this.checkBoxMagicUnk6);
             this.groupBoxMagicStatusAttack.Controls.Add(this.checkBoxMagicUnk5);
             this.groupBoxMagicStatusAttack.Controls.Add(this.checkBoxMagicUnk4);
@@ -15586,17 +15669,17 @@
             this.checkBoxMagicSummonGF.Text = "Summon GF";
             this.checkBoxMagicSummonGF.UseVisualStyleBackColor = true;
             // 
-            // checkBoxMagicPlayerChar
+            // checkBoxMagicHasMagic
             // 
-            this.checkBoxMagicPlayerChar.AutoSize = true;
-            this.checkBoxMagicPlayerChar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMagicPlayerChar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicPlayerChar.Location = new System.Drawing.Point(11, 228);
-            this.checkBoxMagicPlayerChar.Name = "checkBoxMagicPlayerChar";
-            this.checkBoxMagicPlayerChar.Size = new System.Drawing.Size(91, 19);
-            this.checkBoxMagicPlayerChar.TabIndex = 55;
-            this.checkBoxMagicPlayerChar.Text = "Player Char?";
-            this.checkBoxMagicPlayerChar.UseVisualStyleBackColor = true;
+            this.checkBoxMagicHasMagic.AutoSize = true;
+            this.checkBoxMagicHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMagicHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxMagicHasMagic.Location = new System.Drawing.Point(11, 228);
+            this.checkBoxMagicHasMagic.Name = "checkBoxMagicHasMagic";
+            this.checkBoxMagicHasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxMagicHasMagic.TabIndex = 55;
+            this.checkBoxMagicHasMagic.Text = "Has Magic";
+            this.checkBoxMagicHasMagic.UseVisualStyleBackColor = true;
             // 
             // checkBoxMagicUnk6
             // 
@@ -19733,6 +19816,564 @@
             this.tabPageRenzokukenFinishers.Text = "Renzokuken Finishers";
             this.tabPageRenzokukenFinishers.UseVisualStyleBackColor = true;
             // 
+            // groupBoxRenzoFinStatusAttack
+            // 
+            this.groupBoxRenzoFinStatusAttack.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinPetrifying);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinDarkness);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinSilence);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinStop);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinConfusion);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinPetrify);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinSlow);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinBerserk);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinSleep);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinInvincible);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinCurse);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinDoom);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinFloat);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinAura);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinDrain);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinSummonGF);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinHasMagic);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinUnk6);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinUnk5);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinUnk4);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinUnk3);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinAngelWing);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinVit0);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinBackAttack);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinCharged);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinUnk2);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinUnk1);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinDefend);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinTriple);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinDouble);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinEject);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinPoison);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinDeath);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinProtect);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinHaste);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinRegen);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinShell);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinReflect);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinUnk7);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBoxRenzoFinZombie);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.numericUpDownRenzoFinStatusAttack);
+            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.labelRenzoFinStatusAttack);
+            this.groupBoxRenzoFinStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxRenzoFinStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
+            this.groupBoxRenzoFinStatusAttack.Location = new System.Drawing.Point(114, 316);
+            this.groupBoxRenzoFinStatusAttack.Name = "groupBoxRenzoFinStatusAttack";
+            this.groupBoxRenzoFinStatusAttack.Size = new System.Drawing.Size(465, 286);
+            this.groupBoxRenzoFinStatusAttack.TabIndex = 106;
+            this.groupBoxRenzoFinStatusAttack.TabStop = false;
+            this.groupBoxRenzoFinStatusAttack.Text = "Status Attack";
+            // 
+            // checkBoxRenzoFinPetrifying
+            // 
+            this.checkBoxRenzoFinPetrifying.AutoSize = true;
+            this.checkBoxRenzoFinPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinPetrifying.Location = new System.Drawing.Point(285, 136);
+            this.checkBoxRenzoFinPetrifying.Name = "checkBoxRenzoFinPetrifying";
+            this.checkBoxRenzoFinPetrifying.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxRenzoFinPetrifying.TabIndex = 115;
+            this.checkBoxRenzoFinPetrifying.Text = "Petrifying";
+            this.checkBoxRenzoFinPetrifying.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinDarkness
+            // 
+            this.checkBoxRenzoFinDarkness.AutoSize = true;
+            this.checkBoxRenzoFinDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinDarkness.Location = new System.Drawing.Point(10, 261);
+            this.checkBoxRenzoFinDarkness.Name = "checkBoxRenzoFinDarkness";
+            this.checkBoxRenzoFinDarkness.Size = new System.Drawing.Size(73, 19);
+            this.checkBoxRenzoFinDarkness.TabIndex = 138;
+            this.checkBoxRenzoFinDarkness.Text = "Darkness";
+            this.checkBoxRenzoFinDarkness.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinSilence
+            // 
+            this.checkBoxRenzoFinSilence.AutoSize = true;
+            this.checkBoxRenzoFinSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinSilence.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinSilence.Location = new System.Drawing.Point(102, 261);
+            this.checkBoxRenzoFinSilence.Name = "checkBoxRenzoFinSilence";
+            this.checkBoxRenzoFinSilence.Size = new System.Drawing.Size(63, 19);
+            this.checkBoxRenzoFinSilence.TabIndex = 139;
+            this.checkBoxRenzoFinSilence.Text = "Silence";
+            this.checkBoxRenzoFinSilence.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinStop
+            // 
+            this.checkBoxRenzoFinStop.AutoSize = true;
+            this.checkBoxRenzoFinStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinStop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinStop.Location = new System.Drawing.Point(285, 86);
+            this.checkBoxRenzoFinStop.Name = "checkBoxRenzoFinStop";
+            this.checkBoxRenzoFinStop.Size = new System.Drawing.Size(50, 19);
+            this.checkBoxRenzoFinStop.TabIndex = 106;
+            this.checkBoxRenzoFinStop.Text = "Stop";
+            this.checkBoxRenzoFinStop.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinConfusion
+            // 
+            this.checkBoxRenzoFinConfusion.AutoSize = true;
+            this.checkBoxRenzoFinConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinConfusion.Location = new System.Drawing.Point(373, 136);
+            this.checkBoxRenzoFinConfusion.Name = "checkBoxRenzoFinConfusion";
+            this.checkBoxRenzoFinConfusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxRenzoFinConfusion.TabIndex = 117;
+            this.checkBoxRenzoFinConfusion.Text = "Confusion";
+            this.checkBoxRenzoFinConfusion.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinPetrify
+            // 
+            this.checkBoxRenzoFinPetrify.AutoSize = true;
+            this.checkBoxRenzoFinPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinPetrify.Location = new System.Drawing.Point(373, 236);
+            this.checkBoxRenzoFinPetrify.Name = "checkBoxRenzoFinPetrify";
+            this.checkBoxRenzoFinPetrify.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxRenzoFinPetrify.TabIndex = 137;
+            this.checkBoxRenzoFinPetrify.Text = "Petrify";
+            this.checkBoxRenzoFinPetrify.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinSlow
+            // 
+            this.checkBoxRenzoFinSlow.AutoSize = true;
+            this.checkBoxRenzoFinSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinSlow.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinSlow.Location = new System.Drawing.Point(196, 86);
+            this.checkBoxRenzoFinSlow.Name = "checkBoxRenzoFinSlow";
+            this.checkBoxRenzoFinSlow.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxRenzoFinSlow.TabIndex = 105;
+            this.checkBoxRenzoFinSlow.Text = "Slow";
+            this.checkBoxRenzoFinSlow.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinBerserk
+            // 
+            this.checkBoxRenzoFinBerserk.AutoSize = true;
+            this.checkBoxRenzoFinBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinBerserk.Location = new System.Drawing.Point(196, 261);
+            this.checkBoxRenzoFinBerserk.Name = "checkBoxRenzoFinBerserk";
+            this.checkBoxRenzoFinBerserk.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxRenzoFinBerserk.TabIndex = 140;
+            this.checkBoxRenzoFinBerserk.Text = "Berserk";
+            this.checkBoxRenzoFinBerserk.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinSleep
+            // 
+            this.checkBoxRenzoFinSleep.AutoSize = true;
+            this.checkBoxRenzoFinSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinSleep.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinSleep.Location = new System.Drawing.Point(10, 86);
+            this.checkBoxRenzoFinSleep.Name = "checkBoxRenzoFinSleep";
+            this.checkBoxRenzoFinSleep.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxRenzoFinSleep.TabIndex = 103;
+            this.checkBoxRenzoFinSleep.Text = "Sleep";
+            this.checkBoxRenzoFinSleep.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinInvincible
+            // 
+            this.checkBoxRenzoFinInvincible.AutoSize = true;
+            this.checkBoxRenzoFinInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinInvincible.Location = new System.Drawing.Point(102, 136);
+            this.checkBoxRenzoFinInvincible.Name = "checkBoxRenzoFinInvincible";
+            this.checkBoxRenzoFinInvincible.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxRenzoFinInvincible.TabIndex = 114;
+            this.checkBoxRenzoFinInvincible.Text = "Invincible";
+            this.checkBoxRenzoFinInvincible.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinCurse
+            // 
+            this.checkBoxRenzoFinCurse.AutoSize = true;
+            this.checkBoxRenzoFinCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinCurse.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinCurse.Location = new System.Drawing.Point(373, 111);
+            this.checkBoxRenzoFinCurse.Name = "checkBoxRenzoFinCurse";
+            this.checkBoxRenzoFinCurse.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxRenzoFinCurse.TabIndex = 112;
+            this.checkBoxRenzoFinCurse.Text = "Curse";
+            this.checkBoxRenzoFinCurse.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinDoom
+            // 
+            this.checkBoxRenzoFinDoom.AutoSize = true;
+            this.checkBoxRenzoFinDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinDoom.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinDoom.Location = new System.Drawing.Point(10, 136);
+            this.checkBoxRenzoFinDoom.Name = "checkBoxRenzoFinDoom";
+            this.checkBoxRenzoFinDoom.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxRenzoFinDoom.TabIndex = 113;
+            this.checkBoxRenzoFinDoom.Text = "Doom";
+            this.checkBoxRenzoFinDoom.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinFloat
+            // 
+            this.checkBoxRenzoFinFloat.AutoSize = true;
+            this.checkBoxRenzoFinFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinFloat.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinFloat.Location = new System.Drawing.Point(196, 136);
+            this.checkBoxRenzoFinFloat.Name = "checkBoxRenzoFinFloat";
+            this.checkBoxRenzoFinFloat.Size = new System.Drawing.Size(52, 19);
+            this.checkBoxRenzoFinFloat.TabIndex = 116;
+            this.checkBoxRenzoFinFloat.Text = "Float";
+            this.checkBoxRenzoFinFloat.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinAura
+            // 
+            this.checkBoxRenzoFinAura.AutoSize = true;
+            this.checkBoxRenzoFinAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinAura.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinAura.Location = new System.Drawing.Point(285, 111);
+            this.checkBoxRenzoFinAura.Name = "checkBoxRenzoFinAura";
+            this.checkBoxRenzoFinAura.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxRenzoFinAura.TabIndex = 111;
+            this.checkBoxRenzoFinAura.Text = "Aura";
+            this.checkBoxRenzoFinAura.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinDrain
+            // 
+            this.checkBoxRenzoFinDrain.AutoSize = true;
+            this.checkBoxRenzoFinDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinDrain.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinDrain.Location = new System.Drawing.Point(10, 161);
+            this.checkBoxRenzoFinDrain.Name = "checkBoxRenzoFinDrain";
+            this.checkBoxRenzoFinDrain.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxRenzoFinDrain.TabIndex = 118;
+            this.checkBoxRenzoFinDrain.Text = "Drain";
+            this.checkBoxRenzoFinDrain.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinSummonGF
+            // 
+            this.checkBoxRenzoFinSummonGF.AutoSize = true;
+            this.checkBoxRenzoFinSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinSummonGF.Location = new System.Drawing.Point(102, 236);
+            this.checkBoxRenzoFinSummonGF.Name = "checkBoxRenzoFinSummonGF";
+            this.checkBoxRenzoFinSummonGF.Size = new System.Drawing.Size(92, 19);
+            this.checkBoxRenzoFinSummonGF.TabIndex = 133;
+            this.checkBoxRenzoFinSummonGF.Text = "Summon GF";
+            this.checkBoxRenzoFinSummonGF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinHasMagic
+            // 
+            this.checkBoxRenzoFinHasMagic.AutoSize = true;
+            this.checkBoxRenzoFinHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinHasMagic.Location = new System.Drawing.Point(10, 236);
+            this.checkBoxRenzoFinHasMagic.Name = "checkBoxRenzoFinHasMagic";
+            this.checkBoxRenzoFinHasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxRenzoFinHasMagic.TabIndex = 132;
+            this.checkBoxRenzoFinHasMagic.Text = "Has Magic";
+            this.checkBoxRenzoFinHasMagic.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinUnk6
+            // 
+            this.checkBoxRenzoFinUnk6.AutoSize = true;
+            this.checkBoxRenzoFinUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinUnk6.Location = new System.Drawing.Point(373, 211);
+            this.checkBoxRenzoFinUnk6.Name = "checkBoxRenzoFinUnk6";
+            this.checkBoxRenzoFinUnk6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxRenzoFinUnk6.TabIndex = 131;
+            this.checkBoxRenzoFinUnk6.Text = "???";
+            this.checkBoxRenzoFinUnk6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinUnk5
+            // 
+            this.checkBoxRenzoFinUnk5.AutoSize = true;
+            this.checkBoxRenzoFinUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinUnk5.Location = new System.Drawing.Point(285, 211);
+            this.checkBoxRenzoFinUnk5.Name = "checkBoxRenzoFinUnk5";
+            this.checkBoxRenzoFinUnk5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxRenzoFinUnk5.TabIndex = 130;
+            this.checkBoxRenzoFinUnk5.Text = "???";
+            this.checkBoxRenzoFinUnk5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinUnk4
+            // 
+            this.checkBoxRenzoFinUnk4.AutoSize = true;
+            this.checkBoxRenzoFinUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinUnk4.Location = new System.Drawing.Point(196, 211);
+            this.checkBoxRenzoFinUnk4.Name = "checkBoxRenzoFinUnk4";
+            this.checkBoxRenzoFinUnk4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxRenzoFinUnk4.TabIndex = 127;
+            this.checkBoxRenzoFinUnk4.Text = "???";
+            this.checkBoxRenzoFinUnk4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinUnk3
+            // 
+            this.checkBoxRenzoFinUnk3.AutoSize = true;
+            this.checkBoxRenzoFinUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinUnk3.Location = new System.Drawing.Point(102, 211);
+            this.checkBoxRenzoFinUnk3.Name = "checkBoxRenzoFinUnk3";
+            this.checkBoxRenzoFinUnk3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxRenzoFinUnk3.TabIndex = 129;
+            this.checkBoxRenzoFinUnk3.Text = "???";
+            this.checkBoxRenzoFinUnk3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinAngelWing
+            // 
+            this.checkBoxRenzoFinAngelWing.AutoSize = true;
+            this.checkBoxRenzoFinAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinAngelWing.Location = new System.Drawing.Point(10, 211);
+            this.checkBoxRenzoFinAngelWing.Name = "checkBoxRenzoFinAngelWing";
+            this.checkBoxRenzoFinAngelWing.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxRenzoFinAngelWing.TabIndex = 128;
+            this.checkBoxRenzoFinAngelWing.Text = "Angel Wing";
+            this.checkBoxRenzoFinAngelWing.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinVit0
+            // 
+            this.checkBoxRenzoFinVit0.AutoSize = true;
+            this.checkBoxRenzoFinVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinVit0.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinVit0.Location = new System.Drawing.Point(373, 186);
+            this.checkBoxRenzoFinVit0.Name = "checkBoxRenzoFinVit0";
+            this.checkBoxRenzoFinVit0.Size = new System.Drawing.Size(46, 19);
+            this.checkBoxRenzoFinVit0.TabIndex = 134;
+            this.checkBoxRenzoFinVit0.Text = "Vit0";
+            this.checkBoxRenzoFinVit0.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinBackAttack
+            // 
+            this.checkBoxRenzoFinBackAttack.AutoSize = true;
+            this.checkBoxRenzoFinBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinBackAttack.Location = new System.Drawing.Point(285, 186);
+            this.checkBoxRenzoFinBackAttack.Name = "checkBoxRenzoFinBackAttack";
+            this.checkBoxRenzoFinBackAttack.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxRenzoFinBackAttack.TabIndex = 126;
+            this.checkBoxRenzoFinBackAttack.Text = "Back Attack";
+            this.checkBoxRenzoFinBackAttack.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinCharged
+            // 
+            this.checkBoxRenzoFinCharged.AutoSize = true;
+            this.checkBoxRenzoFinCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinCharged.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinCharged.Location = new System.Drawing.Point(196, 186);
+            this.checkBoxRenzoFinCharged.Name = "checkBoxRenzoFinCharged";
+            this.checkBoxRenzoFinCharged.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxRenzoFinCharged.TabIndex = 122;
+            this.checkBoxRenzoFinCharged.Text = "Charged";
+            this.checkBoxRenzoFinCharged.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinUnk2
+            // 
+            this.checkBoxRenzoFinUnk2.AutoSize = true;
+            this.checkBoxRenzoFinUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinUnk2.Location = new System.Drawing.Point(102, 186);
+            this.checkBoxRenzoFinUnk2.Name = "checkBoxRenzoFinUnk2";
+            this.checkBoxRenzoFinUnk2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxRenzoFinUnk2.TabIndex = 125;
+            this.checkBoxRenzoFinUnk2.Text = "???";
+            this.checkBoxRenzoFinUnk2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinUnk1
+            // 
+            this.checkBoxRenzoFinUnk1.AutoSize = true;
+            this.checkBoxRenzoFinUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinUnk1.Location = new System.Drawing.Point(10, 186);
+            this.checkBoxRenzoFinUnk1.Name = "checkBoxRenzoFinUnk1";
+            this.checkBoxRenzoFinUnk1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxRenzoFinUnk1.TabIndex = 124;
+            this.checkBoxRenzoFinUnk1.Text = "???";
+            this.checkBoxRenzoFinUnk1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinDefend
+            // 
+            this.checkBoxRenzoFinDefend.AutoSize = true;
+            this.checkBoxRenzoFinDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinDefend.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinDefend.Location = new System.Drawing.Point(373, 161);
+            this.checkBoxRenzoFinDefend.Name = "checkBoxRenzoFinDefend";
+            this.checkBoxRenzoFinDefend.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxRenzoFinDefend.TabIndex = 123;
+            this.checkBoxRenzoFinDefend.Text = "Defend";
+            this.checkBoxRenzoFinDefend.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinTriple
+            // 
+            this.checkBoxRenzoFinTriple.AutoSize = true;
+            this.checkBoxRenzoFinTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinTriple.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinTriple.Location = new System.Drawing.Point(285, 161);
+            this.checkBoxRenzoFinTriple.Name = "checkBoxRenzoFinTriple";
+            this.checkBoxRenzoFinTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxRenzoFinTriple.TabIndex = 121;
+            this.checkBoxRenzoFinTriple.Text = "Triple";
+            this.checkBoxRenzoFinTriple.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinDouble
+            // 
+            this.checkBoxRenzoFinDouble.AutoSize = true;
+            this.checkBoxRenzoFinDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinDouble.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinDouble.Location = new System.Drawing.Point(196, 161);
+            this.checkBoxRenzoFinDouble.Name = "checkBoxRenzoFinDouble";
+            this.checkBoxRenzoFinDouble.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxRenzoFinDouble.TabIndex = 120;
+            this.checkBoxRenzoFinDouble.Text = "Double";
+            this.checkBoxRenzoFinDouble.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinEject
+            // 
+            this.checkBoxRenzoFinEject.AutoSize = true;
+            this.checkBoxRenzoFinEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinEject.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinEject.Location = new System.Drawing.Point(102, 161);
+            this.checkBoxRenzoFinEject.Name = "checkBoxRenzoFinEject";
+            this.checkBoxRenzoFinEject.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxRenzoFinEject.TabIndex = 119;
+            this.checkBoxRenzoFinEject.Text = "Eject";
+            this.checkBoxRenzoFinEject.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinPoison
+            // 
+            this.checkBoxRenzoFinPoison.AutoSize = true;
+            this.checkBoxRenzoFinPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinPoison.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinPoison.Location = new System.Drawing.Point(285, 236);
+            this.checkBoxRenzoFinPoison.Name = "checkBoxRenzoFinPoison";
+            this.checkBoxRenzoFinPoison.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxRenzoFinPoison.TabIndex = 136;
+            this.checkBoxRenzoFinPoison.Text = "Poison";
+            this.checkBoxRenzoFinPoison.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinDeath
+            // 
+            this.checkBoxRenzoFinDeath.AutoSize = true;
+            this.checkBoxRenzoFinDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinDeath.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinDeath.Location = new System.Drawing.Point(196, 236);
+            this.checkBoxRenzoFinDeath.Name = "checkBoxRenzoFinDeath";
+            this.checkBoxRenzoFinDeath.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxRenzoFinDeath.TabIndex = 135;
+            this.checkBoxRenzoFinDeath.Text = "Death";
+            this.checkBoxRenzoFinDeath.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinProtect
+            // 
+            this.checkBoxRenzoFinProtect.AutoSize = true;
+            this.checkBoxRenzoFinProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinProtect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinProtect.Location = new System.Drawing.Point(10, 111);
+            this.checkBoxRenzoFinProtect.Name = "checkBoxRenzoFinProtect";
+            this.checkBoxRenzoFinProtect.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxRenzoFinProtect.TabIndex = 108;
+            this.checkBoxRenzoFinProtect.Text = "Protect";
+            this.checkBoxRenzoFinProtect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinHaste
+            // 
+            this.checkBoxRenzoFinHaste.AutoSize = true;
+            this.checkBoxRenzoFinHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinHaste.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinHaste.Location = new System.Drawing.Point(102, 86);
+            this.checkBoxRenzoFinHaste.Name = "checkBoxRenzoFinHaste";
+            this.checkBoxRenzoFinHaste.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxRenzoFinHaste.TabIndex = 104;
+            this.checkBoxRenzoFinHaste.Text = "Haste";
+            this.checkBoxRenzoFinHaste.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinRegen
+            // 
+            this.checkBoxRenzoFinRegen.AutoSize = true;
+            this.checkBoxRenzoFinRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinRegen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinRegen.Location = new System.Drawing.Point(373, 86);
+            this.checkBoxRenzoFinRegen.Name = "checkBoxRenzoFinRegen";
+            this.checkBoxRenzoFinRegen.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxRenzoFinRegen.TabIndex = 107;
+            this.checkBoxRenzoFinRegen.Text = "Regen";
+            this.checkBoxRenzoFinRegen.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinShell
+            // 
+            this.checkBoxRenzoFinShell.AutoSize = true;
+            this.checkBoxRenzoFinShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinShell.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinShell.Location = new System.Drawing.Point(102, 111);
+            this.checkBoxRenzoFinShell.Name = "checkBoxRenzoFinShell";
+            this.checkBoxRenzoFinShell.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxRenzoFinShell.TabIndex = 109;
+            this.checkBoxRenzoFinShell.Text = "Shell";
+            this.checkBoxRenzoFinShell.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinReflect
+            // 
+            this.checkBoxRenzoFinReflect.AutoSize = true;
+            this.checkBoxRenzoFinReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinReflect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinReflect.Location = new System.Drawing.Point(196, 111);
+            this.checkBoxRenzoFinReflect.Name = "checkBoxRenzoFinReflect";
+            this.checkBoxRenzoFinReflect.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxRenzoFinReflect.TabIndex = 110;
+            this.checkBoxRenzoFinReflect.Text = "Reflect";
+            this.checkBoxRenzoFinReflect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinUnk7
+            // 
+            this.checkBoxRenzoFinUnk7.AutoSize = true;
+            this.checkBoxRenzoFinUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinUnk7.Location = new System.Drawing.Point(373, 261);
+            this.checkBoxRenzoFinUnk7.Name = "checkBoxRenzoFinUnk7";
+            this.checkBoxRenzoFinUnk7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxRenzoFinUnk7.TabIndex = 141;
+            this.checkBoxRenzoFinUnk7.Text = "???";
+            this.checkBoxRenzoFinUnk7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRenzoFinZombie
+            // 
+            this.checkBoxRenzoFinZombie.AutoSize = true;
+            this.checkBoxRenzoFinZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRenzoFinZombie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxRenzoFinZombie.Location = new System.Drawing.Point(285, 261);
+            this.checkBoxRenzoFinZombie.Name = "checkBoxRenzoFinZombie";
+            this.checkBoxRenzoFinZombie.Size = new System.Drawing.Size(67, 19);
+            this.checkBoxRenzoFinZombie.TabIndex = 142;
+            this.checkBoxRenzoFinZombie.Text = "Zombie";
+            this.checkBoxRenzoFinZombie.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownRenzoFinStatusAttack
+            // 
+            this.numericUpDownRenzoFinStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownRenzoFinStatusAttack.Location = new System.Drawing.Point(209, 46);
+            this.numericUpDownRenzoFinStatusAttack.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownRenzoFinStatusAttack.Name = "numericUpDownRenzoFinStatusAttack";
+            this.numericUpDownRenzoFinStatusAttack.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownRenzoFinStatusAttack.TabIndex = 91;
+            // 
+            // labelRenzoFinStatusAttack
+            // 
+            this.labelRenzoFinStatusAttack.AutoSize = true;
+            this.labelRenzoFinStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelRenzoFinStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelRenzoFinStatusAttack.Location = new System.Drawing.Point(188, 26);
+            this.labelRenzoFinStatusAttack.Name = "labelRenzoFinStatusAttack";
+            this.labelRenzoFinStatusAttack.Size = new System.Drawing.Size(89, 17);
+            this.labelRenzoFinStatusAttack.TabIndex = 90;
+            this.labelRenzoFinStatusAttack.Text = "Status Attack";
+            // 
             // groupBoxRenzoFinTargetInfo
             // 
             this.groupBoxRenzoFinTargetInfo.BackColor = System.Drawing.SystemColors.Control;
@@ -19746,7 +20387,7 @@
             this.groupBoxRenzoFinTargetInfo.Controls.Add(this.checkBoxRenzoFinTarget3);
             this.groupBoxRenzoFinTargetInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxRenzoFinTargetInfo.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBoxRenzoFinTargetInfo.Location = new System.Drawing.Point(114, 152);
+            this.groupBoxRenzoFinTargetInfo.Location = new System.Drawing.Point(114, 216);
             this.groupBoxRenzoFinTargetInfo.Name = "groupBoxRenzoFinTargetInfo";
             this.groupBoxRenzoFinTargetInfo.Size = new System.Drawing.Size(465, 94);
             this.groupBoxRenzoFinTargetInfo.TabIndex = 105;
@@ -19850,7 +20491,7 @@
             this.groupBoxRenzoFinFlags.Controls.Add(this.checkBoxRenzoFinFlag7);
             this.groupBoxRenzoFinFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxRenzoFinFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxRenzoFinFlags.Location = new System.Drawing.Point(114, 544);
+            this.groupBoxRenzoFinFlags.Location = new System.Drawing.Point(114, 608);
             this.groupBoxRenzoFinFlags.Name = "groupBoxRenzoFinFlags";
             this.groupBoxRenzoFinFlags.Size = new System.Drawing.Size(465, 94);
             this.groupBoxRenzoFinFlags.TabIndex = 104;
@@ -19956,6 +20597,10 @@
             // groupBoxRenzoFinGeneral
             // 
             this.groupBoxRenzoFinGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.labelRenzoFinElementPerc);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.comboBoxRenzoFinElement);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.labelRenzoFinElement);
+            this.groupBoxRenzoFinGeneral.Controls.Add(this.numericUpDownRenzoFinElementPerc);
             this.groupBoxRenzoFinGeneral.Controls.Add(this.comboBoxRenzoFinAttackType);
             this.groupBoxRenzoFinGeneral.Controls.Add(this.labelRenzoFinAttackType);
             this.groupBoxRenzoFinGeneral.Controls.Add(this.numericUpDownRenzoFinHitCount);
@@ -19968,7 +20613,7 @@
             this.groupBoxRenzoFinGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxRenzoFinGeneral.Location = new System.Drawing.Point(114, 6);
             this.groupBoxRenzoFinGeneral.Name = "groupBoxRenzoFinGeneral";
-            this.groupBoxRenzoFinGeneral.Size = new System.Drawing.Size(465, 140);
+            this.groupBoxRenzoFinGeneral.Size = new System.Drawing.Size(465, 204);
             this.groupBoxRenzoFinGeneral.TabIndex = 4;
             this.groupBoxRenzoFinGeneral.TabStop = false;
             this.groupBoxRenzoFinGeneral.Text = "General";
@@ -20015,7 +20660,7 @@
             "Everyone\'s Grudge",
             "Excalipoor",
             "Terra Break/Great Attractor"});
-            this.comboBoxRenzoFinAttackType.Location = new System.Drawing.Point(29, 100);
+            this.comboBoxRenzoFinAttackType.Location = new System.Drawing.Point(29, 103);
             this.comboBoxRenzoFinAttackType.Name = "comboBoxRenzoFinAttackType";
             this.comboBoxRenzoFinAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxRenzoFinAttackType.TabIndex = 8;
@@ -20023,7 +20668,7 @@
             // numericUpDownRenzoFinHitCount
             // 
             this.numericUpDownRenzoFinHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownRenzoFinHitCount.Location = new System.Drawing.Point(365, 100);
+            this.numericUpDownRenzoFinHitCount.Location = new System.Drawing.Point(365, 103);
             this.numericUpDownRenzoFinHitCount.Maximum = new decimal(new int[] {
             255,
             0,
@@ -20419,6 +21064,1538 @@
             this.listBoxRenzoFin.Size = new System.Drawing.Size(109, 735);
             this.listBoxRenzoFin.TabIndex = 3;
             this.listBoxRenzoFin.SelectedIndexChanged += new System.EventHandler(this.listBoxRenzoFin_SelectedIndexChanged);
+            // 
+            // tabPageShot
+            // 
+            this.tabPageShot.Controls.Add(this.groupBoxShotStatusAttack);
+            this.tabPageShot.Controls.Add(this.groupBoxShotTargetInfo);
+            this.tabPageShot.Controls.Add(this.groupBoxShotAttackFlags);
+            this.tabPageShot.Controls.Add(this.groupBoxShotGeneral);
+            this.tabPageShot.Controls.Add(this.listBoxShot);
+            this.tabPageShot.Location = new System.Drawing.Point(4, 34);
+            this.tabPageShot.Name = "tabPageShot";
+            this.tabPageShot.Size = new System.Drawing.Size(584, 739);
+            this.tabPageShot.TabIndex = 11;
+            this.tabPageShot.Text = "Shot";
+            this.tabPageShot.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxShotStatusAttack
+            // 
+            this.groupBoxShotStatusAttack.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotPetrifying);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDarkness);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotSilence);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotStop);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotConfusion);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotPetrify);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotSlow);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotBerserk);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotSleep);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotInvincible);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotCurse);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDoom);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotFloat);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotAura);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDrain);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotSummonGF);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotHasMagic);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk6);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk5);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk4);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk3);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotAngelWing);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotVit0);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotBackAttack);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotCharged);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk2);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk1);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDefend);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotTriple);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDouble);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotEject);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotPoison);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDeath);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotProtect);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotHaste);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotRegen);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotShell);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotReflect);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk7);
+            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotZombie);
+            this.groupBoxShotStatusAttack.Controls.Add(this.numericUpDownShotStatusAttack);
+            this.groupBoxShotStatusAttack.Controls.Add(this.labelShotStatusAttack);
+            this.groupBoxShotStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxShotStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
+            this.groupBoxShotStatusAttack.Location = new System.Drawing.Point(114, 316);
+            this.groupBoxShotStatusAttack.Name = "groupBoxShotStatusAttack";
+            this.groupBoxShotStatusAttack.Size = new System.Drawing.Size(465, 286);
+            this.groupBoxShotStatusAttack.TabIndex = 111;
+            this.groupBoxShotStatusAttack.TabStop = false;
+            this.groupBoxShotStatusAttack.Text = "Status Attack";
+            // 
+            // checkBoxShotPetrifying
+            // 
+            this.checkBoxShotPetrifying.AutoSize = true;
+            this.checkBoxShotPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotPetrifying.Location = new System.Drawing.Point(285, 136);
+            this.checkBoxShotPetrifying.Name = "checkBoxShotPetrifying";
+            this.checkBoxShotPetrifying.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxShotPetrifying.TabIndex = 115;
+            this.checkBoxShotPetrifying.Text = "Petrifying";
+            this.checkBoxShotPetrifying.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotDarkness
+            // 
+            this.checkBoxShotDarkness.AutoSize = true;
+            this.checkBoxShotDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotDarkness.Location = new System.Drawing.Point(10, 261);
+            this.checkBoxShotDarkness.Name = "checkBoxShotDarkness";
+            this.checkBoxShotDarkness.Size = new System.Drawing.Size(73, 19);
+            this.checkBoxShotDarkness.TabIndex = 138;
+            this.checkBoxShotDarkness.Text = "Darkness";
+            this.checkBoxShotDarkness.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotSilence
+            // 
+            this.checkBoxShotSilence.AutoSize = true;
+            this.checkBoxShotSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotSilence.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotSilence.Location = new System.Drawing.Point(102, 261);
+            this.checkBoxShotSilence.Name = "checkBoxShotSilence";
+            this.checkBoxShotSilence.Size = new System.Drawing.Size(63, 19);
+            this.checkBoxShotSilence.TabIndex = 139;
+            this.checkBoxShotSilence.Text = "Silence";
+            this.checkBoxShotSilence.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotStop
+            // 
+            this.checkBoxShotStop.AutoSize = true;
+            this.checkBoxShotStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotStop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotStop.Location = new System.Drawing.Point(285, 86);
+            this.checkBoxShotStop.Name = "checkBoxShotStop";
+            this.checkBoxShotStop.Size = new System.Drawing.Size(50, 19);
+            this.checkBoxShotStop.TabIndex = 106;
+            this.checkBoxShotStop.Text = "Stop";
+            this.checkBoxShotStop.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotConfusion
+            // 
+            this.checkBoxShotConfusion.AutoSize = true;
+            this.checkBoxShotConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotConfusion.Location = new System.Drawing.Point(373, 136);
+            this.checkBoxShotConfusion.Name = "checkBoxShotConfusion";
+            this.checkBoxShotConfusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxShotConfusion.TabIndex = 117;
+            this.checkBoxShotConfusion.Text = "Confusion";
+            this.checkBoxShotConfusion.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotPetrify
+            // 
+            this.checkBoxShotPetrify.AutoSize = true;
+            this.checkBoxShotPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotPetrify.Location = new System.Drawing.Point(373, 236);
+            this.checkBoxShotPetrify.Name = "checkBoxShotPetrify";
+            this.checkBoxShotPetrify.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxShotPetrify.TabIndex = 137;
+            this.checkBoxShotPetrify.Text = "Petrify";
+            this.checkBoxShotPetrify.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotSlow
+            // 
+            this.checkBoxShotSlow.AutoSize = true;
+            this.checkBoxShotSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotSlow.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotSlow.Location = new System.Drawing.Point(196, 86);
+            this.checkBoxShotSlow.Name = "checkBoxShotSlow";
+            this.checkBoxShotSlow.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxShotSlow.TabIndex = 105;
+            this.checkBoxShotSlow.Text = "Slow";
+            this.checkBoxShotSlow.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotBerserk
+            // 
+            this.checkBoxShotBerserk.AutoSize = true;
+            this.checkBoxShotBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotBerserk.Location = new System.Drawing.Point(196, 261);
+            this.checkBoxShotBerserk.Name = "checkBoxShotBerserk";
+            this.checkBoxShotBerserk.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxShotBerserk.TabIndex = 140;
+            this.checkBoxShotBerserk.Text = "Berserk";
+            this.checkBoxShotBerserk.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotSleep
+            // 
+            this.checkBoxShotSleep.AutoSize = true;
+            this.checkBoxShotSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotSleep.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotSleep.Location = new System.Drawing.Point(10, 86);
+            this.checkBoxShotSleep.Name = "checkBoxShotSleep";
+            this.checkBoxShotSleep.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxShotSleep.TabIndex = 103;
+            this.checkBoxShotSleep.Text = "Sleep";
+            this.checkBoxShotSleep.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotInvincible
+            // 
+            this.checkBoxShotInvincible.AutoSize = true;
+            this.checkBoxShotInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotInvincible.Location = new System.Drawing.Point(102, 136);
+            this.checkBoxShotInvincible.Name = "checkBoxShotInvincible";
+            this.checkBoxShotInvincible.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxShotInvincible.TabIndex = 114;
+            this.checkBoxShotInvincible.Text = "Invincible";
+            this.checkBoxShotInvincible.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotCurse
+            // 
+            this.checkBoxShotCurse.AutoSize = true;
+            this.checkBoxShotCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotCurse.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotCurse.Location = new System.Drawing.Point(373, 111);
+            this.checkBoxShotCurse.Name = "checkBoxShotCurse";
+            this.checkBoxShotCurse.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxShotCurse.TabIndex = 112;
+            this.checkBoxShotCurse.Text = "Curse";
+            this.checkBoxShotCurse.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotDoom
+            // 
+            this.checkBoxShotDoom.AutoSize = true;
+            this.checkBoxShotDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotDoom.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotDoom.Location = new System.Drawing.Point(10, 136);
+            this.checkBoxShotDoom.Name = "checkBoxShotDoom";
+            this.checkBoxShotDoom.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxShotDoom.TabIndex = 113;
+            this.checkBoxShotDoom.Text = "Doom";
+            this.checkBoxShotDoom.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotFloat
+            // 
+            this.checkBoxShotFloat.AutoSize = true;
+            this.checkBoxShotFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotFloat.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotFloat.Location = new System.Drawing.Point(196, 136);
+            this.checkBoxShotFloat.Name = "checkBoxShotFloat";
+            this.checkBoxShotFloat.Size = new System.Drawing.Size(52, 19);
+            this.checkBoxShotFloat.TabIndex = 116;
+            this.checkBoxShotFloat.Text = "Float";
+            this.checkBoxShotFloat.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotAura
+            // 
+            this.checkBoxShotAura.AutoSize = true;
+            this.checkBoxShotAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotAura.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotAura.Location = new System.Drawing.Point(285, 111);
+            this.checkBoxShotAura.Name = "checkBoxShotAura";
+            this.checkBoxShotAura.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxShotAura.TabIndex = 111;
+            this.checkBoxShotAura.Text = "Aura";
+            this.checkBoxShotAura.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotDrain
+            // 
+            this.checkBoxShotDrain.AutoSize = true;
+            this.checkBoxShotDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotDrain.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotDrain.Location = new System.Drawing.Point(10, 161);
+            this.checkBoxShotDrain.Name = "checkBoxShotDrain";
+            this.checkBoxShotDrain.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxShotDrain.TabIndex = 118;
+            this.checkBoxShotDrain.Text = "Drain";
+            this.checkBoxShotDrain.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotSummonGF
+            // 
+            this.checkBoxShotSummonGF.AutoSize = true;
+            this.checkBoxShotSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotSummonGF.Location = new System.Drawing.Point(102, 236);
+            this.checkBoxShotSummonGF.Name = "checkBoxShotSummonGF";
+            this.checkBoxShotSummonGF.Size = new System.Drawing.Size(92, 19);
+            this.checkBoxShotSummonGF.TabIndex = 133;
+            this.checkBoxShotSummonGF.Text = "Summon GF";
+            this.checkBoxShotSummonGF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotHasMagic
+            // 
+            this.checkBoxShotHasMagic.AutoSize = true;
+            this.checkBoxShotHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotHasMagic.Location = new System.Drawing.Point(10, 236);
+            this.checkBoxShotHasMagic.Name = "checkBoxShotHasMagic";
+            this.checkBoxShotHasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxShotHasMagic.TabIndex = 132;
+            this.checkBoxShotHasMagic.Text = "Has Magic";
+            this.checkBoxShotHasMagic.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotUnk6
+            // 
+            this.checkBoxShotUnk6.AutoSize = true;
+            this.checkBoxShotUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotUnk6.Location = new System.Drawing.Point(373, 211);
+            this.checkBoxShotUnk6.Name = "checkBoxShotUnk6";
+            this.checkBoxShotUnk6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotUnk6.TabIndex = 131;
+            this.checkBoxShotUnk6.Text = "???";
+            this.checkBoxShotUnk6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotUnk5
+            // 
+            this.checkBoxShotUnk5.AutoSize = true;
+            this.checkBoxShotUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotUnk5.Location = new System.Drawing.Point(285, 211);
+            this.checkBoxShotUnk5.Name = "checkBoxShotUnk5";
+            this.checkBoxShotUnk5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotUnk5.TabIndex = 130;
+            this.checkBoxShotUnk5.Text = "???";
+            this.checkBoxShotUnk5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotUnk4
+            // 
+            this.checkBoxShotUnk4.AutoSize = true;
+            this.checkBoxShotUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotUnk4.Location = new System.Drawing.Point(196, 211);
+            this.checkBoxShotUnk4.Name = "checkBoxShotUnk4";
+            this.checkBoxShotUnk4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotUnk4.TabIndex = 127;
+            this.checkBoxShotUnk4.Text = "???";
+            this.checkBoxShotUnk4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotUnk3
+            // 
+            this.checkBoxShotUnk3.AutoSize = true;
+            this.checkBoxShotUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotUnk3.Location = new System.Drawing.Point(102, 211);
+            this.checkBoxShotUnk3.Name = "checkBoxShotUnk3";
+            this.checkBoxShotUnk3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotUnk3.TabIndex = 129;
+            this.checkBoxShotUnk3.Text = "???";
+            this.checkBoxShotUnk3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotAngelWing
+            // 
+            this.checkBoxShotAngelWing.AutoSize = true;
+            this.checkBoxShotAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotAngelWing.Location = new System.Drawing.Point(10, 211);
+            this.checkBoxShotAngelWing.Name = "checkBoxShotAngelWing";
+            this.checkBoxShotAngelWing.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxShotAngelWing.TabIndex = 128;
+            this.checkBoxShotAngelWing.Text = "Angel Wing";
+            this.checkBoxShotAngelWing.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotVit0
+            // 
+            this.checkBoxShotVit0.AutoSize = true;
+            this.checkBoxShotVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotVit0.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotVit0.Location = new System.Drawing.Point(373, 186);
+            this.checkBoxShotVit0.Name = "checkBoxShotVit0";
+            this.checkBoxShotVit0.Size = new System.Drawing.Size(46, 19);
+            this.checkBoxShotVit0.TabIndex = 134;
+            this.checkBoxShotVit0.Text = "Vit0";
+            this.checkBoxShotVit0.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotBackAttack
+            // 
+            this.checkBoxShotBackAttack.AutoSize = true;
+            this.checkBoxShotBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotBackAttack.Location = new System.Drawing.Point(285, 186);
+            this.checkBoxShotBackAttack.Name = "checkBoxShotBackAttack";
+            this.checkBoxShotBackAttack.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxShotBackAttack.TabIndex = 126;
+            this.checkBoxShotBackAttack.Text = "Back Attack";
+            this.checkBoxShotBackAttack.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotCharged
+            // 
+            this.checkBoxShotCharged.AutoSize = true;
+            this.checkBoxShotCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotCharged.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotCharged.Location = new System.Drawing.Point(196, 186);
+            this.checkBoxShotCharged.Name = "checkBoxShotCharged";
+            this.checkBoxShotCharged.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxShotCharged.TabIndex = 122;
+            this.checkBoxShotCharged.Text = "Charged";
+            this.checkBoxShotCharged.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotUnk2
+            // 
+            this.checkBoxShotUnk2.AutoSize = true;
+            this.checkBoxShotUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotUnk2.Location = new System.Drawing.Point(102, 186);
+            this.checkBoxShotUnk2.Name = "checkBoxShotUnk2";
+            this.checkBoxShotUnk2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotUnk2.TabIndex = 125;
+            this.checkBoxShotUnk2.Text = "???";
+            this.checkBoxShotUnk2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotUnk1
+            // 
+            this.checkBoxShotUnk1.AutoSize = true;
+            this.checkBoxShotUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotUnk1.Location = new System.Drawing.Point(10, 186);
+            this.checkBoxShotUnk1.Name = "checkBoxShotUnk1";
+            this.checkBoxShotUnk1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotUnk1.TabIndex = 124;
+            this.checkBoxShotUnk1.Text = "???";
+            this.checkBoxShotUnk1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotDefend
+            // 
+            this.checkBoxShotDefend.AutoSize = true;
+            this.checkBoxShotDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotDefend.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotDefend.Location = new System.Drawing.Point(373, 161);
+            this.checkBoxShotDefend.Name = "checkBoxShotDefend";
+            this.checkBoxShotDefend.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxShotDefend.TabIndex = 123;
+            this.checkBoxShotDefend.Text = "Defend";
+            this.checkBoxShotDefend.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotTriple
+            // 
+            this.checkBoxShotTriple.AutoSize = true;
+            this.checkBoxShotTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotTriple.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotTriple.Location = new System.Drawing.Point(285, 161);
+            this.checkBoxShotTriple.Name = "checkBoxShotTriple";
+            this.checkBoxShotTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxShotTriple.TabIndex = 121;
+            this.checkBoxShotTriple.Text = "Triple";
+            this.checkBoxShotTriple.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotDouble
+            // 
+            this.checkBoxShotDouble.AutoSize = true;
+            this.checkBoxShotDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotDouble.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotDouble.Location = new System.Drawing.Point(196, 161);
+            this.checkBoxShotDouble.Name = "checkBoxShotDouble";
+            this.checkBoxShotDouble.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxShotDouble.TabIndex = 120;
+            this.checkBoxShotDouble.Text = "Double";
+            this.checkBoxShotDouble.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotEject
+            // 
+            this.checkBoxShotEject.AutoSize = true;
+            this.checkBoxShotEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotEject.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotEject.Location = new System.Drawing.Point(102, 161);
+            this.checkBoxShotEject.Name = "checkBoxShotEject";
+            this.checkBoxShotEject.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxShotEject.TabIndex = 119;
+            this.checkBoxShotEject.Text = "Eject";
+            this.checkBoxShotEject.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotPoison
+            // 
+            this.checkBoxShotPoison.AutoSize = true;
+            this.checkBoxShotPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotPoison.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotPoison.Location = new System.Drawing.Point(285, 236);
+            this.checkBoxShotPoison.Name = "checkBoxShotPoison";
+            this.checkBoxShotPoison.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxShotPoison.TabIndex = 136;
+            this.checkBoxShotPoison.Text = "Poison";
+            this.checkBoxShotPoison.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotDeath
+            // 
+            this.checkBoxShotDeath.AutoSize = true;
+            this.checkBoxShotDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotDeath.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotDeath.Location = new System.Drawing.Point(196, 236);
+            this.checkBoxShotDeath.Name = "checkBoxShotDeath";
+            this.checkBoxShotDeath.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxShotDeath.TabIndex = 135;
+            this.checkBoxShotDeath.Text = "Death";
+            this.checkBoxShotDeath.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotProtect
+            // 
+            this.checkBoxShotProtect.AutoSize = true;
+            this.checkBoxShotProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotProtect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotProtect.Location = new System.Drawing.Point(10, 111);
+            this.checkBoxShotProtect.Name = "checkBoxShotProtect";
+            this.checkBoxShotProtect.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxShotProtect.TabIndex = 108;
+            this.checkBoxShotProtect.Text = "Protect";
+            this.checkBoxShotProtect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotHaste
+            // 
+            this.checkBoxShotHaste.AutoSize = true;
+            this.checkBoxShotHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotHaste.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotHaste.Location = new System.Drawing.Point(102, 86);
+            this.checkBoxShotHaste.Name = "checkBoxShotHaste";
+            this.checkBoxShotHaste.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxShotHaste.TabIndex = 104;
+            this.checkBoxShotHaste.Text = "Haste";
+            this.checkBoxShotHaste.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotRegen
+            // 
+            this.checkBoxShotRegen.AutoSize = true;
+            this.checkBoxShotRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotRegen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotRegen.Location = new System.Drawing.Point(373, 86);
+            this.checkBoxShotRegen.Name = "checkBoxShotRegen";
+            this.checkBoxShotRegen.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxShotRegen.TabIndex = 107;
+            this.checkBoxShotRegen.Text = "Regen";
+            this.checkBoxShotRegen.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotShell
+            // 
+            this.checkBoxShotShell.AutoSize = true;
+            this.checkBoxShotShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotShell.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotShell.Location = new System.Drawing.Point(102, 111);
+            this.checkBoxShotShell.Name = "checkBoxShotShell";
+            this.checkBoxShotShell.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxShotShell.TabIndex = 109;
+            this.checkBoxShotShell.Text = "Shell";
+            this.checkBoxShotShell.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotReflect
+            // 
+            this.checkBoxShotReflect.AutoSize = true;
+            this.checkBoxShotReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotReflect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotReflect.Location = new System.Drawing.Point(196, 111);
+            this.checkBoxShotReflect.Name = "checkBoxShotReflect";
+            this.checkBoxShotReflect.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxShotReflect.TabIndex = 110;
+            this.checkBoxShotReflect.Text = "Reflect";
+            this.checkBoxShotReflect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotUnk7
+            // 
+            this.checkBoxShotUnk7.AutoSize = true;
+            this.checkBoxShotUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotUnk7.Location = new System.Drawing.Point(373, 261);
+            this.checkBoxShotUnk7.Name = "checkBoxShotUnk7";
+            this.checkBoxShotUnk7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotUnk7.TabIndex = 141;
+            this.checkBoxShotUnk7.Text = "???";
+            this.checkBoxShotUnk7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotZombie
+            // 
+            this.checkBoxShotZombie.AutoSize = true;
+            this.checkBoxShotZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotZombie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotZombie.Location = new System.Drawing.Point(285, 261);
+            this.checkBoxShotZombie.Name = "checkBoxShotZombie";
+            this.checkBoxShotZombie.Size = new System.Drawing.Size(67, 19);
+            this.checkBoxShotZombie.TabIndex = 142;
+            this.checkBoxShotZombie.Text = "Zombie";
+            this.checkBoxShotZombie.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownShotStatusAttack
+            // 
+            this.numericUpDownShotStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownShotStatusAttack.Location = new System.Drawing.Point(209, 46);
+            this.numericUpDownShotStatusAttack.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownShotStatusAttack.Name = "numericUpDownShotStatusAttack";
+            this.numericUpDownShotStatusAttack.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownShotStatusAttack.TabIndex = 91;
+            // 
+            // labelShotStatusAttack
+            // 
+            this.labelShotStatusAttack.AutoSize = true;
+            this.labelShotStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotStatusAttack.Location = new System.Drawing.Point(188, 26);
+            this.labelShotStatusAttack.Name = "labelShotStatusAttack";
+            this.labelShotStatusAttack.Size = new System.Drawing.Size(89, 17);
+            this.labelShotStatusAttack.TabIndex = 90;
+            this.labelShotStatusAttack.Text = "Status Attack";
+            // 
+            // groupBoxShotTargetInfo
+            // 
+            this.groupBoxShotTargetInfo.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget8);
+            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget5);
+            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget2);
+            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget4);
+            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget6);
+            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget7);
+            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget1);
+            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget3);
+            this.groupBoxShotTargetInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxShotTargetInfo.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.groupBoxShotTargetInfo.Location = new System.Drawing.Point(114, 216);
+            this.groupBoxShotTargetInfo.Name = "groupBoxShotTargetInfo";
+            this.groupBoxShotTargetInfo.Size = new System.Drawing.Size(465, 94);
+            this.groupBoxShotTargetInfo.TabIndex = 110;
+            this.groupBoxShotTargetInfo.TabStop = false;
+            this.groupBoxShotTargetInfo.Text = "Target Info";
+            // 
+            // checkBoxShotTarget8
+            // 
+            this.checkBoxShotTarget8.AutoSize = true;
+            this.checkBoxShotTarget8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotTarget8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotTarget8.Location = new System.Drawing.Point(352, 60);
+            this.checkBoxShotTarget8.Name = "checkBoxShotTarget8";
+            this.checkBoxShotTarget8.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotTarget8.TabIndex = 39;
+            this.checkBoxShotTarget8.Text = "???";
+            this.checkBoxShotTarget8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotTarget5
+            // 
+            this.checkBoxShotTarget5.AutoSize = true;
+            this.checkBoxShotTarget5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotTarget5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotTarget5.Location = new System.Drawing.Point(29, 60);
+            this.checkBoxShotTarget5.Name = "checkBoxShotTarget5";
+            this.checkBoxShotTarget5.Size = new System.Drawing.Size(58, 19);
+            this.checkBoxShotTarget5.TabIndex = 40;
+            this.checkBoxShotTarget5.Text = "Single";
+            this.checkBoxShotTarget5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotTarget2
+            // 
+            this.checkBoxShotTarget2.AutoSize = true;
+            this.checkBoxShotTarget2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotTarget2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotTarget2.Location = new System.Drawing.Point(137, 35);
+            this.checkBoxShotTarget2.Name = "checkBoxShotTarget2";
+            this.checkBoxShotTarget2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotTarget2.TabIndex = 36;
+            this.checkBoxShotTarget2.Text = "???";
+            this.checkBoxShotTarget2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotTarget6
+            // 
+            this.checkBoxShotTarget6.AutoSize = true;
+            this.checkBoxShotTarget6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotTarget6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotTarget6.Location = new System.Drawing.Point(137, 60);
+            this.checkBoxShotTarget6.Name = "checkBoxShotTarget6";
+            this.checkBoxShotTarget6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotTarget6.TabIndex = 41;
+            this.checkBoxShotTarget6.Text = "???";
+            this.checkBoxShotTarget6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotTarget7
+            // 
+            this.checkBoxShotTarget7.AutoSize = true;
+            this.checkBoxShotTarget7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotTarget7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotTarget7.Location = new System.Drawing.Point(247, 60);
+            this.checkBoxShotTarget7.Name = "checkBoxShotTarget7";
+            this.checkBoxShotTarget7.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxShotTarget7.TabIndex = 42;
+            this.checkBoxShotTarget7.Text = "Enemy";
+            this.checkBoxShotTarget7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotTarget1
+            // 
+            this.checkBoxShotTarget1.AutoSize = true;
+            this.checkBoxShotTarget1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotTarget1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotTarget1.Location = new System.Drawing.Point(29, 35);
+            this.checkBoxShotTarget1.Name = "checkBoxShotTarget1";
+            this.checkBoxShotTarget1.Size = new System.Drawing.Size(53, 19);
+            this.checkBoxShotTarget1.TabIndex = 35;
+            this.checkBoxShotTarget1.Text = "Dead";
+            this.checkBoxShotTarget1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotTarget3
+            // 
+            this.checkBoxShotTarget3.AutoSize = true;
+            this.checkBoxShotTarget3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotTarget3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotTarget3.Location = new System.Drawing.Point(247, 35);
+            this.checkBoxShotTarget3.Name = "checkBoxShotTarget3";
+            this.checkBoxShotTarget3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotTarget3.TabIndex = 37;
+            this.checkBoxShotTarget3.Text = "???";
+            this.checkBoxShotTarget3.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxShotAttackFlags
+            // 
+            this.groupBoxShotAttackFlags.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag4);
+            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag8);
+            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag3);
+            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag6);
+            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag1);
+            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag5);
+            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag2);
+            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag7);
+            this.groupBoxShotAttackFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxShotAttackFlags.ForeColor = System.Drawing.Color.Sienna;
+            this.groupBoxShotAttackFlags.Location = new System.Drawing.Point(114, 608);
+            this.groupBoxShotAttackFlags.Name = "groupBoxShotAttackFlags";
+            this.groupBoxShotAttackFlags.Size = new System.Drawing.Size(465, 94);
+            this.groupBoxShotAttackFlags.TabIndex = 109;
+            this.groupBoxShotAttackFlags.TabStop = false;
+            this.groupBoxShotAttackFlags.Text = "Attack Flags";
+            // 
+            // checkBoxShotFlag4
+            // 
+            this.checkBoxShotFlag4.AutoSize = true;
+            this.checkBoxShotFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotFlag4.Location = new System.Drawing.Point(305, 38);
+            this.checkBoxShotFlag4.Name = "checkBoxShotFlag4";
+            this.checkBoxShotFlag4.Size = new System.Drawing.Size(132, 19);
+            this.checkBoxShotFlag4.TabIndex = 48;
+            this.checkBoxShotFlag4.Text = "Break Damage Limit";
+            this.checkBoxShotFlag4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotFlag8
+            // 
+            this.checkBoxShotFlag8.AutoSize = true;
+            this.checkBoxShotFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotFlag8.Location = new System.Drawing.Point(305, 63);
+            this.checkBoxShotFlag8.Name = "checkBoxShotFlag8";
+            this.checkBoxShotFlag8.Size = new System.Drawing.Size(65, 19);
+            this.checkBoxShotFlag8.TabIndex = 52;
+            this.checkBoxShotFlag8.Text = "Revive?";
+            this.checkBoxShotFlag8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotFlag3
+            // 
+            this.checkBoxShotFlag3.AutoSize = true;
+            this.checkBoxShotFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotFlag3.Location = new System.Drawing.Point(220, 38);
+            this.checkBoxShotFlag3.Name = "checkBoxShotFlag3";
+            this.checkBoxShotFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotFlag3.TabIndex = 47;
+            this.checkBoxShotFlag3.Text = "???";
+            this.checkBoxShotFlag3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotFlag6
+            // 
+            this.checkBoxShotFlag6.AutoSize = true;
+            this.checkBoxShotFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotFlag6.Location = new System.Drawing.Point(135, 63);
+            this.checkBoxShotFlag6.Name = "checkBoxShotFlag6";
+            this.checkBoxShotFlag6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotFlag6.TabIndex = 50;
+            this.checkBoxShotFlag6.Text = "???";
+            this.checkBoxShotFlag6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotFlag1
+            // 
+            this.checkBoxShotFlag1.AutoSize = true;
+            this.checkBoxShotFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotFlag1.Location = new System.Drawing.Point(27, 38);
+            this.checkBoxShotFlag1.Name = "checkBoxShotFlag1";
+            this.checkBoxShotFlag1.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxShotFlag1.TabIndex = 45;
+            this.checkBoxShotFlag1.Text = "Shelled";
+            this.checkBoxShotFlag1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotFlag5
+            // 
+            this.checkBoxShotFlag5.AutoSize = true;
+            this.checkBoxShotFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotFlag5.Location = new System.Drawing.Point(27, 63);
+            this.checkBoxShotFlag5.Name = "checkBoxShotFlag5";
+            this.checkBoxShotFlag5.Size = new System.Drawing.Size(75, 19);
+            this.checkBoxShotFlag5.TabIndex = 49;
+            this.checkBoxShotFlag5.Text = "Reflected";
+            this.checkBoxShotFlag5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotFlag2
+            // 
+            this.checkBoxShotFlag2.AutoSize = true;
+            this.checkBoxShotFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotFlag2.Location = new System.Drawing.Point(135, 38);
+            this.checkBoxShotFlag2.Name = "checkBoxShotFlag2";
+            this.checkBoxShotFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotFlag2.TabIndex = 46;
+            this.checkBoxShotFlag2.Text = "???";
+            this.checkBoxShotFlag2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxShotFlag7
+            // 
+            this.checkBoxShotFlag7.AutoSize = true;
+            this.checkBoxShotFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShotFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxShotFlag7.Location = new System.Drawing.Point(220, 63);
+            this.checkBoxShotFlag7.Name = "checkBoxShotFlag7";
+            this.checkBoxShotFlag7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxShotFlag7.TabIndex = 51;
+            this.checkBoxShotFlag7.Text = "???";
+            this.checkBoxShotFlag7.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxShotGeneral
+            // 
+            this.groupBoxShotGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotGeneral.Controls.Add(this.label5);
+            this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotElement);
+            this.groupBoxShotGeneral.Controls.Add(this.labelShotElement);
+            this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotItem);
+            this.groupBoxShotGeneral.Controls.Add(this.labelShotItem);
+            this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotAttackType);
+            this.groupBoxShotGeneral.Controls.Add(this.labelShotAttackType);
+            this.groupBoxShotGeneral.Controls.Add(this.numericUpDownShotElementPerc);
+            this.groupBoxShotGeneral.Controls.Add(this.numericUpDownShotHitCount);
+            this.groupBoxShotGeneral.Controls.Add(this.numericUpDownShotAttackPower);
+            this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotMagicID);
+            this.groupBoxShotGeneral.Controls.Add(this.labelShotHitCount);
+            this.groupBoxShotGeneral.Controls.Add(this.labelShotAttackPower);
+            this.groupBoxShotGeneral.Controls.Add(this.labelShotMagicID);
+            this.groupBoxShotGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxShotGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxShotGeneral.Location = new System.Drawing.Point(114, 6);
+            this.groupBoxShotGeneral.Name = "groupBoxShotGeneral";
+            this.groupBoxShotGeneral.Size = new System.Drawing.Size(465, 204);
+            this.groupBoxShotGeneral.TabIndex = 108;
+            this.groupBoxShotGeneral.TabStop = false;
+            this.groupBoxShotGeneral.Text = "General";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.label5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label5.Location = new System.Drawing.Point(158, 140);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(19, 17);
+            this.label5.TabIndex = 91;
+            this.label5.Text = "%";
+            // 
+            // comboBoxShotElement
+            // 
+            this.comboBoxShotElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxShotElement.FormattingEnabled = true;
+            this.comboBoxShotElement.Items.AddRange(new object[] {
+            "Fire",
+            "Ice",
+            "Thunder",
+            "Earth",
+            "Poison",
+            "Wind",
+            "Water",
+            "Holy",
+            "Non-Elemental"});
+            this.comboBoxShotElement.Location = new System.Drawing.Point(29, 160);
+            this.comboBoxShotElement.Name = "comboBoxShotElement";
+            this.comboBoxShotElement.Size = new System.Drawing.Size(110, 25);
+            this.comboBoxShotElement.TabIndex = 90;
+            // 
+            // comboBoxShotItem
+            // 
+            this.comboBoxShotItem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxShotItem.FormattingEnabled = true;
+            this.comboBoxShotItem.Items.AddRange(new object[] {
+            "None",
+            "Potion",
+            "Potion+",
+            "Hi-Potion",
+            "Hi-Potion+",
+            "X-Potion",
+            "Mega-Potion",
+            "Phoenix Down",
+            "Mega Phoenix",
+            "Elixir",
+            "Megalixir",
+            "Antidote",
+            "Soft",
+            "Eye Drops",
+            "Echo Screen",
+            "Holy Water",
+            "Remedy",
+            "Remedy+",
+            "Hero-Trial",
+            "Hero",
+            "Holy War-Trial",
+            "Holy War",
+            "Shell Stone",
+            "Protect Stone",
+            "Aura Stone",
+            "Death Stone",
+            "Holy Stone",
+            "Flare Stone",
+            "Meteor Stone",
+            "Ultima Stone",
+            "Gysahl Greens",
+            "Phoenix Pinion",
+            "Friendship",
+            "Tent",
+            "Pet House",
+            "Cottage",
+            "G-Potion",
+            "G-Hi-Potion",
+            "G-Mega-Potion",
+            "G-Returner",
+            "Rename Card",
+            "Amnesia Greens",
+            "HP-J Scroll",
+            "Str-J Scroll",
+            "Vit-J Scroll",
+            "Mag-J Scroll",
+            "Spr-J Scroll",
+            "Spd-J Scroll",
+            "Luck-J Scroll",
+            "Aegis Amulet",
+            "Elem Atk",
+            "Elem Guard",
+            "Status Atk",
+            "Status Guard",
+            "Rosetta Stone",
+            "Magic Scroll",
+            "GF Scroll",
+            "Draw Scroll",
+            "Item Scroll",
+            "Gambler Spirit",
+            "Healing Ring",
+            "Phoenix Spirit",
+            "Med Kit",
+            "Bomb Spirit",
+            "Hungry Cookpot",
+            "Mog\'s Amulet",
+            "Steel Pipe",
+            "Star Fragment",
+            "Energy Crystal",
+            "Samantha Soul",
+            "Healing Mail",
+            "Silver Mail",
+            "Gold Armor",
+            "Diamod Armor",
+            "Regen Ring",
+            "Giant\'s Ring",
+            "Gaea\'s Ring",
+            "Strength Love",
+            "Power Wrist",
+            "Hyper Wrist",
+            "Turtle Shell",
+            "Orihalcon",
+            "Adamantine",
+            "Rune Armlet",
+            "Force Armlet",
+            "Magic Armlet",
+            "Circlet",
+            "Hypno Crown",
+            "Royal Crown",
+            "Jet Engine",
+            "Rocket Engine",
+            "Moon Curtain",
+            "Steel Curtain",
+            "Glow Curtain",
+            "Accelerator",
+            "Monk\'s Code",
+            "Knight\'s Code",
+            "Doc\'s Code",
+            "Hundred Needles",
+            "Three Stars",
+            "Ribbon",
+            "Normal Ammo",
+            "Shotgun Ammo",
+            "Dark Ammo",
+            "Fire Ammo",
+            "Demolition Ammo",
+            "Fast Ammo",
+            "AP Ammo",
+            "Pulse Ammo",
+            "M-Stone Piece",
+            "Magic Stone",
+            "Wizard Stone",
+            "Ochu Tentacle",
+            "Healing Water",
+            "Cockatrice Pinion",
+            "Zombie Powder",
+            "Lightweight",
+            "Sharp Spike",
+            "Screw",
+            "Saw Blade",
+            "Mesmerize Blade",
+            "Vampire Fang",
+            "Fury Fragment",
+            "Betrayal Sword",
+            "Sleep Powder",
+            "Life Ring",
+            "Dragon Fang",
+            "Spider Web",
+            "Coral Fragment",
+            "Curse Spike",
+            "Black Hole",
+            "Water Crystal",
+            "Missile",
+            "Mystery Fluid",
+            "Running Fire",
+            "Inferno Fang",
+            "Malboro Tentacle",
+            "Whisper",
+            "Laser Cannon",
+            "Barrier",
+            "Power Generator",
+            "Dark Matter",
+            "Bomb Fragment",
+            "Red Fang",
+            "Arctic Wind",
+            "North Wind",
+            "Shear Feather",
+            "Dynamo Stone",
+            "Venom Fang",
+            "Steel Orb",
+            "Moon Stone",
+            "Dino Bone",
+            "Windmill",
+            "Dragon Skin",
+            "Fish Fin",
+            "Dragon Fin",
+            "Silence Powder",
+            "Poison Powder",
+            "Dead Spirit",
+            "Chef\'s Knife",
+            "Cactus Thorn",
+            "Shaman Stone",
+            "Fuel",
+            "Girl Next Door",
+            "Sorceress\' Letter",
+            "Chocobo\'s Tag",
+            "Pet Nametag",
+            "Solomon Ring",
+            "Magical Lamp",
+            "Hp Up",
+            "Str Up",
+            "Vit Up",
+            "Mag Up",
+            "Spr Up",
+            "Spd Up",
+            "Luck Up",
+            "LuvLuv G",
+            "Weapons Mon 1st",
+            "Weapons Mon Mar",
+            "Weapons Mon Apr",
+            "Weapons Mon May",
+            "Weapons Mon Jun",
+            "Weapons Mon Jul",
+            "Weapons Mon Aug",
+            "Combat King 001",
+            "Combat King 002",
+            "Combat King 003",
+            "Combat King 004",
+            "Combat King 005",
+            "Pet Pals Vol.1",
+            "Pet Pals Vol.2",
+            "Pet Pals Vol.3",
+            "Pet Pals Vol.4",
+            "Pet Pals Vol.5",
+            "Pet Pals Vol.6",
+            "Occult Fan I",
+            "Occult Fan II",
+            "Occult Fan III",
+            "Occult Fan IV"});
+            this.comboBoxShotItem.Location = new System.Drawing.Point(266, 160);
+            this.comboBoxShotItem.Name = "comboBoxShotItem";
+            this.comboBoxShotItem.Size = new System.Drawing.Size(146, 25);
+            this.comboBoxShotItem.TabIndex = 11;
+            // 
+            // labelShotItem
+            // 
+            this.labelShotItem.AutoSize = true;
+            this.labelShotItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotItem.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotItem.Location = new System.Drawing.Point(304, 140);
+            this.labelShotItem.Name = "labelShotItem";
+            this.labelShotItem.Size = new System.Drawing.Size(70, 17);
+            this.labelShotItem.TabIndex = 12;
+            this.labelShotItem.Text = "Item Used";
+            // 
+            // comboBoxShotAttackType
+            // 
+            this.comboBoxShotAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxShotAttackType.FormattingEnabled = true;
+            this.comboBoxShotAttackType.Items.AddRange(new object[] {
+            "None",
+            "Basic Attack",
+            "Magic Attack",
+            "Curative Magic",
+            "Curative Item",
+            "Revive",
+            "Revive At Full HP",
+            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "Demi",
+            "Renzokuken Finisher",
+            "Squall Gunblade Attack",
+            "GF",
+            "Scan",
+            "LV Down",
+            "Summon Item?",
+            "Ignore SPR",
+            "LV Up",
+            "Card",
+            "Kamikaze",
+            "Devour",
+            "Diablos Gravity Attack",
+            "",
+            "Mega Spark/Mega Flare",
+            "Angelo Search",
+            "Moogle Dance",
+            "White Wind (Quistis)",
+            "LV5 Death/LV? Death",
+            "Fixed Damage",
+            "Corona/Hell\'s Judgement",
+            "Cactuar Summon",
+            "",
+            "",
+            "Give Percentage HP",
+            "",
+            "Everyone\'s Grudge",
+            "Excalipoor",
+            "Terra Break/Great Attractor"});
+            this.comboBoxShotAttackType.Location = new System.Drawing.Point(29, 103);
+            this.comboBoxShotAttackType.Name = "comboBoxShotAttackType";
+            this.comboBoxShotAttackType.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxShotAttackType.TabIndex = 8;
+            // 
+            // numericUpDownShotElementPerc
+            // 
+            this.numericUpDownShotElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownShotElementPerc.Location = new System.Drawing.Point(145, 160);
+            this.numericUpDownShotElementPerc.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownShotElementPerc.Name = "numericUpDownShotElementPerc";
+            this.numericUpDownShotElementPerc.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownShotElementPerc.TabIndex = 6;
+            // 
+            // numericUpDownShotHitCount
+            // 
+            this.numericUpDownShotHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownShotHitCount.Location = new System.Drawing.Point(365, 104);
+            this.numericUpDownShotHitCount.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownShotHitCount.Name = "numericUpDownShotHitCount";
+            this.numericUpDownShotHitCount.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownShotHitCount.TabIndex = 6;
+            // 
+            // numericUpDownShotAttackPower
+            // 
+            this.numericUpDownShotAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownShotAttackPower.Location = new System.Drawing.Point(365, 49);
+            this.numericUpDownShotAttackPower.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownShotAttackPower.Name = "numericUpDownShotAttackPower";
+            this.numericUpDownShotAttackPower.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownShotAttackPower.TabIndex = 3;
+            // 
+            // comboBoxShotMagicID
+            // 
+            this.comboBoxShotMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxShotMagicID.FormattingEnabled = true;
+            this.comboBoxShotMagicID.Items.AddRange(new object[] {
+            "None",
+            "Cure",
+            "Fire",
+            "Thunder",
+            "Double",
+            "Phoenix Down",
+            "Leviathan Summon (Tsunami)",
+            "Mega Phoenix",
+            "Doom",
+            "Doom Activation",
+            "Ray-Bomb",
+            "Storm Breath",
+            "Blade Shot",
+            "Dark Mist/Poison Mist",
+            "Death/Death Stone",
+            "Draw",
+            "Recover",
+            "Elvoret Entrance",
+            "Elvoret Death",
+            "",
+            "NORG Pod Opening",
+            "Triple",
+            "Bio",
+            "Psycho Blast",
+            "Esuna",
+            "Cura",
+            "Clash",
+            "Full-Life",
+            "Curaga",
+            "Wind Blast",
+            "Counter Laser-Eye",
+            "Heartbreak",
+            "Protect",
+            "Shell",
+            "Pain",
+            "Life",
+            "Confuse",
+            "Drink Magic",
+            "Quake",
+            "Drain",
+            "Scan",
+            "Dribble",
+            "Shoot",
+            "Melting Bubble",
+            "Junk",
+            "Stare",
+            "Sigh",
+            "Curse",
+            "Magma Breath",
+            "Resonance",
+            "Potion/Potion+",
+            "Hi-Potion/Hi-Potion+",
+            "X-Potion",
+            "Mega-Potion",
+            "Everyone\'s Grudge",
+            "Aqua Breath",
+            "Absorb",
+            "Treatment",
+            "Elixir",
+            "Megalixir",
+            "",
+            "Revive",
+            "Devour",
+            "",
+            "Griever Tail Falling Off",
+            "Great Attractor",
+            "Griever + Ultimecia Death",
+            "Remedy/Remedy+",
+            "",
+            "Griever Summon",
+            "Shockwave Pulsar",
+            "Laser Eye (Quistis)",
+            "Aqua Breath (Quistis)",
+            "Mighty Guard (Quistis)",
+            "LV?Death (Quistis)",
+            "Hell\'s Judgement",
+            "Ultimecia Final Form Spawn",
+            "Ultimecia Final Form Death",
+            "Mighty Guard",
+            "Griever Death",
+            "Ultimecia Junctioning to Griever",
+            "",
+            "Ultimecia Blow Away Magic",
+            "Absorbed into time...",
+            "Angel Wing",
+            "The End",
+            "Angelo Cannon",
+            "Angelo Strike",
+            "Invincible Moon",
+            "Wishing Star",
+            "Tonberry Summon (Chef\'s Knife)",
+            "Angelo Rush",
+            "Angelo Search",
+            "Angelo Recover",
+            "Angelo Reverse",
+            "Siren Summon (Silent Voice)",
+            "Moogle Dance",
+            "ChocoFire",
+            "ChocoFlare",
+            "ChocoMeteor",
+            "ChocoBocle",
+            "",
+            "Thundara",
+            "Blizzara",
+            "Blizzaga",
+            "Thundaga",
+            "Reflect",
+            "Demi",
+            "Berserk",
+            "Dispel",
+            "Biggs + Wedge 1st Death",
+            "Aura",
+            "",
+            "Bad Breath",
+            "Zombie",
+            "Float",
+            "Quezacotl Summon (Thunder Storm)",
+            "Break",
+            "Aero",
+            "Stop",
+            "Petrify Stare",
+            "Blind",
+            "Silence",
+            "Slow",
+            "Flare",
+            "Haste",
+            "Electric Discharge",
+            "Petrify Stare",
+            "Gastric Juice",
+            "Breath",
+            "Eerie Sound Wave",
+            "Bad Breath",
+            "Disolving Acid",
+            "Hypnotize",
+            "Beam Laser",
+            "Reflect Beam",
+            "Oil Shot",
+            "Oil Blast",
+            "Saliva",
+            "Sonic Wave",
+            "Phoenix Pinion (Rebirth Flame)",
+            "Renzokuken - 5 Hits",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Sleep",
+            "Tornado",
+            "Regen",
+            "Meltdown",
+            "Ultima",
+            "Gatling Gun",
+            "Cannon Blow",
+            "Ultrasonic Waves",
+            "Sticky Web",
+            "Ultra Waves",
+            "Sand Storm",
+            "Wild Cannon Blow",
+            "Breath",
+            "Melt-Eye",
+            "Renzokuken (vs X-ATM092)",
+            "Renzokuken - 4 Hits",
+            "Renzokuken (vs Elnoyle/Elvoret)",
+            "Fated Circle",
+            "Rough Divide",
+            "Blasting Zone",
+            "Lion Heart",
+            "Megido Flame",
+            "Zantetsuken",
+            "Sleeping Gas",
+            "Gastric Juice",
+            "Acid",
+            "Poison Gas",
+            "Morph",
+            "Ice Breath",
+            "Degenerator",
+            "Holy",
+            "Sand Storm",
+            "1,000 Needles",
+            "10,000 Needles",
+            "",
+            "Suicide",
+            "Kamikaze",
+            "Card",
+            "Defend",
+            "Ultra Waves (Quistis)",
+            "Shiva Summon (Diamond Dust)",
+            "Blaster",
+            "Odin Summon (Zantetsuken)",
+            "Shot - Normal Shot",
+            "Wall",
+            "Chain Gun",
+            "Doomtrain Summon (Runaway Train)",
+            "Shot - Scatter Shot",
+            "Shot - Dark Shot",
+            "Shot - Flame Shot",
+            "Shot - Canister Shot",
+            "Shot - Quick Shot",
+            "Shot - Armor Shot",
+            "Shot - Hyper Shot",
+            "Cactuar Summon (1,000 Needles)",
+            "No Mercy",
+            "Ifrit Summon (Hell Fire)",
+            "Bahamut Summon (Mega Flare)",
+            "Cerberus Summon (Counter Rockets)",
+            "Alexander Summon (Holy Judgment)",
+            "Brothers Summon (Brotherly Love)",
+            "Eden Summon (Eternal Breath)",
+            "Maelstrom",
+            "Final \"Sorceress\" Death",
+            "\"Sorceress\" Spawn",
+            "Bloodfest",
+            "Adel Death",
+            "",
+            "Storm Breath",
+            "Gravija",
+            "",
+            "",
+            "Energy Bomber",
+            "",
+            "Terra Break",
+            "Light Pillar",
+            "Apocalypse",
+            "Water",
+            "Meteor",
+            "",
+            "",
+            "White Wind",
+            "Ultimecia First Death",
+            "Ice Strike",
+            "Homing Laser (Quistis)",
+            "Fire Breath (Quistis)",
+            "Disease Breath",
+            "Breath of Death",
+            "Earthquake",
+            "Fart",
+            "Breath",
+            "Gas",
+            "Explosion",
+            "Breath",
+            "Ochu Dance",
+            "Earthquake",
+            "BGH251F2 Gatling Gun",
+            "Beam Cannon",
+            "BGH251F2 1st Turret Exploding",
+            "BGH251F2 2nd Turret Exploding",
+            "BGH251F2 3rd Turret Exploding",
+            "BGH251F2 4th Turret Exploding",
+            "BGH251F2 Death",
+            "Soldier Entrance After BGH251F2 Death",
+            "",
+            "Beam Cannon",
+            "Demon Slice",
+            "Corona",
+            "Twin Homing Laser",
+            "Homing Laser",
+            "Homing Laser",
+            "Sand Shake",
+            "Mega Flare",
+            "Mad Cow Special",
+            "Renzokuken - 6 Hits",
+            "Shockwave Pulsar (Quistis)",
+            "Desperado",
+            "Blood Pain",
+            "Massive Anchor",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Ultima Weapon Death",
+            "LV Up",
+            "LV Down",
+            "Mad Rush",
+            "Duel",
+            "Electrocute (Quistis)",
+            "",
+            "",
+            "Carbuncle Summon (Ruby Light)",
+            "Mega Spark",
+            "Full Cure",
+            "Shotgun",
+            "Evil-Eye",
+            "Magic Summon",
+            "Micro Missiles",
+            "Thunder Summon",
+            "Mini Pulse Cannon",
+            "Mega Pulse Cannon",
+            "Rapture",
+            "\"Brrawghh!\"",
+            "",
+            "Pandemona Summon (Tornado Zone)",
+            "Soft",
+            "Eye Drops",
+            "Antidote",
+            "Echo Screen",
+            "Holy Water",
+            "White Wind (Quistis)",
+            "",
+            "Micro Missiles (Quistis)",
+            "Bad Breath (Quistis)",
+            "",
+            "Snipe Laser",
+            "",
+            "Boomerang Sword",
+            "Gatling Gun (Quistis)",
+            "Degenerator (Quistis)",
+            "Ray-Bomb (Quistis)",
+            "",
+            "Hero-trial/Hero",
+            "Holy War-trial/Holy War",
+            "",
+            "",
+            "",
+            "",
+            "Fake President Death",
+            "",
+            "Acid (Quistis)",
+            "",
+            "",
+            "Dark Flare",
+            "Ker Plunk",
+            "Zan",
+            "Metsu",
+            "Tonberry King Death",
+            "Diablos Summon (Dark Messenger)",
+            "Zantetsuken Reverse",
+            "Gilgamesh - Zantetsuken",
+            "Gilgamesh - Masamune",
+            "Gilgamesh - Excaliber",
+            "Gilgamesh - Excalipoor",
+            "",
+            "Renzokuken - 7 Hits",
+            "Renzokuken - 8 Hits",
+            "Renzokuken (vs Bahamut)",
+            "Renzokuken (vs NORG)",
+            "Renzokuken (vs Ultima Weapon)",
+            "Renzokuken (vs Final \"Sorceress\")",
+            "Friendship (MoombaMoomba)",
+            "Renzokuken (vs Adel)",
+            "Renzokuken (vs Ultimecia Final Form)",
+            "Renzokuken (vs Jumbo Cactuar)",
+            "Renzokuken (vs Griever + Ultimecia)",
+            "Renzokuken (vs Griever)",
+            "Final Battle Music",
+            "LV5 Death"});
+            this.comboBoxShotMagicID.Location = new System.Drawing.Point(29, 49);
+            this.comboBoxShotMagicID.Name = "comboBoxShotMagicID";
+            this.comboBoxShotMagicID.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxShotMagicID.TabIndex = 2;
+            // 
+            // listBoxShot
+            // 
+            this.listBoxShot.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxShot.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxShot.FormattingEnabled = true;
+            this.listBoxShot.ItemHeight = 17;
+            this.listBoxShot.Items.AddRange(new object[] {
+            "Normal Shot",
+            "Scatter Shot",
+            "Dark Shot",
+            "Flame Shot",
+            "Canister Shot",
+            "Quick Shot",
+            "Armor Shot",
+            "Hyper Shot"});
+            this.listBoxShot.Location = new System.Drawing.Point(0, 0);
+            this.listBoxShot.Name = "listBoxShot";
+            this.listBoxShot.ScrollAlwaysVisible = true;
+            this.listBoxShot.Size = new System.Drawing.Size(109, 735);
+            this.listBoxShot.TabIndex = 107;
+            this.listBoxShot.SelectedIndexChanged += new System.EventHandler(this.listBoxShot_SelectedIndexChanged);
             // 
             // tabSlots
             // 
@@ -22107,6 +24284,564 @@
             this.tabPageTempCharLB.Text = "Temp Characters LB";
             this.tabPageTempCharLB.UseVisualStyleBackColor = true;
             // 
+            // groupBox11
+            // 
+            this.groupBox11.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBPetrifying);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBDarkness);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBSilence);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBStop);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBConfusion);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBPetrify);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBSlow);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBBerserk);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBSleep);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBInvincible);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBCurse);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBDoom);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBFloat);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBAura);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBDrain);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBSummonGF);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBHasMagic);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBUnk6);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBUnk5);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBUnk4);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBUnk3);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBAngelWing);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBVit0);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBBackAttack);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBCharged);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBUnk2);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBUnk1);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBDefend);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBTriple);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBDouble);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBEject);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBPoison);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBDeath);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBProtect);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBHaste);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBRegen);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBShell);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBReflect);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBUnk7);
+            this.groupBox11.Controls.Add(this.checkBoxTempCharLBZombie);
+            this.groupBox11.Controls.Add(this.numericUpDownTempCharLBStatusAttack);
+            this.groupBox11.Controls.Add(this.labelTempCharLBStatusAttack);
+            this.groupBox11.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox11.ForeColor = System.Drawing.Color.DarkViolet;
+            this.groupBox11.Location = new System.Drawing.Point(124, 316);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(456, 286);
+            this.groupBox11.TabIndex = 108;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Status Attack";
+            // 
+            // checkBoxTempCharLBPetrifying
+            // 
+            this.checkBoxTempCharLBPetrifying.AutoSize = true;
+            this.checkBoxTempCharLBPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBPetrifying.Location = new System.Drawing.Point(281, 136);
+            this.checkBoxTempCharLBPetrifying.Name = "checkBoxTempCharLBPetrifying";
+            this.checkBoxTempCharLBPetrifying.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxTempCharLBPetrifying.TabIndex = 115;
+            this.checkBoxTempCharLBPetrifying.Text = "Petrifying";
+            this.checkBoxTempCharLBPetrifying.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBDarkness
+            // 
+            this.checkBoxTempCharLBDarkness.AutoSize = true;
+            this.checkBoxTempCharLBDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBDarkness.Location = new System.Drawing.Point(6, 261);
+            this.checkBoxTempCharLBDarkness.Name = "checkBoxTempCharLBDarkness";
+            this.checkBoxTempCharLBDarkness.Size = new System.Drawing.Size(73, 19);
+            this.checkBoxTempCharLBDarkness.TabIndex = 138;
+            this.checkBoxTempCharLBDarkness.Text = "Darkness";
+            this.checkBoxTempCharLBDarkness.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBSilence
+            // 
+            this.checkBoxTempCharLBSilence.AutoSize = true;
+            this.checkBoxTempCharLBSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBSilence.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBSilence.Location = new System.Drawing.Point(98, 261);
+            this.checkBoxTempCharLBSilence.Name = "checkBoxTempCharLBSilence";
+            this.checkBoxTempCharLBSilence.Size = new System.Drawing.Size(63, 19);
+            this.checkBoxTempCharLBSilence.TabIndex = 139;
+            this.checkBoxTempCharLBSilence.Text = "Silence";
+            this.checkBoxTempCharLBSilence.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBStop
+            // 
+            this.checkBoxTempCharLBStop.AutoSize = true;
+            this.checkBoxTempCharLBStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBStop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBStop.Location = new System.Drawing.Point(281, 86);
+            this.checkBoxTempCharLBStop.Name = "checkBoxTempCharLBStop";
+            this.checkBoxTempCharLBStop.Size = new System.Drawing.Size(50, 19);
+            this.checkBoxTempCharLBStop.TabIndex = 106;
+            this.checkBoxTempCharLBStop.Text = "Stop";
+            this.checkBoxTempCharLBStop.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBConfusion
+            // 
+            this.checkBoxTempCharLBConfusion.AutoSize = true;
+            this.checkBoxTempCharLBConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBConfusion.Location = new System.Drawing.Point(369, 136);
+            this.checkBoxTempCharLBConfusion.Name = "checkBoxTempCharLBConfusion";
+            this.checkBoxTempCharLBConfusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxTempCharLBConfusion.TabIndex = 117;
+            this.checkBoxTempCharLBConfusion.Text = "Confusion";
+            this.checkBoxTempCharLBConfusion.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBPetrify
+            // 
+            this.checkBoxTempCharLBPetrify.AutoSize = true;
+            this.checkBoxTempCharLBPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBPetrify.Location = new System.Drawing.Point(369, 236);
+            this.checkBoxTempCharLBPetrify.Name = "checkBoxTempCharLBPetrify";
+            this.checkBoxTempCharLBPetrify.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxTempCharLBPetrify.TabIndex = 137;
+            this.checkBoxTempCharLBPetrify.Text = "Petrify";
+            this.checkBoxTempCharLBPetrify.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBSlow
+            // 
+            this.checkBoxTempCharLBSlow.AutoSize = true;
+            this.checkBoxTempCharLBSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBSlow.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBSlow.Location = new System.Drawing.Point(192, 86);
+            this.checkBoxTempCharLBSlow.Name = "checkBoxTempCharLBSlow";
+            this.checkBoxTempCharLBSlow.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxTempCharLBSlow.TabIndex = 105;
+            this.checkBoxTempCharLBSlow.Text = "Slow";
+            this.checkBoxTempCharLBSlow.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBBerserk
+            // 
+            this.checkBoxTempCharLBBerserk.AutoSize = true;
+            this.checkBoxTempCharLBBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBBerserk.Location = new System.Drawing.Point(192, 261);
+            this.checkBoxTempCharLBBerserk.Name = "checkBoxTempCharLBBerserk";
+            this.checkBoxTempCharLBBerserk.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxTempCharLBBerserk.TabIndex = 140;
+            this.checkBoxTempCharLBBerserk.Text = "Berserk";
+            this.checkBoxTempCharLBBerserk.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBSleep
+            // 
+            this.checkBoxTempCharLBSleep.AutoSize = true;
+            this.checkBoxTempCharLBSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBSleep.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBSleep.Location = new System.Drawing.Point(6, 86);
+            this.checkBoxTempCharLBSleep.Name = "checkBoxTempCharLBSleep";
+            this.checkBoxTempCharLBSleep.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxTempCharLBSleep.TabIndex = 103;
+            this.checkBoxTempCharLBSleep.Text = "Sleep";
+            this.checkBoxTempCharLBSleep.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBInvincible
+            // 
+            this.checkBoxTempCharLBInvincible.AutoSize = true;
+            this.checkBoxTempCharLBInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBInvincible.Location = new System.Drawing.Point(98, 136);
+            this.checkBoxTempCharLBInvincible.Name = "checkBoxTempCharLBInvincible";
+            this.checkBoxTempCharLBInvincible.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxTempCharLBInvincible.TabIndex = 114;
+            this.checkBoxTempCharLBInvincible.Text = "Invincible";
+            this.checkBoxTempCharLBInvincible.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBCurse
+            // 
+            this.checkBoxTempCharLBCurse.AutoSize = true;
+            this.checkBoxTempCharLBCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBCurse.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBCurse.Location = new System.Drawing.Point(369, 111);
+            this.checkBoxTempCharLBCurse.Name = "checkBoxTempCharLBCurse";
+            this.checkBoxTempCharLBCurse.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxTempCharLBCurse.TabIndex = 112;
+            this.checkBoxTempCharLBCurse.Text = "Curse";
+            this.checkBoxTempCharLBCurse.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBDoom
+            // 
+            this.checkBoxTempCharLBDoom.AutoSize = true;
+            this.checkBoxTempCharLBDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBDoom.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBDoom.Location = new System.Drawing.Point(6, 136);
+            this.checkBoxTempCharLBDoom.Name = "checkBoxTempCharLBDoom";
+            this.checkBoxTempCharLBDoom.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxTempCharLBDoom.TabIndex = 113;
+            this.checkBoxTempCharLBDoom.Text = "Doom";
+            this.checkBoxTempCharLBDoom.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBFloat
+            // 
+            this.checkBoxTempCharLBFloat.AutoSize = true;
+            this.checkBoxTempCharLBFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBFloat.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBFloat.Location = new System.Drawing.Point(192, 136);
+            this.checkBoxTempCharLBFloat.Name = "checkBoxTempCharLBFloat";
+            this.checkBoxTempCharLBFloat.Size = new System.Drawing.Size(52, 19);
+            this.checkBoxTempCharLBFloat.TabIndex = 116;
+            this.checkBoxTempCharLBFloat.Text = "Float";
+            this.checkBoxTempCharLBFloat.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBAura
+            // 
+            this.checkBoxTempCharLBAura.AutoSize = true;
+            this.checkBoxTempCharLBAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBAura.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBAura.Location = new System.Drawing.Point(281, 111);
+            this.checkBoxTempCharLBAura.Name = "checkBoxTempCharLBAura";
+            this.checkBoxTempCharLBAura.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxTempCharLBAura.TabIndex = 111;
+            this.checkBoxTempCharLBAura.Text = "Aura";
+            this.checkBoxTempCharLBAura.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBDrain
+            // 
+            this.checkBoxTempCharLBDrain.AutoSize = true;
+            this.checkBoxTempCharLBDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBDrain.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBDrain.Location = new System.Drawing.Point(6, 161);
+            this.checkBoxTempCharLBDrain.Name = "checkBoxTempCharLBDrain";
+            this.checkBoxTempCharLBDrain.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxTempCharLBDrain.TabIndex = 118;
+            this.checkBoxTempCharLBDrain.Text = "Drain";
+            this.checkBoxTempCharLBDrain.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBSummonGF
+            // 
+            this.checkBoxTempCharLBSummonGF.AutoSize = true;
+            this.checkBoxTempCharLBSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBSummonGF.Location = new System.Drawing.Point(98, 236);
+            this.checkBoxTempCharLBSummonGF.Name = "checkBoxTempCharLBSummonGF";
+            this.checkBoxTempCharLBSummonGF.Size = new System.Drawing.Size(92, 19);
+            this.checkBoxTempCharLBSummonGF.TabIndex = 133;
+            this.checkBoxTempCharLBSummonGF.Text = "Summon GF";
+            this.checkBoxTempCharLBSummonGF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBHasMagic
+            // 
+            this.checkBoxTempCharLBHasMagic.AutoSize = true;
+            this.checkBoxTempCharLBHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBHasMagic.Location = new System.Drawing.Point(6, 236);
+            this.checkBoxTempCharLBHasMagic.Name = "checkBoxTempCharLBHasMagic";
+            this.checkBoxTempCharLBHasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxTempCharLBHasMagic.TabIndex = 132;
+            this.checkBoxTempCharLBHasMagic.Text = "Has Magic";
+            this.checkBoxTempCharLBHasMagic.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBUnk6
+            // 
+            this.checkBoxTempCharLBUnk6.AutoSize = true;
+            this.checkBoxTempCharLBUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBUnk6.Location = new System.Drawing.Point(369, 211);
+            this.checkBoxTempCharLBUnk6.Name = "checkBoxTempCharLBUnk6";
+            this.checkBoxTempCharLBUnk6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxTempCharLBUnk6.TabIndex = 131;
+            this.checkBoxTempCharLBUnk6.Text = "???";
+            this.checkBoxTempCharLBUnk6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBUnk5
+            // 
+            this.checkBoxTempCharLBUnk5.AutoSize = true;
+            this.checkBoxTempCharLBUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBUnk5.Location = new System.Drawing.Point(281, 211);
+            this.checkBoxTempCharLBUnk5.Name = "checkBoxTempCharLBUnk5";
+            this.checkBoxTempCharLBUnk5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxTempCharLBUnk5.TabIndex = 130;
+            this.checkBoxTempCharLBUnk5.Text = "???";
+            this.checkBoxTempCharLBUnk5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBUnk4
+            // 
+            this.checkBoxTempCharLBUnk4.AutoSize = true;
+            this.checkBoxTempCharLBUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBUnk4.Location = new System.Drawing.Point(192, 211);
+            this.checkBoxTempCharLBUnk4.Name = "checkBoxTempCharLBUnk4";
+            this.checkBoxTempCharLBUnk4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxTempCharLBUnk4.TabIndex = 127;
+            this.checkBoxTempCharLBUnk4.Text = "???";
+            this.checkBoxTempCharLBUnk4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBUnk3
+            // 
+            this.checkBoxTempCharLBUnk3.AutoSize = true;
+            this.checkBoxTempCharLBUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBUnk3.Location = new System.Drawing.Point(98, 211);
+            this.checkBoxTempCharLBUnk3.Name = "checkBoxTempCharLBUnk3";
+            this.checkBoxTempCharLBUnk3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxTempCharLBUnk3.TabIndex = 129;
+            this.checkBoxTempCharLBUnk3.Text = "???";
+            this.checkBoxTempCharLBUnk3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBAngelWing
+            // 
+            this.checkBoxTempCharLBAngelWing.AutoSize = true;
+            this.checkBoxTempCharLBAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBAngelWing.Location = new System.Drawing.Point(6, 211);
+            this.checkBoxTempCharLBAngelWing.Name = "checkBoxTempCharLBAngelWing";
+            this.checkBoxTempCharLBAngelWing.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxTempCharLBAngelWing.TabIndex = 128;
+            this.checkBoxTempCharLBAngelWing.Text = "Angel Wing";
+            this.checkBoxTempCharLBAngelWing.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBVit0
+            // 
+            this.checkBoxTempCharLBVit0.AutoSize = true;
+            this.checkBoxTempCharLBVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBVit0.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBVit0.Location = new System.Drawing.Point(369, 186);
+            this.checkBoxTempCharLBVit0.Name = "checkBoxTempCharLBVit0";
+            this.checkBoxTempCharLBVit0.Size = new System.Drawing.Size(46, 19);
+            this.checkBoxTempCharLBVit0.TabIndex = 134;
+            this.checkBoxTempCharLBVit0.Text = "Vit0";
+            this.checkBoxTempCharLBVit0.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBBackAttack
+            // 
+            this.checkBoxTempCharLBBackAttack.AutoSize = true;
+            this.checkBoxTempCharLBBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBBackAttack.Location = new System.Drawing.Point(281, 186);
+            this.checkBoxTempCharLBBackAttack.Name = "checkBoxTempCharLBBackAttack";
+            this.checkBoxTempCharLBBackAttack.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxTempCharLBBackAttack.TabIndex = 126;
+            this.checkBoxTempCharLBBackAttack.Text = "Back Attack";
+            this.checkBoxTempCharLBBackAttack.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBCharged
+            // 
+            this.checkBoxTempCharLBCharged.AutoSize = true;
+            this.checkBoxTempCharLBCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBCharged.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBCharged.Location = new System.Drawing.Point(192, 186);
+            this.checkBoxTempCharLBCharged.Name = "checkBoxTempCharLBCharged";
+            this.checkBoxTempCharLBCharged.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxTempCharLBCharged.TabIndex = 122;
+            this.checkBoxTempCharLBCharged.Text = "Charged";
+            this.checkBoxTempCharLBCharged.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBUnk2
+            // 
+            this.checkBoxTempCharLBUnk2.AutoSize = true;
+            this.checkBoxTempCharLBUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBUnk2.Location = new System.Drawing.Point(98, 186);
+            this.checkBoxTempCharLBUnk2.Name = "checkBoxTempCharLBUnk2";
+            this.checkBoxTempCharLBUnk2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxTempCharLBUnk2.TabIndex = 125;
+            this.checkBoxTempCharLBUnk2.Text = "???";
+            this.checkBoxTempCharLBUnk2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBUnk1
+            // 
+            this.checkBoxTempCharLBUnk1.AutoSize = true;
+            this.checkBoxTempCharLBUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBUnk1.Location = new System.Drawing.Point(6, 186);
+            this.checkBoxTempCharLBUnk1.Name = "checkBoxTempCharLBUnk1";
+            this.checkBoxTempCharLBUnk1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxTempCharLBUnk1.TabIndex = 124;
+            this.checkBoxTempCharLBUnk1.Text = "???";
+            this.checkBoxTempCharLBUnk1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBDefend
+            // 
+            this.checkBoxTempCharLBDefend.AutoSize = true;
+            this.checkBoxTempCharLBDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBDefend.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBDefend.Location = new System.Drawing.Point(369, 161);
+            this.checkBoxTempCharLBDefend.Name = "checkBoxTempCharLBDefend";
+            this.checkBoxTempCharLBDefend.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxTempCharLBDefend.TabIndex = 123;
+            this.checkBoxTempCharLBDefend.Text = "Defend";
+            this.checkBoxTempCharLBDefend.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBTriple
+            // 
+            this.checkBoxTempCharLBTriple.AutoSize = true;
+            this.checkBoxTempCharLBTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBTriple.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBTriple.Location = new System.Drawing.Point(281, 161);
+            this.checkBoxTempCharLBTriple.Name = "checkBoxTempCharLBTriple";
+            this.checkBoxTempCharLBTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxTempCharLBTriple.TabIndex = 121;
+            this.checkBoxTempCharLBTriple.Text = "Triple";
+            this.checkBoxTempCharLBTriple.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBDouble
+            // 
+            this.checkBoxTempCharLBDouble.AutoSize = true;
+            this.checkBoxTempCharLBDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBDouble.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBDouble.Location = new System.Drawing.Point(192, 161);
+            this.checkBoxTempCharLBDouble.Name = "checkBoxTempCharLBDouble";
+            this.checkBoxTempCharLBDouble.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxTempCharLBDouble.TabIndex = 120;
+            this.checkBoxTempCharLBDouble.Text = "Double";
+            this.checkBoxTempCharLBDouble.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBEject
+            // 
+            this.checkBoxTempCharLBEject.AutoSize = true;
+            this.checkBoxTempCharLBEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBEject.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBEject.Location = new System.Drawing.Point(98, 161);
+            this.checkBoxTempCharLBEject.Name = "checkBoxTempCharLBEject";
+            this.checkBoxTempCharLBEject.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxTempCharLBEject.TabIndex = 119;
+            this.checkBoxTempCharLBEject.Text = "Eject";
+            this.checkBoxTempCharLBEject.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBPoison
+            // 
+            this.checkBoxTempCharLBPoison.AutoSize = true;
+            this.checkBoxTempCharLBPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBPoison.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBPoison.Location = new System.Drawing.Point(281, 236);
+            this.checkBoxTempCharLBPoison.Name = "checkBoxTempCharLBPoison";
+            this.checkBoxTempCharLBPoison.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxTempCharLBPoison.TabIndex = 136;
+            this.checkBoxTempCharLBPoison.Text = "Poison";
+            this.checkBoxTempCharLBPoison.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBDeath
+            // 
+            this.checkBoxTempCharLBDeath.AutoSize = true;
+            this.checkBoxTempCharLBDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBDeath.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBDeath.Location = new System.Drawing.Point(192, 236);
+            this.checkBoxTempCharLBDeath.Name = "checkBoxTempCharLBDeath";
+            this.checkBoxTempCharLBDeath.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxTempCharLBDeath.TabIndex = 135;
+            this.checkBoxTempCharLBDeath.Text = "Death";
+            this.checkBoxTempCharLBDeath.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBProtect
+            // 
+            this.checkBoxTempCharLBProtect.AutoSize = true;
+            this.checkBoxTempCharLBProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBProtect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBProtect.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxTempCharLBProtect.Name = "checkBoxTempCharLBProtect";
+            this.checkBoxTempCharLBProtect.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxTempCharLBProtect.TabIndex = 108;
+            this.checkBoxTempCharLBProtect.Text = "Protect";
+            this.checkBoxTempCharLBProtect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBHaste
+            // 
+            this.checkBoxTempCharLBHaste.AutoSize = true;
+            this.checkBoxTempCharLBHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBHaste.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBHaste.Location = new System.Drawing.Point(98, 86);
+            this.checkBoxTempCharLBHaste.Name = "checkBoxTempCharLBHaste";
+            this.checkBoxTempCharLBHaste.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxTempCharLBHaste.TabIndex = 104;
+            this.checkBoxTempCharLBHaste.Text = "Haste";
+            this.checkBoxTempCharLBHaste.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBRegen
+            // 
+            this.checkBoxTempCharLBRegen.AutoSize = true;
+            this.checkBoxTempCharLBRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBRegen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBRegen.Location = new System.Drawing.Point(369, 86);
+            this.checkBoxTempCharLBRegen.Name = "checkBoxTempCharLBRegen";
+            this.checkBoxTempCharLBRegen.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxTempCharLBRegen.TabIndex = 107;
+            this.checkBoxTempCharLBRegen.Text = "Regen";
+            this.checkBoxTempCharLBRegen.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBShell
+            // 
+            this.checkBoxTempCharLBShell.AutoSize = true;
+            this.checkBoxTempCharLBShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBShell.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBShell.Location = new System.Drawing.Point(98, 111);
+            this.checkBoxTempCharLBShell.Name = "checkBoxTempCharLBShell";
+            this.checkBoxTempCharLBShell.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxTempCharLBShell.TabIndex = 109;
+            this.checkBoxTempCharLBShell.Text = "Shell";
+            this.checkBoxTempCharLBShell.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBReflect
+            // 
+            this.checkBoxTempCharLBReflect.AutoSize = true;
+            this.checkBoxTempCharLBReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBReflect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBReflect.Location = new System.Drawing.Point(192, 111);
+            this.checkBoxTempCharLBReflect.Name = "checkBoxTempCharLBReflect";
+            this.checkBoxTempCharLBReflect.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxTempCharLBReflect.TabIndex = 110;
+            this.checkBoxTempCharLBReflect.Text = "Reflect";
+            this.checkBoxTempCharLBReflect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBUnk7
+            // 
+            this.checkBoxTempCharLBUnk7.AutoSize = true;
+            this.checkBoxTempCharLBUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBUnk7.Location = new System.Drawing.Point(369, 261);
+            this.checkBoxTempCharLBUnk7.Name = "checkBoxTempCharLBUnk7";
+            this.checkBoxTempCharLBUnk7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxTempCharLBUnk7.TabIndex = 141;
+            this.checkBoxTempCharLBUnk7.Text = "???";
+            this.checkBoxTempCharLBUnk7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTempCharLBZombie
+            // 
+            this.checkBoxTempCharLBZombie.AutoSize = true;
+            this.checkBoxTempCharLBZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTempCharLBZombie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxTempCharLBZombie.Location = new System.Drawing.Point(281, 261);
+            this.checkBoxTempCharLBZombie.Name = "checkBoxTempCharLBZombie";
+            this.checkBoxTempCharLBZombie.Size = new System.Drawing.Size(67, 19);
+            this.checkBoxTempCharLBZombie.TabIndex = 142;
+            this.checkBoxTempCharLBZombie.Text = "Zombie";
+            this.checkBoxTempCharLBZombie.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownTempCharLBStatusAttack
+            // 
+            this.numericUpDownTempCharLBStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownTempCharLBStatusAttack.Location = new System.Drawing.Point(205, 46);
+            this.numericUpDownTempCharLBStatusAttack.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownTempCharLBStatusAttack.Name = "numericUpDownTempCharLBStatusAttack";
+            this.numericUpDownTempCharLBStatusAttack.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownTempCharLBStatusAttack.TabIndex = 91;
+            // 
+            // labelTempCharLBStatusAttack
+            // 
+            this.labelTempCharLBStatusAttack.AutoSize = true;
+            this.labelTempCharLBStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelTempCharLBStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelTempCharLBStatusAttack.Location = new System.Drawing.Point(184, 26);
+            this.labelTempCharLBStatusAttack.Name = "labelTempCharLBStatusAttack";
+            this.labelTempCharLBStatusAttack.Size = new System.Drawing.Size(89, 17);
+            this.labelTempCharLBStatusAttack.TabIndex = 90;
+            this.labelTempCharLBStatusAttack.Text = "Status Attack";
+            // 
             // groupBoxTempCharLBTarget
             // 
             this.groupBoxTempCharLBTarget.BackColor = System.Drawing.SystemColors.Control;
@@ -22120,7 +24855,7 @@
             this.groupBoxTempCharLBTarget.Controls.Add(this.checkBoxTempCharLBTarget3);
             this.groupBoxTempCharLBTarget.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxTempCharLBTarget.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBoxTempCharLBTarget.Location = new System.Drawing.Point(124, 152);
+            this.groupBoxTempCharLBTarget.Location = new System.Drawing.Point(124, 216);
             this.groupBoxTempCharLBTarget.Name = "groupBoxTempCharLBTarget";
             this.groupBoxTempCharLBTarget.Size = new System.Drawing.Size(456, 94);
             this.groupBoxTempCharLBTarget.TabIndex = 107;
@@ -22224,7 +24959,7 @@
             this.groupBoxTempCharLBFlags.Controls.Add(this.checkBoxTempCharLBFlag7);
             this.groupBoxTempCharLBFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxTempCharLBFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxTempCharLBFlags.Location = new System.Drawing.Point(124, 544);
+            this.groupBoxTempCharLBFlags.Location = new System.Drawing.Point(124, 608);
             this.groupBoxTempCharLBFlags.Name = "groupBoxTempCharLBFlags";
             this.groupBoxTempCharLBFlags.Size = new System.Drawing.Size(456, 94);
             this.groupBoxTempCharLBFlags.TabIndex = 106;
@@ -22330,6 +25065,10 @@
             // groupBoxTempCharLBGeneral
             // 
             this.groupBoxTempCharLBGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxTempCharLBGeneral.Controls.Add(this.labelTempCharLBElementPerc);
+            this.groupBoxTempCharLBGeneral.Controls.Add(this.comboBoxTempCharLBElement);
+            this.groupBoxTempCharLBGeneral.Controls.Add(this.labelTempCharLBElement);
+            this.groupBoxTempCharLBGeneral.Controls.Add(this.numericUpDownTempCharLBElementPerc);
             this.groupBoxTempCharLBGeneral.Controls.Add(this.comboBoxTempCharLBAttackType);
             this.groupBoxTempCharLBGeneral.Controls.Add(this.labelTempCharLBAttackType);
             this.groupBoxTempCharLBGeneral.Controls.Add(this.numericUpDownTempCharLBHitCount);
@@ -22342,7 +25081,7 @@
             this.groupBoxTempCharLBGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxTempCharLBGeneral.Location = new System.Drawing.Point(124, 6);
             this.groupBoxTempCharLBGeneral.Name = "groupBoxTempCharLBGeneral";
-            this.groupBoxTempCharLBGeneral.Size = new System.Drawing.Size(456, 140);
+            this.groupBoxTempCharLBGeneral.Size = new System.Drawing.Size(456, 204);
             this.groupBoxTempCharLBGeneral.TabIndex = 6;
             this.groupBoxTempCharLBGeneral.TabStop = false;
             this.groupBoxTempCharLBGeneral.Text = "General";
@@ -22944,7 +25683,7 @@
             this.groupBox15.Controls.Add(this.checkBoxEnemyAttacksAura);
             this.groupBox15.Controls.Add(this.checkBoxEnemyAttacksDrain);
             this.groupBox15.Controls.Add(this.checkBoxEnemyAttacksSummonGF);
-            this.groupBox15.Controls.Add(this.checkBoxEnemyAttacksPlayerChar);
+            this.groupBox15.Controls.Add(this.checkBoxEnemyAttacksHasMagic);
             this.groupBox15.Controls.Add(this.checkBoxEnemyAttacksUnk6);
             this.groupBox15.Controls.Add(this.checkBoxEnemyAttacksUnk5);
             this.groupBox15.Controls.Add(this.checkBoxEnemyAttacksUnk4);
@@ -23171,17 +25910,17 @@
             this.checkBoxEnemyAttacksSummonGF.Text = "Summon GF";
             this.checkBoxEnemyAttacksSummonGF.UseVisualStyleBackColor = true;
             // 
-            // checkBoxEnemyAttacksPlayerChar
+            // checkBoxEnemyAttacksHasMagic
             // 
-            this.checkBoxEnemyAttacksPlayerChar.AutoSize = true;
-            this.checkBoxEnemyAttacksPlayerChar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxEnemyAttacksPlayerChar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksPlayerChar.Location = new System.Drawing.Point(9, 236);
-            this.checkBoxEnemyAttacksPlayerChar.Name = "checkBoxEnemyAttacksPlayerChar";
-            this.checkBoxEnemyAttacksPlayerChar.Size = new System.Drawing.Size(91, 19);
-            this.checkBoxEnemyAttacksPlayerChar.TabIndex = 132;
-            this.checkBoxEnemyAttacksPlayerChar.Text = "Player Char?";
-            this.checkBoxEnemyAttacksPlayerChar.UseVisualStyleBackColor = true;
+            this.checkBoxEnemyAttacksHasMagic.AutoSize = true;
+            this.checkBoxEnemyAttacksHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxEnemyAttacksHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxEnemyAttacksHasMagic.Location = new System.Drawing.Point(9, 236);
+            this.checkBoxEnemyAttacksHasMagic.Name = "checkBoxEnemyAttacksHasMagic";
+            this.checkBoxEnemyAttacksHasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxEnemyAttacksHasMagic.TabIndex = 132;
+            this.checkBoxEnemyAttacksHasMagic.Text = "Has Magic";
+            this.checkBoxEnemyAttacksHasMagic.UseVisualStyleBackColor = true;
             // 
             // checkBoxEnemyAttacksUnk6
             // 
@@ -23998,2677 +26737,22 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel1.Text = "Ready";
             // 
-            // tabPageShot
-            // 
-            this.tabPageShot.Controls.Add(this.groupBoxShotStatusAttack);
-            this.tabPageShot.Controls.Add(this.groupBoxShotTargetInfo);
-            this.tabPageShot.Controls.Add(this.groupBoxShotAttackFlags);
-            this.tabPageShot.Controls.Add(this.groupBoxShotGeneral);
-            this.tabPageShot.Controls.Add(this.listBoxShot);
-            this.tabPageShot.Location = new System.Drawing.Point(4, 34);
-            this.tabPageShot.Name = "tabPageShot";
-            this.tabPageShot.Size = new System.Drawing.Size(584, 739);
-            this.tabPageShot.TabIndex = 11;
-            this.tabPageShot.Text = "Shot";
-            this.tabPageShot.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxRenzoFinStatusAttack
-            // 
-            this.groupBoxRenzoFinStatusAttack.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox1);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox2);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox3);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox4);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox5);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox6);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox7);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox8);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox9);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox10);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox11);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox12);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox13);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox14);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox15);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox16);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox17);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox18);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox19);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox20);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox21);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox22);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox23);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox24);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox25);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox26);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox27);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox28);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox29);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox30);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox31);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox32);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox33);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox34);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox35);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox36);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox37);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox38);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox39);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.checkBox40);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.numericUpDown1);
-            this.groupBoxRenzoFinStatusAttack.Controls.Add(this.label1);
-            this.groupBoxRenzoFinStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxRenzoFinStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBoxRenzoFinStatusAttack.Location = new System.Drawing.Point(114, 252);
-            this.groupBoxRenzoFinStatusAttack.Name = "groupBoxRenzoFinStatusAttack";
-            this.groupBoxRenzoFinStatusAttack.Size = new System.Drawing.Size(465, 286);
-            this.groupBoxRenzoFinStatusAttack.TabIndex = 106;
-            this.groupBoxRenzoFinStatusAttack.TabStop = false;
-            this.groupBoxRenzoFinStatusAttack.Text = "Status Attack";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox1.Location = new System.Drawing.Point(285, 136);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(77, 19);
-            this.checkBox1.TabIndex = 115;
-            this.checkBox1.Text = "Petrifying";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox2.Location = new System.Drawing.Point(10, 261);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(73, 19);
-            this.checkBox2.TabIndex = 138;
-            this.checkBox2.Text = "Darkness";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox3.Location = new System.Drawing.Point(102, 261);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(63, 19);
-            this.checkBox3.TabIndex = 139;
-            this.checkBox3.Text = "Silence";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox4.Location = new System.Drawing.Point(285, 86);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(50, 19);
-            this.checkBox4.TabIndex = 106;
-            this.checkBox4.Text = "Stop";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox5.Location = new System.Drawing.Point(373, 136);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(81, 19);
-            this.checkBox5.TabIndex = 117;
-            this.checkBox5.Text = "Confusion";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox6.Location = new System.Drawing.Point(373, 236);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(60, 19);
-            this.checkBox6.TabIndex = 137;
-            this.checkBox6.Text = "Petrify";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox7.Location = new System.Drawing.Point(196, 86);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(51, 19);
-            this.checkBox7.TabIndex = 105;
-            this.checkBox7.Text = "Slow";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox8.Location = new System.Drawing.Point(196, 261);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(64, 19);
-            this.checkBox8.TabIndex = 140;
-            this.checkBox8.Text = "Berserk";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox9.Location = new System.Drawing.Point(10, 86);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(54, 19);
-            this.checkBox9.TabIndex = 103;
-            this.checkBox9.Text = "Sleep";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox10.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox10.Location = new System.Drawing.Point(102, 136);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(77, 19);
-            this.checkBox10.TabIndex = 114;
-            this.checkBox10.Text = "Invincible";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox11.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox11.Location = new System.Drawing.Point(373, 111);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(56, 19);
-            this.checkBox11.TabIndex = 112;
-            this.checkBox11.Text = "Curse";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox12.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox12.Location = new System.Drawing.Point(10, 136);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(59, 19);
-            this.checkBox12.TabIndex = 113;
-            this.checkBox12.Text = "Doom";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox13.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox13.Location = new System.Drawing.Point(196, 136);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(52, 19);
-            this.checkBox13.TabIndex = 116;
-            this.checkBox13.Text = "Float";
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox14.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox14.Location = new System.Drawing.Point(285, 111);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(51, 19);
-            this.checkBox14.TabIndex = 111;
-            this.checkBox14.Text = "Aura";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox15.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox15.Location = new System.Drawing.Point(10, 161);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(54, 19);
-            this.checkBox15.TabIndex = 118;
-            this.checkBox15.Text = "Drain";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // checkBox16
-            // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox16.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox16.Location = new System.Drawing.Point(102, 236);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(92, 19);
-            this.checkBox16.TabIndex = 133;
-            this.checkBox16.Text = "Summon GF";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox17
-            // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox17.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox17.Location = new System.Drawing.Point(10, 236);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(91, 19);
-            this.checkBox17.TabIndex = 132;
-            this.checkBox17.Text = "Player Char?";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            // 
-            // checkBox18
-            // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox18.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox18.Location = new System.Drawing.Point(373, 211);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(41, 19);
-            this.checkBox18.TabIndex = 131;
-            this.checkBox18.Text = "???";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            // 
-            // checkBox19
-            // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox19.Location = new System.Drawing.Point(285, 211);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(41, 19);
-            this.checkBox19.TabIndex = 130;
-            this.checkBox19.Text = "???";
-            this.checkBox19.UseVisualStyleBackColor = true;
-            // 
-            // checkBox20
-            // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox20.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox20.Location = new System.Drawing.Point(196, 211);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(41, 19);
-            this.checkBox20.TabIndex = 127;
-            this.checkBox20.Text = "???";
-            this.checkBox20.UseVisualStyleBackColor = true;
-            // 
-            // checkBox21
-            // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox21.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox21.Location = new System.Drawing.Point(102, 211);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(41, 19);
-            this.checkBox21.TabIndex = 129;
-            this.checkBox21.Text = "???";
-            this.checkBox21.UseVisualStyleBackColor = true;
-            // 
-            // checkBox22
-            // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox22.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox22.Location = new System.Drawing.Point(10, 211);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(88, 19);
-            this.checkBox22.TabIndex = 128;
-            this.checkBox22.Text = "Angel Wing";
-            this.checkBox22.UseVisualStyleBackColor = true;
-            // 
-            // checkBox23
-            // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox23.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox23.Location = new System.Drawing.Point(373, 186);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(46, 19);
-            this.checkBox23.TabIndex = 134;
-            this.checkBox23.Text = "Vit0";
-            this.checkBox23.UseVisualStyleBackColor = true;
-            // 
-            // checkBox24
-            // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox24.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox24.Location = new System.Drawing.Point(285, 186);
-            this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(88, 19);
-            this.checkBox24.TabIndex = 126;
-            this.checkBox24.Text = "Back Attack";
-            this.checkBox24.UseVisualStyleBackColor = true;
-            // 
-            // checkBox25
-            // 
-            this.checkBox25.AutoSize = true;
-            this.checkBox25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox25.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox25.Location = new System.Drawing.Point(196, 186);
-            this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(71, 19);
-            this.checkBox25.TabIndex = 122;
-            this.checkBox25.Text = "Charged";
-            this.checkBox25.UseVisualStyleBackColor = true;
-            // 
-            // checkBox26
-            // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox26.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox26.Location = new System.Drawing.Point(102, 186);
-            this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(41, 19);
-            this.checkBox26.TabIndex = 125;
-            this.checkBox26.Text = "???";
-            this.checkBox26.UseVisualStyleBackColor = true;
-            // 
-            // checkBox27
-            // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox27.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox27.Location = new System.Drawing.Point(10, 186);
-            this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(41, 19);
-            this.checkBox27.TabIndex = 124;
-            this.checkBox27.Text = "???";
-            this.checkBox27.UseVisualStyleBackColor = true;
-            // 
-            // checkBox28
-            // 
-            this.checkBox28.AutoSize = true;
-            this.checkBox28.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox28.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox28.Location = new System.Drawing.Point(373, 161);
-            this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(64, 19);
-            this.checkBox28.TabIndex = 123;
-            this.checkBox28.Text = "Defend";
-            this.checkBox28.UseVisualStyleBackColor = true;
-            // 
-            // checkBox29
-            // 
-            this.checkBox29.AutoSize = true;
-            this.checkBox29.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox29.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox29.Location = new System.Drawing.Point(285, 161);
-            this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(55, 19);
-            this.checkBox29.TabIndex = 121;
-            this.checkBox29.Text = "Triple";
-            this.checkBox29.UseVisualStyleBackColor = true;
-            // 
-            // checkBox30
-            // 
-            this.checkBox30.AutoSize = true;
-            this.checkBox30.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox30.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox30.Location = new System.Drawing.Point(196, 161);
-            this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(64, 19);
-            this.checkBox30.TabIndex = 120;
-            this.checkBox30.Text = "Double";
-            this.checkBox30.UseVisualStyleBackColor = true;
-            // 
-            // checkBox31
-            // 
-            this.checkBox31.AutoSize = true;
-            this.checkBox31.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox31.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox31.Location = new System.Drawing.Point(102, 161);
-            this.checkBox31.Name = "checkBox31";
-            this.checkBox31.Size = new System.Drawing.Size(51, 19);
-            this.checkBox31.TabIndex = 119;
-            this.checkBox31.Text = "Eject";
-            this.checkBox31.UseVisualStyleBackColor = true;
-            // 
-            // checkBox32
-            // 
-            this.checkBox32.AutoSize = true;
-            this.checkBox32.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox32.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox32.Location = new System.Drawing.Point(285, 236);
-            this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(62, 19);
-            this.checkBox32.TabIndex = 136;
-            this.checkBox32.Text = "Poison";
-            this.checkBox32.UseVisualStyleBackColor = true;
-            // 
-            // checkBox33
-            // 
-            this.checkBox33.AutoSize = true;
-            this.checkBox33.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox33.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox33.Location = new System.Drawing.Point(196, 236);
-            this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(57, 19);
-            this.checkBox33.TabIndex = 135;
-            this.checkBox33.Text = "Death";
-            this.checkBox33.UseVisualStyleBackColor = true;
-            // 
-            // checkBox34
-            // 
-            this.checkBox34.AutoSize = true;
-            this.checkBox34.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox34.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox34.Location = new System.Drawing.Point(10, 111);
-            this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(64, 19);
-            this.checkBox34.TabIndex = 108;
-            this.checkBox34.Text = "Protect";
-            this.checkBox34.UseVisualStyleBackColor = true;
-            // 
-            // checkBox35
-            // 
-            this.checkBox35.AutoSize = true;
-            this.checkBox35.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox35.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox35.Location = new System.Drawing.Point(102, 86);
-            this.checkBox35.Name = "checkBox35";
-            this.checkBox35.Size = new System.Drawing.Size(56, 19);
-            this.checkBox35.TabIndex = 104;
-            this.checkBox35.Text = "Haste";
-            this.checkBox35.UseVisualStyleBackColor = true;
-            // 
-            // checkBox36
-            // 
-            this.checkBox36.AutoSize = true;
-            this.checkBox36.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox36.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox36.Location = new System.Drawing.Point(373, 86);
-            this.checkBox36.Name = "checkBox36";
-            this.checkBox36.Size = new System.Drawing.Size(59, 19);
-            this.checkBox36.TabIndex = 107;
-            this.checkBox36.Text = "Regen";
-            this.checkBox36.UseVisualStyleBackColor = true;
-            // 
-            // checkBox37
-            // 
-            this.checkBox37.AutoSize = true;
-            this.checkBox37.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox37.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox37.Location = new System.Drawing.Point(102, 111);
-            this.checkBox37.Name = "checkBox37";
-            this.checkBox37.Size = new System.Drawing.Size(51, 19);
-            this.checkBox37.TabIndex = 109;
-            this.checkBox37.Text = "Shell";
-            this.checkBox37.UseVisualStyleBackColor = true;
-            // 
-            // checkBox38
-            // 
-            this.checkBox38.AutoSize = true;
-            this.checkBox38.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox38.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox38.Location = new System.Drawing.Point(196, 111);
-            this.checkBox38.Name = "checkBox38";
-            this.checkBox38.Size = new System.Drawing.Size(62, 19);
-            this.checkBox38.TabIndex = 110;
-            this.checkBox38.Text = "Reflect";
-            this.checkBox38.UseVisualStyleBackColor = true;
-            // 
-            // checkBox39
-            // 
-            this.checkBox39.AutoSize = true;
-            this.checkBox39.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox39.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox39.Location = new System.Drawing.Point(373, 261);
-            this.checkBox39.Name = "checkBox39";
-            this.checkBox39.Size = new System.Drawing.Size(41, 19);
-            this.checkBox39.TabIndex = 141;
-            this.checkBox39.Text = "???";
-            this.checkBox39.UseVisualStyleBackColor = true;
-            // 
-            // checkBox40
-            // 
-            this.checkBox40.AutoSize = true;
-            this.checkBox40.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox40.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox40.Location = new System.Drawing.Point(285, 261);
-            this.checkBox40.Name = "checkBox40";
-            this.checkBox40.Size = new System.Drawing.Size(67, 19);
-            this.checkBox40.TabIndex = 142;
-            this.checkBox40.Text = "Zombie";
-            this.checkBox40.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(209, 46);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDown1.TabIndex = 91;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label1.Location = new System.Drawing.Point(188, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 17);
-            this.label1.TabIndex = 90;
-            this.label1.Text = "Status Attack";
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox11.Controls.Add(this.checkBox41);
-            this.groupBox11.Controls.Add(this.checkBox42);
-            this.groupBox11.Controls.Add(this.checkBox43);
-            this.groupBox11.Controls.Add(this.checkBox44);
-            this.groupBox11.Controls.Add(this.checkBox45);
-            this.groupBox11.Controls.Add(this.checkBox46);
-            this.groupBox11.Controls.Add(this.checkBox47);
-            this.groupBox11.Controls.Add(this.checkBox48);
-            this.groupBox11.Controls.Add(this.checkBox49);
-            this.groupBox11.Controls.Add(this.checkBox50);
-            this.groupBox11.Controls.Add(this.checkBox51);
-            this.groupBox11.Controls.Add(this.checkBox52);
-            this.groupBox11.Controls.Add(this.checkBox53);
-            this.groupBox11.Controls.Add(this.checkBox54);
-            this.groupBox11.Controls.Add(this.checkBox55);
-            this.groupBox11.Controls.Add(this.checkBox56);
-            this.groupBox11.Controls.Add(this.checkBox57);
-            this.groupBox11.Controls.Add(this.checkBox58);
-            this.groupBox11.Controls.Add(this.checkBox59);
-            this.groupBox11.Controls.Add(this.checkBox60);
-            this.groupBox11.Controls.Add(this.checkBox61);
-            this.groupBox11.Controls.Add(this.checkBox62);
-            this.groupBox11.Controls.Add(this.checkBox63);
-            this.groupBox11.Controls.Add(this.checkBox64);
-            this.groupBox11.Controls.Add(this.checkBox65);
-            this.groupBox11.Controls.Add(this.checkBox66);
-            this.groupBox11.Controls.Add(this.checkBox67);
-            this.groupBox11.Controls.Add(this.checkBox68);
-            this.groupBox11.Controls.Add(this.checkBox69);
-            this.groupBox11.Controls.Add(this.checkBox70);
-            this.groupBox11.Controls.Add(this.checkBox71);
-            this.groupBox11.Controls.Add(this.checkBox72);
-            this.groupBox11.Controls.Add(this.checkBox73);
-            this.groupBox11.Controls.Add(this.checkBox74);
-            this.groupBox11.Controls.Add(this.checkBox75);
-            this.groupBox11.Controls.Add(this.checkBox76);
-            this.groupBox11.Controls.Add(this.checkBox77);
-            this.groupBox11.Controls.Add(this.checkBox78);
-            this.groupBox11.Controls.Add(this.checkBox79);
-            this.groupBox11.Controls.Add(this.checkBox80);
-            this.groupBox11.Controls.Add(this.numericUpDown2);
-            this.groupBox11.Controls.Add(this.label3);
-            this.groupBox11.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBox11.Location = new System.Drawing.Point(124, 252);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(456, 286);
-            this.groupBox11.TabIndex = 108;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Status Attack";
-            // 
-            // checkBox41
-            // 
-            this.checkBox41.AutoSize = true;
-            this.checkBox41.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox41.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox41.Location = new System.Drawing.Point(281, 136);
-            this.checkBox41.Name = "checkBox41";
-            this.checkBox41.Size = new System.Drawing.Size(77, 19);
-            this.checkBox41.TabIndex = 115;
-            this.checkBox41.Text = "Petrifying";
-            this.checkBox41.UseVisualStyleBackColor = true;
-            // 
-            // checkBox42
-            // 
-            this.checkBox42.AutoSize = true;
-            this.checkBox42.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox42.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox42.Location = new System.Drawing.Point(6, 261);
-            this.checkBox42.Name = "checkBox42";
-            this.checkBox42.Size = new System.Drawing.Size(73, 19);
-            this.checkBox42.TabIndex = 138;
-            this.checkBox42.Text = "Darkness";
-            this.checkBox42.UseVisualStyleBackColor = true;
-            // 
-            // checkBox43
-            // 
-            this.checkBox43.AutoSize = true;
-            this.checkBox43.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox43.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox43.Location = new System.Drawing.Point(98, 261);
-            this.checkBox43.Name = "checkBox43";
-            this.checkBox43.Size = new System.Drawing.Size(63, 19);
-            this.checkBox43.TabIndex = 139;
-            this.checkBox43.Text = "Silence";
-            this.checkBox43.UseVisualStyleBackColor = true;
-            // 
-            // checkBox44
-            // 
-            this.checkBox44.AutoSize = true;
-            this.checkBox44.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox44.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox44.Location = new System.Drawing.Point(281, 86);
-            this.checkBox44.Name = "checkBox44";
-            this.checkBox44.Size = new System.Drawing.Size(50, 19);
-            this.checkBox44.TabIndex = 106;
-            this.checkBox44.Text = "Stop";
-            this.checkBox44.UseVisualStyleBackColor = true;
-            // 
-            // checkBox45
-            // 
-            this.checkBox45.AutoSize = true;
-            this.checkBox45.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox45.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox45.Location = new System.Drawing.Point(369, 136);
-            this.checkBox45.Name = "checkBox45";
-            this.checkBox45.Size = new System.Drawing.Size(81, 19);
-            this.checkBox45.TabIndex = 117;
-            this.checkBox45.Text = "Confusion";
-            this.checkBox45.UseVisualStyleBackColor = true;
-            // 
-            // checkBox46
-            // 
-            this.checkBox46.AutoSize = true;
-            this.checkBox46.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox46.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox46.Location = new System.Drawing.Point(369, 236);
-            this.checkBox46.Name = "checkBox46";
-            this.checkBox46.Size = new System.Drawing.Size(60, 19);
-            this.checkBox46.TabIndex = 137;
-            this.checkBox46.Text = "Petrify";
-            this.checkBox46.UseVisualStyleBackColor = true;
-            // 
-            // checkBox47
-            // 
-            this.checkBox47.AutoSize = true;
-            this.checkBox47.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox47.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox47.Location = new System.Drawing.Point(192, 86);
-            this.checkBox47.Name = "checkBox47";
-            this.checkBox47.Size = new System.Drawing.Size(51, 19);
-            this.checkBox47.TabIndex = 105;
-            this.checkBox47.Text = "Slow";
-            this.checkBox47.UseVisualStyleBackColor = true;
-            // 
-            // checkBox48
-            // 
-            this.checkBox48.AutoSize = true;
-            this.checkBox48.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox48.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox48.Location = new System.Drawing.Point(192, 261);
-            this.checkBox48.Name = "checkBox48";
-            this.checkBox48.Size = new System.Drawing.Size(64, 19);
-            this.checkBox48.TabIndex = 140;
-            this.checkBox48.Text = "Berserk";
-            this.checkBox48.UseVisualStyleBackColor = true;
-            // 
-            // checkBox49
-            // 
-            this.checkBox49.AutoSize = true;
-            this.checkBox49.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox49.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox49.Location = new System.Drawing.Point(6, 86);
-            this.checkBox49.Name = "checkBox49";
-            this.checkBox49.Size = new System.Drawing.Size(54, 19);
-            this.checkBox49.TabIndex = 103;
-            this.checkBox49.Text = "Sleep";
-            this.checkBox49.UseVisualStyleBackColor = true;
-            // 
-            // checkBox50
-            // 
-            this.checkBox50.AutoSize = true;
-            this.checkBox50.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox50.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox50.Location = new System.Drawing.Point(98, 136);
-            this.checkBox50.Name = "checkBox50";
-            this.checkBox50.Size = new System.Drawing.Size(77, 19);
-            this.checkBox50.TabIndex = 114;
-            this.checkBox50.Text = "Invincible";
-            this.checkBox50.UseVisualStyleBackColor = true;
-            // 
-            // checkBox51
-            // 
-            this.checkBox51.AutoSize = true;
-            this.checkBox51.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox51.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox51.Location = new System.Drawing.Point(369, 111);
-            this.checkBox51.Name = "checkBox51";
-            this.checkBox51.Size = new System.Drawing.Size(56, 19);
-            this.checkBox51.TabIndex = 112;
-            this.checkBox51.Text = "Curse";
-            this.checkBox51.UseVisualStyleBackColor = true;
-            // 
-            // checkBox52
-            // 
-            this.checkBox52.AutoSize = true;
-            this.checkBox52.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox52.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox52.Location = new System.Drawing.Point(6, 136);
-            this.checkBox52.Name = "checkBox52";
-            this.checkBox52.Size = new System.Drawing.Size(59, 19);
-            this.checkBox52.TabIndex = 113;
-            this.checkBox52.Text = "Doom";
-            this.checkBox52.UseVisualStyleBackColor = true;
-            // 
-            // checkBox53
-            // 
-            this.checkBox53.AutoSize = true;
-            this.checkBox53.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox53.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox53.Location = new System.Drawing.Point(192, 136);
-            this.checkBox53.Name = "checkBox53";
-            this.checkBox53.Size = new System.Drawing.Size(52, 19);
-            this.checkBox53.TabIndex = 116;
-            this.checkBox53.Text = "Float";
-            this.checkBox53.UseVisualStyleBackColor = true;
-            // 
-            // checkBox54
-            // 
-            this.checkBox54.AutoSize = true;
-            this.checkBox54.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox54.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox54.Location = new System.Drawing.Point(281, 111);
-            this.checkBox54.Name = "checkBox54";
-            this.checkBox54.Size = new System.Drawing.Size(51, 19);
-            this.checkBox54.TabIndex = 111;
-            this.checkBox54.Text = "Aura";
-            this.checkBox54.UseVisualStyleBackColor = true;
-            // 
-            // checkBox55
-            // 
-            this.checkBox55.AutoSize = true;
-            this.checkBox55.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox55.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox55.Location = new System.Drawing.Point(6, 161);
-            this.checkBox55.Name = "checkBox55";
-            this.checkBox55.Size = new System.Drawing.Size(54, 19);
-            this.checkBox55.TabIndex = 118;
-            this.checkBox55.Text = "Drain";
-            this.checkBox55.UseVisualStyleBackColor = true;
-            // 
-            // checkBox56
-            // 
-            this.checkBox56.AutoSize = true;
-            this.checkBox56.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox56.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox56.Location = new System.Drawing.Point(98, 236);
-            this.checkBox56.Name = "checkBox56";
-            this.checkBox56.Size = new System.Drawing.Size(92, 19);
-            this.checkBox56.TabIndex = 133;
-            this.checkBox56.Text = "Summon GF";
-            this.checkBox56.UseVisualStyleBackColor = true;
-            // 
-            // checkBox57
-            // 
-            this.checkBox57.AutoSize = true;
-            this.checkBox57.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox57.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox57.Location = new System.Drawing.Point(6, 236);
-            this.checkBox57.Name = "checkBox57";
-            this.checkBox57.Size = new System.Drawing.Size(91, 19);
-            this.checkBox57.TabIndex = 132;
-            this.checkBox57.Text = "Player Char?";
-            this.checkBox57.UseVisualStyleBackColor = true;
-            // 
-            // checkBox58
-            // 
-            this.checkBox58.AutoSize = true;
-            this.checkBox58.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox58.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox58.Location = new System.Drawing.Point(369, 211);
-            this.checkBox58.Name = "checkBox58";
-            this.checkBox58.Size = new System.Drawing.Size(41, 19);
-            this.checkBox58.TabIndex = 131;
-            this.checkBox58.Text = "???";
-            this.checkBox58.UseVisualStyleBackColor = true;
-            // 
-            // checkBox59
-            // 
-            this.checkBox59.AutoSize = true;
-            this.checkBox59.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox59.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox59.Location = new System.Drawing.Point(281, 211);
-            this.checkBox59.Name = "checkBox59";
-            this.checkBox59.Size = new System.Drawing.Size(41, 19);
-            this.checkBox59.TabIndex = 130;
-            this.checkBox59.Text = "???";
-            this.checkBox59.UseVisualStyleBackColor = true;
-            // 
-            // checkBox60
-            // 
-            this.checkBox60.AutoSize = true;
-            this.checkBox60.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox60.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox60.Location = new System.Drawing.Point(192, 211);
-            this.checkBox60.Name = "checkBox60";
-            this.checkBox60.Size = new System.Drawing.Size(41, 19);
-            this.checkBox60.TabIndex = 127;
-            this.checkBox60.Text = "???";
-            this.checkBox60.UseVisualStyleBackColor = true;
-            // 
-            // checkBox61
-            // 
-            this.checkBox61.AutoSize = true;
-            this.checkBox61.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox61.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox61.Location = new System.Drawing.Point(98, 211);
-            this.checkBox61.Name = "checkBox61";
-            this.checkBox61.Size = new System.Drawing.Size(41, 19);
-            this.checkBox61.TabIndex = 129;
-            this.checkBox61.Text = "???";
-            this.checkBox61.UseVisualStyleBackColor = true;
-            // 
-            // checkBox62
-            // 
-            this.checkBox62.AutoSize = true;
-            this.checkBox62.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox62.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox62.Location = new System.Drawing.Point(6, 211);
-            this.checkBox62.Name = "checkBox62";
-            this.checkBox62.Size = new System.Drawing.Size(88, 19);
-            this.checkBox62.TabIndex = 128;
-            this.checkBox62.Text = "Angel Wing";
-            this.checkBox62.UseVisualStyleBackColor = true;
-            // 
-            // checkBox63
-            // 
-            this.checkBox63.AutoSize = true;
-            this.checkBox63.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox63.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox63.Location = new System.Drawing.Point(369, 186);
-            this.checkBox63.Name = "checkBox63";
-            this.checkBox63.Size = new System.Drawing.Size(46, 19);
-            this.checkBox63.TabIndex = 134;
-            this.checkBox63.Text = "Vit0";
-            this.checkBox63.UseVisualStyleBackColor = true;
-            // 
-            // checkBox64
-            // 
-            this.checkBox64.AutoSize = true;
-            this.checkBox64.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox64.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox64.Location = new System.Drawing.Point(281, 186);
-            this.checkBox64.Name = "checkBox64";
-            this.checkBox64.Size = new System.Drawing.Size(88, 19);
-            this.checkBox64.TabIndex = 126;
-            this.checkBox64.Text = "Back Attack";
-            this.checkBox64.UseVisualStyleBackColor = true;
-            // 
-            // checkBox65
-            // 
-            this.checkBox65.AutoSize = true;
-            this.checkBox65.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox65.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox65.Location = new System.Drawing.Point(192, 186);
-            this.checkBox65.Name = "checkBox65";
-            this.checkBox65.Size = new System.Drawing.Size(71, 19);
-            this.checkBox65.TabIndex = 122;
-            this.checkBox65.Text = "Charged";
-            this.checkBox65.UseVisualStyleBackColor = true;
-            // 
-            // checkBox66
-            // 
-            this.checkBox66.AutoSize = true;
-            this.checkBox66.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox66.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox66.Location = new System.Drawing.Point(98, 186);
-            this.checkBox66.Name = "checkBox66";
-            this.checkBox66.Size = new System.Drawing.Size(41, 19);
-            this.checkBox66.TabIndex = 125;
-            this.checkBox66.Text = "???";
-            this.checkBox66.UseVisualStyleBackColor = true;
-            // 
-            // checkBox67
-            // 
-            this.checkBox67.AutoSize = true;
-            this.checkBox67.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox67.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox67.Location = new System.Drawing.Point(6, 186);
-            this.checkBox67.Name = "checkBox67";
-            this.checkBox67.Size = new System.Drawing.Size(41, 19);
-            this.checkBox67.TabIndex = 124;
-            this.checkBox67.Text = "???";
-            this.checkBox67.UseVisualStyleBackColor = true;
-            // 
-            // checkBox68
-            // 
-            this.checkBox68.AutoSize = true;
-            this.checkBox68.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox68.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox68.Location = new System.Drawing.Point(369, 161);
-            this.checkBox68.Name = "checkBox68";
-            this.checkBox68.Size = new System.Drawing.Size(64, 19);
-            this.checkBox68.TabIndex = 123;
-            this.checkBox68.Text = "Defend";
-            this.checkBox68.UseVisualStyleBackColor = true;
-            // 
-            // checkBox69
-            // 
-            this.checkBox69.AutoSize = true;
-            this.checkBox69.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox69.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox69.Location = new System.Drawing.Point(281, 161);
-            this.checkBox69.Name = "checkBox69";
-            this.checkBox69.Size = new System.Drawing.Size(55, 19);
-            this.checkBox69.TabIndex = 121;
-            this.checkBox69.Text = "Triple";
-            this.checkBox69.UseVisualStyleBackColor = true;
-            // 
-            // checkBox70
-            // 
-            this.checkBox70.AutoSize = true;
-            this.checkBox70.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox70.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox70.Location = new System.Drawing.Point(192, 161);
-            this.checkBox70.Name = "checkBox70";
-            this.checkBox70.Size = new System.Drawing.Size(64, 19);
-            this.checkBox70.TabIndex = 120;
-            this.checkBox70.Text = "Double";
-            this.checkBox70.UseVisualStyleBackColor = true;
-            // 
-            // checkBox71
-            // 
-            this.checkBox71.AutoSize = true;
-            this.checkBox71.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox71.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox71.Location = new System.Drawing.Point(98, 161);
-            this.checkBox71.Name = "checkBox71";
-            this.checkBox71.Size = new System.Drawing.Size(51, 19);
-            this.checkBox71.TabIndex = 119;
-            this.checkBox71.Text = "Eject";
-            this.checkBox71.UseVisualStyleBackColor = true;
-            // 
-            // checkBox72
-            // 
-            this.checkBox72.AutoSize = true;
-            this.checkBox72.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox72.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox72.Location = new System.Drawing.Point(281, 236);
-            this.checkBox72.Name = "checkBox72";
-            this.checkBox72.Size = new System.Drawing.Size(62, 19);
-            this.checkBox72.TabIndex = 136;
-            this.checkBox72.Text = "Poison";
-            this.checkBox72.UseVisualStyleBackColor = true;
-            // 
-            // checkBox73
-            // 
-            this.checkBox73.AutoSize = true;
-            this.checkBox73.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox73.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox73.Location = new System.Drawing.Point(192, 236);
-            this.checkBox73.Name = "checkBox73";
-            this.checkBox73.Size = new System.Drawing.Size(57, 19);
-            this.checkBox73.TabIndex = 135;
-            this.checkBox73.Text = "Death";
-            this.checkBox73.UseVisualStyleBackColor = true;
-            // 
-            // checkBox74
-            // 
-            this.checkBox74.AutoSize = true;
-            this.checkBox74.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox74.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox74.Location = new System.Drawing.Point(6, 111);
-            this.checkBox74.Name = "checkBox74";
-            this.checkBox74.Size = new System.Drawing.Size(64, 19);
-            this.checkBox74.TabIndex = 108;
-            this.checkBox74.Text = "Protect";
-            this.checkBox74.UseVisualStyleBackColor = true;
-            // 
-            // checkBox75
-            // 
-            this.checkBox75.AutoSize = true;
-            this.checkBox75.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox75.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox75.Location = new System.Drawing.Point(98, 86);
-            this.checkBox75.Name = "checkBox75";
-            this.checkBox75.Size = new System.Drawing.Size(56, 19);
-            this.checkBox75.TabIndex = 104;
-            this.checkBox75.Text = "Haste";
-            this.checkBox75.UseVisualStyleBackColor = true;
-            // 
-            // checkBox76
-            // 
-            this.checkBox76.AutoSize = true;
-            this.checkBox76.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox76.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox76.Location = new System.Drawing.Point(369, 86);
-            this.checkBox76.Name = "checkBox76";
-            this.checkBox76.Size = new System.Drawing.Size(59, 19);
-            this.checkBox76.TabIndex = 107;
-            this.checkBox76.Text = "Regen";
-            this.checkBox76.UseVisualStyleBackColor = true;
-            // 
-            // checkBox77
-            // 
-            this.checkBox77.AutoSize = true;
-            this.checkBox77.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox77.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox77.Location = new System.Drawing.Point(98, 111);
-            this.checkBox77.Name = "checkBox77";
-            this.checkBox77.Size = new System.Drawing.Size(51, 19);
-            this.checkBox77.TabIndex = 109;
-            this.checkBox77.Text = "Shell";
-            this.checkBox77.UseVisualStyleBackColor = true;
-            // 
-            // checkBox78
-            // 
-            this.checkBox78.AutoSize = true;
-            this.checkBox78.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox78.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox78.Location = new System.Drawing.Point(192, 111);
-            this.checkBox78.Name = "checkBox78";
-            this.checkBox78.Size = new System.Drawing.Size(62, 19);
-            this.checkBox78.TabIndex = 110;
-            this.checkBox78.Text = "Reflect";
-            this.checkBox78.UseVisualStyleBackColor = true;
-            // 
-            // checkBox79
-            // 
-            this.checkBox79.AutoSize = true;
-            this.checkBox79.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox79.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox79.Location = new System.Drawing.Point(369, 261);
-            this.checkBox79.Name = "checkBox79";
-            this.checkBox79.Size = new System.Drawing.Size(41, 19);
-            this.checkBox79.TabIndex = 141;
-            this.checkBox79.Text = "???";
-            this.checkBox79.UseVisualStyleBackColor = true;
-            // 
-            // checkBox80
-            // 
-            this.checkBox80.AutoSize = true;
-            this.checkBox80.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox80.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBox80.Location = new System.Drawing.Point(281, 261);
-            this.checkBox80.Name = "checkBox80";
-            this.checkBox80.Size = new System.Drawing.Size(67, 19);
-            this.checkBox80.TabIndex = 142;
-            this.checkBox80.Text = "Zombie";
-            this.checkBox80.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown2.Location = new System.Drawing.Point(205, 46);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDown2.TabIndex = 91;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label3.Location = new System.Drawing.Point(184, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 17);
-            this.label3.TabIndex = 90;
-            this.label3.Text = "Status Attack";
-            // 
-            // groupBoxShotStatusAttack
-            // 
-            this.groupBoxShotStatusAttack.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotPetrifying);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDarkness);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotSilence);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotStop);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotConfusion);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotPetrify);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotSlow);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotBerserk);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotSleep);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotInvincible);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotCurse);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDoom);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotFloat);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotAura);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDrain);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotSummonGF);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotPlayerChar);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk6);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk5);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk4);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk3);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotAngelWing);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotVit0);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotBackAttack);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotCharged);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk2);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk1);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDefend);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotTriple);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDouble);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotEject);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotPoison);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotDeath);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotProtect);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotHaste);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotRegen);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotShell);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotReflect);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotUnk7);
-            this.groupBoxShotStatusAttack.Controls.Add(this.checkBoxShotZombie);
-            this.groupBoxShotStatusAttack.Controls.Add(this.numericUpDownShotStatusAttack);
-            this.groupBoxShotStatusAttack.Controls.Add(this.labelShotStatusAttack);
-            this.groupBoxShotStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxShotStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBoxShotStatusAttack.Location = new System.Drawing.Point(114, 316);
-            this.groupBoxShotStatusAttack.Name = "groupBoxShotStatusAttack";
-            this.groupBoxShotStatusAttack.Size = new System.Drawing.Size(465, 286);
-            this.groupBoxShotStatusAttack.TabIndex = 111;
-            this.groupBoxShotStatusAttack.TabStop = false;
-            this.groupBoxShotStatusAttack.Text = "Status Attack";
-            // 
-            // checkBoxShotPetrifying
-            // 
-            this.checkBoxShotPetrifying.AutoSize = true;
-            this.checkBoxShotPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotPetrifying.Location = new System.Drawing.Point(285, 136);
-            this.checkBoxShotPetrifying.Name = "checkBoxShotPetrifying";
-            this.checkBoxShotPetrifying.Size = new System.Drawing.Size(77, 19);
-            this.checkBoxShotPetrifying.TabIndex = 115;
-            this.checkBoxShotPetrifying.Text = "Petrifying";
-            this.checkBoxShotPetrifying.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotDarkness
-            // 
-            this.checkBoxShotDarkness.AutoSize = true;
-            this.checkBoxShotDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDarkness.Location = new System.Drawing.Point(10, 261);
-            this.checkBoxShotDarkness.Name = "checkBoxShotDarkness";
-            this.checkBoxShotDarkness.Size = new System.Drawing.Size(73, 19);
-            this.checkBoxShotDarkness.TabIndex = 138;
-            this.checkBoxShotDarkness.Text = "Darkness";
-            this.checkBoxShotDarkness.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotSilence
-            // 
-            this.checkBoxShotSilence.AutoSize = true;
-            this.checkBoxShotSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotSilence.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotSilence.Location = new System.Drawing.Point(102, 261);
-            this.checkBoxShotSilence.Name = "checkBoxShotSilence";
-            this.checkBoxShotSilence.Size = new System.Drawing.Size(63, 19);
-            this.checkBoxShotSilence.TabIndex = 139;
-            this.checkBoxShotSilence.Text = "Silence";
-            this.checkBoxShotSilence.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotStop
-            // 
-            this.checkBoxShotStop.AutoSize = true;
-            this.checkBoxShotStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotStop.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotStop.Location = new System.Drawing.Point(285, 86);
-            this.checkBoxShotStop.Name = "checkBoxShotStop";
-            this.checkBoxShotStop.Size = new System.Drawing.Size(50, 19);
-            this.checkBoxShotStop.TabIndex = 106;
-            this.checkBoxShotStop.Text = "Stop";
-            this.checkBoxShotStop.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotConfusion
-            // 
-            this.checkBoxShotConfusion.AutoSize = true;
-            this.checkBoxShotConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotConfusion.Location = new System.Drawing.Point(373, 136);
-            this.checkBoxShotConfusion.Name = "checkBoxShotConfusion";
-            this.checkBoxShotConfusion.Size = new System.Drawing.Size(81, 19);
-            this.checkBoxShotConfusion.TabIndex = 117;
-            this.checkBoxShotConfusion.Text = "Confusion";
-            this.checkBoxShotConfusion.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotPetrify
-            // 
-            this.checkBoxShotPetrify.AutoSize = true;
-            this.checkBoxShotPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotPetrify.Location = new System.Drawing.Point(373, 236);
-            this.checkBoxShotPetrify.Name = "checkBoxShotPetrify";
-            this.checkBoxShotPetrify.Size = new System.Drawing.Size(60, 19);
-            this.checkBoxShotPetrify.TabIndex = 137;
-            this.checkBoxShotPetrify.Text = "Petrify";
-            this.checkBoxShotPetrify.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotSlow
-            // 
-            this.checkBoxShotSlow.AutoSize = true;
-            this.checkBoxShotSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotSlow.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotSlow.Location = new System.Drawing.Point(196, 86);
-            this.checkBoxShotSlow.Name = "checkBoxShotSlow";
-            this.checkBoxShotSlow.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxShotSlow.TabIndex = 105;
-            this.checkBoxShotSlow.Text = "Slow";
-            this.checkBoxShotSlow.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotBerserk
-            // 
-            this.checkBoxShotBerserk.AutoSize = true;
-            this.checkBoxShotBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotBerserk.Location = new System.Drawing.Point(196, 261);
-            this.checkBoxShotBerserk.Name = "checkBoxShotBerserk";
-            this.checkBoxShotBerserk.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxShotBerserk.TabIndex = 140;
-            this.checkBoxShotBerserk.Text = "Berserk";
-            this.checkBoxShotBerserk.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotSleep
-            // 
-            this.checkBoxShotSleep.AutoSize = true;
-            this.checkBoxShotSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotSleep.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotSleep.Location = new System.Drawing.Point(10, 86);
-            this.checkBoxShotSleep.Name = "checkBoxShotSleep";
-            this.checkBoxShotSleep.Size = new System.Drawing.Size(54, 19);
-            this.checkBoxShotSleep.TabIndex = 103;
-            this.checkBoxShotSleep.Text = "Sleep";
-            this.checkBoxShotSleep.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotInvincible
-            // 
-            this.checkBoxShotInvincible.AutoSize = true;
-            this.checkBoxShotInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotInvincible.Location = new System.Drawing.Point(102, 136);
-            this.checkBoxShotInvincible.Name = "checkBoxShotInvincible";
-            this.checkBoxShotInvincible.Size = new System.Drawing.Size(77, 19);
-            this.checkBoxShotInvincible.TabIndex = 114;
-            this.checkBoxShotInvincible.Text = "Invincible";
-            this.checkBoxShotInvincible.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotCurse
-            // 
-            this.checkBoxShotCurse.AutoSize = true;
-            this.checkBoxShotCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotCurse.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotCurse.Location = new System.Drawing.Point(373, 111);
-            this.checkBoxShotCurse.Name = "checkBoxShotCurse";
-            this.checkBoxShotCurse.Size = new System.Drawing.Size(56, 19);
-            this.checkBoxShotCurse.TabIndex = 112;
-            this.checkBoxShotCurse.Text = "Curse";
-            this.checkBoxShotCurse.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotDoom
-            // 
-            this.checkBoxShotDoom.AutoSize = true;
-            this.checkBoxShotDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotDoom.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDoom.Location = new System.Drawing.Point(10, 136);
-            this.checkBoxShotDoom.Name = "checkBoxShotDoom";
-            this.checkBoxShotDoom.Size = new System.Drawing.Size(59, 19);
-            this.checkBoxShotDoom.TabIndex = 113;
-            this.checkBoxShotDoom.Text = "Doom";
-            this.checkBoxShotDoom.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotFloat
-            // 
-            this.checkBoxShotFloat.AutoSize = true;
-            this.checkBoxShotFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotFloat.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFloat.Location = new System.Drawing.Point(196, 136);
-            this.checkBoxShotFloat.Name = "checkBoxShotFloat";
-            this.checkBoxShotFloat.Size = new System.Drawing.Size(52, 19);
-            this.checkBoxShotFloat.TabIndex = 116;
-            this.checkBoxShotFloat.Text = "Float";
-            this.checkBoxShotFloat.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotAura
-            // 
-            this.checkBoxShotAura.AutoSize = true;
-            this.checkBoxShotAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotAura.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotAura.Location = new System.Drawing.Point(285, 111);
-            this.checkBoxShotAura.Name = "checkBoxShotAura";
-            this.checkBoxShotAura.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxShotAura.TabIndex = 111;
-            this.checkBoxShotAura.Text = "Aura";
-            this.checkBoxShotAura.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotDrain
-            // 
-            this.checkBoxShotDrain.AutoSize = true;
-            this.checkBoxShotDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotDrain.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDrain.Location = new System.Drawing.Point(10, 161);
-            this.checkBoxShotDrain.Name = "checkBoxShotDrain";
-            this.checkBoxShotDrain.Size = new System.Drawing.Size(54, 19);
-            this.checkBoxShotDrain.TabIndex = 118;
-            this.checkBoxShotDrain.Text = "Drain";
-            this.checkBoxShotDrain.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotSummonGF
-            // 
-            this.checkBoxShotSummonGF.AutoSize = true;
-            this.checkBoxShotSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotSummonGF.Location = new System.Drawing.Point(102, 236);
-            this.checkBoxShotSummonGF.Name = "checkBoxShotSummonGF";
-            this.checkBoxShotSummonGF.Size = new System.Drawing.Size(92, 19);
-            this.checkBoxShotSummonGF.TabIndex = 133;
-            this.checkBoxShotSummonGF.Text = "Summon GF";
-            this.checkBoxShotSummonGF.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotPlayerChar
-            // 
-            this.checkBoxShotPlayerChar.AutoSize = true;
-            this.checkBoxShotPlayerChar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotPlayerChar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotPlayerChar.Location = new System.Drawing.Point(10, 236);
-            this.checkBoxShotPlayerChar.Name = "checkBoxShotPlayerChar";
-            this.checkBoxShotPlayerChar.Size = new System.Drawing.Size(91, 19);
-            this.checkBoxShotPlayerChar.TabIndex = 132;
-            this.checkBoxShotPlayerChar.Text = "Player Char?";
-            this.checkBoxShotPlayerChar.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotUnk6
-            // 
-            this.checkBoxShotUnk6.AutoSize = true;
-            this.checkBoxShotUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk6.Location = new System.Drawing.Point(373, 211);
-            this.checkBoxShotUnk6.Name = "checkBoxShotUnk6";
-            this.checkBoxShotUnk6.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotUnk6.TabIndex = 131;
-            this.checkBoxShotUnk6.Text = "???";
-            this.checkBoxShotUnk6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotUnk5
-            // 
-            this.checkBoxShotUnk5.AutoSize = true;
-            this.checkBoxShotUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk5.Location = new System.Drawing.Point(285, 211);
-            this.checkBoxShotUnk5.Name = "checkBoxShotUnk5";
-            this.checkBoxShotUnk5.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotUnk5.TabIndex = 130;
-            this.checkBoxShotUnk5.Text = "???";
-            this.checkBoxShotUnk5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotUnk4
-            // 
-            this.checkBoxShotUnk4.AutoSize = true;
-            this.checkBoxShotUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk4.Location = new System.Drawing.Point(196, 211);
-            this.checkBoxShotUnk4.Name = "checkBoxShotUnk4";
-            this.checkBoxShotUnk4.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotUnk4.TabIndex = 127;
-            this.checkBoxShotUnk4.Text = "???";
-            this.checkBoxShotUnk4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotUnk3
-            // 
-            this.checkBoxShotUnk3.AutoSize = true;
-            this.checkBoxShotUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk3.Location = new System.Drawing.Point(102, 211);
-            this.checkBoxShotUnk3.Name = "checkBoxShotUnk3";
-            this.checkBoxShotUnk3.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotUnk3.TabIndex = 129;
-            this.checkBoxShotUnk3.Text = "???";
-            this.checkBoxShotUnk3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotAngelWing
-            // 
-            this.checkBoxShotAngelWing.AutoSize = true;
-            this.checkBoxShotAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotAngelWing.Location = new System.Drawing.Point(10, 211);
-            this.checkBoxShotAngelWing.Name = "checkBoxShotAngelWing";
-            this.checkBoxShotAngelWing.Size = new System.Drawing.Size(88, 19);
-            this.checkBoxShotAngelWing.TabIndex = 128;
-            this.checkBoxShotAngelWing.Text = "Angel Wing";
-            this.checkBoxShotAngelWing.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotVit0
-            // 
-            this.checkBoxShotVit0.AutoSize = true;
-            this.checkBoxShotVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotVit0.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotVit0.Location = new System.Drawing.Point(373, 186);
-            this.checkBoxShotVit0.Name = "checkBoxShotVit0";
-            this.checkBoxShotVit0.Size = new System.Drawing.Size(46, 19);
-            this.checkBoxShotVit0.TabIndex = 134;
-            this.checkBoxShotVit0.Text = "Vit0";
-            this.checkBoxShotVit0.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotBackAttack
-            // 
-            this.checkBoxShotBackAttack.AutoSize = true;
-            this.checkBoxShotBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotBackAttack.Location = new System.Drawing.Point(285, 186);
-            this.checkBoxShotBackAttack.Name = "checkBoxShotBackAttack";
-            this.checkBoxShotBackAttack.Size = new System.Drawing.Size(88, 19);
-            this.checkBoxShotBackAttack.TabIndex = 126;
-            this.checkBoxShotBackAttack.Text = "Back Attack";
-            this.checkBoxShotBackAttack.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotCharged
-            // 
-            this.checkBoxShotCharged.AutoSize = true;
-            this.checkBoxShotCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotCharged.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotCharged.Location = new System.Drawing.Point(196, 186);
-            this.checkBoxShotCharged.Name = "checkBoxShotCharged";
-            this.checkBoxShotCharged.Size = new System.Drawing.Size(71, 19);
-            this.checkBoxShotCharged.TabIndex = 122;
-            this.checkBoxShotCharged.Text = "Charged";
-            this.checkBoxShotCharged.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotUnk2
-            // 
-            this.checkBoxShotUnk2.AutoSize = true;
-            this.checkBoxShotUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk2.Location = new System.Drawing.Point(102, 186);
-            this.checkBoxShotUnk2.Name = "checkBoxShotUnk2";
-            this.checkBoxShotUnk2.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotUnk2.TabIndex = 125;
-            this.checkBoxShotUnk2.Text = "???";
-            this.checkBoxShotUnk2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotUnk1
-            // 
-            this.checkBoxShotUnk1.AutoSize = true;
-            this.checkBoxShotUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk1.Location = new System.Drawing.Point(10, 186);
-            this.checkBoxShotUnk1.Name = "checkBoxShotUnk1";
-            this.checkBoxShotUnk1.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotUnk1.TabIndex = 124;
-            this.checkBoxShotUnk1.Text = "???";
-            this.checkBoxShotUnk1.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotDefend
-            // 
-            this.checkBoxShotDefend.AutoSize = true;
-            this.checkBoxShotDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotDefend.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDefend.Location = new System.Drawing.Point(373, 161);
-            this.checkBoxShotDefend.Name = "checkBoxShotDefend";
-            this.checkBoxShotDefend.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxShotDefend.TabIndex = 123;
-            this.checkBoxShotDefend.Text = "Defend";
-            this.checkBoxShotDefend.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotTriple
-            // 
-            this.checkBoxShotTriple.AutoSize = true;
-            this.checkBoxShotTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotTriple.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotTriple.Location = new System.Drawing.Point(285, 161);
-            this.checkBoxShotTriple.Name = "checkBoxShotTriple";
-            this.checkBoxShotTriple.Size = new System.Drawing.Size(55, 19);
-            this.checkBoxShotTriple.TabIndex = 121;
-            this.checkBoxShotTriple.Text = "Triple";
-            this.checkBoxShotTriple.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotDouble
-            // 
-            this.checkBoxShotDouble.AutoSize = true;
-            this.checkBoxShotDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotDouble.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDouble.Location = new System.Drawing.Point(196, 161);
-            this.checkBoxShotDouble.Name = "checkBoxShotDouble";
-            this.checkBoxShotDouble.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxShotDouble.TabIndex = 120;
-            this.checkBoxShotDouble.Text = "Double";
-            this.checkBoxShotDouble.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotEject
-            // 
-            this.checkBoxShotEject.AutoSize = true;
-            this.checkBoxShotEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotEject.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotEject.Location = new System.Drawing.Point(102, 161);
-            this.checkBoxShotEject.Name = "checkBoxShotEject";
-            this.checkBoxShotEject.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxShotEject.TabIndex = 119;
-            this.checkBoxShotEject.Text = "Eject";
-            this.checkBoxShotEject.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotPoison
-            // 
-            this.checkBoxShotPoison.AutoSize = true;
-            this.checkBoxShotPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotPoison.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotPoison.Location = new System.Drawing.Point(285, 236);
-            this.checkBoxShotPoison.Name = "checkBoxShotPoison";
-            this.checkBoxShotPoison.Size = new System.Drawing.Size(62, 19);
-            this.checkBoxShotPoison.TabIndex = 136;
-            this.checkBoxShotPoison.Text = "Poison";
-            this.checkBoxShotPoison.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotDeath
-            // 
-            this.checkBoxShotDeath.AutoSize = true;
-            this.checkBoxShotDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotDeath.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDeath.Location = new System.Drawing.Point(196, 236);
-            this.checkBoxShotDeath.Name = "checkBoxShotDeath";
-            this.checkBoxShotDeath.Size = new System.Drawing.Size(57, 19);
-            this.checkBoxShotDeath.TabIndex = 135;
-            this.checkBoxShotDeath.Text = "Death";
-            this.checkBoxShotDeath.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotProtect
-            // 
-            this.checkBoxShotProtect.AutoSize = true;
-            this.checkBoxShotProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotProtect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotProtect.Location = new System.Drawing.Point(10, 111);
-            this.checkBoxShotProtect.Name = "checkBoxShotProtect";
-            this.checkBoxShotProtect.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxShotProtect.TabIndex = 108;
-            this.checkBoxShotProtect.Text = "Protect";
-            this.checkBoxShotProtect.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotHaste
-            // 
-            this.checkBoxShotHaste.AutoSize = true;
-            this.checkBoxShotHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotHaste.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotHaste.Location = new System.Drawing.Point(102, 86);
-            this.checkBoxShotHaste.Name = "checkBoxShotHaste";
-            this.checkBoxShotHaste.Size = new System.Drawing.Size(56, 19);
-            this.checkBoxShotHaste.TabIndex = 104;
-            this.checkBoxShotHaste.Text = "Haste";
-            this.checkBoxShotHaste.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotRegen
-            // 
-            this.checkBoxShotRegen.AutoSize = true;
-            this.checkBoxShotRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotRegen.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotRegen.Location = new System.Drawing.Point(373, 86);
-            this.checkBoxShotRegen.Name = "checkBoxShotRegen";
-            this.checkBoxShotRegen.Size = new System.Drawing.Size(59, 19);
-            this.checkBoxShotRegen.TabIndex = 107;
-            this.checkBoxShotRegen.Text = "Regen";
-            this.checkBoxShotRegen.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotShell
-            // 
-            this.checkBoxShotShell.AutoSize = true;
-            this.checkBoxShotShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotShell.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotShell.Location = new System.Drawing.Point(102, 111);
-            this.checkBoxShotShell.Name = "checkBoxShotShell";
-            this.checkBoxShotShell.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxShotShell.TabIndex = 109;
-            this.checkBoxShotShell.Text = "Shell";
-            this.checkBoxShotShell.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotReflect
-            // 
-            this.checkBoxShotReflect.AutoSize = true;
-            this.checkBoxShotReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotReflect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotReflect.Location = new System.Drawing.Point(196, 111);
-            this.checkBoxShotReflect.Name = "checkBoxShotReflect";
-            this.checkBoxShotReflect.Size = new System.Drawing.Size(62, 19);
-            this.checkBoxShotReflect.TabIndex = 110;
-            this.checkBoxShotReflect.Text = "Reflect";
-            this.checkBoxShotReflect.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotUnk7
-            // 
-            this.checkBoxShotUnk7.AutoSize = true;
-            this.checkBoxShotUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk7.Location = new System.Drawing.Point(373, 261);
-            this.checkBoxShotUnk7.Name = "checkBoxShotUnk7";
-            this.checkBoxShotUnk7.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotUnk7.TabIndex = 141;
-            this.checkBoxShotUnk7.Text = "???";
-            this.checkBoxShotUnk7.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotZombie
-            // 
-            this.checkBoxShotZombie.AutoSize = true;
-            this.checkBoxShotZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotZombie.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotZombie.Location = new System.Drawing.Point(285, 261);
-            this.checkBoxShotZombie.Name = "checkBoxShotZombie";
-            this.checkBoxShotZombie.Size = new System.Drawing.Size(67, 19);
-            this.checkBoxShotZombie.TabIndex = 142;
-            this.checkBoxShotZombie.Text = "Zombie";
-            this.checkBoxShotZombie.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDownShotStatusAttack
-            // 
-            this.numericUpDownShotStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotStatusAttack.Location = new System.Drawing.Point(209, 46);
-            this.numericUpDownShotStatusAttack.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownShotStatusAttack.Name = "numericUpDownShotStatusAttack";
-            this.numericUpDownShotStatusAttack.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownShotStatusAttack.TabIndex = 91;
-            // 
-            // labelShotStatusAttack
-            // 
-            this.labelShotStatusAttack.AutoSize = true;
-            this.labelShotStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelShotStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotStatusAttack.Location = new System.Drawing.Point(188, 26);
-            this.labelShotStatusAttack.Name = "labelShotStatusAttack";
-            this.labelShotStatusAttack.Size = new System.Drawing.Size(89, 17);
-            this.labelShotStatusAttack.TabIndex = 90;
-            this.labelShotStatusAttack.Text = "Status Attack";
-            // 
-            // groupBoxShotTargetInfo
-            // 
-            this.groupBoxShotTargetInfo.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget8);
-            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget5);
-            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget2);
-            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget4);
-            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget6);
-            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget7);
-            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget1);
-            this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget3);
-            this.groupBoxShotTargetInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxShotTargetInfo.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBoxShotTargetInfo.Location = new System.Drawing.Point(114, 216);
-            this.groupBoxShotTargetInfo.Name = "groupBoxShotTargetInfo";
-            this.groupBoxShotTargetInfo.Size = new System.Drawing.Size(465, 94);
-            this.groupBoxShotTargetInfo.TabIndex = 110;
-            this.groupBoxShotTargetInfo.TabStop = false;
-            this.groupBoxShotTargetInfo.Text = "Target Info";
-            // 
-            // checkBoxShotTarget8
-            // 
-            this.checkBoxShotTarget8.AutoSize = true;
-            this.checkBoxShotTarget8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotTarget8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotTarget8.Location = new System.Drawing.Point(352, 60);
-            this.checkBoxShotTarget8.Name = "checkBoxShotTarget8";
-            this.checkBoxShotTarget8.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotTarget8.TabIndex = 39;
-            this.checkBoxShotTarget8.Text = "???";
-            this.checkBoxShotTarget8.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotTarget5
-            // 
-            this.checkBoxShotTarget5.AutoSize = true;
-            this.checkBoxShotTarget5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotTarget5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotTarget5.Location = new System.Drawing.Point(29, 60);
-            this.checkBoxShotTarget5.Name = "checkBoxShotTarget5";
-            this.checkBoxShotTarget5.Size = new System.Drawing.Size(58, 19);
-            this.checkBoxShotTarget5.TabIndex = 40;
-            this.checkBoxShotTarget5.Text = "Single";
-            this.checkBoxShotTarget5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotTarget2
-            // 
-            this.checkBoxShotTarget2.AutoSize = true;
-            this.checkBoxShotTarget2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotTarget2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotTarget2.Location = new System.Drawing.Point(137, 35);
-            this.checkBoxShotTarget2.Name = "checkBoxShotTarget2";
-            this.checkBoxShotTarget2.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotTarget2.TabIndex = 36;
-            this.checkBoxShotTarget2.Text = "???";
-            this.checkBoxShotTarget2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotTarget4
-            // 
-            this.checkBoxShotTarget4.AutoSize = true;
-            this.checkBoxShotTarget4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotTarget4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotTarget4.Location = new System.Drawing.Point(352, 35);
-            this.checkBoxShotTarget4.Name = "checkBoxShotTarget4";
-            this.checkBoxShotTarget4.Size = new System.Drawing.Size(83, 19);
-            this.checkBoxShotTarget4.TabIndex = 38;
-            this.checkBoxShotTarget4.Text = "Single Side";
-            this.toolTip1.SetToolTip(this.checkBoxShotTarget4, "Enemy decides which side");
-            this.checkBoxShotTarget4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotTarget6
-            // 
-            this.checkBoxShotTarget6.AutoSize = true;
-            this.checkBoxShotTarget6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotTarget6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotTarget6.Location = new System.Drawing.Point(137, 60);
-            this.checkBoxShotTarget6.Name = "checkBoxShotTarget6";
-            this.checkBoxShotTarget6.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotTarget6.TabIndex = 41;
-            this.checkBoxShotTarget6.Text = "???";
-            this.checkBoxShotTarget6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotTarget7
-            // 
-            this.checkBoxShotTarget7.AutoSize = true;
-            this.checkBoxShotTarget7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotTarget7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotTarget7.Location = new System.Drawing.Point(247, 60);
-            this.checkBoxShotTarget7.Name = "checkBoxShotTarget7";
-            this.checkBoxShotTarget7.Size = new System.Drawing.Size(62, 19);
-            this.checkBoxShotTarget7.TabIndex = 42;
-            this.checkBoxShotTarget7.Text = "Enemy";
-            this.checkBoxShotTarget7.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotTarget1
-            // 
-            this.checkBoxShotTarget1.AutoSize = true;
-            this.checkBoxShotTarget1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotTarget1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotTarget1.Location = new System.Drawing.Point(29, 35);
-            this.checkBoxShotTarget1.Name = "checkBoxShotTarget1";
-            this.checkBoxShotTarget1.Size = new System.Drawing.Size(53, 19);
-            this.checkBoxShotTarget1.TabIndex = 35;
-            this.checkBoxShotTarget1.Text = "Dead";
-            this.checkBoxShotTarget1.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotTarget3
-            // 
-            this.checkBoxShotTarget3.AutoSize = true;
-            this.checkBoxShotTarget3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotTarget3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotTarget3.Location = new System.Drawing.Point(247, 35);
-            this.checkBoxShotTarget3.Name = "checkBoxShotTarget3";
-            this.checkBoxShotTarget3.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotTarget3.TabIndex = 37;
-            this.checkBoxShotTarget3.Text = "???";
-            this.checkBoxShotTarget3.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxShotAttackFlags
-            // 
-            this.groupBoxShotAttackFlags.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag4);
-            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag8);
-            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag3);
-            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag6);
-            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag1);
-            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag5);
-            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag2);
-            this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag7);
-            this.groupBoxShotAttackFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxShotAttackFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxShotAttackFlags.Location = new System.Drawing.Point(114, 608);
-            this.groupBoxShotAttackFlags.Name = "groupBoxShotAttackFlags";
-            this.groupBoxShotAttackFlags.Size = new System.Drawing.Size(465, 94);
-            this.groupBoxShotAttackFlags.TabIndex = 109;
-            this.groupBoxShotAttackFlags.TabStop = false;
-            this.groupBoxShotAttackFlags.Text = "Attack Flags";
-            // 
-            // checkBoxShotFlag4
-            // 
-            this.checkBoxShotFlag4.AutoSize = true;
-            this.checkBoxShotFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag4.Location = new System.Drawing.Point(305, 38);
-            this.checkBoxShotFlag4.Name = "checkBoxShotFlag4";
-            this.checkBoxShotFlag4.Size = new System.Drawing.Size(132, 19);
-            this.checkBoxShotFlag4.TabIndex = 48;
-            this.checkBoxShotFlag4.Text = "Break Damage Limit";
-            this.checkBoxShotFlag4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotFlag8
-            // 
-            this.checkBoxShotFlag8.AutoSize = true;
-            this.checkBoxShotFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag8.Location = new System.Drawing.Point(305, 63);
-            this.checkBoxShotFlag8.Name = "checkBoxShotFlag8";
-            this.checkBoxShotFlag8.Size = new System.Drawing.Size(65, 19);
-            this.checkBoxShotFlag8.TabIndex = 52;
-            this.checkBoxShotFlag8.Text = "Revive?";
-            this.checkBoxShotFlag8.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotFlag3
-            // 
-            this.checkBoxShotFlag3.AutoSize = true;
-            this.checkBoxShotFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag3.Location = new System.Drawing.Point(220, 38);
-            this.checkBoxShotFlag3.Name = "checkBoxShotFlag3";
-            this.checkBoxShotFlag3.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotFlag3.TabIndex = 47;
-            this.checkBoxShotFlag3.Text = "???";
-            this.checkBoxShotFlag3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotFlag6
-            // 
-            this.checkBoxShotFlag6.AutoSize = true;
-            this.checkBoxShotFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag6.Location = new System.Drawing.Point(135, 63);
-            this.checkBoxShotFlag6.Name = "checkBoxShotFlag6";
-            this.checkBoxShotFlag6.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotFlag6.TabIndex = 50;
-            this.checkBoxShotFlag6.Text = "???";
-            this.checkBoxShotFlag6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotFlag1
-            // 
-            this.checkBoxShotFlag1.AutoSize = true;
-            this.checkBoxShotFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag1.Location = new System.Drawing.Point(27, 38);
-            this.checkBoxShotFlag1.Name = "checkBoxShotFlag1";
-            this.checkBoxShotFlag1.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxShotFlag1.TabIndex = 45;
-            this.checkBoxShotFlag1.Text = "Shelled";
-            this.checkBoxShotFlag1.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotFlag5
-            // 
-            this.checkBoxShotFlag5.AutoSize = true;
-            this.checkBoxShotFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag5.Location = new System.Drawing.Point(27, 63);
-            this.checkBoxShotFlag5.Name = "checkBoxShotFlag5";
-            this.checkBoxShotFlag5.Size = new System.Drawing.Size(75, 19);
-            this.checkBoxShotFlag5.TabIndex = 49;
-            this.checkBoxShotFlag5.Text = "Reflected";
-            this.checkBoxShotFlag5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotFlag2
-            // 
-            this.checkBoxShotFlag2.AutoSize = true;
-            this.checkBoxShotFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag2.Location = new System.Drawing.Point(135, 38);
-            this.checkBoxShotFlag2.Name = "checkBoxShotFlag2";
-            this.checkBoxShotFlag2.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotFlag2.TabIndex = 46;
-            this.checkBoxShotFlag2.Text = "???";
-            this.checkBoxShotFlag2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxShotFlag7
-            // 
-            this.checkBoxShotFlag7.AutoSize = true;
-            this.checkBoxShotFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShotFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag7.Location = new System.Drawing.Point(220, 63);
-            this.checkBoxShotFlag7.Name = "checkBoxShotFlag7";
-            this.checkBoxShotFlag7.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxShotFlag7.TabIndex = 51;
-            this.checkBoxShotFlag7.Text = "???";
-            this.checkBoxShotFlag7.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxShotGeneral
-            // 
-            this.groupBoxShotGeneral.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxShotGeneral.Controls.Add(this.label5);
-            this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotElement);
-            this.groupBoxShotGeneral.Controls.Add(this.labelShotElement);
-            this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotItem);
-            this.groupBoxShotGeneral.Controls.Add(this.labelShotItem);
-            this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotAttackType);
-            this.groupBoxShotGeneral.Controls.Add(this.labelShotAttackType);
-            this.groupBoxShotGeneral.Controls.Add(this.numericUpDownShotElementPerc);
-            this.groupBoxShotGeneral.Controls.Add(this.numericUpDownShotHitCount);
-            this.groupBoxShotGeneral.Controls.Add(this.numericUpDownShotAttackPower);
-            this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotMagicID);
-            this.groupBoxShotGeneral.Controls.Add(this.labelShotHitCount);
-            this.groupBoxShotGeneral.Controls.Add(this.labelShotAttackPower);
-            this.groupBoxShotGeneral.Controls.Add(this.labelShotMagicID);
-            this.groupBoxShotGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxShotGeneral.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBoxShotGeneral.Location = new System.Drawing.Point(114, 6);
-            this.groupBoxShotGeneral.Name = "groupBoxShotGeneral";
-            this.groupBoxShotGeneral.Size = new System.Drawing.Size(465, 204);
-            this.groupBoxShotGeneral.TabIndex = 108;
-            this.groupBoxShotGeneral.TabStop = false;
-            this.groupBoxShotGeneral.Text = "General";
-            // 
-            // comboBoxShotAttackType
-            // 
-            this.comboBoxShotAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxShotAttackType.FormattingEnabled = true;
-            this.comboBoxShotAttackType.Items.AddRange(new object[] {
-            "None",
-            "Basic Attack",
-            "Magic Attack",
-            "Curative Magic",
-            "Curative Item",
-            "Revive",
-            "Revive At Full HP",
-            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
-            "Demi",
-            "Renzokuken Finisher",
-            "Squall Gunblade Attack",
-            "GF",
-            "Scan",
-            "LV Down",
-            "Summon Item?",
-            "Ignore SPR",
-            "LV Up",
-            "Card",
-            "Kamikaze",
-            "Devour",
-            "Diablos Gravity Attack",
-            "",
-            "Mega Spark/Mega Flare",
-            "Angelo Search",
-            "Moogle Dance",
-            "White Wind (Quistis)",
-            "LV5 Death/LV? Death",
-            "Fixed Damage",
-            "Corona/Hell\'s Judgement",
-            "Cactuar Summon",
-            "",
-            "",
-            "Give Percentage HP",
-            "",
-            "Everyone\'s Grudge",
-            "Excalipoor",
-            "Terra Break/Great Attractor"});
-            this.comboBoxShotAttackType.Location = new System.Drawing.Point(29, 103);
-            this.comboBoxShotAttackType.Name = "comboBoxShotAttackType";
-            this.comboBoxShotAttackType.Size = new System.Drawing.Size(265, 25);
-            this.comboBoxShotAttackType.TabIndex = 8;
-            // 
-            // labelShotAttackType
-            // 
-            this.labelShotAttackType.AutoSize = true;
-            this.labelShotAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelShotAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotAttackType.Location = new System.Drawing.Point(120, 83);
-            this.labelShotAttackType.Name = "labelShotAttackType";
-            this.labelShotAttackType.Size = new System.Drawing.Size(79, 17);
-            this.labelShotAttackType.TabIndex = 7;
-            this.labelShotAttackType.Text = "Attack Type";
-            this.toolTip1.SetToolTip(this.labelShotAttackType, "Decides what animation to play");
-            // 
-            // numericUpDownShotHitCount
-            // 
-            this.numericUpDownShotHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotHitCount.Location = new System.Drawing.Point(365, 104);
-            this.numericUpDownShotHitCount.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownShotHitCount.Name = "numericUpDownShotHitCount";
-            this.numericUpDownShotHitCount.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownShotHitCount.TabIndex = 6;
-            // 
-            // numericUpDownShotAttackPower
-            // 
-            this.numericUpDownShotAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotAttackPower.Location = new System.Drawing.Point(365, 49);
-            this.numericUpDownShotAttackPower.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownShotAttackPower.Name = "numericUpDownShotAttackPower";
-            this.numericUpDownShotAttackPower.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownShotAttackPower.TabIndex = 3;
-            // 
-            // comboBoxShotMagicID
-            // 
-            this.comboBoxShotMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxShotMagicID.FormattingEnabled = true;
-            this.comboBoxShotMagicID.Items.AddRange(new object[] {
-            "None",
-            "Cure",
-            "Fire",
-            "Thunder",
-            "Double",
-            "Phoenix Down",
-            "Leviathan Summon (Tsunami)",
-            "Mega Phoenix",
-            "Doom",
-            "Doom Activation",
-            "Ray-Bomb",
-            "Storm Breath",
-            "Blade Shot",
-            "Dark Mist/Poison Mist",
-            "Death/Death Stone",
-            "Draw",
-            "Recover",
-            "Elvoret Entrance",
-            "Elvoret Death",
-            "",
-            "NORG Pod Opening",
-            "Triple",
-            "Bio",
-            "Psycho Blast",
-            "Esuna",
-            "Cura",
-            "Clash",
-            "Full-Life",
-            "Curaga",
-            "Wind Blast",
-            "Counter Laser-Eye",
-            "Heartbreak",
-            "Protect",
-            "Shell",
-            "Pain",
-            "Life",
-            "Confuse",
-            "Drink Magic",
-            "Quake",
-            "Drain",
-            "Scan",
-            "Dribble",
-            "Shoot",
-            "Melting Bubble",
-            "Junk",
-            "Stare",
-            "Sigh",
-            "Curse",
-            "Magma Breath",
-            "Resonance",
-            "Potion/Potion+",
-            "Hi-Potion/Hi-Potion+",
-            "X-Potion",
-            "Mega-Potion",
-            "Everyone\'s Grudge",
-            "Aqua Breath",
-            "Absorb",
-            "Treatment",
-            "Elixir",
-            "Megalixir",
-            "",
-            "Revive",
-            "Devour",
-            "",
-            "Griever Tail Falling Off",
-            "Great Attractor",
-            "Griever + Ultimecia Death",
-            "Remedy/Remedy+",
-            "",
-            "Griever Summon",
-            "Shockwave Pulsar",
-            "Laser Eye (Quistis)",
-            "Aqua Breath (Quistis)",
-            "Mighty Guard (Quistis)",
-            "LV?Death (Quistis)",
-            "Hell\'s Judgement",
-            "Ultimecia Final Form Spawn",
-            "Ultimecia Final Form Death",
-            "Mighty Guard",
-            "Griever Death",
-            "Ultimecia Junctioning to Griever",
-            "",
-            "Ultimecia Blow Away Magic",
-            "Absorbed into time...",
-            "Angel Wing",
-            "The End",
-            "Angelo Cannon",
-            "Angelo Strike",
-            "Invincible Moon",
-            "Wishing Star",
-            "Tonberry Summon (Chef\'s Knife)",
-            "Angelo Rush",
-            "Angelo Search",
-            "Angelo Recover",
-            "Angelo Reverse",
-            "Siren Summon (Silent Voice)",
-            "Moogle Dance",
-            "ChocoFire",
-            "ChocoFlare",
-            "ChocoMeteor",
-            "ChocoBocle",
-            "",
-            "Thundara",
-            "Blizzara",
-            "Blizzaga",
-            "Thundaga",
-            "Reflect",
-            "Demi",
-            "Berserk",
-            "Dispel",
-            "Biggs + Wedge 1st Death",
-            "Aura",
-            "",
-            "Bad Breath",
-            "Zombie",
-            "Float",
-            "Quezacotl Summon (Thunder Storm)",
-            "Break",
-            "Aero",
-            "Stop",
-            "Petrify Stare",
-            "Blind",
-            "Silence",
-            "Slow",
-            "Flare",
-            "Haste",
-            "Electric Discharge",
-            "Petrify Stare",
-            "Gastric Juice",
-            "Breath",
-            "Eerie Sound Wave",
-            "Bad Breath",
-            "Disolving Acid",
-            "Hypnotize",
-            "Beam Laser",
-            "Reflect Beam",
-            "Oil Shot",
-            "Oil Blast",
-            "Saliva",
-            "Sonic Wave",
-            "Phoenix Pinion (Rebirth Flame)",
-            "Renzokuken - 5 Hits",
-            "Fira",
-            "Firaga",
-            "Blizzard",
-            "Sleep",
-            "Tornado",
-            "Regen",
-            "Meltdown",
-            "Ultima",
-            "Gatling Gun",
-            "Cannon Blow",
-            "Ultrasonic Waves",
-            "Sticky Web",
-            "Ultra Waves",
-            "Sand Storm",
-            "Wild Cannon Blow",
-            "Breath",
-            "Melt-Eye",
-            "Renzokuken (vs X-ATM092)",
-            "Renzokuken - 4 Hits",
-            "Renzokuken (vs Elnoyle/Elvoret)",
-            "Fated Circle",
-            "Rough Divide",
-            "Blasting Zone",
-            "Lion Heart",
-            "Megido Flame",
-            "Zantetsuken",
-            "Sleeping Gas",
-            "Gastric Juice",
-            "Acid",
-            "Poison Gas",
-            "Morph",
-            "Ice Breath",
-            "Degenerator",
-            "Holy",
-            "Sand Storm",
-            "1,000 Needles",
-            "10,000 Needles",
-            "",
-            "Suicide",
-            "Kamikaze",
-            "Card",
-            "Defend",
-            "Ultra Waves (Quistis)",
-            "Shiva Summon (Diamond Dust)",
-            "Blaster",
-            "Odin Summon (Zantetsuken)",
-            "Shot - Normal Shot",
-            "Wall",
-            "Chain Gun",
-            "Doomtrain Summon (Runaway Train)",
-            "Shot - Scatter Shot",
-            "Shot - Dark Shot",
-            "Shot - Flame Shot",
-            "Shot - Canister Shot",
-            "Shot - Quick Shot",
-            "Shot - Armor Shot",
-            "Shot - Hyper Shot",
-            "Cactuar Summon (1,000 Needles)",
-            "No Mercy",
-            "Ifrit Summon (Hell Fire)",
-            "Bahamut Summon (Mega Flare)",
-            "Cerberus Summon (Counter Rockets)",
-            "Alexander Summon (Holy Judgment)",
-            "Brothers Summon (Brotherly Love)",
-            "Eden Summon (Eternal Breath)",
-            "Maelstrom",
-            "Final \"Sorceress\" Death",
-            "\"Sorceress\" Spawn",
-            "Bloodfest",
-            "Adel Death",
-            "",
-            "Storm Breath",
-            "Gravija",
-            "",
-            "",
-            "Energy Bomber",
-            "",
-            "Terra Break",
-            "Light Pillar",
-            "Apocalypse",
-            "Water",
-            "Meteor",
-            "",
-            "",
-            "White Wind",
-            "Ultimecia First Death",
-            "Ice Strike",
-            "Homing Laser (Quistis)",
-            "Fire Breath (Quistis)",
-            "Disease Breath",
-            "Breath of Death",
-            "Earthquake",
-            "Fart",
-            "Breath",
-            "Gas",
-            "Explosion",
-            "Breath",
-            "Ochu Dance",
-            "Earthquake",
-            "BGH251F2 Gatling Gun",
-            "Beam Cannon",
-            "BGH251F2 1st Turret Exploding",
-            "BGH251F2 2nd Turret Exploding",
-            "BGH251F2 3rd Turret Exploding",
-            "BGH251F2 4th Turret Exploding",
-            "BGH251F2 Death",
-            "Soldier Entrance After BGH251F2 Death",
-            "",
-            "Beam Cannon",
-            "Demon Slice",
-            "Corona",
-            "Twin Homing Laser",
-            "Homing Laser",
-            "Homing Laser",
-            "Sand Shake",
-            "Mega Flare",
-            "Mad Cow Special",
-            "Renzokuken - 6 Hits",
-            "Shockwave Pulsar (Quistis)",
-            "Desperado",
-            "Blood Pain",
-            "Massive Anchor",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "Ultima Weapon Death",
-            "LV Up",
-            "LV Down",
-            "Mad Rush",
-            "Duel",
-            "Electrocute (Quistis)",
-            "",
-            "",
-            "Carbuncle Summon (Ruby Light)",
-            "Mega Spark",
-            "Full Cure",
-            "Shotgun",
-            "Evil-Eye",
-            "Magic Summon",
-            "Micro Missiles",
-            "Thunder Summon",
-            "Mini Pulse Cannon",
-            "Mega Pulse Cannon",
-            "Rapture",
-            "\"Brrawghh!\"",
-            "",
-            "Pandemona Summon (Tornado Zone)",
-            "Soft",
-            "Eye Drops",
-            "Antidote",
-            "Echo Screen",
-            "Holy Water",
-            "White Wind (Quistis)",
-            "",
-            "Micro Missiles (Quistis)",
-            "Bad Breath (Quistis)",
-            "",
-            "Snipe Laser",
-            "",
-            "Boomerang Sword",
-            "Gatling Gun (Quistis)",
-            "Degenerator (Quistis)",
-            "Ray-Bomb (Quistis)",
-            "",
-            "Hero-trial/Hero",
-            "Holy War-trial/Holy War",
-            "",
-            "",
-            "",
-            "",
-            "Fake President Death",
-            "",
-            "Acid (Quistis)",
-            "",
-            "",
-            "Dark Flare",
-            "Ker Plunk",
-            "Zan",
-            "Metsu",
-            "Tonberry King Death",
-            "Diablos Summon (Dark Messenger)",
-            "Zantetsuken Reverse",
-            "Gilgamesh - Zantetsuken",
-            "Gilgamesh - Masamune",
-            "Gilgamesh - Excaliber",
-            "Gilgamesh - Excalipoor",
-            "",
-            "Renzokuken - 7 Hits",
-            "Renzokuken - 8 Hits",
-            "Renzokuken (vs Bahamut)",
-            "Renzokuken (vs NORG)",
-            "Renzokuken (vs Ultima Weapon)",
-            "Renzokuken (vs Final \"Sorceress\")",
-            "Friendship (MoombaMoomba)",
-            "Renzokuken (vs Adel)",
-            "Renzokuken (vs Ultimecia Final Form)",
-            "Renzokuken (vs Jumbo Cactuar)",
-            "Renzokuken (vs Griever + Ultimecia)",
-            "Renzokuken (vs Griever)",
-            "Final Battle Music",
-            "LV5 Death"});
-            this.comboBoxShotMagicID.Location = new System.Drawing.Point(29, 49);
-            this.comboBoxShotMagicID.Name = "comboBoxShotMagicID";
-            this.comboBoxShotMagicID.Size = new System.Drawing.Size(265, 25);
-            this.comboBoxShotMagicID.TabIndex = 2;
-            // 
-            // labelShotHitCount
-            // 
-            this.labelShotHitCount.AutoSize = true;
-            this.labelShotHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelShotHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotHitCount.Location = new System.Drawing.Point(355, 84);
-            this.labelShotHitCount.Name = "labelShotHitCount";
-            this.labelShotHitCount.Size = new System.Drawing.Size(67, 17);
-            this.labelShotHitCount.TabIndex = 0;
-            this.labelShotHitCount.Text = "Hit Count";
-            this.toolTip1.SetToolTip(this.labelShotHitCount, "Number of hits");
-            // 
-            // labelShotAttackPower
-            // 
-            this.labelShotAttackPower.AutoSize = true;
-            this.labelShotAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelShotAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotAttackPower.Location = new System.Drawing.Point(343, 29);
-            this.labelShotAttackPower.Name = "labelShotAttackPower";
-            this.labelShotAttackPower.Size = new System.Drawing.Size(89, 17);
-            this.labelShotAttackPower.TabIndex = 0;
-            this.labelShotAttackPower.Text = "Attack Power";
-            this.toolTip1.SetToolTip(this.labelShotAttackPower, "Used in damage calculation");
-            // 
-            // labelShotMagicID
-            // 
-            this.labelShotMagicID.AutoSize = true;
-            this.labelShotMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelShotMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotMagicID.Location = new System.Drawing.Point(131, 29);
-            this.labelShotMagicID.Name = "labelShotMagicID";
-            this.labelShotMagicID.Size = new System.Drawing.Size(61, 17);
-            this.labelShotMagicID.TabIndex = 0;
-            this.labelShotMagicID.Text = "Magic ID";
-            this.toolTip1.SetToolTip(this.labelShotMagicID, "Decides what animation to play");
-            // 
-            // listBoxShot
-            // 
-            this.listBoxShot.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxShot.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxShot.FormattingEnabled = true;
-            this.listBoxShot.ItemHeight = 17;
-            this.listBoxShot.Items.AddRange(new object[] {
-            "Normal Shot",
-            "Scatter Shot",
-            "Dark Shot",
-            "Flame Shot",
-            "Canister Shot",
-            "Quick Shot",
-            "Armor Shot",
-            "Hyper Shot"});
-            this.listBoxShot.Location = new System.Drawing.Point(0, 0);
-            this.listBoxShot.Name = "listBoxShot";
-            this.listBoxShot.ScrollAlwaysVisible = true;
-            this.listBoxShot.Size = new System.Drawing.Size(109, 735);
-            this.listBoxShot.TabIndex = 107;
-            this.listBoxShot.SelectedIndexChanged += new System.EventHandler(this.listBoxShot_SelectedIndexChanged);
-            // 
-            // comboBoxShotItem
-            // 
-            this.comboBoxShotItem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxShotItem.FormattingEnabled = true;
-            this.comboBoxShotItem.Items.AddRange(new object[] {
-            "None",
-            "Potion",
-            "Potion+",
-            "Hi-Potion",
-            "Hi-Potion+",
-            "X-Potion",
-            "Mega-Potion",
-            "Phoenix Down",
-            "Mega Phoenix",
-            "Elixir",
-            "Megalixir",
-            "Antidote",
-            "Soft",
-            "Eye Drops",
-            "Echo Screen",
-            "Holy Water",
-            "Remedy",
-            "Remedy+",
-            "Hero-Trial",
-            "Hero",
-            "Holy War-Trial",
-            "Holy War",
-            "Shell Stone",
-            "Protect Stone",
-            "Aura Stone",
-            "Death Stone",
-            "Holy Stone",
-            "Flare Stone",
-            "Meteor Stone",
-            "Ultima Stone",
-            "Gysahl Greens",
-            "Phoenix Pinion",
-            "Friendship",
-            "Tent",
-            "Pet House",
-            "Cottage",
-            "G-Potion",
-            "G-Hi-Potion",
-            "G-Mega-Potion",
-            "G-Returner",
-            "Rename Card",
-            "Amnesia Greens",
-            "HP-J Scroll",
-            "Str-J Scroll",
-            "Vit-J Scroll",
-            "Mag-J Scroll",
-            "Spr-J Scroll",
-            "Spd-J Scroll",
-            "Luck-J Scroll",
-            "Aegis Amulet",
-            "Elem Atk",
-            "Elem Guard",
-            "Status Atk",
-            "Status Guard",
-            "Rosetta Stone",
-            "Magic Scroll",
-            "GF Scroll",
-            "Draw Scroll",
-            "Item Scroll",
-            "Gambler Spirit",
-            "Healing Ring",
-            "Phoenix Spirit",
-            "Med Kit",
-            "Bomb Spirit",
-            "Hungry Cookpot",
-            "Mog\'s Amulet",
-            "Steel Pipe",
-            "Star Fragment",
-            "Energy Crystal",
-            "Samantha Soul",
-            "Healing Mail",
-            "Silver Mail",
-            "Gold Armor",
-            "Diamod Armor",
-            "Regen Ring",
-            "Giant\'s Ring",
-            "Gaea\'s Ring",
-            "Strength Love",
-            "Power Wrist",
-            "Hyper Wrist",
-            "Turtle Shell",
-            "Orihalcon",
-            "Adamantine",
-            "Rune Armlet",
-            "Force Armlet",
-            "Magic Armlet",
-            "Circlet",
-            "Hypno Crown",
-            "Royal Crown",
-            "Jet Engine",
-            "Rocket Engine",
-            "Moon Curtain",
-            "Steel Curtain",
-            "Glow Curtain",
-            "Accelerator",
-            "Monk\'s Code",
-            "Knight\'s Code",
-            "Doc\'s Code",
-            "Hundred Needles",
-            "Three Stars",
-            "Ribbon",
-            "Normal Ammo",
-            "Shotgun Ammo",
-            "Dark Ammo",
-            "Fire Ammo",
-            "Demolition Ammo",
-            "Fast Ammo",
-            "AP Ammo",
-            "Pulse Ammo",
-            "M-Stone Piece",
-            "Magic Stone",
-            "Wizard Stone",
-            "Ochu Tentacle",
-            "Healing Water",
-            "Cockatrice Pinion",
-            "Zombie Powder",
-            "Lightweight",
-            "Sharp Spike",
-            "Screw",
-            "Saw Blade",
-            "Mesmerize Blade",
-            "Vampire Fang",
-            "Fury Fragment",
-            "Betrayal Sword",
-            "Sleep Powder",
-            "Life Ring",
-            "Dragon Fang",
-            "Spider Web",
-            "Coral Fragment",
-            "Curse Spike",
-            "Black Hole",
-            "Water Crystal",
-            "Missile",
-            "Mystery Fluid",
-            "Running Fire",
-            "Inferno Fang",
-            "Malboro Tentacle",
-            "Whisper",
-            "Laser Cannon",
-            "Barrier",
-            "Power Generator",
-            "Dark Matter",
-            "Bomb Fragment",
-            "Red Fang",
-            "Arctic Wind",
-            "North Wind",
-            "Shear Feather",
-            "Dynamo Stone",
-            "Venom Fang",
-            "Steel Orb",
-            "Moon Stone",
-            "Dino Bone",
-            "Windmill",
-            "Dragon Skin",
-            "Fish Fin",
-            "Dragon Fin",
-            "Silence Powder",
-            "Poison Powder",
-            "Dead Spirit",
-            "Chef\'s Knife",
-            "Cactus Thorn",
-            "Shaman Stone",
-            "Fuel",
-            "Girl Next Door",
-            "Sorceress\' Letter",
-            "Chocobo\'s Tag",
-            "Pet Nametag",
-            "Solomon Ring",
-            "Magical Lamp",
-            "Hp Up",
-            "Str Up",
-            "Vit Up",
-            "Mag Up",
-            "Spr Up",
-            "Spd Up",
-            "Luck Up",
-            "LuvLuv G",
-            "Weapons Mon 1st",
-            "Weapons Mon Mar",
-            "Weapons Mon Apr",
-            "Weapons Mon May",
-            "Weapons Mon Jun",
-            "Weapons Mon Jul",
-            "Weapons Mon Aug",
-            "Combat King 001",
-            "Combat King 002",
-            "Combat King 003",
-            "Combat King 004",
-            "Combat King 005",
-            "Pet Pals Vol.1",
-            "Pet Pals Vol.2",
-            "Pet Pals Vol.3",
-            "Pet Pals Vol.4",
-            "Pet Pals Vol.5",
-            "Pet Pals Vol.6",
-            "Occult Fan I",
-            "Occult Fan II",
-            "Occult Fan III",
-            "Occult Fan IV"});
-            this.comboBoxShotItem.Location = new System.Drawing.Point(266, 160);
-            this.comboBoxShotItem.Name = "comboBoxShotItem";
-            this.comboBoxShotItem.Size = new System.Drawing.Size(146, 25);
-            this.comboBoxShotItem.TabIndex = 11;
-            // 
-            // labelShotItem
-            // 
-            this.labelShotItem.AutoSize = true;
-            this.labelShotItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelShotItem.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotItem.Location = new System.Drawing.Point(304, 140);
-            this.labelShotItem.Name = "labelShotItem";
-            this.labelShotItem.Size = new System.Drawing.Size(70, 17);
-            this.labelShotItem.TabIndex = 12;
-            this.labelShotItem.Text = "Item Used";
-            // 
-            // comboBoxShotElement
-            // 
-            this.comboBoxShotElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxShotElement.FormattingEnabled = true;
-            this.comboBoxShotElement.Items.AddRange(new object[] {
+            // labelRenzoFinElementPerc
+            // 
+            this.labelRenzoFinElementPerc.AutoSize = true;
+            this.labelRenzoFinElementPerc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelRenzoFinElementPerc.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelRenzoFinElementPerc.Location = new System.Drawing.Point(280, 140);
+            this.labelRenzoFinElementPerc.Name = "labelRenzoFinElementPerc";
+            this.labelRenzoFinElementPerc.Size = new System.Drawing.Size(19, 17);
+            this.labelRenzoFinElementPerc.TabIndex = 94;
+            this.labelRenzoFinElementPerc.Text = "%";
+            // 
+            // comboBoxRenzoFinElement
+            // 
+            this.comboBoxRenzoFinElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxRenzoFinElement.FormattingEnabled = true;
+            this.comboBoxRenzoFinElement.Items.AddRange(new object[] {
             "Fire",
             "Ice",
             "Thunder",
@@ -26678,47 +26762,90 @@
             "Water",
             "Holy",
             "Non-Elemental"});
-            this.comboBoxShotElement.Location = new System.Drawing.Point(29, 160);
-            this.comboBoxShotElement.Name = "comboBoxShotElement";
-            this.comboBoxShotElement.Size = new System.Drawing.Size(110, 25);
-            this.comboBoxShotElement.TabIndex = 90;
-            this.comboBoxShotElement.SelectedIndexChanged += new System.EventHandler(this.comboBoxShotElement_SelectedIndexChanged);
+            this.comboBoxRenzoFinElement.Location = new System.Drawing.Point(151, 160);
+            this.comboBoxRenzoFinElement.Name = "comboBoxRenzoFinElement";
+            this.comboBoxRenzoFinElement.Size = new System.Drawing.Size(110, 25);
+            this.comboBoxRenzoFinElement.TabIndex = 93;
             // 
-            // labelShotElement
+            // labelRenzoFinElement
             // 
-            this.labelShotElement.AutoSize = true;
-            this.labelShotElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelShotElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotElement.Location = new System.Drawing.Point(56, 140);
-            this.labelShotElement.Name = "labelShotElement";
-            this.labelShotElement.Size = new System.Drawing.Size(57, 17);
-            this.labelShotElement.TabIndex = 91;
-            this.labelShotElement.Text = "Element";
-            this.toolTip1.SetToolTip(this.labelShotElement, "The element of the GF attack");
+            this.labelRenzoFinElement.AutoSize = true;
+            this.labelRenzoFinElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelRenzoFinElement.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelRenzoFinElement.Location = new System.Drawing.Point(178, 140);
+            this.labelRenzoFinElement.Name = "labelRenzoFinElement";
+            this.labelRenzoFinElement.Size = new System.Drawing.Size(57, 17);
+            this.labelRenzoFinElement.TabIndex = 95;
+            this.labelRenzoFinElement.Text = "Element";
+            this.toolTip1.SetToolTip(this.labelRenzoFinElement, "The element of the GF attack");
             // 
-            // label5
+            // numericUpDownRenzoFinElementPerc
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.label5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label5.Location = new System.Drawing.Point(158, 140);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 17);
-            this.label5.TabIndex = 91;
-            this.label5.Text = "%";
-            // 
-            // numericUpDownShotElementPerc
-            // 
-            this.numericUpDownShotElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotElementPerc.Location = new System.Drawing.Point(145, 160);
-            this.numericUpDownShotElementPerc.Maximum = new decimal(new int[] {
+            this.numericUpDownRenzoFinElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownRenzoFinElementPerc.Location = new System.Drawing.Point(267, 160);
+            this.numericUpDownRenzoFinElementPerc.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownShotElementPerc.Name = "numericUpDownShotElementPerc";
-            this.numericUpDownShotElementPerc.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownShotElementPerc.TabIndex = 6;
+            this.numericUpDownRenzoFinElementPerc.Name = "numericUpDownRenzoFinElementPerc";
+            this.numericUpDownRenzoFinElementPerc.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownRenzoFinElementPerc.TabIndex = 92;
+            // 
+            // labelTempCharLBElementPerc
+            // 
+            this.labelTempCharLBElementPerc.AutoSize = true;
+            this.labelTempCharLBElementPerc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelTempCharLBElementPerc.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelTempCharLBElementPerc.Location = new System.Drawing.Point(276, 140);
+            this.labelTempCharLBElementPerc.Name = "labelTempCharLBElementPerc";
+            this.labelTempCharLBElementPerc.Size = new System.Drawing.Size(19, 17);
+            this.labelTempCharLBElementPerc.TabIndex = 98;
+            this.labelTempCharLBElementPerc.Text = "%";
+            // 
+            // comboBoxTempCharLBElement
+            // 
+            this.comboBoxTempCharLBElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTempCharLBElement.FormattingEnabled = true;
+            this.comboBoxTempCharLBElement.Items.AddRange(new object[] {
+            "Fire",
+            "Ice",
+            "Thunder",
+            "Earth",
+            "Poison",
+            "Wind",
+            "Water",
+            "Holy",
+            "Non-Elemental"});
+            this.comboBoxTempCharLBElement.Location = new System.Drawing.Point(147, 160);
+            this.comboBoxTempCharLBElement.Name = "comboBoxTempCharLBElement";
+            this.comboBoxTempCharLBElement.Size = new System.Drawing.Size(110, 25);
+            this.comboBoxTempCharLBElement.TabIndex = 97;
+            // 
+            // labelTempCharLBElement
+            // 
+            this.labelTempCharLBElement.AutoSize = true;
+            this.labelTempCharLBElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelTempCharLBElement.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelTempCharLBElement.Location = new System.Drawing.Point(174, 140);
+            this.labelTempCharLBElement.Name = "labelTempCharLBElement";
+            this.labelTempCharLBElement.Size = new System.Drawing.Size(57, 17);
+            this.labelTempCharLBElement.TabIndex = 99;
+            this.labelTempCharLBElement.Text = "Element";
+            this.toolTip1.SetToolTip(this.labelTempCharLBElement, "The element of the GF attack");
+            // 
+            // numericUpDownTempCharLBElementPerc
+            // 
+            this.numericUpDownTempCharLBElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownTempCharLBElementPerc.Location = new System.Drawing.Point(263, 160);
+            this.numericUpDownTempCharLBElementPerc.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownTempCharLBElementPerc.Name = "numericUpDownTempCharLBElementPerc";
+            this.numericUpDownTempCharLBElementPerc.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownTempCharLBElementPerc.TabIndex = 96;
             // 
             // mainForm
             // 
@@ -26950,6 +27077,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharHP1)).EndInit();
             this.tabControlMain.ResumeLayout(false);
             this.tabPageRenzokukenFinishers.ResumeLayout(false);
+            this.groupBoxRenzoFinStatusAttack.ResumeLayout(false);
+            this.groupBoxRenzoFinStatusAttack.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinStatusAttack)).EndInit();
             this.groupBoxRenzoFinTargetInfo.ResumeLayout(false);
             this.groupBoxRenzoFinTargetInfo.PerformLayout();
             this.groupBoxRenzoFinFlags.ResumeLayout(false);
@@ -26958,6 +27088,19 @@
             this.groupBoxRenzoFinGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinAttackPower)).EndInit();
+            this.tabPageShot.ResumeLayout(false);
+            this.groupBoxShotStatusAttack.ResumeLayout(false);
+            this.groupBoxShotStatusAttack.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotStatusAttack)).EndInit();
+            this.groupBoxShotTargetInfo.ResumeLayout(false);
+            this.groupBoxShotTargetInfo.PerformLayout();
+            this.groupBoxShotAttackFlags.ResumeLayout(false);
+            this.groupBoxShotAttackFlags.PerformLayout();
+            this.groupBoxShotGeneral.ResumeLayout(false);
+            this.groupBoxShotGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).EndInit();
             this.tabSlots.ResumeLayout(false);
             this.groupBoxSlotSets.ResumeLayout(false);
             this.groupBoxSlotSets.PerformLayout();
@@ -27032,6 +27175,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray49)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray50)).EndInit();
             this.tabPageTempCharLB.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBStatusAttack)).EndInit();
             this.groupBoxTempCharLBTarget.ResumeLayout(false);
             this.groupBoxTempCharLBTarget.PerformLayout();
             this.groupBoxTempCharLBFlags.ResumeLayout(false);
@@ -27051,25 +27197,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackPower)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.tabPageShot.ResumeLayout(false);
-            this.groupBoxRenzoFinStatusAttack.ResumeLayout(false);
-            this.groupBoxRenzoFinStatusAttack.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            this.groupBoxShotStatusAttack.ResumeLayout(false);
-            this.groupBoxShotStatusAttack.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotStatusAttack)).EndInit();
-            this.groupBoxShotTargetInfo.ResumeLayout(false);
-            this.groupBoxShotTargetInfo.PerformLayout();
-            this.groupBoxShotAttackFlags.ResumeLayout(false);
-            this.groupBoxShotAttackFlags.PerformLayout();
-            this.groupBoxShotGeneral.ResumeLayout(false);
-            this.groupBoxShotGeneral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinElementPerc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBElementPerc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -27701,7 +27830,7 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.CheckBox checkBoxMagicSummonGF;
-        private System.Windows.Forms.CheckBox checkBoxMagicPlayerChar;
+        private System.Windows.Forms.CheckBox checkBoxMagicHasMagic;
         private System.Windows.Forms.CheckBox checkBoxMagicUnk6;
         private System.Windows.Forms.CheckBox checkBoxMagicUnk5;
         private System.Windows.Forms.CheckBox checkBoxMagicUnk4;
@@ -27728,7 +27857,7 @@
         private System.Windows.Forms.CheckBox checkBoxGFAura;
         private System.Windows.Forms.CheckBox checkBoxGFDrain;
         private System.Windows.Forms.CheckBox checkBoxGFSummonGF;
-        private System.Windows.Forms.CheckBox checkBoxGFPlayerChar;
+        private System.Windows.Forms.CheckBox checkBoxGFHasMagic;
         private System.Windows.Forms.CheckBox checkBoxGFUnk6;
         private System.Windows.Forms.CheckBox checkBoxGFUnk5;
         private System.Windows.Forms.CheckBox checkBoxGFUnk4;
@@ -27768,7 +27897,7 @@
         private System.Windows.Forms.CheckBox checkBoxGFAttacksAura;
         private System.Windows.Forms.CheckBox checkBoxGFAttacksDrain;
         private System.Windows.Forms.CheckBox checkBoxGFAttacksSummonGF;
-        private System.Windows.Forms.CheckBox checkBoxGFAttacksPlayerChar;
+        private System.Windows.Forms.CheckBox checkBoxGFAttacksHasMagic;
         private System.Windows.Forms.CheckBox checkBoxGFAttacksUnk6;
         private System.Windows.Forms.CheckBox checkBoxGFAttacksUnk5;
         private System.Windows.Forms.CheckBox checkBoxGFAttacksUnk4;
@@ -27808,7 +27937,7 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Aura;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Drain;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1SummonGF;
-        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1PlayerChar;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1HasMagic;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Unk6;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Unk5;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Unk4;
@@ -27849,7 +27978,7 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3Aura;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3Drain;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3SummonGF;
-        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3PlayerChar;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3HasMagic;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3Unk6;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3Unk5;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3Unk4;
@@ -27895,7 +28024,7 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4Aura;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4Drain;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4SummonGF;
-        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4PlayerChar;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4HasMagic;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4Unk6;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4Unk5;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4Unk4;
@@ -27951,7 +28080,7 @@
         private System.Windows.Forms.CheckBox checkBoxEnemyAttacksAura;
         private System.Windows.Forms.CheckBox checkBoxEnemyAttacksDrain;
         private System.Windows.Forms.CheckBox checkBoxEnemyAttacksSummonGF;
-        private System.Windows.Forms.CheckBox checkBoxEnemyAttacksPlayerChar;
+        private System.Windows.Forms.CheckBox checkBoxEnemyAttacksHasMagic;
         private System.Windows.Forms.CheckBox checkBoxEnemyAttacksUnk6;
         private System.Windows.Forms.CheckBox checkBoxEnemyAttacksUnk5;
         private System.Windows.Forms.CheckBox checkBoxEnemyAttacksUnk4;
@@ -28004,7 +28133,7 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Aura;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Drain;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2SummonGF;
-        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2PlayerChar;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2HasMagic;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Unk6;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Unk5;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Unk4;
@@ -28106,48 +28235,48 @@
         private System.Windows.Forms.CheckBox checkBoxWeaponsRenzoFinFated;
         private System.Windows.Forms.CheckBox checkBoxWeaponsRenzoFinRough;
         private System.Windows.Forms.GroupBox groupBoxRenzoFinStatusAttack;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.CheckBox checkBox19;
-        private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.CheckBox checkBox21;
-        private System.Windows.Forms.CheckBox checkBox22;
-        private System.Windows.Forms.CheckBox checkBox23;
-        private System.Windows.Forms.CheckBox checkBox24;
-        private System.Windows.Forms.CheckBox checkBox25;
-        private System.Windows.Forms.CheckBox checkBox26;
-        private System.Windows.Forms.CheckBox checkBox27;
-        private System.Windows.Forms.CheckBox checkBox28;
-        private System.Windows.Forms.CheckBox checkBox29;
-        private System.Windows.Forms.CheckBox checkBox30;
-        private System.Windows.Forms.CheckBox checkBox31;
-        private System.Windows.Forms.CheckBox checkBox32;
-        private System.Windows.Forms.CheckBox checkBox33;
-        private System.Windows.Forms.CheckBox checkBox34;
-        private System.Windows.Forms.CheckBox checkBox35;
-        private System.Windows.Forms.CheckBox checkBox36;
-        private System.Windows.Forms.CheckBox checkBox37;
-        private System.Windows.Forms.CheckBox checkBox38;
-        private System.Windows.Forms.CheckBox checkBox39;
-        private System.Windows.Forms.CheckBox checkBox40;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinPetrifying;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinDarkness;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinSilence;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinStop;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinConfusion;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinPetrify;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinSlow;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinBerserk;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinSleep;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinInvincible;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinCurse;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinDoom;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinFloat;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinAura;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinDrain;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinSummonGF;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinHasMagic;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinUnk6;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinUnk5;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinUnk4;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinUnk3;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinAngelWing;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinVit0;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinBackAttack;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinCharged;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinUnk2;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinUnk1;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinDefend;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinTriple;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinDouble;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinEject;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinPoison;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinDeath;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinProtect;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinHaste;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinRegen;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinShell;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinReflect;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinUnk7;
+        private System.Windows.Forms.CheckBox checkBoxRenzoFinZombie;
+        private System.Windows.Forms.NumericUpDown numericUpDownRenzoFinStatusAttack;
+        private System.Windows.Forms.Label labelRenzoFinStatusAttack;
         private System.Windows.Forms.TabPage tabPageShot;
         private System.Windows.Forms.GroupBox groupBoxShotStatusAttack;
         private System.Windows.Forms.CheckBox checkBoxShotPetrifying;
@@ -28166,7 +28295,7 @@
         private System.Windows.Forms.CheckBox checkBoxShotAura;
         private System.Windows.Forms.CheckBox checkBoxShotDrain;
         private System.Windows.Forms.CheckBox checkBoxShotSummonGF;
-        private System.Windows.Forms.CheckBox checkBoxShotPlayerChar;
+        private System.Windows.Forms.CheckBox checkBoxShotHasMagic;
         private System.Windows.Forms.CheckBox checkBoxShotUnk6;
         private System.Windows.Forms.CheckBox checkBoxShotUnk5;
         private System.Windows.Forms.CheckBox checkBoxShotUnk4;
@@ -28221,54 +28350,62 @@
         private System.Windows.Forms.Label labelShotMagicID;
         private System.Windows.Forms.ListBox listBoxShot;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.CheckBox checkBox41;
-        private System.Windows.Forms.CheckBox checkBox42;
-        private System.Windows.Forms.CheckBox checkBox43;
-        private System.Windows.Forms.CheckBox checkBox44;
-        private System.Windows.Forms.CheckBox checkBox45;
-        private System.Windows.Forms.CheckBox checkBox46;
-        private System.Windows.Forms.CheckBox checkBox47;
-        private System.Windows.Forms.CheckBox checkBox48;
-        private System.Windows.Forms.CheckBox checkBox49;
-        private System.Windows.Forms.CheckBox checkBox50;
-        private System.Windows.Forms.CheckBox checkBox51;
-        private System.Windows.Forms.CheckBox checkBox52;
-        private System.Windows.Forms.CheckBox checkBox53;
-        private System.Windows.Forms.CheckBox checkBox54;
-        private System.Windows.Forms.CheckBox checkBox55;
-        private System.Windows.Forms.CheckBox checkBox56;
-        private System.Windows.Forms.CheckBox checkBox57;
-        private System.Windows.Forms.CheckBox checkBox58;
-        private System.Windows.Forms.CheckBox checkBox59;
-        private System.Windows.Forms.CheckBox checkBox60;
-        private System.Windows.Forms.CheckBox checkBox61;
-        private System.Windows.Forms.CheckBox checkBox62;
-        private System.Windows.Forms.CheckBox checkBox63;
-        private System.Windows.Forms.CheckBox checkBox64;
-        private System.Windows.Forms.CheckBox checkBox65;
-        private System.Windows.Forms.CheckBox checkBox66;
-        private System.Windows.Forms.CheckBox checkBox67;
-        private System.Windows.Forms.CheckBox checkBox68;
-        private System.Windows.Forms.CheckBox checkBox69;
-        private System.Windows.Forms.CheckBox checkBox70;
-        private System.Windows.Forms.CheckBox checkBox71;
-        private System.Windows.Forms.CheckBox checkBox72;
-        private System.Windows.Forms.CheckBox checkBox73;
-        private System.Windows.Forms.CheckBox checkBox74;
-        private System.Windows.Forms.CheckBox checkBox75;
-        private System.Windows.Forms.CheckBox checkBox76;
-        private System.Windows.Forms.CheckBox checkBox77;
-        private System.Windows.Forms.CheckBox checkBox78;
-        private System.Windows.Forms.CheckBox checkBox79;
-        private System.Windows.Forms.CheckBox checkBox80;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBPetrifying;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBDarkness;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBSilence;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBStop;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBConfusion;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBPetrify;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBSlow;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBBerserk;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBSleep;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBInvincible;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBCurse;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBDoom;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBFloat;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBAura;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBDrain;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBSummonGF;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBHasMagic;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBUnk6;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBUnk5;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBUnk4;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBUnk3;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBAngelWing;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBVit0;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBBackAttack;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBCharged;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBUnk2;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBUnk1;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBDefend;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBTriple;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBDouble;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBEject;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBPoison;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBDeath;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBProtect;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBHaste;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBRegen;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBShell;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBReflect;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBUnk7;
+        private System.Windows.Forms.CheckBox checkBoxTempCharLBZombie;
+        private System.Windows.Forms.NumericUpDown numericUpDownTempCharLBStatusAttack;
+        private System.Windows.Forms.Label labelTempCharLBStatusAttack;
         private System.Windows.Forms.ComboBox comboBoxShotItem;
         private System.Windows.Forms.Label labelShotItem;
         private System.Windows.Forms.ComboBox comboBoxShotElement;
         private System.Windows.Forms.Label labelShotElement;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown numericUpDownShotElementPerc;
+        private System.Windows.Forms.Label labelRenzoFinElementPerc;
+        private System.Windows.Forms.ComboBox comboBoxRenzoFinElement;
+        private System.Windows.Forms.Label labelRenzoFinElement;
+        private System.Windows.Forms.NumericUpDown numericUpDownRenzoFinElementPerc;
+        private System.Windows.Forms.Label labelTempCharLBElementPerc;
+        private System.Windows.Forms.ComboBox comboBoxTempCharLBElement;
+        private System.Windows.Forms.Label labelTempCharLBElement;
+        private System.Windows.Forms.NumericUpDown numericUpDownTempCharLBElementPerc;
     }
 }
 
