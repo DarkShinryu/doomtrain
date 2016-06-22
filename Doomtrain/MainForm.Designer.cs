@@ -1312,75 +1312,16 @@
             this.labelDuelMagicID = new System.Windows.Forms.Label();
             this.groupBoxShotInput1 = new System.Windows.Forms.GroupBox();
             this.checkBoxDuelFinisher = new System.Windows.Forms.CheckBox();
-            this.radioButtonDuelUp1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelRight1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelDown1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelLeft1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelL1_1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelR1_1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelL2_1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelR2_1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelTriangle1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelCircle1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelX1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelSquare1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelDeac1 = new System.Windows.Forms.RadioButton();
-            this.groupBoxShotInput2 = new System.Windows.Forms.GroupBox();
-            this.radioButtonDuelR2_2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelL2_2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelR1_2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelL1_2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelLeft2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelDown2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelRight2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelDeac2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelSquare2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelX2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelCircle2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelTriangle2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelUp2 = new System.Windows.Forms.RadioButton();
-            this.groupBoxShotInput3 = new System.Windows.Forms.GroupBox();
-            this.radioButtonDuelR2_3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelL2_3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelR1_3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelL1_3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelLeft3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelDown3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelRight3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelDeac3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelSquare3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelX3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelCircle3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelTriangle3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelUp3 = new System.Windows.Forms.RadioButton();
-            this.groupBoxShotInput4 = new System.Windows.Forms.GroupBox();
-            this.radioButtonDuelR2_4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelL2_4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelR1_4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelL1_4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelLeft4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelDown4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelRight4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelDeac4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelSquare4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelX4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelCircle4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelTriangle4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelUp4 = new System.Windows.Forms.RadioButton();
-            this.groupBoxShotInput5 = new System.Windows.Forms.GroupBox();
-            this.radioButtonDuelR2_5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelL2_5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelR1_5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelL1_5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelLeft5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelDown5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelRight5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelDeac5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelSquare5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelX5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelCircle5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelTriangle5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDuelUp5 = new System.Windows.Forms.RadioButton();
+            this.comboBoxDuelButton1 = new System.Windows.Forms.ComboBox();
+            this.labelDuelButton1 = new System.Windows.Forms.Label();
+            this.labelDuelButton2 = new System.Windows.Forms.Label();
+            this.comboBoxDuelButton2 = new System.Windows.Forms.ComboBox();
+            this.labelDuelButton3 = new System.Windows.Forms.Label();
+            this.comboBoxDuelButton3 = new System.Windows.Forms.ComboBox();
+            this.labelDuelButton4 = new System.Windows.Forms.Label();
+            this.comboBoxDuelButton4 = new System.Windows.Forms.ComboBox();
+            this.labelDuelButton5 = new System.Windows.Forms.Label();
+            this.comboBoxDuelButton5 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
@@ -1673,10 +1614,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelAttackPower)).BeginInit();
             this.groupBoxShotInput1.SuspendLayout();
-            this.groupBoxShotInput2.SuspendLayout();
-            this.groupBoxShotInput3.SuspendLayout();
-            this.groupBoxShotInput4.SuspendLayout();
-            this.groupBoxShotInput5.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -1751,7 +1688,7 @@
             "Recover",
             "Elvoret Entrance",
             "Elvoret Death",
-            "",
+            "Unknown",
             "NORG Pod Opening",
             "Triple",
             "Bio",
@@ -1792,15 +1729,15 @@
             "Treatment",
             "Elixir",
             "Megalixir",
-            "",
+            "Unknown",
             "Revive",
             "Devour",
-            "",
+            "Unknown",
             "Griever Tail Falling Off",
             "Great Attractor",
             "Griever + Ultimecia Death",
             "Remedy/Remedy+",
-            "",
+            "Unknown",
             "Griever Summon",
             "Shockwave Pulsar",
             "Laser Eye (Quistis)",
@@ -1813,7 +1750,7 @@
             "Mighty Guard",
             "Griever Death",
             "Ultimecia Junctioning to Griever",
-            "",
+            "Unknown",
             "Ultimecia Blow Away Magic",
             "Absorbed into time...",
             "Angel Wing",
@@ -1833,7 +1770,7 @@
             "ChocoFlare",
             "ChocoMeteor",
             "ChocoBocle",
-            "",
+            "Unknown",
             "Thundara",
             "Blizzara",
             "Blizzaga",
@@ -1844,7 +1781,7 @@
             "Dispel",
             "Biggs + Wedge 1st Death",
             "Aura",
-            "",
+            "Meteor Barret (Zell\'s Finisher)",
             "Bad Breath",
             "Zombie",
             "Float",
@@ -1911,7 +1848,7 @@
             "Sand Storm",
             "1,000 Needles",
             "10,000 Needles",
-            "",
+            "Unknown",
             "Suicide",
             "Kamikaze",
             "Card",
@@ -1944,20 +1881,20 @@
             "\"Sorceress\" Spawn",
             "Bloodfest",
             "Adel Death",
-            "",
+            "Burning Rave (Zell\'s Finisher)",
             "Storm Breath",
             "Gravija",
-            "",
-            "",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
             "Energy Bomber",
-            "",
+            "Unknown",
             "Terra Break",
             "Light Pillar",
             "Apocalypse",
             "Water",
             "Meteor",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "White Wind",
             "Ultimecia First Death",
             "Ice Strike",
@@ -1981,7 +1918,7 @@
             "BGH251F2 4th Turret Exploding",
             "BGH251F2 Death",
             "Soldier Entrance After BGH251F2 Death",
-            "",
+            "Unknown",
             "Beam Cannon",
             "Demon Slice",
             "Corona",
@@ -1996,20 +1933,20 @@
             "Desperado",
             "Blood Pain",
             "Massive Anchor",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Ultima Weapon Death",
             "LV Up",
             "LV Down",
             "Mad Rush",
             "Duel",
             "Electrocute (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Carbuncle Summon (Ruby Light)",
             "Mega Spark",
             "Full Cure",
@@ -2022,7 +1959,7 @@
             "Mega Pulse Cannon",
             "Rapture",
             "\"Brrawghh!\"",
-            "",
+            "Unknown",
             "Pandemona Summon (Tornado Zone)",
             "Soft",
             "Eye Drops",
@@ -2030,28 +1967,28 @@
             "Echo Screen",
             "Holy Water",
             "White Wind (Quistis)",
-            "",
+            "Unknown",
             "Micro Missiles (Quistis)",
             "Bad Breath (Quistis)",
-            "",
+            "Unknown",
             "Snipe Laser",
-            "",
+            "Unknown",
             "Boomerang Sword",
             "Gatling Gun (Quistis)",
             "Degenerator (Quistis)",
             "Ray-Bomb (Quistis)",
-            "",
+            "Unknown",
             "Hero-trial/Hero",
             "Holy War-trial/Holy War",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Fake President Death",
-            "",
+            "Unknown",
             "Acid (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Dark Flare",
             "Ker Plunk",
             "Zan",
@@ -2063,7 +2000,7 @@
             "Gilgamesh - Masamune",
             "Gilgamesh - Excaliber",
             "Gilgamesh - Excalipoor",
-            "",
+            "Unknown",
             "Renzokuken - 7 Hits",
             "Renzokuken - 8 Hits",
             "Renzokuken (vs Bahamut)",
@@ -2180,7 +2117,7 @@
             "Recover",
             "Elvoret Entrance",
             "Elvoret Death",
-            "",
+            "Unknown",
             "NORG Pod Opening",
             "Triple",
             "Bio",
@@ -2221,15 +2158,15 @@
             "Treatment",
             "Elixir",
             "Megalixir",
-            "",
+            "Unknown",
             "Revive",
             "Devour",
-            "",
+            "Unknown",
             "Griever Tail Falling Off",
             "Great Attractor",
             "Griever + Ultimecia Death",
             "Remedy/Remedy+",
-            "",
+            "Unknown",
             "Griever Summon",
             "Shockwave Pulsar",
             "Laser Eye (Quistis)",
@@ -2242,7 +2179,7 @@
             "Mighty Guard",
             "Griever Death",
             "Ultimecia Junctioning to Griever",
-            "",
+            "Unknown",
             "Ultimecia Blow Away Magic",
             "Absorbed into time...",
             "Angel Wing",
@@ -2262,7 +2199,7 @@
             "ChocoFlare",
             "ChocoMeteor",
             "ChocoBocle",
-            "",
+            "Unknown",
             "Thundara",
             "Blizzara",
             "Blizzaga",
@@ -2273,7 +2210,7 @@
             "Dispel",
             "Biggs + Wedge 1st Death",
             "Aura",
-            "",
+            "Meteor Barret (Zell\'s Finisher)",
             "Bad Breath",
             "Zombie",
             "Float",
@@ -2340,7 +2277,7 @@
             "Sand Storm",
             "1,000 Needles",
             "10,000 Needles",
-            "",
+            "Unknown",
             "Suicide",
             "Kamikaze",
             "Card",
@@ -2373,20 +2310,20 @@
             "\"Sorceress\" Spawn",
             "Bloodfest",
             "Adel Death",
-            "",
+            "Burning Rave (Zell\'s Finisher)",
             "Storm Breath",
             "Gravija",
-            "",
-            "",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
             "Energy Bomber",
-            "",
+            "Unknown",
             "Terra Break",
             "Light Pillar",
             "Apocalypse",
             "Water",
             "Meteor",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "White Wind",
             "Ultimecia First Death",
             "Ice Strike",
@@ -2410,7 +2347,7 @@
             "BGH251F2 4th Turret Exploding",
             "BGH251F2 Death",
             "Soldier Entrance After BGH251F2 Death",
-            "",
+            "Unknown",
             "Beam Cannon",
             "Demon Slice",
             "Corona",
@@ -2425,20 +2362,20 @@
             "Desperado",
             "Blood Pain",
             "Massive Anchor",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Ultima Weapon Death",
             "LV Up",
             "LV Down",
             "Mad Rush",
             "Duel",
             "Electrocute (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Carbuncle Summon (Ruby Light)",
             "Mega Spark",
             "Full Cure",
@@ -2451,7 +2388,7 @@
             "Mega Pulse Cannon",
             "Rapture",
             "\"Brrawghh!\"",
-            "",
+            "Unknown",
             "Pandemona Summon (Tornado Zone)",
             "Soft",
             "Eye Drops",
@@ -2459,28 +2396,28 @@
             "Echo Screen",
             "Holy Water",
             "White Wind (Quistis)",
-            "",
+            "Unknown",
             "Micro Missiles (Quistis)",
             "Bad Breath (Quistis)",
-            "",
+            "Unknown",
             "Snipe Laser",
-            "",
+            "Unknown",
             "Boomerang Sword",
             "Gatling Gun (Quistis)",
             "Degenerator (Quistis)",
             "Ray-Bomb (Quistis)",
-            "",
+            "Unknown",
             "Hero-trial/Hero",
             "Holy War-trial/Holy War",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Fake President Death",
-            "",
+            "Unknown",
             "Acid (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Dark Flare",
             "Ker Plunk",
             "Zan",
@@ -2492,7 +2429,7 @@
             "Gilgamesh - Masamune",
             "Gilgamesh - Excaliber",
             "Gilgamesh - Excalipoor",
-            "",
+            "Unknown",
             "Renzokuken - 7 Hits",
             "Renzokuken - 8 Hits",
             "Renzokuken (vs Bahamut)",
@@ -3738,7 +3675,7 @@
             "Recover",
             "Elvoret Entrance",
             "Elvoret Death",
-            "",
+            "Unknown",
             "NORG Pod Opening",
             "Triple",
             "Bio",
@@ -3779,15 +3716,15 @@
             "Treatment",
             "Elixir",
             "Megalixir",
-            "",
+            "Unknown",
             "Revive",
             "Devour",
-            "",
+            "Unknown",
             "Griever Tail Falling Off",
             "Great Attractor",
             "Griever + Ultimecia Death",
             "Remedy/Remedy+",
-            "",
+            "Unknown",
             "Griever Summon",
             "Shockwave Pulsar",
             "Laser Eye (Quistis)",
@@ -3800,7 +3737,7 @@
             "Mighty Guard",
             "Griever Death",
             "Ultimecia Junctioning to Griever",
-            "",
+            "Unknown",
             "Ultimecia Blow Away Magic",
             "Absorbed into time...",
             "Angel Wing",
@@ -3820,7 +3757,7 @@
             "ChocoFlare",
             "ChocoMeteor",
             "ChocoBocle",
-            "",
+            "Unknown",
             "Thundara",
             "Blizzara",
             "Blizzaga",
@@ -3831,7 +3768,7 @@
             "Dispel",
             "Biggs + Wedge 1st Death",
             "Aura",
-            "",
+            "Meteor Barret (Zell\'s Finisher)",
             "Bad Breath",
             "Zombie",
             "Float",
@@ -3898,7 +3835,7 @@
             "Sand Storm",
             "1,000 Needles",
             "10,000 Needles",
-            "",
+            "Unknown",
             "Suicide",
             "Kamikaze",
             "Card",
@@ -3931,20 +3868,20 @@
             "\"Sorceress\" Spawn",
             "Bloodfest",
             "Adel Death",
-            "",
+            "Burning Rave (Zell\'s Finisher)",
             "Storm Breath",
             "Gravija",
-            "",
-            "",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
             "Energy Bomber",
-            "",
+            "Unknown",
             "Terra Break",
             "Light Pillar",
             "Apocalypse",
             "Water",
             "Meteor",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "White Wind",
             "Ultimecia First Death",
             "Ice Strike",
@@ -3968,7 +3905,7 @@
             "BGH251F2 4th Turret Exploding",
             "BGH251F2 Death",
             "Soldier Entrance After BGH251F2 Death",
-            "",
+            "Unknown",
             "Beam Cannon",
             "Demon Slice",
             "Corona",
@@ -3983,20 +3920,20 @@
             "Desperado",
             "Blood Pain",
             "Massive Anchor",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Ultima Weapon Death",
             "LV Up",
             "LV Down",
             "Mad Rush",
             "Duel",
             "Electrocute (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Carbuncle Summon (Ruby Light)",
             "Mega Spark",
             "Full Cure",
@@ -4009,7 +3946,7 @@
             "Mega Pulse Cannon",
             "Rapture",
             "\"Brrawghh!\"",
-            "",
+            "Unknown",
             "Pandemona Summon (Tornado Zone)",
             "Soft",
             "Eye Drops",
@@ -4017,28 +3954,28 @@
             "Echo Screen",
             "Holy Water",
             "White Wind (Quistis)",
-            "",
+            "Unknown",
             "Micro Missiles (Quistis)",
             "Bad Breath (Quistis)",
-            "",
+            "Unknown",
             "Snipe Laser",
-            "",
+            "Unknown",
             "Boomerang Sword",
             "Gatling Gun (Quistis)",
             "Degenerator (Quistis)",
             "Ray-Bomb (Quistis)",
-            "",
+            "Unknown",
             "Hero-trial/Hero",
             "Holy War-trial/Holy War",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Fake President Death",
-            "",
+            "Unknown",
             "Acid (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Dark Flare",
             "Ker Plunk",
             "Zan",
@@ -4050,7 +3987,7 @@
             "Gilgamesh - Masamune",
             "Gilgamesh - Excaliber",
             "Gilgamesh - Excalipoor",
-            "",
+            "Unknown",
             "Renzokuken - 7 Hits",
             "Renzokuken - 8 Hits",
             "Renzokuken (vs Bahamut)",
@@ -4710,7 +4647,7 @@
             "Curative Item",
             "Revive",
             "Revive At Full HP",
-            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "% Damage",
             "Demi",
             "Renzokuken Finisher",
             "Squall Gunblade Attack",
@@ -4769,7 +4706,7 @@
             "Recover",
             "Elvoret Entrance",
             "Elvoret Death",
-            "",
+            "Unknown",
             "NORG Pod Opening",
             "Triple",
             "Bio",
@@ -4810,15 +4747,15 @@
             "Treatment",
             "Elixir",
             "Megalixir",
-            "",
+            "Unknown",
             "Revive",
             "Devour",
-            "",
+            "Unknown",
             "Griever Tail Falling Off",
             "Great Attractor",
             "Griever + Ultimecia Death",
             "Remedy/Remedy+",
-            "",
+            "Unknown",
             "Griever Summon",
             "Shockwave Pulsar",
             "Laser Eye (Quistis)",
@@ -4831,7 +4768,7 @@
             "Mighty Guard",
             "Griever Death",
             "Ultimecia Junctioning to Griever",
-            "",
+            "Unknown",
             "Ultimecia Blow Away Magic",
             "Absorbed into time...",
             "Angel Wing",
@@ -4851,7 +4788,7 @@
             "ChocoFlare",
             "ChocoMeteor",
             "ChocoBocle",
-            "",
+            "Unknown",
             "Thundara",
             "Blizzara",
             "Blizzaga",
@@ -4862,7 +4799,7 @@
             "Dispel",
             "Biggs + Wedge 1st Death",
             "Aura",
-            "",
+            "Meteor Barret (Zell\'s Finisher)",
             "Bad Breath",
             "Zombie",
             "Float",
@@ -4929,7 +4866,7 @@
             "Sand Storm",
             "1,000 Needles",
             "10,000 Needles",
-            "",
+            "Unknown",
             "Suicide",
             "Kamikaze",
             "Card",
@@ -4962,20 +4899,20 @@
             "\"Sorceress\" Spawn",
             "Bloodfest",
             "Adel Death",
-            "",
+            "Burning Rave (Zell\'s Finisher)",
             "Storm Breath",
             "Gravija",
-            "",
-            "",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
             "Energy Bomber",
-            "",
+            "Unknown",
             "Terra Break",
             "Light Pillar",
             "Apocalypse",
             "Water",
             "Meteor",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "White Wind",
             "Ultimecia First Death",
             "Ice Strike",
@@ -4999,7 +4936,7 @@
             "BGH251F2 4th Turret Exploding",
             "BGH251F2 Death",
             "Soldier Entrance After BGH251F2 Death",
-            "",
+            "Unknown",
             "Beam Cannon",
             "Demon Slice",
             "Corona",
@@ -5014,20 +4951,20 @@
             "Desperado",
             "Blood Pain",
             "Massive Anchor",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Ultima Weapon Death",
             "LV Up",
             "LV Down",
             "Mad Rush",
             "Duel",
             "Electrocute (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Carbuncle Summon (Ruby Light)",
             "Mega Spark",
             "Full Cure",
@@ -5040,7 +4977,7 @@
             "Mega Pulse Cannon",
             "Rapture",
             "\"Brrawghh!\"",
-            "",
+            "Unknown",
             "Pandemona Summon (Tornado Zone)",
             "Soft",
             "Eye Drops",
@@ -5048,28 +4985,28 @@
             "Echo Screen",
             "Holy Water",
             "White Wind (Quistis)",
-            "",
+            "Unknown",
             "Micro Missiles (Quistis)",
             "Bad Breath (Quistis)",
-            "",
+            "Unknown",
             "Snipe Laser",
-            "",
+            "Unknown",
             "Boomerang Sword",
             "Gatling Gun (Quistis)",
             "Degenerator (Quistis)",
             "Ray-Bomb (Quistis)",
-            "",
+            "Unknown",
             "Hero-trial/Hero",
             "Holy War-trial/Holy War",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Fake President Death",
-            "",
+            "Unknown",
             "Acid (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Dark Flare",
             "Ker Plunk",
             "Zan",
@@ -5081,7 +5018,7 @@
             "Gilgamesh - Masamune",
             "Gilgamesh - Excaliber",
             "Gilgamesh - Excalipoor",
-            "",
+            "Unknown",
             "Renzokuken - 7 Hits",
             "Renzokuken - 8 Hits",
             "Renzokuken (vs Bahamut)",
@@ -8197,7 +8134,7 @@
             "Curative Item",
             "Revive",
             "Revive At Full HP",
-            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "% Damage",
             "Demi",
             "Renzokuken Finisher",
             "Squall Gunblade Attack",
@@ -9070,7 +9007,7 @@
             "Curative Item",
             "Revive",
             "Revive At Full HP",
-            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "% Damage",
             "Demi",
             "Renzokuken Finisher",
             "Squall Gunblade Attack",
@@ -16184,7 +16121,7 @@
             "Curative Item",
             "Revive",
             "Revive At Full HP",
-            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "% Damage",
             "Demi",
             "Renzokuken Finisher",
             "Squall Gunblade Attack",
@@ -16301,7 +16238,7 @@
             "Recover",
             "Elvoret Entrance",
             "Elvoret Death",
-            "",
+            "Unknown",
             "NORG Pod Opening",
             "Triple",
             "Bio",
@@ -16342,15 +16279,15 @@
             "Treatment",
             "Elixir",
             "Megalixir",
-            "",
+            "Unknown",
             "Revive",
             "Devour",
-            "",
+            "Unknown",
             "Griever Tail Falling Off",
             "Great Attractor",
             "Griever + Ultimecia Death",
             "Remedy/Remedy+",
-            "",
+            "Unknown",
             "Griever Summon",
             "Shockwave Pulsar",
             "Laser Eye (Quistis)",
@@ -16363,7 +16300,7 @@
             "Mighty Guard",
             "Griever Death",
             "Ultimecia Junctioning to Griever",
-            "",
+            "Unknown",
             "Ultimecia Blow Away Magic",
             "Absorbed into time...",
             "Angel Wing",
@@ -16383,7 +16320,7 @@
             "ChocoFlare",
             "ChocoMeteor",
             "ChocoBocle",
-            "",
+            "Unknown",
             "Thundara",
             "Blizzara",
             "Blizzaga",
@@ -16394,7 +16331,7 @@
             "Dispel",
             "Biggs + Wedge 1st Death",
             "Aura",
-            "",
+            "Meteor Barret (Zell\'s Finisher)",
             "Bad Breath",
             "Zombie",
             "Float",
@@ -16461,7 +16398,7 @@
             "Sand Storm",
             "1,000 Needles",
             "10,000 Needles",
-            "",
+            "Unknown",
             "Suicide",
             "Kamikaze",
             "Card",
@@ -16494,20 +16431,20 @@
             "\"Sorceress\" Spawn",
             "Bloodfest",
             "Adel Death",
-            "",
+            "Burning Rave (Zell\'s Finisher)",
             "Storm Breath",
             "Gravija",
-            "",
-            "",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
             "Energy Bomber",
-            "",
+            "Unknown",
             "Terra Break",
             "Light Pillar",
             "Apocalypse",
             "Water",
             "Meteor",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "White Wind",
             "Ultimecia First Death",
             "Ice Strike",
@@ -16531,7 +16468,7 @@
             "BGH251F2 4th Turret Exploding",
             "BGH251F2 Death",
             "Soldier Entrance After BGH251F2 Death",
-            "",
+            "Unknown",
             "Beam Cannon",
             "Demon Slice",
             "Corona",
@@ -16546,20 +16483,20 @@
             "Desperado",
             "Blood Pain",
             "Massive Anchor",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Ultima Weapon Death",
             "LV Up",
             "LV Down",
             "Mad Rush",
             "Duel",
             "Electrocute (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Carbuncle Summon (Ruby Light)",
             "Mega Spark",
             "Full Cure",
@@ -16572,7 +16509,7 @@
             "Mega Pulse Cannon",
             "Rapture",
             "\"Brrawghh!\"",
-            "",
+            "Unknown",
             "Pandemona Summon (Tornado Zone)",
             "Soft",
             "Eye Drops",
@@ -16580,28 +16517,28 @@
             "Echo Screen",
             "Holy Water",
             "White Wind (Quistis)",
-            "",
+            "Unknown",
             "Micro Missiles (Quistis)",
             "Bad Breath (Quistis)",
-            "",
+            "Unknown",
             "Snipe Laser",
-            "",
+            "Unknown",
             "Boomerang Sword",
             "Gatling Gun (Quistis)",
             "Degenerator (Quistis)",
             "Ray-Bomb (Quistis)",
-            "",
+            "Unknown",
             "Hero-trial/Hero",
             "Holy War-trial/Holy War",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Fake President Death",
-            "",
+            "Unknown",
             "Acid (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Dark Flare",
             "Ker Plunk",
             "Zan",
@@ -16613,7 +16550,7 @@
             "Gilgamesh - Masamune",
             "Gilgamesh - Excaliber",
             "Gilgamesh - Excalipoor",
-            "",
+            "Unknown",
             "Renzokuken - 7 Hits",
             "Renzokuken - 8 Hits",
             "Renzokuken (vs Bahamut)",
@@ -20865,7 +20802,7 @@
             "Curative Item",
             "Revive",
             "Revive At Full HP",
-            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "% Damage",
             "Demi",
             "Renzokuken Finisher",
             "Squall Gunblade Attack",
@@ -20950,7 +20887,7 @@
             "Recover",
             "Elvoret Entrance",
             "Elvoret Death",
-            "",
+            "Unknown",
             "NORG Pod Opening",
             "Triple",
             "Bio",
@@ -20991,15 +20928,15 @@
             "Treatment",
             "Elixir",
             "Megalixir",
-            "",
+            "Unknown",
             "Revive",
             "Devour",
-            "",
+            "Unknown",
             "Griever Tail Falling Off",
             "Great Attractor",
             "Griever + Ultimecia Death",
             "Remedy/Remedy+",
-            "",
+            "Unknown",
             "Griever Summon",
             "Shockwave Pulsar",
             "Laser Eye (Quistis)",
@@ -21012,7 +20949,7 @@
             "Mighty Guard",
             "Griever Death",
             "Ultimecia Junctioning to Griever",
-            "",
+            "Unknown",
             "Ultimecia Blow Away Magic",
             "Absorbed into time...",
             "Angel Wing",
@@ -21032,7 +20969,7 @@
             "ChocoFlare",
             "ChocoMeteor",
             "ChocoBocle",
-            "",
+            "Unknown",
             "Thundara",
             "Blizzara",
             "Blizzaga",
@@ -21043,7 +20980,7 @@
             "Dispel",
             "Biggs + Wedge 1st Death",
             "Aura",
-            "",
+            "Meteor Barret (Zell\'s Finisher)",
             "Bad Breath",
             "Zombie",
             "Float",
@@ -21110,7 +21047,7 @@
             "Sand Storm",
             "1,000 Needles",
             "10,000 Needles",
-            "",
+            "Unknown",
             "Suicide",
             "Kamikaze",
             "Card",
@@ -21143,20 +21080,20 @@
             "\"Sorceress\" Spawn",
             "Bloodfest",
             "Adel Death",
-            "",
+            "Burning Rave (Zell\'s Finisher)",
             "Storm Breath",
             "Gravija",
-            "",
-            "",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
             "Energy Bomber",
-            "",
+            "Unknown",
             "Terra Break",
             "Light Pillar",
             "Apocalypse",
             "Water",
             "Meteor",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "White Wind",
             "Ultimecia First Death",
             "Ice Strike",
@@ -21180,7 +21117,7 @@
             "BGH251F2 4th Turret Exploding",
             "BGH251F2 Death",
             "Soldier Entrance After BGH251F2 Death",
-            "",
+            "Unknown",
             "Beam Cannon",
             "Demon Slice",
             "Corona",
@@ -21195,20 +21132,20 @@
             "Desperado",
             "Blood Pain",
             "Massive Anchor",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Ultima Weapon Death",
             "LV Up",
             "LV Down",
             "Mad Rush",
             "Duel",
             "Electrocute (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Carbuncle Summon (Ruby Light)",
             "Mega Spark",
             "Full Cure",
@@ -21221,7 +21158,7 @@
             "Mega Pulse Cannon",
             "Rapture",
             "\"Brrawghh!\"",
-            "",
+            "Unknown",
             "Pandemona Summon (Tornado Zone)",
             "Soft",
             "Eye Drops",
@@ -21229,28 +21166,28 @@
             "Echo Screen",
             "Holy Water",
             "White Wind (Quistis)",
-            "",
+            "Unknown",
             "Micro Missiles (Quistis)",
             "Bad Breath (Quistis)",
-            "",
+            "Unknown",
             "Snipe Laser",
-            "",
+            "Unknown",
             "Boomerang Sword",
             "Gatling Gun (Quistis)",
             "Degenerator (Quistis)",
             "Ray-Bomb (Quistis)",
-            "",
+            "Unknown",
             "Hero-trial/Hero",
             "Holy War-trial/Holy War",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Fake President Death",
-            "",
+            "Unknown",
             "Acid (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Dark Flare",
             "Ker Plunk",
             "Zan",
@@ -21262,7 +21199,7 @@
             "Gilgamesh - Masamune",
             "Gilgamesh - Excaliber",
             "Gilgamesh - Excalipoor",
-            "",
+            "Unknown",
             "Renzokuken - 7 Hits",
             "Renzokuken - 8 Hits",
             "Renzokuken (vs Bahamut)",
@@ -22380,7 +22317,7 @@
             "Curative Item",
             "Revive",
             "Revive At Full HP",
-            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "% Damage",
             "Demi",
             "Renzokuken Finisher",
             "Squall Gunblade Attack",
@@ -22478,7 +22415,7 @@
             "Recover",
             "Elvoret Entrance",
             "Elvoret Death",
-            "",
+            "Unknown",
             "NORG Pod Opening",
             "Triple",
             "Bio",
@@ -22519,15 +22456,15 @@
             "Treatment",
             "Elixir",
             "Megalixir",
-            "",
+            "Unknown",
             "Revive",
             "Devour",
-            "",
+            "Unknown",
             "Griever Tail Falling Off",
             "Great Attractor",
             "Griever + Ultimecia Death",
             "Remedy/Remedy+",
-            "",
+            "Unknown",
             "Griever Summon",
             "Shockwave Pulsar",
             "Laser Eye (Quistis)",
@@ -22540,7 +22477,7 @@
             "Mighty Guard",
             "Griever Death",
             "Ultimecia Junctioning to Griever",
-            "",
+            "Unknown",
             "Ultimecia Blow Away Magic",
             "Absorbed into time...",
             "Angel Wing",
@@ -22560,7 +22497,7 @@
             "ChocoFlare",
             "ChocoMeteor",
             "ChocoBocle",
-            "",
+            "Unknown",
             "Thundara",
             "Blizzara",
             "Blizzaga",
@@ -22571,7 +22508,7 @@
             "Dispel",
             "Biggs + Wedge 1st Death",
             "Aura",
-            "",
+            "Meteor Barret (Zell\'s Finisher)",
             "Bad Breath",
             "Zombie",
             "Float",
@@ -22638,7 +22575,7 @@
             "Sand Storm",
             "1,000 Needles",
             "10,000 Needles",
-            "",
+            "Unknown",
             "Suicide",
             "Kamikaze",
             "Card",
@@ -22671,20 +22608,20 @@
             "\"Sorceress\" Spawn",
             "Bloodfest",
             "Adel Death",
-            "",
+            "Burning Rave (Zell\'s Finisher)",
             "Storm Breath",
             "Gravija",
-            "",
-            "",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
             "Energy Bomber",
-            "",
+            "Unknown",
             "Terra Break",
             "Light Pillar",
             "Apocalypse",
             "Water",
             "Meteor",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "White Wind",
             "Ultimecia First Death",
             "Ice Strike",
@@ -22708,7 +22645,7 @@
             "BGH251F2 4th Turret Exploding",
             "BGH251F2 Death",
             "Soldier Entrance After BGH251F2 Death",
-            "",
+            "Unknown",
             "Beam Cannon",
             "Demon Slice",
             "Corona",
@@ -22723,20 +22660,20 @@
             "Desperado",
             "Blood Pain",
             "Massive Anchor",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Ultima Weapon Death",
             "LV Up",
             "LV Down",
             "Mad Rush",
             "Duel",
             "Electrocute (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Carbuncle Summon (Ruby Light)",
             "Mega Spark",
             "Full Cure",
@@ -22749,7 +22686,7 @@
             "Mega Pulse Cannon",
             "Rapture",
             "\"Brrawghh!\"",
-            "",
+            "Unknown",
             "Pandemona Summon (Tornado Zone)",
             "Soft",
             "Eye Drops",
@@ -22757,28 +22694,28 @@
             "Echo Screen",
             "Holy Water",
             "White Wind (Quistis)",
-            "",
+            "Unknown",
             "Micro Missiles (Quistis)",
             "Bad Breath (Quistis)",
-            "",
+            "Unknown",
             "Snipe Laser",
-            "",
+            "Unknown",
             "Boomerang Sword",
             "Gatling Gun (Quistis)",
             "Degenerator (Quistis)",
             "Ray-Bomb (Quistis)",
-            "",
+            "Unknown",
             "Hero-trial/Hero",
             "Holy War-trial/Holy War",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Fake President Death",
-            "",
+            "Unknown",
             "Acid (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Dark Flare",
             "Ker Plunk",
             "Zan",
@@ -22790,7 +22727,7 @@
             "Gilgamesh - Masamune",
             "Gilgamesh - Excaliber",
             "Gilgamesh - Excalipoor",
-            "",
+            "Unknown",
             "Renzokuken - 7 Hits",
             "Renzokuken - 8 Hits",
             "Renzokuken (vs Bahamut)",
@@ -25376,7 +25313,7 @@
             "Curative Item",
             "Revive",
             "Revive At Full HP",
-            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "% Damage",
             "Demi",
             "Renzokuken Finisher",
             "Squall Gunblade Attack",
@@ -25461,7 +25398,7 @@
             "Recover",
             "Elvoret Entrance",
             "Elvoret Death",
-            "",
+            "Unknown",
             "NORG Pod Opening",
             "Triple",
             "Bio",
@@ -25502,15 +25439,15 @@
             "Treatment",
             "Elixir",
             "Megalixir",
-            "",
+            "Unknown",
             "Revive",
             "Devour",
-            "",
+            "Unknown",
             "Griever Tail Falling Off",
             "Great Attractor",
             "Griever + Ultimecia Death",
             "Remedy/Remedy+",
-            "",
+            "Unknown",
             "Griever Summon",
             "Shockwave Pulsar",
             "Laser Eye (Quistis)",
@@ -25523,7 +25460,7 @@
             "Mighty Guard",
             "Griever Death",
             "Ultimecia Junctioning to Griever",
-            "",
+            "Unknown",
             "Ultimecia Blow Away Magic",
             "Absorbed into time...",
             "Angel Wing",
@@ -25543,7 +25480,7 @@
             "ChocoFlare",
             "ChocoMeteor",
             "ChocoBocle",
-            "",
+            "Unknown",
             "Thundara",
             "Blizzara",
             "Blizzaga",
@@ -25554,7 +25491,7 @@
             "Dispel",
             "Biggs + Wedge 1st Death",
             "Aura",
-            "",
+            "Meteor Barret (Zell\'s Finisher)",
             "Bad Breath",
             "Zombie",
             "Float",
@@ -25621,7 +25558,7 @@
             "Sand Storm",
             "1,000 Needles",
             "10,000 Needles",
-            "",
+            "Unknown",
             "Suicide",
             "Kamikaze",
             "Card",
@@ -25654,20 +25591,20 @@
             "\"Sorceress\" Spawn",
             "Bloodfest",
             "Adel Death",
-            "",
+            "Burning Rave (Zell\'s Finisher)",
             "Storm Breath",
             "Gravija",
-            "",
-            "",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
             "Energy Bomber",
-            "",
+            "Unknown",
             "Terra Break",
             "Light Pillar",
             "Apocalypse",
             "Water",
             "Meteor",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "White Wind",
             "Ultimecia First Death",
             "Ice Strike",
@@ -25691,7 +25628,7 @@
             "BGH251F2 4th Turret Exploding",
             "BGH251F2 Death",
             "Soldier Entrance After BGH251F2 Death",
-            "",
+            "Unknown",
             "Beam Cannon",
             "Demon Slice",
             "Corona",
@@ -25706,20 +25643,20 @@
             "Desperado",
             "Blood Pain",
             "Massive Anchor",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Ultima Weapon Death",
             "LV Up",
             "LV Down",
             "Mad Rush",
             "Duel",
             "Electrocute (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Carbuncle Summon (Ruby Light)",
             "Mega Spark",
             "Full Cure",
@@ -25732,7 +25669,7 @@
             "Mega Pulse Cannon",
             "Rapture",
             "\"Brrawghh!\"",
-            "",
+            "Unknown",
             "Pandemona Summon (Tornado Zone)",
             "Soft",
             "Eye Drops",
@@ -25740,28 +25677,28 @@
             "Echo Screen",
             "Holy Water",
             "White Wind (Quistis)",
-            "",
+            "Unknown",
             "Micro Missiles (Quistis)",
             "Bad Breath (Quistis)",
-            "",
+            "Unknown",
             "Snipe Laser",
-            "",
+            "Unknown",
             "Boomerang Sword",
             "Gatling Gun (Quistis)",
             "Degenerator (Quistis)",
             "Ray-Bomb (Quistis)",
-            "",
+            "Unknown",
             "Hero-trial/Hero",
             "Holy War-trial/Holy War",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Fake President Death",
-            "",
+            "Unknown",
             "Acid (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Dark Flare",
             "Ker Plunk",
             "Zan",
@@ -25773,7 +25710,7 @@
             "Gilgamesh - Masamune",
             "Gilgamesh - Excaliber",
             "Gilgamesh - Excalipoor",
-            "",
+            "Unknown",
             "Renzokuken - 7 Hits",
             "Renzokuken - 8 Hits",
             "Renzokuken (vs Bahamut)",
@@ -26532,7 +26469,7 @@
             "Curative Item",
             "Revive",
             "Revive At Full HP",
-            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "% Damage",
             "Demi",
             "Renzokuken Finisher",
             "Squall Gunblade Attack",
@@ -27079,10 +27016,6 @@
             // tabPageDuelButtons
             // 
             this.tabPageDuelButtons.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageDuelButtons.Controls.Add(this.groupBoxShotInput5);
-            this.tabPageDuelButtons.Controls.Add(this.groupBoxShotInput4);
-            this.tabPageDuelButtons.Controls.Add(this.groupBoxShotInput3);
-            this.tabPageDuelButtons.Controls.Add(this.groupBoxShotInput2);
             this.tabPageDuelButtons.Controls.Add(this.groupBoxShotInput1);
             this.tabPageDuelButtons.Location = new System.Drawing.Point(4, 26);
             this.tabPageDuelButtons.Name = "tabPageDuelButtons";
@@ -27975,7 +27908,7 @@
             "Curative Item",
             "Revive",
             "Revive At Full HP",
-            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "% Damage",
             "Demi",
             "Renzokuken Finisher",
             "Squall Gunblade Attack",
@@ -28072,7 +28005,7 @@
             "Recover",
             "Elvoret Entrance",
             "Elvoret Death",
-            "",
+            "Unknown",
             "NORG Pod Opening",
             "Triple",
             "Bio",
@@ -28113,15 +28046,15 @@
             "Treatment",
             "Elixir",
             "Megalixir",
-            "",
+            "Unknown",
             "Revive",
             "Devour",
-            "",
+            "Unknown",
             "Griever Tail Falling Off",
             "Great Attractor",
             "Griever + Ultimecia Death",
             "Remedy/Remedy+",
-            "",
+            "Unknown",
             "Griever Summon",
             "Shockwave Pulsar",
             "Laser Eye (Quistis)",
@@ -28134,7 +28067,7 @@
             "Mighty Guard",
             "Griever Death",
             "Ultimecia Junctioning to Griever",
-            "",
+            "Unknown",
             "Ultimecia Blow Away Magic",
             "Absorbed into time...",
             "Angel Wing",
@@ -28154,7 +28087,7 @@
             "ChocoFlare",
             "ChocoMeteor",
             "ChocoBocle",
-            "",
+            "Unknown",
             "Thundara",
             "Blizzara",
             "Blizzaga",
@@ -28165,7 +28098,7 @@
             "Dispel",
             "Biggs + Wedge 1st Death",
             "Aura",
-            "",
+            "Meteor Barret (Zell\'s Finisher)",
             "Bad Breath",
             "Zombie",
             "Float",
@@ -28232,7 +28165,7 @@
             "Sand Storm",
             "1,000 Needles",
             "10,000 Needles",
-            "",
+            "Unknown",
             "Suicide",
             "Kamikaze",
             "Card",
@@ -28265,20 +28198,20 @@
             "\"Sorceress\" Spawn",
             "Bloodfest",
             "Adel Death",
-            "",
+            "Burning Rave (Zell\'s Finisher)",
             "Storm Breath",
             "Gravija",
-            "",
-            "",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
             "Energy Bomber",
-            "",
+            "Unknown",
             "Terra Break",
             "Light Pillar",
             "Apocalypse",
             "Water",
             "Meteor",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "White Wind",
             "Ultimecia First Death",
             "Ice Strike",
@@ -28302,7 +28235,7 @@
             "BGH251F2 4th Turret Exploding",
             "BGH251F2 Death",
             "Soldier Entrance After BGH251F2 Death",
-            "",
+            "Unknown",
             "Beam Cannon",
             "Demon Slice",
             "Corona",
@@ -28317,20 +28250,20 @@
             "Desperado",
             "Blood Pain",
             "Massive Anchor",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Ultima Weapon Death",
             "LV Up",
             "LV Down",
             "Mad Rush",
             "Duel",
             "Electrocute (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Carbuncle Summon (Ruby Light)",
             "Mega Spark",
             "Full Cure",
@@ -28343,7 +28276,7 @@
             "Mega Pulse Cannon",
             "Rapture",
             "\"Brrawghh!\"",
-            "",
+            "Unknown",
             "Pandemona Summon (Tornado Zone)",
             "Soft",
             "Eye Drops",
@@ -28351,28 +28284,28 @@
             "Echo Screen",
             "Holy Water",
             "White Wind (Quistis)",
-            "",
+            "Unknown",
             "Micro Missiles (Quistis)",
             "Bad Breath (Quistis)",
-            "",
+            "Unknown",
             "Snipe Laser",
-            "",
+            "Unknown",
             "Boomerang Sword",
             "Gatling Gun (Quistis)",
             "Degenerator (Quistis)",
             "Ray-Bomb (Quistis)",
-            "",
+            "Unknown",
             "Hero-trial/Hero",
             "Holy War-trial/Holy War",
-            "",
-            "",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
             "Fake President Death",
-            "",
+            "Unknown",
             "Acid (Quistis)",
-            "",
-            "",
+            "Unknown",
+            "Unknown",
             "Dark Flare",
             "Ker Plunk",
             "Zan",
@@ -28384,7 +28317,7 @@
             "Gilgamesh - Masamune",
             "Gilgamesh - Excaliber",
             "Gilgamesh - Excalipoor",
-            "",
+            "Unknown",
             "Renzokuken - 7 Hits",
             "Renzokuken - 8 Hits",
             "Renzokuken (vs Bahamut)",
@@ -28443,27 +28376,24 @@
             // groupBoxShotInput1
             // 
             this.groupBoxShotInput1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelR2_1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelL2_1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelR1_1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelL1_1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelLeft1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelDown1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelRight1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelDeac1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelSquare1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelX1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelCircle1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelTriangle1);
-            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelUp1);
+            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton5);
+            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton5);
+            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton4);
+            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton4);
+            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton3);
+            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton3);
+            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton2);
+            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton2);
+            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton1);
+            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton1);
             this.groupBoxShotInput1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxShotInput1.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxShotInput1.Location = new System.Drawing.Point(0, 0);
             this.groupBoxShotInput1.Name = "groupBoxShotInput1";
-            this.groupBoxShotInput1.Size = new System.Drawing.Size(452, 82);
+            this.groupBoxShotInput1.Size = new System.Drawing.Size(452, 96);
             this.groupBoxShotInput1.TabIndex = 113;
             this.groupBoxShotInput1.TabStop = false;
-            this.groupBoxShotInput1.Text = "Input 1";
+            this.groupBoxShotInput1.Text = "Buttons";
             // 
             // checkBoxDuelFinisher
             // 
@@ -28478,950 +28408,176 @@
             this.toolTip1.SetToolTip(this.checkBoxDuelFinisher, "Only works with real finishers! Don\'t use with other moves.");
             this.checkBoxDuelFinisher.UseVisualStyleBackColor = true;
             // 
-            // radioButtonDuelUp1
-            // 
-            this.radioButtonDuelUp1.AutoSize = true;
-            this.radioButtonDuelUp1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelUp1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelUp1.Location = new System.Drawing.Point(5, 29);
-            this.radioButtonDuelUp1.Name = "radioButtonDuelUp1";
-            this.radioButtonDuelUp1.Size = new System.Drawing.Size(40, 19);
-            this.radioButtonDuelUp1.TabIndex = 11;
-            this.radioButtonDuelUp1.TabStop = true;
-            this.radioButtonDuelUp1.Text = "Up";
-            this.radioButtonDuelUp1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelRight1
-            // 
-            this.radioButtonDuelRight1.AutoSize = true;
-            this.radioButtonDuelRight1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelRight1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelRight1.Location = new System.Drawing.Point(59, 29);
-            this.radioButtonDuelRight1.Name = "radioButtonDuelRight1";
-            this.radioButtonDuelRight1.Size = new System.Drawing.Size(53, 19);
-            this.radioButtonDuelRight1.TabIndex = 11;
-            this.radioButtonDuelRight1.TabStop = true;
-            this.radioButtonDuelRight1.Text = "Right";
-            this.radioButtonDuelRight1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelDown1
-            // 
-            this.radioButtonDuelDown1.AutoSize = true;
-            this.radioButtonDuelDown1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelDown1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelDown1.Location = new System.Drawing.Point(126, 29);
-            this.radioButtonDuelDown1.Name = "radioButtonDuelDown1";
-            this.radioButtonDuelDown1.Size = new System.Drawing.Size(56, 19);
-            this.radioButtonDuelDown1.TabIndex = 11;
-            this.radioButtonDuelDown1.TabStop = true;
-            this.radioButtonDuelDown1.Text = "Down";
-            this.radioButtonDuelDown1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelLeft1
-            // 
-            this.radioButtonDuelLeft1.AutoSize = true;
-            this.radioButtonDuelLeft1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelLeft1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelLeft1.Location = new System.Drawing.Point(196, 29);
-            this.radioButtonDuelLeft1.Name = "radioButtonDuelLeft1";
-            this.radioButtonDuelLeft1.Size = new System.Drawing.Size(45, 19);
-            this.radioButtonDuelLeft1.TabIndex = 11;
-            this.radioButtonDuelLeft1.TabStop = true;
-            this.radioButtonDuelLeft1.Text = "Left";
-            this.radioButtonDuelLeft1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelL1_1
-            // 
-            this.radioButtonDuelL1_1.AutoSize = true;
-            this.radioButtonDuelL1_1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelL1_1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelL1_1.Location = new System.Drawing.Point(255, 29);
-            this.radioButtonDuelL1_1.Name = "radioButtonDuelL1_1";
-            this.radioButtonDuelL1_1.Size = new System.Drawing.Size(37, 19);
-            this.radioButtonDuelL1_1.TabIndex = 11;
-            this.radioButtonDuelL1_1.TabStop = true;
-            this.radioButtonDuelL1_1.Text = "L1";
-            this.radioButtonDuelL1_1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelR1_1
-            // 
-            this.radioButtonDuelR1_1.AutoSize = true;
-            this.radioButtonDuelR1_1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelR1_1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelR1_1.Location = new System.Drawing.Point(306, 29);
-            this.radioButtonDuelR1_1.Name = "radioButtonDuelR1_1";
-            this.radioButtonDuelR1_1.Size = new System.Drawing.Size(38, 19);
-            this.radioButtonDuelR1_1.TabIndex = 11;
-            this.radioButtonDuelR1_1.TabStop = true;
-            this.radioButtonDuelR1_1.Text = "R1";
-            this.radioButtonDuelR1_1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelL2_1
-            // 
-            this.radioButtonDuelL2_1.AutoSize = true;
-            this.radioButtonDuelL2_1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelL2_1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelL2_1.Location = new System.Drawing.Point(358, 29);
-            this.radioButtonDuelL2_1.Name = "radioButtonDuelL2_1";
-            this.radioButtonDuelL2_1.Size = new System.Drawing.Size(37, 19);
-            this.radioButtonDuelL2_1.TabIndex = 11;
-            this.radioButtonDuelL2_1.TabStop = true;
-            this.radioButtonDuelL2_1.Text = "L2";
-            this.radioButtonDuelL2_1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelR2_1
-            // 
-            this.radioButtonDuelR2_1.AutoSize = true;
-            this.radioButtonDuelR2_1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelR2_1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelR2_1.Location = new System.Drawing.Point(409, 29);
-            this.radioButtonDuelR2_1.Name = "radioButtonDuelR2_1";
-            this.radioButtonDuelR2_1.Size = new System.Drawing.Size(38, 19);
-            this.radioButtonDuelR2_1.TabIndex = 11;
-            this.radioButtonDuelR2_1.TabStop = true;
-            this.radioButtonDuelR2_1.Text = "R2";
-            this.radioButtonDuelR2_1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelTriangle1
-            // 
-            this.radioButtonDuelTriangle1.AutoSize = true;
-            this.radioButtonDuelTriangle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelTriangle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelTriangle1.Location = new System.Drawing.Point(57, 54);
-            this.radioButtonDuelTriangle1.Name = "radioButtonDuelTriangle1";
-            this.radioButtonDuelTriangle1.Size = new System.Drawing.Size(67, 19);
-            this.radioButtonDuelTriangle1.TabIndex = 11;
-            this.radioButtonDuelTriangle1.TabStop = true;
-            this.radioButtonDuelTriangle1.Text = "Triangle";
-            this.radioButtonDuelTriangle1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelCircle1
-            // 
-            this.radioButtonDuelCircle1.AutoSize = true;
-            this.radioButtonDuelCircle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelCircle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelCircle1.Location = new System.Drawing.Point(135, 54);
-            this.radioButtonDuelCircle1.Name = "radioButtonDuelCircle1";
-            this.radioButtonDuelCircle1.Size = new System.Drawing.Size(55, 19);
-            this.radioButtonDuelCircle1.TabIndex = 11;
-            this.radioButtonDuelCircle1.TabStop = true;
-            this.radioButtonDuelCircle1.Text = "Circle";
-            this.radioButtonDuelCircle1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelX1
-            // 
-            this.radioButtonDuelX1.AutoSize = true;
-            this.radioButtonDuelX1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelX1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelX1.Location = new System.Drawing.Point(201, 54);
-            this.radioButtonDuelX1.Name = "radioButtonDuelX1";
-            this.radioButtonDuelX1.Size = new System.Drawing.Size(32, 19);
-            this.radioButtonDuelX1.TabIndex = 11;
-            this.radioButtonDuelX1.TabStop = true;
-            this.radioButtonDuelX1.Text = "X";
-            this.radioButtonDuelX1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelSquare1
-            // 
-            this.radioButtonDuelSquare1.AutoSize = true;
-            this.radioButtonDuelSquare1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelSquare1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelSquare1.Location = new System.Drawing.Point(244, 54);
-            this.radioButtonDuelSquare1.Name = "radioButtonDuelSquare1";
-            this.radioButtonDuelSquare1.Size = new System.Drawing.Size(61, 19);
-            this.radioButtonDuelSquare1.TabIndex = 11;
-            this.radioButtonDuelSquare1.TabStop = true;
-            this.radioButtonDuelSquare1.Text = "Square";
-            this.radioButtonDuelSquare1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelDeac1
-            // 
-            this.radioButtonDuelDeac1.AutoSize = true;
-            this.radioButtonDuelDeac1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelDeac1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelDeac1.Location = new System.Drawing.Point(316, 54);
-            this.radioButtonDuelDeac1.Name = "radioButtonDuelDeac1";
-            this.radioButtonDuelDeac1.Size = new System.Drawing.Size(80, 19);
-            this.radioButtonDuelDeac1.TabIndex = 11;
-            this.radioButtonDuelDeac1.TabStop = true;
-            this.radioButtonDuelDeac1.Text = "Deactivate";
-            this.radioButtonDuelDeac1.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxShotInput2
-            // 
-            this.groupBoxShotInput2.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelR2_2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelL2_2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelR1_2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelL1_2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelLeft2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelDown2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelRight2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelDeac2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelSquare2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelX2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelCircle2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelTriangle2);
-            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelUp2);
-            this.groupBoxShotInput2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxShotInput2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.groupBoxShotInput2.Location = new System.Drawing.Point(0, 88);
-            this.groupBoxShotInput2.Name = "groupBoxShotInput2";
-            this.groupBoxShotInput2.Size = new System.Drawing.Size(452, 82);
-            this.groupBoxShotInput2.TabIndex = 113;
-            this.groupBoxShotInput2.TabStop = false;
-            this.groupBoxShotInput2.Text = "Input 2";
-            // 
-            // radioButtonDuelR2_2
-            // 
-            this.radioButtonDuelR2_2.AutoSize = true;
-            this.radioButtonDuelR2_2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelR2_2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelR2_2.Location = new System.Drawing.Point(409, 29);
-            this.radioButtonDuelR2_2.Name = "radioButtonDuelR2_2";
-            this.radioButtonDuelR2_2.Size = new System.Drawing.Size(38, 19);
-            this.radioButtonDuelR2_2.TabIndex = 11;
-            this.radioButtonDuelR2_2.TabStop = true;
-            this.radioButtonDuelR2_2.Text = "R2";
-            this.radioButtonDuelR2_2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelL2_2
-            // 
-            this.radioButtonDuelL2_2.AutoSize = true;
-            this.radioButtonDuelL2_2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelL2_2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelL2_2.Location = new System.Drawing.Point(358, 29);
-            this.radioButtonDuelL2_2.Name = "radioButtonDuelL2_2";
-            this.radioButtonDuelL2_2.Size = new System.Drawing.Size(37, 19);
-            this.radioButtonDuelL2_2.TabIndex = 11;
-            this.radioButtonDuelL2_2.TabStop = true;
-            this.radioButtonDuelL2_2.Text = "L2";
-            this.radioButtonDuelL2_2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelR1_2
-            // 
-            this.radioButtonDuelR1_2.AutoSize = true;
-            this.radioButtonDuelR1_2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelR1_2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelR1_2.Location = new System.Drawing.Point(306, 29);
-            this.radioButtonDuelR1_2.Name = "radioButtonDuelR1_2";
-            this.radioButtonDuelR1_2.Size = new System.Drawing.Size(38, 19);
-            this.radioButtonDuelR1_2.TabIndex = 11;
-            this.radioButtonDuelR1_2.TabStop = true;
-            this.radioButtonDuelR1_2.Text = "R1";
-            this.radioButtonDuelR1_2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelL1_2
-            // 
-            this.radioButtonDuelL1_2.AutoSize = true;
-            this.radioButtonDuelL1_2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelL1_2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelL1_2.Location = new System.Drawing.Point(255, 29);
-            this.radioButtonDuelL1_2.Name = "radioButtonDuelL1_2";
-            this.radioButtonDuelL1_2.Size = new System.Drawing.Size(37, 19);
-            this.radioButtonDuelL1_2.TabIndex = 11;
-            this.radioButtonDuelL1_2.TabStop = true;
-            this.radioButtonDuelL1_2.Text = "L1";
-            this.radioButtonDuelL1_2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelLeft2
-            // 
-            this.radioButtonDuelLeft2.AutoSize = true;
-            this.radioButtonDuelLeft2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelLeft2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelLeft2.Location = new System.Drawing.Point(196, 29);
-            this.radioButtonDuelLeft2.Name = "radioButtonDuelLeft2";
-            this.radioButtonDuelLeft2.Size = new System.Drawing.Size(45, 19);
-            this.radioButtonDuelLeft2.TabIndex = 11;
-            this.radioButtonDuelLeft2.TabStop = true;
-            this.radioButtonDuelLeft2.Text = "Left";
-            this.radioButtonDuelLeft2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelDown2
-            // 
-            this.radioButtonDuelDown2.AutoSize = true;
-            this.radioButtonDuelDown2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelDown2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelDown2.Location = new System.Drawing.Point(126, 29);
-            this.radioButtonDuelDown2.Name = "radioButtonDuelDown2";
-            this.radioButtonDuelDown2.Size = new System.Drawing.Size(56, 19);
-            this.radioButtonDuelDown2.TabIndex = 11;
-            this.radioButtonDuelDown2.TabStop = true;
-            this.radioButtonDuelDown2.Text = "Down";
-            this.radioButtonDuelDown2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelRight2
-            // 
-            this.radioButtonDuelRight2.AutoSize = true;
-            this.radioButtonDuelRight2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelRight2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelRight2.Location = new System.Drawing.Point(59, 29);
-            this.radioButtonDuelRight2.Name = "radioButtonDuelRight2";
-            this.radioButtonDuelRight2.Size = new System.Drawing.Size(53, 19);
-            this.radioButtonDuelRight2.TabIndex = 11;
-            this.radioButtonDuelRight2.TabStop = true;
-            this.radioButtonDuelRight2.Text = "Right";
-            this.radioButtonDuelRight2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelDeac2
-            // 
-            this.radioButtonDuelDeac2.AutoSize = true;
-            this.radioButtonDuelDeac2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelDeac2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelDeac2.Location = new System.Drawing.Point(316, 54);
-            this.radioButtonDuelDeac2.Name = "radioButtonDuelDeac2";
-            this.radioButtonDuelDeac2.Size = new System.Drawing.Size(80, 19);
-            this.radioButtonDuelDeac2.TabIndex = 11;
-            this.radioButtonDuelDeac2.TabStop = true;
-            this.radioButtonDuelDeac2.Text = "Deactivate";
-            this.radioButtonDuelDeac2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelSquare2
-            // 
-            this.radioButtonDuelSquare2.AutoSize = true;
-            this.radioButtonDuelSquare2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelSquare2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelSquare2.Location = new System.Drawing.Point(244, 54);
-            this.radioButtonDuelSquare2.Name = "radioButtonDuelSquare2";
-            this.radioButtonDuelSquare2.Size = new System.Drawing.Size(61, 19);
-            this.radioButtonDuelSquare2.TabIndex = 11;
-            this.radioButtonDuelSquare2.TabStop = true;
-            this.radioButtonDuelSquare2.Text = "Square";
-            this.radioButtonDuelSquare2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelX2
-            // 
-            this.radioButtonDuelX2.AutoSize = true;
-            this.radioButtonDuelX2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelX2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelX2.Location = new System.Drawing.Point(201, 54);
-            this.radioButtonDuelX2.Name = "radioButtonDuelX2";
-            this.radioButtonDuelX2.Size = new System.Drawing.Size(32, 19);
-            this.radioButtonDuelX2.TabIndex = 11;
-            this.radioButtonDuelX2.TabStop = true;
-            this.radioButtonDuelX2.Text = "X";
-            this.radioButtonDuelX2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelCircle2
-            // 
-            this.radioButtonDuelCircle2.AutoSize = true;
-            this.radioButtonDuelCircle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelCircle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelCircle2.Location = new System.Drawing.Point(135, 54);
-            this.radioButtonDuelCircle2.Name = "radioButtonDuelCircle2";
-            this.radioButtonDuelCircle2.Size = new System.Drawing.Size(55, 19);
-            this.radioButtonDuelCircle2.TabIndex = 11;
-            this.radioButtonDuelCircle2.TabStop = true;
-            this.radioButtonDuelCircle2.Text = "Circle";
-            this.radioButtonDuelCircle2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelTriangle2
-            // 
-            this.radioButtonDuelTriangle2.AutoSize = true;
-            this.radioButtonDuelTriangle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelTriangle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelTriangle2.Location = new System.Drawing.Point(57, 54);
-            this.radioButtonDuelTriangle2.Name = "radioButtonDuelTriangle2";
-            this.radioButtonDuelTriangle2.Size = new System.Drawing.Size(67, 19);
-            this.radioButtonDuelTriangle2.TabIndex = 11;
-            this.radioButtonDuelTriangle2.TabStop = true;
-            this.radioButtonDuelTriangle2.Text = "Triangle";
-            this.radioButtonDuelTriangle2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelUp2
-            // 
-            this.radioButtonDuelUp2.AutoSize = true;
-            this.radioButtonDuelUp2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelUp2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelUp2.Location = new System.Drawing.Point(5, 29);
-            this.radioButtonDuelUp2.Name = "radioButtonDuelUp2";
-            this.radioButtonDuelUp2.Size = new System.Drawing.Size(40, 19);
-            this.radioButtonDuelUp2.TabIndex = 11;
-            this.radioButtonDuelUp2.TabStop = true;
-            this.radioButtonDuelUp2.Text = "Up";
-            this.radioButtonDuelUp2.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxShotInput3
-            // 
-            this.groupBoxShotInput3.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelR2_3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelL2_3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelR1_3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelL1_3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelLeft3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelDown3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelRight3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelDeac3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelSquare3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelX3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelCircle3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelTriangle3);
-            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelUp3);
-            this.groupBoxShotInput3.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxShotInput3.ForeColor = System.Drawing.Color.LimeGreen;
-            this.groupBoxShotInput3.Location = new System.Drawing.Point(0, 176);
-            this.groupBoxShotInput3.Name = "groupBoxShotInput3";
-            this.groupBoxShotInput3.Size = new System.Drawing.Size(452, 82);
-            this.groupBoxShotInput3.TabIndex = 113;
-            this.groupBoxShotInput3.TabStop = false;
-            this.groupBoxShotInput3.Text = "Input 3";
-            // 
-            // radioButtonDuelR2_3
-            // 
-            this.radioButtonDuelR2_3.AutoSize = true;
-            this.radioButtonDuelR2_3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelR2_3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelR2_3.Location = new System.Drawing.Point(409, 29);
-            this.radioButtonDuelR2_3.Name = "radioButtonDuelR2_3";
-            this.radioButtonDuelR2_3.Size = new System.Drawing.Size(38, 19);
-            this.radioButtonDuelR2_3.TabIndex = 11;
-            this.radioButtonDuelR2_3.TabStop = true;
-            this.radioButtonDuelR2_3.Text = "R2";
-            this.radioButtonDuelR2_3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelL2_3
-            // 
-            this.radioButtonDuelL2_3.AutoSize = true;
-            this.radioButtonDuelL2_3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelL2_3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelL2_3.Location = new System.Drawing.Point(358, 29);
-            this.radioButtonDuelL2_3.Name = "radioButtonDuelL2_3";
-            this.radioButtonDuelL2_3.Size = new System.Drawing.Size(37, 19);
-            this.radioButtonDuelL2_3.TabIndex = 11;
-            this.radioButtonDuelL2_3.TabStop = true;
-            this.radioButtonDuelL2_3.Text = "L2";
-            this.radioButtonDuelL2_3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelR1_3
-            // 
-            this.radioButtonDuelR1_3.AutoSize = true;
-            this.radioButtonDuelR1_3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelR1_3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelR1_3.Location = new System.Drawing.Point(306, 29);
-            this.radioButtonDuelR1_3.Name = "radioButtonDuelR1_3";
-            this.radioButtonDuelR1_3.Size = new System.Drawing.Size(38, 19);
-            this.radioButtonDuelR1_3.TabIndex = 11;
-            this.radioButtonDuelR1_3.TabStop = true;
-            this.radioButtonDuelR1_3.Text = "R1";
-            this.radioButtonDuelR1_3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelL1_3
-            // 
-            this.radioButtonDuelL1_3.AutoSize = true;
-            this.radioButtonDuelL1_3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelL1_3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelL1_3.Location = new System.Drawing.Point(255, 29);
-            this.radioButtonDuelL1_3.Name = "radioButtonDuelL1_3";
-            this.radioButtonDuelL1_3.Size = new System.Drawing.Size(37, 19);
-            this.radioButtonDuelL1_3.TabIndex = 11;
-            this.radioButtonDuelL1_3.TabStop = true;
-            this.radioButtonDuelL1_3.Text = "L1";
-            this.radioButtonDuelL1_3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelLeft3
-            // 
-            this.radioButtonDuelLeft3.AutoSize = true;
-            this.radioButtonDuelLeft3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelLeft3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelLeft3.Location = new System.Drawing.Point(196, 29);
-            this.radioButtonDuelLeft3.Name = "radioButtonDuelLeft3";
-            this.radioButtonDuelLeft3.Size = new System.Drawing.Size(45, 19);
-            this.radioButtonDuelLeft3.TabIndex = 11;
-            this.radioButtonDuelLeft3.TabStop = true;
-            this.radioButtonDuelLeft3.Text = "Left";
-            this.radioButtonDuelLeft3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelDown3
-            // 
-            this.radioButtonDuelDown3.AutoSize = true;
-            this.radioButtonDuelDown3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelDown3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelDown3.Location = new System.Drawing.Point(126, 29);
-            this.radioButtonDuelDown3.Name = "radioButtonDuelDown3";
-            this.radioButtonDuelDown3.Size = new System.Drawing.Size(56, 19);
-            this.radioButtonDuelDown3.TabIndex = 11;
-            this.radioButtonDuelDown3.TabStop = true;
-            this.radioButtonDuelDown3.Text = "Down";
-            this.radioButtonDuelDown3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelRight3
-            // 
-            this.radioButtonDuelRight3.AutoSize = true;
-            this.radioButtonDuelRight3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelRight3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelRight3.Location = new System.Drawing.Point(59, 29);
-            this.radioButtonDuelRight3.Name = "radioButtonDuelRight3";
-            this.radioButtonDuelRight3.Size = new System.Drawing.Size(53, 19);
-            this.radioButtonDuelRight3.TabIndex = 11;
-            this.radioButtonDuelRight3.TabStop = true;
-            this.radioButtonDuelRight3.Text = "Right";
-            this.radioButtonDuelRight3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelDeac3
-            // 
-            this.radioButtonDuelDeac3.AutoSize = true;
-            this.radioButtonDuelDeac3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelDeac3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelDeac3.Location = new System.Drawing.Point(316, 54);
-            this.radioButtonDuelDeac3.Name = "radioButtonDuelDeac3";
-            this.radioButtonDuelDeac3.Size = new System.Drawing.Size(80, 19);
-            this.radioButtonDuelDeac3.TabIndex = 11;
-            this.radioButtonDuelDeac3.TabStop = true;
-            this.radioButtonDuelDeac3.Text = "Deactivate";
-            this.radioButtonDuelDeac3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelSquare3
-            // 
-            this.radioButtonDuelSquare3.AutoSize = true;
-            this.radioButtonDuelSquare3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelSquare3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelSquare3.Location = new System.Drawing.Point(244, 54);
-            this.radioButtonDuelSquare3.Name = "radioButtonDuelSquare3";
-            this.radioButtonDuelSquare3.Size = new System.Drawing.Size(61, 19);
-            this.radioButtonDuelSquare3.TabIndex = 11;
-            this.radioButtonDuelSquare3.TabStop = true;
-            this.radioButtonDuelSquare3.Text = "Square";
-            this.radioButtonDuelSquare3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelX3
-            // 
-            this.radioButtonDuelX3.AutoSize = true;
-            this.radioButtonDuelX3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelX3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelX3.Location = new System.Drawing.Point(201, 54);
-            this.radioButtonDuelX3.Name = "radioButtonDuelX3";
-            this.radioButtonDuelX3.Size = new System.Drawing.Size(32, 19);
-            this.radioButtonDuelX3.TabIndex = 11;
-            this.radioButtonDuelX3.TabStop = true;
-            this.radioButtonDuelX3.Text = "X";
-            this.radioButtonDuelX3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelCircle3
-            // 
-            this.radioButtonDuelCircle3.AutoSize = true;
-            this.radioButtonDuelCircle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelCircle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelCircle3.Location = new System.Drawing.Point(135, 54);
-            this.radioButtonDuelCircle3.Name = "radioButtonDuelCircle3";
-            this.radioButtonDuelCircle3.Size = new System.Drawing.Size(55, 19);
-            this.radioButtonDuelCircle3.TabIndex = 11;
-            this.radioButtonDuelCircle3.TabStop = true;
-            this.radioButtonDuelCircle3.Text = "Circle";
-            this.radioButtonDuelCircle3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelTriangle3
-            // 
-            this.radioButtonDuelTriangle3.AutoSize = true;
-            this.radioButtonDuelTriangle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelTriangle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelTriangle3.Location = new System.Drawing.Point(57, 54);
-            this.radioButtonDuelTriangle3.Name = "radioButtonDuelTriangle3";
-            this.radioButtonDuelTriangle3.Size = new System.Drawing.Size(67, 19);
-            this.radioButtonDuelTriangle3.TabIndex = 11;
-            this.radioButtonDuelTriangle3.TabStop = true;
-            this.radioButtonDuelTriangle3.Text = "Triangle";
-            this.radioButtonDuelTriangle3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelUp3
-            // 
-            this.radioButtonDuelUp3.AutoSize = true;
-            this.radioButtonDuelUp3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelUp3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelUp3.Location = new System.Drawing.Point(5, 29);
-            this.radioButtonDuelUp3.Name = "radioButtonDuelUp3";
-            this.radioButtonDuelUp3.Size = new System.Drawing.Size(40, 19);
-            this.radioButtonDuelUp3.TabIndex = 11;
-            this.radioButtonDuelUp3.TabStop = true;
-            this.radioButtonDuelUp3.Text = "Up";
-            this.radioButtonDuelUp3.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxShotInput4
-            // 
-            this.groupBoxShotInput4.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelR2_4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelL2_4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelR1_4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelL1_4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelLeft4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelDown4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelRight4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelDeac4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelSquare4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelX4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelCircle4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelTriangle4);
-            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelUp4);
-            this.groupBoxShotInput4.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxShotInput4.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.groupBoxShotInput4.Location = new System.Drawing.Point(0, 264);
-            this.groupBoxShotInput4.Name = "groupBoxShotInput4";
-            this.groupBoxShotInput4.Size = new System.Drawing.Size(452, 82);
-            this.groupBoxShotInput4.TabIndex = 113;
-            this.groupBoxShotInput4.TabStop = false;
-            this.groupBoxShotInput4.Text = "Input 4";
-            // 
-            // radioButtonDuelR2_4
-            // 
-            this.radioButtonDuelR2_4.AutoSize = true;
-            this.radioButtonDuelR2_4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelR2_4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelR2_4.Location = new System.Drawing.Point(409, 29);
-            this.radioButtonDuelR2_4.Name = "radioButtonDuelR2_4";
-            this.radioButtonDuelR2_4.Size = new System.Drawing.Size(38, 19);
-            this.radioButtonDuelR2_4.TabIndex = 11;
-            this.radioButtonDuelR2_4.TabStop = true;
-            this.radioButtonDuelR2_4.Text = "R2";
-            this.radioButtonDuelR2_4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelL2_4
-            // 
-            this.radioButtonDuelL2_4.AutoSize = true;
-            this.radioButtonDuelL2_4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelL2_4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelL2_4.Location = new System.Drawing.Point(358, 29);
-            this.radioButtonDuelL2_4.Name = "radioButtonDuelL2_4";
-            this.radioButtonDuelL2_4.Size = new System.Drawing.Size(37, 19);
-            this.radioButtonDuelL2_4.TabIndex = 11;
-            this.radioButtonDuelL2_4.TabStop = true;
-            this.radioButtonDuelL2_4.Text = "L2";
-            this.radioButtonDuelL2_4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelR1_4
-            // 
-            this.radioButtonDuelR1_4.AutoSize = true;
-            this.radioButtonDuelR1_4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelR1_4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelR1_4.Location = new System.Drawing.Point(306, 29);
-            this.radioButtonDuelR1_4.Name = "radioButtonDuelR1_4";
-            this.radioButtonDuelR1_4.Size = new System.Drawing.Size(38, 19);
-            this.radioButtonDuelR1_4.TabIndex = 11;
-            this.radioButtonDuelR1_4.TabStop = true;
-            this.radioButtonDuelR1_4.Text = "R1";
-            this.radioButtonDuelR1_4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelL1_4
-            // 
-            this.radioButtonDuelL1_4.AutoSize = true;
-            this.radioButtonDuelL1_4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelL1_4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelL1_4.Location = new System.Drawing.Point(255, 29);
-            this.radioButtonDuelL1_4.Name = "radioButtonDuelL1_4";
-            this.radioButtonDuelL1_4.Size = new System.Drawing.Size(37, 19);
-            this.radioButtonDuelL1_4.TabIndex = 11;
-            this.radioButtonDuelL1_4.TabStop = true;
-            this.radioButtonDuelL1_4.Text = "L1";
-            this.radioButtonDuelL1_4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelLeft4
-            // 
-            this.radioButtonDuelLeft4.AutoSize = true;
-            this.radioButtonDuelLeft4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelLeft4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelLeft4.Location = new System.Drawing.Point(196, 29);
-            this.radioButtonDuelLeft4.Name = "radioButtonDuelLeft4";
-            this.radioButtonDuelLeft4.Size = new System.Drawing.Size(45, 19);
-            this.radioButtonDuelLeft4.TabIndex = 11;
-            this.radioButtonDuelLeft4.TabStop = true;
-            this.radioButtonDuelLeft4.Text = "Left";
-            this.radioButtonDuelLeft4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelDown4
-            // 
-            this.radioButtonDuelDown4.AutoSize = true;
-            this.radioButtonDuelDown4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelDown4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelDown4.Location = new System.Drawing.Point(126, 29);
-            this.radioButtonDuelDown4.Name = "radioButtonDuelDown4";
-            this.radioButtonDuelDown4.Size = new System.Drawing.Size(56, 19);
-            this.radioButtonDuelDown4.TabIndex = 11;
-            this.radioButtonDuelDown4.TabStop = true;
-            this.radioButtonDuelDown4.Text = "Down";
-            this.radioButtonDuelDown4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelRight4
-            // 
-            this.radioButtonDuelRight4.AutoSize = true;
-            this.radioButtonDuelRight4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelRight4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelRight4.Location = new System.Drawing.Point(59, 29);
-            this.radioButtonDuelRight4.Name = "radioButtonDuelRight4";
-            this.radioButtonDuelRight4.Size = new System.Drawing.Size(53, 19);
-            this.radioButtonDuelRight4.TabIndex = 11;
-            this.radioButtonDuelRight4.TabStop = true;
-            this.radioButtonDuelRight4.Text = "Right";
-            this.radioButtonDuelRight4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelDeac4
-            // 
-            this.radioButtonDuelDeac4.AutoSize = true;
-            this.radioButtonDuelDeac4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelDeac4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelDeac4.Location = new System.Drawing.Point(316, 54);
-            this.radioButtonDuelDeac4.Name = "radioButtonDuelDeac4";
-            this.radioButtonDuelDeac4.Size = new System.Drawing.Size(80, 19);
-            this.radioButtonDuelDeac4.TabIndex = 11;
-            this.radioButtonDuelDeac4.TabStop = true;
-            this.radioButtonDuelDeac4.Text = "Deactivate";
-            this.radioButtonDuelDeac4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelSquare4
-            // 
-            this.radioButtonDuelSquare4.AutoSize = true;
-            this.radioButtonDuelSquare4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelSquare4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelSquare4.Location = new System.Drawing.Point(244, 54);
-            this.radioButtonDuelSquare4.Name = "radioButtonDuelSquare4";
-            this.radioButtonDuelSquare4.Size = new System.Drawing.Size(61, 19);
-            this.radioButtonDuelSquare4.TabIndex = 11;
-            this.radioButtonDuelSquare4.TabStop = true;
-            this.radioButtonDuelSquare4.Text = "Square";
-            this.radioButtonDuelSquare4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelX4
-            // 
-            this.radioButtonDuelX4.AutoSize = true;
-            this.radioButtonDuelX4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelX4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelX4.Location = new System.Drawing.Point(201, 54);
-            this.radioButtonDuelX4.Name = "radioButtonDuelX4";
-            this.radioButtonDuelX4.Size = new System.Drawing.Size(32, 19);
-            this.radioButtonDuelX4.TabIndex = 11;
-            this.radioButtonDuelX4.TabStop = true;
-            this.radioButtonDuelX4.Text = "X";
-            this.radioButtonDuelX4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelCircle4
-            // 
-            this.radioButtonDuelCircle4.AutoSize = true;
-            this.radioButtonDuelCircle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelCircle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelCircle4.Location = new System.Drawing.Point(135, 54);
-            this.radioButtonDuelCircle4.Name = "radioButtonDuelCircle4";
-            this.radioButtonDuelCircle4.Size = new System.Drawing.Size(55, 19);
-            this.radioButtonDuelCircle4.TabIndex = 11;
-            this.radioButtonDuelCircle4.TabStop = true;
-            this.radioButtonDuelCircle4.Text = "Circle";
-            this.radioButtonDuelCircle4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelTriangle4
-            // 
-            this.radioButtonDuelTriangle4.AutoSize = true;
-            this.radioButtonDuelTriangle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelTriangle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelTriangle4.Location = new System.Drawing.Point(57, 54);
-            this.radioButtonDuelTriangle4.Name = "radioButtonDuelTriangle4";
-            this.radioButtonDuelTriangle4.Size = new System.Drawing.Size(67, 19);
-            this.radioButtonDuelTriangle4.TabIndex = 11;
-            this.radioButtonDuelTriangle4.TabStop = true;
-            this.radioButtonDuelTriangle4.Text = "Triangle";
-            this.radioButtonDuelTriangle4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelUp4
-            // 
-            this.radioButtonDuelUp4.AutoSize = true;
-            this.radioButtonDuelUp4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelUp4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelUp4.Location = new System.Drawing.Point(5, 29);
-            this.radioButtonDuelUp4.Name = "radioButtonDuelUp4";
-            this.radioButtonDuelUp4.Size = new System.Drawing.Size(40, 19);
-            this.radioButtonDuelUp4.TabIndex = 11;
-            this.radioButtonDuelUp4.TabStop = true;
-            this.radioButtonDuelUp4.Text = "Up";
-            this.radioButtonDuelUp4.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxShotInput5
-            // 
-            this.groupBoxShotInput5.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelR2_5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelL2_5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelR1_5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelL1_5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelLeft5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelDown5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelRight5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelDeac5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelSquare5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelX5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelCircle5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelTriangle5);
-            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelUp5);
-            this.groupBoxShotInput5.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxShotInput5.ForeColor = System.Drawing.Color.HotPink;
-            this.groupBoxShotInput5.Location = new System.Drawing.Point(0, 352);
-            this.groupBoxShotInput5.Name = "groupBoxShotInput5";
-            this.groupBoxShotInput5.Size = new System.Drawing.Size(452, 82);
-            this.groupBoxShotInput5.TabIndex = 113;
-            this.groupBoxShotInput5.TabStop = false;
-            this.groupBoxShotInput5.Text = "Input 5";
-            // 
-            // radioButtonDuelR2_5
-            // 
-            this.radioButtonDuelR2_5.AutoSize = true;
-            this.radioButtonDuelR2_5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelR2_5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelR2_5.Location = new System.Drawing.Point(409, 29);
-            this.radioButtonDuelR2_5.Name = "radioButtonDuelR2_5";
-            this.radioButtonDuelR2_5.Size = new System.Drawing.Size(38, 19);
-            this.radioButtonDuelR2_5.TabIndex = 11;
-            this.radioButtonDuelR2_5.TabStop = true;
-            this.radioButtonDuelR2_5.Text = "R2";
-            this.radioButtonDuelR2_5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelL2_5
-            // 
-            this.radioButtonDuelL2_5.AutoSize = true;
-            this.radioButtonDuelL2_5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelL2_5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelL2_5.Location = new System.Drawing.Point(358, 29);
-            this.radioButtonDuelL2_5.Name = "radioButtonDuelL2_5";
-            this.radioButtonDuelL2_5.Size = new System.Drawing.Size(37, 19);
-            this.radioButtonDuelL2_5.TabIndex = 11;
-            this.radioButtonDuelL2_5.TabStop = true;
-            this.radioButtonDuelL2_5.Text = "L2";
-            this.radioButtonDuelL2_5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelR1_5
-            // 
-            this.radioButtonDuelR1_5.AutoSize = true;
-            this.radioButtonDuelR1_5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelR1_5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelR1_5.Location = new System.Drawing.Point(306, 29);
-            this.radioButtonDuelR1_5.Name = "radioButtonDuelR1_5";
-            this.radioButtonDuelR1_5.Size = new System.Drawing.Size(38, 19);
-            this.radioButtonDuelR1_5.TabIndex = 11;
-            this.radioButtonDuelR1_5.TabStop = true;
-            this.radioButtonDuelR1_5.Text = "R1";
-            this.radioButtonDuelR1_5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelL1_5
-            // 
-            this.radioButtonDuelL1_5.AutoSize = true;
-            this.radioButtonDuelL1_5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelL1_5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelL1_5.Location = new System.Drawing.Point(255, 29);
-            this.radioButtonDuelL1_5.Name = "radioButtonDuelL1_5";
-            this.radioButtonDuelL1_5.Size = new System.Drawing.Size(37, 19);
-            this.radioButtonDuelL1_5.TabIndex = 11;
-            this.radioButtonDuelL1_5.TabStop = true;
-            this.radioButtonDuelL1_5.Text = "L1";
-            this.radioButtonDuelL1_5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelLeft5
-            // 
-            this.radioButtonDuelLeft5.AutoSize = true;
-            this.radioButtonDuelLeft5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelLeft5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelLeft5.Location = new System.Drawing.Point(196, 29);
-            this.radioButtonDuelLeft5.Name = "radioButtonDuelLeft5";
-            this.radioButtonDuelLeft5.Size = new System.Drawing.Size(45, 19);
-            this.radioButtonDuelLeft5.TabIndex = 11;
-            this.radioButtonDuelLeft5.TabStop = true;
-            this.radioButtonDuelLeft5.Text = "Left";
-            this.radioButtonDuelLeft5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelDown5
-            // 
-            this.radioButtonDuelDown5.AutoSize = true;
-            this.radioButtonDuelDown5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelDown5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelDown5.Location = new System.Drawing.Point(126, 29);
-            this.radioButtonDuelDown5.Name = "radioButtonDuelDown5";
-            this.radioButtonDuelDown5.Size = new System.Drawing.Size(56, 19);
-            this.radioButtonDuelDown5.TabIndex = 11;
-            this.radioButtonDuelDown5.TabStop = true;
-            this.radioButtonDuelDown5.Text = "Down";
-            this.radioButtonDuelDown5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelRight5
-            // 
-            this.radioButtonDuelRight5.AutoSize = true;
-            this.radioButtonDuelRight5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelRight5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelRight5.Location = new System.Drawing.Point(59, 29);
-            this.radioButtonDuelRight5.Name = "radioButtonDuelRight5";
-            this.radioButtonDuelRight5.Size = new System.Drawing.Size(53, 19);
-            this.radioButtonDuelRight5.TabIndex = 11;
-            this.radioButtonDuelRight5.TabStop = true;
-            this.radioButtonDuelRight5.Text = "Right";
-            this.radioButtonDuelRight5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelDeac5
-            // 
-            this.radioButtonDuelDeac5.AutoSize = true;
-            this.radioButtonDuelDeac5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelDeac5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelDeac5.Location = new System.Drawing.Point(316, 54);
-            this.radioButtonDuelDeac5.Name = "radioButtonDuelDeac5";
-            this.radioButtonDuelDeac5.Size = new System.Drawing.Size(80, 19);
-            this.radioButtonDuelDeac5.TabIndex = 11;
-            this.radioButtonDuelDeac5.TabStop = true;
-            this.radioButtonDuelDeac5.Text = "Deactivate";
-            this.radioButtonDuelDeac5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelSquare5
-            // 
-            this.radioButtonDuelSquare5.AutoSize = true;
-            this.radioButtonDuelSquare5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelSquare5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelSquare5.Location = new System.Drawing.Point(244, 54);
-            this.radioButtonDuelSquare5.Name = "radioButtonDuelSquare5";
-            this.radioButtonDuelSquare5.Size = new System.Drawing.Size(61, 19);
-            this.radioButtonDuelSquare5.TabIndex = 11;
-            this.radioButtonDuelSquare5.TabStop = true;
-            this.radioButtonDuelSquare5.Text = "Square";
-            this.radioButtonDuelSquare5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelX5
-            // 
-            this.radioButtonDuelX5.AutoSize = true;
-            this.radioButtonDuelX5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelX5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelX5.Location = new System.Drawing.Point(201, 54);
-            this.radioButtonDuelX5.Name = "radioButtonDuelX5";
-            this.radioButtonDuelX5.Size = new System.Drawing.Size(32, 19);
-            this.radioButtonDuelX5.TabIndex = 11;
-            this.radioButtonDuelX5.TabStop = true;
-            this.radioButtonDuelX5.Text = "X";
-            this.radioButtonDuelX5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelCircle5
-            // 
-            this.radioButtonDuelCircle5.AutoSize = true;
-            this.radioButtonDuelCircle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelCircle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelCircle5.Location = new System.Drawing.Point(135, 54);
-            this.radioButtonDuelCircle5.Name = "radioButtonDuelCircle5";
-            this.radioButtonDuelCircle5.Size = new System.Drawing.Size(55, 19);
-            this.radioButtonDuelCircle5.TabIndex = 11;
-            this.radioButtonDuelCircle5.TabStop = true;
-            this.radioButtonDuelCircle5.Text = "Circle";
-            this.radioButtonDuelCircle5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelTriangle5
-            // 
-            this.radioButtonDuelTriangle5.AutoSize = true;
-            this.radioButtonDuelTriangle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelTriangle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelTriangle5.Location = new System.Drawing.Point(57, 54);
-            this.radioButtonDuelTriangle5.Name = "radioButtonDuelTriangle5";
-            this.radioButtonDuelTriangle5.Size = new System.Drawing.Size(67, 19);
-            this.radioButtonDuelTriangle5.TabIndex = 11;
-            this.radioButtonDuelTriangle5.TabStop = true;
-            this.radioButtonDuelTriangle5.Text = "Triangle";
-            this.radioButtonDuelTriangle5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDuelUp5
-            // 
-            this.radioButtonDuelUp5.AutoSize = true;
-            this.radioButtonDuelUp5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDuelUp5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButtonDuelUp5.Location = new System.Drawing.Point(5, 29);
-            this.radioButtonDuelUp5.Name = "radioButtonDuelUp5";
-            this.radioButtonDuelUp5.Size = new System.Drawing.Size(40, 19);
-            this.radioButtonDuelUp5.TabIndex = 11;
-            this.radioButtonDuelUp5.TabStop = true;
-            this.radioButtonDuelUp5.Text = "Up";
-            this.radioButtonDuelUp5.UseVisualStyleBackColor = true;
+            // comboBoxDuelButton1
+            // 
+            this.comboBoxDuelButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelButton1.FormattingEnabled = true;
+            this.comboBoxDuelButton1.Items.AddRange(new object[] {
+            "Deactivate",
+            "Up",
+            "Right",
+            "Down",
+            "Left",
+            "L2",
+            "R2",
+            "L1",
+            "R1",
+            "Triangle",
+            "Circle",
+            "X",
+            "Square"});
+            this.comboBoxDuelButton1.Location = new System.Drawing.Point(4, 51);
+            this.comboBoxDuelButton1.Name = "comboBoxDuelButton1";
+            this.comboBoxDuelButton1.Size = new System.Drawing.Size(84, 25);
+            this.comboBoxDuelButton1.TabIndex = 4;
+            // 
+            // labelDuelButton1
+            // 
+            this.labelDuelButton1.AutoSize = true;
+            this.labelDuelButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelButton1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelButton1.Location = new System.Drawing.Point(17, 31);
+            this.labelDuelButton1.Name = "labelDuelButton1";
+            this.labelDuelButton1.Size = new System.Drawing.Size(59, 17);
+            this.labelDuelButton1.TabIndex = 3;
+            this.labelDuelButton1.Text = "Button 1";
+            this.toolTip1.SetToolTip(this.labelDuelButton1, "Decides what animation to play");
+            // 
+            // labelDuelButton2
+            // 
+            this.labelDuelButton2.AutoSize = true;
+            this.labelDuelButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelButton2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelButton2.Location = new System.Drawing.Point(107, 31);
+            this.labelDuelButton2.Name = "labelDuelButton2";
+            this.labelDuelButton2.Size = new System.Drawing.Size(61, 17);
+            this.labelDuelButton2.TabIndex = 3;
+            this.labelDuelButton2.Text = "Button 2";
+            // 
+            // comboBoxDuelButton2
+            // 
+            this.comboBoxDuelButton2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelButton2.FormattingEnabled = true;
+            this.comboBoxDuelButton2.Items.AddRange(new object[] {
+            "Deactivate",
+            "Up",
+            "Right",
+            "Down",
+            "Left",
+            "L2",
+            "R2",
+            "L1",
+            "R1",
+            "Triangle",
+            "Circle",
+            "X",
+            "Square"});
+            this.comboBoxDuelButton2.Location = new System.Drawing.Point(94, 51);
+            this.comboBoxDuelButton2.Name = "comboBoxDuelButton2";
+            this.comboBoxDuelButton2.Size = new System.Drawing.Size(84, 25);
+            this.comboBoxDuelButton2.TabIndex = 4;
+            // 
+            // labelDuelButton3
+            // 
+            this.labelDuelButton3.AutoSize = true;
+            this.labelDuelButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelButton3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelButton3.Location = new System.Drawing.Point(197, 31);
+            this.labelDuelButton3.Name = "labelDuelButton3";
+            this.labelDuelButton3.Size = new System.Drawing.Size(61, 17);
+            this.labelDuelButton3.TabIndex = 3;
+            this.labelDuelButton3.Text = "Button 3";
+            // 
+            // comboBoxDuelButton3
+            // 
+            this.comboBoxDuelButton3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelButton3.FormattingEnabled = true;
+            this.comboBoxDuelButton3.Items.AddRange(new object[] {
+            "Deactivate",
+            "Up",
+            "Right",
+            "Down",
+            "Left",
+            "L2",
+            "R2",
+            "L1",
+            "R1",
+            "Triangle",
+            "Circle",
+            "X",
+            "Square"});
+            this.comboBoxDuelButton3.Location = new System.Drawing.Point(184, 51);
+            this.comboBoxDuelButton3.Name = "comboBoxDuelButton3";
+            this.comboBoxDuelButton3.Size = new System.Drawing.Size(84, 25);
+            this.comboBoxDuelButton3.TabIndex = 4;
+            // 
+            // labelDuelButton4
+            // 
+            this.labelDuelButton4.AutoSize = true;
+            this.labelDuelButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelButton4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelButton4.Location = new System.Drawing.Point(287, 31);
+            this.labelDuelButton4.Name = "labelDuelButton4";
+            this.labelDuelButton4.Size = new System.Drawing.Size(61, 17);
+            this.labelDuelButton4.TabIndex = 3;
+            this.labelDuelButton4.Text = "Button 4";
+            // 
+            // comboBoxDuelButton4
+            // 
+            this.comboBoxDuelButton4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelButton4.FormattingEnabled = true;
+            this.comboBoxDuelButton4.Items.AddRange(new object[] {
+            "Deactivate",
+            "Up",
+            "Right",
+            "Down",
+            "Left",
+            "L2",
+            "R2",
+            "L1",
+            "R1",
+            "Triangle",
+            "Circle",
+            "X",
+            "Square"});
+            this.comboBoxDuelButton4.Location = new System.Drawing.Point(274, 51);
+            this.comboBoxDuelButton4.Name = "comboBoxDuelButton4";
+            this.comboBoxDuelButton4.Size = new System.Drawing.Size(84, 25);
+            this.comboBoxDuelButton4.TabIndex = 4;
+            // 
+            // labelDuelButton5
+            // 
+            this.labelDuelButton5.AutoSize = true;
+            this.labelDuelButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelButton5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelButton5.Location = new System.Drawing.Point(377, 31);
+            this.labelDuelButton5.Name = "labelDuelButton5";
+            this.labelDuelButton5.Size = new System.Drawing.Size(61, 17);
+            this.labelDuelButton5.TabIndex = 3;
+            this.labelDuelButton5.Text = "Button 5";
+            // 
+            // comboBoxDuelButton5
+            // 
+            this.comboBoxDuelButton5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelButton5.FormattingEnabled = true;
+            this.comboBoxDuelButton5.Items.AddRange(new object[] {
+            "Deactivate",
+            "Up",
+            "Right",
+            "Down",
+            "Left",
+            "L2",
+            "R2",
+            "L1",
+            "R1",
+            "Triangle",
+            "Circle",
+            "X",
+            "Square"});
+            this.comboBoxDuelButton5.Location = new System.Drawing.Point(364, 51);
+            this.comboBoxDuelButton5.Name = "comboBoxDuelButton5";
+            this.comboBoxDuelButton5.Size = new System.Drawing.Size(84, 25);
+            this.comboBoxDuelButton5.TabIndex = 4;
             // 
             // mainForm
             // 
@@ -29793,14 +28949,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelAttackPower)).EndInit();
             this.groupBoxShotInput1.ResumeLayout(false);
             this.groupBoxShotInput1.PerformLayout();
-            this.groupBoxShotInput2.ResumeLayout(false);
-            this.groupBoxShotInput2.PerformLayout();
-            this.groupBoxShotInput3.ResumeLayout(false);
-            this.groupBoxShotInput3.PerformLayout();
-            this.groupBoxShotInput4.ResumeLayout(false);
-            this.groupBoxShotInput4.PerformLayout();
-            this.groupBoxShotInput5.ResumeLayout(false);
-            this.groupBoxShotInput5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -31089,75 +30237,16 @@
         private System.Windows.Forms.ListBox listBoxDuel;
         private System.Windows.Forms.GroupBox groupBoxShotInput1;
         private System.Windows.Forms.CheckBox checkBoxDuelFinisher;
-        private System.Windows.Forms.GroupBox groupBoxShotInput5;
-        private System.Windows.Forms.RadioButton radioButtonDuelR2_5;
-        private System.Windows.Forms.RadioButton radioButtonDuelL2_5;
-        private System.Windows.Forms.RadioButton radioButtonDuelR1_5;
-        private System.Windows.Forms.RadioButton radioButtonDuelL1_5;
-        private System.Windows.Forms.RadioButton radioButtonDuelLeft5;
-        private System.Windows.Forms.RadioButton radioButtonDuelDown5;
-        private System.Windows.Forms.RadioButton radioButtonDuelRight5;
-        private System.Windows.Forms.RadioButton radioButtonDuelDeac5;
-        private System.Windows.Forms.RadioButton radioButtonDuelSquare5;
-        private System.Windows.Forms.RadioButton radioButtonDuelX5;
-        private System.Windows.Forms.RadioButton radioButtonDuelCircle5;
-        private System.Windows.Forms.RadioButton radioButtonDuelTriangle5;
-        private System.Windows.Forms.RadioButton radioButtonDuelUp5;
-        private System.Windows.Forms.GroupBox groupBoxShotInput4;
-        private System.Windows.Forms.RadioButton radioButtonDuelR2_4;
-        private System.Windows.Forms.RadioButton radioButtonDuelL2_4;
-        private System.Windows.Forms.RadioButton radioButtonDuelR1_4;
-        private System.Windows.Forms.RadioButton radioButtonDuelL1_4;
-        private System.Windows.Forms.RadioButton radioButtonDuelLeft4;
-        private System.Windows.Forms.RadioButton radioButtonDuelDown4;
-        private System.Windows.Forms.RadioButton radioButtonDuelRight4;
-        private System.Windows.Forms.RadioButton radioButtonDuelDeac4;
-        private System.Windows.Forms.RadioButton radioButtonDuelSquare4;
-        private System.Windows.Forms.RadioButton radioButtonDuelX4;
-        private System.Windows.Forms.RadioButton radioButtonDuelCircle4;
-        private System.Windows.Forms.RadioButton radioButtonDuelTriangle4;
-        private System.Windows.Forms.RadioButton radioButtonDuelUp4;
-        private System.Windows.Forms.GroupBox groupBoxShotInput3;
-        private System.Windows.Forms.RadioButton radioButtonDuelR2_3;
-        private System.Windows.Forms.RadioButton radioButtonDuelL2_3;
-        private System.Windows.Forms.RadioButton radioButtonDuelR1_3;
-        private System.Windows.Forms.RadioButton radioButtonDuelL1_3;
-        private System.Windows.Forms.RadioButton radioButtonDuelLeft3;
-        private System.Windows.Forms.RadioButton radioButtonDuelDown3;
-        private System.Windows.Forms.RadioButton radioButtonDuelRight3;
-        private System.Windows.Forms.RadioButton radioButtonDuelDeac3;
-        private System.Windows.Forms.RadioButton radioButtonDuelSquare3;
-        private System.Windows.Forms.RadioButton radioButtonDuelX3;
-        private System.Windows.Forms.RadioButton radioButtonDuelCircle3;
-        private System.Windows.Forms.RadioButton radioButtonDuelTriangle3;
-        private System.Windows.Forms.RadioButton radioButtonDuelUp3;
-        private System.Windows.Forms.GroupBox groupBoxShotInput2;
-        private System.Windows.Forms.RadioButton radioButtonDuelR2_2;
-        private System.Windows.Forms.RadioButton radioButtonDuelL2_2;
-        private System.Windows.Forms.RadioButton radioButtonDuelR1_2;
-        private System.Windows.Forms.RadioButton radioButtonDuelL1_2;
-        private System.Windows.Forms.RadioButton radioButtonDuelLeft2;
-        private System.Windows.Forms.RadioButton radioButtonDuelDown2;
-        private System.Windows.Forms.RadioButton radioButtonDuelRight2;
-        private System.Windows.Forms.RadioButton radioButtonDuelDeac2;
-        private System.Windows.Forms.RadioButton radioButtonDuelSquare2;
-        private System.Windows.Forms.RadioButton radioButtonDuelX2;
-        private System.Windows.Forms.RadioButton radioButtonDuelCircle2;
-        private System.Windows.Forms.RadioButton radioButtonDuelTriangle2;
-        private System.Windows.Forms.RadioButton radioButtonDuelUp2;
-        private System.Windows.Forms.RadioButton radioButtonDuelR2_1;
-        private System.Windows.Forms.RadioButton radioButtonDuelL2_1;
-        private System.Windows.Forms.RadioButton radioButtonDuelR1_1;
-        private System.Windows.Forms.RadioButton radioButtonDuelL1_1;
-        private System.Windows.Forms.RadioButton radioButtonDuelLeft1;
-        private System.Windows.Forms.RadioButton radioButtonDuelDown1;
-        private System.Windows.Forms.RadioButton radioButtonDuelRight1;
-        private System.Windows.Forms.RadioButton radioButtonDuelDeac1;
-        private System.Windows.Forms.RadioButton radioButtonDuelSquare1;
-        private System.Windows.Forms.RadioButton radioButtonDuelX1;
-        private System.Windows.Forms.RadioButton radioButtonDuelCircle1;
-        private System.Windows.Forms.RadioButton radioButtonDuelTriangle1;
-        private System.Windows.Forms.RadioButton radioButtonDuelUp1;
+        private System.Windows.Forms.ComboBox comboBoxDuelButton1;
+        private System.Windows.Forms.Label labelDuelButton1;
+        private System.Windows.Forms.ComboBox comboBoxDuelButton5;
+        private System.Windows.Forms.Label labelDuelButton5;
+        private System.Windows.Forms.ComboBox comboBoxDuelButton4;
+        private System.Windows.Forms.Label labelDuelButton4;
+        private System.Windows.Forms.ComboBox comboBoxDuelButton3;
+        private System.Windows.Forms.Label labelDuelButton3;
+        private System.Windows.Forms.ComboBox comboBoxDuelButton2;
+        private System.Windows.Forms.Label labelDuelButton2;
     }
 }
 
