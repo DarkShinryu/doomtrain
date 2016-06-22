@@ -44,6 +44,9 @@ namespace Doomtrain
         public static int ShotDataOffset = -1;
         public static int OffsetToShotSelected = -1;
 
+        public static int DuelDataOffset = -1;
+        public static int OffsetToDuelSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -56,6 +59,7 @@ namespace Doomtrain
         public static RenzoFinData GetSelectedRenzoFinData;
         public static TempCharLBData GetSelectedTempCharLBData;
         public static ShotData GetSelectedShotData;
+        public static DuelData GetSelectedDuelData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -482,6 +486,31 @@ namespace Doomtrain
             public byte Status4;
             public byte Status5;
             public byte UsedItem;
+        }
+
+        public struct DuelData
+        {
+            //public string OffsetToName;
+            //public string OffsetToDescription;
+            public UInt16 MagicID;
+            public byte AttackType;
+            public byte AttackPower;
+            public byte AttackFlags;
+            public byte Target;
+            public byte HitCount;
+            public Element Element;
+            public byte ElementPerc;
+            public byte StatusAttack;
+            public byte Status1;
+            public byte Status2;
+            public byte Status3;
+            public byte Status4;
+            public byte Status5;
+            public UInt16 Button1;
+            public UInt16 Button2;
+            public UInt16 Button3;
+            public UInt16 Button4;
+            public UInt16 Button5;
         }
 
         #endregion
@@ -1498,6 +1527,84 @@ namespace Doomtrain
             }
         }
 
+        public static void UpdateVariable_Duel(int index, object variable, byte arg0 = 127)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    UshortToKernel(Convert.ToUInt16(variable), 4, (byte)Mode.Mode_Duel); //MagicID
+                    return;
+                case 1:
+                    Kernel[OffsetToDuelSelected + 6] = Convert.ToByte(variable); //Attack type
+                    return;
+                case 2:
+                    Kernel[OffsetToDuelSelected + 7] = Convert.ToByte(variable); //Attack power
+                    return;
+                case 3:
+                    Kernel[OffsetToDuelSelected + 8] = (byte)(Kernel[OffsetToDuelSelected + 8] ^ Convert.ToByte(variable)); //attack flags
+                    return;
+                case 4:
+                    Kernel[OffsetToDuelSelected + 10] = (byte)(Kernel[OffsetToDuelSelected + 10] ^ Convert.ToByte(variable)); //default target
+                    return;
+                case 5:
+                    Kernel[OffsetToDuelSelected + 12] = Convert.ToByte(variable); //Hit Count
+                    return;
+                case 6:
+                    Kernel[OffsetToDuelSelected + 13] = Convert.ToByte(variable); //Element
+                    return;
+                case 7:
+                    Kernel[OffsetToDuelSelected + 14] = Convert.ToByte(variable); //Element %
+                    return;
+                case 8:
+                    Kernel[OffsetToDuelSelected + 15] = Convert.ToByte(variable); //Status Attack
+                    return;
+                case 9:
+                    Kernel[OffsetToDuelSelected + 16] ^= Convert.ToByte(variable); //button 1, not sure if correct
+                    return;
+                case 10:
+                    Kernel[OffsetToDuelSelected + 18] ^= Convert.ToByte(variable); //button 2
+                    return;
+                case 11:
+                    Kernel[OffsetToDuelSelected + 20] ^= Convert.ToByte(variable); //button 3
+                    return;
+                case 12:
+                    Kernel[OffsetToDuelSelected + 22] ^= Convert.ToByte(variable); //button 4
+                    return;
+                case 13:
+                    Kernel[OffsetToDuelSelected + 24] ^= Convert.ToByte(variable); //button 5
+                    return;
+                case 14:
+                    DuelStatusUpdator(arg0, variable); //Status
+                    return;
+
+                default:
+                    return;
+            }
+        }
+        private static void DuelStatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToDuelSelected + 26] = (byte)(Kernel[OffsetToDuelSelected + 26] ^ Convert.ToByte(variable));
+                    return;
+                case 1:
+                    Kernel[OffsetToDuelSelected + 28] = (byte)(Kernel[OffsetToDuelSelected + 28] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToDuelSelected + 29] = (byte)(Kernel[OffsetToDuelSelected + 29] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToDuelSelected + 30] = (byte)(Kernel[OffsetToDuelSelected + 30] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToDuelSelected + 31] = (byte)(Kernel[OffsetToDuelSelected + 31] ^ Convert.ToByte(variable));
+                    return;
+            }
+        }
+
         #endregion
 
         #region MAGIC ID
@@ -1536,6 +1643,9 @@ namespace Doomtrain
                 case (byte)Mode.Mode_Shot:
                     Array.Copy(magicIdBytes, 0, Kernel, OffsetToShotSelected + add, 2);
                     break;
+                case (byte)Mode.Mode_Duel:
+                    Array.Copy(magicIdBytes, 0, Kernel, OffsetToDuelSelected + add, 2);
+                    break;
 
                 default:
                     return;
@@ -1551,7 +1661,8 @@ namespace Doomtrain
             Mode_BlueMagic,
             Mode_RenzoFin,
             Mode_TempCharLB,
-            Mode_Shot
+            Mode_Shot,
+            Mode_Duel
         }
 
         #endregion
@@ -1573,6 +1684,7 @@ namespace Doomtrain
             RenzoFinDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RenzokukenFinisher);
             TempCharLBDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.TempCharacterLimitBreakes);
             ShotDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Shot_Irvine);
+            DuelDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Duel_Zell);
         }
 
 
@@ -2229,6 +2341,62 @@ namespace Doomtrain
             GetSelectedShotData.Status3 = Kernel[selectedShotOffset++];
             GetSelectedShotData.Status4 = Kernel[selectedShotOffset++];
             GetSelectedShotData.Status5 = Kernel[selectedShotOffset++];
+        }
+
+        public static void ReadDuel(int DuelID_List)
+        {
+            GetSelectedDuelData = new DuelData();
+            int selectedDuelOffset = DuelDataOffset + (DuelID_List * 32);
+            OffsetToDuelSelected = selectedDuelOffset;
+
+            GetSelectedDuelData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedDuelOffset + 4));
+            selectedDuelOffset += 4 + 2;
+            GetSelectedDuelData.AttackType = Kernel[selectedDuelOffset++];
+            GetSelectedDuelData.AttackPower = Kernel[selectedDuelOffset++];
+            GetSelectedDuelData.AttackFlags = Kernel[selectedDuelOffset++];
+            selectedDuelOffset += 1;
+            GetSelectedDuelData.Target = Kernel[selectedDuelOffset++];
+            selectedDuelOffset += 1;
+            GetSelectedDuelData.HitCount = Kernel[selectedDuelOffset++];
+            byte b = Kernel[selectedDuelOffset++];
+            GetSelectedDuelData.Element =
+                b == (byte)Element.Fire
+                    ? Element.Fire
+                    : b == (byte)Element.Holy
+                        ? Element.Holy
+                        : b == (byte)Element.Ice
+                            ? Element.Ice
+                            : b == (byte)Element.NonElemental
+                                ? Element.NonElemental
+                                : b == (byte)Element.Poison
+                                    ? Element.Poison
+                                    : b == (byte)Element.Thunder
+                                        ? Element.Thunder
+                                        : b == (byte)Element.Water
+                                            ? Element.Water
+                                            : b == (byte)Element.Wind
+                                                ? Element.Wind
+                                                : b == (byte)Element.Earth
+                                                    ? Element.Earth
+                                                    : 0; //Error handler
+            GetSelectedDuelData.ElementPerc = Kernel[selectedDuelOffset++];
+            GetSelectedDuelData.StatusAttack = Kernel[selectedDuelOffset++];
+            GetSelectedDuelData.Button1 = Kernel[selectedDuelOffset];
+            selectedDuelOffset += 2;
+            GetSelectedDuelData.Button2 = Kernel[selectedDuelOffset];
+            selectedDuelOffset += 2;
+            GetSelectedDuelData.Button3 = Kernel[selectedDuelOffset];
+            selectedDuelOffset += 2;
+            GetSelectedDuelData.Button4 = Kernel[selectedDuelOffset];
+            selectedDuelOffset += 2;
+            GetSelectedDuelData.Button5 = Kernel[selectedDuelOffset];
+            selectedDuelOffset += 2;
+            GetSelectedDuelData.Status1 = Kernel[selectedDuelOffset++];
+            selectedDuelOffset += 1;
+            GetSelectedDuelData.Status2 = Kernel[selectedDuelOffset++];
+            GetSelectedDuelData.Status3 = Kernel[selectedDuelOffset++];
+            GetSelectedDuelData.Status4 = Kernel[selectedDuelOffset++];
+            GetSelectedDuelData.Status5 = Kernel[selectedDuelOffset++];
         }
 
         #endregion

@@ -164,6 +164,8 @@
             this.labelShotAttackPower = new System.Windows.Forms.Label();
             this.labelShotMagicID = new System.Windows.Forms.Label();
             this.labelShotElement = new System.Windows.Forms.Label();
+            this.labelRenzoFinElement = new System.Windows.Forms.Label();
+            this.labelTempCharLBElement = new System.Windows.Forms.Label();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -936,6 +938,9 @@
             this.checkBoxRenzoFinFlag2 = new System.Windows.Forms.CheckBox();
             this.checkBoxRenzoFinFlag7 = new System.Windows.Forms.CheckBox();
             this.groupBoxRenzoFinGeneral = new System.Windows.Forms.GroupBox();
+            this.labelRenzoFinElementPerc = new System.Windows.Forms.Label();
+            this.comboBoxRenzoFinElement = new System.Windows.Forms.ComboBox();
+            this.numericUpDownRenzoFinElementPerc = new System.Windows.Forms.NumericUpDown();
             this.comboBoxRenzoFinAttackType = new System.Windows.Forms.ComboBox();
             this.numericUpDownRenzoFinHitCount = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownRenzoFinAttackPower = new System.Windows.Forms.NumericUpDown();
@@ -1158,6 +1163,9 @@
             this.checkBoxTempCharLBFlag2 = new System.Windows.Forms.CheckBox();
             this.checkBoxTempCharLBFlag7 = new System.Windows.Forms.CheckBox();
             this.groupBoxTempCharLBGeneral = new System.Windows.Forms.GroupBox();
+            this.labelTempCharLBElementPerc = new System.Windows.Forms.Label();
+            this.comboBoxTempCharLBElement = new System.Windows.Forms.ComboBox();
+            this.numericUpDownTempCharLBElementPerc = new System.Windows.Forms.NumericUpDown();
             this.comboBoxTempCharLBAttackType = new System.Windows.Forms.ComboBox();
             this.numericUpDownTempCharLBHitCount = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownTempCharLBAttackPower = new System.Windows.Forms.NumericUpDown();
@@ -1223,14 +1231,156 @@
             this.listBoxEnemyAttacks = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.labelRenzoFinElementPerc = new System.Windows.Forms.Label();
-            this.comboBoxRenzoFinElement = new System.Windows.Forms.ComboBox();
-            this.labelRenzoFinElement = new System.Windows.Forms.Label();
-            this.numericUpDownRenzoFinElementPerc = new System.Windows.Forms.NumericUpDown();
-            this.labelTempCharLBElementPerc = new System.Windows.Forms.Label();
-            this.comboBoxTempCharLBElement = new System.Windows.Forms.ComboBox();
-            this.labelTempCharLBElement = new System.Windows.Forms.Label();
-            this.numericUpDownTempCharLBElementPerc = new System.Windows.Forms.NumericUpDown();
+            this.tabPageDuel = new System.Windows.Forms.TabPage();
+            this.listBoxDuel = new System.Windows.Forms.ListBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPageDuelGeneral = new System.Windows.Forms.TabPage();
+            this.tabPageDuelButtons = new System.Windows.Forms.TabPage();
+            this.groupBoxDuelStatus = new System.Windows.Forms.GroupBox();
+            this.checkBoxDuelPetrifying = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelDarkness = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelSilence = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelStop = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelConfusion = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelPetrify = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelSlow = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelBerserk = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelSleep = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelInvincible = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelCurse = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelDoom = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelFloat = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelAura = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelDrain = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelSummonGF = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelHasMagic = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelUnk6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelUnk5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelUnk4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelUnk3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelAngelWing = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelVit0 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelBackAttack = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelCharged = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelUnk2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelUnk1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelDefend = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelTriple = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelDouble = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelEject = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelPoison = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelDeath = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelProtect = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelHaste = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelRegen = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelShell = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelReflect = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelUnk7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelZombie = new System.Windows.Forms.CheckBox();
+            this.numericUpDownDuelStatusAttack = new System.Windows.Forms.NumericUpDown();
+            this.labelDuelStatusAttack = new System.Windows.Forms.Label();
+            this.groupBoxDuelTarget = new System.Windows.Forms.GroupBox();
+            this.checkBoxDuelTarget8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelTarget5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelTarget2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelTarget4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelTarget6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelTarget7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelTarget1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelTarget3 = new System.Windows.Forms.CheckBox();
+            this.groupBoxDuelFlags = new System.Windows.Forms.GroupBox();
+            this.checkBoxDuelFlag4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelFlag1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelFlag5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelFlag7 = new System.Windows.Forms.CheckBox();
+            this.groupBoxDuelGeneral = new System.Windows.Forms.GroupBox();
+            this.labelDuelElementPerc = new System.Windows.Forms.Label();
+            this.comboBoxDuelElement = new System.Windows.Forms.ComboBox();
+            this.labelDuelElement = new System.Windows.Forms.Label();
+            this.numericUpDownDuelElementPerc = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxDuelAttackType = new System.Windows.Forms.ComboBox();
+            this.labelDuelAttackType = new System.Windows.Forms.Label();
+            this.numericUpDownDuelHitCount = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownDuelAttackPower = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxDuelMagicID = new System.Windows.Forms.ComboBox();
+            this.labelDuelHitCount = new System.Windows.Forms.Label();
+            this.labelDuelAttackPower = new System.Windows.Forms.Label();
+            this.labelDuelMagicID = new System.Windows.Forms.Label();
+            this.groupBoxShotInput1 = new System.Windows.Forms.GroupBox();
+            this.checkBoxDuelFinisher = new System.Windows.Forms.CheckBox();
+            this.radioButtonDuelUp1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelRight1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelDown1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelLeft1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelL1_1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelR1_1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelL2_1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelR2_1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelTriangle1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelCircle1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelX1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelSquare1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelDeac1 = new System.Windows.Forms.RadioButton();
+            this.groupBoxShotInput2 = new System.Windows.Forms.GroupBox();
+            this.radioButtonDuelR2_2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelL2_2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelR1_2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelL1_2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelLeft2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelDown2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelRight2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelDeac2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelSquare2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelX2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelCircle2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelTriangle2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelUp2 = new System.Windows.Forms.RadioButton();
+            this.groupBoxShotInput3 = new System.Windows.Forms.GroupBox();
+            this.radioButtonDuelR2_3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelL2_3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelR1_3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelL1_3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelLeft3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelDown3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelRight3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelDeac3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelSquare3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelX3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelCircle3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelTriangle3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelUp3 = new System.Windows.Forms.RadioButton();
+            this.groupBoxShotInput4 = new System.Windows.Forms.GroupBox();
+            this.radioButtonDuelR2_4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelL2_4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelR1_4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelL1_4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelLeft4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelDown4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelRight4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelDeac4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelSquare4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelX4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelCircle4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelTriangle4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelUp4 = new System.Windows.Forms.RadioButton();
+            this.groupBoxShotInput5 = new System.Windows.Forms.GroupBox();
+            this.radioButtonDuelR2_5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelL2_5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelR1_5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelL1_5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelLeft5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelDown5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelRight5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelDeac5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelSquare5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelX5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelCircle5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelTriangle5 = new System.Windows.Forms.RadioButton();
+            this.radioButtonDuelUp5 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
@@ -1410,6 +1560,7 @@
             this.groupBoxRenzoFinTargetInfo.SuspendLayout();
             this.groupBoxRenzoFinFlags.SuspendLayout();
             this.groupBoxRenzoFinGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinElementPerc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinAttackPower)).BeginInit();
             this.tabPageShot.SuspendLayout();
@@ -1499,6 +1650,7 @@
             this.groupBoxTempCharLBTarget.SuspendLayout();
             this.groupBoxTempCharLBFlags.SuspendLayout();
             this.groupBoxTempCharLBGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBElementPerc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBAttackPower)).BeginInit();
             this.tabEnemyAttacks.SuspendLayout();
@@ -1508,8 +1660,23 @@
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackPower)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinElementPerc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBElementPerc)).BeginInit();
+            this.tabPageDuel.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPageDuelGeneral.SuspendLayout();
+            this.tabPageDuelButtons.SuspendLayout();
+            this.groupBoxDuelStatus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelStatusAttack)).BeginInit();
+            this.groupBoxDuelTarget.SuspendLayout();
+            this.groupBoxDuelFlags.SuspendLayout();
+            this.groupBoxDuelGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelElementPerc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelHitCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelAttackPower)).BeginInit();
+            this.groupBoxShotInput1.SuspendLayout();
+            this.groupBoxShotInput2.SuspendLayout();
+            this.groupBoxShotInput3.SuspendLayout();
+            this.groupBoxShotInput4.SuspendLayout();
+            this.groupBoxShotInput5.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -4159,6 +4326,30 @@
             this.labelShotElement.TabIndex = 91;
             this.labelShotElement.Text = "Element";
             this.toolTip1.SetToolTip(this.labelShotElement, "The element of the GF attack");
+            // 
+            // labelRenzoFinElement
+            // 
+            this.labelRenzoFinElement.AutoSize = true;
+            this.labelRenzoFinElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelRenzoFinElement.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelRenzoFinElement.Location = new System.Drawing.Point(178, 140);
+            this.labelRenzoFinElement.Name = "labelRenzoFinElement";
+            this.labelRenzoFinElement.Size = new System.Drawing.Size(57, 17);
+            this.labelRenzoFinElement.TabIndex = 95;
+            this.labelRenzoFinElement.Text = "Element";
+            this.toolTip1.SetToolTip(this.labelRenzoFinElement, "The element of the GF attack");
+            // 
+            // labelTempCharLBElement
+            // 
+            this.labelTempCharLBElement.AutoSize = true;
+            this.labelTempCharLBElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelTempCharLBElement.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelTempCharLBElement.Location = new System.Drawing.Point(174, 140);
+            this.labelTempCharLBElement.Name = "labelTempCharLBElement";
+            this.labelTempCharLBElement.Size = new System.Drawing.Size(57, 17);
+            this.labelTempCharLBElement.TabIndex = 99;
+            this.labelTempCharLBElement.Text = "Element";
+            this.toolTip1.SetToolTip(this.labelTempCharLBElement, "The element of the GF attack");
             // 
             // fileToolStripMenuItem
             // 
@@ -19789,6 +19980,7 @@
             this.tabControlMain.Controls.Add(this.tabPageGFAttacks);
             this.tabControlMain.Controls.Add(this.tabPageRenzokukenFinishers);
             this.tabControlMain.Controls.Add(this.tabBlueMagic);
+            this.tabControlMain.Controls.Add(this.tabPageDuel);
             this.tabControlMain.Controls.Add(this.tabPageShot);
             this.tabControlMain.Controls.Add(this.tabSlots);
             this.tabControlMain.Controls.Add(this.tabPageTempCharLB);
@@ -20617,6 +20809,49 @@
             this.groupBoxRenzoFinGeneral.TabIndex = 4;
             this.groupBoxRenzoFinGeneral.TabStop = false;
             this.groupBoxRenzoFinGeneral.Text = "General";
+            // 
+            // labelRenzoFinElementPerc
+            // 
+            this.labelRenzoFinElementPerc.AutoSize = true;
+            this.labelRenzoFinElementPerc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelRenzoFinElementPerc.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelRenzoFinElementPerc.Location = new System.Drawing.Point(280, 140);
+            this.labelRenzoFinElementPerc.Name = "labelRenzoFinElementPerc";
+            this.labelRenzoFinElementPerc.Size = new System.Drawing.Size(19, 17);
+            this.labelRenzoFinElementPerc.TabIndex = 94;
+            this.labelRenzoFinElementPerc.Text = "%";
+            // 
+            // comboBoxRenzoFinElement
+            // 
+            this.comboBoxRenzoFinElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxRenzoFinElement.FormattingEnabled = true;
+            this.comboBoxRenzoFinElement.Items.AddRange(new object[] {
+            "Fire",
+            "Ice",
+            "Thunder",
+            "Earth",
+            "Poison",
+            "Wind",
+            "Water",
+            "Holy",
+            "Non-Elemental"});
+            this.comboBoxRenzoFinElement.Location = new System.Drawing.Point(151, 160);
+            this.comboBoxRenzoFinElement.Name = "comboBoxRenzoFinElement";
+            this.comboBoxRenzoFinElement.Size = new System.Drawing.Size(110, 25);
+            this.comboBoxRenzoFinElement.TabIndex = 93;
+            // 
+            // numericUpDownRenzoFinElementPerc
+            // 
+            this.numericUpDownRenzoFinElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownRenzoFinElementPerc.Location = new System.Drawing.Point(267, 160);
+            this.numericUpDownRenzoFinElementPerc.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownRenzoFinElementPerc.Name = "numericUpDownRenzoFinElementPerc";
+            this.numericUpDownRenzoFinElementPerc.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownRenzoFinElementPerc.TabIndex = 92;
             // 
             // comboBoxRenzoFinAttackType
             // 
@@ -25086,6 +25321,49 @@
             this.groupBoxTempCharLBGeneral.TabStop = false;
             this.groupBoxTempCharLBGeneral.Text = "General";
             // 
+            // labelTempCharLBElementPerc
+            // 
+            this.labelTempCharLBElementPerc.AutoSize = true;
+            this.labelTempCharLBElementPerc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelTempCharLBElementPerc.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelTempCharLBElementPerc.Location = new System.Drawing.Point(276, 140);
+            this.labelTempCharLBElementPerc.Name = "labelTempCharLBElementPerc";
+            this.labelTempCharLBElementPerc.Size = new System.Drawing.Size(19, 17);
+            this.labelTempCharLBElementPerc.TabIndex = 98;
+            this.labelTempCharLBElementPerc.Text = "%";
+            // 
+            // comboBoxTempCharLBElement
+            // 
+            this.comboBoxTempCharLBElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTempCharLBElement.FormattingEnabled = true;
+            this.comboBoxTempCharLBElement.Items.AddRange(new object[] {
+            "Fire",
+            "Ice",
+            "Thunder",
+            "Earth",
+            "Poison",
+            "Wind",
+            "Water",
+            "Holy",
+            "Non-Elemental"});
+            this.comboBoxTempCharLBElement.Location = new System.Drawing.Point(147, 160);
+            this.comboBoxTempCharLBElement.Name = "comboBoxTempCharLBElement";
+            this.comboBoxTempCharLBElement.Size = new System.Drawing.Size(110, 25);
+            this.comboBoxTempCharLBElement.TabIndex = 97;
+            // 
+            // numericUpDownTempCharLBElementPerc
+            // 
+            this.numericUpDownTempCharLBElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownTempCharLBElementPerc.Location = new System.Drawing.Point(263, 160);
+            this.numericUpDownTempCharLBElementPerc.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownTempCharLBElementPerc.Name = "numericUpDownTempCharLBElementPerc";
+            this.numericUpDownTempCharLBElementPerc.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownTempCharLBElementPerc.TabIndex = 96;
+            // 
             // comboBoxTempCharLBAttackType
             // 
             this.comboBoxTempCharLBAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -26737,22 +27015,915 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel1.Text = "Ready";
             // 
-            // labelRenzoFinElementPerc
+            // tabPageDuel
             // 
-            this.labelRenzoFinElementPerc.AutoSize = true;
-            this.labelRenzoFinElementPerc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelRenzoFinElementPerc.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelRenzoFinElementPerc.Location = new System.Drawing.Point(280, 140);
-            this.labelRenzoFinElementPerc.Name = "labelRenzoFinElementPerc";
-            this.labelRenzoFinElementPerc.Size = new System.Drawing.Size(19, 17);
-            this.labelRenzoFinElementPerc.TabIndex = 94;
-            this.labelRenzoFinElementPerc.Text = "%";
+            this.tabPageDuel.Controls.Add(this.tabControl1);
+            this.tabPageDuel.Controls.Add(this.listBoxDuel);
+            this.tabPageDuel.Location = new System.Drawing.Point(4, 34);
+            this.tabPageDuel.Name = "tabPageDuel";
+            this.tabPageDuel.Size = new System.Drawing.Size(584, 739);
+            this.tabPageDuel.TabIndex = 12;
+            this.tabPageDuel.Text = "Duel";
+            this.tabPageDuel.UseVisualStyleBackColor = true;
             // 
-            // comboBoxRenzoFinElement
+            // listBoxDuel
             // 
-            this.comboBoxRenzoFinElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxRenzoFinElement.FormattingEnabled = true;
-            this.comboBoxRenzoFinElement.Items.AddRange(new object[] {
+            this.listBoxDuel.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxDuel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxDuel.FormattingEnabled = true;
+            this.listBoxDuel.ItemHeight = 17;
+            this.listBoxDuel.Items.AddRange(new object[] {
+            "Punch Rush",
+            "Booya",
+            "Heel Drop",
+            "Mach Kick",
+            "Dolphin Blow",
+            "Meteor Strike",
+            "Burning Rave",
+            "Meteor Barret",
+            "Different Beat",
+            "My Final Heaven"});
+            this.listBoxDuel.Location = new System.Drawing.Point(0, 0);
+            this.listBoxDuel.Name = "listBoxDuel";
+            this.listBoxDuel.ScrollAlwaysVisible = true;
+            this.listBoxDuel.Size = new System.Drawing.Size(120, 735);
+            this.listBoxDuel.TabIndex = 107;
+            this.listBoxDuel.SelectedIndexChanged += new System.EventHandler(this.listBoxDuel_SelectedIndexChanged);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPageDuelGeneral);
+            this.tabControl1.Controls.Add(this.tabPageDuelButtons);
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(122, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(466, 740);
+            this.tabControl1.TabIndex = 96;
+            this.tabControl1.TabStop = false;
+            // 
+            // tabPageDuelGeneral
+            // 
+            this.tabPageDuelGeneral.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageDuelGeneral.Controls.Add(this.groupBoxDuelStatus);
+            this.tabPageDuelGeneral.Controls.Add(this.groupBoxDuelTarget);
+            this.tabPageDuelGeneral.Controls.Add(this.groupBoxDuelFlags);
+            this.tabPageDuelGeneral.Controls.Add(this.groupBoxDuelGeneral);
+            this.tabPageDuelGeneral.Location = new System.Drawing.Point(4, 26);
+            this.tabPageDuelGeneral.Name = "tabPageDuelGeneral";
+            this.tabPageDuelGeneral.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDuelGeneral.Size = new System.Drawing.Size(458, 710);
+            this.tabPageDuelGeneral.TabIndex = 0;
+            this.tabPageDuelGeneral.Text = "General";
+            // 
+            // tabPageDuelButtons
+            // 
+            this.tabPageDuelButtons.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageDuelButtons.Controls.Add(this.groupBoxShotInput5);
+            this.tabPageDuelButtons.Controls.Add(this.groupBoxShotInput4);
+            this.tabPageDuelButtons.Controls.Add(this.groupBoxShotInput3);
+            this.tabPageDuelButtons.Controls.Add(this.groupBoxShotInput2);
+            this.tabPageDuelButtons.Controls.Add(this.groupBoxShotInput1);
+            this.tabPageDuelButtons.Location = new System.Drawing.Point(4, 26);
+            this.tabPageDuelButtons.Name = "tabPageDuelButtons";
+            this.tabPageDuelButtons.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDuelButtons.Size = new System.Drawing.Size(458, 710);
+            this.tabPageDuelButtons.TabIndex = 1;
+            this.tabPageDuelButtons.Text = "Buttons";
+            // 
+            // groupBoxDuelStatus
+            // 
+            this.groupBoxDuelStatus.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelPetrifying);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelDarkness);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelSilence);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelStop);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelConfusion);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelPetrify);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelSlow);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelBerserk);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelSleep);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelInvincible);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelCurse);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelDoom);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelFloat);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelAura);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelDrain);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelSummonGF);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelHasMagic);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelUnk6);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelUnk5);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelUnk4);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelUnk3);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelAngelWing);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelVit0);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelBackAttack);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelCharged);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelUnk2);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelUnk1);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelDefend);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelTriple);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelDouble);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelEject);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelPoison);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelDeath);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelProtect);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelHaste);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelRegen);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelShell);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelReflect);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelUnk7);
+            this.groupBoxDuelStatus.Controls.Add(this.checkBoxDuelZombie);
+            this.groupBoxDuelStatus.Controls.Add(this.numericUpDownDuelStatusAttack);
+            this.groupBoxDuelStatus.Controls.Add(this.labelDuelStatusAttack);
+            this.groupBoxDuelStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxDuelStatus.ForeColor = System.Drawing.Color.DarkViolet;
+            this.groupBoxDuelStatus.Location = new System.Drawing.Point(0, 310);
+            this.groupBoxDuelStatus.Name = "groupBoxDuelStatus";
+            this.groupBoxDuelStatus.Size = new System.Drawing.Size(452, 286);
+            this.groupBoxDuelStatus.TabIndex = 115;
+            this.groupBoxDuelStatus.TabStop = false;
+            this.groupBoxDuelStatus.Text = "Status Attack";
+            // 
+            // checkBoxDuelPetrifying
+            // 
+            this.checkBoxDuelPetrifying.AutoSize = true;
+            this.checkBoxDuelPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelPetrifying.Location = new System.Drawing.Point(280, 136);
+            this.checkBoxDuelPetrifying.Name = "checkBoxDuelPetrifying";
+            this.checkBoxDuelPetrifying.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxDuelPetrifying.TabIndex = 115;
+            this.checkBoxDuelPetrifying.Text = "Petrifying";
+            this.checkBoxDuelPetrifying.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelDarkness
+            // 
+            this.checkBoxDuelDarkness.AutoSize = true;
+            this.checkBoxDuelDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelDarkness.Location = new System.Drawing.Point(5, 261);
+            this.checkBoxDuelDarkness.Name = "checkBoxDuelDarkness";
+            this.checkBoxDuelDarkness.Size = new System.Drawing.Size(73, 19);
+            this.checkBoxDuelDarkness.TabIndex = 138;
+            this.checkBoxDuelDarkness.Text = "Darkness";
+            this.checkBoxDuelDarkness.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelSilence
+            // 
+            this.checkBoxDuelSilence.AutoSize = true;
+            this.checkBoxDuelSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelSilence.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelSilence.Location = new System.Drawing.Point(97, 261);
+            this.checkBoxDuelSilence.Name = "checkBoxDuelSilence";
+            this.checkBoxDuelSilence.Size = new System.Drawing.Size(63, 19);
+            this.checkBoxDuelSilence.TabIndex = 139;
+            this.checkBoxDuelSilence.Text = "Silence";
+            this.checkBoxDuelSilence.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelStop
+            // 
+            this.checkBoxDuelStop.AutoSize = true;
+            this.checkBoxDuelStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelStop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelStop.Location = new System.Drawing.Point(280, 86);
+            this.checkBoxDuelStop.Name = "checkBoxDuelStop";
+            this.checkBoxDuelStop.Size = new System.Drawing.Size(50, 19);
+            this.checkBoxDuelStop.TabIndex = 106;
+            this.checkBoxDuelStop.Text = "Stop";
+            this.checkBoxDuelStop.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelConfusion
+            // 
+            this.checkBoxDuelConfusion.AutoSize = true;
+            this.checkBoxDuelConfusion.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxDuelConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelConfusion.Location = new System.Drawing.Point(368, 136);
+            this.checkBoxDuelConfusion.Name = "checkBoxDuelConfusion";
+            this.checkBoxDuelConfusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxDuelConfusion.TabIndex = 117;
+            this.checkBoxDuelConfusion.Text = "Confusion";
+            this.checkBoxDuelConfusion.UseVisualStyleBackColor = false;
+            // 
+            // checkBoxDuelPetrify
+            // 
+            this.checkBoxDuelPetrify.AutoSize = true;
+            this.checkBoxDuelPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelPetrify.Location = new System.Drawing.Point(368, 236);
+            this.checkBoxDuelPetrify.Name = "checkBoxDuelPetrify";
+            this.checkBoxDuelPetrify.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxDuelPetrify.TabIndex = 137;
+            this.checkBoxDuelPetrify.Text = "Petrify";
+            this.checkBoxDuelPetrify.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelSlow
+            // 
+            this.checkBoxDuelSlow.AutoSize = true;
+            this.checkBoxDuelSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelSlow.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelSlow.Location = new System.Drawing.Point(191, 86);
+            this.checkBoxDuelSlow.Name = "checkBoxDuelSlow";
+            this.checkBoxDuelSlow.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxDuelSlow.TabIndex = 105;
+            this.checkBoxDuelSlow.Text = "Slow";
+            this.checkBoxDuelSlow.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelBerserk
+            // 
+            this.checkBoxDuelBerserk.AutoSize = true;
+            this.checkBoxDuelBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelBerserk.Location = new System.Drawing.Point(191, 261);
+            this.checkBoxDuelBerserk.Name = "checkBoxDuelBerserk";
+            this.checkBoxDuelBerserk.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxDuelBerserk.TabIndex = 140;
+            this.checkBoxDuelBerserk.Text = "Berserk";
+            this.checkBoxDuelBerserk.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelSleep
+            // 
+            this.checkBoxDuelSleep.AutoSize = true;
+            this.checkBoxDuelSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelSleep.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelSleep.Location = new System.Drawing.Point(5, 86);
+            this.checkBoxDuelSleep.Name = "checkBoxDuelSleep";
+            this.checkBoxDuelSleep.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxDuelSleep.TabIndex = 103;
+            this.checkBoxDuelSleep.Text = "Sleep";
+            this.checkBoxDuelSleep.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelInvincible
+            // 
+            this.checkBoxDuelInvincible.AutoSize = true;
+            this.checkBoxDuelInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelInvincible.Location = new System.Drawing.Point(97, 136);
+            this.checkBoxDuelInvincible.Name = "checkBoxDuelInvincible";
+            this.checkBoxDuelInvincible.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxDuelInvincible.TabIndex = 114;
+            this.checkBoxDuelInvincible.Text = "Invincible";
+            this.checkBoxDuelInvincible.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelCurse
+            // 
+            this.checkBoxDuelCurse.AutoSize = true;
+            this.checkBoxDuelCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelCurse.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelCurse.Location = new System.Drawing.Point(368, 111);
+            this.checkBoxDuelCurse.Name = "checkBoxDuelCurse";
+            this.checkBoxDuelCurse.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxDuelCurse.TabIndex = 112;
+            this.checkBoxDuelCurse.Text = "Curse";
+            this.checkBoxDuelCurse.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelDoom
+            // 
+            this.checkBoxDuelDoom.AutoSize = true;
+            this.checkBoxDuelDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelDoom.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelDoom.Location = new System.Drawing.Point(5, 136);
+            this.checkBoxDuelDoom.Name = "checkBoxDuelDoom";
+            this.checkBoxDuelDoom.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxDuelDoom.TabIndex = 113;
+            this.checkBoxDuelDoom.Text = "Doom";
+            this.checkBoxDuelDoom.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelFloat
+            // 
+            this.checkBoxDuelFloat.AutoSize = true;
+            this.checkBoxDuelFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelFloat.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelFloat.Location = new System.Drawing.Point(191, 136);
+            this.checkBoxDuelFloat.Name = "checkBoxDuelFloat";
+            this.checkBoxDuelFloat.Size = new System.Drawing.Size(52, 19);
+            this.checkBoxDuelFloat.TabIndex = 116;
+            this.checkBoxDuelFloat.Text = "Float";
+            this.checkBoxDuelFloat.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelAura
+            // 
+            this.checkBoxDuelAura.AutoSize = true;
+            this.checkBoxDuelAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelAura.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelAura.Location = new System.Drawing.Point(280, 111);
+            this.checkBoxDuelAura.Name = "checkBoxDuelAura";
+            this.checkBoxDuelAura.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxDuelAura.TabIndex = 111;
+            this.checkBoxDuelAura.Text = "Aura";
+            this.checkBoxDuelAura.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelDrain
+            // 
+            this.checkBoxDuelDrain.AutoSize = true;
+            this.checkBoxDuelDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelDrain.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelDrain.Location = new System.Drawing.Point(5, 161);
+            this.checkBoxDuelDrain.Name = "checkBoxDuelDrain";
+            this.checkBoxDuelDrain.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxDuelDrain.TabIndex = 118;
+            this.checkBoxDuelDrain.Text = "Drain";
+            this.checkBoxDuelDrain.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelSummonGF
+            // 
+            this.checkBoxDuelSummonGF.AutoSize = true;
+            this.checkBoxDuelSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelSummonGF.Location = new System.Drawing.Point(97, 236);
+            this.checkBoxDuelSummonGF.Name = "checkBoxDuelSummonGF";
+            this.checkBoxDuelSummonGF.Size = new System.Drawing.Size(92, 19);
+            this.checkBoxDuelSummonGF.TabIndex = 133;
+            this.checkBoxDuelSummonGF.Text = "Summon GF";
+            this.checkBoxDuelSummonGF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelHasMagic
+            // 
+            this.checkBoxDuelHasMagic.AutoSize = true;
+            this.checkBoxDuelHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelHasMagic.Location = new System.Drawing.Point(5, 236);
+            this.checkBoxDuelHasMagic.Name = "checkBoxDuelHasMagic";
+            this.checkBoxDuelHasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxDuelHasMagic.TabIndex = 132;
+            this.checkBoxDuelHasMagic.Text = "Has Magic";
+            this.checkBoxDuelHasMagic.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelUnk6
+            // 
+            this.checkBoxDuelUnk6.AutoSize = true;
+            this.checkBoxDuelUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelUnk6.Location = new System.Drawing.Point(368, 211);
+            this.checkBoxDuelUnk6.Name = "checkBoxDuelUnk6";
+            this.checkBoxDuelUnk6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelUnk6.TabIndex = 131;
+            this.checkBoxDuelUnk6.Text = "???";
+            this.checkBoxDuelUnk6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelUnk5
+            // 
+            this.checkBoxDuelUnk5.AutoSize = true;
+            this.checkBoxDuelUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelUnk5.Location = new System.Drawing.Point(280, 211);
+            this.checkBoxDuelUnk5.Name = "checkBoxDuelUnk5";
+            this.checkBoxDuelUnk5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelUnk5.TabIndex = 130;
+            this.checkBoxDuelUnk5.Text = "???";
+            this.checkBoxDuelUnk5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelUnk4
+            // 
+            this.checkBoxDuelUnk4.AutoSize = true;
+            this.checkBoxDuelUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelUnk4.Location = new System.Drawing.Point(191, 211);
+            this.checkBoxDuelUnk4.Name = "checkBoxDuelUnk4";
+            this.checkBoxDuelUnk4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelUnk4.TabIndex = 127;
+            this.checkBoxDuelUnk4.Text = "???";
+            this.checkBoxDuelUnk4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelUnk3
+            // 
+            this.checkBoxDuelUnk3.AutoSize = true;
+            this.checkBoxDuelUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelUnk3.Location = new System.Drawing.Point(97, 211);
+            this.checkBoxDuelUnk3.Name = "checkBoxDuelUnk3";
+            this.checkBoxDuelUnk3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelUnk3.TabIndex = 129;
+            this.checkBoxDuelUnk3.Text = "???";
+            this.checkBoxDuelUnk3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelAngelWing
+            // 
+            this.checkBoxDuelAngelWing.AutoSize = true;
+            this.checkBoxDuelAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelAngelWing.Location = new System.Drawing.Point(5, 211);
+            this.checkBoxDuelAngelWing.Name = "checkBoxDuelAngelWing";
+            this.checkBoxDuelAngelWing.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxDuelAngelWing.TabIndex = 128;
+            this.checkBoxDuelAngelWing.Text = "Angel Wing";
+            this.checkBoxDuelAngelWing.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelVit0
+            // 
+            this.checkBoxDuelVit0.AutoSize = true;
+            this.checkBoxDuelVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelVit0.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelVit0.Location = new System.Drawing.Point(368, 186);
+            this.checkBoxDuelVit0.Name = "checkBoxDuelVit0";
+            this.checkBoxDuelVit0.Size = new System.Drawing.Size(46, 19);
+            this.checkBoxDuelVit0.TabIndex = 134;
+            this.checkBoxDuelVit0.Text = "Vit0";
+            this.checkBoxDuelVit0.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelBackAttack
+            // 
+            this.checkBoxDuelBackAttack.AutoSize = true;
+            this.checkBoxDuelBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelBackAttack.Location = new System.Drawing.Point(280, 186);
+            this.checkBoxDuelBackAttack.Name = "checkBoxDuelBackAttack";
+            this.checkBoxDuelBackAttack.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxDuelBackAttack.TabIndex = 126;
+            this.checkBoxDuelBackAttack.Text = "Back Attack";
+            this.checkBoxDuelBackAttack.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelCharged
+            // 
+            this.checkBoxDuelCharged.AutoSize = true;
+            this.checkBoxDuelCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelCharged.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelCharged.Location = new System.Drawing.Point(191, 186);
+            this.checkBoxDuelCharged.Name = "checkBoxDuelCharged";
+            this.checkBoxDuelCharged.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxDuelCharged.TabIndex = 122;
+            this.checkBoxDuelCharged.Text = "Charged";
+            this.checkBoxDuelCharged.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelUnk2
+            // 
+            this.checkBoxDuelUnk2.AutoSize = true;
+            this.checkBoxDuelUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelUnk2.Location = new System.Drawing.Point(97, 186);
+            this.checkBoxDuelUnk2.Name = "checkBoxDuelUnk2";
+            this.checkBoxDuelUnk2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelUnk2.TabIndex = 125;
+            this.checkBoxDuelUnk2.Text = "???";
+            this.checkBoxDuelUnk2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelUnk1
+            // 
+            this.checkBoxDuelUnk1.AutoSize = true;
+            this.checkBoxDuelUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelUnk1.Location = new System.Drawing.Point(5, 186);
+            this.checkBoxDuelUnk1.Name = "checkBoxDuelUnk1";
+            this.checkBoxDuelUnk1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelUnk1.TabIndex = 124;
+            this.checkBoxDuelUnk1.Text = "???";
+            this.checkBoxDuelUnk1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelDefend
+            // 
+            this.checkBoxDuelDefend.AutoSize = true;
+            this.checkBoxDuelDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelDefend.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelDefend.Location = new System.Drawing.Point(368, 161);
+            this.checkBoxDuelDefend.Name = "checkBoxDuelDefend";
+            this.checkBoxDuelDefend.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxDuelDefend.TabIndex = 123;
+            this.checkBoxDuelDefend.Text = "Defend";
+            this.checkBoxDuelDefend.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelTriple
+            // 
+            this.checkBoxDuelTriple.AutoSize = true;
+            this.checkBoxDuelTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelTriple.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelTriple.Location = new System.Drawing.Point(280, 161);
+            this.checkBoxDuelTriple.Name = "checkBoxDuelTriple";
+            this.checkBoxDuelTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxDuelTriple.TabIndex = 121;
+            this.checkBoxDuelTriple.Text = "Triple";
+            this.checkBoxDuelTriple.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelDouble
+            // 
+            this.checkBoxDuelDouble.AutoSize = true;
+            this.checkBoxDuelDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelDouble.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelDouble.Location = new System.Drawing.Point(191, 161);
+            this.checkBoxDuelDouble.Name = "checkBoxDuelDouble";
+            this.checkBoxDuelDouble.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxDuelDouble.TabIndex = 120;
+            this.checkBoxDuelDouble.Text = "Double";
+            this.checkBoxDuelDouble.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelEject
+            // 
+            this.checkBoxDuelEject.AutoSize = true;
+            this.checkBoxDuelEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelEject.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelEject.Location = new System.Drawing.Point(97, 161);
+            this.checkBoxDuelEject.Name = "checkBoxDuelEject";
+            this.checkBoxDuelEject.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxDuelEject.TabIndex = 119;
+            this.checkBoxDuelEject.Text = "Eject";
+            this.checkBoxDuelEject.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelPoison
+            // 
+            this.checkBoxDuelPoison.AutoSize = true;
+            this.checkBoxDuelPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelPoison.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelPoison.Location = new System.Drawing.Point(280, 236);
+            this.checkBoxDuelPoison.Name = "checkBoxDuelPoison";
+            this.checkBoxDuelPoison.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxDuelPoison.TabIndex = 136;
+            this.checkBoxDuelPoison.Text = "Poison";
+            this.checkBoxDuelPoison.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelDeath
+            // 
+            this.checkBoxDuelDeath.AutoSize = true;
+            this.checkBoxDuelDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelDeath.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelDeath.Location = new System.Drawing.Point(191, 236);
+            this.checkBoxDuelDeath.Name = "checkBoxDuelDeath";
+            this.checkBoxDuelDeath.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxDuelDeath.TabIndex = 135;
+            this.checkBoxDuelDeath.Text = "Death";
+            this.checkBoxDuelDeath.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelProtect
+            // 
+            this.checkBoxDuelProtect.AutoSize = true;
+            this.checkBoxDuelProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelProtect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelProtect.Location = new System.Drawing.Point(5, 111);
+            this.checkBoxDuelProtect.Name = "checkBoxDuelProtect";
+            this.checkBoxDuelProtect.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxDuelProtect.TabIndex = 108;
+            this.checkBoxDuelProtect.Text = "Protect";
+            this.checkBoxDuelProtect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelHaste
+            // 
+            this.checkBoxDuelHaste.AutoSize = true;
+            this.checkBoxDuelHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelHaste.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelHaste.Location = new System.Drawing.Point(97, 86);
+            this.checkBoxDuelHaste.Name = "checkBoxDuelHaste";
+            this.checkBoxDuelHaste.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxDuelHaste.TabIndex = 104;
+            this.checkBoxDuelHaste.Text = "Haste";
+            this.checkBoxDuelHaste.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelRegen
+            // 
+            this.checkBoxDuelRegen.AutoSize = true;
+            this.checkBoxDuelRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelRegen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelRegen.Location = new System.Drawing.Point(368, 86);
+            this.checkBoxDuelRegen.Name = "checkBoxDuelRegen";
+            this.checkBoxDuelRegen.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxDuelRegen.TabIndex = 107;
+            this.checkBoxDuelRegen.Text = "Regen";
+            this.checkBoxDuelRegen.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelShell
+            // 
+            this.checkBoxDuelShell.AutoSize = true;
+            this.checkBoxDuelShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelShell.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelShell.Location = new System.Drawing.Point(97, 111);
+            this.checkBoxDuelShell.Name = "checkBoxDuelShell";
+            this.checkBoxDuelShell.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxDuelShell.TabIndex = 109;
+            this.checkBoxDuelShell.Text = "Shell";
+            this.checkBoxDuelShell.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelReflect
+            // 
+            this.checkBoxDuelReflect.AutoSize = true;
+            this.checkBoxDuelReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelReflect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelReflect.Location = new System.Drawing.Point(191, 111);
+            this.checkBoxDuelReflect.Name = "checkBoxDuelReflect";
+            this.checkBoxDuelReflect.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxDuelReflect.TabIndex = 110;
+            this.checkBoxDuelReflect.Text = "Reflect";
+            this.checkBoxDuelReflect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelUnk7
+            // 
+            this.checkBoxDuelUnk7.AutoSize = true;
+            this.checkBoxDuelUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelUnk7.Location = new System.Drawing.Point(368, 261);
+            this.checkBoxDuelUnk7.Name = "checkBoxDuelUnk7";
+            this.checkBoxDuelUnk7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelUnk7.TabIndex = 141;
+            this.checkBoxDuelUnk7.Text = "???";
+            this.checkBoxDuelUnk7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelZombie
+            // 
+            this.checkBoxDuelZombie.AutoSize = true;
+            this.checkBoxDuelZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelZombie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelZombie.Location = new System.Drawing.Point(280, 261);
+            this.checkBoxDuelZombie.Name = "checkBoxDuelZombie";
+            this.checkBoxDuelZombie.Size = new System.Drawing.Size(67, 19);
+            this.checkBoxDuelZombie.TabIndex = 142;
+            this.checkBoxDuelZombie.Text = "Zombie";
+            this.checkBoxDuelZombie.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownDuelStatusAttack
+            // 
+            this.numericUpDownDuelStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownDuelStatusAttack.Location = new System.Drawing.Point(203, 46);
+            this.numericUpDownDuelStatusAttack.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownDuelStatusAttack.Name = "numericUpDownDuelStatusAttack";
+            this.numericUpDownDuelStatusAttack.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownDuelStatusAttack.TabIndex = 91;
+            // 
+            // labelDuelStatusAttack
+            // 
+            this.labelDuelStatusAttack.AutoSize = true;
+            this.labelDuelStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelStatusAttack.Location = new System.Drawing.Point(182, 26);
+            this.labelDuelStatusAttack.Name = "labelDuelStatusAttack";
+            this.labelDuelStatusAttack.Size = new System.Drawing.Size(89, 17);
+            this.labelDuelStatusAttack.TabIndex = 90;
+            this.labelDuelStatusAttack.Text = "Status Attack";
+            // 
+            // groupBoxDuelTarget
+            // 
+            this.groupBoxDuelTarget.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxDuelTarget.Controls.Add(this.checkBoxDuelTarget8);
+            this.groupBoxDuelTarget.Controls.Add(this.checkBoxDuelTarget5);
+            this.groupBoxDuelTarget.Controls.Add(this.checkBoxDuelTarget2);
+            this.groupBoxDuelTarget.Controls.Add(this.checkBoxDuelTarget4);
+            this.groupBoxDuelTarget.Controls.Add(this.checkBoxDuelTarget6);
+            this.groupBoxDuelTarget.Controls.Add(this.checkBoxDuelTarget7);
+            this.groupBoxDuelTarget.Controls.Add(this.checkBoxDuelTarget1);
+            this.groupBoxDuelTarget.Controls.Add(this.checkBoxDuelTarget3);
+            this.groupBoxDuelTarget.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxDuelTarget.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.groupBoxDuelTarget.Location = new System.Drawing.Point(0, 210);
+            this.groupBoxDuelTarget.Name = "groupBoxDuelTarget";
+            this.groupBoxDuelTarget.Size = new System.Drawing.Size(452, 94);
+            this.groupBoxDuelTarget.TabIndex = 114;
+            this.groupBoxDuelTarget.TabStop = false;
+            this.groupBoxDuelTarget.Text = "Target Info";
+            // 
+            // checkBoxDuelTarget8
+            // 
+            this.checkBoxDuelTarget8.AutoSize = true;
+            this.checkBoxDuelTarget8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelTarget8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelTarget8.Location = new System.Drawing.Point(346, 60);
+            this.checkBoxDuelTarget8.Name = "checkBoxDuelTarget8";
+            this.checkBoxDuelTarget8.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelTarget8.TabIndex = 39;
+            this.checkBoxDuelTarget8.Text = "???";
+            this.checkBoxDuelTarget8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelTarget5
+            // 
+            this.checkBoxDuelTarget5.AutoSize = true;
+            this.checkBoxDuelTarget5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelTarget5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelTarget5.Location = new System.Drawing.Point(23, 60);
+            this.checkBoxDuelTarget5.Name = "checkBoxDuelTarget5";
+            this.checkBoxDuelTarget5.Size = new System.Drawing.Size(58, 19);
+            this.checkBoxDuelTarget5.TabIndex = 40;
+            this.checkBoxDuelTarget5.Text = "Single";
+            this.checkBoxDuelTarget5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelTarget2
+            // 
+            this.checkBoxDuelTarget2.AutoSize = true;
+            this.checkBoxDuelTarget2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelTarget2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelTarget2.Location = new System.Drawing.Point(131, 35);
+            this.checkBoxDuelTarget2.Name = "checkBoxDuelTarget2";
+            this.checkBoxDuelTarget2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelTarget2.TabIndex = 36;
+            this.checkBoxDuelTarget2.Text = "???";
+            this.checkBoxDuelTarget2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelTarget4
+            // 
+            this.checkBoxDuelTarget4.AutoSize = true;
+            this.checkBoxDuelTarget4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelTarget4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelTarget4.Location = new System.Drawing.Point(346, 35);
+            this.checkBoxDuelTarget4.Name = "checkBoxDuelTarget4";
+            this.checkBoxDuelTarget4.Size = new System.Drawing.Size(83, 19);
+            this.checkBoxDuelTarget4.TabIndex = 38;
+            this.checkBoxDuelTarget4.Text = "Single Side";
+            this.toolTip1.SetToolTip(this.checkBoxDuelTarget4, "Enemy decides which side");
+            this.checkBoxDuelTarget4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelTarget6
+            // 
+            this.checkBoxDuelTarget6.AutoSize = true;
+            this.checkBoxDuelTarget6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelTarget6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelTarget6.Location = new System.Drawing.Point(131, 60);
+            this.checkBoxDuelTarget6.Name = "checkBoxDuelTarget6";
+            this.checkBoxDuelTarget6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelTarget6.TabIndex = 41;
+            this.checkBoxDuelTarget6.Text = "???";
+            this.checkBoxDuelTarget6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelTarget7
+            // 
+            this.checkBoxDuelTarget7.AutoSize = true;
+            this.checkBoxDuelTarget7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelTarget7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelTarget7.Location = new System.Drawing.Point(241, 60);
+            this.checkBoxDuelTarget7.Name = "checkBoxDuelTarget7";
+            this.checkBoxDuelTarget7.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxDuelTarget7.TabIndex = 42;
+            this.checkBoxDuelTarget7.Text = "Enemy";
+            this.checkBoxDuelTarget7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelTarget1
+            // 
+            this.checkBoxDuelTarget1.AutoSize = true;
+            this.checkBoxDuelTarget1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelTarget1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelTarget1.Location = new System.Drawing.Point(23, 35);
+            this.checkBoxDuelTarget1.Name = "checkBoxDuelTarget1";
+            this.checkBoxDuelTarget1.Size = new System.Drawing.Size(53, 19);
+            this.checkBoxDuelTarget1.TabIndex = 35;
+            this.checkBoxDuelTarget1.Text = "Dead";
+            this.checkBoxDuelTarget1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelTarget3
+            // 
+            this.checkBoxDuelTarget3.AutoSize = true;
+            this.checkBoxDuelTarget3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelTarget3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelTarget3.Location = new System.Drawing.Point(241, 35);
+            this.checkBoxDuelTarget3.Name = "checkBoxDuelTarget3";
+            this.checkBoxDuelTarget3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelTarget3.TabIndex = 37;
+            this.checkBoxDuelTarget3.Text = "???";
+            this.checkBoxDuelTarget3.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxDuelFlags
+            // 
+            this.groupBoxDuelFlags.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxDuelFlags.Controls.Add(this.checkBoxDuelFlag4);
+            this.groupBoxDuelFlags.Controls.Add(this.checkBoxDuelFlag8);
+            this.groupBoxDuelFlags.Controls.Add(this.checkBoxDuelFlag3);
+            this.groupBoxDuelFlags.Controls.Add(this.checkBoxDuelFlag6);
+            this.groupBoxDuelFlags.Controls.Add(this.checkBoxDuelFlag1);
+            this.groupBoxDuelFlags.Controls.Add(this.checkBoxDuelFlag5);
+            this.groupBoxDuelFlags.Controls.Add(this.checkBoxDuelFlag2);
+            this.groupBoxDuelFlags.Controls.Add(this.checkBoxDuelFlag7);
+            this.groupBoxDuelFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxDuelFlags.ForeColor = System.Drawing.Color.Sienna;
+            this.groupBoxDuelFlags.Location = new System.Drawing.Point(0, 602);
+            this.groupBoxDuelFlags.Name = "groupBoxDuelFlags";
+            this.groupBoxDuelFlags.Size = new System.Drawing.Size(452, 94);
+            this.groupBoxDuelFlags.TabIndex = 113;
+            this.groupBoxDuelFlags.TabStop = false;
+            this.groupBoxDuelFlags.Text = "Attack Flags";
+            // 
+            // checkBoxDuelFlag4
+            // 
+            this.checkBoxDuelFlag4.AutoSize = true;
+            this.checkBoxDuelFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelFlag4.Location = new System.Drawing.Point(299, 38);
+            this.checkBoxDuelFlag4.Name = "checkBoxDuelFlag4";
+            this.checkBoxDuelFlag4.Size = new System.Drawing.Size(132, 19);
+            this.checkBoxDuelFlag4.TabIndex = 48;
+            this.checkBoxDuelFlag4.Text = "Break Damage Limit";
+            this.checkBoxDuelFlag4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelFlag8
+            // 
+            this.checkBoxDuelFlag8.AutoSize = true;
+            this.checkBoxDuelFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelFlag8.Location = new System.Drawing.Point(299, 63);
+            this.checkBoxDuelFlag8.Name = "checkBoxDuelFlag8";
+            this.checkBoxDuelFlag8.Size = new System.Drawing.Size(65, 19);
+            this.checkBoxDuelFlag8.TabIndex = 52;
+            this.checkBoxDuelFlag8.Text = "Revive?";
+            this.checkBoxDuelFlag8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelFlag3
+            // 
+            this.checkBoxDuelFlag3.AutoSize = true;
+            this.checkBoxDuelFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelFlag3.Location = new System.Drawing.Point(214, 38);
+            this.checkBoxDuelFlag3.Name = "checkBoxDuelFlag3";
+            this.checkBoxDuelFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelFlag3.TabIndex = 47;
+            this.checkBoxDuelFlag3.Text = "???";
+            this.checkBoxDuelFlag3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelFlag6
+            // 
+            this.checkBoxDuelFlag6.AutoSize = true;
+            this.checkBoxDuelFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelFlag6.Location = new System.Drawing.Point(129, 63);
+            this.checkBoxDuelFlag6.Name = "checkBoxDuelFlag6";
+            this.checkBoxDuelFlag6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelFlag6.TabIndex = 50;
+            this.checkBoxDuelFlag6.Text = "???";
+            this.checkBoxDuelFlag6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelFlag1
+            // 
+            this.checkBoxDuelFlag1.AutoSize = true;
+            this.checkBoxDuelFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelFlag1.Location = new System.Drawing.Point(21, 38);
+            this.checkBoxDuelFlag1.Name = "checkBoxDuelFlag1";
+            this.checkBoxDuelFlag1.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxDuelFlag1.TabIndex = 45;
+            this.checkBoxDuelFlag1.Text = "Shelled";
+            this.checkBoxDuelFlag1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelFlag5
+            // 
+            this.checkBoxDuelFlag5.AutoSize = true;
+            this.checkBoxDuelFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelFlag5.Location = new System.Drawing.Point(21, 63);
+            this.checkBoxDuelFlag5.Name = "checkBoxDuelFlag5";
+            this.checkBoxDuelFlag5.Size = new System.Drawing.Size(75, 19);
+            this.checkBoxDuelFlag5.TabIndex = 49;
+            this.checkBoxDuelFlag5.Text = "Reflected";
+            this.checkBoxDuelFlag5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelFlag2
+            // 
+            this.checkBoxDuelFlag2.AutoSize = true;
+            this.checkBoxDuelFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelFlag2.Location = new System.Drawing.Point(129, 38);
+            this.checkBoxDuelFlag2.Name = "checkBoxDuelFlag2";
+            this.checkBoxDuelFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelFlag2.TabIndex = 46;
+            this.checkBoxDuelFlag2.Text = "???";
+            this.checkBoxDuelFlag2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDuelFlag7
+            // 
+            this.checkBoxDuelFlag7.AutoSize = true;
+            this.checkBoxDuelFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelFlag7.Location = new System.Drawing.Point(214, 63);
+            this.checkBoxDuelFlag7.Name = "checkBoxDuelFlag7";
+            this.checkBoxDuelFlag7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxDuelFlag7.TabIndex = 51;
+            this.checkBoxDuelFlag7.Text = "???";
+            this.checkBoxDuelFlag7.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxDuelGeneral
+            // 
+            this.groupBoxDuelGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxDuelGeneral.Controls.Add(this.checkBoxDuelFinisher);
+            this.groupBoxDuelGeneral.Controls.Add(this.labelDuelElementPerc);
+            this.groupBoxDuelGeneral.Controls.Add(this.comboBoxDuelElement);
+            this.groupBoxDuelGeneral.Controls.Add(this.labelDuelElement);
+            this.groupBoxDuelGeneral.Controls.Add(this.numericUpDownDuelElementPerc);
+            this.groupBoxDuelGeneral.Controls.Add(this.comboBoxDuelAttackType);
+            this.groupBoxDuelGeneral.Controls.Add(this.labelDuelAttackType);
+            this.groupBoxDuelGeneral.Controls.Add(this.numericUpDownDuelHitCount);
+            this.groupBoxDuelGeneral.Controls.Add(this.numericUpDownDuelAttackPower);
+            this.groupBoxDuelGeneral.Controls.Add(this.comboBoxDuelMagicID);
+            this.groupBoxDuelGeneral.Controls.Add(this.labelDuelHitCount);
+            this.groupBoxDuelGeneral.Controls.Add(this.labelDuelAttackPower);
+            this.groupBoxDuelGeneral.Controls.Add(this.labelDuelMagicID);
+            this.groupBoxDuelGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxDuelGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxDuelGeneral.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxDuelGeneral.Name = "groupBoxDuelGeneral";
+            this.groupBoxDuelGeneral.Size = new System.Drawing.Size(452, 204);
+            this.groupBoxDuelGeneral.TabIndex = 112;
+            this.groupBoxDuelGeneral.TabStop = false;
+            this.groupBoxDuelGeneral.Text = "General";
+            // 
+            // labelDuelElementPerc
+            // 
+            this.labelDuelElementPerc.AutoSize = true;
+            this.labelDuelElementPerc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelElementPerc.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelElementPerc.Location = new System.Drawing.Point(204, 140);
+            this.labelDuelElementPerc.Name = "labelDuelElementPerc";
+            this.labelDuelElementPerc.Size = new System.Drawing.Size(19, 17);
+            this.labelDuelElementPerc.TabIndex = 94;
+            this.labelDuelElementPerc.Text = "%";
+            // 
+            // comboBoxDuelElement
+            // 
+            this.comboBoxDuelElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelElement.FormattingEnabled = true;
+            this.comboBoxDuelElement.Items.AddRange(new object[] {
             "Fire",
             "Ice",
             "Thunder",
@@ -26762,90 +27933,1495 @@
             "Water",
             "Holy",
             "Non-Elemental"});
-            this.comboBoxRenzoFinElement.Location = new System.Drawing.Point(151, 160);
-            this.comboBoxRenzoFinElement.Name = "comboBoxRenzoFinElement";
-            this.comboBoxRenzoFinElement.Size = new System.Drawing.Size(110, 25);
-            this.comboBoxRenzoFinElement.TabIndex = 93;
+            this.comboBoxDuelElement.Location = new System.Drawing.Point(75, 160);
+            this.comboBoxDuelElement.Name = "comboBoxDuelElement";
+            this.comboBoxDuelElement.Size = new System.Drawing.Size(110, 25);
+            this.comboBoxDuelElement.TabIndex = 93;
             // 
-            // labelRenzoFinElement
+            // labelDuelElement
             // 
-            this.labelRenzoFinElement.AutoSize = true;
-            this.labelRenzoFinElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelRenzoFinElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelRenzoFinElement.Location = new System.Drawing.Point(178, 140);
-            this.labelRenzoFinElement.Name = "labelRenzoFinElement";
-            this.labelRenzoFinElement.Size = new System.Drawing.Size(57, 17);
-            this.labelRenzoFinElement.TabIndex = 95;
-            this.labelRenzoFinElement.Text = "Element";
-            this.toolTip1.SetToolTip(this.labelRenzoFinElement, "The element of the GF attack");
+            this.labelDuelElement.AutoSize = true;
+            this.labelDuelElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelElement.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelElement.Location = new System.Drawing.Point(102, 140);
+            this.labelDuelElement.Name = "labelDuelElement";
+            this.labelDuelElement.Size = new System.Drawing.Size(57, 17);
+            this.labelDuelElement.TabIndex = 95;
+            this.labelDuelElement.Text = "Element";
+            this.toolTip1.SetToolTip(this.labelDuelElement, "The element of the GF attack");
             // 
-            // numericUpDownRenzoFinElementPerc
+            // numericUpDownDuelElementPerc
             // 
-            this.numericUpDownRenzoFinElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownRenzoFinElementPerc.Location = new System.Drawing.Point(267, 160);
-            this.numericUpDownRenzoFinElementPerc.Maximum = new decimal(new int[] {
+            this.numericUpDownDuelElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownDuelElementPerc.Location = new System.Drawing.Point(191, 160);
+            this.numericUpDownDuelElementPerc.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownRenzoFinElementPerc.Name = "numericUpDownRenzoFinElementPerc";
-            this.numericUpDownRenzoFinElementPerc.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownRenzoFinElementPerc.TabIndex = 92;
+            this.numericUpDownDuelElementPerc.Name = "numericUpDownDuelElementPerc";
+            this.numericUpDownDuelElementPerc.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownDuelElementPerc.TabIndex = 92;
             // 
-            // labelTempCharLBElementPerc
+            // comboBoxDuelAttackType
             // 
-            this.labelTempCharLBElementPerc.AutoSize = true;
-            this.labelTempCharLBElementPerc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelTempCharLBElementPerc.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelTempCharLBElementPerc.Location = new System.Drawing.Point(276, 140);
-            this.labelTempCharLBElementPerc.Name = "labelTempCharLBElementPerc";
-            this.labelTempCharLBElementPerc.Size = new System.Drawing.Size(19, 17);
-            this.labelTempCharLBElementPerc.TabIndex = 98;
-            this.labelTempCharLBElementPerc.Text = "%";
+            this.comboBoxDuelAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelAttackType.FormattingEnabled = true;
+            this.comboBoxDuelAttackType.Items.AddRange(new object[] {
+            "None",
+            "Basic Attack",
+            "Magic Attack",
+            "Curative Magic",
+            "Curative Item",
+            "Revive",
+            "Revive At Full HP",
+            "Gastric Juice/Disolving Acid/Oil Blast/Micro Missiles",
+            "Demi",
+            "Renzokuken Finisher",
+            "Squall Gunblade Attack",
+            "GF",
+            "Scan",
+            "LV Down",
+            "Summon Item?",
+            "Ignore SPR",
+            "LV Up",
+            "Card",
+            "Kamikaze",
+            "Devour",
+            "Diablos Gravity Attack",
+            "",
+            "Mega Spark/Mega Flare",
+            "Angelo Search",
+            "Moogle Dance",
+            "White Wind (Quistis)",
+            "LV5 Death/LV? Death",
+            "Fixed Damage",
+            "Corona/Hell\'s Judgement",
+            "Cactuar Summon",
+            "",
+            "",
+            "Give Percentage HP",
+            "",
+            "Everyone\'s Grudge",
+            "Excalipoor",
+            "Terra Break/Great Attractor"});
+            this.comboBoxDuelAttackType.Location = new System.Drawing.Point(25, 103);
+            this.comboBoxDuelAttackType.Name = "comboBoxDuelAttackType";
+            this.comboBoxDuelAttackType.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxDuelAttackType.TabIndex = 8;
             // 
-            // comboBoxTempCharLBElement
+            // labelDuelAttackType
             // 
-            this.comboBoxTempCharLBElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxTempCharLBElement.FormattingEnabled = true;
-            this.comboBoxTempCharLBElement.Items.AddRange(new object[] {
+            this.labelDuelAttackType.AutoSize = true;
+            this.labelDuelAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelAttackType.Location = new System.Drawing.Point(116, 83);
+            this.labelDuelAttackType.Name = "labelDuelAttackType";
+            this.labelDuelAttackType.Size = new System.Drawing.Size(79, 17);
+            this.labelDuelAttackType.TabIndex = 7;
+            this.labelDuelAttackType.Text = "Attack Type";
+            this.toolTip1.SetToolTip(this.labelDuelAttackType, "Decides what animation to play");
+            // 
+            // numericUpDownDuelHitCount
+            // 
+            this.numericUpDownDuelHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownDuelHitCount.Location = new System.Drawing.Point(361, 103);
+            this.numericUpDownDuelHitCount.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownDuelHitCount.Name = "numericUpDownDuelHitCount";
+            this.numericUpDownDuelHitCount.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownDuelHitCount.TabIndex = 6;
+            // 
+            // numericUpDownDuelAttackPower
+            // 
+            this.numericUpDownDuelAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownDuelAttackPower.Location = new System.Drawing.Point(361, 49);
+            this.numericUpDownDuelAttackPower.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownDuelAttackPower.Name = "numericUpDownDuelAttackPower";
+            this.numericUpDownDuelAttackPower.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownDuelAttackPower.TabIndex = 3;
+            // 
+            // comboBoxDuelMagicID
+            // 
+            this.comboBoxDuelMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelMagicID.FormattingEnabled = true;
+            this.comboBoxDuelMagicID.Items.AddRange(new object[] {
+            "None",
+            "Cure",
             "Fire",
-            "Ice",
             "Thunder",
-            "Earth",
-            "Poison",
-            "Wind",
-            "Water",
+            "Double",
+            "Phoenix Down",
+            "Leviathan Summon (Tsunami)",
+            "Mega Phoenix",
+            "Doom",
+            "Doom Activation",
+            "Ray-Bomb",
+            "Storm Breath",
+            "Blade Shot",
+            "Dark Mist/Poison Mist",
+            "Death/Death Stone",
+            "Draw",
+            "Recover",
+            "Elvoret Entrance",
+            "Elvoret Death",
+            "",
+            "NORG Pod Opening",
+            "Triple",
+            "Bio",
+            "Psycho Blast",
+            "Esuna",
+            "Cura",
+            "Clash",
+            "Full-Life",
+            "Curaga",
+            "Wind Blast",
+            "Counter Laser-Eye",
+            "Heartbreak",
+            "Protect",
+            "Shell",
+            "Pain",
+            "Life",
+            "Confuse",
+            "Drink Magic",
+            "Quake",
+            "Drain",
+            "Scan",
+            "Dribble",
+            "Shoot",
+            "Melting Bubble",
+            "Junk",
+            "Stare",
+            "Sigh",
+            "Curse",
+            "Magma Breath",
+            "Resonance",
+            "Potion/Potion+",
+            "Hi-Potion/Hi-Potion+",
+            "X-Potion",
+            "Mega-Potion",
+            "Everyone\'s Grudge",
+            "Aqua Breath",
+            "Absorb",
+            "Treatment",
+            "Elixir",
+            "Megalixir",
+            "",
+            "Revive",
+            "Devour",
+            "",
+            "Griever Tail Falling Off",
+            "Great Attractor",
+            "Griever + Ultimecia Death",
+            "Remedy/Remedy+",
+            "",
+            "Griever Summon",
+            "Shockwave Pulsar",
+            "Laser Eye (Quistis)",
+            "Aqua Breath (Quistis)",
+            "Mighty Guard (Quistis)",
+            "LV?Death (Quistis)",
+            "Hell\'s Judgement",
+            "Ultimecia Final Form Spawn",
+            "Ultimecia Final Form Death",
+            "Mighty Guard",
+            "Griever Death",
+            "Ultimecia Junctioning to Griever",
+            "",
+            "Ultimecia Blow Away Magic",
+            "Absorbed into time...",
+            "Angel Wing",
+            "The End",
+            "Angelo Cannon",
+            "Angelo Strike",
+            "Invincible Moon",
+            "Wishing Star",
+            "Tonberry Summon (Chef\'s Knife)",
+            "Angelo Rush",
+            "Angelo Search",
+            "Angelo Recover",
+            "Angelo Reverse",
+            "Siren Summon (Silent Voice)",
+            "Moogle Dance",
+            "ChocoFire",
+            "ChocoFlare",
+            "ChocoMeteor",
+            "ChocoBocle",
+            "",
+            "Thundara",
+            "Blizzara",
+            "Blizzaga",
+            "Thundaga",
+            "Reflect",
+            "Demi",
+            "Berserk",
+            "Dispel",
+            "Biggs + Wedge 1st Death",
+            "Aura",
+            "",
+            "Bad Breath",
+            "Zombie",
+            "Float",
+            "Quezacotl Summon (Thunder Storm)",
+            "Break",
+            "Aero",
+            "Stop",
+            "Petrify Stare",
+            "Blind",
+            "Silence",
+            "Slow",
+            "Flare",
+            "Haste",
+            "Electric Discharge",
+            "Petrify Stare",
+            "Gastric Juice",
+            "Breath",
+            "Eerie Sound Wave",
+            "Bad Breath",
+            "Disolving Acid",
+            "Hypnotize",
+            "Beam Laser",
+            "Reflect Beam",
+            "Oil Shot",
+            "Oil Blast",
+            "Saliva",
+            "Sonic Wave",
+            "Phoenix Pinion (Rebirth Flame)",
+            "Renzokuken - 5 Hits",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Sleep",
+            "Tornado",
+            "Regen",
+            "Meltdown",
+            "Ultima",
+            "Gatling Gun",
+            "Cannon Blow",
+            "Ultrasonic Waves",
+            "Sticky Web",
+            "Ultra Waves",
+            "Sand Storm",
+            "Wild Cannon Blow",
+            "Breath",
+            "Melt-Eye",
+            "Renzokuken (vs X-ATM092)",
+            "Renzokuken - 4 Hits",
+            "Renzokuken (vs Elnoyle/Elvoret)",
+            "Fated Circle",
+            "Rough Divide",
+            "Blasting Zone",
+            "Lion Heart",
+            "Megido Flame",
+            "Zantetsuken",
+            "Sleeping Gas",
+            "Gastric Juice",
+            "Acid",
+            "Poison Gas",
+            "Morph",
+            "Ice Breath",
+            "Degenerator",
             "Holy",
-            "Non-Elemental"});
-            this.comboBoxTempCharLBElement.Location = new System.Drawing.Point(147, 160);
-            this.comboBoxTempCharLBElement.Name = "comboBoxTempCharLBElement";
-            this.comboBoxTempCharLBElement.Size = new System.Drawing.Size(110, 25);
-            this.comboBoxTempCharLBElement.TabIndex = 97;
+            "Sand Storm",
+            "1,000 Needles",
+            "10,000 Needles",
+            "",
+            "Suicide",
+            "Kamikaze",
+            "Card",
+            "Defend",
+            "Ultra Waves (Quistis)",
+            "Shiva Summon (Diamond Dust)",
+            "Blaster",
+            "Odin Summon (Zantetsuken)",
+            "Shot - Normal Shot",
+            "Wall",
+            "Chain Gun",
+            "Doomtrain Summon (Runaway Train)",
+            "Shot - Scatter Shot",
+            "Shot - Dark Shot",
+            "Shot - Flame Shot",
+            "Shot - Canister Shot",
+            "Shot - Quick Shot",
+            "Shot - Armor Shot",
+            "Shot - Hyper Shot",
+            "Cactuar Summon (1,000 Needles)",
+            "No Mercy",
+            "Ifrit Summon (Hell Fire)",
+            "Bahamut Summon (Mega Flare)",
+            "Cerberus Summon (Counter Rockets)",
+            "Alexander Summon (Holy Judgment)",
+            "Brothers Summon (Brotherly Love)",
+            "Eden Summon (Eternal Breath)",
+            "Maelstrom",
+            "Final \"Sorceress\" Death",
+            "\"Sorceress\" Spawn",
+            "Bloodfest",
+            "Adel Death",
+            "",
+            "Storm Breath",
+            "Gravija",
+            "",
+            "",
+            "Energy Bomber",
+            "",
+            "Terra Break",
+            "Light Pillar",
+            "Apocalypse",
+            "Water",
+            "Meteor",
+            "",
+            "",
+            "White Wind",
+            "Ultimecia First Death",
+            "Ice Strike",
+            "Homing Laser (Quistis)",
+            "Fire Breath (Quistis)",
+            "Disease Breath",
+            "Breath of Death",
+            "Earthquake",
+            "Fart",
+            "Breath",
+            "Gas",
+            "Explosion",
+            "Breath",
+            "Ochu Dance",
+            "Earthquake",
+            "BGH251F2 Gatling Gun",
+            "Beam Cannon",
+            "BGH251F2 1st Turret Exploding",
+            "BGH251F2 2nd Turret Exploding",
+            "BGH251F2 3rd Turret Exploding",
+            "BGH251F2 4th Turret Exploding",
+            "BGH251F2 Death",
+            "Soldier Entrance After BGH251F2 Death",
+            "",
+            "Beam Cannon",
+            "Demon Slice",
+            "Corona",
+            "Twin Homing Laser",
+            "Homing Laser",
+            "Homing Laser",
+            "Sand Shake",
+            "Mega Flare",
+            "Mad Cow Special",
+            "Renzokuken - 6 Hits",
+            "Shockwave Pulsar (Quistis)",
+            "Desperado",
+            "Blood Pain",
+            "Massive Anchor",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Ultima Weapon Death",
+            "LV Up",
+            "LV Down",
+            "Mad Rush",
+            "Duel",
+            "Electrocute (Quistis)",
+            "",
+            "",
+            "Carbuncle Summon (Ruby Light)",
+            "Mega Spark",
+            "Full Cure",
+            "Shotgun",
+            "Evil-Eye",
+            "Magic Summon",
+            "Micro Missiles",
+            "Thunder Summon",
+            "Mini Pulse Cannon",
+            "Mega Pulse Cannon",
+            "Rapture",
+            "\"Brrawghh!\"",
+            "",
+            "Pandemona Summon (Tornado Zone)",
+            "Soft",
+            "Eye Drops",
+            "Antidote",
+            "Echo Screen",
+            "Holy Water",
+            "White Wind (Quistis)",
+            "",
+            "Micro Missiles (Quistis)",
+            "Bad Breath (Quistis)",
+            "",
+            "Snipe Laser",
+            "",
+            "Boomerang Sword",
+            "Gatling Gun (Quistis)",
+            "Degenerator (Quistis)",
+            "Ray-Bomb (Quistis)",
+            "",
+            "Hero-trial/Hero",
+            "Holy War-trial/Holy War",
+            "",
+            "",
+            "",
+            "",
+            "Fake President Death",
+            "",
+            "Acid (Quistis)",
+            "",
+            "",
+            "Dark Flare",
+            "Ker Plunk",
+            "Zan",
+            "Metsu",
+            "Tonberry King Death",
+            "Diablos Summon (Dark Messenger)",
+            "Zantetsuken Reverse",
+            "Gilgamesh - Zantetsuken",
+            "Gilgamesh - Masamune",
+            "Gilgamesh - Excaliber",
+            "Gilgamesh - Excalipoor",
+            "",
+            "Renzokuken - 7 Hits",
+            "Renzokuken - 8 Hits",
+            "Renzokuken (vs Bahamut)",
+            "Renzokuken (vs NORG)",
+            "Renzokuken (vs Ultima Weapon)",
+            "Renzokuken (vs Final \"Sorceress\")",
+            "Friendship (MoombaMoomba)",
+            "Renzokuken (vs Adel)",
+            "Renzokuken (vs Ultimecia Final Form)",
+            "Renzokuken (vs Jumbo Cactuar)",
+            "Renzokuken (vs Griever + Ultimecia)",
+            "Renzokuken (vs Griever)",
+            "Final Battle Music",
+            "LV5 Death"});
+            this.comboBoxDuelMagicID.Location = new System.Drawing.Point(25, 49);
+            this.comboBoxDuelMagicID.Name = "comboBoxDuelMagicID";
+            this.comboBoxDuelMagicID.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxDuelMagicID.TabIndex = 2;
             // 
-            // labelTempCharLBElement
+            // labelDuelHitCount
             // 
-            this.labelTempCharLBElement.AutoSize = true;
-            this.labelTempCharLBElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelTempCharLBElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelTempCharLBElement.Location = new System.Drawing.Point(174, 140);
-            this.labelTempCharLBElement.Name = "labelTempCharLBElement";
-            this.labelTempCharLBElement.Size = new System.Drawing.Size(57, 17);
-            this.labelTempCharLBElement.TabIndex = 99;
-            this.labelTempCharLBElement.Text = "Element";
-            this.toolTip1.SetToolTip(this.labelTempCharLBElement, "The element of the GF attack");
+            this.labelDuelHitCount.AutoSize = true;
+            this.labelDuelHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelHitCount.Location = new System.Drawing.Point(351, 83);
+            this.labelDuelHitCount.Name = "labelDuelHitCount";
+            this.labelDuelHitCount.Size = new System.Drawing.Size(67, 17);
+            this.labelDuelHitCount.TabIndex = 0;
+            this.labelDuelHitCount.Text = "Hit Count";
+            this.toolTip1.SetToolTip(this.labelDuelHitCount, "Number of hits");
             // 
-            // numericUpDownTempCharLBElementPerc
+            // labelDuelAttackPower
             // 
-            this.numericUpDownTempCharLBElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownTempCharLBElementPerc.Location = new System.Drawing.Point(263, 160);
-            this.numericUpDownTempCharLBElementPerc.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownTempCharLBElementPerc.Name = "numericUpDownTempCharLBElementPerc";
-            this.numericUpDownTempCharLBElementPerc.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownTempCharLBElementPerc.TabIndex = 96;
+            this.labelDuelAttackPower.AutoSize = true;
+            this.labelDuelAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelAttackPower.Location = new System.Drawing.Point(339, 29);
+            this.labelDuelAttackPower.Name = "labelDuelAttackPower";
+            this.labelDuelAttackPower.Size = new System.Drawing.Size(89, 17);
+            this.labelDuelAttackPower.TabIndex = 0;
+            this.labelDuelAttackPower.Text = "Attack Power";
+            this.toolTip1.SetToolTip(this.labelDuelAttackPower, "Used in damage calculation");
+            // 
+            // labelDuelMagicID
+            // 
+            this.labelDuelMagicID.AutoSize = true;
+            this.labelDuelMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelMagicID.Location = new System.Drawing.Point(127, 29);
+            this.labelDuelMagicID.Name = "labelDuelMagicID";
+            this.labelDuelMagicID.Size = new System.Drawing.Size(61, 17);
+            this.labelDuelMagicID.TabIndex = 0;
+            this.labelDuelMagicID.Text = "Magic ID";
+            this.toolTip1.SetToolTip(this.labelDuelMagicID, "Decides what animation to play");
+            // 
+            // groupBoxShotInput1
+            // 
+            this.groupBoxShotInput1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelR2_1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelL2_1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelR1_1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelL1_1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelLeft1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelDown1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelRight1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelDeac1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelSquare1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelX1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelCircle1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelTriangle1);
+            this.groupBoxShotInput1.Controls.Add(this.radioButtonDuelUp1);
+            this.groupBoxShotInput1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxShotInput1.ForeColor = System.Drawing.Color.Brown;
+            this.groupBoxShotInput1.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxShotInput1.Name = "groupBoxShotInput1";
+            this.groupBoxShotInput1.Size = new System.Drawing.Size(452, 82);
+            this.groupBoxShotInput1.TabIndex = 113;
+            this.groupBoxShotInput1.TabStop = false;
+            this.groupBoxShotInput1.Text = "Input 1";
+            // 
+            // checkBoxDuelFinisher
+            // 
+            this.checkBoxDuelFinisher.AutoSize = true;
+            this.checkBoxDuelFinisher.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxDuelFinisher.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxDuelFinisher.Location = new System.Drawing.Point(348, 163);
+            this.checkBoxDuelFinisher.Name = "checkBoxDuelFinisher";
+            this.checkBoxDuelFinisher.Size = new System.Drawing.Size(78, 19);
+            this.checkBoxDuelFinisher.TabIndex = 96;
+            this.checkBoxDuelFinisher.Text = "Is Finisher";
+            this.toolTip1.SetToolTip(this.checkBoxDuelFinisher, "Only works with real finishers! Don\'t use with other moves.");
+            this.checkBoxDuelFinisher.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelUp1
+            // 
+            this.radioButtonDuelUp1.AutoSize = true;
+            this.radioButtonDuelUp1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelUp1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelUp1.Location = new System.Drawing.Point(5, 29);
+            this.radioButtonDuelUp1.Name = "radioButtonDuelUp1";
+            this.radioButtonDuelUp1.Size = new System.Drawing.Size(40, 19);
+            this.radioButtonDuelUp1.TabIndex = 11;
+            this.radioButtonDuelUp1.TabStop = true;
+            this.radioButtonDuelUp1.Text = "Up";
+            this.radioButtonDuelUp1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelRight1
+            // 
+            this.radioButtonDuelRight1.AutoSize = true;
+            this.radioButtonDuelRight1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelRight1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelRight1.Location = new System.Drawing.Point(59, 29);
+            this.radioButtonDuelRight1.Name = "radioButtonDuelRight1";
+            this.radioButtonDuelRight1.Size = new System.Drawing.Size(53, 19);
+            this.radioButtonDuelRight1.TabIndex = 11;
+            this.radioButtonDuelRight1.TabStop = true;
+            this.radioButtonDuelRight1.Text = "Right";
+            this.radioButtonDuelRight1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelDown1
+            // 
+            this.radioButtonDuelDown1.AutoSize = true;
+            this.radioButtonDuelDown1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelDown1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelDown1.Location = new System.Drawing.Point(126, 29);
+            this.radioButtonDuelDown1.Name = "radioButtonDuelDown1";
+            this.radioButtonDuelDown1.Size = new System.Drawing.Size(56, 19);
+            this.radioButtonDuelDown1.TabIndex = 11;
+            this.radioButtonDuelDown1.TabStop = true;
+            this.radioButtonDuelDown1.Text = "Down";
+            this.radioButtonDuelDown1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelLeft1
+            // 
+            this.radioButtonDuelLeft1.AutoSize = true;
+            this.radioButtonDuelLeft1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelLeft1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelLeft1.Location = new System.Drawing.Point(196, 29);
+            this.radioButtonDuelLeft1.Name = "radioButtonDuelLeft1";
+            this.radioButtonDuelLeft1.Size = new System.Drawing.Size(45, 19);
+            this.radioButtonDuelLeft1.TabIndex = 11;
+            this.radioButtonDuelLeft1.TabStop = true;
+            this.radioButtonDuelLeft1.Text = "Left";
+            this.radioButtonDuelLeft1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelL1_1
+            // 
+            this.radioButtonDuelL1_1.AutoSize = true;
+            this.radioButtonDuelL1_1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelL1_1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelL1_1.Location = new System.Drawing.Point(255, 29);
+            this.radioButtonDuelL1_1.Name = "radioButtonDuelL1_1";
+            this.radioButtonDuelL1_1.Size = new System.Drawing.Size(37, 19);
+            this.radioButtonDuelL1_1.TabIndex = 11;
+            this.radioButtonDuelL1_1.TabStop = true;
+            this.radioButtonDuelL1_1.Text = "L1";
+            this.radioButtonDuelL1_1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelR1_1
+            // 
+            this.radioButtonDuelR1_1.AutoSize = true;
+            this.radioButtonDuelR1_1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelR1_1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelR1_1.Location = new System.Drawing.Point(306, 29);
+            this.radioButtonDuelR1_1.Name = "radioButtonDuelR1_1";
+            this.radioButtonDuelR1_1.Size = new System.Drawing.Size(38, 19);
+            this.radioButtonDuelR1_1.TabIndex = 11;
+            this.radioButtonDuelR1_1.TabStop = true;
+            this.radioButtonDuelR1_1.Text = "R1";
+            this.radioButtonDuelR1_1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelL2_1
+            // 
+            this.radioButtonDuelL2_1.AutoSize = true;
+            this.radioButtonDuelL2_1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelL2_1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelL2_1.Location = new System.Drawing.Point(358, 29);
+            this.radioButtonDuelL2_1.Name = "radioButtonDuelL2_1";
+            this.radioButtonDuelL2_1.Size = new System.Drawing.Size(37, 19);
+            this.radioButtonDuelL2_1.TabIndex = 11;
+            this.radioButtonDuelL2_1.TabStop = true;
+            this.radioButtonDuelL2_1.Text = "L2";
+            this.radioButtonDuelL2_1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelR2_1
+            // 
+            this.radioButtonDuelR2_1.AutoSize = true;
+            this.radioButtonDuelR2_1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelR2_1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelR2_1.Location = new System.Drawing.Point(409, 29);
+            this.radioButtonDuelR2_1.Name = "radioButtonDuelR2_1";
+            this.radioButtonDuelR2_1.Size = new System.Drawing.Size(38, 19);
+            this.radioButtonDuelR2_1.TabIndex = 11;
+            this.radioButtonDuelR2_1.TabStop = true;
+            this.radioButtonDuelR2_1.Text = "R2";
+            this.radioButtonDuelR2_1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelTriangle1
+            // 
+            this.radioButtonDuelTriangle1.AutoSize = true;
+            this.radioButtonDuelTriangle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelTriangle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelTriangle1.Location = new System.Drawing.Point(57, 54);
+            this.radioButtonDuelTriangle1.Name = "radioButtonDuelTriangle1";
+            this.radioButtonDuelTriangle1.Size = new System.Drawing.Size(67, 19);
+            this.radioButtonDuelTriangle1.TabIndex = 11;
+            this.radioButtonDuelTriangle1.TabStop = true;
+            this.radioButtonDuelTriangle1.Text = "Triangle";
+            this.radioButtonDuelTriangle1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelCircle1
+            // 
+            this.radioButtonDuelCircle1.AutoSize = true;
+            this.radioButtonDuelCircle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelCircle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelCircle1.Location = new System.Drawing.Point(135, 54);
+            this.radioButtonDuelCircle1.Name = "radioButtonDuelCircle1";
+            this.radioButtonDuelCircle1.Size = new System.Drawing.Size(55, 19);
+            this.radioButtonDuelCircle1.TabIndex = 11;
+            this.radioButtonDuelCircle1.TabStop = true;
+            this.radioButtonDuelCircle1.Text = "Circle";
+            this.radioButtonDuelCircle1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelX1
+            // 
+            this.radioButtonDuelX1.AutoSize = true;
+            this.radioButtonDuelX1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelX1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelX1.Location = new System.Drawing.Point(201, 54);
+            this.radioButtonDuelX1.Name = "radioButtonDuelX1";
+            this.radioButtonDuelX1.Size = new System.Drawing.Size(32, 19);
+            this.radioButtonDuelX1.TabIndex = 11;
+            this.radioButtonDuelX1.TabStop = true;
+            this.radioButtonDuelX1.Text = "X";
+            this.radioButtonDuelX1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelSquare1
+            // 
+            this.radioButtonDuelSquare1.AutoSize = true;
+            this.radioButtonDuelSquare1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelSquare1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelSquare1.Location = new System.Drawing.Point(244, 54);
+            this.radioButtonDuelSquare1.Name = "radioButtonDuelSquare1";
+            this.radioButtonDuelSquare1.Size = new System.Drawing.Size(61, 19);
+            this.radioButtonDuelSquare1.TabIndex = 11;
+            this.radioButtonDuelSquare1.TabStop = true;
+            this.radioButtonDuelSquare1.Text = "Square";
+            this.radioButtonDuelSquare1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelDeac1
+            // 
+            this.radioButtonDuelDeac1.AutoSize = true;
+            this.radioButtonDuelDeac1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelDeac1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelDeac1.Location = new System.Drawing.Point(316, 54);
+            this.radioButtonDuelDeac1.Name = "radioButtonDuelDeac1";
+            this.radioButtonDuelDeac1.Size = new System.Drawing.Size(80, 19);
+            this.radioButtonDuelDeac1.TabIndex = 11;
+            this.radioButtonDuelDeac1.TabStop = true;
+            this.radioButtonDuelDeac1.Text = "Deactivate";
+            this.radioButtonDuelDeac1.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxShotInput2
+            // 
+            this.groupBoxShotInput2.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelR2_2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelL2_2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelR1_2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelL1_2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelLeft2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelDown2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelRight2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelDeac2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelSquare2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelX2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelCircle2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelTriangle2);
+            this.groupBoxShotInput2.Controls.Add(this.radioButtonDuelUp2);
+            this.groupBoxShotInput2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxShotInput2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.groupBoxShotInput2.Location = new System.Drawing.Point(0, 88);
+            this.groupBoxShotInput2.Name = "groupBoxShotInput2";
+            this.groupBoxShotInput2.Size = new System.Drawing.Size(452, 82);
+            this.groupBoxShotInput2.TabIndex = 113;
+            this.groupBoxShotInput2.TabStop = false;
+            this.groupBoxShotInput2.Text = "Input 2";
+            // 
+            // radioButtonDuelR2_2
+            // 
+            this.radioButtonDuelR2_2.AutoSize = true;
+            this.radioButtonDuelR2_2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelR2_2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelR2_2.Location = new System.Drawing.Point(409, 29);
+            this.radioButtonDuelR2_2.Name = "radioButtonDuelR2_2";
+            this.radioButtonDuelR2_2.Size = new System.Drawing.Size(38, 19);
+            this.radioButtonDuelR2_2.TabIndex = 11;
+            this.radioButtonDuelR2_2.TabStop = true;
+            this.radioButtonDuelR2_2.Text = "R2";
+            this.radioButtonDuelR2_2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelL2_2
+            // 
+            this.radioButtonDuelL2_2.AutoSize = true;
+            this.radioButtonDuelL2_2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelL2_2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelL2_2.Location = new System.Drawing.Point(358, 29);
+            this.radioButtonDuelL2_2.Name = "radioButtonDuelL2_2";
+            this.radioButtonDuelL2_2.Size = new System.Drawing.Size(37, 19);
+            this.radioButtonDuelL2_2.TabIndex = 11;
+            this.radioButtonDuelL2_2.TabStop = true;
+            this.radioButtonDuelL2_2.Text = "L2";
+            this.radioButtonDuelL2_2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelR1_2
+            // 
+            this.radioButtonDuelR1_2.AutoSize = true;
+            this.radioButtonDuelR1_2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelR1_2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelR1_2.Location = new System.Drawing.Point(306, 29);
+            this.radioButtonDuelR1_2.Name = "radioButtonDuelR1_2";
+            this.radioButtonDuelR1_2.Size = new System.Drawing.Size(38, 19);
+            this.radioButtonDuelR1_2.TabIndex = 11;
+            this.radioButtonDuelR1_2.TabStop = true;
+            this.radioButtonDuelR1_2.Text = "R1";
+            this.radioButtonDuelR1_2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelL1_2
+            // 
+            this.radioButtonDuelL1_2.AutoSize = true;
+            this.radioButtonDuelL1_2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelL1_2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelL1_2.Location = new System.Drawing.Point(255, 29);
+            this.radioButtonDuelL1_2.Name = "radioButtonDuelL1_2";
+            this.radioButtonDuelL1_2.Size = new System.Drawing.Size(37, 19);
+            this.radioButtonDuelL1_2.TabIndex = 11;
+            this.radioButtonDuelL1_2.TabStop = true;
+            this.radioButtonDuelL1_2.Text = "L1";
+            this.radioButtonDuelL1_2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelLeft2
+            // 
+            this.radioButtonDuelLeft2.AutoSize = true;
+            this.radioButtonDuelLeft2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelLeft2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelLeft2.Location = new System.Drawing.Point(196, 29);
+            this.radioButtonDuelLeft2.Name = "radioButtonDuelLeft2";
+            this.radioButtonDuelLeft2.Size = new System.Drawing.Size(45, 19);
+            this.radioButtonDuelLeft2.TabIndex = 11;
+            this.radioButtonDuelLeft2.TabStop = true;
+            this.radioButtonDuelLeft2.Text = "Left";
+            this.radioButtonDuelLeft2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelDown2
+            // 
+            this.radioButtonDuelDown2.AutoSize = true;
+            this.radioButtonDuelDown2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelDown2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelDown2.Location = new System.Drawing.Point(126, 29);
+            this.radioButtonDuelDown2.Name = "radioButtonDuelDown2";
+            this.radioButtonDuelDown2.Size = new System.Drawing.Size(56, 19);
+            this.radioButtonDuelDown2.TabIndex = 11;
+            this.radioButtonDuelDown2.TabStop = true;
+            this.radioButtonDuelDown2.Text = "Down";
+            this.radioButtonDuelDown2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelRight2
+            // 
+            this.radioButtonDuelRight2.AutoSize = true;
+            this.radioButtonDuelRight2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelRight2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelRight2.Location = new System.Drawing.Point(59, 29);
+            this.radioButtonDuelRight2.Name = "radioButtonDuelRight2";
+            this.radioButtonDuelRight2.Size = new System.Drawing.Size(53, 19);
+            this.radioButtonDuelRight2.TabIndex = 11;
+            this.radioButtonDuelRight2.TabStop = true;
+            this.radioButtonDuelRight2.Text = "Right";
+            this.radioButtonDuelRight2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelDeac2
+            // 
+            this.radioButtonDuelDeac2.AutoSize = true;
+            this.radioButtonDuelDeac2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelDeac2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelDeac2.Location = new System.Drawing.Point(316, 54);
+            this.radioButtonDuelDeac2.Name = "radioButtonDuelDeac2";
+            this.radioButtonDuelDeac2.Size = new System.Drawing.Size(80, 19);
+            this.radioButtonDuelDeac2.TabIndex = 11;
+            this.radioButtonDuelDeac2.TabStop = true;
+            this.radioButtonDuelDeac2.Text = "Deactivate";
+            this.radioButtonDuelDeac2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelSquare2
+            // 
+            this.radioButtonDuelSquare2.AutoSize = true;
+            this.radioButtonDuelSquare2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelSquare2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelSquare2.Location = new System.Drawing.Point(244, 54);
+            this.radioButtonDuelSquare2.Name = "radioButtonDuelSquare2";
+            this.radioButtonDuelSquare2.Size = new System.Drawing.Size(61, 19);
+            this.radioButtonDuelSquare2.TabIndex = 11;
+            this.radioButtonDuelSquare2.TabStop = true;
+            this.radioButtonDuelSquare2.Text = "Square";
+            this.radioButtonDuelSquare2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelX2
+            // 
+            this.radioButtonDuelX2.AutoSize = true;
+            this.radioButtonDuelX2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelX2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelX2.Location = new System.Drawing.Point(201, 54);
+            this.radioButtonDuelX2.Name = "radioButtonDuelX2";
+            this.radioButtonDuelX2.Size = new System.Drawing.Size(32, 19);
+            this.radioButtonDuelX2.TabIndex = 11;
+            this.radioButtonDuelX2.TabStop = true;
+            this.radioButtonDuelX2.Text = "X";
+            this.radioButtonDuelX2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelCircle2
+            // 
+            this.radioButtonDuelCircle2.AutoSize = true;
+            this.radioButtonDuelCircle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelCircle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelCircle2.Location = new System.Drawing.Point(135, 54);
+            this.radioButtonDuelCircle2.Name = "radioButtonDuelCircle2";
+            this.radioButtonDuelCircle2.Size = new System.Drawing.Size(55, 19);
+            this.radioButtonDuelCircle2.TabIndex = 11;
+            this.radioButtonDuelCircle2.TabStop = true;
+            this.radioButtonDuelCircle2.Text = "Circle";
+            this.radioButtonDuelCircle2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelTriangle2
+            // 
+            this.radioButtonDuelTriangle2.AutoSize = true;
+            this.radioButtonDuelTriangle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelTriangle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelTriangle2.Location = new System.Drawing.Point(57, 54);
+            this.radioButtonDuelTriangle2.Name = "radioButtonDuelTriangle2";
+            this.radioButtonDuelTriangle2.Size = new System.Drawing.Size(67, 19);
+            this.radioButtonDuelTriangle2.TabIndex = 11;
+            this.radioButtonDuelTriangle2.TabStop = true;
+            this.radioButtonDuelTriangle2.Text = "Triangle";
+            this.radioButtonDuelTriangle2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelUp2
+            // 
+            this.radioButtonDuelUp2.AutoSize = true;
+            this.radioButtonDuelUp2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelUp2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelUp2.Location = new System.Drawing.Point(5, 29);
+            this.radioButtonDuelUp2.Name = "radioButtonDuelUp2";
+            this.radioButtonDuelUp2.Size = new System.Drawing.Size(40, 19);
+            this.radioButtonDuelUp2.TabIndex = 11;
+            this.radioButtonDuelUp2.TabStop = true;
+            this.radioButtonDuelUp2.Text = "Up";
+            this.radioButtonDuelUp2.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxShotInput3
+            // 
+            this.groupBoxShotInput3.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelR2_3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelL2_3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelR1_3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelL1_3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelLeft3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelDown3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelRight3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelDeac3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelSquare3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelX3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelCircle3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelTriangle3);
+            this.groupBoxShotInput3.Controls.Add(this.radioButtonDuelUp3);
+            this.groupBoxShotInput3.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxShotInput3.ForeColor = System.Drawing.Color.LimeGreen;
+            this.groupBoxShotInput3.Location = new System.Drawing.Point(0, 176);
+            this.groupBoxShotInput3.Name = "groupBoxShotInput3";
+            this.groupBoxShotInput3.Size = new System.Drawing.Size(452, 82);
+            this.groupBoxShotInput3.TabIndex = 113;
+            this.groupBoxShotInput3.TabStop = false;
+            this.groupBoxShotInput3.Text = "Input 3";
+            // 
+            // radioButtonDuelR2_3
+            // 
+            this.radioButtonDuelR2_3.AutoSize = true;
+            this.radioButtonDuelR2_3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelR2_3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelR2_3.Location = new System.Drawing.Point(409, 29);
+            this.radioButtonDuelR2_3.Name = "radioButtonDuelR2_3";
+            this.radioButtonDuelR2_3.Size = new System.Drawing.Size(38, 19);
+            this.radioButtonDuelR2_3.TabIndex = 11;
+            this.radioButtonDuelR2_3.TabStop = true;
+            this.radioButtonDuelR2_3.Text = "R2";
+            this.radioButtonDuelR2_3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelL2_3
+            // 
+            this.radioButtonDuelL2_3.AutoSize = true;
+            this.radioButtonDuelL2_3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelL2_3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelL2_3.Location = new System.Drawing.Point(358, 29);
+            this.radioButtonDuelL2_3.Name = "radioButtonDuelL2_3";
+            this.radioButtonDuelL2_3.Size = new System.Drawing.Size(37, 19);
+            this.radioButtonDuelL2_3.TabIndex = 11;
+            this.radioButtonDuelL2_3.TabStop = true;
+            this.radioButtonDuelL2_3.Text = "L2";
+            this.radioButtonDuelL2_3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelR1_3
+            // 
+            this.radioButtonDuelR1_3.AutoSize = true;
+            this.radioButtonDuelR1_3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelR1_3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelR1_3.Location = new System.Drawing.Point(306, 29);
+            this.radioButtonDuelR1_3.Name = "radioButtonDuelR1_3";
+            this.radioButtonDuelR1_3.Size = new System.Drawing.Size(38, 19);
+            this.radioButtonDuelR1_3.TabIndex = 11;
+            this.radioButtonDuelR1_3.TabStop = true;
+            this.radioButtonDuelR1_3.Text = "R1";
+            this.radioButtonDuelR1_3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelL1_3
+            // 
+            this.radioButtonDuelL1_3.AutoSize = true;
+            this.radioButtonDuelL1_3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelL1_3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelL1_3.Location = new System.Drawing.Point(255, 29);
+            this.radioButtonDuelL1_3.Name = "radioButtonDuelL1_3";
+            this.radioButtonDuelL1_3.Size = new System.Drawing.Size(37, 19);
+            this.radioButtonDuelL1_3.TabIndex = 11;
+            this.radioButtonDuelL1_3.TabStop = true;
+            this.radioButtonDuelL1_3.Text = "L1";
+            this.radioButtonDuelL1_3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelLeft3
+            // 
+            this.radioButtonDuelLeft3.AutoSize = true;
+            this.radioButtonDuelLeft3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelLeft3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelLeft3.Location = new System.Drawing.Point(196, 29);
+            this.radioButtonDuelLeft3.Name = "radioButtonDuelLeft3";
+            this.radioButtonDuelLeft3.Size = new System.Drawing.Size(45, 19);
+            this.radioButtonDuelLeft3.TabIndex = 11;
+            this.radioButtonDuelLeft3.TabStop = true;
+            this.radioButtonDuelLeft3.Text = "Left";
+            this.radioButtonDuelLeft3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelDown3
+            // 
+            this.radioButtonDuelDown3.AutoSize = true;
+            this.radioButtonDuelDown3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelDown3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelDown3.Location = new System.Drawing.Point(126, 29);
+            this.radioButtonDuelDown3.Name = "radioButtonDuelDown3";
+            this.radioButtonDuelDown3.Size = new System.Drawing.Size(56, 19);
+            this.radioButtonDuelDown3.TabIndex = 11;
+            this.radioButtonDuelDown3.TabStop = true;
+            this.radioButtonDuelDown3.Text = "Down";
+            this.radioButtonDuelDown3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelRight3
+            // 
+            this.radioButtonDuelRight3.AutoSize = true;
+            this.radioButtonDuelRight3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelRight3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelRight3.Location = new System.Drawing.Point(59, 29);
+            this.radioButtonDuelRight3.Name = "radioButtonDuelRight3";
+            this.radioButtonDuelRight3.Size = new System.Drawing.Size(53, 19);
+            this.radioButtonDuelRight3.TabIndex = 11;
+            this.radioButtonDuelRight3.TabStop = true;
+            this.radioButtonDuelRight3.Text = "Right";
+            this.radioButtonDuelRight3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelDeac3
+            // 
+            this.radioButtonDuelDeac3.AutoSize = true;
+            this.radioButtonDuelDeac3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelDeac3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelDeac3.Location = new System.Drawing.Point(316, 54);
+            this.radioButtonDuelDeac3.Name = "radioButtonDuelDeac3";
+            this.radioButtonDuelDeac3.Size = new System.Drawing.Size(80, 19);
+            this.radioButtonDuelDeac3.TabIndex = 11;
+            this.radioButtonDuelDeac3.TabStop = true;
+            this.radioButtonDuelDeac3.Text = "Deactivate";
+            this.radioButtonDuelDeac3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelSquare3
+            // 
+            this.radioButtonDuelSquare3.AutoSize = true;
+            this.radioButtonDuelSquare3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelSquare3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelSquare3.Location = new System.Drawing.Point(244, 54);
+            this.radioButtonDuelSquare3.Name = "radioButtonDuelSquare3";
+            this.radioButtonDuelSquare3.Size = new System.Drawing.Size(61, 19);
+            this.radioButtonDuelSquare3.TabIndex = 11;
+            this.radioButtonDuelSquare3.TabStop = true;
+            this.radioButtonDuelSquare3.Text = "Square";
+            this.radioButtonDuelSquare3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelX3
+            // 
+            this.radioButtonDuelX3.AutoSize = true;
+            this.radioButtonDuelX3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelX3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelX3.Location = new System.Drawing.Point(201, 54);
+            this.radioButtonDuelX3.Name = "radioButtonDuelX3";
+            this.radioButtonDuelX3.Size = new System.Drawing.Size(32, 19);
+            this.radioButtonDuelX3.TabIndex = 11;
+            this.radioButtonDuelX3.TabStop = true;
+            this.radioButtonDuelX3.Text = "X";
+            this.radioButtonDuelX3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelCircle3
+            // 
+            this.radioButtonDuelCircle3.AutoSize = true;
+            this.radioButtonDuelCircle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelCircle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelCircle3.Location = new System.Drawing.Point(135, 54);
+            this.radioButtonDuelCircle3.Name = "radioButtonDuelCircle3";
+            this.radioButtonDuelCircle3.Size = new System.Drawing.Size(55, 19);
+            this.radioButtonDuelCircle3.TabIndex = 11;
+            this.radioButtonDuelCircle3.TabStop = true;
+            this.radioButtonDuelCircle3.Text = "Circle";
+            this.radioButtonDuelCircle3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelTriangle3
+            // 
+            this.radioButtonDuelTriangle3.AutoSize = true;
+            this.radioButtonDuelTriangle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelTriangle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelTriangle3.Location = new System.Drawing.Point(57, 54);
+            this.radioButtonDuelTriangle3.Name = "radioButtonDuelTriangle3";
+            this.radioButtonDuelTriangle3.Size = new System.Drawing.Size(67, 19);
+            this.radioButtonDuelTriangle3.TabIndex = 11;
+            this.radioButtonDuelTriangle3.TabStop = true;
+            this.radioButtonDuelTriangle3.Text = "Triangle";
+            this.radioButtonDuelTriangle3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelUp3
+            // 
+            this.radioButtonDuelUp3.AutoSize = true;
+            this.radioButtonDuelUp3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelUp3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelUp3.Location = new System.Drawing.Point(5, 29);
+            this.radioButtonDuelUp3.Name = "radioButtonDuelUp3";
+            this.radioButtonDuelUp3.Size = new System.Drawing.Size(40, 19);
+            this.radioButtonDuelUp3.TabIndex = 11;
+            this.radioButtonDuelUp3.TabStop = true;
+            this.radioButtonDuelUp3.Text = "Up";
+            this.radioButtonDuelUp3.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxShotInput4
+            // 
+            this.groupBoxShotInput4.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelR2_4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelL2_4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelR1_4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelL1_4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelLeft4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelDown4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelRight4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelDeac4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelSquare4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelX4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelCircle4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelTriangle4);
+            this.groupBoxShotInput4.Controls.Add(this.radioButtonDuelUp4);
+            this.groupBoxShotInput4.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxShotInput4.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.groupBoxShotInput4.Location = new System.Drawing.Point(0, 264);
+            this.groupBoxShotInput4.Name = "groupBoxShotInput4";
+            this.groupBoxShotInput4.Size = new System.Drawing.Size(452, 82);
+            this.groupBoxShotInput4.TabIndex = 113;
+            this.groupBoxShotInput4.TabStop = false;
+            this.groupBoxShotInput4.Text = "Input 4";
+            // 
+            // radioButtonDuelR2_4
+            // 
+            this.radioButtonDuelR2_4.AutoSize = true;
+            this.radioButtonDuelR2_4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelR2_4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelR2_4.Location = new System.Drawing.Point(409, 29);
+            this.radioButtonDuelR2_4.Name = "radioButtonDuelR2_4";
+            this.radioButtonDuelR2_4.Size = new System.Drawing.Size(38, 19);
+            this.radioButtonDuelR2_4.TabIndex = 11;
+            this.radioButtonDuelR2_4.TabStop = true;
+            this.radioButtonDuelR2_4.Text = "R2";
+            this.radioButtonDuelR2_4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelL2_4
+            // 
+            this.radioButtonDuelL2_4.AutoSize = true;
+            this.radioButtonDuelL2_4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelL2_4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelL2_4.Location = new System.Drawing.Point(358, 29);
+            this.radioButtonDuelL2_4.Name = "radioButtonDuelL2_4";
+            this.radioButtonDuelL2_4.Size = new System.Drawing.Size(37, 19);
+            this.radioButtonDuelL2_4.TabIndex = 11;
+            this.radioButtonDuelL2_4.TabStop = true;
+            this.radioButtonDuelL2_4.Text = "L2";
+            this.radioButtonDuelL2_4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelR1_4
+            // 
+            this.radioButtonDuelR1_4.AutoSize = true;
+            this.radioButtonDuelR1_4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelR1_4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelR1_4.Location = new System.Drawing.Point(306, 29);
+            this.radioButtonDuelR1_4.Name = "radioButtonDuelR1_4";
+            this.radioButtonDuelR1_4.Size = new System.Drawing.Size(38, 19);
+            this.radioButtonDuelR1_4.TabIndex = 11;
+            this.radioButtonDuelR1_4.TabStop = true;
+            this.radioButtonDuelR1_4.Text = "R1";
+            this.radioButtonDuelR1_4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelL1_4
+            // 
+            this.radioButtonDuelL1_4.AutoSize = true;
+            this.radioButtonDuelL1_4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelL1_4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelL1_4.Location = new System.Drawing.Point(255, 29);
+            this.radioButtonDuelL1_4.Name = "radioButtonDuelL1_4";
+            this.radioButtonDuelL1_4.Size = new System.Drawing.Size(37, 19);
+            this.radioButtonDuelL1_4.TabIndex = 11;
+            this.radioButtonDuelL1_4.TabStop = true;
+            this.radioButtonDuelL1_4.Text = "L1";
+            this.radioButtonDuelL1_4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelLeft4
+            // 
+            this.radioButtonDuelLeft4.AutoSize = true;
+            this.radioButtonDuelLeft4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelLeft4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelLeft4.Location = new System.Drawing.Point(196, 29);
+            this.radioButtonDuelLeft4.Name = "radioButtonDuelLeft4";
+            this.radioButtonDuelLeft4.Size = new System.Drawing.Size(45, 19);
+            this.radioButtonDuelLeft4.TabIndex = 11;
+            this.radioButtonDuelLeft4.TabStop = true;
+            this.radioButtonDuelLeft4.Text = "Left";
+            this.radioButtonDuelLeft4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelDown4
+            // 
+            this.radioButtonDuelDown4.AutoSize = true;
+            this.radioButtonDuelDown4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelDown4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelDown4.Location = new System.Drawing.Point(126, 29);
+            this.radioButtonDuelDown4.Name = "radioButtonDuelDown4";
+            this.radioButtonDuelDown4.Size = new System.Drawing.Size(56, 19);
+            this.radioButtonDuelDown4.TabIndex = 11;
+            this.radioButtonDuelDown4.TabStop = true;
+            this.radioButtonDuelDown4.Text = "Down";
+            this.radioButtonDuelDown4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelRight4
+            // 
+            this.radioButtonDuelRight4.AutoSize = true;
+            this.radioButtonDuelRight4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelRight4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelRight4.Location = new System.Drawing.Point(59, 29);
+            this.radioButtonDuelRight4.Name = "radioButtonDuelRight4";
+            this.radioButtonDuelRight4.Size = new System.Drawing.Size(53, 19);
+            this.radioButtonDuelRight4.TabIndex = 11;
+            this.radioButtonDuelRight4.TabStop = true;
+            this.radioButtonDuelRight4.Text = "Right";
+            this.radioButtonDuelRight4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelDeac4
+            // 
+            this.radioButtonDuelDeac4.AutoSize = true;
+            this.radioButtonDuelDeac4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelDeac4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelDeac4.Location = new System.Drawing.Point(316, 54);
+            this.radioButtonDuelDeac4.Name = "radioButtonDuelDeac4";
+            this.radioButtonDuelDeac4.Size = new System.Drawing.Size(80, 19);
+            this.radioButtonDuelDeac4.TabIndex = 11;
+            this.radioButtonDuelDeac4.TabStop = true;
+            this.radioButtonDuelDeac4.Text = "Deactivate";
+            this.radioButtonDuelDeac4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelSquare4
+            // 
+            this.radioButtonDuelSquare4.AutoSize = true;
+            this.radioButtonDuelSquare4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelSquare4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelSquare4.Location = new System.Drawing.Point(244, 54);
+            this.radioButtonDuelSquare4.Name = "radioButtonDuelSquare4";
+            this.radioButtonDuelSquare4.Size = new System.Drawing.Size(61, 19);
+            this.radioButtonDuelSquare4.TabIndex = 11;
+            this.radioButtonDuelSquare4.TabStop = true;
+            this.radioButtonDuelSquare4.Text = "Square";
+            this.radioButtonDuelSquare4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelX4
+            // 
+            this.radioButtonDuelX4.AutoSize = true;
+            this.radioButtonDuelX4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelX4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelX4.Location = new System.Drawing.Point(201, 54);
+            this.radioButtonDuelX4.Name = "radioButtonDuelX4";
+            this.radioButtonDuelX4.Size = new System.Drawing.Size(32, 19);
+            this.radioButtonDuelX4.TabIndex = 11;
+            this.radioButtonDuelX4.TabStop = true;
+            this.radioButtonDuelX4.Text = "X";
+            this.radioButtonDuelX4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelCircle4
+            // 
+            this.radioButtonDuelCircle4.AutoSize = true;
+            this.radioButtonDuelCircle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelCircle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelCircle4.Location = new System.Drawing.Point(135, 54);
+            this.radioButtonDuelCircle4.Name = "radioButtonDuelCircle4";
+            this.radioButtonDuelCircle4.Size = new System.Drawing.Size(55, 19);
+            this.radioButtonDuelCircle4.TabIndex = 11;
+            this.radioButtonDuelCircle4.TabStop = true;
+            this.radioButtonDuelCircle4.Text = "Circle";
+            this.radioButtonDuelCircle4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelTriangle4
+            // 
+            this.radioButtonDuelTriangle4.AutoSize = true;
+            this.radioButtonDuelTriangle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelTriangle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelTriangle4.Location = new System.Drawing.Point(57, 54);
+            this.radioButtonDuelTriangle4.Name = "radioButtonDuelTriangle4";
+            this.radioButtonDuelTriangle4.Size = new System.Drawing.Size(67, 19);
+            this.radioButtonDuelTriangle4.TabIndex = 11;
+            this.radioButtonDuelTriangle4.TabStop = true;
+            this.radioButtonDuelTriangle4.Text = "Triangle";
+            this.radioButtonDuelTriangle4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelUp4
+            // 
+            this.radioButtonDuelUp4.AutoSize = true;
+            this.radioButtonDuelUp4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelUp4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelUp4.Location = new System.Drawing.Point(5, 29);
+            this.radioButtonDuelUp4.Name = "radioButtonDuelUp4";
+            this.radioButtonDuelUp4.Size = new System.Drawing.Size(40, 19);
+            this.radioButtonDuelUp4.TabIndex = 11;
+            this.radioButtonDuelUp4.TabStop = true;
+            this.radioButtonDuelUp4.Text = "Up";
+            this.radioButtonDuelUp4.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxShotInput5
+            // 
+            this.groupBoxShotInput5.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelR2_5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelL2_5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelR1_5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelL1_5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelLeft5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelDown5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelRight5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelDeac5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelSquare5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelX5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelCircle5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelTriangle5);
+            this.groupBoxShotInput5.Controls.Add(this.radioButtonDuelUp5);
+            this.groupBoxShotInput5.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxShotInput5.ForeColor = System.Drawing.Color.HotPink;
+            this.groupBoxShotInput5.Location = new System.Drawing.Point(0, 352);
+            this.groupBoxShotInput5.Name = "groupBoxShotInput5";
+            this.groupBoxShotInput5.Size = new System.Drawing.Size(452, 82);
+            this.groupBoxShotInput5.TabIndex = 113;
+            this.groupBoxShotInput5.TabStop = false;
+            this.groupBoxShotInput5.Text = "Input 5";
+            // 
+            // radioButtonDuelR2_5
+            // 
+            this.radioButtonDuelR2_5.AutoSize = true;
+            this.radioButtonDuelR2_5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelR2_5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelR2_5.Location = new System.Drawing.Point(409, 29);
+            this.radioButtonDuelR2_5.Name = "radioButtonDuelR2_5";
+            this.radioButtonDuelR2_5.Size = new System.Drawing.Size(38, 19);
+            this.radioButtonDuelR2_5.TabIndex = 11;
+            this.radioButtonDuelR2_5.TabStop = true;
+            this.radioButtonDuelR2_5.Text = "R2";
+            this.radioButtonDuelR2_5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelL2_5
+            // 
+            this.radioButtonDuelL2_5.AutoSize = true;
+            this.radioButtonDuelL2_5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelL2_5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelL2_5.Location = new System.Drawing.Point(358, 29);
+            this.radioButtonDuelL2_5.Name = "radioButtonDuelL2_5";
+            this.radioButtonDuelL2_5.Size = new System.Drawing.Size(37, 19);
+            this.radioButtonDuelL2_5.TabIndex = 11;
+            this.radioButtonDuelL2_5.TabStop = true;
+            this.radioButtonDuelL2_5.Text = "L2";
+            this.radioButtonDuelL2_5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelR1_5
+            // 
+            this.radioButtonDuelR1_5.AutoSize = true;
+            this.radioButtonDuelR1_5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelR1_5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelR1_5.Location = new System.Drawing.Point(306, 29);
+            this.radioButtonDuelR1_5.Name = "radioButtonDuelR1_5";
+            this.radioButtonDuelR1_5.Size = new System.Drawing.Size(38, 19);
+            this.radioButtonDuelR1_5.TabIndex = 11;
+            this.radioButtonDuelR1_5.TabStop = true;
+            this.radioButtonDuelR1_5.Text = "R1";
+            this.radioButtonDuelR1_5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelL1_5
+            // 
+            this.radioButtonDuelL1_5.AutoSize = true;
+            this.radioButtonDuelL1_5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelL1_5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelL1_5.Location = new System.Drawing.Point(255, 29);
+            this.radioButtonDuelL1_5.Name = "radioButtonDuelL1_5";
+            this.radioButtonDuelL1_5.Size = new System.Drawing.Size(37, 19);
+            this.radioButtonDuelL1_5.TabIndex = 11;
+            this.radioButtonDuelL1_5.TabStop = true;
+            this.radioButtonDuelL1_5.Text = "L1";
+            this.radioButtonDuelL1_5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelLeft5
+            // 
+            this.radioButtonDuelLeft5.AutoSize = true;
+            this.radioButtonDuelLeft5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelLeft5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelLeft5.Location = new System.Drawing.Point(196, 29);
+            this.radioButtonDuelLeft5.Name = "radioButtonDuelLeft5";
+            this.radioButtonDuelLeft5.Size = new System.Drawing.Size(45, 19);
+            this.radioButtonDuelLeft5.TabIndex = 11;
+            this.radioButtonDuelLeft5.TabStop = true;
+            this.radioButtonDuelLeft5.Text = "Left";
+            this.radioButtonDuelLeft5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelDown5
+            // 
+            this.radioButtonDuelDown5.AutoSize = true;
+            this.radioButtonDuelDown5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelDown5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelDown5.Location = new System.Drawing.Point(126, 29);
+            this.radioButtonDuelDown5.Name = "radioButtonDuelDown5";
+            this.radioButtonDuelDown5.Size = new System.Drawing.Size(56, 19);
+            this.radioButtonDuelDown5.TabIndex = 11;
+            this.radioButtonDuelDown5.TabStop = true;
+            this.radioButtonDuelDown5.Text = "Down";
+            this.radioButtonDuelDown5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelRight5
+            // 
+            this.radioButtonDuelRight5.AutoSize = true;
+            this.radioButtonDuelRight5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelRight5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelRight5.Location = new System.Drawing.Point(59, 29);
+            this.radioButtonDuelRight5.Name = "radioButtonDuelRight5";
+            this.radioButtonDuelRight5.Size = new System.Drawing.Size(53, 19);
+            this.radioButtonDuelRight5.TabIndex = 11;
+            this.radioButtonDuelRight5.TabStop = true;
+            this.radioButtonDuelRight5.Text = "Right";
+            this.radioButtonDuelRight5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelDeac5
+            // 
+            this.radioButtonDuelDeac5.AutoSize = true;
+            this.radioButtonDuelDeac5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelDeac5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelDeac5.Location = new System.Drawing.Point(316, 54);
+            this.radioButtonDuelDeac5.Name = "radioButtonDuelDeac5";
+            this.radioButtonDuelDeac5.Size = new System.Drawing.Size(80, 19);
+            this.radioButtonDuelDeac5.TabIndex = 11;
+            this.radioButtonDuelDeac5.TabStop = true;
+            this.radioButtonDuelDeac5.Text = "Deactivate";
+            this.radioButtonDuelDeac5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelSquare5
+            // 
+            this.radioButtonDuelSquare5.AutoSize = true;
+            this.radioButtonDuelSquare5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelSquare5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelSquare5.Location = new System.Drawing.Point(244, 54);
+            this.radioButtonDuelSquare5.Name = "radioButtonDuelSquare5";
+            this.radioButtonDuelSquare5.Size = new System.Drawing.Size(61, 19);
+            this.radioButtonDuelSquare5.TabIndex = 11;
+            this.radioButtonDuelSquare5.TabStop = true;
+            this.radioButtonDuelSquare5.Text = "Square";
+            this.radioButtonDuelSquare5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelX5
+            // 
+            this.radioButtonDuelX5.AutoSize = true;
+            this.radioButtonDuelX5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelX5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelX5.Location = new System.Drawing.Point(201, 54);
+            this.radioButtonDuelX5.Name = "radioButtonDuelX5";
+            this.radioButtonDuelX5.Size = new System.Drawing.Size(32, 19);
+            this.radioButtonDuelX5.TabIndex = 11;
+            this.radioButtonDuelX5.TabStop = true;
+            this.radioButtonDuelX5.Text = "X";
+            this.radioButtonDuelX5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelCircle5
+            // 
+            this.radioButtonDuelCircle5.AutoSize = true;
+            this.radioButtonDuelCircle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelCircle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelCircle5.Location = new System.Drawing.Point(135, 54);
+            this.radioButtonDuelCircle5.Name = "radioButtonDuelCircle5";
+            this.radioButtonDuelCircle5.Size = new System.Drawing.Size(55, 19);
+            this.radioButtonDuelCircle5.TabIndex = 11;
+            this.radioButtonDuelCircle5.TabStop = true;
+            this.radioButtonDuelCircle5.Text = "Circle";
+            this.radioButtonDuelCircle5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelTriangle5
+            // 
+            this.radioButtonDuelTriangle5.AutoSize = true;
+            this.radioButtonDuelTriangle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelTriangle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelTriangle5.Location = new System.Drawing.Point(57, 54);
+            this.radioButtonDuelTriangle5.Name = "radioButtonDuelTriangle5";
+            this.radioButtonDuelTriangle5.Size = new System.Drawing.Size(67, 19);
+            this.radioButtonDuelTriangle5.TabIndex = 11;
+            this.radioButtonDuelTriangle5.TabStop = true;
+            this.radioButtonDuelTriangle5.Text = "Triangle";
+            this.radioButtonDuelTriangle5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDuelUp5
+            // 
+            this.radioButtonDuelUp5.AutoSize = true;
+            this.radioButtonDuelUp5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDuelUp5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButtonDuelUp5.Location = new System.Drawing.Point(5, 29);
+            this.radioButtonDuelUp5.Name = "radioButtonDuelUp5";
+            this.radioButtonDuelUp5.Size = new System.Drawing.Size(40, 19);
+            this.radioButtonDuelUp5.TabIndex = 11;
+            this.radioButtonDuelUp5.TabStop = true;
+            this.radioButtonDuelUp5.Text = "Up";
+            this.radioButtonDuelUp5.UseVisualStyleBackColor = true;
             // 
             // mainForm
             // 
@@ -27086,6 +29662,7 @@
             this.groupBoxRenzoFinFlags.PerformLayout();
             this.groupBoxRenzoFinGeneral.ResumeLayout(false);
             this.groupBoxRenzoFinGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinElementPerc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinAttackPower)).EndInit();
             this.tabPageShot.ResumeLayout(false);
@@ -27184,6 +29761,7 @@
             this.groupBoxTempCharLBFlags.PerformLayout();
             this.groupBoxTempCharLBGeneral.ResumeLayout(false);
             this.groupBoxTempCharLBGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBElementPerc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBAttackPower)).EndInit();
             this.tabEnemyAttacks.ResumeLayout(false);
@@ -27197,8 +29775,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackPower)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRenzoFinElementPerc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBElementPerc)).EndInit();
+            this.tabPageDuel.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPageDuelGeneral.ResumeLayout(false);
+            this.tabPageDuelButtons.ResumeLayout(false);
+            this.groupBoxDuelStatus.ResumeLayout(false);
+            this.groupBoxDuelStatus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelStatusAttack)).EndInit();
+            this.groupBoxDuelTarget.ResumeLayout(false);
+            this.groupBoxDuelTarget.PerformLayout();
+            this.groupBoxDuelFlags.ResumeLayout(false);
+            this.groupBoxDuelFlags.PerformLayout();
+            this.groupBoxDuelGeneral.ResumeLayout(false);
+            this.groupBoxDuelGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelElementPerc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelHitCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelAttackPower)).EndInit();
+            this.groupBoxShotInput1.ResumeLayout(false);
+            this.groupBoxShotInput1.PerformLayout();
+            this.groupBoxShotInput2.ResumeLayout(false);
+            this.groupBoxShotInput2.PerformLayout();
+            this.groupBoxShotInput3.ResumeLayout(false);
+            this.groupBoxShotInput3.PerformLayout();
+            this.groupBoxShotInput4.ResumeLayout(false);
+            this.groupBoxShotInput4.PerformLayout();
+            this.groupBoxShotInput5.ResumeLayout(false);
+            this.groupBoxShotInput5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -28406,6 +31008,156 @@
         private System.Windows.Forms.ComboBox comboBoxTempCharLBElement;
         private System.Windows.Forms.Label labelTempCharLBElement;
         private System.Windows.Forms.NumericUpDown numericUpDownTempCharLBElementPerc;
+        private System.Windows.Forms.TabPage tabPageDuel;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPageDuelGeneral;
+        private System.Windows.Forms.GroupBox groupBoxDuelStatus;
+        private System.Windows.Forms.CheckBox checkBoxDuelPetrifying;
+        private System.Windows.Forms.CheckBox checkBoxDuelDarkness;
+        private System.Windows.Forms.CheckBox checkBoxDuelSilence;
+        private System.Windows.Forms.CheckBox checkBoxDuelStop;
+        private System.Windows.Forms.CheckBox checkBoxDuelConfusion;
+        private System.Windows.Forms.CheckBox checkBoxDuelPetrify;
+        private System.Windows.Forms.CheckBox checkBoxDuelSlow;
+        private System.Windows.Forms.CheckBox checkBoxDuelBerserk;
+        private System.Windows.Forms.CheckBox checkBoxDuelSleep;
+        private System.Windows.Forms.CheckBox checkBoxDuelInvincible;
+        private System.Windows.Forms.CheckBox checkBoxDuelCurse;
+        private System.Windows.Forms.CheckBox checkBoxDuelDoom;
+        private System.Windows.Forms.CheckBox checkBoxDuelFloat;
+        private System.Windows.Forms.CheckBox checkBoxDuelAura;
+        private System.Windows.Forms.CheckBox checkBoxDuelDrain;
+        private System.Windows.Forms.CheckBox checkBoxDuelSummonGF;
+        private System.Windows.Forms.CheckBox checkBoxDuelHasMagic;
+        private System.Windows.Forms.CheckBox checkBoxDuelUnk6;
+        private System.Windows.Forms.CheckBox checkBoxDuelUnk5;
+        private System.Windows.Forms.CheckBox checkBoxDuelUnk4;
+        private System.Windows.Forms.CheckBox checkBoxDuelUnk3;
+        private System.Windows.Forms.CheckBox checkBoxDuelAngelWing;
+        private System.Windows.Forms.CheckBox checkBoxDuelVit0;
+        private System.Windows.Forms.CheckBox checkBoxDuelBackAttack;
+        private System.Windows.Forms.CheckBox checkBoxDuelCharged;
+        private System.Windows.Forms.CheckBox checkBoxDuelUnk2;
+        private System.Windows.Forms.CheckBox checkBoxDuelUnk1;
+        private System.Windows.Forms.CheckBox checkBoxDuelDefend;
+        private System.Windows.Forms.CheckBox checkBoxDuelTriple;
+        private System.Windows.Forms.CheckBox checkBoxDuelDouble;
+        private System.Windows.Forms.CheckBox checkBoxDuelEject;
+        private System.Windows.Forms.CheckBox checkBoxDuelPoison;
+        private System.Windows.Forms.CheckBox checkBoxDuelDeath;
+        private System.Windows.Forms.CheckBox checkBoxDuelProtect;
+        private System.Windows.Forms.CheckBox checkBoxDuelHaste;
+        private System.Windows.Forms.CheckBox checkBoxDuelRegen;
+        private System.Windows.Forms.CheckBox checkBoxDuelShell;
+        private System.Windows.Forms.CheckBox checkBoxDuelReflect;
+        private System.Windows.Forms.CheckBox checkBoxDuelUnk7;
+        private System.Windows.Forms.CheckBox checkBoxDuelZombie;
+        private System.Windows.Forms.NumericUpDown numericUpDownDuelStatusAttack;
+        private System.Windows.Forms.Label labelDuelStatusAttack;
+        private System.Windows.Forms.GroupBox groupBoxDuelTarget;
+        private System.Windows.Forms.CheckBox checkBoxDuelTarget8;
+        private System.Windows.Forms.CheckBox checkBoxDuelTarget5;
+        private System.Windows.Forms.CheckBox checkBoxDuelTarget2;
+        private System.Windows.Forms.CheckBox checkBoxDuelTarget4;
+        private System.Windows.Forms.CheckBox checkBoxDuelTarget6;
+        private System.Windows.Forms.CheckBox checkBoxDuelTarget7;
+        private System.Windows.Forms.CheckBox checkBoxDuelTarget1;
+        private System.Windows.Forms.CheckBox checkBoxDuelTarget3;
+        private System.Windows.Forms.GroupBox groupBoxDuelFlags;
+        private System.Windows.Forms.CheckBox checkBoxDuelFlag4;
+        private System.Windows.Forms.CheckBox checkBoxDuelFlag8;
+        private System.Windows.Forms.CheckBox checkBoxDuelFlag3;
+        private System.Windows.Forms.CheckBox checkBoxDuelFlag6;
+        private System.Windows.Forms.CheckBox checkBoxDuelFlag1;
+        private System.Windows.Forms.CheckBox checkBoxDuelFlag5;
+        private System.Windows.Forms.CheckBox checkBoxDuelFlag2;
+        private System.Windows.Forms.CheckBox checkBoxDuelFlag7;
+        private System.Windows.Forms.GroupBox groupBoxDuelGeneral;
+        private System.Windows.Forms.Label labelDuelElementPerc;
+        private System.Windows.Forms.ComboBox comboBoxDuelElement;
+        private System.Windows.Forms.Label labelDuelElement;
+        private System.Windows.Forms.NumericUpDown numericUpDownDuelElementPerc;
+        private System.Windows.Forms.ComboBox comboBoxDuelAttackType;
+        private System.Windows.Forms.Label labelDuelAttackType;
+        private System.Windows.Forms.NumericUpDown numericUpDownDuelHitCount;
+        private System.Windows.Forms.NumericUpDown numericUpDownDuelAttackPower;
+        private System.Windows.Forms.ComboBox comboBoxDuelMagicID;
+        private System.Windows.Forms.Label labelDuelHitCount;
+        private System.Windows.Forms.Label labelDuelAttackPower;
+        private System.Windows.Forms.Label labelDuelMagicID;
+        private System.Windows.Forms.TabPage tabPageDuelButtons;
+        private System.Windows.Forms.ListBox listBoxDuel;
+        private System.Windows.Forms.GroupBox groupBoxShotInput1;
+        private System.Windows.Forms.CheckBox checkBoxDuelFinisher;
+        private System.Windows.Forms.GroupBox groupBoxShotInput5;
+        private System.Windows.Forms.RadioButton radioButtonDuelR2_5;
+        private System.Windows.Forms.RadioButton radioButtonDuelL2_5;
+        private System.Windows.Forms.RadioButton radioButtonDuelR1_5;
+        private System.Windows.Forms.RadioButton radioButtonDuelL1_5;
+        private System.Windows.Forms.RadioButton radioButtonDuelLeft5;
+        private System.Windows.Forms.RadioButton radioButtonDuelDown5;
+        private System.Windows.Forms.RadioButton radioButtonDuelRight5;
+        private System.Windows.Forms.RadioButton radioButtonDuelDeac5;
+        private System.Windows.Forms.RadioButton radioButtonDuelSquare5;
+        private System.Windows.Forms.RadioButton radioButtonDuelX5;
+        private System.Windows.Forms.RadioButton radioButtonDuelCircle5;
+        private System.Windows.Forms.RadioButton radioButtonDuelTriangle5;
+        private System.Windows.Forms.RadioButton radioButtonDuelUp5;
+        private System.Windows.Forms.GroupBox groupBoxShotInput4;
+        private System.Windows.Forms.RadioButton radioButtonDuelR2_4;
+        private System.Windows.Forms.RadioButton radioButtonDuelL2_4;
+        private System.Windows.Forms.RadioButton radioButtonDuelR1_4;
+        private System.Windows.Forms.RadioButton radioButtonDuelL1_4;
+        private System.Windows.Forms.RadioButton radioButtonDuelLeft4;
+        private System.Windows.Forms.RadioButton radioButtonDuelDown4;
+        private System.Windows.Forms.RadioButton radioButtonDuelRight4;
+        private System.Windows.Forms.RadioButton radioButtonDuelDeac4;
+        private System.Windows.Forms.RadioButton radioButtonDuelSquare4;
+        private System.Windows.Forms.RadioButton radioButtonDuelX4;
+        private System.Windows.Forms.RadioButton radioButtonDuelCircle4;
+        private System.Windows.Forms.RadioButton radioButtonDuelTriangle4;
+        private System.Windows.Forms.RadioButton radioButtonDuelUp4;
+        private System.Windows.Forms.GroupBox groupBoxShotInput3;
+        private System.Windows.Forms.RadioButton radioButtonDuelR2_3;
+        private System.Windows.Forms.RadioButton radioButtonDuelL2_3;
+        private System.Windows.Forms.RadioButton radioButtonDuelR1_3;
+        private System.Windows.Forms.RadioButton radioButtonDuelL1_3;
+        private System.Windows.Forms.RadioButton radioButtonDuelLeft3;
+        private System.Windows.Forms.RadioButton radioButtonDuelDown3;
+        private System.Windows.Forms.RadioButton radioButtonDuelRight3;
+        private System.Windows.Forms.RadioButton radioButtonDuelDeac3;
+        private System.Windows.Forms.RadioButton radioButtonDuelSquare3;
+        private System.Windows.Forms.RadioButton radioButtonDuelX3;
+        private System.Windows.Forms.RadioButton radioButtonDuelCircle3;
+        private System.Windows.Forms.RadioButton radioButtonDuelTriangle3;
+        private System.Windows.Forms.RadioButton radioButtonDuelUp3;
+        private System.Windows.Forms.GroupBox groupBoxShotInput2;
+        private System.Windows.Forms.RadioButton radioButtonDuelR2_2;
+        private System.Windows.Forms.RadioButton radioButtonDuelL2_2;
+        private System.Windows.Forms.RadioButton radioButtonDuelR1_2;
+        private System.Windows.Forms.RadioButton radioButtonDuelL1_2;
+        private System.Windows.Forms.RadioButton radioButtonDuelLeft2;
+        private System.Windows.Forms.RadioButton radioButtonDuelDown2;
+        private System.Windows.Forms.RadioButton radioButtonDuelRight2;
+        private System.Windows.Forms.RadioButton radioButtonDuelDeac2;
+        private System.Windows.Forms.RadioButton radioButtonDuelSquare2;
+        private System.Windows.Forms.RadioButton radioButtonDuelX2;
+        private System.Windows.Forms.RadioButton radioButtonDuelCircle2;
+        private System.Windows.Forms.RadioButton radioButtonDuelTriangle2;
+        private System.Windows.Forms.RadioButton radioButtonDuelUp2;
+        private System.Windows.Forms.RadioButton radioButtonDuelR2_1;
+        private System.Windows.Forms.RadioButton radioButtonDuelL2_1;
+        private System.Windows.Forms.RadioButton radioButtonDuelR1_1;
+        private System.Windows.Forms.RadioButton radioButtonDuelL1_1;
+        private System.Windows.Forms.RadioButton radioButtonDuelLeft1;
+        private System.Windows.Forms.RadioButton radioButtonDuelDown1;
+        private System.Windows.Forms.RadioButton radioButtonDuelRight1;
+        private System.Windows.Forms.RadioButton radioButtonDuelDeac1;
+        private System.Windows.Forms.RadioButton radioButtonDuelSquare1;
+        private System.Windows.Forms.RadioButton radioButtonDuelX1;
+        private System.Windows.Forms.RadioButton radioButtonDuelCircle1;
+        private System.Windows.Forms.RadioButton radioButtonDuelTriangle1;
+        private System.Windows.Forms.RadioButton radioButtonDuelUp1;
     }
 }
 

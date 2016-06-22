@@ -870,6 +870,144 @@ namespace Doomtrain
             checkBoxShotSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x80, 4);
 
             #endregion
+
+            #region EVENT HANDLERS DUEL
+
+            comboBoxDuelMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(0, comboBoxDuelMagicID.SelectedIndex);
+            comboBoxDuelAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(1, comboBoxDuelAttackType.SelectedIndex);
+            numericUpDownDuelAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(2, numericUpDownDuelAttackPower.Value);
+            checkBoxDuelFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(3, 0x01);
+            checkBoxDuelFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(3, 0x02);
+            checkBoxDuelFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(3, 0x04);
+            checkBoxDuelFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(3, 0x08);
+            checkBoxDuelFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(3, 0x10);
+            checkBoxDuelFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(3, 0x20);
+            checkBoxDuelFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(3, 0x40);
+            checkBoxDuelFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(3, 0x80);
+            checkBoxDuelTarget1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(4, 0x01);
+            checkBoxDuelTarget2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(4, 0x02);
+            checkBoxDuelTarget3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(4, 0x04);
+            checkBoxDuelTarget4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(4, 0x08);
+            checkBoxDuelTarget5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(4, 0x10);
+            checkBoxDuelTarget6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(4, 0x20);
+            checkBoxDuelTarget7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(4, 0x40);
+            checkBoxDuelTarget8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(4, 0x80);
+            numericUpDownDuelHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(5, numericUpDownDuelHitCount.Value);
+            comboBoxDuelElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(6, Duel_GetElement(comboBoxDuelElement.SelectedIndex));            
+            numericUpDownDuelElementPerc.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(7, numericUpDownDuelElementPerc.Value);
+            numericUpDownDuelStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(8, numericUpDownDuelStatusAttack.Value);
+
+            /* not sure if correct
+            checkBoxDuelFinisher.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0001);
+            radioButtonDuelUp1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0010);
+            radioButtonDuelRight1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0020);
+            radioButtonDuelDown1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0040);
+            radioButtonDuelLeft1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0080);
+            radioButtonDuelL2_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0100);
+            radioButtonDuelR2_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0200);
+            radioButtonDuelL1_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0400);
+            radioButtonDuelR1_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0800);
+            radioButtonDuelTriangle1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x1000);
+            radioButtonDuelCircle1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x2000);
+            radioButtonDuelX1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x4000);
+            radioButtonDuelSquare1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x8000);
+            radioButtonDuelDeac1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0xFFFF);
+            radioButtonDuelUp2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0010);
+            radioButtonDuelRight2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0020);
+            radioButtonDuelDown2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0040);
+            radioButtonDuelLeft2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0080);
+            radioButtonDuelL2_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0100);
+            radioButtonDuelR2_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0200);
+            radioButtonDuelL1_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0400);
+            radioButtonDuelR1_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0800);
+            radioButtonDuelTriangle2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x1000);
+            radioButtonDuelCircle2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x2000);
+            radioButtonDuelX2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x4000);
+            radioButtonDuelSquare2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x8000);
+            radioButtonDuelDeac2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0xFFFF);
+            radioButtonDuelUp3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0010);
+            radioButtonDuelRight3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0020);
+            radioButtonDuelDown3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0040);
+            radioButtonDuelLeft3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0080);
+            radioButtonDuelL2_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0100);
+            radioButtonDuelR2_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0200);
+            radioButtonDuelL1_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0400);
+            radioButtonDuelR1_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0800);
+            radioButtonDuelTriangle3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x1000);
+            radioButtonDuelCircle3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x2000);
+            radioButtonDuelX3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x4000);
+            radioButtonDuelSquare3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x8000);
+            radioButtonDuelDeac3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0xFFFF);
+            radioButtonDuelUp4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0010);
+            radioButtonDuelRight4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0020);
+            radioButtonDuelDown4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0040);
+            radioButtonDuelLeft4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0080);
+            radioButtonDuelL2_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0100);
+            radioButtonDuelR2_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0200);
+            radioButtonDuelL1_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0400);
+            radioButtonDuelR1_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0800);
+            radioButtonDuelTriangle4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x1000);
+            radioButtonDuelCircle4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x2000);
+            radioButtonDuelX4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x4000);
+            radioButtonDuelSquare4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x8000);
+            radioButtonDuelDeac4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0xFFFF);
+            radioButtonDuelUp5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0010);
+            radioButtonDuelRight5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0020);
+            radioButtonDuelDown5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0040);
+            radioButtonDuelLeft5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0080);
+            radioButtonDuelL2_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0100);
+            radioButtonDuelR2_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0200);
+            radioButtonDuelL1_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0400);
+            radioButtonDuelR1_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0800);
+            radioButtonDuelTriangle5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x1000);
+            radioButtonDuelCircle5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x2000);
+            radioButtonDuelX5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x4000);
+            radioButtonDuelSquare5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x8000);
+            radioButtonDuelDeac5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0xFFFF);
+            */
+
+            checkBoxDuelDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x01, 0);
+            checkBoxDuelPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x02, 0);
+            checkBoxDuelPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x04, 0);
+            checkBoxDuelDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x08, 0);
+            checkBoxDuelSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x10, 0);
+            checkBoxDuelBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x20, 0);
+            checkBoxDuelZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x40, 0);
+            checkBoxDuelUnk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x80, 0);
+            checkBoxDuelSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x01, 1);
+            checkBoxDuelHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x02, 1);
+            checkBoxDuelSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x04, 1);
+            checkBoxDuelStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x08, 1);
+            checkBoxDuelRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x10, 1);
+            checkBoxDuelProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x20, 1);
+            checkBoxDuelShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x40, 1);
+            checkBoxDuelReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x80, 1);
+            checkBoxDuelAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x01, 2);
+            checkBoxDuelCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x02, 2);
+            checkBoxDuelDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x04, 2);
+            checkBoxDuelInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x08, 2);
+            checkBoxDuelPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x10, 2);
+            checkBoxDuelFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x20, 2);
+            checkBoxDuelConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x40, 2);
+            checkBoxDuelDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x80, 2);
+            checkBoxDuelEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x01, 3);
+            checkBoxDuelDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x02, 3);
+            checkBoxDuelTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x04, 3);
+            checkBoxDuelDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x08, 3);
+            checkBoxDuelUnk1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x10, 3);
+            checkBoxDuelUnk2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x20, 3);
+            checkBoxDuelCharged.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x40, 3);
+            checkBoxDuelBackAttack.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x80, 3);
+            checkBoxDuelVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x01, 4);
+            checkBoxDuelAngelWing.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x02, 4);
+            checkBoxDuelUnk3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x04, 4);
+            checkBoxDuelUnk4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x08, 4);
+            checkBoxDuelUnk5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x10, 4);
+            checkBoxDuelUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x20, 4);
+            checkBoxDuelHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x40, 4);
+            checkBoxDuelSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x80, 4);
+
+            #endregion
         }
 
 
@@ -2872,6 +3010,147 @@ namespace Doomtrain
 
         #endregion
 
+        #region DUEL
 
-    }
+        private int Duel_GetElement()
+        {
+            return KernelWorker.GetSelectedDuelData.Element == KernelWorker.Element.Fire
+                        ? 0
+                        : KernelWorker.GetSelectedDuelData.Element == KernelWorker.Element.Ice
+                            ? 1
+                            : KernelWorker.GetSelectedDuelData.Element == KernelWorker.Element.Thunder
+                                ? 2
+                                : KernelWorker.GetSelectedDuelData.Element == KernelWorker.Element.Earth
+                                    ? 3
+                                    : KernelWorker.GetSelectedDuelData.Element == KernelWorker.Element.Poison
+                                        ? 4
+                                        : KernelWorker.GetSelectedDuelData.Element == KernelWorker.Element.Wind
+                                            ? 5
+                                            : KernelWorker.GetSelectedDuelData.Element ==
+                                              KernelWorker.Element.Water
+                                                ? 6
+                                                : KernelWorker.GetSelectedDuelData.Element ==
+                                                  KernelWorker.Element.Holy
+                                                    ? 7
+                                                    : KernelWorker.GetSelectedDuelData.Element ==
+                                                      KernelWorker.Element.NonElemental
+                                                        ? comboBoxDuelElement.Items.Count - 1
+                                                        : 0;
+        }
+
+        private byte Duel_GetElement(int Index)
+        {
+            byte elem = (byte)(Index == 8 ? (byte)KernelWorker.Element.NonElemental :
+                Index == 0 ? (byte)KernelWorker.Element.Fire :
+                Index == 1 ? (byte)KernelWorker.Element.Ice :
+                Index == 2 ? (byte)KernelWorker.Element.Thunder :
+                Index == 3 ? (byte)KernelWorker.Element.Earth :
+                Index == 4 ? (byte)KernelWorker.Element.Poison :
+                Index == 5 ? (byte)KernelWorker.Element.Wind :
+                Index == 6 ? (byte)KernelWorker.Element.Water :
+                Index == 7 ? (byte)KernelWorker.Element.Holy :
+                0x00 /*ErrorHandler*/);
+            return elem;
+        }
+
+
+        private void DuelStatusWorker()
+        {
+            checkBoxDuelDeath.Checked = (KernelWorker.GetSelectedDuelData.Status1 & 0x01) >= 1 ? true : false;
+            checkBoxDuelPoison.Checked = (KernelWorker.GetSelectedDuelData.Status1 & 0x02) >= 1 ? true : false;
+            checkBoxDuelPetrify.Checked = (KernelWorker.GetSelectedDuelData.Status1 & 0x04) >= 1 ? true : false;
+            checkBoxDuelDarkness.Checked = (KernelWorker.GetSelectedDuelData.Status1 & 0x08) >= 1 ? true : false;
+            checkBoxDuelSilence.Checked = (KernelWorker.GetSelectedDuelData.Status1 & 0x10) >= 1 ? true : false;
+            checkBoxDuelBerserk.Checked = (KernelWorker.GetSelectedDuelData.Status1 & 0x20) >= 1 ? true : false;
+            checkBoxDuelZombie.Checked = (KernelWorker.GetSelectedDuelData.Status1 & 0x40) >= 1 ? true : false;
+            checkBoxDuelUnk7.Checked = (KernelWorker.GetSelectedDuelData.Status1 & 0x80) >= 1 ? true : false;
+
+            checkBoxDuelSleep.Checked = (KernelWorker.GetSelectedDuelData.Status2 & 0x01) >= 1 ? true : false;
+            checkBoxDuelHaste.Checked = (KernelWorker.GetSelectedDuelData.Status2 & 0x02) >= 1 ? true : false;
+            checkBoxDuelSlow.Checked = (KernelWorker.GetSelectedDuelData.Status2 & 0x04) >= 1 ? true : false;
+            checkBoxDuelStop.Checked = (KernelWorker.GetSelectedDuelData.Status2 & 0x08) >= 1 ? true : false;
+            checkBoxDuelRegen.Checked = (KernelWorker.GetSelectedDuelData.Status2 & 0x10) >= 1 ? true : false;
+            checkBoxDuelProtect.Checked = (KernelWorker.GetSelectedDuelData.Status2 & 0x20) >= 1 ? true : false;
+            checkBoxDuelShell.Checked = (KernelWorker.GetSelectedDuelData.Status2 & 0x40) >= 1 ? true : false;
+            checkBoxDuelReflect.Checked = (KernelWorker.GetSelectedDuelData.Status2 & 0x80) >= 1 ? true : false;
+
+            checkBoxDuelAura.Checked = (KernelWorker.GetSelectedDuelData.Status3 & 0x01) >= 1 ? true : false;
+            checkBoxDuelCurse.Checked = (KernelWorker.GetSelectedDuelData.Status3 & 0x02) >= 1 ? true : false;
+            checkBoxDuelDoom.Checked = (KernelWorker.GetSelectedDuelData.Status3 & 0x04) >= 1 ? true : false;
+            checkBoxDuelInvincible.Checked = (KernelWorker.GetSelectedDuelData.Status3 & 0x08) >= 1 ? true : false;
+            checkBoxDuelPetrifying.Checked = (KernelWorker.GetSelectedDuelData.Status3 & 0x10) >= 1 ? true : false;
+            checkBoxDuelFloat.Checked = (KernelWorker.GetSelectedDuelData.Status3 & 0x20) >= 1 ? true : false;
+            checkBoxDuelConfusion.Checked = (KernelWorker.GetSelectedDuelData.Status3 & 0x40) >= 1 ? true : false;
+            checkBoxDuelDrain.Checked = (KernelWorker.GetSelectedDuelData.Status3 & 0x80) >= 1 ? true : false;
+
+            checkBoxDuelEject.Checked = (KernelWorker.GetSelectedDuelData.Status4 & 0x01) >= 1 ? true : false;
+            checkBoxDuelDouble.Checked = (KernelWorker.GetSelectedDuelData.Status4 & 0x02) >= 1 ? true : false;
+            checkBoxDuelTriple.Checked = (KernelWorker.GetSelectedDuelData.Status4 & 0x04) >= 1 ? true : false;
+            checkBoxDuelDefend.Checked = (KernelWorker.GetSelectedDuelData.Status4 & 0x08) >= 1 ? true : false;
+            checkBoxDuelUnk1.Checked = (KernelWorker.GetSelectedDuelData.Status4 & 0x10) >= 1 ? true : false;
+            checkBoxDuelUnk2.Checked = (KernelWorker.GetSelectedDuelData.Status4 & 0x20) >= 1 ? true : false;
+            checkBoxDuelCharged.Checked = (KernelWorker.GetSelectedDuelData.Status4 & 0x40) >= 1 ? true : false;
+            checkBoxDuelBackAttack.Checked = (KernelWorker.GetSelectedDuelData.Status4 & 0x80) >= 1 ? true : false;
+
+            checkBoxDuelVit0.Checked = (KernelWorker.GetSelectedDuelData.Status5 & 0x01) >= 1 ? true : false;
+            checkBoxDuelAngelWing.Checked = (KernelWorker.GetSelectedDuelData.Status5 & 0x02) >= 1 ? true : false;
+            checkBoxDuelUnk3.Checked = (KernelWorker.GetSelectedDuelData.Status5 & 0x04) >= 1 ? true : false;
+            checkBoxDuelUnk4.Checked = (KernelWorker.GetSelectedDuelData.Status5 & 0x08) >= 1 ? true : false;
+            checkBoxDuelUnk5.Checked = (KernelWorker.GetSelectedDuelData.Status5 & 0x10) >= 1 ? true : false;
+            checkBoxDuelUnk6.Checked = (KernelWorker.GetSelectedDuelData.Status5 & 0x20) >= 1 ? true : false;
+            checkBoxDuelHasMagic.Checked = (KernelWorker.GetSelectedDuelData.Status5 & 0x40) >= 1 ? true : false;
+            checkBoxDuelSummonGF.Checked = (KernelWorker.GetSelectedDuelData.Status5 & 0x80) >= 1 ? true : false;
+        }
+
+
+        private void listBoxDuel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadDuel(listBoxDuel.SelectedIndex);
+
+            try
+            {
+                comboBoxDuelMagicID.SelectedIndex = KernelWorker.GetSelectedDuelData.MagicID;
+                comboBoxDuelAttackType.SelectedIndex = KernelWorker.GetSelectedDuelData.AttackType;
+                numericUpDownDuelAttackPower.Value = KernelWorker.GetSelectedDuelData.AttackPower;
+                checkBoxDuelFlag1.Checked = (KernelWorker.GetSelectedDuelData.AttackFlags & 0x01) >= 1 ? true : false;
+                checkBoxDuelFlag2.Checked = (KernelWorker.GetSelectedDuelData.AttackFlags & 0x02) >= 1 ? true : false;
+                checkBoxDuelFlag3.Checked = (KernelWorker.GetSelectedDuelData.AttackFlags & 0x04) >= 1 ? true : false;
+                checkBoxDuelFlag4.Checked = (KernelWorker.GetSelectedDuelData.AttackFlags & 0x08) >= 1 ? true : false;
+                checkBoxDuelFlag5.Checked = (KernelWorker.GetSelectedDuelData.AttackFlags & 0x10) >= 1 ? true : false;
+                checkBoxDuelFlag6.Checked = (KernelWorker.GetSelectedDuelData.AttackFlags & 0x20) >= 1 ? true : false;
+                checkBoxDuelFlag7.Checked = (KernelWorker.GetSelectedDuelData.AttackFlags & 0x40) >= 1 ? true : false;
+                checkBoxDuelFlag8.Checked = (KernelWorker.GetSelectedDuelData.AttackFlags & 0x80) >= 1 ? true : false;
+                checkBoxDuelTarget1.Checked = (KernelWorker.GetSelectedDuelData.Target & 0x01) >= 1 ? true : false;
+                checkBoxDuelTarget2.Checked = (KernelWorker.GetSelectedDuelData.Target & 0x02) >= 1 ? true : false;
+                checkBoxDuelTarget3.Checked = (KernelWorker.GetSelectedDuelData.Target & 0x04) >= 1 ? true : false;
+                checkBoxDuelTarget4.Checked = (KernelWorker.GetSelectedDuelData.Target & 0x08) >= 1 ? true : false;
+                checkBoxDuelTarget5.Checked = (KernelWorker.GetSelectedDuelData.Target & 0x10) >= 1 ? true : false;
+                checkBoxDuelTarget6.Checked = (KernelWorker.GetSelectedDuelData.Target & 0x20) >= 1 ? true : false;
+                checkBoxDuelTarget7.Checked = (KernelWorker.GetSelectedDuelData.Target & 0x40) >= 1 ? true : false;
+                checkBoxDuelTarget8.Checked = (KernelWorker.GetSelectedDuelData.Target & 0x80) >= 1 ? true : false;
+                numericUpDownDuelHitCount.Value = KernelWorker.GetSelectedDuelData.HitCount;
+                comboBoxDuelElement.SelectedIndex = Duel_GetElement();
+                numericUpDownDuelElementPerc.Value = KernelWorker.GetSelectedDuelData.ElementPerc;
+                numericUpDownDuelStatusAttack.Value = KernelWorker.GetSelectedDuelData.StatusAttack;
+                DuelStatusWorker();
+                //to do buttons
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+
+            #endregion
+
+
+        }
 }
