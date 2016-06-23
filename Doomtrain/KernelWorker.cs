@@ -47,6 +47,9 @@ namespace Doomtrain
         public static int DuelDataOffset = -1;
         public static int OffsetToDuelSelected = -1;
 
+        public static int CombineDataOffset = -1;
+        public static int OffsetToCombineSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -60,6 +63,7 @@ namespace Doomtrain
         public static TempCharLBData GetSelectedTempCharLBData;
         public static ShotData GetSelectedShotData;
         public static DuelData GetSelectedDuelData;
+        public static CombineData GetSelectedCombineData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -138,21 +142,6 @@ namespace Doomtrain
             Water = 0x40,
             Holy = 0x80,
             NonElemental = 0x00
-        }
-
-        internal enum Characters : byte
-        {
-            Squall = 0x00,
-            Zell = 0x01,
-            Irvine = 0x02,
-            Quistis = 0x03,
-            Rinoa = 0x04,
-            Selphie = 0x05,
-            Seifer = 0x06,
-            Edea = 0x07,
-            Laguna = 0x08,
-            Kiros = 0x09,
-            Ward = 0x0A
         }
 
 
@@ -315,7 +304,7 @@ namespace Doomtrain
         {
             //public string WeaponsName;
             public byte RenzokukenFinishers;
-            public Characters CharacterID;
+            public byte CharacterID;
             public byte AttackType;
             public byte AttackPower;
             public byte HITBonus;
@@ -511,6 +500,26 @@ namespace Doomtrain
             public UInt16 Button3;
             public UInt16 Button4;
             public UInt16 Button5;
+        }
+
+        public struct CombineData
+        {
+            //public string OffsetToName;
+            //public string OffsetToDescription;
+            public UInt16 MagicID;
+            public byte AttackType;
+            public byte AttackPower;
+            public byte Target;
+            public byte AttackFlags;
+            public byte HitCount;
+            public Element Element;
+            public byte ElementPerc;
+            public byte StatusAttack;
+            public byte Status1;
+            public byte Status2;
+            public byte Status3;
+            public byte Status4;
+            public byte Status5;
         }
 
         #endregion
@@ -1605,6 +1614,69 @@ namespace Doomtrain
             }
         }
 
+        public static void UpdateVariable_Combine(int index, object variable, byte arg0 = 127)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    UshortToKernel(Convert.ToUInt16(variable), 2, (byte)Mode.Mode_Combine); //MagicID
+                    return;
+                case 1:
+                    Kernel[OffsetToCombineSelected + 4] = Convert.ToByte(variable); //Attack type
+                    return;
+                case 2:
+                    Kernel[OffsetToCombineSelected + 5] = Convert.ToByte(variable); //Attack power
+                    return;
+                case 3:
+                    Kernel[OffsetToCombineSelected + 6] = (byte)(Kernel[OffsetToCombineSelected + 6] ^ Convert.ToByte(variable)); //attack flags
+                    return;
+                case 4:
+                    Kernel[OffsetToCombineSelected + 8] = (byte)(Kernel[OffsetToCombineSelected + 8] ^ Convert.ToByte(variable)); //default target
+                    return;
+                case 5:
+                    Kernel[OffsetToCombineSelected + 10] = Convert.ToByte(variable); //Hit Count
+                    return;
+                case 6:
+                    Kernel[OffsetToCombineSelected + 11] = Convert.ToByte(variable); //Element
+                    return;
+                case 7:
+                    Kernel[OffsetToCombineSelected + 12] = Convert.ToByte(variable); //Element %
+                    return;
+                case 8:
+                    Kernel[OffsetToCombineSelected + 13] = Convert.ToByte(variable); //Status Attack
+                    return;
+                case 9:
+                    CombineStatusUpdator(arg0, variable); //Status
+                    return;
+
+                default:
+                    return;
+            }
+        }
+        private static void CombineStatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToCombineSelected + 14] = (byte)(Kernel[OffsetToCombineSelected + 14] ^ Convert.ToByte(variable));
+                    return;
+                case 1:
+                    Kernel[OffsetToCombineSelected + 16] = (byte)(Kernel[OffsetToCombineSelected + 16] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToCombineSelected + 17] = (byte)(Kernel[OffsetToCombineSelected + 17] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToCombineSelected + 18] = (byte)(Kernel[OffsetToCombineSelected + 18] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToCombineSelected + 19] = (byte)(Kernel[OffsetToCombineSelected + 19] ^ Convert.ToByte(variable));
+                    return;
+            }
+        }
+
         #endregion
 
         #region MAGIC ID
@@ -1646,6 +1718,9 @@ namespace Doomtrain
                 case (byte)Mode.Mode_Duel:
                     Array.Copy(magicIdBytes, 0, Kernel, OffsetToDuelSelected + add, 2);
                     break;
+                case (byte)Mode.Mode_Combine:
+                    Array.Copy(magicIdBytes, 0, Kernel, OffsetToCombineSelected + add, 2);
+                    break;
 
                 default:
                     return;
@@ -1662,7 +1737,8 @@ namespace Doomtrain
             Mode_RenzoFin,
             Mode_TempCharLB,
             Mode_Shot,
-            Mode_Duel
+            Mode_Duel,
+            Mode_Combine
         }
 
         #endregion
@@ -1685,6 +1761,7 @@ namespace Doomtrain
             TempCharLBDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.TempCharacterLimitBreakes);
             ShotDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Shot_Irvine);
             DuelDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Duel_Zell);
+            CombineDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RinoaLimit2);
         }
 
 
@@ -1995,31 +2072,7 @@ namespace Doomtrain
 
             GetSelectedWeaponsData.RenzokukenFinishers = Kernel[selectedWeaponsOffset + 2];
             selectedWeaponsOffset += 4;
-            byte c = Kernel[selectedWeaponsOffset++];
-            GetSelectedWeaponsData.CharacterID =
-                c == (byte)Characters.Squall
-                    ? Characters.Squall
-                    : c == (byte)Characters.Edea
-                        ? Characters.Edea
-                        : c == (byte)Characters.Irvine
-                            ? Characters.Irvine
-                            : c == (byte)Characters.Kiros
-                                ? Characters.Kiros
-                                : c == (byte)Characters.Laguna
-                                    ? Characters.Laguna
-                                    : c == (byte)Characters.Quistis
-                                        ? Characters.Quistis
-                                        : c == (byte)Characters.Rinoa
-                                            ? Characters.Rinoa
-                                            : c == (byte)Characters.Seifer
-                                                ? Characters.Seifer
-                                                : c == (byte)Characters.Selphie
-                                                    ? Characters.Selphie
-                                                    : c == (byte)Characters.Ward
-                                                        ? Characters.Ward
-                                                        : c == (byte)Characters.Zell
-                                                            ? Characters.Zell
-                                                           : 0; //Error handler
+            GetSelectedWeaponsData.CharacterID = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.AttackType = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.AttackPower = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.HITBonus = Kernel[selectedWeaponsOffset++];
@@ -2397,6 +2450,52 @@ namespace Doomtrain
             GetSelectedDuelData.Status3 = Kernel[selectedDuelOffset++];
             GetSelectedDuelData.Status4 = Kernel[selectedDuelOffset++];
             GetSelectedDuelData.Status5 = Kernel[selectedDuelOffset++];
+        }
+
+        public static void ReadCombine(int CombineID_List)
+        {
+            GetSelectedCombineData = new CombineData();
+            int selectedCombineOffset = CombineDataOffset + (CombineID_List * 20);
+            OffsetToCombineSelected = selectedCombineOffset;
+
+            GetSelectedCombineData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedCombineOffset + 2));
+            selectedCombineOffset += 2 + 2;
+            GetSelectedCombineData.AttackType = Kernel[selectedCombineOffset++];
+            GetSelectedCombineData.AttackPower = Kernel[selectedCombineOffset++];
+            GetSelectedCombineData.AttackFlags = Kernel[selectedCombineOffset++];
+            selectedCombineOffset += 1;
+            GetSelectedCombineData.Target = Kernel[selectedCombineOffset++];
+            selectedCombineOffset += 1;
+            GetSelectedCombineData.HitCount = Kernel[selectedCombineOffset++];
+            byte b = Kernel[selectedCombineOffset++];
+            GetSelectedCombineData.Element =
+                b == (byte)Element.Fire
+                    ? Element.Fire
+                    : b == (byte)Element.Holy
+                        ? Element.Holy
+                        : b == (byte)Element.Ice
+                            ? Element.Ice
+                            : b == (byte)Element.NonElemental
+                                ? Element.NonElemental
+                                : b == (byte)Element.Poison
+                                    ? Element.Poison
+                                    : b == (byte)Element.Thunder
+                                        ? Element.Thunder
+                                        : b == (byte)Element.Water
+                                            ? Element.Water
+                                            : b == (byte)Element.Wind
+                                                ? Element.Wind
+                                                : b == (byte)Element.Earth
+                                                    ? Element.Earth
+                                                    : 0; //Error handler
+            GetSelectedCombineData.ElementPerc = Kernel[selectedCombineOffset++];
+            GetSelectedCombineData.StatusAttack = Kernel[selectedCombineOffset++];
+            GetSelectedCombineData.Status1 = Kernel[selectedCombineOffset++];
+            selectedCombineOffset += 1;
+            GetSelectedCombineData.Status2 = Kernel[selectedCombineOffset++];
+            GetSelectedCombineData.Status3 = Kernel[selectedCombineOffset++];
+            GetSelectedCombineData.Status4 = Kernel[selectedCombineOffset++];
+            GetSelectedCombineData.Status5 = Kernel[selectedCombineOffset++];
         }
 
         #endregion

@@ -1018,7 +1018,7 @@
             this.numericUpDownShotAttackPower = new System.Windows.Forms.NumericUpDown();
             this.comboBoxShotMagicID = new System.Windows.Forms.ComboBox();
             this.listBoxShot = new System.Windows.Forms.ListBox();
-            this.tabSlots = new System.Windows.Forms.TabPage();
+            this.tabPageSlots = new System.Windows.Forms.TabPage();
             this.groupBoxSlotSets = new System.Windows.Forms.GroupBox();
             this.labelSlotSetsMagic = new System.Windows.Forms.Label();
             this.labelSlotSetsList = new System.Windows.Forms.Label();
@@ -1171,7 +1171,7 @@
             this.numericUpDownTempCharLBAttackPower = new System.Windows.Forms.NumericUpDown();
             this.comboBoxTempCharLBMagicID = new System.Windows.Forms.ComboBox();
             this.listBoxTempCharLB = new System.Windows.Forms.ListBox();
-            this.tabEnemyAttacks = new System.Windows.Forms.TabPage();
+            this.tabPageEnemyAttacks = new System.Windows.Forms.TabPage();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.checkBoxEnemyAttacksFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
             this.checkBoxEnemyAttacksFlag8 = new System.Windows.Forms.CheckBox();
@@ -1322,6 +1322,82 @@
             this.comboBoxDuelButton4 = new System.Windows.Forms.ComboBox();
             this.labelDuelButton5 = new System.Windows.Forms.Label();
             this.comboBoxDuelButton5 = new System.Windows.Forms.ComboBox();
+            this.tabPageCombine = new System.Windows.Forms.TabPage();
+            this.listBoxCombine = new System.Windows.Forms.ListBox();
+            this.groupBoxCombineStatusAttack = new System.Windows.Forms.GroupBox();
+            this.checkBoxCombinePetrifying = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineDarkness = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineSilence = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineStop = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineConfusion = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombinePetrify = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineSlow = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineBerserk = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineSleep = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineInvincible = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineCurse = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineDoom = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineFloat = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineAura = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineDrain = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineSummonGF = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineHasMagic = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineUnk6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineUnk5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineUnk4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineUnk3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineAngelWing = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineVit0 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineBackAttack = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineCharged = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineUnk2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineUnk1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineDefend = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineTriple = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineDouble = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineEject = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombinePoison = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineDeath = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineProtect = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineHaste = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineRegen = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineShell = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineReflect = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineUnk7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineZombie = new System.Windows.Forms.CheckBox();
+            this.numericUpDownCombineStatusAttack = new System.Windows.Forms.NumericUpDown();
+            this.labelCombineStatusAttack = new System.Windows.Forms.Label();
+            this.groupBoxCombineTarget = new System.Windows.Forms.GroupBox();
+            this.checkBoxCombineTarget8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineTarget5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineTarget2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineTarget4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineTarget6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineTarget7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineTarget1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineTarget3 = new System.Windows.Forms.CheckBox();
+            this.groupBoxCombineFlags = new System.Windows.Forms.GroupBox();
+            this.checkBoxCombineFlag4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineFlag1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineFlag5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCombineFlag7 = new System.Windows.Forms.CheckBox();
+            this.groupBoxCombineGeneral = new System.Windows.Forms.GroupBox();
+            this.labelCombineElementPerc = new System.Windows.Forms.Label();
+            this.comboBoxCombineElement = new System.Windows.Forms.ComboBox();
+            this.labelCombineElement = new System.Windows.Forms.Label();
+            this.numericUpDownCombineElementPerc = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxCombineAttackType = new System.Windows.Forms.ComboBox();
+            this.labelCombineAttackType = new System.Windows.Forms.Label();
+            this.numericUpDownCombineHitCount = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCombineAttackPower = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxCombineMagicID = new System.Windows.Forms.ComboBox();
+            this.labelCombineHitCount = new System.Windows.Forms.Label();
+            this.labelCombineAttackPower = new System.Windows.Forms.Label();
+            this.labelCombineMagicID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
@@ -1513,7 +1589,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).BeginInit();
-            this.tabSlots.SuspendLayout();
+            this.tabPageSlots.SuspendLayout();
             this.groupBoxSlotSets.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN2)).BeginInit();
@@ -1594,7 +1670,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBElementPerc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBAttackPower)).BeginInit();
-            this.tabEnemyAttacks.SuspendLayout();
+            this.tabPageEnemyAttacks.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksStatusAttack)).BeginInit();
@@ -1614,6 +1690,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelAttackPower)).BeginInit();
             this.groupBoxShotInput1.SuspendLayout();
+            this.tabPageCombine.SuspendLayout();
+            this.groupBoxCombineStatusAttack.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCombineStatusAttack)).BeginInit();
+            this.groupBoxCombineTarget.SuspendLayout();
+            this.groupBoxCombineFlags.SuspendLayout();
+            this.groupBoxCombineGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCombineElementPerc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCombineHitCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCombineAttackPower)).BeginInit();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -19918,10 +20003,11 @@
             this.tabControlMain.Controls.Add(this.tabPageRenzokukenFinishers);
             this.tabControlMain.Controls.Add(this.tabBlueMagic);
             this.tabControlMain.Controls.Add(this.tabPageDuel);
+            this.tabControlMain.Controls.Add(this.tabPageSlots);
+            this.tabControlMain.Controls.Add(this.tabPageCombine);
             this.tabControlMain.Controls.Add(this.tabPageShot);
-            this.tabControlMain.Controls.Add(this.tabSlots);
             this.tabControlMain.Controls.Add(this.tabPageTempCharLB);
-            this.tabControlMain.Controls.Add(this.tabEnemyAttacks);
+            this.tabControlMain.Controls.Add(this.tabPageEnemyAttacks);
             this.tabControlMain.Font = new System.Drawing.Font("Calisto MT", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlMain.ItemSize = new System.Drawing.Size(115, 30);
             this.tabControlMain.Location = new System.Drawing.Point(0, 52);
@@ -22769,16 +22855,16 @@
             this.listBoxShot.TabIndex = 107;
             this.listBoxShot.SelectedIndexChanged += new System.EventHandler(this.listBoxShot_SelectedIndexChanged);
             // 
-            // tabSlots
+            // tabPageSlots
             // 
-            this.tabSlots.Controls.Add(this.groupBoxSlotSets);
-            this.tabSlots.Controls.Add(this.groupBoxSlotArray);
-            this.tabSlots.Location = new System.Drawing.Point(4, 34);
-            this.tabSlots.Name = "tabSlots";
-            this.tabSlots.Size = new System.Drawing.Size(584, 739);
-            this.tabSlots.TabIndex = 7;
-            this.tabSlots.Text = "Slots";
-            this.tabSlots.UseVisualStyleBackColor = true;
+            this.tabPageSlots.Controls.Add(this.groupBoxSlotSets);
+            this.tabPageSlots.Controls.Add(this.groupBoxSlotArray);
+            this.tabPageSlots.Location = new System.Drawing.Point(4, 34);
+            this.tabPageSlots.Name = "tabPageSlots";
+            this.tabPageSlots.Size = new System.Drawing.Size(584, 739);
+            this.tabPageSlots.TabIndex = 7;
+            this.tabPageSlots.Text = "Slots";
+            this.tabPageSlots.UseVisualStyleBackColor = true;
             // 
             // groupBoxSlotSets
             // 
@@ -25749,19 +25835,19 @@
             this.listBoxTempCharLB.TabIndex = 5;
             this.listBoxTempCharLB.SelectedIndexChanged += new System.EventHandler(this.listBoxTempCharLB_SelectedIndexChanged);
             // 
-            // tabEnemyAttacks
+            // tabPageEnemyAttacks
             // 
-            this.tabEnemyAttacks.Controls.Add(this.groupBox14);
-            this.tabEnemyAttacks.Controls.Add(this.groupBox15);
-            this.tabEnemyAttacks.Controls.Add(this.groupBox16);
-            this.tabEnemyAttacks.Controls.Add(this.listBoxEnemyAttacks);
-            this.tabEnemyAttacks.Location = new System.Drawing.Point(4, 34);
-            this.tabEnemyAttacks.Name = "tabEnemyAttacks";
-            this.tabEnemyAttacks.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEnemyAttacks.Size = new System.Drawing.Size(584, 739);
-            this.tabEnemyAttacks.TabIndex = 8;
-            this.tabEnemyAttacks.Text = "Enemy Attacks";
-            this.tabEnemyAttacks.UseVisualStyleBackColor = true;
+            this.tabPageEnemyAttacks.Controls.Add(this.groupBox14);
+            this.tabPageEnemyAttacks.Controls.Add(this.groupBox15);
+            this.tabPageEnemyAttacks.Controls.Add(this.groupBox16);
+            this.tabPageEnemyAttacks.Controls.Add(this.listBoxEnemyAttacks);
+            this.tabPageEnemyAttacks.Location = new System.Drawing.Point(4, 34);
+            this.tabPageEnemyAttacks.Name = "tabPageEnemyAttacks";
+            this.tabPageEnemyAttacks.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageEnemyAttacks.Size = new System.Drawing.Size(584, 739);
+            this.tabPageEnemyAttacks.TabIndex = 8;
+            this.tabPageEnemyAttacks.Text = "Enemy Attacks";
+            this.tabPageEnemyAttacks.UseVisualStyleBackColor = true;
             // 
             // groupBox14
             // 
@@ -28579,6 +28665,1387 @@
             this.comboBoxDuelButton5.Size = new System.Drawing.Size(84, 25);
             this.comboBoxDuelButton5.TabIndex = 4;
             // 
+            // tabPageCombine
+            // 
+            this.tabPageCombine.Controls.Add(this.listBoxCombine);
+            this.tabPageCombine.Controls.Add(this.groupBoxCombineStatusAttack);
+            this.tabPageCombine.Controls.Add(this.groupBoxCombineTarget);
+            this.tabPageCombine.Controls.Add(this.groupBoxCombineFlags);
+            this.tabPageCombine.Controls.Add(this.groupBoxCombineGeneral);
+            this.tabPageCombine.Location = new System.Drawing.Point(4, 34);
+            this.tabPageCombine.Name = "tabPageCombine";
+            this.tabPageCombine.Size = new System.Drawing.Size(584, 739);
+            this.tabPageCombine.TabIndex = 13;
+            this.tabPageCombine.Text = "Combine";
+            this.tabPageCombine.UseVisualStyleBackColor = true;
+            // 
+            // listBoxCombine
+            // 
+            this.listBoxCombine.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxCombine.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxCombine.FormattingEnabled = true;
+            this.listBoxCombine.ItemHeight = 17;
+            this.listBoxCombine.Items.AddRange(new object[] {
+            "Angelo Cannon",
+            "Angelo Strike",
+            "Invincible Moon",
+            "Wishing Star",
+            "Angel Wing"});
+            this.listBoxCombine.Location = new System.Drawing.Point(0, 0);
+            this.listBoxCombine.Name = "listBoxCombine";
+            this.listBoxCombine.ScrollAlwaysVisible = true;
+            this.listBoxCombine.Size = new System.Drawing.Size(120, 735);
+            this.listBoxCombine.TabIndex = 116;
+            this.listBoxCombine.SelectedIndexChanged += new System.EventHandler(this.listBoxCombine_SelectedIndexChanged);
+            // 
+            // groupBoxCombineStatusAttack
+            // 
+            this.groupBoxCombineStatusAttack.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombinePetrifying);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineDarkness);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineSilence);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineStop);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineConfusion);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombinePetrify);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineSlow);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineBerserk);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineSleep);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineInvincible);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineCurse);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineDoom);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineFloat);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineAura);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineDrain);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineSummonGF);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineHasMagic);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineUnk6);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineUnk5);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineUnk4);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineUnk3);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineAngelWing);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineVit0);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineBackAttack);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineCharged);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineUnk2);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineUnk1);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineDefend);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineTriple);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineDouble);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineEject);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombinePoison);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineDeath);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineProtect);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineHaste);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineRegen);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineShell);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineReflect);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineUnk7);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.checkBoxCombineZombie);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.numericUpDownCombineStatusAttack);
+            this.groupBoxCombineStatusAttack.Controls.Add(this.labelCombineStatusAttack);
+            this.groupBoxCombineStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCombineStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
+            this.groupBoxCombineStatusAttack.Location = new System.Drawing.Point(126, 316);
+            this.groupBoxCombineStatusAttack.Name = "groupBoxCombineStatusAttack";
+            this.groupBoxCombineStatusAttack.Size = new System.Drawing.Size(452, 286);
+            this.groupBoxCombineStatusAttack.TabIndex = 120;
+            this.groupBoxCombineStatusAttack.TabStop = false;
+            this.groupBoxCombineStatusAttack.Text = "Status Attack";
+            // 
+            // checkBoxCombinePetrifying
+            // 
+            this.checkBoxCombinePetrifying.AutoSize = true;
+            this.checkBoxCombinePetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombinePetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombinePetrifying.Location = new System.Drawing.Point(280, 136);
+            this.checkBoxCombinePetrifying.Name = "checkBoxCombinePetrifying";
+            this.checkBoxCombinePetrifying.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxCombinePetrifying.TabIndex = 115;
+            this.checkBoxCombinePetrifying.Text = "Petrifying";
+            this.checkBoxCombinePetrifying.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineDarkness
+            // 
+            this.checkBoxCombineDarkness.AutoSize = true;
+            this.checkBoxCombineDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineDarkness.Location = new System.Drawing.Point(5, 261);
+            this.checkBoxCombineDarkness.Name = "checkBoxCombineDarkness";
+            this.checkBoxCombineDarkness.Size = new System.Drawing.Size(73, 19);
+            this.checkBoxCombineDarkness.TabIndex = 138;
+            this.checkBoxCombineDarkness.Text = "Darkness";
+            this.checkBoxCombineDarkness.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineSilence
+            // 
+            this.checkBoxCombineSilence.AutoSize = true;
+            this.checkBoxCombineSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineSilence.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineSilence.Location = new System.Drawing.Point(97, 261);
+            this.checkBoxCombineSilence.Name = "checkBoxCombineSilence";
+            this.checkBoxCombineSilence.Size = new System.Drawing.Size(63, 19);
+            this.checkBoxCombineSilence.TabIndex = 139;
+            this.checkBoxCombineSilence.Text = "Silence";
+            this.checkBoxCombineSilence.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineStop
+            // 
+            this.checkBoxCombineStop.AutoSize = true;
+            this.checkBoxCombineStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineStop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineStop.Location = new System.Drawing.Point(280, 86);
+            this.checkBoxCombineStop.Name = "checkBoxCombineStop";
+            this.checkBoxCombineStop.Size = new System.Drawing.Size(50, 19);
+            this.checkBoxCombineStop.TabIndex = 106;
+            this.checkBoxCombineStop.Text = "Stop";
+            this.checkBoxCombineStop.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineConfusion
+            // 
+            this.checkBoxCombineConfusion.AutoSize = true;
+            this.checkBoxCombineConfusion.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxCombineConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineConfusion.Location = new System.Drawing.Point(368, 136);
+            this.checkBoxCombineConfusion.Name = "checkBoxCombineConfusion";
+            this.checkBoxCombineConfusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxCombineConfusion.TabIndex = 117;
+            this.checkBoxCombineConfusion.Text = "Confusion";
+            this.checkBoxCombineConfusion.UseVisualStyleBackColor = false;
+            // 
+            // checkBoxCombinePetrify
+            // 
+            this.checkBoxCombinePetrify.AutoSize = true;
+            this.checkBoxCombinePetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombinePetrify.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombinePetrify.Location = new System.Drawing.Point(368, 236);
+            this.checkBoxCombinePetrify.Name = "checkBoxCombinePetrify";
+            this.checkBoxCombinePetrify.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxCombinePetrify.TabIndex = 137;
+            this.checkBoxCombinePetrify.Text = "Petrify";
+            this.checkBoxCombinePetrify.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineSlow
+            // 
+            this.checkBoxCombineSlow.AutoSize = true;
+            this.checkBoxCombineSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineSlow.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineSlow.Location = new System.Drawing.Point(191, 86);
+            this.checkBoxCombineSlow.Name = "checkBoxCombineSlow";
+            this.checkBoxCombineSlow.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxCombineSlow.TabIndex = 105;
+            this.checkBoxCombineSlow.Text = "Slow";
+            this.checkBoxCombineSlow.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineBerserk
+            // 
+            this.checkBoxCombineBerserk.AutoSize = true;
+            this.checkBoxCombineBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineBerserk.Location = new System.Drawing.Point(191, 261);
+            this.checkBoxCombineBerserk.Name = "checkBoxCombineBerserk";
+            this.checkBoxCombineBerserk.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxCombineBerserk.TabIndex = 140;
+            this.checkBoxCombineBerserk.Text = "Berserk";
+            this.checkBoxCombineBerserk.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineSleep
+            // 
+            this.checkBoxCombineSleep.AutoSize = true;
+            this.checkBoxCombineSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineSleep.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineSleep.Location = new System.Drawing.Point(5, 86);
+            this.checkBoxCombineSleep.Name = "checkBoxCombineSleep";
+            this.checkBoxCombineSleep.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxCombineSleep.TabIndex = 103;
+            this.checkBoxCombineSleep.Text = "Sleep";
+            this.checkBoxCombineSleep.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineInvincible
+            // 
+            this.checkBoxCombineInvincible.AutoSize = true;
+            this.checkBoxCombineInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineInvincible.Location = new System.Drawing.Point(97, 136);
+            this.checkBoxCombineInvincible.Name = "checkBoxCombineInvincible";
+            this.checkBoxCombineInvincible.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxCombineInvincible.TabIndex = 114;
+            this.checkBoxCombineInvincible.Text = "Invincible";
+            this.checkBoxCombineInvincible.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineCurse
+            // 
+            this.checkBoxCombineCurse.AutoSize = true;
+            this.checkBoxCombineCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineCurse.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineCurse.Location = new System.Drawing.Point(368, 111);
+            this.checkBoxCombineCurse.Name = "checkBoxCombineCurse";
+            this.checkBoxCombineCurse.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxCombineCurse.TabIndex = 112;
+            this.checkBoxCombineCurse.Text = "Curse";
+            this.checkBoxCombineCurse.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineDoom
+            // 
+            this.checkBoxCombineDoom.AutoSize = true;
+            this.checkBoxCombineDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineDoom.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineDoom.Location = new System.Drawing.Point(5, 136);
+            this.checkBoxCombineDoom.Name = "checkBoxCombineDoom";
+            this.checkBoxCombineDoom.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxCombineDoom.TabIndex = 113;
+            this.checkBoxCombineDoom.Text = "Doom";
+            this.checkBoxCombineDoom.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineFloat
+            // 
+            this.checkBoxCombineFloat.AutoSize = true;
+            this.checkBoxCombineFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineFloat.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineFloat.Location = new System.Drawing.Point(191, 136);
+            this.checkBoxCombineFloat.Name = "checkBoxCombineFloat";
+            this.checkBoxCombineFloat.Size = new System.Drawing.Size(52, 19);
+            this.checkBoxCombineFloat.TabIndex = 116;
+            this.checkBoxCombineFloat.Text = "Float";
+            this.checkBoxCombineFloat.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineAura
+            // 
+            this.checkBoxCombineAura.AutoSize = true;
+            this.checkBoxCombineAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineAura.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineAura.Location = new System.Drawing.Point(280, 111);
+            this.checkBoxCombineAura.Name = "checkBoxCombineAura";
+            this.checkBoxCombineAura.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxCombineAura.TabIndex = 111;
+            this.checkBoxCombineAura.Text = "Aura";
+            this.checkBoxCombineAura.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineDrain
+            // 
+            this.checkBoxCombineDrain.AutoSize = true;
+            this.checkBoxCombineDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineDrain.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineDrain.Location = new System.Drawing.Point(5, 161);
+            this.checkBoxCombineDrain.Name = "checkBoxCombineDrain";
+            this.checkBoxCombineDrain.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxCombineDrain.TabIndex = 118;
+            this.checkBoxCombineDrain.Text = "Drain";
+            this.checkBoxCombineDrain.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineSummonGF
+            // 
+            this.checkBoxCombineSummonGF.AutoSize = true;
+            this.checkBoxCombineSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineSummonGF.Location = new System.Drawing.Point(97, 236);
+            this.checkBoxCombineSummonGF.Name = "checkBoxCombineSummonGF";
+            this.checkBoxCombineSummonGF.Size = new System.Drawing.Size(92, 19);
+            this.checkBoxCombineSummonGF.TabIndex = 133;
+            this.checkBoxCombineSummonGF.Text = "Summon GF";
+            this.checkBoxCombineSummonGF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineHasMagic
+            // 
+            this.checkBoxCombineHasMagic.AutoSize = true;
+            this.checkBoxCombineHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineHasMagic.Location = new System.Drawing.Point(5, 236);
+            this.checkBoxCombineHasMagic.Name = "checkBoxCombineHasMagic";
+            this.checkBoxCombineHasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxCombineHasMagic.TabIndex = 132;
+            this.checkBoxCombineHasMagic.Text = "Has Magic";
+            this.checkBoxCombineHasMagic.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineUnk6
+            // 
+            this.checkBoxCombineUnk6.AutoSize = true;
+            this.checkBoxCombineUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineUnk6.Location = new System.Drawing.Point(368, 211);
+            this.checkBoxCombineUnk6.Name = "checkBoxCombineUnk6";
+            this.checkBoxCombineUnk6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineUnk6.TabIndex = 131;
+            this.checkBoxCombineUnk6.Text = "???";
+            this.checkBoxCombineUnk6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineUnk5
+            // 
+            this.checkBoxCombineUnk5.AutoSize = true;
+            this.checkBoxCombineUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineUnk5.Location = new System.Drawing.Point(280, 211);
+            this.checkBoxCombineUnk5.Name = "checkBoxCombineUnk5";
+            this.checkBoxCombineUnk5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineUnk5.TabIndex = 130;
+            this.checkBoxCombineUnk5.Text = "???";
+            this.checkBoxCombineUnk5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineUnk4
+            // 
+            this.checkBoxCombineUnk4.AutoSize = true;
+            this.checkBoxCombineUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineUnk4.Location = new System.Drawing.Point(191, 211);
+            this.checkBoxCombineUnk4.Name = "checkBoxCombineUnk4";
+            this.checkBoxCombineUnk4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineUnk4.TabIndex = 127;
+            this.checkBoxCombineUnk4.Text = "???";
+            this.checkBoxCombineUnk4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineUnk3
+            // 
+            this.checkBoxCombineUnk3.AutoSize = true;
+            this.checkBoxCombineUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineUnk3.Location = new System.Drawing.Point(97, 211);
+            this.checkBoxCombineUnk3.Name = "checkBoxCombineUnk3";
+            this.checkBoxCombineUnk3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineUnk3.TabIndex = 129;
+            this.checkBoxCombineUnk3.Text = "???";
+            this.checkBoxCombineUnk3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineAngelWing
+            // 
+            this.checkBoxCombineAngelWing.AutoSize = true;
+            this.checkBoxCombineAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineAngelWing.Location = new System.Drawing.Point(5, 211);
+            this.checkBoxCombineAngelWing.Name = "checkBoxCombineAngelWing";
+            this.checkBoxCombineAngelWing.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxCombineAngelWing.TabIndex = 128;
+            this.checkBoxCombineAngelWing.Text = "Angel Wing";
+            this.checkBoxCombineAngelWing.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineVit0
+            // 
+            this.checkBoxCombineVit0.AutoSize = true;
+            this.checkBoxCombineVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineVit0.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineVit0.Location = new System.Drawing.Point(368, 186);
+            this.checkBoxCombineVit0.Name = "checkBoxCombineVit0";
+            this.checkBoxCombineVit0.Size = new System.Drawing.Size(46, 19);
+            this.checkBoxCombineVit0.TabIndex = 134;
+            this.checkBoxCombineVit0.Text = "Vit0";
+            this.checkBoxCombineVit0.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineBackAttack
+            // 
+            this.checkBoxCombineBackAttack.AutoSize = true;
+            this.checkBoxCombineBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineBackAttack.Location = new System.Drawing.Point(280, 186);
+            this.checkBoxCombineBackAttack.Name = "checkBoxCombineBackAttack";
+            this.checkBoxCombineBackAttack.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxCombineBackAttack.TabIndex = 126;
+            this.checkBoxCombineBackAttack.Text = "Back Attack";
+            this.checkBoxCombineBackAttack.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineCharged
+            // 
+            this.checkBoxCombineCharged.AutoSize = true;
+            this.checkBoxCombineCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineCharged.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineCharged.Location = new System.Drawing.Point(191, 186);
+            this.checkBoxCombineCharged.Name = "checkBoxCombineCharged";
+            this.checkBoxCombineCharged.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxCombineCharged.TabIndex = 122;
+            this.checkBoxCombineCharged.Text = "Charged";
+            this.checkBoxCombineCharged.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineUnk2
+            // 
+            this.checkBoxCombineUnk2.AutoSize = true;
+            this.checkBoxCombineUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineUnk2.Location = new System.Drawing.Point(97, 186);
+            this.checkBoxCombineUnk2.Name = "checkBoxCombineUnk2";
+            this.checkBoxCombineUnk2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineUnk2.TabIndex = 125;
+            this.checkBoxCombineUnk2.Text = "???";
+            this.checkBoxCombineUnk2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineUnk1
+            // 
+            this.checkBoxCombineUnk1.AutoSize = true;
+            this.checkBoxCombineUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineUnk1.Location = new System.Drawing.Point(5, 186);
+            this.checkBoxCombineUnk1.Name = "checkBoxCombineUnk1";
+            this.checkBoxCombineUnk1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineUnk1.TabIndex = 124;
+            this.checkBoxCombineUnk1.Text = "???";
+            this.checkBoxCombineUnk1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineDefend
+            // 
+            this.checkBoxCombineDefend.AutoSize = true;
+            this.checkBoxCombineDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineDefend.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineDefend.Location = new System.Drawing.Point(368, 161);
+            this.checkBoxCombineDefend.Name = "checkBoxCombineDefend";
+            this.checkBoxCombineDefend.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxCombineDefend.TabIndex = 123;
+            this.checkBoxCombineDefend.Text = "Defend";
+            this.checkBoxCombineDefend.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineTriple
+            // 
+            this.checkBoxCombineTriple.AutoSize = true;
+            this.checkBoxCombineTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineTriple.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineTriple.Location = new System.Drawing.Point(280, 161);
+            this.checkBoxCombineTriple.Name = "checkBoxCombineTriple";
+            this.checkBoxCombineTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxCombineTriple.TabIndex = 121;
+            this.checkBoxCombineTriple.Text = "Triple";
+            this.checkBoxCombineTriple.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineDouble
+            // 
+            this.checkBoxCombineDouble.AutoSize = true;
+            this.checkBoxCombineDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineDouble.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineDouble.Location = new System.Drawing.Point(191, 161);
+            this.checkBoxCombineDouble.Name = "checkBoxCombineDouble";
+            this.checkBoxCombineDouble.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxCombineDouble.TabIndex = 120;
+            this.checkBoxCombineDouble.Text = "Double";
+            this.checkBoxCombineDouble.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineEject
+            // 
+            this.checkBoxCombineEject.AutoSize = true;
+            this.checkBoxCombineEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineEject.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineEject.Location = new System.Drawing.Point(97, 161);
+            this.checkBoxCombineEject.Name = "checkBoxCombineEject";
+            this.checkBoxCombineEject.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxCombineEject.TabIndex = 119;
+            this.checkBoxCombineEject.Text = "Eject";
+            this.checkBoxCombineEject.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombinePoison
+            // 
+            this.checkBoxCombinePoison.AutoSize = true;
+            this.checkBoxCombinePoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombinePoison.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombinePoison.Location = new System.Drawing.Point(280, 236);
+            this.checkBoxCombinePoison.Name = "checkBoxCombinePoison";
+            this.checkBoxCombinePoison.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxCombinePoison.TabIndex = 136;
+            this.checkBoxCombinePoison.Text = "Poison";
+            this.checkBoxCombinePoison.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineDeath
+            // 
+            this.checkBoxCombineDeath.AutoSize = true;
+            this.checkBoxCombineDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineDeath.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineDeath.Location = new System.Drawing.Point(191, 236);
+            this.checkBoxCombineDeath.Name = "checkBoxCombineDeath";
+            this.checkBoxCombineDeath.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxCombineDeath.TabIndex = 135;
+            this.checkBoxCombineDeath.Text = "Death";
+            this.checkBoxCombineDeath.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineProtect
+            // 
+            this.checkBoxCombineProtect.AutoSize = true;
+            this.checkBoxCombineProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineProtect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineProtect.Location = new System.Drawing.Point(5, 111);
+            this.checkBoxCombineProtect.Name = "checkBoxCombineProtect";
+            this.checkBoxCombineProtect.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxCombineProtect.TabIndex = 108;
+            this.checkBoxCombineProtect.Text = "Protect";
+            this.checkBoxCombineProtect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineHaste
+            // 
+            this.checkBoxCombineHaste.AutoSize = true;
+            this.checkBoxCombineHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineHaste.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineHaste.Location = new System.Drawing.Point(97, 86);
+            this.checkBoxCombineHaste.Name = "checkBoxCombineHaste";
+            this.checkBoxCombineHaste.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxCombineHaste.TabIndex = 104;
+            this.checkBoxCombineHaste.Text = "Haste";
+            this.checkBoxCombineHaste.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineRegen
+            // 
+            this.checkBoxCombineRegen.AutoSize = true;
+            this.checkBoxCombineRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineRegen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineRegen.Location = new System.Drawing.Point(368, 86);
+            this.checkBoxCombineRegen.Name = "checkBoxCombineRegen";
+            this.checkBoxCombineRegen.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxCombineRegen.TabIndex = 107;
+            this.checkBoxCombineRegen.Text = "Regen";
+            this.checkBoxCombineRegen.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineShell
+            // 
+            this.checkBoxCombineShell.AutoSize = true;
+            this.checkBoxCombineShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineShell.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineShell.Location = new System.Drawing.Point(97, 111);
+            this.checkBoxCombineShell.Name = "checkBoxCombineShell";
+            this.checkBoxCombineShell.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxCombineShell.TabIndex = 109;
+            this.checkBoxCombineShell.Text = "Shell";
+            this.checkBoxCombineShell.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineReflect
+            // 
+            this.checkBoxCombineReflect.AutoSize = true;
+            this.checkBoxCombineReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineReflect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineReflect.Location = new System.Drawing.Point(191, 111);
+            this.checkBoxCombineReflect.Name = "checkBoxCombineReflect";
+            this.checkBoxCombineReflect.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxCombineReflect.TabIndex = 110;
+            this.checkBoxCombineReflect.Text = "Reflect";
+            this.checkBoxCombineReflect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineUnk7
+            // 
+            this.checkBoxCombineUnk7.AutoSize = true;
+            this.checkBoxCombineUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineUnk7.Location = new System.Drawing.Point(368, 261);
+            this.checkBoxCombineUnk7.Name = "checkBoxCombineUnk7";
+            this.checkBoxCombineUnk7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineUnk7.TabIndex = 141;
+            this.checkBoxCombineUnk7.Text = "???";
+            this.checkBoxCombineUnk7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineZombie
+            // 
+            this.checkBoxCombineZombie.AutoSize = true;
+            this.checkBoxCombineZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineZombie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineZombie.Location = new System.Drawing.Point(280, 261);
+            this.checkBoxCombineZombie.Name = "checkBoxCombineZombie";
+            this.checkBoxCombineZombie.Size = new System.Drawing.Size(67, 19);
+            this.checkBoxCombineZombie.TabIndex = 142;
+            this.checkBoxCombineZombie.Text = "Zombie";
+            this.checkBoxCombineZombie.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownCombineStatusAttack
+            // 
+            this.numericUpDownCombineStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCombineStatusAttack.Location = new System.Drawing.Point(203, 46);
+            this.numericUpDownCombineStatusAttack.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCombineStatusAttack.Name = "numericUpDownCombineStatusAttack";
+            this.numericUpDownCombineStatusAttack.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCombineStatusAttack.TabIndex = 91;
+            // 
+            // labelCombineStatusAttack
+            // 
+            this.labelCombineStatusAttack.AutoSize = true;
+            this.labelCombineStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCombineStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCombineStatusAttack.Location = new System.Drawing.Point(182, 26);
+            this.labelCombineStatusAttack.Name = "labelCombineStatusAttack";
+            this.labelCombineStatusAttack.Size = new System.Drawing.Size(89, 17);
+            this.labelCombineStatusAttack.TabIndex = 90;
+            this.labelCombineStatusAttack.Text = "Status Attack";
+            // 
+            // groupBoxCombineTarget
+            // 
+            this.groupBoxCombineTarget.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxCombineTarget.Controls.Add(this.checkBoxCombineTarget8);
+            this.groupBoxCombineTarget.Controls.Add(this.checkBoxCombineTarget5);
+            this.groupBoxCombineTarget.Controls.Add(this.checkBoxCombineTarget2);
+            this.groupBoxCombineTarget.Controls.Add(this.checkBoxCombineTarget4);
+            this.groupBoxCombineTarget.Controls.Add(this.checkBoxCombineTarget6);
+            this.groupBoxCombineTarget.Controls.Add(this.checkBoxCombineTarget7);
+            this.groupBoxCombineTarget.Controls.Add(this.checkBoxCombineTarget1);
+            this.groupBoxCombineTarget.Controls.Add(this.checkBoxCombineTarget3);
+            this.groupBoxCombineTarget.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCombineTarget.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.groupBoxCombineTarget.Location = new System.Drawing.Point(126, 216);
+            this.groupBoxCombineTarget.Name = "groupBoxCombineTarget";
+            this.groupBoxCombineTarget.Size = new System.Drawing.Size(452, 94);
+            this.groupBoxCombineTarget.TabIndex = 119;
+            this.groupBoxCombineTarget.TabStop = false;
+            this.groupBoxCombineTarget.Text = "Target Info";
+            // 
+            // checkBoxCombineTarget8
+            // 
+            this.checkBoxCombineTarget8.AutoSize = true;
+            this.checkBoxCombineTarget8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineTarget8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineTarget8.Location = new System.Drawing.Point(346, 60);
+            this.checkBoxCombineTarget8.Name = "checkBoxCombineTarget8";
+            this.checkBoxCombineTarget8.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineTarget8.TabIndex = 39;
+            this.checkBoxCombineTarget8.Text = "???";
+            this.checkBoxCombineTarget8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineTarget5
+            // 
+            this.checkBoxCombineTarget5.AutoSize = true;
+            this.checkBoxCombineTarget5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineTarget5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineTarget5.Location = new System.Drawing.Point(23, 60);
+            this.checkBoxCombineTarget5.Name = "checkBoxCombineTarget5";
+            this.checkBoxCombineTarget5.Size = new System.Drawing.Size(58, 19);
+            this.checkBoxCombineTarget5.TabIndex = 40;
+            this.checkBoxCombineTarget5.Text = "Single";
+            this.checkBoxCombineTarget5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineTarget2
+            // 
+            this.checkBoxCombineTarget2.AutoSize = true;
+            this.checkBoxCombineTarget2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineTarget2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineTarget2.Location = new System.Drawing.Point(131, 35);
+            this.checkBoxCombineTarget2.Name = "checkBoxCombineTarget2";
+            this.checkBoxCombineTarget2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineTarget2.TabIndex = 36;
+            this.checkBoxCombineTarget2.Text = "???";
+            this.checkBoxCombineTarget2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineTarget4
+            // 
+            this.checkBoxCombineTarget4.AutoSize = true;
+            this.checkBoxCombineTarget4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineTarget4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineTarget4.Location = new System.Drawing.Point(346, 35);
+            this.checkBoxCombineTarget4.Name = "checkBoxCombineTarget4";
+            this.checkBoxCombineTarget4.Size = new System.Drawing.Size(83, 19);
+            this.checkBoxCombineTarget4.TabIndex = 38;
+            this.checkBoxCombineTarget4.Text = "Single Side";
+            this.toolTip1.SetToolTip(this.checkBoxCombineTarget4, "Enemy decides which side");
+            this.checkBoxCombineTarget4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineTarget6
+            // 
+            this.checkBoxCombineTarget6.AutoSize = true;
+            this.checkBoxCombineTarget6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineTarget6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineTarget6.Location = new System.Drawing.Point(131, 60);
+            this.checkBoxCombineTarget6.Name = "checkBoxCombineTarget6";
+            this.checkBoxCombineTarget6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineTarget6.TabIndex = 41;
+            this.checkBoxCombineTarget6.Text = "???";
+            this.checkBoxCombineTarget6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineTarget7
+            // 
+            this.checkBoxCombineTarget7.AutoSize = true;
+            this.checkBoxCombineTarget7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineTarget7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineTarget7.Location = new System.Drawing.Point(241, 60);
+            this.checkBoxCombineTarget7.Name = "checkBoxCombineTarget7";
+            this.checkBoxCombineTarget7.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxCombineTarget7.TabIndex = 42;
+            this.checkBoxCombineTarget7.Text = "Enemy";
+            this.checkBoxCombineTarget7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineTarget1
+            // 
+            this.checkBoxCombineTarget1.AutoSize = true;
+            this.checkBoxCombineTarget1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineTarget1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineTarget1.Location = new System.Drawing.Point(23, 35);
+            this.checkBoxCombineTarget1.Name = "checkBoxCombineTarget1";
+            this.checkBoxCombineTarget1.Size = new System.Drawing.Size(53, 19);
+            this.checkBoxCombineTarget1.TabIndex = 35;
+            this.checkBoxCombineTarget1.Text = "Dead";
+            this.checkBoxCombineTarget1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineTarget3
+            // 
+            this.checkBoxCombineTarget3.AutoSize = true;
+            this.checkBoxCombineTarget3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineTarget3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineTarget3.Location = new System.Drawing.Point(241, 35);
+            this.checkBoxCombineTarget3.Name = "checkBoxCombineTarget3";
+            this.checkBoxCombineTarget3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineTarget3.TabIndex = 37;
+            this.checkBoxCombineTarget3.Text = "???";
+            this.checkBoxCombineTarget3.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxCombineFlags
+            // 
+            this.groupBoxCombineFlags.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxCombineFlags.Controls.Add(this.checkBoxCombineFlag4);
+            this.groupBoxCombineFlags.Controls.Add(this.checkBoxCombineFlag8);
+            this.groupBoxCombineFlags.Controls.Add(this.checkBoxCombineFlag3);
+            this.groupBoxCombineFlags.Controls.Add(this.checkBoxCombineFlag6);
+            this.groupBoxCombineFlags.Controls.Add(this.checkBoxCombineFlag1);
+            this.groupBoxCombineFlags.Controls.Add(this.checkBoxCombineFlag5);
+            this.groupBoxCombineFlags.Controls.Add(this.checkBoxCombineFlag2);
+            this.groupBoxCombineFlags.Controls.Add(this.checkBoxCombineFlag7);
+            this.groupBoxCombineFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCombineFlags.ForeColor = System.Drawing.Color.Sienna;
+            this.groupBoxCombineFlags.Location = new System.Drawing.Point(126, 608);
+            this.groupBoxCombineFlags.Name = "groupBoxCombineFlags";
+            this.groupBoxCombineFlags.Size = new System.Drawing.Size(452, 94);
+            this.groupBoxCombineFlags.TabIndex = 118;
+            this.groupBoxCombineFlags.TabStop = false;
+            this.groupBoxCombineFlags.Text = "Attack Flags";
+            // 
+            // checkBoxCombineFlag4
+            // 
+            this.checkBoxCombineFlag4.AutoSize = true;
+            this.checkBoxCombineFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineFlag4.Location = new System.Drawing.Point(299, 38);
+            this.checkBoxCombineFlag4.Name = "checkBoxCombineFlag4";
+            this.checkBoxCombineFlag4.Size = new System.Drawing.Size(132, 19);
+            this.checkBoxCombineFlag4.TabIndex = 48;
+            this.checkBoxCombineFlag4.Text = "Break Damage Limit";
+            this.checkBoxCombineFlag4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineFlag8
+            // 
+            this.checkBoxCombineFlag8.AutoSize = true;
+            this.checkBoxCombineFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineFlag8.Location = new System.Drawing.Point(299, 63);
+            this.checkBoxCombineFlag8.Name = "checkBoxCombineFlag8";
+            this.checkBoxCombineFlag8.Size = new System.Drawing.Size(65, 19);
+            this.checkBoxCombineFlag8.TabIndex = 52;
+            this.checkBoxCombineFlag8.Text = "Revive?";
+            this.checkBoxCombineFlag8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineFlag3
+            // 
+            this.checkBoxCombineFlag3.AutoSize = true;
+            this.checkBoxCombineFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineFlag3.Location = new System.Drawing.Point(214, 38);
+            this.checkBoxCombineFlag3.Name = "checkBoxCombineFlag3";
+            this.checkBoxCombineFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineFlag3.TabIndex = 47;
+            this.checkBoxCombineFlag3.Text = "???";
+            this.checkBoxCombineFlag3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineFlag6
+            // 
+            this.checkBoxCombineFlag6.AutoSize = true;
+            this.checkBoxCombineFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineFlag6.Location = new System.Drawing.Point(129, 63);
+            this.checkBoxCombineFlag6.Name = "checkBoxCombineFlag6";
+            this.checkBoxCombineFlag6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineFlag6.TabIndex = 50;
+            this.checkBoxCombineFlag6.Text = "???";
+            this.checkBoxCombineFlag6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineFlag1
+            // 
+            this.checkBoxCombineFlag1.AutoSize = true;
+            this.checkBoxCombineFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineFlag1.Location = new System.Drawing.Point(21, 38);
+            this.checkBoxCombineFlag1.Name = "checkBoxCombineFlag1";
+            this.checkBoxCombineFlag1.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxCombineFlag1.TabIndex = 45;
+            this.checkBoxCombineFlag1.Text = "Shelled";
+            this.checkBoxCombineFlag1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineFlag5
+            // 
+            this.checkBoxCombineFlag5.AutoSize = true;
+            this.checkBoxCombineFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineFlag5.Location = new System.Drawing.Point(21, 63);
+            this.checkBoxCombineFlag5.Name = "checkBoxCombineFlag5";
+            this.checkBoxCombineFlag5.Size = new System.Drawing.Size(75, 19);
+            this.checkBoxCombineFlag5.TabIndex = 49;
+            this.checkBoxCombineFlag5.Text = "Reflected";
+            this.checkBoxCombineFlag5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineFlag2
+            // 
+            this.checkBoxCombineFlag2.AutoSize = true;
+            this.checkBoxCombineFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineFlag2.Location = new System.Drawing.Point(129, 38);
+            this.checkBoxCombineFlag2.Name = "checkBoxCombineFlag2";
+            this.checkBoxCombineFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineFlag2.TabIndex = 46;
+            this.checkBoxCombineFlag2.Text = "???";
+            this.checkBoxCombineFlag2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCombineFlag7
+            // 
+            this.checkBoxCombineFlag7.AutoSize = true;
+            this.checkBoxCombineFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxCombineFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxCombineFlag7.Location = new System.Drawing.Point(214, 63);
+            this.checkBoxCombineFlag7.Name = "checkBoxCombineFlag7";
+            this.checkBoxCombineFlag7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxCombineFlag7.TabIndex = 51;
+            this.checkBoxCombineFlag7.Text = "???";
+            this.checkBoxCombineFlag7.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxCombineGeneral
+            // 
+            this.groupBoxCombineGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxCombineGeneral.Controls.Add(this.labelCombineElementPerc);
+            this.groupBoxCombineGeneral.Controls.Add(this.comboBoxCombineElement);
+            this.groupBoxCombineGeneral.Controls.Add(this.labelCombineElement);
+            this.groupBoxCombineGeneral.Controls.Add(this.numericUpDownCombineElementPerc);
+            this.groupBoxCombineGeneral.Controls.Add(this.comboBoxCombineAttackType);
+            this.groupBoxCombineGeneral.Controls.Add(this.labelCombineAttackType);
+            this.groupBoxCombineGeneral.Controls.Add(this.numericUpDownCombineHitCount);
+            this.groupBoxCombineGeneral.Controls.Add(this.numericUpDownCombineAttackPower);
+            this.groupBoxCombineGeneral.Controls.Add(this.comboBoxCombineMagicID);
+            this.groupBoxCombineGeneral.Controls.Add(this.labelCombineHitCount);
+            this.groupBoxCombineGeneral.Controls.Add(this.labelCombineAttackPower);
+            this.groupBoxCombineGeneral.Controls.Add(this.labelCombineMagicID);
+            this.groupBoxCombineGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCombineGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxCombineGeneral.Location = new System.Drawing.Point(126, 6);
+            this.groupBoxCombineGeneral.Name = "groupBoxCombineGeneral";
+            this.groupBoxCombineGeneral.Size = new System.Drawing.Size(452, 204);
+            this.groupBoxCombineGeneral.TabIndex = 117;
+            this.groupBoxCombineGeneral.TabStop = false;
+            this.groupBoxCombineGeneral.Text = "General";
+            // 
+            // labelCombineElementPerc
+            // 
+            this.labelCombineElementPerc.AutoSize = true;
+            this.labelCombineElementPerc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCombineElementPerc.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCombineElementPerc.Location = new System.Drawing.Point(274, 140);
+            this.labelCombineElementPerc.Name = "labelCombineElementPerc";
+            this.labelCombineElementPerc.Size = new System.Drawing.Size(19, 17);
+            this.labelCombineElementPerc.TabIndex = 94;
+            this.labelCombineElementPerc.Text = "%";
+            // 
+            // comboBoxCombineElement
+            // 
+            this.comboBoxCombineElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCombineElement.FormattingEnabled = true;
+            this.comboBoxCombineElement.Items.AddRange(new object[] {
+            "Fire",
+            "Ice",
+            "Thunder",
+            "Earth",
+            "Poison",
+            "Wind",
+            "Water",
+            "Holy",
+            "Non-Elemental"});
+            this.comboBoxCombineElement.Location = new System.Drawing.Point(145, 160);
+            this.comboBoxCombineElement.Name = "comboBoxCombineElement";
+            this.comboBoxCombineElement.Size = new System.Drawing.Size(110, 25);
+            this.comboBoxCombineElement.TabIndex = 93;
+            // 
+            // labelCombineElement
+            // 
+            this.labelCombineElement.AutoSize = true;
+            this.labelCombineElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCombineElement.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCombineElement.Location = new System.Drawing.Point(172, 140);
+            this.labelCombineElement.Name = "labelCombineElement";
+            this.labelCombineElement.Size = new System.Drawing.Size(57, 17);
+            this.labelCombineElement.TabIndex = 95;
+            this.labelCombineElement.Text = "Element";
+            this.toolTip1.SetToolTip(this.labelCombineElement, "The element of the GF attack");
+            // 
+            // numericUpDownCombineElementPerc
+            // 
+            this.numericUpDownCombineElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCombineElementPerc.Location = new System.Drawing.Point(261, 160);
+            this.numericUpDownCombineElementPerc.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCombineElementPerc.Name = "numericUpDownCombineElementPerc";
+            this.numericUpDownCombineElementPerc.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCombineElementPerc.TabIndex = 92;
+            // 
+            // comboBoxCombineAttackType
+            // 
+            this.comboBoxCombineAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCombineAttackType.FormattingEnabled = true;
+            this.comboBoxCombineAttackType.Items.AddRange(new object[] {
+            "None",
+            "Basic Attack",
+            "Magic Attack",
+            "Curative Magic",
+            "Curative Item",
+            "Revive",
+            "Revive At Full HP",
+            "% Damage",
+            "Demi",
+            "Renzokuken Finisher",
+            "Squall Gunblade Attack",
+            "GF",
+            "Scan",
+            "LV Down",
+            "Summon Item?",
+            "Ignore SPR",
+            "LV Up",
+            "Card",
+            "Kamikaze",
+            "Devour",
+            "Diablos Gravity Attack",
+            "",
+            "Mega Spark/Mega Flare",
+            "Angelo Search",
+            "Moogle Dance",
+            "White Wind (Quistis)",
+            "LV5 Death/LV? Death",
+            "Fixed Damage",
+            "Corona/Hell\'s Judgement",
+            "Cactuar Summon",
+            "",
+            "",
+            "Give Percentage HP",
+            "",
+            "Everyone\'s Grudge",
+            "Excalipoor",
+            "Terra Break/Great Attractor"});
+            this.comboBoxCombineAttackType.Location = new System.Drawing.Point(25, 103);
+            this.comboBoxCombineAttackType.Name = "comboBoxCombineAttackType";
+            this.comboBoxCombineAttackType.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxCombineAttackType.TabIndex = 8;
+            // 
+            // labelCombineAttackType
+            // 
+            this.labelCombineAttackType.AutoSize = true;
+            this.labelCombineAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCombineAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCombineAttackType.Location = new System.Drawing.Point(116, 83);
+            this.labelCombineAttackType.Name = "labelCombineAttackType";
+            this.labelCombineAttackType.Size = new System.Drawing.Size(79, 17);
+            this.labelCombineAttackType.TabIndex = 7;
+            this.labelCombineAttackType.Text = "Attack Type";
+            this.toolTip1.SetToolTip(this.labelCombineAttackType, "Decides what animation to play");
+            // 
+            // numericUpDownCombineHitCount
+            // 
+            this.numericUpDownCombineHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCombineHitCount.Location = new System.Drawing.Point(361, 103);
+            this.numericUpDownCombineHitCount.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCombineHitCount.Name = "numericUpDownCombineHitCount";
+            this.numericUpDownCombineHitCount.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCombineHitCount.TabIndex = 6;
+            // 
+            // numericUpDownCombineAttackPower
+            // 
+            this.numericUpDownCombineAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCombineAttackPower.Location = new System.Drawing.Point(361, 49);
+            this.numericUpDownCombineAttackPower.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCombineAttackPower.Name = "numericUpDownCombineAttackPower";
+            this.numericUpDownCombineAttackPower.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownCombineAttackPower.TabIndex = 3;
+            // 
+            // comboBoxCombineMagicID
+            // 
+            this.comboBoxCombineMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCombineMagicID.FormattingEnabled = true;
+            this.comboBoxCombineMagicID.Items.AddRange(new object[] {
+            "None",
+            "Cure",
+            "Fire",
+            "Thunder",
+            "Double",
+            "Phoenix Down",
+            "Leviathan Summon (Tsunami)",
+            "Mega Phoenix",
+            "Doom",
+            "Doom Activation",
+            "Ray-Bomb",
+            "Storm Breath",
+            "Blade Shot",
+            "Dark Mist/Poison Mist",
+            "Death/Death Stone",
+            "Draw",
+            "Recover",
+            "Elvoret Entrance",
+            "Elvoret Death",
+            "Unknown",
+            "NORG Pod Opening",
+            "Triple",
+            "Bio",
+            "Psycho Blast",
+            "Esuna",
+            "Cura",
+            "Clash",
+            "Full-Life",
+            "Curaga",
+            "Wind Blast",
+            "Counter Laser-Eye",
+            "Heartbreak",
+            "Protect",
+            "Shell",
+            "Pain",
+            "Life",
+            "Confuse",
+            "Drink Magic",
+            "Quake",
+            "Drain",
+            "Scan",
+            "Dribble",
+            "Shoot",
+            "Melting Bubble",
+            "Junk",
+            "Stare",
+            "Sigh",
+            "Curse",
+            "Magma Breath",
+            "Resonance",
+            "Potion/Potion+",
+            "Hi-Potion/Hi-Potion+",
+            "X-Potion",
+            "Mega-Potion",
+            "Everyone\'s Grudge",
+            "Aqua Breath",
+            "Absorb",
+            "Treatment",
+            "Elixir",
+            "Megalixir",
+            "Unknown",
+            "Revive",
+            "Devour",
+            "Unknown",
+            "Griever Tail Falling Off",
+            "Great Attractor",
+            "Griever + Ultimecia Death",
+            "Remedy/Remedy+",
+            "Unknown",
+            "Griever Summon",
+            "Shockwave Pulsar",
+            "Laser Eye (Quistis)",
+            "Aqua Breath (Quistis)",
+            "Mighty Guard (Quistis)",
+            "LV?Death (Quistis)",
+            "Hell\'s Judgement",
+            "Ultimecia Final Form Spawn",
+            "Ultimecia Final Form Death",
+            "Mighty Guard",
+            "Griever Death",
+            "Ultimecia Junctioning to Griever",
+            "Unknown",
+            "Ultimecia Blow Away Magic",
+            "Absorbed into time...",
+            "Angel Wing",
+            "The End",
+            "Angelo Cannon",
+            "Angelo Strike",
+            "Invincible Moon",
+            "Wishing Star",
+            "Tonberry Summon (Chef\'s Knife)",
+            "Angelo Rush",
+            "Angelo Search",
+            "Angelo Recover",
+            "Angelo Reverse",
+            "Siren Summon (Silent Voice)",
+            "Moogle Dance",
+            "ChocoFire",
+            "ChocoFlare",
+            "ChocoMeteor",
+            "ChocoBocle",
+            "Unknown",
+            "Thundara",
+            "Blizzara",
+            "Blizzaga",
+            "Thundaga",
+            "Reflect",
+            "Demi",
+            "Berserk",
+            "Dispel",
+            "Biggs + Wedge 1st Death",
+            "Aura",
+            "Meteor Barret (Zell\'s Finisher)",
+            "Bad Breath",
+            "Zombie",
+            "Float",
+            "Quezacotl Summon (Thunder Storm)",
+            "Break",
+            "Aero",
+            "Stop",
+            "Petrify Stare",
+            "Blind",
+            "Silence",
+            "Slow",
+            "Flare",
+            "Haste",
+            "Electric Discharge",
+            "Petrify Stare",
+            "Gastric Juice",
+            "Breath",
+            "Eerie Sound Wave",
+            "Bad Breath",
+            "Disolving Acid",
+            "Hypnotize",
+            "Beam Laser",
+            "Reflect Beam",
+            "Oil Shot",
+            "Oil Blast",
+            "Saliva",
+            "Sonic Wave",
+            "Phoenix Pinion (Rebirth Flame)",
+            "Renzokuken - 5 Hits",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Sleep",
+            "Tornado",
+            "Regen",
+            "Meltdown",
+            "Ultima",
+            "Gatling Gun",
+            "Cannon Blow",
+            "Ultrasonic Waves",
+            "Sticky Web",
+            "Ultra Waves",
+            "Sand Storm",
+            "Wild Cannon Blow",
+            "Breath",
+            "Melt-Eye",
+            "Renzokuken (vs X-ATM092)",
+            "Renzokuken - 4 Hits",
+            "Renzokuken (vs Elnoyle/Elvoret)",
+            "Fated Circle",
+            "Rough Divide",
+            "Blasting Zone",
+            "Lion Heart",
+            "Megido Flame",
+            "Zantetsuken",
+            "Sleeping Gas",
+            "Gastric Juice",
+            "Acid",
+            "Poison Gas",
+            "Morph",
+            "Ice Breath",
+            "Degenerator",
+            "Holy",
+            "Sand Storm",
+            "1,000 Needles",
+            "10,000 Needles",
+            "Unknown",
+            "Suicide",
+            "Kamikaze",
+            "Card",
+            "Defend",
+            "Ultra Waves (Quistis)",
+            "Shiva Summon (Diamond Dust)",
+            "Blaster",
+            "Odin Summon (Zantetsuken)",
+            "Shot - Normal Shot",
+            "Wall",
+            "Chain Gun",
+            "Doomtrain Summon (Runaway Train)",
+            "Shot - Scatter Shot",
+            "Shot - Dark Shot",
+            "Shot - Flame Shot",
+            "Shot - Canister Shot",
+            "Shot - Quick Shot",
+            "Shot - Armor Shot",
+            "Shot - Hyper Shot",
+            "Cactuar Summon (1,000 Needles)",
+            "No Mercy",
+            "Ifrit Summon (Hell Fire)",
+            "Bahamut Summon (Mega Flare)",
+            "Cerberus Summon (Counter Rockets)",
+            "Alexander Summon (Holy Judgment)",
+            "Brothers Summon (Brotherly Love)",
+            "Eden Summon (Eternal Breath)",
+            "Maelstrom",
+            "Final \"Sorceress\" Death",
+            "\"Sorceress\" Spawn",
+            "Bloodfest",
+            "Adel Death",
+            "Burning Rave (Zell\'s Finisher)",
+            "Storm Breath",
+            "Gravija",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
+            "Energy Bomber",
+            "Unknown",
+            "Terra Break",
+            "Light Pillar",
+            "Apocalypse",
+            "Water",
+            "Meteor",
+            "Unknown",
+            "Unknown",
+            "White Wind",
+            "Ultimecia First Death",
+            "Ice Strike",
+            "Homing Laser (Quistis)",
+            "Fire Breath (Quistis)",
+            "Disease Breath",
+            "Breath of Death",
+            "Earthquake",
+            "Fart",
+            "Breath",
+            "Gas",
+            "Explosion",
+            "Breath",
+            "Ochu Dance",
+            "Earthquake",
+            "BGH251F2 Gatling Gun",
+            "Beam Cannon",
+            "BGH251F2 1st Turret Exploding",
+            "BGH251F2 2nd Turret Exploding",
+            "BGH251F2 3rd Turret Exploding",
+            "BGH251F2 4th Turret Exploding",
+            "BGH251F2 Death",
+            "Soldier Entrance After BGH251F2 Death",
+            "Unknown",
+            "Beam Cannon",
+            "Demon Slice",
+            "Corona",
+            "Twin Homing Laser",
+            "Homing Laser",
+            "Homing Laser",
+            "Sand Shake",
+            "Mega Flare",
+            "Mad Cow Special",
+            "Renzokuken - 6 Hits",
+            "Shockwave Pulsar (Quistis)",
+            "Desperado",
+            "Blood Pain",
+            "Massive Anchor",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Ultima Weapon Death",
+            "LV Up",
+            "LV Down",
+            "Mad Rush",
+            "Duel",
+            "Electrocute (Quistis)",
+            "Unknown",
+            "Unknown",
+            "Carbuncle Summon (Ruby Light)",
+            "Mega Spark",
+            "Full Cure",
+            "Shotgun",
+            "Evil-Eye",
+            "Magic Summon",
+            "Micro Missiles",
+            "Thunder Summon",
+            "Mini Pulse Cannon",
+            "Mega Pulse Cannon",
+            "Rapture",
+            "\"Brrawghh!\"",
+            "Unknown",
+            "Pandemona Summon (Tornado Zone)",
+            "Soft",
+            "Eye Drops",
+            "Antidote",
+            "Echo Screen",
+            "Holy Water",
+            "White Wind (Quistis)",
+            "Unknown",
+            "Micro Missiles (Quistis)",
+            "Bad Breath (Quistis)",
+            "Unknown",
+            "Snipe Laser",
+            "Unknown",
+            "Boomerang Sword",
+            "Gatling Gun (Quistis)",
+            "Degenerator (Quistis)",
+            "Ray-Bomb (Quistis)",
+            "Unknown",
+            "Hero-trial/Hero",
+            "Holy War-trial/Holy War",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Fake President Death",
+            "Unknown",
+            "Acid (Quistis)",
+            "Unknown",
+            "Unknown",
+            "Dark Flare",
+            "Ker Plunk",
+            "Zan",
+            "Metsu",
+            "Tonberry King Death",
+            "Diablos Summon (Dark Messenger)",
+            "Zantetsuken Reverse",
+            "Gilgamesh - Zantetsuken",
+            "Gilgamesh - Masamune",
+            "Gilgamesh - Excaliber",
+            "Gilgamesh - Excalipoor",
+            "Unknown",
+            "Renzokuken - 7 Hits",
+            "Renzokuken - 8 Hits",
+            "Renzokuken (vs Bahamut)",
+            "Renzokuken (vs NORG)",
+            "Renzokuken (vs Ultima Weapon)",
+            "Renzokuken (vs Final \"Sorceress\")",
+            "Friendship (MoombaMoomba)",
+            "Renzokuken (vs Adel)",
+            "Renzokuken (vs Ultimecia Final Form)",
+            "Renzokuken (vs Jumbo Cactuar)",
+            "Renzokuken (vs Griever + Ultimecia)",
+            "Renzokuken (vs Griever)",
+            "Final Battle Music",
+            "LV5 Death"});
+            this.comboBoxCombineMagicID.Location = new System.Drawing.Point(25, 49);
+            this.comboBoxCombineMagicID.Name = "comboBoxCombineMagicID";
+            this.comboBoxCombineMagicID.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxCombineMagicID.TabIndex = 2;
+            // 
+            // labelCombineHitCount
+            // 
+            this.labelCombineHitCount.AutoSize = true;
+            this.labelCombineHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCombineHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCombineHitCount.Location = new System.Drawing.Point(351, 83);
+            this.labelCombineHitCount.Name = "labelCombineHitCount";
+            this.labelCombineHitCount.Size = new System.Drawing.Size(67, 17);
+            this.labelCombineHitCount.TabIndex = 0;
+            this.labelCombineHitCount.Text = "Hit Count";
+            this.toolTip1.SetToolTip(this.labelCombineHitCount, "Number of hits");
+            // 
+            // labelCombineAttackPower
+            // 
+            this.labelCombineAttackPower.AutoSize = true;
+            this.labelCombineAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCombineAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCombineAttackPower.Location = new System.Drawing.Point(339, 29);
+            this.labelCombineAttackPower.Name = "labelCombineAttackPower";
+            this.labelCombineAttackPower.Size = new System.Drawing.Size(89, 17);
+            this.labelCombineAttackPower.TabIndex = 0;
+            this.labelCombineAttackPower.Text = "Attack Power";
+            this.toolTip1.SetToolTip(this.labelCombineAttackPower, "Used in damage calculation");
+            // 
+            // labelCombineMagicID
+            // 
+            this.labelCombineMagicID.AutoSize = true;
+            this.labelCombineMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelCombineMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelCombineMagicID.Location = new System.Drawing.Point(127, 29);
+            this.labelCombineMagicID.Name = "labelCombineMagicID";
+            this.labelCombineMagicID.Size = new System.Drawing.Size(61, 17);
+            this.labelCombineMagicID.TabIndex = 0;
+            this.labelCombineMagicID.Text = "Magic ID";
+            this.toolTip1.SetToolTip(this.labelCombineMagicID, "Decides what animation to play");
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -28834,7 +30301,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).EndInit();
-            this.tabSlots.ResumeLayout(false);
+            this.tabPageSlots.ResumeLayout(false);
             this.groupBoxSlotSets.ResumeLayout(false);
             this.groupBoxSlotSets.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN3)).EndInit();
@@ -28920,7 +30387,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBElementPerc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBAttackPower)).EndInit();
-            this.tabEnemyAttacks.ResumeLayout(false);
+            this.tabPageEnemyAttacks.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
             this.groupBox15.ResumeLayout(false);
@@ -28949,6 +30416,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelAttackPower)).EndInit();
             this.groupBoxShotInput1.ResumeLayout(false);
             this.groupBoxShotInput1.PerformLayout();
+            this.tabPageCombine.ResumeLayout(false);
+            this.groupBoxCombineStatusAttack.ResumeLayout(false);
+            this.groupBoxCombineStatusAttack.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCombineStatusAttack)).EndInit();
+            this.groupBoxCombineTarget.ResumeLayout(false);
+            this.groupBoxCombineTarget.PerformLayout();
+            this.groupBoxCombineFlags.ResumeLayout(false);
+            this.groupBoxCombineFlags.PerformLayout();
+            this.groupBoxCombineGeneral.ResumeLayout(false);
+            this.groupBoxCombineGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCombineElementPerc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCombineHitCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCombineAttackPower)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -29266,7 +30746,7 @@
         private System.Windows.Forms.Label labelCharHPA;
         private System.Windows.Forms.ListBox listBoxCharacters;
         private System.Windows.Forms.TabControl tabControlMain;
-        private System.Windows.Forms.TabPage tabSlots;
+        private System.Windows.Forms.TabPage tabPageSlots;
         private System.Windows.Forms.GroupBox groupBoxSlotArray;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelSlotArray;
         private System.Windows.Forms.NumericUpDown numericUpDownSlotArray54;
@@ -29803,7 +31283,7 @@
         private System.Windows.Forms.Label labelBlueMagicCL4AttackPower;
         private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL4AttackPower;
         private System.Windows.Forms.Label labelBlueMagicCL4DeathLevel;
-        private System.Windows.Forms.TabPage tabEnemyAttacks;
+        private System.Windows.Forms.TabPage tabPageEnemyAttacks;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.CheckBox checkBoxEnemyAttacksFlagBreakDamageLimit;
         private System.Windows.Forms.CheckBox checkBoxEnemyAttacksFlag8;
@@ -30247,6 +31727,82 @@
         private System.Windows.Forms.Label labelDuelButton3;
         private System.Windows.Forms.ComboBox comboBoxDuelButton2;
         private System.Windows.Forms.Label labelDuelButton2;
+        private System.Windows.Forms.TabPage tabPageCombine;
+        private System.Windows.Forms.ListBox listBoxCombine;
+        private System.Windows.Forms.GroupBox groupBoxCombineStatusAttack;
+        private System.Windows.Forms.CheckBox checkBoxCombinePetrifying;
+        private System.Windows.Forms.CheckBox checkBoxCombineDarkness;
+        private System.Windows.Forms.CheckBox checkBoxCombineSilence;
+        private System.Windows.Forms.CheckBox checkBoxCombineStop;
+        private System.Windows.Forms.CheckBox checkBoxCombineConfusion;
+        private System.Windows.Forms.CheckBox checkBoxCombinePetrify;
+        private System.Windows.Forms.CheckBox checkBoxCombineSlow;
+        private System.Windows.Forms.CheckBox checkBoxCombineBerserk;
+        private System.Windows.Forms.CheckBox checkBoxCombineSleep;
+        private System.Windows.Forms.CheckBox checkBoxCombineInvincible;
+        private System.Windows.Forms.CheckBox checkBoxCombineCurse;
+        private System.Windows.Forms.CheckBox checkBoxCombineDoom;
+        private System.Windows.Forms.CheckBox checkBoxCombineFloat;
+        private System.Windows.Forms.CheckBox checkBoxCombineAura;
+        private System.Windows.Forms.CheckBox checkBoxCombineDrain;
+        private System.Windows.Forms.CheckBox checkBoxCombineSummonGF;
+        private System.Windows.Forms.CheckBox checkBoxCombineHasMagic;
+        private System.Windows.Forms.CheckBox checkBoxCombineUnk6;
+        private System.Windows.Forms.CheckBox checkBoxCombineUnk5;
+        private System.Windows.Forms.CheckBox checkBoxCombineUnk4;
+        private System.Windows.Forms.CheckBox checkBoxCombineUnk3;
+        private System.Windows.Forms.CheckBox checkBoxCombineAngelWing;
+        private System.Windows.Forms.CheckBox checkBoxCombineVit0;
+        private System.Windows.Forms.CheckBox checkBoxCombineBackAttack;
+        private System.Windows.Forms.CheckBox checkBoxCombineCharged;
+        private System.Windows.Forms.CheckBox checkBoxCombineUnk2;
+        private System.Windows.Forms.CheckBox checkBoxCombineUnk1;
+        private System.Windows.Forms.CheckBox checkBoxCombineDefend;
+        private System.Windows.Forms.CheckBox checkBoxCombineTriple;
+        private System.Windows.Forms.CheckBox checkBoxCombineDouble;
+        private System.Windows.Forms.CheckBox checkBoxCombineEject;
+        private System.Windows.Forms.CheckBox checkBoxCombinePoison;
+        private System.Windows.Forms.CheckBox checkBoxCombineDeath;
+        private System.Windows.Forms.CheckBox checkBoxCombineProtect;
+        private System.Windows.Forms.CheckBox checkBoxCombineHaste;
+        private System.Windows.Forms.CheckBox checkBoxCombineRegen;
+        private System.Windows.Forms.CheckBox checkBoxCombineShell;
+        private System.Windows.Forms.CheckBox checkBoxCombineReflect;
+        private System.Windows.Forms.CheckBox checkBoxCombineUnk7;
+        private System.Windows.Forms.CheckBox checkBoxCombineZombie;
+        private System.Windows.Forms.NumericUpDown numericUpDownCombineStatusAttack;
+        private System.Windows.Forms.Label labelCombineStatusAttack;
+        private System.Windows.Forms.GroupBox groupBoxCombineTarget;
+        private System.Windows.Forms.CheckBox checkBoxCombineTarget8;
+        private System.Windows.Forms.CheckBox checkBoxCombineTarget5;
+        private System.Windows.Forms.CheckBox checkBoxCombineTarget2;
+        private System.Windows.Forms.CheckBox checkBoxCombineTarget4;
+        private System.Windows.Forms.CheckBox checkBoxCombineTarget6;
+        private System.Windows.Forms.CheckBox checkBoxCombineTarget7;
+        private System.Windows.Forms.CheckBox checkBoxCombineTarget1;
+        private System.Windows.Forms.CheckBox checkBoxCombineTarget3;
+        private System.Windows.Forms.GroupBox groupBoxCombineFlags;
+        private System.Windows.Forms.CheckBox checkBoxCombineFlag4;
+        private System.Windows.Forms.CheckBox checkBoxCombineFlag8;
+        private System.Windows.Forms.CheckBox checkBoxCombineFlag3;
+        private System.Windows.Forms.CheckBox checkBoxCombineFlag6;
+        private System.Windows.Forms.CheckBox checkBoxCombineFlag1;
+        private System.Windows.Forms.CheckBox checkBoxCombineFlag5;
+        private System.Windows.Forms.CheckBox checkBoxCombineFlag2;
+        private System.Windows.Forms.CheckBox checkBoxCombineFlag7;
+        private System.Windows.Forms.GroupBox groupBoxCombineGeneral;
+        private System.Windows.Forms.Label labelCombineElementPerc;
+        private System.Windows.Forms.ComboBox comboBoxCombineElement;
+        private System.Windows.Forms.Label labelCombineElement;
+        private System.Windows.Forms.NumericUpDown numericUpDownCombineElementPerc;
+        private System.Windows.Forms.ComboBox comboBoxCombineAttackType;
+        private System.Windows.Forms.Label labelCombineAttackType;
+        private System.Windows.Forms.NumericUpDown numericUpDownCombineHitCount;
+        private System.Windows.Forms.NumericUpDown numericUpDownCombineAttackPower;
+        private System.Windows.Forms.ComboBox comboBoxCombineMagicID;
+        private System.Windows.Forms.Label labelCombineHitCount;
+        private System.Windows.Forms.Label labelCombineAttackPower;
+        private System.Windows.Forms.Label labelCombineMagicID;
     }
 }
 

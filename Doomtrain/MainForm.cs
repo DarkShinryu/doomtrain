@@ -361,7 +361,7 @@ namespace Doomtrain
             checkBoxWeaponsRenzoFinFated.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x02, 0);
             checkBoxWeaponsRenzoFinBlasting.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x04, 0);
             checkBoxWeaponsRenzoFinLion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x08, 0);
-            comboBoxWeaponsCharacterID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(1, Weapons_GetCharacter(comboBoxWeaponsCharacterID.SelectedIndex - 1));
+            comboBoxWeaponsCharacterID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(1, comboBoxWeaponsCharacterID.SelectedIndex);
             numericUpDownWeaponsAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(2, numericUpDownWeaponsAttackPower.Value);
             numericUpDownWeaponsHITBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(3, numericUpDownWeaponsHITBonus.Value);
             numericUpDownWeaponsSTRBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(4, numericUpDownWeaponsSTRBonus.Value);
@@ -1006,6 +1006,74 @@ namespace Doomtrain
             checkBoxDuelUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x20, 4);
             checkBoxDuelHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x40, 4);
             checkBoxDuelSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x80, 4);
+
+            #endregion
+
+            #region EVENT HANDLERS COMBINE
+
+            comboBoxCombineMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(0, comboBoxCombineMagicID.SelectedIndex);
+            comboBoxCombineAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(1, comboBoxCombineAttackType.SelectedIndex);
+            numericUpDownCombineAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(2, numericUpDownCombineAttackPower.Value);
+            checkBoxCombineFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(3, 0x01);
+            checkBoxCombineFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(3, 0x02);
+            checkBoxCombineFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(3, 0x04);
+            checkBoxCombineFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(3, 0x08);
+            checkBoxCombineFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(3, 0x10);
+            checkBoxCombineFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(3, 0x20);
+            checkBoxCombineFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(3, 0x40);
+            checkBoxCombineFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(3, 0x80);
+            checkBoxCombineTarget1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(4, 0x01);
+            checkBoxCombineTarget2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(4, 0x02);
+            checkBoxCombineTarget3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(4, 0x04);
+            checkBoxCombineTarget4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(4, 0x08);
+            checkBoxCombineTarget5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(4, 0x10);
+            checkBoxCombineTarget6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(4, 0x20);
+            checkBoxCombineTarget7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(4, 0x40);
+            checkBoxCombineTarget8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(4, 0x80);
+            numericUpDownCombineHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(5, numericUpDownCombineHitCount.Value);
+            comboBoxCombineElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(6, Combine_GetElement(comboBoxCombineElement.SelectedIndex));
+            numericUpDownCombineElementPerc.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(7, numericUpDownCombineElementPerc.Value);
+            numericUpDownCombineStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(8, numericUpDownCombineStatusAttack.Value);
+            checkBoxCombineDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x01, 0);
+            checkBoxCombinePoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x02, 0);
+            checkBoxCombinePetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x04, 0);
+            checkBoxCombineDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x08, 0);
+            checkBoxCombineSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x10, 0);
+            checkBoxCombineBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x20, 0);
+            checkBoxCombineZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x40, 0);
+            checkBoxCombineUnk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x80, 0);
+            checkBoxCombineSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x01, 1);
+            checkBoxCombineHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x02, 1);
+            checkBoxCombineSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x04, 1);
+            checkBoxCombineStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x08, 1);
+            checkBoxCombineRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x10, 1);
+            checkBoxCombineProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x20, 1);
+            checkBoxCombineShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x40, 1);
+            checkBoxCombineReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x80, 1);
+            checkBoxCombineAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x01, 2);
+            checkBoxCombineCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x02, 2);
+            checkBoxCombineDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x04, 2);
+            checkBoxCombineInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x08, 2);
+            checkBoxCombinePetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x10, 2);
+            checkBoxCombineFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x20, 2);
+            checkBoxCombineConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x40, 2);
+            checkBoxCombineDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x80, 2);
+            checkBoxCombineEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x01, 3);
+            checkBoxCombineDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x02, 3);
+            checkBoxCombineTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x04, 3);
+            checkBoxCombineDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x08, 3);
+            checkBoxCombineUnk1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x10, 3);
+            checkBoxCombineUnk2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x20, 3);
+            checkBoxCombineCharged.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x40, 3);
+            checkBoxCombineBackAttack.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x80, 3);
+            checkBoxCombineVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x01, 4);
+            checkBoxCombineAngelWing.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x02, 4);
+            checkBoxCombineUnk3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x04, 4);
+            checkBoxCombineUnk4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x08, 4);
+            checkBoxCombineUnk5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x10, 4);
+            checkBoxCombineUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x20, 4);
+            checkBoxCombineHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x40, 4);
+            checkBoxCombineSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x80, 4);
 
             #endregion
         }
@@ -2044,50 +2112,6 @@ namespace Doomtrain
 
         #region WEAPONS
 
-        private int Weapons_GetCharacter()
-        {
-            return KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Squall
-                        ? 0
-                        : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Zell
-                            ? 1
-                            : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Irvine
-                                ? 2
-                                : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Quistis
-                                    ? 3
-                                    : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Rinoa
-                                        ? 4
-                                        : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Selphie
-                                            ? 5
-                                            : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Seifer
-                                                ? 6
-                                                : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Edea
-                                                    ? 7
-                                                    : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Laguna
-                                                         ? 8
-                                                         : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Kiros
-                                                             ? 9
-                                                             : KernelWorker.GetSelectedWeaponsData.CharacterID == KernelWorker.Characters.Ward
-                                                                 ? comboBoxWeaponsCharacterID.Items.Count - 1
-                                                                 : 0;
-        }
-
-        private byte Weapons_GetCharacter(int Index)
-        {
-            byte character = (byte)(Index == 10 ? (byte)KernelWorker.Characters.Squall :
-                Index == 0 ? (byte)KernelWorker.Characters.Zell :
-                Index == 1 ? (byte)KernelWorker.Characters.Irvine :
-                Index == 2 ? (byte)KernelWorker.Characters.Quistis :
-                Index == 3 ? (byte)KernelWorker.Characters.Rinoa :
-                Index == 4 ? (byte)KernelWorker.Characters.Selphie :
-                Index == 5 ? (byte)KernelWorker.Characters.Seifer :
-                Index == 6 ? (byte)KernelWorker.Characters.Edea :
-                Index == 7 ? (byte)KernelWorker.Characters.Laguna :
-                Index == 8 ? (byte)KernelWorker.Characters.Kiros :
-                Index == 9 ? (byte)KernelWorker.Characters.Ward :
-                0x00 /*ErrorHandler*/);
-            return character;
-        }
-
         private void RenzokukenFinishersWorker()
         {
             checkBoxWeaponsRenzoFinRough.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x01) >= 1 ? true : false;
@@ -2107,7 +2131,7 @@ namespace Doomtrain
             try
             {
                 RenzokukenFinishersWorker();
-                comboBoxWeaponsCharacterID.SelectedIndex = Weapons_GetCharacter();
+                comboBoxWeaponsCharacterID.SelectedIndex = KernelWorker.GetSelectedWeaponsData.CharacterID;
                 numericUpDownWeaponsAttackPower.Value = KernelWorker.GetSelectedWeaponsData.AttackPower;
                 numericUpDownWeaponsHITBonus.Value = KernelWorker.GetSelectedWeaponsData.HITBonus;
                 numericUpDownWeaponsSTRBonus.Value = KernelWorker.GetSelectedWeaponsData.STRBonus;
@@ -3007,7 +3031,6 @@ namespace Doomtrain
             _loaded = true;
         }
 
-
         #endregion
 
         #region DUEL
@@ -3149,8 +3172,143 @@ namespace Doomtrain
 
 
 
-            #endregion
+        #endregion
 
+        #region COMBINE
 
+        private int Combine_GetElement()
+        {
+            return KernelWorker.GetSelectedCombineData.Element == KernelWorker.Element.Fire
+                        ? 0
+                        : KernelWorker.GetSelectedCombineData.Element == KernelWorker.Element.Ice
+                            ? 1
+                            : KernelWorker.GetSelectedCombineData.Element == KernelWorker.Element.Thunder
+                                ? 2
+                                : KernelWorker.GetSelectedCombineData.Element == KernelWorker.Element.Earth
+                                    ? 3
+                                    : KernelWorker.GetSelectedCombineData.Element == KernelWorker.Element.Poison
+                                        ? 4
+                                        : KernelWorker.GetSelectedCombineData.Element == KernelWorker.Element.Wind
+                                            ? 5
+                                            : KernelWorker.GetSelectedCombineData.Element ==
+                                              KernelWorker.Element.Water
+                                                ? 6
+                                                : KernelWorker.GetSelectedCombineData.Element ==
+                                                  KernelWorker.Element.Holy
+                                                    ? 7
+                                                    : KernelWorker.GetSelectedCombineData.Element ==
+                                                      KernelWorker.Element.NonElemental
+                                                        ? comboBoxCombineElement.Items.Count - 1
+                                                        : 0;
         }
+
+        private byte Combine_GetElement(int Index)
+        {
+            byte elem = (byte)(Index == 8 ? (byte)KernelWorker.Element.NonElemental :
+                Index == 0 ? (byte)KernelWorker.Element.Fire :
+                Index == 1 ? (byte)KernelWorker.Element.Ice :
+                Index == 2 ? (byte)KernelWorker.Element.Thunder :
+                Index == 3 ? (byte)KernelWorker.Element.Earth :
+                Index == 4 ? (byte)KernelWorker.Element.Poison :
+                Index == 5 ? (byte)KernelWorker.Element.Wind :
+                Index == 6 ? (byte)KernelWorker.Element.Water :
+                Index == 7 ? (byte)KernelWorker.Element.Holy :
+                0x00 /*ErrorHandler*/);
+            return elem;
+        }
+
+        private void CombineStatusWorker()
+        {
+            checkBoxCombineDeath.Checked = (KernelWorker.GetSelectedCombineData.Status1 & 0x01) >= 1 ? true : false;
+            checkBoxCombinePoison.Checked = (KernelWorker.GetSelectedCombineData.Status1 & 0x02) >= 1 ? true : false;
+            checkBoxCombinePetrify.Checked = (KernelWorker.GetSelectedCombineData.Status1 & 0x04) >= 1 ? true : false;
+            checkBoxCombineDarkness.Checked = (KernelWorker.GetSelectedCombineData.Status1 & 0x08) >= 1 ? true : false;
+            checkBoxCombineSilence.Checked = (KernelWorker.GetSelectedCombineData.Status1 & 0x10) >= 1 ? true : false;
+            checkBoxCombineBerserk.Checked = (KernelWorker.GetSelectedCombineData.Status1 & 0x20) >= 1 ? true : false;
+            checkBoxCombineZombie.Checked = (KernelWorker.GetSelectedCombineData.Status1 & 0x40) >= 1 ? true : false;
+            checkBoxCombineUnk7.Checked = (KernelWorker.GetSelectedCombineData.Status1 & 0x80) >= 1 ? true : false;
+
+            checkBoxCombineSleep.Checked = (KernelWorker.GetSelectedCombineData.Status2 & 0x01) >= 1 ? true : false;
+            checkBoxCombineHaste.Checked = (KernelWorker.GetSelectedCombineData.Status2 & 0x02) >= 1 ? true : false;
+            checkBoxCombineSlow.Checked = (KernelWorker.GetSelectedCombineData.Status2 & 0x04) >= 1 ? true : false;
+            checkBoxCombineStop.Checked = (KernelWorker.GetSelectedCombineData.Status2 & 0x08) >= 1 ? true : false;
+            checkBoxCombineRegen.Checked = (KernelWorker.GetSelectedCombineData.Status2 & 0x10) >= 1 ? true : false;
+            checkBoxCombineProtect.Checked = (KernelWorker.GetSelectedCombineData.Status2 & 0x20) >= 1 ? true : false;
+            checkBoxCombineShell.Checked = (KernelWorker.GetSelectedCombineData.Status2 & 0x40) >= 1 ? true : false;
+            checkBoxCombineReflect.Checked = (KernelWorker.GetSelectedCombineData.Status2 & 0x80) >= 1 ? true : false;
+
+            checkBoxCombineAura.Checked = (KernelWorker.GetSelectedCombineData.Status3 & 0x01) >= 1 ? true : false;
+            checkBoxCombineCurse.Checked = (KernelWorker.GetSelectedCombineData.Status3 & 0x02) >= 1 ? true : false;
+            checkBoxCombineDoom.Checked = (KernelWorker.GetSelectedCombineData.Status3 & 0x04) >= 1 ? true : false;
+            checkBoxCombineInvincible.Checked = (KernelWorker.GetSelectedCombineData.Status3 & 0x08) >= 1 ? true : false;
+            checkBoxCombinePetrifying.Checked = (KernelWorker.GetSelectedCombineData.Status3 & 0x10) >= 1 ? true : false;
+            checkBoxCombineFloat.Checked = (KernelWorker.GetSelectedCombineData.Status3 & 0x20) >= 1 ? true : false;
+            checkBoxCombineConfusion.Checked = (KernelWorker.GetSelectedCombineData.Status3 & 0x40) >= 1 ? true : false;
+            checkBoxCombineDrain.Checked = (KernelWorker.GetSelectedCombineData.Status3 & 0x80) >= 1 ? true : false;
+
+            checkBoxCombineEject.Checked = (KernelWorker.GetSelectedCombineData.Status4 & 0x01) >= 1 ? true : false;
+            checkBoxCombineDouble.Checked = (KernelWorker.GetSelectedCombineData.Status4 & 0x02) >= 1 ? true : false;
+            checkBoxCombineTriple.Checked = (KernelWorker.GetSelectedCombineData.Status4 & 0x04) >= 1 ? true : false;
+            checkBoxCombineDefend.Checked = (KernelWorker.GetSelectedCombineData.Status4 & 0x08) >= 1 ? true : false;
+            checkBoxCombineUnk1.Checked = (KernelWorker.GetSelectedCombineData.Status4 & 0x10) >= 1 ? true : false;
+            checkBoxCombineUnk2.Checked = (KernelWorker.GetSelectedCombineData.Status4 & 0x20) >= 1 ? true : false;
+            checkBoxCombineCharged.Checked = (KernelWorker.GetSelectedCombineData.Status4 & 0x40) >= 1 ? true : false;
+            checkBoxCombineBackAttack.Checked = (KernelWorker.GetSelectedCombineData.Status4 & 0x80) >= 1 ? true : false;
+
+            checkBoxCombineVit0.Checked = (KernelWorker.GetSelectedCombineData.Status5 & 0x01) >= 1 ? true : false;
+            checkBoxCombineAngelWing.Checked = (KernelWorker.GetSelectedCombineData.Status5 & 0x02) >= 1 ? true : false;
+            checkBoxCombineUnk3.Checked = (KernelWorker.GetSelectedCombineData.Status5 & 0x04) >= 1 ? true : false;
+            checkBoxCombineUnk4.Checked = (KernelWorker.GetSelectedCombineData.Status5 & 0x08) >= 1 ? true : false;
+            checkBoxCombineUnk5.Checked = (KernelWorker.GetSelectedCombineData.Status5 & 0x10) >= 1 ? true : false;
+            checkBoxCombineUnk6.Checked = (KernelWorker.GetSelectedCombineData.Status5 & 0x20) >= 1 ? true : false;
+            checkBoxCombineHasMagic.Checked = (KernelWorker.GetSelectedCombineData.Status5 & 0x40) >= 1 ? true : false;
+            checkBoxCombineSummonGF.Checked = (KernelWorker.GetSelectedCombineData.Status5 & 0x80) >= 1 ? true : false;
+        }
+
+        private void listBoxCombine_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadCombine(listBoxCombine.SelectedIndex);
+
+            try
+            {
+                comboBoxCombineMagicID.SelectedIndex = KernelWorker.GetSelectedCombineData.MagicID;
+                comboBoxCombineAttackType.SelectedIndex = KernelWorker.GetSelectedCombineData.AttackType;
+                numericUpDownCombineAttackPower.Value = KernelWorker.GetSelectedCombineData.AttackPower;
+                checkBoxCombineFlag1.Checked = (KernelWorker.GetSelectedCombineData.AttackFlags & 0x01) >= 1 ? true : false;
+                checkBoxCombineFlag2.Checked = (KernelWorker.GetSelectedCombineData.AttackFlags & 0x02) >= 1 ? true : false;
+                checkBoxCombineFlag3.Checked = (KernelWorker.GetSelectedCombineData.AttackFlags & 0x04) >= 1 ? true : false;
+                checkBoxCombineFlag4.Checked = (KernelWorker.GetSelectedCombineData.AttackFlags & 0x08) >= 1 ? true : false;
+                checkBoxCombineFlag5.Checked = (KernelWorker.GetSelectedCombineData.AttackFlags & 0x10) >= 1 ? true : false;
+                checkBoxCombineFlag6.Checked = (KernelWorker.GetSelectedCombineData.AttackFlags & 0x20) >= 1 ? true : false;
+                checkBoxCombineFlag7.Checked = (KernelWorker.GetSelectedCombineData.AttackFlags & 0x40) >= 1 ? true : false;
+                checkBoxCombineFlag8.Checked = (KernelWorker.GetSelectedCombineData.AttackFlags & 0x80) >= 1 ? true : false;
+                checkBoxCombineTarget1.Checked = (KernelWorker.GetSelectedCombineData.Target & 0x01) >= 1 ? true : false;
+                checkBoxCombineTarget2.Checked = (KernelWorker.GetSelectedCombineData.Target & 0x02) >= 1 ? true : false;
+                checkBoxCombineTarget3.Checked = (KernelWorker.GetSelectedCombineData.Target & 0x04) >= 1 ? true : false;
+                checkBoxCombineTarget4.Checked = (KernelWorker.GetSelectedCombineData.Target & 0x08) >= 1 ? true : false;
+                checkBoxCombineTarget5.Checked = (KernelWorker.GetSelectedCombineData.Target & 0x10) >= 1 ? true : false;
+                checkBoxCombineTarget6.Checked = (KernelWorker.GetSelectedCombineData.Target & 0x20) >= 1 ? true : false;
+                checkBoxCombineTarget7.Checked = (KernelWorker.GetSelectedCombineData.Target & 0x40) >= 1 ? true : false;
+                checkBoxCombineTarget8.Checked = (KernelWorker.GetSelectedCombineData.Target & 0x80) >= 1 ? true : false;
+                numericUpDownCombineHitCount.Value = KernelWorker.GetSelectedCombineData.HitCount;
+                comboBoxCombineElement.SelectedIndex = Combine_GetElement();
+                numericUpDownCombineElementPerc.Value = KernelWorker.GetSelectedCombineData.ElementPerc;
+                numericUpDownCombineStatusAttack.Value = KernelWorker.GetSelectedCombineData.StatusAttack;
+                CombineStatusWorker();
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+
+
+    }
 }
