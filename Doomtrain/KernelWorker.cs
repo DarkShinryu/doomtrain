@@ -50,6 +50,9 @@ namespace Doomtrain
         public static int CombineDataOffset = -1;
         public static int OffsetToCombineSelected = -1;
 
+        public static int BattleItemsDataOffset = -1;
+        public static int OffsetToBattleItemsSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -64,6 +67,7 @@ namespace Doomtrain
         public static ShotData GetSelectedShotData;
         public static DuelData GetSelectedDuelData;
         public static CombineData GetSelectedCombineData;
+        public static BattleItemsData GetSelectedBattleItemsData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -159,7 +163,6 @@ namespace Doomtrain
             public byte DrawResist;
             public byte HitCount;
             public Element Element;
-            //public byte Element; This now gets opted
             public byte Unknown4;
             public byte StatusMagic1;
             public byte StatusMagic2;
@@ -520,6 +523,25 @@ namespace Doomtrain
             public byte Status3;
             public byte Status4;
             public byte Status5;
+        }
+
+        public struct BattleItemsData
+        {
+            //public string OffsetToName;
+            //public string OffsetToDescription;
+            public UInt16 MagicID;
+            public byte AttackType;
+            public byte AttackPower;
+            public byte Target;
+            public byte AttackFlags;
+            public byte StatusAttack;
+            public byte Status1;
+            public byte Status2;
+            public byte Status3;
+            public byte Status4;
+            public byte Status5;
+            public byte HitCount;
+            public Element Element;
         }
 
         #endregion
@@ -1677,6 +1699,66 @@ namespace Doomtrain
             }
         }
 
+        public static void UpdateVariable_BattleItems(int index, object variable, byte arg0 = 127)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    UshortToKernel(Convert.ToUInt16(variable), 4, (byte)Mode.Mode_BattleItems); //MagicID
+                    return;
+                case 1:
+                    Kernel[OffsetToBattleItemsSelected + 6] = Convert.ToByte(variable); //Attack type
+                    return;
+                case 2:
+                    Kernel[OffsetToBattleItemsSelected + 7] = Convert.ToByte(variable); //Attack power
+                    return;
+                case 3:
+                    Kernel[OffsetToBattleItemsSelected + 9] = (byte)(Kernel[OffsetToBattleItemsSelected + 9] ^ Convert.ToByte(variable)); //target
+                    return;
+                case 4:
+                    Kernel[OffsetToBattleItemsSelected + 11] = (byte)(Kernel[OffsetToBattleItemsSelected + 11] ^ Convert.ToByte(variable)); //attack flags
+                    return;
+                case 5:
+                    Kernel[OffsetToBattleItemsSelected + 13] = Convert.ToByte(variable); //Attack Status
+                    return;
+                case 6:
+                    BattleItemsStatusUpdator(arg0, variable); //Status
+                    return;
+                case 7:
+                    Kernel[OffsetToBattleItemsSelected + 22] = Convert.ToByte(variable); //Hit Count
+                    return;
+                case 8:
+                    Kernel[OffsetToBattleItemsSelected + 23] = Convert.ToByte(variable); //Element
+                    return;
+
+                default:
+                    return;
+            }
+        }
+        private static void BattleItemsStatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToBattleItemsSelected + 14] = (byte)(Kernel[OffsetToBattleItemsSelected + 14] ^ Convert.ToByte(variable));
+                    return;
+                case 1:
+                    Kernel[OffsetToBattleItemsSelected + 16] = (byte)(Kernel[OffsetToBattleItemsSelected + 16] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToBattleItemsSelected + 17] = (byte)(Kernel[OffsetToBattleItemsSelected + 17] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToBattleItemsSelected + 18] = (byte)(Kernel[OffsetToBattleItemsSelected + 18] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToBattleItemsSelected + 19] = (byte)(Kernel[OffsetToBattleItemsSelected + 19] ^ Convert.ToByte(variable));
+                    return;
+            }
+        }
+
         #endregion
 
         #region MAGIC ID
@@ -1721,6 +1803,9 @@ namespace Doomtrain
                 case (byte)Mode.Mode_Combine:
                     Array.Copy(magicIdBytes, 0, Kernel, OffsetToCombineSelected + add, 2);
                     break;
+                case (byte)Mode.Mode_BattleItems:
+                    Array.Copy(magicIdBytes, 0, Kernel, OffsetToBattleItemsSelected + add, 2);
+                    break;
 
                 default:
                     return;
@@ -1738,7 +1823,8 @@ namespace Doomtrain
             Mode_TempCharLB,
             Mode_Shot,
             Mode_Duel,
-            Mode_Combine
+            Mode_Combine,
+            Mode_BattleItems
         }
 
         #endregion
@@ -1762,6 +1848,7 @@ namespace Doomtrain
             ShotDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Shot_Irvine);
             DuelDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Duel_Zell);
             CombineDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RinoaLimit2);
+            BattleItemsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BattleItems);
         }
 
 
@@ -1769,7 +1856,7 @@ namespace Doomtrain
         {
 
             GetSelectedMagicData = new MagicData();
-            MagicID_List++;
+            MagicID_List++; //skip dummy entry
             /*
             int SelectedMagicOffset = MagicID_List == 0 ? 
                 MagicDataOffset + 8 + (MagicID_List * 60) 
@@ -2496,6 +2583,54 @@ namespace Doomtrain
             GetSelectedCombineData.Status3 = Kernel[selectedCombineOffset++];
             GetSelectedCombineData.Status4 = Kernel[selectedCombineOffset++];
             GetSelectedCombineData.Status5 = Kernel[selectedCombineOffset++];
+        }
+
+        public static void ReadBattleItems(int BattleItemsID_List)
+        {
+            GetSelectedBattleItemsData = new BattleItemsData();
+            BattleItemsID_List++; //skip dummy entry
+            int selectedBattleItemsOffset = BattleItemsDataOffset + (BattleItemsID_List * 24);
+            OffsetToBattleItemsSelected = selectedBattleItemsOffset;
+
+            GetSelectedBattleItemsData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedBattleItemsOffset + 4));
+            selectedBattleItemsOffset += 4 + 2;
+            GetSelectedBattleItemsData.AttackType = Kernel[selectedBattleItemsOffset++];
+            GetSelectedBattleItemsData.AttackPower = Kernel[selectedBattleItemsOffset++];
+            selectedBattleItemsOffset += 1;
+            GetSelectedBattleItemsData.Target = Kernel[selectedBattleItemsOffset++];
+            selectedBattleItemsOffset += 1;
+            GetSelectedBattleItemsData.AttackFlags = Kernel[selectedBattleItemsOffset++];
+            selectedBattleItemsOffset += 1;
+            GetSelectedBattleItemsData.StatusAttack = Kernel[selectedBattleItemsOffset++];
+            GetSelectedBattleItemsData.Status1 = Kernel[selectedBattleItemsOffset++];
+            selectedBattleItemsOffset += 1;
+            GetSelectedBattleItemsData.Status2 = Kernel[selectedBattleItemsOffset++];
+            GetSelectedBattleItemsData.Status3 = Kernel[selectedBattleItemsOffset++];
+            GetSelectedBattleItemsData.Status4 = Kernel[selectedBattleItemsOffset++];
+            GetSelectedBattleItemsData.Status5 = Kernel[selectedBattleItemsOffset++];
+            selectedBattleItemsOffset += 2;
+            GetSelectedBattleItemsData.HitCount = Kernel[selectedBattleItemsOffset++];
+            byte b = Kernel[selectedBattleItemsOffset++];
+            GetSelectedBattleItemsData.Element =
+                b == (byte)Element.Fire
+                    ? Element.Fire
+                    : b == (byte)Element.Holy
+                        ? Element.Holy
+                        : b == (byte)Element.Ice
+                            ? Element.Ice
+                            : b == (byte)Element.NonElemental
+                                ? Element.NonElemental
+                                : b == (byte)Element.Poison
+                                    ? Element.Poison
+                                    : b == (byte)Element.Thunder
+                                        ? Element.Thunder
+                                        : b == (byte)Element.Water
+                                            ? Element.Water
+                                            : b == (byte)Element.Wind
+                                                ? Element.Wind
+                                                : b == (byte)Element.Earth
+                                                    ? Element.Earth
+                                                    : 0; //Error handler
         }
 
         #endregion

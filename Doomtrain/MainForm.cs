@@ -731,7 +731,6 @@ namespace Doomtrain
             checkBoxRenzoFinHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(9, 0x40, 4);
             checkBoxRenzoFinSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(9, 0x80, 4);
 
-
             #endregion
 
             #region EVENT HANDLERS TEMPORARY CHARACTERS LIMIT BREAKS
@@ -1075,6 +1074,73 @@ namespace Doomtrain
             checkBoxCombineHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x40, 4);
             checkBoxCombineSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(9, 0x80, 4);
 
+            #endregion
+
+            #region EVENT HANDLERS BATTLE ITEMS
+
+            comboBoxBattleItemsMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(0, comboBoxBattleItemsMagicID.SelectedIndex);
+            comboBoxBattleItemsAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(1, comboBoxBattleItemsAttackType.SelectedIndex);
+            numericUpDownBattleItemsAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(2, numericUpDownBattleItemsAttackPower.Value);
+            checkBoxBattleItemsTarget1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(3, 0x01);
+            checkBoxBattleItemsTarget2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(3, 0x02);
+            checkBoxBattleItemsTarget3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(3, 0x04);
+            checkBoxBattleItemsTarget4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(3, 0x08);
+            checkBoxBattleItemsTarget5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(3, 0x10);
+            checkBoxBattleItemsTarget6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(3, 0x20);
+            checkBoxBattleItemsTarget7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(3, 0x40);
+            checkBoxBattleItemsTarget8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(3, 0x80);
+            checkBoxBattleItemsFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(4, 0x01);
+            checkBoxBattleItemsFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(4, 0x02);
+            checkBoxBattleItemsFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(4, 0x04);
+            checkBoxBattleItemsFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(4, 0x08);
+            checkBoxBattleItemsFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(4, 0x10);
+            checkBoxBattleItemsFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(4, 0x20);
+            checkBoxBattleItemsFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(4, 0x40);
+            checkBoxBattleItemsFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(4, 0x80);
+            numericUpDownBattleItemsStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(5, numericUpDownBattleItemsStatusAttack.Value);
+            checkBoxBattleItemsDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x01, 0);
+            checkBoxBattleItemsPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x02, 0);
+            checkBoxBattleItemsPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x04, 0);
+            checkBoxBattleItemsDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x08, 0);
+            checkBoxBattleItemsSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x10, 0);
+            checkBoxBattleItemsBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x20, 0);
+            checkBoxBattleItemsZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x40, 0);
+            checkBoxBattleItemsUnk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x80, 0);
+            checkBoxBattleItemsSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x01, 1);
+            checkBoxBattleItemsHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x02, 1);
+            checkBoxBattleItemsSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x04, 1);
+            checkBoxBattleItemsStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x08, 1);
+            checkBoxBattleItemsRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x10, 1);
+            checkBoxBattleItemsProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x20, 1);
+            checkBoxBattleItemsShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x40, 1);
+            checkBoxBattleItemsReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x80, 1);
+            checkBoxBattleItemsAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x01, 2);
+            checkBoxBattleItemsCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x02, 2);
+            checkBoxBattleItemsDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x04, 2);
+            checkBoxBattleItemsInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x08, 2);
+            checkBoxBattleItemsPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x10, 2);
+            checkBoxBattleItemsFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x20, 2);
+            checkBoxBattleItemsConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x40, 2);
+            checkBoxBattleItemsDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x80, 2);
+            checkBoxBattleItemsEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x01, 3);
+            checkBoxBattleItemsDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x02, 3);
+            checkBoxBattleItemsTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x04, 3);
+            checkBoxBattleItemsDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x08, 3);
+            checkBoxBattleItemsUnk1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x10, 3);
+            checkBoxBattleItemsUnk2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x20, 3);
+            checkBoxBattleItemsCharged.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x40, 3);
+            checkBoxBattleItemsBackAttack.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x80, 3);
+            checkBoxBattleItemsVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x01, 4);
+            checkBoxBattleItemsAngelWing.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x02, 4);
+            checkBoxBattleItemsUnk3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x04, 4);
+            checkBoxBattleItemsUnk4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x08, 4);
+            checkBoxBattleItemsUnk5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x10, 4);
+            checkBoxBattleItemsUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x20, 4);
+            checkBoxBattleItemsHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x40, 4);
+            checkBoxBattleItemsSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x80, 4);
+            numericUpDownBattleItemsHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(7, numericUpDownBattleItemsHitCount.Value);
+            comboBoxBattleItemsElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(8, BattleItems_GetElement(comboBoxBattleItemsElement.SelectedIndex));
+            
             #endregion
         }
 
@@ -2720,7 +2786,6 @@ namespace Doomtrain
 
         private void listBoxRenzoFin_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
@@ -3307,8 +3372,146 @@ namespace Doomtrain
             _loaded = true;
         }
 
+
+
+
+
+
+
         #endregion
 
+        #region BATTLE ITEMS
+
+        private int BattleItems_GetElement()
+        {
+            return KernelWorker.GetSelectedBattleItemsData.Element == KernelWorker.Element.Fire
+                        ? 0
+                        : KernelWorker.GetSelectedBattleItemsData.Element == KernelWorker.Element.Ice
+                            ? 1
+                            : KernelWorker.GetSelectedBattleItemsData.Element == KernelWorker.Element.Thunder
+                                ? 2
+                                : KernelWorker.GetSelectedBattleItemsData.Element == KernelWorker.Element.Earth
+                                    ? 3
+                                    : KernelWorker.GetSelectedBattleItemsData.Element == KernelWorker.Element.Poison
+                                        ? 4
+                                        : KernelWorker.GetSelectedBattleItemsData.Element == KernelWorker.Element.Wind
+                                            ? 5
+                                            : KernelWorker.GetSelectedBattleItemsData.Element ==
+                                              KernelWorker.Element.Water
+                                                ? 6
+                                                : KernelWorker.GetSelectedBattleItemsData.Element ==
+                                                  KernelWorker.Element.Holy
+                                                    ? 7
+                                                    : KernelWorker.GetSelectedBattleItemsData.Element ==
+                                                      KernelWorker.Element.NonElemental
+                                                        ? comboBoxBattleItemsElement.Items.Count - 1
+                                                        : 0;
+        }
+
+        private byte BattleItems_GetElement(int Index)
+        {
+            byte elem = (byte)(Index == 8 ? (byte)KernelWorker.Element.NonElemental :
+                Index == 0 ? (byte)KernelWorker.Element.Fire :
+                Index == 1 ? (byte)KernelWorker.Element.Ice :
+                Index == 2 ? (byte)KernelWorker.Element.Thunder :
+                Index == 3 ? (byte)KernelWorker.Element.Earth :
+                Index == 4 ? (byte)KernelWorker.Element.Poison :
+                Index == 5 ? (byte)KernelWorker.Element.Wind :
+                Index == 6 ? (byte)KernelWorker.Element.Water :
+                Index == 7 ? (byte)KernelWorker.Element.Holy :
+                0x00 /*ErrorHandler*/);
+            return elem;
+        }
+
+        private void BattleItemsStatusWorker()
+        {
+            checkBoxBattleItemsDeath.Checked = (KernelWorker.GetSelectedBattleItemsData.Status1 & 0x01) >= 1 ? true : false;
+            checkBoxBattleItemsPoison.Checked = (KernelWorker.GetSelectedBattleItemsData.Status1 & 0x02) >= 1 ? true : false;
+            checkBoxBattleItemsPetrify.Checked = (KernelWorker.GetSelectedBattleItemsData.Status1 & 0x04) >= 1 ? true : false;
+            checkBoxBattleItemsDarkness.Checked = (KernelWorker.GetSelectedBattleItemsData.Status1 & 0x08) >= 1 ? true : false;
+            checkBoxBattleItemsSilence.Checked = (KernelWorker.GetSelectedBattleItemsData.Status1 & 0x10) >= 1 ? true : false;
+            checkBoxBattleItemsBerserk.Checked = (KernelWorker.GetSelectedBattleItemsData.Status1 & 0x20) >= 1 ? true : false;
+            checkBoxBattleItemsZombie.Checked = (KernelWorker.GetSelectedBattleItemsData.Status1 & 0x40) >= 1 ? true : false;
+            checkBoxBattleItemsUnk7.Checked = (KernelWorker.GetSelectedBattleItemsData.Status1 & 0x80) >= 1 ? true : false;
+
+            checkBoxBattleItemsSleep.Checked = (KernelWorker.GetSelectedBattleItemsData.Status2 & 0x01) >= 1 ? true : false;
+            checkBoxBattleItemsHaste.Checked = (KernelWorker.GetSelectedBattleItemsData.Status2 & 0x02) >= 1 ? true : false;
+            checkBoxBattleItemsSlow.Checked = (KernelWorker.GetSelectedBattleItemsData.Status2 & 0x04) >= 1 ? true : false;
+            checkBoxBattleItemsStop.Checked = (KernelWorker.GetSelectedBattleItemsData.Status2 & 0x08) >= 1 ? true : false;
+            checkBoxBattleItemsRegen.Checked = (KernelWorker.GetSelectedBattleItemsData.Status2 & 0x10) >= 1 ? true : false;
+            checkBoxBattleItemsProtect.Checked = (KernelWorker.GetSelectedBattleItemsData.Status2 & 0x20) >= 1 ? true : false;
+            checkBoxBattleItemsShell.Checked = (KernelWorker.GetSelectedBattleItemsData.Status2 & 0x40) >= 1 ? true : false;
+            checkBoxBattleItemsReflect.Checked = (KernelWorker.GetSelectedBattleItemsData.Status2 & 0x80) >= 1 ? true : false;
+
+            checkBoxBattleItemsAura.Checked = (KernelWorker.GetSelectedBattleItemsData.Status3 & 0x01) >= 1 ? true : false;
+            checkBoxBattleItemsCurse.Checked = (KernelWorker.GetSelectedBattleItemsData.Status3 & 0x02) >= 1 ? true : false;
+            checkBoxBattleItemsDoom.Checked = (KernelWorker.GetSelectedBattleItemsData.Status3 & 0x04) >= 1 ? true : false;
+            checkBoxBattleItemsInvincible.Checked = (KernelWorker.GetSelectedBattleItemsData.Status3 & 0x08) >= 1 ? true : false;
+            checkBoxBattleItemsPetrifying.Checked = (KernelWorker.GetSelectedBattleItemsData.Status3 & 0x10) >= 1 ? true : false;
+            checkBoxBattleItemsFloat.Checked = (KernelWorker.GetSelectedBattleItemsData.Status3 & 0x20) >= 1 ? true : false;
+            checkBoxBattleItemsConfusion.Checked = (KernelWorker.GetSelectedBattleItemsData.Status3 & 0x40) >= 1 ? true : false;
+            checkBoxBattleItemsDrain.Checked = (KernelWorker.GetSelectedBattleItemsData.Status3 & 0x80) >= 1 ? true : false;
+
+            checkBoxBattleItemsEject.Checked = (KernelWorker.GetSelectedBattleItemsData.Status4 & 0x01) >= 1 ? true : false;
+            checkBoxBattleItemsDouble.Checked = (KernelWorker.GetSelectedBattleItemsData.Status4 & 0x02) >= 1 ? true : false;
+            checkBoxBattleItemsTriple.Checked = (KernelWorker.GetSelectedBattleItemsData.Status4 & 0x04) >= 1 ? true : false;
+            checkBoxBattleItemsDefend.Checked = (KernelWorker.GetSelectedBattleItemsData.Status4 & 0x08) >= 1 ? true : false;
+            checkBoxBattleItemsUnk1.Checked = (KernelWorker.GetSelectedBattleItemsData.Status4 & 0x10) >= 1 ? true : false;
+            checkBoxBattleItemsUnk2.Checked = (KernelWorker.GetSelectedBattleItemsData.Status4 & 0x20) >= 1 ? true : false;
+            checkBoxBattleItemsCharged.Checked = (KernelWorker.GetSelectedBattleItemsData.Status4 & 0x40) >= 1 ? true : false;
+            checkBoxBattleItemsBackAttack.Checked = (KernelWorker.GetSelectedBattleItemsData.Status4 & 0x80) >= 1 ? true : false;
+
+            checkBoxBattleItemsVit0.Checked = (KernelWorker.GetSelectedBattleItemsData.Status5 & 0x01) >= 1 ? true : false;
+            checkBoxBattleItemsAngelWing.Checked = (KernelWorker.GetSelectedBattleItemsData.Status5 & 0x02) >= 1 ? true : false;
+            checkBoxBattleItemsUnk3.Checked = (KernelWorker.GetSelectedBattleItemsData.Status5 & 0x04) >= 1 ? true : false;
+            checkBoxBattleItemsUnk4.Checked = (KernelWorker.GetSelectedBattleItemsData.Status5 & 0x08) >= 1 ? true : false;
+            checkBoxBattleItemsUnk5.Checked = (KernelWorker.GetSelectedBattleItemsData.Status5 & 0x10) >= 1 ? true : false;
+            checkBoxBattleItemsUnk6.Checked = (KernelWorker.GetSelectedBattleItemsData.Status5 & 0x20) >= 1 ? true : false;
+            checkBoxBattleItemsHasMagic.Checked = (KernelWorker.GetSelectedBattleItemsData.Status5 & 0x40) >= 1 ? true : false;
+            checkBoxBattleItemsSummonGF.Checked = (KernelWorker.GetSelectedBattleItemsData.Status5 & 0x80) >= 1 ? true : false;
+        }
+
+        private void listBoxBattleItems_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadBattleItems(listBoxBattleItems.SelectedIndex);
+            try
+            {
+                comboBoxBattleItemsMagicID.SelectedIndex = KernelWorker.GetSelectedBattleItemsData.MagicID;
+                comboBoxBattleItemsAttackType.SelectedIndex = KernelWorker.GetSelectedBattleItemsData.AttackType;
+                numericUpDownBattleItemsAttackPower.Value = KernelWorker.GetSelectedBattleItemsData.AttackPower;
+                checkBoxBattleItemsTarget1.Checked = (KernelWorker.GetSelectedBattleItemsData.Target & 0x01) >= 1 ? true : false;
+                checkBoxBattleItemsTarget2.Checked = (KernelWorker.GetSelectedBattleItemsData.Target & 0x02) >= 1 ? true : false;
+                checkBoxBattleItemsTarget3.Checked = (KernelWorker.GetSelectedBattleItemsData.Target & 0x04) >= 1 ? true : false;
+                checkBoxBattleItemsTarget4.Checked = (KernelWorker.GetSelectedBattleItemsData.Target & 0x08) >= 1 ? true : false;
+                checkBoxBattleItemsTarget5.Checked = (KernelWorker.GetSelectedBattleItemsData.Target & 0x10) >= 1 ? true : false;
+                checkBoxBattleItemsTarget6.Checked = (KernelWorker.GetSelectedBattleItemsData.Target & 0x20) >= 1 ? true : false;
+                checkBoxBattleItemsTarget7.Checked = (KernelWorker.GetSelectedBattleItemsData.Target & 0x40) >= 1 ? true : false;
+                checkBoxBattleItemsTarget8.Checked = (KernelWorker.GetSelectedBattleItemsData.Target & 0x80) >= 1 ? true : false;
+                checkBoxBattleItemsFlag1.Checked = (KernelWorker.GetSelectedBattleItemsData.AttackFlags & 0x01) >= 1 ? true : false;
+                checkBoxBattleItemsFlag2.Checked = (KernelWorker.GetSelectedBattleItemsData.AttackFlags & 0x02) >= 1 ? true : false;
+                checkBoxBattleItemsFlag3.Checked = (KernelWorker.GetSelectedBattleItemsData.AttackFlags & 0x04) >= 1 ? true : false;
+                checkBoxBattleItemsFlag4.Checked = (KernelWorker.GetSelectedBattleItemsData.AttackFlags & 0x08) >= 1 ? true : false;
+                checkBoxBattleItemsFlag5.Checked = (KernelWorker.GetSelectedBattleItemsData.AttackFlags & 0x10) >= 1 ? true : false;
+                checkBoxBattleItemsFlag6.Checked = (KernelWorker.GetSelectedBattleItemsData.AttackFlags & 0x20) >= 1 ? true : false;
+                checkBoxBattleItemsFlag7.Checked = (KernelWorker.GetSelectedBattleItemsData.AttackFlags & 0x40) >= 1 ? true : false;
+                checkBoxBattleItemsFlag8.Checked = (KernelWorker.GetSelectedBattleItemsData.AttackFlags & 0x80) >= 1 ? true : false;
+                numericUpDownBattleItemsStatusAttack.Value = KernelWorker.GetSelectedBattleItemsData.StatusAttack;
+                BattleItemsStatusWorker();
+                numericUpDownBattleItemsHitCount.Value = KernelWorker.GetSelectedBattleItemsData.HitCount;
+                comboBoxBattleItemsElement.SelectedIndex = BattleItems_GetElement();
+            }
+
+            catch (Exception Exception)
+            {
+                Console.WriteLine(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
 
     }
 }
