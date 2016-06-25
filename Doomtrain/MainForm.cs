@@ -1140,7 +1140,28 @@ namespace Doomtrain
             checkBoxBattleItemsSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x80, 4);
             numericUpDownBattleItemsHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(7, numericUpDownBattleItemsHitCount.Value);
             comboBoxBattleItemsElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(8, BattleItems_GetElement(comboBoxBattleItemsElement.SelectedIndex));
-            
+
+            #endregion
+
+            #region EVENT HANDLERS SLOT SETS
+
+            comboBoxSlotsMagic1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(0, comboBoxSlotsMagic1.SelectedIndex);
+            numericUpDownSlotsCount1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(1, numericUpDownSlotsCount1.Value);
+            comboBoxSlotsMagic2.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(2, comboBoxSlotsMagic2.SelectedIndex);
+            numericUpDownSlotsCount2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(3, numericUpDownSlotsCount2.Value);
+            comboBoxSlotsMagic3.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(4, comboBoxSlotsMagic3.SelectedIndex);
+            numericUpDownSlotsCount3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(5, numericUpDownSlotsCount3.Value);
+            comboBoxSlotsMagic4.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(6, comboBoxSlotsMagic4.SelectedIndex);
+            numericUpDownSlotsCount4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(7, numericUpDownSlotsCount4.Value);
+            comboBoxSlotsMagic5.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(8, comboBoxSlotsMagic5.SelectedIndex);
+            numericUpDownSlotsCount5.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(9, numericUpDownSlotsCount5.Value);
+            comboBoxSlotsMagic6.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(10, comboBoxSlotsMagic6.SelectedIndex);
+            numericUpDownSlotsCount6.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(11, numericUpDownSlotsCount6.Value);
+            comboBoxSlotsMagic7.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(12, comboBoxSlotsMagic7.SelectedIndex);
+            numericUpDownSlotsCount7.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(13, numericUpDownSlotsCount7.Value);
+            comboBoxSlotsMagic8.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(14, comboBoxSlotsMagic8.SelectedIndex);
+            numericUpDownSlotsCount8.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(15, numericUpDownSlotsCount8.Value);
+
             #endregion
         }
 
@@ -3512,6 +3533,44 @@ namespace Doomtrain
         }
 
         #endregion
+
+        #region SLOT SETS
+
+        private void listBoxSlotSets_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadSlotsSets(listBoxSlotsSets.SelectedIndex);
+            try
+            {
+                comboBoxSlotsMagic1.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic1;
+                comboBoxSlotsMagic2.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic2;
+                comboBoxSlotsMagic3.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic3;
+                comboBoxSlotsMagic4.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic4;
+                comboBoxSlotsMagic5.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic5;
+                comboBoxSlotsMagic6.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic6;
+                comboBoxSlotsMagic7.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic7;
+                comboBoxSlotsMagic8.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic8;
+                numericUpDownSlotsCount1.Value = KernelWorker.GetSelectedSlotsSetsData.Count1;
+                numericUpDownSlotsCount2.Value = KernelWorker.GetSelectedSlotsSetsData.Count2;
+                numericUpDownSlotsCount3.Value = KernelWorker.GetSelectedSlotsSetsData.Count3;
+                numericUpDownSlotsCount4.Value = KernelWorker.GetSelectedSlotsSetsData.Count4;
+                numericUpDownSlotsCount5.Value = KernelWorker.GetSelectedSlotsSetsData.Count5;
+                numericUpDownSlotsCount6.Value = KernelWorker.GetSelectedSlotsSetsData.Count6;
+                numericUpDownSlotsCount7.Value = KernelWorker.GetSelectedSlotsSetsData.Count7;
+                numericUpDownSlotsCount8.Value = KernelWorker.GetSelectedSlotsSetsData.Count8;
+            }
+
+            catch (Exception Exception)
+            {
+                Console.WriteLine(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+
 
     }
 }

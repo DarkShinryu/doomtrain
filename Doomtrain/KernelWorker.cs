@@ -53,6 +53,9 @@ namespace Doomtrain
         public static int BattleItemsDataOffset = -1;
         public static int OffsetToBattleItemsSelected = -1;
 
+        public static int SlotsSetsDataOffset = -1;
+        public static int OffsetToSlotsSetsSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -68,6 +71,8 @@ namespace Doomtrain
         public static DuelData GetSelectedDuelData;
         public static CombineData GetSelectedCombineData;
         public static BattleItemsData GetSelectedBattleItemsData;
+        public static SlotsSetsData GetSelectedSlotsSetsData;
+
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -103,7 +108,7 @@ namespace Doomtrain
             RinoaLimit1 = 25 << 2,
             RinoaLimit2 = 26 << 2,
             SelphieSlotArray = 27 << 2,
-            SelphieSlotSets = 28 << 2,
+            SelphieSlotsSets = 28 << 2,
             Devour = 29 << 2,
             Misc = 30 << 2,
             MiscTextPointers = 31 << 2,
@@ -542,6 +547,26 @@ namespace Doomtrain
             public byte Status5;
             public byte HitCount;
             public Element Element;
+        }
+
+        public struct SlotsSetsData
+        {
+            public byte Magic1;
+            public byte Count1;
+            public byte Magic2;
+            public byte Count2;
+            public byte Magic3;
+            public byte Count3;
+            public byte Magic4;
+            public byte Count4;
+            public byte Magic5;
+            public byte Count5;
+            public byte Magic6;
+            public byte Count6;
+            public byte Magic7;
+            public byte Count7;
+            public byte Magic8;
+            public byte Count8;
         }
 
         #endregion
@@ -1759,6 +1784,67 @@ namespace Doomtrain
             }
         }
 
+        public static void UpdateVariable_SlotsSets(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToSlotsSetsSelected] = Convert.ToByte(variable); //Magic 1
+                    return;
+                case 1:
+                    Kernel[OffsetToSlotsSetsSelected + 1] = Convert.ToByte(variable); //Count 1
+                    return;
+                case 2:
+                    Kernel[OffsetToSlotsSetsSelected + 2] = Convert.ToByte(variable); //Magic 2
+                    return;
+                case 3:
+                    Kernel[OffsetToSlotsSetsSelected + 3] = Convert.ToByte(variable); //Count 2
+                    return;
+                case 4:
+                    Kernel[OffsetToSlotsSetsSelected + 4] = Convert.ToByte(variable); //Magic 3
+                    return;
+                case 5:
+                    Kernel[OffsetToSlotsSetsSelected + 5] = Convert.ToByte(variable); //Count 3
+                    return;
+                case 6:
+                    Kernel[OffsetToSlotsSetsSelected + 6] = Convert.ToByte(variable); //Magic 4
+                    return;
+                case 7:
+                    Kernel[OffsetToSlotsSetsSelected + 7] = Convert.ToByte(variable); //Count 4
+                    return;
+                case 8:
+                    Kernel[OffsetToSlotsSetsSelected + 8] = Convert.ToByte(variable); //Magic 5
+                    return;
+                case 9:
+                    Kernel[OffsetToSlotsSetsSelected + 9] = Convert.ToByte(variable); //Count 5
+                    return;
+                case 10:
+                    Kernel[OffsetToSlotsSetsSelected + 10] = Convert.ToByte(variable); //Magic 6
+                    return;
+                case 11:
+                    Kernel[OffsetToSlotsSetsSelected + 11] = Convert.ToByte(variable); //Count 6
+                    return;
+                case 12:
+                    Kernel[OffsetToSlotsSetsSelected + 12] = Convert.ToByte(variable); //Magic 7
+                    return;
+                case 13:
+                    Kernel[OffsetToSlotsSetsSelected + 13] = Convert.ToByte(variable); //Count 7
+                    return;
+                case 14:
+                    Kernel[OffsetToSlotsSetsSelected + 14] = Convert.ToByte(variable); //Magic 8
+                    return;
+                case 15:
+                    Kernel[OffsetToSlotsSetsSelected + 15] = Convert.ToByte(variable); //Count 8
+                    return;
+
+
+                default:
+                    return;
+            }
+        }
+
         #endregion
 
         #region MAGIC ID
@@ -1849,6 +1935,7 @@ namespace Doomtrain
             DuelDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Duel_Zell);
             CombineDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RinoaLimit2);
             BattleItemsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BattleItems);
+            SlotsSetsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.SelphieSlotsSets);
         }
 
 
@@ -2631,6 +2718,30 @@ namespace Doomtrain
                                                 : b == (byte)Element.Earth
                                                     ? Element.Earth
                                                     : 0; //Error handler
+        }
+
+        public static void ReadSlotsSets(int SlotsSetsID_List)
+        {
+            GetSelectedSlotsSetsData = new SlotsSetsData();
+            int selectedSlotsSetsOffset = SlotsSetsDataOffset + (SlotsSetsID_List * 16);
+            OffsetToSlotsSetsSelected = selectedSlotsSetsOffset;
+
+            GetSelectedSlotsSetsData.Magic1 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Count1 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Magic2 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Count2 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Magic3 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Count3 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Magic4 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Count4 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Magic5 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Count5 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Magic6 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Count6 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Magic7 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Count7 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Magic8 = Kernel[selectedSlotsSetsOffset++];
+            GetSelectedSlotsSetsData.Count8 = Kernel[selectedSlotsSetsOffset++];
         }
 
         #endregion

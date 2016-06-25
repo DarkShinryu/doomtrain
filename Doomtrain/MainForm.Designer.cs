@@ -180,6 +180,12 @@
             this.labelTempCharLBHitCount = new System.Windows.Forms.Label();
             this.labelTempCharLBAttackPower = new System.Windows.Forms.Label();
             this.labelTempCharLBMagicID = new System.Windows.Forms.Label();
+            this.checkBoxBattleItemsTarget4 = new System.Windows.Forms.CheckBox();
+            this.labelBattleItemsElement = new System.Windows.Forms.Label();
+            this.labelBattleItemsAttackType = new System.Windows.Forms.Label();
+            this.labelBattleItemsHitCount = new System.Windows.Forms.Label();
+            this.labelBattleItemsAttackPower = new System.Windows.Forms.Label();
+            this.labelBattleItemsMagicID = new System.Windows.Forms.Label();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -1049,85 +1055,85 @@
             this.groupBoxSlotSets = new System.Windows.Forms.GroupBox();
             this.labelSlotSetsMagic = new System.Windows.Forms.Label();
             this.labelSlotSetsList = new System.Windows.Forms.Label();
-            this.comboBoxSlotMagic5 = new System.Windows.Forms.ComboBox();
-            this.listBoxSlotSets = new System.Windows.Forms.ListBox();
-            this.comboBoxSlotMagic2 = new System.Windows.Forms.ComboBox();
-            this.comboBoxSlotMagic8 = new System.Windows.Forms.ComboBox();
-            this.numericUpDownSlotMagicN3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotMagicN2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotMagicN8 = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxSlotMagic3 = new System.Windows.Forms.ComboBox();
-            this.numericUpDownSlotMagicN5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotMagicN1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxSlotMagic7 = new System.Windows.Forms.ComboBox();
-            this.numericUpDownSlotMagicN4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotMagicN6 = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxSlotMagic1 = new System.Windows.Forms.ComboBox();
-            this.numericUpDownSlotMagicN7 = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxSlotMagic4 = new System.Windows.Forms.ComboBox();
-            this.comboBoxSlotMagic6 = new System.Windows.Forms.ComboBox();
+            this.comboBoxSlotsMagic5 = new System.Windows.Forms.ComboBox();
+            this.listBoxSlotsSets = new System.Windows.Forms.ListBox();
+            this.comboBoxSlotsMagic2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxSlotsMagic8 = new System.Windows.Forms.ComboBox();
+            this.numericUpDownSlotsCount3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsCount2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsCount8 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxSlotsMagic3 = new System.Windows.Forms.ComboBox();
+            this.numericUpDownSlotsCount5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsCount1 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxSlotsMagic7 = new System.Windows.Forms.ComboBox();
+            this.numericUpDownSlotsCount4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsCount6 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxSlotsMagic1 = new System.Windows.Forms.ComboBox();
+            this.numericUpDownSlotsCount7 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxSlotsMagic4 = new System.Windows.Forms.ComboBox();
+            this.comboBoxSlotsMagic6 = new System.Windows.Forms.ComboBox();
             this.groupBoxSlotArray = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanelSlotArray = new System.Windows.Forms.TableLayoutPanel();
-            this.numericUpDownSlotArray54 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray55 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray53 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray51 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray52 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray59 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray60 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray58 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray56 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray57 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray9 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray10 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray11 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray12 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray13 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray14 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray15 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray16 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray17 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray18 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray19 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray20 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray21 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray22 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray23 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray24 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray25 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray26 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray27 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray28 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray29 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray30 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray31 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray32 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray33 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray34 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray35 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray36 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray37 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray38 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray39 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray40 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray41 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray42 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray43 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray44 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray45 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray46 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray47 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray48 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray49 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownSlotArray50 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray54 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray55 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray53 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray51 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray52 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray59 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray60 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray58 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray56 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray57 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray6 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray7 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray8 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray9 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray10 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray11 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray12 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray13 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray14 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray15 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray16 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray17 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray18 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray19 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray20 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray21 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray22 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray23 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray24 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray25 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray26 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray27 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray28 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray29 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray30 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray31 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray32 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray33 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray34 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray35 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray36 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray37 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray38 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray39 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray40 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray41 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray42 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray43 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray44 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray45 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray46 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray47 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray48 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray49 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSlotsArray50 = new System.Windows.Forms.NumericUpDown();
             this.tabPageLBRinoa = new System.Windows.Forms.TabPage();
             this.listBoxCombine = new System.Windows.Forms.ListBox();
             this.groupBoxCombineStatusAttack = new System.Windows.Forms.GroupBox();
@@ -1341,6 +1347,73 @@
             this.comboBoxTempCharLBMagicID = new System.Windows.Forms.ComboBox();
             this.listBoxTempCharLB = new System.Windows.Forms.ListBox();
             this.tabPageBattleItems = new System.Windows.Forms.TabPage();
+            this.groupBoxBattleItemsStatusAttack = new System.Windows.Forms.GroupBox();
+            this.checkBoxBattleItemsPetrifying = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsDarkness = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsSilence = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsStop = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsConfusion = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsPetrify = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsSlow = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsBerserk = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsSleep = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsInvincible = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsCurse = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsDoom = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsFloat = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsAura = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsDrain = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsSummonGF = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsHasMagic = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsUnk6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsUnk5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsUnk4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsUnk3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsAngelWing = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsVit0 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsBackAttack = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsCharged = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsUnk2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsUnk1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsDefend = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsTriple = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsDouble = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsEject = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsPoison = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsDeath = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsProtect = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsHaste = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsRegen = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsShell = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsReflect = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsUnk7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsZombie = new System.Windows.Forms.CheckBox();
+            this.numericUpDownBattleItemsStatusAttack = new System.Windows.Forms.NumericUpDown();
+            this.labelBattleItemsStatusAttack = new System.Windows.Forms.Label();
+            this.groupBoxBattleItemsTarget = new System.Windows.Forms.GroupBox();
+            this.checkBoxBattleItemsTarget8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsTarget5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsTarget2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsTarget6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsTarget7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsTarget1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsTarget3 = new System.Windows.Forms.CheckBox();
+            this.groupBoxBattleItemsAttackFlags = new System.Windows.Forms.GroupBox();
+            this.checkBoxBattleItemsFlag4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsFlag1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsFlag5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBattleItemsFlag7 = new System.Windows.Forms.CheckBox();
+            this.groupBoxBattleItemsGeneral = new System.Windows.Forms.GroupBox();
+            this.comboBoxBattleItemsElement = new System.Windows.Forms.ComboBox();
+            this.comboBoxBattleItemsAttackType = new System.Windows.Forms.ComboBox();
+            this.numericUpDownBattleItemsHitCount = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownBattleItemsAttackPower = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxBattleItemsMagicID = new System.Windows.Forms.ComboBox();
+            this.listBoxBattleItems = new System.Windows.Forms.ListBox();
             this.tabPageEnemyAttacks = new System.Windows.Forms.TabPage();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.checkBoxEnemyAttacksFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
@@ -1401,79 +1474,6 @@
             this.listBoxEnemyAttacks = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.groupBoxBattleItemsStatusAttack = new System.Windows.Forms.GroupBox();
-            this.checkBoxBattleItemsPetrifying = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsDarkness = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsSilence = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsStop = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsConfusion = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsPetrify = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsSlow = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsBerserk = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsSleep = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsInvincible = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsCurse = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsDoom = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsFloat = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsAura = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsDrain = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsSummonGF = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsHasMagic = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsUnk6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsUnk5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsUnk4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsUnk3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsAngelWing = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsVit0 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsBackAttack = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsCharged = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsUnk2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsUnk1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsDefend = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsTriple = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsDouble = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsEject = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsPoison = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsDeath = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsProtect = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsHaste = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsRegen = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsShell = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsReflect = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsUnk7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsZombie = new System.Windows.Forms.CheckBox();
-            this.numericUpDownBattleItemsStatusAttack = new System.Windows.Forms.NumericUpDown();
-            this.labelBattleItemsStatusAttack = new System.Windows.Forms.Label();
-            this.groupBoxBattleItemsTarget = new System.Windows.Forms.GroupBox();
-            this.checkBoxBattleItemsTarget8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsTarget5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsTarget2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsTarget4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsTarget6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsTarget7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsTarget1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsTarget3 = new System.Windows.Forms.CheckBox();
-            this.groupBoxBattleItemsAttackFlags = new System.Windows.Forms.GroupBox();
-            this.checkBoxBattleItemsFlag4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsFlag8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsFlag3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsFlag6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsFlag1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsFlag5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsFlag2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBattleItemsFlag7 = new System.Windows.Forms.CheckBox();
-            this.groupBoxBattleItemsGeneral = new System.Windows.Forms.GroupBox();
-            this.comboBoxBattleItemsElement = new System.Windows.Forms.ComboBox();
-            this.labelBattleItemsElement = new System.Windows.Forms.Label();
-            this.comboBoxBattleItemsAttackType = new System.Windows.Forms.ComboBox();
-            this.labelBattleItemsAttackType = new System.Windows.Forms.Label();
-            this.numericUpDownBattleItemsHitCount = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownBattleItemsAttackPower = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxBattleItemsMagicID = new System.Windows.Forms.ComboBox();
-            this.labelBattleItemsHitCount = new System.Windows.Forms.Label();
-            this.labelBattleItemsAttackPower = new System.Windows.Forms.Label();
-            this.labelBattleItemsMagicID = new System.Windows.Forms.Label();
-            this.listBoxBattleItems = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
@@ -1673,76 +1673,76 @@
             this.groupBoxShotInput1.SuspendLayout();
             this.tabPageLBSelphie.SuspendLayout();
             this.groupBoxSlotSets.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount7)).BeginInit();
             this.groupBoxSlotArray.SuspendLayout();
             this.tableLayoutPanelSlotArray.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray54)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray53)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray59)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray60)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray58)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray56)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray57)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray59)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray60)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray58)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray56)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray57)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray50)).BeginInit();
             this.tabPageLBRinoa.SuspendLayout();
             this.groupBoxCombineStatusAttack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCombineStatusAttack)).BeginInit();
@@ -1771,13 +1771,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBAttackPower)).BeginInit();
             this.tabPageBattleItems.SuspendLayout();
-            this.tabPageEnemyAttacks.SuspendLayout();
-            this.groupBox14.SuspendLayout();
-            this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksStatusAttack)).BeginInit();
-            this.groupBox16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackPower)).BeginInit();
-            this.statusStrip1.SuspendLayout();
             this.groupBoxBattleItemsStatusAttack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsStatusAttack)).BeginInit();
             this.groupBoxBattleItemsTarget.SuspendLayout();
@@ -1785,6 +1778,13 @@
             this.groupBoxBattleItemsGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsAttackPower)).BeginInit();
+            this.tabPageEnemyAttacks.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksStatusAttack)).BeginInit();
+            this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackPower)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -4629,6 +4629,79 @@
             this.labelTempCharLBMagicID.TabIndex = 0;
             this.labelTempCharLBMagicID.Text = "Magic ID";
             this.toolTip1.SetToolTip(this.labelTempCharLBMagicID, "Decides what animation to play");
+            // 
+            // checkBoxBattleItemsTarget4
+            // 
+            this.checkBoxBattleItemsTarget4.AutoSize = true;
+            this.checkBoxBattleItemsTarget4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsTarget4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsTarget4.Location = new System.Drawing.Point(352, 35);
+            this.checkBoxBattleItemsTarget4.Name = "checkBoxBattleItemsTarget4";
+            this.checkBoxBattleItemsTarget4.Size = new System.Drawing.Size(83, 19);
+            this.checkBoxBattleItemsTarget4.TabIndex = 38;
+            this.checkBoxBattleItemsTarget4.Text = "Single Side";
+            this.toolTip1.SetToolTip(this.checkBoxBattleItemsTarget4, "Enemy decides which side");
+            this.checkBoxBattleItemsTarget4.UseVisualStyleBackColor = true;
+            // 
+            // labelBattleItemsElement
+            // 
+            this.labelBattleItemsElement.AutoSize = true;
+            this.labelBattleItemsElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBattleItemsElement.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBattleItemsElement.Location = new System.Drawing.Point(354, 29);
+            this.labelBattleItemsElement.Name = "labelBattleItemsElement";
+            this.labelBattleItemsElement.Size = new System.Drawing.Size(57, 17);
+            this.labelBattleItemsElement.TabIndex = 95;
+            this.labelBattleItemsElement.Text = "Element";
+            this.toolTip1.SetToolTip(this.labelBattleItemsElement, "The element of the GF attack");
+            // 
+            // labelBattleItemsAttackType
+            // 
+            this.labelBattleItemsAttackType.AutoSize = true;
+            this.labelBattleItemsAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBattleItemsAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBattleItemsAttackType.Location = new System.Drawing.Point(120, 83);
+            this.labelBattleItemsAttackType.Name = "labelBattleItemsAttackType";
+            this.labelBattleItemsAttackType.Size = new System.Drawing.Size(79, 17);
+            this.labelBattleItemsAttackType.TabIndex = 7;
+            this.labelBattleItemsAttackType.Text = "Attack Type";
+            this.toolTip1.SetToolTip(this.labelBattleItemsAttackType, "Decides what animation to play");
+            // 
+            // labelBattleItemsHitCount
+            // 
+            this.labelBattleItemsHitCount.AutoSize = true;
+            this.labelBattleItemsHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBattleItemsHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBattleItemsHitCount.Location = new System.Drawing.Point(302, 140);
+            this.labelBattleItemsHitCount.Name = "labelBattleItemsHitCount";
+            this.labelBattleItemsHitCount.Size = new System.Drawing.Size(67, 17);
+            this.labelBattleItemsHitCount.TabIndex = 0;
+            this.labelBattleItemsHitCount.Text = "Hit Count";
+            this.toolTip1.SetToolTip(this.labelBattleItemsHitCount, "Number of hits");
+            // 
+            // labelBattleItemsAttackPower
+            // 
+            this.labelBattleItemsAttackPower.AutoSize = true;
+            this.labelBattleItemsAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBattleItemsAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBattleItemsAttackPower.Location = new System.Drawing.Point(95, 140);
+            this.labelBattleItemsAttackPower.Name = "labelBattleItemsAttackPower";
+            this.labelBattleItemsAttackPower.Size = new System.Drawing.Size(89, 17);
+            this.labelBattleItemsAttackPower.TabIndex = 0;
+            this.labelBattleItemsAttackPower.Text = "Attack Power";
+            this.toolTip1.SetToolTip(this.labelBattleItemsAttackPower, "Used in damage calculation");
+            // 
+            // labelBattleItemsMagicID
+            // 
+            this.labelBattleItemsMagicID.AutoSize = true;
+            this.labelBattleItemsMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBattleItemsMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBattleItemsMagicID.Location = new System.Drawing.Point(131, 29);
+            this.labelBattleItemsMagicID.Name = "labelBattleItemsMagicID";
+            this.labelBattleItemsMagicID.Size = new System.Drawing.Size(61, 17);
+            this.labelBattleItemsMagicID.TabIndex = 0;
+            this.labelBattleItemsMagicID.Text = "Magic ID";
+            this.toolTip1.SetToolTip(this.labelBattleItemsMagicID, "Decides what animation to play");
             // 
             // fileToolStripMenuItem
             // 
@@ -23154,23 +23227,23 @@
             this.groupBoxSlotSets.Controls.Add(this.labelSlotSetsMagic);
             this.groupBoxSlotSets.Controls.Add(this.labelSlotSetsList);
             this.groupBoxSlotSets.Controls.Add(this.labelSlotSetsN);
-            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotMagic5);
-            this.groupBoxSlotSets.Controls.Add(this.listBoxSlotSets);
-            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotMagic2);
-            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotMagic8);
-            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotMagicN3);
-            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotMagicN2);
-            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotMagicN8);
-            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotMagic3);
-            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotMagicN5);
-            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotMagicN1);
-            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotMagic7);
-            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotMagicN4);
-            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotMagicN6);
-            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotMagic1);
-            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotMagicN7);
-            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotMagic4);
-            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotMagic6);
+            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotsMagic5);
+            this.groupBoxSlotSets.Controls.Add(this.listBoxSlotsSets);
+            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotsMagic2);
+            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotsMagic8);
+            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotsCount3);
+            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotsCount2);
+            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotsCount8);
+            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotsMagic3);
+            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotsCount5);
+            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotsCount1);
+            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotsMagic7);
+            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotsCount4);
+            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotsCount6);
+            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotsMagic1);
+            this.groupBoxSlotSets.Controls.Add(this.numericUpDownSlotsCount7);
+            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotsMagic4);
+            this.groupBoxSlotSets.Controls.Add(this.comboBoxSlotsMagic6);
             this.groupBoxSlotSets.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxSlotSets.ForeColor = System.Drawing.Color.DarkViolet;
             this.groupBoxSlotSets.Location = new System.Drawing.Point(8, 289);
@@ -23202,11 +23275,12 @@
             this.labelSlotSetsList.TabIndex = 29;
             this.labelSlotSetsList.Text = "Set List";
             // 
-            // comboBoxSlotMagic5
+            // comboBoxSlotsMagic5
             // 
-            this.comboBoxSlotMagic5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxSlotMagic5.FormattingEnabled = true;
-            this.comboBoxSlotMagic5.Items.AddRange(new object[] {
+            this.comboBoxSlotsMagic5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSlotsMagic5.FormattingEnabled = true;
+            this.comboBoxSlotsMagic5.Items.AddRange(new object[] {
+            "None",
             "Fire",
             "Fira",
             "Firaga",
@@ -23263,17 +23337,17 @@
             "Percent",
             "Catastrophe",
             "The End"});
-            this.comboBoxSlotMagic5.Location = new System.Drawing.Point(310, 205);
-            this.comboBoxSlotMagic5.Name = "comboBoxSlotMagic5";
-            this.comboBoxSlotMagic5.Size = new System.Drawing.Size(157, 25);
-            this.comboBoxSlotMagic5.TabIndex = 21;
+            this.comboBoxSlotsMagic5.Location = new System.Drawing.Point(310, 205);
+            this.comboBoxSlotsMagic5.Name = "comboBoxSlotsMagic5";
+            this.comboBoxSlotsMagic5.Size = new System.Drawing.Size(157, 25);
+            this.comboBoxSlotsMagic5.TabIndex = 21;
             // 
-            // listBoxSlotSets
+            // listBoxSlotsSets
             // 
-            this.listBoxSlotSets.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxSlotSets.FormattingEnabled = true;
-            this.listBoxSlotSets.ItemHeight = 17;
-            this.listBoxSlotSets.Items.AddRange(new object[] {
+            this.listBoxSlotsSets.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxSlotsSets.FormattingEnabled = true;
+            this.listBoxSlotsSets.ItemHeight = 17;
+            this.listBoxSlotsSets.Items.AddRange(new object[] {
             "Set 0",
             "Set 1",
             "Set 2",
@@ -23290,17 +23364,19 @@
             "Set 13",
             "Set 14",
             "Set 15"});
-            this.listBoxSlotSets.Location = new System.Drawing.Point(98, 45);
-            this.listBoxSlotSets.Name = "listBoxSlotSets";
-            this.listBoxSlotSets.ScrollAlwaysVisible = true;
-            this.listBoxSlotSets.Size = new System.Drawing.Size(109, 310);
-            this.listBoxSlotSets.TabIndex = 28;
+            this.listBoxSlotsSets.Location = new System.Drawing.Point(98, 45);
+            this.listBoxSlotsSets.Name = "listBoxSlotsSets";
+            this.listBoxSlotsSets.ScrollAlwaysVisible = true;
+            this.listBoxSlotsSets.Size = new System.Drawing.Size(109, 310);
+            this.listBoxSlotsSets.TabIndex = 28;
+            this.listBoxSlotsSets.SelectedIndexChanged += new System.EventHandler(this.listBoxSlotSets_SelectedIndexChanged);
             // 
-            // comboBoxSlotMagic2
+            // comboBoxSlotsMagic2
             // 
-            this.comboBoxSlotMagic2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxSlotMagic2.FormattingEnabled = true;
-            this.comboBoxSlotMagic2.Items.AddRange(new object[] {
+            this.comboBoxSlotsMagic2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSlotsMagic2.FormattingEnabled = true;
+            this.comboBoxSlotsMagic2.Items.AddRange(new object[] {
+            "None",
             "Fire",
             "Fira",
             "Firaga",
@@ -23357,16 +23433,17 @@
             "Percent",
             "Catastrophe",
             "The End"});
-            this.comboBoxSlotMagic2.Location = new System.Drawing.Point(310, 84);
-            this.comboBoxSlotMagic2.Name = "comboBoxSlotMagic2";
-            this.comboBoxSlotMagic2.Size = new System.Drawing.Size(157, 25);
-            this.comboBoxSlotMagic2.TabIndex = 11;
+            this.comboBoxSlotsMagic2.Location = new System.Drawing.Point(310, 84);
+            this.comboBoxSlotsMagic2.Name = "comboBoxSlotsMagic2";
+            this.comboBoxSlotsMagic2.Size = new System.Drawing.Size(157, 25);
+            this.comboBoxSlotsMagic2.TabIndex = 11;
             // 
-            // comboBoxSlotMagic8
+            // comboBoxSlotsMagic8
             // 
-            this.comboBoxSlotMagic8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxSlotMagic8.FormattingEnabled = true;
-            this.comboBoxSlotMagic8.Items.AddRange(new object[] {
+            this.comboBoxSlotsMagic8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSlotsMagic8.FormattingEnabled = true;
+            this.comboBoxSlotsMagic8.Items.AddRange(new object[] {
+            "None",
             "Fire",
             "Fira",
             "Firaga",
@@ -23423,58 +23500,59 @@
             "Percent",
             "Catastrophe",
             "The End"});
-            this.comboBoxSlotMagic8.Location = new System.Drawing.Point(310, 330);
-            this.comboBoxSlotMagic8.Name = "comboBoxSlotMagic8";
-            this.comboBoxSlotMagic8.Size = new System.Drawing.Size(157, 25);
-            this.comboBoxSlotMagic8.TabIndex = 27;
+            this.comboBoxSlotsMagic8.Location = new System.Drawing.Point(310, 330);
+            this.comboBoxSlotsMagic8.Name = "comboBoxSlotsMagic8";
+            this.comboBoxSlotsMagic8.Size = new System.Drawing.Size(157, 25);
+            this.comboBoxSlotsMagic8.TabIndex = 27;
             // 
-            // numericUpDownSlotMagicN3
+            // numericUpDownSlotsCount3
             // 
-            this.numericUpDownSlotMagicN3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotMagicN3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotMagicN3.Location = new System.Drawing.Point(255, 125);
-            this.numericUpDownSlotMagicN3.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsCount3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsCount3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsCount3.Location = new System.Drawing.Point(255, 125);
+            this.numericUpDownSlotsCount3.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotMagicN3.Name = "numericUpDownSlotMagicN3";
-            this.numericUpDownSlotMagicN3.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotMagicN3.TabIndex = 14;
+            this.numericUpDownSlotsCount3.Name = "numericUpDownSlotsCount3";
+            this.numericUpDownSlotsCount3.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsCount3.TabIndex = 14;
             // 
-            // numericUpDownSlotMagicN2
+            // numericUpDownSlotsCount2
             // 
-            this.numericUpDownSlotMagicN2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotMagicN2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotMagicN2.Location = new System.Drawing.Point(255, 85);
-            this.numericUpDownSlotMagicN2.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsCount2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsCount2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsCount2.Location = new System.Drawing.Point(255, 85);
+            this.numericUpDownSlotsCount2.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotMagicN2.Name = "numericUpDownSlotMagicN2";
-            this.numericUpDownSlotMagicN2.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotMagicN2.TabIndex = 10;
+            this.numericUpDownSlotsCount2.Name = "numericUpDownSlotsCount2";
+            this.numericUpDownSlotsCount2.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsCount2.TabIndex = 10;
             // 
-            // numericUpDownSlotMagicN8
+            // numericUpDownSlotsCount8
             // 
-            this.numericUpDownSlotMagicN8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotMagicN8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotMagicN8.Location = new System.Drawing.Point(255, 330);
-            this.numericUpDownSlotMagicN8.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsCount8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsCount8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsCount8.Location = new System.Drawing.Point(255, 330);
+            this.numericUpDownSlotsCount8.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotMagicN8.Name = "numericUpDownSlotMagicN8";
-            this.numericUpDownSlotMagicN8.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotMagicN8.TabIndex = 26;
+            this.numericUpDownSlotsCount8.Name = "numericUpDownSlotsCount8";
+            this.numericUpDownSlotsCount8.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsCount8.TabIndex = 26;
             // 
-            // comboBoxSlotMagic3
+            // comboBoxSlotsMagic3
             // 
-            this.comboBoxSlotMagic3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxSlotMagic3.FormattingEnabled = true;
-            this.comboBoxSlotMagic3.Items.AddRange(new object[] {
+            this.comboBoxSlotsMagic3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSlotsMagic3.FormattingEnabled = true;
+            this.comboBoxSlotsMagic3.Items.AddRange(new object[] {
+            "None",
             "Fire",
             "Fira",
             "Firaga",
@@ -23531,44 +23609,45 @@
             "Percent",
             "Catastrophe",
             "The End"});
-            this.comboBoxSlotMagic3.Location = new System.Drawing.Point(310, 124);
-            this.comboBoxSlotMagic3.Name = "comboBoxSlotMagic3";
-            this.comboBoxSlotMagic3.Size = new System.Drawing.Size(157, 25);
-            this.comboBoxSlotMagic3.TabIndex = 15;
+            this.comboBoxSlotsMagic3.Location = new System.Drawing.Point(310, 124);
+            this.comboBoxSlotsMagic3.Name = "comboBoxSlotsMagic3";
+            this.comboBoxSlotsMagic3.Size = new System.Drawing.Size(157, 25);
+            this.comboBoxSlotsMagic3.TabIndex = 15;
             // 
-            // numericUpDownSlotMagicN5
+            // numericUpDownSlotsCount5
             // 
-            this.numericUpDownSlotMagicN5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotMagicN5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotMagicN5.Location = new System.Drawing.Point(255, 205);
-            this.numericUpDownSlotMagicN5.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsCount5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsCount5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsCount5.Location = new System.Drawing.Point(255, 205);
+            this.numericUpDownSlotsCount5.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotMagicN5.Name = "numericUpDownSlotMagicN5";
-            this.numericUpDownSlotMagicN5.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotMagicN5.TabIndex = 20;
+            this.numericUpDownSlotsCount5.Name = "numericUpDownSlotsCount5";
+            this.numericUpDownSlotsCount5.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsCount5.TabIndex = 20;
             // 
-            // numericUpDownSlotMagicN1
+            // numericUpDownSlotsCount1
             // 
-            this.numericUpDownSlotMagicN1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotMagicN1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotMagicN1.Location = new System.Drawing.Point(255, 45);
-            this.numericUpDownSlotMagicN1.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsCount1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsCount1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsCount1.Location = new System.Drawing.Point(255, 45);
+            this.numericUpDownSlotsCount1.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotMagicN1.Name = "numericUpDownSlotMagicN1";
-            this.numericUpDownSlotMagicN1.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotMagicN1.TabIndex = 5;
+            this.numericUpDownSlotsCount1.Name = "numericUpDownSlotsCount1";
+            this.numericUpDownSlotsCount1.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsCount1.TabIndex = 5;
             // 
-            // comboBoxSlotMagic7
+            // comboBoxSlotsMagic7
             // 
-            this.comboBoxSlotMagic7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxSlotMagic7.FormattingEnabled = true;
-            this.comboBoxSlotMagic7.Items.AddRange(new object[] {
+            this.comboBoxSlotsMagic7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSlotsMagic7.FormattingEnabled = true;
+            this.comboBoxSlotsMagic7.Items.AddRange(new object[] {
+            "None",
             "Fire",
             "Fira",
             "Firaga",
@@ -23625,44 +23704,45 @@
             "Percent",
             "Catastrophe",
             "The End"});
-            this.comboBoxSlotMagic7.Location = new System.Drawing.Point(310, 287);
-            this.comboBoxSlotMagic7.Name = "comboBoxSlotMagic7";
-            this.comboBoxSlotMagic7.Size = new System.Drawing.Size(157, 25);
-            this.comboBoxSlotMagic7.TabIndex = 25;
+            this.comboBoxSlotsMagic7.Location = new System.Drawing.Point(310, 287);
+            this.comboBoxSlotsMagic7.Name = "comboBoxSlotsMagic7";
+            this.comboBoxSlotsMagic7.Size = new System.Drawing.Size(157, 25);
+            this.comboBoxSlotsMagic7.TabIndex = 25;
             // 
-            // numericUpDownSlotMagicN4
+            // numericUpDownSlotsCount4
             // 
-            this.numericUpDownSlotMagicN4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotMagicN4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotMagicN4.Location = new System.Drawing.Point(255, 165);
-            this.numericUpDownSlotMagicN4.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsCount4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsCount4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsCount4.Location = new System.Drawing.Point(255, 165);
+            this.numericUpDownSlotsCount4.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotMagicN4.Name = "numericUpDownSlotMagicN4";
-            this.numericUpDownSlotMagicN4.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotMagicN4.TabIndex = 18;
+            this.numericUpDownSlotsCount4.Name = "numericUpDownSlotsCount4";
+            this.numericUpDownSlotsCount4.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsCount4.TabIndex = 18;
             // 
-            // numericUpDownSlotMagicN6
+            // numericUpDownSlotsCount6
             // 
-            this.numericUpDownSlotMagicN6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotMagicN6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotMagicN6.Location = new System.Drawing.Point(255, 247);
-            this.numericUpDownSlotMagicN6.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsCount6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsCount6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsCount6.Location = new System.Drawing.Point(255, 247);
+            this.numericUpDownSlotsCount6.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotMagicN6.Name = "numericUpDownSlotMagicN6";
-            this.numericUpDownSlotMagicN6.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotMagicN6.TabIndex = 22;
+            this.numericUpDownSlotsCount6.Name = "numericUpDownSlotsCount6";
+            this.numericUpDownSlotsCount6.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsCount6.TabIndex = 22;
             // 
-            // comboBoxSlotMagic1
+            // comboBoxSlotsMagic1
             // 
-            this.comboBoxSlotMagic1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxSlotMagic1.FormattingEnabled = true;
-            this.comboBoxSlotMagic1.Items.AddRange(new object[] {
+            this.comboBoxSlotsMagic1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSlotsMagic1.FormattingEnabled = true;
+            this.comboBoxSlotsMagic1.Items.AddRange(new object[] {
+            "None",
             "Fire",
             "Fira",
             "Firaga",
@@ -23719,30 +23799,31 @@
             "Percent",
             "Catastrophe",
             "The End"});
-            this.comboBoxSlotMagic1.Location = new System.Drawing.Point(310, 44);
-            this.comboBoxSlotMagic1.Name = "comboBoxSlotMagic1";
-            this.comboBoxSlotMagic1.Size = new System.Drawing.Size(157, 25);
-            this.comboBoxSlotMagic1.TabIndex = 7;
+            this.comboBoxSlotsMagic1.Location = new System.Drawing.Point(310, 44);
+            this.comboBoxSlotsMagic1.Name = "comboBoxSlotsMagic1";
+            this.comboBoxSlotsMagic1.Size = new System.Drawing.Size(157, 25);
+            this.comboBoxSlotsMagic1.TabIndex = 7;
             // 
-            // numericUpDownSlotMagicN7
+            // numericUpDownSlotsCount7
             // 
-            this.numericUpDownSlotMagicN7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotMagicN7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotMagicN7.Location = new System.Drawing.Point(255, 287);
-            this.numericUpDownSlotMagicN7.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsCount7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsCount7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsCount7.Location = new System.Drawing.Point(255, 287);
+            this.numericUpDownSlotsCount7.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotMagicN7.Name = "numericUpDownSlotMagicN7";
-            this.numericUpDownSlotMagicN7.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotMagicN7.TabIndex = 24;
+            this.numericUpDownSlotsCount7.Name = "numericUpDownSlotsCount7";
+            this.numericUpDownSlotsCount7.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsCount7.TabIndex = 24;
             // 
-            // comboBoxSlotMagic4
+            // comboBoxSlotsMagic4
             // 
-            this.comboBoxSlotMagic4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxSlotMagic4.FormattingEnabled = true;
-            this.comboBoxSlotMagic4.Items.AddRange(new object[] {
+            this.comboBoxSlotsMagic4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSlotsMagic4.FormattingEnabled = true;
+            this.comboBoxSlotsMagic4.Items.AddRange(new object[] {
+            "None",
             "Fire",
             "Fira",
             "Firaga",
@@ -23799,16 +23880,17 @@
             "Percent",
             "Catastrophe",
             "The End"});
-            this.comboBoxSlotMagic4.Location = new System.Drawing.Point(310, 165);
-            this.comboBoxSlotMagic4.Name = "comboBoxSlotMagic4";
-            this.comboBoxSlotMagic4.Size = new System.Drawing.Size(157, 25);
-            this.comboBoxSlotMagic4.TabIndex = 19;
+            this.comboBoxSlotsMagic4.Location = new System.Drawing.Point(310, 165);
+            this.comboBoxSlotsMagic4.Name = "comboBoxSlotsMagic4";
+            this.comboBoxSlotsMagic4.Size = new System.Drawing.Size(157, 25);
+            this.comboBoxSlotsMagic4.TabIndex = 19;
             // 
-            // comboBoxSlotMagic6
+            // comboBoxSlotsMagic6
             // 
-            this.comboBoxSlotMagic6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxSlotMagic6.FormattingEnabled = true;
-            this.comboBoxSlotMagic6.Items.AddRange(new object[] {
+            this.comboBoxSlotsMagic6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSlotsMagic6.FormattingEnabled = true;
+            this.comboBoxSlotsMagic6.Items.AddRange(new object[] {
+            "None",
             "Fire",
             "Fira",
             "Firaga",
@@ -23865,10 +23947,10 @@
             "Percent",
             "Catastrophe",
             "The End"});
-            this.comboBoxSlotMagic6.Location = new System.Drawing.Point(310, 247);
-            this.comboBoxSlotMagic6.Name = "comboBoxSlotMagic6";
-            this.comboBoxSlotMagic6.Size = new System.Drawing.Size(157, 25);
-            this.comboBoxSlotMagic6.TabIndex = 23;
+            this.comboBoxSlotsMagic6.Location = new System.Drawing.Point(310, 247);
+            this.comboBoxSlotsMagic6.Name = "comboBoxSlotsMagic6";
+            this.comboBoxSlotsMagic6.Size = new System.Drawing.Size(157, 25);
+            this.comboBoxSlotsMagic6.TabIndex = 23;
             // 
             // groupBoxSlotArray
             // 
@@ -23896,66 +23978,66 @@
             this.tableLayoutPanelSlotArray.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanelSlotArray.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanelSlotArray.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray54, 0, 5);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray55, 0, 5);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray53, 0, 5);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray51, 0, 5);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray52, 0, 5);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray59, 0, 5);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray60, 0, 5);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray58, 0, 5);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray56, 0, 5);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray57, 0, 5);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray1, 0, 0);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray2, 1, 0);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray3, 2, 0);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray4, 3, 0);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray5, 4, 0);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray6, 5, 0);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray7, 6, 0);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray8, 7, 0);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray9, 8, 0);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray10, 9, 0);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray11, 0, 1);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray12, 1, 1);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray13, 2, 1);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray14, 3, 1);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray15, 4, 1);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray16, 5, 1);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray17, 6, 1);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray18, 7, 1);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray19, 8, 1);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray20, 9, 1);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray21, 0, 2);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray22, 1, 2);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray23, 2, 2);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray24, 3, 2);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray25, 4, 2);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray26, 5, 2);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray27, 6, 2);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray28, 7, 2);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray29, 8, 2);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray30, 9, 2);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray31, 0, 3);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray32, 1, 3);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray33, 2, 3);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray34, 3, 3);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray35, 4, 3);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray36, 5, 3);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray37, 6, 3);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray38, 7, 3);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray39, 8, 3);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray40, 9, 3);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray41, 0, 4);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray42, 1, 4);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray43, 2, 4);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray44, 3, 4);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray45, 4, 4);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray46, 5, 4);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray47, 6, 4);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray48, 7, 4);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray49, 8, 4);
-            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotArray50, 9, 4);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray54, 0, 5);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray55, 0, 5);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray53, 0, 5);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray51, 0, 5);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray52, 0, 5);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray59, 0, 5);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray60, 0, 5);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray58, 0, 5);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray56, 0, 5);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray57, 0, 5);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray1, 0, 0);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray2, 1, 0);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray3, 2, 0);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray4, 3, 0);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray5, 4, 0);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray6, 5, 0);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray7, 6, 0);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray8, 7, 0);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray9, 8, 0);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray10, 9, 0);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray11, 0, 1);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray12, 1, 1);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray13, 2, 1);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray14, 3, 1);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray15, 4, 1);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray16, 5, 1);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray17, 6, 1);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray18, 7, 1);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray19, 8, 1);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray20, 9, 1);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray21, 0, 2);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray22, 1, 2);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray23, 2, 2);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray24, 3, 2);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray25, 4, 2);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray26, 5, 2);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray27, 6, 2);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray28, 7, 2);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray29, 8, 2);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray30, 9, 2);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray31, 0, 3);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray32, 1, 3);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray33, 2, 3);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray34, 3, 3);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray35, 4, 3);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray36, 5, 3);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray37, 6, 3);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray38, 7, 3);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray39, 8, 3);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray40, 9, 3);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray41, 0, 4);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray42, 1, 4);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray43, 2, 4);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray44, 3, 4);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray45, 4, 4);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray46, 5, 4);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray47, 6, 4);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray48, 7, 4);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray49, 8, 4);
+            this.tableLayoutPanelSlotArray.Controls.Add(this.numericUpDownSlotsArray50, 9, 4);
             this.tableLayoutPanelSlotArray.Location = new System.Drawing.Point(6, 35);
             this.tableLayoutPanelSlotArray.Name = "tableLayoutPanelSlotArray";
             this.tableLayoutPanelSlotArray.RowCount = 6;
@@ -23970,845 +24052,845 @@
             this.tableLayoutPanelSlotArray.Size = new System.Drawing.Size(556, 239);
             this.tableLayoutPanelSlotArray.TabIndex = 5;
             // 
-            // numericUpDownSlotArray54
+            // numericUpDownSlotsArray54
             // 
-            this.numericUpDownSlotArray54.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray54.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray54.Location = new System.Drawing.Point(169, 198);
-            this.numericUpDownSlotArray54.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray54.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray54.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray54.Location = new System.Drawing.Point(169, 198);
+            this.numericUpDownSlotsArray54.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray54.Name = "numericUpDownSlotArray54";
-            this.numericUpDownSlotArray54.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray54.TabIndex = 63;
+            this.numericUpDownSlotsArray54.Name = "numericUpDownSlotsArray54";
+            this.numericUpDownSlotsArray54.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray54.TabIndex = 63;
             // 
-            // numericUpDownSlotArray55
+            // numericUpDownSlotsArray55
             // 
-            this.numericUpDownSlotArray55.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray55.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray55.Location = new System.Drawing.Point(224, 198);
-            this.numericUpDownSlotArray55.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray55.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray55.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray55.Location = new System.Drawing.Point(224, 198);
+            this.numericUpDownSlotsArray55.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray55.Name = "numericUpDownSlotArray55";
-            this.numericUpDownSlotArray55.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray55.TabIndex = 62;
+            this.numericUpDownSlotsArray55.Name = "numericUpDownSlotsArray55";
+            this.numericUpDownSlotsArray55.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray55.TabIndex = 62;
             // 
-            // numericUpDownSlotArray53
+            // numericUpDownSlotsArray53
             // 
-            this.numericUpDownSlotArray53.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray53.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray53.Location = new System.Drawing.Point(114, 198);
-            this.numericUpDownSlotArray53.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray53.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray53.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray53.Location = new System.Drawing.Point(114, 198);
+            this.numericUpDownSlotsArray53.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray53.Name = "numericUpDownSlotArray53";
-            this.numericUpDownSlotArray53.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray53.TabIndex = 61;
+            this.numericUpDownSlotsArray53.Name = "numericUpDownSlotsArray53";
+            this.numericUpDownSlotsArray53.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray53.TabIndex = 61;
             // 
-            // numericUpDownSlotArray51
+            // numericUpDownSlotsArray51
             // 
-            this.numericUpDownSlotArray51.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray51.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray51.Location = new System.Drawing.Point(4, 198);
-            this.numericUpDownSlotArray51.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray51.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray51.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray51.Location = new System.Drawing.Point(4, 198);
+            this.numericUpDownSlotsArray51.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray51.Name = "numericUpDownSlotArray51";
-            this.numericUpDownSlotArray51.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray51.TabIndex = 60;
+            this.numericUpDownSlotsArray51.Name = "numericUpDownSlotsArray51";
+            this.numericUpDownSlotsArray51.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray51.TabIndex = 60;
             // 
-            // numericUpDownSlotArray52
+            // numericUpDownSlotsArray52
             // 
-            this.numericUpDownSlotArray52.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray52.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray52.Location = new System.Drawing.Point(59, 198);
-            this.numericUpDownSlotArray52.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray52.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray52.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray52.Location = new System.Drawing.Point(59, 198);
+            this.numericUpDownSlotsArray52.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray52.Name = "numericUpDownSlotArray52";
-            this.numericUpDownSlotArray52.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray52.TabIndex = 57;
+            this.numericUpDownSlotsArray52.Name = "numericUpDownSlotsArray52";
+            this.numericUpDownSlotsArray52.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray52.TabIndex = 57;
             // 
-            // numericUpDownSlotArray59
+            // numericUpDownSlotsArray59
             // 
-            this.numericUpDownSlotArray59.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray59.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray59.Location = new System.Drawing.Point(444, 198);
-            this.numericUpDownSlotArray59.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray59.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray59.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray59.Location = new System.Drawing.Point(444, 198);
+            this.numericUpDownSlotsArray59.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray59.Name = "numericUpDownSlotArray59";
-            this.numericUpDownSlotArray59.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray59.TabIndex = 56;
+            this.numericUpDownSlotsArray59.Name = "numericUpDownSlotsArray59";
+            this.numericUpDownSlotsArray59.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray59.TabIndex = 56;
             // 
-            // numericUpDownSlotArray60
+            // numericUpDownSlotsArray60
             // 
-            this.numericUpDownSlotArray60.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray60.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray60.Location = new System.Drawing.Point(502, 198);
-            this.numericUpDownSlotArray60.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray60.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray60.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray60.Location = new System.Drawing.Point(502, 198);
+            this.numericUpDownSlotsArray60.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray60.Name = "numericUpDownSlotArray60";
-            this.numericUpDownSlotArray60.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray60.TabIndex = 55;
+            this.numericUpDownSlotsArray60.Name = "numericUpDownSlotsArray60";
+            this.numericUpDownSlotsArray60.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray60.TabIndex = 55;
             // 
-            // numericUpDownSlotArray58
+            // numericUpDownSlotsArray58
             // 
-            this.numericUpDownSlotArray58.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray58.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray58.Location = new System.Drawing.Point(389, 198);
-            this.numericUpDownSlotArray58.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray58.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray58.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray58.Location = new System.Drawing.Point(389, 198);
+            this.numericUpDownSlotsArray58.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray58.Name = "numericUpDownSlotArray58";
-            this.numericUpDownSlotArray58.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray58.TabIndex = 54;
+            this.numericUpDownSlotsArray58.Name = "numericUpDownSlotsArray58";
+            this.numericUpDownSlotsArray58.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray58.TabIndex = 54;
             // 
-            // numericUpDownSlotArray56
+            // numericUpDownSlotsArray56
             // 
-            this.numericUpDownSlotArray56.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray56.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray56.Location = new System.Drawing.Point(279, 198);
-            this.numericUpDownSlotArray56.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray56.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray56.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray56.Location = new System.Drawing.Point(279, 198);
+            this.numericUpDownSlotsArray56.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray56.Name = "numericUpDownSlotArray56";
-            this.numericUpDownSlotArray56.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray56.TabIndex = 53;
+            this.numericUpDownSlotsArray56.Name = "numericUpDownSlotsArray56";
+            this.numericUpDownSlotsArray56.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray56.TabIndex = 53;
             // 
-            // numericUpDownSlotArray57
+            // numericUpDownSlotsArray57
             // 
-            this.numericUpDownSlotArray57.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray57.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray57.Location = new System.Drawing.Point(334, 198);
-            this.numericUpDownSlotArray57.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray57.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray57.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray57.Location = new System.Drawing.Point(334, 198);
+            this.numericUpDownSlotsArray57.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray57.Name = "numericUpDownSlotArray57";
-            this.numericUpDownSlotArray57.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray57.TabIndex = 52;
+            this.numericUpDownSlotsArray57.Name = "numericUpDownSlotsArray57";
+            this.numericUpDownSlotsArray57.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray57.TabIndex = 52;
             // 
-            // numericUpDownSlotArray1
+            // numericUpDownSlotsArray1
             // 
-            this.numericUpDownSlotArray1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray1.Location = new System.Drawing.Point(4, 3);
-            this.numericUpDownSlotArray1.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray1.Location = new System.Drawing.Point(4, 3);
+            this.numericUpDownSlotsArray1.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray1.Name = "numericUpDownSlotArray1";
-            this.numericUpDownSlotArray1.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray1.TabIndex = 4;
+            this.numericUpDownSlotsArray1.Name = "numericUpDownSlotsArray1";
+            this.numericUpDownSlotsArray1.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray1.TabIndex = 4;
             // 
-            // numericUpDownSlotArray2
+            // numericUpDownSlotsArray2
             // 
-            this.numericUpDownSlotArray2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray2.Location = new System.Drawing.Point(59, 3);
-            this.numericUpDownSlotArray2.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray2.Location = new System.Drawing.Point(59, 3);
+            this.numericUpDownSlotsArray2.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray2.Name = "numericUpDownSlotArray2";
-            this.numericUpDownSlotArray2.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray2.TabIndex = 5;
+            this.numericUpDownSlotsArray2.Name = "numericUpDownSlotsArray2";
+            this.numericUpDownSlotsArray2.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray2.TabIndex = 5;
             // 
-            // numericUpDownSlotArray3
+            // numericUpDownSlotsArray3
             // 
-            this.numericUpDownSlotArray3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray3.Location = new System.Drawing.Point(114, 3);
-            this.numericUpDownSlotArray3.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray3.Location = new System.Drawing.Point(114, 3);
+            this.numericUpDownSlotsArray3.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray3.Name = "numericUpDownSlotArray3";
-            this.numericUpDownSlotArray3.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray3.TabIndex = 7;
+            this.numericUpDownSlotsArray3.Name = "numericUpDownSlotsArray3";
+            this.numericUpDownSlotsArray3.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray3.TabIndex = 7;
             // 
-            // numericUpDownSlotArray4
+            // numericUpDownSlotsArray4
             // 
-            this.numericUpDownSlotArray4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray4.Location = new System.Drawing.Point(169, 3);
-            this.numericUpDownSlotArray4.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray4.Location = new System.Drawing.Point(169, 3);
+            this.numericUpDownSlotsArray4.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray4.Name = "numericUpDownSlotArray4";
-            this.numericUpDownSlotArray4.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray4.TabIndex = 8;
+            this.numericUpDownSlotsArray4.Name = "numericUpDownSlotsArray4";
+            this.numericUpDownSlotsArray4.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray4.TabIndex = 8;
             // 
-            // numericUpDownSlotArray5
+            // numericUpDownSlotsArray5
             // 
-            this.numericUpDownSlotArray5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray5.Location = new System.Drawing.Point(224, 3);
-            this.numericUpDownSlotArray5.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray5.Location = new System.Drawing.Point(224, 3);
+            this.numericUpDownSlotsArray5.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray5.Name = "numericUpDownSlotArray5";
-            this.numericUpDownSlotArray5.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray5.TabIndex = 6;
+            this.numericUpDownSlotsArray5.Name = "numericUpDownSlotsArray5";
+            this.numericUpDownSlotsArray5.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray5.TabIndex = 6;
             // 
-            // numericUpDownSlotArray6
+            // numericUpDownSlotsArray6
             // 
-            this.numericUpDownSlotArray6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray6.Location = new System.Drawing.Point(279, 3);
-            this.numericUpDownSlotArray6.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray6.Location = new System.Drawing.Point(279, 3);
+            this.numericUpDownSlotsArray6.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray6.Name = "numericUpDownSlotArray6";
-            this.numericUpDownSlotArray6.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray6.TabIndex = 15;
+            this.numericUpDownSlotsArray6.Name = "numericUpDownSlotsArray6";
+            this.numericUpDownSlotsArray6.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray6.TabIndex = 15;
             // 
-            // numericUpDownSlotArray7
+            // numericUpDownSlotsArray7
             // 
-            this.numericUpDownSlotArray7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray7.Location = new System.Drawing.Point(334, 3);
-            this.numericUpDownSlotArray7.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray7.Location = new System.Drawing.Point(334, 3);
+            this.numericUpDownSlotsArray7.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray7.Name = "numericUpDownSlotArray7";
-            this.numericUpDownSlotArray7.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray7.TabIndex = 14;
+            this.numericUpDownSlotsArray7.Name = "numericUpDownSlotsArray7";
+            this.numericUpDownSlotsArray7.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray7.TabIndex = 14;
             // 
-            // numericUpDownSlotArray8
+            // numericUpDownSlotsArray8
             // 
-            this.numericUpDownSlotArray8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray8.Location = new System.Drawing.Point(389, 3);
-            this.numericUpDownSlotArray8.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray8.Location = new System.Drawing.Point(389, 3);
+            this.numericUpDownSlotsArray8.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray8.Name = "numericUpDownSlotArray8";
-            this.numericUpDownSlotArray8.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray8.TabIndex = 12;
+            this.numericUpDownSlotsArray8.Name = "numericUpDownSlotsArray8";
+            this.numericUpDownSlotsArray8.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray8.TabIndex = 12;
             // 
-            // numericUpDownSlotArray9
+            // numericUpDownSlotsArray9
             // 
-            this.numericUpDownSlotArray9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray9.Location = new System.Drawing.Point(444, 3);
-            this.numericUpDownSlotArray9.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray9.Location = new System.Drawing.Point(444, 3);
+            this.numericUpDownSlotsArray9.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray9.Name = "numericUpDownSlotArray9";
-            this.numericUpDownSlotArray9.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray9.TabIndex = 11;
+            this.numericUpDownSlotsArray9.Name = "numericUpDownSlotsArray9";
+            this.numericUpDownSlotsArray9.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray9.TabIndex = 11;
             // 
-            // numericUpDownSlotArray10
+            // numericUpDownSlotsArray10
             // 
-            this.numericUpDownSlotArray10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray10.Location = new System.Drawing.Point(502, 3);
-            this.numericUpDownSlotArray10.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray10.Location = new System.Drawing.Point(502, 3);
+            this.numericUpDownSlotsArray10.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray10.Name = "numericUpDownSlotArray10";
-            this.numericUpDownSlotArray10.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray10.TabIndex = 13;
+            this.numericUpDownSlotsArray10.Name = "numericUpDownSlotsArray10";
+            this.numericUpDownSlotsArray10.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray10.TabIndex = 13;
             // 
-            // numericUpDownSlotArray11
+            // numericUpDownSlotsArray11
             // 
-            this.numericUpDownSlotArray11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray11.Location = new System.Drawing.Point(4, 42);
-            this.numericUpDownSlotArray11.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray11.Location = new System.Drawing.Point(4, 42);
+            this.numericUpDownSlotsArray11.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray11.Name = "numericUpDownSlotArray11";
-            this.numericUpDownSlotArray11.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray11.TabIndex = 10;
+            this.numericUpDownSlotsArray11.Name = "numericUpDownSlotsArray11";
+            this.numericUpDownSlotsArray11.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray11.TabIndex = 10;
             // 
-            // numericUpDownSlotArray12
+            // numericUpDownSlotsArray12
             // 
-            this.numericUpDownSlotArray12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray12.Location = new System.Drawing.Point(59, 42);
-            this.numericUpDownSlotArray12.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray12.Location = new System.Drawing.Point(59, 42);
+            this.numericUpDownSlotsArray12.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray12.Name = "numericUpDownSlotArray12";
-            this.numericUpDownSlotArray12.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray12.TabIndex = 9;
+            this.numericUpDownSlotsArray12.Name = "numericUpDownSlotsArray12";
+            this.numericUpDownSlotsArray12.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray12.TabIndex = 9;
             // 
-            // numericUpDownSlotArray13
+            // numericUpDownSlotsArray13
             // 
-            this.numericUpDownSlotArray13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray13.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray13.Location = new System.Drawing.Point(114, 42);
-            this.numericUpDownSlotArray13.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray13.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray13.Location = new System.Drawing.Point(114, 42);
+            this.numericUpDownSlotsArray13.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray13.Name = "numericUpDownSlotArray13";
-            this.numericUpDownSlotArray13.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray13.TabIndex = 22;
+            this.numericUpDownSlotsArray13.Name = "numericUpDownSlotsArray13";
+            this.numericUpDownSlotsArray13.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray13.TabIndex = 22;
             // 
-            // numericUpDownSlotArray14
+            // numericUpDownSlotsArray14
             // 
-            this.numericUpDownSlotArray14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray14.Location = new System.Drawing.Point(169, 42);
-            this.numericUpDownSlotArray14.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray14.Location = new System.Drawing.Point(169, 42);
+            this.numericUpDownSlotsArray14.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray14.Name = "numericUpDownSlotArray14";
-            this.numericUpDownSlotArray14.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray14.TabIndex = 23;
+            this.numericUpDownSlotsArray14.Name = "numericUpDownSlotsArray14";
+            this.numericUpDownSlotsArray14.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray14.TabIndex = 23;
             // 
-            // numericUpDownSlotArray15
+            // numericUpDownSlotsArray15
             // 
-            this.numericUpDownSlotArray15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray15.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray15.Location = new System.Drawing.Point(224, 42);
-            this.numericUpDownSlotArray15.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray15.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray15.Location = new System.Drawing.Point(224, 42);
+            this.numericUpDownSlotsArray15.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray15.Name = "numericUpDownSlotArray15";
-            this.numericUpDownSlotArray15.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray15.TabIndex = 21;
+            this.numericUpDownSlotsArray15.Name = "numericUpDownSlotsArray15";
+            this.numericUpDownSlotsArray15.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray15.TabIndex = 21;
             // 
-            // numericUpDownSlotArray16
+            // numericUpDownSlotsArray16
             // 
-            this.numericUpDownSlotArray16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray16.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray16.Location = new System.Drawing.Point(279, 42);
-            this.numericUpDownSlotArray16.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray16.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray16.Location = new System.Drawing.Point(279, 42);
+            this.numericUpDownSlotsArray16.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray16.Name = "numericUpDownSlotArray16";
-            this.numericUpDownSlotArray16.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray16.TabIndex = 20;
+            this.numericUpDownSlotsArray16.Name = "numericUpDownSlotsArray16";
+            this.numericUpDownSlotsArray16.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray16.TabIndex = 20;
             // 
-            // numericUpDownSlotArray17
+            // numericUpDownSlotsArray17
             // 
-            this.numericUpDownSlotArray17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray17.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray17.Location = new System.Drawing.Point(334, 42);
-            this.numericUpDownSlotArray17.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray17.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray17.Location = new System.Drawing.Point(334, 42);
+            this.numericUpDownSlotsArray17.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray17.Name = "numericUpDownSlotArray17";
-            this.numericUpDownSlotArray17.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray17.TabIndex = 19;
+            this.numericUpDownSlotsArray17.Name = "numericUpDownSlotsArray17";
+            this.numericUpDownSlotsArray17.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray17.TabIndex = 19;
             // 
-            // numericUpDownSlotArray18
+            // numericUpDownSlotsArray18
             // 
-            this.numericUpDownSlotArray18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray18.Location = new System.Drawing.Point(389, 42);
-            this.numericUpDownSlotArray18.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray18.Location = new System.Drawing.Point(389, 42);
+            this.numericUpDownSlotsArray18.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray18.Name = "numericUpDownSlotArray18";
-            this.numericUpDownSlotArray18.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray18.TabIndex = 24;
+            this.numericUpDownSlotsArray18.Name = "numericUpDownSlotsArray18";
+            this.numericUpDownSlotsArray18.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray18.TabIndex = 24;
             // 
-            // numericUpDownSlotArray19
+            // numericUpDownSlotsArray19
             // 
-            this.numericUpDownSlotArray19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray19.Location = new System.Drawing.Point(444, 42);
-            this.numericUpDownSlotArray19.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray19.Location = new System.Drawing.Point(444, 42);
+            this.numericUpDownSlotsArray19.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray19.Name = "numericUpDownSlotArray19";
-            this.numericUpDownSlotArray19.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray19.TabIndex = 18;
+            this.numericUpDownSlotsArray19.Name = "numericUpDownSlotsArray19";
+            this.numericUpDownSlotsArray19.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray19.TabIndex = 18;
             // 
-            // numericUpDownSlotArray20
+            // numericUpDownSlotsArray20
             // 
-            this.numericUpDownSlotArray20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray20.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray20.Location = new System.Drawing.Point(502, 42);
-            this.numericUpDownSlotArray20.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray20.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray20.Location = new System.Drawing.Point(502, 42);
+            this.numericUpDownSlotsArray20.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray20.Name = "numericUpDownSlotArray20";
-            this.numericUpDownSlotArray20.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray20.TabIndex = 25;
+            this.numericUpDownSlotsArray20.Name = "numericUpDownSlotsArray20";
+            this.numericUpDownSlotsArray20.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray20.TabIndex = 25;
             // 
-            // numericUpDownSlotArray21
+            // numericUpDownSlotsArray21
             // 
-            this.numericUpDownSlotArray21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray21.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray21.Location = new System.Drawing.Point(4, 81);
-            this.numericUpDownSlotArray21.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray21.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray21.Location = new System.Drawing.Point(4, 81);
+            this.numericUpDownSlotsArray21.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray21.Name = "numericUpDownSlotArray21";
-            this.numericUpDownSlotArray21.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray21.TabIndex = 17;
+            this.numericUpDownSlotsArray21.Name = "numericUpDownSlotsArray21";
+            this.numericUpDownSlotsArray21.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray21.TabIndex = 17;
             // 
-            // numericUpDownSlotArray22
+            // numericUpDownSlotsArray22
             // 
-            this.numericUpDownSlotArray22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray22.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray22.Location = new System.Drawing.Point(59, 81);
-            this.numericUpDownSlotArray22.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray22.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray22.Location = new System.Drawing.Point(59, 81);
+            this.numericUpDownSlotsArray22.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray22.Name = "numericUpDownSlotArray22";
-            this.numericUpDownSlotArray22.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray22.TabIndex = 16;
+            this.numericUpDownSlotsArray22.Name = "numericUpDownSlotsArray22";
+            this.numericUpDownSlotsArray22.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray22.TabIndex = 16;
             // 
-            // numericUpDownSlotArray23
+            // numericUpDownSlotsArray23
             // 
-            this.numericUpDownSlotArray23.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray23.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray23.Location = new System.Drawing.Point(114, 81);
-            this.numericUpDownSlotArray23.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray23.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray23.Location = new System.Drawing.Point(114, 81);
+            this.numericUpDownSlotsArray23.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray23.Name = "numericUpDownSlotArray23";
-            this.numericUpDownSlotArray23.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray23.TabIndex = 32;
+            this.numericUpDownSlotsArray23.Name = "numericUpDownSlotsArray23";
+            this.numericUpDownSlotsArray23.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray23.TabIndex = 32;
             // 
-            // numericUpDownSlotArray24
+            // numericUpDownSlotsArray24
             // 
-            this.numericUpDownSlotArray24.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray24.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray24.Location = new System.Drawing.Point(169, 81);
-            this.numericUpDownSlotArray24.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray24.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray24.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray24.Location = new System.Drawing.Point(169, 81);
+            this.numericUpDownSlotsArray24.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray24.Name = "numericUpDownSlotArray24";
-            this.numericUpDownSlotArray24.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray24.TabIndex = 33;
+            this.numericUpDownSlotsArray24.Name = "numericUpDownSlotsArray24";
+            this.numericUpDownSlotsArray24.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray24.TabIndex = 33;
             // 
-            // numericUpDownSlotArray25
+            // numericUpDownSlotsArray25
             // 
-            this.numericUpDownSlotArray25.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray25.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray25.Location = new System.Drawing.Point(224, 81);
-            this.numericUpDownSlotArray25.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray25.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray25.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray25.Location = new System.Drawing.Point(224, 81);
+            this.numericUpDownSlotsArray25.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray25.Name = "numericUpDownSlotArray25";
-            this.numericUpDownSlotArray25.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray25.TabIndex = 31;
+            this.numericUpDownSlotsArray25.Name = "numericUpDownSlotsArray25";
+            this.numericUpDownSlotsArray25.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray25.TabIndex = 31;
             // 
-            // numericUpDownSlotArray26
+            // numericUpDownSlotsArray26
             // 
-            this.numericUpDownSlotArray26.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray26.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray26.Location = new System.Drawing.Point(279, 81);
-            this.numericUpDownSlotArray26.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray26.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray26.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray26.Location = new System.Drawing.Point(279, 81);
+            this.numericUpDownSlotsArray26.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray26.Name = "numericUpDownSlotArray26";
-            this.numericUpDownSlotArray26.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray26.TabIndex = 30;
+            this.numericUpDownSlotsArray26.Name = "numericUpDownSlotsArray26";
+            this.numericUpDownSlotsArray26.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray26.TabIndex = 30;
             // 
-            // numericUpDownSlotArray27
+            // numericUpDownSlotsArray27
             // 
-            this.numericUpDownSlotArray27.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray27.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray27.Location = new System.Drawing.Point(334, 81);
-            this.numericUpDownSlotArray27.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray27.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray27.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray27.Location = new System.Drawing.Point(334, 81);
+            this.numericUpDownSlotsArray27.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray27.Name = "numericUpDownSlotArray27";
-            this.numericUpDownSlotArray27.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray27.TabIndex = 29;
+            this.numericUpDownSlotsArray27.Name = "numericUpDownSlotsArray27";
+            this.numericUpDownSlotsArray27.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray27.TabIndex = 29;
             // 
-            // numericUpDownSlotArray28
+            // numericUpDownSlotsArray28
             // 
-            this.numericUpDownSlotArray28.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray28.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray28.Location = new System.Drawing.Point(389, 81);
-            this.numericUpDownSlotArray28.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray28.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray28.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray28.Location = new System.Drawing.Point(389, 81);
+            this.numericUpDownSlotsArray28.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray28.Name = "numericUpDownSlotArray28";
-            this.numericUpDownSlotArray28.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray28.TabIndex = 34;
+            this.numericUpDownSlotsArray28.Name = "numericUpDownSlotsArray28";
+            this.numericUpDownSlotsArray28.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray28.TabIndex = 34;
             // 
-            // numericUpDownSlotArray29
+            // numericUpDownSlotsArray29
             // 
-            this.numericUpDownSlotArray29.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray29.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray29.Location = new System.Drawing.Point(444, 81);
-            this.numericUpDownSlotArray29.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray29.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray29.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray29.Location = new System.Drawing.Point(444, 81);
+            this.numericUpDownSlotsArray29.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray29.Name = "numericUpDownSlotArray29";
-            this.numericUpDownSlotArray29.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray29.TabIndex = 28;
+            this.numericUpDownSlotsArray29.Name = "numericUpDownSlotsArray29";
+            this.numericUpDownSlotsArray29.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray29.TabIndex = 28;
             // 
-            // numericUpDownSlotArray30
+            // numericUpDownSlotsArray30
             // 
-            this.numericUpDownSlotArray30.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray30.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray30.Location = new System.Drawing.Point(502, 81);
-            this.numericUpDownSlotArray30.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray30.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray30.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray30.Location = new System.Drawing.Point(502, 81);
+            this.numericUpDownSlotsArray30.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray30.Name = "numericUpDownSlotArray30";
-            this.numericUpDownSlotArray30.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray30.TabIndex = 35;
+            this.numericUpDownSlotsArray30.Name = "numericUpDownSlotsArray30";
+            this.numericUpDownSlotsArray30.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray30.TabIndex = 35;
             // 
-            // numericUpDownSlotArray31
+            // numericUpDownSlotsArray31
             // 
-            this.numericUpDownSlotArray31.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray31.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray31.Location = new System.Drawing.Point(4, 120);
-            this.numericUpDownSlotArray31.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray31.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray31.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray31.Location = new System.Drawing.Point(4, 120);
+            this.numericUpDownSlotsArray31.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray31.Name = "numericUpDownSlotArray31";
-            this.numericUpDownSlotArray31.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray31.TabIndex = 27;
+            this.numericUpDownSlotsArray31.Name = "numericUpDownSlotsArray31";
+            this.numericUpDownSlotsArray31.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray31.TabIndex = 27;
             // 
-            // numericUpDownSlotArray32
+            // numericUpDownSlotsArray32
             // 
-            this.numericUpDownSlotArray32.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray32.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray32.Location = new System.Drawing.Point(59, 120);
-            this.numericUpDownSlotArray32.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray32.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray32.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray32.Location = new System.Drawing.Point(59, 120);
+            this.numericUpDownSlotsArray32.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray32.Name = "numericUpDownSlotArray32";
-            this.numericUpDownSlotArray32.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray32.TabIndex = 26;
+            this.numericUpDownSlotsArray32.Name = "numericUpDownSlotsArray32";
+            this.numericUpDownSlotsArray32.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray32.TabIndex = 26;
             // 
-            // numericUpDownSlotArray33
+            // numericUpDownSlotsArray33
             // 
-            this.numericUpDownSlotArray33.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray33.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray33.Location = new System.Drawing.Point(114, 120);
-            this.numericUpDownSlotArray33.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray33.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray33.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray33.Location = new System.Drawing.Point(114, 120);
+            this.numericUpDownSlotsArray33.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray33.Name = "numericUpDownSlotArray33";
-            this.numericUpDownSlotArray33.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray33.TabIndex = 42;
+            this.numericUpDownSlotsArray33.Name = "numericUpDownSlotsArray33";
+            this.numericUpDownSlotsArray33.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray33.TabIndex = 42;
             // 
-            // numericUpDownSlotArray34
+            // numericUpDownSlotsArray34
             // 
-            this.numericUpDownSlotArray34.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray34.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray34.Location = new System.Drawing.Point(169, 120);
-            this.numericUpDownSlotArray34.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray34.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray34.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray34.Location = new System.Drawing.Point(169, 120);
+            this.numericUpDownSlotsArray34.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray34.Name = "numericUpDownSlotArray34";
-            this.numericUpDownSlotArray34.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray34.TabIndex = 43;
+            this.numericUpDownSlotsArray34.Name = "numericUpDownSlotsArray34";
+            this.numericUpDownSlotsArray34.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray34.TabIndex = 43;
             // 
-            // numericUpDownSlotArray35
+            // numericUpDownSlotsArray35
             // 
-            this.numericUpDownSlotArray35.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray35.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray35.Location = new System.Drawing.Point(224, 120);
-            this.numericUpDownSlotArray35.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray35.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray35.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray35.Location = new System.Drawing.Point(224, 120);
+            this.numericUpDownSlotsArray35.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray35.Name = "numericUpDownSlotArray35";
-            this.numericUpDownSlotArray35.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray35.TabIndex = 41;
+            this.numericUpDownSlotsArray35.Name = "numericUpDownSlotsArray35";
+            this.numericUpDownSlotsArray35.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray35.TabIndex = 41;
             // 
-            // numericUpDownSlotArray36
+            // numericUpDownSlotsArray36
             // 
-            this.numericUpDownSlotArray36.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray36.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray36.Location = new System.Drawing.Point(279, 120);
-            this.numericUpDownSlotArray36.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray36.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray36.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray36.Location = new System.Drawing.Point(279, 120);
+            this.numericUpDownSlotsArray36.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray36.Name = "numericUpDownSlotArray36";
-            this.numericUpDownSlotArray36.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray36.TabIndex = 40;
+            this.numericUpDownSlotsArray36.Name = "numericUpDownSlotsArray36";
+            this.numericUpDownSlotsArray36.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray36.TabIndex = 40;
             // 
-            // numericUpDownSlotArray37
+            // numericUpDownSlotsArray37
             // 
-            this.numericUpDownSlotArray37.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray37.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray37.Location = new System.Drawing.Point(334, 120);
-            this.numericUpDownSlotArray37.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray37.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray37.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray37.Location = new System.Drawing.Point(334, 120);
+            this.numericUpDownSlotsArray37.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray37.Name = "numericUpDownSlotArray37";
-            this.numericUpDownSlotArray37.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray37.TabIndex = 39;
+            this.numericUpDownSlotsArray37.Name = "numericUpDownSlotsArray37";
+            this.numericUpDownSlotsArray37.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray37.TabIndex = 39;
             // 
-            // numericUpDownSlotArray38
+            // numericUpDownSlotsArray38
             // 
-            this.numericUpDownSlotArray38.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray38.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray38.Location = new System.Drawing.Point(389, 120);
-            this.numericUpDownSlotArray38.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray38.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray38.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray38.Location = new System.Drawing.Point(389, 120);
+            this.numericUpDownSlotsArray38.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray38.Name = "numericUpDownSlotArray38";
-            this.numericUpDownSlotArray38.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray38.TabIndex = 44;
+            this.numericUpDownSlotsArray38.Name = "numericUpDownSlotsArray38";
+            this.numericUpDownSlotsArray38.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray38.TabIndex = 44;
             // 
-            // numericUpDownSlotArray39
+            // numericUpDownSlotsArray39
             // 
-            this.numericUpDownSlotArray39.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray39.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray39.Location = new System.Drawing.Point(444, 120);
-            this.numericUpDownSlotArray39.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray39.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray39.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray39.Location = new System.Drawing.Point(444, 120);
+            this.numericUpDownSlotsArray39.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray39.Name = "numericUpDownSlotArray39";
-            this.numericUpDownSlotArray39.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray39.TabIndex = 38;
+            this.numericUpDownSlotsArray39.Name = "numericUpDownSlotsArray39";
+            this.numericUpDownSlotsArray39.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray39.TabIndex = 38;
             // 
-            // numericUpDownSlotArray40
+            // numericUpDownSlotsArray40
             // 
-            this.numericUpDownSlotArray40.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray40.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray40.Location = new System.Drawing.Point(502, 120);
-            this.numericUpDownSlotArray40.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray40.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray40.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray40.Location = new System.Drawing.Point(502, 120);
+            this.numericUpDownSlotsArray40.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray40.Name = "numericUpDownSlotArray40";
-            this.numericUpDownSlotArray40.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray40.TabIndex = 45;
+            this.numericUpDownSlotsArray40.Name = "numericUpDownSlotsArray40";
+            this.numericUpDownSlotsArray40.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray40.TabIndex = 45;
             // 
-            // numericUpDownSlotArray41
+            // numericUpDownSlotsArray41
             // 
-            this.numericUpDownSlotArray41.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray41.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray41.Location = new System.Drawing.Point(4, 159);
-            this.numericUpDownSlotArray41.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray41.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray41.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray41.Location = new System.Drawing.Point(4, 159);
+            this.numericUpDownSlotsArray41.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray41.Name = "numericUpDownSlotArray41";
-            this.numericUpDownSlotArray41.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray41.TabIndex = 37;
+            this.numericUpDownSlotsArray41.Name = "numericUpDownSlotsArray41";
+            this.numericUpDownSlotsArray41.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray41.TabIndex = 37;
             // 
-            // numericUpDownSlotArray42
+            // numericUpDownSlotsArray42
             // 
-            this.numericUpDownSlotArray42.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray42.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray42.Location = new System.Drawing.Point(59, 159);
-            this.numericUpDownSlotArray42.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray42.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray42.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray42.Location = new System.Drawing.Point(59, 159);
+            this.numericUpDownSlotsArray42.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray42.Name = "numericUpDownSlotArray42";
-            this.numericUpDownSlotArray42.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray42.TabIndex = 36;
+            this.numericUpDownSlotsArray42.Name = "numericUpDownSlotsArray42";
+            this.numericUpDownSlotsArray42.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray42.TabIndex = 36;
             // 
-            // numericUpDownSlotArray43
+            // numericUpDownSlotsArray43
             // 
-            this.numericUpDownSlotArray43.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray43.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray43.Location = new System.Drawing.Point(114, 159);
-            this.numericUpDownSlotArray43.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray43.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray43.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray43.Location = new System.Drawing.Point(114, 159);
+            this.numericUpDownSlotsArray43.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray43.Name = "numericUpDownSlotArray43";
-            this.numericUpDownSlotArray43.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray43.TabIndex = 49;
+            this.numericUpDownSlotsArray43.Name = "numericUpDownSlotsArray43";
+            this.numericUpDownSlotsArray43.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray43.TabIndex = 49;
             // 
-            // numericUpDownSlotArray44
+            // numericUpDownSlotsArray44
             // 
-            this.numericUpDownSlotArray44.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray44.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray44.Location = new System.Drawing.Point(169, 159);
-            this.numericUpDownSlotArray44.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray44.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray44.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray44.Location = new System.Drawing.Point(169, 159);
+            this.numericUpDownSlotsArray44.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray44.Name = "numericUpDownSlotArray44";
-            this.numericUpDownSlotArray44.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray44.TabIndex = 47;
+            this.numericUpDownSlotsArray44.Name = "numericUpDownSlotsArray44";
+            this.numericUpDownSlotsArray44.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray44.TabIndex = 47;
             // 
-            // numericUpDownSlotArray45
+            // numericUpDownSlotsArray45
             // 
-            this.numericUpDownSlotArray45.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray45.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray45.Location = new System.Drawing.Point(224, 159);
-            this.numericUpDownSlotArray45.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray45.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray45.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray45.Location = new System.Drawing.Point(224, 159);
+            this.numericUpDownSlotsArray45.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray45.Name = "numericUpDownSlotArray45";
-            this.numericUpDownSlotArray45.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray45.TabIndex = 50;
+            this.numericUpDownSlotsArray45.Name = "numericUpDownSlotsArray45";
+            this.numericUpDownSlotsArray45.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray45.TabIndex = 50;
             // 
-            // numericUpDownSlotArray46
+            // numericUpDownSlotsArray46
             // 
-            this.numericUpDownSlotArray46.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray46.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray46.Location = new System.Drawing.Point(279, 159);
-            this.numericUpDownSlotArray46.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray46.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray46.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray46.Location = new System.Drawing.Point(279, 159);
+            this.numericUpDownSlotsArray46.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray46.Name = "numericUpDownSlotArray46";
-            this.numericUpDownSlotArray46.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray46.TabIndex = 46;
+            this.numericUpDownSlotsArray46.Name = "numericUpDownSlotsArray46";
+            this.numericUpDownSlotsArray46.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray46.TabIndex = 46;
             // 
-            // numericUpDownSlotArray47
+            // numericUpDownSlotsArray47
             // 
-            this.numericUpDownSlotArray47.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray47.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray47.Location = new System.Drawing.Point(334, 159);
-            this.numericUpDownSlotArray47.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray47.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray47.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray47.Location = new System.Drawing.Point(334, 159);
+            this.numericUpDownSlotsArray47.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray47.Name = "numericUpDownSlotArray47";
-            this.numericUpDownSlotArray47.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray47.TabIndex = 48;
+            this.numericUpDownSlotsArray47.Name = "numericUpDownSlotsArray47";
+            this.numericUpDownSlotsArray47.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray47.TabIndex = 48;
             // 
-            // numericUpDownSlotArray48
+            // numericUpDownSlotsArray48
             // 
-            this.numericUpDownSlotArray48.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray48.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray48.Location = new System.Drawing.Point(389, 159);
-            this.numericUpDownSlotArray48.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray48.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray48.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray48.Location = new System.Drawing.Point(389, 159);
+            this.numericUpDownSlotsArray48.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray48.Name = "numericUpDownSlotArray48";
-            this.numericUpDownSlotArray48.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray48.TabIndex = 51;
+            this.numericUpDownSlotsArray48.Name = "numericUpDownSlotsArray48";
+            this.numericUpDownSlotsArray48.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray48.TabIndex = 51;
             // 
-            // numericUpDownSlotArray49
+            // numericUpDownSlotsArray49
             // 
-            this.numericUpDownSlotArray49.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray49.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray49.Location = new System.Drawing.Point(444, 159);
-            this.numericUpDownSlotArray49.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray49.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray49.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray49.Location = new System.Drawing.Point(444, 159);
+            this.numericUpDownSlotsArray49.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray49.Name = "numericUpDownSlotArray49";
-            this.numericUpDownSlotArray49.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray49.TabIndex = 58;
+            this.numericUpDownSlotsArray49.Name = "numericUpDownSlotsArray49";
+            this.numericUpDownSlotsArray49.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray49.TabIndex = 58;
             // 
-            // numericUpDownSlotArray50
+            // numericUpDownSlotsArray50
             // 
-            this.numericUpDownSlotArray50.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDownSlotArray50.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSlotArray50.Location = new System.Drawing.Point(502, 159);
-            this.numericUpDownSlotArray50.Maximum = new decimal(new int[] {
+            this.numericUpDownSlotsArray50.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDownSlotsArray50.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSlotsArray50.Location = new System.Drawing.Point(502, 159);
+            this.numericUpDownSlotsArray50.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownSlotArray50.Name = "numericUpDownSlotArray50";
-            this.numericUpDownSlotArray50.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSlotArray50.TabIndex = 59;
+            this.numericUpDownSlotsArray50.Name = "numericUpDownSlotsArray50";
+            this.numericUpDownSlotsArray50.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownSlotsArray50.TabIndex = 59;
             // 
             // tabPageLBRinoa
             // 
@@ -28974,6 +29056,1300 @@
             this.tabPageBattleItems.Text = "Battle Items";
             this.tabPageBattleItems.UseVisualStyleBackColor = true;
             // 
+            // groupBoxBattleItemsStatusAttack
+            // 
+            this.groupBoxBattleItemsStatusAttack.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsPetrifying);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDarkness);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsSilence);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsStop);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsConfusion);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsPetrify);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsSlow);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsBerserk);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsSleep);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsInvincible);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsCurse);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDoom);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsFloat);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsAura);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDrain);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsSummonGF);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsHasMagic);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk6);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk5);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk4);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk3);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsAngelWing);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsVit0);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsBackAttack);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsCharged);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk2);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk1);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDefend);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsTriple);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDouble);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsEject);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsPoison);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDeath);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsProtect);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsHaste);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsRegen);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsShell);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsReflect);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk7);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsZombie);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.numericUpDownBattleItemsStatusAttack);
+            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.labelBattleItemsStatusAttack);
+            this.groupBoxBattleItemsStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxBattleItemsStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
+            this.groupBoxBattleItemsStatusAttack.Location = new System.Drawing.Point(112, 313);
+            this.groupBoxBattleItemsStatusAttack.Name = "groupBoxBattleItemsStatusAttack";
+            this.groupBoxBattleItemsStatusAttack.Size = new System.Drawing.Size(465, 286);
+            this.groupBoxBattleItemsStatusAttack.TabIndex = 116;
+            this.groupBoxBattleItemsStatusAttack.TabStop = false;
+            this.groupBoxBattleItemsStatusAttack.Text = "Status Attack";
+            // 
+            // checkBoxBattleItemsPetrifying
+            // 
+            this.checkBoxBattleItemsPetrifying.AutoSize = true;
+            this.checkBoxBattleItemsPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsPetrifying.Location = new System.Drawing.Point(285, 136);
+            this.checkBoxBattleItemsPetrifying.Name = "checkBoxBattleItemsPetrifying";
+            this.checkBoxBattleItemsPetrifying.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxBattleItemsPetrifying.TabIndex = 115;
+            this.checkBoxBattleItemsPetrifying.Text = "Petrifying";
+            this.checkBoxBattleItemsPetrifying.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsDarkness
+            // 
+            this.checkBoxBattleItemsDarkness.AutoSize = true;
+            this.checkBoxBattleItemsDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsDarkness.Location = new System.Drawing.Point(10, 261);
+            this.checkBoxBattleItemsDarkness.Name = "checkBoxBattleItemsDarkness";
+            this.checkBoxBattleItemsDarkness.Size = new System.Drawing.Size(73, 19);
+            this.checkBoxBattleItemsDarkness.TabIndex = 138;
+            this.checkBoxBattleItemsDarkness.Text = "Darkness";
+            this.checkBoxBattleItemsDarkness.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsSilence
+            // 
+            this.checkBoxBattleItemsSilence.AutoSize = true;
+            this.checkBoxBattleItemsSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsSilence.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsSilence.Location = new System.Drawing.Point(102, 261);
+            this.checkBoxBattleItemsSilence.Name = "checkBoxBattleItemsSilence";
+            this.checkBoxBattleItemsSilence.Size = new System.Drawing.Size(63, 19);
+            this.checkBoxBattleItemsSilence.TabIndex = 139;
+            this.checkBoxBattleItemsSilence.Text = "Silence";
+            this.checkBoxBattleItemsSilence.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsStop
+            // 
+            this.checkBoxBattleItemsStop.AutoSize = true;
+            this.checkBoxBattleItemsStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsStop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsStop.Location = new System.Drawing.Point(285, 86);
+            this.checkBoxBattleItemsStop.Name = "checkBoxBattleItemsStop";
+            this.checkBoxBattleItemsStop.Size = new System.Drawing.Size(50, 19);
+            this.checkBoxBattleItemsStop.TabIndex = 106;
+            this.checkBoxBattleItemsStop.Text = "Stop";
+            this.checkBoxBattleItemsStop.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsConfusion
+            // 
+            this.checkBoxBattleItemsConfusion.AutoSize = true;
+            this.checkBoxBattleItemsConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsConfusion.Location = new System.Drawing.Point(373, 136);
+            this.checkBoxBattleItemsConfusion.Name = "checkBoxBattleItemsConfusion";
+            this.checkBoxBattleItemsConfusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxBattleItemsConfusion.TabIndex = 117;
+            this.checkBoxBattleItemsConfusion.Text = "Confusion";
+            this.checkBoxBattleItemsConfusion.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsPetrify
+            // 
+            this.checkBoxBattleItemsPetrify.AutoSize = true;
+            this.checkBoxBattleItemsPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsPetrify.Location = new System.Drawing.Point(373, 236);
+            this.checkBoxBattleItemsPetrify.Name = "checkBoxBattleItemsPetrify";
+            this.checkBoxBattleItemsPetrify.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxBattleItemsPetrify.TabIndex = 137;
+            this.checkBoxBattleItemsPetrify.Text = "Petrify";
+            this.checkBoxBattleItemsPetrify.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsSlow
+            // 
+            this.checkBoxBattleItemsSlow.AutoSize = true;
+            this.checkBoxBattleItemsSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsSlow.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsSlow.Location = new System.Drawing.Point(196, 86);
+            this.checkBoxBattleItemsSlow.Name = "checkBoxBattleItemsSlow";
+            this.checkBoxBattleItemsSlow.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBattleItemsSlow.TabIndex = 105;
+            this.checkBoxBattleItemsSlow.Text = "Slow";
+            this.checkBoxBattleItemsSlow.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsBerserk
+            // 
+            this.checkBoxBattleItemsBerserk.AutoSize = true;
+            this.checkBoxBattleItemsBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsBerserk.Location = new System.Drawing.Point(196, 261);
+            this.checkBoxBattleItemsBerserk.Name = "checkBoxBattleItemsBerserk";
+            this.checkBoxBattleItemsBerserk.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBattleItemsBerserk.TabIndex = 140;
+            this.checkBoxBattleItemsBerserk.Text = "Berserk";
+            this.checkBoxBattleItemsBerserk.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsSleep
+            // 
+            this.checkBoxBattleItemsSleep.AutoSize = true;
+            this.checkBoxBattleItemsSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsSleep.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsSleep.Location = new System.Drawing.Point(10, 86);
+            this.checkBoxBattleItemsSleep.Name = "checkBoxBattleItemsSleep";
+            this.checkBoxBattleItemsSleep.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxBattleItemsSleep.TabIndex = 103;
+            this.checkBoxBattleItemsSleep.Text = "Sleep";
+            this.checkBoxBattleItemsSleep.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsInvincible
+            // 
+            this.checkBoxBattleItemsInvincible.AutoSize = true;
+            this.checkBoxBattleItemsInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsInvincible.Location = new System.Drawing.Point(102, 136);
+            this.checkBoxBattleItemsInvincible.Name = "checkBoxBattleItemsInvincible";
+            this.checkBoxBattleItemsInvincible.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxBattleItemsInvincible.TabIndex = 114;
+            this.checkBoxBattleItemsInvincible.Text = "Invincible";
+            this.checkBoxBattleItemsInvincible.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsCurse
+            // 
+            this.checkBoxBattleItemsCurse.AutoSize = true;
+            this.checkBoxBattleItemsCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsCurse.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsCurse.Location = new System.Drawing.Point(373, 111);
+            this.checkBoxBattleItemsCurse.Name = "checkBoxBattleItemsCurse";
+            this.checkBoxBattleItemsCurse.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxBattleItemsCurse.TabIndex = 112;
+            this.checkBoxBattleItemsCurse.Text = "Curse";
+            this.checkBoxBattleItemsCurse.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsDoom
+            // 
+            this.checkBoxBattleItemsDoom.AutoSize = true;
+            this.checkBoxBattleItemsDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsDoom.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsDoom.Location = new System.Drawing.Point(10, 136);
+            this.checkBoxBattleItemsDoom.Name = "checkBoxBattleItemsDoom";
+            this.checkBoxBattleItemsDoom.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxBattleItemsDoom.TabIndex = 113;
+            this.checkBoxBattleItemsDoom.Text = "Doom";
+            this.checkBoxBattleItemsDoom.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsFloat
+            // 
+            this.checkBoxBattleItemsFloat.AutoSize = true;
+            this.checkBoxBattleItemsFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsFloat.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsFloat.Location = new System.Drawing.Point(196, 136);
+            this.checkBoxBattleItemsFloat.Name = "checkBoxBattleItemsFloat";
+            this.checkBoxBattleItemsFloat.Size = new System.Drawing.Size(52, 19);
+            this.checkBoxBattleItemsFloat.TabIndex = 116;
+            this.checkBoxBattleItemsFloat.Text = "Float";
+            this.checkBoxBattleItemsFloat.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsAura
+            // 
+            this.checkBoxBattleItemsAura.AutoSize = true;
+            this.checkBoxBattleItemsAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsAura.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsAura.Location = new System.Drawing.Point(285, 111);
+            this.checkBoxBattleItemsAura.Name = "checkBoxBattleItemsAura";
+            this.checkBoxBattleItemsAura.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBattleItemsAura.TabIndex = 111;
+            this.checkBoxBattleItemsAura.Text = "Aura";
+            this.checkBoxBattleItemsAura.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsDrain
+            // 
+            this.checkBoxBattleItemsDrain.AutoSize = true;
+            this.checkBoxBattleItemsDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsDrain.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsDrain.Location = new System.Drawing.Point(10, 161);
+            this.checkBoxBattleItemsDrain.Name = "checkBoxBattleItemsDrain";
+            this.checkBoxBattleItemsDrain.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxBattleItemsDrain.TabIndex = 118;
+            this.checkBoxBattleItemsDrain.Text = "Drain";
+            this.checkBoxBattleItemsDrain.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsSummonGF
+            // 
+            this.checkBoxBattleItemsSummonGF.AutoSize = true;
+            this.checkBoxBattleItemsSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsSummonGF.Location = new System.Drawing.Point(102, 236);
+            this.checkBoxBattleItemsSummonGF.Name = "checkBoxBattleItemsSummonGF";
+            this.checkBoxBattleItemsSummonGF.Size = new System.Drawing.Size(92, 19);
+            this.checkBoxBattleItemsSummonGF.TabIndex = 133;
+            this.checkBoxBattleItemsSummonGF.Text = "Summon GF";
+            this.checkBoxBattleItemsSummonGF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsHasMagic
+            // 
+            this.checkBoxBattleItemsHasMagic.AutoSize = true;
+            this.checkBoxBattleItemsHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsHasMagic.Location = new System.Drawing.Point(10, 236);
+            this.checkBoxBattleItemsHasMagic.Name = "checkBoxBattleItemsHasMagic";
+            this.checkBoxBattleItemsHasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxBattleItemsHasMagic.TabIndex = 132;
+            this.checkBoxBattleItemsHasMagic.Text = "Has Magic";
+            this.checkBoxBattleItemsHasMagic.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsUnk6
+            // 
+            this.checkBoxBattleItemsUnk6.AutoSize = true;
+            this.checkBoxBattleItemsUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsUnk6.Location = new System.Drawing.Point(373, 211);
+            this.checkBoxBattleItemsUnk6.Name = "checkBoxBattleItemsUnk6";
+            this.checkBoxBattleItemsUnk6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsUnk6.TabIndex = 131;
+            this.checkBoxBattleItemsUnk6.Text = "???";
+            this.checkBoxBattleItemsUnk6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsUnk5
+            // 
+            this.checkBoxBattleItemsUnk5.AutoSize = true;
+            this.checkBoxBattleItemsUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsUnk5.Location = new System.Drawing.Point(285, 211);
+            this.checkBoxBattleItemsUnk5.Name = "checkBoxBattleItemsUnk5";
+            this.checkBoxBattleItemsUnk5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsUnk5.TabIndex = 130;
+            this.checkBoxBattleItemsUnk5.Text = "???";
+            this.checkBoxBattleItemsUnk5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsUnk4
+            // 
+            this.checkBoxBattleItemsUnk4.AutoSize = true;
+            this.checkBoxBattleItemsUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsUnk4.Location = new System.Drawing.Point(196, 211);
+            this.checkBoxBattleItemsUnk4.Name = "checkBoxBattleItemsUnk4";
+            this.checkBoxBattleItemsUnk4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsUnk4.TabIndex = 127;
+            this.checkBoxBattleItemsUnk4.Text = "???";
+            this.checkBoxBattleItemsUnk4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsUnk3
+            // 
+            this.checkBoxBattleItemsUnk3.AutoSize = true;
+            this.checkBoxBattleItemsUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsUnk3.Location = new System.Drawing.Point(102, 211);
+            this.checkBoxBattleItemsUnk3.Name = "checkBoxBattleItemsUnk3";
+            this.checkBoxBattleItemsUnk3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsUnk3.TabIndex = 129;
+            this.checkBoxBattleItemsUnk3.Text = "???";
+            this.checkBoxBattleItemsUnk3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsAngelWing
+            // 
+            this.checkBoxBattleItemsAngelWing.AutoSize = true;
+            this.checkBoxBattleItemsAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsAngelWing.Location = new System.Drawing.Point(10, 211);
+            this.checkBoxBattleItemsAngelWing.Name = "checkBoxBattleItemsAngelWing";
+            this.checkBoxBattleItemsAngelWing.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxBattleItemsAngelWing.TabIndex = 128;
+            this.checkBoxBattleItemsAngelWing.Text = "Angel Wing";
+            this.checkBoxBattleItemsAngelWing.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsVit0
+            // 
+            this.checkBoxBattleItemsVit0.AutoSize = true;
+            this.checkBoxBattleItemsVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsVit0.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsVit0.Location = new System.Drawing.Point(373, 186);
+            this.checkBoxBattleItemsVit0.Name = "checkBoxBattleItemsVit0";
+            this.checkBoxBattleItemsVit0.Size = new System.Drawing.Size(46, 19);
+            this.checkBoxBattleItemsVit0.TabIndex = 134;
+            this.checkBoxBattleItemsVit0.Text = "Vit0";
+            this.checkBoxBattleItemsVit0.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsBackAttack
+            // 
+            this.checkBoxBattleItemsBackAttack.AutoSize = true;
+            this.checkBoxBattleItemsBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsBackAttack.Location = new System.Drawing.Point(285, 186);
+            this.checkBoxBattleItemsBackAttack.Name = "checkBoxBattleItemsBackAttack";
+            this.checkBoxBattleItemsBackAttack.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxBattleItemsBackAttack.TabIndex = 126;
+            this.checkBoxBattleItemsBackAttack.Text = "Back Attack";
+            this.checkBoxBattleItemsBackAttack.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsCharged
+            // 
+            this.checkBoxBattleItemsCharged.AutoSize = true;
+            this.checkBoxBattleItemsCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsCharged.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsCharged.Location = new System.Drawing.Point(196, 186);
+            this.checkBoxBattleItemsCharged.Name = "checkBoxBattleItemsCharged";
+            this.checkBoxBattleItemsCharged.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxBattleItemsCharged.TabIndex = 122;
+            this.checkBoxBattleItemsCharged.Text = "Charged";
+            this.checkBoxBattleItemsCharged.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsUnk2
+            // 
+            this.checkBoxBattleItemsUnk2.AutoSize = true;
+            this.checkBoxBattleItemsUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsUnk2.Location = new System.Drawing.Point(102, 186);
+            this.checkBoxBattleItemsUnk2.Name = "checkBoxBattleItemsUnk2";
+            this.checkBoxBattleItemsUnk2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsUnk2.TabIndex = 125;
+            this.checkBoxBattleItemsUnk2.Text = "???";
+            this.checkBoxBattleItemsUnk2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsUnk1
+            // 
+            this.checkBoxBattleItemsUnk1.AutoSize = true;
+            this.checkBoxBattleItemsUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsUnk1.Location = new System.Drawing.Point(10, 186);
+            this.checkBoxBattleItemsUnk1.Name = "checkBoxBattleItemsUnk1";
+            this.checkBoxBattleItemsUnk1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsUnk1.TabIndex = 124;
+            this.checkBoxBattleItemsUnk1.Text = "???";
+            this.checkBoxBattleItemsUnk1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsDefend
+            // 
+            this.checkBoxBattleItemsDefend.AutoSize = true;
+            this.checkBoxBattleItemsDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsDefend.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsDefend.Location = new System.Drawing.Point(373, 161);
+            this.checkBoxBattleItemsDefend.Name = "checkBoxBattleItemsDefend";
+            this.checkBoxBattleItemsDefend.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBattleItemsDefend.TabIndex = 123;
+            this.checkBoxBattleItemsDefend.Text = "Defend";
+            this.checkBoxBattleItemsDefend.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsTriple
+            // 
+            this.checkBoxBattleItemsTriple.AutoSize = true;
+            this.checkBoxBattleItemsTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsTriple.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsTriple.Location = new System.Drawing.Point(285, 161);
+            this.checkBoxBattleItemsTriple.Name = "checkBoxBattleItemsTriple";
+            this.checkBoxBattleItemsTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxBattleItemsTriple.TabIndex = 121;
+            this.checkBoxBattleItemsTriple.Text = "Triple";
+            this.checkBoxBattleItemsTriple.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsDouble
+            // 
+            this.checkBoxBattleItemsDouble.AutoSize = true;
+            this.checkBoxBattleItemsDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsDouble.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsDouble.Location = new System.Drawing.Point(196, 161);
+            this.checkBoxBattleItemsDouble.Name = "checkBoxBattleItemsDouble";
+            this.checkBoxBattleItemsDouble.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBattleItemsDouble.TabIndex = 120;
+            this.checkBoxBattleItemsDouble.Text = "Double";
+            this.checkBoxBattleItemsDouble.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsEject
+            // 
+            this.checkBoxBattleItemsEject.AutoSize = true;
+            this.checkBoxBattleItemsEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsEject.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsEject.Location = new System.Drawing.Point(102, 161);
+            this.checkBoxBattleItemsEject.Name = "checkBoxBattleItemsEject";
+            this.checkBoxBattleItemsEject.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBattleItemsEject.TabIndex = 119;
+            this.checkBoxBattleItemsEject.Text = "Eject";
+            this.checkBoxBattleItemsEject.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsPoison
+            // 
+            this.checkBoxBattleItemsPoison.AutoSize = true;
+            this.checkBoxBattleItemsPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsPoison.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsPoison.Location = new System.Drawing.Point(285, 236);
+            this.checkBoxBattleItemsPoison.Name = "checkBoxBattleItemsPoison";
+            this.checkBoxBattleItemsPoison.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxBattleItemsPoison.TabIndex = 136;
+            this.checkBoxBattleItemsPoison.Text = "Poison";
+            this.checkBoxBattleItemsPoison.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsDeath
+            // 
+            this.checkBoxBattleItemsDeath.AutoSize = true;
+            this.checkBoxBattleItemsDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsDeath.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsDeath.Location = new System.Drawing.Point(196, 236);
+            this.checkBoxBattleItemsDeath.Name = "checkBoxBattleItemsDeath";
+            this.checkBoxBattleItemsDeath.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxBattleItemsDeath.TabIndex = 135;
+            this.checkBoxBattleItemsDeath.Text = "Death";
+            this.checkBoxBattleItemsDeath.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsProtect
+            // 
+            this.checkBoxBattleItemsProtect.AutoSize = true;
+            this.checkBoxBattleItemsProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsProtect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsProtect.Location = new System.Drawing.Point(10, 111);
+            this.checkBoxBattleItemsProtect.Name = "checkBoxBattleItemsProtect";
+            this.checkBoxBattleItemsProtect.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBattleItemsProtect.TabIndex = 108;
+            this.checkBoxBattleItemsProtect.Text = "Protect";
+            this.checkBoxBattleItemsProtect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsHaste
+            // 
+            this.checkBoxBattleItemsHaste.AutoSize = true;
+            this.checkBoxBattleItemsHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsHaste.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsHaste.Location = new System.Drawing.Point(102, 86);
+            this.checkBoxBattleItemsHaste.Name = "checkBoxBattleItemsHaste";
+            this.checkBoxBattleItemsHaste.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxBattleItemsHaste.TabIndex = 104;
+            this.checkBoxBattleItemsHaste.Text = "Haste";
+            this.checkBoxBattleItemsHaste.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsRegen
+            // 
+            this.checkBoxBattleItemsRegen.AutoSize = true;
+            this.checkBoxBattleItemsRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsRegen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsRegen.Location = new System.Drawing.Point(373, 86);
+            this.checkBoxBattleItemsRegen.Name = "checkBoxBattleItemsRegen";
+            this.checkBoxBattleItemsRegen.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxBattleItemsRegen.TabIndex = 107;
+            this.checkBoxBattleItemsRegen.Text = "Regen";
+            this.checkBoxBattleItemsRegen.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsShell
+            // 
+            this.checkBoxBattleItemsShell.AutoSize = true;
+            this.checkBoxBattleItemsShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsShell.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsShell.Location = new System.Drawing.Point(102, 111);
+            this.checkBoxBattleItemsShell.Name = "checkBoxBattleItemsShell";
+            this.checkBoxBattleItemsShell.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxBattleItemsShell.TabIndex = 109;
+            this.checkBoxBattleItemsShell.Text = "Shell";
+            this.checkBoxBattleItemsShell.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsReflect
+            // 
+            this.checkBoxBattleItemsReflect.AutoSize = true;
+            this.checkBoxBattleItemsReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsReflect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsReflect.Location = new System.Drawing.Point(196, 111);
+            this.checkBoxBattleItemsReflect.Name = "checkBoxBattleItemsReflect";
+            this.checkBoxBattleItemsReflect.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxBattleItemsReflect.TabIndex = 110;
+            this.checkBoxBattleItemsReflect.Text = "Reflect";
+            this.checkBoxBattleItemsReflect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsUnk7
+            // 
+            this.checkBoxBattleItemsUnk7.AutoSize = true;
+            this.checkBoxBattleItemsUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsUnk7.Location = new System.Drawing.Point(373, 261);
+            this.checkBoxBattleItemsUnk7.Name = "checkBoxBattleItemsUnk7";
+            this.checkBoxBattleItemsUnk7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsUnk7.TabIndex = 141;
+            this.checkBoxBattleItemsUnk7.Text = "???";
+            this.checkBoxBattleItemsUnk7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsZombie
+            // 
+            this.checkBoxBattleItemsZombie.AutoSize = true;
+            this.checkBoxBattleItemsZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsZombie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsZombie.Location = new System.Drawing.Point(285, 261);
+            this.checkBoxBattleItemsZombie.Name = "checkBoxBattleItemsZombie";
+            this.checkBoxBattleItemsZombie.Size = new System.Drawing.Size(67, 19);
+            this.checkBoxBattleItemsZombie.TabIndex = 142;
+            this.checkBoxBattleItemsZombie.Text = "Zombie";
+            this.checkBoxBattleItemsZombie.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownBattleItemsStatusAttack
+            // 
+            this.numericUpDownBattleItemsStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBattleItemsStatusAttack.Location = new System.Drawing.Point(209, 46);
+            this.numericUpDownBattleItemsStatusAttack.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownBattleItemsStatusAttack.Name = "numericUpDownBattleItemsStatusAttack";
+            this.numericUpDownBattleItemsStatusAttack.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBattleItemsStatusAttack.TabIndex = 91;
+            // 
+            // labelBattleItemsStatusAttack
+            // 
+            this.labelBattleItemsStatusAttack.AutoSize = true;
+            this.labelBattleItemsStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBattleItemsStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBattleItemsStatusAttack.Location = new System.Drawing.Point(188, 26);
+            this.labelBattleItemsStatusAttack.Name = "labelBattleItemsStatusAttack";
+            this.labelBattleItemsStatusAttack.Size = new System.Drawing.Size(89, 17);
+            this.labelBattleItemsStatusAttack.TabIndex = 90;
+            this.labelBattleItemsStatusAttack.Text = "Status Attack";
+            // 
+            // groupBoxBattleItemsTarget
+            // 
+            this.groupBoxBattleItemsTarget.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget8);
+            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget5);
+            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget2);
+            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget4);
+            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget6);
+            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget7);
+            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget1);
+            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget3);
+            this.groupBoxBattleItemsTarget.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxBattleItemsTarget.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.groupBoxBattleItemsTarget.Location = new System.Drawing.Point(112, 213);
+            this.groupBoxBattleItemsTarget.Name = "groupBoxBattleItemsTarget";
+            this.groupBoxBattleItemsTarget.Size = new System.Drawing.Size(465, 94);
+            this.groupBoxBattleItemsTarget.TabIndex = 115;
+            this.groupBoxBattleItemsTarget.TabStop = false;
+            this.groupBoxBattleItemsTarget.Text = "Target Info";
+            // 
+            // checkBoxBattleItemsTarget8
+            // 
+            this.checkBoxBattleItemsTarget8.AutoSize = true;
+            this.checkBoxBattleItemsTarget8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsTarget8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsTarget8.Location = new System.Drawing.Point(352, 60);
+            this.checkBoxBattleItemsTarget8.Name = "checkBoxBattleItemsTarget8";
+            this.checkBoxBattleItemsTarget8.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsTarget8.TabIndex = 39;
+            this.checkBoxBattleItemsTarget8.Text = "???";
+            this.checkBoxBattleItemsTarget8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsTarget5
+            // 
+            this.checkBoxBattleItemsTarget5.AutoSize = true;
+            this.checkBoxBattleItemsTarget5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsTarget5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsTarget5.Location = new System.Drawing.Point(29, 60);
+            this.checkBoxBattleItemsTarget5.Name = "checkBoxBattleItemsTarget5";
+            this.checkBoxBattleItemsTarget5.Size = new System.Drawing.Size(58, 19);
+            this.checkBoxBattleItemsTarget5.TabIndex = 40;
+            this.checkBoxBattleItemsTarget5.Text = "Single";
+            this.checkBoxBattleItemsTarget5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsTarget2
+            // 
+            this.checkBoxBattleItemsTarget2.AutoSize = true;
+            this.checkBoxBattleItemsTarget2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsTarget2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsTarget2.Location = new System.Drawing.Point(137, 35);
+            this.checkBoxBattleItemsTarget2.Name = "checkBoxBattleItemsTarget2";
+            this.checkBoxBattleItemsTarget2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsTarget2.TabIndex = 36;
+            this.checkBoxBattleItemsTarget2.Text = "???";
+            this.checkBoxBattleItemsTarget2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsTarget6
+            // 
+            this.checkBoxBattleItemsTarget6.AutoSize = true;
+            this.checkBoxBattleItemsTarget6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsTarget6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsTarget6.Location = new System.Drawing.Point(137, 60);
+            this.checkBoxBattleItemsTarget6.Name = "checkBoxBattleItemsTarget6";
+            this.checkBoxBattleItemsTarget6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsTarget6.TabIndex = 41;
+            this.checkBoxBattleItemsTarget6.Text = "???";
+            this.checkBoxBattleItemsTarget6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsTarget7
+            // 
+            this.checkBoxBattleItemsTarget7.AutoSize = true;
+            this.checkBoxBattleItemsTarget7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsTarget7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsTarget7.Location = new System.Drawing.Point(247, 60);
+            this.checkBoxBattleItemsTarget7.Name = "checkBoxBattleItemsTarget7";
+            this.checkBoxBattleItemsTarget7.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxBattleItemsTarget7.TabIndex = 42;
+            this.checkBoxBattleItemsTarget7.Text = "Enemy";
+            this.checkBoxBattleItemsTarget7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsTarget1
+            // 
+            this.checkBoxBattleItemsTarget1.AutoSize = true;
+            this.checkBoxBattleItemsTarget1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsTarget1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsTarget1.Location = new System.Drawing.Point(29, 35);
+            this.checkBoxBattleItemsTarget1.Name = "checkBoxBattleItemsTarget1";
+            this.checkBoxBattleItemsTarget1.Size = new System.Drawing.Size(53, 19);
+            this.checkBoxBattleItemsTarget1.TabIndex = 35;
+            this.checkBoxBattleItemsTarget1.Text = "Dead";
+            this.checkBoxBattleItemsTarget1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsTarget3
+            // 
+            this.checkBoxBattleItemsTarget3.AutoSize = true;
+            this.checkBoxBattleItemsTarget3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsTarget3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsTarget3.Location = new System.Drawing.Point(247, 35);
+            this.checkBoxBattleItemsTarget3.Name = "checkBoxBattleItemsTarget3";
+            this.checkBoxBattleItemsTarget3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsTarget3.TabIndex = 37;
+            this.checkBoxBattleItemsTarget3.Text = "???";
+            this.checkBoxBattleItemsTarget3.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxBattleItemsAttackFlags
+            // 
+            this.groupBoxBattleItemsAttackFlags.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag4);
+            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag8);
+            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag3);
+            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag6);
+            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag1);
+            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag5);
+            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag2);
+            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag7);
+            this.groupBoxBattleItemsAttackFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxBattleItemsAttackFlags.ForeColor = System.Drawing.Color.Sienna;
+            this.groupBoxBattleItemsAttackFlags.Location = new System.Drawing.Point(112, 605);
+            this.groupBoxBattleItemsAttackFlags.Name = "groupBoxBattleItemsAttackFlags";
+            this.groupBoxBattleItemsAttackFlags.Size = new System.Drawing.Size(465, 96);
+            this.groupBoxBattleItemsAttackFlags.TabIndex = 114;
+            this.groupBoxBattleItemsAttackFlags.TabStop = false;
+            this.groupBoxBattleItemsAttackFlags.Text = "Attack Flags";
+            // 
+            // checkBoxBattleItemsFlag4
+            // 
+            this.checkBoxBattleItemsFlag4.AutoSize = true;
+            this.checkBoxBattleItemsFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsFlag4.Location = new System.Drawing.Point(305, 38);
+            this.checkBoxBattleItemsFlag4.Name = "checkBoxBattleItemsFlag4";
+            this.checkBoxBattleItemsFlag4.Size = new System.Drawing.Size(132, 19);
+            this.checkBoxBattleItemsFlag4.TabIndex = 48;
+            this.checkBoxBattleItemsFlag4.Text = "Break Damage Limit";
+            this.checkBoxBattleItemsFlag4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsFlag8
+            // 
+            this.checkBoxBattleItemsFlag8.AutoSize = true;
+            this.checkBoxBattleItemsFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsFlag8.Location = new System.Drawing.Point(305, 63);
+            this.checkBoxBattleItemsFlag8.Name = "checkBoxBattleItemsFlag8";
+            this.checkBoxBattleItemsFlag8.Size = new System.Drawing.Size(65, 19);
+            this.checkBoxBattleItemsFlag8.TabIndex = 52;
+            this.checkBoxBattleItemsFlag8.Text = "Revive?";
+            this.checkBoxBattleItemsFlag8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsFlag3
+            // 
+            this.checkBoxBattleItemsFlag3.AutoSize = true;
+            this.checkBoxBattleItemsFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsFlag3.Location = new System.Drawing.Point(220, 38);
+            this.checkBoxBattleItemsFlag3.Name = "checkBoxBattleItemsFlag3";
+            this.checkBoxBattleItemsFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsFlag3.TabIndex = 47;
+            this.checkBoxBattleItemsFlag3.Text = "???";
+            this.checkBoxBattleItemsFlag3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsFlag6
+            // 
+            this.checkBoxBattleItemsFlag6.AutoSize = true;
+            this.checkBoxBattleItemsFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsFlag6.Location = new System.Drawing.Point(135, 63);
+            this.checkBoxBattleItemsFlag6.Name = "checkBoxBattleItemsFlag6";
+            this.checkBoxBattleItemsFlag6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsFlag6.TabIndex = 50;
+            this.checkBoxBattleItemsFlag6.Text = "???";
+            this.checkBoxBattleItemsFlag6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsFlag1
+            // 
+            this.checkBoxBattleItemsFlag1.AutoSize = true;
+            this.checkBoxBattleItemsFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsFlag1.Location = new System.Drawing.Point(27, 38);
+            this.checkBoxBattleItemsFlag1.Name = "checkBoxBattleItemsFlag1";
+            this.checkBoxBattleItemsFlag1.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxBattleItemsFlag1.TabIndex = 45;
+            this.checkBoxBattleItemsFlag1.Text = "Shelled";
+            this.checkBoxBattleItemsFlag1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsFlag5
+            // 
+            this.checkBoxBattleItemsFlag5.AutoSize = true;
+            this.checkBoxBattleItemsFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsFlag5.Location = new System.Drawing.Point(27, 63);
+            this.checkBoxBattleItemsFlag5.Name = "checkBoxBattleItemsFlag5";
+            this.checkBoxBattleItemsFlag5.Size = new System.Drawing.Size(75, 19);
+            this.checkBoxBattleItemsFlag5.TabIndex = 49;
+            this.checkBoxBattleItemsFlag5.Text = "Reflected";
+            this.checkBoxBattleItemsFlag5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsFlag2
+            // 
+            this.checkBoxBattleItemsFlag2.AutoSize = true;
+            this.checkBoxBattleItemsFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsFlag2.Location = new System.Drawing.Point(135, 38);
+            this.checkBoxBattleItemsFlag2.Name = "checkBoxBattleItemsFlag2";
+            this.checkBoxBattleItemsFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsFlag2.TabIndex = 46;
+            this.checkBoxBattleItemsFlag2.Text = "???";
+            this.checkBoxBattleItemsFlag2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBattleItemsFlag7
+            // 
+            this.checkBoxBattleItemsFlag7.AutoSize = true;
+            this.checkBoxBattleItemsFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBattleItemsFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBattleItemsFlag7.Location = new System.Drawing.Point(220, 63);
+            this.checkBoxBattleItemsFlag7.Name = "checkBoxBattleItemsFlag7";
+            this.checkBoxBattleItemsFlag7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBattleItemsFlag7.TabIndex = 51;
+            this.checkBoxBattleItemsFlag7.Text = "???";
+            this.checkBoxBattleItemsFlag7.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxBattleItemsGeneral
+            // 
+            this.groupBoxBattleItemsGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.comboBoxBattleItemsElement);
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsElement);
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.comboBoxBattleItemsAttackType);
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsAttackType);
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.numericUpDownBattleItemsHitCount);
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.numericUpDownBattleItemsAttackPower);
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.comboBoxBattleItemsMagicID);
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsHitCount);
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsAttackPower);
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsMagicID);
+            this.groupBoxBattleItemsGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxBattleItemsGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxBattleItemsGeneral.Location = new System.Drawing.Point(112, 6);
+            this.groupBoxBattleItemsGeneral.Name = "groupBoxBattleItemsGeneral";
+            this.groupBoxBattleItemsGeneral.Size = new System.Drawing.Size(465, 201);
+            this.groupBoxBattleItemsGeneral.TabIndex = 113;
+            this.groupBoxBattleItemsGeneral.TabStop = false;
+            this.groupBoxBattleItemsGeneral.Text = "General";
+            // 
+            // comboBoxBattleItemsElement
+            // 
+            this.comboBoxBattleItemsElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxBattleItemsElement.FormattingEnabled = true;
+            this.comboBoxBattleItemsElement.Items.AddRange(new object[] {
+            "Fire",
+            "Ice",
+            "Thunder",
+            "Earth",
+            "Poison",
+            "Wind",
+            "Water",
+            "Holy",
+            "Non-Elemental"});
+            this.comboBoxBattleItemsElement.Location = new System.Drawing.Point(327, 49);
+            this.comboBoxBattleItemsElement.Name = "comboBoxBattleItemsElement";
+            this.comboBoxBattleItemsElement.Size = new System.Drawing.Size(110, 25);
+            this.comboBoxBattleItemsElement.TabIndex = 93;
+            // 
+            // comboBoxBattleItemsAttackType
+            // 
+            this.comboBoxBattleItemsAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxBattleItemsAttackType.FormattingEnabled = true;
+            this.comboBoxBattleItemsAttackType.Items.AddRange(new object[] {
+            "None",
+            "Basic Attack",
+            "Magic Attack",
+            "Curative Magic",
+            "Curative Item",
+            "Revive",
+            "Revive At Full HP",
+            "% Damage",
+            "Demi",
+            "Renzokuken Finisher",
+            "Squall Gunblade Attack",
+            "GF",
+            "Scan",
+            "LV Down",
+            "Summon Item?",
+            "Ignore SPR",
+            "LV Up",
+            "Card",
+            "Kamikaze",
+            "Devour",
+            "Diablos Gravity Attack",
+            "",
+            "Mega Spark/Mega Flare",
+            "Angelo Search",
+            "Moogle Dance",
+            "White Wind (Quistis)",
+            "LV5 Death/LV? Death",
+            "Fixed Damage",
+            "Corona/Hell\'s Judgement",
+            "Cactuar Summon",
+            "",
+            "",
+            "Give Percentage HP",
+            "",
+            "Everyone\'s Grudge",
+            "Excalipoor",
+            "Terra Break/Great Attractor"});
+            this.comboBoxBattleItemsAttackType.Location = new System.Drawing.Point(29, 103);
+            this.comboBoxBattleItemsAttackType.Name = "comboBoxBattleItemsAttackType";
+            this.comboBoxBattleItemsAttackType.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxBattleItemsAttackType.TabIndex = 8;
+            // 
+            // numericUpDownBattleItemsHitCount
+            // 
+            this.numericUpDownBattleItemsHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBattleItemsHitCount.Location = new System.Drawing.Point(312, 160);
+            this.numericUpDownBattleItemsHitCount.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownBattleItemsHitCount.Name = "numericUpDownBattleItemsHitCount";
+            this.numericUpDownBattleItemsHitCount.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBattleItemsHitCount.TabIndex = 6;
+            // 
+            // numericUpDownBattleItemsAttackPower
+            // 
+            this.numericUpDownBattleItemsAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBattleItemsAttackPower.Location = new System.Drawing.Point(117, 160);
+            this.numericUpDownBattleItemsAttackPower.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownBattleItemsAttackPower.Name = "numericUpDownBattleItemsAttackPower";
+            this.numericUpDownBattleItemsAttackPower.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBattleItemsAttackPower.TabIndex = 3;
+            // 
+            // comboBoxBattleItemsMagicID
+            // 
+            this.comboBoxBattleItemsMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxBattleItemsMagicID.FormattingEnabled = true;
+            this.comboBoxBattleItemsMagicID.Items.AddRange(new object[] {
+            "None",
+            "Cure",
+            "Fire",
+            "Thunder",
+            "Double",
+            "Phoenix Down",
+            "Leviathan Summon (Tsunami)",
+            "Mega Phoenix",
+            "Doom",
+            "Doom Activation",
+            "Ray-Bomb",
+            "Storm Breath",
+            "Blade Shot",
+            "Dark Mist/Poison Mist",
+            "Death/Death Stone",
+            "Draw",
+            "Recover",
+            "Elvoret Entrance",
+            "Elvoret Death",
+            "Unknown",
+            "NORG Pod Opening",
+            "Triple",
+            "Bio",
+            "Psycho Blast",
+            "Esuna",
+            "Cura",
+            "Clash",
+            "Full-Life",
+            "Curaga",
+            "Wind Blast",
+            "Counter Laser-Eye",
+            "Heartbreak",
+            "Protect",
+            "Shell",
+            "Pain",
+            "Life",
+            "Confuse",
+            "Drink Magic",
+            "Quake",
+            "Drain",
+            "Scan",
+            "Dribble",
+            "Shoot",
+            "Melting Bubble",
+            "Junk",
+            "Stare",
+            "Sigh",
+            "Curse",
+            "Magma Breath",
+            "Resonance",
+            "Potion/Potion+",
+            "Hi-Potion/Hi-Potion+",
+            "X-Potion",
+            "Mega-Potion",
+            "Everyone\'s Grudge",
+            "Aqua Breath",
+            "Absorb",
+            "Treatment",
+            "Elixir",
+            "Megalixir",
+            "Unknown",
+            "Revive",
+            "Devour",
+            "Unknown",
+            "Griever Tail Falling Off",
+            "Great Attractor",
+            "Griever + Ultimecia Death",
+            "Remedy/Remedy+",
+            "Unknown",
+            "Griever Summon",
+            "Shockwave Pulsar",
+            "Laser Eye (Quistis)",
+            "Aqua Breath (Quistis)",
+            "Mighty Guard (Quistis)",
+            "LV?Death (Quistis)",
+            "Hell\'s Judgement",
+            "Ultimecia Final Form Spawn",
+            "Ultimecia Final Form Death",
+            "Mighty Guard",
+            "Griever Death",
+            "Ultimecia Junctioning to Griever",
+            "Unknown",
+            "Ultimecia Blow Away Magic",
+            "Absorbed into time...",
+            "Angel Wing",
+            "The End",
+            "Angelo Cannon",
+            "Angelo Strike",
+            "Invincible Moon",
+            "Wishing Star",
+            "Tonberry Summon (Chef\'s Knife)",
+            "Angelo Rush",
+            "Angelo Search",
+            "Angelo Recover",
+            "Angelo Reverse",
+            "Siren Summon (Silent Voice)",
+            "Moogle Dance",
+            "ChocoFire",
+            "ChocoFlare",
+            "ChocoMeteor",
+            "ChocoBocle",
+            "Unknown",
+            "Thundara",
+            "Blizzara",
+            "Blizzaga",
+            "Thundaga",
+            "Reflect",
+            "Demi",
+            "Berserk",
+            "Dispel",
+            "Biggs + Wedge 1st Death",
+            "Aura",
+            "Meteor Barret (Zell\'s Finisher)",
+            "Bad Breath",
+            "Zombie",
+            "Float",
+            "Quezacotl Summon (Thunder Storm)",
+            "Break",
+            "Aero",
+            "Stop",
+            "Petrify Stare",
+            "Blind",
+            "Silence",
+            "Slow",
+            "Flare",
+            "Haste",
+            "Electric Discharge",
+            "Petrify Stare",
+            "Gastric Juice",
+            "Breath",
+            "Eerie Sound Wave",
+            "Bad Breath",
+            "Disolving Acid",
+            "Hypnotize",
+            "Beam Laser",
+            "Reflect Beam",
+            "Oil Shot",
+            "Oil Blast",
+            "Saliva",
+            "Sonic Wave",
+            "Phoenix Pinion (Rebirth Flame)",
+            "Renzokuken - 5 Hits",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Sleep",
+            "Tornado",
+            "Regen",
+            "Meltdown",
+            "Ultima",
+            "Gatling Gun",
+            "Cannon Blow",
+            "Ultrasonic Waves",
+            "Sticky Web",
+            "Ultra Waves",
+            "Sand Storm",
+            "Wild Cannon Blow",
+            "Breath",
+            "Melt-Eye",
+            "Renzokuken (vs X-ATM092)",
+            "Renzokuken - 4 Hits",
+            "Renzokuken (vs Elnoyle/Elvoret)",
+            "Fated Circle",
+            "Rough Divide",
+            "Blasting Zone",
+            "Lion Heart",
+            "Megido Flame",
+            "Zantetsuken",
+            "Sleeping Gas",
+            "Gastric Juice",
+            "Acid",
+            "Poison Gas",
+            "Morph",
+            "Ice Breath",
+            "Degenerator",
+            "Holy",
+            "Sand Storm",
+            "1,000 Needles",
+            "10,000 Needles",
+            "Unknown",
+            "Suicide",
+            "Kamikaze",
+            "Card",
+            "Defend",
+            "Ultra Waves (Quistis)",
+            "Shiva Summon (Diamond Dust)",
+            "Blaster",
+            "Odin Summon (Zantetsuken)",
+            "Shot - Normal Shot",
+            "Wall",
+            "Chain Gun",
+            "Doomtrain Summon (Runaway Train)",
+            "Shot - Scatter Shot",
+            "Shot - Dark Shot",
+            "Shot - Flame Shot",
+            "Shot - Canister Shot",
+            "Shot - Quick Shot",
+            "Shot - Armor Shot",
+            "Shot - Hyper Shot",
+            "Cactuar Summon (1,000 Needles)",
+            "No Mercy",
+            "Ifrit Summon (Hell Fire)",
+            "Bahamut Summon (Mega Flare)",
+            "Cerberus Summon (Counter Rockets)",
+            "Alexander Summon (Holy Judgment)",
+            "Brothers Summon (Brotherly Love)",
+            "Eden Summon (Eternal Breath)",
+            "Maelstrom",
+            "Final \"Sorceress\" Death",
+            "\"Sorceress\" Spawn",
+            "Bloodfest",
+            "Adel Death",
+            "Burning Rave (Zell\'s Finisher)",
+            "Storm Breath",
+            "Gravija",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
+            "Energy Bomber",
+            "Unknown",
+            "Terra Break",
+            "Light Pillar",
+            "Apocalypse",
+            "Water",
+            "Meteor",
+            "Unknown",
+            "Unknown",
+            "White Wind",
+            "Ultimecia First Death",
+            "Ice Strike",
+            "Homing Laser (Quistis)",
+            "Fire Breath (Quistis)",
+            "Disease Breath",
+            "Breath of Death",
+            "Earthquake",
+            "Fart",
+            "Breath",
+            "Gas",
+            "Explosion",
+            "Breath",
+            "Ochu Dance",
+            "Earthquake",
+            "BGH251F2 Gatling Gun",
+            "Beam Cannon",
+            "BGH251F2 1st Turret Exploding",
+            "BGH251F2 2nd Turret Exploding",
+            "BGH251F2 3rd Turret Exploding",
+            "BGH251F2 4th Turret Exploding",
+            "BGH251F2 Death",
+            "Soldier Entrance After BGH251F2 Death",
+            "Unknown",
+            "Beam Cannon",
+            "Demon Slice",
+            "Corona",
+            "Twin Homing Laser",
+            "Homing Laser",
+            "Homing Laser",
+            "Sand Shake",
+            "Mega Flare",
+            "Mad Cow Special",
+            "Renzokuken - 6 Hits",
+            "Shockwave Pulsar (Quistis)",
+            "Desperado",
+            "Blood Pain",
+            "Massive Anchor",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Ultima Weapon Death",
+            "LV Up",
+            "LV Down",
+            "Mad Rush",
+            "Duel",
+            "Electrocute (Quistis)",
+            "Unknown",
+            "Unknown",
+            "Carbuncle Summon (Ruby Light)",
+            "Mega Spark",
+            "Full Cure",
+            "Shotgun",
+            "Evil-Eye",
+            "Magic Summon",
+            "Micro Missiles",
+            "Thunder Summon",
+            "Mini Pulse Cannon",
+            "Mega Pulse Cannon",
+            "Rapture",
+            "\"Brrawghh!\"",
+            "Unknown",
+            "Pandemona Summon (Tornado Zone)",
+            "Soft",
+            "Eye Drops",
+            "Antidote",
+            "Echo Screen",
+            "Holy Water",
+            "White Wind (Quistis)",
+            "Unknown",
+            "Micro Missiles (Quistis)",
+            "Bad Breath (Quistis)",
+            "Unknown",
+            "Snipe Laser",
+            "Unknown",
+            "Boomerang Sword",
+            "Gatling Gun (Quistis)",
+            "Degenerator (Quistis)",
+            "Ray-Bomb (Quistis)",
+            "Unknown",
+            "Hero-trial/Hero",
+            "Holy War-trial/Holy War",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Fake President Death",
+            "Unknown",
+            "Acid (Quistis)",
+            "Unknown",
+            "Unknown",
+            "Dark Flare",
+            "Ker Plunk",
+            "Zan",
+            "Metsu",
+            "Tonberry King Death",
+            "Diablos Summon (Dark Messenger)",
+            "Zantetsuken Reverse",
+            "Gilgamesh - Zantetsuken",
+            "Gilgamesh - Masamune",
+            "Gilgamesh - Excaliber",
+            "Gilgamesh - Excalipoor",
+            "Unknown",
+            "Renzokuken - 7 Hits",
+            "Renzokuken - 8 Hits",
+            "Renzokuken (vs Bahamut)",
+            "Renzokuken (vs NORG)",
+            "Renzokuken (vs Ultima Weapon)",
+            "Renzokuken (vs Final \"Sorceress\")",
+            "Friendship (MoombaMoomba)",
+            "Renzokuken (vs Adel)",
+            "Renzokuken (vs Ultimecia Final Form)",
+            "Renzokuken (vs Jumbo Cactuar)",
+            "Renzokuken (vs Griever + Ultimecia)",
+            "Renzokuken (vs Griever)",
+            "Final Battle Music",
+            "LV5 Death"});
+            this.comboBoxBattleItemsMagicID.Location = new System.Drawing.Point(29, 49);
+            this.comboBoxBattleItemsMagicID.Name = "comboBoxBattleItemsMagicID";
+            this.comboBoxBattleItemsMagicID.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxBattleItemsMagicID.TabIndex = 2;
+            // 
+            // listBoxBattleItems
+            // 
+            this.listBoxBattleItems.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxBattleItems.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxBattleItems.FormattingEnabled = true;
+            this.listBoxBattleItems.ItemHeight = 17;
+            this.listBoxBattleItems.Items.AddRange(new object[] {
+            "Potion",
+            "Potion+",
+            "Hi-Potion",
+            "Hi-Potion+",
+            "X-Potion",
+            "Mega-Potion",
+            "Phoenix Down",
+            "Mega Phoenix",
+            "Elixir",
+            "Megalixir",
+            "Antidote",
+            "Soft",
+            "Eye Drops",
+            "Echo Screen",
+            "Holy Water",
+            "Remedy",
+            "Remedy+",
+            "Hero-trial",
+            "Hero",
+            "Holy War-trial",
+            "Holy War",
+            "Shell Stone",
+            "Protect Stone",
+            "Aura Stone",
+            "Death Stone",
+            "Holy Stone",
+            "Flare Stone",
+            "Meteor Stone",
+            "Ultima Stone",
+            "Gysahl Greens",
+            "Phoenix Pinion",
+            "Friendship"});
+            this.listBoxBattleItems.Location = new System.Drawing.Point(0, 0);
+            this.listBoxBattleItems.Name = "listBoxBattleItems";
+            this.listBoxBattleItems.ScrollAlwaysVisible = true;
+            this.listBoxBattleItems.Size = new System.Drawing.Size(109, 735);
+            this.listBoxBattleItems.TabIndex = 112;
+            this.listBoxBattleItems.SelectedIndexChanged += new System.EventHandler(this.listBoxBattleItems_SelectedIndexChanged);
+            // 
             // tabPageEnemyAttacks
             // 
             this.tabPageEnemyAttacks.Controls.Add(this.groupBox14);
@@ -30177,1373 +31553,6 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel1.Text = "Ready";
             // 
-            // groupBoxBattleItemsStatusAttack
-            // 
-            this.groupBoxBattleItemsStatusAttack.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsPetrifying);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDarkness);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsSilence);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsStop);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsConfusion);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsPetrify);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsSlow);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsBerserk);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsSleep);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsInvincible);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsCurse);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDoom);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsFloat);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsAura);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDrain);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsSummonGF);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsHasMagic);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk6);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk5);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk4);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk3);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsAngelWing);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsVit0);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsBackAttack);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsCharged);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk2);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk1);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDefend);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsTriple);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDouble);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsEject);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsPoison);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsDeath);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsProtect);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsHaste);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsRegen);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsShell);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsReflect);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsUnk7);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.checkBoxBattleItemsZombie);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.numericUpDownBattleItemsStatusAttack);
-            this.groupBoxBattleItemsStatusAttack.Controls.Add(this.labelBattleItemsStatusAttack);
-            this.groupBoxBattleItemsStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxBattleItemsStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBoxBattleItemsStatusAttack.Location = new System.Drawing.Point(112, 313);
-            this.groupBoxBattleItemsStatusAttack.Name = "groupBoxBattleItemsStatusAttack";
-            this.groupBoxBattleItemsStatusAttack.Size = new System.Drawing.Size(465, 286);
-            this.groupBoxBattleItemsStatusAttack.TabIndex = 116;
-            this.groupBoxBattleItemsStatusAttack.TabStop = false;
-            this.groupBoxBattleItemsStatusAttack.Text = "Status Attack";
-            // 
-            // checkBoxBattleItemsPetrifying
-            // 
-            this.checkBoxBattleItemsPetrifying.AutoSize = true;
-            this.checkBoxBattleItemsPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsPetrifying.Location = new System.Drawing.Point(285, 136);
-            this.checkBoxBattleItemsPetrifying.Name = "checkBoxBattleItemsPetrifying";
-            this.checkBoxBattleItemsPetrifying.Size = new System.Drawing.Size(77, 19);
-            this.checkBoxBattleItemsPetrifying.TabIndex = 115;
-            this.checkBoxBattleItemsPetrifying.Text = "Petrifying";
-            this.checkBoxBattleItemsPetrifying.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsDarkness
-            // 
-            this.checkBoxBattleItemsDarkness.AutoSize = true;
-            this.checkBoxBattleItemsDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsDarkness.Location = new System.Drawing.Point(10, 261);
-            this.checkBoxBattleItemsDarkness.Name = "checkBoxBattleItemsDarkness";
-            this.checkBoxBattleItemsDarkness.Size = new System.Drawing.Size(73, 19);
-            this.checkBoxBattleItemsDarkness.TabIndex = 138;
-            this.checkBoxBattleItemsDarkness.Text = "Darkness";
-            this.checkBoxBattleItemsDarkness.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsSilence
-            // 
-            this.checkBoxBattleItemsSilence.AutoSize = true;
-            this.checkBoxBattleItemsSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsSilence.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsSilence.Location = new System.Drawing.Point(102, 261);
-            this.checkBoxBattleItemsSilence.Name = "checkBoxBattleItemsSilence";
-            this.checkBoxBattleItemsSilence.Size = new System.Drawing.Size(63, 19);
-            this.checkBoxBattleItemsSilence.TabIndex = 139;
-            this.checkBoxBattleItemsSilence.Text = "Silence";
-            this.checkBoxBattleItemsSilence.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsStop
-            // 
-            this.checkBoxBattleItemsStop.AutoSize = true;
-            this.checkBoxBattleItemsStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsStop.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsStop.Location = new System.Drawing.Point(285, 86);
-            this.checkBoxBattleItemsStop.Name = "checkBoxBattleItemsStop";
-            this.checkBoxBattleItemsStop.Size = new System.Drawing.Size(50, 19);
-            this.checkBoxBattleItemsStop.TabIndex = 106;
-            this.checkBoxBattleItemsStop.Text = "Stop";
-            this.checkBoxBattleItemsStop.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsConfusion
-            // 
-            this.checkBoxBattleItemsConfusion.AutoSize = true;
-            this.checkBoxBattleItemsConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsConfusion.Location = new System.Drawing.Point(373, 136);
-            this.checkBoxBattleItemsConfusion.Name = "checkBoxBattleItemsConfusion";
-            this.checkBoxBattleItemsConfusion.Size = new System.Drawing.Size(81, 19);
-            this.checkBoxBattleItemsConfusion.TabIndex = 117;
-            this.checkBoxBattleItemsConfusion.Text = "Confusion";
-            this.checkBoxBattleItemsConfusion.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsPetrify
-            // 
-            this.checkBoxBattleItemsPetrify.AutoSize = true;
-            this.checkBoxBattleItemsPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsPetrify.Location = new System.Drawing.Point(373, 236);
-            this.checkBoxBattleItemsPetrify.Name = "checkBoxBattleItemsPetrify";
-            this.checkBoxBattleItemsPetrify.Size = new System.Drawing.Size(60, 19);
-            this.checkBoxBattleItemsPetrify.TabIndex = 137;
-            this.checkBoxBattleItemsPetrify.Text = "Petrify";
-            this.checkBoxBattleItemsPetrify.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsSlow
-            // 
-            this.checkBoxBattleItemsSlow.AutoSize = true;
-            this.checkBoxBattleItemsSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsSlow.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsSlow.Location = new System.Drawing.Point(196, 86);
-            this.checkBoxBattleItemsSlow.Name = "checkBoxBattleItemsSlow";
-            this.checkBoxBattleItemsSlow.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxBattleItemsSlow.TabIndex = 105;
-            this.checkBoxBattleItemsSlow.Text = "Slow";
-            this.checkBoxBattleItemsSlow.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsBerserk
-            // 
-            this.checkBoxBattleItemsBerserk.AutoSize = true;
-            this.checkBoxBattleItemsBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsBerserk.Location = new System.Drawing.Point(196, 261);
-            this.checkBoxBattleItemsBerserk.Name = "checkBoxBattleItemsBerserk";
-            this.checkBoxBattleItemsBerserk.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxBattleItemsBerserk.TabIndex = 140;
-            this.checkBoxBattleItemsBerserk.Text = "Berserk";
-            this.checkBoxBattleItemsBerserk.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsSleep
-            // 
-            this.checkBoxBattleItemsSleep.AutoSize = true;
-            this.checkBoxBattleItemsSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsSleep.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsSleep.Location = new System.Drawing.Point(10, 86);
-            this.checkBoxBattleItemsSleep.Name = "checkBoxBattleItemsSleep";
-            this.checkBoxBattleItemsSleep.Size = new System.Drawing.Size(54, 19);
-            this.checkBoxBattleItemsSleep.TabIndex = 103;
-            this.checkBoxBattleItemsSleep.Text = "Sleep";
-            this.checkBoxBattleItemsSleep.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsInvincible
-            // 
-            this.checkBoxBattleItemsInvincible.AutoSize = true;
-            this.checkBoxBattleItemsInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsInvincible.Location = new System.Drawing.Point(102, 136);
-            this.checkBoxBattleItemsInvincible.Name = "checkBoxBattleItemsInvincible";
-            this.checkBoxBattleItemsInvincible.Size = new System.Drawing.Size(77, 19);
-            this.checkBoxBattleItemsInvincible.TabIndex = 114;
-            this.checkBoxBattleItemsInvincible.Text = "Invincible";
-            this.checkBoxBattleItemsInvincible.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsCurse
-            // 
-            this.checkBoxBattleItemsCurse.AutoSize = true;
-            this.checkBoxBattleItemsCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsCurse.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsCurse.Location = new System.Drawing.Point(373, 111);
-            this.checkBoxBattleItemsCurse.Name = "checkBoxBattleItemsCurse";
-            this.checkBoxBattleItemsCurse.Size = new System.Drawing.Size(56, 19);
-            this.checkBoxBattleItemsCurse.TabIndex = 112;
-            this.checkBoxBattleItemsCurse.Text = "Curse";
-            this.checkBoxBattleItemsCurse.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsDoom
-            // 
-            this.checkBoxBattleItemsDoom.AutoSize = true;
-            this.checkBoxBattleItemsDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsDoom.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsDoom.Location = new System.Drawing.Point(10, 136);
-            this.checkBoxBattleItemsDoom.Name = "checkBoxBattleItemsDoom";
-            this.checkBoxBattleItemsDoom.Size = new System.Drawing.Size(59, 19);
-            this.checkBoxBattleItemsDoom.TabIndex = 113;
-            this.checkBoxBattleItemsDoom.Text = "Doom";
-            this.checkBoxBattleItemsDoom.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsFloat
-            // 
-            this.checkBoxBattleItemsFloat.AutoSize = true;
-            this.checkBoxBattleItemsFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsFloat.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsFloat.Location = new System.Drawing.Point(196, 136);
-            this.checkBoxBattleItemsFloat.Name = "checkBoxBattleItemsFloat";
-            this.checkBoxBattleItemsFloat.Size = new System.Drawing.Size(52, 19);
-            this.checkBoxBattleItemsFloat.TabIndex = 116;
-            this.checkBoxBattleItemsFloat.Text = "Float";
-            this.checkBoxBattleItemsFloat.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsAura
-            // 
-            this.checkBoxBattleItemsAura.AutoSize = true;
-            this.checkBoxBattleItemsAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsAura.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsAura.Location = new System.Drawing.Point(285, 111);
-            this.checkBoxBattleItemsAura.Name = "checkBoxBattleItemsAura";
-            this.checkBoxBattleItemsAura.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxBattleItemsAura.TabIndex = 111;
-            this.checkBoxBattleItemsAura.Text = "Aura";
-            this.checkBoxBattleItemsAura.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsDrain
-            // 
-            this.checkBoxBattleItemsDrain.AutoSize = true;
-            this.checkBoxBattleItemsDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsDrain.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsDrain.Location = new System.Drawing.Point(10, 161);
-            this.checkBoxBattleItemsDrain.Name = "checkBoxBattleItemsDrain";
-            this.checkBoxBattleItemsDrain.Size = new System.Drawing.Size(54, 19);
-            this.checkBoxBattleItemsDrain.TabIndex = 118;
-            this.checkBoxBattleItemsDrain.Text = "Drain";
-            this.checkBoxBattleItemsDrain.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsSummonGF
-            // 
-            this.checkBoxBattleItemsSummonGF.AutoSize = true;
-            this.checkBoxBattleItemsSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsSummonGF.Location = new System.Drawing.Point(102, 236);
-            this.checkBoxBattleItemsSummonGF.Name = "checkBoxBattleItemsSummonGF";
-            this.checkBoxBattleItemsSummonGF.Size = new System.Drawing.Size(92, 19);
-            this.checkBoxBattleItemsSummonGF.TabIndex = 133;
-            this.checkBoxBattleItemsSummonGF.Text = "Summon GF";
-            this.checkBoxBattleItemsSummonGF.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsHasMagic
-            // 
-            this.checkBoxBattleItemsHasMagic.AutoSize = true;
-            this.checkBoxBattleItemsHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsHasMagic.Location = new System.Drawing.Point(10, 236);
-            this.checkBoxBattleItemsHasMagic.Name = "checkBoxBattleItemsHasMagic";
-            this.checkBoxBattleItemsHasMagic.Size = new System.Drawing.Size(82, 19);
-            this.checkBoxBattleItemsHasMagic.TabIndex = 132;
-            this.checkBoxBattleItemsHasMagic.Text = "Has Magic";
-            this.checkBoxBattleItemsHasMagic.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsUnk6
-            // 
-            this.checkBoxBattleItemsUnk6.AutoSize = true;
-            this.checkBoxBattleItemsUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsUnk6.Location = new System.Drawing.Point(373, 211);
-            this.checkBoxBattleItemsUnk6.Name = "checkBoxBattleItemsUnk6";
-            this.checkBoxBattleItemsUnk6.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsUnk6.TabIndex = 131;
-            this.checkBoxBattleItemsUnk6.Text = "???";
-            this.checkBoxBattleItemsUnk6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsUnk5
-            // 
-            this.checkBoxBattleItemsUnk5.AutoSize = true;
-            this.checkBoxBattleItemsUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsUnk5.Location = new System.Drawing.Point(285, 211);
-            this.checkBoxBattleItemsUnk5.Name = "checkBoxBattleItemsUnk5";
-            this.checkBoxBattleItemsUnk5.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsUnk5.TabIndex = 130;
-            this.checkBoxBattleItemsUnk5.Text = "???";
-            this.checkBoxBattleItemsUnk5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsUnk4
-            // 
-            this.checkBoxBattleItemsUnk4.AutoSize = true;
-            this.checkBoxBattleItemsUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsUnk4.Location = new System.Drawing.Point(196, 211);
-            this.checkBoxBattleItemsUnk4.Name = "checkBoxBattleItemsUnk4";
-            this.checkBoxBattleItemsUnk4.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsUnk4.TabIndex = 127;
-            this.checkBoxBattleItemsUnk4.Text = "???";
-            this.checkBoxBattleItemsUnk4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsUnk3
-            // 
-            this.checkBoxBattleItemsUnk3.AutoSize = true;
-            this.checkBoxBattleItemsUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsUnk3.Location = new System.Drawing.Point(102, 211);
-            this.checkBoxBattleItemsUnk3.Name = "checkBoxBattleItemsUnk3";
-            this.checkBoxBattleItemsUnk3.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsUnk3.TabIndex = 129;
-            this.checkBoxBattleItemsUnk3.Text = "???";
-            this.checkBoxBattleItemsUnk3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsAngelWing
-            // 
-            this.checkBoxBattleItemsAngelWing.AutoSize = true;
-            this.checkBoxBattleItemsAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsAngelWing.Location = new System.Drawing.Point(10, 211);
-            this.checkBoxBattleItemsAngelWing.Name = "checkBoxBattleItemsAngelWing";
-            this.checkBoxBattleItemsAngelWing.Size = new System.Drawing.Size(88, 19);
-            this.checkBoxBattleItemsAngelWing.TabIndex = 128;
-            this.checkBoxBattleItemsAngelWing.Text = "Angel Wing";
-            this.checkBoxBattleItemsAngelWing.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsVit0
-            // 
-            this.checkBoxBattleItemsVit0.AutoSize = true;
-            this.checkBoxBattleItemsVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsVit0.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsVit0.Location = new System.Drawing.Point(373, 186);
-            this.checkBoxBattleItemsVit0.Name = "checkBoxBattleItemsVit0";
-            this.checkBoxBattleItemsVit0.Size = new System.Drawing.Size(46, 19);
-            this.checkBoxBattleItemsVit0.TabIndex = 134;
-            this.checkBoxBattleItemsVit0.Text = "Vit0";
-            this.checkBoxBattleItemsVit0.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsBackAttack
-            // 
-            this.checkBoxBattleItemsBackAttack.AutoSize = true;
-            this.checkBoxBattleItemsBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsBackAttack.Location = new System.Drawing.Point(285, 186);
-            this.checkBoxBattleItemsBackAttack.Name = "checkBoxBattleItemsBackAttack";
-            this.checkBoxBattleItemsBackAttack.Size = new System.Drawing.Size(88, 19);
-            this.checkBoxBattleItemsBackAttack.TabIndex = 126;
-            this.checkBoxBattleItemsBackAttack.Text = "Back Attack";
-            this.checkBoxBattleItemsBackAttack.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsCharged
-            // 
-            this.checkBoxBattleItemsCharged.AutoSize = true;
-            this.checkBoxBattleItemsCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsCharged.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsCharged.Location = new System.Drawing.Point(196, 186);
-            this.checkBoxBattleItemsCharged.Name = "checkBoxBattleItemsCharged";
-            this.checkBoxBattleItemsCharged.Size = new System.Drawing.Size(71, 19);
-            this.checkBoxBattleItemsCharged.TabIndex = 122;
-            this.checkBoxBattleItemsCharged.Text = "Charged";
-            this.checkBoxBattleItemsCharged.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsUnk2
-            // 
-            this.checkBoxBattleItemsUnk2.AutoSize = true;
-            this.checkBoxBattleItemsUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsUnk2.Location = new System.Drawing.Point(102, 186);
-            this.checkBoxBattleItemsUnk2.Name = "checkBoxBattleItemsUnk2";
-            this.checkBoxBattleItemsUnk2.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsUnk2.TabIndex = 125;
-            this.checkBoxBattleItemsUnk2.Text = "???";
-            this.checkBoxBattleItemsUnk2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsUnk1
-            // 
-            this.checkBoxBattleItemsUnk1.AutoSize = true;
-            this.checkBoxBattleItemsUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsUnk1.Location = new System.Drawing.Point(10, 186);
-            this.checkBoxBattleItemsUnk1.Name = "checkBoxBattleItemsUnk1";
-            this.checkBoxBattleItemsUnk1.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsUnk1.TabIndex = 124;
-            this.checkBoxBattleItemsUnk1.Text = "???";
-            this.checkBoxBattleItemsUnk1.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsDefend
-            // 
-            this.checkBoxBattleItemsDefend.AutoSize = true;
-            this.checkBoxBattleItemsDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsDefend.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsDefend.Location = new System.Drawing.Point(373, 161);
-            this.checkBoxBattleItemsDefend.Name = "checkBoxBattleItemsDefend";
-            this.checkBoxBattleItemsDefend.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxBattleItemsDefend.TabIndex = 123;
-            this.checkBoxBattleItemsDefend.Text = "Defend";
-            this.checkBoxBattleItemsDefend.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsTriple
-            // 
-            this.checkBoxBattleItemsTriple.AutoSize = true;
-            this.checkBoxBattleItemsTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsTriple.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsTriple.Location = new System.Drawing.Point(285, 161);
-            this.checkBoxBattleItemsTriple.Name = "checkBoxBattleItemsTriple";
-            this.checkBoxBattleItemsTriple.Size = new System.Drawing.Size(55, 19);
-            this.checkBoxBattleItemsTriple.TabIndex = 121;
-            this.checkBoxBattleItemsTriple.Text = "Triple";
-            this.checkBoxBattleItemsTriple.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsDouble
-            // 
-            this.checkBoxBattleItemsDouble.AutoSize = true;
-            this.checkBoxBattleItemsDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsDouble.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsDouble.Location = new System.Drawing.Point(196, 161);
-            this.checkBoxBattleItemsDouble.Name = "checkBoxBattleItemsDouble";
-            this.checkBoxBattleItemsDouble.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxBattleItemsDouble.TabIndex = 120;
-            this.checkBoxBattleItemsDouble.Text = "Double";
-            this.checkBoxBattleItemsDouble.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsEject
-            // 
-            this.checkBoxBattleItemsEject.AutoSize = true;
-            this.checkBoxBattleItemsEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsEject.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsEject.Location = new System.Drawing.Point(102, 161);
-            this.checkBoxBattleItemsEject.Name = "checkBoxBattleItemsEject";
-            this.checkBoxBattleItemsEject.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxBattleItemsEject.TabIndex = 119;
-            this.checkBoxBattleItemsEject.Text = "Eject";
-            this.checkBoxBattleItemsEject.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsPoison
-            // 
-            this.checkBoxBattleItemsPoison.AutoSize = true;
-            this.checkBoxBattleItemsPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsPoison.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsPoison.Location = new System.Drawing.Point(285, 236);
-            this.checkBoxBattleItemsPoison.Name = "checkBoxBattleItemsPoison";
-            this.checkBoxBattleItemsPoison.Size = new System.Drawing.Size(62, 19);
-            this.checkBoxBattleItemsPoison.TabIndex = 136;
-            this.checkBoxBattleItemsPoison.Text = "Poison";
-            this.checkBoxBattleItemsPoison.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsDeath
-            // 
-            this.checkBoxBattleItemsDeath.AutoSize = true;
-            this.checkBoxBattleItemsDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsDeath.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsDeath.Location = new System.Drawing.Point(196, 236);
-            this.checkBoxBattleItemsDeath.Name = "checkBoxBattleItemsDeath";
-            this.checkBoxBattleItemsDeath.Size = new System.Drawing.Size(57, 19);
-            this.checkBoxBattleItemsDeath.TabIndex = 135;
-            this.checkBoxBattleItemsDeath.Text = "Death";
-            this.checkBoxBattleItemsDeath.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsProtect
-            // 
-            this.checkBoxBattleItemsProtect.AutoSize = true;
-            this.checkBoxBattleItemsProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsProtect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsProtect.Location = new System.Drawing.Point(10, 111);
-            this.checkBoxBattleItemsProtect.Name = "checkBoxBattleItemsProtect";
-            this.checkBoxBattleItemsProtect.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxBattleItemsProtect.TabIndex = 108;
-            this.checkBoxBattleItemsProtect.Text = "Protect";
-            this.checkBoxBattleItemsProtect.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsHaste
-            // 
-            this.checkBoxBattleItemsHaste.AutoSize = true;
-            this.checkBoxBattleItemsHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsHaste.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsHaste.Location = new System.Drawing.Point(102, 86);
-            this.checkBoxBattleItemsHaste.Name = "checkBoxBattleItemsHaste";
-            this.checkBoxBattleItemsHaste.Size = new System.Drawing.Size(56, 19);
-            this.checkBoxBattleItemsHaste.TabIndex = 104;
-            this.checkBoxBattleItemsHaste.Text = "Haste";
-            this.checkBoxBattleItemsHaste.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsRegen
-            // 
-            this.checkBoxBattleItemsRegen.AutoSize = true;
-            this.checkBoxBattleItemsRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsRegen.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsRegen.Location = new System.Drawing.Point(373, 86);
-            this.checkBoxBattleItemsRegen.Name = "checkBoxBattleItemsRegen";
-            this.checkBoxBattleItemsRegen.Size = new System.Drawing.Size(59, 19);
-            this.checkBoxBattleItemsRegen.TabIndex = 107;
-            this.checkBoxBattleItemsRegen.Text = "Regen";
-            this.checkBoxBattleItemsRegen.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsShell
-            // 
-            this.checkBoxBattleItemsShell.AutoSize = true;
-            this.checkBoxBattleItemsShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsShell.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsShell.Location = new System.Drawing.Point(102, 111);
-            this.checkBoxBattleItemsShell.Name = "checkBoxBattleItemsShell";
-            this.checkBoxBattleItemsShell.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxBattleItemsShell.TabIndex = 109;
-            this.checkBoxBattleItemsShell.Text = "Shell";
-            this.checkBoxBattleItemsShell.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsReflect
-            // 
-            this.checkBoxBattleItemsReflect.AutoSize = true;
-            this.checkBoxBattleItemsReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsReflect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsReflect.Location = new System.Drawing.Point(196, 111);
-            this.checkBoxBattleItemsReflect.Name = "checkBoxBattleItemsReflect";
-            this.checkBoxBattleItemsReflect.Size = new System.Drawing.Size(62, 19);
-            this.checkBoxBattleItemsReflect.TabIndex = 110;
-            this.checkBoxBattleItemsReflect.Text = "Reflect";
-            this.checkBoxBattleItemsReflect.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsUnk7
-            // 
-            this.checkBoxBattleItemsUnk7.AutoSize = true;
-            this.checkBoxBattleItemsUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsUnk7.Location = new System.Drawing.Point(373, 261);
-            this.checkBoxBattleItemsUnk7.Name = "checkBoxBattleItemsUnk7";
-            this.checkBoxBattleItemsUnk7.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsUnk7.TabIndex = 141;
-            this.checkBoxBattleItemsUnk7.Text = "???";
-            this.checkBoxBattleItemsUnk7.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsZombie
-            // 
-            this.checkBoxBattleItemsZombie.AutoSize = true;
-            this.checkBoxBattleItemsZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsZombie.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsZombie.Location = new System.Drawing.Point(285, 261);
-            this.checkBoxBattleItemsZombie.Name = "checkBoxBattleItemsZombie";
-            this.checkBoxBattleItemsZombie.Size = new System.Drawing.Size(67, 19);
-            this.checkBoxBattleItemsZombie.TabIndex = 142;
-            this.checkBoxBattleItemsZombie.Text = "Zombie";
-            this.checkBoxBattleItemsZombie.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDownBattleItemsStatusAttack
-            // 
-            this.numericUpDownBattleItemsStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBattleItemsStatusAttack.Location = new System.Drawing.Point(209, 46);
-            this.numericUpDownBattleItemsStatusAttack.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownBattleItemsStatusAttack.Name = "numericUpDownBattleItemsStatusAttack";
-            this.numericUpDownBattleItemsStatusAttack.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownBattleItemsStatusAttack.TabIndex = 91;
-            // 
-            // labelBattleItemsStatusAttack
-            // 
-            this.labelBattleItemsStatusAttack.AutoSize = true;
-            this.labelBattleItemsStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBattleItemsStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBattleItemsStatusAttack.Location = new System.Drawing.Point(188, 26);
-            this.labelBattleItemsStatusAttack.Name = "labelBattleItemsStatusAttack";
-            this.labelBattleItemsStatusAttack.Size = new System.Drawing.Size(89, 17);
-            this.labelBattleItemsStatusAttack.TabIndex = 90;
-            this.labelBattleItemsStatusAttack.Text = "Status Attack";
-            // 
-            // groupBoxBattleItemsTarget
-            // 
-            this.groupBoxBattleItemsTarget.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget8);
-            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget5);
-            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget2);
-            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget4);
-            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget6);
-            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget7);
-            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget1);
-            this.groupBoxBattleItemsTarget.Controls.Add(this.checkBoxBattleItemsTarget3);
-            this.groupBoxBattleItemsTarget.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxBattleItemsTarget.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBoxBattleItemsTarget.Location = new System.Drawing.Point(112, 213);
-            this.groupBoxBattleItemsTarget.Name = "groupBoxBattleItemsTarget";
-            this.groupBoxBattleItemsTarget.Size = new System.Drawing.Size(465, 94);
-            this.groupBoxBattleItemsTarget.TabIndex = 115;
-            this.groupBoxBattleItemsTarget.TabStop = false;
-            this.groupBoxBattleItemsTarget.Text = "Target Info";
-            // 
-            // checkBoxBattleItemsTarget8
-            // 
-            this.checkBoxBattleItemsTarget8.AutoSize = true;
-            this.checkBoxBattleItemsTarget8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsTarget8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsTarget8.Location = new System.Drawing.Point(352, 60);
-            this.checkBoxBattleItemsTarget8.Name = "checkBoxBattleItemsTarget8";
-            this.checkBoxBattleItemsTarget8.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsTarget8.TabIndex = 39;
-            this.checkBoxBattleItemsTarget8.Text = "???";
-            this.checkBoxBattleItemsTarget8.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsTarget5
-            // 
-            this.checkBoxBattleItemsTarget5.AutoSize = true;
-            this.checkBoxBattleItemsTarget5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsTarget5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsTarget5.Location = new System.Drawing.Point(29, 60);
-            this.checkBoxBattleItemsTarget5.Name = "checkBoxBattleItemsTarget5";
-            this.checkBoxBattleItemsTarget5.Size = new System.Drawing.Size(58, 19);
-            this.checkBoxBattleItemsTarget5.TabIndex = 40;
-            this.checkBoxBattleItemsTarget5.Text = "Single";
-            this.checkBoxBattleItemsTarget5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsTarget2
-            // 
-            this.checkBoxBattleItemsTarget2.AutoSize = true;
-            this.checkBoxBattleItemsTarget2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsTarget2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsTarget2.Location = new System.Drawing.Point(137, 35);
-            this.checkBoxBattleItemsTarget2.Name = "checkBoxBattleItemsTarget2";
-            this.checkBoxBattleItemsTarget2.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsTarget2.TabIndex = 36;
-            this.checkBoxBattleItemsTarget2.Text = "???";
-            this.checkBoxBattleItemsTarget2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsTarget4
-            // 
-            this.checkBoxBattleItemsTarget4.AutoSize = true;
-            this.checkBoxBattleItemsTarget4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsTarget4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsTarget4.Location = new System.Drawing.Point(352, 35);
-            this.checkBoxBattleItemsTarget4.Name = "checkBoxBattleItemsTarget4";
-            this.checkBoxBattleItemsTarget4.Size = new System.Drawing.Size(83, 19);
-            this.checkBoxBattleItemsTarget4.TabIndex = 38;
-            this.checkBoxBattleItemsTarget4.Text = "Single Side";
-            this.toolTip1.SetToolTip(this.checkBoxBattleItemsTarget4, "Enemy decides which side");
-            this.checkBoxBattleItemsTarget4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsTarget6
-            // 
-            this.checkBoxBattleItemsTarget6.AutoSize = true;
-            this.checkBoxBattleItemsTarget6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsTarget6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsTarget6.Location = new System.Drawing.Point(137, 60);
-            this.checkBoxBattleItemsTarget6.Name = "checkBoxBattleItemsTarget6";
-            this.checkBoxBattleItemsTarget6.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsTarget6.TabIndex = 41;
-            this.checkBoxBattleItemsTarget6.Text = "???";
-            this.checkBoxBattleItemsTarget6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsTarget7
-            // 
-            this.checkBoxBattleItemsTarget7.AutoSize = true;
-            this.checkBoxBattleItemsTarget7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsTarget7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsTarget7.Location = new System.Drawing.Point(247, 60);
-            this.checkBoxBattleItemsTarget7.Name = "checkBoxBattleItemsTarget7";
-            this.checkBoxBattleItemsTarget7.Size = new System.Drawing.Size(62, 19);
-            this.checkBoxBattleItemsTarget7.TabIndex = 42;
-            this.checkBoxBattleItemsTarget7.Text = "Enemy";
-            this.checkBoxBattleItemsTarget7.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsTarget1
-            // 
-            this.checkBoxBattleItemsTarget1.AutoSize = true;
-            this.checkBoxBattleItemsTarget1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsTarget1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsTarget1.Location = new System.Drawing.Point(29, 35);
-            this.checkBoxBattleItemsTarget1.Name = "checkBoxBattleItemsTarget1";
-            this.checkBoxBattleItemsTarget1.Size = new System.Drawing.Size(53, 19);
-            this.checkBoxBattleItemsTarget1.TabIndex = 35;
-            this.checkBoxBattleItemsTarget1.Text = "Dead";
-            this.checkBoxBattleItemsTarget1.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsTarget3
-            // 
-            this.checkBoxBattleItemsTarget3.AutoSize = true;
-            this.checkBoxBattleItemsTarget3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsTarget3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsTarget3.Location = new System.Drawing.Point(247, 35);
-            this.checkBoxBattleItemsTarget3.Name = "checkBoxBattleItemsTarget3";
-            this.checkBoxBattleItemsTarget3.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsTarget3.TabIndex = 37;
-            this.checkBoxBattleItemsTarget3.Text = "???";
-            this.checkBoxBattleItemsTarget3.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxBattleItemsAttackFlags
-            // 
-            this.groupBoxBattleItemsAttackFlags.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag4);
-            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag8);
-            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag3);
-            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag6);
-            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag1);
-            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag5);
-            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag2);
-            this.groupBoxBattleItemsAttackFlags.Controls.Add(this.checkBoxBattleItemsFlag7);
-            this.groupBoxBattleItemsAttackFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxBattleItemsAttackFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxBattleItemsAttackFlags.Location = new System.Drawing.Point(112, 605);
-            this.groupBoxBattleItemsAttackFlags.Name = "groupBoxBattleItemsAttackFlags";
-            this.groupBoxBattleItemsAttackFlags.Size = new System.Drawing.Size(465, 96);
-            this.groupBoxBattleItemsAttackFlags.TabIndex = 114;
-            this.groupBoxBattleItemsAttackFlags.TabStop = false;
-            this.groupBoxBattleItemsAttackFlags.Text = "Attack Flags";
-            // 
-            // checkBoxBattleItemsFlag4
-            // 
-            this.checkBoxBattleItemsFlag4.AutoSize = true;
-            this.checkBoxBattleItemsFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsFlag4.Location = new System.Drawing.Point(305, 38);
-            this.checkBoxBattleItemsFlag4.Name = "checkBoxBattleItemsFlag4";
-            this.checkBoxBattleItemsFlag4.Size = new System.Drawing.Size(132, 19);
-            this.checkBoxBattleItemsFlag4.TabIndex = 48;
-            this.checkBoxBattleItemsFlag4.Text = "Break Damage Limit";
-            this.checkBoxBattleItemsFlag4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsFlag8
-            // 
-            this.checkBoxBattleItemsFlag8.AutoSize = true;
-            this.checkBoxBattleItemsFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsFlag8.Location = new System.Drawing.Point(305, 63);
-            this.checkBoxBattleItemsFlag8.Name = "checkBoxBattleItemsFlag8";
-            this.checkBoxBattleItemsFlag8.Size = new System.Drawing.Size(65, 19);
-            this.checkBoxBattleItemsFlag8.TabIndex = 52;
-            this.checkBoxBattleItemsFlag8.Text = "Revive?";
-            this.checkBoxBattleItemsFlag8.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsFlag3
-            // 
-            this.checkBoxBattleItemsFlag3.AutoSize = true;
-            this.checkBoxBattleItemsFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsFlag3.Location = new System.Drawing.Point(220, 38);
-            this.checkBoxBattleItemsFlag3.Name = "checkBoxBattleItemsFlag3";
-            this.checkBoxBattleItemsFlag3.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsFlag3.TabIndex = 47;
-            this.checkBoxBattleItemsFlag3.Text = "???";
-            this.checkBoxBattleItemsFlag3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsFlag6
-            // 
-            this.checkBoxBattleItemsFlag6.AutoSize = true;
-            this.checkBoxBattleItemsFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsFlag6.Location = new System.Drawing.Point(135, 63);
-            this.checkBoxBattleItemsFlag6.Name = "checkBoxBattleItemsFlag6";
-            this.checkBoxBattleItemsFlag6.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsFlag6.TabIndex = 50;
-            this.checkBoxBattleItemsFlag6.Text = "???";
-            this.checkBoxBattleItemsFlag6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsFlag1
-            // 
-            this.checkBoxBattleItemsFlag1.AutoSize = true;
-            this.checkBoxBattleItemsFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsFlag1.Location = new System.Drawing.Point(27, 38);
-            this.checkBoxBattleItemsFlag1.Name = "checkBoxBattleItemsFlag1";
-            this.checkBoxBattleItemsFlag1.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxBattleItemsFlag1.TabIndex = 45;
-            this.checkBoxBattleItemsFlag1.Text = "Shelled";
-            this.checkBoxBattleItemsFlag1.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsFlag5
-            // 
-            this.checkBoxBattleItemsFlag5.AutoSize = true;
-            this.checkBoxBattleItemsFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsFlag5.Location = new System.Drawing.Point(27, 63);
-            this.checkBoxBattleItemsFlag5.Name = "checkBoxBattleItemsFlag5";
-            this.checkBoxBattleItemsFlag5.Size = new System.Drawing.Size(75, 19);
-            this.checkBoxBattleItemsFlag5.TabIndex = 49;
-            this.checkBoxBattleItemsFlag5.Text = "Reflected";
-            this.checkBoxBattleItemsFlag5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsFlag2
-            // 
-            this.checkBoxBattleItemsFlag2.AutoSize = true;
-            this.checkBoxBattleItemsFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsFlag2.Location = new System.Drawing.Point(135, 38);
-            this.checkBoxBattleItemsFlag2.Name = "checkBoxBattleItemsFlag2";
-            this.checkBoxBattleItemsFlag2.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsFlag2.TabIndex = 46;
-            this.checkBoxBattleItemsFlag2.Text = "???";
-            this.checkBoxBattleItemsFlag2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBattleItemsFlag7
-            // 
-            this.checkBoxBattleItemsFlag7.AutoSize = true;
-            this.checkBoxBattleItemsFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBattleItemsFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxBattleItemsFlag7.Location = new System.Drawing.Point(220, 63);
-            this.checkBoxBattleItemsFlag7.Name = "checkBoxBattleItemsFlag7";
-            this.checkBoxBattleItemsFlag7.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxBattleItemsFlag7.TabIndex = 51;
-            this.checkBoxBattleItemsFlag7.Text = "???";
-            this.checkBoxBattleItemsFlag7.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxBattleItemsGeneral
-            // 
-            this.groupBoxBattleItemsGeneral.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxBattleItemsGeneral.Controls.Add(this.comboBoxBattleItemsElement);
-            this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsElement);
-            this.groupBoxBattleItemsGeneral.Controls.Add(this.comboBoxBattleItemsAttackType);
-            this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsAttackType);
-            this.groupBoxBattleItemsGeneral.Controls.Add(this.numericUpDownBattleItemsHitCount);
-            this.groupBoxBattleItemsGeneral.Controls.Add(this.numericUpDownBattleItemsAttackPower);
-            this.groupBoxBattleItemsGeneral.Controls.Add(this.comboBoxBattleItemsMagicID);
-            this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsHitCount);
-            this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsAttackPower);
-            this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsMagicID);
-            this.groupBoxBattleItemsGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxBattleItemsGeneral.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBoxBattleItemsGeneral.Location = new System.Drawing.Point(112, 6);
-            this.groupBoxBattleItemsGeneral.Name = "groupBoxBattleItemsGeneral";
-            this.groupBoxBattleItemsGeneral.Size = new System.Drawing.Size(465, 201);
-            this.groupBoxBattleItemsGeneral.TabIndex = 113;
-            this.groupBoxBattleItemsGeneral.TabStop = false;
-            this.groupBoxBattleItemsGeneral.Text = "General";
-            // 
-            // comboBoxBattleItemsElement
-            // 
-            this.comboBoxBattleItemsElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxBattleItemsElement.FormattingEnabled = true;
-            this.comboBoxBattleItemsElement.Items.AddRange(new object[] {
-            "Fire",
-            "Ice",
-            "Thunder",
-            "Earth",
-            "Poison",
-            "Wind",
-            "Water",
-            "Holy",
-            "Non-Elemental"});
-            this.comboBoxBattleItemsElement.Location = new System.Drawing.Point(327, 49);
-            this.comboBoxBattleItemsElement.Name = "comboBoxBattleItemsElement";
-            this.comboBoxBattleItemsElement.Size = new System.Drawing.Size(110, 25);
-            this.comboBoxBattleItemsElement.TabIndex = 93;
-            // 
-            // labelBattleItemsElement
-            // 
-            this.labelBattleItemsElement.AutoSize = true;
-            this.labelBattleItemsElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBattleItemsElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBattleItemsElement.Location = new System.Drawing.Point(354, 29);
-            this.labelBattleItemsElement.Name = "labelBattleItemsElement";
-            this.labelBattleItemsElement.Size = new System.Drawing.Size(57, 17);
-            this.labelBattleItemsElement.TabIndex = 95;
-            this.labelBattleItemsElement.Text = "Element";
-            this.toolTip1.SetToolTip(this.labelBattleItemsElement, "The element of the GF attack");
-            // 
-            // comboBoxBattleItemsAttackType
-            // 
-            this.comboBoxBattleItemsAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxBattleItemsAttackType.FormattingEnabled = true;
-            this.comboBoxBattleItemsAttackType.Items.AddRange(new object[] {
-            "None",
-            "Basic Attack",
-            "Magic Attack",
-            "Curative Magic",
-            "Curative Item",
-            "Revive",
-            "Revive At Full HP",
-            "% Damage",
-            "Demi",
-            "Renzokuken Finisher",
-            "Squall Gunblade Attack",
-            "GF",
-            "Scan",
-            "LV Down",
-            "Summon Item?",
-            "Ignore SPR",
-            "LV Up",
-            "Card",
-            "Kamikaze",
-            "Devour",
-            "Diablos Gravity Attack",
-            "",
-            "Mega Spark/Mega Flare",
-            "Angelo Search",
-            "Moogle Dance",
-            "White Wind (Quistis)",
-            "LV5 Death/LV? Death",
-            "Fixed Damage",
-            "Corona/Hell\'s Judgement",
-            "Cactuar Summon",
-            "",
-            "",
-            "Give Percentage HP",
-            "",
-            "Everyone\'s Grudge",
-            "Excalipoor",
-            "Terra Break/Great Attractor"});
-            this.comboBoxBattleItemsAttackType.Location = new System.Drawing.Point(29, 103);
-            this.comboBoxBattleItemsAttackType.Name = "comboBoxBattleItemsAttackType";
-            this.comboBoxBattleItemsAttackType.Size = new System.Drawing.Size(265, 25);
-            this.comboBoxBattleItemsAttackType.TabIndex = 8;
-            // 
-            // labelBattleItemsAttackType
-            // 
-            this.labelBattleItemsAttackType.AutoSize = true;
-            this.labelBattleItemsAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBattleItemsAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBattleItemsAttackType.Location = new System.Drawing.Point(120, 83);
-            this.labelBattleItemsAttackType.Name = "labelBattleItemsAttackType";
-            this.labelBattleItemsAttackType.Size = new System.Drawing.Size(79, 17);
-            this.labelBattleItemsAttackType.TabIndex = 7;
-            this.labelBattleItemsAttackType.Text = "Attack Type";
-            this.toolTip1.SetToolTip(this.labelBattleItemsAttackType, "Decides what animation to play");
-            // 
-            // numericUpDownBattleItemsHitCount
-            // 
-            this.numericUpDownBattleItemsHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBattleItemsHitCount.Location = new System.Drawing.Point(312, 160);
-            this.numericUpDownBattleItemsHitCount.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownBattleItemsHitCount.Name = "numericUpDownBattleItemsHitCount";
-            this.numericUpDownBattleItemsHitCount.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownBattleItemsHitCount.TabIndex = 6;
-            // 
-            // numericUpDownBattleItemsAttackPower
-            // 
-            this.numericUpDownBattleItemsAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBattleItemsAttackPower.Location = new System.Drawing.Point(117, 160);
-            this.numericUpDownBattleItemsAttackPower.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownBattleItemsAttackPower.Name = "numericUpDownBattleItemsAttackPower";
-            this.numericUpDownBattleItemsAttackPower.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownBattleItemsAttackPower.TabIndex = 3;
-            // 
-            // comboBoxBattleItemsMagicID
-            // 
-            this.comboBoxBattleItemsMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxBattleItemsMagicID.FormattingEnabled = true;
-            this.comboBoxBattleItemsMagicID.Items.AddRange(new object[] {
-            "None",
-            "Cure",
-            "Fire",
-            "Thunder",
-            "Double",
-            "Phoenix Down",
-            "Leviathan Summon (Tsunami)",
-            "Mega Phoenix",
-            "Doom",
-            "Doom Activation",
-            "Ray-Bomb",
-            "Storm Breath",
-            "Blade Shot",
-            "Dark Mist/Poison Mist",
-            "Death/Death Stone",
-            "Draw",
-            "Recover",
-            "Elvoret Entrance",
-            "Elvoret Death",
-            "Unknown",
-            "NORG Pod Opening",
-            "Triple",
-            "Bio",
-            "Psycho Blast",
-            "Esuna",
-            "Cura",
-            "Clash",
-            "Full-Life",
-            "Curaga",
-            "Wind Blast",
-            "Counter Laser-Eye",
-            "Heartbreak",
-            "Protect",
-            "Shell",
-            "Pain",
-            "Life",
-            "Confuse",
-            "Drink Magic",
-            "Quake",
-            "Drain",
-            "Scan",
-            "Dribble",
-            "Shoot",
-            "Melting Bubble",
-            "Junk",
-            "Stare",
-            "Sigh",
-            "Curse",
-            "Magma Breath",
-            "Resonance",
-            "Potion/Potion+",
-            "Hi-Potion/Hi-Potion+",
-            "X-Potion",
-            "Mega-Potion",
-            "Everyone\'s Grudge",
-            "Aqua Breath",
-            "Absorb",
-            "Treatment",
-            "Elixir",
-            "Megalixir",
-            "Unknown",
-            "Revive",
-            "Devour",
-            "Unknown",
-            "Griever Tail Falling Off",
-            "Great Attractor",
-            "Griever + Ultimecia Death",
-            "Remedy/Remedy+",
-            "Unknown",
-            "Griever Summon",
-            "Shockwave Pulsar",
-            "Laser Eye (Quistis)",
-            "Aqua Breath (Quistis)",
-            "Mighty Guard (Quistis)",
-            "LV?Death (Quistis)",
-            "Hell\'s Judgement",
-            "Ultimecia Final Form Spawn",
-            "Ultimecia Final Form Death",
-            "Mighty Guard",
-            "Griever Death",
-            "Ultimecia Junctioning to Griever",
-            "Unknown",
-            "Ultimecia Blow Away Magic",
-            "Absorbed into time...",
-            "Angel Wing",
-            "The End",
-            "Angelo Cannon",
-            "Angelo Strike",
-            "Invincible Moon",
-            "Wishing Star",
-            "Tonberry Summon (Chef\'s Knife)",
-            "Angelo Rush",
-            "Angelo Search",
-            "Angelo Recover",
-            "Angelo Reverse",
-            "Siren Summon (Silent Voice)",
-            "Moogle Dance",
-            "ChocoFire",
-            "ChocoFlare",
-            "ChocoMeteor",
-            "ChocoBocle",
-            "Unknown",
-            "Thundara",
-            "Blizzara",
-            "Blizzaga",
-            "Thundaga",
-            "Reflect",
-            "Demi",
-            "Berserk",
-            "Dispel",
-            "Biggs + Wedge 1st Death",
-            "Aura",
-            "Meteor Barret (Zell\'s Finisher)",
-            "Bad Breath",
-            "Zombie",
-            "Float",
-            "Quezacotl Summon (Thunder Storm)",
-            "Break",
-            "Aero",
-            "Stop",
-            "Petrify Stare",
-            "Blind",
-            "Silence",
-            "Slow",
-            "Flare",
-            "Haste",
-            "Electric Discharge",
-            "Petrify Stare",
-            "Gastric Juice",
-            "Breath",
-            "Eerie Sound Wave",
-            "Bad Breath",
-            "Disolving Acid",
-            "Hypnotize",
-            "Beam Laser",
-            "Reflect Beam",
-            "Oil Shot",
-            "Oil Blast",
-            "Saliva",
-            "Sonic Wave",
-            "Phoenix Pinion (Rebirth Flame)",
-            "Renzokuken - 5 Hits",
-            "Fira",
-            "Firaga",
-            "Blizzard",
-            "Sleep",
-            "Tornado",
-            "Regen",
-            "Meltdown",
-            "Ultima",
-            "Gatling Gun",
-            "Cannon Blow",
-            "Ultrasonic Waves",
-            "Sticky Web",
-            "Ultra Waves",
-            "Sand Storm",
-            "Wild Cannon Blow",
-            "Breath",
-            "Melt-Eye",
-            "Renzokuken (vs X-ATM092)",
-            "Renzokuken - 4 Hits",
-            "Renzokuken (vs Elnoyle/Elvoret)",
-            "Fated Circle",
-            "Rough Divide",
-            "Blasting Zone",
-            "Lion Heart",
-            "Megido Flame",
-            "Zantetsuken",
-            "Sleeping Gas",
-            "Gastric Juice",
-            "Acid",
-            "Poison Gas",
-            "Morph",
-            "Ice Breath",
-            "Degenerator",
-            "Holy",
-            "Sand Storm",
-            "1,000 Needles",
-            "10,000 Needles",
-            "Unknown",
-            "Suicide",
-            "Kamikaze",
-            "Card",
-            "Defend",
-            "Ultra Waves (Quistis)",
-            "Shiva Summon (Diamond Dust)",
-            "Blaster",
-            "Odin Summon (Zantetsuken)",
-            "Shot - Normal Shot",
-            "Wall",
-            "Chain Gun",
-            "Doomtrain Summon (Runaway Train)",
-            "Shot - Scatter Shot",
-            "Shot - Dark Shot",
-            "Shot - Flame Shot",
-            "Shot - Canister Shot",
-            "Shot - Quick Shot",
-            "Shot - Armor Shot",
-            "Shot - Hyper Shot",
-            "Cactuar Summon (1,000 Needles)",
-            "No Mercy",
-            "Ifrit Summon (Hell Fire)",
-            "Bahamut Summon (Mega Flare)",
-            "Cerberus Summon (Counter Rockets)",
-            "Alexander Summon (Holy Judgment)",
-            "Brothers Summon (Brotherly Love)",
-            "Eden Summon (Eternal Breath)",
-            "Maelstrom",
-            "Final \"Sorceress\" Death",
-            "\"Sorceress\" Spawn",
-            "Bloodfest",
-            "Adel Death",
-            "Burning Rave (Zell\'s Finisher)",
-            "Storm Breath",
-            "Gravija",
-            "My Final Heaven (Zell\'s Finisher)",
-            "Different Beat (Zell\'s Finisher)",
-            "Energy Bomber",
-            "Unknown",
-            "Terra Break",
-            "Light Pillar",
-            "Apocalypse",
-            "Water",
-            "Meteor",
-            "Unknown",
-            "Unknown",
-            "White Wind",
-            "Ultimecia First Death",
-            "Ice Strike",
-            "Homing Laser (Quistis)",
-            "Fire Breath (Quistis)",
-            "Disease Breath",
-            "Breath of Death",
-            "Earthquake",
-            "Fart",
-            "Breath",
-            "Gas",
-            "Explosion",
-            "Breath",
-            "Ochu Dance",
-            "Earthquake",
-            "BGH251F2 Gatling Gun",
-            "Beam Cannon",
-            "BGH251F2 1st Turret Exploding",
-            "BGH251F2 2nd Turret Exploding",
-            "BGH251F2 3rd Turret Exploding",
-            "BGH251F2 4th Turret Exploding",
-            "BGH251F2 Death",
-            "Soldier Entrance After BGH251F2 Death",
-            "Unknown",
-            "Beam Cannon",
-            "Demon Slice",
-            "Corona",
-            "Twin Homing Laser",
-            "Homing Laser",
-            "Homing Laser",
-            "Sand Shake",
-            "Mega Flare",
-            "Mad Cow Special",
-            "Renzokuken - 6 Hits",
-            "Shockwave Pulsar (Quistis)",
-            "Desperado",
-            "Blood Pain",
-            "Massive Anchor",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Ultima Weapon Death",
-            "LV Up",
-            "LV Down",
-            "Mad Rush",
-            "Duel",
-            "Electrocute (Quistis)",
-            "Unknown",
-            "Unknown",
-            "Carbuncle Summon (Ruby Light)",
-            "Mega Spark",
-            "Full Cure",
-            "Shotgun",
-            "Evil-Eye",
-            "Magic Summon",
-            "Micro Missiles",
-            "Thunder Summon",
-            "Mini Pulse Cannon",
-            "Mega Pulse Cannon",
-            "Rapture",
-            "\"Brrawghh!\"",
-            "Unknown",
-            "Pandemona Summon (Tornado Zone)",
-            "Soft",
-            "Eye Drops",
-            "Antidote",
-            "Echo Screen",
-            "Holy Water",
-            "White Wind (Quistis)",
-            "Unknown",
-            "Micro Missiles (Quistis)",
-            "Bad Breath (Quistis)",
-            "Unknown",
-            "Snipe Laser",
-            "Unknown",
-            "Boomerang Sword",
-            "Gatling Gun (Quistis)",
-            "Degenerator (Quistis)",
-            "Ray-Bomb (Quistis)",
-            "Unknown",
-            "Hero-trial/Hero",
-            "Holy War-trial/Holy War",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Fake President Death",
-            "Unknown",
-            "Acid (Quistis)",
-            "Unknown",
-            "Unknown",
-            "Dark Flare",
-            "Ker Plunk",
-            "Zan",
-            "Metsu",
-            "Tonberry King Death",
-            "Diablos Summon (Dark Messenger)",
-            "Zantetsuken Reverse",
-            "Gilgamesh - Zantetsuken",
-            "Gilgamesh - Masamune",
-            "Gilgamesh - Excaliber",
-            "Gilgamesh - Excalipoor",
-            "Unknown",
-            "Renzokuken - 7 Hits",
-            "Renzokuken - 8 Hits",
-            "Renzokuken (vs Bahamut)",
-            "Renzokuken (vs NORG)",
-            "Renzokuken (vs Ultima Weapon)",
-            "Renzokuken (vs Final \"Sorceress\")",
-            "Friendship (MoombaMoomba)",
-            "Renzokuken (vs Adel)",
-            "Renzokuken (vs Ultimecia Final Form)",
-            "Renzokuken (vs Jumbo Cactuar)",
-            "Renzokuken (vs Griever + Ultimecia)",
-            "Renzokuken (vs Griever)",
-            "Final Battle Music",
-            "LV5 Death"});
-            this.comboBoxBattleItemsMagicID.Location = new System.Drawing.Point(29, 49);
-            this.comboBoxBattleItemsMagicID.Name = "comboBoxBattleItemsMagicID";
-            this.comboBoxBattleItemsMagicID.Size = new System.Drawing.Size(265, 25);
-            this.comboBoxBattleItemsMagicID.TabIndex = 2;
-            // 
-            // labelBattleItemsHitCount
-            // 
-            this.labelBattleItemsHitCount.AutoSize = true;
-            this.labelBattleItemsHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBattleItemsHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBattleItemsHitCount.Location = new System.Drawing.Point(302, 140);
-            this.labelBattleItemsHitCount.Name = "labelBattleItemsHitCount";
-            this.labelBattleItemsHitCount.Size = new System.Drawing.Size(67, 17);
-            this.labelBattleItemsHitCount.TabIndex = 0;
-            this.labelBattleItemsHitCount.Text = "Hit Count";
-            this.toolTip1.SetToolTip(this.labelBattleItemsHitCount, "Number of hits");
-            // 
-            // labelBattleItemsAttackPower
-            // 
-            this.labelBattleItemsAttackPower.AutoSize = true;
-            this.labelBattleItemsAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBattleItemsAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBattleItemsAttackPower.Location = new System.Drawing.Point(95, 140);
-            this.labelBattleItemsAttackPower.Name = "labelBattleItemsAttackPower";
-            this.labelBattleItemsAttackPower.Size = new System.Drawing.Size(89, 17);
-            this.labelBattleItemsAttackPower.TabIndex = 0;
-            this.labelBattleItemsAttackPower.Text = "Attack Power";
-            this.toolTip1.SetToolTip(this.labelBattleItemsAttackPower, "Used in damage calculation");
-            // 
-            // labelBattleItemsMagicID
-            // 
-            this.labelBattleItemsMagicID.AutoSize = true;
-            this.labelBattleItemsMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBattleItemsMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBattleItemsMagicID.Location = new System.Drawing.Point(131, 29);
-            this.labelBattleItemsMagicID.Name = "labelBattleItemsMagicID";
-            this.labelBattleItemsMagicID.Size = new System.Drawing.Size(61, 17);
-            this.labelBattleItemsMagicID.TabIndex = 0;
-            this.labelBattleItemsMagicID.Text = "Magic ID";
-            this.toolTip1.SetToolTip(this.labelBattleItemsMagicID, "Decides what animation to play");
-            // 
-            // listBoxBattleItems
-            // 
-            this.listBoxBattleItems.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxBattleItems.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxBattleItems.FormattingEnabled = true;
-            this.listBoxBattleItems.ItemHeight = 17;
-            this.listBoxBattleItems.Items.AddRange(new object[] {
-            "Potion",
-            "Potion+",
-            "Hi-Potion",
-            "Hi-Potion+",
-            "X-Potion",
-            "Mega-Potion",
-            "Phoenix Down",
-            "Mega Phoenix",
-            "Elixir",
-            "Megalixir",
-            "Antidote",
-            "Soft",
-            "Eye Drops",
-            "Echo Screen",
-            "Holy Water",
-            "Remedy",
-            "Remedy+",
-            "Hero-trial",
-            "Hero",
-            "Holy War-trial",
-            "Holy War",
-            "Shell Stone",
-            "Protect Stone",
-            "Aura Stone",
-            "Death Stone",
-            "Holy Stone",
-            "Flare Stone",
-            "Meteor Stone",
-            "Ultima Stone",
-            "Gysahl Greens",
-            "Phoenix Pinion",
-            "Friendship"});
-            this.listBoxBattleItems.Location = new System.Drawing.Point(0, 0);
-            this.listBoxBattleItems.Name = "listBoxBattleItems";
-            this.listBoxBattleItems.ScrollAlwaysVisible = true;
-            this.listBoxBattleItems.Size = new System.Drawing.Size(109, 735);
-            this.listBoxBattleItems.TabIndex = 112;
-            this.listBoxBattleItems.SelectedIndexChanged += new System.EventHandler(this.listBoxBattleItems_SelectedIndexChanged);
-            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -31809,76 +31818,76 @@
             this.tabPageLBSelphie.ResumeLayout(false);
             this.groupBoxSlotSets.ResumeLayout(false);
             this.groupBoxSlotSets.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotMagicN7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsCount7)).EndInit();
             this.groupBoxSlotArray.ResumeLayout(false);
             this.tableLayoutPanelSlotArray.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray54)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray53)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray59)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray60)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray58)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray56)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray57)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotArray50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray59)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray60)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray58)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray56)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray57)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSlotsArray50)).EndInit();
             this.tabPageLBRinoa.ResumeLayout(false);
             this.groupBoxCombineStatusAttack.ResumeLayout(false);
             this.groupBoxCombineStatusAttack.PerformLayout();
@@ -31919,17 +31928,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTempCharLBAttackPower)).EndInit();
             this.tabPageBattleItems.ResumeLayout(false);
-            this.tabPageEnemyAttacks.ResumeLayout(false);
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
-            this.groupBox15.ResumeLayout(false);
-            this.groupBox15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksStatusAttack)).EndInit();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackPower)).EndInit();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.groupBoxBattleItemsStatusAttack.ResumeLayout(false);
             this.groupBoxBattleItemsStatusAttack.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsStatusAttack)).EndInit();
@@ -31941,6 +31939,17 @@
             this.groupBoxBattleItemsGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsAttackPower)).EndInit();
+            this.tabPageEnemyAttacks.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksStatusAttack)).EndInit();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackPower)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -33011,85 +33020,85 @@
         private System.Windows.Forms.Label labelSlotSetsMagic;
         private System.Windows.Forms.Label labelSlotSetsList;
         private System.Windows.Forms.Label labelSlotSetsN;
-        private System.Windows.Forms.ComboBox comboBoxSlotMagic5;
-        private System.Windows.Forms.ListBox listBoxSlotSets;
-        private System.Windows.Forms.ComboBox comboBoxSlotMagic2;
-        private System.Windows.Forms.ComboBox comboBoxSlotMagic8;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotMagicN3;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotMagicN2;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotMagicN8;
-        private System.Windows.Forms.ComboBox comboBoxSlotMagic3;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotMagicN5;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotMagicN1;
-        private System.Windows.Forms.ComboBox comboBoxSlotMagic7;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotMagicN4;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotMagicN6;
-        private System.Windows.Forms.ComboBox comboBoxSlotMagic1;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotMagicN7;
-        private System.Windows.Forms.ComboBox comboBoxSlotMagic4;
-        private System.Windows.Forms.ComboBox comboBoxSlotMagic6;
+        private System.Windows.Forms.ComboBox comboBoxSlotsMagic5;
+        private System.Windows.Forms.ListBox listBoxSlotsSets;
+        private System.Windows.Forms.ComboBox comboBoxSlotsMagic2;
+        private System.Windows.Forms.ComboBox comboBoxSlotsMagic8;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsCount3;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsCount2;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsCount8;
+        private System.Windows.Forms.ComboBox comboBoxSlotsMagic3;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsCount5;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsCount1;
+        private System.Windows.Forms.ComboBox comboBoxSlotsMagic7;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsCount4;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsCount6;
+        private System.Windows.Forms.ComboBox comboBoxSlotsMagic1;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsCount7;
+        private System.Windows.Forms.ComboBox comboBoxSlotsMagic4;
+        private System.Windows.Forms.ComboBox comboBoxSlotsMagic6;
         private System.Windows.Forms.GroupBox groupBoxSlotArray;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelSlotArray;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray54;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray55;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray53;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray51;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray52;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray59;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray60;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray58;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray56;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray57;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray1;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray2;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray3;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray4;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray5;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray6;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray7;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray8;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray9;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray10;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray11;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray12;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray13;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray14;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray15;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray16;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray17;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray18;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray19;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray20;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray21;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray22;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray23;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray24;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray25;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray26;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray27;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray28;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray29;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray30;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray31;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray32;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray33;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray34;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray35;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray36;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray37;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray38;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray39;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray40;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray41;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray42;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray43;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray44;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray45;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray46;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray47;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray48;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray49;
-        private System.Windows.Forms.NumericUpDown numericUpDownSlotArray50;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray54;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray55;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray53;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray51;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray52;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray59;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray60;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray58;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray56;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray57;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray1;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray2;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray3;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray4;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray5;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray6;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray7;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray8;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray9;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray10;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray11;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray12;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray13;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray14;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray15;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray16;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray17;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray18;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray19;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray20;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray21;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray22;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray23;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray24;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray25;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray26;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray27;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray28;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray29;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray30;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray31;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray32;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray33;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray34;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray35;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray36;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray37;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray38;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray39;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray40;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray41;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray42;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray43;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray44;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray45;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray46;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray47;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray48;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray49;
+        private System.Windows.Forms.NumericUpDown numericUpDownSlotsArray50;
         private System.Windows.Forms.ListBox listBoxCombine;
         private System.Windows.Forms.GroupBox groupBoxCombineStatusAttack;
         private System.Windows.Forms.CheckBox checkBoxCombinePetrifying;
