@@ -53,8 +53,13 @@ namespace Doomtrain
         public static int BattleItemsDataOffset = -1;
         public static int OffsetToBattleItemsSelected = -1;
 
+        public static int SlotArrayDataOffset = -1;
+        public static int OffsetToSlotArraySelected = -1;
         public static int SlotsSetsDataOffset = -1;
         public static int OffsetToSlotsSetsSelected = -1;
+
+        public static int DevourDataOffset = -1;
+        public static int OffsetToDevourSelected = -1;
 
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
@@ -71,7 +76,9 @@ namespace Doomtrain
         public static DuelData GetSelectedDuelData;
         public static CombineData GetSelectedCombineData;
         public static BattleItemsData GetSelectedBattleItemsData;
+        public static SlotArrayData GetSelectedSlotArrayData;
         public static SlotsSetsData GetSelectedSlotsSetsData;
+        public static DevourData GetSelectedDevourData;
 
 
         static string[] _charstable;
@@ -151,6 +158,12 @@ namespace Doomtrain
             Water = 0x40,
             Holy = 0x80,
             NonElemental = 0x00
+        }
+
+        internal enum HealDmg : byte //used in devour
+        {
+            Heal = 0x1E,
+            Damage = 0x1F
         }
 
 
@@ -549,6 +562,70 @@ namespace Doomtrain
             public Element Element;
         }
 
+        public struct SlotArrayData
+        {
+            public byte SlotArray1;
+            public byte SlotArray2;
+            public byte SlotArray3;
+            public byte SlotArray4;
+            public byte SlotArray5;
+            public byte SlotArray6;
+            public byte SlotArray7;
+            public byte SlotArray8;
+            public byte SlotArray9;
+            public byte SlotArray10;
+            public byte SlotArray11;
+            public byte SlotArray12;
+            public byte SlotArray13;
+            public byte SlotArray14;
+            public byte SlotArray15;
+            public byte SlotArray16;
+            public byte SlotArray17;
+            public byte SlotArray18;
+            public byte SlotArray19;
+            public byte SlotArray20;
+            public byte SlotArray21;
+            public byte SlotArray22;
+            public byte SlotArray23;
+            public byte SlotArray24;
+            public byte SlotArray25;
+            public byte SlotArray26;
+            public byte SlotArray27;
+            public byte SlotArray28;
+            public byte SlotArray29;
+            public byte SlotArray30;
+            public byte SlotArray31;
+            public byte SlotArray32;
+            public byte SlotArray33;
+            public byte SlotArray34;
+            public byte SlotArray35;
+            public byte SlotArray36;
+            public byte SlotArray37;
+            public byte SlotArray38;
+            public byte SlotArray39;
+            public byte SlotArray40;
+            public byte SlotArray41;
+            public byte SlotArray42;
+            public byte SlotArray43;
+            public byte SlotArray44;
+            public byte SlotArray45;
+            public byte SlotArray46;
+            public byte SlotArray47;
+            public byte SlotArray48;
+            public byte SlotArray49;
+            public byte SlotArray50;
+            public byte SlotArray51;
+            public byte SlotArray52;
+            public byte SlotArray53;
+            public byte SlotArray54;
+            public byte SlotArray55;
+            public byte SlotArray56;
+            public byte SlotArray57;
+            public byte SlotArray58;
+            public byte SlotArray59;
+            public byte SlotArray60;
+        }
+
         public struct SlotsSetsData
         {
             public byte Magic1;
@@ -567,6 +644,20 @@ namespace Doomtrain
             public byte Count7;
             public byte Magic8;
             public byte Count8;
+        }
+
+        public struct DevourData
+        {
+            //public string OffsetToDescription;
+            public HealDmg HealDmg;
+            public byte HpQuantity;
+            public byte Status2;
+            public byte Status3;
+            public byte Status4;
+            public byte Status5;
+            public byte Status1;
+            public byte RaisedStat;
+            public byte RaisedHP;
         }
 
         #endregion
@@ -1784,6 +1875,197 @@ namespace Doomtrain
             }
         }
 
+        public static void UpdateVariable_SlotArray(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToSlotArraySelected] = Convert.ToByte(variable); //Magic 1
+                    return;
+                case 1:
+                    Kernel[OffsetToSlotArraySelected + 1] = Convert.ToByte(variable); //Count 1
+                    return;
+                case 2:
+                    Kernel[OffsetToSlotArraySelected + 2] = Convert.ToByte(variable); //Magic 2
+                    return;
+                case 3:
+                    Kernel[OffsetToSlotArraySelected + 3] = Convert.ToByte(variable); //Count 2
+                    return;
+                case 4:
+                    Kernel[OffsetToSlotArraySelected + 4] = Convert.ToByte(variable); //Magic 3
+                    return;
+                case 5:
+                    Kernel[OffsetToSlotArraySelected + 5] = Convert.ToByte(variable); //Count 3
+                    return;
+                case 6:
+                    Kernel[OffsetToSlotArraySelected + 6] = Convert.ToByte(variable); //Magic 4
+                    return;
+                case 7:
+                    Kernel[OffsetToSlotArraySelected + 7] = Convert.ToByte(variable); //Count 4
+                    return;
+                case 8:
+                    Kernel[OffsetToSlotArraySelected + 8] = Convert.ToByte(variable); //Magic 5
+                    return;
+                case 9:
+                    Kernel[OffsetToSlotArraySelected + 9] = Convert.ToByte(variable); //Count 5
+                    return;
+                case 10:
+                    Kernel[OffsetToSlotArraySelected + 10] = Convert.ToByte(variable); //Magic 6
+                    return;
+                case 11:
+                    Kernel[OffsetToSlotArraySelected + 11] = Convert.ToByte(variable); //Count 6
+                    return;
+                case 12:
+                    Kernel[OffsetToSlotArraySelected + 12] = Convert.ToByte(variable); //Magic 7
+                    return;
+                case 13:
+                    Kernel[OffsetToSlotArraySelected + 13] = Convert.ToByte(variable); //Count 7
+                    return;
+                case 14:
+                    Kernel[OffsetToSlotArraySelected + 14] = Convert.ToByte(variable); //Magic 8
+                    return;
+                case 15:
+                    Kernel[OffsetToSlotArraySelected + 15] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 16:
+                    Kernel[OffsetToSlotArraySelected + 16] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 17:
+                    Kernel[OffsetToSlotArraySelected + 17] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 18:
+                    Kernel[OffsetToSlotArraySelected + 18] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 19:
+                    Kernel[OffsetToSlotArraySelected + 19] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 20:
+                    Kernel[OffsetToSlotArraySelected + 20] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 21:
+                    Kernel[OffsetToSlotArraySelected + 21] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 22:
+                    Kernel[OffsetToSlotArraySelected + 22] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 23:
+                    Kernel[OffsetToSlotArraySelected + 23] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 24:
+                    Kernel[OffsetToSlotArraySelected + 24] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 25:
+                    Kernel[OffsetToSlotArraySelected + 25] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 26:
+                    Kernel[OffsetToSlotArraySelected + 26] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 27:
+                    Kernel[OffsetToSlotArraySelected + 27] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 28:
+                    Kernel[OffsetToSlotArraySelected + 28] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 29:
+                    Kernel[OffsetToSlotArraySelected + 29] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 30:
+                    Kernel[OffsetToSlotArraySelected + 30] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 31:
+                    Kernel[OffsetToSlotArraySelected + 31] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 32:
+                    Kernel[OffsetToSlotArraySelected + 32] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 33:
+                    Kernel[OffsetToSlotArraySelected + 33] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 34:
+                    Kernel[OffsetToSlotArraySelected + 34] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 35:
+                    Kernel[OffsetToSlotArraySelected + 35] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 36:
+                    Kernel[OffsetToSlotArraySelected + 36] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 37:
+                    Kernel[OffsetToSlotArraySelected + 37] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 38:
+                    Kernel[OffsetToSlotArraySelected + 38] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 39:
+                    Kernel[OffsetToSlotArraySelected + 39] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 40:
+                    Kernel[OffsetToSlotArraySelected + 40] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 41:
+                    Kernel[OffsetToSlotArraySelected + 41] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 42:
+                    Kernel[OffsetToSlotArraySelected + 42] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 43:
+                    Kernel[OffsetToSlotArraySelected + 43] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 44:
+                    Kernel[OffsetToSlotArraySelected + 44] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 45:
+                    Kernel[OffsetToSlotArraySelected + 45] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 46:
+                    Kernel[OffsetToSlotArraySelected + 46] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 47:
+                    Kernel[OffsetToSlotArraySelected + 47] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 48:
+                    Kernel[OffsetToSlotArraySelected + 48] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 49:
+                    Kernel[OffsetToSlotArraySelected + 49] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 50:
+                    Kernel[OffsetToSlotArraySelected + 50] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 51:
+                    Kernel[OffsetToSlotArraySelected + 51] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 52:
+                    Kernel[OffsetToSlotArraySelected + 52] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 53:
+                    Kernel[OffsetToSlotArraySelected + 53] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 54:
+                    Kernel[OffsetToSlotArraySelected + 54] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 55:
+                    Kernel[OffsetToSlotArraySelected + 55] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 56:
+                    Kernel[OffsetToSlotArraySelected + 56] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 57:
+                    Kernel[OffsetToSlotArraySelected + 57] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 58:
+                    Kernel[OffsetToSlotArraySelected + 58] = Convert.ToByte(variable); //Count 8
+                    return;
+                case 59:
+                    Kernel[OffsetToSlotArraySelected + 59] = Convert.ToByte(variable); //Count 8
+                    return;
+
+                default:
+                    return;
+            }
+        }
         public static void UpdateVariable_SlotsSets(int index, object variable)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -1841,6 +2123,54 @@ namespace Doomtrain
 
 
                 default:
+                    return;
+            }
+        }
+
+        public static void UpdateVariable_Devour(int index, object variable, byte arg0 = 127)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToDevourSelected + 2] = Convert.ToByte(variable); //HP Heal/Damage
+                    return;
+                case 1:
+                    Kernel[OffsetToDevourSelected + 3] = (byte)(Kernel[OffsetToDevourSelected + 3] ^ Convert.ToByte(variable)); //HP Quantity Flag
+                    return;
+                case 2:
+                    DevourStatusUpdator(arg0, variable); //Status
+                    return;
+                case 3:
+                    Kernel[OffsetToDevourSelected + 10] = (byte)(Kernel[OffsetToDevourSelected + 10] ^ Convert.ToByte(variable)); //Raised Stats Flag
+                    return;
+                case 4:
+                    Kernel[OffsetToDevourSelected + 11] = Convert.ToByte(variable); //Raised HP Quantity
+                    return;
+
+                default:
+                    return;
+            }
+        }
+        private static void DevourStatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToDevourSelected + 8] = (byte)(Kernel[OffsetToDevourSelected + 8] ^ Convert.ToByte(variable));
+                    return;
+                case 1:
+                    Kernel[OffsetToDevourSelected + 4] = (byte)(Kernel[OffsetToDevourSelected + 4] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToDevourSelected + 5] = (byte)(Kernel[OffsetToDevourSelected + 5] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToDevourSelected + 6] = (byte)(Kernel[OffsetToDevourSelected + 6] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToDevourSelected + 7] = (byte)(Kernel[OffsetToDevourSelected + 7] ^ Convert.ToByte(variable));
                     return;
             }
         }
@@ -1935,7 +2265,9 @@ namespace Doomtrain
             DuelDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Duel_Zell);
             CombineDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RinoaLimit2);
             BattleItemsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BattleItems);
+            SlotArrayDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.SelphieSlotArray);
             SlotsSetsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.SelphieSlotsSets);
+            DevourDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Devour);
         }
 
 
@@ -2720,6 +3052,74 @@ namespace Doomtrain
                                                     : 0; //Error handler
         }
 
+        public static void ReadSlotArray()
+        {
+            GetSelectedSlotArrayData = new SlotArrayData();
+            int selectedSlotArrayOffset = SlotArrayDataOffset;
+            OffsetToSlotArraySelected = selectedSlotArrayOffset;
+
+            GetSelectedSlotArrayData.SlotArray1 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray2 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray3 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray4 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray5 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray6 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray7 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray8 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray9 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray10 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray11 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray12 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray13 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray14 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray15 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray16 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray17 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray18 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray19 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray20 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray21 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray22 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray23 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray24 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray25 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray26 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray27 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray28 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray29 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray30 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray31 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray32 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray33 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray34 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray35 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray36 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray37 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray38 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray39 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray40 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray41 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray42 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray43 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray44 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray45 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray46 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray47 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray48 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray49 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray50 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray51 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray52 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray53 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray54 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray55 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray56 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray57 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray58 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray59 = Kernel[selectedSlotArrayOffset++];
+            GetSelectedSlotArrayData.SlotArray60 = Kernel[selectedSlotArrayOffset++];
+        }
+
         public static void ReadSlotsSets(int SlotsSetsID_List)
         {
             GetSelectedSlotsSetsData = new SlotsSetsData();
@@ -2742,6 +3142,31 @@ namespace Doomtrain
             GetSelectedSlotsSetsData.Count7 = Kernel[selectedSlotsSetsOffset++];
             GetSelectedSlotsSetsData.Magic8 = Kernel[selectedSlotsSetsOffset++];
             GetSelectedSlotsSetsData.Count8 = Kernel[selectedSlotsSetsOffset++];
+        }
+
+        public static void ReadDevour(int DevourID_List)
+        {
+            GetSelectedDevourData = new DevourData();
+            int selectedDevourOffset = DevourDataOffset + (DevourID_List * 12);
+            OffsetToDevourSelected = selectedDevourOffset;
+
+            selectedDevourOffset += 2;
+            byte b = Kernel[selectedDevourOffset++];
+            GetSelectedDevourData.HealDmg =
+                b == (byte)HealDmg.Heal
+                    ? HealDmg.Heal
+                    : b == (byte)HealDmg.Damage
+                        ? HealDmg.Damage
+                        : 0; //Error handler
+            GetSelectedDevourData.HpQuantity = Kernel[selectedDevourOffset++];
+            GetSelectedDevourData.Status2 = Kernel[selectedDevourOffset++];
+            GetSelectedDevourData.Status3 = Kernel[selectedDevourOffset++];
+            GetSelectedDevourData.Status4 = Kernel[selectedDevourOffset++];
+            GetSelectedDevourData.Status5 = Kernel[selectedDevourOffset++];
+            GetSelectedDevourData.Status1 = Kernel[selectedDevourOffset++];
+            selectedDevourOffset += 1;
+            GetSelectedDevourData.RaisedStat = Kernel[selectedDevourOffset++];
+            GetSelectedDevourData.RaisedHP = Kernel[selectedDevourOffset++];
         }
 
         #endregion
