@@ -46,6 +46,8 @@ namespace Doomtrain
 
         public static int DuelDataOffset = -1;
         public static int OffsetToDuelSelected = -1;
+        public static int DuelParamsDataOffset = -1;
+        public static int OffsetToDuelParamsSelected = -1;
 
         public static int CombineDataOffset = -1;
         public static int OffsetToCombineSelected = -1;
@@ -61,6 +63,9 @@ namespace Doomtrain
         public static int DevourDataOffset = -1;
         public static int OffsetToDevourSelected = -1;
 
+        public static int MiscDataOffset = -1;
+        public static int OffsetToMiscSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -74,11 +79,13 @@ namespace Doomtrain
         public static TempCharLBData GetSelectedTempCharLBData;
         public static ShotData GetSelectedShotData;
         public static DuelData GetSelectedDuelData;
+        public static DuelParamsData GetSelectedDuelParamsData;
         public static CombineData GetSelectedCombineData;
         public static BattleItemsData GetSelectedBattleItemsData;
         public static SlotArrayData GetSelectedSlotArrayData;
         public static SlotsSetsData GetSelectedSlotsSetsData;
         public static DevourData GetSelectedDevourData;
+        public static MiscData GetSelectedMiscData;
 
 
         static string[] _charstable;
@@ -523,6 +530,110 @@ namespace Doomtrain
             public UInt16 Button5;
         }
 
+        public struct DuelParamsData
+        {
+            public byte StartMove0;
+            public byte StartMove1;
+            public byte StartMove2;
+            public byte StartMove3;
+            public byte StartMove4;
+            public byte StartMove5;
+            public byte StartMove6;
+            public byte StartMove7;
+            public byte StartMove8;
+            public byte StartMove9;
+            public byte StartMove10;
+            public byte StartMove11;
+            public byte StartMove12;
+            public byte StartMove13;
+            public byte StartMove14;
+            public byte StartMove15;
+            public byte StartMove16;
+            public byte StartMove17;
+            public byte StartMove18;
+            public byte StartMove19;
+            public byte StartMove20;
+            public byte StartMove21;
+            public byte StartMove22;
+            public byte StartMove23;
+            public byte StartMove24;
+            public byte NextSeq0_1;
+            public byte NextSeq0_2;
+            public byte NextSeq0_3;
+            public byte NextSeq1_1;
+            public byte NextSeq1_2;
+            public byte NextSeq1_3;
+            public byte NextSeq2_1;
+            public byte NextSeq2_2;
+            public byte NextSeq2_3;
+            public byte NextSeq3_1;
+            public byte NextSeq3_2;
+            public byte NextSeq3_3;
+            public byte NextSeq4_1;
+            public byte NextSeq4_2;
+            public byte NextSeq4_3;
+            public byte NextSeq5_1;
+            public byte NextSeq5_2;
+            public byte NextSeq5_3;
+            public byte NextSeq6_1;
+            public byte NextSeq6_2;
+            public byte NextSeq6_3;
+            public byte NextSeq7_1;
+            public byte NextSeq7_2;
+            public byte NextSeq7_3;
+            public byte NextSeq8_1;
+            public byte NextSeq8_2;
+            public byte NextSeq8_3;
+            public byte NextSeq9_1;
+            public byte NextSeq9_2;
+            public byte NextSeq9_3;
+            public byte NextSeq10_1;
+            public byte NextSeq10_2;
+            public byte NextSeq10_3;
+            public byte NextSeq11_1;
+            public byte NextSeq11_2;
+            public byte NextSeq11_3;
+            public byte NextSeq12_1;
+            public byte NextSeq12_2;
+            public byte NextSeq12_3;
+            public byte NextSeq13_1;
+            public byte NextSeq13_2;
+            public byte NextSeq13_3;
+            public byte NextSeq14_1;
+            public byte NextSeq14_2;
+            public byte NextSeq14_3;
+            public byte NextSeq15_1;
+            public byte NextSeq15_2;
+            public byte NextSeq15_3;
+            public byte NextSeq16_1;
+            public byte NextSeq16_2;
+            public byte NextSeq16_3;
+            public byte NextSeq17_1;
+            public byte NextSeq17_2;
+            public byte NextSeq17_3;
+            public byte NextSeq18_1;
+            public byte NextSeq18_2;
+            public byte NextSeq18_3;
+            public byte NextSeq19_1;
+            public byte NextSeq19_2;
+            public byte NextSeq19_3;
+            public byte NextSeq20_1;
+            public byte NextSeq20_2;
+            public byte NextSeq20_3;
+            public byte NextSeq21_1;
+            public byte NextSeq21_2;
+            public byte NextSeq21_3;
+            public byte NextSeq22_1;
+            public byte NextSeq22_2;
+            public byte NextSeq22_3;
+            public byte NextSeq23_1;
+            public byte NextSeq23_2;
+            public byte NextSeq23_3;
+            public byte NextSeq24_1;
+            public byte NextSeq24_2;
+            public byte NextSeq24_3;
+        }
+
         public struct CombineData
         {
             //public string OffsetToName;
@@ -658,6 +769,70 @@ namespace Doomtrain
             public byte Status1;
             public byte RaisedStat;
             public byte RaisedHP;
+        }
+
+        public struct MiscData
+        {
+            public byte StatusTimer1;
+            public byte StatusTimer2;
+            public byte StatusTimer3;
+            public byte StatusTimer4;
+            public byte StatusTimer5;
+            public byte StatusTimer6;
+            public byte StatusTimer7;
+            public byte StatusTimer8;
+            public byte StatusTimer9;
+            public byte StatusTimer10;
+            public byte StatusTimer11;
+            public byte StatusTimer12;
+            public byte StatusTimer13;
+            public byte StatusTimer14;
+            public byte ATB;
+            public byte DeadTimer;
+            public byte StatusLimit1;
+            public byte StatusLimit2;
+            public byte StatusLimit3;
+            public byte StatusLimit4;
+            public byte StatusLimit5;
+            public byte StatusLimit6;
+            public byte StatusLimit7;
+            public byte StatusLimit8;
+            public byte StatusLimit9;
+            public byte StatusLimit10;
+            public byte StatusLimit11;
+            public byte StatusLimit12;
+            public byte StatusLimit13;
+            public byte StatusLimit14;
+            public byte StatusLimit15;
+            public byte StatusLimit16;
+            public byte StatusLimit17;
+            public byte StatusLimit18;
+            public byte StatusLimit19;
+            public byte StatusLimit20;
+            public byte StatusLimit21;
+            public byte StatusLimit22;
+            public byte StatusLimit23;
+            public byte StatusLimit24;
+            public byte StatusLimit25;
+            public byte StatusLimit26;
+            public byte StatusLimit27;
+            public byte StatusLimit28;
+            public byte StatusLimit29;
+            public byte StatusLimit30;
+            public byte StatusLimit31;
+            public byte StatusLimit32;
+            public byte DuelTimerCL1;
+            public byte DuelSeqCL1;
+            public byte DuelTimerCL2;
+            public byte DuelSeqCL2;
+            public byte DuelTimerCL3;
+            public byte DuelSeqCL3;
+            public byte DuelTimerCL4;
+            public byte DuelSeqCL4;
+            public byte ShotTimerCL1;
+            public byte ShotTimerCL2;
+            public byte ShotTimerCL3;
+            public byte ShotTimerCL4;
         }
 
         #endregion
@@ -1751,6 +1926,318 @@ namespace Doomtrain
                     return;
             }
         }
+        public static void UpdateVariable_DuelParams(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToDuelParamsSelected] = Convert.ToByte(variable); //Start Move Seq 0
+                    return;
+                case 1:
+                    Kernel[OffsetToDuelParamsSelected + 4] = Convert.ToByte(variable); //Start Move Seq 1
+                    return;
+                case 2:
+                    Kernel[OffsetToDuelParamsSelected + 8] = Convert.ToByte(variable); //Start Move Seq 2
+                    return;
+                case 3:
+                    Kernel[OffsetToDuelParamsSelected + 12] = Convert.ToByte(variable); //Start Move Seq 3
+                    return;
+                case 4:
+                    Kernel[OffsetToDuelParamsSelected + 16] = Convert.ToByte(variable); //Start Move Seq 4
+                    return;
+                case 5:
+                    Kernel[OffsetToDuelParamsSelected + 20] = Convert.ToByte(variable); //Start Move Seq 5
+                    return;
+                case 6:
+                    Kernel[OffsetToDuelParamsSelected + 24] = Convert.ToByte(variable); //Start Move Seq 6
+                    return;
+                case 7:
+                    Kernel[OffsetToDuelParamsSelected + 28] = Convert.ToByte(variable); //Start Move Seq 7
+                    return;
+                case 8:
+                    Kernel[OffsetToDuelParamsSelected + 32] = Convert.ToByte(variable); //Start Move Seq 8
+                    return;
+                case 9:
+                    Kernel[OffsetToDuelParamsSelected + 36] = Convert.ToByte(variable); //Start Move Seq 9
+                    return;
+                case 10:
+                    Kernel[OffsetToDuelParamsSelected + 40] = Convert.ToByte(variable); //Start Move Seq 10
+                    return;
+                case 11:
+                    Kernel[OffsetToDuelParamsSelected + 44] = Convert.ToByte(variable); //Start Move Seq 11
+                    return;
+                case 12:
+                    Kernel[OffsetToDuelParamsSelected + 48] = Convert.ToByte(variable); //Start Move Seq 12
+                    return;
+                case 13:
+                    Kernel[OffsetToDuelParamsSelected + 52] = Convert.ToByte(variable); //Start Move Seq 13
+                    return;
+                case 14:
+                    Kernel[OffsetToDuelParamsSelected + 56] = Convert.ToByte(variable); //Start Move Seq 14
+                    return;
+                case 15:
+                    Kernel[OffsetToDuelParamsSelected + 60] = Convert.ToByte(variable); //Start Move Seq 15
+                    return;
+                case 16:
+                    Kernel[OffsetToDuelParamsSelected + 64] = Convert.ToByte(variable); //Start Move Seq 16
+                    return;
+                case 17:
+                    Kernel[OffsetToDuelParamsSelected + 68] = Convert.ToByte(variable); //Start Move Seq 17
+                    return;
+                case 18:
+                    Kernel[OffsetToDuelParamsSelected + 72] = Convert.ToByte(variable); //Start Move Seq 18
+                    return;
+                case 19:
+                    Kernel[OffsetToDuelParamsSelected + 76] = Convert.ToByte(variable); //Start Move Seq 19
+                    return;
+                case 20:
+                    Kernel[OffsetToDuelParamsSelected + 80] = Convert.ToByte(variable); //Start Move Seq 20
+                    return;
+                case 21:
+                    Kernel[OffsetToDuelParamsSelected + 84] = Convert.ToByte(variable); //Start Move Seq 21
+                    return;
+                case 22:
+                    Kernel[OffsetToDuelParamsSelected + 88] = Convert.ToByte(variable); //Start Move Seq 22
+                    return;
+                case 23:
+                    Kernel[OffsetToDuelParamsSelected + 92] = Convert.ToByte(variable); //Start Move Seq 23
+                    return;
+                case 24:
+                    Kernel[OffsetToDuelParamsSelected + 96] = Convert.ToByte(variable); //Start Move Seq 24
+                    return;
+                case 25:
+                    Kernel[OffsetToDuelParamsSelected + 1] = Convert.ToByte(variable); //Next Seq 0_1
+                    return;
+                case 26:
+                    Kernel[OffsetToDuelParamsSelected + 2] = Convert.ToByte(variable); //Next Seq 0_2
+                    return;
+                case 27:
+                    Kernel[OffsetToDuelParamsSelected + 3] = Convert.ToByte(variable); //Next Seq 0_3
+                    return;
+                case 28:
+                    Kernel[OffsetToDuelParamsSelected + 5] = Convert.ToByte(variable); //Next Seq 1_1
+                    return;
+                case 29:
+                    Kernel[OffsetToDuelParamsSelected + 6] = Convert.ToByte(variable); //Next Seq 1_2
+                    return;
+                case 30:
+                    Kernel[OffsetToDuelParamsSelected + 7] = Convert.ToByte(variable); //Next Seq 1_3
+                    return;
+                case 31:
+                    Kernel[OffsetToDuelParamsSelected + 9] = Convert.ToByte(variable); //Next Seq 2_1
+                    return;
+                case 32:
+                    Kernel[OffsetToDuelParamsSelected + 10] = Convert.ToByte(variable); //Next Seq 2_2
+                    return;
+                case 33:
+                    Kernel[OffsetToDuelParamsSelected + 11] = Convert.ToByte(variable); //Next Seq 2_3
+                    return;
+                case 34:
+                    Kernel[OffsetToDuelParamsSelected + 13] = Convert.ToByte(variable); //Next Seq 3_1
+                    return;
+                case 35:
+                    Kernel[OffsetToDuelParamsSelected + 14] = Convert.ToByte(variable); //Next Seq 3_2
+                    return;
+                case 36:
+                    Kernel[OffsetToDuelParamsSelected + 15] = Convert.ToByte(variable); //Next Seq 3_3
+                    return;
+                case 37:
+                    Kernel[OffsetToDuelParamsSelected + 17] = Convert.ToByte(variable); //Next Seq 4_1
+                    return;
+                case 38:
+                    Kernel[OffsetToDuelParamsSelected + 18] = Convert.ToByte(variable); //Next Seq 4_2
+                    return;
+                case 39:
+                    Kernel[OffsetToDuelParamsSelected + 19] = Convert.ToByte(variable); //Next Seq 4_3
+                    return;
+                case 40:
+                    Kernel[OffsetToDuelParamsSelected + 21] = Convert.ToByte(variable); //Next Seq 5_1
+                    return;
+                case 41:
+                    Kernel[OffsetToDuelParamsSelected + 22] = Convert.ToByte(variable); //Next Seq 5_2
+                    return;
+                case 42:
+                    Kernel[OffsetToDuelParamsSelected + 23] = Convert.ToByte(variable); //Next Seq 5_3
+                    return;
+                case 43:
+                    Kernel[OffsetToDuelParamsSelected + 25] = Convert.ToByte(variable); //Next Seq 6_1
+                    return;
+                case 44:
+                    Kernel[OffsetToDuelParamsSelected + 26] = Convert.ToByte(variable); //Next Seq 6_2
+                    return;
+                case 45:
+                    Kernel[OffsetToDuelParamsSelected + 27] = Convert.ToByte(variable); //Next Seq 6_3
+                    return;
+                case 46:
+                    Kernel[OffsetToDuelParamsSelected + 29] = Convert.ToByte(variable); //Next Seq 7_1
+                    return;
+                case 47:
+                    Kernel[OffsetToDuelParamsSelected + 30] = Convert.ToByte(variable); //Next Seq 7_2
+                    return;
+                case 48:
+                    Kernel[OffsetToDuelParamsSelected + 31] = Convert.ToByte(variable); //Next Seq 7_3
+                    return;
+                case 49:
+                    Kernel[OffsetToDuelParamsSelected + 33] = Convert.ToByte(variable); //Next Seq 8_1
+                    return;
+                case 50:
+                    Kernel[OffsetToDuelParamsSelected + 34] = Convert.ToByte(variable); //Next Seq 8_2
+                    return;
+                case 51:
+                    Kernel[OffsetToDuelParamsSelected + 35] = Convert.ToByte(variable); //Next Seq 8_3
+                    return;
+                case 52:
+                    Kernel[OffsetToDuelParamsSelected + 37] = Convert.ToByte(variable); //Next Seq 9_1
+                    return;
+                case 53:
+                    Kernel[OffsetToDuelParamsSelected + 38] = Convert.ToByte(variable); //Next Seq 9_2
+                    return;
+                case 54:
+                    Kernel[OffsetToDuelParamsSelected + 39] = Convert.ToByte(variable); //Next Seq 9_3
+                    return;
+                case 55:
+                    Kernel[OffsetToDuelParamsSelected + 41] = Convert.ToByte(variable); //Next Seq 10_1
+                    return;
+                case 56:
+                    Kernel[OffsetToDuelParamsSelected + 42] = Convert.ToByte(variable); //Next Seq 10_2
+                    return;
+                case 57:
+                    Kernel[OffsetToDuelParamsSelected + 43] = Convert.ToByte(variable); //Next Seq 10_3
+                    return;
+                case 58:
+                    Kernel[OffsetToDuelParamsSelected + 45] = Convert.ToByte(variable); //Next Seq 11_1
+                    return;
+                case 59:
+                    Kernel[OffsetToDuelParamsSelected + 46] = Convert.ToByte(variable); //Next Seq 11_2
+                    return;
+                case 60:
+                    Kernel[OffsetToDuelParamsSelected + 47] = Convert.ToByte(variable); //Next Seq 11_3
+                    return;
+                case 61:
+                    Kernel[OffsetToDuelParamsSelected + 49] = Convert.ToByte(variable); //Next Seq 12_1
+                    return;
+                case 62:
+                    Kernel[OffsetToDuelParamsSelected + 50] = Convert.ToByte(variable); //Next Seq 12_2
+                    return;
+                case 63:
+                    Kernel[OffsetToDuelParamsSelected + 51] = Convert.ToByte(variable); //Next Seq 12_3
+                    return;
+                case 64:
+                    Kernel[OffsetToDuelParamsSelected + 53] = Convert.ToByte(variable); //Next Seq 13_1
+                    return;
+                case 65:
+                    Kernel[OffsetToDuelParamsSelected + 54] = Convert.ToByte(variable); //Next Seq 13_2
+                    return;
+                case 66:
+                    Kernel[OffsetToDuelParamsSelected + 55] = Convert.ToByte(variable); //Next Seq 13_3
+                    return;
+                case 67:
+                    Kernel[OffsetToDuelParamsSelected + 57] = Convert.ToByte(variable); //Next Seq 14_1
+                    return;
+                case 68:
+                    Kernel[OffsetToDuelParamsSelected + 58] = Convert.ToByte(variable); //Next Seq 14_2
+                    return;
+                case 69:
+                    Kernel[OffsetToDuelParamsSelected + 59] = Convert.ToByte(variable); //Next Seq 14_3
+                    return;
+                case 70:
+                    Kernel[OffsetToDuelParamsSelected + 61] = Convert.ToByte(variable); //Next Seq 15_1
+                    return;
+                case 71:
+                    Kernel[OffsetToDuelParamsSelected + 62] = Convert.ToByte(variable); //Next Seq 15_2
+                    return;
+                case 72:
+                    Kernel[OffsetToDuelParamsSelected + 63] = Convert.ToByte(variable); //Next Seq 15_3
+                    return;
+                case 73:
+                    Kernel[OffsetToDuelParamsSelected + 65] = Convert.ToByte(variable); //Next Seq 16_1
+                    return;
+                case 74:
+                    Kernel[OffsetToDuelParamsSelected + 66] = Convert.ToByte(variable); //Next Seq 16_2
+                    return;
+                case 75:
+                    Kernel[OffsetToDuelParamsSelected + 67] = Convert.ToByte(variable); //Next Seq 16_3
+                    return;
+                case 76:
+                    Kernel[OffsetToDuelParamsSelected + 69] = Convert.ToByte(variable); //Next Seq 17_1
+                    return;
+                case 77:
+                    Kernel[OffsetToDuelParamsSelected + 70] = Convert.ToByte(variable); //Next Seq 17_2
+                    return;
+                case 78:
+                    Kernel[OffsetToDuelParamsSelected + 71] = Convert.ToByte(variable); //Next Seq 17_3
+                    return;
+                case 79:
+                    Kernel[OffsetToDuelParamsSelected + 73] = Convert.ToByte(variable); //Next Seq 18_1
+                    return;
+                case 80:
+                    Kernel[OffsetToDuelParamsSelected + 74] = Convert.ToByte(variable); //Next Seq 18_2
+                    return;
+                case 81:
+                    Kernel[OffsetToDuelParamsSelected + 75] = Convert.ToByte(variable); //Next Seq 18_3
+                    return;
+                case 82:
+                    Kernel[OffsetToDuelParamsSelected + 77] = Convert.ToByte(variable); //Next Seq 19_1
+                    return;
+                case 83:
+                    Kernel[OffsetToDuelParamsSelected + 78] = Convert.ToByte(variable); //Next Seq 19_2
+                    return;
+                case 84:
+                    Kernel[OffsetToDuelParamsSelected + 79] = Convert.ToByte(variable); //Next Seq 19_3
+                    return;
+                case 85:
+                    Kernel[OffsetToDuelParamsSelected + 81] = Convert.ToByte(variable); //Next Seq 20_1
+                    return;
+                case 86:
+                    Kernel[OffsetToDuelParamsSelected + 82] = Convert.ToByte(variable); //Next Seq 20_2
+                    return;
+                case 87:
+                    Kernel[OffsetToDuelParamsSelected + 83] = Convert.ToByte(variable); //Next Seq 20_3
+                    return;
+                case 88:
+                    Kernel[OffsetToDuelParamsSelected + 85] = Convert.ToByte(variable); //Next Seq 21_1
+                    return;
+                case 89:
+                    Kernel[OffsetToDuelParamsSelected + 86] = Convert.ToByte(variable); //Next Seq 21_2
+                    return;
+                case 90:
+                    Kernel[OffsetToDuelParamsSelected + 87] = Convert.ToByte(variable); //Next Seq 21_3
+                    return;
+                case 91:
+                    Kernel[OffsetToDuelParamsSelected + 89] = Convert.ToByte(variable); //Next Seq 22_1
+                    return;
+                case 92:
+                    Kernel[OffsetToDuelParamsSelected + 90] = Convert.ToByte(variable); //Next Seq 22_2
+                    return;
+                case 93:
+                    Kernel[OffsetToDuelParamsSelected + 91] = Convert.ToByte(variable); //Next Seq 22_3
+                    return;
+                case 94:
+                    Kernel[OffsetToDuelParamsSelected + 93] = Convert.ToByte(variable); //Next Seq 23_1
+                    return;
+                case 95:
+                    Kernel[OffsetToDuelParamsSelected + 94] = Convert.ToByte(variable); //Next Seq 23_2
+                    return;
+                case 96:
+                    Kernel[OffsetToDuelParamsSelected + 95] = Convert.ToByte(variable); //Next Seq 23_3
+                    return;
+                case 97:
+                    Kernel[OffsetToDuelParamsSelected + 97] = Convert.ToByte(variable); //Next Seq 24_1
+                    return;
+                case 98:
+                    Kernel[OffsetToDuelParamsSelected + 98] = Convert.ToByte(variable); //Next Seq 24_2
+                    return;
+                case 99:
+                    Kernel[OffsetToDuelParamsSelected + 99] = Convert.ToByte(variable); //Next Seq 24_3
+                    return;
+
+
+                default:
+                    return;
+            }
+        }
 
         public static void UpdateVariable_Combine(int index, object variable, byte arg0 = 127)
         {
@@ -2175,6 +2662,198 @@ namespace Doomtrain
             }
         }
 
+        public static void UpdateVariable_Misc(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToMiscSelected] = Convert.ToByte(variable); //Status Timer 1
+                    return;
+                case 1:
+                    Kernel[OffsetToMiscSelected + 1] = Convert.ToByte(variable); //Status Timer 2
+                    return;
+                case 2:
+                    Kernel[OffsetToMiscSelected + 2] = Convert.ToByte(variable); //Status Timer 3
+                    return;
+                case 3:
+                    Kernel[OffsetToMiscSelected + 3] = Convert.ToByte(variable); //Status Timer 4
+                    return;
+                case 4:
+                    Kernel[OffsetToMiscSelected + 4] = Convert.ToByte(variable); //Status Timer 5
+                    return;
+                case 5:
+                    Kernel[OffsetToMiscSelected + 5] = Convert.ToByte(variable); //Status Timer 6
+                    return;
+                case 6:
+                    Kernel[OffsetToMiscSelected + 6] = Convert.ToByte(variable); //Status Timer 7
+                    return;
+                case 7:
+                    Kernel[OffsetToMiscSelected + 7] = Convert.ToByte(variable); //Status Timer 8
+                    return;
+                case 8:
+                    Kernel[OffsetToMiscSelected + 8] = Convert.ToByte(variable); //Status Timer 9
+                    return;
+                case 9:
+                    Kernel[OffsetToMiscSelected + 9] = Convert.ToByte(variable); //Status Timer 10
+                    return;
+                case 10:
+                    Kernel[OffsetToMiscSelected + 10] = Convert.ToByte(variable); //Status Timer 11
+                    return;
+                case 11:
+                    Kernel[OffsetToMiscSelected + 11] = Convert.ToByte(variable); //Status Timer 12
+                    return;
+                case 12:
+                    Kernel[OffsetToMiscSelected + 12] = Convert.ToByte(variable); //Status Timer 13
+                    return;
+                case 13:
+                    Kernel[OffsetToMiscSelected + 13] = Convert.ToByte(variable); //Status Timer 14
+                    return;
+                case 14:
+                    Kernel[OffsetToMiscSelected + 14] = Convert.ToByte(variable); //ATB Multiplier
+                    return;
+                case 15:
+                    Kernel[OffsetToMiscSelected + 15] = Convert.ToByte(variable); //Dead Timer
+                    return;
+                case 16:
+                    Kernel[OffsetToMiscSelected + 16] = Convert.ToByte(variable); //Status Limit 1
+                    return;
+                case 17:
+                    Kernel[OffsetToMiscSelected + 17] = Convert.ToByte(variable); //Status Limit 2
+                    return;
+                case 18:
+                    Kernel[OffsetToMiscSelected + 18] = Convert.ToByte(variable); //Status Limit 3
+                    return;
+                case 19:
+                    Kernel[OffsetToMiscSelected + 19] = Convert.ToByte(variable); //Status Limit 4
+                    return;
+                case 20:
+                    Kernel[OffsetToMiscSelected + 20] = Convert.ToByte(variable); //Status Limit 5
+                    return;
+                case 21:
+                    Kernel[OffsetToMiscSelected + 21] = Convert.ToByte(variable); //Status Limit 6
+                    return;
+                case 22:
+                    Kernel[OffsetToMiscSelected + 22] = Convert.ToByte(variable); //Status Limit 7
+                    return;
+                case 23:
+                    Kernel[OffsetToMiscSelected + 23] = Convert.ToByte(variable); //Status Limit 8
+                    return;
+                case 24:
+                    Kernel[OffsetToMiscSelected + 24] = Convert.ToByte(variable); //Status Limit 9
+                    return;
+                case 25:
+                    Kernel[OffsetToMiscSelected + 25] = Convert.ToByte(variable); //Status Limit 10
+                    return;
+                case 26:
+                    Kernel[OffsetToMiscSelected + 26] = Convert.ToByte(variable); //Status Limit 11
+                    return;
+                case 27:
+                    Kernel[OffsetToMiscSelected + 27] = Convert.ToByte(variable); //Status Limit 12
+                    return;
+                case 28:
+                    Kernel[OffsetToMiscSelected + 28] = Convert.ToByte(variable); //Status Limit 13
+                    return;
+                case 29:
+                    Kernel[OffsetToMiscSelected + 29] = Convert.ToByte(variable); //Status Limit 14
+                    return;
+                case 30:
+                    Kernel[OffsetToMiscSelected + 30] = Convert.ToByte(variable); //Status Limit 15
+                    return;
+                case 31:
+                    Kernel[OffsetToMiscSelected + 31] = Convert.ToByte(variable); //Status Limit 16
+                    return;
+                case 32:
+                    Kernel[OffsetToMiscSelected + 32] = Convert.ToByte(variable); //Status Limit 17
+                    return;
+                case 33:
+                    Kernel[OffsetToMiscSelected + 33] = Convert.ToByte(variable); //Status Limit 18
+                    return;
+                case 34:
+                    Kernel[OffsetToMiscSelected + 34] = Convert.ToByte(variable); //Status Limit 19
+                    return;
+                case 35:
+                    Kernel[OffsetToMiscSelected + 35] = Convert.ToByte(variable); //Status Limit 20
+                    return;
+                case 36:
+                    Kernel[OffsetToMiscSelected + 36] = Convert.ToByte(variable); //Status Limit 21
+                    return;
+                case 37:
+                    Kernel[OffsetToMiscSelected + 37] = Convert.ToByte(variable); //Status Limit 22
+                    return;
+                case 38:
+                    Kernel[OffsetToMiscSelected + 38] = Convert.ToByte(variable); //Status Limit 23
+                    return;
+                case 39:
+                    Kernel[OffsetToMiscSelected + 39] = Convert.ToByte(variable); //Status Limit 24
+                    return;
+                case 40:
+                    Kernel[OffsetToMiscSelected + 40] = Convert.ToByte(variable); //Status Limit 25
+                    return;
+                case 41:
+                    Kernel[OffsetToMiscSelected + 41] = Convert.ToByte(variable); //Status Limit 26
+                    return;
+                case 42:
+                    Kernel[OffsetToMiscSelected + 42] = Convert.ToByte(variable); //Status Limit 27
+                    return;
+                case 43:
+                    Kernel[OffsetToMiscSelected + 43] = Convert.ToByte(variable); //Status Limit 28
+                    return;
+                case 44:
+                    Kernel[OffsetToMiscSelected + 44] = Convert.ToByte(variable); //Status Limit 29
+                    return;
+                case 45:
+                    Kernel[OffsetToMiscSelected + 45] = Convert.ToByte(variable); //Status Limit 30
+                    return;
+                case 46:
+                    Kernel[OffsetToMiscSelected + 46] = Convert.ToByte(variable); //Status Limit 31
+                    return;
+                case 47:
+                    Kernel[OffsetToMiscSelected + 47] = Convert.ToByte(variable); //Status Limit 32
+                    return;
+                case 48:
+                    Kernel[OffsetToMiscSelected + 48] = Convert.ToByte(variable); //Duel Timer CL1
+                    return;
+                case 49:
+                    Kernel[OffsetToMiscSelected + 49] = Convert.ToByte(variable); //Duel Start Seq CL1
+                    return;
+                case 50:
+                    Kernel[OffsetToMiscSelected + 50] = Convert.ToByte(variable); //Duel Timer CL2
+                    return;
+                case 51:
+                    Kernel[OffsetToMiscSelected + 51] = Convert.ToByte(variable); //Duel Start Seq CL2
+                    return;
+                case 52:
+                    Kernel[OffsetToMiscSelected + 52] = Convert.ToByte(variable); //Duel Timer CL3
+                    return;
+                case 53:
+                    Kernel[OffsetToMiscSelected + 53] = Convert.ToByte(variable); //Duel Start Seq CL3
+                    return;
+                case 54:
+                    Kernel[OffsetToMiscSelected + 54] = Convert.ToByte(variable); //Duel Timer CL4
+                    return;
+                case 55:
+                    Kernel[OffsetToMiscSelected + 55] = Convert.ToByte(variable); //Duel Start Seq CL4
+                    return;
+                case 56:
+                    Kernel[OffsetToMiscSelected + 56] = Convert.ToByte(variable); //Shot Timer CL1
+                    return;
+                case 57:
+                    Kernel[OffsetToMiscSelected + 57] = Convert.ToByte(variable); //Shot Timer CL2
+                    return;
+                case 58:
+                    Kernel[OffsetToMiscSelected + 58] = Convert.ToByte(variable); //Shot Timer CL3
+                    return;
+                case 59:
+                    Kernel[OffsetToMiscSelected + 59] = Convert.ToByte(variable); //Shot Timer CL4
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
         #endregion
 
         #region MAGIC ID
@@ -2263,11 +2942,13 @@ namespace Doomtrain
             TempCharLBDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.TempCharacterLimitBreakes);
             ShotDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Shot_Irvine);
             DuelDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Duel_Zell);
+            DuelParamsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Duel_ZellParam);
             CombineDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RinoaLimit2);
             BattleItemsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BattleItems);
             SlotArrayDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.SelphieSlotArray);
             SlotsSetsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.SelphieSlotsSets);
             DevourDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Devour);
+            MiscDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Misc);
         }
 
 
@@ -2958,6 +3639,114 @@ namespace Doomtrain
             GetSelectedDuelData.Status5 = Kernel[selectedDuelOffset++];
         }
 
+        public static void ReadDuelParams()
+        {
+            GetSelectedDuelParamsData = new DuelParamsData();
+            int selectedDuelParamsOffset = DuelParamsDataOffset;
+            OffsetToDuelParamsSelected = selectedDuelParamsOffset;
+
+            GetSelectedDuelParamsData.StartMove0 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq0_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq0_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq0_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq1_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq1_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq1_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq2_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq2_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq2_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq3_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq3_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq3_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove4 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq4_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq4_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq4_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove5 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq5_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq5_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq5_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove6 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq6_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq6_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq6_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove7 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq7_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq7_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq7_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove8 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq8_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq8_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq8_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove9 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq9_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq9_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq9_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove10 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq10_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq10_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq10_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove11 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq11_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq11_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq11_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove12 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq12_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq12_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq12_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove13 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq13_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq13_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq13_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove14 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq14_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq14_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq14_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove15 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq15_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq15_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq15_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove16 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq16_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq16_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq16_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove17 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq17_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq17_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq17_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove18 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq18_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq18_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq18_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove19 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq19_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq19_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq19_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove20 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq20_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq20_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq20_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove21 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq21_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq21_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq21_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove22 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq22_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq22_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq22_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove23 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq23_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq23_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq23_3 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.StartMove24 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq24_1 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq24_2 = Kernel[selectedDuelParamsOffset++];
+            GetSelectedDuelParamsData.NextSeq24_3 = Kernel[selectedDuelParamsOffset++];
+        }
+
         public static void ReadCombine(int CombineID_List)
         {
             GetSelectedCombineData = new CombineData();
@@ -3167,6 +3956,74 @@ namespace Doomtrain
             selectedDevourOffset += 1;
             GetSelectedDevourData.RaisedStat = Kernel[selectedDevourOffset++];
             GetSelectedDevourData.RaisedHP = Kernel[selectedDevourOffset++];
+        }
+
+        public static void ReadMisc()
+        {
+            GetSelectedMiscData = new MiscData();
+            int selectedMiscOffset = MiscDataOffset;
+            OffsetToMiscSelected = selectedMiscOffset;
+
+            GetSelectedMiscData.StatusTimer1 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer2 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer3 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer4 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer5 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer6 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer7 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer8 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer9 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer10 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer11 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer12 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer13 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusTimer14 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.ATB = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.DeadTimer = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit1 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit2 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit3 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit4 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit5 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit6 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit7 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit8 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit9 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit10 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit11 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit12 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit13 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit14 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit15 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit16 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit17 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit18 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit19 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit20 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit21 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit22 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit23 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit24 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit25 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit26 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit27 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit28 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit29 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit30 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit31 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.StatusLimit32 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.DuelTimerCL1 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.DuelSeqCL1 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.DuelTimerCL2 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.DuelSeqCL2 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.DuelTimerCL3 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.DuelSeqCL3 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.DuelTimerCL4 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.DuelSeqCL4 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.ShotTimerCL1 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.ShotTimerCL2 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.ShotTimerCL3 = Kernel[selectedMiscOffset++];
+            GetSelectedMiscData.ShotTimerCL4 = Kernel[selectedMiscOffset++];
         }
 
         #endregion

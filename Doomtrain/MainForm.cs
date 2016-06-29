@@ -895,76 +895,7 @@ namespace Doomtrain
             comboBoxDuelElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(6, Duel_GetElement(comboBoxDuelElement.SelectedIndex));            
             numericUpDownDuelElementPerc.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(7, numericUpDownDuelElementPerc.Value);
             numericUpDownDuelStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(8, numericUpDownDuelStatusAttack.Value);
-
-            /* not sure if correct
-            checkBoxDuelFinisher.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0001);
-            radioButtonDuelUp1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0010);
-            radioButtonDuelRight1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0020);
-            radioButtonDuelDown1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0040);
-            radioButtonDuelLeft1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0080);
-            radioButtonDuelL2_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0100);
-            radioButtonDuelR2_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0200);
-            radioButtonDuelL1_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0400);
-            radioButtonDuelR1_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0800);
-            radioButtonDuelTriangle1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x1000);
-            radioButtonDuelCircle1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x2000);
-            radioButtonDuelX1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x4000);
-            radioButtonDuelSquare1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x8000);
-            radioButtonDuelDeac1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0xFFFF);
-            radioButtonDuelUp2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0010);
-            radioButtonDuelRight2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0020);
-            radioButtonDuelDown2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0040);
-            radioButtonDuelLeft2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0080);
-            radioButtonDuelL2_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0100);
-            radioButtonDuelR2_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0200);
-            radioButtonDuelL1_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0400);
-            radioButtonDuelR1_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0800);
-            radioButtonDuelTriangle2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x1000);
-            radioButtonDuelCircle2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x2000);
-            radioButtonDuelX2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x4000);
-            radioButtonDuelSquare2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x8000);
-            radioButtonDuelDeac2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0xFFFF);
-            radioButtonDuelUp3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0010);
-            radioButtonDuelRight3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0020);
-            radioButtonDuelDown3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0040);
-            radioButtonDuelLeft3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0080);
-            radioButtonDuelL2_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0100);
-            radioButtonDuelR2_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0200);
-            radioButtonDuelL1_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0400);
-            radioButtonDuelR1_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0800);
-            radioButtonDuelTriangle3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x1000);
-            radioButtonDuelCircle3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x2000);
-            radioButtonDuelX3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x4000);
-            radioButtonDuelSquare3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x8000);
-            radioButtonDuelDeac3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0xFFFF);
-            radioButtonDuelUp4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0010);
-            radioButtonDuelRight4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0020);
-            radioButtonDuelDown4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0040);
-            radioButtonDuelLeft4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0080);
-            radioButtonDuelL2_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0100);
-            radioButtonDuelR2_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0200);
-            radioButtonDuelL1_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0400);
-            radioButtonDuelR1_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0800);
-            radioButtonDuelTriangle4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x1000);
-            radioButtonDuelCircle4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x2000);
-            radioButtonDuelX4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x4000);
-            radioButtonDuelSquare4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x8000);
-            radioButtonDuelDeac4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0xFFFF);
-            radioButtonDuelUp5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0010);
-            radioButtonDuelRight5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0020);
-            radioButtonDuelDown5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0040);
-            radioButtonDuelLeft5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0080);
-            radioButtonDuelL2_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0100);
-            radioButtonDuelR2_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0200);
-            radioButtonDuelL1_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0400);
-            radioButtonDuelR1_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0800);
-            radioButtonDuelTriangle5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x1000);
-            radioButtonDuelCircle5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x2000);
-            radioButtonDuelX5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x4000);
-            radioButtonDuelSquare5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x8000);
-            radioButtonDuelDeac5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0xFFFF);
-            */
-
+            //buttons to do here
             checkBoxDuelDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x01, 0);
             checkBoxDuelPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x02, 0);
             checkBoxDuelPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x04, 0);
@@ -1005,6 +936,108 @@ namespace Doomtrain
             checkBoxDuelUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x20, 4);
             checkBoxDuelHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x40, 4);
             checkBoxDuelSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x80, 4);
+
+            //duel params
+            comboBoxDuelMove0.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(0, comboBoxDuelMove0.SelectedIndex);
+            comboBoxDuelMove1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(1, comboBoxDuelMove1.SelectedIndex);
+            comboBoxDuelMove2.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(2, comboBoxDuelMove2.SelectedIndex);
+            comboBoxDuelMove3.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(3, comboBoxDuelMove3.SelectedIndex);
+            comboBoxDuelMove4.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(4, comboBoxDuelMove4.SelectedIndex);
+            comboBoxDuelMove5.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(5, comboBoxDuelMove5.SelectedIndex);
+            comboBoxDuelMove6.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(6, comboBoxDuelMove6.SelectedIndex);
+            comboBoxDuelMove7.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(7, comboBoxDuelMove7.SelectedIndex);
+            comboBoxDuelMove8.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(8, comboBoxDuelMove8.SelectedIndex);
+            comboBoxDuelMove9.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(9, comboBoxDuelMove9.SelectedIndex);
+            comboBoxDuelMove10.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(10, comboBoxDuelMove10.SelectedIndex);
+            comboBoxDuelMove11.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(11, comboBoxDuelMove11.SelectedIndex);
+            comboBoxDuelMove12.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(12, comboBoxDuelMove12.SelectedIndex);
+            comboBoxDuelMove13.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(13, comboBoxDuelMove13.SelectedIndex);
+            comboBoxDuelMove14.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(14, comboBoxDuelMove14.SelectedIndex);
+            comboBoxDuelMove15.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(15, comboBoxDuelMove15.SelectedIndex);
+            comboBoxDuelMove16.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(16, comboBoxDuelMove16.SelectedIndex);
+            comboBoxDuelMove17.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(17, comboBoxDuelMove17.SelectedIndex);
+            comboBoxDuelMove18.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(18, comboBoxDuelMove18.SelectedIndex);
+            comboBoxDuelMove19.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(19, comboBoxDuelMove19.SelectedIndex);
+            comboBoxDuelMove20.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(20, comboBoxDuelMove20.SelectedIndex);
+            comboBoxDuelMove21.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(21, comboBoxDuelMove21.SelectedIndex);
+            comboBoxDuelMove22.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(22, comboBoxDuelMove22.SelectedIndex);
+            comboBoxDuelMove23.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(23, comboBoxDuelMove23.SelectedIndex);
+            comboBoxDuelMove24.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(24, comboBoxDuelMove24.SelectedIndex);
+            numericUpDownDuelNextSeq0_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(25, numericUpDownDuelNextSeq0_1.Value);
+            numericUpDownDuelNextSeq0_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(26, numericUpDownDuelNextSeq0_2.Value);
+            numericUpDownDuelNextSeq0_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(27, numericUpDownDuelNextSeq0_3.Value);
+            numericUpDownDuelNextSeq1_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(28, numericUpDownDuelNextSeq1_1.Value);
+            numericUpDownDuelNextSeq1_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(29, numericUpDownDuelNextSeq1_2.Value);
+            numericUpDownDuelNextSeq1_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(30, numericUpDownDuelNextSeq1_3.Value);
+            numericUpDownDuelNextSeq2_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(31, numericUpDownDuelNextSeq2_1.Value);
+            numericUpDownDuelNextSeq2_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(32, numericUpDownDuelNextSeq2_2.Value);
+            numericUpDownDuelNextSeq2_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(33, numericUpDownDuelNextSeq2_3.Value);
+            numericUpDownDuelNextSeq3_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(34, numericUpDownDuelNextSeq3_1.Value);
+            numericUpDownDuelNextSeq3_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(35, numericUpDownDuelNextSeq3_2.Value);
+            numericUpDownDuelNextSeq3_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(36, numericUpDownDuelNextSeq3_3.Value);
+            numericUpDownDuelNextSeq4_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(37, numericUpDownDuelNextSeq4_1.Value);
+            numericUpDownDuelNextSeq4_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(38, numericUpDownDuelNextSeq4_2.Value);
+            numericUpDownDuelNextSeq4_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(39, numericUpDownDuelNextSeq4_3.Value);
+            numericUpDownDuelNextSeq5_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(40, numericUpDownDuelNextSeq5_1.Value);
+            numericUpDownDuelNextSeq5_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(41, numericUpDownDuelNextSeq5_2.Value);
+            numericUpDownDuelNextSeq5_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(42, numericUpDownDuelNextSeq5_3.Value);
+            numericUpDownDuelNextSeq6_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(43, numericUpDownDuelNextSeq6_1.Value);
+            numericUpDownDuelNextSeq6_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(44, numericUpDownDuelNextSeq6_2.Value);
+            numericUpDownDuelNextSeq6_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(45, numericUpDownDuelNextSeq6_3.Value);
+            numericUpDownDuelNextSeq7_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(46, numericUpDownDuelNextSeq7_1.Value);
+            numericUpDownDuelNextSeq7_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(47, numericUpDownDuelNextSeq7_2.Value);
+            numericUpDownDuelNextSeq7_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(48, numericUpDownDuelNextSeq7_3.Value);
+            numericUpDownDuelNextSeq8_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(49, numericUpDownDuelNextSeq8_1.Value);
+            numericUpDownDuelNextSeq8_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(50, numericUpDownDuelNextSeq8_2.Value);
+            numericUpDownDuelNextSeq8_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(51, numericUpDownDuelNextSeq8_3.Value);
+            numericUpDownDuelNextSeq9_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(52, numericUpDownDuelNextSeq9_1.Value);
+            numericUpDownDuelNextSeq9_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(53, numericUpDownDuelNextSeq9_2.Value);
+            numericUpDownDuelNextSeq9_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(54, numericUpDownDuelNextSeq9_3.Value);
+            numericUpDownDuelNextSeq10_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(55, numericUpDownDuelNextSeq10_1.Value);
+            numericUpDownDuelNextSeq10_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(56, numericUpDownDuelNextSeq10_2.Value);
+            numericUpDownDuelNextSeq10_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(57, numericUpDownDuelNextSeq10_3.Value);
+            numericUpDownDuelNextSeq11_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(58, numericUpDownDuelNextSeq11_1.Value);
+            numericUpDownDuelNextSeq11_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(59, numericUpDownDuelNextSeq11_2.Value);
+            numericUpDownDuelNextSeq11_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(60, numericUpDownDuelNextSeq11_3.Value);
+            numericUpDownDuelNextSeq12_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(61, numericUpDownDuelNextSeq12_1.Value);
+            numericUpDownDuelNextSeq12_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(62, numericUpDownDuelNextSeq12_2.Value);
+            numericUpDownDuelNextSeq12_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(63, numericUpDownDuelNextSeq12_3.Value);
+            numericUpDownDuelNextSeq13_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(64, numericUpDownDuelNextSeq13_1.Value);
+            numericUpDownDuelNextSeq13_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(65, numericUpDownDuelNextSeq13_2.Value);
+            numericUpDownDuelNextSeq13_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(66, numericUpDownDuelNextSeq13_3.Value);
+            numericUpDownDuelNextSeq14_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(67, numericUpDownDuelNextSeq14_1.Value);
+            numericUpDownDuelNextSeq14_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(68, numericUpDownDuelNextSeq14_2.Value);
+            numericUpDownDuelNextSeq14_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(69, numericUpDownDuelNextSeq14_3.Value);
+            numericUpDownDuelNextSeq15_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(70, numericUpDownDuelNextSeq15_1.Value);
+            numericUpDownDuelNextSeq15_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(71, numericUpDownDuelNextSeq15_2.Value);
+            numericUpDownDuelNextSeq15_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(72, numericUpDownDuelNextSeq15_3.Value);
+            numericUpDownDuelNextSeq16_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(73, numericUpDownDuelNextSeq16_1.Value);
+            numericUpDownDuelNextSeq16_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(74, numericUpDownDuelNextSeq16_2.Value);
+            numericUpDownDuelNextSeq16_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(75, numericUpDownDuelNextSeq16_3.Value);
+            numericUpDownDuelNextSeq17_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(76, numericUpDownDuelNextSeq17_1.Value);
+            numericUpDownDuelNextSeq17_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(77, numericUpDownDuelNextSeq17_2.Value);
+            numericUpDownDuelNextSeq17_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(78, numericUpDownDuelNextSeq17_3.Value);
+            numericUpDownDuelNextSeq18_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(79, numericUpDownDuelNextSeq18_1.Value);
+            numericUpDownDuelNextSeq18_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(80, numericUpDownDuelNextSeq18_2.Value);
+            numericUpDownDuelNextSeq18_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(81, numericUpDownDuelNextSeq18_3.Value);
+            numericUpDownDuelNextSeq19_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(82, numericUpDownDuelNextSeq19_1.Value);
+            numericUpDownDuelNextSeq19_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(83, numericUpDownDuelNextSeq19_2.Value);
+            numericUpDownDuelNextSeq19_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(84, numericUpDownDuelNextSeq19_3.Value);
+            numericUpDownDuelNextSeq20_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(85, numericUpDownDuelNextSeq20_1.Value);
+            numericUpDownDuelNextSeq20_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(86, numericUpDownDuelNextSeq20_2.Value);
+            numericUpDownDuelNextSeq20_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(87, numericUpDownDuelNextSeq20_3.Value);
+            numericUpDownDuelNextSeq21_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(88, numericUpDownDuelNextSeq21_1.Value);
+            numericUpDownDuelNextSeq21_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(89, numericUpDownDuelNextSeq21_2.Value);
+            numericUpDownDuelNextSeq21_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(90, numericUpDownDuelNextSeq21_2.Value);
+            numericUpDownDuelNextSeq22_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(91, numericUpDownDuelNextSeq22_1.Value);
+            numericUpDownDuelNextSeq22_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(92, numericUpDownDuelNextSeq22_2.Value);
+            numericUpDownDuelNextSeq22_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(93, numericUpDownDuelNextSeq22_3.Value);
+            numericUpDownDuelNextSeq23_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(94, numericUpDownDuelNextSeq23_1.Value);
+            numericUpDownDuelNextSeq23_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(95, numericUpDownDuelNextSeq23_2.Value);
+            numericUpDownDuelNextSeq23_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(96, numericUpDownDuelNextSeq23_3.Value);
+            numericUpDownDuelNextSeq24_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(97, numericUpDownDuelNextSeq24_1.Value);
+            numericUpDownDuelNextSeq24_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(98, numericUpDownDuelNextSeq24_2.Value);
+            numericUpDownDuelNextSeq24_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(99, numericUpDownDuelNextSeq24_3.Value);
 
             #endregion
 
@@ -1286,6 +1319,72 @@ namespace Doomtrain
             numericUpDownDevourHP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(4, numericUpDownDevourHP.Value);
 
             #endregion
+
+            #region EVENT HANDLERS MISC
+
+            numericUpDownStatusTimer1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(0, numericUpDownStatusTimer1.Value);
+            numericUpDownStatusTimer2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(1, numericUpDownStatusTimer2.Value);
+            numericUpDownStatusTimer3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(2, numericUpDownStatusTimer3.Value);
+            numericUpDownStatusTimer4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(3, numericUpDownStatusTimer4.Value);
+            numericUpDownStatusTimer5.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(4, numericUpDownStatusTimer5.Value);
+            numericUpDownStatusTimer6.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(5, numericUpDownStatusTimer6.Value);
+            numericUpDownStatusTimer7.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(6, numericUpDownStatusTimer7.Value);
+            numericUpDownStatusTimer8.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(7, numericUpDownStatusTimer8.Value);
+            numericUpDownStatusTimer9.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(8, numericUpDownStatusTimer9.Value);
+            numericUpDownStatusTimer10.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(9, numericUpDownStatusTimer10.Value);
+            numericUpDownStatusTimer11.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(10, numericUpDownStatusTimer11.Value);
+            numericUpDownStatusTimer12.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(11, numericUpDownStatusTimer12.Value);
+            numericUpDownStatusTimer13.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(12, numericUpDownStatusTimer13.Value);
+            numericUpDownStatusTimer14.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(13, numericUpDownStatusTimer14.Value);
+            numericUpDownATBMult.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(14, numericUpDownATBMult.Value);
+            numericUpDownDeadTimer.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(15, numericUpDownDeadTimer.Value);
+            numericUpDownStatusLimit1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(16, numericUpDownStatusLimit1.Value);
+            numericUpDownStatusLimit1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(16, numericUpDownStatusLimit1.Value);
+            numericUpDownStatusLimit2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(17, numericUpDownStatusLimit2.Value);
+            numericUpDownStatusLimit3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(18, numericUpDownStatusLimit3.Value);
+            numericUpDownStatusLimit4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(19, numericUpDownStatusLimit4.Value);
+            numericUpDownStatusLimit5.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(20, numericUpDownStatusLimit5.Value);
+            numericUpDownStatusLimit6.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(21, numericUpDownStatusLimit6.Value);
+            numericUpDownStatusLimit7.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(22, numericUpDownStatusLimit7.Value);
+            numericUpDownStatusLimit8.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(23, numericUpDownStatusLimit8.Value);
+            numericUpDownStatusLimit9.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(24, numericUpDownStatusLimit9.Value);
+            numericUpDownStatusLimit10.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(25, numericUpDownStatusLimit10.Value);
+            numericUpDownStatusLimit11.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(26, numericUpDownStatusLimit11.Value);
+            numericUpDownStatusLimit12.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(27, numericUpDownStatusLimit12.Value);
+            numericUpDownStatusLimit13.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(28, numericUpDownStatusLimit13.Value);
+            numericUpDownStatusLimit14.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(29, numericUpDownStatusLimit14.Value);
+            numericUpDownStatusLimit15.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(30, numericUpDownStatusLimit15.Value);
+            numericUpDownStatusLimit16.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(31, numericUpDownStatusLimit16.Value);
+            numericUpDownStatusLimit17.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(32, numericUpDownStatusLimit17.Value);
+            numericUpDownStatusLimit18.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(33, numericUpDownStatusLimit18.Value);
+            numericUpDownStatusLimit19.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(34, numericUpDownStatusLimit19.Value);
+            numericUpDownStatusLimit20.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(35, numericUpDownStatusLimit20.Value);
+            numericUpDownStatusLimit21.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(36, numericUpDownStatusLimit21.Value);
+            numericUpDownStatusLimit22.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(37, numericUpDownStatusLimit22.Value);
+            numericUpDownStatusLimit23.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(38, numericUpDownStatusLimit23.Value);
+            numericUpDownStatusLimit24.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(39, numericUpDownStatusLimit24.Value);
+            numericUpDownStatusLimit25.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(40, numericUpDownStatusLimit25.Value);
+            numericUpDownStatusLimit26.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(41, numericUpDownStatusLimit26.Value);
+            numericUpDownStatusLimit27.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(42, numericUpDownStatusLimit27.Value);
+            numericUpDownStatusLimit28.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(43, numericUpDownStatusLimit28.Value);
+            numericUpDownStatusLimit29.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(44, numericUpDownStatusLimit29.Value);
+            numericUpDownStatusLimit30.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(45, numericUpDownStatusLimit30.Value);
+            numericUpDownStatusLimit31.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(46, numericUpDownStatusLimit31.Value);
+            numericUpDownStatusLimit32.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(47, numericUpDownStatusLimit32.Value);
+            numericUpDownDuelTimer1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(48, numericUpDownDuelTimer1.Value);
+            numericUpDownDuelStart1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(49, numericUpDownDuelStart1.Value);
+            numericUpDownDuelTimer2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(50, numericUpDownDuelTimer2.Value);
+            numericUpDownDuelStart2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(51, numericUpDownDuelStart2.Value);
+            numericUpDownDuelTimer3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(52, numericUpDownDuelTimer3.Value);
+            numericUpDownDuelStart3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(53, numericUpDownDuelStart3.Value);
+            numericUpDownDuelTimer4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(54, numericUpDownDuelTimer4.Value);
+            numericUpDownDuelStart4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(55, numericUpDownDuelStart4.Value);
+            numericUpDownShotTimer1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(56, numericUpDownShotTimer1.Value);
+            numericUpDownShotTimer2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(57, numericUpDownShotTimer2.Value);
+            numericUpDownShotTimer3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(58, numericUpDownShotTimer3.Value);
+            numericUpDownShotTimer4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(59, numericUpDownShotTimer4.Value);
+
+            #endregion
         }
 
 
@@ -1312,6 +1411,8 @@ namespace Doomtrain
                     }
 
                     SlotArray();
+                    DuelParams();
+                    Misc();
                 }
                 
                 existingFilename = openFileDialog.FileName;
@@ -3336,8 +3437,129 @@ namespace Doomtrain
             _loaded = true;
         }
 
+        #endregion
 
+        #region DUEL PARAMS
 
+        private void DuelParams()
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadDuelParams();
+            try
+            {
+                comboBoxDuelMove0.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove0;
+                comboBoxDuelMove1.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove1;
+                comboBoxDuelMove2.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove2;
+                comboBoxDuelMove3.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove3;
+                comboBoxDuelMove4.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove4;
+                comboBoxDuelMove5.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove5;
+                comboBoxDuelMove6.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove6;
+                comboBoxDuelMove7.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove7;
+                comboBoxDuelMove8.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove8;
+                comboBoxDuelMove9.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove9;
+                comboBoxDuelMove10.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove10;
+                comboBoxDuelMove11.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove11;
+                comboBoxDuelMove12.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove12;
+                comboBoxDuelMove13.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove13;
+                comboBoxDuelMove14.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove14;
+                comboBoxDuelMove15.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove15;
+                comboBoxDuelMove16.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove16;
+                comboBoxDuelMove17.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove17;
+                comboBoxDuelMove18.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove18;
+                comboBoxDuelMove19.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove19;
+                comboBoxDuelMove20.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove20;
+                comboBoxDuelMove21.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove21;
+                comboBoxDuelMove22.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove22;
+                comboBoxDuelMove23.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove23;
+                comboBoxDuelMove24.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove24;
+                numericUpDownDuelNextSeq0_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_1;
+                numericUpDownDuelNextSeq0_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_2;
+                numericUpDownDuelNextSeq0_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_3;
+                numericUpDownDuelNextSeq0_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_1;
+                numericUpDownDuelNextSeq0_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_2;
+                numericUpDownDuelNextSeq0_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_3;
+                numericUpDownDuelNextSeq1_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq1_1;
+                numericUpDownDuelNextSeq1_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq1_2;
+                numericUpDownDuelNextSeq1_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq1_3;
+                numericUpDownDuelNextSeq2_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq2_1;
+                numericUpDownDuelNextSeq2_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq2_2;
+                numericUpDownDuelNextSeq2_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq2_3;
+                numericUpDownDuelNextSeq3_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq3_1;
+                numericUpDownDuelNextSeq3_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq3_2;
+                numericUpDownDuelNextSeq3_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq3_3;
+                numericUpDownDuelNextSeq4_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq4_1;
+                numericUpDownDuelNextSeq4_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq4_2;
+                numericUpDownDuelNextSeq4_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq4_3;
+                numericUpDownDuelNextSeq5_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq5_1;
+                numericUpDownDuelNextSeq5_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq5_2;
+                numericUpDownDuelNextSeq5_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq5_3;
+                numericUpDownDuelNextSeq6_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq6_1;
+                numericUpDownDuelNextSeq6_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq6_2;
+                numericUpDownDuelNextSeq6_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq6_3;
+                numericUpDownDuelNextSeq7_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq7_1;
+                numericUpDownDuelNextSeq7_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq7_2;
+                numericUpDownDuelNextSeq7_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq7_3;
+                numericUpDownDuelNextSeq8_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq8_1;
+                numericUpDownDuelNextSeq8_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq8_2;
+                numericUpDownDuelNextSeq8_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq8_3;
+                numericUpDownDuelNextSeq9_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq9_1;
+                numericUpDownDuelNextSeq9_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq9_2;
+                numericUpDownDuelNextSeq9_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq9_3;
+                numericUpDownDuelNextSeq10_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq10_1;
+                numericUpDownDuelNextSeq10_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq10_2;
+                numericUpDownDuelNextSeq10_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq10_3;
+                numericUpDownDuelNextSeq11_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq11_1;
+                numericUpDownDuelNextSeq11_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq11_2;
+                numericUpDownDuelNextSeq11_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq11_3;
+                numericUpDownDuelNextSeq12_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq12_1;
+                numericUpDownDuelNextSeq12_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq12_2;
+                numericUpDownDuelNextSeq12_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq12_3;
+                numericUpDownDuelNextSeq13_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq13_1;
+                numericUpDownDuelNextSeq13_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq13_2;
+                numericUpDownDuelNextSeq13_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq13_3;
+                numericUpDownDuelNextSeq14_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq14_1;
+                numericUpDownDuelNextSeq14_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq14_2;
+                numericUpDownDuelNextSeq14_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq14_3;
+                numericUpDownDuelNextSeq15_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq15_1;
+                numericUpDownDuelNextSeq15_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq15_2;
+                numericUpDownDuelNextSeq15_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq15_3;
+                numericUpDownDuelNextSeq16_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq16_1;
+                numericUpDownDuelNextSeq16_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq16_2;
+                numericUpDownDuelNextSeq16_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq16_3;
+                numericUpDownDuelNextSeq17_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq17_1;
+                numericUpDownDuelNextSeq17_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq17_2;
+                numericUpDownDuelNextSeq17_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq17_3;
+                numericUpDownDuelNextSeq18_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq18_1;
+                numericUpDownDuelNextSeq18_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq18_2;
+                numericUpDownDuelNextSeq18_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq18_3;
+                numericUpDownDuelNextSeq19_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq19_1;
+                numericUpDownDuelNextSeq19_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq19_2;
+                numericUpDownDuelNextSeq19_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq19_3;
+                numericUpDownDuelNextSeq20_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq20_1;
+                numericUpDownDuelNextSeq20_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq20_2;
+                numericUpDownDuelNextSeq20_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq20_3;
+                numericUpDownDuelNextSeq21_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq21_1;
+                numericUpDownDuelNextSeq21_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq21_2;
+                numericUpDownDuelNextSeq21_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq21_3;
+                numericUpDownDuelNextSeq22_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq22_1;
+                numericUpDownDuelNextSeq22_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq22_2;
+                numericUpDownDuelNextSeq22_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq22_3;
+                numericUpDownDuelNextSeq23_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq23_1;
+                numericUpDownDuelNextSeq23_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq23_2;
+                numericUpDownDuelNextSeq23_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq23_3;
+                numericUpDownDuelNextSeq24_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq24_1;
+                numericUpDownDuelNextSeq24_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq24_2;
+                numericUpDownDuelNextSeq24_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq24_3;
+            }
+
+            catch (Exception Exception)
+            {
+                Console.WriteLine(Exception.ToString());
+            }
+            _loaded = true;
+        }
 
         #endregion
 
@@ -3832,6 +4054,87 @@ namespace Doomtrain
             catch (Exception Exception)
             {
                 MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+
+        #region MISC
+
+        private void Misc()
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadMisc();
+            try
+            {
+                numericUpDownStatusTimer1.Value = KernelWorker.GetSelectedMiscData.StatusTimer1;
+                numericUpDownStatusTimer2.Value = KernelWorker.GetSelectedMiscData.StatusTimer2;
+                numericUpDownStatusTimer3.Value = KernelWorker.GetSelectedMiscData.StatusTimer3;
+                numericUpDownStatusTimer4.Value = KernelWorker.GetSelectedMiscData.StatusTimer4;
+                numericUpDownStatusTimer5.Value = KernelWorker.GetSelectedMiscData.StatusTimer5;
+                numericUpDownStatusTimer6.Value = KernelWorker.GetSelectedMiscData.StatusTimer6;
+                numericUpDownStatusTimer7.Value = KernelWorker.GetSelectedMiscData.StatusTimer7;
+                numericUpDownStatusTimer8.Value = KernelWorker.GetSelectedMiscData.StatusTimer8;
+                numericUpDownStatusTimer9.Value = KernelWorker.GetSelectedMiscData.StatusTimer9;
+                numericUpDownStatusTimer10.Value = KernelWorker.GetSelectedMiscData.StatusTimer10;
+                numericUpDownStatusTimer11.Value = KernelWorker.GetSelectedMiscData.StatusTimer11;
+                numericUpDownStatusTimer12.Value = KernelWorker.GetSelectedMiscData.StatusTimer12;
+                numericUpDownStatusTimer13.Value = KernelWorker.GetSelectedMiscData.StatusTimer13;
+                numericUpDownStatusTimer14.Value = KernelWorker.GetSelectedMiscData.StatusTimer14;
+                numericUpDownATBMult.Value = KernelWorker.GetSelectedMiscData.ATB;
+                numericUpDownDeadTimer.Value = KernelWorker.GetSelectedMiscData.DeadTimer;
+                numericUpDownStatusLimit1.Value = KernelWorker.GetSelectedMiscData.StatusLimit1;
+                numericUpDownStatusLimit2.Value = KernelWorker.GetSelectedMiscData.StatusLimit2;
+                numericUpDownStatusLimit3.Value = KernelWorker.GetSelectedMiscData.StatusLimit3;
+                numericUpDownStatusLimit4.Value = KernelWorker.GetSelectedMiscData.StatusLimit4;
+                numericUpDownStatusLimit5.Value = KernelWorker.GetSelectedMiscData.StatusLimit5;
+                numericUpDownStatusLimit6.Value = KernelWorker.GetSelectedMiscData.StatusLimit6;
+                numericUpDownStatusLimit7.Value = KernelWorker.GetSelectedMiscData.StatusLimit7;
+                numericUpDownStatusLimit8.Value = KernelWorker.GetSelectedMiscData.StatusLimit8;
+                numericUpDownStatusLimit9.Value = KernelWorker.GetSelectedMiscData.StatusLimit9;
+                numericUpDownStatusLimit10.Value = KernelWorker.GetSelectedMiscData.StatusLimit10;
+                numericUpDownStatusLimit11.Value = KernelWorker.GetSelectedMiscData.StatusLimit11;
+                numericUpDownStatusLimit12.Value = KernelWorker.GetSelectedMiscData.StatusLimit12;
+                numericUpDownStatusLimit13.Value = KernelWorker.GetSelectedMiscData.StatusLimit13;
+                numericUpDownStatusLimit14.Value = KernelWorker.GetSelectedMiscData.StatusLimit14;
+                numericUpDownStatusLimit15.Value = KernelWorker.GetSelectedMiscData.StatusLimit15;
+                numericUpDownStatusLimit16.Value = KernelWorker.GetSelectedMiscData.StatusLimit16;
+                numericUpDownStatusLimit17.Value = KernelWorker.GetSelectedMiscData.StatusLimit17;
+                numericUpDownStatusLimit18.Value = KernelWorker.GetSelectedMiscData.StatusLimit18;
+                numericUpDownStatusLimit19.Value = KernelWorker.GetSelectedMiscData.StatusLimit19;
+                numericUpDownStatusLimit20.Value = KernelWorker.GetSelectedMiscData.StatusLimit20;
+                numericUpDownStatusLimit21.Value = KernelWorker.GetSelectedMiscData.StatusLimit21;
+                numericUpDownStatusLimit22.Value = KernelWorker.GetSelectedMiscData.StatusLimit22;
+                numericUpDownStatusLimit23.Value = KernelWorker.GetSelectedMiscData.StatusLimit23;
+                numericUpDownStatusLimit24.Value = KernelWorker.GetSelectedMiscData.StatusLimit24;
+                numericUpDownStatusLimit25.Value = KernelWorker.GetSelectedMiscData.StatusLimit25;
+                numericUpDownStatusLimit26.Value = KernelWorker.GetSelectedMiscData.StatusLimit26;
+                numericUpDownStatusLimit27.Value = KernelWorker.GetSelectedMiscData.StatusLimit27;
+                numericUpDownStatusLimit28.Value = KernelWorker.GetSelectedMiscData.StatusLimit28;
+                numericUpDownStatusLimit29.Value = KernelWorker.GetSelectedMiscData.StatusLimit29;
+                numericUpDownStatusLimit30.Value = KernelWorker.GetSelectedMiscData.StatusLimit30;
+                numericUpDownStatusLimit31.Value = KernelWorker.GetSelectedMiscData.StatusLimit31;
+                numericUpDownStatusLimit32.Value = KernelWorker.GetSelectedMiscData.StatusLimit32;
+                numericUpDownDuelTimer1.Value = KernelWorker.GetSelectedMiscData.DuelTimerCL1;
+                numericUpDownDuelTimer2.Value = KernelWorker.GetSelectedMiscData.DuelTimerCL2;
+                numericUpDownDuelTimer3.Value = KernelWorker.GetSelectedMiscData.DuelTimerCL3;
+                numericUpDownDuelTimer4.Value = KernelWorker.GetSelectedMiscData.DuelTimerCL4;
+                numericUpDownDuelStart1.Value = KernelWorker.GetSelectedMiscData.DuelSeqCL1;
+                numericUpDownDuelStart2.Value = KernelWorker.GetSelectedMiscData.DuelSeqCL2;
+                numericUpDownDuelStart3.Value = KernelWorker.GetSelectedMiscData.DuelSeqCL3;
+                numericUpDownDuelStart4.Value = KernelWorker.GetSelectedMiscData.DuelSeqCL4;
+                numericUpDownShotTimer1.Value = KernelWorker.GetSelectedMiscData.ShotTimerCL1;
+                numericUpDownShotTimer2.Value = KernelWorker.GetSelectedMiscData.ShotTimerCL2;
+                numericUpDownShotTimer3.Value = KernelWorker.GetSelectedMiscData.ShotTimerCL3;
+                numericUpDownShotTimer4.Value = KernelWorker.GetSelectedMiscData.ShotTimerCL4;
+            }
+
+            catch (Exception Exception)
+            {
+                Console.WriteLine(Exception.ToString());
             }
             _loaded = true;
         }
