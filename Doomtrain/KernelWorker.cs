@@ -173,6 +173,23 @@ namespace Doomtrain
             Damage = 0x1F
         }
 
+        internal enum Buttons : UInt16 //used in duel
+        {
+            L2 = 0x0001,
+            R2 = 0x0002,
+            L1 = 0x0004,
+            R1 = 0x0008,
+            Triangle = 0x0010,
+            Circle = 0x0020,
+            X = 0x0040,
+            Square = 0x0080,
+            IsFinisher = 0x0100,
+            Up = 0x1000,
+            Right = 0x2000,
+            Down = 0x4000,
+            Left = 0x8000
+        }
+
 
         public struct MagicData
         {
@@ -523,11 +540,11 @@ namespace Doomtrain
             public byte Status3;
             public byte Status4;
             public byte Status5;
-            public UInt16 Button1;
-            public UInt16 Button2;
-            public UInt16 Button3;
-            public UInt16 Button4;
-            public UInt16 Button5;
+            //public Buttons Button1;
+            //public Buttons Button2;
+            //public Buttons Button3;
+            //public Buttons Button4;
+            //public Buttons Button5;
         }
 
         public struct DuelParamsData
@@ -837,7 +854,10 @@ namespace Doomtrain
 
         #endregion
 
+
         #region WRITE KERNEL VARIABLES
+
+        #region MAGIC
 
         public static void UpdateVariable_Magic(int index, object variable, byte arg0 = 127)
         {
@@ -1110,6 +1130,10 @@ namespace Doomtrain
             }
         }
 
+        #endregion
+
+        #region J-GF
+
         public static void UpdateVariable_GF(int index, object variable, byte AbilityIndex = 0, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -1234,6 +1258,10 @@ namespace Doomtrain
             }
         }
 
+        #endregion
+
+        #region NJ-GF
+
         public static void UpdateVariable_GFAttacks(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -1301,6 +1329,10 @@ namespace Doomtrain
             }
         }
 
+        #endregion
+
+        #region WEAPONS
+
         public static void UpdateVariable_Weapons(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -1339,6 +1371,10 @@ namespace Doomtrain
                     return;
             }
         }
+
+        #endregion
+
+        #region CHARACTERS
 
         public static void UpdateVariable_Characters(int index, object variable)
         {
@@ -1454,6 +1490,10 @@ namespace Doomtrain
             }
         }
 
+        #endregion
+
+        #region ENEMY ATTACK
+
         public static void UpdateVariable_EnemyAttacks(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -1507,6 +1547,10 @@ namespace Doomtrain
                     return;
             }
         }
+
+        #endregion
+
+        #region BLUE MAGIC
 
         public static void UpdateVariable_BlueMagic(int index, object variable)
         {
@@ -1639,6 +1683,10 @@ namespace Doomtrain
             }
         }
 
+        #endregion
+
+        #region ABILITIES
+
         public static void UpdateVariable_StatPercentageAbilities(int index, object variable)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -1656,6 +1704,10 @@ namespace Doomtrain
                     return;
             }
         }
+
+        #endregion
+
+        #region RENZOKUKEN FINISHERS
 
         public static void UpdateVariable_RenzoFin(int index, object variable, byte arg0 = 127)
         {
@@ -1720,6 +1772,10 @@ namespace Doomtrain
             }
         }
 
+        #endregion
+
+        #region TEMP CHARACTERS LIMIT BREAKS
+
         public static void UpdateVariable_TempCharLB(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -1782,6 +1838,10 @@ namespace Doomtrain
                     return;
             }
         }
+
+        #endregion
+
+        #region SHOT
 
         public static void UpdateVariable_Shot(int index, object variable, byte arg0 = 127)
         {
@@ -1849,6 +1909,10 @@ namespace Doomtrain
             }
         }
 
+        #endregion
+
+        #region DUEL
+
         public static void UpdateVariable_Duel(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -1886,16 +1950,16 @@ namespace Doomtrain
                     Kernel[OffsetToDuelSelected + 16] ^= Convert.ToByte(variable); //button 1, not sure if correct
                     return;
                 case 10:
-                    Kernel[OffsetToDuelSelected + 18] ^= Convert.ToByte(variable); //button 2
+                    Kernel[OffsetToDuelSelected + 18] = Convert.ToByte(variable); //button 2
                     return;
                 case 11:
-                    Kernel[OffsetToDuelSelected + 20] ^= Convert.ToByte(variable); //button 3
+                    Kernel[OffsetToDuelSelected + 20] = Convert.ToByte(variable); //button 3
                     return;
                 case 12:
-                    Kernel[OffsetToDuelSelected + 22] ^= Convert.ToByte(variable); //button 4
+                    Kernel[OffsetToDuelSelected + 22] = Convert.ToByte(variable); //button 4
                     return;
                 case 13:
-                    Kernel[OffsetToDuelSelected + 24] ^= Convert.ToByte(variable); //button 5
+                    Kernel[OffsetToDuelSelected + 24] = Convert.ToByte(variable); //button 5
                     return;
                 case 14:
                     DuelStatusUpdator(arg0, variable); //Status
@@ -2239,6 +2303,10 @@ namespace Doomtrain
             }
         }
 
+        #endregion
+
+        #region COMBINE
+
         public static void UpdateVariable_Combine(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -2302,6 +2370,10 @@ namespace Doomtrain
             }
         }
 
+        #endregion
+
+        #region BATTLE ITEMS
+
         public static void UpdateVariable_BattleItems(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -2361,6 +2433,10 @@ namespace Doomtrain
                     return;
             }
         }
+
+        #endregion
+
+        #region SLOT
 
         public static void UpdateVariable_SlotArray(int index, object variable)
         {
@@ -2614,6 +2690,10 @@ namespace Doomtrain
             }
         }
 
+        #endregion
+
+        #region DEVOUR
+
         public static void UpdateVariable_Devour(int index, object variable, byte arg0 = 127)
         {
             if (!mainForm._loaded || Kernel == null)
@@ -2661,6 +2741,10 @@ namespace Doomtrain
                     return;
             }
         }
+
+        #endregion
+
+        #region MISC
 
         public static void UpdateVariable_Misc(int index, object variable)
         {
@@ -2856,6 +2940,9 @@ namespace Doomtrain
 
         #endregion
 
+        #endregion
+
+
         #region MAGIC ID
 
         /// <summary>
@@ -2924,7 +3011,10 @@ namespace Doomtrain
 
         #endregion
 
+
         #region READ KERNEL VARIABLES
+
+        #region KERNEL OFFSETS
 
         public static void ReadKernel(byte[] kernel)
         {
@@ -2951,6 +3041,10 @@ namespace Doomtrain
             MiscDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Misc);
         }
 
+        #endregion
+
+
+        #region MAGIC
 
         public static void ReadMagic(int MagicID_List)
         {
@@ -3053,6 +3147,10 @@ namespace Doomtrain
             GetSelectedMagicData.Unknown6 = new byte[2];
             Array.Copy(Kernel, selectedMagicOffset, GetSelectedMagicData.Unknown6, 0, 2);
         }
+
+        #endregion
+
+        #region J-GF
 
         public static void ReadGF(int GFID_List)
         {
@@ -3206,6 +3304,10 @@ namespace Doomtrain
             GetSelectedGFData.GFLevelMod = Kernel[selectedGfOffset++];
         }
 
+        #endregion
+
+        #region NJ-GF
+
         public static void ReadGFAttacks(int GFAttacksID_List)
         {
             GetSelectedGFAttacksData = new GFAttacksData();
@@ -3251,6 +3353,10 @@ namespace Doomtrain
             GetSelectedGFAttacksData.GFAttacksLevelMod = Kernel[selectedGfAttacksOffset + 1];
         }
 
+        #endregion
+
+        #region WEAPONS
+
         public static void ReadWeapons(int WeaponsID_List)
         {
             GetSelectedWeaponsData = new WeaponsData();
@@ -3266,6 +3372,10 @@ namespace Doomtrain
             GetSelectedWeaponsData.STRBonus = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.Tier = Kernel[selectedWeaponsOffset++];
         }
+
+        #endregion
+
+        #region CHARACTERS
 
         public static void ReadCharacters(int CharactersID_List)
         {
@@ -3310,6 +3420,10 @@ namespace Doomtrain
             GetSelectedCharactersData.LUCK4 = Kernel[selectedCharactersOffset++];
         }
 
+        #endregion
+
+        #region ENEMY ATTACKS
+
         public static void ReadEnemyAttacks(int EnemyAttacksID_List)
         {
             GetSelectedEnemyAttacksData = new EnemyAttacksData();
@@ -3353,6 +3467,10 @@ namespace Doomtrain
             GetSelectedEnemyAttacksData.Status4 = Kernel[selectedEnemyAttacksOffset++];
             GetSelectedEnemyAttacksData.Status5 = Kernel[selectedEnemyAttacksOffset++];
         }
+
+        #endregion
+
+        #region BLUE MAGIC
 
         public static void ReadBlueMagic(int BlueMagicID_List)
         {
@@ -3433,6 +3551,10 @@ namespace Doomtrain
             GetSelectedBlueMagicParamData.DeathLevelCL4 = Kernel[selectedBlueMagicParamOffset++];
         }
 
+        #endregion
+
+        #region ABILITIES
+
         public static void ReadStatPercentageAbilities(int StatPercentageAbilitiesID_List)
         {
             GetSelectedStatPercentageAbilitiesData = new StatPercentageAbilitiesData();
@@ -3443,6 +3565,10 @@ namespace Doomtrain
             GetSelectedStatPercentageAbilitiesData.StatToincrease = Kernel[selectedStatPercentageAbilitiesOffset++];
             GetSelectedStatPercentageAbilitiesData.IncreasementValue = Kernel[selectedStatPercentageAbilitiesOffset++];
         }
+
+        #endregion
+
+        #region RENZOKUKEN FINISHERS
 
         public static void ReadRenzoFin(int RenzoFinID_List)
         {
@@ -3490,7 +3616,11 @@ namespace Doomtrain
             GetSelectedRenzoFinData.Status4 = Kernel[selectedRenzoFinOffset++];
             GetSelectedRenzoFinData.Status5 = Kernel[selectedRenzoFinOffset++];
         }
-       
+
+        #endregion
+
+        #region TEMP CHARACTERS LIMIT BREAKS
+
         public static void ReadTempCharLB(int TempCharLBID_List)
         {
             GetSelectedTempCharLBData = new TempCharLBData();
@@ -3535,6 +3665,10 @@ namespace Doomtrain
             GetSelectedTempCharLBData.Status4 = Kernel[selectedTempCharLBOffset++];
             GetSelectedTempCharLBData.Status5 = Kernel[selectedTempCharLBOffset++];
         }
+
+        #endregion
+
+        #region SHOT
 
         public static void ReadShot(int ShotID_List)
         {
@@ -3583,6 +3717,10 @@ namespace Doomtrain
             GetSelectedShotData.Status5 = Kernel[selectedShotOffset++];
         }
 
+        #endregion
+
+        #region DUEL
+
         public static void ReadDuel(int DuelID_List)
         {
             GetSelectedDuelData = new DuelData();
@@ -3621,15 +3759,15 @@ namespace Doomtrain
                                                     : 0; //Error handler
             GetSelectedDuelData.ElementPerc = Kernel[selectedDuelOffset++];
             GetSelectedDuelData.StatusAttack = Kernel[selectedDuelOffset++];
-            GetSelectedDuelData.Button1 = Kernel[selectedDuelOffset];
+            //GetSelectedDuelData.Button1 = Kernel[selectedDuelOffset];
             selectedDuelOffset += 2;
-            GetSelectedDuelData.Button2 = Kernel[selectedDuelOffset];
+            //GetSelectedDuelData.Button2 = Kernel[selectedDuelOffset];
             selectedDuelOffset += 2;
-            GetSelectedDuelData.Button3 = Kernel[selectedDuelOffset];
+            //GetSelectedDuelData.Button3 = Kernel[selectedDuelOffset];
             selectedDuelOffset += 2;
-            GetSelectedDuelData.Button4 = Kernel[selectedDuelOffset];
+            //GetSelectedDuelData.Button4 = Kernel[selectedDuelOffset];
             selectedDuelOffset += 2;
-            GetSelectedDuelData.Button5 = Kernel[selectedDuelOffset];
+            //GetSelectedDuelData.Button5 = Kernel[selectedDuelOffset];
             selectedDuelOffset += 2;
             GetSelectedDuelData.Status1 = Kernel[selectedDuelOffset++];
             selectedDuelOffset += 1;
@@ -3747,6 +3885,10 @@ namespace Doomtrain
             GetSelectedDuelParamsData.NextSeq24_3 = Kernel[selectedDuelParamsOffset++];
         }
 
+        #endregion
+
+        #region COMBINE
+
         public static void ReadCombine(int CombineID_List)
         {
             GetSelectedCombineData = new CombineData();
@@ -3792,6 +3934,10 @@ namespace Doomtrain
             GetSelectedCombineData.Status4 = Kernel[selectedCombineOffset++];
             GetSelectedCombineData.Status5 = Kernel[selectedCombineOffset++];
         }
+
+        #endregion
+
+        #region BATTLE ITEMS
 
         public static void ReadBattleItems(int BattleItemsID_List)
         {
@@ -3840,6 +3986,10 @@ namespace Doomtrain
                                                     ? Element.Earth
                                                     : 0; //Error handler
         }
+
+        #endregion
+
+        #region SLOT
 
         public static void ReadSlotArray()
         {
@@ -3933,6 +4083,10 @@ namespace Doomtrain
             GetSelectedSlotsSetsData.Count8 = Kernel[selectedSlotsSetsOffset++];
         }
 
+        #endregion
+
+        #region DEVOUR
+
         public static void ReadDevour(int DevourID_List)
         {
             GetSelectedDevourData = new DevourData();
@@ -3957,6 +4111,10 @@ namespace Doomtrain
             GetSelectedDevourData.RaisedStat = Kernel[selectedDevourOffset++];
             GetSelectedDevourData.RaisedHP = Kernel[selectedDevourOffset++];
         }
+
+        #endregion
+
+        #region MISC
 
         public static void ReadMisc()
         {
@@ -4025,6 +4183,8 @@ namespace Doomtrain
             GetSelectedMiscData.ShotTimerCL3 = Kernel[selectedMiscOffset++];
             GetSelectedMiscData.ShotTimerCL4 = Kernel[selectedMiscOffset++];
         }
+
+        #endregion
 
         #endregion
 

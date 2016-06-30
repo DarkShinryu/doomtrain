@@ -895,7 +895,7 @@ namespace Doomtrain
             comboBoxDuelElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(6, Duel_GetElement(comboBoxDuelElement.SelectedIndex));            
             numericUpDownDuelElementPerc.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(7, numericUpDownDuelElementPerc.Value);
             numericUpDownDuelStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(8, numericUpDownDuelStatusAttack.Value);
-            //buttons to do here
+            comboBoxDuelButton1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, comboBoxDuelButton1.SelectedIndex);
             checkBoxDuelDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x01, 0);
             checkBoxDuelPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x02, 0);
             checkBoxDuelPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x04, 0);
@@ -1492,7 +1492,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region CHARTS, FORMULAS, TRACKBARS, LISTBOXES SWITCH
+        #region CHARTS, FORMULAS, LABELS, LISTBOXES SWITCH
 
         private void buttonCharHPFormula_Click(object sender, EventArgs e)
         {
@@ -1543,7 +1543,7 @@ namespace Doomtrain
 
 
 
-    // MAGIC TRACKBARS LABELS VALUE
+    //LABELS VALUE
     //I added this.trackBar.ValueChanged += (this.trackBarJXY_Scroll) to MainForm.Designer, only this 4 are necessary here now
     private void trackBarJElemAttack_Scroll(object sender, EventArgs e)
         {
@@ -1563,6 +1563,118 @@ namespace Doomtrain
         private void trackBarJStatDefense_Scroll(object sender, EventArgs e)
         {
             labelValueStatDefenseTrackBar.Text = trackBarJStatDefense.Value + "%".ToString();
+        }
+
+
+        private void numericUpDownShotTimer1_ValueChanged(object sender, EventArgs e)
+        {
+            labelShotTimer1Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownShotTimer1.Value * 2 / 15) * 100) / 100);
+            //labelShotTimer1Value.Text = String.Format("{0:0.00}s", (numericUpDownShotTimer1.Value * 2) / 15); with rounding
+        }
+
+        private void numericUpDownShotTimer2_ValueChanged(object sender, EventArgs e)
+        {
+            labelShotTimer2Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownShotTimer2.Value * 2 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownShotTimer3_ValueChanged(object sender, EventArgs e)
+        {
+            labelShotTimer3Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownShotTimer3.Value * 2 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownShotTimer4_ValueChanged(object sender, EventArgs e)
+        {
+            labelShotTimer4Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownShotTimer4.Value * 2 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownDuelTimer1_ValueChanged(object sender, EventArgs e)
+        {
+            labelDuelTimer1Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownDuelTimer1.Value / 15) * 100) / 100);
+        }
+
+        private void numericUpDownDuelTimer2_ValueChanged(object sender, EventArgs e)
+        {
+            labelDuelTimer2Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownDuelTimer2.Value / 15) * 100) / 100);
+        }
+
+        private void numericUpDownDuelTimer3_ValueChanged(object sender, EventArgs e)
+        {
+            labelDuelTimer3Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownDuelTimer3.Value / 15) * 100) / 100);
+        }
+
+        private void numericUpDownDuelTimer4_ValueChanged(object sender, EventArgs e)
+        {
+            labelDuelTimer4Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownDuelTimer4.Value / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer1_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer1Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer1.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer2_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer2Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer2.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer3_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer3Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer3.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer4_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer4Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer4.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer5_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer5Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer5.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer6_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer6Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer6.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer7_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer7Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer7.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer8_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer8Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer8.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer9_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer9Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer9.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer10_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer10Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer10.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer11_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer11Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer11.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer12_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer12Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer12.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer13_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer13Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer13.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer14_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer14Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer14.Value * 4 / 15) * 100) / 100);
         }
 
 
@@ -4140,6 +4252,5 @@ namespace Doomtrain
         }
 
         #endregion
-
     }
 }
