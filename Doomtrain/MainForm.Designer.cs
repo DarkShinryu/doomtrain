@@ -198,11 +198,11 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolbarStrip = new System.Windows.Forms.ToolStrip();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolbarStrip = new System.Windows.Forms.ToolStrip();
             this.tabPageGFAttacks = new System.Windows.Forms.TabPage();
             this.groupBoxGFAttacksFlags = new System.Windows.Forms.GroupBox();
             this.checkBoxGFAttacksFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
@@ -323,7 +323,9 @@
             this.comboBoxGFElement = new System.Windows.Forms.ComboBox();
             this.numericUpDownGFLevelMod = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownGFPowerMod = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGFEXP = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownGFPower = new System.Windows.Forms.NumericUpDown();
+            this.labelGFEXP = new System.Windows.Forms.Label();
             this.tabPageGFAbilities = new System.Windows.Forms.TabPage();
             this.groupBoxGFAbilities = new System.Windows.Forms.GroupBox();
             this.panelGFAbilities = new System.Windows.Forms.Panel();
@@ -1043,6 +1045,10 @@
             this.comboBoxDuelMagicID = new System.Windows.Forms.ComboBox();
             this.tabPageDuelMoveTimersButtons = new System.Windows.Forms.TabPage();
             this.groupBoxStartButtonsTimers = new System.Windows.Forms.GroupBox();
+            this.labelDuelTimer4Value = new System.Windows.Forms.Label();
+            this.labelDuelTimer3Value = new System.Windows.Forms.Label();
+            this.labelDuelTimer2Value = new System.Windows.Forms.Label();
+            this.labelDuelTimer1Value = new System.Windows.Forms.Label();
             this.labelDuelTimer4 = new System.Windows.Forms.Label();
             this.numericUpDownDuelStart4 = new System.Windows.Forms.NumericUpDown();
             this.labelDuelTimer3 = new System.Windows.Forms.Label();
@@ -1396,6 +1402,19 @@
             this.checkBoxShotZombie = new System.Windows.Forms.CheckBox();
             this.numericUpDownShotStatusAttack = new System.Windows.Forms.NumericUpDown();
             this.labelShotStatusAttack = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.labelShotTimer4 = new System.Windows.Forms.Label();
+            this.numericUpDownShotTimer1 = new System.Windows.Forms.NumericUpDown();
+            this.labelShotTimer3 = new System.Windows.Forms.Label();
+            this.numericUpDownShotTimer2 = new System.Windows.Forms.NumericUpDown();
+            this.labelShotTimer2 = new System.Windows.Forms.Label();
+            this.numericUpDownShotTimer3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownShotTimer4 = new System.Windows.Forms.NumericUpDown();
+            this.labelShotTimer4Value = new System.Windows.Forms.Label();
+            this.labelShotTimer3Value = new System.Windows.Forms.Label();
+            this.labelShotTimer1 = new System.Windows.Forms.Label();
+            this.labelShotTimer2Value = new System.Windows.Forms.Label();
+            this.labelShotTimer1Value = new System.Windows.Forms.Label();
             this.groupBoxShotTargetInfo = new System.Windows.Forms.GroupBox();
             this.checkBoxShotTarget8 = new System.Windows.Forms.CheckBox();
             this.checkBoxShotTarget5 = new System.Windows.Forms.CheckBox();
@@ -1414,19 +1433,11 @@
             this.checkBoxShotFlag2 = new System.Windows.Forms.CheckBox();
             this.checkBoxShotFlag7 = new System.Windows.Forms.CheckBox();
             this.groupBoxShotGeneral = new System.Windows.Forms.GroupBox();
-            this.labelShotTimer4 = new System.Windows.Forms.Label();
-            this.labelShotTimer3 = new System.Windows.Forms.Label();
-            this.labelShotTimer2 = new System.Windows.Forms.Label();
-            this.labelShotTimer1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBoxShotElement = new System.Windows.Forms.ComboBox();
             this.comboBoxShotItem = new System.Windows.Forms.ComboBox();
             this.labelShotItem = new System.Windows.Forms.Label();
             this.comboBoxShotAttackType = new System.Windows.Forms.ComboBox();
-            this.numericUpDownShotTimer4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownShotTimer3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownShotTimer2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownShotTimer1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownShotElementPerc = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownShotHitCount = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownShotAttackPower = new System.Windows.Forms.NumericUpDown();
@@ -1760,6 +1771,7 @@
             this.numericUpDownStatusLimit18 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownStatusLimit12 = new System.Windows.Forms.NumericUpDown();
             this.groupBoxMiscStatusTimers = new System.Windows.Forms.GroupBox();
+            this.numericUpDownStatusTimer1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownStatusTimer14 = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
             this.numericUpDownStatusTimer7 = new System.Windows.Forms.NumericUpDown();
@@ -1786,32 +1798,22 @@
             this.numericUpDownStatusTimer8 = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDownStatusTimer1 = new System.Windows.Forms.NumericUpDown();
+            this.labelStatusTimer14Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer13Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer7Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer12Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer6Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer11Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer5Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer10Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer4Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer9Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer3Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer8Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer2Value = new System.Windows.Forms.Label();
+            this.labelStatusTimer1Value = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.labelShotTimer1Value = new System.Windows.Forms.Label();
-            this.labelShotTimer2Value = new System.Windows.Forms.Label();
-            this.labelShotTimer3Value = new System.Windows.Forms.Label();
-            this.labelDuelTimer4Value = new System.Windows.Forms.Label();
-            this.labelDuelTimer3Value = new System.Windows.Forms.Label();
-            this.labelDuelTimer2Value = new System.Windows.Forms.Label();
-            this.labelDuelTimer1Value = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.labelShotTimer4Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer1Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer2Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer3Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer4Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer5Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer6Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer7Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer8Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer9Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer10Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer11Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer12Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer13Value = new System.Windows.Forms.Label();
-            this.labelStatusTimer14Value = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -1834,6 +1836,7 @@
             this.groupBoxGFGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFLevelMod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFPowerMod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFEXP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFPower)).BeginInit();
             this.tabPageGFAbilities.SuspendLayout();
             this.groupBoxGFAbilities.SuspendLayout();
@@ -2178,13 +2181,14 @@
             this.tabPageLBIrvine.SuspendLayout();
             this.groupBoxShotStatusAttack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotStatusAttack)).BeginInit();
+            this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer4)).BeginInit();
             this.groupBoxShotTargetInfo.SuspendLayout();
             this.groupBoxShotAttackFlags.SuspendLayout();
             this.groupBoxShotGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).BeginInit();
@@ -2254,6 +2258,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusLimit18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusLimit12)).BeginInit();
             this.groupBoxMiscStatusTimers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer13)).BeginInit();
@@ -2267,9 +2272,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer1)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -2694,7 +2697,7 @@
             this.labelGFMagicID.AutoSize = true;
             this.labelGFMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFMagicID.Location = new System.Drawing.Point(124, 29);
+            this.labelGFMagicID.Location = new System.Drawing.Point(124, 25);
             this.labelGFMagicID.Name = "labelGFMagicID";
             this.labelGFMagicID.Size = new System.Drawing.Size(61, 17);
             this.labelGFMagicID.TabIndex = 0;
@@ -2706,7 +2709,7 @@
             this.labelGFPower.AutoSize = true;
             this.labelGFPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFPower.Location = new System.Drawing.Point(25, 126);
+            this.labelGFPower.Location = new System.Drawing.Point(25, 143);
             this.labelGFPower.Name = "labelGFPower";
             this.labelGFPower.Size = new System.Drawing.Size(66, 17);
             this.labelGFPower.TabIndex = 0;
@@ -2718,7 +2721,7 @@
             this.labelGFHP.AutoSize = true;
             this.labelGFHP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFHP.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFHP.Location = new System.Drawing.Point(372, 126);
+            this.labelGFHP.Location = new System.Drawing.Point(372, 143);
             this.labelGFHP.Name = "labelGFHP";
             this.labelGFHP.Size = new System.Drawing.Size(46, 17);
             this.labelGFHP.TabIndex = 0;
@@ -2730,7 +2733,7 @@
             this.labelGFPowerMod.AutoSize = true;
             this.labelGFPowerMod.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFPowerMod.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFPowerMod.Location = new System.Drawing.Point(132, 126);
+            this.labelGFPowerMod.Location = new System.Drawing.Point(132, 143);
             this.labelGFPowerMod.Name = "labelGFPowerMod";
             this.labelGFPowerMod.Size = new System.Drawing.Size(78, 17);
             this.labelGFPowerMod.TabIndex = 0;
@@ -2742,7 +2745,7 @@
             this.labelGFLevelMod.AutoSize = true;
             this.labelGFLevelMod.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFLevelMod.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFLevelMod.Location = new System.Drawing.Point(247, 126);
+            this.labelGFLevelMod.Location = new System.Drawing.Point(247, 143);
             this.labelGFLevelMod.Name = "labelGFLevelMod";
             this.labelGFLevelMod.Size = new System.Drawing.Size(70, 17);
             this.labelGFLevelMod.TabIndex = 0;
@@ -3100,7 +3103,7 @@
             "Renzokuken (vs Griever)",
             "Final Battle Music",
             "LV5 Death"});
-            this.comboBoxGFMagicID.Location = new System.Drawing.Point(22, 49);
+            this.comboBoxGFMagicID.Location = new System.Drawing.Point(22, 45);
             this.comboBoxGFMagicID.Name = "comboBoxGFMagicID";
             this.comboBoxGFMagicID.Size = new System.Drawing.Size(265, 25);
             this.comboBoxGFMagicID.TabIndex = 2;
@@ -3109,7 +3112,7 @@
             // numericUpDownGFHP
             // 
             this.numericUpDownGFHP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFHP.Location = new System.Drawing.Point(371, 146);
+            this.numericUpDownGFHP.Location = new System.Drawing.Point(371, 163);
             this.numericUpDownGFHP.Maximum = new decimal(new int[] {
             255,
             0,
@@ -3125,7 +3128,7 @@
             this.labelGFElement.AutoSize = true;
             this.labelGFElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFElement.Location = new System.Drawing.Point(346, 29);
+            this.labelGFElement.Location = new System.Drawing.Point(346, 25);
             this.labelGFElement.Name = "labelGFElement";
             this.labelGFElement.Size = new System.Drawing.Size(57, 17);
             this.labelGFElement.TabIndex = 89;
@@ -3137,7 +3140,7 @@
             this.labelGFAttackType.AutoSize = true;
             this.labelGFAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAttackType.Location = new System.Drawing.Point(113, 76);
+            this.labelGFAttackType.Location = new System.Drawing.Point(113, 84);
             this.labelGFAttackType.Name = "labelGFAttackType";
             this.labelGFAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelGFAttackType.TabIndex = 91;
@@ -5301,6 +5304,24 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolbarStrip
+            // 
+            this.toolbarStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openToolStripButton,
+            this.saveToolStripButton,
+            this.saveAsToolStripButton,
+            this.toolStripSeparator2});
+            this.toolbarStrip.Location = new System.Drawing.Point(0, 24);
+            this.toolbarStrip.Name = "toolbarStrip";
+            this.toolbarStrip.Size = new System.Drawing.Size(654, 25);
+            this.toolbarStrip.TabIndex = 1;
+            this.toolbarStrip.Text = "toolbarStrip";
+            // 
             // openToolStripButton
             // 
             this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -5332,24 +5353,6 @@
             this.saveAsToolStripButton.Text = "saveAs";
             this.saveAsToolStripButton.ToolTipText = "Save As...";
             this.saveAsToolStripButton.Click += new System.EventHandler(this.saveAsToolStripButton_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolbarStrip
-            // 
-            this.toolbarStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openToolStripButton,
-            this.saveToolStripButton,
-            this.saveAsToolStripButton,
-            this.toolStripSeparator2});
-            this.toolbarStrip.Location = new System.Drawing.Point(0, 24);
-            this.toolbarStrip.Name = "toolbarStrip";
-            this.toolbarStrip.Size = new System.Drawing.Size(654, 25);
-            this.toolbarStrip.TabIndex = 1;
-            this.toolbarStrip.Text = "toolbarStrip";
             // 
             // tabPageGFAttacks
             // 
@@ -6247,9 +6250,9 @@
             this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag7);
             this.groupBoxGFFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxGFFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxGFFlags.Location = new System.Drawing.Point(6, 482);
+            this.groupBoxGFFlags.Location = new System.Drawing.Point(6, 497);
             this.groupBoxGFFlags.Name = "groupBoxGFFlags";
-            this.groupBoxGFFlags.Size = new System.Drawing.Size(452, 96);
+            this.groupBoxGFFlags.Size = new System.Drawing.Size(452, 89);
             this.groupBoxGFFlags.TabIndex = 6;
             this.groupBoxGFFlags.TabStop = false;
             this.groupBoxGFFlags.Text = "Attack Flags";
@@ -6397,7 +6400,7 @@
             this.groupBoxGFStatusAttack.Controls.Add(this.labelGFStatusAttackEnabler);
             this.groupBoxGFStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxGFStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBoxGFStatusAttack.Location = new System.Drawing.Point(6, 197);
+            this.groupBoxGFStatusAttack.Location = new System.Drawing.Point(6, 212);
             this.groupBoxGFStatusAttack.Name = "groupBoxGFStatusAttack";
             this.groupBoxGFStatusAttack.Size = new System.Drawing.Size(452, 279);
             this.groupBoxGFStatusAttack.TabIndex = 5;
@@ -6919,10 +6922,12 @@
             this.groupBoxGFGeneral.Controls.Add(this.numericUpDownGFLevelMod);
             this.groupBoxGFGeneral.Controls.Add(this.numericUpDownGFPowerMod);
             this.groupBoxGFGeneral.Controls.Add(this.numericUpDownGFHP);
+            this.groupBoxGFGeneral.Controls.Add(this.numericUpDownGFEXP);
             this.groupBoxGFGeneral.Controls.Add(this.numericUpDownGFPower);
             this.groupBoxGFGeneral.Controls.Add(this.comboBoxGFMagicID);
             this.groupBoxGFGeneral.Controls.Add(this.labelGFLevelMod);
             this.groupBoxGFGeneral.Controls.Add(this.labelGFPowerMod);
+            this.groupBoxGFGeneral.Controls.Add(this.labelGFEXP);
             this.groupBoxGFGeneral.Controls.Add(this.labelGFHP);
             this.groupBoxGFGeneral.Controls.Add(this.labelGFPower);
             this.groupBoxGFGeneral.Controls.Add(this.labelGFMagicID);
@@ -6930,7 +6935,7 @@
             this.groupBoxGFGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxGFGeneral.Location = new System.Drawing.Point(6, 6);
             this.groupBoxGFGeneral.Name = "groupBoxGFGeneral";
-            this.groupBoxGFGeneral.Size = new System.Drawing.Size(452, 185);
+            this.groupBoxGFGeneral.Size = new System.Drawing.Size(452, 200);
             this.groupBoxGFGeneral.TabIndex = 1;
             this.groupBoxGFGeneral.TabStop = false;
             this.groupBoxGFGeneral.Text = "General";
@@ -6977,7 +6982,7 @@
             "Everyone\'s Grudge",
             "Excalipoor",
             "Terra Break/Great Attractor"});
-            this.comboBoxGFAttackType.Location = new System.Drawing.Point(22, 96);
+            this.comboBoxGFAttackType.Location = new System.Drawing.Point(22, 104);
             this.comboBoxGFAttackType.Name = "comboBoxGFAttackType";
             this.comboBoxGFAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxGFAttackType.TabIndex = 90;
@@ -6996,7 +7001,7 @@
             "Water",
             "Holy",
             "Non-Elemental"});
-            this.comboBoxGFElement.Location = new System.Drawing.Point(320, 49);
+            this.comboBoxGFElement.Location = new System.Drawing.Point(320, 45);
             this.comboBoxGFElement.Name = "comboBoxGFElement";
             this.comboBoxGFElement.Size = new System.Drawing.Size(110, 25);
             this.comboBoxGFElement.TabIndex = 6;
@@ -7004,7 +7009,7 @@
             // numericUpDownGFLevelMod
             // 
             this.numericUpDownGFLevelMod.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFLevelMod.Location = new System.Drawing.Point(259, 146);
+            this.numericUpDownGFLevelMod.Location = new System.Drawing.Point(259, 163);
             this.numericUpDownGFLevelMod.Maximum = new decimal(new int[] {
             255,
             0,
@@ -7017,7 +7022,7 @@
             // numericUpDownGFPowerMod
             // 
             this.numericUpDownGFPowerMod.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFPowerMod.Location = new System.Drawing.Point(147, 146);
+            this.numericUpDownGFPowerMod.Location = new System.Drawing.Point(147, 163);
             this.numericUpDownGFPowerMod.Maximum = new decimal(new int[] {
             255,
             0,
@@ -7027,10 +7032,28 @@
             this.numericUpDownGFPowerMod.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFPowerMod.TabIndex = 4;
             // 
+            // numericUpDownGFEXP
+            // 
+            this.numericUpDownGFEXP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownGFEXP.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDownGFEXP.Location = new System.Drawing.Point(350, 104);
+            this.numericUpDownGFEXP.Maximum = new decimal(new int[] {
+            2550,
+            0,
+            0,
+            0});
+            this.numericUpDownGFEXP.Name = "numericUpDownGFEXP";
+            this.numericUpDownGFEXP.Size = new System.Drawing.Size(50, 25);
+            this.numericUpDownGFEXP.TabIndex = 3;
+            // 
             // numericUpDownGFPower
             // 
             this.numericUpDownGFPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFPower.Location = new System.Drawing.Point(35, 146);
+            this.numericUpDownGFPower.Location = new System.Drawing.Point(35, 163);
             this.numericUpDownGFPower.Maximum = new decimal(new int[] {
             255,
             0,
@@ -7039,6 +7062,17 @@
             this.numericUpDownGFPower.Name = "numericUpDownGFPower";
             this.numericUpDownGFPower.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownGFPower.TabIndex = 3;
+            // 
+            // labelGFEXP
+            // 
+            this.labelGFEXP.AutoSize = true;
+            this.labelGFEXP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelGFEXP.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelGFEXP.Location = new System.Drawing.Point(324, 84);
+            this.labelGFEXP.Name = "labelGFEXP";
+            this.labelGFEXP.Size = new System.Drawing.Size(103, 17);
+            this.labelGFEXP.TabIndex = 0;
+            this.labelGFEXP.Text = "EXP to Level Up";
             // 
             // tabPageGFAbilities
             // 
@@ -12637,7 +12671,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFEdenComp.Location = new System.Drawing.Point(360, 203);
+            this.numericUpDownGFEdenComp.Location = new System.Drawing.Point(357, 203);
             this.numericUpDownGFEdenComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -12649,7 +12683,7 @@
             0,
             -2147483648});
             this.numericUpDownGFEdenComp.Name = "numericUpDownGFEdenComp";
-            this.numericUpDownGFEdenComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFEdenComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFEdenComp.TabIndex = 3;
             // 
             // labelGFEdenComp
@@ -12672,7 +12706,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFDoomtrainComp.Location = new System.Drawing.Point(360, 150);
+            this.numericUpDownGFDoomtrainComp.Location = new System.Drawing.Point(357, 150);
             this.numericUpDownGFDoomtrainComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -12684,7 +12718,7 @@
             0,
             -2147483648});
             this.numericUpDownGFDoomtrainComp.Name = "numericUpDownGFDoomtrainComp";
-            this.numericUpDownGFDoomtrainComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFDoomtrainComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFDoomtrainComp.TabIndex = 3;
             // 
             // labelGFDoomtrainComp
@@ -12707,7 +12741,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFLeviathanComp.Location = new System.Drawing.Point(360, 98);
+            this.numericUpDownGFLeviathanComp.Location = new System.Drawing.Point(357, 98);
             this.numericUpDownGFLeviathanComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -12719,7 +12753,7 @@
             0,
             -2147483648});
             this.numericUpDownGFLeviathanComp.Name = "numericUpDownGFLeviathanComp";
-            this.numericUpDownGFLeviathanComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFLeviathanComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFLeviathanComp.TabIndex = 3;
             // 
             // numericUpDownGFTonberryComp
@@ -12731,7 +12765,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFTonberryComp.Location = new System.Drawing.Point(256, 203);
+            this.numericUpDownGFTonberryComp.Location = new System.Drawing.Point(253, 203);
             this.numericUpDownGFTonberryComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -12743,7 +12777,7 @@
             0,
             -2147483648});
             this.numericUpDownGFTonberryComp.Name = "numericUpDownGFTonberryComp";
-            this.numericUpDownGFTonberryComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFTonberryComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFTonberryComp.TabIndex = 3;
             // 
             // labelGFLeviathanComp
@@ -12766,7 +12800,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFAlexanderComp.Location = new System.Drawing.Point(256, 150);
+            this.numericUpDownGFAlexanderComp.Location = new System.Drawing.Point(253, 150);
             this.numericUpDownGFAlexanderComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -12778,7 +12812,7 @@
             0,
             -2147483648});
             this.numericUpDownGFAlexanderComp.Name = "numericUpDownGFAlexanderComp";
-            this.numericUpDownGFAlexanderComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFAlexanderComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFAlexanderComp.TabIndex = 3;
             // 
             // numericUpDownGFSirenComp
@@ -12790,7 +12824,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFSirenComp.Location = new System.Drawing.Point(360, 47);
+            this.numericUpDownGFSirenComp.Location = new System.Drawing.Point(357, 47);
             this.numericUpDownGFSirenComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -12802,7 +12836,7 @@
             0,
             -2147483648});
             this.numericUpDownGFSirenComp.Name = "numericUpDownGFSirenComp";
-            this.numericUpDownGFSirenComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFSirenComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFSirenComp.TabIndex = 3;
             // 
             // labelGFTonberryComp
@@ -12825,7 +12859,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFCarbuncleComp.Location = new System.Drawing.Point(256, 98);
+            this.numericUpDownGFCarbuncleComp.Location = new System.Drawing.Point(253, 98);
             this.numericUpDownGFCarbuncleComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -12837,7 +12871,7 @@
             0,
             -2147483648});
             this.numericUpDownGFCarbuncleComp.Name = "numericUpDownGFCarbuncleComp";
-            this.numericUpDownGFCarbuncleComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFCarbuncleComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFCarbuncleComp.TabIndex = 3;
             // 
             // labelGFAlexanderComp
@@ -12871,7 +12905,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFCactuarComp.Location = new System.Drawing.Point(152, 203);
+            this.numericUpDownGFCactuarComp.Location = new System.Drawing.Point(149, 203);
             this.numericUpDownGFCactuarComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -12883,7 +12917,7 @@
             0,
             -2147483648});
             this.numericUpDownGFCactuarComp.Name = "numericUpDownGFCactuarComp";
-            this.numericUpDownGFCactuarComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFCactuarComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFCactuarComp.TabIndex = 3;
             // 
             // labelGFCarbuncleComp
@@ -12906,7 +12940,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFCerberusComp.Location = new System.Drawing.Point(152, 150);
+            this.numericUpDownGFCerberusComp.Location = new System.Drawing.Point(149, 150);
             this.numericUpDownGFCerberusComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -12918,7 +12952,7 @@
             0,
             -2147483648});
             this.numericUpDownGFCerberusComp.Name = "numericUpDownGFCerberusComp";
-            this.numericUpDownGFCerberusComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFCerberusComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFCerberusComp.TabIndex = 3;
             // 
             // numericUpDownGFIfritComp
@@ -12930,7 +12964,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFIfritComp.Location = new System.Drawing.Point(256, 47);
+            this.numericUpDownGFIfritComp.Location = new System.Drawing.Point(253, 47);
             this.numericUpDownGFIfritComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -12942,7 +12976,7 @@
             0,
             -2147483648});
             this.numericUpDownGFIfritComp.Name = "numericUpDownGFIfritComp";
-            this.numericUpDownGFIfritComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFIfritComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFIfritComp.TabIndex = 3;
             // 
             // labelGFCactuarComp
@@ -12965,7 +12999,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFDiablosComp.Location = new System.Drawing.Point(152, 98);
+            this.numericUpDownGFDiablosComp.Location = new System.Drawing.Point(149, 98);
             this.numericUpDownGFDiablosComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -12977,7 +13011,7 @@
             0,
             -2147483648});
             this.numericUpDownGFDiablosComp.Name = "numericUpDownGFDiablosComp";
-            this.numericUpDownGFDiablosComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFDiablosComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFDiablosComp.TabIndex = 3;
             // 
             // labelGFCerberusComp
@@ -13011,7 +13045,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFBahamutComp.Location = new System.Drawing.Point(48, 203);
+            this.numericUpDownGFBahamutComp.Location = new System.Drawing.Point(45, 203);
             this.numericUpDownGFBahamutComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -13023,7 +13057,7 @@
             0,
             -2147483648});
             this.numericUpDownGFBahamutComp.Name = "numericUpDownGFBahamutComp";
-            this.numericUpDownGFBahamutComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFBahamutComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFBahamutComp.TabIndex = 3;
             // 
             // labelGFDiablosComp
@@ -13046,7 +13080,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFPandemonaComp.Location = new System.Drawing.Point(48, 150);
+            this.numericUpDownGFPandemonaComp.Location = new System.Drawing.Point(45, 150);
             this.numericUpDownGFPandemonaComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -13058,7 +13092,7 @@
             0,
             -2147483648});
             this.numericUpDownGFPandemonaComp.Name = "numericUpDownGFPandemonaComp";
-            this.numericUpDownGFPandemonaComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFPandemonaComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFPandemonaComp.TabIndex = 3;
             // 
             // numericUpDownGFShivaComp
@@ -13070,7 +13104,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFShivaComp.Location = new System.Drawing.Point(152, 47);
+            this.numericUpDownGFShivaComp.Location = new System.Drawing.Point(149, 47);
             this.numericUpDownGFShivaComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -13082,7 +13116,7 @@
             0,
             -2147483648});
             this.numericUpDownGFShivaComp.Name = "numericUpDownGFShivaComp";
-            this.numericUpDownGFShivaComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFShivaComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFShivaComp.TabIndex = 3;
             // 
             // labelGFBahamutComp
@@ -13105,7 +13139,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFBrothersComp.Location = new System.Drawing.Point(48, 98);
+            this.numericUpDownGFBrothersComp.Location = new System.Drawing.Point(45, 98);
             this.numericUpDownGFBrothersComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -13117,7 +13151,7 @@
             0,
             -2147483648});
             this.numericUpDownGFBrothersComp.Name = "numericUpDownGFBrothersComp";
-            this.numericUpDownGFBrothersComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFBrothersComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFBrothersComp.TabIndex = 3;
             // 
             // labelGFPandemonaComp
@@ -13162,7 +13196,7 @@
             0,
             0,
             65536});
-            this.numericUpDownGFQuezacoltComp.Location = new System.Drawing.Point(48, 47);
+            this.numericUpDownGFQuezacoltComp.Location = new System.Drawing.Point(45, 47);
             this.numericUpDownGFQuezacoltComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -13174,7 +13208,7 @@
             0,
             -2147483648});
             this.numericUpDownGFQuezacoltComp.Name = "numericUpDownGFQuezacoltComp";
-            this.numericUpDownGFQuezacoltComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownGFQuezacoltComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownGFQuezacoltComp.TabIndex = 3;
             // 
             // listBoxGF
@@ -15307,7 +15341,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicEdenComp.Location = new System.Drawing.Point(360, 203);
+            this.numericUpDownMagicEdenComp.Location = new System.Drawing.Point(357, 203);
             this.numericUpDownMagicEdenComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15319,7 +15353,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicEdenComp.Name = "numericUpDownMagicEdenComp";
-            this.numericUpDownMagicEdenComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicEdenComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicEdenComp.TabIndex = 3;
             // 
             // labelMagicEdenComp
@@ -15342,7 +15376,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicDoomtrainComp.Location = new System.Drawing.Point(360, 150);
+            this.numericUpDownMagicDoomtrainComp.Location = new System.Drawing.Point(357, 150);
             this.numericUpDownMagicDoomtrainComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15354,7 +15388,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicDoomtrainComp.Name = "numericUpDownMagicDoomtrainComp";
-            this.numericUpDownMagicDoomtrainComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicDoomtrainComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicDoomtrainComp.TabIndex = 3;
             // 
             // labelMagicDoomtrainComp
@@ -15377,7 +15411,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicLeviathanComp.Location = new System.Drawing.Point(360, 98);
+            this.numericUpDownMagicLeviathanComp.Location = new System.Drawing.Point(357, 98);
             this.numericUpDownMagicLeviathanComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15389,7 +15423,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicLeviathanComp.Name = "numericUpDownMagicLeviathanComp";
-            this.numericUpDownMagicLeviathanComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicLeviathanComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicLeviathanComp.TabIndex = 3;
             // 
             // numericUpDownMagicTonberryComp
@@ -15401,7 +15435,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicTonberryComp.Location = new System.Drawing.Point(256, 203);
+            this.numericUpDownMagicTonberryComp.Location = new System.Drawing.Point(253, 203);
             this.numericUpDownMagicTonberryComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15413,7 +15447,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicTonberryComp.Name = "numericUpDownMagicTonberryComp";
-            this.numericUpDownMagicTonberryComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicTonberryComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicTonberryComp.TabIndex = 3;
             // 
             // labelMagicLeviathanComp
@@ -15436,7 +15470,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicAlexanderComp.Location = new System.Drawing.Point(256, 150);
+            this.numericUpDownMagicAlexanderComp.Location = new System.Drawing.Point(253, 150);
             this.numericUpDownMagicAlexanderComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15448,7 +15482,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicAlexanderComp.Name = "numericUpDownMagicAlexanderComp";
-            this.numericUpDownMagicAlexanderComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicAlexanderComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicAlexanderComp.TabIndex = 3;
             // 
             // numericUpDownMagicSirenComp
@@ -15460,7 +15494,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicSirenComp.Location = new System.Drawing.Point(360, 47);
+            this.numericUpDownMagicSirenComp.Location = new System.Drawing.Point(357, 47);
             this.numericUpDownMagicSirenComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15472,7 +15506,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicSirenComp.Name = "numericUpDownMagicSirenComp";
-            this.numericUpDownMagicSirenComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicSirenComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicSirenComp.TabIndex = 3;
             // 
             // labelMagicTonberryComp
@@ -15495,7 +15529,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicCarbuncleComp.Location = new System.Drawing.Point(256, 98);
+            this.numericUpDownMagicCarbuncleComp.Location = new System.Drawing.Point(253, 98);
             this.numericUpDownMagicCarbuncleComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15507,7 +15541,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicCarbuncleComp.Name = "numericUpDownMagicCarbuncleComp";
-            this.numericUpDownMagicCarbuncleComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicCarbuncleComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicCarbuncleComp.TabIndex = 3;
             // 
             // labelMagicAlexanderComp
@@ -15541,7 +15575,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicCactuarComp.Location = new System.Drawing.Point(152, 203);
+            this.numericUpDownMagicCactuarComp.Location = new System.Drawing.Point(149, 203);
             this.numericUpDownMagicCactuarComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15553,7 +15587,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicCactuarComp.Name = "numericUpDownMagicCactuarComp";
-            this.numericUpDownMagicCactuarComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicCactuarComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicCactuarComp.TabIndex = 3;
             // 
             // labelMagicCarbuncleComp
@@ -15576,7 +15610,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicCerberusComp.Location = new System.Drawing.Point(152, 150);
+            this.numericUpDownMagicCerberusComp.Location = new System.Drawing.Point(149, 150);
             this.numericUpDownMagicCerberusComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15588,7 +15622,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicCerberusComp.Name = "numericUpDownMagicCerberusComp";
-            this.numericUpDownMagicCerberusComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicCerberusComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicCerberusComp.TabIndex = 3;
             // 
             // numericUpDownMagicIfritComp
@@ -15600,7 +15634,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicIfritComp.Location = new System.Drawing.Point(256, 47);
+            this.numericUpDownMagicIfritComp.Location = new System.Drawing.Point(253, 47);
             this.numericUpDownMagicIfritComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15612,7 +15646,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicIfritComp.Name = "numericUpDownMagicIfritComp";
-            this.numericUpDownMagicIfritComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicIfritComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicIfritComp.TabIndex = 3;
             // 
             // labelMagicCactuarComp
@@ -15635,7 +15669,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicDiablosComp.Location = new System.Drawing.Point(152, 98);
+            this.numericUpDownMagicDiablosComp.Location = new System.Drawing.Point(149, 98);
             this.numericUpDownMagicDiablosComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15647,7 +15681,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicDiablosComp.Name = "numericUpDownMagicDiablosComp";
-            this.numericUpDownMagicDiablosComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicDiablosComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicDiablosComp.TabIndex = 3;
             // 
             // labelMagicCerberusComp
@@ -15681,7 +15715,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicBahamutComp.Location = new System.Drawing.Point(48, 203);
+            this.numericUpDownMagicBahamutComp.Location = new System.Drawing.Point(45, 203);
             this.numericUpDownMagicBahamutComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15693,7 +15727,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicBahamutComp.Name = "numericUpDownMagicBahamutComp";
-            this.numericUpDownMagicBahamutComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicBahamutComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicBahamutComp.TabIndex = 3;
             // 
             // labelMagicDiablosComp
@@ -15716,7 +15750,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicPandemonaComp.Location = new System.Drawing.Point(48, 150);
+            this.numericUpDownMagicPandemonaComp.Location = new System.Drawing.Point(45, 150);
             this.numericUpDownMagicPandemonaComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15728,7 +15762,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicPandemonaComp.Name = "numericUpDownMagicPandemonaComp";
-            this.numericUpDownMagicPandemonaComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicPandemonaComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicPandemonaComp.TabIndex = 3;
             // 
             // numericUpDownMagicShivaComp
@@ -15740,7 +15774,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicShivaComp.Location = new System.Drawing.Point(152, 47);
+            this.numericUpDownMagicShivaComp.Location = new System.Drawing.Point(149, 47);
             this.numericUpDownMagicShivaComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15752,7 +15786,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicShivaComp.Name = "numericUpDownMagicShivaComp";
-            this.numericUpDownMagicShivaComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicShivaComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicShivaComp.TabIndex = 3;
             // 
             // labelMagicBahamutComp
@@ -15775,7 +15809,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicBrothersComp.Location = new System.Drawing.Point(48, 98);
+            this.numericUpDownMagicBrothersComp.Location = new System.Drawing.Point(45, 98);
             this.numericUpDownMagicBrothersComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15787,7 +15821,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicBrothersComp.Name = "numericUpDownMagicBrothersComp";
-            this.numericUpDownMagicBrothersComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicBrothersComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicBrothersComp.TabIndex = 3;
             // 
             // labelMagicPandemonaComp
@@ -15832,7 +15866,7 @@
             0,
             0,
             65536});
-            this.numericUpDownMagicQuezacoltComp.Location = new System.Drawing.Point(48, 47);
+            this.numericUpDownMagicQuezacoltComp.Location = new System.Drawing.Point(45, 47);
             this.numericUpDownMagicQuezacoltComp.Maximum = new decimal(new int[] {
             20,
             0,
@@ -15844,7 +15878,7 @@
             0,
             -2147483648});
             this.numericUpDownMagicQuezacoltComp.Name = "numericUpDownMagicQuezacoltComp";
-            this.numericUpDownMagicQuezacoltComp.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownMagicQuezacoltComp.Size = new System.Drawing.Size(50, 25);
             this.numericUpDownMagicQuezacoltComp.TabIndex = 3;
             // 
             // listBoxMagic
@@ -16712,6 +16746,7 @@
             this.buttonCharEXPChart.TabIndex = 7;
             this.buttonCharEXPChart.Text = "Chart";
             this.buttonCharEXPChart.UseVisualStyleBackColor = true;
+            this.buttonCharEXPChart.Click += new System.EventHandler(this.buttonCharEXPChart_Click);
             // 
             // groupBoxCharGeneral
             // 
@@ -16845,7 +16880,7 @@
             this.buttonCharSPDChart.TabIndex = 7;
             this.buttonCharSPDChart.Text = "Chart";
             this.buttonCharSPDChart.UseVisualStyleBackColor = true;
-            this.buttonCharSPDChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            this.buttonCharSPDChart.Click += new System.EventHandler(this.buttonCharSPDChart_Click);
             // 
             // numericUpDownCharSPD4
             // 
@@ -16987,7 +17022,7 @@
             this.buttonCharVITChart.TabIndex = 7;
             this.buttonCharVITChart.Text = "Chart";
             this.buttonCharVITChart.UseVisualStyleBackColor = true;
-            this.buttonCharVITChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            this.buttonCharVITChart.Click += new System.EventHandler(this.buttonCharVITChart_Click);
             // 
             // numericUpDownCharVIT4
             // 
@@ -17129,7 +17164,7 @@
             this.buttonCharLUCKChart.TabIndex = 7;
             this.buttonCharLUCKChart.Text = "Chart";
             this.buttonCharLUCKChart.UseVisualStyleBackColor = true;
-            this.buttonCharLUCKChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            this.buttonCharLUCKChart.Click += new System.EventHandler(this.buttonCharLUCKChart_Click);
             // 
             // numericUpDownCharLUCK4
             // 
@@ -17271,7 +17306,7 @@
             this.buttonCharSPRChart.TabIndex = 7;
             this.buttonCharSPRChart.Text = "Chart";
             this.buttonCharSPRChart.UseVisualStyleBackColor = true;
-            this.buttonCharSPRChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            this.buttonCharSPRChart.Click += new System.EventHandler(this.buttonCharSPRChart_Click);
             // 
             // numericUpDownCharSPR4
             // 
@@ -17413,7 +17448,7 @@
             this.buttonCharSTRChart.TabIndex = 7;
             this.buttonCharSTRChart.Text = "Chart";
             this.buttonCharSTRChart.UseVisualStyleBackColor = true;
-            this.buttonCharSTRChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            this.buttonCharSTRChart.Click += new System.EventHandler(this.buttonCharSTRChart_Click);
             // 
             // numericUpDownCharSTR4
             // 
@@ -17555,7 +17590,7 @@
             this.buttonCharMAGChart.TabIndex = 7;
             this.buttonCharMAGChart.Text = "Chart";
             this.buttonCharMAGChart.UseVisualStyleBackColor = true;
-            this.buttonCharMAGChart.Click += new System.EventHandler(this.buttonCharHPChart_Click);
+            this.buttonCharMAGChart.Click += new System.EventHandler(this.buttonCharMAGChart_Click);
             // 
             // numericUpDownCharMAG4
             // 
@@ -23554,6 +23589,51 @@
             this.groupBoxStartButtonsTimers.TabStop = false;
             this.groupBoxStartButtonsTimers.Text = "Start Sequences && Timers";
             // 
+            // labelDuelTimer4Value
+            // 
+            this.labelDuelTimer4Value.AutoSize = true;
+            this.labelDuelTimer4Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelDuelTimer4Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelTimer4Value.Location = new System.Drawing.Point(469, 141);
+            this.labelDuelTimer4Value.Name = "labelDuelTimer4Value";
+            this.labelDuelTimer4Value.Size = new System.Drawing.Size(38, 17);
+            this.labelDuelTimer4Value.TabIndex = 100;
+            this.labelDuelTimer4Value.Text = "0.00s";
+            // 
+            // labelDuelTimer3Value
+            // 
+            this.labelDuelTimer3Value.AutoSize = true;
+            this.labelDuelTimer3Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelDuelTimer3Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelTimer3Value.Location = new System.Drawing.Point(349, 141);
+            this.labelDuelTimer3Value.Name = "labelDuelTimer3Value";
+            this.labelDuelTimer3Value.Size = new System.Drawing.Size(38, 17);
+            this.labelDuelTimer3Value.TabIndex = 101;
+            this.labelDuelTimer3Value.Text = "0.00s";
+            // 
+            // labelDuelTimer2Value
+            // 
+            this.labelDuelTimer2Value.AutoSize = true;
+            this.labelDuelTimer2Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelDuelTimer2Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelTimer2Value.Location = new System.Drawing.Point(225, 141);
+            this.labelDuelTimer2Value.Name = "labelDuelTimer2Value";
+            this.labelDuelTimer2Value.Size = new System.Drawing.Size(38, 17);
+            this.labelDuelTimer2Value.TabIndex = 102;
+            this.labelDuelTimer2Value.Text = "0.00s";
+            // 
+            // labelDuelTimer1Value
+            // 
+            this.labelDuelTimer1Value.AutoSize = true;
+            this.labelDuelTimer1Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelDuelTimer1Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelDuelTimer1Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelTimer1Value.Location = new System.Drawing.Point(101, 141);
+            this.labelDuelTimer1Value.Name = "labelDuelTimer1Value";
+            this.labelDuelTimer1Value.Size = new System.Drawing.Size(38, 17);
+            this.labelDuelTimer1Value.TabIndex = 103;
+            this.labelDuelTimer1Value.Text = "0.00s";
+            // 
             // labelDuelTimer4
             // 
             this.labelDuelTimer4.AutoSize = true;
@@ -29427,6 +29507,178 @@
             this.labelShotStatusAttack.TabIndex = 90;
             this.labelShotStatusAttack.Text = "Status Attack";
             // 
+            // groupBox10
+            // 
+            this.groupBox10.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox10.Controls.Add(this.labelShotTimer4);
+            this.groupBox10.Controls.Add(this.numericUpDownShotTimer1);
+            this.groupBox10.Controls.Add(this.labelShotTimer3);
+            this.groupBox10.Controls.Add(this.numericUpDownShotTimer2);
+            this.groupBox10.Controls.Add(this.labelShotTimer2);
+            this.groupBox10.Controls.Add(this.numericUpDownShotTimer3);
+            this.groupBox10.Controls.Add(this.numericUpDownShotTimer4);
+            this.groupBox10.Controls.Add(this.labelShotTimer4Value);
+            this.groupBox10.Controls.Add(this.labelShotTimer3Value);
+            this.groupBox10.Controls.Add(this.labelShotTimer1);
+            this.groupBox10.Controls.Add(this.labelShotTimer2Value);
+            this.groupBox10.Controls.Add(this.labelShotTimer1Value);
+            this.groupBox10.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox10.ForeColor = System.Drawing.Color.DarkOrange;
+            this.groupBox10.Location = new System.Drawing.Point(6, 635);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(610, 98);
+            this.groupBox10.TabIndex = 115;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Timers";
+            // 
+            // labelShotTimer4
+            // 
+            this.labelShotTimer4.AutoSize = true;
+            this.labelShotTimer4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotTimer4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotTimer4.Location = new System.Drawing.Point(441, 28);
+            this.labelShotTimer4.Name = "labelShotTimer4";
+            this.labelShotTimer4.Size = new System.Drawing.Size(67, 17);
+            this.labelShotTimer4.TabIndex = 91;
+            this.labelShotTimer4.Text = "Timer CL4";
+            // 
+            // numericUpDownShotTimer1
+            // 
+            this.numericUpDownShotTimer1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownShotTimer1.Location = new System.Drawing.Point(112, 48);
+            this.numericUpDownShotTimer1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownShotTimer1.Name = "numericUpDownShotTimer1";
+            this.numericUpDownShotTimer1.Size = new System.Drawing.Size(51, 25);
+            this.numericUpDownShotTimer1.TabIndex = 6;
+            this.numericUpDownShotTimer1.ValueChanged += new System.EventHandler(this.numericUpDownShotTimer1_ValueChanged);
+            // 
+            // labelShotTimer3
+            // 
+            this.labelShotTimer3.AutoSize = true;
+            this.labelShotTimer3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotTimer3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotTimer3.Location = new System.Drawing.Point(328, 28);
+            this.labelShotTimer3.Name = "labelShotTimer3";
+            this.labelShotTimer3.Size = new System.Drawing.Size(67, 17);
+            this.labelShotTimer3.TabIndex = 91;
+            this.labelShotTimer3.Text = "Timer CL3";
+            // 
+            // numericUpDownShotTimer2
+            // 
+            this.numericUpDownShotTimer2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownShotTimer2.Location = new System.Drawing.Point(223, 48);
+            this.numericUpDownShotTimer2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownShotTimer2.Name = "numericUpDownShotTimer2";
+            this.numericUpDownShotTimer2.Size = new System.Drawing.Size(51, 25);
+            this.numericUpDownShotTimer2.TabIndex = 6;
+            this.numericUpDownShotTimer2.ValueChanged += new System.EventHandler(this.numericUpDownShotTimer2_ValueChanged);
+            // 
+            // labelShotTimer2
+            // 
+            this.labelShotTimer2.AutoSize = true;
+            this.labelShotTimer2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotTimer2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotTimer2.Location = new System.Drawing.Point(214, 28);
+            this.labelShotTimer2.Name = "labelShotTimer2";
+            this.labelShotTimer2.Size = new System.Drawing.Size(67, 17);
+            this.labelShotTimer2.TabIndex = 91;
+            this.labelShotTimer2.Text = "Timer CL2";
+            // 
+            // numericUpDownShotTimer3
+            // 
+            this.numericUpDownShotTimer3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownShotTimer3.Location = new System.Drawing.Point(337, 48);
+            this.numericUpDownShotTimer3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownShotTimer3.Name = "numericUpDownShotTimer3";
+            this.numericUpDownShotTimer3.Size = new System.Drawing.Size(51, 25);
+            this.numericUpDownShotTimer3.TabIndex = 6;
+            this.numericUpDownShotTimer3.ValueChanged += new System.EventHandler(this.numericUpDownShotTimer3_ValueChanged);
+            // 
+            // numericUpDownShotTimer4
+            // 
+            this.numericUpDownShotTimer4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownShotTimer4.Location = new System.Drawing.Point(448, 48);
+            this.numericUpDownShotTimer4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownShotTimer4.Name = "numericUpDownShotTimer4";
+            this.numericUpDownShotTimer4.Size = new System.Drawing.Size(51, 25);
+            this.numericUpDownShotTimer4.TabIndex = 6;
+            this.numericUpDownShotTimer4.ValueChanged += new System.EventHandler(this.numericUpDownShotTimer4_ValueChanged);
+            // 
+            // labelShotTimer4Value
+            // 
+            this.labelShotTimer4Value.AutoSize = true;
+            this.labelShotTimer4Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelShotTimer4Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelShotTimer4Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotTimer4Value.Location = new System.Drawing.Point(452, 72);
+            this.labelShotTimer4Value.Name = "labelShotTimer4Value";
+            this.labelShotTimer4Value.Size = new System.Drawing.Size(38, 17);
+            this.labelShotTimer4Value.TabIndex = 91;
+            this.labelShotTimer4Value.Text = "0.00s";
+            // 
+            // labelShotTimer3Value
+            // 
+            this.labelShotTimer3Value.AutoSize = true;
+            this.labelShotTimer3Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelShotTimer3Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelShotTimer3Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotTimer3Value.Location = new System.Drawing.Point(341, 72);
+            this.labelShotTimer3Value.Name = "labelShotTimer3Value";
+            this.labelShotTimer3Value.Size = new System.Drawing.Size(38, 17);
+            this.labelShotTimer3Value.TabIndex = 91;
+            this.labelShotTimer3Value.Text = "0.00s";
+            // 
+            // labelShotTimer1
+            // 
+            this.labelShotTimer1.AutoSize = true;
+            this.labelShotTimer1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotTimer1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotTimer1.Location = new System.Drawing.Point(106, 28);
+            this.labelShotTimer1.Name = "labelShotTimer1";
+            this.labelShotTimer1.Size = new System.Drawing.Size(65, 17);
+            this.labelShotTimer1.TabIndex = 91;
+            this.labelShotTimer1.Text = "Timer CL1";
+            // 
+            // labelShotTimer2Value
+            // 
+            this.labelShotTimer2Value.AutoSize = true;
+            this.labelShotTimer2Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelShotTimer2Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelShotTimer2Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotTimer2Value.Location = new System.Drawing.Point(227, 72);
+            this.labelShotTimer2Value.Name = "labelShotTimer2Value";
+            this.labelShotTimer2Value.Size = new System.Drawing.Size(38, 17);
+            this.labelShotTimer2Value.TabIndex = 91;
+            this.labelShotTimer2Value.Text = "0.00s";
+            // 
+            // labelShotTimer1Value
+            // 
+            this.labelShotTimer1Value.AutoSize = true;
+            this.labelShotTimer1Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelShotTimer1Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelShotTimer1Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotTimer1Value.Location = new System.Drawing.Point(116, 72);
+            this.labelShotTimer1Value.Name = "labelShotTimer1Value";
+            this.labelShotTimer1Value.Size = new System.Drawing.Size(38, 17);
+            this.labelShotTimer1Value.TabIndex = 91;
+            this.labelShotTimer1Value.Text = "0.00s";
+            // 
             // groupBoxShotTargetInfo
             // 
             this.groupBoxShotTargetInfo.BackColor = System.Drawing.SystemColors.Control;
@@ -29672,50 +29924,6 @@
             this.groupBoxShotGeneral.TabIndex = 113;
             this.groupBoxShotGeneral.TabStop = false;
             this.groupBoxShotGeneral.Text = "General";
-            // 
-            // labelShotTimer4
-            // 
-            this.labelShotTimer4.AutoSize = true;
-            this.labelShotTimer4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelShotTimer4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer4.Location = new System.Drawing.Point(441, 28);
-            this.labelShotTimer4.Name = "labelShotTimer4";
-            this.labelShotTimer4.Size = new System.Drawing.Size(67, 17);
-            this.labelShotTimer4.TabIndex = 91;
-            this.labelShotTimer4.Text = "Timer CL4";
-            // 
-            // labelShotTimer3
-            // 
-            this.labelShotTimer3.AutoSize = true;
-            this.labelShotTimer3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelShotTimer3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer3.Location = new System.Drawing.Point(328, 28);
-            this.labelShotTimer3.Name = "labelShotTimer3";
-            this.labelShotTimer3.Size = new System.Drawing.Size(67, 17);
-            this.labelShotTimer3.TabIndex = 91;
-            this.labelShotTimer3.Text = "Timer CL3";
-            // 
-            // labelShotTimer2
-            // 
-            this.labelShotTimer2.AutoSize = true;
-            this.labelShotTimer2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelShotTimer2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer2.Location = new System.Drawing.Point(214, 28);
-            this.labelShotTimer2.Name = "labelShotTimer2";
-            this.labelShotTimer2.Size = new System.Drawing.Size(67, 17);
-            this.labelShotTimer2.TabIndex = 91;
-            this.labelShotTimer2.Text = "Timer CL2";
-            // 
-            // labelShotTimer1
-            // 
-            this.labelShotTimer1.AutoSize = true;
-            this.labelShotTimer1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelShotTimer1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer1.Location = new System.Drawing.Point(106, 28);
-            this.labelShotTimer1.Name = "labelShotTimer1";
-            this.labelShotTimer1.Size = new System.Drawing.Size(65, 17);
-            this.labelShotTimer1.TabIndex = 91;
-            this.labelShotTimer1.Text = "Timer CL1";
             // 
             // label5
             // 
@@ -30013,62 +30221,6 @@
             this.comboBoxShotAttackType.Name = "comboBoxShotAttackType";
             this.comboBoxShotAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxShotAttackType.TabIndex = 8;
-            // 
-            // numericUpDownShotTimer4
-            // 
-            this.numericUpDownShotTimer4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotTimer4.Location = new System.Drawing.Point(448, 48);
-            this.numericUpDownShotTimer4.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownShotTimer4.Name = "numericUpDownShotTimer4";
-            this.numericUpDownShotTimer4.Size = new System.Drawing.Size(51, 25);
-            this.numericUpDownShotTimer4.TabIndex = 6;
-            this.numericUpDownShotTimer4.ValueChanged += new System.EventHandler(this.numericUpDownShotTimer4_ValueChanged);
-            // 
-            // numericUpDownShotTimer3
-            // 
-            this.numericUpDownShotTimer3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotTimer3.Location = new System.Drawing.Point(337, 48);
-            this.numericUpDownShotTimer3.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownShotTimer3.Name = "numericUpDownShotTimer3";
-            this.numericUpDownShotTimer3.Size = new System.Drawing.Size(51, 25);
-            this.numericUpDownShotTimer3.TabIndex = 6;
-            this.numericUpDownShotTimer3.ValueChanged += new System.EventHandler(this.numericUpDownShotTimer3_ValueChanged);
-            // 
-            // numericUpDownShotTimer2
-            // 
-            this.numericUpDownShotTimer2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotTimer2.Location = new System.Drawing.Point(223, 48);
-            this.numericUpDownShotTimer2.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownShotTimer2.Name = "numericUpDownShotTimer2";
-            this.numericUpDownShotTimer2.Size = new System.Drawing.Size(51, 25);
-            this.numericUpDownShotTimer2.TabIndex = 6;
-            this.numericUpDownShotTimer2.ValueChanged += new System.EventHandler(this.numericUpDownShotTimer2_ValueChanged);
-            // 
-            // numericUpDownShotTimer1
-            // 
-            this.numericUpDownShotTimer1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotTimer1.Location = new System.Drawing.Point(112, 48);
-            this.numericUpDownShotTimer1.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownShotTimer1.Name = "numericUpDownShotTimer1";
-            this.numericUpDownShotTimer1.Size = new System.Drawing.Size(51, 25);
-            this.numericUpDownShotTimer1.TabIndex = 6;
-            this.numericUpDownShotTimer1.ValueChanged += new System.EventHandler(this.numericUpDownShotTimer1_ValueChanged);
             // 
             // numericUpDownShotElementPerc
             // 
@@ -36054,6 +36206,20 @@
             this.groupBoxMiscStatusTimers.TabStop = false;
             this.groupBoxMiscStatusTimers.Text = "Status Timers";
             // 
+            // numericUpDownStatusTimer1
+            // 
+            this.numericUpDownStatusTimer1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownStatusTimer1.Location = new System.Drawing.Point(18, 51);
+            this.numericUpDownStatusTimer1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownStatusTimer1.Name = "numericUpDownStatusTimer1";
+            this.numericUpDownStatusTimer1.Size = new System.Drawing.Size(51, 25);
+            this.numericUpDownStatusTimer1.TabIndex = 5;
+            this.numericUpDownStatusTimer1.ValueChanged += new System.EventHandler(this.numericUpDownStatusTimer1_ValueChanged);
+            // 
             // numericUpDownStatusTimer14
             // 
             this.numericUpDownStatusTimer14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -36379,19 +36545,173 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Reflect";
             // 
-            // numericUpDownStatusTimer1
+            // labelStatusTimer14Value
             // 
-            this.numericUpDownStatusTimer1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownStatusTimer1.Location = new System.Drawing.Point(18, 51);
-            this.numericUpDownStatusTimer1.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownStatusTimer1.Name = "numericUpDownStatusTimer1";
-            this.numericUpDownStatusTimer1.Size = new System.Drawing.Size(51, 25);
-            this.numericUpDownStatusTimer1.TabIndex = 5;
-            this.numericUpDownStatusTimer1.ValueChanged += new System.EventHandler(this.numericUpDownStatusTimer1_ValueChanged);
+            this.labelStatusTimer14Value.AutoSize = true;
+            this.labelStatusTimer14Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer14Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer14Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer14Value.Location = new System.Drawing.Point(551, 144);
+            this.labelStatusTimer14Value.Name = "labelStatusTimer14Value";
+            this.labelStatusTimer14Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer14Value.TabIndex = 0;
+            this.labelStatusTimer14Value.Text = "0.00s";
+            // 
+            // labelStatusTimer13Value
+            // 
+            this.labelStatusTimer13Value.AutoSize = true;
+            this.labelStatusTimer13Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer13Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer13Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer13Value.Location = new System.Drawing.Point(463, 144);
+            this.labelStatusTimer13Value.Name = "labelStatusTimer13Value";
+            this.labelStatusTimer13Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer13Value.TabIndex = 0;
+            this.labelStatusTimer13Value.Text = "0.00s";
+            // 
+            // labelStatusTimer7Value
+            // 
+            this.labelStatusTimer7Value.AutoSize = true;
+            this.labelStatusTimer7Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer7Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer7Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer7Value.Location = new System.Drawing.Point(551, 75);
+            this.labelStatusTimer7Value.Name = "labelStatusTimer7Value";
+            this.labelStatusTimer7Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer7Value.TabIndex = 0;
+            this.labelStatusTimer7Value.Text = "0.00s";
+            // 
+            // labelStatusTimer12Value
+            // 
+            this.labelStatusTimer12Value.AutoSize = true;
+            this.labelStatusTimer12Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer12Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer12Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer12Value.Location = new System.Drawing.Point(374, 144);
+            this.labelStatusTimer12Value.Name = "labelStatusTimer12Value";
+            this.labelStatusTimer12Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer12Value.TabIndex = 0;
+            this.labelStatusTimer12Value.Text = "0.00s";
+            // 
+            // labelStatusTimer6Value
+            // 
+            this.labelStatusTimer6Value.AutoSize = true;
+            this.labelStatusTimer6Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer6Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer6Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer6Value.Location = new System.Drawing.Point(463, 75);
+            this.labelStatusTimer6Value.Name = "labelStatusTimer6Value";
+            this.labelStatusTimer6Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer6Value.TabIndex = 0;
+            this.labelStatusTimer6Value.Text = "0.00s";
+            // 
+            // labelStatusTimer11Value
+            // 
+            this.labelStatusTimer11Value.AutoSize = true;
+            this.labelStatusTimer11Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer11Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer11Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer11Value.Location = new System.Drawing.Point(286, 144);
+            this.labelStatusTimer11Value.Name = "labelStatusTimer11Value";
+            this.labelStatusTimer11Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer11Value.TabIndex = 0;
+            this.labelStatusTimer11Value.Text = "0.00s";
+            // 
+            // labelStatusTimer5Value
+            // 
+            this.labelStatusTimer5Value.AutoSize = true;
+            this.labelStatusTimer5Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer5Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer5Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer5Value.Location = new System.Drawing.Point(374, 75);
+            this.labelStatusTimer5Value.Name = "labelStatusTimer5Value";
+            this.labelStatusTimer5Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer5Value.TabIndex = 0;
+            this.labelStatusTimer5Value.Text = "0.00s";
+            // 
+            // labelStatusTimer10Value
+            // 
+            this.labelStatusTimer10Value.AutoSize = true;
+            this.labelStatusTimer10Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer10Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer10Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer10Value.Location = new System.Drawing.Point(199, 144);
+            this.labelStatusTimer10Value.Name = "labelStatusTimer10Value";
+            this.labelStatusTimer10Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer10Value.TabIndex = 0;
+            this.labelStatusTimer10Value.Text = "0.00s";
+            // 
+            // labelStatusTimer4Value
+            // 
+            this.labelStatusTimer4Value.AutoSize = true;
+            this.labelStatusTimer4Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer4Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer4Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer4Value.Location = new System.Drawing.Point(286, 75);
+            this.labelStatusTimer4Value.Name = "labelStatusTimer4Value";
+            this.labelStatusTimer4Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer4Value.TabIndex = 0;
+            this.labelStatusTimer4Value.Text = "0.00s";
+            // 
+            // labelStatusTimer9Value
+            // 
+            this.labelStatusTimer9Value.AutoSize = true;
+            this.labelStatusTimer9Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer9Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer9Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer9Value.Location = new System.Drawing.Point(110, 144);
+            this.labelStatusTimer9Value.Name = "labelStatusTimer9Value";
+            this.labelStatusTimer9Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer9Value.TabIndex = 0;
+            this.labelStatusTimer9Value.Text = "0.00s";
+            // 
+            // labelStatusTimer3Value
+            // 
+            this.labelStatusTimer3Value.AutoSize = true;
+            this.labelStatusTimer3Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer3Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer3Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer3Value.Location = new System.Drawing.Point(199, 75);
+            this.labelStatusTimer3Value.Name = "labelStatusTimer3Value";
+            this.labelStatusTimer3Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer3Value.TabIndex = 0;
+            this.labelStatusTimer3Value.Text = "0.00s";
+            // 
+            // labelStatusTimer8Value
+            // 
+            this.labelStatusTimer8Value.AutoSize = true;
+            this.labelStatusTimer8Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer8Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer8Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer8Value.Location = new System.Drawing.Point(23, 144);
+            this.labelStatusTimer8Value.Name = "labelStatusTimer8Value";
+            this.labelStatusTimer8Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer8Value.TabIndex = 0;
+            this.labelStatusTimer8Value.Text = "0.00s";
+            // 
+            // labelStatusTimer2Value
+            // 
+            this.labelStatusTimer2Value.AutoSize = true;
+            this.labelStatusTimer2Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer2Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer2Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer2Value.Location = new System.Drawing.Point(110, 75);
+            this.labelStatusTimer2Value.Name = "labelStatusTimer2Value";
+            this.labelStatusTimer2Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer2Value.TabIndex = 0;
+            this.labelStatusTimer2Value.Text = "0.00s";
+            // 
+            // labelStatusTimer1Value
+            // 
+            this.labelStatusTimer1Value.AutoSize = true;
+            this.labelStatusTimer1Value.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusTimer1Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.labelStatusTimer1Value.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelStatusTimer1Value.Location = new System.Drawing.Point(23, 75);
+            this.labelStatusTimer1Value.Name = "labelStatusTimer1Value";
+            this.labelStatusTimer1Value.Size = new System.Drawing.Size(38, 17);
+            this.labelStatusTimer1Value.TabIndex = 0;
+            this.labelStatusTimer1Value.Text = "0.00s";
             // 
             // statusStrip1
             // 
@@ -36410,291 +36730,6 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel1.Text = "Ready";
-            // 
-            // labelShotTimer1Value
-            // 
-            this.labelShotTimer1Value.AutoSize = true;
-            this.labelShotTimer1Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelShotTimer1Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelShotTimer1Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer1Value.Location = new System.Drawing.Point(116, 72);
-            this.labelShotTimer1Value.Name = "labelShotTimer1Value";
-            this.labelShotTimer1Value.Size = new System.Drawing.Size(38, 17);
-            this.labelShotTimer1Value.TabIndex = 91;
-            this.labelShotTimer1Value.Text = "0.00s";
-            // 
-            // labelShotTimer2Value
-            // 
-            this.labelShotTimer2Value.AutoSize = true;
-            this.labelShotTimer2Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelShotTimer2Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelShotTimer2Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer2Value.Location = new System.Drawing.Point(227, 72);
-            this.labelShotTimer2Value.Name = "labelShotTimer2Value";
-            this.labelShotTimer2Value.Size = new System.Drawing.Size(38, 17);
-            this.labelShotTimer2Value.TabIndex = 91;
-            this.labelShotTimer2Value.Text = "0.00s";
-            // 
-            // labelShotTimer3Value
-            // 
-            this.labelShotTimer3Value.AutoSize = true;
-            this.labelShotTimer3Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelShotTimer3Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelShotTimer3Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer3Value.Location = new System.Drawing.Point(341, 72);
-            this.labelShotTimer3Value.Name = "labelShotTimer3Value";
-            this.labelShotTimer3Value.Size = new System.Drawing.Size(38, 17);
-            this.labelShotTimer3Value.TabIndex = 91;
-            this.labelShotTimer3Value.Text = "0.00s";
-            // 
-            // labelDuelTimer4Value
-            // 
-            this.labelDuelTimer4Value.AutoSize = true;
-            this.labelDuelTimer4Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelDuelTimer4Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer4Value.Location = new System.Drawing.Point(469, 141);
-            this.labelDuelTimer4Value.Name = "labelDuelTimer4Value";
-            this.labelDuelTimer4Value.Size = new System.Drawing.Size(38, 17);
-            this.labelDuelTimer4Value.TabIndex = 100;
-            this.labelDuelTimer4Value.Text = "0.00s";
-            // 
-            // labelDuelTimer3Value
-            // 
-            this.labelDuelTimer3Value.AutoSize = true;
-            this.labelDuelTimer3Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelDuelTimer3Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer3Value.Location = new System.Drawing.Point(349, 141);
-            this.labelDuelTimer3Value.Name = "labelDuelTimer3Value";
-            this.labelDuelTimer3Value.Size = new System.Drawing.Size(38, 17);
-            this.labelDuelTimer3Value.TabIndex = 101;
-            this.labelDuelTimer3Value.Text = "0.00s";
-            // 
-            // labelDuelTimer2Value
-            // 
-            this.labelDuelTimer2Value.AutoSize = true;
-            this.labelDuelTimer2Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelDuelTimer2Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer2Value.Location = new System.Drawing.Point(225, 141);
-            this.labelDuelTimer2Value.Name = "labelDuelTimer2Value";
-            this.labelDuelTimer2Value.Size = new System.Drawing.Size(38, 17);
-            this.labelDuelTimer2Value.TabIndex = 102;
-            this.labelDuelTimer2Value.Text = "0.00s";
-            // 
-            // labelDuelTimer1Value
-            // 
-            this.labelDuelTimer1Value.AutoSize = true;
-            this.labelDuelTimer1Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelDuelTimer1Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelDuelTimer1Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer1Value.Location = new System.Drawing.Point(101, 141);
-            this.labelDuelTimer1Value.Name = "labelDuelTimer1Value";
-            this.labelDuelTimer1Value.Size = new System.Drawing.Size(38, 17);
-            this.labelDuelTimer1Value.TabIndex = 103;
-            this.labelDuelTimer1Value.Text = "0.00s";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox10.Controls.Add(this.labelShotTimer4);
-            this.groupBox10.Controls.Add(this.numericUpDownShotTimer1);
-            this.groupBox10.Controls.Add(this.labelShotTimer3);
-            this.groupBox10.Controls.Add(this.numericUpDownShotTimer2);
-            this.groupBox10.Controls.Add(this.labelShotTimer2);
-            this.groupBox10.Controls.Add(this.numericUpDownShotTimer3);
-            this.groupBox10.Controls.Add(this.numericUpDownShotTimer4);
-            this.groupBox10.Controls.Add(this.labelShotTimer4Value);
-            this.groupBox10.Controls.Add(this.labelShotTimer3Value);
-            this.groupBox10.Controls.Add(this.labelShotTimer1);
-            this.groupBox10.Controls.Add(this.labelShotTimer2Value);
-            this.groupBox10.Controls.Add(this.labelShotTimer1Value);
-            this.groupBox10.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.ForeColor = System.Drawing.Color.DarkOrange;
-            this.groupBox10.Location = new System.Drawing.Point(6, 635);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(610, 98);
-            this.groupBox10.TabIndex = 115;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Timers";
-            // 
-            // labelShotTimer4Value
-            // 
-            this.labelShotTimer4Value.AutoSize = true;
-            this.labelShotTimer4Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelShotTimer4Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelShotTimer4Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer4Value.Location = new System.Drawing.Point(452, 72);
-            this.labelShotTimer4Value.Name = "labelShotTimer4Value";
-            this.labelShotTimer4Value.Size = new System.Drawing.Size(38, 17);
-            this.labelShotTimer4Value.TabIndex = 91;
-            this.labelShotTimer4Value.Text = "0.00s";
-            // 
-            // labelStatusTimer1Value
-            // 
-            this.labelStatusTimer1Value.AutoSize = true;
-            this.labelStatusTimer1Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer1Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer1Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer1Value.Location = new System.Drawing.Point(23, 75);
-            this.labelStatusTimer1Value.Name = "labelStatusTimer1Value";
-            this.labelStatusTimer1Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer1Value.TabIndex = 0;
-            this.labelStatusTimer1Value.Text = "0.00s";
-            // 
-            // labelStatusTimer2Value
-            // 
-            this.labelStatusTimer2Value.AutoSize = true;
-            this.labelStatusTimer2Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer2Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer2Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer2Value.Location = new System.Drawing.Point(110, 75);
-            this.labelStatusTimer2Value.Name = "labelStatusTimer2Value";
-            this.labelStatusTimer2Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer2Value.TabIndex = 0;
-            this.labelStatusTimer2Value.Text = "0.00s";
-            // 
-            // labelStatusTimer3Value
-            // 
-            this.labelStatusTimer3Value.AutoSize = true;
-            this.labelStatusTimer3Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer3Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer3Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer3Value.Location = new System.Drawing.Point(199, 75);
-            this.labelStatusTimer3Value.Name = "labelStatusTimer3Value";
-            this.labelStatusTimer3Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer3Value.TabIndex = 0;
-            this.labelStatusTimer3Value.Text = "0.00s";
-            // 
-            // labelStatusTimer4Value
-            // 
-            this.labelStatusTimer4Value.AutoSize = true;
-            this.labelStatusTimer4Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer4Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer4Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer4Value.Location = new System.Drawing.Point(286, 75);
-            this.labelStatusTimer4Value.Name = "labelStatusTimer4Value";
-            this.labelStatusTimer4Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer4Value.TabIndex = 0;
-            this.labelStatusTimer4Value.Text = "0.00s";
-            // 
-            // labelStatusTimer5Value
-            // 
-            this.labelStatusTimer5Value.AutoSize = true;
-            this.labelStatusTimer5Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer5Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer5Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer5Value.Location = new System.Drawing.Point(374, 75);
-            this.labelStatusTimer5Value.Name = "labelStatusTimer5Value";
-            this.labelStatusTimer5Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer5Value.TabIndex = 0;
-            this.labelStatusTimer5Value.Text = "0.00s";
-            // 
-            // labelStatusTimer6Value
-            // 
-            this.labelStatusTimer6Value.AutoSize = true;
-            this.labelStatusTimer6Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer6Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer6Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer6Value.Location = new System.Drawing.Point(463, 75);
-            this.labelStatusTimer6Value.Name = "labelStatusTimer6Value";
-            this.labelStatusTimer6Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer6Value.TabIndex = 0;
-            this.labelStatusTimer6Value.Text = "0.00s";
-            // 
-            // labelStatusTimer7Value
-            // 
-            this.labelStatusTimer7Value.AutoSize = true;
-            this.labelStatusTimer7Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer7Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer7Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer7Value.Location = new System.Drawing.Point(551, 75);
-            this.labelStatusTimer7Value.Name = "labelStatusTimer7Value";
-            this.labelStatusTimer7Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer7Value.TabIndex = 0;
-            this.labelStatusTimer7Value.Text = "0.00s";
-            // 
-            // labelStatusTimer8Value
-            // 
-            this.labelStatusTimer8Value.AutoSize = true;
-            this.labelStatusTimer8Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer8Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer8Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer8Value.Location = new System.Drawing.Point(23, 144);
-            this.labelStatusTimer8Value.Name = "labelStatusTimer8Value";
-            this.labelStatusTimer8Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer8Value.TabIndex = 0;
-            this.labelStatusTimer8Value.Text = "0.00s";
-            // 
-            // labelStatusTimer9Value
-            // 
-            this.labelStatusTimer9Value.AutoSize = true;
-            this.labelStatusTimer9Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer9Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer9Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer9Value.Location = new System.Drawing.Point(110, 144);
-            this.labelStatusTimer9Value.Name = "labelStatusTimer9Value";
-            this.labelStatusTimer9Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer9Value.TabIndex = 0;
-            this.labelStatusTimer9Value.Text = "0.00s";
-            // 
-            // labelStatusTimer10Value
-            // 
-            this.labelStatusTimer10Value.AutoSize = true;
-            this.labelStatusTimer10Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer10Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer10Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer10Value.Location = new System.Drawing.Point(199, 144);
-            this.labelStatusTimer10Value.Name = "labelStatusTimer10Value";
-            this.labelStatusTimer10Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer10Value.TabIndex = 0;
-            this.labelStatusTimer10Value.Text = "0.00s";
-            // 
-            // labelStatusTimer11Value
-            // 
-            this.labelStatusTimer11Value.AutoSize = true;
-            this.labelStatusTimer11Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer11Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer11Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer11Value.Location = new System.Drawing.Point(286, 144);
-            this.labelStatusTimer11Value.Name = "labelStatusTimer11Value";
-            this.labelStatusTimer11Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer11Value.TabIndex = 0;
-            this.labelStatusTimer11Value.Text = "0.00s";
-            // 
-            // labelStatusTimer12Value
-            // 
-            this.labelStatusTimer12Value.AutoSize = true;
-            this.labelStatusTimer12Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer12Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer12Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer12Value.Location = new System.Drawing.Point(374, 144);
-            this.labelStatusTimer12Value.Name = "labelStatusTimer12Value";
-            this.labelStatusTimer12Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer12Value.TabIndex = 0;
-            this.labelStatusTimer12Value.Text = "0.00s";
-            // 
-            // labelStatusTimer13Value
-            // 
-            this.labelStatusTimer13Value.AutoSize = true;
-            this.labelStatusTimer13Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer13Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer13Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer13Value.Location = new System.Drawing.Point(463, 144);
-            this.labelStatusTimer13Value.Name = "labelStatusTimer13Value";
-            this.labelStatusTimer13Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer13Value.TabIndex = 0;
-            this.labelStatusTimer13Value.Text = "0.00s";
-            // 
-            // labelStatusTimer14Value
-            // 
-            this.labelStatusTimer14Value.AutoSize = true;
-            this.labelStatusTimer14Value.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusTimer14Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.labelStatusTimer14Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatusTimer14Value.Location = new System.Drawing.Point(551, 144);
-            this.labelStatusTimer14Value.Name = "labelStatusTimer14Value";
-            this.labelStatusTimer14Value.Size = new System.Drawing.Size(38, 17);
-            this.labelStatusTimer14Value.TabIndex = 0;
-            this.labelStatusTimer14Value.Text = "0.00s";
             // 
             // mainForm
             // 
@@ -36745,6 +36780,7 @@
             this.groupBoxGFGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFLevelMod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFPowerMod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFEXP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFPower)).EndInit();
             this.tabPageGFAbilities.ResumeLayout(false);
             this.groupBoxGFAbilities.ResumeLayout(false);
@@ -37135,16 +37171,18 @@
             this.groupBoxShotStatusAttack.ResumeLayout(false);
             this.groupBoxShotStatusAttack.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotStatusAttack)).EndInit();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer4)).EndInit();
             this.groupBoxShotTargetInfo.ResumeLayout(false);
             this.groupBoxShotTargetInfo.PerformLayout();
             this.groupBoxShotAttackFlags.ResumeLayout(false);
             this.groupBoxShotAttackFlags.PerformLayout();
             this.groupBoxShotGeneral.ResumeLayout(false);
             this.groupBoxShotGeneral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotTimer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).EndInit();
@@ -37231,6 +37269,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusLimit12)).EndInit();
             this.groupBoxMiscStatusTimers.ResumeLayout(false);
             this.groupBoxMiscStatusTimers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer13)).EndInit();
@@ -37244,11 +37283,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -37497,7 +37533,6 @@
         private System.Windows.Forms.Label labelCharMAGA;
         private System.Windows.Forms.GroupBox groupBoxCharHP;
         private System.Windows.Forms.Button buttonCharHPFormula;
-        private System.Windows.Forms.Button buttonCharHPChart;
         private System.Windows.Forms.NumericUpDown numericUpDownCharHP4;
         private System.Windows.Forms.Label labelCharHPD;
         private System.Windows.Forms.NumericUpDown numericUpDownCharHP3;
@@ -39037,6 +39072,9 @@
         private System.Windows.Forms.Label labelStatusTimer8Value;
         private System.Windows.Forms.Label labelStatusTimer2Value;
         private System.Windows.Forms.Label labelStatusTimer1Value;
+        private System.Windows.Forms.NumericUpDown numericUpDownGFEXP;
+        private System.Windows.Forms.Label labelGFEXP;
+        public System.Windows.Forms.Button buttonCharHPChart;
     }
 }
 

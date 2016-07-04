@@ -1,6 +1,6 @@
-﻿namespace Doomtrain
+﻿namespace Doomtrain.Characters_Stats_Charts
 {
-    partial class CharChartHP
+    partial class CharSPD
     {
         /// <summary>
         /// Required designer variable.
@@ -31,16 +31,16 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 2500D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 100D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 100D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 100D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 100D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 100D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 100D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 100D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 100D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 100D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 400D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 800D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 1200D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 1600D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 2000D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2500D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 3000D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 3500D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 4000D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 4500D);
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 9000D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 255D);
@@ -52,20 +52,25 @@
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint18 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 255D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint19 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 255D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint20 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 255D);
-            this.ChartCharStats = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.buttonCharChartHPClose = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartCharStats)).BeginInit();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            this.chartSPD = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.buttonSPDClose = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSPD)).BeginInit();
             this.SuspendLayout();
             // 
-            // ChartCharStats
+            // chartSPD
             // 
-            chartArea1.Name = "ChartAreaCharStats";
-            this.ChartCharStats.ChartAreas.Add(chartArea1);
+            chartArea1.AxisX.Title = "Level";
+            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisY.Title = "SPD";
+            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            chartArea1.Name = "ChartAreaSPD";
+            this.chartSPD.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.ChartCharStats.Legends.Add(legend1);
-            this.ChartCharStats.Location = new System.Drawing.Point(0, 0);
-            this.ChartCharStats.Name = "ChartCharStats";
-            series1.ChartArea = "ChartAreaCharStats";
+            this.chartSPD.Legends.Add(legend1);
+            this.chartSPD.Location = new System.Drawing.Point(0, 0);
+            this.chartSPD.Name = "chartSPD";
+            series1.ChartArea = "ChartAreaSPD";
             series1.Legend = "Legend1";
             series1.Name = "Default";
             dataPoint1.AxisLabel = "";
@@ -89,7 +94,7 @@
             series1.Points.Add(dataPoint8);
             series1.Points.Add(dataPoint9);
             series1.Points.Add(dataPoint10);
-            series2.ChartArea = "ChartAreaCharStats";
+            series2.ChartArea = "ChartAreaSPD";
             series2.Legend = "Legend1";
             series2.Name = "Current";
             dataPoint11.AxisLabel = "10";
@@ -115,50 +120,53 @@
             series2.Points.Add(dataPoint18);
             series2.Points.Add(dataPoint19);
             series2.Points.Add(dataPoint20);
-            this.ChartCharStats.Series.Add(series1);
-            this.ChartCharStats.Series.Add(series2);
-            this.ChartCharStats.Size = new System.Drawing.Size(640, 400);
-            this.ChartCharStats.TabIndex = 2;
-            this.ChartCharStats.Text = "chartCharStats";
-            this.ChartCharStats.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ChartCharStats_MouseDown);
-            this.ChartCharStats.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ChartCharStats_MouseMove);
-            this.ChartCharStats.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ChartCharStats_MouseUp);
+            this.chartSPD.Series.Add(series1);
+            this.chartSPD.Series.Add(series2);
+            this.chartSPD.Size = new System.Drawing.Size(640, 450);
+            this.chartSPD.TabIndex = 15;
+            title1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            title1.Name = "TitleSPD";
+            title1.Text = "SPD CHART";
+            this.chartSPD.Titles.Add(title1);
+            this.chartSPD.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chartSPD_MouseDown);
+            this.chartSPD.MouseMove += new System.Windows.Forms.MouseEventHandler(this.chartSPD_MouseMove);
+            this.chartSPD.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chartSPD_MouseUp);
             // 
-            // buttonCharChartHPClose
+            // buttonSPDClose
             // 
-            this.buttonCharChartHPClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCharChartHPClose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buttonCharChartHPClose.Location = new System.Drawing.Point(551, 363);
-            this.buttonCharChartHPClose.Name = "buttonCharChartHPClose";
-            this.buttonCharChartHPClose.Size = new System.Drawing.Size(75, 23);
-            this.buttonCharChartHPClose.TabIndex = 3;
-            this.buttonCharChartHPClose.Text = "Close";
-            this.buttonCharChartHPClose.UseVisualStyleBackColor = true;
+            this.buttonSPDClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonSPDClose.Location = new System.Drawing.Point(551, 413);
+            this.buttonSPDClose.Name = "buttonSPDClose";
+            this.buttonSPDClose.Size = new System.Drawing.Size(75, 23);
+            this.buttonSPDClose.TabIndex = 16;
+            this.buttonSPDClose.Text = "Close";
+            this.buttonSPDClose.UseVisualStyleBackColor = true;
+            this.buttonSPDClose.Click += new System.EventHandler(this.buttonSPRClose_Click);
             // 
-            // CharChartHP
+            // CharSPD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.buttonCharChartHPClose;
-            this.ClientSize = new System.Drawing.Size(638, 398);
+            this.CancelButton = this.buttonSPDClose;
+            this.ClientSize = new System.Drawing.Size(638, 448);
             this.ControlBox = false;
-            this.Controls.Add(this.buttonCharChartHPClose);
-            this.Controls.Add(this.ChartCharStats);
+            this.Controls.Add(this.buttonSPDClose);
+            this.Controls.Add(this.chartSPD);
+            this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximumSize = new System.Drawing.Size(640, 400);
-            this.MinimumSize = new System.Drawing.Size(640, 400);
-            this.Name = "CharChartHP";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            ((System.ComponentModel.ISupportInitialize)(this.ChartCharStats)).EndInit();
+            this.MaximumSize = new System.Drawing.Size(640, 450);
+            this.MinimumSize = new System.Drawing.Size(640, 450);
+            this.Name = "CharSPD";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            ((System.ComponentModel.ISupportInitialize)(this.chartSPD)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart ChartCharStats;
-        private System.Windows.Forms.Button buttonCharChartHPClose;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSPD;
+        private System.Windows.Forms.Button buttonSPDClose;
     }
 }

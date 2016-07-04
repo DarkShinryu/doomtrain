@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Runtime.Remoting.Channels;
+using Doomtrain.Characters_Stats_Charts;
 
 namespace Doomtrain
 {
@@ -192,6 +193,7 @@ namespace Doomtrain
             checkBoxGFFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(27, 0x80);
             comboBoxGFElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(2, GF_GetElement(comboBoxGFElement.SelectedIndex));
             numericUpDownGFHP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(3, numericUpDownGFHP.Value);
+            numericUpDownGFEXP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(29, numericUpDownGFEXP.Value);
             numericUpDownGFPowerMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(4, numericUpDownGFPowerMod.Value);
             numericUpDownGFLevelMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, numericUpDownGFLevelMod.Value);
             comboBoxGFAbility1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility1.SelectedIndex, 0);
@@ -1494,6 +1496,7 @@ namespace Doomtrain
 
         #region CHARTS, FORMULAS, LABELS, LISTBOXES SWITCH
 
+        //CHARACTERS FORMULAS
         private void buttonCharHPFormula_Click(object sender, EventArgs e)
         {
             MessageBox.Show("HP = ((stat_magic_J_value*magic_count + stat_bonus + lvl*a - (10*lvl^2)/b +c)*percent_modifier)/100", "HP Formula");
@@ -1529,23 +1532,109 @@ namespace Doomtrain
             MessageBox.Show("LUCK = ((X + (stat_magic_J_value*magic_count)/100 + stat_bonus + lvl/b - lvl/d + lvl*a +c)*percent_modifier)/100", "LUCK Formula");
         }
 
-
         private void buttonCharEXPFormula_Click(object sender, EventArgs e)
         {
             MessageBox.Show("EXP for level x = ((lvl-1)^2*exp_b)/256 + (lvl-1)*exp_a*10", "EXP Formula");
         }
 
+
+
+        //CHARACTERS CHARTS
+        private CharEXP CharEXP;
+        private void buttonCharEXPChart_Click(object sender, EventArgs e)
+        {
+            if ((CharEXP == null) || (CharEXP.IsDisposed))
+            {
+                CharEXP = new CharEXP();
+            }
+            CharEXP.Show();
+            CharEXP.Focus();
+        }
+
+        private CharHP CharHP;
         private void buttonCharHPChart_Click(object sender, EventArgs e)
         {
-            new CharChartHP().ShowDialog();
+            if ((CharHP == null) || (CharHP.IsDisposed))
+            {
+                CharHP = new CharHP();
+            }
+            CharHP.Show();
+            CharHP.Focus();
+
+
+        }
+        private charSTR CharSTR;
+        private void buttonCharSTRChart_Click(object sender, EventArgs e)
+        {
+            if ((CharSTR == null) || (CharSTR.IsDisposed))
+            {
+                CharSTR = new charSTR();
+            }
+            CharSTR.Show();
+            CharSTR.Focus();
+        }
+
+        private CharVIT CharVIT;
+        private void buttonCharVITChart_Click(object sender, EventArgs e)
+        {
+            if ((CharVIT == null) || (CharVIT.IsDisposed))
+            {
+                CharVIT = new CharVIT();
+            }
+            CharVIT.Show();
+            CharVIT.Focus();
+        }
+
+        private CharMAG CharMAG;
+        private void buttonCharMAGChart_Click(object sender, EventArgs e)
+        {
+            if ((CharMAG == null) || (CharMAG.IsDisposed))
+            {
+                CharMAG = new CharMAG();
+            }
+            CharMAG.Show();
+            CharMAG.Focus();
+        }
+
+        private CharSPR CharSPR;
+        private void buttonCharSPRChart_Click(object sender, EventArgs e)
+        {
+            if ((CharSPR == null) || (CharSPR.IsDisposed))
+            {
+                CharSPR = new CharSPR();
+            }
+            CharSPR.Show();
+            CharSPR.Focus();
+        }
+
+        private CharSPD CharSPD;
+        private void buttonCharSPDChart_Click(object sender, EventArgs e)
+        {
+            if ((CharSPD == null) || (CharSPD.IsDisposed))
+            {
+                CharSPD = new CharSPD();
+            }
+            CharSPD.Show();
+            CharSPD.Focus();
+        }
+
+        private CharLUCK CharLUCK;
+        private void buttonCharLUCKChart_Click(object sender, EventArgs e)
+        {
+            if ((CharLUCK == null) || (CharLUCK.IsDisposed))
+            {
+                CharLUCK = new CharLUCK();
+            }
+            CharLUCK.Show();
+            CharLUCK.Focus();
         }
 
 
 
 
-    //LABELS VALUE
-    //I added this.trackBar.ValueChanged += (this.trackBarJXY_Scroll) to MainForm.Designer, only this 4 are necessary here now
-    private void trackBarJElemAttack_Scroll(object sender, EventArgs e)
+        //LABELS VALUE
+        //I added this.trackBar.ValueChanged += (this.trackBarJXY_Scroll) to MainForm.Designer, only this 4 are necessary here now
+        private void trackBarJElemAttack_Scroll(object sender, EventArgs e)
         {
             labelValueElemAttackTrackBar.Text = trackBarJElemAttack.Value + "%".ToString();
         }
@@ -1569,7 +1658,7 @@ namespace Doomtrain
         private void numericUpDownShotTimer1_ValueChanged(object sender, EventArgs e)
         {
             labelShotTimer1Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownShotTimer1.Value * 2 / 15) * 100) / 100);
-            //labelShotTimer1Value.Text = String.Format("{0:0.00}s", (numericUpDownShotTimer1.Value * 2) / 15); with rounding
+            //labelShotTimer1Value.Text = String.Format("{0:0.00}s", (numericUpDownShotTimer1.Value * 2) / 15);                                this is with rounding
         }
 
         private void numericUpDownShotTimer2_ValueChanged(object sender, EventArgs e)
@@ -2289,6 +2378,7 @@ namespace Doomtrain
                 checkBoxGFFlag7.Checked = (KernelWorker.GetSelectedGFData.GFFlags & 0x40) >= 1 ? true : false;
                 checkBoxGFFlag8.Checked = (KernelWorker.GetSelectedGFData.GFFlags & 0x80) >= 1 ? true : false;
                 numericUpDownGFHP.Value = KernelWorker.GetSelectedGFData.GFHP;
+                numericUpDownGFEXP.Value = KernelWorker.GetSelectedGFData.GFEXP * 10;
                 numericUpDownGFPowerMod.Value = KernelWorker.GetSelectedGFData.GFPowerMod;
                 numericUpDownGFLevelMod.Value = KernelWorker.GetSelectedGFData.GFLevelMod;
                 comboBoxGFAbility1.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility1;
@@ -2334,7 +2424,6 @@ namespace Doomtrain
                 comboBoxGFAbilityUnlock20.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbilityUnlock20;
                 comboBoxGFAbilityUnlock21.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbilityUnlock21;
                 comboBoxGFElement.SelectedIndex = GF_GetElement();
-                //checkBoxGFStatus.Checked = KernelWorker.GetSelectedGFData.GFStatusEnabler > 0x00 ? true : false;
                 GFStatusWorker();
                 numericUpDownGFStatusAttack.Value = KernelWorker.GetSelectedGFData.GFStatusAttack;
                 numericUpDownGFQuezacoltComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFQuezacoltCompatibility)) / 5;
@@ -4251,6 +4340,9 @@ namespace Doomtrain
             _loaded = true;
         }
 
+
+
         #endregion
+
     }
 }

@@ -264,6 +264,7 @@ namespace Doomtrain
             public byte StatusGF4;
             public byte StatusGF5;
             public byte GFHP;
+            public byte GFEXP;
             public byte GFStatusAttack;
             public byte GFPowerMod;
             public byte GFLevelMod;
@@ -1231,8 +1232,11 @@ namespace Doomtrain
                 case 28:
                         Kernel[OffsetToGFSelected + 28 + (AbilityIndex * 4)] = Convert.ToByte(variable); //GF abilities
                         return;
+                case 29:
+                        //Kernel[OffsetToGFSelected + 24] = (byte)(Convert.ToInt16(variable) / 10); //GFEXP
+                        return;
 
-                        default:
+                default:
                         return;
             }
         }
@@ -3192,8 +3196,10 @@ namespace Doomtrain
             GetSelectedGFData.StatusGF3 = Kernel[selectedGfOffset++];
             GetSelectedGFData.StatusGF4 = Kernel[selectedGfOffset++];
             GetSelectedGFData.StatusGF5 = Kernel[selectedGfOffset++];
-            GetSelectedGFData.GFHP = Kernel[selectedGfOffset];
-            selectedGfOffset += 7; //Unknown+GFHP
+            GetSelectedGFData.GFHP = Kernel[selectedGfOffset++];
+            selectedGfOffset += 3;
+            GetSelectedGFData.GFEXP = Kernel[selectedGfOffset++];
+            selectedGfOffset += 2;
             GetSelectedGFData.GFStatusAttack = Kernel[selectedGfOffset++];        
                 
             //AbilityRun
@@ -3282,7 +3288,7 @@ namespace Doomtrain
             GetSelectedGFData.GFAbility21 = Kernel[selectedGfOffset++];
             //EndofAbility
 
-            selectedGfOffset += 2;
+            selectedGfOffset += 1;
             GetSelectedGFData.GFQuezacoltCompatibility = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFShivaCompatibility = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFIfritCompatibility = Kernel[selectedGfOffset++];
