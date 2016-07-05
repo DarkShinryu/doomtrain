@@ -66,8 +66,11 @@ namespace Doomtrain
         public static int MiscDataOffset = -1;
         public static int OffsetToMiscSelected = -1;
 
-        public static int CommandAbilityDataOffset = -1;
+        public static int CommandAbilityDataDataOffset = -1;
         public static int OffsetToCommandAbilityDataSelected = -1;
+
+        public static int JunctionAbilitiesDataOffset = -1;
+        public static int OffsetToJunctionAbilitiesSelected = -1;
 
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
@@ -89,7 +92,8 @@ namespace Doomtrain
         public static SlotsSetsData GetSelectedSlotsSetsData;
         public static DevourData GetSelectedDevourData;
         public static MiscData GetSelectedMiscData;
-        public static CommandAbilityData GetSelectedCommandAbilityData;
+        public static CommandAbilityDataData GetSelectedCommandAbilityDataData;
+        public static JunctionAbilitiesData GetSelectedJunctionAbilitiesData;
 
 
         static string[] _charstable;
@@ -858,7 +862,7 @@ namespace Doomtrain
             public byte ShotTimerCL4;
         }
 
-        public struct CommandAbilityData
+        public struct CommandAbilityDataData
         {
             public UInt16 MagicID;
             public byte AttackType;
@@ -873,6 +877,15 @@ namespace Doomtrain
             public byte Status4;
             public byte Status5;
         }
+
+        public struct JunctionAbilitiesData
+        {
+            public byte AP;
+            public byte Flag1;
+            public byte Flag2;
+            public byte Flag3;
+        }
+
         #endregion
 
 
@@ -3028,6 +3041,34 @@ namespace Doomtrain
 
         #endregion
 
+        #region JUNCTION ABILITIES
+
+        public static void UpdateVariable_JunctionAbilities(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToJunctionAbilitiesSelected + 4] = Convert.ToByte(variable); //AP
+                    return;
+                case 1:
+                    Kernel[OffsetToJunctionAbilitiesSelected + 5] = (byte)(Kernel[OffsetToJunctionAbilitiesSelected + 5] ^ Convert.ToByte(variable)); // flag 1
+                    return;
+                case 2:
+                    Kernel[OffsetToJunctionAbilitiesSelected + 6] = (byte)(Kernel[OffsetToJunctionAbilitiesSelected + 6] ^ Convert.ToByte(variable)); // flag 2
+                    return;
+                case 3:
+                    Kernel[OffsetToJunctionAbilitiesSelected + 7] = (byte)(Kernel[OffsetToJunctionAbilitiesSelected + 7] ^ Convert.ToByte(variable)); // flag 3
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
+        #endregion
+
         #endregion
 
 
@@ -3131,7 +3172,8 @@ namespace Doomtrain
             SlotsSetsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.SelphieSlotsSets);
             DevourDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Devour);
             MiscDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Misc);
-            CommandAbilityDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.CommandAbilityData);
+            CommandAbilityDataDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.CommandAbilityData);
+            JunctionAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.JunctionAbilities);
         }
 
         #endregion
@@ -4286,18 +4328,18 @@ namespace Doomtrain
 
         public static void ReadCommandAbilityData(int CommandAbilityDataID_List)
         {
-            GetSelectedCommandAbilityData = new CommandAbilityData();
-            int selectedCommandAbilityDataOffset = CommandAbilityDataOffset + (CommandAbilityDataID_List * 16);
-            OffsetToCommandAbilityDataSelected = selectedCommandAbilityDataOffset;
+            GetSelectedCommandAbilityDataData = new CommandAbilityDataData();
+            int selectedCommandAbilityDataDataOffset = CommandAbilityDataDataOffset + (CommandAbilityDataID_List * 16);
+            OffsetToCommandAbilityDataSelected = selectedCommandAbilityDataDataOffset;
 
-            GetSelectedCommandAbilityData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedCommandAbilityDataOffset));
-            selectedCommandAbilityDataOffset += 4;
-            GetSelectedCommandAbilityData.AttackType = Kernel[selectedCommandAbilityDataOffset++];
-            GetSelectedCommandAbilityData.AttackPower = Kernel[selectedCommandAbilityDataOffset++];
-            GetSelectedCommandAbilityData.AttackFlags = Kernel[selectedCommandAbilityDataOffset++];
-            GetSelectedCommandAbilityData.HitCount = Kernel[selectedCommandAbilityDataOffset++];
-            byte b = Kernel[selectedCommandAbilityDataOffset++];
-            GetSelectedCommandAbilityData.Element =
+            GetSelectedCommandAbilityDataData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedCommandAbilityDataDataOffset));
+            selectedCommandAbilityDataDataOffset += 4;
+            GetSelectedCommandAbilityDataData.AttackType = Kernel[selectedCommandAbilityDataDataOffset++];
+            GetSelectedCommandAbilityDataData.AttackPower = Kernel[selectedCommandAbilityDataDataOffset++];
+            GetSelectedCommandAbilityDataData.AttackFlags = Kernel[selectedCommandAbilityDataDataOffset++];
+            GetSelectedCommandAbilityDataData.HitCount = Kernel[selectedCommandAbilityDataDataOffset++];
+            byte b = Kernel[selectedCommandAbilityDataDataOffset++];
+            GetSelectedCommandAbilityDataData.Element =
                 b == (byte)Element.Fire
                     ? Element.Fire
                     : b == (byte)Element.Holy
@@ -4317,13 +4359,31 @@ namespace Doomtrain
                                                 : b == (byte)Element.Earth
                                                     ? Element.Earth
                                                     : 0; //Error handler
-            GetSelectedCommandAbilityData.StatusAttack = Kernel[selectedCommandAbilityDataOffset++];
-            GetSelectedCommandAbilityData.Status1 = Kernel[selectedCommandAbilityDataOffset++];
-            selectedCommandAbilityDataOffset += 1;
-            GetSelectedCommandAbilityData.Status2 = Kernel[selectedCommandAbilityDataOffset++];
-            GetSelectedCommandAbilityData.Status3 = Kernel[selectedCommandAbilityDataOffset++];
-            GetSelectedCommandAbilityData.Status4 = Kernel[selectedCommandAbilityDataOffset++];
-            GetSelectedCommandAbilityData.Status5 = Kernel[selectedCommandAbilityDataOffset++];
+            GetSelectedCommandAbilityDataData.StatusAttack = Kernel[selectedCommandAbilityDataDataOffset++];
+            GetSelectedCommandAbilityDataData.Status1 = Kernel[selectedCommandAbilityDataDataOffset++];
+            selectedCommandAbilityDataDataOffset += 1;
+            GetSelectedCommandAbilityDataData.Status2 = Kernel[selectedCommandAbilityDataDataOffset++];
+            GetSelectedCommandAbilityDataData.Status3 = Kernel[selectedCommandAbilityDataDataOffset++];
+            GetSelectedCommandAbilityDataData.Status4 = Kernel[selectedCommandAbilityDataDataOffset++];
+            GetSelectedCommandAbilityDataData.Status5 = Kernel[selectedCommandAbilityDataDataOffset++];
+        }
+
+        #endregion
+
+        #region JUNCTION ABILITIES
+
+        public static void ReadJunctionAbilities(int JunctionAbilitiesID_List)
+        {
+            GetSelectedJunctionAbilitiesData = new JunctionAbilitiesData();
+            JunctionAbilitiesID_List++; //skip dummy entry
+            int selectedJunctionAbilitiesOffset = JunctionAbilitiesDataOffset + (JunctionAbilitiesID_List * 8);
+            OffsetToJunctionAbilitiesSelected = selectedJunctionAbilitiesOffset;
+
+            selectedJunctionAbilitiesOffset += 4;
+            GetSelectedJunctionAbilitiesData.AP = Kernel[selectedJunctionAbilitiesOffset++];
+            GetSelectedJunctionAbilitiesData.Flag1 = Kernel[selectedJunctionAbilitiesOffset++];
+            GetSelectedJunctionAbilitiesData.Flag2 = Kernel[selectedJunctionAbilitiesOffset++];
+            GetSelectedJunctionAbilitiesData.Flag3 = Kernel[selectedJunctionAbilitiesOffset++];
         }
 
         #endregion

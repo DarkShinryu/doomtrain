@@ -30,7 +30,7 @@ namespace Doomtrain
 
             //this is for enabling the switching of listboxes in the ability section
             listBoxAbStats.Visible = false;
-            listBoxAbJunction.Visible = false;
+            listBoxAbJun.Visible = false;
             listBoxAbComData.Visible = false;
             listBoxAbCom.Visible = false;
             listBoxAbGF.Visible = false;
@@ -1448,6 +1448,31 @@ namespace Doomtrain
             checkBoxAbComDataSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x80, 4);
 
             #endregion
+
+            #region EVENT HANDLERS JUNCTION ABILITIES
+
+            numericUpDownAbJunAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(0, numericUpDownAbJunAP.Value);
+            checkBoxAbJunFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x01);
+            checkBoxAbJunFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x02);
+            checkBoxAbJunFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x04);
+            checkBoxAbJunFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x08);
+            checkBoxAbJunFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x10);
+            checkBoxAbJunFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x20);
+            checkBoxAbJunFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x40);
+            checkBoxAbJunFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x80);
+            checkBoxAbJunFlag9.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x01);
+            checkBoxAbJunFlag10.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x02);
+            checkBoxAbJunFlag11.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x04);
+            checkBoxAbJunFlag12.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x08);
+            checkBoxAbJunFlag13.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x10);
+            checkBoxAbJunFlag14.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x20);
+            checkBoxAbJunFlag15.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x40);
+            checkBoxAbJunFlag16.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x80);
+            checkBoxAbJunFlag17.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(3, 0x01);
+            checkBoxAbJunFlag18.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(3, 0x02);
+            checkBoxAbJunFlag19.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(3, 0x04);
+
+            #endregion
         }
 
 
@@ -1845,7 +1870,7 @@ namespace Doomtrain
             {
                 listBoxAbCharacters.Visible = true;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = false;
+                listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
                 listBoxAbGF.Visible = false;
@@ -1857,7 +1882,7 @@ namespace Doomtrain
             {
                 listBoxAbCharacters.Visible = false;
                 listBoxAbStats.Visible = true;
-                listBoxAbJunction.Visible = false;
+                listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
                 listBoxAbGF.Visible = false;
@@ -1869,7 +1894,7 @@ namespace Doomtrain
             {
                 listBoxAbCharacters.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = true;
+                listBoxAbJun.Visible = true;
                 listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
                 listBoxAbGF.Visible = false;
@@ -1881,7 +1906,7 @@ namespace Doomtrain
             {
                 listBoxAbCharacters.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = false;
+                listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = true;
                 listBoxAbCom.Visible = false;
                 listBoxAbGF.Visible = false;
@@ -1893,7 +1918,7 @@ namespace Doomtrain
             {
                 listBoxAbCharacters.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = false;
+                listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = true;
                 listBoxAbGF.Visible = false;
@@ -1905,7 +1930,7 @@ namespace Doomtrain
             {
                 listBoxAbCharacters.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = false;
+                listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
                 listBoxAbGF.Visible = true;
@@ -1917,7 +1942,7 @@ namespace Doomtrain
             {
                 listBoxAbCharacters.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = false;
+                listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
                 listBoxAbGF.Visible = false;
@@ -1929,7 +1954,7 @@ namespace Doomtrain
             {
                 listBoxAbCharacters.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = false;
+                listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
                 listBoxAbGF.Visible = false;
@@ -4429,25 +4454,25 @@ namespace Doomtrain
 
         private int CommandAbilityData_GetElement()
         {
-            return KernelWorker.GetSelectedCommandAbilityData.Element == KernelWorker.Element.Fire
+            return KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Fire
                         ? 0
-                        : KernelWorker.GetSelectedCommandAbilityData.Element == KernelWorker.Element.Ice
+                        : KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Ice
                             ? 1
-                            : KernelWorker.GetSelectedCommandAbilityData.Element == KernelWorker.Element.Thunder
+                            : KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Thunder
                                 ? 2
-                                : KernelWorker.GetSelectedCommandAbilityData.Element == KernelWorker.Element.Earth
+                                : KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Earth
                                     ? 3
-                                    : KernelWorker.GetSelectedCommandAbilityData.Element == KernelWorker.Element.Poison
+                                    : KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Poison
                                         ? 4
-                                        : KernelWorker.GetSelectedCommandAbilityData.Element == KernelWorker.Element.Wind
+                                        : KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Wind
                                             ? 5
-                                            : KernelWorker.GetSelectedCommandAbilityData.Element ==
+                                            : KernelWorker.GetSelectedCommandAbilityDataData.Element ==
                                               KernelWorker.Element.Water
                                                 ? 6
-                                                : KernelWorker.GetSelectedCommandAbilityData.Element ==
+                                                : KernelWorker.GetSelectedCommandAbilityDataData.Element ==
                                                   KernelWorker.Element.Holy
                                                     ? 7
-                                                    : KernelWorker.GetSelectedCommandAbilityData.Element ==
+                                                    : KernelWorker.GetSelectedCommandAbilityDataData.Element ==
                                                       KernelWorker.Element.NonElemental
                                                         ? comboBoxAbComDataElement.Items.Count - 1
                                                         : 0;
@@ -4470,50 +4495,50 @@ namespace Doomtrain
 
         private void CommandAbilityDataStatusWorker()
         {
-            checkBoxAbComDataDeath.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status1 & 0x01) >= 1 ? true : false;
-            checkBoxAbComDataPoison.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status1 & 0x02) >= 1 ? true : false;
-            checkBoxAbComDataPetrify.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status1 & 0x04) >= 1 ? true : false;
-            checkBoxAbComDataDarkness.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status1 & 0x08) >= 1 ? true : false;
-            checkBoxAbComDataSilence.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status1 & 0x10) >= 1 ? true : false;
-            checkBoxAbComDataBerserk.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status1 & 0x20) >= 1 ? true : false;
-            checkBoxAbComDataZombie.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status1 & 0x40) >= 1 ? true : false;
-            checkBoxAbComDataUnk7.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status1 & 0x80) >= 1 ? true : false;
+            checkBoxAbComDataDeath.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x01) >= 1 ? true : false;
+            checkBoxAbComDataPoison.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x02) >= 1 ? true : false;
+            checkBoxAbComDataPetrify.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x04) >= 1 ? true : false;
+            checkBoxAbComDataDarkness.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x08) >= 1 ? true : false;
+            checkBoxAbComDataSilence.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x10) >= 1 ? true : false;
+            checkBoxAbComDataBerserk.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x20) >= 1 ? true : false;
+            checkBoxAbComDataZombie.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x40) >= 1 ? true : false;
+            checkBoxAbComDataUnk7.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x80) >= 1 ? true : false;
 
-            checkBoxAbComDataSleep.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status2 & 0x01) >= 1 ? true : false;
-            checkBoxAbComDataHaste.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status2 & 0x02) >= 1 ? true : false;
-            checkBoxAbComDataSlow.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status2 & 0x04) >= 1 ? true : false;
-            checkBoxAbComDataStop.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status2 & 0x08) >= 1 ? true : false;
-            checkBoxAbComDataRegen.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status2 & 0x10) >= 1 ? true : false;
-            checkBoxAbComDataProtect.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status2 & 0x20) >= 1 ? true : false;
-            checkBoxAbComDataShell.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status2 & 0x40) >= 1 ? true : false;
-            checkBoxAbComDataReflect.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status2 & 0x80) >= 1 ? true : false;
+            checkBoxAbComDataSleep.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x01) >= 1 ? true : false;
+            checkBoxAbComDataHaste.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x02) >= 1 ? true : false;
+            checkBoxAbComDataSlow.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x04) >= 1 ? true : false;
+            checkBoxAbComDataStop.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x08) >= 1 ? true : false;
+            checkBoxAbComDataRegen.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x10) >= 1 ? true : false;
+            checkBoxAbComDataProtect.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x20) >= 1 ? true : false;
+            checkBoxAbComDataShell.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x40) >= 1 ? true : false;
+            checkBoxAbComDataReflect.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x80) >= 1 ? true : false;
 
-            checkBoxAbComDataAura.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status3 & 0x01) >= 1 ? true : false;
-            checkBoxAbComDataCurse.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status3 & 0x02) >= 1 ? true : false;
-            checkBoxAbComDataDoom.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status3 & 0x04) >= 1 ? true : false;
-            checkBoxAbComDataInvincible.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status3 & 0x08) >= 1 ? true : false;
-            checkBoxAbComDataPetrifying.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status3 & 0x10) >= 1 ? true : false;
-            checkBoxAbComDataFloat.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status3 & 0x20) >= 1 ? true : false;
-            checkBoxAbComDataConfusion.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status3 & 0x40) >= 1 ? true : false;
-            checkBoxAbComDataDrain.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status3 & 0x80) >= 1 ? true : false;
+            checkBoxAbComDataAura.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x01) >= 1 ? true : false;
+            checkBoxAbComDataCurse.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x02) >= 1 ? true : false;
+            checkBoxAbComDataDoom.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x04) >= 1 ? true : false;
+            checkBoxAbComDataInvincible.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x08) >= 1 ? true : false;
+            checkBoxAbComDataPetrifying.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x10) >= 1 ? true : false;
+            checkBoxAbComDataFloat.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x20) >= 1 ? true : false;
+            checkBoxAbComDataConfusion.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x40) >= 1 ? true : false;
+            checkBoxAbComDataDrain.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x80) >= 1 ? true : false;
 
-            checkBoxAbComDataEject.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status4 & 0x01) >= 1 ? true : false;
-            checkBoxAbComDataDouble.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status4 & 0x02) >= 1 ? true : false;
-            checkBoxAbComDataTriple.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status4 & 0x04) >= 1 ? true : false;
-            checkBoxAbComDataDefend.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status4 & 0x08) >= 1 ? true : false;
-            checkBoxAbComDataUnk1.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status4 & 0x10) >= 1 ? true : false;
-            checkBoxAbComDataUnk2.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status4 & 0x20) >= 1 ? true : false;
-            checkBoxAbComDataCharged.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status4 & 0x40) >= 1 ? true : false;
-            checkBoxAbComDataBackAttack.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status4 & 0x80) >= 1 ? true : false;
+            checkBoxAbComDataEject.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x01) >= 1 ? true : false;
+            checkBoxAbComDataDouble.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x02) >= 1 ? true : false;
+            checkBoxAbComDataTriple.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x04) >= 1 ? true : false;
+            checkBoxAbComDataDefend.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x08) >= 1 ? true : false;
+            checkBoxAbComDataUnk1.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x10) >= 1 ? true : false;
+            checkBoxAbComDataUnk2.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x20) >= 1 ? true : false;
+            checkBoxAbComDataCharged.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x40) >= 1 ? true : false;
+            checkBoxAbComDataBackAttack.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x80) >= 1 ? true : false;
 
-            checkBoxAbComDataVit0.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status5 & 0x01) >= 1 ? true : false;
-            checkBoxAbComDataAngelWing.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status5 & 0x02) >= 1 ? true : false;
-            checkBoxAbComDataUnk3.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status5 & 0x04) >= 1 ? true : false;
-            checkBoxAbComDataUnk4.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status5 & 0x08) >= 1 ? true : false;
-            checkBoxAbComDataUnk5.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status5 & 0x10) >= 1 ? true : false;
-            checkBoxAbComDataUnk6.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status5 & 0x20) >= 1 ? true : false;
-            checkBoxAbComDataHasMagic.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status5 & 0x40) >= 1 ? true : false;
-            checkBoxAbComDataSummonGF.Checked = (KernelWorker.GetSelectedCommandAbilityData.Status5 & 0x80) >= 1 ? true : false;
+            checkBoxAbComDataVit0.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x01) >= 1 ? true : false;
+            checkBoxAbComDataAngelWing.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x02) >= 1 ? true : false;
+            checkBoxAbComDataUnk3.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x04) >= 1 ? true : false;
+            checkBoxAbComDataUnk4.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x08) >= 1 ? true : false;
+            checkBoxAbComDataUnk5.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x10) >= 1 ? true : false;
+            checkBoxAbComDataUnk6.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x20) >= 1 ? true : false;
+            checkBoxAbComDataHasMagic.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x40) >= 1 ? true : false;
+            checkBoxAbComDataSummonGF.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x80) >= 1 ? true : false;
         }
 
         private void listBoxAbComData_SelectedIndexChanged(object sender, EventArgs e)
@@ -4525,26 +4550,70 @@ namespace Doomtrain
 
             try
             {
-                comboBoxAbComDataMagicID.SelectedIndex = KernelWorker.GetSelectedCommandAbilityData.MagicID;
-                comboBoxAbComDataAttackType.SelectedIndex = KernelWorker.GetSelectedCommandAbilityData.AttackType;
-                numericUpDownAbComDataAttackPower.Value = KernelWorker.GetSelectedCommandAbilityData.AttackPower;
-                checkBoxAbComDataFlag1.Checked = (KernelWorker.GetSelectedCommandAbilityData.AttackFlags & 0x01) >= 1 ? true : false;
-                checkBoxAbComDataFlag2.Checked = (KernelWorker.GetSelectedCommandAbilityData.AttackFlags & 0x02) >= 1 ? true : false;
-                checkBoxAbComDataFlag3.Checked = (KernelWorker.GetSelectedCommandAbilityData.AttackFlags & 0x04) >= 1 ? true : false;
-                checkBoxAbComDataFlag4.Checked = (KernelWorker.GetSelectedCommandAbilityData.AttackFlags & 0x08) >= 1 ? true : false;
-                checkBoxAbComDataFlag5.Checked = (KernelWorker.GetSelectedCommandAbilityData.AttackFlags & 0x10) >= 1 ? true : false;
-                checkBoxAbComDataFlag6.Checked = (KernelWorker.GetSelectedCommandAbilityData.AttackFlags & 0x20) >= 1 ? true : false;
-                checkBoxAbComDataFlag7.Checked = (KernelWorker.GetSelectedCommandAbilityData.AttackFlags & 0x40) >= 1 ? true : false;
-                checkBoxAbComDataFlag8.Checked = (KernelWorker.GetSelectedCommandAbilityData.AttackFlags & 0x80) >= 1 ? true : false;
-                numericUpDownAbComDataHitCount.Value = KernelWorker.GetSelectedCommandAbilityData.HitCount;
+                comboBoxAbComDataMagicID.SelectedIndex = KernelWorker.GetSelectedCommandAbilityDataData.MagicID;
+                comboBoxAbComDataAttackType.SelectedIndex = KernelWorker.GetSelectedCommandAbilityDataData.AttackType;
+                numericUpDownAbComDataAttackPower.Value = KernelWorker.GetSelectedCommandAbilityDataData.AttackPower;
+                checkBoxAbComDataFlag1.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x01) >= 1 ? true : false;
+                checkBoxAbComDataFlag2.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x02) >= 1 ? true : false;
+                checkBoxAbComDataFlag3.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x04) >= 1 ? true : false;
+                checkBoxAbComDataFlag4.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x08) >= 1 ? true : false;
+                checkBoxAbComDataFlag5.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x10) >= 1 ? true : false;
+                checkBoxAbComDataFlag6.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x20) >= 1 ? true : false;
+                checkBoxAbComDataFlag7.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x40) >= 1 ? true : false;
+                checkBoxAbComDataFlag8.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x80) >= 1 ? true : false;
+                numericUpDownAbComDataHitCount.Value = KernelWorker.GetSelectedCommandAbilityDataData.HitCount;
                 comboBoxAbComDataElement.SelectedIndex = CommandAbilityData_GetElement();
-                numericUpDownAbComDataStatusAttack.Value = KernelWorker.GetSelectedCommandAbilityData.StatusAttack;
+                numericUpDownAbComDataStatusAttack.Value = KernelWorker.GetSelectedCommandAbilityDataData.StatusAttack;
                 CommandAbilityDataStatusWorker();
 
             }
             catch (Exception Exception)
             {
                 MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+        #endregion
+
+        #region JUNCTION ABILITIES
+
+        private void listBoxAbJun_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadJunctionAbilities(listBoxAbJun.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbJunAP.Value = KernelWorker.GetSelectedJunctionAbilitiesData.AP;
+                checkBoxAbJunFlag1.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x01) >= 1 ? true : false;
+                checkBoxAbJunFlag2.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x02) >= 1 ? true : false;
+                checkBoxAbJunFlag3.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x04) >= 1 ? true : false;
+                checkBoxAbJunFlag4.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x08) >= 1 ? true : false;
+                checkBoxAbJunFlag5.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x10) >= 1 ? true : false;
+                checkBoxAbJunFlag6.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x20) >= 1 ? true : false;
+                checkBoxAbJunFlag7.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x40) >= 1 ? true : false;
+                checkBoxAbJunFlag8.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x80) >= 1 ? true : false;
+                checkBoxAbJunFlag9.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x01) >= 1 ? true : false;
+                checkBoxAbJunFlag10.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x02) >= 1 ? true : false;
+                checkBoxAbJunFlag11.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x04) >= 1 ? true : false;
+                checkBoxAbJunFlag12.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x08) >= 1 ? true : false;
+                checkBoxAbJunFlag13.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x10) >= 1 ? true : false;
+                checkBoxAbJunFlag14.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x20) >= 1 ? true : false;
+                checkBoxAbJunFlag15.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x40) >= 1 ? true : false;
+                checkBoxAbJunFlag16.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x80) >= 1 ? true : false;
+                checkBoxAbJunFlag17.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag3 & 0x01) >= 1 ? true : false;
+                checkBoxAbJunFlag18.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag3 & 0x02) >= 1 ? true : false;
+                checkBoxAbJunFlag19.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag3 & 0x04) >= 1 ? true : false;
+
+            }
+            catch (Exception Exception)
+            {
+                Console.WriteLine(Exception.ToString());
             }
             _loaded = true;
         }
