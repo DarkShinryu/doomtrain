@@ -66,6 +66,9 @@ namespace Doomtrain
         public static int MiscDataOffset = -1;
         public static int OffsetToMiscSelected = -1;
 
+        public static int CommandAbilityDataOffset = -1;
+        public static int OffsetToCommandAbilityDataSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -86,6 +89,7 @@ namespace Doomtrain
         public static SlotsSetsData GetSelectedSlotsSetsData;
         public static DevourData GetSelectedDevourData;
         public static MiscData GetSelectedMiscData;
+        public static CommandAbilityData GetSelectedCommandAbilityData;
 
 
         static string[] _charstable;
@@ -105,7 +109,7 @@ namespace Doomtrain
             BattleItems = 8 << 2,
             NonBattleItems = 9 << 2,
             GFAttacks = 10 << 2,
-            CommandAbility = 11 << 2,
+            CommandAbilityData = 11 << 2,
             JunctionAbilities = 12 << 2,
             CommandAbilities = 13 << 2,
             StatPercentageIncreasingAbilities = 14 << 2,
@@ -460,6 +464,7 @@ namespace Doomtrain
         {
             public byte StatToincrease;
             public byte IncreasementValue;
+            public byte AP;
         }
 
         public struct RenzoFinData
@@ -853,6 +858,21 @@ namespace Doomtrain
             public byte ShotTimerCL4;
         }
 
+        public struct CommandAbilityData
+        {
+            public UInt16 MagicID;
+            public byte AttackType;
+            public byte AttackPower;
+            public byte AttackFlags;
+            public byte HitCount;
+            public Element Element;
+            public byte StatusAttack;
+            public byte Status1;
+            public byte Status2;
+            public byte Status3;
+            public byte Status4;
+            public byte Status5;
+        }
         #endregion
 
 
@@ -1698,9 +1718,12 @@ namespace Doomtrain
             switch (index)
             {
                 case 0:
-                    Kernel[OffsetToStatPercentageAbilitiesSelected + 5] = Convert.ToByte(variable); //stat to increase
+                    Kernel[OffsetToStatPercentageAbilitiesSelected + 4] = Convert.ToByte(variable); //AP
                     return;
                 case 1:
+                    Kernel[OffsetToStatPercentageAbilitiesSelected + 5] = Convert.ToByte(variable); //stat to increase
+                    return;
+                case 2:
                     Kernel[OffsetToStatPercentageAbilitiesSelected + 6] = Convert.ToByte(variable); //increasement value
                     return;
 
@@ -2944,6 +2967,67 @@ namespace Doomtrain
 
         #endregion
 
+        #region COMMAND ABILITY DATA
+
+        public static void UpdateVariable_CommandAbilityData(int index, object variable, byte arg0 = 127)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    UshortToKernel(Convert.ToUInt16(variable), 0, (byte)Mode.Mode_CommandAbilityData); //MagicID
+                    return;
+                case 1:
+                    Kernel[OffsetToCommandAbilityDataSelected + 4] = Convert.ToByte(variable); //Attack type
+                    return;
+                case 2:
+                    Kernel[OffsetToCommandAbilityDataSelected + 5] = Convert.ToByte(variable); //Attack power
+                    return;
+                case 3:
+                    Kernel[OffsetToCommandAbilityDataSelected + 6] = (byte)(Kernel[OffsetToCommandAbilityDataSelected + 6] ^ Convert.ToByte(variable)); //attack flags
+                    return;
+                case 4:
+                    Kernel[OffsetToCommandAbilityDataSelected + 7] = Convert.ToByte(variable); //Hit Count
+                    return;
+                case 5:
+                    Kernel[OffsetToCommandAbilityDataSelected + 8] = Convert.ToByte(variable); //Element
+                    return;
+                case 6:
+                    Kernel[OffsetToCommandAbilityDataSelected + 9] = Convert.ToByte(variable); //Status Attack
+                    return;
+                case 7:
+                    CommandAbilityDataStatusUpdator(arg0, variable); //Status
+                    return;
+
+                default:
+                    return;
+            }
+        }
+        private static void CommandAbilityDataStatusUpdator(byte StatusByteIndex, object variable)
+        {
+            switch (StatusByteIndex)
+            {
+                case 0:
+                    Kernel[OffsetToCommandAbilityDataSelected + 10] = (byte)(Kernel[OffsetToCommandAbilityDataSelected + 10] ^ Convert.ToByte(variable));
+                    return;
+                case 1:
+                    Kernel[OffsetToCommandAbilityDataSelected + 12] = (byte)(Kernel[OffsetToCommandAbilityDataSelected + 12] ^ Convert.ToByte(variable));
+                    return;
+                case 2:
+                    Kernel[OffsetToCommandAbilityDataSelected + 13] = (byte)(Kernel[OffsetToCommandAbilityDataSelected + 13] ^ Convert.ToByte(variable));
+                    return;
+                case 3:
+                    Kernel[OffsetToCommandAbilityDataSelected + 14] = (byte)(Kernel[OffsetToCommandAbilityDataSelected + 14] ^ Convert.ToByte(variable));
+                    return;
+                case 4:
+                    Kernel[OffsetToCommandAbilityDataSelected + 15] = (byte)(Kernel[OffsetToCommandAbilityDataSelected + 15] ^ Convert.ToByte(variable));
+                    return;
+            }
+        }
+
+        #endregion
+
         #endregion
 
 
@@ -2992,6 +3076,9 @@ namespace Doomtrain
                 case (byte)Mode.Mode_BattleItems:
                     Array.Copy(magicIdBytes, 0, Kernel, OffsetToBattleItemsSelected + add, 2);
                     break;
+                case (byte)Mode.Mode_CommandAbilityData:
+                    Array.Copy(magicIdBytes, 0, Kernel, OffsetToCommandAbilityDataSelected + add, 2);
+                    break;
 
                 default:
                     return;
@@ -3010,7 +3097,8 @@ namespace Doomtrain
             Mode_Shot,
             Mode_Duel,
             Mode_Combine,
-            Mode_BattleItems
+            Mode_BattleItems,
+            Mode_CommandAbilityData
         }
 
         #endregion
@@ -3043,6 +3131,7 @@ namespace Doomtrain
             SlotsSetsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.SelphieSlotsSets);
             DevourDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Devour);
             MiscDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Misc);
+            CommandAbilityDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.CommandAbilityData);
         }
 
         #endregion
@@ -3559,7 +3648,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region ABILITIES
+        #region STAT PERCENTAGE ABILITIES
 
         public static void ReadStatPercentageAbilities(int StatPercentageAbilitiesID_List)
         {
@@ -3567,7 +3656,8 @@ namespace Doomtrain
             int selectedStatPercentageAbilitiesOffset = StatPercentageAbilitiesDataOffset + (StatPercentageAbilitiesID_List * 8);
             OffsetToStatPercentageAbilitiesSelected = selectedStatPercentageAbilitiesOffset;
 
-            selectedStatPercentageAbilitiesOffset += 5;
+            selectedStatPercentageAbilitiesOffset += 4;
+            GetSelectedStatPercentageAbilitiesData.AP = Kernel[selectedStatPercentageAbilitiesOffset++];
             GetSelectedStatPercentageAbilitiesData.StatToincrease = Kernel[selectedStatPercentageAbilitiesOffset++];
             GetSelectedStatPercentageAbilitiesData.IncreasementValue = Kernel[selectedStatPercentageAbilitiesOffset++];
         }
@@ -4188,6 +4278,52 @@ namespace Doomtrain
             GetSelectedMiscData.ShotTimerCL2 = Kernel[selectedMiscOffset++];
             GetSelectedMiscData.ShotTimerCL3 = Kernel[selectedMiscOffset++];
             GetSelectedMiscData.ShotTimerCL4 = Kernel[selectedMiscOffset++];
+        }
+
+        #endregion
+
+        #region COMMAND ABILITY DATA
+
+        public static void ReadCommandAbilityData(int CommandAbilityDataID_List)
+        {
+            GetSelectedCommandAbilityData = new CommandAbilityData();
+            int selectedCommandAbilityDataOffset = CommandAbilityDataOffset + (CommandAbilityDataID_List * 16);
+            OffsetToCommandAbilityDataSelected = selectedCommandAbilityDataOffset;
+
+            GetSelectedCommandAbilityData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedCommandAbilityDataOffset));
+            selectedCommandAbilityDataOffset += 4;
+            GetSelectedCommandAbilityData.AttackType = Kernel[selectedCommandAbilityDataOffset++];
+            GetSelectedCommandAbilityData.AttackPower = Kernel[selectedCommandAbilityDataOffset++];
+            GetSelectedCommandAbilityData.AttackFlags = Kernel[selectedCommandAbilityDataOffset++];
+            GetSelectedCommandAbilityData.HitCount = Kernel[selectedCommandAbilityDataOffset++];
+            byte b = Kernel[selectedCommandAbilityDataOffset++];
+            GetSelectedCommandAbilityData.Element =
+                b == (byte)Element.Fire
+                    ? Element.Fire
+                    : b == (byte)Element.Holy
+                        ? Element.Holy
+                        : b == (byte)Element.Ice
+                            ? Element.Ice
+                            : b == (byte)Element.NonElemental
+                                ? Element.NonElemental
+                                : b == (byte)Element.Poison
+                                    ? Element.Poison
+                                    : b == (byte)Element.Thunder
+                                        ? Element.Thunder
+                                        : b == (byte)Element.Water
+                                            ? Element.Water
+                                            : b == (byte)Element.Wind
+                                                ? Element.Wind
+                                                : b == (byte)Element.Earth
+                                                    ? Element.Earth
+                                                    : 0; //Error handler
+            GetSelectedCommandAbilityData.StatusAttack = Kernel[selectedCommandAbilityDataOffset++];
+            GetSelectedCommandAbilityData.Status1 = Kernel[selectedCommandAbilityDataOffset++];
+            selectedCommandAbilityDataOffset += 1;
+            GetSelectedCommandAbilityData.Status2 = Kernel[selectedCommandAbilityDataOffset++];
+            GetSelectedCommandAbilityData.Status3 = Kernel[selectedCommandAbilityDataOffset++];
+            GetSelectedCommandAbilityData.Status4 = Kernel[selectedCommandAbilityDataOffset++];
+            GetSelectedCommandAbilityData.Status5 = Kernel[selectedCommandAbilityDataOffset++];
         }
 
         #endregion

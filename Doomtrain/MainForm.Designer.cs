@@ -187,6 +187,12 @@
             this.labelSlotSetsN = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.labelDuelButton1 = new System.Windows.Forms.Label();
+            this.numericUpDownAbStatsAP = new System.Windows.Forms.NumericUpDown();
+            this.labelAbComDataElement = new System.Windows.Forms.Label();
+            this.labelAbComDataAttackType = new System.Windows.Forms.Label();
+            this.labelAbComDataHitCount = new System.Windows.Forms.Label();
+            this.labelAbComDataAttackPower = new System.Windows.Forms.Label();
+            this.labelAbComDataMagicID = new System.Windows.Forms.Label();
             this.labelDevourStatsIncr = new System.Windows.Forms.Label();
             this.labelDevourHPIncr = new System.Windows.Forms.Label();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -564,6 +570,7 @@
             this.numericUpDownMagicQuezacoltComp = new System.Windows.Forms.NumericUpDown();
             this.listBoxMagic = new System.Windows.Forms.ListBox();
             this.tabPageAbilities = new System.Windows.Forms.TabPage();
+            this.listBoxAbComData = new System.Windows.Forms.ListBox();
             this.tabControlAbilities = new System.Windows.Forms.TabControl();
             this.tabPageAbCharacters = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -576,12 +583,67 @@
             this.labelAbStatsStatToIncrease = new System.Windows.Forms.Label();
             this.labelAbStatsValueTrackBar = new System.Windows.Forms.Label();
             this.trackBarAbStatsIncrementValue = new System.Windows.Forms.TrackBar();
-            this.textBoxAbStatsDescription = new System.Windows.Forms.TextBox();
-            this.textBoxAbStatsName = new System.Windows.Forms.TextBox();
-            this.labelStatsDescription = new System.Windows.Forms.Label();
             this.labelAbStatsIncrementValue = new System.Windows.Forms.Label();
             this.tabPageAbJunction = new System.Windows.Forms.TabPage();
-            this.tabPageAbCommand = new System.Windows.Forms.TabPage();
+            this.tabPageAbComData = new System.Windows.Forms.TabPage();
+            this.groupBoxAbComDataStatus = new System.Windows.Forms.GroupBox();
+            this.checkBoxAbComDataPetrifying = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataDarkness = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataSilence = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataStop = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataConfusion = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataPetrify = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataSlow = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataBerserk = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataSleep = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataInvincible = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataCurse = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataDoom = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataFloat = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataAura = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataDrain = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataSummonGF = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataHasMagic = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataUnk6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataUnk5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataUnk4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataUnk3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataAngelWing = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataVit0 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataBackAttack = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataCharged = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataUnk2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataUnk1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataDefend = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataTriple = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataDouble = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataEject = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataPoison = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataDeath = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataProtect = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataHaste = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataRegen = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataShell = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataReflect = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataUnk7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataZombie = new System.Windows.Forms.CheckBox();
+            this.numericUpDownAbComDataStatusAttack = new System.Windows.Forms.NumericUpDown();
+            this.labelAbComDataStatusAttack = new System.Windows.Forms.Label();
+            this.groupBoxAbComDataFlags = new System.Windows.Forms.GroupBox();
+            this.checkBoxAbComDataFlag4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataFlag1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataFlag5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbComDataFlag7 = new System.Windows.Forms.CheckBox();
+            this.groupBoxAbComDataGeneral = new System.Windows.Forms.GroupBox();
+            this.comboBoxAbComDataElement = new System.Windows.Forms.ComboBox();
+            this.comboBoxAbComDataAttackType = new System.Windows.Forms.ComboBox();
+            this.numericUpDownAbComDataHitCount = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownAbComDataAttackPower = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxAbComDataMagicID = new System.Windows.Forms.ComboBox();
             this.tabPageAbGF = new System.Windows.Forms.TabPage();
             this.tabPageABParty = new System.Windows.Forms.TabPage();
             this.tabPageAbMenu = new System.Windows.Forms.TabPage();
@@ -590,7 +652,7 @@
             this.listBoxAbMenu = new System.Windows.Forms.ListBox();
             this.listBoxAbParty = new System.Windows.Forms.ListBox();
             this.listBoxAbGF = new System.Windows.Forms.ListBox();
-            this.listBoxAbCommand = new System.Windows.Forms.ListBox();
+            this.listBoxAbCom = new System.Windows.Forms.ListBox();
             this.listBoxAbJunction = new System.Windows.Forms.ListBox();
             this.tabPageWeapons = new System.Windows.Forms.TabPage();
             this.groupBoxWeaponsRenzokukenFinishers = new System.Windows.Forms.GroupBox();
@@ -1814,9 +1876,11 @@
             this.labelStatusTimer1Value = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tabPageAbCom = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbStatsAP)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.toolbarStrip.SuspendLayout();
             this.tabPageGFAttacks.SuspendLayout();
@@ -1911,6 +1975,13 @@
             this.tabPageAbStats.SuspendLayout();
             this.groupBoxStatsIncrement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAbStatsIncrementValue)).BeginInit();
+            this.tabPageAbComData.SuspendLayout();
+            this.groupBoxAbComDataStatus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataStatusAttack)).BeginInit();
+            this.groupBoxAbComDataFlags.SuspendLayout();
+            this.groupBoxAbComDataGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataHitCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataAttackPower)).BeginInit();
             this.tabPageWeapons.SuspendLayout();
             this.groupBoxWeaponsRenzokukenFinishers.SuspendLayout();
             this.groupBoxWeaponsGeneral.SuspendLayout();
@@ -3332,11 +3403,11 @@
             this.labelAbStatsName.AutoSize = true;
             this.labelAbStatsName.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelAbStatsName.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbStatsName.Location = new System.Drawing.Point(204, 31);
+            this.labelAbStatsName.Location = new System.Drawing.Point(188, 122);
             this.labelAbStatsName.Name = "labelAbStatsName";
-            this.labelAbStatsName.Size = new System.Drawing.Size(44, 17);
+            this.labelAbStatsName.Size = new System.Drawing.Size(76, 17);
             this.labelAbStatsName.TabIndex = 1;
-            this.labelAbStatsName.Text = "Name";
+            this.labelAbStatsName.Text = "AP Needed";
             this.toolTip1.SetToolTip(this.labelAbStatsName, "Used in damage calculation");
             // 
             // labelWeaponsCharacterID
@@ -5202,6 +5273,80 @@
             this.labelDuelButton1.TabIndex = 3;
             this.labelDuelButton1.Text = "Button 1";
             this.toolTip1.SetToolTip(this.labelDuelButton1, "Decides what animation to play");
+            // 
+            // numericUpDownAbStatsAP
+            // 
+            this.numericUpDownAbStatsAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbStatsAP.Location = new System.Drawing.Point(203, 142);
+            this.numericUpDownAbStatsAP.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbStatsAP.Name = "numericUpDownAbStatsAP";
+            this.numericUpDownAbStatsAP.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbStatsAP.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.numericUpDownAbStatsAP, "Default: 0");
+            // 
+            // labelAbComDataElement
+            // 
+            this.labelAbComDataElement.AutoSize = true;
+            this.labelAbComDataElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbComDataElement.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbComDataElement.Location = new System.Drawing.Point(199, 140);
+            this.labelAbComDataElement.Name = "labelAbComDataElement";
+            this.labelAbComDataElement.Size = new System.Drawing.Size(57, 17);
+            this.labelAbComDataElement.TabIndex = 95;
+            this.labelAbComDataElement.Text = "Element";
+            this.toolTip1.SetToolTip(this.labelAbComDataElement, "The element of the GF attack");
+            // 
+            // labelAbComDataAttackType
+            // 
+            this.labelAbComDataAttackType.AutoSize = true;
+            this.labelAbComDataAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbComDataAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbComDataAttackType.Location = new System.Drawing.Point(116, 83);
+            this.labelAbComDataAttackType.Name = "labelAbComDataAttackType";
+            this.labelAbComDataAttackType.Size = new System.Drawing.Size(79, 17);
+            this.labelAbComDataAttackType.TabIndex = 7;
+            this.labelAbComDataAttackType.Text = "Attack Type";
+            this.toolTip1.SetToolTip(this.labelAbComDataAttackType, "Decides what animation to play");
+            // 
+            // labelAbComDataHitCount
+            // 
+            this.labelAbComDataHitCount.AutoSize = true;
+            this.labelAbComDataHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbComDataHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbComDataHitCount.Location = new System.Drawing.Point(351, 83);
+            this.labelAbComDataHitCount.Name = "labelAbComDataHitCount";
+            this.labelAbComDataHitCount.Size = new System.Drawing.Size(67, 17);
+            this.labelAbComDataHitCount.TabIndex = 0;
+            this.labelAbComDataHitCount.Text = "Hit Count";
+            this.toolTip1.SetToolTip(this.labelAbComDataHitCount, "Number of hits");
+            // 
+            // labelAbComDataAttackPower
+            // 
+            this.labelAbComDataAttackPower.AutoSize = true;
+            this.labelAbComDataAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbComDataAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbComDataAttackPower.Location = new System.Drawing.Point(339, 29);
+            this.labelAbComDataAttackPower.Name = "labelAbComDataAttackPower";
+            this.labelAbComDataAttackPower.Size = new System.Drawing.Size(89, 17);
+            this.labelAbComDataAttackPower.TabIndex = 0;
+            this.labelAbComDataAttackPower.Text = "Attack Power";
+            this.toolTip1.SetToolTip(this.labelAbComDataAttackPower, "Used in damage calculation");
+            // 
+            // labelAbComDataMagicID
+            // 
+            this.labelAbComDataMagicID.AutoSize = true;
+            this.labelAbComDataMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbComDataMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbComDataMagicID.Location = new System.Drawing.Point(127, 29);
+            this.labelAbComDataMagicID.Name = "labelAbComDataMagicID";
+            this.labelAbComDataMagicID.Size = new System.Drawing.Size(61, 17);
+            this.labelAbComDataMagicID.TabIndex = 0;
+            this.labelAbComDataMagicID.Text = "Magic ID";
+            this.toolTip1.SetToolTip(this.labelAbComDataMagicID, "Decides what animation to play");
             // 
             // labelDevourStatsIncr
             // 
@@ -15952,13 +16097,14 @@
             // 
             // tabPageAbilities
             // 
+            this.tabPageAbilities.Controls.Add(this.listBoxAbComData);
             this.tabPageAbilities.Controls.Add(this.tabControlAbilities);
             this.tabPageAbilities.Controls.Add(this.listBoxAbCharacters);
             this.tabPageAbilities.Controls.Add(this.listBoxAbStats);
             this.tabPageAbilities.Controls.Add(this.listBoxAbMenu);
             this.tabPageAbilities.Controls.Add(this.listBoxAbParty);
             this.tabPageAbilities.Controls.Add(this.listBoxAbGF);
-            this.tabPageAbilities.Controls.Add(this.listBoxAbCommand);
+            this.tabPageAbilities.Controls.Add(this.listBoxAbCom);
             this.tabPageAbilities.Controls.Add(this.listBoxAbJunction);
             this.tabPageAbilities.Location = new System.Drawing.Point(4, 34);
             this.tabPageAbilities.Name = "tabPageAbilities";
@@ -15968,12 +16114,38 @@
             this.tabPageAbilities.Text = "Abilities";
             this.tabPageAbilities.UseVisualStyleBackColor = true;
             // 
+            // listBoxAbComData
+            // 
+            this.listBoxAbComData.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbComData.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbComData.FormattingEnabled = true;
+            this.listBoxAbComData.ItemHeight = 17;
+            this.listBoxAbComData.Items.AddRange(new object[] {
+            "Recover",
+            "Revive",
+            "Treatment",
+            "Mad Rush",
+            "Doom",
+            "Absorb",
+            "LV Down",
+            "LV Up",
+            "Kamikaze",
+            "Devour",
+            "Card",
+            "Defend"});
+            this.listBoxAbComData.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbComData.Name = "listBoxAbComData";
+            this.listBoxAbComData.Size = new System.Drawing.Size(156, 769);
+            this.listBoxAbComData.TabIndex = 4;
+            this.listBoxAbComData.SelectedIndexChanged += new System.EventHandler(this.listBoxAbComData_SelectedIndexChanged);
+            // 
             // tabControlAbilities
             // 
             this.tabControlAbilities.Controls.Add(this.tabPageAbCharacters);
             this.tabControlAbilities.Controls.Add(this.tabPageAbStats);
             this.tabControlAbilities.Controls.Add(this.tabPageAbJunction);
-            this.tabControlAbilities.Controls.Add(this.tabPageAbCommand);
+            this.tabControlAbilities.Controls.Add(this.tabPageAbComData);
+            this.tabControlAbilities.Controls.Add(this.tabPageAbCom);
             this.tabControlAbilities.Controls.Add(this.tabPageAbGF);
             this.tabControlAbilities.Controls.Add(this.tabPageABParty);
             this.tabControlAbilities.Controls.Add(this.tabPageAbMenu);
@@ -16053,20 +16225,18 @@
             // groupBoxStatsIncrement
             // 
             this.groupBoxStatsIncrement.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxStatsIncrement.Controls.Add(this.numericUpDownAbStatsAP);
             this.groupBoxStatsIncrement.Controls.Add(this.comboBoxAbStatsStatToIncrease);
             this.groupBoxStatsIncrement.Controls.Add(this.labelAbStatsStatToIncrease);
             this.groupBoxStatsIncrement.Controls.Add(this.labelAbStatsValueTrackBar);
             this.groupBoxStatsIncrement.Controls.Add(this.trackBarAbStatsIncrementValue);
-            this.groupBoxStatsIncrement.Controls.Add(this.textBoxAbStatsDescription);
-            this.groupBoxStatsIncrement.Controls.Add(this.textBoxAbStatsName);
-            this.groupBoxStatsIncrement.Controls.Add(this.labelStatsDescription);
             this.groupBoxStatsIncrement.Controls.Add(this.labelAbStatsIncrementValue);
             this.groupBoxStatsIncrement.Controls.Add(this.labelAbStatsName);
             this.groupBoxStatsIncrement.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxStatsIncrement.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxStatsIncrement.Location = new System.Drawing.Point(6, 6);
             this.groupBoxStatsIncrement.Name = "groupBoxStatsIncrement";
-            this.groupBoxStatsIncrement.Size = new System.Drawing.Size(452, 262);
+            this.groupBoxStatsIncrement.Size = new System.Drawing.Size(452, 179);
             this.groupBoxStatsIncrement.TabIndex = 2;
             this.groupBoxStatsIncrement.TabStop = false;
             this.groupBoxStatsIncrement.Text = "General";
@@ -16085,7 +16255,7 @@
             "EVA",
             "HIT",
             "LUCK"});
-            this.comboBoxAbStatsStatToIncrease.Location = new System.Drawing.Point(30, 202);
+            this.comboBoxAbStatsStatToIncrease.Location = new System.Drawing.Point(30, 64);
             this.comboBoxAbStatsStatToIncrease.Name = "comboBoxAbStatsStatToIncrease";
             this.comboBoxAbStatsStatToIncrease.Size = new System.Drawing.Size(59, 25);
             this.comboBoxAbStatsStatToIncrease.TabIndex = 30;
@@ -16095,7 +16265,7 @@
             this.labelAbStatsStatToIncrease.AutoSize = true;
             this.labelAbStatsStatToIncrease.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelAbStatsStatToIncrease.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbStatsStatToIncrease.Location = new System.Drawing.Point(9, 178);
+            this.labelAbStatsStatToIncrease.Location = new System.Drawing.Point(9, 40);
             this.labelAbStatsStatToIncrease.Name = "labelAbStatsStatToIncrease";
             this.labelAbStatsStatToIncrease.Size = new System.Drawing.Size(102, 17);
             this.labelAbStatsStatToIncrease.TabIndex = 29;
@@ -16107,7 +16277,7 @@
             this.labelAbStatsValueTrackBar.BackColor = System.Drawing.Color.Transparent;
             this.labelAbStatsValueTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAbStatsValueTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbStatsValueTrackBar.Location = new System.Drawing.Point(263, 227);
+            this.labelAbStatsValueTrackBar.Location = new System.Drawing.Point(263, 89);
             this.labelAbStatsValueTrackBar.Name = "labelAbStatsValueTrackBar";
             this.labelAbStatsValueTrackBar.Size = new System.Drawing.Size(28, 19);
             this.labelAbStatsValueTrackBar.TabIndex = 28;
@@ -16117,7 +16287,7 @@
             // trackBarAbStatsIncrementValue
             // 
             this.trackBarAbStatsIncrementValue.LargeChange = 10;
-            this.trackBarAbStatsIncrementValue.Location = new System.Drawing.Point(125, 198);
+            this.trackBarAbStatsIncrementValue.Location = new System.Drawing.Point(125, 60);
             this.trackBarAbStatsIncrementValue.Maximum = 255;
             this.trackBarAbStatsIncrementValue.Name = "trackBarAbStatsIncrementValue";
             this.trackBarAbStatsIncrementValue.Size = new System.Drawing.Size(318, 45);
@@ -16126,39 +16296,12 @@
             this.trackBarAbStatsIncrementValue.Scroll += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
             this.trackBarAbStatsIncrementValue.ValueChanged += new System.EventHandler(this.trackBarStatsIncrementValue_Scroll);
             // 
-            // textBoxAbStatsDescription
-            // 
-            this.textBoxAbStatsDescription.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAbStatsDescription.Location = new System.Drawing.Point(104, 120);
-            this.textBoxAbStatsDescription.Name = "textBoxAbStatsDescription";
-            this.textBoxAbStatsDescription.Size = new System.Drawing.Size(245, 25);
-            this.textBoxAbStatsDescription.TabIndex = 2;
-            // 
-            // textBoxAbStatsName
-            // 
-            this.textBoxAbStatsName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAbStatsName.Location = new System.Drawing.Point(138, 51);
-            this.textBoxAbStatsName.Name = "textBoxAbStatsName";
-            this.textBoxAbStatsName.Size = new System.Drawing.Size(176, 25);
-            this.textBoxAbStatsName.TabIndex = 2;
-            // 
-            // labelStatsDescription
-            // 
-            this.labelStatsDescription.AutoSize = true;
-            this.labelStatsDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelStatsDescription.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelStatsDescription.Location = new System.Drawing.Point(188, 100);
-            this.labelStatsDescription.Name = "labelStatsDescription";
-            this.labelStatsDescription.Size = new System.Drawing.Size(76, 17);
-            this.labelStatsDescription.TabIndex = 1;
-            this.labelStatsDescription.Text = "Description";
-            // 
             // labelAbStatsIncrementValue
             // 
             this.labelAbStatsIncrementValue.AutoSize = true;
             this.labelAbStatsIncrementValue.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelAbStatsIncrementValue.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbStatsIncrementValue.Location = new System.Drawing.Point(230, 178);
+            this.labelAbStatsIncrementValue.Location = new System.Drawing.Point(230, 40);
             this.labelAbStatsIncrementValue.Name = "labelAbStatsIncrementValue";
             this.labelAbStatsIncrementValue.Size = new System.Drawing.Size(94, 17);
             this.labelAbStatsIncrementValue.TabIndex = 1;
@@ -16173,14 +16316,1162 @@
             this.tabPageAbJunction.TabIndex = 1;
             this.tabPageAbJunction.Text = "Junction";
             // 
-            // tabPageAbCommand
+            // tabPageAbComData
             // 
-            this.tabPageAbCommand.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageAbCommand.Location = new System.Drawing.Point(4, 26);
-            this.tabPageAbCommand.Name = "tabPageAbCommand";
-            this.tabPageAbCommand.Size = new System.Drawing.Size(464, 740);
-            this.tabPageAbCommand.TabIndex = 2;
-            this.tabPageAbCommand.Text = "Command";
+            this.tabPageAbComData.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbComData.Controls.Add(this.groupBoxAbComDataStatus);
+            this.tabPageAbComData.Controls.Add(this.groupBoxAbComDataFlags);
+            this.tabPageAbComData.Controls.Add(this.groupBoxAbComDataGeneral);
+            this.tabPageAbComData.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbComData.Name = "tabPageAbComData";
+            this.tabPageAbComData.Size = new System.Drawing.Size(464, 740);
+            this.tabPageAbComData.TabIndex = 2;
+            this.tabPageAbComData.Text = "Command Data";
+            // 
+            // groupBoxAbComDataStatus
+            // 
+            this.groupBoxAbComDataStatus.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataPetrifying);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataDarkness);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataSilence);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataStop);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataConfusion);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataPetrify);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataSlow);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataBerserk);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataSleep);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataInvincible);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataCurse);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataDoom);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataFloat);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataAura);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataDrain);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataSummonGF);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataHasMagic);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataUnk6);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataUnk5);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataUnk4);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataUnk3);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataAngelWing);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataVit0);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataBackAttack);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataCharged);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataUnk2);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataUnk1);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataDefend);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataTriple);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataDouble);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataEject);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataPoison);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataDeath);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataProtect);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataHaste);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataRegen);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataShell);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataReflect);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataUnk7);
+            this.groupBoxAbComDataStatus.Controls.Add(this.checkBoxAbComDataZombie);
+            this.groupBoxAbComDataStatus.Controls.Add(this.numericUpDownAbComDataStatusAttack);
+            this.groupBoxAbComDataStatus.Controls.Add(this.labelAbComDataStatusAttack);
+            this.groupBoxAbComDataStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbComDataStatus.ForeColor = System.Drawing.Color.DarkViolet;
+            this.groupBoxAbComDataStatus.Location = new System.Drawing.Point(3, 216);
+            this.groupBoxAbComDataStatus.Name = "groupBoxAbComDataStatus";
+            this.groupBoxAbComDataStatus.Size = new System.Drawing.Size(455, 286);
+            this.groupBoxAbComDataStatus.TabIndex = 128;
+            this.groupBoxAbComDataStatus.TabStop = false;
+            this.groupBoxAbComDataStatus.Text = "Status Attack";
+            // 
+            // checkBoxAbComDataPetrifying
+            // 
+            this.checkBoxAbComDataPetrifying.AutoSize = true;
+            this.checkBoxAbComDataPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataPetrifying.Location = new System.Drawing.Point(285, 136);
+            this.checkBoxAbComDataPetrifying.Name = "checkBoxAbComDataPetrifying";
+            this.checkBoxAbComDataPetrifying.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxAbComDataPetrifying.TabIndex = 115;
+            this.checkBoxAbComDataPetrifying.Text = "Petrifying";
+            this.checkBoxAbComDataPetrifying.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataDarkness
+            // 
+            this.checkBoxAbComDataDarkness.AutoSize = true;
+            this.checkBoxAbComDataDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataDarkness.Location = new System.Drawing.Point(10, 261);
+            this.checkBoxAbComDataDarkness.Name = "checkBoxAbComDataDarkness";
+            this.checkBoxAbComDataDarkness.Size = new System.Drawing.Size(73, 19);
+            this.checkBoxAbComDataDarkness.TabIndex = 138;
+            this.checkBoxAbComDataDarkness.Text = "Darkness";
+            this.checkBoxAbComDataDarkness.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataSilence
+            // 
+            this.checkBoxAbComDataSilence.AutoSize = true;
+            this.checkBoxAbComDataSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataSilence.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataSilence.Location = new System.Drawing.Point(102, 261);
+            this.checkBoxAbComDataSilence.Name = "checkBoxAbComDataSilence";
+            this.checkBoxAbComDataSilence.Size = new System.Drawing.Size(63, 19);
+            this.checkBoxAbComDataSilence.TabIndex = 139;
+            this.checkBoxAbComDataSilence.Text = "Silence";
+            this.checkBoxAbComDataSilence.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataStop
+            // 
+            this.checkBoxAbComDataStop.AutoSize = true;
+            this.checkBoxAbComDataStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataStop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataStop.Location = new System.Drawing.Point(285, 86);
+            this.checkBoxAbComDataStop.Name = "checkBoxAbComDataStop";
+            this.checkBoxAbComDataStop.Size = new System.Drawing.Size(50, 19);
+            this.checkBoxAbComDataStop.TabIndex = 106;
+            this.checkBoxAbComDataStop.Text = "Stop";
+            this.checkBoxAbComDataStop.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataConfusion
+            // 
+            this.checkBoxAbComDataConfusion.AutoSize = true;
+            this.checkBoxAbComDataConfusion.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxAbComDataConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataConfusion.Location = new System.Drawing.Point(373, 136);
+            this.checkBoxAbComDataConfusion.Name = "checkBoxAbComDataConfusion";
+            this.checkBoxAbComDataConfusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxAbComDataConfusion.TabIndex = 117;
+            this.checkBoxAbComDataConfusion.Text = "Confusion";
+            this.checkBoxAbComDataConfusion.UseVisualStyleBackColor = false;
+            // 
+            // checkBoxAbComDataPetrify
+            // 
+            this.checkBoxAbComDataPetrify.AutoSize = true;
+            this.checkBoxAbComDataPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataPetrify.Location = new System.Drawing.Point(373, 236);
+            this.checkBoxAbComDataPetrify.Name = "checkBoxAbComDataPetrify";
+            this.checkBoxAbComDataPetrify.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxAbComDataPetrify.TabIndex = 137;
+            this.checkBoxAbComDataPetrify.Text = "Petrify";
+            this.checkBoxAbComDataPetrify.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataSlow
+            // 
+            this.checkBoxAbComDataSlow.AutoSize = true;
+            this.checkBoxAbComDataSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataSlow.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataSlow.Location = new System.Drawing.Point(196, 86);
+            this.checkBoxAbComDataSlow.Name = "checkBoxAbComDataSlow";
+            this.checkBoxAbComDataSlow.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxAbComDataSlow.TabIndex = 105;
+            this.checkBoxAbComDataSlow.Text = "Slow";
+            this.checkBoxAbComDataSlow.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataBerserk
+            // 
+            this.checkBoxAbComDataBerserk.AutoSize = true;
+            this.checkBoxAbComDataBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataBerserk.Location = new System.Drawing.Point(196, 261);
+            this.checkBoxAbComDataBerserk.Name = "checkBoxAbComDataBerserk";
+            this.checkBoxAbComDataBerserk.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxAbComDataBerserk.TabIndex = 140;
+            this.checkBoxAbComDataBerserk.Text = "Berserk";
+            this.checkBoxAbComDataBerserk.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataSleep
+            // 
+            this.checkBoxAbComDataSleep.AutoSize = true;
+            this.checkBoxAbComDataSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataSleep.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataSleep.Location = new System.Drawing.Point(10, 86);
+            this.checkBoxAbComDataSleep.Name = "checkBoxAbComDataSleep";
+            this.checkBoxAbComDataSleep.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxAbComDataSleep.TabIndex = 103;
+            this.checkBoxAbComDataSleep.Text = "Sleep";
+            this.checkBoxAbComDataSleep.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataInvincible
+            // 
+            this.checkBoxAbComDataInvincible.AutoSize = true;
+            this.checkBoxAbComDataInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataInvincible.Location = new System.Drawing.Point(102, 136);
+            this.checkBoxAbComDataInvincible.Name = "checkBoxAbComDataInvincible";
+            this.checkBoxAbComDataInvincible.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxAbComDataInvincible.TabIndex = 114;
+            this.checkBoxAbComDataInvincible.Text = "Invincible";
+            this.checkBoxAbComDataInvincible.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataCurse
+            // 
+            this.checkBoxAbComDataCurse.AutoSize = true;
+            this.checkBoxAbComDataCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataCurse.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataCurse.Location = new System.Drawing.Point(373, 111);
+            this.checkBoxAbComDataCurse.Name = "checkBoxAbComDataCurse";
+            this.checkBoxAbComDataCurse.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxAbComDataCurse.TabIndex = 112;
+            this.checkBoxAbComDataCurse.Text = "Curse";
+            this.checkBoxAbComDataCurse.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataDoom
+            // 
+            this.checkBoxAbComDataDoom.AutoSize = true;
+            this.checkBoxAbComDataDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataDoom.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataDoom.Location = new System.Drawing.Point(10, 136);
+            this.checkBoxAbComDataDoom.Name = "checkBoxAbComDataDoom";
+            this.checkBoxAbComDataDoom.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxAbComDataDoom.TabIndex = 113;
+            this.checkBoxAbComDataDoom.Text = "Doom";
+            this.checkBoxAbComDataDoom.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataFloat
+            // 
+            this.checkBoxAbComDataFloat.AutoSize = true;
+            this.checkBoxAbComDataFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataFloat.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataFloat.Location = new System.Drawing.Point(196, 136);
+            this.checkBoxAbComDataFloat.Name = "checkBoxAbComDataFloat";
+            this.checkBoxAbComDataFloat.Size = new System.Drawing.Size(52, 19);
+            this.checkBoxAbComDataFloat.TabIndex = 116;
+            this.checkBoxAbComDataFloat.Text = "Float";
+            this.checkBoxAbComDataFloat.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataAura
+            // 
+            this.checkBoxAbComDataAura.AutoSize = true;
+            this.checkBoxAbComDataAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataAura.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataAura.Location = new System.Drawing.Point(285, 111);
+            this.checkBoxAbComDataAura.Name = "checkBoxAbComDataAura";
+            this.checkBoxAbComDataAura.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxAbComDataAura.TabIndex = 111;
+            this.checkBoxAbComDataAura.Text = "Aura";
+            this.checkBoxAbComDataAura.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataDrain
+            // 
+            this.checkBoxAbComDataDrain.AutoSize = true;
+            this.checkBoxAbComDataDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataDrain.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataDrain.Location = new System.Drawing.Point(10, 161);
+            this.checkBoxAbComDataDrain.Name = "checkBoxAbComDataDrain";
+            this.checkBoxAbComDataDrain.Size = new System.Drawing.Size(54, 19);
+            this.checkBoxAbComDataDrain.TabIndex = 118;
+            this.checkBoxAbComDataDrain.Text = "Drain";
+            this.checkBoxAbComDataDrain.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataSummonGF
+            // 
+            this.checkBoxAbComDataSummonGF.AutoSize = true;
+            this.checkBoxAbComDataSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataSummonGF.Location = new System.Drawing.Point(102, 236);
+            this.checkBoxAbComDataSummonGF.Name = "checkBoxAbComDataSummonGF";
+            this.checkBoxAbComDataSummonGF.Size = new System.Drawing.Size(92, 19);
+            this.checkBoxAbComDataSummonGF.TabIndex = 133;
+            this.checkBoxAbComDataSummonGF.Text = "Summon GF";
+            this.checkBoxAbComDataSummonGF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataHasMagic
+            // 
+            this.checkBoxAbComDataHasMagic.AutoSize = true;
+            this.checkBoxAbComDataHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataHasMagic.Location = new System.Drawing.Point(10, 236);
+            this.checkBoxAbComDataHasMagic.Name = "checkBoxAbComDataHasMagic";
+            this.checkBoxAbComDataHasMagic.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxAbComDataHasMagic.TabIndex = 132;
+            this.checkBoxAbComDataHasMagic.Text = "Has Magic";
+            this.checkBoxAbComDataHasMagic.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataUnk6
+            // 
+            this.checkBoxAbComDataUnk6.AutoSize = true;
+            this.checkBoxAbComDataUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataUnk6.Location = new System.Drawing.Point(373, 211);
+            this.checkBoxAbComDataUnk6.Name = "checkBoxAbComDataUnk6";
+            this.checkBoxAbComDataUnk6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbComDataUnk6.TabIndex = 131;
+            this.checkBoxAbComDataUnk6.Text = "???";
+            this.checkBoxAbComDataUnk6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataUnk5
+            // 
+            this.checkBoxAbComDataUnk5.AutoSize = true;
+            this.checkBoxAbComDataUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataUnk5.Location = new System.Drawing.Point(285, 211);
+            this.checkBoxAbComDataUnk5.Name = "checkBoxAbComDataUnk5";
+            this.checkBoxAbComDataUnk5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbComDataUnk5.TabIndex = 130;
+            this.checkBoxAbComDataUnk5.Text = "???";
+            this.checkBoxAbComDataUnk5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataUnk4
+            // 
+            this.checkBoxAbComDataUnk4.AutoSize = true;
+            this.checkBoxAbComDataUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataUnk4.Location = new System.Drawing.Point(196, 211);
+            this.checkBoxAbComDataUnk4.Name = "checkBoxAbComDataUnk4";
+            this.checkBoxAbComDataUnk4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbComDataUnk4.TabIndex = 127;
+            this.checkBoxAbComDataUnk4.Text = "???";
+            this.checkBoxAbComDataUnk4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataUnk3
+            // 
+            this.checkBoxAbComDataUnk3.AutoSize = true;
+            this.checkBoxAbComDataUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataUnk3.Location = new System.Drawing.Point(102, 211);
+            this.checkBoxAbComDataUnk3.Name = "checkBoxAbComDataUnk3";
+            this.checkBoxAbComDataUnk3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbComDataUnk3.TabIndex = 129;
+            this.checkBoxAbComDataUnk3.Text = "???";
+            this.checkBoxAbComDataUnk3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataAngelWing
+            // 
+            this.checkBoxAbComDataAngelWing.AutoSize = true;
+            this.checkBoxAbComDataAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataAngelWing.Location = new System.Drawing.Point(10, 211);
+            this.checkBoxAbComDataAngelWing.Name = "checkBoxAbComDataAngelWing";
+            this.checkBoxAbComDataAngelWing.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxAbComDataAngelWing.TabIndex = 128;
+            this.checkBoxAbComDataAngelWing.Text = "Angel Wing";
+            this.checkBoxAbComDataAngelWing.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataVit0
+            // 
+            this.checkBoxAbComDataVit0.AutoSize = true;
+            this.checkBoxAbComDataVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataVit0.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataVit0.Location = new System.Drawing.Point(373, 186);
+            this.checkBoxAbComDataVit0.Name = "checkBoxAbComDataVit0";
+            this.checkBoxAbComDataVit0.Size = new System.Drawing.Size(46, 19);
+            this.checkBoxAbComDataVit0.TabIndex = 134;
+            this.checkBoxAbComDataVit0.Text = "Vit0";
+            this.checkBoxAbComDataVit0.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataBackAttack
+            // 
+            this.checkBoxAbComDataBackAttack.AutoSize = true;
+            this.checkBoxAbComDataBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataBackAttack.Location = new System.Drawing.Point(285, 186);
+            this.checkBoxAbComDataBackAttack.Name = "checkBoxAbComDataBackAttack";
+            this.checkBoxAbComDataBackAttack.Size = new System.Drawing.Size(88, 19);
+            this.checkBoxAbComDataBackAttack.TabIndex = 126;
+            this.checkBoxAbComDataBackAttack.Text = "Back Attack";
+            this.checkBoxAbComDataBackAttack.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataCharged
+            // 
+            this.checkBoxAbComDataCharged.AutoSize = true;
+            this.checkBoxAbComDataCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataCharged.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataCharged.Location = new System.Drawing.Point(196, 186);
+            this.checkBoxAbComDataCharged.Name = "checkBoxAbComDataCharged";
+            this.checkBoxAbComDataCharged.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxAbComDataCharged.TabIndex = 122;
+            this.checkBoxAbComDataCharged.Text = "Charged";
+            this.checkBoxAbComDataCharged.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataUnk2
+            // 
+            this.checkBoxAbComDataUnk2.AutoSize = true;
+            this.checkBoxAbComDataUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataUnk2.Location = new System.Drawing.Point(102, 186);
+            this.checkBoxAbComDataUnk2.Name = "checkBoxAbComDataUnk2";
+            this.checkBoxAbComDataUnk2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbComDataUnk2.TabIndex = 125;
+            this.checkBoxAbComDataUnk2.Text = "???";
+            this.checkBoxAbComDataUnk2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataUnk1
+            // 
+            this.checkBoxAbComDataUnk1.AutoSize = true;
+            this.checkBoxAbComDataUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataUnk1.Location = new System.Drawing.Point(10, 186);
+            this.checkBoxAbComDataUnk1.Name = "checkBoxAbComDataUnk1";
+            this.checkBoxAbComDataUnk1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbComDataUnk1.TabIndex = 124;
+            this.checkBoxAbComDataUnk1.Text = "???";
+            this.checkBoxAbComDataUnk1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataDefend
+            // 
+            this.checkBoxAbComDataDefend.AutoSize = true;
+            this.checkBoxAbComDataDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataDefend.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataDefend.Location = new System.Drawing.Point(373, 161);
+            this.checkBoxAbComDataDefend.Name = "checkBoxAbComDataDefend";
+            this.checkBoxAbComDataDefend.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxAbComDataDefend.TabIndex = 123;
+            this.checkBoxAbComDataDefend.Text = "Defend";
+            this.checkBoxAbComDataDefend.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataTriple
+            // 
+            this.checkBoxAbComDataTriple.AutoSize = true;
+            this.checkBoxAbComDataTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataTriple.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataTriple.Location = new System.Drawing.Point(285, 161);
+            this.checkBoxAbComDataTriple.Name = "checkBoxAbComDataTriple";
+            this.checkBoxAbComDataTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxAbComDataTriple.TabIndex = 121;
+            this.checkBoxAbComDataTriple.Text = "Triple";
+            this.checkBoxAbComDataTriple.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataDouble
+            // 
+            this.checkBoxAbComDataDouble.AutoSize = true;
+            this.checkBoxAbComDataDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataDouble.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataDouble.Location = new System.Drawing.Point(196, 161);
+            this.checkBoxAbComDataDouble.Name = "checkBoxAbComDataDouble";
+            this.checkBoxAbComDataDouble.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxAbComDataDouble.TabIndex = 120;
+            this.checkBoxAbComDataDouble.Text = "Double";
+            this.checkBoxAbComDataDouble.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataEject
+            // 
+            this.checkBoxAbComDataEject.AutoSize = true;
+            this.checkBoxAbComDataEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataEject.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataEject.Location = new System.Drawing.Point(102, 161);
+            this.checkBoxAbComDataEject.Name = "checkBoxAbComDataEject";
+            this.checkBoxAbComDataEject.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxAbComDataEject.TabIndex = 119;
+            this.checkBoxAbComDataEject.Text = "Eject";
+            this.checkBoxAbComDataEject.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataPoison
+            // 
+            this.checkBoxAbComDataPoison.AutoSize = true;
+            this.checkBoxAbComDataPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataPoison.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataPoison.Location = new System.Drawing.Point(285, 236);
+            this.checkBoxAbComDataPoison.Name = "checkBoxAbComDataPoison";
+            this.checkBoxAbComDataPoison.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxAbComDataPoison.TabIndex = 136;
+            this.checkBoxAbComDataPoison.Text = "Poison";
+            this.checkBoxAbComDataPoison.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataDeath
+            // 
+            this.checkBoxAbComDataDeath.AutoSize = true;
+            this.checkBoxAbComDataDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataDeath.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataDeath.Location = new System.Drawing.Point(196, 236);
+            this.checkBoxAbComDataDeath.Name = "checkBoxAbComDataDeath";
+            this.checkBoxAbComDataDeath.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxAbComDataDeath.TabIndex = 135;
+            this.checkBoxAbComDataDeath.Text = "Death";
+            this.checkBoxAbComDataDeath.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataProtect
+            // 
+            this.checkBoxAbComDataProtect.AutoSize = true;
+            this.checkBoxAbComDataProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataProtect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataProtect.Location = new System.Drawing.Point(10, 111);
+            this.checkBoxAbComDataProtect.Name = "checkBoxAbComDataProtect";
+            this.checkBoxAbComDataProtect.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxAbComDataProtect.TabIndex = 108;
+            this.checkBoxAbComDataProtect.Text = "Protect";
+            this.checkBoxAbComDataProtect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataHaste
+            // 
+            this.checkBoxAbComDataHaste.AutoSize = true;
+            this.checkBoxAbComDataHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataHaste.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataHaste.Location = new System.Drawing.Point(102, 86);
+            this.checkBoxAbComDataHaste.Name = "checkBoxAbComDataHaste";
+            this.checkBoxAbComDataHaste.Size = new System.Drawing.Size(56, 19);
+            this.checkBoxAbComDataHaste.TabIndex = 104;
+            this.checkBoxAbComDataHaste.Text = "Haste";
+            this.checkBoxAbComDataHaste.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataRegen
+            // 
+            this.checkBoxAbComDataRegen.AutoSize = true;
+            this.checkBoxAbComDataRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataRegen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataRegen.Location = new System.Drawing.Point(373, 86);
+            this.checkBoxAbComDataRegen.Name = "checkBoxAbComDataRegen";
+            this.checkBoxAbComDataRegen.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxAbComDataRegen.TabIndex = 107;
+            this.checkBoxAbComDataRegen.Text = "Regen";
+            this.checkBoxAbComDataRegen.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataShell
+            // 
+            this.checkBoxAbComDataShell.AutoSize = true;
+            this.checkBoxAbComDataShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataShell.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataShell.Location = new System.Drawing.Point(102, 111);
+            this.checkBoxAbComDataShell.Name = "checkBoxAbComDataShell";
+            this.checkBoxAbComDataShell.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxAbComDataShell.TabIndex = 109;
+            this.checkBoxAbComDataShell.Text = "Shell";
+            this.checkBoxAbComDataShell.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataReflect
+            // 
+            this.checkBoxAbComDataReflect.AutoSize = true;
+            this.checkBoxAbComDataReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataReflect.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataReflect.Location = new System.Drawing.Point(196, 111);
+            this.checkBoxAbComDataReflect.Name = "checkBoxAbComDataReflect";
+            this.checkBoxAbComDataReflect.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxAbComDataReflect.TabIndex = 110;
+            this.checkBoxAbComDataReflect.Text = "Reflect";
+            this.checkBoxAbComDataReflect.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataUnk7
+            // 
+            this.checkBoxAbComDataUnk7.AutoSize = true;
+            this.checkBoxAbComDataUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataUnk7.Location = new System.Drawing.Point(373, 261);
+            this.checkBoxAbComDataUnk7.Name = "checkBoxAbComDataUnk7";
+            this.checkBoxAbComDataUnk7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbComDataUnk7.TabIndex = 141;
+            this.checkBoxAbComDataUnk7.Text = "???";
+            this.checkBoxAbComDataUnk7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataZombie
+            // 
+            this.checkBoxAbComDataZombie.AutoSize = true;
+            this.checkBoxAbComDataZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataZombie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataZombie.Location = new System.Drawing.Point(285, 261);
+            this.checkBoxAbComDataZombie.Name = "checkBoxAbComDataZombie";
+            this.checkBoxAbComDataZombie.Size = new System.Drawing.Size(67, 19);
+            this.checkBoxAbComDataZombie.TabIndex = 142;
+            this.checkBoxAbComDataZombie.Text = "Zombie";
+            this.checkBoxAbComDataZombie.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownAbComDataStatusAttack
+            // 
+            this.numericUpDownAbComDataStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbComDataStatusAttack.Location = new System.Drawing.Point(209, 46);
+            this.numericUpDownAbComDataStatusAttack.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbComDataStatusAttack.Name = "numericUpDownAbComDataStatusAttack";
+            this.numericUpDownAbComDataStatusAttack.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbComDataStatusAttack.TabIndex = 91;
+            // 
+            // labelAbComDataStatusAttack
+            // 
+            this.labelAbComDataStatusAttack.AutoSize = true;
+            this.labelAbComDataStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbComDataStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbComDataStatusAttack.Location = new System.Drawing.Point(188, 26);
+            this.labelAbComDataStatusAttack.Name = "labelAbComDataStatusAttack";
+            this.labelAbComDataStatusAttack.Size = new System.Drawing.Size(89, 17);
+            this.labelAbComDataStatusAttack.TabIndex = 90;
+            this.labelAbComDataStatusAttack.Text = "Status Attack";
+            // 
+            // groupBoxAbComDataFlags
+            // 
+            this.groupBoxAbComDataFlags.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbComDataFlags.Controls.Add(this.checkBoxAbComDataFlag4);
+            this.groupBoxAbComDataFlags.Controls.Add(this.checkBoxAbComDataFlag8);
+            this.groupBoxAbComDataFlags.Controls.Add(this.checkBoxAbComDataFlag3);
+            this.groupBoxAbComDataFlags.Controls.Add(this.checkBoxAbComDataFlag6);
+            this.groupBoxAbComDataFlags.Controls.Add(this.checkBoxAbComDataFlag1);
+            this.groupBoxAbComDataFlags.Controls.Add(this.checkBoxAbComDataFlag5);
+            this.groupBoxAbComDataFlags.Controls.Add(this.checkBoxAbComDataFlag2);
+            this.groupBoxAbComDataFlags.Controls.Add(this.checkBoxAbComDataFlag7);
+            this.groupBoxAbComDataFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbComDataFlags.ForeColor = System.Drawing.Color.Sienna;
+            this.groupBoxAbComDataFlags.Location = new System.Drawing.Point(3, 508);
+            this.groupBoxAbComDataFlags.Name = "groupBoxAbComDataFlags";
+            this.groupBoxAbComDataFlags.Size = new System.Drawing.Size(455, 93);
+            this.groupBoxAbComDataFlags.TabIndex = 127;
+            this.groupBoxAbComDataFlags.TabStop = false;
+            this.groupBoxAbComDataFlags.Text = "Attack Flags";
+            // 
+            // checkBoxAbComDataFlag4
+            // 
+            this.checkBoxAbComDataFlag4.AutoSize = true;
+            this.checkBoxAbComDataFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataFlag4.Location = new System.Drawing.Point(305, 38);
+            this.checkBoxAbComDataFlag4.Name = "checkBoxAbComDataFlag4";
+            this.checkBoxAbComDataFlag4.Size = new System.Drawing.Size(132, 19);
+            this.checkBoxAbComDataFlag4.TabIndex = 48;
+            this.checkBoxAbComDataFlag4.Text = "Break Damage Limit";
+            this.checkBoxAbComDataFlag4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataFlag8
+            // 
+            this.checkBoxAbComDataFlag8.AutoSize = true;
+            this.checkBoxAbComDataFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataFlag8.Location = new System.Drawing.Point(305, 63);
+            this.checkBoxAbComDataFlag8.Name = "checkBoxAbComDataFlag8";
+            this.checkBoxAbComDataFlag8.Size = new System.Drawing.Size(65, 19);
+            this.checkBoxAbComDataFlag8.TabIndex = 52;
+            this.checkBoxAbComDataFlag8.Text = "Revive?";
+            this.checkBoxAbComDataFlag8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataFlag3
+            // 
+            this.checkBoxAbComDataFlag3.AutoSize = true;
+            this.checkBoxAbComDataFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataFlag3.Location = new System.Drawing.Point(220, 38);
+            this.checkBoxAbComDataFlag3.Name = "checkBoxAbComDataFlag3";
+            this.checkBoxAbComDataFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbComDataFlag3.TabIndex = 47;
+            this.checkBoxAbComDataFlag3.Text = "???";
+            this.checkBoxAbComDataFlag3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataFlag6
+            // 
+            this.checkBoxAbComDataFlag6.AutoSize = true;
+            this.checkBoxAbComDataFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataFlag6.Location = new System.Drawing.Point(135, 63);
+            this.checkBoxAbComDataFlag6.Name = "checkBoxAbComDataFlag6";
+            this.checkBoxAbComDataFlag6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbComDataFlag6.TabIndex = 50;
+            this.checkBoxAbComDataFlag6.Text = "???";
+            this.checkBoxAbComDataFlag6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataFlag1
+            // 
+            this.checkBoxAbComDataFlag1.AutoSize = true;
+            this.checkBoxAbComDataFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataFlag1.Location = new System.Drawing.Point(27, 38);
+            this.checkBoxAbComDataFlag1.Name = "checkBoxAbComDataFlag1";
+            this.checkBoxAbComDataFlag1.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxAbComDataFlag1.TabIndex = 45;
+            this.checkBoxAbComDataFlag1.Text = "Shelled";
+            this.checkBoxAbComDataFlag1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataFlag5
+            // 
+            this.checkBoxAbComDataFlag5.AutoSize = true;
+            this.checkBoxAbComDataFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataFlag5.Location = new System.Drawing.Point(27, 63);
+            this.checkBoxAbComDataFlag5.Name = "checkBoxAbComDataFlag5";
+            this.checkBoxAbComDataFlag5.Size = new System.Drawing.Size(75, 19);
+            this.checkBoxAbComDataFlag5.TabIndex = 49;
+            this.checkBoxAbComDataFlag5.Text = "Reflected";
+            this.checkBoxAbComDataFlag5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataFlag2
+            // 
+            this.checkBoxAbComDataFlag2.AutoSize = true;
+            this.checkBoxAbComDataFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataFlag2.Location = new System.Drawing.Point(135, 38);
+            this.checkBoxAbComDataFlag2.Name = "checkBoxAbComDataFlag2";
+            this.checkBoxAbComDataFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbComDataFlag2.TabIndex = 46;
+            this.checkBoxAbComDataFlag2.Text = "???";
+            this.checkBoxAbComDataFlag2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbComDataFlag7
+            // 
+            this.checkBoxAbComDataFlag7.AutoSize = true;
+            this.checkBoxAbComDataFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbComDataFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbComDataFlag7.Location = new System.Drawing.Point(220, 63);
+            this.checkBoxAbComDataFlag7.Name = "checkBoxAbComDataFlag7";
+            this.checkBoxAbComDataFlag7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbComDataFlag7.TabIndex = 51;
+            this.checkBoxAbComDataFlag7.Text = "???";
+            this.checkBoxAbComDataFlag7.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxAbComDataGeneral
+            // 
+            this.groupBoxAbComDataGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbComDataGeneral.Controls.Add(this.comboBoxAbComDataElement);
+            this.groupBoxAbComDataGeneral.Controls.Add(this.labelAbComDataElement);
+            this.groupBoxAbComDataGeneral.Controls.Add(this.comboBoxAbComDataAttackType);
+            this.groupBoxAbComDataGeneral.Controls.Add(this.labelAbComDataAttackType);
+            this.groupBoxAbComDataGeneral.Controls.Add(this.numericUpDownAbComDataHitCount);
+            this.groupBoxAbComDataGeneral.Controls.Add(this.numericUpDownAbComDataAttackPower);
+            this.groupBoxAbComDataGeneral.Controls.Add(this.comboBoxAbComDataMagicID);
+            this.groupBoxAbComDataGeneral.Controls.Add(this.labelAbComDataHitCount);
+            this.groupBoxAbComDataGeneral.Controls.Add(this.labelAbComDataAttackPower);
+            this.groupBoxAbComDataGeneral.Controls.Add(this.labelAbComDataMagicID);
+            this.groupBoxAbComDataGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbComDataGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxAbComDataGeneral.Location = new System.Drawing.Point(3, 6);
+            this.groupBoxAbComDataGeneral.Name = "groupBoxAbComDataGeneral";
+            this.groupBoxAbComDataGeneral.Size = new System.Drawing.Size(455, 204);
+            this.groupBoxAbComDataGeneral.TabIndex = 126;
+            this.groupBoxAbComDataGeneral.TabStop = false;
+            this.groupBoxAbComDataGeneral.Text = "General";
+            // 
+            // comboBoxAbComDataElement
+            // 
+            this.comboBoxAbComDataElement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAbComDataElement.FormattingEnabled = true;
+            this.comboBoxAbComDataElement.Items.AddRange(new object[] {
+            "Fire",
+            "Ice",
+            "Thunder",
+            "Earth",
+            "Poison",
+            "Wind",
+            "Water",
+            "Holy",
+            "Non-Elemental"});
+            this.comboBoxAbComDataElement.Location = new System.Drawing.Point(172, 160);
+            this.comboBoxAbComDataElement.Name = "comboBoxAbComDataElement";
+            this.comboBoxAbComDataElement.Size = new System.Drawing.Size(110, 25);
+            this.comboBoxAbComDataElement.TabIndex = 93;
+            // 
+            // comboBoxAbComDataAttackType
+            // 
+            this.comboBoxAbComDataAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAbComDataAttackType.FormattingEnabled = true;
+            this.comboBoxAbComDataAttackType.Items.AddRange(new object[] {
+            "None",
+            "Basic Attack",
+            "Magic Attack",
+            "Curative Magic",
+            "Curative Item",
+            "Revive",
+            "Revive At Full HP",
+            "% Damage",
+            "Demi",
+            "Renzokuken Finisher",
+            "Squall Gunblade Attack",
+            "GF",
+            "Scan",
+            "LV Down",
+            "Summon Item?",
+            "Ignore SPR",
+            "LV Up",
+            "Card",
+            "Kamikaze",
+            "Devour",
+            "Diablos Gravity Attack",
+            "",
+            "Mega Spark/Mega Flare",
+            "Angelo Search",
+            "Moogle Dance",
+            "White Wind (Quistis)",
+            "LV5 Death/LV? Death",
+            "Fixed Damage",
+            "Corona/Hell\'s Judgement",
+            "Cactuar Summon",
+            "",
+            "",
+            "Give Percentage HP",
+            "",
+            "Everyone\'s Grudge",
+            "Excalipoor",
+            "Terra Break/Great Attractor"});
+            this.comboBoxAbComDataAttackType.Location = new System.Drawing.Point(25, 103);
+            this.comboBoxAbComDataAttackType.Name = "comboBoxAbComDataAttackType";
+            this.comboBoxAbComDataAttackType.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxAbComDataAttackType.TabIndex = 8;
+            // 
+            // numericUpDownAbComDataHitCount
+            // 
+            this.numericUpDownAbComDataHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbComDataHitCount.Location = new System.Drawing.Point(361, 103);
+            this.numericUpDownAbComDataHitCount.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbComDataHitCount.Name = "numericUpDownAbComDataHitCount";
+            this.numericUpDownAbComDataHitCount.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbComDataHitCount.TabIndex = 6;
+            // 
+            // numericUpDownAbComDataAttackPower
+            // 
+            this.numericUpDownAbComDataAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbComDataAttackPower.Location = new System.Drawing.Point(361, 49);
+            this.numericUpDownAbComDataAttackPower.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbComDataAttackPower.Name = "numericUpDownAbComDataAttackPower";
+            this.numericUpDownAbComDataAttackPower.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbComDataAttackPower.TabIndex = 3;
+            // 
+            // comboBoxAbComDataMagicID
+            // 
+            this.comboBoxAbComDataMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAbComDataMagicID.FormattingEnabled = true;
+            this.comboBoxAbComDataMagicID.Items.AddRange(new object[] {
+            "None",
+            "Cure",
+            "Fire",
+            "Thunder",
+            "Double",
+            "Phoenix Down",
+            "Leviathan Summon (Tsunami)",
+            "Mega Phoenix",
+            "Doom",
+            "Doom Activation",
+            "Ray-Bomb",
+            "Storm Breath",
+            "Blade Shot",
+            "Dark Mist/Poison Mist",
+            "Death/Death Stone",
+            "Draw",
+            "Recover",
+            "Elvoret Entrance",
+            "Elvoret Death",
+            "Unknown",
+            "NORG Pod Opening",
+            "Triple",
+            "Bio",
+            "Psycho Blast",
+            "Esuna",
+            "Cura",
+            "Clash",
+            "Full-Life",
+            "Curaga",
+            "Wind Blast",
+            "Counter Laser-Eye",
+            "Heartbreak",
+            "Protect",
+            "Shell",
+            "Pain",
+            "Life",
+            "Confuse",
+            "Drink Magic",
+            "Quake",
+            "Drain",
+            "Scan",
+            "Dribble",
+            "Shoot",
+            "Melting Bubble",
+            "Junk",
+            "Stare",
+            "Sigh",
+            "Curse",
+            "Magma Breath",
+            "Resonance",
+            "Potion/Potion+",
+            "Hi-Potion/Hi-Potion+",
+            "X-Potion",
+            "Mega-Potion",
+            "Everyone\'s Grudge",
+            "Aqua Breath",
+            "Absorb",
+            "Treatment",
+            "Elixir",
+            "Megalixir",
+            "Unknown",
+            "Revive",
+            "Devour",
+            "Unknown",
+            "Griever Tail Falling Off",
+            "Great Attractor",
+            "Griever + Ultimecia Death",
+            "Remedy/Remedy+",
+            "Unknown",
+            "Griever Summon",
+            "Shockwave Pulsar",
+            "Laser Eye (Quistis)",
+            "Aqua Breath (Quistis)",
+            "Mighty Guard (Quistis)",
+            "LV?Death (Quistis)",
+            "Hell\'s Judgement",
+            "Ultimecia Final Form Spawn",
+            "Ultimecia Final Form Death",
+            "Mighty Guard",
+            "Griever Death",
+            "Ultimecia Junctioning to Griever",
+            "Unknown",
+            "Ultimecia Blow Away Magic",
+            "Absorbed into time...",
+            "Angel Wing",
+            "The End",
+            "Angelo Cannon",
+            "Angelo Strike",
+            "Invincible Moon",
+            "Wishing Star",
+            "Tonberry Summon (Chef\'s Knife)",
+            "Angelo Rush",
+            "Angelo Search",
+            "Angelo Recover",
+            "Angelo Reverse",
+            "Siren Summon (Silent Voice)",
+            "Moogle Dance",
+            "ChocoFire",
+            "ChocoFlare",
+            "ChocoMeteor",
+            "ChocoBocle",
+            "Unknown",
+            "Thundara",
+            "Blizzara",
+            "Blizzaga",
+            "Thundaga",
+            "Reflect",
+            "Demi",
+            "Berserk",
+            "Dispel",
+            "Biggs + Wedge 1st Death",
+            "Aura",
+            "Meteor Barret (Zell\'s Finisher)",
+            "Bad Breath",
+            "Zombie",
+            "Float",
+            "Quezacotl Summon (Thunder Storm)",
+            "Break",
+            "Aero",
+            "Stop",
+            "Petrify Stare",
+            "Blind",
+            "Silence",
+            "Slow",
+            "Flare",
+            "Haste",
+            "Electric Discharge",
+            "Petrify Stare",
+            "Gastric Juice",
+            "Breath",
+            "Eerie Sound Wave",
+            "Bad Breath",
+            "Disolving Acid",
+            "Hypnotize",
+            "Beam Laser",
+            "Reflect Beam",
+            "Oil Shot",
+            "Oil Blast",
+            "Saliva",
+            "Sonic Wave",
+            "Phoenix Pinion (Rebirth Flame)",
+            "Renzokuken - 5 Hits",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Sleep",
+            "Tornado",
+            "Regen",
+            "Meltdown",
+            "Ultima",
+            "Gatling Gun",
+            "Cannon Blow",
+            "Ultrasonic Waves",
+            "Sticky Web",
+            "Ultra Waves",
+            "Sand Storm",
+            "Wild Cannon Blow",
+            "Breath",
+            "Melt-Eye",
+            "Renzokuken (vs X-ATM092)",
+            "Renzokuken - 4 Hits",
+            "Renzokuken (vs Elnoyle/Elvoret)",
+            "Fated Circle",
+            "Rough Divide",
+            "Blasting Zone",
+            "Lion Heart",
+            "Megido Flame",
+            "Zantetsuken",
+            "Sleeping Gas",
+            "Gastric Juice",
+            "Acid",
+            "Poison Gas",
+            "Morph",
+            "Ice Breath",
+            "Degenerator",
+            "Holy",
+            "Sand Storm",
+            "1,000 Needles",
+            "10,000 Needles",
+            "Unknown",
+            "Suicide",
+            "Kamikaze",
+            "Card",
+            "Defend",
+            "Ultra Waves (Quistis)",
+            "Shiva Summon (Diamond Dust)",
+            "Blaster",
+            "Odin Summon (Zantetsuken)",
+            "Shot - Normal Shot",
+            "Wall",
+            "Chain Gun",
+            "Doomtrain Summon (Runaway Train)",
+            "Shot - Scatter Shot",
+            "Shot - Dark Shot",
+            "Shot - Flame Shot",
+            "Shot - Canister Shot",
+            "Shot - Quick Shot",
+            "Shot - Armor Shot",
+            "Shot - Hyper Shot",
+            "Cactuar Summon (1,000 Needles)",
+            "No Mercy",
+            "Ifrit Summon (Hell Fire)",
+            "Bahamut Summon (Mega Flare)",
+            "Cerberus Summon (Counter Rockets)",
+            "Alexander Summon (Holy Judgment)",
+            "Brothers Summon (Brotherly Love)",
+            "Eden Summon (Eternal Breath)",
+            "Maelstrom",
+            "Final \"Sorceress\" Death",
+            "\"Sorceress\" Spawn",
+            "Bloodfest",
+            "Adel Death",
+            "Burning Rave (Zell\'s Finisher)",
+            "Storm Breath",
+            "Gravija",
+            "My Final Heaven (Zell\'s Finisher)",
+            "Different Beat (Zell\'s Finisher)",
+            "Energy Bomber",
+            "Unknown",
+            "Terra Break",
+            "Light Pillar",
+            "Apocalypse",
+            "Water",
+            "Meteor",
+            "Unknown",
+            "Unknown",
+            "White Wind",
+            "Ultimecia First Death",
+            "Ice Strike",
+            "Homing Laser (Quistis)",
+            "Fire Breath (Quistis)",
+            "Disease Breath",
+            "Breath of Death",
+            "Earthquake",
+            "Fart",
+            "Breath",
+            "Gas",
+            "Explosion",
+            "Breath",
+            "Ochu Dance",
+            "Earthquake",
+            "BGH251F2 Gatling Gun",
+            "Beam Cannon",
+            "BGH251F2 1st Turret Exploding",
+            "BGH251F2 2nd Turret Exploding",
+            "BGH251F2 3rd Turret Exploding",
+            "BGH251F2 4th Turret Exploding",
+            "BGH251F2 Death",
+            "Soldier Entrance After BGH251F2 Death",
+            "Unknown",
+            "Beam Cannon",
+            "Demon Slice",
+            "Corona",
+            "Twin Homing Laser",
+            "Homing Laser",
+            "Homing Laser",
+            "Sand Shake",
+            "Mega Flare",
+            "Mad Cow Special",
+            "Renzokuken - 6 Hits",
+            "Shockwave Pulsar (Quistis)",
+            "Desperado",
+            "Blood Pain",
+            "Massive Anchor",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Ultima Weapon Death",
+            "LV Up",
+            "LV Down",
+            "Mad Rush",
+            "Duel",
+            "Electrocute (Quistis)",
+            "Unknown",
+            "Unknown",
+            "Carbuncle Summon (Ruby Light)",
+            "Mega Spark",
+            "Full Cure",
+            "Shotgun",
+            "Evil-Eye",
+            "Magic Summon",
+            "Micro Missiles",
+            "Thunder Summon",
+            "Mini Pulse Cannon",
+            "Mega Pulse Cannon",
+            "Rapture",
+            "\"Brrawghh!\"",
+            "Unknown",
+            "Pandemona Summon (Tornado Zone)",
+            "Soft",
+            "Eye Drops",
+            "Antidote",
+            "Echo Screen",
+            "Holy Water",
+            "White Wind (Quistis)",
+            "Unknown",
+            "Micro Missiles (Quistis)",
+            "Bad Breath (Quistis)",
+            "Unknown",
+            "Snipe Laser",
+            "Unknown",
+            "Boomerang Sword",
+            "Gatling Gun (Quistis)",
+            "Degenerator (Quistis)",
+            "Ray-Bomb (Quistis)",
+            "Unknown",
+            "Hero-trial/Hero",
+            "Holy War-trial/Holy War",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Fake President Death",
+            "Unknown",
+            "Acid (Quistis)",
+            "Unknown",
+            "Unknown",
+            "Dark Flare",
+            "Ker Plunk",
+            "Zan",
+            "Metsu",
+            "Tonberry King Death",
+            "Diablos Summon (Dark Messenger)",
+            "Zantetsuken Reverse",
+            "Gilgamesh - Zantetsuken",
+            "Gilgamesh - Masamune",
+            "Gilgamesh - Excaliber",
+            "Gilgamesh - Excalipoor",
+            "Unknown",
+            "Renzokuken - 7 Hits",
+            "Renzokuken - 8 Hits",
+            "Renzokuken (vs Bahamut)",
+            "Renzokuken (vs NORG)",
+            "Renzokuken (vs Ultima Weapon)",
+            "Renzokuken (vs Final \"Sorceress\")",
+            "Friendship (MoombaMoomba)",
+            "Renzokuken (vs Adel)",
+            "Renzokuken (vs Ultimecia Final Form)",
+            "Renzokuken (vs Jumbo Cactuar)",
+            "Renzokuken (vs Griever + Ultimecia)",
+            "Renzokuken (vs Griever)",
+            "Final Battle Music",
+            "LV5 Death"});
+            this.comboBoxAbComDataMagicID.Location = new System.Drawing.Point(25, 49);
+            this.comboBoxAbComDataMagicID.Name = "comboBoxAbComDataMagicID";
+            this.comboBoxAbComDataMagicID.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxAbComDataMagicID.TabIndex = 2;
             // 
             // tabPageAbGF
             // 
@@ -16347,13 +17638,13 @@
             this.listBoxAbGF.Size = new System.Drawing.Size(156, 769);
             this.listBoxAbGF.TabIndex = 3;
             // 
-            // listBoxAbCommand
+            // listBoxAbCom
             // 
-            this.listBoxAbCommand.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxAbCommand.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxAbCommand.FormattingEnabled = true;
-            this.listBoxAbCommand.ItemHeight = 17;
-            this.listBoxAbCommand.Items.AddRange(new object[] {
+            this.listBoxAbCom.BackColor = System.Drawing.SystemColors.Window;
+            this.listBoxAbCom.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxAbCom.FormattingEnabled = true;
+            this.listBoxAbCom.ItemHeight = 17;
+            this.listBoxAbCom.Items.AddRange(new object[] {
             "Magic",
             "GF",
             "Draw",
@@ -16373,10 +17664,10 @@
             "Kamikaze",
             "Devour",
             "MiniMog"});
-            this.listBoxAbCommand.Location = new System.Drawing.Point(0, 0);
-            this.listBoxAbCommand.Name = "listBoxAbCommand";
-            this.listBoxAbCommand.Size = new System.Drawing.Size(156, 769);
-            this.listBoxAbCommand.TabIndex = 3;
+            this.listBoxAbCom.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAbCom.Name = "listBoxAbCom";
+            this.listBoxAbCom.Size = new System.Drawing.Size(156, 769);
+            this.listBoxAbCom.TabIndex = 3;
             // 
             // listBoxAbJunction
             // 
@@ -36731,6 +38022,15 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel1.Text = "Ready";
             // 
+            // tabPageAbCom
+            // 
+            this.tabPageAbCom.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageAbCom.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbCom.Name = "tabPageAbCom";
+            this.tabPageAbCom.Size = new System.Drawing.Size(464, 740);
+            this.tabPageAbCom.TabIndex = 7;
+            this.tabPageAbCom.Text = "Command";
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -36753,6 +38053,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbStatsAP)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolbarStrip.ResumeLayout(false);
@@ -36867,6 +38168,16 @@
             this.groupBoxStatsIncrement.ResumeLayout(false);
             this.groupBoxStatsIncrement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAbStatsIncrementValue)).EndInit();
+            this.tabPageAbComData.ResumeLayout(false);
+            this.groupBoxAbComDataStatus.ResumeLayout(false);
+            this.groupBoxAbComDataStatus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataStatusAttack)).EndInit();
+            this.groupBoxAbComDataFlags.ResumeLayout(false);
+            this.groupBoxAbComDataFlags.PerformLayout();
+            this.groupBoxAbComDataGeneral.ResumeLayout(false);
+            this.groupBoxAbComDataGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataHitCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataAttackPower)).EndInit();
             this.tabPageWeapons.ResumeLayout(false);
             this.groupBoxWeaponsRenzokukenFinishers.ResumeLayout(false);
             this.groupBoxWeaponsRenzokukenFinishers.PerformLayout();
@@ -37430,9 +38741,6 @@
         private System.Windows.Forms.GroupBox groupBoxStatsIncrement;
         private System.Windows.Forms.Label labelAbStatsValueTrackBar;
         private System.Windows.Forms.TrackBar trackBarAbStatsIncrementValue;
-        private System.Windows.Forms.TextBox textBoxAbStatsDescription;
-        private System.Windows.Forms.TextBox textBoxAbStatsName;
-        private System.Windows.Forms.Label labelStatsDescription;
         private System.Windows.Forms.Label labelAbStatsIncrementValue;
         private System.Windows.Forms.Label labelAbStatsName;
         private System.Windows.Forms.ListBox listBoxAbStats;
@@ -37635,7 +38943,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDownCharEXP1;
         private System.Windows.Forms.Label labelCharEXPA;
         private System.Windows.Forms.TabPage tabPageAbJunction;
-        private System.Windows.Forms.TabPage tabPageAbCommand;
+        private System.Windows.Forms.TabPage tabPageAbComData;
         private System.Windows.Forms.TabPage tabPageAbCharacters;
         private System.Windows.Forms.TabPage tabPageABParty;
         private System.Windows.Forms.TabPage tabPageAbGF;
@@ -37649,7 +38957,7 @@
         private System.Windows.Forms.ComboBox comboBoxAbStatsStatToIncrease;
         private System.Windows.Forms.Label labelAbStatsStatToIncrease;
         private System.Windows.Forms.ListBox listBoxAbJunction;
-        private System.Windows.Forms.ListBox listBoxAbCommand;
+        private System.Windows.Forms.ListBox listBoxAbCom;
         private System.Windows.Forms.ListBox listBoxAbGF;
         private System.Windows.Forms.ListBox listBoxAbParty;
         private System.Windows.Forms.ListBox listBoxAbMenu;
@@ -39075,6 +40383,72 @@
         private System.Windows.Forms.NumericUpDown numericUpDownGFEXP;
         private System.Windows.Forms.Label labelGFEXP;
         public System.Windows.Forms.Button buttonCharHPChart;
+        private System.Windows.Forms.NumericUpDown numericUpDownAbStatsAP;
+        private System.Windows.Forms.GroupBox groupBoxAbComDataStatus;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataPetrifying;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataDarkness;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataSilence;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataStop;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataConfusion;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataPetrify;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataSlow;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataBerserk;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataSleep;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataInvincible;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataCurse;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataDoom;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataFloat;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataAura;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataDrain;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataSummonGF;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataHasMagic;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataUnk6;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataUnk5;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataUnk4;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataUnk3;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataAngelWing;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataVit0;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataBackAttack;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataCharged;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataUnk2;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataUnk1;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataDefend;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataTriple;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataDouble;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataEject;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataPoison;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataDeath;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataProtect;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataHaste;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataRegen;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataShell;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataReflect;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataUnk7;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataZombie;
+        private System.Windows.Forms.NumericUpDown numericUpDownAbComDataStatusAttack;
+        private System.Windows.Forms.Label labelAbComDataStatusAttack;
+        private System.Windows.Forms.GroupBox groupBoxAbComDataFlags;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataFlag4;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataFlag8;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataFlag3;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataFlag6;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataFlag1;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataFlag5;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataFlag2;
+        private System.Windows.Forms.CheckBox checkBoxAbComDataFlag7;
+        private System.Windows.Forms.GroupBox groupBoxAbComDataGeneral;
+        private System.Windows.Forms.ComboBox comboBoxAbComDataElement;
+        private System.Windows.Forms.Label labelAbComDataElement;
+        private System.Windows.Forms.ComboBox comboBoxAbComDataAttackType;
+        private System.Windows.Forms.Label labelAbComDataAttackType;
+        private System.Windows.Forms.NumericUpDown numericUpDownAbComDataHitCount;
+        private System.Windows.Forms.NumericUpDown numericUpDownAbComDataAttackPower;
+        private System.Windows.Forms.ComboBox comboBoxAbComDataMagicID;
+        private System.Windows.Forms.Label labelAbComDataHitCount;
+        private System.Windows.Forms.Label labelAbComDataAttackPower;
+        private System.Windows.Forms.Label labelAbComDataMagicID;
+        private System.Windows.Forms.ListBox listBoxAbComData;
+        private System.Windows.Forms.TabPage tabPageAbCom;
     }
 }
 
