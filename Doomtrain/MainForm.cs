@@ -1390,7 +1390,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS COMMAND ABILITy DATA
+            #region EVENT HANDLERS COMMAND ABILITY DATA
 
             comboBoxAbComDataMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(0, comboBoxAbComDataMagicID.SelectedIndex);
             comboBoxAbComDataAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(1, comboBoxAbComDataAttackType.SelectedIndex);
@@ -1449,6 +1449,13 @@ namespace Doomtrain
 
             #endregion
 
+            #region EVENT HANDLERS COMMAND ABILITY
+
+            numericUpDownAbComAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbility(0, numericUpDownAbComAP.Value);
+            comboBoxAbComBattleCommand.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbility(1, comboBoxAbComBattleCommand.SelectedIndex);
+
+            #endregion
+
             #region EVENT HANDLERS JUNCTION ABILITIES
 
             numericUpDownAbJunAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(0, numericUpDownAbJunAP.Value);
@@ -1471,6 +1478,29 @@ namespace Doomtrain
             checkBoxAbJunFlag17.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(3, 0x01);
             checkBoxAbJunFlag18.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(3, 0x02);
             checkBoxAbJunFlag19.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(3, 0x04);
+
+            #endregion
+
+            #region EVENT HANDLERS JUNCTION ABILITIES
+
+            numericUpDownAbPartyAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(0, numericUpDownAbPartyAP.Value);
+            checkBoxAbPartyFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x01);
+            checkBoxAbPartyFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x02);
+            checkBoxAbPartyFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x04);
+            checkBoxAbPartyFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x08);
+            checkBoxAbPartyFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x10);
+            checkBoxAbPartyFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x20);
+            checkBoxAbPartyFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x40);
+            checkBoxAbPartyFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x80);
+
+            #endregion
+
+            #region EVENT HANDLERS GF ABILITIES
+
+            numericUpDownAbGFAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(0, numericUpDownAbGFAP.Value);
+            checkBoxAbGFBoost.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(1, 0x01);
+            comboBoxAbGFStatToIncrease.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(2, GFAbilities_GetStat(comboBoxAbGFStatToIncrease.SelectedIndex));
+            trackBarAbGFIncrementValue.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(3, trackBarAbGFIncrementValue.Value);
 
             #endregion
         }
@@ -1861,6 +1891,10 @@ namespace Doomtrain
             labelAbStatsValueTrackBar.Text = trackBarAbStatsIncrementValue.Value + "%".ToString();
         }
 
+        private void trackBarAbGFIncrementValue_Scroll(object sender, EventArgs e)
+        {
+            labelAbGFValueTrackBar.Text = trackBarAbGFIncrementValue.Value + "%".ToString();
+        }
 
 
         //ABILITIES LISTBOXES SWITCH
@@ -2143,9 +2177,10 @@ namespace Doomtrain
                 numericUpDownMagicEdenComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.EdenCompatibility)) / 5;
 
             }
-            catch (Exception e_)
+
+            catch (Exception Exception)
             {
-                Console.WriteLine(e_.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2548,9 +2583,10 @@ namespace Doomtrain
                 numericUpDownGFTonberryComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFTonberryCompatibility)) / 5;
                 numericUpDownGFEdenComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFEdenCompatibility)) / 5;
             }
-            catch (Exception eeException)
+
+            catch (Exception Exception)
             {
-                MessageBox.Show(eeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2676,9 +2712,10 @@ namespace Doomtrain
                 numericUpDownGFAttacksPowerMod.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksPowerMod;
                 numericUpDownGFAttacksLevelMod.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksLevelMod;
             }
-            catch (Exception eeeException)
+
+            catch (Exception Exception)
             {
-                MessageBox.Show(eeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2712,9 +2749,10 @@ namespace Doomtrain
                 numericUpDownWeaponsSTRBonus.Value = KernelWorker.GetSelectedWeaponsData.STRBonus;
                 numericUpDownWeaponsTier.Value = KernelWorker.GetSelectedWeaponsData.Tier;
             }
-            catch (Exception eeeeException)
+
+            catch (Exception Exception)
             {
-                MessageBox.Show(eeeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2767,9 +2805,10 @@ namespace Doomtrain
                 numericUpDownCharLUCK3.Value = KernelWorker.GetSelectedCharactersData.LUCK3;
                 numericUpDownCharLUCK4.Value = KernelWorker.GetSelectedCharactersData.LUCK4;
             }
-            catch (Exception eeeeeException)
+
+            catch (Exception Exception)
             {
-                MessageBox.Show(eeeeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2892,9 +2931,10 @@ namespace Doomtrain
                 numericUpDownEnemyAttacksStatusAttack.Value = KernelWorker.GetSelectedEnemyAttacksData.StatusAttack;
                 EnemyAttacksStatusWorker();
             }
-            catch (Exception eeeeeeException)
+
+            catch (Exception Exception)
             {
-                MessageBox.Show(eeeeeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -3194,9 +3234,10 @@ namespace Doomtrain
                 comboBoxAbStatsStatToIncrease.SelectedIndex = KernelWorker.GetSelectedStatPercentageAbilitiesData.StatToincrease;
                 trackBarAbStatsIncrementValue.Value = KernelWorker.GetSelectedStatPercentageAbilitiesData.IncreasementValue;
             }
-            catch (Exception eeeeeeeException)
+
+            catch (Exception Exception)
             {
-                Console.WriteLine(eeeeeeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -3328,9 +3369,9 @@ namespace Doomtrain
                 RenzoFinStatusWorker();
             }
 
-            catch (Exception eeeeeeeeException)
+            catch (Exception Exception)
             {
-                Console.WriteLine(eeeeeeeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -3465,7 +3506,7 @@ namespace Doomtrain
 
             catch (Exception Exception)
             {
-                Console.WriteLine(Exception.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -3863,7 +3904,7 @@ namespace Doomtrain
 
             catch (Exception Exception)
             {
-                Console.WriteLine(Exception.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -4137,7 +4178,7 @@ namespace Doomtrain
 
             catch (Exception Exception)
             {
-                Console.WriteLine(Exception.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -4218,7 +4259,7 @@ namespace Doomtrain
 
             catch (Exception Exception)
             {
-                Console.WriteLine(Exception.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -4257,7 +4298,7 @@ namespace Doomtrain
 
             catch (Exception Exception)
             {
-                Console.WriteLine(Exception.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -4441,7 +4482,7 @@ namespace Doomtrain
 
             catch (Exception Exception)
             {
-                Console.WriteLine(Exception.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -4578,6 +4619,29 @@ namespace Doomtrain
 
         #endregion
 
+        #region COMMAND ABILITY
+
+        private void listBoxAbCom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadCommandAbility(listBoxAbCom.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbComAP.Value = KernelWorker.GetSelectedCommandAbilityData.AP;
+                comboBoxAbComBattleCommand.SelectedIndex = KernelWorker.GetSelectedCommandAbilityData.BattleCommand;               
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+
         #region JUNCTION ABILITIES
 
         private void listBoxAbJun_SelectedIndexChanged(object sender, EventArgs e)
@@ -4613,10 +4677,90 @@ namespace Doomtrain
             }
             catch (Exception Exception)
             {
-                Console.WriteLine(Exception.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
+
+
+
+        #endregion
+
+        #region PARTY ABILITIES
+
+        private void listBoxAbParty_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadPartyAbilities(listBoxAbParty.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbPartyAP.Value = KernelWorker.GetSelectedPartyAbilitiesData.AP;
+                checkBoxAbPartyFlag1.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x01) >= 1 ? true : false;
+                checkBoxAbPartyFlag2.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x02) >= 1 ? true : false;
+                checkBoxAbPartyFlag3.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x04) >= 1 ? true : false;
+                checkBoxAbPartyFlag4.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x08) >= 1 ? true : false;
+                checkBoxAbPartyFlag5.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x10) >= 1 ? true : false;
+                checkBoxAbPartyFlag6.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x20) >= 1 ? true : false;
+                checkBoxAbPartyFlag7.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x40) >= 1 ? true : false;
+                checkBoxAbPartyFlag8.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x80) >= 1 ? true : false;
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+
+        #region GF ABILITIES
+
+        private int GFAbilities_GetStat()
+        {
+            return KernelWorker.GetSelectedGFAbilitiesData.StatToIncrease == KernelWorker.StatToIncrease.SumMag
+                        ? 0
+                        : KernelWorker.GetSelectedGFAbilitiesData.StatToIncrease == KernelWorker.StatToIncrease.HP
+                            ? 1
+                            : KernelWorker.GetSelectedGFAbilitiesData.StatToIncrease == KernelWorker.StatToIncrease.Boost
+
+                            ? comboBoxAbGFStatToIncrease.Items.Count -1
+                            : 0;
+        }
+
+        private byte GFAbilities_GetStat(int Index)
+        {
+            byte stat = (byte)(Index == 2 ? (byte)KernelWorker.StatToIncrease.Boost :
+                Index == 0 ? (byte)KernelWorker.StatToIncrease.SumMag :
+                Index == 1 ? (byte)KernelWorker.StatToIncrease.HP :
+                0x00 /*ErrorHandler*/);
+            return stat;
+        }
+
+
+        private void listBoxAbGF_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadGFAbilities(listBoxAbGF.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbGFAP.Value = KernelWorker.GetSelectedGFAbilitiesData.AP;
+                checkBoxAbGFBoost.Checked = (KernelWorker.GetSelectedGFAbilitiesData.EnableBoost & 0x01) >= 1 ? true : false;
+                comboBoxAbGFStatToIncrease.SelectedIndex = GFAbilities_GetStat();
+                trackBarAbGFIncrementValue.Value = KernelWorker.GetSelectedGFAbilitiesData.IncrementValue;
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
 
         #endregion
 

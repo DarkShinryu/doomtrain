@@ -69,8 +69,17 @@ namespace Doomtrain
         public static int CommandAbilityDataDataOffset = -1;
         public static int OffsetToCommandAbilityDataSelected = -1;
 
+        public static int CommandAbilityDataOffset = -1;
+        public static int OffsetToCommandAbilitySelected = -1;
+
         public static int JunctionAbilitiesDataOffset = -1;
         public static int OffsetToJunctionAbilitiesSelected = -1;
+
+        public static int PartyAbilitiesDataOffset = -1;
+        public static int OffsetToPartyAbilitiesSelected = -1;
+
+        public static int GFAbilitiesDataOffset = -1;
+        public static int OffsetToGFAbilitiesSelected = -1;
 
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
@@ -93,7 +102,10 @@ namespace Doomtrain
         public static DevourData GetSelectedDevourData;
         public static MiscData GetSelectedMiscData;
         public static CommandAbilityDataData GetSelectedCommandAbilityDataData;
+        public static CommandAbilityData GetSelectedCommandAbilityData;
         public static JunctionAbilitiesData GetSelectedJunctionAbilitiesData;
+        public static PartyAbilitiesData GetSelectedPartyAbilitiesData;
+        public static GFAbilitiesData GetSelectedGFAbilitiesData;
 
 
         static string[] _charstable;
@@ -196,6 +208,13 @@ namespace Doomtrain
             Right = 0x2000,
             Down = 0x4000,
             Left = 0x8000
+        }
+
+        internal enum StatToIncrease : byte //used in GF abilities
+        {
+            SumMag = 0x00,
+            HP = 0x01,
+            Boost = 0xFF
         }
 
 
@@ -878,6 +897,12 @@ namespace Doomtrain
             public byte Status5;
         }
 
+        public struct CommandAbilityData
+        {
+            public byte AP;
+            public byte BattleCommand;
+        }
+
         public struct JunctionAbilitiesData
         {
             public byte AP;
@@ -886,6 +911,20 @@ namespace Doomtrain
             public byte Flag3;
         }
 
+        public struct PartyAbilitiesData
+        {
+            public byte AP;
+            public byte Flag;
+        }
+
+        public struct GFAbilitiesData
+        {
+            public byte AP;
+            public byte EnableBoost;
+            public StatToIncrease StatToIncrease;
+            public byte IncrementValue;
+
+        }
         #endregion
 
 
@@ -1722,7 +1761,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region ABILITIES
+        #region STAT PERCENTAGE ABILITIES
 
         public static void UpdateVariable_StatPercentageAbilities(int index, object variable)
         {
@@ -3041,6 +3080,28 @@ namespace Doomtrain
 
         #endregion
 
+        #region COMMAND ABILITY
+
+        public static void UpdateVariable_CommandAbility(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToCommandAbilitySelected + 4] = Convert.ToByte(variable); //AP
+                    return;
+                case 1:
+                    Kernel[OffsetToCommandAbilitySelected + 5] = Convert.ToByte(variable); //Battle Command
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
+        #endregion
+
         #region JUNCTION ABILITIES
 
         public static void UpdateVariable_JunctionAbilities(int index, object variable)
@@ -3060,6 +3121,56 @@ namespace Doomtrain
                     return;
                 case 3:
                     Kernel[OffsetToJunctionAbilitiesSelected + 7] = (byte)(Kernel[OffsetToJunctionAbilitiesSelected + 7] ^ Convert.ToByte(variable)); // flag 3
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
+        #endregion
+
+        #region PARTY ABILITIES
+
+        public static void UpdateVariable_PartyAbilities(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToPartyAbilitiesSelected + 4] = Convert.ToByte(variable); //AP
+                    return;
+                case 1:
+                    Kernel[OffsetToPartyAbilitiesSelected + 5] = (byte)(Kernel[OffsetToPartyAbilitiesSelected + 5] ^ Convert.ToByte(variable)); // flag
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
+        #endregion
+
+        #region GF ABILITIES
+
+        public static void UpdateVariable_GFAbilities(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToGFAbilitiesSelected + 4] = Convert.ToByte(variable); //AP
+                    return;
+                case 1:
+                    Kernel[OffsetToGFAbilitiesSelected + 5] = (byte)(Kernel[OffsetToGFAbilitiesSelected + 5] ^ Convert.ToByte(variable)); // enable boost
+                    return;
+                case 2:
+                    Kernel[OffsetToGFAbilitiesSelected + 6] = Convert.ToByte(variable); //stat to increase
+                    return;
+                case 3:
+                    Kernel[OffsetToGFAbilitiesSelected + 7] = Convert.ToByte(variable); //increasement value
                     return;
 
                 default:
@@ -3173,7 +3284,10 @@ namespace Doomtrain
             DevourDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Devour);
             MiscDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Misc);
             CommandAbilityDataDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.CommandAbilityData);
+            CommandAbilityDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.CommandAbilities);
             JunctionAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.JunctionAbilities);
+            PartyAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.PartyAbilities);
+            GFAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFAbilities);
         }
 
         #endregion
@@ -4370,6 +4484,21 @@ namespace Doomtrain
 
         #endregion
 
+        #region COMMAND ABILITY
+
+        public static void ReadCommandAbility(int CommandAbilityID_List)
+        {
+            GetSelectedCommandAbilityData = new CommandAbilityData();
+            int selectedCommandAbilityDataOffset = CommandAbilityDataOffset + (CommandAbilityID_List * 8);
+            OffsetToCommandAbilitySelected = selectedCommandAbilityDataOffset;
+
+            selectedCommandAbilityDataOffset += 4;
+            GetSelectedCommandAbilityData.AP = Kernel[selectedCommandAbilityDataOffset++];
+            GetSelectedCommandAbilityData.BattleCommand = Kernel[selectedCommandAbilityDataOffset++];
+        }
+
+        #endregion
+
         #region JUNCTION ABILITIES
 
         public static void ReadJunctionAbilities(int JunctionAbilitiesID_List)
@@ -4384,6 +4513,46 @@ namespace Doomtrain
             GetSelectedJunctionAbilitiesData.Flag1 = Kernel[selectedJunctionAbilitiesOffset++];
             GetSelectedJunctionAbilitiesData.Flag2 = Kernel[selectedJunctionAbilitiesOffset++];
             GetSelectedJunctionAbilitiesData.Flag3 = Kernel[selectedJunctionAbilitiesOffset++];
+        }
+
+        #endregion
+
+        #region PARTY ABILITIES
+
+        public static void ReadPartyAbilities(int PartyAbilitiesID_List)
+        {
+            GetSelectedPartyAbilitiesData = new PartyAbilitiesData();
+            int selectedPartyAbilitiesOffset = PartyAbilitiesDataOffset + (PartyAbilitiesID_List * 8);
+            OffsetToPartyAbilitiesSelected = selectedPartyAbilitiesOffset;
+
+            selectedPartyAbilitiesOffset += 4;
+            GetSelectedPartyAbilitiesData.AP = Kernel[selectedPartyAbilitiesOffset++];
+            GetSelectedPartyAbilitiesData.Flag = Kernel[selectedPartyAbilitiesOffset++];
+        }
+
+        #endregion
+
+        #region GF ABILITIES
+
+        public static void ReadGFAbilities(int GFAbilitiesID_List)
+        {
+            GetSelectedGFAbilitiesData = new GFAbilitiesData();
+            int selectedGFAbilitiesOffset = GFAbilitiesDataOffset + (GFAbilitiesID_List * 8);
+            OffsetToGFAbilitiesSelected = selectedGFAbilitiesOffset;
+
+            selectedGFAbilitiesOffset += 4;
+            GetSelectedGFAbilitiesData.AP = Kernel[selectedGFAbilitiesOffset++];
+            GetSelectedGFAbilitiesData.EnableBoost = Kernel[selectedGFAbilitiesOffset++];
+            byte b = Kernel[selectedGFAbilitiesOffset++];
+            GetSelectedGFAbilitiesData.StatToIncrease =
+                b == (byte)StatToIncrease.SumMag
+                    ? StatToIncrease.SumMag
+                    : b == (byte)StatToIncrease.HP
+                        ? StatToIncrease.HP
+                        : b == (byte)StatToIncrease.Boost
+                            ? StatToIncrease.Boost
+                            : 0; //Error handler
+            GetSelectedGFAbilitiesData.IncrementValue = Kernel[selectedGFAbilitiesOffset++];
         }
 
         #endregion

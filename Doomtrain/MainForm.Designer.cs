@@ -193,6 +193,11 @@
             this.labelAbComDataHitCount = new System.Windows.Forms.Label();
             this.labelAbComDataAttackPower = new System.Windows.Forms.Label();
             this.labelAbComDataMagicID = new System.Windows.Forms.Label();
+            this.numericUpDownAbJunAP = new System.Windows.Forms.NumericUpDown();
+            this.labelAbComAP = new System.Windows.Forms.Label();
+            this.numericUpDownAbPartyAP = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownAbGFAP = new System.Windows.Forms.NumericUpDown();
+            this.labelAbGFAP = new System.Windows.Forms.Label();
             this.labelDevourStatsIncr = new System.Windows.Forms.Label();
             this.labelDevourHPIncr = new System.Windows.Forms.Label();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -585,6 +590,28 @@
             this.trackBarAbStatsIncrementValue = new System.Windows.Forms.TrackBar();
             this.labelAbStatsIncrementValue = new System.Windows.Forms.Label();
             this.tabPageAbJunction = new System.Windows.Forms.TabPage();
+            this.groupBoxAbJunJun = new System.Windows.Forms.GroupBox();
+            this.checkBoxAbJunFlag9 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag17 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag19 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag16 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag18 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag13 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag15 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag12 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag14 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag11 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag10 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbJunFlag1 = new System.Windows.Forms.CheckBox();
+            this.groupBoxAbJunGeneral = new System.Windows.Forms.GroupBox();
+            this.labelAbJunAP = new System.Windows.Forms.Label();
             this.tabPageAbComData = new System.Windows.Forms.TabPage();
             this.groupBoxAbComDataStatus = new System.Windows.Forms.GroupBox();
             this.checkBoxAbComDataPetrifying = new System.Windows.Forms.CheckBox();
@@ -644,8 +671,31 @@
             this.numericUpDownAbComDataHitCount = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownAbComDataAttackPower = new System.Windows.Forms.NumericUpDown();
             this.comboBoxAbComDataMagicID = new System.Windows.Forms.ComboBox();
+            this.tabPageAbCom = new System.Windows.Forms.TabPage();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownAbComAP = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxAbComBattleCommand = new System.Windows.Forms.ComboBox();
+            this.labelAbComBattleCommand = new System.Windows.Forms.Label();
             this.tabPageAbGF = new System.Windows.Forms.TabPage();
+            this.groupBoxAbGF = new System.Windows.Forms.GroupBox();
+            this.checkBoxAbGFBoost = new System.Windows.Forms.CheckBox();
+            this.comboBoxAbGFStatToIncrease = new System.Windows.Forms.ComboBox();
+            this.labelAbGFStatToIncrease = new System.Windows.Forms.Label();
+            this.labelAbGFValueTrackBar = new System.Windows.Forms.Label();
+            this.trackBarAbGFIncrementValue = new System.Windows.Forms.TrackBar();
+            this.labelAbGFIncrementValue = new System.Windows.Forms.Label();
             this.tabPageABParty = new System.Windows.Forms.TabPage();
+            this.groupBoxAbPartyFlags = new System.Windows.Forms.GroupBox();
+            this.checkBoxAbPartyFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbPartyFlag7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbPartyFlag4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbPartyFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbPartyFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbPartyFlag5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbPartyFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbPartyFlag1 = new System.Windows.Forms.CheckBox();
+            this.groupBoxAbPartyGeneral = new System.Windows.Forms.GroupBox();
+            this.labelAbPartyAP = new System.Windows.Forms.Label();
             this.tabPageAbMenu = new System.Windows.Forms.TabPage();
             this.listBoxAbCharacters = new System.Windows.Forms.ListBox();
             this.listBoxAbStats = new System.Windows.Forms.ListBox();
@@ -1876,34 +1926,13 @@
             this.labelStatusTimer1Value = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tabPageAbCom = new System.Windows.Forms.TabPage();
-            this.groupBoxAbJunGeneral = new System.Windows.Forms.GroupBox();
-            this.numericUpDownAbJunAP = new System.Windows.Forms.NumericUpDown();
-            this.labelAbJunAP = new System.Windows.Forms.Label();
-            this.groupBoxAbJunJun = new System.Windows.Forms.GroupBox();
-            this.checkBoxAbJunFlag1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag10 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag11 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag12 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag13 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag14 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag15 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag16 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag17 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag18 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag19 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbJunFlag9 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbStatsAP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbJunAP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbPartyAP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbGFAP)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.toolbarStrip.SuspendLayout();
             this.tabPageGFAttacks.SuspendLayout();
@@ -1999,6 +2028,8 @@
             this.groupBoxStatsIncrement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAbStatsIncrementValue)).BeginInit();
             this.tabPageAbJunction.SuspendLayout();
+            this.groupBoxAbJunJun.SuspendLayout();
+            this.groupBoxAbJunGeneral.SuspendLayout();
             this.tabPageAbComData.SuspendLayout();
             this.groupBoxAbComDataStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataStatusAttack)).BeginInit();
@@ -2006,6 +2037,15 @@
             this.groupBoxAbComDataGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataAttackPower)).BeginInit();
+            this.tabPageAbCom.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComAP)).BeginInit();
+            this.tabPageAbGF.SuspendLayout();
+            this.groupBoxAbGF.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarAbGFIncrementValue)).BeginInit();
+            this.tabPageABParty.SuspendLayout();
+            this.groupBoxAbPartyFlags.SuspendLayout();
+            this.groupBoxAbPartyGeneral.SuspendLayout();
             this.tabPageWeapons.SuspendLayout();
             this.groupBoxWeaponsRenzokukenFinishers.SuspendLayout();
             this.groupBoxWeaponsGeneral.SuspendLayout();
@@ -2368,9 +2408,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            this.groupBoxAbJunGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbJunAP)).BeginInit();
-            this.groupBoxAbJunJun.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -5374,6 +5411,72 @@
             this.labelAbComDataMagicID.TabIndex = 0;
             this.labelAbComDataMagicID.Text = "Magic ID";
             this.toolTip1.SetToolTip(this.labelAbComDataMagicID, "Decides what animation to play");
+            // 
+            // numericUpDownAbJunAP
+            // 
+            this.numericUpDownAbJunAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbJunAP.Location = new System.Drawing.Point(203, 44);
+            this.numericUpDownAbJunAP.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbJunAP.Name = "numericUpDownAbJunAP";
+            this.numericUpDownAbJunAP.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbJunAP.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.numericUpDownAbJunAP, "Default: 0");
+            // 
+            // labelAbComAP
+            // 
+            this.labelAbComAP.AutoSize = true;
+            this.labelAbComAP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbComAP.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbComAP.Location = new System.Drawing.Point(292, 28);
+            this.labelAbComAP.Name = "labelAbComAP";
+            this.labelAbComAP.Size = new System.Drawing.Size(76, 17);
+            this.labelAbComAP.TabIndex = 0;
+            this.labelAbComAP.Text = "AP Needed";
+            this.toolTip1.SetToolTip(this.labelAbComAP, "Used in damage calculation");
+            // 
+            // numericUpDownAbPartyAP
+            // 
+            this.numericUpDownAbPartyAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbPartyAP.Location = new System.Drawing.Point(203, 44);
+            this.numericUpDownAbPartyAP.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbPartyAP.Name = "numericUpDownAbPartyAP";
+            this.numericUpDownAbPartyAP.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbPartyAP.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.numericUpDownAbPartyAP, "Default: 0");
+            // 
+            // numericUpDownAbGFAP
+            // 
+            this.numericUpDownAbGFAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbGFAP.Location = new System.Drawing.Point(106, 142);
+            this.numericUpDownAbGFAP.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbGFAP.Name = "numericUpDownAbGFAP";
+            this.numericUpDownAbGFAP.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbGFAP.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.numericUpDownAbGFAP, "Default: 0");
+            // 
+            // labelAbGFAP
+            // 
+            this.labelAbGFAP.AutoSize = true;
+            this.labelAbGFAP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbGFAP.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbGFAP.Location = new System.Drawing.Point(91, 122);
+            this.labelAbGFAP.Name = "labelAbGFAP";
+            this.labelAbGFAP.Size = new System.Drawing.Size(76, 17);
+            this.labelAbGFAP.TabIndex = 1;
+            this.labelAbGFAP.Text = "AP Needed";
+            this.toolTip1.SetToolTip(this.labelAbGFAP, "Used in damage calculation");
             // 
             // labelDevourStatsIncr
             // 
@@ -16304,7 +16407,7 @@
             this.labelAbStatsValueTrackBar.BackColor = System.Drawing.Color.Transparent;
             this.labelAbStatsValueTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAbStatsValueTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbStatsValueTrackBar.Location = new System.Drawing.Point(263, 89);
+            this.labelAbStatsValueTrackBar.Location = new System.Drawing.Point(268, 89);
             this.labelAbStatsValueTrackBar.Name = "labelAbStatsValueTrackBar";
             this.labelAbStatsValueTrackBar.Size = new System.Drawing.Size(28, 19);
             this.labelAbStatsValueTrackBar.TabIndex = 28;
@@ -16328,11 +16431,11 @@
             this.labelAbStatsIncrementValue.AutoSize = true;
             this.labelAbStatsIncrementValue.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelAbStatsIncrementValue.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbStatsIncrementValue.Location = new System.Drawing.Point(230, 40);
+            this.labelAbStatsIncrementValue.Location = new System.Drawing.Point(227, 40);
             this.labelAbStatsIncrementValue.Name = "labelAbStatsIncrementValue";
-            this.labelAbStatsIncrementValue.Size = new System.Drawing.Size(94, 17);
+            this.labelAbStatsIncrementValue.Size = new System.Drawing.Size(112, 17);
             this.labelAbStatsIncrementValue.TabIndex = 1;
-            this.labelAbStatsIncrementValue.Text = "Increase Value";
+            this.labelAbStatsIncrementValue.Text = "Increase Amount";
             // 
             // tabPageAbJunction
             // 
@@ -16344,6 +16447,290 @@
             this.tabPageAbJunction.Size = new System.Drawing.Size(464, 740);
             this.tabPageAbJunction.TabIndex = 1;
             this.tabPageAbJunction.Text = "Junction";
+            // 
+            // groupBoxAbJunJun
+            // 
+            this.groupBoxAbJunJun.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag9);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag8);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag7);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag6);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag17);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag19);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag16);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag18);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag13);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag15);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag12);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag14);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag11);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag10);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag5);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag4);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag3);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag2);
+            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag1);
+            this.groupBoxAbJunJun.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbJunJun.ForeColor = System.Drawing.Color.Crimson;
+            this.groupBoxAbJunJun.Location = new System.Drawing.Point(6, 98);
+            this.groupBoxAbJunJun.Name = "groupBoxAbJunJun";
+            this.groupBoxAbJunJun.Size = new System.Drawing.Size(452, 206);
+            this.groupBoxAbJunJun.TabIndex = 3;
+            this.groupBoxAbJunJun.TabStop = false;
+            this.groupBoxAbJunJun.Text = "Junction Flags";
+            // 
+            // checkBoxAbJunFlag9
+            // 
+            this.checkBoxAbJunFlag9.AutoSize = true;
+            this.checkBoxAbJunFlag9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag9.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag9.Location = new System.Drawing.Point(346, 58);
+            this.checkBoxAbJunFlag9.Name = "checkBoxAbJunFlag9";
+            this.checkBoxAbJunFlag9.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxAbJunFlag9.TabIndex = 104;
+            this.checkBoxAbJunFlag9.Text = "Luck-J";
+            this.checkBoxAbJunFlag9.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag8
+            // 
+            this.checkBoxAbJunFlag8.AutoSize = true;
+            this.checkBoxAbJunFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag8.Location = new System.Drawing.Point(273, 58);
+            this.checkBoxAbJunFlag8.Name = "checkBoxAbJunFlag8";
+            this.checkBoxAbJunFlag8.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxAbJunFlag8.TabIndex = 104;
+            this.checkBoxAbJunFlag8.Text = "Hit-J";
+            this.checkBoxAbJunFlag8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag7
+            // 
+            this.checkBoxAbJunFlag7.AutoSize = true;
+            this.checkBoxAbJunFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag7.Location = new System.Drawing.Point(198, 58);
+            this.checkBoxAbJunFlag7.Name = "checkBoxAbJunFlag7";
+            this.checkBoxAbJunFlag7.Size = new System.Drawing.Size(53, 19);
+            this.checkBoxAbJunFlag7.TabIndex = 104;
+            this.checkBoxAbJunFlag7.Text = "Eva-J";
+            this.checkBoxAbJunFlag7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag6
+            // 
+            this.checkBoxAbJunFlag6.AutoSize = true;
+            this.checkBoxAbJunFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag6.Location = new System.Drawing.Point(121, 58);
+            this.checkBoxAbJunFlag6.Name = "checkBoxAbJunFlag6";
+            this.checkBoxAbJunFlag6.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxAbJunFlag6.TabIndex = 104;
+            this.checkBoxAbJunFlag6.Text = "Spd-J";
+            this.checkBoxAbJunFlag6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag17
+            // 
+            this.checkBoxAbJunFlag17.AutoSize = true;
+            this.checkBoxAbJunFlag17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag17.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag17.Location = new System.Drawing.Point(350, 131);
+            this.checkBoxAbJunFlag17.Name = "checkBoxAbJunFlag17";
+            this.checkBoxAbJunFlag17.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxAbJunFlag17.TabIndex = 104;
+            this.checkBoxAbJunFlag17.Text = "ST-Def-Jx4";
+            this.checkBoxAbJunFlag17.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag19
+            // 
+            this.checkBoxAbJunFlag19.AutoSize = true;
+            this.checkBoxAbJunFlag19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag19.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag19.Location = new System.Drawing.Point(243, 179);
+            this.checkBoxAbJunFlag19.Name = "checkBoxAbJunFlag19";
+            this.checkBoxAbJunFlag19.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxAbJunFlag19.TabIndex = 104;
+            this.checkBoxAbJunFlag19.Text = "Abilityx4";
+            this.checkBoxAbJunFlag19.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag16
+            // 
+            this.checkBoxAbJunFlag16.AutoSize = true;
+            this.checkBoxAbJunFlag16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag16.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag16.Location = new System.Drawing.Point(243, 131);
+            this.checkBoxAbJunFlag16.Name = "checkBoxAbJunFlag16";
+            this.checkBoxAbJunFlag16.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxAbJunFlag16.TabIndex = 104;
+            this.checkBoxAbJunFlag16.Text = "ST-Def-Jx2";
+            this.checkBoxAbJunFlag16.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag18
+            // 
+            this.checkBoxAbJunFlag18.AutoSize = true;
+            this.checkBoxAbJunFlag18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag18.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag18.Location = new System.Drawing.Point(132, 179);
+            this.checkBoxAbJunFlag18.Name = "checkBoxAbJunFlag18";
+            this.checkBoxAbJunFlag18.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxAbJunFlag18.TabIndex = 104;
+            this.checkBoxAbJunFlag18.Text = "Abilityx3";
+            this.checkBoxAbJunFlag18.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag13
+            // 
+            this.checkBoxAbJunFlag13.AutoSize = true;
+            this.checkBoxAbJunFlag13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag13.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag13.Location = new System.Drawing.Point(350, 106);
+            this.checkBoxAbJunFlag13.Name = "checkBoxAbJunFlag13";
+            this.checkBoxAbJunFlag13.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxAbJunFlag13.TabIndex = 104;
+            this.checkBoxAbJunFlag13.Text = "ST-Def-J";
+            this.checkBoxAbJunFlag13.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag15
+            // 
+            this.checkBoxAbJunFlag15.AutoSize = true;
+            this.checkBoxAbJunFlag15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag15.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag15.Location = new System.Drawing.Point(132, 131);
+            this.checkBoxAbJunFlag15.Name = "checkBoxAbJunFlag15";
+            this.checkBoxAbJunFlag15.Size = new System.Drawing.Size(86, 19);
+            this.checkBoxAbJunFlag15.TabIndex = 104;
+            this.checkBoxAbJunFlag15.Text = "Elem-Defx4";
+            this.checkBoxAbJunFlag15.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag12
+            // 
+            this.checkBoxAbJunFlag12.AutoSize = true;
+            this.checkBoxAbJunFlag12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag12.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag12.Location = new System.Drawing.Point(243, 106);
+            this.checkBoxAbJunFlag12.Name = "checkBoxAbJunFlag12";
+            this.checkBoxAbJunFlag12.Size = new System.Drawing.Size(84, 19);
+            this.checkBoxAbJunFlag12.TabIndex = 104;
+            this.checkBoxAbJunFlag12.Text = "Elem-Def-J";
+            this.checkBoxAbJunFlag12.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag14
+            // 
+            this.checkBoxAbJunFlag14.AutoSize = true;
+            this.checkBoxAbJunFlag14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag14.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag14.Location = new System.Drawing.Point(21, 131);
+            this.checkBoxAbJunFlag14.Name = "checkBoxAbJunFlag14";
+            this.checkBoxAbJunFlag14.Size = new System.Drawing.Size(86, 19);
+            this.checkBoxAbJunFlag14.TabIndex = 104;
+            this.checkBoxAbJunFlag14.Text = "Elem-Defx2";
+            this.checkBoxAbJunFlag14.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag11
+            // 
+            this.checkBoxAbJunFlag11.AutoSize = true;
+            this.checkBoxAbJunFlag11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag11.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag11.Location = new System.Drawing.Point(132, 106);
+            this.checkBoxAbJunFlag11.Name = "checkBoxAbJunFlag11";
+            this.checkBoxAbJunFlag11.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxAbJunFlag11.TabIndex = 104;
+            this.checkBoxAbJunFlag11.Text = "ST-Atk-J";
+            this.checkBoxAbJunFlag11.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag10
+            // 
+            this.checkBoxAbJunFlag10.AutoSize = true;
+            this.checkBoxAbJunFlag10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag10.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag10.Location = new System.Drawing.Point(21, 106);
+            this.checkBoxAbJunFlag10.Name = "checkBoxAbJunFlag10";
+            this.checkBoxAbJunFlag10.Size = new System.Drawing.Size(84, 19);
+            this.checkBoxAbJunFlag10.TabIndex = 104;
+            this.checkBoxAbJunFlag10.Text = "Elem-Atk-J";
+            this.checkBoxAbJunFlag10.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag5
+            // 
+            this.checkBoxAbJunFlag5.AutoSize = true;
+            this.checkBoxAbJunFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag5.Location = new System.Drawing.Point(47, 58);
+            this.checkBoxAbJunFlag5.Name = "checkBoxAbJunFlag5";
+            this.checkBoxAbJunFlag5.Size = new System.Drawing.Size(52, 19);
+            this.checkBoxAbJunFlag5.TabIndex = 104;
+            this.checkBoxAbJunFlag5.Text = "Spr-J";
+            this.checkBoxAbJunFlag5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag4
+            // 
+            this.checkBoxAbJunFlag4.AutoSize = true;
+            this.checkBoxAbJunFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag4.Location = new System.Drawing.Point(318, 33);
+            this.checkBoxAbJunFlag4.Name = "checkBoxAbJunFlag4";
+            this.checkBoxAbJunFlag4.Size = new System.Drawing.Size(59, 19);
+            this.checkBoxAbJunFlag4.TabIndex = 104;
+            this.checkBoxAbJunFlag4.Text = "Mag-J";
+            this.checkBoxAbJunFlag4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag3
+            // 
+            this.checkBoxAbJunFlag3.AutoSize = true;
+            this.checkBoxAbJunFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag3.Location = new System.Drawing.Point(238, 33);
+            this.checkBoxAbJunFlag3.Name = "checkBoxAbJunFlag3";
+            this.checkBoxAbJunFlag3.Size = new System.Drawing.Size(49, 19);
+            this.checkBoxAbJunFlag3.TabIndex = 104;
+            this.checkBoxAbJunFlag3.Text = "Vit-J";
+            this.checkBoxAbJunFlag3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag2
+            // 
+            this.checkBoxAbJunFlag2.AutoSize = true;
+            this.checkBoxAbJunFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag2.Location = new System.Drawing.Point(158, 33);
+            this.checkBoxAbJunFlag2.Name = "checkBoxAbJunFlag2";
+            this.checkBoxAbJunFlag2.Size = new System.Drawing.Size(49, 19);
+            this.checkBoxAbJunFlag2.TabIndex = 104;
+            this.checkBoxAbJunFlag2.Text = "Str-J";
+            this.checkBoxAbJunFlag2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbJunFlag1
+            // 
+            this.checkBoxAbJunFlag1.AutoSize = true;
+            this.checkBoxAbJunFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbJunFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbJunFlag1.Location = new System.Drawing.Point(76, 33);
+            this.checkBoxAbJunFlag1.Name = "checkBoxAbJunFlag1";
+            this.checkBoxAbJunFlag1.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxAbJunFlag1.TabIndex = 104;
+            this.checkBoxAbJunFlag1.Text = "HP-J";
+            this.checkBoxAbJunFlag1.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxAbJunGeneral
+            // 
+            this.groupBoxAbJunGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbJunGeneral.Controls.Add(this.numericUpDownAbJunAP);
+            this.groupBoxAbJunGeneral.Controls.Add(this.labelAbJunAP);
+            this.groupBoxAbJunGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbJunGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxAbJunGeneral.Location = new System.Drawing.Point(6, 6);
+            this.groupBoxAbJunGeneral.Name = "groupBoxAbJunGeneral";
+            this.groupBoxAbJunGeneral.Size = new System.Drawing.Size(452, 86);
+            this.groupBoxAbJunGeneral.TabIndex = 3;
+            this.groupBoxAbJunGeneral.TabStop = false;
+            this.groupBoxAbJunGeneral.Text = "General";
+            // 
+            // labelAbJunAP
+            // 
+            this.labelAbJunAP.AutoSize = true;
+            this.labelAbJunAP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbJunAP.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbJunAP.Location = new System.Drawing.Point(188, 24);
+            this.labelAbJunAP.Name = "labelAbJunAP";
+            this.labelAbJunAP.Size = new System.Drawing.Size(76, 17);
+            this.labelAbJunAP.TabIndex = 1;
+            this.labelAbJunAP.Text = "AP Needed";
             // 
             // tabPageAbComData
             // 
@@ -17502,23 +17889,358 @@
             this.comboBoxAbComDataMagicID.Size = new System.Drawing.Size(265, 25);
             this.comboBoxAbComDataMagicID.TabIndex = 2;
             // 
+            // tabPageAbCom
+            // 
+            this.tabPageAbCom.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageAbCom.Controls.Add(this.groupBox12);
+            this.tabPageAbCom.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbCom.Name = "tabPageAbCom";
+            this.tabPageAbCom.Size = new System.Drawing.Size(464, 740);
+            this.tabPageAbCom.TabIndex = 7;
+            this.tabPageAbCom.Text = "Command";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox12.Controls.Add(this.numericUpDownAbComAP);
+            this.groupBox12.Controls.Add(this.comboBoxAbComBattleCommand);
+            this.groupBox12.Controls.Add(this.labelAbComAP);
+            this.groupBox12.Controls.Add(this.labelAbComBattleCommand);
+            this.groupBox12.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox12.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBox12.Location = new System.Drawing.Point(6, 6);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(452, 96);
+            this.groupBox12.TabIndex = 127;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "General";
+            // 
+            // numericUpDownAbComAP
+            // 
+            this.numericUpDownAbComAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbComAP.Location = new System.Drawing.Point(307, 48);
+            this.numericUpDownAbComAP.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbComAP.Name = "numericUpDownAbComAP";
+            this.numericUpDownAbComAP.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbComAP.TabIndex = 3;
+            // 
+            // comboBoxAbComBattleCommand
+            // 
+            this.comboBoxAbComBattleCommand.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAbComBattleCommand.FormattingEnabled = true;
+            this.comboBoxAbComBattleCommand.Items.AddRange(new object[] {
+            "Empty",
+            "Attack",
+            "Magic",
+            "GF",
+            "Item",
+            "Renzokuken",
+            "Draw",
+            "Devour",
+            "nomsg",
+            "Cast",
+            "Stock",
+            "Duel",
+            "Mug",
+            "nomsg",
+            "Shot",
+            "Blue Magic",
+            "Slot",
+            "Fire Cross",
+            "Sorcery",
+            "Combine",
+            "Limit",
+            "Limit",
+            "Limit",
+            "Defend",
+            "Mad Rush",
+            "Treatment",
+            "Recover",
+            "Revive",
+            "Darkside",
+            "Card",
+            "Doom",
+            "Kamikaze",
+            "Absorb",
+            "LV Down",
+            "LV Up",
+            "Single",
+            "Double",
+            "Triple",
+            "MiniMog"});
+            this.comboBoxAbComBattleCommand.Location = new System.Drawing.Point(85, 48);
+            this.comboBoxAbComBattleCommand.Name = "comboBoxAbComBattleCommand";
+            this.comboBoxAbComBattleCommand.Size = new System.Drawing.Size(134, 25);
+            this.comboBoxAbComBattleCommand.TabIndex = 2;
+            // 
+            // labelAbComBattleCommand
+            // 
+            this.labelAbComBattleCommand.AutoSize = true;
+            this.labelAbComBattleCommand.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbComBattleCommand.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbComBattleCommand.Location = new System.Drawing.Point(97, 29);
+            this.labelAbComBattleCommand.Name = "labelAbComBattleCommand";
+            this.labelAbComBattleCommand.Size = new System.Drawing.Size(110, 17);
+            this.labelAbComBattleCommand.TabIndex = 0;
+            this.labelAbComBattleCommand.Text = "Battle Command";
+            // 
             // tabPageAbGF
             // 
             this.tabPageAbGF.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbGF.Controls.Add(this.groupBoxAbGF);
             this.tabPageAbGF.Location = new System.Drawing.Point(4, 26);
             this.tabPageAbGF.Name = "tabPageAbGF";
             this.tabPageAbGF.Size = new System.Drawing.Size(464, 740);
             this.tabPageAbGF.TabIndex = 5;
             this.tabPageAbGF.Text = "GF";
             // 
+            // groupBoxAbGF
+            // 
+            this.groupBoxAbGF.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbGF.Controls.Add(this.checkBoxAbGFBoost);
+            this.groupBoxAbGF.Controls.Add(this.numericUpDownAbGFAP);
+            this.groupBoxAbGF.Controls.Add(this.comboBoxAbGFStatToIncrease);
+            this.groupBoxAbGF.Controls.Add(this.labelAbGFStatToIncrease);
+            this.groupBoxAbGF.Controls.Add(this.labelAbGFValueTrackBar);
+            this.groupBoxAbGF.Controls.Add(this.trackBarAbGFIncrementValue);
+            this.groupBoxAbGF.Controls.Add(this.labelAbGFIncrementValue);
+            this.groupBoxAbGF.Controls.Add(this.labelAbGFAP);
+            this.groupBoxAbGF.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbGF.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxAbGF.Location = new System.Drawing.Point(6, 6);
+            this.groupBoxAbGF.Name = "groupBoxAbGF";
+            this.groupBoxAbGF.Size = new System.Drawing.Size(452, 179);
+            this.groupBoxAbGF.TabIndex = 3;
+            this.groupBoxAbGF.TabStop = false;
+            this.groupBoxAbGF.Text = "General";
+            // 
+            // checkBoxAbGFBoost
+            // 
+            this.checkBoxAbGFBoost.AutoSize = true;
+            this.checkBoxAbGFBoost.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbGFBoost.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbGFBoost.Location = new System.Drawing.Point(268, 145);
+            this.checkBoxAbGFBoost.Name = "checkBoxAbGFBoost";
+            this.checkBoxAbGFBoost.Size = new System.Drawing.Size(94, 19);
+            this.checkBoxAbGFBoost.TabIndex = 105;
+            this.checkBoxAbGFBoost.Text = "Enable Boost";
+            this.checkBoxAbGFBoost.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxAbGFStatToIncrease
+            // 
+            this.comboBoxAbGFStatToIncrease.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAbGFStatToIncrease.FormattingEnabled = true;
+            this.comboBoxAbGFStatToIncrease.Items.AddRange(new object[] {
+            "SumMag",
+            "HP",
+            "255 (Boost?)"});
+            this.comboBoxAbGFStatToIncrease.Location = new System.Drawing.Point(11, 64);
+            this.comboBoxAbGFStatToIncrease.Name = "comboBoxAbGFStatToIncrease";
+            this.comboBoxAbGFStatToIncrease.Size = new System.Drawing.Size(98, 25);
+            this.comboBoxAbGFStatToIncrease.TabIndex = 30;
+            // 
+            // labelAbGFStatToIncrease
+            // 
+            this.labelAbGFStatToIncrease.AutoSize = true;
+            this.labelAbGFStatToIncrease.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbGFStatToIncrease.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbGFStatToIncrease.Location = new System.Drawing.Point(9, 40);
+            this.labelAbGFStatToIncrease.Name = "labelAbGFStatToIncrease";
+            this.labelAbGFStatToIncrease.Size = new System.Drawing.Size(102, 17);
+            this.labelAbGFStatToIncrease.TabIndex = 29;
+            this.labelAbGFStatToIncrease.Text = "Stat to increase";
+            // 
+            // labelAbGFValueTrackBar
+            // 
+            this.labelAbGFValueTrackBar.AutoSize = true;
+            this.labelAbGFValueTrackBar.BackColor = System.Drawing.Color.Transparent;
+            this.labelAbGFValueTrackBar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAbGFValueTrackBar.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbGFValueTrackBar.Location = new System.Drawing.Point(267, 89);
+            this.labelAbGFValueTrackBar.Name = "labelAbGFValueTrackBar";
+            this.labelAbGFValueTrackBar.Size = new System.Drawing.Size(28, 19);
+            this.labelAbGFValueTrackBar.TabIndex = 28;
+            this.labelAbGFValueTrackBar.Text = "0%";
+            this.labelAbGFValueTrackBar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // trackBarAbGFIncrementValue
+            // 
+            this.trackBarAbGFIncrementValue.LargeChange = 10;
+            this.trackBarAbGFIncrementValue.Location = new System.Drawing.Point(125, 60);
+            this.trackBarAbGFIncrementValue.Maximum = 255;
+            this.trackBarAbGFIncrementValue.Name = "trackBarAbGFIncrementValue";
+            this.trackBarAbGFIncrementValue.Size = new System.Drawing.Size(318, 45);
+            this.trackBarAbGFIncrementValue.TabIndex = 27;
+            this.trackBarAbGFIncrementValue.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.trackBarAbGFIncrementValue.Scroll += new System.EventHandler(this.trackBarAbGFIncrementValue_Scroll);
+            this.trackBarAbGFIncrementValue.ValueChanged += new System.EventHandler(this.trackBarAbGFIncrementValue_Scroll);
+            // 
+            // labelAbGFIncrementValue
+            // 
+            this.labelAbGFIncrementValue.AutoSize = true;
+            this.labelAbGFIncrementValue.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbGFIncrementValue.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbGFIncrementValue.Location = new System.Drawing.Point(227, 40);
+            this.labelAbGFIncrementValue.Name = "labelAbGFIncrementValue";
+            this.labelAbGFIncrementValue.Size = new System.Drawing.Size(112, 17);
+            this.labelAbGFIncrementValue.TabIndex = 1;
+            this.labelAbGFIncrementValue.Text = "Increase Amount";
+            // 
             // tabPageABParty
             // 
             this.tabPageABParty.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageABParty.Controls.Add(this.groupBoxAbPartyFlags);
+            this.tabPageABParty.Controls.Add(this.groupBoxAbPartyGeneral);
             this.tabPageABParty.Location = new System.Drawing.Point(4, 26);
             this.tabPageABParty.Name = "tabPageABParty";
             this.tabPageABParty.Size = new System.Drawing.Size(464, 740);
             this.tabPageABParty.TabIndex = 4;
             this.tabPageABParty.Text = "Party";
+            // 
+            // groupBoxAbPartyFlags
+            // 
+            this.groupBoxAbPartyFlags.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbPartyFlags.Controls.Add(this.checkBoxAbPartyFlag8);
+            this.groupBoxAbPartyFlags.Controls.Add(this.checkBoxAbPartyFlag7);
+            this.groupBoxAbPartyFlags.Controls.Add(this.checkBoxAbPartyFlag4);
+            this.groupBoxAbPartyFlags.Controls.Add(this.checkBoxAbPartyFlag6);
+            this.groupBoxAbPartyFlags.Controls.Add(this.checkBoxAbPartyFlag3);
+            this.groupBoxAbPartyFlags.Controls.Add(this.checkBoxAbPartyFlag5);
+            this.groupBoxAbPartyFlags.Controls.Add(this.checkBoxAbPartyFlag2);
+            this.groupBoxAbPartyFlags.Controls.Add(this.checkBoxAbPartyFlag1);
+            this.groupBoxAbPartyFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbPartyFlags.ForeColor = System.Drawing.Color.Crimson;
+            this.groupBoxAbPartyFlags.Location = new System.Drawing.Point(6, 98);
+            this.groupBoxAbPartyFlags.Name = "groupBoxAbPartyFlags";
+            this.groupBoxAbPartyFlags.Size = new System.Drawing.Size(452, 93);
+            this.groupBoxAbPartyFlags.TabIndex = 4;
+            this.groupBoxAbPartyFlags.TabStop = false;
+            this.groupBoxAbPartyFlags.Text = "Junction Flags";
+            // 
+            // checkBoxAbPartyFlag8
+            // 
+            this.checkBoxAbPartyFlag8.AutoSize = true;
+            this.checkBoxAbPartyFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbPartyFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbPartyFlag8.Location = new System.Drawing.Point(370, 64);
+            this.checkBoxAbPartyFlag8.Name = "checkBoxAbPartyFlag8";
+            this.checkBoxAbPartyFlag8.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag8.TabIndex = 104;
+            this.checkBoxAbPartyFlag8.Text = "???";
+            this.checkBoxAbPartyFlag8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbPartyFlag7
+            // 
+            this.checkBoxAbPartyFlag7.AutoSize = true;
+            this.checkBoxAbPartyFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbPartyFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbPartyFlag7.Location = new System.Drawing.Point(263, 64);
+            this.checkBoxAbPartyFlag7.Name = "checkBoxAbPartyFlag7";
+            this.checkBoxAbPartyFlag7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag7.TabIndex = 104;
+            this.checkBoxAbPartyFlag7.Text = "???";
+            this.checkBoxAbPartyFlag7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbPartyFlag4
+            // 
+            this.checkBoxAbPartyFlag4.AutoSize = true;
+            this.checkBoxAbPartyFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbPartyFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbPartyFlag4.Location = new System.Drawing.Point(370, 39);
+            this.checkBoxAbPartyFlag4.Name = "checkBoxAbPartyFlag4";
+            this.checkBoxAbPartyFlag4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag4.TabIndex = 104;
+            this.checkBoxAbPartyFlag4.Text = "???";
+            this.checkBoxAbPartyFlag4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbPartyFlag6
+            // 
+            this.checkBoxAbPartyFlag6.AutoSize = true;
+            this.checkBoxAbPartyFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbPartyFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbPartyFlag6.Location = new System.Drawing.Point(152, 64);
+            this.checkBoxAbPartyFlag6.Name = "checkBoxAbPartyFlag6";
+            this.checkBoxAbPartyFlag6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag6.TabIndex = 104;
+            this.checkBoxAbPartyFlag6.Text = "???";
+            this.checkBoxAbPartyFlag6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbPartyFlag3
+            // 
+            this.checkBoxAbPartyFlag3.AutoSize = true;
+            this.checkBoxAbPartyFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbPartyFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbPartyFlag3.Location = new System.Drawing.Point(263, 39);
+            this.checkBoxAbPartyFlag3.Name = "checkBoxAbPartyFlag3";
+            this.checkBoxAbPartyFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag3.TabIndex = 104;
+            this.checkBoxAbPartyFlag3.Text = "???";
+            this.checkBoxAbPartyFlag3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbPartyFlag5
+            // 
+            this.checkBoxAbPartyFlag5.AutoSize = true;
+            this.checkBoxAbPartyFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbPartyFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbPartyFlag5.Location = new System.Drawing.Point(41, 64);
+            this.checkBoxAbPartyFlag5.Name = "checkBoxAbPartyFlag5";
+            this.checkBoxAbPartyFlag5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag5.TabIndex = 104;
+            this.checkBoxAbPartyFlag5.Text = "???";
+            this.checkBoxAbPartyFlag5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbPartyFlag2
+            // 
+            this.checkBoxAbPartyFlag2.AutoSize = true;
+            this.checkBoxAbPartyFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbPartyFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbPartyFlag2.Location = new System.Drawing.Point(152, 39);
+            this.checkBoxAbPartyFlag2.Name = "checkBoxAbPartyFlag2";
+            this.checkBoxAbPartyFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag2.TabIndex = 104;
+            this.checkBoxAbPartyFlag2.Text = "???";
+            this.checkBoxAbPartyFlag2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbPartyFlag1
+            // 
+            this.checkBoxAbPartyFlag1.AutoSize = true;
+            this.checkBoxAbPartyFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbPartyFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbPartyFlag1.Location = new System.Drawing.Point(41, 39);
+            this.checkBoxAbPartyFlag1.Name = "checkBoxAbPartyFlag1";
+            this.checkBoxAbPartyFlag1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag1.TabIndex = 104;
+            this.checkBoxAbPartyFlag1.Text = "???";
+            this.checkBoxAbPartyFlag1.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxAbPartyGeneral
+            // 
+            this.groupBoxAbPartyGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbPartyGeneral.Controls.Add(this.numericUpDownAbPartyAP);
+            this.groupBoxAbPartyGeneral.Controls.Add(this.labelAbPartyAP);
+            this.groupBoxAbPartyGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbPartyGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxAbPartyGeneral.Location = new System.Drawing.Point(6, 6);
+            this.groupBoxAbPartyGeneral.Name = "groupBoxAbPartyGeneral";
+            this.groupBoxAbPartyGeneral.Size = new System.Drawing.Size(452, 86);
+            this.groupBoxAbPartyGeneral.TabIndex = 5;
+            this.groupBoxAbPartyGeneral.TabStop = false;
+            this.groupBoxAbPartyGeneral.Text = "General";
+            // 
+            // labelAbPartyAP
+            // 
+            this.labelAbPartyAP.AutoSize = true;
+            this.labelAbPartyAP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbPartyAP.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbPartyAP.Location = new System.Drawing.Point(188, 24);
+            this.labelAbPartyAP.Name = "labelAbPartyAP";
+            this.labelAbPartyAP.Size = new System.Drawing.Size(76, 17);
+            this.labelAbPartyAP.TabIndex = 1;
+            this.labelAbPartyAP.Text = "AP Needed";
             // 
             // tabPageAbMenu
             // 
@@ -17645,6 +18367,7 @@
             this.listBoxAbParty.Name = "listBoxAbParty";
             this.listBoxAbParty.Size = new System.Drawing.Size(156, 769);
             this.listBoxAbParty.TabIndex = 3;
+            this.listBoxAbParty.SelectedIndexChanged += new System.EventHandler(this.listBoxAbParty_SelectedIndexChanged);
             // 
             // listBoxAbGF
             // 
@@ -17666,6 +18389,7 @@
             this.listBoxAbGF.Name = "listBoxAbGF";
             this.listBoxAbGF.Size = new System.Drawing.Size(156, 769);
             this.listBoxAbGF.TabIndex = 3;
+            this.listBoxAbGF.SelectedIndexChanged += new System.EventHandler(this.listBoxAbGF_SelectedIndexChanged);
             // 
             // listBoxAbCom
             // 
@@ -17697,6 +18421,7 @@
             this.listBoxAbCom.Name = "listBoxAbCom";
             this.listBoxAbCom.Size = new System.Drawing.Size(156, 769);
             this.listBoxAbCom.TabIndex = 3;
+            this.listBoxAbCom.SelectedIndexChanged += new System.EventHandler(this.listBoxAbCom_SelectedIndexChanged);
             // 
             // listBoxAbJun
             // 
@@ -38052,313 +38777,6 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel1.Text = "Ready";
             // 
-            // tabPageAbCom
-            // 
-            this.tabPageAbCom.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPageAbCom.Location = new System.Drawing.Point(4, 26);
-            this.tabPageAbCom.Name = "tabPageAbCom";
-            this.tabPageAbCom.Size = new System.Drawing.Size(464, 740);
-            this.tabPageAbCom.TabIndex = 7;
-            this.tabPageAbCom.Text = "Command";
-            // 
-            // groupBoxAbJunGeneral
-            // 
-            this.groupBoxAbJunGeneral.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxAbJunGeneral.Controls.Add(this.numericUpDownAbJunAP);
-            this.groupBoxAbJunGeneral.Controls.Add(this.labelAbJunAP);
-            this.groupBoxAbJunGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxAbJunGeneral.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBoxAbJunGeneral.Location = new System.Drawing.Point(6, 6);
-            this.groupBoxAbJunGeneral.Name = "groupBoxAbJunGeneral";
-            this.groupBoxAbJunGeneral.Size = new System.Drawing.Size(452, 86);
-            this.groupBoxAbJunGeneral.TabIndex = 3;
-            this.groupBoxAbJunGeneral.TabStop = false;
-            this.groupBoxAbJunGeneral.Text = "General";
-            // 
-            // numericUpDownAbJunAP
-            // 
-            this.numericUpDownAbJunAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownAbJunAP.Location = new System.Drawing.Point(203, 44);
-            this.numericUpDownAbJunAP.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownAbJunAP.Name = "numericUpDownAbJunAP";
-            this.numericUpDownAbJunAP.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownAbJunAP.TabIndex = 31;
-            this.toolTip1.SetToolTip(this.numericUpDownAbJunAP, "Default: 0");
-            // 
-            // labelAbJunAP
-            // 
-            this.labelAbJunAP.AutoSize = true;
-            this.labelAbJunAP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelAbJunAP.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbJunAP.Location = new System.Drawing.Point(188, 24);
-            this.labelAbJunAP.Name = "labelAbJunAP";
-            this.labelAbJunAP.Size = new System.Drawing.Size(76, 17);
-            this.labelAbJunAP.TabIndex = 1;
-            this.labelAbJunAP.Text = "AP Needed";
-            // 
-            // groupBoxAbJunJun
-            // 
-            this.groupBoxAbJunJun.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag9);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag8);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag7);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag6);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag17);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag19);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag16);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag18);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag13);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag15);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag12);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag14);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag11);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag10);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag5);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag4);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag3);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag2);
-            this.groupBoxAbJunJun.Controls.Add(this.checkBoxAbJunFlag1);
-            this.groupBoxAbJunJun.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxAbJunJun.ForeColor = System.Drawing.Color.Crimson;
-            this.groupBoxAbJunJun.Location = new System.Drawing.Point(6, 98);
-            this.groupBoxAbJunJun.Name = "groupBoxAbJunJun";
-            this.groupBoxAbJunJun.Size = new System.Drawing.Size(452, 206);
-            this.groupBoxAbJunJun.TabIndex = 3;
-            this.groupBoxAbJunJun.TabStop = false;
-            this.groupBoxAbJunJun.Text = "Junction Flags";
-            // 
-            // checkBoxAbJunFlag1
-            // 
-            this.checkBoxAbJunFlag1.AutoSize = true;
-            this.checkBoxAbJunFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag1.Location = new System.Drawing.Point(76, 33);
-            this.checkBoxAbJunFlag1.Name = "checkBoxAbJunFlag1";
-            this.checkBoxAbJunFlag1.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxAbJunFlag1.TabIndex = 104;
-            this.checkBoxAbJunFlag1.Text = "HP-J";
-            this.checkBoxAbJunFlag1.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag2
-            // 
-            this.checkBoxAbJunFlag2.AutoSize = true;
-            this.checkBoxAbJunFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag2.Location = new System.Drawing.Point(158, 33);
-            this.checkBoxAbJunFlag2.Name = "checkBoxAbJunFlag2";
-            this.checkBoxAbJunFlag2.Size = new System.Drawing.Size(49, 19);
-            this.checkBoxAbJunFlag2.TabIndex = 104;
-            this.checkBoxAbJunFlag2.Text = "Str-J";
-            this.checkBoxAbJunFlag2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag3
-            // 
-            this.checkBoxAbJunFlag3.AutoSize = true;
-            this.checkBoxAbJunFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag3.Location = new System.Drawing.Point(238, 33);
-            this.checkBoxAbJunFlag3.Name = "checkBoxAbJunFlag3";
-            this.checkBoxAbJunFlag3.Size = new System.Drawing.Size(49, 19);
-            this.checkBoxAbJunFlag3.TabIndex = 104;
-            this.checkBoxAbJunFlag3.Text = "Vit-J";
-            this.checkBoxAbJunFlag3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag4
-            // 
-            this.checkBoxAbJunFlag4.AutoSize = true;
-            this.checkBoxAbJunFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag4.Location = new System.Drawing.Point(318, 33);
-            this.checkBoxAbJunFlag4.Name = "checkBoxAbJunFlag4";
-            this.checkBoxAbJunFlag4.Size = new System.Drawing.Size(59, 19);
-            this.checkBoxAbJunFlag4.TabIndex = 104;
-            this.checkBoxAbJunFlag4.Text = "Mag-J";
-            this.checkBoxAbJunFlag4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag5
-            // 
-            this.checkBoxAbJunFlag5.AutoSize = true;
-            this.checkBoxAbJunFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag5.Location = new System.Drawing.Point(47, 58);
-            this.checkBoxAbJunFlag5.Name = "checkBoxAbJunFlag5";
-            this.checkBoxAbJunFlag5.Size = new System.Drawing.Size(52, 19);
-            this.checkBoxAbJunFlag5.TabIndex = 104;
-            this.checkBoxAbJunFlag5.Text = "Spr-J";
-            this.checkBoxAbJunFlag5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag6
-            // 
-            this.checkBoxAbJunFlag6.AutoSize = true;
-            this.checkBoxAbJunFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag6.Location = new System.Drawing.Point(121, 58);
-            this.checkBoxAbJunFlag6.Name = "checkBoxAbJunFlag6";
-            this.checkBoxAbJunFlag6.Size = new System.Drawing.Size(55, 19);
-            this.checkBoxAbJunFlag6.TabIndex = 104;
-            this.checkBoxAbJunFlag6.Text = "Spd-J";
-            this.checkBoxAbJunFlag6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag7
-            // 
-            this.checkBoxAbJunFlag7.AutoSize = true;
-            this.checkBoxAbJunFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag7.Location = new System.Drawing.Point(198, 58);
-            this.checkBoxAbJunFlag7.Name = "checkBoxAbJunFlag7";
-            this.checkBoxAbJunFlag7.Size = new System.Drawing.Size(53, 19);
-            this.checkBoxAbJunFlag7.TabIndex = 104;
-            this.checkBoxAbJunFlag7.Text = "Eva-J";
-            this.checkBoxAbJunFlag7.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag8
-            // 
-            this.checkBoxAbJunFlag8.AutoSize = true;
-            this.checkBoxAbJunFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag8.Location = new System.Drawing.Point(273, 58);
-            this.checkBoxAbJunFlag8.Name = "checkBoxAbJunFlag8";
-            this.checkBoxAbJunFlag8.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxAbJunFlag8.TabIndex = 104;
-            this.checkBoxAbJunFlag8.Text = "Hit-J";
-            this.checkBoxAbJunFlag8.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag10
-            // 
-            this.checkBoxAbJunFlag10.AutoSize = true;
-            this.checkBoxAbJunFlag10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag10.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag10.Location = new System.Drawing.Point(21, 106);
-            this.checkBoxAbJunFlag10.Name = "checkBoxAbJunFlag10";
-            this.checkBoxAbJunFlag10.Size = new System.Drawing.Size(84, 19);
-            this.checkBoxAbJunFlag10.TabIndex = 104;
-            this.checkBoxAbJunFlag10.Text = "Elem-Atk-J";
-            this.checkBoxAbJunFlag10.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag11
-            // 
-            this.checkBoxAbJunFlag11.AutoSize = true;
-            this.checkBoxAbJunFlag11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag11.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag11.Location = new System.Drawing.Point(132, 106);
-            this.checkBoxAbJunFlag11.Name = "checkBoxAbJunFlag11";
-            this.checkBoxAbJunFlag11.Size = new System.Drawing.Size(71, 19);
-            this.checkBoxAbJunFlag11.TabIndex = 104;
-            this.checkBoxAbJunFlag11.Text = "ST-Atk-J";
-            this.checkBoxAbJunFlag11.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag12
-            // 
-            this.checkBoxAbJunFlag12.AutoSize = true;
-            this.checkBoxAbJunFlag12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag12.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag12.Location = new System.Drawing.Point(243, 106);
-            this.checkBoxAbJunFlag12.Name = "checkBoxAbJunFlag12";
-            this.checkBoxAbJunFlag12.Size = new System.Drawing.Size(84, 19);
-            this.checkBoxAbJunFlag12.TabIndex = 104;
-            this.checkBoxAbJunFlag12.Text = "Elem-Def-J";
-            this.checkBoxAbJunFlag12.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag13
-            // 
-            this.checkBoxAbJunFlag13.AutoSize = true;
-            this.checkBoxAbJunFlag13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag13.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag13.Location = new System.Drawing.Point(350, 106);
-            this.checkBoxAbJunFlag13.Name = "checkBoxAbJunFlag13";
-            this.checkBoxAbJunFlag13.Size = new System.Drawing.Size(71, 19);
-            this.checkBoxAbJunFlag13.TabIndex = 104;
-            this.checkBoxAbJunFlag13.Text = "ST-Def-J";
-            this.checkBoxAbJunFlag13.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag14
-            // 
-            this.checkBoxAbJunFlag14.AutoSize = true;
-            this.checkBoxAbJunFlag14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag14.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag14.Location = new System.Drawing.Point(21, 131);
-            this.checkBoxAbJunFlag14.Name = "checkBoxAbJunFlag14";
-            this.checkBoxAbJunFlag14.Size = new System.Drawing.Size(86, 19);
-            this.checkBoxAbJunFlag14.TabIndex = 104;
-            this.checkBoxAbJunFlag14.Text = "Elem-Defx2";
-            this.checkBoxAbJunFlag14.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag15
-            // 
-            this.checkBoxAbJunFlag15.AutoSize = true;
-            this.checkBoxAbJunFlag15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag15.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag15.Location = new System.Drawing.Point(132, 131);
-            this.checkBoxAbJunFlag15.Name = "checkBoxAbJunFlag15";
-            this.checkBoxAbJunFlag15.Size = new System.Drawing.Size(86, 19);
-            this.checkBoxAbJunFlag15.TabIndex = 104;
-            this.checkBoxAbJunFlag15.Text = "Elem-Defx4";
-            this.checkBoxAbJunFlag15.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag16
-            // 
-            this.checkBoxAbJunFlag16.AutoSize = true;
-            this.checkBoxAbJunFlag16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag16.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag16.Location = new System.Drawing.Point(243, 131);
-            this.checkBoxAbJunFlag16.Name = "checkBoxAbJunFlag16";
-            this.checkBoxAbJunFlag16.Size = new System.Drawing.Size(82, 19);
-            this.checkBoxAbJunFlag16.TabIndex = 104;
-            this.checkBoxAbJunFlag16.Text = "ST-Def-Jx2";
-            this.checkBoxAbJunFlag16.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag17
-            // 
-            this.checkBoxAbJunFlag17.AutoSize = true;
-            this.checkBoxAbJunFlag17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag17.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag17.Location = new System.Drawing.Point(350, 131);
-            this.checkBoxAbJunFlag17.Name = "checkBoxAbJunFlag17";
-            this.checkBoxAbJunFlag17.Size = new System.Drawing.Size(82, 19);
-            this.checkBoxAbJunFlag17.TabIndex = 104;
-            this.checkBoxAbJunFlag17.Text = "ST-Def-Jx4";
-            this.checkBoxAbJunFlag17.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag18
-            // 
-            this.checkBoxAbJunFlag18.AutoSize = true;
-            this.checkBoxAbJunFlag18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag18.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag18.Location = new System.Drawing.Point(132, 179);
-            this.checkBoxAbJunFlag18.Name = "checkBoxAbJunFlag18";
-            this.checkBoxAbJunFlag18.Size = new System.Drawing.Size(71, 19);
-            this.checkBoxAbJunFlag18.TabIndex = 104;
-            this.checkBoxAbJunFlag18.Text = "Abilityx3";
-            this.checkBoxAbJunFlag18.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag19
-            // 
-            this.checkBoxAbJunFlag19.AutoSize = true;
-            this.checkBoxAbJunFlag19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag19.Location = new System.Drawing.Point(243, 179);
-            this.checkBoxAbJunFlag19.Name = "checkBoxAbJunFlag19";
-            this.checkBoxAbJunFlag19.Size = new System.Drawing.Size(71, 19);
-            this.checkBoxAbJunFlag19.TabIndex = 104;
-            this.checkBoxAbJunFlag19.Text = "Abilityx4";
-            this.checkBoxAbJunFlag19.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbJunFlag9
-            // 
-            this.checkBoxAbJunFlag9.AutoSize = true;
-            this.checkBoxAbJunFlag9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbJunFlag9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbJunFlag9.Location = new System.Drawing.Point(346, 58);
-            this.checkBoxAbJunFlag9.Name = "checkBoxAbJunFlag9";
-            this.checkBoxAbJunFlag9.Size = new System.Drawing.Size(60, 19);
-            this.checkBoxAbJunFlag9.TabIndex = 104;
-            this.checkBoxAbJunFlag9.Text = "Luck-J";
-            this.checkBoxAbJunFlag9.UseVisualStyleBackColor = true;
-            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -38382,6 +38800,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbStatsAP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbJunAP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbPartyAP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbGFAP)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolbarStrip.ResumeLayout(false);
@@ -38497,6 +38918,10 @@
             this.groupBoxStatsIncrement.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAbStatsIncrementValue)).EndInit();
             this.tabPageAbJunction.ResumeLayout(false);
+            this.groupBoxAbJunJun.ResumeLayout(false);
+            this.groupBoxAbJunJun.PerformLayout();
+            this.groupBoxAbJunGeneral.ResumeLayout(false);
+            this.groupBoxAbJunGeneral.PerformLayout();
             this.tabPageAbComData.ResumeLayout(false);
             this.groupBoxAbComDataStatus.ResumeLayout(false);
             this.groupBoxAbComDataStatus.PerformLayout();
@@ -38507,6 +38932,19 @@
             this.groupBoxAbComDataGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataAttackPower)).EndInit();
+            this.tabPageAbCom.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComAP)).EndInit();
+            this.tabPageAbGF.ResumeLayout(false);
+            this.groupBoxAbGF.ResumeLayout(false);
+            this.groupBoxAbGF.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarAbGFIncrementValue)).EndInit();
+            this.tabPageABParty.ResumeLayout(false);
+            this.groupBoxAbPartyFlags.ResumeLayout(false);
+            this.groupBoxAbPartyFlags.PerformLayout();
+            this.groupBoxAbPartyGeneral.ResumeLayout(false);
+            this.groupBoxAbPartyGeneral.PerformLayout();
             this.tabPageWeapons.ResumeLayout(false);
             this.groupBoxWeaponsRenzokukenFinishers.ResumeLayout(false);
             this.groupBoxWeaponsRenzokukenFinishers.PerformLayout();
@@ -38925,11 +39363,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.groupBoxAbJunGeneral.ResumeLayout(false);
-            this.groupBoxAbJunGeneral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbJunAP)).EndInit();
-            this.groupBoxAbJunJun.ResumeLayout(false);
-            this.groupBoxAbJunJun.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -40806,6 +41239,32 @@
         private System.Windows.Forms.NumericUpDown numericUpDownAbJunAP;
         private System.Windows.Forms.Label labelAbJunAP;
         private System.Windows.Forms.CheckBox checkBoxAbJunFlag9;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.NumericUpDown numericUpDownAbComAP;
+        private System.Windows.Forms.ComboBox comboBoxAbComBattleCommand;
+        private System.Windows.Forms.Label labelAbComAP;
+        private System.Windows.Forms.Label labelAbComBattleCommand;
+        private System.Windows.Forms.GroupBox groupBoxAbPartyFlags;
+        private System.Windows.Forms.CheckBox checkBoxAbPartyFlag8;
+        private System.Windows.Forms.CheckBox checkBoxAbPartyFlag7;
+        private System.Windows.Forms.CheckBox checkBoxAbPartyFlag4;
+        private System.Windows.Forms.CheckBox checkBoxAbPartyFlag6;
+        private System.Windows.Forms.CheckBox checkBoxAbPartyFlag3;
+        private System.Windows.Forms.CheckBox checkBoxAbPartyFlag5;
+        private System.Windows.Forms.CheckBox checkBoxAbPartyFlag2;
+        private System.Windows.Forms.CheckBox checkBoxAbPartyFlag1;
+        private System.Windows.Forms.GroupBox groupBoxAbPartyGeneral;
+        private System.Windows.Forms.NumericUpDown numericUpDownAbPartyAP;
+        private System.Windows.Forms.Label labelAbPartyAP;
+        private System.Windows.Forms.GroupBox groupBoxAbGF;
+        private System.Windows.Forms.NumericUpDown numericUpDownAbGFAP;
+        private System.Windows.Forms.ComboBox comboBoxAbGFStatToIncrease;
+        private System.Windows.Forms.Label labelAbGFStatToIncrease;
+        private System.Windows.Forms.Label labelAbGFValueTrackBar;
+        private System.Windows.Forms.TrackBar trackBarAbGFIncrementValue;
+        private System.Windows.Forms.Label labelAbGFIncrementValue;
+        private System.Windows.Forms.Label labelAbGFAP;
+        private System.Windows.Forms.CheckBox checkBoxAbGFBoost;
     }
 }
 
