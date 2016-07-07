@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Runtime.Remoting.Channels;
+using Doomtrain.Characters_Stats_Charts;
 
 namespace Doomtrain
 {
@@ -29,8 +30,9 @@ namespace Doomtrain
 
             //this is for enabling the switching of listboxes in the ability section
             listBoxAbStats.Visible = false;
-            listBoxAbJunction.Visible = false;
-            listBoxAbCommand.Visible = false;
+            listBoxAbJun.Visible = false;
+            listBoxAbComData.Visible = false;
+            listBoxAbCom.Visible = false;
             listBoxAbGF.Visible = false;
             listBoxAbParty.Visible = false;
             listBoxAbMenu.Visible = false;
@@ -192,6 +194,7 @@ namespace Doomtrain
             checkBoxGFFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GF(27, 0x80);
             comboBoxGFElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(2, GF_GetElement(comboBoxGFElement.SelectedIndex));
             numericUpDownGFHP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(3, numericUpDownGFHP.Value);
+            numericUpDownGFEXP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(29, numericUpDownGFEXP.Value);
             numericUpDownGFPowerMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(4, numericUpDownGFPowerMod.Value);
             numericUpDownGFLevelMod.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(5, numericUpDownGFLevelMod.Value);
             comboBoxGFAbility1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(6, comboBoxGFAbility1.SelectedIndex, 0);
@@ -660,8 +663,9 @@ namespace Doomtrain
 
             #region EVENT HANDLERS STATS INCREASE ABILITIES
 
-            comboBoxAbStatsStatToIncrease.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(0, comboBoxAbStatsStatToIncrease.SelectedIndex);
-            trackBarAbStatsIncrementValue.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(1, trackBarAbStatsIncrementValue.Value);
+            numericUpDownAbStatsAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(0, numericUpDownAbStatsAP.Value);
+            comboBoxAbStatsStatToIncrease.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(1, comboBoxAbStatsStatToIncrease.SelectedIndex);
+            trackBarAbStatsIncrementValue.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(2, trackBarAbStatsIncrementValue.Value);
 
             #endregion
 
@@ -895,76 +899,7 @@ namespace Doomtrain
             comboBoxDuelElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(6, Duel_GetElement(comboBoxDuelElement.SelectedIndex));            
             numericUpDownDuelElementPerc.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(7, numericUpDownDuelElementPerc.Value);
             numericUpDownDuelStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(8, numericUpDownDuelStatusAttack.Value);
-
-            /* not sure if correct
-            checkBoxDuelFinisher.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0001);
-            radioButtonDuelUp1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0010);
-            radioButtonDuelRight1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0020);
-            radioButtonDuelDown1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0040);
-            radioButtonDuelLeft1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0080);
-            radioButtonDuelL2_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0100);
-            radioButtonDuelR2_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0200);
-            radioButtonDuelL1_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0400);
-            radioButtonDuelR1_1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x0800);
-            radioButtonDuelTriangle1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x1000);
-            radioButtonDuelCircle1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x2000);
-            radioButtonDuelX1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x4000);
-            radioButtonDuelSquare1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0x8000);
-            radioButtonDuelDeac1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, 0xFFFF);
-            radioButtonDuelUp2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0010);
-            radioButtonDuelRight2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0020);
-            radioButtonDuelDown2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0040);
-            radioButtonDuelLeft2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0080);
-            radioButtonDuelL2_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0100);
-            radioButtonDuelR2_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0200);
-            radioButtonDuelL1_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0400);
-            radioButtonDuelR1_2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x0800);
-            radioButtonDuelTriangle2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x1000);
-            radioButtonDuelCircle2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x2000);
-            radioButtonDuelX2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x4000);
-            radioButtonDuelSquare2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0x8000);
-            radioButtonDuelDeac2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, 0xFFFF);
-            radioButtonDuelUp3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0010);
-            radioButtonDuelRight3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0020);
-            radioButtonDuelDown3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0040);
-            radioButtonDuelLeft3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0080);
-            radioButtonDuelL2_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0100);
-            radioButtonDuelR2_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0200);
-            radioButtonDuelL1_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0400);
-            radioButtonDuelR1_3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x0800);
-            radioButtonDuelTriangle3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x1000);
-            radioButtonDuelCircle3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x2000);
-            radioButtonDuelX3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x4000);
-            radioButtonDuelSquare3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0x8000);
-            radioButtonDuelDeac3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, 0xFFFF);
-            radioButtonDuelUp4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0010);
-            radioButtonDuelRight4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0020);
-            radioButtonDuelDown4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0040);
-            radioButtonDuelLeft4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0080);
-            radioButtonDuelL2_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0100);
-            radioButtonDuelR2_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0200);
-            radioButtonDuelL1_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0400);
-            radioButtonDuelR1_4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x0800);
-            radioButtonDuelTriangle4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x1000);
-            radioButtonDuelCircle4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x2000);
-            radioButtonDuelX4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x4000);
-            radioButtonDuelSquare4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0x8000);
-            radioButtonDuelDeac4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, 0xFFFF);
-            radioButtonDuelUp5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0010);
-            radioButtonDuelRight5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0020);
-            radioButtonDuelDown5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0040);
-            radioButtonDuelLeft5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0080);
-            radioButtonDuelL2_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0100);
-            radioButtonDuelR2_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0200);
-            radioButtonDuelL1_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0400);
-            radioButtonDuelR1_5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x0800);
-            radioButtonDuelTriangle5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x1000);
-            radioButtonDuelCircle5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x2000);
-            radioButtonDuelX5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x4000);
-            radioButtonDuelSquare5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0x8000);
-            radioButtonDuelDeac5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, 0xFFFF);
-            */
-
+            comboBoxDuelButton1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, comboBoxDuelButton1.SelectedIndex);
             checkBoxDuelDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x01, 0);
             checkBoxDuelPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x02, 0);
             checkBoxDuelPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x04, 0);
@@ -1005,6 +940,108 @@ namespace Doomtrain
             checkBoxDuelUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x20, 4);
             checkBoxDuelHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x40, 4);
             checkBoxDuelSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, 0x80, 4);
+
+            //duel params
+            comboBoxDuelMove0.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(0, comboBoxDuelMove0.SelectedIndex);
+            comboBoxDuelMove1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(1, comboBoxDuelMove1.SelectedIndex);
+            comboBoxDuelMove2.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(2, comboBoxDuelMove2.SelectedIndex);
+            comboBoxDuelMove3.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(3, comboBoxDuelMove3.SelectedIndex);
+            comboBoxDuelMove4.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(4, comboBoxDuelMove4.SelectedIndex);
+            comboBoxDuelMove5.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(5, comboBoxDuelMove5.SelectedIndex);
+            comboBoxDuelMove6.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(6, comboBoxDuelMove6.SelectedIndex);
+            comboBoxDuelMove7.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(7, comboBoxDuelMove7.SelectedIndex);
+            comboBoxDuelMove8.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(8, comboBoxDuelMove8.SelectedIndex);
+            comboBoxDuelMove9.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(9, comboBoxDuelMove9.SelectedIndex);
+            comboBoxDuelMove10.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(10, comboBoxDuelMove10.SelectedIndex);
+            comboBoxDuelMove11.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(11, comboBoxDuelMove11.SelectedIndex);
+            comboBoxDuelMove12.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(12, comboBoxDuelMove12.SelectedIndex);
+            comboBoxDuelMove13.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(13, comboBoxDuelMove13.SelectedIndex);
+            comboBoxDuelMove14.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(14, comboBoxDuelMove14.SelectedIndex);
+            comboBoxDuelMove15.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(15, comboBoxDuelMove15.SelectedIndex);
+            comboBoxDuelMove16.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(16, comboBoxDuelMove16.SelectedIndex);
+            comboBoxDuelMove17.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(17, comboBoxDuelMove17.SelectedIndex);
+            comboBoxDuelMove18.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(18, comboBoxDuelMove18.SelectedIndex);
+            comboBoxDuelMove19.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(19, comboBoxDuelMove19.SelectedIndex);
+            comboBoxDuelMove20.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(20, comboBoxDuelMove20.SelectedIndex);
+            comboBoxDuelMove21.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(21, comboBoxDuelMove21.SelectedIndex);
+            comboBoxDuelMove22.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(22, comboBoxDuelMove22.SelectedIndex);
+            comboBoxDuelMove23.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(23, comboBoxDuelMove23.SelectedIndex);
+            comboBoxDuelMove24.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(24, comboBoxDuelMove24.SelectedIndex);
+            numericUpDownDuelNextSeq0_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(25, numericUpDownDuelNextSeq0_1.Value);
+            numericUpDownDuelNextSeq0_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(26, numericUpDownDuelNextSeq0_2.Value);
+            numericUpDownDuelNextSeq0_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(27, numericUpDownDuelNextSeq0_3.Value);
+            numericUpDownDuelNextSeq1_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(28, numericUpDownDuelNextSeq1_1.Value);
+            numericUpDownDuelNextSeq1_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(29, numericUpDownDuelNextSeq1_2.Value);
+            numericUpDownDuelNextSeq1_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(30, numericUpDownDuelNextSeq1_3.Value);
+            numericUpDownDuelNextSeq2_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(31, numericUpDownDuelNextSeq2_1.Value);
+            numericUpDownDuelNextSeq2_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(32, numericUpDownDuelNextSeq2_2.Value);
+            numericUpDownDuelNextSeq2_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(33, numericUpDownDuelNextSeq2_3.Value);
+            numericUpDownDuelNextSeq3_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(34, numericUpDownDuelNextSeq3_1.Value);
+            numericUpDownDuelNextSeq3_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(35, numericUpDownDuelNextSeq3_2.Value);
+            numericUpDownDuelNextSeq3_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(36, numericUpDownDuelNextSeq3_3.Value);
+            numericUpDownDuelNextSeq4_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(37, numericUpDownDuelNextSeq4_1.Value);
+            numericUpDownDuelNextSeq4_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(38, numericUpDownDuelNextSeq4_2.Value);
+            numericUpDownDuelNextSeq4_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(39, numericUpDownDuelNextSeq4_3.Value);
+            numericUpDownDuelNextSeq5_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(40, numericUpDownDuelNextSeq5_1.Value);
+            numericUpDownDuelNextSeq5_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(41, numericUpDownDuelNextSeq5_2.Value);
+            numericUpDownDuelNextSeq5_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(42, numericUpDownDuelNextSeq5_3.Value);
+            numericUpDownDuelNextSeq6_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(43, numericUpDownDuelNextSeq6_1.Value);
+            numericUpDownDuelNextSeq6_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(44, numericUpDownDuelNextSeq6_2.Value);
+            numericUpDownDuelNextSeq6_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(45, numericUpDownDuelNextSeq6_3.Value);
+            numericUpDownDuelNextSeq7_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(46, numericUpDownDuelNextSeq7_1.Value);
+            numericUpDownDuelNextSeq7_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(47, numericUpDownDuelNextSeq7_2.Value);
+            numericUpDownDuelNextSeq7_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(48, numericUpDownDuelNextSeq7_3.Value);
+            numericUpDownDuelNextSeq8_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(49, numericUpDownDuelNextSeq8_1.Value);
+            numericUpDownDuelNextSeq8_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(50, numericUpDownDuelNextSeq8_2.Value);
+            numericUpDownDuelNextSeq8_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(51, numericUpDownDuelNextSeq8_3.Value);
+            numericUpDownDuelNextSeq9_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(52, numericUpDownDuelNextSeq9_1.Value);
+            numericUpDownDuelNextSeq9_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(53, numericUpDownDuelNextSeq9_2.Value);
+            numericUpDownDuelNextSeq9_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(54, numericUpDownDuelNextSeq9_3.Value);
+            numericUpDownDuelNextSeq10_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(55, numericUpDownDuelNextSeq10_1.Value);
+            numericUpDownDuelNextSeq10_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(56, numericUpDownDuelNextSeq10_2.Value);
+            numericUpDownDuelNextSeq10_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(57, numericUpDownDuelNextSeq10_3.Value);
+            numericUpDownDuelNextSeq11_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(58, numericUpDownDuelNextSeq11_1.Value);
+            numericUpDownDuelNextSeq11_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(59, numericUpDownDuelNextSeq11_2.Value);
+            numericUpDownDuelNextSeq11_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(60, numericUpDownDuelNextSeq11_3.Value);
+            numericUpDownDuelNextSeq12_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(61, numericUpDownDuelNextSeq12_1.Value);
+            numericUpDownDuelNextSeq12_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(62, numericUpDownDuelNextSeq12_2.Value);
+            numericUpDownDuelNextSeq12_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(63, numericUpDownDuelNextSeq12_3.Value);
+            numericUpDownDuelNextSeq13_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(64, numericUpDownDuelNextSeq13_1.Value);
+            numericUpDownDuelNextSeq13_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(65, numericUpDownDuelNextSeq13_2.Value);
+            numericUpDownDuelNextSeq13_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(66, numericUpDownDuelNextSeq13_3.Value);
+            numericUpDownDuelNextSeq14_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(67, numericUpDownDuelNextSeq14_1.Value);
+            numericUpDownDuelNextSeq14_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(68, numericUpDownDuelNextSeq14_2.Value);
+            numericUpDownDuelNextSeq14_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(69, numericUpDownDuelNextSeq14_3.Value);
+            numericUpDownDuelNextSeq15_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(70, numericUpDownDuelNextSeq15_1.Value);
+            numericUpDownDuelNextSeq15_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(71, numericUpDownDuelNextSeq15_2.Value);
+            numericUpDownDuelNextSeq15_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(72, numericUpDownDuelNextSeq15_3.Value);
+            numericUpDownDuelNextSeq16_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(73, numericUpDownDuelNextSeq16_1.Value);
+            numericUpDownDuelNextSeq16_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(74, numericUpDownDuelNextSeq16_2.Value);
+            numericUpDownDuelNextSeq16_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(75, numericUpDownDuelNextSeq16_3.Value);
+            numericUpDownDuelNextSeq17_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(76, numericUpDownDuelNextSeq17_1.Value);
+            numericUpDownDuelNextSeq17_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(77, numericUpDownDuelNextSeq17_2.Value);
+            numericUpDownDuelNextSeq17_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(78, numericUpDownDuelNextSeq17_3.Value);
+            numericUpDownDuelNextSeq18_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(79, numericUpDownDuelNextSeq18_1.Value);
+            numericUpDownDuelNextSeq18_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(80, numericUpDownDuelNextSeq18_2.Value);
+            numericUpDownDuelNextSeq18_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(81, numericUpDownDuelNextSeq18_3.Value);
+            numericUpDownDuelNextSeq19_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(82, numericUpDownDuelNextSeq19_1.Value);
+            numericUpDownDuelNextSeq19_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(83, numericUpDownDuelNextSeq19_2.Value);
+            numericUpDownDuelNextSeq19_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(84, numericUpDownDuelNextSeq19_3.Value);
+            numericUpDownDuelNextSeq20_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(85, numericUpDownDuelNextSeq20_1.Value);
+            numericUpDownDuelNextSeq20_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(86, numericUpDownDuelNextSeq20_2.Value);
+            numericUpDownDuelNextSeq20_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(87, numericUpDownDuelNextSeq20_3.Value);
+            numericUpDownDuelNextSeq21_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(88, numericUpDownDuelNextSeq21_1.Value);
+            numericUpDownDuelNextSeq21_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(89, numericUpDownDuelNextSeq21_2.Value);
+            numericUpDownDuelNextSeq21_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(90, numericUpDownDuelNextSeq21_2.Value);
+            numericUpDownDuelNextSeq22_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(91, numericUpDownDuelNextSeq22_1.Value);
+            numericUpDownDuelNextSeq22_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(92, numericUpDownDuelNextSeq22_2.Value);
+            numericUpDownDuelNextSeq22_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(93, numericUpDownDuelNextSeq22_3.Value);
+            numericUpDownDuelNextSeq23_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(94, numericUpDownDuelNextSeq23_1.Value);
+            numericUpDownDuelNextSeq23_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(95, numericUpDownDuelNextSeq23_2.Value);
+            numericUpDownDuelNextSeq23_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(96, numericUpDownDuelNextSeq23_3.Value);
+            numericUpDownDuelNextSeq24_1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(97, numericUpDownDuelNextSeq24_1.Value);
+            numericUpDownDuelNextSeq24_2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(98, numericUpDownDuelNextSeq24_2.Value);
+            numericUpDownDuelNextSeq24_3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_DuelParams(99, numericUpDownDuelNextSeq24_3.Value);
 
             #endregion
 
@@ -1140,7 +1177,370 @@ namespace Doomtrain
             checkBoxBattleItemsSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x80, 4);
             numericUpDownBattleItemsHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(7, numericUpDownBattleItemsHitCount.Value);
             comboBoxBattleItemsElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(8, BattleItems_GetElement(comboBoxBattleItemsElement.SelectedIndex));
-            
+
+            #endregion
+
+            #region EVENT HANDLERS SLOT ARRAY
+
+            numericUpDownSlotsArray1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(0, numericUpDownSlotsArray1.Value);
+            numericUpDownSlotsArray2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(1, numericUpDownSlotsArray2.Value);
+            numericUpDownSlotsArray3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(2, numericUpDownSlotsArray3.Value);
+            numericUpDownSlotsArray4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(3, numericUpDownSlotsArray4.Value);
+            numericUpDownSlotsArray5.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(4, numericUpDownSlotsArray5.Value);
+            numericUpDownSlotsArray6.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(5, numericUpDownSlotsArray6.Value);
+            numericUpDownSlotsArray7.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(6, numericUpDownSlotsArray7.Value);
+            numericUpDownSlotsArray8.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(7, numericUpDownSlotsArray8.Value);
+            numericUpDownSlotsArray9.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(8, numericUpDownSlotsArray9.Value);
+            numericUpDownSlotsArray10.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(9, numericUpDownSlotsArray10.Value);
+            numericUpDownSlotsArray11.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(10, numericUpDownSlotsArray11.Value);
+            numericUpDownSlotsArray12.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(11, numericUpDownSlotsArray12.Value);
+            numericUpDownSlotsArray13.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(12, numericUpDownSlotsArray13.Value);
+            numericUpDownSlotsArray14.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(13, numericUpDownSlotsArray14.Value);
+            numericUpDownSlotsArray15.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(14, numericUpDownSlotsArray15.Value);
+            numericUpDownSlotsArray16.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(15, numericUpDownSlotsArray16.Value);
+            numericUpDownSlotsArray17.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(16, numericUpDownSlotsArray17.Value);
+            numericUpDownSlotsArray18.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(17, numericUpDownSlotsArray18.Value);
+            numericUpDownSlotsArray19.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(18, numericUpDownSlotsArray19.Value);
+            numericUpDownSlotsArray20.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(19, numericUpDownSlotsArray20.Value);
+            numericUpDownSlotsArray21.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(20, numericUpDownSlotsArray21.Value);
+            numericUpDownSlotsArray22.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(21, numericUpDownSlotsArray22.Value);
+            numericUpDownSlotsArray23.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(22, numericUpDownSlotsArray23.Value);
+            numericUpDownSlotsArray24.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(23, numericUpDownSlotsArray24.Value);
+            numericUpDownSlotsArray25.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(24, numericUpDownSlotsArray25.Value);
+            numericUpDownSlotsArray26.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(25, numericUpDownSlotsArray26.Value);
+            numericUpDownSlotsArray27.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(26, numericUpDownSlotsArray27.Value);
+            numericUpDownSlotsArray28.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(27, numericUpDownSlotsArray28.Value);
+            numericUpDownSlotsArray29.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(28, numericUpDownSlotsArray29.Value);
+            numericUpDownSlotsArray30.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(29, numericUpDownSlotsArray30.Value);
+            numericUpDownSlotsArray31.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(30, numericUpDownSlotsArray31.Value);
+            numericUpDownSlotsArray32.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(31, numericUpDownSlotsArray32.Value);
+            numericUpDownSlotsArray33.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(32, numericUpDownSlotsArray33.Value);
+            numericUpDownSlotsArray34.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(33, numericUpDownSlotsArray34.Value);
+            numericUpDownSlotsArray35.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(34, numericUpDownSlotsArray35.Value);
+            numericUpDownSlotsArray36.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(35, numericUpDownSlotsArray36.Value);
+            numericUpDownSlotsArray37.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(36, numericUpDownSlotsArray37.Value);
+            numericUpDownSlotsArray38.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(37, numericUpDownSlotsArray38.Value);
+            numericUpDownSlotsArray39.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(38, numericUpDownSlotsArray39.Value);
+            numericUpDownSlotsArray40.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(39, numericUpDownSlotsArray40.Value);
+            numericUpDownSlotsArray41.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(40, numericUpDownSlotsArray41.Value);
+            numericUpDownSlotsArray42.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(41, numericUpDownSlotsArray42.Value);
+            numericUpDownSlotsArray43.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(42, numericUpDownSlotsArray43.Value);
+            numericUpDownSlotsArray44.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(43, numericUpDownSlotsArray44.Value);
+            numericUpDownSlotsArray45.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(44, numericUpDownSlotsArray45.Value);
+            numericUpDownSlotsArray46.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(45, numericUpDownSlotsArray46.Value);
+            numericUpDownSlotsArray47.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(46, numericUpDownSlotsArray47.Value);
+            numericUpDownSlotsArray48.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(47, numericUpDownSlotsArray48.Value);
+            numericUpDownSlotsArray49.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(48, numericUpDownSlotsArray49.Value);
+            numericUpDownSlotsArray50.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(49, numericUpDownSlotsArray50.Value);
+            numericUpDownSlotsArray51.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(50, numericUpDownSlotsArray51.Value);
+            numericUpDownSlotsArray52.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(51, numericUpDownSlotsArray52.Value);
+            numericUpDownSlotsArray53.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(52, numericUpDownSlotsArray53.Value);
+            numericUpDownSlotsArray54.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(53, numericUpDownSlotsArray54.Value);
+            numericUpDownSlotsArray55.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(54, numericUpDownSlotsArray55.Value);
+            numericUpDownSlotsArray56.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(55, numericUpDownSlotsArray56.Value);
+            numericUpDownSlotsArray57.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(56, numericUpDownSlotsArray57.Value);
+            numericUpDownSlotsArray58.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(57, numericUpDownSlotsArray58.Value);
+            numericUpDownSlotsArray59.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(58, numericUpDownSlotsArray59.Value);
+            numericUpDownSlotsArray60.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(59, numericUpDownSlotsArray60.Value);
+
+            #endregion
+
+            #region EVENT HANDLERS SLOT SETS
+
+            comboBoxSlotsMagic1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(0, comboBoxSlotsMagic1.SelectedIndex);
+            numericUpDownSlotsCount1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(1, numericUpDownSlotsCount1.Value);
+            comboBoxSlotsMagic2.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(2, comboBoxSlotsMagic2.SelectedIndex);
+            numericUpDownSlotsCount2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(3, numericUpDownSlotsCount2.Value);
+            comboBoxSlotsMagic3.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(4, comboBoxSlotsMagic3.SelectedIndex);
+            numericUpDownSlotsCount3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(5, numericUpDownSlotsCount3.Value);
+            comboBoxSlotsMagic4.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(6, comboBoxSlotsMagic4.SelectedIndex);
+            numericUpDownSlotsCount4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(7, numericUpDownSlotsCount4.Value);
+            comboBoxSlotsMagic5.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(8, comboBoxSlotsMagic5.SelectedIndex);
+            numericUpDownSlotsCount5.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(9, numericUpDownSlotsCount5.Value);
+            comboBoxSlotsMagic6.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(10, comboBoxSlotsMagic6.SelectedIndex);
+            numericUpDownSlotsCount6.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(11, numericUpDownSlotsCount6.Value);
+            comboBoxSlotsMagic7.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(12, comboBoxSlotsMagic7.SelectedIndex);
+            numericUpDownSlotsCount7.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(13, numericUpDownSlotsCount7.Value);
+            comboBoxSlotsMagic8.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(14, comboBoxSlotsMagic8.SelectedIndex);
+            numericUpDownSlotsCount8.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(15, numericUpDownSlotsCount8.Value);
+
+            #endregion
+
+            #region EVENT HANDLERS DEVOUR
+
+            comboBoxDevourHealDmg.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(0, Devour_GetHealDmg(comboBoxDevourHealDmg.SelectedIndex));
+            checkBoxDevourHP1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(1, 0x01);
+            checkBoxDevourHP2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(1, 0x02);
+            checkBoxDevourHP3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(1, 0x04);
+            checkBoxDevourHP4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(1, 0x08);
+            checkBoxDevourHP5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(1, 0x10);
+            checkBoxDevourSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x01, 1);
+            checkBoxDevourHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x02, 1);
+            checkBoxDevourSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x04, 1);
+            checkBoxDevourStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x08, 1);
+            checkBoxDevourRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x10, 1);
+            checkBoxDevourProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x20, 1);
+            checkBoxDevourShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x40, 1);
+            checkBoxDevourReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x80, 1);
+            checkBoxDevourAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x01, 2);
+            checkBoxDevourCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x02, 2);
+            checkBoxDevourDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x04, 2);
+            checkBoxDevourInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x08, 2);
+            checkBoxDevourPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x10, 2);
+            checkBoxDevourFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x20, 2);
+            checkBoxDevourConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x40, 2);
+            checkBoxDevourDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x80, 2);
+            checkBoxDevourEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x01, 3);
+            checkBoxDevourDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x02, 3);
+            checkBoxDevourTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x04, 3);
+            checkBoxDevourDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x08, 3);
+            checkBoxDevourUnk1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x10, 3);
+            checkBoxDevourUnk2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x20, 3);
+            checkBoxDevourCharged.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x40, 3);
+            checkBoxDevourBackAttack.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x80, 3);
+            checkBoxDevourVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x01, 4);
+            checkBoxDevourAngelWing.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x02, 4);
+            checkBoxDevourUnk3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x04, 4);
+            checkBoxDevourUnk4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x08, 4);
+            checkBoxDevourUnk5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x10, 4);
+            checkBoxDevourUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x20, 4);
+            checkBoxDevourHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x40, 4);
+            checkBoxDevourSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x80, 4);
+            checkBoxDevourDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x01, 0);
+            checkBoxDevourPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x02, 0);
+            checkBoxDevourPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x04, 0);
+            checkBoxDevourDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x08, 0);
+            checkBoxDevourSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x10, 0);
+            checkBoxDevourBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x20, 0);
+            checkBoxDevourZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x40, 0);
+            checkBoxDevourUnk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(2, 0x80, 0);
+            checkBoxDevourStat1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(3, 0x01);
+            checkBoxDevourStat2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(3, 0x02);
+            checkBoxDevourStat3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(3, 0x04);
+            checkBoxDevourStat4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(3, 0x08);
+            checkBoxDevourStat5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(3, 0x10);
+            checkBoxDevourStat6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(3, 0x20);
+            numericUpDownDevourHP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(4, numericUpDownDevourHP.Value);
+
+            #endregion
+
+            #region EVENT HANDLERS MISC
+
+            numericUpDownStatusTimer1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(0, numericUpDownStatusTimer1.Value);
+            numericUpDownStatusTimer2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(1, numericUpDownStatusTimer2.Value);
+            numericUpDownStatusTimer3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(2, numericUpDownStatusTimer3.Value);
+            numericUpDownStatusTimer4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(3, numericUpDownStatusTimer4.Value);
+            numericUpDownStatusTimer5.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(4, numericUpDownStatusTimer5.Value);
+            numericUpDownStatusTimer6.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(5, numericUpDownStatusTimer6.Value);
+            numericUpDownStatusTimer7.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(6, numericUpDownStatusTimer7.Value);
+            numericUpDownStatusTimer8.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(7, numericUpDownStatusTimer8.Value);
+            numericUpDownStatusTimer9.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(8, numericUpDownStatusTimer9.Value);
+            numericUpDownStatusTimer10.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(9, numericUpDownStatusTimer10.Value);
+            numericUpDownStatusTimer11.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(10, numericUpDownStatusTimer11.Value);
+            numericUpDownStatusTimer12.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(11, numericUpDownStatusTimer12.Value);
+            numericUpDownStatusTimer13.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(12, numericUpDownStatusTimer13.Value);
+            numericUpDownStatusTimer14.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(13, numericUpDownStatusTimer14.Value);
+            numericUpDownATBMult.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(14, numericUpDownATBMult.Value);
+            numericUpDownDeadTimer.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(15, numericUpDownDeadTimer.Value);
+            numericUpDownStatusLimit1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(16, numericUpDownStatusLimit1.Value);
+            numericUpDownStatusLimit1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(16, numericUpDownStatusLimit1.Value);
+            numericUpDownStatusLimit2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(17, numericUpDownStatusLimit2.Value);
+            numericUpDownStatusLimit3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(18, numericUpDownStatusLimit3.Value);
+            numericUpDownStatusLimit4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(19, numericUpDownStatusLimit4.Value);
+            numericUpDownStatusLimit5.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(20, numericUpDownStatusLimit5.Value);
+            numericUpDownStatusLimit6.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(21, numericUpDownStatusLimit6.Value);
+            numericUpDownStatusLimit7.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(22, numericUpDownStatusLimit7.Value);
+            numericUpDownStatusLimit8.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(23, numericUpDownStatusLimit8.Value);
+            numericUpDownStatusLimit9.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(24, numericUpDownStatusLimit9.Value);
+            numericUpDownStatusLimit10.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(25, numericUpDownStatusLimit10.Value);
+            numericUpDownStatusLimit11.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(26, numericUpDownStatusLimit11.Value);
+            numericUpDownStatusLimit12.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(27, numericUpDownStatusLimit12.Value);
+            numericUpDownStatusLimit13.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(28, numericUpDownStatusLimit13.Value);
+            numericUpDownStatusLimit14.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(29, numericUpDownStatusLimit14.Value);
+            numericUpDownStatusLimit15.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(30, numericUpDownStatusLimit15.Value);
+            numericUpDownStatusLimit16.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(31, numericUpDownStatusLimit16.Value);
+            numericUpDownStatusLimit17.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(32, numericUpDownStatusLimit17.Value);
+            numericUpDownStatusLimit18.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(33, numericUpDownStatusLimit18.Value);
+            numericUpDownStatusLimit19.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(34, numericUpDownStatusLimit19.Value);
+            numericUpDownStatusLimit20.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(35, numericUpDownStatusLimit20.Value);
+            numericUpDownStatusLimit21.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(36, numericUpDownStatusLimit21.Value);
+            numericUpDownStatusLimit22.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(37, numericUpDownStatusLimit22.Value);
+            numericUpDownStatusLimit23.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(38, numericUpDownStatusLimit23.Value);
+            numericUpDownStatusLimit24.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(39, numericUpDownStatusLimit24.Value);
+            numericUpDownStatusLimit25.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(40, numericUpDownStatusLimit25.Value);
+            numericUpDownStatusLimit26.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(41, numericUpDownStatusLimit26.Value);
+            numericUpDownStatusLimit27.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(42, numericUpDownStatusLimit27.Value);
+            numericUpDownStatusLimit28.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(43, numericUpDownStatusLimit28.Value);
+            numericUpDownStatusLimit29.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(44, numericUpDownStatusLimit29.Value);
+            numericUpDownStatusLimit30.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(45, numericUpDownStatusLimit30.Value);
+            numericUpDownStatusLimit31.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(46, numericUpDownStatusLimit31.Value);
+            numericUpDownStatusLimit32.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(47, numericUpDownStatusLimit32.Value);
+            numericUpDownDuelTimer1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(48, numericUpDownDuelTimer1.Value);
+            numericUpDownDuelStart1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(49, numericUpDownDuelStart1.Value);
+            numericUpDownDuelTimer2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(50, numericUpDownDuelTimer2.Value);
+            numericUpDownDuelStart2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(51, numericUpDownDuelStart2.Value);
+            numericUpDownDuelTimer3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(52, numericUpDownDuelTimer3.Value);
+            numericUpDownDuelStart3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(53, numericUpDownDuelStart3.Value);
+            numericUpDownDuelTimer4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(54, numericUpDownDuelTimer4.Value);
+            numericUpDownDuelStart4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(55, numericUpDownDuelStart4.Value);
+            numericUpDownShotTimer1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(56, numericUpDownShotTimer1.Value);
+            numericUpDownShotTimer2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(57, numericUpDownShotTimer2.Value);
+            numericUpDownShotTimer3.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(58, numericUpDownShotTimer3.Value);
+            numericUpDownShotTimer4.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(59, numericUpDownShotTimer4.Value);
+
+            #endregion
+
+            #region EVENT HANDLERS COMMAND ABILITY DATA
+
+            comboBoxAbComDataMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(0, comboBoxAbComDataMagicID.SelectedIndex);
+            comboBoxAbComDataAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(1, comboBoxAbComDataAttackType.SelectedIndex);
+            numericUpDownAbComDataAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(2, numericUpDownAbComDataAttackPower.Value);
+            checkBoxAbComDataFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(3, 0x01);
+            checkBoxAbComDataFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(3, 0x02);
+            checkBoxAbComDataFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(3, 0x04);
+            checkBoxAbComDataFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(3, 0x08);
+            checkBoxAbComDataFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(3, 0x10);
+            checkBoxAbComDataFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(3, 0x20);
+            checkBoxAbComDataFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(3, 0x40);
+            checkBoxAbComDataFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(3, 0x80);
+            numericUpDownAbComDataHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(4, numericUpDownAbComDataHitCount.Value);
+            comboBoxAbComDataElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(5, CommandAbilityData_GetElement(comboBoxAbComDataElement.SelectedIndex));
+            numericUpDownAbComDataStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(6, numericUpDownAbComDataStatusAttack.Value);
+            checkBoxAbComDataDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x01, 0);
+            checkBoxAbComDataPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x02, 0);
+            checkBoxAbComDataPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x04, 0);
+            checkBoxAbComDataDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x08, 0);
+            checkBoxAbComDataSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x10, 0);
+            checkBoxAbComDataBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x20, 0);
+            checkBoxAbComDataZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x40, 0);
+            checkBoxAbComDataUnk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x80, 0);
+            checkBoxAbComDataSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x01, 1);
+            checkBoxAbComDataHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x02, 1);
+            checkBoxAbComDataSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x04, 1);
+            checkBoxAbComDataStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x08, 1);
+            checkBoxAbComDataRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x10, 1);
+            checkBoxAbComDataProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x20, 1);
+            checkBoxAbComDataShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x40, 1);
+            checkBoxAbComDataReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x80, 1);
+            checkBoxAbComDataAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x01, 2);
+            checkBoxAbComDataCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x02, 2);
+            checkBoxAbComDataDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x04, 2);
+            checkBoxAbComDataInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x08, 2);
+            checkBoxAbComDataPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x10, 2);
+            checkBoxAbComDataFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x20, 2);
+            checkBoxAbComDataConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x40, 2);
+            checkBoxAbComDataDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x80, 2);
+            checkBoxAbComDataEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x01, 3);
+            checkBoxAbComDataDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x02, 3);
+            checkBoxAbComDataTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x04, 3);
+            checkBoxAbComDataDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x08, 3);
+            checkBoxAbComDataUnk1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x10, 3);
+            checkBoxAbComDataUnk2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x20, 3);
+            checkBoxAbComDataCharged.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x40, 3);
+            checkBoxAbComDataBackAttack.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x80, 3);
+            checkBoxAbComDataVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x01, 4);
+            checkBoxAbComDataAngelWing.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x02, 4);
+            checkBoxAbComDataUnk3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x04, 4);
+            checkBoxAbComDataUnk4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x08, 4);
+            checkBoxAbComDataUnk5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x10, 4);
+            checkBoxAbComDataUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x20, 4);
+            checkBoxAbComDataHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x40, 4);
+            checkBoxAbComDataSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(7, 0x80, 4);
+
+            #endregion
+
+            #region EVENT HANDLERS COMMAND ABILITY
+
+            numericUpDownAbComAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbility(0, numericUpDownAbComAP.Value);
+            comboBoxAbComBattleCommand.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbility(1, comboBoxAbComBattleCommand.SelectedIndex);
+
+            #endregion
+
+            #region EVENT HANDLERS JUNCTION ABILITIES
+
+            numericUpDownAbJunAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(0, numericUpDownAbJunAP.Value);
+            checkBoxAbJunFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x01);
+            checkBoxAbJunFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x02);
+            checkBoxAbJunFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x04);
+            checkBoxAbJunFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x08);
+            checkBoxAbJunFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x10);
+            checkBoxAbJunFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x20);
+            checkBoxAbJunFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x40);
+            checkBoxAbJunFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x80);
+            checkBoxAbJunFlag9.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x01);
+            checkBoxAbJunFlag10.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x02);
+            checkBoxAbJunFlag11.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x04);
+            checkBoxAbJunFlag12.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x08);
+            checkBoxAbJunFlag13.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x10);
+            checkBoxAbJunFlag14.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x20);
+            checkBoxAbJunFlag15.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x40);
+            checkBoxAbJunFlag16.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(2, 0x80);
+            checkBoxAbJunFlag17.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(3, 0x01);
+            checkBoxAbJunFlag18.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(3, 0x02);
+            checkBoxAbJunFlag19.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(3, 0x04);
+
+            #endregion
+
+            #region EVENT HANDLERS PARTY ABILITIES
+
+            numericUpDownAbPartyAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(0, numericUpDownAbPartyAP.Value);
+            checkBoxAbPartyFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x01);
+            checkBoxAbPartyFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x02);
+            checkBoxAbPartyFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x04);
+            checkBoxAbPartyFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x08);
+            checkBoxAbPartyFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x10);
+            checkBoxAbPartyFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x20);
+            checkBoxAbPartyFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x40);
+            checkBoxAbPartyFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x80);
+
+            #endregion
+
+            #region EVENT HANDLERS GF ABILITIES
+
+            numericUpDownAbGFAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(0, numericUpDownAbGFAP.Value);
+            checkBoxAbGFBoost.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(1, 0x01);
+            comboBoxAbGFStatToIncrease.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(2, GFAbilities_GetStat(comboBoxAbGFStatToIncrease.SelectedIndex));
+            trackBarAbGFIncrementValue.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(3, trackBarAbGFIncrementValue.Value);
+
+            #endregion
+
+            #region EVENT HANDLERS CHARACTER ABILITIES
+
+            numericUpDownAbCharAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(0, numericUpDownAbCharAP.Value);
+            checkBoxAbCharFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x01);
+            checkBoxAbCharFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x02);
+            checkBoxAbCharFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x04);
+            checkBoxAbCharFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x08);
+            checkBoxAbCharFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x10);
+            checkBoxAbCharFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x20);
+            checkBoxAbCharFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x40);
+            checkBoxAbCharFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x80);
+            checkBoxAbCharFlag9.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x01);
+            checkBoxAbCharFlag10.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x02);
+            checkBoxAbCharFlag11.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x04);
+            checkBoxAbCharFlag12.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x08);
+            checkBoxAbCharFlag13.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x10);
+            checkBoxAbCharFlag14.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x20);
+            checkBoxAbCharFlag15.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x40);
+            checkBoxAbCharFlag16.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x80);
+            checkBoxAbCharFlag17.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x01);
+            checkBoxAbCharFlag18.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x02);
+            checkBoxAbCharFlag19.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x04);
+            checkBoxAbCharFlag20.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x08);
+            checkBoxAbCharFlag21.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x10);
+            checkBoxAbCharFlag22.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x20);
+            checkBoxAbCharFlag23.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x40);
+            checkBoxAbCharFlag24.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x80);
+
+            #endregion
+
+            #region EVENT HANDLERS MENU ABILITIES
+
+            numericUpDownAbMenuAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(0, numericUpDownAbMenuAP.Value);
+            numericUpDownAbMenuIndex.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(1, numericUpDownAbMenuIndex.Value);
+            numericUpDownAbMenuStartOffset.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(2, numericUpDownAbMenuStartOffset.Value);
+            numericUpDownAbMenuEndOffset.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(3, numericUpDownAbMenuEndOffset.Value);
+
             #endregion
         }
 
@@ -1158,8 +1558,6 @@ namespace Doomtrain
             openFileDialog.Filter = "FF8 Kernel File|*.bin";
             openFileDialog.FileName = "kernel.bin";
 
-
-
             if (openFileDialog.ShowDialog() != DialogResult.OK) return;
             {
                 using (var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
@@ -1169,9 +1567,11 @@ namespace Doomtrain
                         KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
                     }
 
+                    SlotArray();
+                    DuelParams();
+                    Misc();
                 }
-
-
+                
                 existingFilename = openFileDialog.FileName;
                 saveToolStripMenuItem.Enabled = true;
                 saveAsToolStripMenuItem.Enabled = true;
@@ -1226,58 +1626,17 @@ namespace Doomtrain
         //TOOLBAR
         private void openToolStripButton_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Title = "Open FF8 kernel.bin";
-            openFileDialog.Filter = "FF8 Kernel File|*.bin";
-            openFileDialog.FileName = "kernel.bin";
-
-
-
-            if (openFileDialog.ShowDialog() != DialogResult.OK) return;
-            {
-                using (var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
-                {
-                    using (var BR = new BinaryReader(fileStream))
-                    {
-                        KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
-                    }
-
-                }
-
-
-                existingFilename = openFileDialog.FileName;
-                saveToolStripMenuItem.Enabled = true;
-                saveAsToolStripMenuItem.Enabled = true;
-                saveToolStripButton.Enabled = true;
-                saveAsToolStripButton.Enabled = true;
-                return;
-            }
+            openToolStripMenuItem_Click(sender, e);
         }
 
         private void saveToolStripButton_Click(object sender, EventArgs e)
         {
-            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
-            {
-                File.WriteAllBytes(existingFilename, KernelWorker.Kernel);
-                return;
-            }
+            saveToolStripMenuItem_Click(sender, e);
         }
 
         private void saveAsToolStripButton_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveAsDialog = new SaveFileDialog();
-            saveAsDialog.Title = "Save FF8 kernel.bin";
-            saveAsDialog.Filter = "FF8 Kernel File|*.bin";
-            saveAsDialog.FileName = Path.GetFileName(existingFilename);
-
-            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
-            {
-                if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
-                {
-                    File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
-                    return;
-                }
-            }
+            saveAsToolStripMenuItem_Click(sender, e);
         }
 
 
@@ -1290,8 +1649,9 @@ namespace Doomtrain
 
         #endregion
 
-        #region CHARTS, FORMULAS, TRACKBARS, LISTBOXES SWITCH
+        #region CHARTS, FORMULAS, LABELS, LISTBOXES SWITCH
 
+        //CHARACTERS FORMULAS
         private void buttonCharHPFormula_Click(object sender, EventArgs e)
         {
             MessageBox.Show("HP = ((stat_magic_J_value*magic_count + stat_bonus + lvl*a - (10*lvl^2)/b +c)*percent_modifier)/100", "HP Formula");
@@ -1327,23 +1687,109 @@ namespace Doomtrain
             MessageBox.Show("LUCK = ((X + (stat_magic_J_value*magic_count)/100 + stat_bonus + lvl/b - lvl/d + lvl*a +c)*percent_modifier)/100", "LUCK Formula");
         }
 
-
         private void buttonCharEXPFormula_Click(object sender, EventArgs e)
         {
             MessageBox.Show("EXP for level x = ((lvl-1)^2*exp_b)/256 + (lvl-1)*exp_a*10", "EXP Formula");
         }
 
+
+
+        //CHARACTERS CHARTS
+        private CharEXP CharEXP;
+        private void buttonCharEXPChart_Click(object sender, EventArgs e)
+        {
+            if ((CharEXP == null) || (CharEXP.IsDisposed))
+            {
+                CharEXP = new CharEXP();
+            }
+            CharEXP.Show();
+            CharEXP.Focus();
+        }
+
+        private CharHP CharHP;
         private void buttonCharHPChart_Click(object sender, EventArgs e)
         {
-            new CharChartHP().ShowDialog();
+            if ((CharHP == null) || (CharHP.IsDisposed))
+            {
+                CharHP = new CharHP();
+            }
+            CharHP.Show();
+            CharHP.Focus();
+
+
+        }
+        private charSTR CharSTR;
+        private void buttonCharSTRChart_Click(object sender, EventArgs e)
+        {
+            if ((CharSTR == null) || (CharSTR.IsDisposed))
+            {
+                CharSTR = new charSTR();
+            }
+            CharSTR.Show();
+            CharSTR.Focus();
+        }
+
+        private CharVIT CharVIT;
+        private void buttonCharVITChart_Click(object sender, EventArgs e)
+        {
+            if ((CharVIT == null) || (CharVIT.IsDisposed))
+            {
+                CharVIT = new CharVIT();
+            }
+            CharVIT.Show();
+            CharVIT.Focus();
+        }
+
+        private CharMAG CharMAG;
+        private void buttonCharMAGChart_Click(object sender, EventArgs e)
+        {
+            if ((CharMAG == null) || (CharMAG.IsDisposed))
+            {
+                CharMAG = new CharMAG();
+            }
+            CharMAG.Show();
+            CharMAG.Focus();
+        }
+
+        private CharSPR CharSPR;
+        private void buttonCharSPRChart_Click(object sender, EventArgs e)
+        {
+            if ((CharSPR == null) || (CharSPR.IsDisposed))
+            {
+                CharSPR = new CharSPR();
+            }
+            CharSPR.Show();
+            CharSPR.Focus();
+        }
+
+        private CharSPD CharSPD;
+        private void buttonCharSPDChart_Click(object sender, EventArgs e)
+        {
+            if ((CharSPD == null) || (CharSPD.IsDisposed))
+            {
+                CharSPD = new CharSPD();
+            }
+            CharSPD.Show();
+            CharSPD.Focus();
+        }
+
+        private CharLUCK CharLUCK;
+        private void buttonCharLUCKChart_Click(object sender, EventArgs e)
+        {
+            if ((CharLUCK == null) || (CharLUCK.IsDisposed))
+            {
+                CharLUCK = new CharLUCK();
+            }
+            CharLUCK.Show();
+            CharLUCK.Focus();
         }
 
 
 
 
-    // MAGIC TRACKBARS LABELS VALUE
-    //I added this.trackBar.ValueChanged += (this.trackBarJXY_Scroll) to MainForm.Designer, only this 4 are necessary here now
-    private void trackBarJElemAttack_Scroll(object sender, EventArgs e)
+        //LABELS VALUE
+        //I added this.trackBar.ValueChanged += (this.trackBarJXY_Scroll) to MainForm.Designer, only this 4 are necessary here now
+        private void trackBarJElemAttack_Scroll(object sender, EventArgs e)
         {
             labelValueElemAttackTrackBar.Text = trackBarJElemAttack.Value + "%".ToString();
         }
@@ -1364,6 +1810,119 @@ namespace Doomtrain
         }
 
 
+        private void numericUpDownShotTimer1_ValueChanged(object sender, EventArgs e)
+        {
+            labelShotTimer1Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownShotTimer1.Value * 2 / 15) * 100) / 100);
+            //labelShotTimer1Value.Text = String.Format("{0:0.00}s", (numericUpDownShotTimer1.Value * 2) / 15);                                this is with rounding
+        }
+
+        private void numericUpDownShotTimer2_ValueChanged(object sender, EventArgs e)
+        {
+            labelShotTimer2Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownShotTimer2.Value * 2 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownShotTimer3_ValueChanged(object sender, EventArgs e)
+        {
+            labelShotTimer3Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownShotTimer3.Value * 2 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownShotTimer4_ValueChanged(object sender, EventArgs e)
+        {
+            labelShotTimer4Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownShotTimer4.Value * 2 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownDuelTimer1_ValueChanged(object sender, EventArgs e)
+        {
+            labelDuelTimer1Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownDuelTimer1.Value / 15) * 100) / 100);
+        }
+
+        private void numericUpDownDuelTimer2_ValueChanged(object sender, EventArgs e)
+        {
+            labelDuelTimer2Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownDuelTimer2.Value / 15) * 100) / 100);
+        }
+
+        private void numericUpDownDuelTimer3_ValueChanged(object sender, EventArgs e)
+        {
+            labelDuelTimer3Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownDuelTimer3.Value / 15) * 100) / 100);
+        }
+
+        private void numericUpDownDuelTimer4_ValueChanged(object sender, EventArgs e)
+        {
+            labelDuelTimer4Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownDuelTimer4.Value / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer1_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer1Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer1.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer2_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer2Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer2.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer3_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer3Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer3.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer4_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer4Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer4.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer5_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer5Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer5.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer6_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer6Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer6.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer7_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer7Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer7.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer8_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer8Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer8.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer9_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer9Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer9.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer10_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer10Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer10.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer11_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer11Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer11.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer12_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer12Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer12.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer13_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer13Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer13.Value * 4 / 15) * 100) / 100);
+        }
+
+        private void numericUpDownStatusTimer14_ValueChanged(object sender, EventArgs e)
+        {
+            labelStatusTimer14Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer14.Value * 4 / 15) * 100) / 100);
+        }
+
+
+
 
         //ABILITIES TRACKBARS LABELS VALUE
         private void trackBarStatsIncrementValue_Scroll(object sender, EventArgs e)
@@ -1371,6 +1930,10 @@ namespace Doomtrain
             labelAbStatsValueTrackBar.Text = trackBarAbStatsIncrementValue.Value + "%".ToString();
         }
 
+        private void trackBarAbGFIncrementValue_Scroll(object sender, EventArgs e)
+        {
+            labelAbGFValueTrackBar.Text = trackBarAbGFIncrementValue.Value + "%".ToString();
+        }
 
 
         //ABILITIES LISTBOXES SWITCH
@@ -1378,10 +1941,11 @@ namespace Doomtrain
         {
             if (tabControlAbilities.SelectedIndex == 0)
             {
-                listBoxAbCharacters.Visible = true;
+                listBoxAbChar.Visible = true;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = false;
-                listBoxAbCommand.Visible = false;
+                listBoxAbJun.Visible = false;
+                listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
@@ -1389,10 +1953,11 @@ namespace Doomtrain
 
             if (tabControlAbilities.SelectedIndex == 1)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = true;
-                listBoxAbJunction.Visible = false;
-                listBoxAbCommand.Visible = false;
+                listBoxAbJun.Visible = false;
+                listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
@@ -1400,10 +1965,11 @@ namespace Doomtrain
 
             if (tabControlAbilities.SelectedIndex == 2)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = true;
-                listBoxAbCommand.Visible = false;
+                listBoxAbJun.Visible = true;
+                listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
@@ -1411,10 +1977,11 @@ namespace Doomtrain
 
             if (tabControlAbilities.SelectedIndex == 3)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = false;
-                listBoxAbCommand.Visible = true;
+                listBoxAbJun.Visible = false;                
+                listBoxAbCom.Visible = true;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
@@ -1422,32 +1989,47 @@ namespace Doomtrain
 
             if (tabControlAbilities.SelectedIndex == 4)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = false;
-                listBoxAbCommand.Visible = false;
-                listBoxAbGF.Visible = true;
+                listBoxAbJun.Visible = false;
+                listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = true;
+                listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
             }
 
             if (tabControlAbilities.SelectedIndex == 5)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = false;
-                listBoxAbCommand.Visible = false;
-                listBoxAbGF.Visible = false;
-                listBoxAbParty.Visible = true;
+                listBoxAbJun.Visible = false;
+                listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
+                listBoxAbGF.Visible = true;
+                listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
             }
 
             if (tabControlAbilities.SelectedIndex == 6)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJunction.Visible = false;
-                listBoxAbCommand.Visible = false;
+                listBoxAbJun.Visible = false;
+                listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
+                listBoxAbGF.Visible = false;
+                listBoxAbParty.Visible = true;
+                listBoxAbMenu.Visible = false;
+            }
+
+            if (tabControlAbilities.SelectedIndex == 7)
+            {
+                listBoxAbChar.Visible = false;
+                listBoxAbStats.Visible = false;
+                listBoxAbJun.Visible = false;
+                listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = true;
@@ -1634,9 +2216,10 @@ namespace Doomtrain
                 numericUpDownMagicEdenComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.EdenCompatibility)) / 5;
 
             }
-            catch (Exception e_)
+
+            catch (Exception Exception)
             {
-                Console.WriteLine(e_.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -1974,6 +2557,7 @@ namespace Doomtrain
                 checkBoxGFFlag7.Checked = (KernelWorker.GetSelectedGFData.GFFlags & 0x40) >= 1 ? true : false;
                 checkBoxGFFlag8.Checked = (KernelWorker.GetSelectedGFData.GFFlags & 0x80) >= 1 ? true : false;
                 numericUpDownGFHP.Value = KernelWorker.GetSelectedGFData.GFHP;
+                numericUpDownGFEXP.Value = KernelWorker.GetSelectedGFData.GFEXP * 10;
                 numericUpDownGFPowerMod.Value = KernelWorker.GetSelectedGFData.GFPowerMod;
                 numericUpDownGFLevelMod.Value = KernelWorker.GetSelectedGFData.GFLevelMod;
                 comboBoxGFAbility1.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbility1;
@@ -2019,7 +2603,6 @@ namespace Doomtrain
                 comboBoxGFAbilityUnlock20.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbilityUnlock20;
                 comboBoxGFAbilityUnlock21.SelectedIndex = KernelWorker.GetSelectedGFData.GFAbilityUnlock21;
                 comboBoxGFElement.SelectedIndex = GF_GetElement();
-                //checkBoxGFStatus.Checked = KernelWorker.GetSelectedGFData.GFStatusEnabler > 0x00 ? true : false;
                 GFStatusWorker();
                 numericUpDownGFStatusAttack.Value = KernelWorker.GetSelectedGFData.GFStatusAttack;
                 numericUpDownGFQuezacoltComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFQuezacoltCompatibility)) / 5;
@@ -2039,9 +2622,10 @@ namespace Doomtrain
                 numericUpDownGFTonberryComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFTonberryCompatibility)) / 5;
                 numericUpDownGFEdenComp.Value = (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFEdenCompatibility)) / 5;
             }
-            catch (Exception eeException)
+
+            catch (Exception Exception)
             {
-                MessageBox.Show(eeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2167,9 +2751,10 @@ namespace Doomtrain
                 numericUpDownGFAttacksPowerMod.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksPowerMod;
                 numericUpDownGFAttacksLevelMod.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksLevelMod;
             }
-            catch (Exception eeeException)
+
+            catch (Exception Exception)
             {
-                MessageBox.Show(eeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2203,9 +2788,10 @@ namespace Doomtrain
                 numericUpDownWeaponsSTRBonus.Value = KernelWorker.GetSelectedWeaponsData.STRBonus;
                 numericUpDownWeaponsTier.Value = KernelWorker.GetSelectedWeaponsData.Tier;
             }
-            catch (Exception eeeeException)
+
+            catch (Exception Exception)
             {
-                MessageBox.Show(eeeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2258,9 +2844,10 @@ namespace Doomtrain
                 numericUpDownCharLUCK3.Value = KernelWorker.GetSelectedCharactersData.LUCK3;
                 numericUpDownCharLUCK4.Value = KernelWorker.GetSelectedCharactersData.LUCK4;
             }
-            catch (Exception eeeeeException)
+
+            catch (Exception Exception)
             {
-                MessageBox.Show(eeeeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2383,9 +2970,10 @@ namespace Doomtrain
                 numericUpDownEnemyAttacksStatusAttack.Value = KernelWorker.GetSelectedEnemyAttacksData.StatusAttack;
                 EnemyAttacksStatusWorker();
             }
-            catch (Exception eeeeeeException)
+
+            catch (Exception Exception)
             {
-                MessageBox.Show(eeeeeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2681,12 +3269,14 @@ namespace Doomtrain
 
             try
             {
+                numericUpDownAbStatsAP.Value = KernelWorker.GetSelectedStatPercentageAbilitiesData.AP;
                 comboBoxAbStatsStatToIncrease.SelectedIndex = KernelWorker.GetSelectedStatPercentageAbilitiesData.StatToincrease;
                 trackBarAbStatsIncrementValue.Value = KernelWorker.GetSelectedStatPercentageAbilitiesData.IncreasementValue;
             }
-            catch (Exception eeeeeeeException)
+
+            catch (Exception Exception)
             {
-                Console.WriteLine(eeeeeeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2818,9 +3408,9 @@ namespace Doomtrain
                 RenzoFinStatusWorker();
             }
 
-            catch (Exception eeeeeeeeException)
+            catch (Exception Exception)
             {
-                Console.WriteLine(eeeeeeeeException.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -2955,7 +3545,7 @@ namespace Doomtrain
 
             catch (Exception Exception)
             {
-                Console.WriteLine(Exception.ToString());
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }
@@ -3234,8 +3824,129 @@ namespace Doomtrain
             _loaded = true;
         }
 
+        #endregion
 
+        #region DUEL PARAMS
 
+        private void DuelParams()
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadDuelParams();
+            try
+            {
+                comboBoxDuelMove0.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove0;
+                comboBoxDuelMove1.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove1;
+                comboBoxDuelMove2.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove2;
+                comboBoxDuelMove3.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove3;
+                comboBoxDuelMove4.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove4;
+                comboBoxDuelMove5.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove5;
+                comboBoxDuelMove6.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove6;
+                comboBoxDuelMove7.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove7;
+                comboBoxDuelMove8.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove8;
+                comboBoxDuelMove9.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove9;
+                comboBoxDuelMove10.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove10;
+                comboBoxDuelMove11.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove11;
+                comboBoxDuelMove12.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove12;
+                comboBoxDuelMove13.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove13;
+                comboBoxDuelMove14.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove14;
+                comboBoxDuelMove15.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove15;
+                comboBoxDuelMove16.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove16;
+                comboBoxDuelMove17.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove17;
+                comboBoxDuelMove18.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove18;
+                comboBoxDuelMove19.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove19;
+                comboBoxDuelMove20.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove20;
+                comboBoxDuelMove21.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove21;
+                comboBoxDuelMove22.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove22;
+                comboBoxDuelMove23.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove23;
+                comboBoxDuelMove24.SelectedIndex = KernelWorker.GetSelectedDuelParamsData.StartMove24;
+                numericUpDownDuelNextSeq0_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_1;
+                numericUpDownDuelNextSeq0_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_2;
+                numericUpDownDuelNextSeq0_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_3;
+                numericUpDownDuelNextSeq0_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_1;
+                numericUpDownDuelNextSeq0_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_2;
+                numericUpDownDuelNextSeq0_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq0_3;
+                numericUpDownDuelNextSeq1_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq1_1;
+                numericUpDownDuelNextSeq1_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq1_2;
+                numericUpDownDuelNextSeq1_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq1_3;
+                numericUpDownDuelNextSeq2_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq2_1;
+                numericUpDownDuelNextSeq2_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq2_2;
+                numericUpDownDuelNextSeq2_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq2_3;
+                numericUpDownDuelNextSeq3_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq3_1;
+                numericUpDownDuelNextSeq3_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq3_2;
+                numericUpDownDuelNextSeq3_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq3_3;
+                numericUpDownDuelNextSeq4_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq4_1;
+                numericUpDownDuelNextSeq4_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq4_2;
+                numericUpDownDuelNextSeq4_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq4_3;
+                numericUpDownDuelNextSeq5_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq5_1;
+                numericUpDownDuelNextSeq5_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq5_2;
+                numericUpDownDuelNextSeq5_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq5_3;
+                numericUpDownDuelNextSeq6_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq6_1;
+                numericUpDownDuelNextSeq6_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq6_2;
+                numericUpDownDuelNextSeq6_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq6_3;
+                numericUpDownDuelNextSeq7_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq7_1;
+                numericUpDownDuelNextSeq7_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq7_2;
+                numericUpDownDuelNextSeq7_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq7_3;
+                numericUpDownDuelNextSeq8_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq8_1;
+                numericUpDownDuelNextSeq8_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq8_2;
+                numericUpDownDuelNextSeq8_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq8_3;
+                numericUpDownDuelNextSeq9_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq9_1;
+                numericUpDownDuelNextSeq9_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq9_2;
+                numericUpDownDuelNextSeq9_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq9_3;
+                numericUpDownDuelNextSeq10_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq10_1;
+                numericUpDownDuelNextSeq10_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq10_2;
+                numericUpDownDuelNextSeq10_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq10_3;
+                numericUpDownDuelNextSeq11_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq11_1;
+                numericUpDownDuelNextSeq11_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq11_2;
+                numericUpDownDuelNextSeq11_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq11_3;
+                numericUpDownDuelNextSeq12_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq12_1;
+                numericUpDownDuelNextSeq12_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq12_2;
+                numericUpDownDuelNextSeq12_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq12_3;
+                numericUpDownDuelNextSeq13_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq13_1;
+                numericUpDownDuelNextSeq13_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq13_2;
+                numericUpDownDuelNextSeq13_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq13_3;
+                numericUpDownDuelNextSeq14_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq14_1;
+                numericUpDownDuelNextSeq14_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq14_2;
+                numericUpDownDuelNextSeq14_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq14_3;
+                numericUpDownDuelNextSeq15_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq15_1;
+                numericUpDownDuelNextSeq15_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq15_2;
+                numericUpDownDuelNextSeq15_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq15_3;
+                numericUpDownDuelNextSeq16_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq16_1;
+                numericUpDownDuelNextSeq16_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq16_2;
+                numericUpDownDuelNextSeq16_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq16_3;
+                numericUpDownDuelNextSeq17_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq17_1;
+                numericUpDownDuelNextSeq17_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq17_2;
+                numericUpDownDuelNextSeq17_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq17_3;
+                numericUpDownDuelNextSeq18_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq18_1;
+                numericUpDownDuelNextSeq18_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq18_2;
+                numericUpDownDuelNextSeq18_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq18_3;
+                numericUpDownDuelNextSeq19_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq19_1;
+                numericUpDownDuelNextSeq19_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq19_2;
+                numericUpDownDuelNextSeq19_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq19_3;
+                numericUpDownDuelNextSeq20_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq20_1;
+                numericUpDownDuelNextSeq20_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq20_2;
+                numericUpDownDuelNextSeq20_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq20_3;
+                numericUpDownDuelNextSeq21_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq21_1;
+                numericUpDownDuelNextSeq21_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq21_2;
+                numericUpDownDuelNextSeq21_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq21_3;
+                numericUpDownDuelNextSeq22_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq22_1;
+                numericUpDownDuelNextSeq22_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq22_2;
+                numericUpDownDuelNextSeq22_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq22_3;
+                numericUpDownDuelNextSeq23_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq23_1;
+                numericUpDownDuelNextSeq23_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq23_2;
+                numericUpDownDuelNextSeq23_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq23_3;
+                numericUpDownDuelNextSeq24_1.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq24_1;
+                numericUpDownDuelNextSeq24_2.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq24_2;
+                numericUpDownDuelNextSeq24_3.Value = KernelWorker.GetSelectedDuelParamsData.NextSeq24_3;
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
 
         #endregion
 
@@ -3506,7 +4217,661 @@ namespace Doomtrain
 
             catch (Exception Exception)
             {
-                Console.WriteLine(Exception.ToString());
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+
+        #region SLOT ARRAY
+
+        private void SlotArray()
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadSlotArray();
+            try
+            {
+                numericUpDownSlotsArray1.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray1;
+                numericUpDownSlotsArray2.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray2;
+                numericUpDownSlotsArray3.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray3;
+                numericUpDownSlotsArray4.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray4;
+                numericUpDownSlotsArray5.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray5;
+                numericUpDownSlotsArray6.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray6;
+                numericUpDownSlotsArray7.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray7;
+                numericUpDownSlotsArray8.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray8;
+                numericUpDownSlotsArray9.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray9;
+                numericUpDownSlotsArray10.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray10;
+                numericUpDownSlotsArray11.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray11;
+                numericUpDownSlotsArray12.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray12;
+                numericUpDownSlotsArray13.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray13;
+                numericUpDownSlotsArray14.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray14;
+                numericUpDownSlotsArray15.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray15;
+                numericUpDownSlotsArray16.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray16;
+                numericUpDownSlotsArray17.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray17;
+                numericUpDownSlotsArray18.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray18;
+                numericUpDownSlotsArray19.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray19;
+                numericUpDownSlotsArray20.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray20;
+                numericUpDownSlotsArray21.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray21;
+                numericUpDownSlotsArray22.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray22;
+                numericUpDownSlotsArray23.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray23;
+                numericUpDownSlotsArray24.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray24;
+                numericUpDownSlotsArray25.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray25;
+                numericUpDownSlotsArray26.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray26;
+                numericUpDownSlotsArray27.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray27;
+                numericUpDownSlotsArray28.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray28;
+                numericUpDownSlotsArray29.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray29;
+                numericUpDownSlotsArray30.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray30;
+                numericUpDownSlotsArray31.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray31;
+                numericUpDownSlotsArray32.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray32;
+                numericUpDownSlotsArray33.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray33;
+                numericUpDownSlotsArray34.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray34;
+                numericUpDownSlotsArray35.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray35;
+                numericUpDownSlotsArray36.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray36;
+                numericUpDownSlotsArray37.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray37;
+                numericUpDownSlotsArray38.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray38;
+                numericUpDownSlotsArray39.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray39;
+                numericUpDownSlotsArray40.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray40;
+                numericUpDownSlotsArray41.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray41;
+                numericUpDownSlotsArray42.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray42;
+                numericUpDownSlotsArray43.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray43;
+                numericUpDownSlotsArray44.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray44;
+                numericUpDownSlotsArray45.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray45;
+                numericUpDownSlotsArray46.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray46;
+                numericUpDownSlotsArray47.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray47;
+                numericUpDownSlotsArray48.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray48;
+                numericUpDownSlotsArray49.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray49;
+                numericUpDownSlotsArray50.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray50;
+                numericUpDownSlotsArray51.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray51;
+                numericUpDownSlotsArray52.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray52;
+                numericUpDownSlotsArray53.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray53;
+                numericUpDownSlotsArray54.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray54;
+                numericUpDownSlotsArray55.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray55;
+                numericUpDownSlotsArray56.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray56;
+                numericUpDownSlotsArray57.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray57;
+                numericUpDownSlotsArray58.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray58;
+                numericUpDownSlotsArray59.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray59;
+                numericUpDownSlotsArray60.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray60;
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+        #endregion
+
+        #region SLOT SETS
+
+        private void listBoxSlotsSets_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadSlotsSets(listBoxSlotsSets.SelectedIndex);
+            try
+            {
+                comboBoxSlotsMagic1.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic1;
+                comboBoxSlotsMagic2.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic2;
+                comboBoxSlotsMagic3.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic3;
+                comboBoxSlotsMagic4.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic4;
+                comboBoxSlotsMagic5.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic5;
+                comboBoxSlotsMagic6.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic6;
+                comboBoxSlotsMagic7.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic7;
+                comboBoxSlotsMagic8.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic8;
+                numericUpDownSlotsCount1.Value = KernelWorker.GetSelectedSlotsSetsData.Count1;
+                numericUpDownSlotsCount2.Value = KernelWorker.GetSelectedSlotsSetsData.Count2;
+                numericUpDownSlotsCount3.Value = KernelWorker.GetSelectedSlotsSetsData.Count3;
+                numericUpDownSlotsCount4.Value = KernelWorker.GetSelectedSlotsSetsData.Count4;
+                numericUpDownSlotsCount5.Value = KernelWorker.GetSelectedSlotsSetsData.Count5;
+                numericUpDownSlotsCount6.Value = KernelWorker.GetSelectedSlotsSetsData.Count6;
+                numericUpDownSlotsCount7.Value = KernelWorker.GetSelectedSlotsSetsData.Count7;
+                numericUpDownSlotsCount8.Value = KernelWorker.GetSelectedSlotsSetsData.Count8;
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+        #endregion
+
+        #region DEVOUR        
+
+        private int Devour_GetHealDmg()
+        {
+            return KernelWorker.GetSelectedDevourData.HealDmg == KernelWorker.HealDmg.Heal
+                        ? 0
+                        : KernelWorker.GetSelectedDevourData.HealDmg == KernelWorker.HealDmg.Damage
+                            ? 1
+                            : 0;
+        }
+
+        private byte Devour_GetHealDmg(int Index)
+        {
+            byte healDmg = (byte)(Index == 0 ? (byte)KernelWorker.HealDmg.Heal :
+                Index == 1 ? (byte)KernelWorker.HealDmg.Damage :
+                0x00 /*ErrorHandler*/);
+            return healDmg;
+        }
+
+        private void DevourStatusWorker()
+        {
+            checkBoxDevourDeath.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x01) >= 1 ? true : false;
+            checkBoxDevourPoison.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x02) >= 1 ? true : false;
+            checkBoxDevourPetrify.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x04) >= 1 ? true : false;
+            checkBoxDevourDarkness.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x08) >= 1 ? true : false;
+            checkBoxDevourSilence.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x10) >= 1 ? true : false;
+            checkBoxDevourBerserk.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x20) >= 1 ? true : false;
+            checkBoxDevourZombie.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x40) >= 1 ? true : false;
+            checkBoxDevourUnk7.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x80) >= 1 ? true : false;
+
+            checkBoxDevourSleep.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x01) >= 1 ? true : false;
+            checkBoxDevourHaste.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x02) >= 1 ? true : false;
+            checkBoxDevourSlow.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x04) >= 1 ? true : false;
+            checkBoxDevourStop.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x08) >= 1 ? true : false;
+            checkBoxDevourRegen.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x10) >= 1 ? true : false;
+            checkBoxDevourProtect.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x20) >= 1 ? true : false;
+            checkBoxDevourShell.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x40) >= 1 ? true : false;
+            checkBoxDevourReflect.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x80) >= 1 ? true : false;
+
+            checkBoxDevourAura.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x01) >= 1 ? true : false;
+            checkBoxDevourCurse.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x02) >= 1 ? true : false;
+            checkBoxDevourDoom.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x04) >= 1 ? true : false;
+            checkBoxDevourInvincible.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x08) >= 1 ? true : false;
+            checkBoxDevourPetrifying.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x10) >= 1 ? true : false;
+            checkBoxDevourFloat.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x20) >= 1 ? true : false;
+            checkBoxDevourConfusion.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x40) >= 1 ? true : false;
+            checkBoxDevourDrain.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x80) >= 1 ? true : false;
+
+            checkBoxDevourEject.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x01) >= 1 ? true : false;
+            checkBoxDevourDouble.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x02) >= 1 ? true : false;
+            checkBoxDevourTriple.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x04) >= 1 ? true : false;
+            checkBoxDevourDefend.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x08) >= 1 ? true : false;
+            checkBoxDevourUnk1.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x10) >= 1 ? true : false;
+            checkBoxDevourUnk2.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x20) >= 1 ? true : false;
+            checkBoxDevourCharged.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x40) >= 1 ? true : false;
+            checkBoxDevourBackAttack.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x80) >= 1 ? true : false;
+
+            checkBoxDevourVit0.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x01) >= 1 ? true : false;
+            checkBoxDevourAngelWing.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x02) >= 1 ? true : false;
+            checkBoxDevourUnk3.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x04) >= 1 ? true : false;
+            checkBoxDevourUnk4.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x08) >= 1 ? true : false;
+            checkBoxDevourUnk5.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x10) >= 1 ? true : false;
+            checkBoxDevourUnk6.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x20) >= 1 ? true : false;
+            checkBoxDevourHasMagic.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x40) >= 1 ? true : false;
+            checkBoxDevourSummonGF.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x80) >= 1 ? true : false;
+        }
+
+        private void listBoxDevour_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadDevour(listBoxDevour.SelectedIndex);
+
+            try
+            {
+                comboBoxDevourHealDmg.SelectedIndex = Devour_GetHealDmg();
+                checkBoxDevourHP1.Checked = (KernelWorker.GetSelectedDevourData.HpQuantity & 0x01) >= 1 ? true : false;
+                checkBoxDevourHP2.Checked = (KernelWorker.GetSelectedDevourData.HpQuantity & 0x02) >= 1 ? true : false;
+                checkBoxDevourHP3.Checked = (KernelWorker.GetSelectedDevourData.HpQuantity & 0x04) >= 1 ? true : false;
+                checkBoxDevourHP4.Checked = (KernelWorker.GetSelectedDevourData.HpQuantity & 0x08) >= 1 ? true : false;
+                checkBoxDevourHP5.Checked = (KernelWorker.GetSelectedDevourData.HpQuantity & 0x10) >= 1 ? true : false;
+                DevourStatusWorker();
+                checkBoxDevourStat1.Checked = (KernelWorker.GetSelectedDevourData.RaisedStat & 0x01) >= 1 ? true : false;
+                checkBoxDevourStat2.Checked = (KernelWorker.GetSelectedDevourData.RaisedStat & 0x02) >= 1 ? true : false;
+                checkBoxDevourStat3.Checked = (KernelWorker.GetSelectedDevourData.RaisedStat & 0x04) >= 1 ? true : false;
+                checkBoxDevourStat4.Checked = (KernelWorker.GetSelectedDevourData.RaisedStat & 0x08) >= 1 ? true : false;
+                checkBoxDevourStat5.Checked = (KernelWorker.GetSelectedDevourData.RaisedStat & 0x10) >= 1 ? true : false;
+                checkBoxDevourStat6.Checked = (KernelWorker.GetSelectedDevourData.RaisedStat & 0x20) >= 1 ? true : false;
+                numericUpDownDevourHP.Value = KernelWorker.GetSelectedDevourData.RaisedHP;
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+
+        #region MISC
+
+        private void Misc()
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadMisc();
+            try
+            {
+                numericUpDownStatusTimer1.Value = KernelWorker.GetSelectedMiscData.StatusTimer1;
+                numericUpDownStatusTimer2.Value = KernelWorker.GetSelectedMiscData.StatusTimer2;
+                numericUpDownStatusTimer3.Value = KernelWorker.GetSelectedMiscData.StatusTimer3;
+                numericUpDownStatusTimer4.Value = KernelWorker.GetSelectedMiscData.StatusTimer4;
+                numericUpDownStatusTimer5.Value = KernelWorker.GetSelectedMiscData.StatusTimer5;
+                numericUpDownStatusTimer6.Value = KernelWorker.GetSelectedMiscData.StatusTimer6;
+                numericUpDownStatusTimer7.Value = KernelWorker.GetSelectedMiscData.StatusTimer7;
+                numericUpDownStatusTimer8.Value = KernelWorker.GetSelectedMiscData.StatusTimer8;
+                numericUpDownStatusTimer9.Value = KernelWorker.GetSelectedMiscData.StatusTimer9;
+                numericUpDownStatusTimer10.Value = KernelWorker.GetSelectedMiscData.StatusTimer10;
+                numericUpDownStatusTimer11.Value = KernelWorker.GetSelectedMiscData.StatusTimer11;
+                numericUpDownStatusTimer12.Value = KernelWorker.GetSelectedMiscData.StatusTimer12;
+                numericUpDownStatusTimer13.Value = KernelWorker.GetSelectedMiscData.StatusTimer13;
+                numericUpDownStatusTimer14.Value = KernelWorker.GetSelectedMiscData.StatusTimer14;
+                numericUpDownATBMult.Value = KernelWorker.GetSelectedMiscData.ATB;
+                numericUpDownDeadTimer.Value = KernelWorker.GetSelectedMiscData.DeadTimer;
+                numericUpDownStatusLimit1.Value = KernelWorker.GetSelectedMiscData.StatusLimit1;
+                numericUpDownStatusLimit2.Value = KernelWorker.GetSelectedMiscData.StatusLimit2;
+                numericUpDownStatusLimit3.Value = KernelWorker.GetSelectedMiscData.StatusLimit3;
+                numericUpDownStatusLimit4.Value = KernelWorker.GetSelectedMiscData.StatusLimit4;
+                numericUpDownStatusLimit5.Value = KernelWorker.GetSelectedMiscData.StatusLimit5;
+                numericUpDownStatusLimit6.Value = KernelWorker.GetSelectedMiscData.StatusLimit6;
+                numericUpDownStatusLimit7.Value = KernelWorker.GetSelectedMiscData.StatusLimit7;
+                numericUpDownStatusLimit8.Value = KernelWorker.GetSelectedMiscData.StatusLimit8;
+                numericUpDownStatusLimit9.Value = KernelWorker.GetSelectedMiscData.StatusLimit9;
+                numericUpDownStatusLimit10.Value = KernelWorker.GetSelectedMiscData.StatusLimit10;
+                numericUpDownStatusLimit11.Value = KernelWorker.GetSelectedMiscData.StatusLimit11;
+                numericUpDownStatusLimit12.Value = KernelWorker.GetSelectedMiscData.StatusLimit12;
+                numericUpDownStatusLimit13.Value = KernelWorker.GetSelectedMiscData.StatusLimit13;
+                numericUpDownStatusLimit14.Value = KernelWorker.GetSelectedMiscData.StatusLimit14;
+                numericUpDownStatusLimit15.Value = KernelWorker.GetSelectedMiscData.StatusLimit15;
+                numericUpDownStatusLimit16.Value = KernelWorker.GetSelectedMiscData.StatusLimit16;
+                numericUpDownStatusLimit17.Value = KernelWorker.GetSelectedMiscData.StatusLimit17;
+                numericUpDownStatusLimit18.Value = KernelWorker.GetSelectedMiscData.StatusLimit18;
+                numericUpDownStatusLimit19.Value = KernelWorker.GetSelectedMiscData.StatusLimit19;
+                numericUpDownStatusLimit20.Value = KernelWorker.GetSelectedMiscData.StatusLimit20;
+                numericUpDownStatusLimit21.Value = KernelWorker.GetSelectedMiscData.StatusLimit21;
+                numericUpDownStatusLimit22.Value = KernelWorker.GetSelectedMiscData.StatusLimit22;
+                numericUpDownStatusLimit23.Value = KernelWorker.GetSelectedMiscData.StatusLimit23;
+                numericUpDownStatusLimit24.Value = KernelWorker.GetSelectedMiscData.StatusLimit24;
+                numericUpDownStatusLimit25.Value = KernelWorker.GetSelectedMiscData.StatusLimit25;
+                numericUpDownStatusLimit26.Value = KernelWorker.GetSelectedMiscData.StatusLimit26;
+                numericUpDownStatusLimit27.Value = KernelWorker.GetSelectedMiscData.StatusLimit27;
+                numericUpDownStatusLimit28.Value = KernelWorker.GetSelectedMiscData.StatusLimit28;
+                numericUpDownStatusLimit29.Value = KernelWorker.GetSelectedMiscData.StatusLimit29;
+                numericUpDownStatusLimit30.Value = KernelWorker.GetSelectedMiscData.StatusLimit30;
+                numericUpDownStatusLimit31.Value = KernelWorker.GetSelectedMiscData.StatusLimit31;
+                numericUpDownStatusLimit32.Value = KernelWorker.GetSelectedMiscData.StatusLimit32;
+                numericUpDownDuelTimer1.Value = KernelWorker.GetSelectedMiscData.DuelTimerCL1;
+                numericUpDownDuelTimer2.Value = KernelWorker.GetSelectedMiscData.DuelTimerCL2;
+                numericUpDownDuelTimer3.Value = KernelWorker.GetSelectedMiscData.DuelTimerCL3;
+                numericUpDownDuelTimer4.Value = KernelWorker.GetSelectedMiscData.DuelTimerCL4;
+                numericUpDownDuelStart1.Value = KernelWorker.GetSelectedMiscData.DuelSeqCL1;
+                numericUpDownDuelStart2.Value = KernelWorker.GetSelectedMiscData.DuelSeqCL2;
+                numericUpDownDuelStart3.Value = KernelWorker.GetSelectedMiscData.DuelSeqCL3;
+                numericUpDownDuelStart4.Value = KernelWorker.GetSelectedMiscData.DuelSeqCL4;
+                numericUpDownShotTimer1.Value = KernelWorker.GetSelectedMiscData.ShotTimerCL1;
+                numericUpDownShotTimer2.Value = KernelWorker.GetSelectedMiscData.ShotTimerCL2;
+                numericUpDownShotTimer3.Value = KernelWorker.GetSelectedMiscData.ShotTimerCL3;
+                numericUpDownShotTimer4.Value = KernelWorker.GetSelectedMiscData.ShotTimerCL4;
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+        #endregion
+
+        #region COMMAND ABILITY DATA
+
+        private int CommandAbilityData_GetElement()
+        {
+            return KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Fire
+                        ? 0
+                        : KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Ice
+                            ? 1
+                            : KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Thunder
+                                ? 2
+                                : KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Earth
+                                    ? 3
+                                    : KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Poison
+                                        ? 4
+                                        : KernelWorker.GetSelectedCommandAbilityDataData.Element == KernelWorker.Element.Wind
+                                            ? 5
+                                            : KernelWorker.GetSelectedCommandAbilityDataData.Element ==
+                                              KernelWorker.Element.Water
+                                                ? 6
+                                                : KernelWorker.GetSelectedCommandAbilityDataData.Element ==
+                                                  KernelWorker.Element.Holy
+                                                    ? 7
+                                                    : KernelWorker.GetSelectedCommandAbilityDataData.Element ==
+                                                      KernelWorker.Element.NonElemental
+                                                        ? comboBoxAbComDataElement.Items.Count - 1
+                                                        : 0;
+        }
+
+        private byte CommandAbilityData_GetElement(int Index)
+        {
+            byte elem = (byte)(Index == 8 ? (byte)KernelWorker.Element.NonElemental :
+                Index == 0 ? (byte)KernelWorker.Element.Fire :
+                Index == 1 ? (byte)KernelWorker.Element.Ice :
+                Index == 2 ? (byte)KernelWorker.Element.Thunder :
+                Index == 3 ? (byte)KernelWorker.Element.Earth :
+                Index == 4 ? (byte)KernelWorker.Element.Poison :
+                Index == 5 ? (byte)KernelWorker.Element.Wind :
+                Index == 6 ? (byte)KernelWorker.Element.Water :
+                Index == 7 ? (byte)KernelWorker.Element.Holy :
+                0x00 /*ErrorHandler*/);
+            return elem;
+        }
+
+        private void CommandAbilityDataStatusWorker()
+        {
+            checkBoxAbComDataDeath.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x01) >= 1 ? true : false;
+            checkBoxAbComDataPoison.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x02) >= 1 ? true : false;
+            checkBoxAbComDataPetrify.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x04) >= 1 ? true : false;
+            checkBoxAbComDataDarkness.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x08) >= 1 ? true : false;
+            checkBoxAbComDataSilence.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x10) >= 1 ? true : false;
+            checkBoxAbComDataBerserk.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x20) >= 1 ? true : false;
+            checkBoxAbComDataZombie.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x40) >= 1 ? true : false;
+            checkBoxAbComDataUnk7.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x80) >= 1 ? true : false;
+
+            checkBoxAbComDataSleep.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x01) >= 1 ? true : false;
+            checkBoxAbComDataHaste.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x02) >= 1 ? true : false;
+            checkBoxAbComDataSlow.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x04) >= 1 ? true : false;
+            checkBoxAbComDataStop.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x08) >= 1 ? true : false;
+            checkBoxAbComDataRegen.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x10) >= 1 ? true : false;
+            checkBoxAbComDataProtect.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x20) >= 1 ? true : false;
+            checkBoxAbComDataShell.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x40) >= 1 ? true : false;
+            checkBoxAbComDataReflect.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x80) >= 1 ? true : false;
+
+            checkBoxAbComDataAura.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x01) >= 1 ? true : false;
+            checkBoxAbComDataCurse.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x02) >= 1 ? true : false;
+            checkBoxAbComDataDoom.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x04) >= 1 ? true : false;
+            checkBoxAbComDataInvincible.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x08) >= 1 ? true : false;
+            checkBoxAbComDataPetrifying.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x10) >= 1 ? true : false;
+            checkBoxAbComDataFloat.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x20) >= 1 ? true : false;
+            checkBoxAbComDataConfusion.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x40) >= 1 ? true : false;
+            checkBoxAbComDataDrain.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x80) >= 1 ? true : false;
+
+            checkBoxAbComDataEject.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x01) >= 1 ? true : false;
+            checkBoxAbComDataDouble.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x02) >= 1 ? true : false;
+            checkBoxAbComDataTriple.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x04) >= 1 ? true : false;
+            checkBoxAbComDataDefend.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x08) >= 1 ? true : false;
+            checkBoxAbComDataUnk1.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x10) >= 1 ? true : false;
+            checkBoxAbComDataUnk2.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x20) >= 1 ? true : false;
+            checkBoxAbComDataCharged.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x40) >= 1 ? true : false;
+            checkBoxAbComDataBackAttack.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x80) >= 1 ? true : false;
+
+            checkBoxAbComDataVit0.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x01) >= 1 ? true : false;
+            checkBoxAbComDataAngelWing.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x02) >= 1 ? true : false;
+            checkBoxAbComDataUnk3.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x04) >= 1 ? true : false;
+            checkBoxAbComDataUnk4.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x08) >= 1 ? true : false;
+            checkBoxAbComDataUnk5.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x10) >= 1 ? true : false;
+            checkBoxAbComDataUnk6.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x20) >= 1 ? true : false;
+            checkBoxAbComDataHasMagic.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x40) >= 1 ? true : false;
+            checkBoxAbComDataSummonGF.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x80) >= 1 ? true : false;
+        }
+
+        private void listBoxAbComData_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadCommandAbilityData(listBoxAbComData.SelectedIndex);
+
+            try
+            {
+                comboBoxAbComDataMagicID.SelectedIndex = KernelWorker.GetSelectedCommandAbilityDataData.MagicID;
+                comboBoxAbComDataAttackType.SelectedIndex = KernelWorker.GetSelectedCommandAbilityDataData.AttackType;
+                numericUpDownAbComDataAttackPower.Value = KernelWorker.GetSelectedCommandAbilityDataData.AttackPower;
+                checkBoxAbComDataFlag1.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x01) >= 1 ? true : false;
+                checkBoxAbComDataFlag2.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x02) >= 1 ? true : false;
+                checkBoxAbComDataFlag3.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x04) >= 1 ? true : false;
+                checkBoxAbComDataFlag4.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x08) >= 1 ? true : false;
+                checkBoxAbComDataFlag5.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x10) >= 1 ? true : false;
+                checkBoxAbComDataFlag6.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x20) >= 1 ? true : false;
+                checkBoxAbComDataFlag7.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x40) >= 1 ? true : false;
+                checkBoxAbComDataFlag8.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x80) >= 1 ? true : false;
+                numericUpDownAbComDataHitCount.Value = KernelWorker.GetSelectedCommandAbilityDataData.HitCount;
+                comboBoxAbComDataElement.SelectedIndex = CommandAbilityData_GetElement();
+                numericUpDownAbComDataStatusAttack.Value = KernelWorker.GetSelectedCommandAbilityDataData.StatusAttack;
+                CommandAbilityDataStatusWorker();
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+        #endregion
+
+        #region COMMAND ABILITY
+
+        private void listBoxAbCom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadCommandAbility(listBoxAbCom.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbComAP.Value = KernelWorker.GetSelectedCommandAbilityData.AP;
+                comboBoxAbComBattleCommand.SelectedIndex = KernelWorker.GetSelectedCommandAbilityData.BattleCommand;               
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+
+        #region JUNCTION ABILITIES
+
+        private void listBoxAbJun_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadJunctionAbilities(listBoxAbJun.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbJunAP.Value = KernelWorker.GetSelectedJunctionAbilitiesData.AP;
+                checkBoxAbJunFlag1.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x01) >= 1 ? true : false;
+                checkBoxAbJunFlag2.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x02) >= 1 ? true : false;
+                checkBoxAbJunFlag3.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x04) >= 1 ? true : false;
+                checkBoxAbJunFlag4.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x08) >= 1 ? true : false;
+                checkBoxAbJunFlag5.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x10) >= 1 ? true : false;
+                checkBoxAbJunFlag6.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x20) >= 1 ? true : false;
+                checkBoxAbJunFlag7.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x40) >= 1 ? true : false;
+                checkBoxAbJunFlag8.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x80) >= 1 ? true : false;
+                checkBoxAbJunFlag9.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x01) >= 1 ? true : false;
+                checkBoxAbJunFlag10.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x02) >= 1 ? true : false;
+                checkBoxAbJunFlag11.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x04) >= 1 ? true : false;
+                checkBoxAbJunFlag12.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x08) >= 1 ? true : false;
+                checkBoxAbJunFlag13.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x10) >= 1 ? true : false;
+                checkBoxAbJunFlag14.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x20) >= 1 ? true : false;
+                checkBoxAbJunFlag15.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x40) >= 1 ? true : false;
+                checkBoxAbJunFlag16.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x80) >= 1 ? true : false;
+                checkBoxAbJunFlag17.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag3 & 0x01) >= 1 ? true : false;
+                checkBoxAbJunFlag18.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag3 & 0x02) >= 1 ? true : false;
+                checkBoxAbJunFlag19.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag3 & 0x04) >= 1 ? true : false;
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+        #endregion
+
+        #region PARTY ABILITIES
+
+        private void listBoxAbParty_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadPartyAbilities(listBoxAbParty.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbPartyAP.Value = KernelWorker.GetSelectedPartyAbilitiesData.AP;
+                checkBoxAbPartyFlag1.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x01) >= 1 ? true : false;
+                checkBoxAbPartyFlag2.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x02) >= 1 ? true : false;
+                checkBoxAbPartyFlag3.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x04) >= 1 ? true : false;
+                checkBoxAbPartyFlag4.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x08) >= 1 ? true : false;
+                checkBoxAbPartyFlag5.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x10) >= 1 ? true : false;
+                checkBoxAbPartyFlag6.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x20) >= 1 ? true : false;
+                checkBoxAbPartyFlag7.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x40) >= 1 ? true : false;
+                checkBoxAbPartyFlag8.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x80) >= 1 ? true : false;
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+
+        #region GF ABILITIES
+
+        private int GFAbilities_GetStat()
+        {
+            return KernelWorker.GetSelectedGFAbilitiesData.StatToIncrease == KernelWorker.StatToIncrease.SumMag
+                        ? 0
+                        : KernelWorker.GetSelectedGFAbilitiesData.StatToIncrease == KernelWorker.StatToIncrease.HP
+                            ? 1
+                            : KernelWorker.GetSelectedGFAbilitiesData.StatToIncrease == KernelWorker.StatToIncrease.Boost
+
+                            ? comboBoxAbGFStatToIncrease.Items.Count -1
+                            : 0;
+        }
+
+        private byte GFAbilities_GetStat(int Index)
+        {
+            byte stat = (byte)(Index == 2 ? (byte)KernelWorker.StatToIncrease.Boost :
+                Index == 0 ? (byte)KernelWorker.StatToIncrease.SumMag :
+                Index == 1 ? (byte)KernelWorker.StatToIncrease.HP :
+                0x00 /*ErrorHandler*/);
+            return stat;
+        }
+
+
+        private void listBoxAbGF_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadGFAbilities(listBoxAbGF.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbGFAP.Value = KernelWorker.GetSelectedGFAbilitiesData.AP;
+                checkBoxAbGFBoost.Checked = (KernelWorker.GetSelectedGFAbilitiesData.EnableBoost & 0x01) >= 1 ? true : false;
+                comboBoxAbGFStatToIncrease.SelectedIndex = GFAbilities_GetStat();
+                trackBarAbGFIncrementValue.Value = KernelWorker.GetSelectedGFAbilitiesData.IncrementValue;
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+        #endregion
+
+        #region PARTY ABILITIES
+
+        private void listBoxAbChar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadCharacterAbilities(listBoxAbChar.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbCharAP.Value = KernelWorker.GetSelectedCharacterAbilitiesData.AP;
+                checkBoxAbCharFlag1.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x01) >= 1 ? true : false;
+                checkBoxAbCharFlag2.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x02) >= 1 ? true : false;
+                checkBoxAbCharFlag3.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x04) >= 1 ? true : false;
+                checkBoxAbCharFlag4.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x08) >= 1 ? true : false;
+                checkBoxAbCharFlag5.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x10) >= 1 ? true : false;
+                checkBoxAbCharFlag6.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x20) >= 1 ? true : false;
+                checkBoxAbCharFlag7.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x40) >= 1 ? true : false;
+                checkBoxAbCharFlag8.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x80) >= 1 ? true : false;
+                checkBoxAbCharFlag9.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x01) >= 1 ? true : false;
+                checkBoxAbCharFlag10.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x02) >= 1 ? true : false;
+                checkBoxAbCharFlag11.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x04) >= 1 ? true : false;
+                checkBoxAbCharFlag12.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x08) >= 1 ? true : false;
+                checkBoxAbCharFlag13.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x10) >= 1 ? true : false;
+                checkBoxAbCharFlag14.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x20) >= 1 ? true : false;
+                checkBoxAbCharFlag15.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x40) >= 1 ? true : false;
+                checkBoxAbCharFlag16.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x80) >= 1 ? true : false;
+                checkBoxAbCharFlag17.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x01) >= 1 ? true : false;
+                checkBoxAbCharFlag18.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x02) >= 1 ? true : false;
+                checkBoxAbCharFlag19.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x04) >= 1 ? true : false;
+                checkBoxAbCharFlag20.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x08) >= 1 ? true : false;
+                checkBoxAbCharFlag21.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x10) >= 1 ? true : false;
+                checkBoxAbCharFlag22.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x20) >= 1 ? true : false;
+                checkBoxAbCharFlag23.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x40) >= 1 ? true : false;
+                checkBoxAbCharFlag24.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x80) >= 1 ? true : false;
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+        #endregion
+
+        #region PARTY ABILITIES
+
+        private void listBoxAbMenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadMenuAbilities(listBoxAbMenu.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbMenuAP.Value = KernelWorker.GetSelectedMenuAbilitiesData.AP;
+                numericUpDownAbMenuIndex.Value = KernelWorker.GetSelectedMenuAbilitiesData.Index;
+                numericUpDownAbMenuStartOffset.Value = KernelWorker.GetSelectedMenuAbilitiesData.StartOffset;
+                numericUpDownAbMenuEndOffset.Value = KernelWorker.GetSelectedMenuAbilitiesData.EndOffset;
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
         }

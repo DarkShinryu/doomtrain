@@ -7,13 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 
-namespace Doomtrain
+namespace Doomtrain.Characters_Stats_Charts
 {
-    public partial class CharChartHP : Form
+    public partial class CharHP : Form
     {
-        public CharChartHP()
+        public CharHP()
         {
             InitializeComponent();
         }
@@ -23,14 +22,14 @@ namespace Doomtrain
         private Point dragCursorPoint;
         private Point dragFormPoint;
 
-        private void ChartCharStats_MouseDown(object sender, MouseEventArgs e)
+        private void chartHP_MouseDown(object sender, MouseEventArgs e)
         {
             dragging = true;
             dragCursorPoint = Cursor.Position;
             dragFormPoint = this.Location;
         }
 
-        private void ChartCharStats_MouseMove(object sender, MouseEventArgs e)
+        private void chartHP_MouseMove(object sender, MouseEventArgs e)
         {
             if (dragging)
             {
@@ -39,10 +38,18 @@ namespace Doomtrain
             }
         }
 
-        private void ChartCharStats_MouseUp(object sender, MouseEventArgs e)
+        private void chartHP_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
         }
         //end moving chart
+
+
+
+
+        private void buttonHPClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

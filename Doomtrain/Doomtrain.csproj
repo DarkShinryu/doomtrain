@@ -62,11 +62,53 @@
     <Compile Include="AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharChartHP.cs">
+    <Compile Include="Characters Stats Charts\CharEXP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharChartHP.Designer.cs">
-      <DependentUpon>CharChartHP.cs</DependentUpon>
+    <Compile Include="Characters Stats Charts\CharEXP.Designer.cs">
+      <DependentUpon>CharEXP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharHP.Designer.cs">
+      <DependentUpon>CharHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharLUCK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharLUCK.Designer.cs">
+      <DependentUpon>CharLUCK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharMAG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharMAG.Designer.cs">
+      <DependentUpon>CharMAG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharSPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharSPD.Designer.cs">
+      <DependentUpon>CharSPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharSPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharSPR.Designer.cs">
+      <DependentUpon>CharSPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharSTR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharSTR.Designer.cs">
+      <DependentUpon>CharSTR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharVIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characters Stats Charts\CharVIT.Designer.cs">
+      <DependentUpon>CharVIT.cs</DependentUpon>
     </Compile>
     <Compile Include="KernelWorker.cs" />
     <Compile Include="MainForm.cs">
@@ -80,8 +122,29 @@
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characters Stats Charts\CharChartHP.resx">
-      <DependentUpon>CharChartHP.cs</DependentUpon>
+    <EmbeddedResource Include="Characters Stats Charts\CharEXP.resx">
+      <DependentUpon>CharEXP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters Stats Charts\CharHP.resx">
+      <DependentUpon>CharHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters Stats Charts\CharLUCK.resx">
+      <DependentUpon>CharLUCK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters Stats Charts\CharMAG.resx">
+      <DependentUpon>CharMAG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters Stats Charts\CharSPD.resx">
+      <DependentUpon>CharSPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters Stats Charts\CharSPR.resx">
+      <DependentUpon>CharSPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters Stats Charts\CharSTR.resx">
+      <DependentUpon>CharSTR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters Stats Charts\CharVIT.resx">
+      <DependentUpon>CharVIT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -124,6 +187,7 @@
   <ItemGroup>
     <None Include="Resources\close.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
