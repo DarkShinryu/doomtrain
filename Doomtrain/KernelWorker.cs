@@ -84,6 +84,9 @@ namespace Doomtrain
         public static int CharacterAbilitiesDataOffset = -1;
         public static int OffsetToCharacterAbilitiesSelected = -1;
 
+        public static int MenuAbilitiesDataOffset = -1;
+        public static int OffsetToMenuAbilitiesSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -110,6 +113,7 @@ namespace Doomtrain
         public static PartyAbilitiesData GetSelectedPartyAbilitiesData;
         public static GFAbilitiesData GetSelectedGFAbilitiesData;
         public static CharacterAbilitiesData GetSelectedCharacterAbilitiesData;
+        public static MenuAbilitiesData GetSelectedMenuAbilitiesData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -936,6 +940,15 @@ namespace Doomtrain
             public byte Flag2;
             public byte Flag3;
         }
+
+        public struct MenuAbilitiesData
+        {
+            public byte AP;
+            public byte Index;
+            public byte StartOffset;
+            public byte EndOffset;
+        }
+
         #endregion
 
 
@@ -3219,6 +3232,34 @@ namespace Doomtrain
 
         #endregion
 
+        #region MENU ABILITIES
+
+        public static void UpdateVariable_MenuAbilities(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToMenuAbilitiesSelected + 4] = Convert.ToByte(variable); //AP
+                    return;
+                case 1:
+                    Kernel[OffsetToMenuAbilitiesSelected + 5] = Convert.ToByte(variable); //Index to m00X files
+                    return;
+                case 2:
+                    Kernel[OffsetToMenuAbilitiesSelected + 6] = Convert.ToByte(variable); //Start offset
+                    return;
+                case 3:
+                    Kernel[OffsetToMenuAbilitiesSelected + 7] = Convert.ToByte(variable); //End offset
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
+        #endregion
+
         #endregion
 
 
@@ -3328,6 +3369,7 @@ namespace Doomtrain
             PartyAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.PartyAbilities);
             GFAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFAbilities);
             CharacterAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.CharacterAbilities);
+            MenuAbilitiesDataOffset = BitConverter.ToInt32(Kernel,(int)KernelSections.MenuAbilities);
         }
 
         #endregion
@@ -4610,6 +4652,23 @@ namespace Doomtrain
             GetSelectedCharacterAbilitiesData.Flag1 = Kernel[selectedCharacterAbilitiesOffset++];
             GetSelectedCharacterAbilitiesData.Flag2 = Kernel[selectedCharacterAbilitiesOffset++];
             GetSelectedCharacterAbilitiesData.Flag3 = Kernel[selectedCharacterAbilitiesOffset++];
+        }
+
+        #endregion
+
+        #region CHARACTER ABILITIES
+
+        public static void ReadMenuAbilities(int MenuAbilitiesID_List)
+        {
+            GetSelectedMenuAbilitiesData = new MenuAbilitiesData();
+            int selectedMenuAbilitiesOffset = MenuAbilitiesDataOffset + (MenuAbilitiesID_List * 8);
+            OffsetToMenuAbilitiesSelected = selectedMenuAbilitiesOffset;
+
+            selectedMenuAbilitiesOffset += 4;
+            GetSelectedMenuAbilitiesData.AP = Kernel[selectedMenuAbilitiesOffset++];
+            GetSelectedMenuAbilitiesData.Index = Kernel[selectedMenuAbilitiesOffset++];
+            GetSelectedMenuAbilitiesData.StartOffset = Kernel[selectedMenuAbilitiesOffset++];
+            GetSelectedMenuAbilitiesData.EndOffset = Kernel[selectedMenuAbilitiesOffset++];
         }
 
         #endregion

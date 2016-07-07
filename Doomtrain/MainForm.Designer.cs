@@ -1949,6 +1949,15 @@
             this.checkBoxAbCharFlag20 = new System.Windows.Forms.CheckBox();
             this.checkBoxAbCharFlag23 = new System.Windows.Forms.CheckBox();
             this.checkBoxAbCharFlag24 = new System.Windows.Forms.CheckBox();
+            this.groupBoxAbMenuGeneral = new System.Windows.Forms.GroupBox();
+            this.numericUpDownAbMenuStartOffset = new System.Windows.Forms.NumericUpDown();
+            this.labelAbMenuStartOffset = new System.Windows.Forms.Label();
+            this.labelMenuAP = new System.Windows.Forms.Label();
+            this.numericUpDownAbMenuAP = new System.Windows.Forms.NumericUpDown();
+            this.labelAbMenuEndOffset = new System.Windows.Forms.Label();
+            this.numericUpDownAbMenuEndOffset = new System.Windows.Forms.NumericUpDown();
+            this.labelAbMenuIndex = new System.Windows.Forms.Label();
+            this.numericUpDownAbMenuIndex = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -2068,6 +2077,7 @@
             this.tabPageABParty.SuspendLayout();
             this.groupBoxAbPartyFlags.SuspendLayout();
             this.groupBoxAbPartyGeneral.SuspendLayout();
+            this.tabPageAbMenu.SuspendLayout();
             this.tabPageWeapons.SuspendLayout();
             this.groupBoxWeaponsRenzokukenFinishers.SuspendLayout();
             this.groupBoxWeaponsGeneral.SuspendLayout();
@@ -2433,6 +2443,11 @@
             this.groupBoxAbCharFlags.SuspendLayout();
             this.groupBoxAbCharGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbCharAP)).BeginInit();
+            this.groupBoxAbMenuGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuStartOffset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuAP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuEndOffset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuIndex)).BeginInit();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -16287,8 +16302,8 @@
             this.tabControlAbilities.Controls.Add(this.tabPageAbCharacters);
             this.tabControlAbilities.Controls.Add(this.tabPageAbStats);
             this.tabControlAbilities.Controls.Add(this.tabPageAbJunction);
-            this.tabControlAbilities.Controls.Add(this.tabPageAbComData);
             this.tabControlAbilities.Controls.Add(this.tabPageAbCom);
+            this.tabControlAbilities.Controls.Add(this.tabPageAbComData);
             this.tabControlAbilities.Controls.Add(this.tabPageAbGF);
             this.tabControlAbilities.Controls.Add(this.tabPageABParty);
             this.tabControlAbilities.Controls.Add(this.tabPageAbMenu);
@@ -18216,6 +18231,7 @@
             // tabPageAbMenu
             // 
             this.tabPageAbMenu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageAbMenu.Controls.Add(this.groupBoxAbMenuGeneral);
             this.tabPageAbMenu.Location = new System.Drawing.Point(4, 26);
             this.tabPageAbMenu.Name = "tabPageAbMenu";
             this.tabPageAbMenu.Size = new System.Drawing.Size(464, 740);
@@ -18322,6 +18338,7 @@
             this.listBoxAbMenu.Name = "listBoxAbMenu";
             this.listBoxAbMenu.Size = new System.Drawing.Size(156, 769);
             this.listBoxAbMenu.TabIndex = 3;
+            this.listBoxAbMenu.SelectedIndexChanged += new System.EventHandler(this.listBoxAbMenu_SelectedIndexChanged);
             // 
             // listBoxAbParty
             // 
@@ -39112,6 +39129,123 @@
             this.checkBoxAbCharFlag24.Text = "???";
             this.checkBoxAbCharFlag24.UseVisualStyleBackColor = true;
             // 
+            // groupBoxAbMenuGeneral
+            // 
+            this.groupBoxAbMenuGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuAP);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.labelMenuAP);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuEndOffset);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.labelAbMenuEndOffset);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuIndex);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.labelAbMenuIndex);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuStartOffset);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.labelAbMenuStartOffset);
+            this.groupBoxAbMenuGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbMenuGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxAbMenuGeneral.Location = new System.Drawing.Point(6, 6);
+            this.groupBoxAbMenuGeneral.Name = "groupBoxAbMenuGeneral";
+            this.groupBoxAbMenuGeneral.Size = new System.Drawing.Size(452, 169);
+            this.groupBoxAbMenuGeneral.TabIndex = 8;
+            this.groupBoxAbMenuGeneral.TabStop = false;
+            this.groupBoxAbMenuGeneral.Text = "General";
+            // 
+            // numericUpDownAbMenuStartOffset
+            // 
+            this.numericUpDownAbMenuStartOffset.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbMenuStartOffset.Location = new System.Drawing.Point(242, 52);
+            this.numericUpDownAbMenuStartOffset.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbMenuStartOffset.Name = "numericUpDownAbMenuStartOffset";
+            this.numericUpDownAbMenuStartOffset.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbMenuStartOffset.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.numericUpDownAbMenuStartOffset, "Default: 0");
+            // 
+            // labelAbMenuStartOffset
+            // 
+            this.labelAbMenuStartOffset.AutoSize = true;
+            this.labelAbMenuStartOffset.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbMenuStartOffset.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbMenuStartOffset.Location = new System.Drawing.Point(227, 32);
+            this.labelAbMenuStartOffset.Name = "labelAbMenuStartOffset";
+            this.labelAbMenuStartOffset.Size = new System.Drawing.Size(77, 17);
+            this.labelAbMenuStartOffset.TabIndex = 1;
+            this.labelAbMenuStartOffset.Text = "Start Offset";
+            // 
+            // labelMenuAP
+            // 
+            this.labelMenuAP.AutoSize = true;
+            this.labelMenuAP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMenuAP.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMenuAP.Location = new System.Drawing.Point(188, 108);
+            this.labelMenuAP.Name = "labelMenuAP";
+            this.labelMenuAP.Size = new System.Drawing.Size(76, 17);
+            this.labelMenuAP.TabIndex = 1;
+            this.labelMenuAP.Text = "AP Needed";
+            // 
+            // numericUpDownAbMenuAP
+            // 
+            this.numericUpDownAbMenuAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbMenuAP.Location = new System.Drawing.Point(203, 128);
+            this.numericUpDownAbMenuAP.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbMenuAP.Name = "numericUpDownAbMenuAP";
+            this.numericUpDownAbMenuAP.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbMenuAP.TabIndex = 31;
+            // 
+            // labelAbMenuEndOffset
+            // 
+            this.labelAbMenuEndOffset.AutoSize = true;
+            this.labelAbMenuEndOffset.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbMenuEndOffset.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbMenuEndOffset.Location = new System.Drawing.Point(332, 32);
+            this.labelAbMenuEndOffset.Name = "labelAbMenuEndOffset";
+            this.labelAbMenuEndOffset.Size = new System.Drawing.Size(71, 17);
+            this.labelAbMenuEndOffset.TabIndex = 1;
+            this.labelAbMenuEndOffset.Text = "End Offset";
+            // 
+            // numericUpDownAbMenuEndOffset
+            // 
+            this.numericUpDownAbMenuEndOffset.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbMenuEndOffset.Location = new System.Drawing.Point(343, 52);
+            this.numericUpDownAbMenuEndOffset.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbMenuEndOffset.Name = "numericUpDownAbMenuEndOffset";
+            this.numericUpDownAbMenuEndOffset.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbMenuEndOffset.TabIndex = 31;
+            // 
+            // labelAbMenuIndex
+            // 
+            this.labelAbMenuIndex.AutoSize = true;
+            this.labelAbMenuIndex.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbMenuIndex.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbMenuIndex.Location = new System.Drawing.Point(49, 32);
+            this.labelAbMenuIndex.Name = "labelAbMenuIndex";
+            this.labelAbMenuIndex.Size = new System.Drawing.Size(118, 17);
+            this.labelAbMenuIndex.TabIndex = 1;
+            this.labelAbMenuIndex.Text = "Index to m00X file";
+            // 
+            // numericUpDownAbMenuIndex
+            // 
+            this.numericUpDownAbMenuIndex.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbMenuIndex.Location = new System.Drawing.Point(83, 52);
+            this.numericUpDownAbMenuIndex.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbMenuIndex.Name = "numericUpDownAbMenuIndex";
+            this.numericUpDownAbMenuIndex.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbMenuIndex.TabIndex = 31;
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -39278,6 +39412,7 @@
             this.groupBoxAbPartyFlags.PerformLayout();
             this.groupBoxAbPartyGeneral.ResumeLayout(false);
             this.groupBoxAbPartyGeneral.PerformLayout();
+            this.tabPageAbMenu.ResumeLayout(false);
             this.tabPageWeapons.ResumeLayout(false);
             this.groupBoxWeaponsRenzokukenFinishers.ResumeLayout(false);
             this.groupBoxWeaponsRenzokukenFinishers.PerformLayout();
@@ -39701,6 +39836,12 @@
             this.groupBoxAbCharGeneral.ResumeLayout(false);
             this.groupBoxAbCharGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbCharAP)).EndInit();
+            this.groupBoxAbMenuGeneral.ResumeLayout(false);
+            this.groupBoxAbMenuGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuStartOffset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuAP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuEndOffset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuIndex)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -41626,6 +41767,15 @@
         private System.Windows.Forms.GroupBox groupBoxAbCharGeneral;
         private System.Windows.Forms.NumericUpDown numericUpDownAbCharAP;
         private System.Windows.Forms.Label labelAbCharAP;
+        private System.Windows.Forms.GroupBox groupBoxAbMenuGeneral;
+        private System.Windows.Forms.NumericUpDown numericUpDownAbMenuAP;
+        private System.Windows.Forms.Label labelMenuAP;
+        private System.Windows.Forms.NumericUpDown numericUpDownAbMenuEndOffset;
+        private System.Windows.Forms.Label labelAbMenuEndOffset;
+        private System.Windows.Forms.NumericUpDown numericUpDownAbMenuIndex;
+        private System.Windows.Forms.Label labelAbMenuIndex;
+        private System.Windows.Forms.NumericUpDown numericUpDownAbMenuStartOffset;
+        private System.Windows.Forms.Label labelAbMenuStartOffset;
     }
 }
 

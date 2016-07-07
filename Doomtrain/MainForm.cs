@@ -1533,6 +1533,15 @@ namespace Doomtrain
             checkBoxAbCharFlag24.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x80);
 
             #endregion
+
+            #region EVENT HANDLERS MENU ABILITIES
+
+            numericUpDownAbMenuAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(0, numericUpDownAbMenuAP.Value);
+            numericUpDownAbMenuIndex.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(1, numericUpDownAbMenuIndex.Value);
+            numericUpDownAbMenuStartOffset.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(2, numericUpDownAbMenuStartOffset.Value);
+            numericUpDownAbMenuEndOffset.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(3, numericUpDownAbMenuEndOffset.Value);
+
+            #endregion
         }
 
 
@@ -1935,8 +1944,8 @@ namespace Doomtrain
                 listBoxAbChar.Visible = true;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = false;
-                listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
@@ -1947,8 +1956,8 @@ namespace Doomtrain
                 listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = true;
                 listBoxAbJun.Visible = false;
-                listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
@@ -1959,8 +1968,8 @@ namespace Doomtrain
                 listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = true;
-                listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
@@ -1970,9 +1979,9 @@ namespace Doomtrain
             {
                 listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
-                listBoxAbJun.Visible = false;
-                listBoxAbComData.Visible = true;
-                listBoxAbCom.Visible = false;
+                listBoxAbJun.Visible = false;                
+                listBoxAbCom.Visible = true;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
@@ -1983,8 +1992,8 @@ namespace Doomtrain
                 listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = false;
-                listBoxAbComData.Visible = false;
-                listBoxAbCom.Visible = true;
+                listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = true;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
@@ -1995,8 +2004,8 @@ namespace Doomtrain
                 listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = false;
-                listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = true;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = false;
@@ -2007,8 +2016,8 @@ namespace Doomtrain
                 listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = false;
-                listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = true;
                 listBoxAbMenu.Visible = false;
@@ -2019,8 +2028,8 @@ namespace Doomtrain
                 listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = false;
-                listBoxAbComData.Visible = false;
                 listBoxAbCom.Visible = false;
+                listBoxAbComData.Visible = false;
                 listBoxAbGF.Visible = false;
                 listBoxAbParty.Visible = false;
                 listBoxAbMenu.Visible = true;
@@ -4840,9 +4849,34 @@ namespace Doomtrain
             _loaded = true;
         }
 
-        #endregion
-        
 
+
+        #endregion
+
+        #region PARTY ABILITIES
+
+        private void listBoxAbMenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadMenuAbilities(listBoxAbMenu.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbMenuAP.Value = KernelWorker.GetSelectedMenuAbilitiesData.AP;
+                numericUpDownAbMenuIndex.Value = KernelWorker.GetSelectedMenuAbilitiesData.Index;
+                numericUpDownAbMenuStartOffset.Value = KernelWorker.GetSelectedMenuAbilitiesData.StartOffset;
+                numericUpDownAbMenuEndOffset.Value = KernelWorker.GetSelectedMenuAbilitiesData.EndOffset;
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
 
     }
 }
