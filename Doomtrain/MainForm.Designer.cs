@@ -197,6 +197,8 @@
             this.numericUpDownAbPartyAP = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownAbGFAP = new System.Windows.Forms.NumericUpDown();
             this.labelAbGFAP = new System.Windows.Forms.Label();
+            this.numericUpDownAbCharAP = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownAbMenuStartOffset = new System.Windows.Forms.NumericUpDown();
             this.labelDevourStatsIncr = new System.Windows.Forms.Label();
             this.labelDevourHPIncr = new System.Windows.Forms.Label();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -577,6 +579,33 @@
             this.listBoxAbComData = new System.Windows.Forms.ListBox();
             this.tabControlAbilities = new System.Windows.Forms.TabControl();
             this.tabPageAbCharacters = new System.Windows.Forms.TabPage();
+            this.groupBoxAbCharFlags = new System.Windows.Forms.GroupBox();
+            this.checkBoxAbCharFlag24 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag16 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag23 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag15 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag20 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag12 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag22 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag14 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag19 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag11 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag21 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag13 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag18 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag10 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag17 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag9 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAbCharFlag1 = new System.Windows.Forms.CheckBox();
+            this.groupBoxAbCharGeneral = new System.Windows.Forms.GroupBox();
+            this.labelAbCharAP = new System.Windows.Forms.Label();
             this.tabPageAbStats = new System.Windows.Forms.TabPage();
             this.groupBoxStatsIncrement = new System.Windows.Forms.GroupBox();
             this.comboBoxAbStatsStatToIncrease = new System.Windows.Forms.ComboBox();
@@ -607,6 +636,11 @@
             this.checkBoxAbJunFlag1 = new System.Windows.Forms.CheckBox();
             this.groupBoxAbJunGeneral = new System.Windows.Forms.GroupBox();
             this.labelAbJunAP = new System.Windows.Forms.Label();
+            this.tabPageAbCom = new System.Windows.Forms.TabPage();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownAbComAP = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxAbComBattleCommand = new System.Windows.Forms.ComboBox();
+            this.labelAbComBattleCommand = new System.Windows.Forms.Label();
             this.tabPageAbComData = new System.Windows.Forms.TabPage();
             this.groupBoxAbComDataStatus = new System.Windows.Forms.GroupBox();
             this.checkBoxAbComDataPetrifying = new System.Windows.Forms.CheckBox();
@@ -666,11 +700,6 @@
             this.numericUpDownAbComDataHitCount = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownAbComDataAttackPower = new System.Windows.Forms.NumericUpDown();
             this.comboBoxAbComDataMagicID = new System.Windows.Forms.ComboBox();
-            this.tabPageAbCom = new System.Windows.Forms.TabPage();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.numericUpDownAbComAP = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxAbComBattleCommand = new System.Windows.Forms.ComboBox();
-            this.labelAbComBattleCommand = new System.Windows.Forms.Label();
             this.tabPageAbGF = new System.Windows.Forms.TabPage();
             this.groupBoxAbGF = new System.Windows.Forms.GroupBox();
             this.checkBoxAbGFBoost = new System.Windows.Forms.CheckBox();
@@ -692,6 +721,14 @@
             this.groupBoxAbPartyGeneral = new System.Windows.Forms.GroupBox();
             this.labelAbPartyAP = new System.Windows.Forms.Label();
             this.tabPageAbMenu = new System.Windows.Forms.TabPage();
+            this.groupBoxAbMenuGeneral = new System.Windows.Forms.GroupBox();
+            this.numericUpDownAbMenuAP = new System.Windows.Forms.NumericUpDown();
+            this.labelMenuAP = new System.Windows.Forms.Label();
+            this.numericUpDownAbMenuEndOffset = new System.Windows.Forms.NumericUpDown();
+            this.labelAbMenuEndOffset = new System.Windows.Forms.Label();
+            this.numericUpDownAbMenuIndex = new System.Windows.Forms.NumericUpDown();
+            this.labelAbMenuIndex = new System.Windows.Forms.Label();
+            this.labelAbMenuStartOffset = new System.Windows.Forms.Label();
             this.listBoxAbChar = new System.Windows.Forms.ListBox();
             this.listBoxAbStats = new System.Windows.Forms.ListBox();
             this.listBoxAbMenu = new System.Windows.Forms.ListBox();
@@ -1921,43 +1958,22 @@
             this.labelStatusTimer1Value = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.groupBoxAbCharFlags = new System.Windows.Forms.GroupBox();
-            this.checkBoxAbCharFlag8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag1 = new System.Windows.Forms.CheckBox();
-            this.groupBoxAbCharGeneral = new System.Windows.Forms.GroupBox();
-            this.numericUpDownAbCharAP = new System.Windows.Forms.NumericUpDown();
-            this.labelAbCharAP = new System.Windows.Forms.Label();
-            this.checkBoxAbCharFlag9 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag10 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag13 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag11 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag14 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag12 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag15 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag16 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag17 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag18 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag21 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag19 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag22 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag20 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag23 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAbCharFlag24 = new System.Windows.Forms.CheckBox();
-            this.groupBoxAbMenuGeneral = new System.Windows.Forms.GroupBox();
-            this.numericUpDownAbMenuStartOffset = new System.Windows.Forms.NumericUpDown();
-            this.labelAbMenuStartOffset = new System.Windows.Forms.Label();
-            this.labelMenuAP = new System.Windows.Forms.Label();
-            this.numericUpDownAbMenuAP = new System.Windows.Forms.NumericUpDown();
-            this.labelAbMenuEndOffset = new System.Windows.Forms.Label();
-            this.numericUpDownAbMenuEndOffset = new System.Windows.Forms.NumericUpDown();
-            this.labelAbMenuIndex = new System.Windows.Forms.Label();
-            this.numericUpDownAbMenuIndex = new System.Windows.Forms.NumericUpDown();
+            this.tabPageBattleCommands = new System.Windows.Forms.TabPage();
+            this.groupBoxBatComGeneral = new System.Windows.Forms.GroupBox();
+            this.comboBoxBatComAbilityID = new System.Windows.Forms.ComboBox();
+            this.numericUpDownBatComTarget = new System.Windows.Forms.NumericUpDown();
+            this.labelBatComTarget = new System.Windows.Forms.Label();
+            this.labelBatComAbilityID = new System.Windows.Forms.Label();
+            this.listBoxBatCom = new System.Windows.Forms.ListBox();
+            this.groupBoxBatComFlag = new System.Windows.Forms.GroupBox();
+            this.checkBoxBatComFlag8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBatComFlag7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBatComFlag4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBatComFlag6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBatComFlag3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBatComFlag5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBatComFlag2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBatComFlag1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -1965,6 +1981,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbJunAP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbPartyAP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbGFAP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbCharAP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuStartOffset)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.toolbarStrip.SuspendLayout();
             this.tabPageGFAttacks.SuspendLayout();
@@ -2055,12 +2073,17 @@
             this.tabPageAbilities.SuspendLayout();
             this.tabControlAbilities.SuspendLayout();
             this.tabPageAbCharacters.SuspendLayout();
+            this.groupBoxAbCharFlags.SuspendLayout();
+            this.groupBoxAbCharGeneral.SuspendLayout();
             this.tabPageAbStats.SuspendLayout();
             this.groupBoxStatsIncrement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAbStatsIncrementValue)).BeginInit();
             this.tabPageAbJunction.SuspendLayout();
             this.groupBoxAbJunJun.SuspendLayout();
             this.groupBoxAbJunGeneral.SuspendLayout();
+            this.tabPageAbCom.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComAP)).BeginInit();
             this.tabPageAbComData.SuspendLayout();
             this.groupBoxAbComDataStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataStatusAttack)).BeginInit();
@@ -2068,9 +2091,6 @@
             this.groupBoxAbComDataGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataAttackPower)).BeginInit();
-            this.tabPageAbCom.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComAP)).BeginInit();
             this.tabPageAbGF.SuspendLayout();
             this.groupBoxAbGF.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAbGFIncrementValue)).BeginInit();
@@ -2078,6 +2098,10 @@
             this.groupBoxAbPartyFlags.SuspendLayout();
             this.groupBoxAbPartyGeneral.SuspendLayout();
             this.tabPageAbMenu.SuspendLayout();
+            this.groupBoxAbMenuGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuAP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuEndOffset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuIndex)).BeginInit();
             this.tabPageWeapons.SuspendLayout();
             this.groupBoxWeaponsRenzokukenFinishers.SuspendLayout();
             this.groupBoxWeaponsGeneral.SuspendLayout();
@@ -2440,14 +2464,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            this.groupBoxAbCharFlags.SuspendLayout();
-            this.groupBoxAbCharGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbCharAP)).BeginInit();
-            this.groupBoxAbMenuGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuStartOffset)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuAP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuEndOffset)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuIndex)).BeginInit();
+            this.tabPageBattleCommands.SuspendLayout();
+            this.groupBoxBatComGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBatComTarget)).BeginInit();
+            this.groupBoxBatComFlag.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -5505,6 +5525,34 @@
             this.labelAbGFAP.TabIndex = 1;
             this.labelAbGFAP.Text = "AP Needed";
             this.toolTip1.SetToolTip(this.labelAbGFAP, "Used in damage calculation");
+            // 
+            // numericUpDownAbCharAP
+            // 
+            this.numericUpDownAbCharAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbCharAP.Location = new System.Drawing.Point(203, 44);
+            this.numericUpDownAbCharAP.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbCharAP.Name = "numericUpDownAbCharAP";
+            this.numericUpDownAbCharAP.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbCharAP.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.numericUpDownAbCharAP, "Default: 0");
+            // 
+            // numericUpDownAbMenuStartOffset
+            // 
+            this.numericUpDownAbMenuStartOffset.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbMenuStartOffset.Location = new System.Drawing.Point(242, 52);
+            this.numericUpDownAbMenuStartOffset.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbMenuStartOffset.Name = "numericUpDownAbMenuStartOffset";
+            this.numericUpDownAbMenuStartOffset.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbMenuStartOffset.TabIndex = 31;
+            this.toolTip1.SetToolTip(this.numericUpDownAbMenuStartOffset, "Default: 0");
             // 
             // labelDevourStatsIncr
             // 
@@ -16327,6 +16375,355 @@
             this.tabPageAbCharacters.TabIndex = 3;
             this.tabPageAbCharacters.Text = "Character";
             // 
+            // groupBoxAbCharFlags
+            // 
+            this.groupBoxAbCharFlags.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag24);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag16);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag23);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag15);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag8);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag20);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag12);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag22);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag7);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag14);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag19);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag4);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag11);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag21);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag6);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag13);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag18);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag3);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag10);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag17);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag5);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag9);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag2);
+            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag1);
+            this.groupBoxAbCharFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbCharFlags.ForeColor = System.Drawing.Color.Crimson;
+            this.groupBoxAbCharFlags.Location = new System.Drawing.Point(6, 98);
+            this.groupBoxAbCharFlags.Name = "groupBoxAbCharFlags";
+            this.groupBoxAbCharFlags.Size = new System.Drawing.Size(452, 192);
+            this.groupBoxAbCharFlags.TabIndex = 6;
+            this.groupBoxAbCharFlags.TabStop = false;
+            this.groupBoxAbCharFlags.Text = "Flags";
+            // 
+            // checkBoxAbCharFlag24
+            // 
+            this.checkBoxAbCharFlag24.AutoSize = true;
+            this.checkBoxAbCharFlag24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag24.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag24.Location = new System.Drawing.Point(339, 164);
+            this.checkBoxAbCharFlag24.Name = "checkBoxAbCharFlag24";
+            this.checkBoxAbCharFlag24.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbCharFlag24.TabIndex = 104;
+            this.checkBoxAbCharFlag24.Text = "???";
+            this.checkBoxAbCharFlag24.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag16
+            // 
+            this.checkBoxAbCharFlag16.AutoSize = true;
+            this.checkBoxAbCharFlag16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag16.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag16.Location = new System.Drawing.Point(339, 114);
+            this.checkBoxAbCharFlag16.Name = "checkBoxAbCharFlag16";
+            this.checkBoxAbCharFlag16.Size = new System.Drawing.Size(87, 19);
+            this.checkBoxAbCharFlag16.TabIndex = 104;
+            this.checkBoxAbCharFlag16.Text = "Auto-Haste";
+            this.checkBoxAbCharFlag16.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag23
+            // 
+            this.checkBoxAbCharFlag23.AutoSize = true;
+            this.checkBoxAbCharFlag23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag23.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag23.Location = new System.Drawing.Point(244, 164);
+            this.checkBoxAbCharFlag23.Name = "checkBoxAbCharFlag23";
+            this.checkBoxAbCharFlag23.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbCharFlag23.TabIndex = 104;
+            this.checkBoxAbCharFlag23.Text = "???";
+            this.checkBoxAbCharFlag23.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag15
+            // 
+            this.checkBoxAbCharFlag15.AutoSize = true;
+            this.checkBoxAbCharFlag15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag15.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag15.Location = new System.Drawing.Point(244, 114);
+            this.checkBoxAbCharFlag15.Name = "checkBoxAbCharFlag15";
+            this.checkBoxAbCharFlag15.Size = new System.Drawing.Size(95, 19);
+            this.checkBoxAbCharFlag15.TabIndex = 104;
+            this.checkBoxAbCharFlag15.Text = "Auto-Protect";
+            this.checkBoxAbCharFlag15.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag8
+            // 
+            this.checkBoxAbCharFlag8.AutoSize = true;
+            this.checkBoxAbCharFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag8.Location = new System.Drawing.Point(339, 64);
+            this.checkBoxAbCharFlag8.Name = "checkBoxAbCharFlag8";
+            this.checkBoxAbCharFlag8.Size = new System.Drawing.Size(78, 19);
+            this.checkBoxAbCharFlag8.TabIndex = 104;
+            this.checkBoxAbCharFlag8.Text = "HP Bonus";
+            this.checkBoxAbCharFlag8.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag20
+            // 
+            this.checkBoxAbCharFlag20.AutoSize = true;
+            this.checkBoxAbCharFlag20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag20.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag20.Location = new System.Drawing.Point(339, 139);
+            this.checkBoxAbCharFlag20.Name = "checkBoxAbCharFlag20";
+            this.checkBoxAbCharFlag20.Size = new System.Drawing.Size(64, 19);
+            this.checkBoxAbCharFlag20.TabIndex = 104;
+            this.checkBoxAbCharFlag20.Text = "Ribbon";
+            this.checkBoxAbCharFlag20.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag12
+            // 
+            this.checkBoxAbCharFlag12.AutoSize = true;
+            this.checkBoxAbCharFlag12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag12.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag12.Location = new System.Drawing.Point(339, 89);
+            this.checkBoxAbCharFlag12.Name = "checkBoxAbCharFlag12";
+            this.checkBoxAbCharFlag12.Size = new System.Drawing.Size(79, 19);
+            this.checkBoxAbCharFlag12.TabIndex = 104;
+            this.checkBoxAbCharFlag12.Text = "Spr Bonus";
+            this.checkBoxAbCharFlag12.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag22
+            // 
+            this.checkBoxAbCharFlag22.AutoSize = true;
+            this.checkBoxAbCharFlag22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag22.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag22.Location = new System.Drawing.Point(133, 164);
+            this.checkBoxAbCharFlag22.Name = "checkBoxAbCharFlag22";
+            this.checkBoxAbCharFlag22.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbCharFlag22.TabIndex = 104;
+            this.checkBoxAbCharFlag22.Text = "???";
+            this.checkBoxAbCharFlag22.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag7
+            // 
+            this.checkBoxAbCharFlag7.AutoSize = true;
+            this.checkBoxAbCharFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag7.Location = new System.Drawing.Point(244, 64);
+            this.checkBoxAbCharFlag7.Name = "checkBoxAbCharFlag7";
+            this.checkBoxAbCharFlag7.Size = new System.Drawing.Size(86, 19);
+            this.checkBoxAbCharFlag7.TabIndex = 104;
+            this.checkBoxAbCharFlag7.Text = "Expendx3-1";
+            this.checkBoxAbCharFlag7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag14
+            // 
+            this.checkBoxAbCharFlag14.AutoSize = true;
+            this.checkBoxAbCharFlag14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag14.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag14.Location = new System.Drawing.Point(133, 114);
+            this.checkBoxAbCharFlag14.Name = "checkBoxAbCharFlag14";
+            this.checkBoxAbCharFlag14.Size = new System.Drawing.Size(82, 19);
+            this.checkBoxAbCharFlag14.TabIndex = 104;
+            this.checkBoxAbCharFlag14.Text = "Auto-Shell";
+            this.checkBoxAbCharFlag14.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag19
+            // 
+            this.checkBoxAbCharFlag19.AutoSize = true;
+            this.checkBoxAbCharFlag19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag19.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag19.Location = new System.Drawing.Point(244, 139);
+            this.checkBoxAbCharFlag19.Name = "checkBoxAbCharFlag19";
+            this.checkBoxAbCharFlag19.Size = new System.Drawing.Size(92, 19);
+            this.checkBoxAbCharFlag19.TabIndex = 104;
+            this.checkBoxAbCharFlag19.Text = "Auto-Potion";
+            this.checkBoxAbCharFlag19.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag4
+            // 
+            this.checkBoxAbCharFlag4.AutoSize = true;
+            this.checkBoxAbCharFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag4.Location = new System.Drawing.Point(339, 39);
+            this.checkBoxAbCharFlag4.Name = "checkBoxAbCharFlag4";
+            this.checkBoxAbCharFlag4.Size = new System.Drawing.Size(108, 19);
+            this.checkBoxAbCharFlag4.TabIndex = 104;
+            this.checkBoxAbCharFlag4.Text = "Return Damage";
+            this.checkBoxAbCharFlag4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag11
+            // 
+            this.checkBoxAbCharFlag11.AutoSize = true;
+            this.checkBoxAbCharFlag11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag11.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag11.Location = new System.Drawing.Point(244, 89);
+            this.checkBoxAbCharFlag11.Name = "checkBoxAbCharFlag11";
+            this.checkBoxAbCharFlag11.Size = new System.Drawing.Size(86, 19);
+            this.checkBoxAbCharFlag11.TabIndex = 104;
+            this.checkBoxAbCharFlag11.Text = "Mag Bonus";
+            this.checkBoxAbCharFlag11.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag21
+            // 
+            this.checkBoxAbCharFlag21.AutoSize = true;
+            this.checkBoxAbCharFlag21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag21.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag21.Location = new System.Drawing.Point(10, 164);
+            this.checkBoxAbCharFlag21.Name = "checkBoxAbCharFlag21";
+            this.checkBoxAbCharFlag21.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbCharFlag21.TabIndex = 104;
+            this.checkBoxAbCharFlag21.Text = "???";
+            this.checkBoxAbCharFlag21.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag6
+            // 
+            this.checkBoxAbCharFlag6.AutoSize = true;
+            this.checkBoxAbCharFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag6.Location = new System.Drawing.Point(133, 64);
+            this.checkBoxAbCharFlag6.Name = "checkBoxAbCharFlag6";
+            this.checkBoxAbCharFlag6.Size = new System.Drawing.Size(86, 19);
+            this.checkBoxAbCharFlag6.TabIndex = 104;
+            this.checkBoxAbCharFlag6.Text = "Expendx2-1";
+            this.checkBoxAbCharFlag6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag13
+            // 
+            this.checkBoxAbCharFlag13.AutoSize = true;
+            this.checkBoxAbCharFlag13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag13.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag13.Location = new System.Drawing.Point(10, 114);
+            this.checkBoxAbCharFlag13.Name = "checkBoxAbCharFlag13";
+            this.checkBoxAbCharFlag13.Size = new System.Drawing.Size(93, 19);
+            this.checkBoxAbCharFlag13.TabIndex = 104;
+            this.checkBoxAbCharFlag13.Text = "Auto-Reflect";
+            this.checkBoxAbCharFlag13.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag18
+            // 
+            this.checkBoxAbCharFlag18.AutoSize = true;
+            this.checkBoxAbCharFlag18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag18.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag18.Location = new System.Drawing.Point(133, 139);
+            this.checkBoxAbCharFlag18.Name = "checkBoxAbCharFlag18";
+            this.checkBoxAbCharFlag18.Size = new System.Drawing.Size(95, 19);
+            this.checkBoxAbCharFlag18.TabIndex = 104;
+            this.checkBoxAbCharFlag18.Text = "Move-HP Up";
+            this.checkBoxAbCharFlag18.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag3
+            // 
+            this.checkBoxAbCharFlag3.AutoSize = true;
+            this.checkBoxAbCharFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag3.Location = new System.Drawing.Point(244, 39);
+            this.checkBoxAbCharFlag3.Name = "checkBoxAbCharFlag3";
+            this.checkBoxAbCharFlag3.Size = new System.Drawing.Size(69, 19);
+            this.checkBoxAbCharFlag3.TabIndex = 104;
+            this.checkBoxAbCharFlag3.Text = "Counter";
+            this.checkBoxAbCharFlag3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag10
+            // 
+            this.checkBoxAbCharFlag10.AutoSize = true;
+            this.checkBoxAbCharFlag10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag10.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag10.Location = new System.Drawing.Point(133, 89);
+            this.checkBoxAbCharFlag10.Name = "checkBoxAbCharFlag10";
+            this.checkBoxAbCharFlag10.Size = new System.Drawing.Size(76, 19);
+            this.checkBoxAbCharFlag10.TabIndex = 104;
+            this.checkBoxAbCharFlag10.Text = "Vit Bonus";
+            this.checkBoxAbCharFlag10.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag17
+            // 
+            this.checkBoxAbCharFlag17.AutoSize = true;
+            this.checkBoxAbCharFlag17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag17.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag17.Location = new System.Drawing.Point(10, 139);
+            this.checkBoxAbCharFlag17.Name = "checkBoxAbCharFlag17";
+            this.checkBoxAbCharFlag17.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxAbCharFlag17.TabIndex = 104;
+            this.checkBoxAbCharFlag17.Text = "Initiative";
+            this.checkBoxAbCharFlag17.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag5
+            // 
+            this.checkBoxAbCharFlag5.AutoSize = true;
+            this.checkBoxAbCharFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag5.Location = new System.Drawing.Point(10, 64);
+            this.checkBoxAbCharFlag5.Name = "checkBoxAbCharFlag5";
+            this.checkBoxAbCharFlag5.Size = new System.Drawing.Size(57, 19);
+            this.checkBoxAbCharFlag5.TabIndex = 104;
+            this.checkBoxAbCharFlag5.Text = "Cover";
+            this.checkBoxAbCharFlag5.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag9
+            // 
+            this.checkBoxAbCharFlag9.AutoSize = true;
+            this.checkBoxAbCharFlag9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag9.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag9.Location = new System.Drawing.Point(10, 89);
+            this.checkBoxAbCharFlag9.Name = "checkBoxAbCharFlag9";
+            this.checkBoxAbCharFlag9.Size = new System.Drawing.Size(76, 19);
+            this.checkBoxAbCharFlag9.TabIndex = 104;
+            this.checkBoxAbCharFlag9.Text = "Str Bonus";
+            this.checkBoxAbCharFlag9.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag2
+            // 
+            this.checkBoxAbCharFlag2.AutoSize = true;
+            this.checkBoxAbCharFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag2.Location = new System.Drawing.Point(133, 39);
+            this.checkBoxAbCharFlag2.Name = "checkBoxAbCharFlag2";
+            this.checkBoxAbCharFlag2.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxAbCharFlag2.TabIndex = 104;
+            this.checkBoxAbCharFlag2.Text = "Med Data";
+            this.checkBoxAbCharFlag2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAbCharFlag1
+            // 
+            this.checkBoxAbCharFlag1.AutoSize = true;
+            this.checkBoxAbCharFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAbCharFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxAbCharFlag1.Location = new System.Drawing.Point(10, 39);
+            this.checkBoxAbCharFlag1.Name = "checkBoxAbCharFlag1";
+            this.checkBoxAbCharFlag1.Size = new System.Drawing.Size(51, 19);
+            this.checkBoxAbCharFlag1.TabIndex = 104;
+            this.checkBoxAbCharFlag1.Text = "Mug";
+            this.checkBoxAbCharFlag1.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxAbCharGeneral
+            // 
+            this.groupBoxAbCharGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbCharGeneral.Controls.Add(this.numericUpDownAbCharAP);
+            this.groupBoxAbCharGeneral.Controls.Add(this.labelAbCharAP);
+            this.groupBoxAbCharGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbCharGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxAbCharGeneral.Location = new System.Drawing.Point(6, 6);
+            this.groupBoxAbCharGeneral.Name = "groupBoxAbCharGeneral";
+            this.groupBoxAbCharGeneral.Size = new System.Drawing.Size(452, 86);
+            this.groupBoxAbCharGeneral.TabIndex = 7;
+            this.groupBoxAbCharGeneral.TabStop = false;
+            this.groupBoxAbCharGeneral.Text = "General";
+            // 
+            // labelAbCharAP
+            // 
+            this.labelAbCharAP.AutoSize = true;
+            this.labelAbCharAP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbCharAP.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbCharAP.Location = new System.Drawing.Point(188, 24);
+            this.labelAbCharAP.Name = "labelAbCharAP";
+            this.labelAbCharAP.Size = new System.Drawing.Size(76, 17);
+            this.labelAbCharAP.TabIndex = 1;
+            this.labelAbCharAP.Text = "AP Needed";
+            // 
             // tabPageAbStats
             // 
             this.tabPageAbStats.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -16717,6 +17114,105 @@
             this.labelAbJunAP.Size = new System.Drawing.Size(76, 17);
             this.labelAbJunAP.TabIndex = 1;
             this.labelAbJunAP.Text = "AP Needed";
+            // 
+            // tabPageAbCom
+            // 
+            this.tabPageAbCom.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageAbCom.Controls.Add(this.groupBox12);
+            this.tabPageAbCom.Location = new System.Drawing.Point(4, 26);
+            this.tabPageAbCom.Name = "tabPageAbCom";
+            this.tabPageAbCom.Size = new System.Drawing.Size(464, 740);
+            this.tabPageAbCom.TabIndex = 7;
+            this.tabPageAbCom.Text = "Command";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox12.Controls.Add(this.numericUpDownAbComAP);
+            this.groupBox12.Controls.Add(this.comboBoxAbComBattleCommand);
+            this.groupBox12.Controls.Add(this.labelAbComAP);
+            this.groupBox12.Controls.Add(this.labelAbComBattleCommand);
+            this.groupBox12.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox12.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBox12.Location = new System.Drawing.Point(6, 6);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(452, 96);
+            this.groupBox12.TabIndex = 127;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "General";
+            // 
+            // numericUpDownAbComAP
+            // 
+            this.numericUpDownAbComAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbComAP.Location = new System.Drawing.Point(307, 48);
+            this.numericUpDownAbComAP.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbComAP.Name = "numericUpDownAbComAP";
+            this.numericUpDownAbComAP.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbComAP.TabIndex = 3;
+            // 
+            // comboBoxAbComBattleCommand
+            // 
+            this.comboBoxAbComBattleCommand.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAbComBattleCommand.FormattingEnabled = true;
+            this.comboBoxAbComBattleCommand.Items.AddRange(new object[] {
+            "Empty",
+            "Attack",
+            "Magic",
+            "GF",
+            "Item",
+            "Renzokuken",
+            "Draw",
+            "Devour",
+            "nomsg",
+            "Cast",
+            "Stock",
+            "Duel",
+            "Mug",
+            "nomsg",
+            "Shot",
+            "Blue Magic",
+            "Slot",
+            "Fire Cross",
+            "Sorcery",
+            "Combine",
+            "Limit",
+            "Limit",
+            "Limit",
+            "Defend",
+            "Mad Rush",
+            "Treatment",
+            "Recover",
+            "Revive",
+            "Darkside",
+            "Card",
+            "Doom",
+            "Kamikaze",
+            "Absorb",
+            "LV Down",
+            "LV Up",
+            "Single",
+            "Double",
+            "Triple",
+            "MiniMog"});
+            this.comboBoxAbComBattleCommand.Location = new System.Drawing.Point(85, 48);
+            this.comboBoxAbComBattleCommand.Name = "comboBoxAbComBattleCommand";
+            this.comboBoxAbComBattleCommand.Size = new System.Drawing.Size(134, 25);
+            this.comboBoxAbComBattleCommand.TabIndex = 2;
+            // 
+            // labelAbComBattleCommand
+            // 
+            this.labelAbComBattleCommand.AutoSize = true;
+            this.labelAbComBattleCommand.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbComBattleCommand.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbComBattleCommand.Location = new System.Drawing.Point(97, 29);
+            this.labelAbComBattleCommand.Name = "labelAbComBattleCommand";
+            this.labelAbComBattleCommand.Size = new System.Drawing.Size(110, 17);
+            this.labelAbComBattleCommand.TabIndex = 0;
+            this.labelAbComBattleCommand.Text = "Battle Command";
             // 
             // tabPageAbComData
             // 
@@ -17875,105 +18371,6 @@
             this.comboBoxAbComDataMagicID.Size = new System.Drawing.Size(265, 25);
             this.comboBoxAbComDataMagicID.TabIndex = 2;
             // 
-            // tabPageAbCom
-            // 
-            this.tabPageAbCom.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPageAbCom.Controls.Add(this.groupBox12);
-            this.tabPageAbCom.Location = new System.Drawing.Point(4, 26);
-            this.tabPageAbCom.Name = "tabPageAbCom";
-            this.tabPageAbCom.Size = new System.Drawing.Size(464, 740);
-            this.tabPageAbCom.TabIndex = 7;
-            this.tabPageAbCom.Text = "Command";
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox12.Controls.Add(this.numericUpDownAbComAP);
-            this.groupBox12.Controls.Add(this.comboBoxAbComBattleCommand);
-            this.groupBox12.Controls.Add(this.labelAbComAP);
-            this.groupBox12.Controls.Add(this.labelAbComBattleCommand);
-            this.groupBox12.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox12.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox12.Location = new System.Drawing.Point(6, 6);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(452, 96);
-            this.groupBox12.TabIndex = 127;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "General";
-            // 
-            // numericUpDownAbComAP
-            // 
-            this.numericUpDownAbComAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownAbComAP.Location = new System.Drawing.Point(307, 48);
-            this.numericUpDownAbComAP.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownAbComAP.Name = "numericUpDownAbComAP";
-            this.numericUpDownAbComAP.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownAbComAP.TabIndex = 3;
-            // 
-            // comboBoxAbComBattleCommand
-            // 
-            this.comboBoxAbComBattleCommand.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxAbComBattleCommand.FormattingEnabled = true;
-            this.comboBoxAbComBattleCommand.Items.AddRange(new object[] {
-            "Empty",
-            "Attack",
-            "Magic",
-            "GF",
-            "Item",
-            "Renzokuken",
-            "Draw",
-            "Devour",
-            "nomsg",
-            "Cast",
-            "Stock",
-            "Duel",
-            "Mug",
-            "nomsg",
-            "Shot",
-            "Blue Magic",
-            "Slot",
-            "Fire Cross",
-            "Sorcery",
-            "Combine",
-            "Limit",
-            "Limit",
-            "Limit",
-            "Defend",
-            "Mad Rush",
-            "Treatment",
-            "Recover",
-            "Revive",
-            "Darkside",
-            "Card",
-            "Doom",
-            "Kamikaze",
-            "Absorb",
-            "LV Down",
-            "LV Up",
-            "Single",
-            "Double",
-            "Triple",
-            "MiniMog"});
-            this.comboBoxAbComBattleCommand.Location = new System.Drawing.Point(85, 48);
-            this.comboBoxAbComBattleCommand.Name = "comboBoxAbComBattleCommand";
-            this.comboBoxAbComBattleCommand.Size = new System.Drawing.Size(134, 25);
-            this.comboBoxAbComBattleCommand.TabIndex = 2;
-            // 
-            // labelAbComBattleCommand
-            // 
-            this.labelAbComBattleCommand.AutoSize = true;
-            this.labelAbComBattleCommand.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelAbComBattleCommand.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbComBattleCommand.Location = new System.Drawing.Point(97, 29);
-            this.labelAbComBattleCommand.Name = "labelAbComBattleCommand";
-            this.labelAbComBattleCommand.Size = new System.Drawing.Size(110, 17);
-            this.labelAbComBattleCommand.TabIndex = 0;
-            this.labelAbComBattleCommand.Text = "Battle Command";
-            // 
             // tabPageAbGF
             // 
             this.tabPageAbGF.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -18237,6 +18634,109 @@
             this.tabPageAbMenu.Size = new System.Drawing.Size(464, 740);
             this.tabPageAbMenu.TabIndex = 6;
             this.tabPageAbMenu.Text = "Menu";
+            // 
+            // groupBoxAbMenuGeneral
+            // 
+            this.groupBoxAbMenuGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuAP);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.labelMenuAP);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuEndOffset);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.labelAbMenuEndOffset);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuIndex);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.labelAbMenuIndex);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuStartOffset);
+            this.groupBoxAbMenuGeneral.Controls.Add(this.labelAbMenuStartOffset);
+            this.groupBoxAbMenuGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxAbMenuGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxAbMenuGeneral.Location = new System.Drawing.Point(6, 6);
+            this.groupBoxAbMenuGeneral.Name = "groupBoxAbMenuGeneral";
+            this.groupBoxAbMenuGeneral.Size = new System.Drawing.Size(452, 169);
+            this.groupBoxAbMenuGeneral.TabIndex = 8;
+            this.groupBoxAbMenuGeneral.TabStop = false;
+            this.groupBoxAbMenuGeneral.Text = "General";
+            // 
+            // numericUpDownAbMenuAP
+            // 
+            this.numericUpDownAbMenuAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbMenuAP.Location = new System.Drawing.Point(203, 128);
+            this.numericUpDownAbMenuAP.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbMenuAP.Name = "numericUpDownAbMenuAP";
+            this.numericUpDownAbMenuAP.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbMenuAP.TabIndex = 31;
+            // 
+            // labelMenuAP
+            // 
+            this.labelMenuAP.AutoSize = true;
+            this.labelMenuAP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelMenuAP.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelMenuAP.Location = new System.Drawing.Point(188, 108);
+            this.labelMenuAP.Name = "labelMenuAP";
+            this.labelMenuAP.Size = new System.Drawing.Size(76, 17);
+            this.labelMenuAP.TabIndex = 1;
+            this.labelMenuAP.Text = "AP Needed";
+            // 
+            // numericUpDownAbMenuEndOffset
+            // 
+            this.numericUpDownAbMenuEndOffset.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbMenuEndOffset.Location = new System.Drawing.Point(343, 52);
+            this.numericUpDownAbMenuEndOffset.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbMenuEndOffset.Name = "numericUpDownAbMenuEndOffset";
+            this.numericUpDownAbMenuEndOffset.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbMenuEndOffset.TabIndex = 31;
+            // 
+            // labelAbMenuEndOffset
+            // 
+            this.labelAbMenuEndOffset.AutoSize = true;
+            this.labelAbMenuEndOffset.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbMenuEndOffset.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbMenuEndOffset.Location = new System.Drawing.Point(332, 32);
+            this.labelAbMenuEndOffset.Name = "labelAbMenuEndOffset";
+            this.labelAbMenuEndOffset.Size = new System.Drawing.Size(71, 17);
+            this.labelAbMenuEndOffset.TabIndex = 1;
+            this.labelAbMenuEndOffset.Text = "End Offset";
+            // 
+            // numericUpDownAbMenuIndex
+            // 
+            this.numericUpDownAbMenuIndex.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownAbMenuIndex.Location = new System.Drawing.Point(83, 52);
+            this.numericUpDownAbMenuIndex.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAbMenuIndex.Name = "numericUpDownAbMenuIndex";
+            this.numericUpDownAbMenuIndex.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownAbMenuIndex.TabIndex = 31;
+            // 
+            // labelAbMenuIndex
+            // 
+            this.labelAbMenuIndex.AutoSize = true;
+            this.labelAbMenuIndex.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbMenuIndex.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbMenuIndex.Location = new System.Drawing.Point(49, 32);
+            this.labelAbMenuIndex.Name = "labelAbMenuIndex";
+            this.labelAbMenuIndex.Size = new System.Drawing.Size(118, 17);
+            this.labelAbMenuIndex.TabIndex = 1;
+            this.labelAbMenuIndex.Text = "Index to m00X file";
+            // 
+            // labelAbMenuStartOffset
+            // 
+            this.labelAbMenuStartOffset.AutoSize = true;
+            this.labelAbMenuStartOffset.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelAbMenuStartOffset.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelAbMenuStartOffset.Location = new System.Drawing.Point(227, 32);
+            this.labelAbMenuStartOffset.Name = "labelAbMenuStartOffset";
+            this.labelAbMenuStartOffset.Size = new System.Drawing.Size(77, 17);
+            this.labelAbMenuStartOffset.TabIndex = 1;
+            this.labelAbMenuStartOffset.Text = "Start Offset";
             // 
             // listBoxAbChar
             // 
@@ -19900,6 +20400,7 @@
             this.tabControlMain.Controls.Add(this.tabPageGF);
             this.tabControlMain.Controls.Add(this.tabPageGFAttacks);
             this.tabControlMain.Controls.Add(this.tabPageDevour);
+            this.tabControlMain.Controls.Add(this.tabPageBattleCommands);
             this.tabControlMain.Controls.Add(this.tabPageEnemyAttacks);
             this.tabControlMain.Controls.Add(this.tabPageMisc);
             this.tabControlMain.Font = new System.Drawing.Font("Calisto MT", 14F);
@@ -38766,485 +39267,501 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
             this.toolStripStatusLabel1.Text = "Ready";
             // 
-            // groupBoxAbCharFlags
+            // tabPageBattleCommands
             // 
-            this.groupBoxAbCharFlags.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag24);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag16);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag23);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag15);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag8);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag20);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag12);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag22);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag7);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag14);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag19);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag4);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag11);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag21);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag6);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag13);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag18);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag3);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag10);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag17);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag5);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag9);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag2);
-            this.groupBoxAbCharFlags.Controls.Add(this.checkBoxAbCharFlag1);
-            this.groupBoxAbCharFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxAbCharFlags.ForeColor = System.Drawing.Color.Crimson;
-            this.groupBoxAbCharFlags.Location = new System.Drawing.Point(6, 98);
-            this.groupBoxAbCharFlags.Name = "groupBoxAbCharFlags";
-            this.groupBoxAbCharFlags.Size = new System.Drawing.Size(452, 192);
-            this.groupBoxAbCharFlags.TabIndex = 6;
-            this.groupBoxAbCharFlags.TabStop = false;
-            this.groupBoxAbCharFlags.Text = "Flags";
+            this.tabPageBattleCommands.Controls.Add(this.groupBoxBatComFlag);
+            this.tabPageBattleCommands.Controls.Add(this.groupBoxBatComGeneral);
+            this.tabPageBattleCommands.Controls.Add(this.listBoxBatCom);
+            this.tabPageBattleCommands.Location = new System.Drawing.Point(4, 34);
+            this.tabPageBattleCommands.Name = "tabPageBattleCommands";
+            this.tabPageBattleCommands.Size = new System.Drawing.Size(626, 769);
+            this.tabPageBattleCommands.TabIndex = 18;
+            this.tabPageBattleCommands.Text = "Battle Commands";
+            this.tabPageBattleCommands.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAbCharFlag8
+            // groupBoxBatComGeneral
             // 
-            this.checkBoxAbCharFlag8.AutoSize = true;
-            this.checkBoxAbCharFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag8.Location = new System.Drawing.Point(339, 64);
-            this.checkBoxAbCharFlag8.Name = "checkBoxAbCharFlag8";
-            this.checkBoxAbCharFlag8.Size = new System.Drawing.Size(78, 19);
-            this.checkBoxAbCharFlag8.TabIndex = 104;
-            this.checkBoxAbCharFlag8.Text = "HP Bonus";
-            this.checkBoxAbCharFlag8.UseVisualStyleBackColor = true;
+            this.groupBoxBatComGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxBatComGeneral.Controls.Add(this.comboBoxBatComAbilityID);
+            this.groupBoxBatComGeneral.Controls.Add(this.numericUpDownBatComTarget);
+            this.groupBoxBatComGeneral.Controls.Add(this.labelBatComTarget);
+            this.groupBoxBatComGeneral.Controls.Add(this.labelBatComAbilityID);
+            this.groupBoxBatComGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
+            this.groupBoxBatComGeneral.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBoxBatComGeneral.Location = new System.Drawing.Point(162, 6);
+            this.groupBoxBatComGeneral.Name = "groupBoxBatComGeneral";
+            this.groupBoxBatComGeneral.Size = new System.Drawing.Size(458, 85);
+            this.groupBoxBatComGeneral.TabIndex = 6;
+            this.groupBoxBatComGeneral.TabStop = false;
+            this.groupBoxBatComGeneral.Text = "General";
             // 
-            // checkBoxAbCharFlag7
+            // comboBoxBatComAbilityID
             // 
-            this.checkBoxAbCharFlag7.AutoSize = true;
-            this.checkBoxAbCharFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag7.Location = new System.Drawing.Point(244, 64);
-            this.checkBoxAbCharFlag7.Name = "checkBoxAbCharFlag7";
-            this.checkBoxAbCharFlag7.Size = new System.Drawing.Size(86, 19);
-            this.checkBoxAbCharFlag7.TabIndex = 104;
-            this.checkBoxAbCharFlag7.Text = "Expendx3-1";
-            this.checkBoxAbCharFlag7.UseVisualStyleBackColor = true;
+            this.comboBoxBatComAbilityID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxBatComAbilityID.FormattingEnabled = true;
+            this.comboBoxBatComAbilityID.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175",
+            "176",
+            "177",
+            "178",
+            "179",
+            "180",
+            "181",
+            "182",
+            "183",
+            "184",
+            "185",
+            "186",
+            "187",
+            "188",
+            "189",
+            "190",
+            "191",
+            "192",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197",
+            "198",
+            "199",
+            "200",
+            "201",
+            "202",
+            "203",
+            "204",
+            "205",
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232",
+            "233",
+            "234",
+            "235",
+            "236",
+            "237",
+            "238",
+            "239",
+            "240",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.comboBoxBatComAbilityID.Location = new System.Drawing.Point(112, 46);
+            this.comboBoxBatComAbilityID.Name = "comboBoxBatComAbilityID";
+            this.comboBoxBatComAbilityID.Size = new System.Drawing.Size(130, 25);
+            this.comboBoxBatComAbilityID.TabIndex = 6;
             // 
-            // checkBoxAbCharFlag4
+            // numericUpDownBatComTarget
             // 
-            this.checkBoxAbCharFlag4.AutoSize = true;
-            this.checkBoxAbCharFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag4.Location = new System.Drawing.Point(339, 39);
-            this.checkBoxAbCharFlag4.Name = "checkBoxAbCharFlag4";
-            this.checkBoxAbCharFlag4.Size = new System.Drawing.Size(108, 19);
-            this.checkBoxAbCharFlag4.TabIndex = 104;
-            this.checkBoxAbCharFlag4.Text = "Return Damage";
-            this.checkBoxAbCharFlag4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbCharFlag6
-            // 
-            this.checkBoxAbCharFlag6.AutoSize = true;
-            this.checkBoxAbCharFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag6.Location = new System.Drawing.Point(133, 64);
-            this.checkBoxAbCharFlag6.Name = "checkBoxAbCharFlag6";
-            this.checkBoxAbCharFlag6.Size = new System.Drawing.Size(86, 19);
-            this.checkBoxAbCharFlag6.TabIndex = 104;
-            this.checkBoxAbCharFlag6.Text = "Expendx2-1";
-            this.checkBoxAbCharFlag6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbCharFlag3
-            // 
-            this.checkBoxAbCharFlag3.AutoSize = true;
-            this.checkBoxAbCharFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag3.Location = new System.Drawing.Point(244, 39);
-            this.checkBoxAbCharFlag3.Name = "checkBoxAbCharFlag3";
-            this.checkBoxAbCharFlag3.Size = new System.Drawing.Size(69, 19);
-            this.checkBoxAbCharFlag3.TabIndex = 104;
-            this.checkBoxAbCharFlag3.Text = "Counter";
-            this.checkBoxAbCharFlag3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbCharFlag5
-            // 
-            this.checkBoxAbCharFlag5.AutoSize = true;
-            this.checkBoxAbCharFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag5.Location = new System.Drawing.Point(10, 64);
-            this.checkBoxAbCharFlag5.Name = "checkBoxAbCharFlag5";
-            this.checkBoxAbCharFlag5.Size = new System.Drawing.Size(57, 19);
-            this.checkBoxAbCharFlag5.TabIndex = 104;
-            this.checkBoxAbCharFlag5.Text = "Cover";
-            this.checkBoxAbCharFlag5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbCharFlag2
-            // 
-            this.checkBoxAbCharFlag2.AutoSize = true;
-            this.checkBoxAbCharFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag2.Location = new System.Drawing.Point(133, 39);
-            this.checkBoxAbCharFlag2.Name = "checkBoxAbCharFlag2";
-            this.checkBoxAbCharFlag2.Size = new System.Drawing.Size(77, 19);
-            this.checkBoxAbCharFlag2.TabIndex = 104;
-            this.checkBoxAbCharFlag2.Text = "Med Data";
-            this.checkBoxAbCharFlag2.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbCharFlag1
-            // 
-            this.checkBoxAbCharFlag1.AutoSize = true;
-            this.checkBoxAbCharFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag1.Location = new System.Drawing.Point(10, 39);
-            this.checkBoxAbCharFlag1.Name = "checkBoxAbCharFlag1";
-            this.checkBoxAbCharFlag1.Size = new System.Drawing.Size(51, 19);
-            this.checkBoxAbCharFlag1.TabIndex = 104;
-            this.checkBoxAbCharFlag1.Text = "Mug";
-            this.checkBoxAbCharFlag1.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxAbCharGeneral
-            // 
-            this.groupBoxAbCharGeneral.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxAbCharGeneral.Controls.Add(this.numericUpDownAbCharAP);
-            this.groupBoxAbCharGeneral.Controls.Add(this.labelAbCharAP);
-            this.groupBoxAbCharGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxAbCharGeneral.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBoxAbCharGeneral.Location = new System.Drawing.Point(6, 6);
-            this.groupBoxAbCharGeneral.Name = "groupBoxAbCharGeneral";
-            this.groupBoxAbCharGeneral.Size = new System.Drawing.Size(452, 86);
-            this.groupBoxAbCharGeneral.TabIndex = 7;
-            this.groupBoxAbCharGeneral.TabStop = false;
-            this.groupBoxAbCharGeneral.Text = "General";
-            // 
-            // numericUpDownAbCharAP
-            // 
-            this.numericUpDownAbCharAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownAbCharAP.Location = new System.Drawing.Point(203, 44);
-            this.numericUpDownAbCharAP.Maximum = new decimal(new int[] {
+            this.numericUpDownBatComTarget.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBatComTarget.Location = new System.Drawing.Point(299, 46);
+            this.numericUpDownBatComTarget.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownAbCharAP.Name = "numericUpDownAbCharAP";
-            this.numericUpDownAbCharAP.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownAbCharAP.TabIndex = 31;
-            this.toolTip1.SetToolTip(this.numericUpDownAbCharAP, "Default: 0");
+            this.numericUpDownBatComTarget.Name = "numericUpDownBatComTarget";
+            this.numericUpDownBatComTarget.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBatComTarget.TabIndex = 4;
             // 
-            // labelAbCharAP
+            // labelBatComTarget
             // 
-            this.labelAbCharAP.AutoSize = true;
-            this.labelAbCharAP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelAbCharAP.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbCharAP.Location = new System.Drawing.Point(188, 24);
-            this.labelAbCharAP.Name = "labelAbCharAP";
-            this.labelAbCharAP.Size = new System.Drawing.Size(76, 17);
-            this.labelAbCharAP.TabIndex = 1;
-            this.labelAbCharAP.Text = "AP Needed";
+            this.labelBatComTarget.AutoSize = true;
+            this.labelBatComTarget.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBatComTarget.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBatComTarget.Location = new System.Drawing.Point(299, 26);
+            this.labelBatComTarget.Name = "labelBatComTarget";
+            this.labelBatComTarget.Size = new System.Drawing.Size(46, 17);
+            this.labelBatComTarget.TabIndex = 0;
+            this.labelBatComTarget.Text = "Target";
             // 
-            // checkBoxAbCharFlag9
+            // labelBatComAbilityID
             // 
-            this.checkBoxAbCharFlag9.AutoSize = true;
-            this.checkBoxAbCharFlag9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag9.Location = new System.Drawing.Point(10, 89);
-            this.checkBoxAbCharFlag9.Name = "checkBoxAbCharFlag9";
-            this.checkBoxAbCharFlag9.Size = new System.Drawing.Size(76, 19);
-            this.checkBoxAbCharFlag9.TabIndex = 104;
-            this.checkBoxAbCharFlag9.Text = "Str Bonus";
-            this.checkBoxAbCharFlag9.UseVisualStyleBackColor = true;
+            this.labelBatComAbilityID.AutoSize = true;
+            this.labelBatComAbilityID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBatComAbilityID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBatComAbilityID.Location = new System.Drawing.Point(129, 26);
+            this.labelBatComAbilityID.Name = "labelBatComAbilityID";
+            this.labelBatComAbilityID.Size = new System.Drawing.Size(95, 17);
+            this.labelBatComAbilityID.TabIndex = 0;
+            this.labelBatComAbilityID.Text = "Ability Data ID";
             // 
-            // checkBoxAbCharFlag10
+            // listBoxBatCom
             // 
-            this.checkBoxAbCharFlag10.AutoSize = true;
-            this.checkBoxAbCharFlag10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag10.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag10.Location = new System.Drawing.Point(133, 89);
-            this.checkBoxAbCharFlag10.Name = "checkBoxAbCharFlag10";
-            this.checkBoxAbCharFlag10.Size = new System.Drawing.Size(76, 19);
-            this.checkBoxAbCharFlag10.TabIndex = 104;
-            this.checkBoxAbCharFlag10.Text = "Vit Bonus";
-            this.checkBoxAbCharFlag10.UseVisualStyleBackColor = true;
+            this.listBoxBatCom.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.listBoxBatCom.FormattingEnabled = true;
+            this.listBoxBatCom.ItemHeight = 17;
+            this.listBoxBatCom.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39"});
+            this.listBoxBatCom.Location = new System.Drawing.Point(0, 0);
+            this.listBoxBatCom.Name = "listBoxBatCom";
+            this.listBoxBatCom.Size = new System.Drawing.Size(156, 769);
+            this.listBoxBatCom.TabIndex = 7;
+            this.listBoxBatCom.SelectedIndexChanged += new System.EventHandler(this.listBoxBatCom_SelectedIndexChanged);
             // 
-            // checkBoxAbCharFlag13
+            // groupBoxBatComFlag
             // 
-            this.checkBoxAbCharFlag13.AutoSize = true;
-            this.checkBoxAbCharFlag13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag13.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag13.Location = new System.Drawing.Point(10, 114);
-            this.checkBoxAbCharFlag13.Name = "checkBoxAbCharFlag13";
-            this.checkBoxAbCharFlag13.Size = new System.Drawing.Size(93, 19);
-            this.checkBoxAbCharFlag13.TabIndex = 104;
-            this.checkBoxAbCharFlag13.Text = "Auto-Reflect";
-            this.checkBoxAbCharFlag13.UseVisualStyleBackColor = true;
+            this.groupBoxBatComFlag.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxBatComFlag.Controls.Add(this.checkBoxBatComFlag8);
+            this.groupBoxBatComFlag.Controls.Add(this.checkBoxBatComFlag7);
+            this.groupBoxBatComFlag.Controls.Add(this.checkBoxBatComFlag4);
+            this.groupBoxBatComFlag.Controls.Add(this.checkBoxBatComFlag6);
+            this.groupBoxBatComFlag.Controls.Add(this.checkBoxBatComFlag3);
+            this.groupBoxBatComFlag.Controls.Add(this.checkBoxBatComFlag5);
+            this.groupBoxBatComFlag.Controls.Add(this.checkBoxBatComFlag2);
+            this.groupBoxBatComFlag.Controls.Add(this.checkBoxBatComFlag1);
+            this.groupBoxBatComFlag.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxBatComFlag.ForeColor = System.Drawing.Color.Crimson;
+            this.groupBoxBatComFlag.Location = new System.Drawing.Point(162, 97);
+            this.groupBoxBatComFlag.Name = "groupBoxBatComFlag";
+            this.groupBoxBatComFlag.Size = new System.Drawing.Size(458, 88);
+            this.groupBoxBatComFlag.TabIndex = 8;
+            this.groupBoxBatComFlag.TabStop = false;
+            this.groupBoxBatComFlag.Text = "Unknown Flag";
             // 
-            // checkBoxAbCharFlag11
+            // checkBoxBatComFlag8
             // 
-            this.checkBoxAbCharFlag11.AutoSize = true;
-            this.checkBoxAbCharFlag11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag11.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag11.Location = new System.Drawing.Point(244, 89);
-            this.checkBoxAbCharFlag11.Name = "checkBoxAbCharFlag11";
-            this.checkBoxAbCharFlag11.Size = new System.Drawing.Size(86, 19);
-            this.checkBoxAbCharFlag11.TabIndex = 104;
-            this.checkBoxAbCharFlag11.Text = "Mag Bonus";
-            this.checkBoxAbCharFlag11.UseVisualStyleBackColor = true;
+            this.checkBoxBatComFlag8.AutoSize = true;
+            this.checkBoxBatComFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBatComFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBatComFlag8.Location = new System.Drawing.Point(373, 62);
+            this.checkBoxBatComFlag8.Name = "checkBoxBatComFlag8";
+            this.checkBoxBatComFlag8.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBatComFlag8.TabIndex = 104;
+            this.checkBoxBatComFlag8.Text = "???";
+            this.checkBoxBatComFlag8.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAbCharFlag14
+            // checkBoxBatComFlag7
             // 
-            this.checkBoxAbCharFlag14.AutoSize = true;
-            this.checkBoxAbCharFlag14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag14.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag14.Location = new System.Drawing.Point(133, 114);
-            this.checkBoxAbCharFlag14.Name = "checkBoxAbCharFlag14";
-            this.checkBoxAbCharFlag14.Size = new System.Drawing.Size(82, 19);
-            this.checkBoxAbCharFlag14.TabIndex = 104;
-            this.checkBoxAbCharFlag14.Text = "Auto-Shell";
-            this.checkBoxAbCharFlag14.UseVisualStyleBackColor = true;
+            this.checkBoxBatComFlag7.AutoSize = true;
+            this.checkBoxBatComFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBatComFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBatComFlag7.Location = new System.Drawing.Point(266, 62);
+            this.checkBoxBatComFlag7.Name = "checkBoxBatComFlag7";
+            this.checkBoxBatComFlag7.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBatComFlag7.TabIndex = 104;
+            this.checkBoxBatComFlag7.Text = "???";
+            this.checkBoxBatComFlag7.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAbCharFlag12
+            // checkBoxBatComFlag4
             // 
-            this.checkBoxAbCharFlag12.AutoSize = true;
-            this.checkBoxAbCharFlag12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag12.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag12.Location = new System.Drawing.Point(339, 89);
-            this.checkBoxAbCharFlag12.Name = "checkBoxAbCharFlag12";
-            this.checkBoxAbCharFlag12.Size = new System.Drawing.Size(79, 19);
-            this.checkBoxAbCharFlag12.TabIndex = 104;
-            this.checkBoxAbCharFlag12.Text = "Spr Bonus";
-            this.checkBoxAbCharFlag12.UseVisualStyleBackColor = true;
+            this.checkBoxBatComFlag4.AutoSize = true;
+            this.checkBoxBatComFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBatComFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBatComFlag4.Location = new System.Drawing.Point(373, 37);
+            this.checkBoxBatComFlag4.Name = "checkBoxBatComFlag4";
+            this.checkBoxBatComFlag4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBatComFlag4.TabIndex = 104;
+            this.checkBoxBatComFlag4.Text = "???";
+            this.checkBoxBatComFlag4.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAbCharFlag15
+            // checkBoxBatComFlag6
             // 
-            this.checkBoxAbCharFlag15.AutoSize = true;
-            this.checkBoxAbCharFlag15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag15.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag15.Location = new System.Drawing.Point(244, 114);
-            this.checkBoxAbCharFlag15.Name = "checkBoxAbCharFlag15";
-            this.checkBoxAbCharFlag15.Size = new System.Drawing.Size(95, 19);
-            this.checkBoxAbCharFlag15.TabIndex = 104;
-            this.checkBoxAbCharFlag15.Text = "Auto-Protect";
-            this.checkBoxAbCharFlag15.UseVisualStyleBackColor = true;
+            this.checkBoxBatComFlag6.AutoSize = true;
+            this.checkBoxBatComFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBatComFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBatComFlag6.Location = new System.Drawing.Point(155, 62);
+            this.checkBoxBatComFlag6.Name = "checkBoxBatComFlag6";
+            this.checkBoxBatComFlag6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBatComFlag6.TabIndex = 104;
+            this.checkBoxBatComFlag6.Text = "???";
+            this.checkBoxBatComFlag6.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAbCharFlag16
+            // checkBoxBatComFlag3
             // 
-            this.checkBoxAbCharFlag16.AutoSize = true;
-            this.checkBoxAbCharFlag16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag16.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag16.Location = new System.Drawing.Point(339, 114);
-            this.checkBoxAbCharFlag16.Name = "checkBoxAbCharFlag16";
-            this.checkBoxAbCharFlag16.Size = new System.Drawing.Size(87, 19);
-            this.checkBoxAbCharFlag16.TabIndex = 104;
-            this.checkBoxAbCharFlag16.Text = "Auto-Haste";
-            this.checkBoxAbCharFlag16.UseVisualStyleBackColor = true;
+            this.checkBoxBatComFlag3.AutoSize = true;
+            this.checkBoxBatComFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBatComFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBatComFlag3.Location = new System.Drawing.Point(266, 37);
+            this.checkBoxBatComFlag3.Name = "checkBoxBatComFlag3";
+            this.checkBoxBatComFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBatComFlag3.TabIndex = 104;
+            this.checkBoxBatComFlag3.Text = "???";
+            this.checkBoxBatComFlag3.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAbCharFlag17
+            // checkBoxBatComFlag5
             // 
-            this.checkBoxAbCharFlag17.AutoSize = true;
-            this.checkBoxAbCharFlag17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag17.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag17.Location = new System.Drawing.Point(10, 139);
-            this.checkBoxAbCharFlag17.Name = "checkBoxAbCharFlag17";
-            this.checkBoxAbCharFlag17.Size = new System.Drawing.Size(71, 19);
-            this.checkBoxAbCharFlag17.TabIndex = 104;
-            this.checkBoxAbCharFlag17.Text = "Initiative";
-            this.checkBoxAbCharFlag17.UseVisualStyleBackColor = true;
+            this.checkBoxBatComFlag5.AutoSize = true;
+            this.checkBoxBatComFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBatComFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBatComFlag5.Location = new System.Drawing.Point(44, 62);
+            this.checkBoxBatComFlag5.Name = "checkBoxBatComFlag5";
+            this.checkBoxBatComFlag5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBatComFlag5.TabIndex = 104;
+            this.checkBoxBatComFlag5.Text = "???";
+            this.checkBoxBatComFlag5.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAbCharFlag18
+            // checkBoxBatComFlag2
             // 
-            this.checkBoxAbCharFlag18.AutoSize = true;
-            this.checkBoxAbCharFlag18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag18.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag18.Location = new System.Drawing.Point(133, 139);
-            this.checkBoxAbCharFlag18.Name = "checkBoxAbCharFlag18";
-            this.checkBoxAbCharFlag18.Size = new System.Drawing.Size(95, 19);
-            this.checkBoxAbCharFlag18.TabIndex = 104;
-            this.checkBoxAbCharFlag18.Text = "Move-HP Up";
-            this.checkBoxAbCharFlag18.UseVisualStyleBackColor = true;
+            this.checkBoxBatComFlag2.AutoSize = true;
+            this.checkBoxBatComFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBatComFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBatComFlag2.Location = new System.Drawing.Point(155, 37);
+            this.checkBoxBatComFlag2.Name = "checkBoxBatComFlag2";
+            this.checkBoxBatComFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBatComFlag2.TabIndex = 104;
+            this.checkBoxBatComFlag2.Text = "???";
+            this.checkBoxBatComFlag2.UseVisualStyleBackColor = true;
             // 
-            // checkBoxAbCharFlag21
+            // checkBoxBatComFlag1
             // 
-            this.checkBoxAbCharFlag21.AutoSize = true;
-            this.checkBoxAbCharFlag21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag21.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag21.Location = new System.Drawing.Point(10, 164);
-            this.checkBoxAbCharFlag21.Name = "checkBoxAbCharFlag21";
-            this.checkBoxAbCharFlag21.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxAbCharFlag21.TabIndex = 104;
-            this.checkBoxAbCharFlag21.Text = "???";
-            this.checkBoxAbCharFlag21.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbCharFlag19
-            // 
-            this.checkBoxAbCharFlag19.AutoSize = true;
-            this.checkBoxAbCharFlag19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag19.Location = new System.Drawing.Point(244, 139);
-            this.checkBoxAbCharFlag19.Name = "checkBoxAbCharFlag19";
-            this.checkBoxAbCharFlag19.Size = new System.Drawing.Size(92, 19);
-            this.checkBoxAbCharFlag19.TabIndex = 104;
-            this.checkBoxAbCharFlag19.Text = "Auto-Potion";
-            this.checkBoxAbCharFlag19.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbCharFlag22
-            // 
-            this.checkBoxAbCharFlag22.AutoSize = true;
-            this.checkBoxAbCharFlag22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag22.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag22.Location = new System.Drawing.Point(133, 164);
-            this.checkBoxAbCharFlag22.Name = "checkBoxAbCharFlag22";
-            this.checkBoxAbCharFlag22.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxAbCharFlag22.TabIndex = 104;
-            this.checkBoxAbCharFlag22.Text = "???";
-            this.checkBoxAbCharFlag22.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbCharFlag20
-            // 
-            this.checkBoxAbCharFlag20.AutoSize = true;
-            this.checkBoxAbCharFlag20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag20.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag20.Location = new System.Drawing.Point(339, 139);
-            this.checkBoxAbCharFlag20.Name = "checkBoxAbCharFlag20";
-            this.checkBoxAbCharFlag20.Size = new System.Drawing.Size(64, 19);
-            this.checkBoxAbCharFlag20.TabIndex = 104;
-            this.checkBoxAbCharFlag20.Text = "Ribbon";
-            this.checkBoxAbCharFlag20.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbCharFlag23
-            // 
-            this.checkBoxAbCharFlag23.AutoSize = true;
-            this.checkBoxAbCharFlag23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag23.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag23.Location = new System.Drawing.Point(244, 164);
-            this.checkBoxAbCharFlag23.Name = "checkBoxAbCharFlag23";
-            this.checkBoxAbCharFlag23.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxAbCharFlag23.TabIndex = 104;
-            this.checkBoxAbCharFlag23.Text = "???";
-            this.checkBoxAbCharFlag23.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAbCharFlag24
-            // 
-            this.checkBoxAbCharFlag24.AutoSize = true;
-            this.checkBoxAbCharFlag24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAbCharFlag24.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbCharFlag24.Location = new System.Drawing.Point(339, 164);
-            this.checkBoxAbCharFlag24.Name = "checkBoxAbCharFlag24";
-            this.checkBoxAbCharFlag24.Size = new System.Drawing.Size(41, 19);
-            this.checkBoxAbCharFlag24.TabIndex = 104;
-            this.checkBoxAbCharFlag24.Text = "???";
-            this.checkBoxAbCharFlag24.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxAbMenuGeneral
-            // 
-            this.groupBoxAbMenuGeneral.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuAP);
-            this.groupBoxAbMenuGeneral.Controls.Add(this.labelMenuAP);
-            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuEndOffset);
-            this.groupBoxAbMenuGeneral.Controls.Add(this.labelAbMenuEndOffset);
-            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuIndex);
-            this.groupBoxAbMenuGeneral.Controls.Add(this.labelAbMenuIndex);
-            this.groupBoxAbMenuGeneral.Controls.Add(this.numericUpDownAbMenuStartOffset);
-            this.groupBoxAbMenuGeneral.Controls.Add(this.labelAbMenuStartOffset);
-            this.groupBoxAbMenuGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxAbMenuGeneral.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBoxAbMenuGeneral.Location = new System.Drawing.Point(6, 6);
-            this.groupBoxAbMenuGeneral.Name = "groupBoxAbMenuGeneral";
-            this.groupBoxAbMenuGeneral.Size = new System.Drawing.Size(452, 169);
-            this.groupBoxAbMenuGeneral.TabIndex = 8;
-            this.groupBoxAbMenuGeneral.TabStop = false;
-            this.groupBoxAbMenuGeneral.Text = "General";
-            // 
-            // numericUpDownAbMenuStartOffset
-            // 
-            this.numericUpDownAbMenuStartOffset.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownAbMenuStartOffset.Location = new System.Drawing.Point(242, 52);
-            this.numericUpDownAbMenuStartOffset.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownAbMenuStartOffset.Name = "numericUpDownAbMenuStartOffset";
-            this.numericUpDownAbMenuStartOffset.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownAbMenuStartOffset.TabIndex = 31;
-            this.toolTip1.SetToolTip(this.numericUpDownAbMenuStartOffset, "Default: 0");
-            // 
-            // labelAbMenuStartOffset
-            // 
-            this.labelAbMenuStartOffset.AutoSize = true;
-            this.labelAbMenuStartOffset.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelAbMenuStartOffset.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbMenuStartOffset.Location = new System.Drawing.Point(227, 32);
-            this.labelAbMenuStartOffset.Name = "labelAbMenuStartOffset";
-            this.labelAbMenuStartOffset.Size = new System.Drawing.Size(77, 17);
-            this.labelAbMenuStartOffset.TabIndex = 1;
-            this.labelAbMenuStartOffset.Text = "Start Offset";
-            // 
-            // labelMenuAP
-            // 
-            this.labelMenuAP.AutoSize = true;
-            this.labelMenuAP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelMenuAP.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMenuAP.Location = new System.Drawing.Point(188, 108);
-            this.labelMenuAP.Name = "labelMenuAP";
-            this.labelMenuAP.Size = new System.Drawing.Size(76, 17);
-            this.labelMenuAP.TabIndex = 1;
-            this.labelMenuAP.Text = "AP Needed";
-            // 
-            // numericUpDownAbMenuAP
-            // 
-            this.numericUpDownAbMenuAP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownAbMenuAP.Location = new System.Drawing.Point(203, 128);
-            this.numericUpDownAbMenuAP.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownAbMenuAP.Name = "numericUpDownAbMenuAP";
-            this.numericUpDownAbMenuAP.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownAbMenuAP.TabIndex = 31;
-            // 
-            // labelAbMenuEndOffset
-            // 
-            this.labelAbMenuEndOffset.AutoSize = true;
-            this.labelAbMenuEndOffset.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelAbMenuEndOffset.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbMenuEndOffset.Location = new System.Drawing.Point(332, 32);
-            this.labelAbMenuEndOffset.Name = "labelAbMenuEndOffset";
-            this.labelAbMenuEndOffset.Size = new System.Drawing.Size(71, 17);
-            this.labelAbMenuEndOffset.TabIndex = 1;
-            this.labelAbMenuEndOffset.Text = "End Offset";
-            // 
-            // numericUpDownAbMenuEndOffset
-            // 
-            this.numericUpDownAbMenuEndOffset.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownAbMenuEndOffset.Location = new System.Drawing.Point(343, 52);
-            this.numericUpDownAbMenuEndOffset.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownAbMenuEndOffset.Name = "numericUpDownAbMenuEndOffset";
-            this.numericUpDownAbMenuEndOffset.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownAbMenuEndOffset.TabIndex = 31;
-            // 
-            // labelAbMenuIndex
-            // 
-            this.labelAbMenuIndex.AutoSize = true;
-            this.labelAbMenuIndex.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelAbMenuIndex.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelAbMenuIndex.Location = new System.Drawing.Point(49, 32);
-            this.labelAbMenuIndex.Name = "labelAbMenuIndex";
-            this.labelAbMenuIndex.Size = new System.Drawing.Size(118, 17);
-            this.labelAbMenuIndex.TabIndex = 1;
-            this.labelAbMenuIndex.Text = "Index to m00X file";
-            // 
-            // numericUpDownAbMenuIndex
-            // 
-            this.numericUpDownAbMenuIndex.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownAbMenuIndex.Location = new System.Drawing.Point(83, 52);
-            this.numericUpDownAbMenuIndex.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownAbMenuIndex.Name = "numericUpDownAbMenuIndex";
-            this.numericUpDownAbMenuIndex.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownAbMenuIndex.TabIndex = 31;
+            this.checkBoxBatComFlag1.AutoSize = true;
+            this.checkBoxBatComFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBatComFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBatComFlag1.Location = new System.Drawing.Point(44, 37);
+            this.checkBoxBatComFlag1.Name = "checkBoxBatComFlag1";
+            this.checkBoxBatComFlag1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBatComFlag1.TabIndex = 104;
+            this.checkBoxBatComFlag1.Text = "???";
+            this.checkBoxBatComFlag1.UseVisualStyleBackColor = true;
             // 
             // mainForm
             // 
@@ -39272,6 +39789,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbJunAP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbPartyAP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbGFAP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbCharAP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuStartOffset)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolbarStrip.ResumeLayout(false);
@@ -39380,6 +39899,10 @@
             this.tabPageAbilities.ResumeLayout(false);
             this.tabControlAbilities.ResumeLayout(false);
             this.tabPageAbCharacters.ResumeLayout(false);
+            this.groupBoxAbCharFlags.ResumeLayout(false);
+            this.groupBoxAbCharFlags.PerformLayout();
+            this.groupBoxAbCharGeneral.ResumeLayout(false);
+            this.groupBoxAbCharGeneral.PerformLayout();
             this.tabPageAbStats.ResumeLayout(false);
             this.groupBoxStatsIncrement.ResumeLayout(false);
             this.groupBoxStatsIncrement.PerformLayout();
@@ -39389,6 +39912,10 @@
             this.groupBoxAbJunJun.PerformLayout();
             this.groupBoxAbJunGeneral.ResumeLayout(false);
             this.groupBoxAbJunGeneral.PerformLayout();
+            this.tabPageAbCom.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComAP)).EndInit();
             this.tabPageAbComData.ResumeLayout(false);
             this.groupBoxAbComDataStatus.ResumeLayout(false);
             this.groupBoxAbComDataStatus.PerformLayout();
@@ -39399,10 +39926,6 @@
             this.groupBoxAbComDataGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComDataAttackPower)).EndInit();
-            this.tabPageAbCom.ResumeLayout(false);
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbComAP)).EndInit();
             this.tabPageAbGF.ResumeLayout(false);
             this.groupBoxAbGF.ResumeLayout(false);
             this.groupBoxAbGF.PerformLayout();
@@ -39413,6 +39936,11 @@
             this.groupBoxAbPartyGeneral.ResumeLayout(false);
             this.groupBoxAbPartyGeneral.PerformLayout();
             this.tabPageAbMenu.ResumeLayout(false);
+            this.groupBoxAbMenuGeneral.ResumeLayout(false);
+            this.groupBoxAbMenuGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuAP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuEndOffset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuIndex)).EndInit();
             this.tabPageWeapons.ResumeLayout(false);
             this.groupBoxWeaponsRenzokukenFinishers.ResumeLayout(false);
             this.groupBoxWeaponsRenzokukenFinishers.PerformLayout();
@@ -39831,17 +40359,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.groupBoxAbCharFlags.ResumeLayout(false);
-            this.groupBoxAbCharFlags.PerformLayout();
-            this.groupBoxAbCharGeneral.ResumeLayout(false);
-            this.groupBoxAbCharGeneral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbCharAP)).EndInit();
-            this.groupBoxAbMenuGeneral.ResumeLayout(false);
-            this.groupBoxAbMenuGeneral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuStartOffset)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuAP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuEndOffset)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbMenuIndex)).EndInit();
+            this.tabPageBattleCommands.ResumeLayout(false);
+            this.groupBoxBatComGeneral.ResumeLayout(false);
+            this.groupBoxBatComGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBatComTarget)).EndInit();
+            this.groupBoxBatComFlag.ResumeLayout(false);
+            this.groupBoxBatComFlag.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -41776,6 +42299,22 @@
         private System.Windows.Forms.Label labelAbMenuIndex;
         private System.Windows.Forms.NumericUpDown numericUpDownAbMenuStartOffset;
         private System.Windows.Forms.Label labelAbMenuStartOffset;
+        private System.Windows.Forms.TabPage tabPageBattleCommands;
+        private System.Windows.Forms.GroupBox groupBoxBatComFlag;
+        private System.Windows.Forms.CheckBox checkBoxBatComFlag8;
+        private System.Windows.Forms.CheckBox checkBoxBatComFlag7;
+        private System.Windows.Forms.CheckBox checkBoxBatComFlag4;
+        private System.Windows.Forms.CheckBox checkBoxBatComFlag6;
+        private System.Windows.Forms.CheckBox checkBoxBatComFlag3;
+        private System.Windows.Forms.CheckBox checkBoxBatComFlag5;
+        private System.Windows.Forms.CheckBox checkBoxBatComFlag2;
+        private System.Windows.Forms.CheckBox checkBoxBatComFlag1;
+        private System.Windows.Forms.GroupBox groupBoxBatComGeneral;
+        private System.Windows.Forms.ComboBox comboBoxBatComAbilityID;
+        private System.Windows.Forms.NumericUpDown numericUpDownBatComTarget;
+        private System.Windows.Forms.Label labelBatComTarget;
+        private System.Windows.Forms.Label labelBatComAbilityID;
+        private System.Windows.Forms.ListBox listBoxBatCom;
     }
 }
 
