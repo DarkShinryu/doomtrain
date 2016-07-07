@@ -16477,7 +16477,7 @@
             this.groupBoxAbJunJun.Size = new System.Drawing.Size(452, 206);
             this.groupBoxAbJunJun.TabIndex = 3;
             this.groupBoxAbJunJun.TabStop = false;
-            this.groupBoxAbJunJun.Text = "Junction Flags";
+            this.groupBoxAbJunJun.Text = "Flags";
             // 
             // checkBoxAbJunFlag9
             // 
@@ -18119,14 +18119,14 @@
             this.groupBoxAbPartyFlags.Size = new System.Drawing.Size(452, 93);
             this.groupBoxAbPartyFlags.TabIndex = 4;
             this.groupBoxAbPartyFlags.TabStop = false;
-            this.groupBoxAbPartyFlags.Text = "Junction Flags";
+            this.groupBoxAbPartyFlags.Text = "Flags";
             // 
             // checkBoxAbPartyFlag8
             // 
             this.checkBoxAbPartyFlag8.AutoSize = true;
             this.checkBoxAbPartyFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAbPartyFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbPartyFlag8.Location = new System.Drawing.Point(370, 64);
+            this.checkBoxAbPartyFlag8.Location = new System.Drawing.Point(351, 64);
             this.checkBoxAbPartyFlag8.Name = "checkBoxAbPartyFlag8";
             this.checkBoxAbPartyFlag8.Size = new System.Drawing.Size(41, 19);
             this.checkBoxAbPartyFlag8.TabIndex = 104;
@@ -18138,7 +18138,7 @@
             this.checkBoxAbPartyFlag7.AutoSize = true;
             this.checkBoxAbPartyFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAbPartyFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbPartyFlag7.Location = new System.Drawing.Point(263, 64);
+            this.checkBoxAbPartyFlag7.Location = new System.Drawing.Point(244, 64);
             this.checkBoxAbPartyFlag7.Name = "checkBoxAbPartyFlag7";
             this.checkBoxAbPartyFlag7.Size = new System.Drawing.Size(41, 19);
             this.checkBoxAbPartyFlag7.TabIndex = 104;
@@ -18150,11 +18150,11 @@
             this.checkBoxAbPartyFlag4.AutoSize = true;
             this.checkBoxAbPartyFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAbPartyFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbPartyFlag4.Location = new System.Drawing.Point(370, 39);
+            this.checkBoxAbPartyFlag4.Location = new System.Drawing.Point(351, 39);
             this.checkBoxAbPartyFlag4.Name = "checkBoxAbPartyFlag4";
-            this.checkBoxAbPartyFlag4.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag4.Size = new System.Drawing.Size(79, 19);
             this.checkBoxAbPartyFlag4.TabIndex = 104;
-            this.checkBoxAbPartyFlag4.Text = "???";
+            this.checkBoxAbPartyFlag4.Text = "Enc-None";
             this.checkBoxAbPartyFlag4.UseVisualStyleBackColor = true;
             // 
             // checkBoxAbPartyFlag6
@@ -18162,7 +18162,7 @@
             this.checkBoxAbPartyFlag6.AutoSize = true;
             this.checkBoxAbPartyFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAbPartyFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbPartyFlag6.Location = new System.Drawing.Point(152, 64);
+            this.checkBoxAbPartyFlag6.Location = new System.Drawing.Point(133, 64);
             this.checkBoxAbPartyFlag6.Name = "checkBoxAbPartyFlag6";
             this.checkBoxAbPartyFlag6.Size = new System.Drawing.Size(41, 19);
             this.checkBoxAbPartyFlag6.TabIndex = 104;
@@ -18174,11 +18174,11 @@
             this.checkBoxAbPartyFlag3.AutoSize = true;
             this.checkBoxAbPartyFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAbPartyFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbPartyFlag3.Location = new System.Drawing.Point(263, 39);
+            this.checkBoxAbPartyFlag3.Location = new System.Drawing.Point(244, 39);
             this.checkBoxAbPartyFlag3.Name = "checkBoxAbPartyFlag3";
-            this.checkBoxAbPartyFlag3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag3.Size = new System.Drawing.Size(72, 19);
             this.checkBoxAbPartyFlag3.TabIndex = 104;
-            this.checkBoxAbPartyFlag3.Text = "???";
+            this.checkBoxAbPartyFlag3.Text = "Enc-Half";
             this.checkBoxAbPartyFlag3.UseVisualStyleBackColor = true;
             // 
             // checkBoxAbPartyFlag5
@@ -18186,11 +18186,11 @@
             this.checkBoxAbPartyFlag5.AutoSize = true;
             this.checkBoxAbPartyFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAbPartyFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbPartyFlag5.Location = new System.Drawing.Point(41, 64);
+            this.checkBoxAbPartyFlag5.Location = new System.Drawing.Point(22, 64);
             this.checkBoxAbPartyFlag5.Name = "checkBoxAbPartyFlag5";
-            this.checkBoxAbPartyFlag5.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag5.Size = new System.Drawing.Size(84, 19);
             this.checkBoxAbPartyFlag5.TabIndex = 104;
-            this.checkBoxAbPartyFlag5.Text = "???";
+            this.checkBoxAbPartyFlag5.Text = "Move-Find";
             this.checkBoxAbPartyFlag5.UseVisualStyleBackColor = true;
             // 
             // checkBoxAbPartyFlag2
@@ -18198,11 +18198,11 @@
             this.checkBoxAbPartyFlag2.AutoSize = true;
             this.checkBoxAbPartyFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAbPartyFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbPartyFlag2.Location = new System.Drawing.Point(152, 39);
+            this.checkBoxAbPartyFlag2.Location = new System.Drawing.Point(133, 39);
             this.checkBoxAbPartyFlag2.Name = "checkBoxAbPartyFlag2";
-            this.checkBoxAbPartyFlag2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag2.Size = new System.Drawing.Size(76, 19);
             this.checkBoxAbPartyFlag2.TabIndex = 104;
-            this.checkBoxAbPartyFlag2.Text = "???";
+            this.checkBoxAbPartyFlag2.Text = "Rare Item";
             this.checkBoxAbPartyFlag2.UseVisualStyleBackColor = true;
             // 
             // checkBoxAbPartyFlag1
@@ -18210,11 +18210,11 @@
             this.checkBoxAbPartyFlag1.AutoSize = true;
             this.checkBoxAbPartyFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAbPartyFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxAbPartyFlag1.Location = new System.Drawing.Point(41, 39);
+            this.checkBoxAbPartyFlag1.Location = new System.Drawing.Point(22, 39);
             this.checkBoxAbPartyFlag1.Name = "checkBoxAbPartyFlag1";
-            this.checkBoxAbPartyFlag1.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxAbPartyFlag1.Size = new System.Drawing.Size(51, 19);
             this.checkBoxAbPartyFlag1.TabIndex = 104;
-            this.checkBoxAbPartyFlag1.Text = "???";
+            this.checkBoxAbPartyFlag1.Text = "Alert";
             this.checkBoxAbPartyFlag1.UseVisualStyleBackColor = true;
             // 
             // groupBoxAbPartyGeneral
