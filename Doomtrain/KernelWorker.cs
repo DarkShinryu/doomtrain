@@ -81,6 +81,9 @@ namespace Doomtrain
         public static int GFAbilitiesDataOffset = -1;
         public static int OffsetToGFAbilitiesSelected = -1;
 
+        public static int CharacterAbilitiesDataOffset = -1;
+        public static int OffsetToCharacterAbilitiesSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -106,7 +109,7 @@ namespace Doomtrain
         public static JunctionAbilitiesData GetSelectedJunctionAbilitiesData;
         public static PartyAbilitiesData GetSelectedPartyAbilitiesData;
         public static GFAbilitiesData GetSelectedGFAbilitiesData;
-
+        public static CharacterAbilitiesData GetSelectedCharacterAbilitiesData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -924,6 +927,14 @@ namespace Doomtrain
             public StatToIncrease StatToIncrease;
             public byte IncrementValue;
 
+        }
+
+        public struct CharacterAbilitiesData
+        {
+            public byte AP;
+            public byte Flag1;
+            public byte Flag2;
+            public byte Flag3;
         }
         #endregion
 
@@ -3180,6 +3191,34 @@ namespace Doomtrain
 
         #endregion
 
+        #region CHARACTER ABILITIES
+
+        public static void UpdateVariable_CharacterAbilities(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToCharacterAbilitiesSelected + 4] = Convert.ToByte(variable); //AP
+                    return;
+                case 1:
+                    Kernel[OffsetToCharacterAbilitiesSelected + 5] = (byte)(Kernel[OffsetToCharacterAbilitiesSelected + 5] ^ Convert.ToByte(variable)); // flag 1
+                    return;
+                case 2:
+                    Kernel[OffsetToCharacterAbilitiesSelected + 6] = (byte)(Kernel[OffsetToCharacterAbilitiesSelected + 6] ^ Convert.ToByte(variable)); // flag 2
+                    return;
+                case 3:
+                    Kernel[OffsetToCharacterAbilitiesSelected + 7] = (byte)(Kernel[OffsetToCharacterAbilitiesSelected + 7] ^ Convert.ToByte(variable)); // flag 3
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
+        #endregion
+
         #endregion
 
 
@@ -3288,6 +3327,7 @@ namespace Doomtrain
             JunctionAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.JunctionAbilities);
             PartyAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.PartyAbilities);
             GFAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFAbilities);
+            CharacterAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.CharacterAbilities);
         }
 
         #endregion
@@ -4553,6 +4593,23 @@ namespace Doomtrain
                             ? StatToIncrease.Boost
                             : 0; //Error handler
             GetSelectedGFAbilitiesData.IncrementValue = Kernel[selectedGFAbilitiesOffset++];
+        }
+
+        #endregion
+
+        #region CHARACTER ABILITIES
+
+        public static void ReadCharacterAbilities(int CharacterAbilitiesID_List)
+        {
+            GetSelectedCharacterAbilitiesData = new CharacterAbilitiesData();
+            int selectedCharacterAbilitiesOffset = CharacterAbilitiesDataOffset + (CharacterAbilitiesID_List * 8);
+            OffsetToCharacterAbilitiesSelected = selectedCharacterAbilitiesOffset;
+
+            selectedCharacterAbilitiesOffset += 4;
+            GetSelectedCharacterAbilitiesData.AP = Kernel[selectedCharacterAbilitiesOffset++];
+            GetSelectedCharacterAbilitiesData.Flag1 = Kernel[selectedCharacterAbilitiesOffset++];
+            GetSelectedCharacterAbilitiesData.Flag2 = Kernel[selectedCharacterAbilitiesOffset++];
+            GetSelectedCharacterAbilitiesData.Flag3 = Kernel[selectedCharacterAbilitiesOffset++];
         }
 
         #endregion

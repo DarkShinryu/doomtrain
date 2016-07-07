@@ -1481,7 +1481,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS JUNCTION ABILITIES
+            #region EVENT HANDLERS PARTY ABILITIES
 
             numericUpDownAbPartyAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(0, numericUpDownAbPartyAP.Value);
             checkBoxAbPartyFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x01);
@@ -1501,6 +1501,36 @@ namespace Doomtrain
             checkBoxAbGFBoost.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(1, 0x01);
             comboBoxAbGFStatToIncrease.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(2, GFAbilities_GetStat(comboBoxAbGFStatToIncrease.SelectedIndex));
             trackBarAbGFIncrementValue.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(3, trackBarAbGFIncrementValue.Value);
+
+            #endregion
+
+            #region EVENT HANDLERS CHARACTER ABILITIES
+
+            numericUpDownAbCharAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(0, numericUpDownAbCharAP.Value);
+            checkBoxAbCharFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x01);
+            checkBoxAbCharFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x02);
+            checkBoxAbCharFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x04);
+            checkBoxAbCharFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x08);
+            checkBoxAbCharFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x10);
+            checkBoxAbCharFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x20);
+            checkBoxAbCharFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x40);
+            checkBoxAbCharFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x80);
+            checkBoxAbCharFlag9.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x01);
+            checkBoxAbCharFlag10.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x02);
+            checkBoxAbCharFlag11.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x04);
+            checkBoxAbCharFlag12.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x08);
+            checkBoxAbCharFlag13.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x10);
+            checkBoxAbCharFlag14.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x20);
+            checkBoxAbCharFlag15.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x40);
+            checkBoxAbCharFlag16.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(2, 0x80);
+            checkBoxAbCharFlag17.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x01);
+            checkBoxAbCharFlag18.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x02);
+            checkBoxAbCharFlag19.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x04);
+            checkBoxAbCharFlag20.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x08);
+            checkBoxAbCharFlag21.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x10);
+            checkBoxAbCharFlag22.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x20);
+            checkBoxAbCharFlag23.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x40);
+            checkBoxAbCharFlag24.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(3, 0x80);
 
             #endregion
         }
@@ -1902,7 +1932,7 @@ namespace Doomtrain
         {
             if (tabControlAbilities.SelectedIndex == 0)
             {
-                listBoxAbCharacters.Visible = true;
+                listBoxAbChar.Visible = true;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
@@ -1914,7 +1944,7 @@ namespace Doomtrain
 
             if (tabControlAbilities.SelectedIndex == 1)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = true;
                 listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
@@ -1926,7 +1956,7 @@ namespace Doomtrain
 
             if (tabControlAbilities.SelectedIndex == 2)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = true;
                 listBoxAbComData.Visible = false;
@@ -1938,7 +1968,7 @@ namespace Doomtrain
 
             if (tabControlAbilities.SelectedIndex == 3)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = true;
@@ -1950,7 +1980,7 @@ namespace Doomtrain
 
             if (tabControlAbilities.SelectedIndex == 4)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
@@ -1962,7 +1992,7 @@ namespace Doomtrain
 
             if (tabControlAbilities.SelectedIndex == 5)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
@@ -1974,7 +2004,7 @@ namespace Doomtrain
 
             if (tabControlAbilities.SelectedIndex == 6)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
@@ -1986,7 +2016,7 @@ namespace Doomtrain
 
             if (tabControlAbilities.SelectedIndex == 7)
             {
-                listBoxAbCharacters.Visible = false;
+                listBoxAbChar.Visible = false;
                 listBoxAbStats.Visible = false;
                 listBoxAbJun.Visible = false;
                 listBoxAbComData.Visible = false;
@@ -4762,7 +4792,56 @@ namespace Doomtrain
         }
 
 
+
         #endregion
+
+        #region PARTY ABILITIES
+
+        private void listBoxAbChar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadCharacterAbilities(listBoxAbChar.SelectedIndex);
+
+            try
+            {
+                numericUpDownAbCharAP.Value = KernelWorker.GetSelectedCharacterAbilitiesData.AP;
+                checkBoxAbCharFlag1.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x01) >= 1 ? true : false;
+                checkBoxAbCharFlag2.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x02) >= 1 ? true : false;
+                checkBoxAbCharFlag3.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x04) >= 1 ? true : false;
+                checkBoxAbCharFlag4.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x08) >= 1 ? true : false;
+                checkBoxAbCharFlag5.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x10) >= 1 ? true : false;
+                checkBoxAbCharFlag6.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x20) >= 1 ? true : false;
+                checkBoxAbCharFlag7.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x40) >= 1 ? true : false;
+                checkBoxAbCharFlag8.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x80) >= 1 ? true : false;
+                checkBoxAbCharFlag9.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x01) >= 1 ? true : false;
+                checkBoxAbCharFlag10.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x02) >= 1 ? true : false;
+                checkBoxAbCharFlag11.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x04) >= 1 ? true : false;
+                checkBoxAbCharFlag12.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x08) >= 1 ? true : false;
+                checkBoxAbCharFlag13.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x10) >= 1 ? true : false;
+                checkBoxAbCharFlag14.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x20) >= 1 ? true : false;
+                checkBoxAbCharFlag15.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x40) >= 1 ? true : false;
+                checkBoxAbCharFlag16.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag2 & 0x80) >= 1 ? true : false;
+                checkBoxAbCharFlag17.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x01) >= 1 ? true : false;
+                checkBoxAbCharFlag18.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x02) >= 1 ? true : false;
+                checkBoxAbCharFlag19.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x04) >= 1 ? true : false;
+                checkBoxAbCharFlag20.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x08) >= 1 ? true : false;
+                checkBoxAbCharFlag21.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x10) >= 1 ? true : false;
+                checkBoxAbCharFlag22.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x20) >= 1 ? true : false;
+                checkBoxAbCharFlag23.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x40) >= 1 ? true : false;
+                checkBoxAbCharFlag24.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag3 & 0x80) >= 1 ? true : false;
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+        
 
 
     }
