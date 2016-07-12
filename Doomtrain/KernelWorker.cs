@@ -90,6 +90,9 @@ namespace Doomtrain
         public static int BattleCommandsDataOffset = -1;
         public static int OffsetToBattleCommandsSelected = -1;
 
+        public static int RinoaCommandsDataOffset = -1;
+        public static int OffsetToRinoaCommandsSelected = -1;
+
         public static MagicData GetSelectedMagicData;
         public static GFData GetSelectedGFData;
         public static GFAttacksData GetSelectedGFAttacksData;
@@ -118,6 +121,7 @@ namespace Doomtrain
         public static CharacterAbilitiesData GetSelectedCharacterAbilitiesData;
         public static MenuAbilitiesData GetSelectedMenuAbilitiesData;
         public static BattleCommandsData GetSelectedBattleCommandsData;
+        public static RinoaCommandsData GetSelectedRinoaCommandsData;
 
         static string[] _charstable;
         private static readonly string Chartable =
@@ -958,6 +962,13 @@ namespace Doomtrain
             public byte AbilityID;
             public byte Flag;
             public byte Target;
+        }
+
+        public struct RinoaCommandsData
+        {            
+            public byte Flag;
+            public byte Target;
+            public byte AbilityID;
         }
 
         #endregion
@@ -3296,6 +3307,31 @@ namespace Doomtrain
 
         #endregion
 
+        #region RINOA COMMANDS
+
+        public static void UpdateVariable_RinoaCommands(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Kernel[OffsetToRinoaCommandsSelected + 4] = (byte)(Kernel[OffsetToRinoaCommandsSelected + 4] ^ Convert.ToByte(variable)); //Flag
+                    return;
+                case 1:
+                    Kernel[OffsetToRinoaCommandsSelected + 5] = Convert.ToByte(variable); //Target
+                    return;
+                case 2:
+                    Kernel[OffsetToRinoaCommandsSelected + 6] = Convert.ToByte(variable); //Ability ID
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
+        #endregion
+
         #endregion
 
 
@@ -3408,6 +3444,7 @@ namespace Doomtrain
             GFAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.GFAbilities);
             CharacterAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.CharacterAbilities);
             MenuAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.MenuAbilities);
+            RinoaCommandsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RinoaLimit1);
         }
 
         #endregion
@@ -4716,6 +4753,7 @@ namespace Doomtrain
         public static void ReadBattleCommands(int BattleCommandsID_List)
         {
             GetSelectedBattleCommandsData = new BattleCommandsData();
+            BattleCommandsID_List++; //skip dummy entry
             int selectedBattleCommandsOffset = BattleCommandsDataOffset + (BattleCommandsID_List * 8);
             OffsetToBattleCommandsSelected = selectedBattleCommandsOffset;
 
@@ -4723,6 +4761,22 @@ namespace Doomtrain
             GetSelectedBattleCommandsData.AbilityID = Kernel[selectedBattleCommandsOffset++];
             GetSelectedBattleCommandsData.Flag = Kernel[selectedBattleCommandsOffset++];
             GetSelectedBattleCommandsData.Target = Kernel[selectedBattleCommandsOffset++];
+        }
+
+        #endregion
+
+        #region RINOA COMMANDS
+
+        public static void ReadRinoaCommands(int RinoaCommandsID_List)
+        {
+            GetSelectedRinoaCommandsData = new RinoaCommandsData();
+            int selectedRinoaCommandsOffset = RinoaCommandsDataOffset + (RinoaCommandsID_List * 8);
+            OffsetToRinoaCommandsSelected = selectedRinoaCommandsOffset;
+
+            selectedRinoaCommandsOffset += 4;
+            GetSelectedRinoaCommandsData.Flag = Kernel[selectedRinoaCommandsOffset++];
+            GetSelectedRinoaCommandsData.Target = Kernel[selectedRinoaCommandsOffset++];
+            GetSelectedRinoaCommandsData.AbilityID = Kernel[selectedRinoaCommandsOffset++];
         }
 
         #endregion

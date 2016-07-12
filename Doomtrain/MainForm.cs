@@ -1557,13 +1557,28 @@ namespace Doomtrain
             numericUpDownBatComTarget.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(2, numericUpDownBatComTarget.Value);
 
             #endregion
+
+            #region EVENT HANDLERS RINOA COMMANDS
+            
+            checkBoxBatComRinoaFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x01);
+            checkBoxBatComRinoaFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x02);
+            checkBoxBatComRinoaFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x04);
+            checkBoxBatComRinoaFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x08);
+            checkBoxBatComRinoaFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x10);
+            checkBoxBatComRinoaFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x20);
+            checkBoxBatComRinoaFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x40);
+            checkBoxBatComRinoaFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x80);
+            numericUpDownBatComRinoaTarget.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(1, numericUpDownBatComTarget.Value);
+            comboBoxBatComRinoaID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(2, comboBoxBatComAbilityID.SelectedIndex);
+
+            #endregion
         }
 
 
         #region OPEN, SAVE, CLOSE, EXIT, TOOLBAR, ABOUT
 
         public string existingFilename; //used for open/save stuff
-
+        
 
         //OPEN
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1588,6 +1603,7 @@ namespace Doomtrain
                 }
                 
                 existingFilename = openFileDialog.FileName;
+
                 saveToolStripMenuItem.Enabled = true;
                 saveAsToolStripMenuItem.Enabled = true;
                 saveToolStripButton.Enabled = true;
@@ -4915,6 +4931,40 @@ namespace Doomtrain
                 checkBoxBatComFlag8.Checked = (KernelWorker.GetSelectedBattleCommandsData.Flag & 0x80) >= 1 ? true : false;
                 numericUpDownBatComTarget.Value = KernelWorker.GetSelectedBattleCommandsData.Target;
             }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+
+        #endregion
+
+        #region RINOA COMMANDS
+
+        private void listBoxBatComRinoa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null)
+                return;
+            KernelWorker.ReadRinoaCommands(listBoxBatComRinoa.SelectedIndex);
+
+            try
+            {                
+                checkBoxBatComRinoaFlag1.Checked = (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x01) >= 1 ? true : false;
+                checkBoxBatComRinoaFlag2.Checked = (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x02) >= 1 ? true : false;
+                checkBoxBatComRinoaFlag3.Checked = (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x04) >= 1 ? true : false;
+                checkBoxBatComRinoaFlag4.Checked = (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x08) >= 1 ? true : false;
+                checkBoxBatComRinoaFlag5.Checked = (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x10) >= 1 ? true : false;
+                checkBoxBatComRinoaFlag6.Checked = (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x20) >= 1 ? true : false;
+                checkBoxBatComRinoaFlag7.Checked = (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x40) >= 1 ? true : false;
+                checkBoxBatComRinoaFlag8.Checked = (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x80) >= 1 ? true : false;
+                numericUpDownBatComRinoaTarget.Value = KernelWorker.GetSelectedRinoaCommandsData.Target;
+                comboBoxBatComRinoaID.SelectedIndex = KernelWorker.GetSelectedRinoaCommandsData.AbilityID;
+            }
+
             catch (Exception Exception)
             {
                 MessageBox.Show(Exception.ToString());
