@@ -3424,7 +3424,21 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadStatPercentageAbilities(listBoxAbStats.SelectedIndex);
+
+            KernelWorker.ReadStatPercentageAbilities(listBoxAbStats.SelectedIndex, KernelWorker.BackupKernel);
+
+            try
+            {
+                ToolTip(numericUpDownAbStatsAP,0x00,KernelWorker.GetSelectedStatPercentageAbilitiesData.AP);
+                ToolTip(comboBoxAbStatsStatToIncrease, 0x02,comboBoxAbStatsStatToIncrease.Items[KernelWorker.GetSelectedStatPercentageAbilitiesData.StatToincrease]);
+                ToolTip(trackBarAbStatsIncrementValue,0x00,KernelWorker.GetSelectedStatPercentageAbilitiesData.IncreasementValue);
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadStatPercentageAbilities(listBoxAbStats.SelectedIndex, KernelWorker.Kernel);
 
             try
             {
@@ -3842,50 +3856,50 @@ namespace Doomtrain
 
         private void ShotStatusWorker()
         {
-            checkBoxShotDeath.Checked = (KernelWorker.GetSelectedShotData.Status1 & 0x01) >= 1 ? true : false;
-            checkBoxShotPoison.Checked = (KernelWorker.GetSelectedShotData.Status1 & 0x02) >= 1 ? true : false;
-            checkBoxShotPetrify.Checked = (KernelWorker.GetSelectedShotData.Status1 & 0x04) >= 1 ? true : false;
-            checkBoxShotDarkness.Checked = (KernelWorker.GetSelectedShotData.Status1 & 0x08) >= 1 ? true : false;
-            checkBoxShotSilence.Checked = (KernelWorker.GetSelectedShotData.Status1 & 0x10) >= 1 ? true : false;
-            checkBoxShotBerserk.Checked = (KernelWorker.GetSelectedShotData.Status1 & 0x20) >= 1 ? true : false;
-            checkBoxShotZombie.Checked = (KernelWorker.GetSelectedShotData.Status1 & 0x40) >= 1 ? true : false;
-            checkBoxShotUnk7.Checked = (KernelWorker.GetSelectedShotData.Status1 & 0x80) >= 1 ? true : false;
+            ToolTip(checkBoxShotDeath,01,(KernelWorker.GetSelectedShotData.Status1 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxShotPoison, 01,  (KernelWorker.GetSelectedShotData.Status1 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxShotPetrify, 01,  (KernelWorker.GetSelectedShotData.Status1 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxShotDarkness, 01, (KernelWorker.GetSelectedShotData.Status1 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxShotSilence, 01, (KernelWorker.GetSelectedShotData.Status1 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxShotBerserk, 01, (KernelWorker.GetSelectedShotData.Status1 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxShotZombie, 01, (KernelWorker.GetSelectedShotData.Status1 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxShotUnk7, 01, (KernelWorker.GetSelectedShotData.Status1 & 0x80) >= 1 ? true : false);
 
-            checkBoxShotSleep.Checked = (KernelWorker.GetSelectedShotData.Status2 & 0x01) >= 1 ? true : false;
-            checkBoxShotHaste.Checked = (KernelWorker.GetSelectedShotData.Status2 & 0x02) >= 1 ? true : false;
-            checkBoxShotSlow.Checked = (KernelWorker.GetSelectedShotData.Status2 & 0x04) >= 1 ? true : false;
-            checkBoxShotStop.Checked = (KernelWorker.GetSelectedShotData.Status2 & 0x08) >= 1 ? true : false;
-            checkBoxShotRegen.Checked = (KernelWorker.GetSelectedShotData.Status2 & 0x10) >= 1 ? true : false;
-            checkBoxShotProtect.Checked = (KernelWorker.GetSelectedShotData.Status2 & 0x20) >= 1 ? true : false;
-            checkBoxShotShell.Checked = (KernelWorker.GetSelectedShotData.Status2 & 0x40) >= 1 ? true : false;
-            checkBoxShotReflect.Checked = (KernelWorker.GetSelectedShotData.Status2 & 0x80) >= 1 ? true : false;
+            ToolTip(checkBoxShotSleep, 01, (KernelWorker.GetSelectedShotData.Status2 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxShotHaste, 01, (KernelWorker.GetSelectedShotData.Status2 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxShotSlow, 01, (KernelWorker.GetSelectedShotData.Status2 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxShotStop, 01, (KernelWorker.GetSelectedShotData.Status2 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxShotRegen, 01, (KernelWorker.GetSelectedShotData.Status2 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxShotProtect, 01, (KernelWorker.GetSelectedShotData.Status2 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxShotShell, 01, (KernelWorker.GetSelectedShotData.Status2 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxShotReflect, 01, (KernelWorker.GetSelectedShotData.Status2 & 0x80) >= 1 ? true : false);
 
-            checkBoxShotAura.Checked = (KernelWorker.GetSelectedShotData.Status3 & 0x01) >= 1 ? true : false;
-            checkBoxShotCurse.Checked = (KernelWorker.GetSelectedShotData.Status3 & 0x02) >= 1 ? true : false;
-            checkBoxShotDoom.Checked = (KernelWorker.GetSelectedShotData.Status3 & 0x04) >= 1 ? true : false;
-            checkBoxShotInvincible.Checked = (KernelWorker.GetSelectedShotData.Status3 & 0x08) >= 1 ? true : false;
-            checkBoxShotPetrifying.Checked = (KernelWorker.GetSelectedShotData.Status3 & 0x10) >= 1 ? true : false;
-            checkBoxShotFloat.Checked = (KernelWorker.GetSelectedShotData.Status3 & 0x20) >= 1 ? true : false;
-            checkBoxShotConfusion.Checked = (KernelWorker.GetSelectedShotData.Status3 & 0x40) >= 1 ? true : false;
-            checkBoxShotDrain.Checked = (KernelWorker.GetSelectedShotData.Status3 & 0x80) >= 1 ? true : false;
+            ToolTip(checkBoxShotAura, 01, (KernelWorker.GetSelectedShotData.Status3 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxShotCurse, 01, (KernelWorker.GetSelectedShotData.Status3 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxShotDoom, 01, (KernelWorker.GetSelectedShotData.Status3 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxShotInvincible, 01, (KernelWorker.GetSelectedShotData.Status3 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxShotPetrifying, 01, (KernelWorker.GetSelectedShotData.Status3 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxShotFloat, 01, (KernelWorker.GetSelectedShotData.Status3 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxShotConfusion, 01, (KernelWorker.GetSelectedShotData.Status3 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxShotDrain, 01, (KernelWorker.GetSelectedShotData.Status3 & 0x80) >= 1 ? true : false);
 
-            checkBoxShotEject.Checked = (KernelWorker.GetSelectedShotData.Status4 & 0x01) >= 1 ? true : false;
-            checkBoxShotDouble.Checked = (KernelWorker.GetSelectedShotData.Status4 & 0x02) >= 1 ? true : false;
-            checkBoxShotTriple.Checked = (KernelWorker.GetSelectedShotData.Status4 & 0x04) >= 1 ? true : false;
-            checkBoxShotDefend.Checked = (KernelWorker.GetSelectedShotData.Status4 & 0x08) >= 1 ? true : false;
-            checkBoxShotUnk1.Checked = (KernelWorker.GetSelectedShotData.Status4 & 0x10) >= 1 ? true : false;
-            checkBoxShotUnk2.Checked = (KernelWorker.GetSelectedShotData.Status4 & 0x20) >= 1 ? true : false;
-            checkBoxShotCharged.Checked = (KernelWorker.GetSelectedShotData.Status4 & 0x40) >= 1 ? true : false;
-            checkBoxShotBackAttack.Checked = (KernelWorker.GetSelectedShotData.Status4 & 0x80) >= 1 ? true : false;
+            ToolTip(checkBoxShotEject, 01, (KernelWorker.GetSelectedShotData.Status4 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxShotDouble, 01, (KernelWorker.GetSelectedShotData.Status4 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxShotTriple, 01, (KernelWorker.GetSelectedShotData.Status4 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxShotDefend, 01, (KernelWorker.GetSelectedShotData.Status4 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxShotUnk1, 01, (KernelWorker.GetSelectedShotData.Status4 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxShotUnk2, 01, (KernelWorker.GetSelectedShotData.Status4 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxShotCharged, 01, (KernelWorker.GetSelectedShotData.Status4 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxShotBackAttack, 01, (KernelWorker.GetSelectedShotData.Status4 & 0x80) >= 1 ? true : false);
 
-            checkBoxShotVit0.Checked = (KernelWorker.GetSelectedShotData.Status5 & 0x01) >= 1 ? true : false;
-            checkBoxShotAngelWing.Checked = (KernelWorker.GetSelectedShotData.Status5 & 0x02) >= 1 ? true : false;
-            checkBoxShotUnk3.Checked = (KernelWorker.GetSelectedShotData.Status5 & 0x04) >= 1 ? true : false;
-            checkBoxShotUnk4.Checked = (KernelWorker.GetSelectedShotData.Status5 & 0x08) >= 1 ? true : false;
-            checkBoxShotUnk5.Checked = (KernelWorker.GetSelectedShotData.Status5 & 0x10) >= 1 ? true : false;
-            checkBoxShotUnk6.Checked = (KernelWorker.GetSelectedShotData.Status5 & 0x20) >= 1 ? true : false;
-            checkBoxShotHasMagic.Checked = (KernelWorker.GetSelectedShotData.Status5 & 0x40) >= 1 ? true : false;
-            checkBoxShotSummonGF.Checked = (KernelWorker.GetSelectedShotData.Status5 & 0x80) >= 1 ? true : false;
+            ToolTip(checkBoxShotVit0, 01, (KernelWorker.GetSelectedShotData.Status5 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxShotAngelWing, 01, (KernelWorker.GetSelectedShotData.Status5 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxShotUnk3, 01, (KernelWorker.GetSelectedShotData.Status5 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxShotUnk4, 01, (KernelWorker.GetSelectedShotData.Status5 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxShotUnk5, 01, (KernelWorker.GetSelectedShotData.Status5 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxShotUnk6, 01, (KernelWorker.GetSelectedShotData.Status5 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxShotHasMagic, 01, (KernelWorker.GetSelectedShotData.Status5 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxShotSummonGF, 01, (KernelWorker.GetSelectedShotData.Status5 & 0x80) >= 1 ? true : false);
         }
 
         private void listBoxShot_SelectedIndexChanged(object sender, EventArgs e)
@@ -3893,7 +3907,41 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadShot(listBoxShot.SelectedIndex);
+            KernelWorker.ReadShot(listBoxShot.SelectedIndex, KernelWorker.BackupKernel);
+            try
+            {
+                ToolTip(comboBoxShotMagicID, 0x02,comboBoxShotMagicID.Items[KernelWorker.GetSelectedShotData.MagicID]);
+                ToolTip(comboBoxShotAttackType, 0x02, comboBoxShotMagicID.Items[KernelWorker.GetSelectedShotData.AttackType]);
+                ToolTip(numericUpDownShotAttackPower,0,KernelWorker.GetSelectedShotData.AttackPower);
+                ToolTip(checkBoxShotTarget1,1, (KernelWorker.GetSelectedShotData.Target & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxShotTarget2, 1, (KernelWorker.GetSelectedShotData.Target & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxShotTarget3, 1, (KernelWorker.GetSelectedShotData.Target & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxShotTarget4, 1, (KernelWorker.GetSelectedShotData.Target & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxShotTarget5, 1, (KernelWorker.GetSelectedShotData.Target & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxShotTarget6, 1, (KernelWorker.GetSelectedShotData.Target & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxShotTarget7, 1, (KernelWorker.GetSelectedShotData.Target & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxShotTarget8, 1, (KernelWorker.GetSelectedShotData.Target & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxShotFlag1, 1, (KernelWorker.GetSelectedShotData.AttackFlags & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxShotFlag2, 1, (KernelWorker.GetSelectedShotData.AttackFlags & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxShotFlag3, 1, (KernelWorker.GetSelectedShotData.AttackFlags & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxShotFlag4, 1, (KernelWorker.GetSelectedShotData.AttackFlags & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxShotFlag5, 1, (KernelWorker.GetSelectedShotData.AttackFlags & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxShotFlag6, 1, (KernelWorker.GetSelectedShotData.AttackFlags & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxShotFlag7, 1, (KernelWorker.GetSelectedShotData.AttackFlags & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxShotFlag8, 1, (KernelWorker.GetSelectedShotData.AttackFlags & 0x80) >= 1 ? true : false);
+                ToolTip(numericUpDownShotHitCount, 0, KernelWorker.GetSelectedShotData.HitCount);
+                ToolTip(comboBoxShotElement, 2,comboBoxShotElement.Items[Shot_GetElement()]);
+                ToolTip(numericUpDownShotElementPerc,0, KernelWorker.GetSelectedShotData.ElementPerc);
+                ToolTip(numericUpDownShotStatusAttack,0, KernelWorker.GetSelectedShotData.StatusAttack);
+                ShotStatusWorker();
+                ToolTip(comboBoxShotItem,2, comboBoxShotItem.Items[ KernelWorker.GetSelectedShotData.UsedItem]);
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadShot(listBoxShot.SelectedIndex, KernelWorker.Kernel);
 
             try
             {
@@ -3907,7 +3955,7 @@ namespace Doomtrain
                 checkBoxShotTarget5.Checked = (KernelWorker.GetSelectedShotData.Target & 0x10) >= 1 ? true : false;
                 checkBoxShotTarget6.Checked = (KernelWorker.GetSelectedShotData.Target & 0x20) >= 1 ? true : false;
                 checkBoxShotTarget7.Checked = (KernelWorker.GetSelectedShotData.Target & 0x40) >= 1 ? true : false;
-                checkBoxShotTarget8.Checked = (KernelWorker.GetSelectedShotData.Target & 0x80) >= 1 ? true : false;                
+                checkBoxShotTarget8.Checked = (KernelWorker.GetSelectedShotData.Target & 0x80) >= 1 ? true : false;
                 checkBoxShotFlag1.Checked = (KernelWorker.GetSelectedShotData.AttackFlags & 0x01) >= 1 ? true : false;
                 checkBoxShotFlag2.Checked = (KernelWorker.GetSelectedShotData.AttackFlags & 0x02) >= 1 ? true : false;
                 checkBoxShotFlag3.Checked = (KernelWorker.GetSelectedShotData.AttackFlags & 0x04) >= 1 ? true : false;
@@ -4476,7 +4524,76 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadSlotArray();
+            KernelWorker.ReadSlotArray(KernelWorker.BackupKernel);
+            try
+            {               
+                ToolTip(numericUpDownSlotsArray1, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray1);
+                ToolTip(numericUpDownSlotsArray2, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray1);
+                ToolTip(numericUpDownSlotsArray3, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray3);
+                ToolTip(numericUpDownSlotsArray4, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray4);
+                ToolTip(numericUpDownSlotsArray5, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray5);
+                ToolTip(numericUpDownSlotsArray6, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray6);
+                ToolTip(numericUpDownSlotsArray7, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray7);
+                ToolTip(numericUpDownSlotsArray8, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray8);
+                ToolTip(numericUpDownSlotsArray9, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray9);
+                ToolTip(numericUpDownSlotsArray10, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray10);
+                ToolTip(numericUpDownSlotsArray11, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray11);
+                ToolTip(numericUpDownSlotsArray12, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray12);
+                ToolTip(numericUpDownSlotsArray13, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray13);
+                ToolTip(numericUpDownSlotsArray14, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray14);
+                ToolTip(numericUpDownSlotsArray15, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray15);
+                ToolTip(numericUpDownSlotsArray16, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray16);
+                ToolTip(numericUpDownSlotsArray17, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray17);
+                ToolTip(numericUpDownSlotsArray18, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray18);
+                ToolTip(numericUpDownSlotsArray19, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray19);
+                ToolTip(numericUpDownSlotsArray20, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray20);
+                ToolTip(numericUpDownSlotsArray21, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray21);
+                ToolTip(numericUpDownSlotsArray22, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray22);
+                ToolTip(numericUpDownSlotsArray23, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray23);
+                ToolTip(numericUpDownSlotsArray24, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray24);
+                ToolTip(numericUpDownSlotsArray25, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray25);
+                ToolTip(numericUpDownSlotsArray26, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray26);
+                ToolTip(numericUpDownSlotsArray27, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray27);
+                ToolTip(numericUpDownSlotsArray28, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray28);
+                ToolTip(numericUpDownSlotsArray29, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray29);
+                ToolTip(numericUpDownSlotsArray30, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray30);
+                ToolTip(numericUpDownSlotsArray31, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray31);
+                ToolTip(numericUpDownSlotsArray32, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray32);
+                ToolTip(numericUpDownSlotsArray33, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray33);
+                ToolTip(numericUpDownSlotsArray34, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray34);
+                ToolTip(numericUpDownSlotsArray35, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray35);
+                ToolTip(numericUpDownSlotsArray36, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray36);
+                ToolTip(numericUpDownSlotsArray37, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray37);
+                ToolTip(numericUpDownSlotsArray38, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray38);
+                ToolTip(numericUpDownSlotsArray39, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray39);
+                ToolTip(numericUpDownSlotsArray40, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray40);
+                ToolTip(numericUpDownSlotsArray41, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray41);
+                ToolTip(numericUpDownSlotsArray42, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray42);
+                ToolTip(numericUpDownSlotsArray43, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray43);
+                ToolTip(numericUpDownSlotsArray44, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray44);
+                ToolTip(numericUpDownSlotsArray45, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray45);
+                ToolTip(numericUpDownSlotsArray46, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray46);
+                ToolTip(numericUpDownSlotsArray47, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray47);
+                ToolTip(numericUpDownSlotsArray48, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray48);
+                ToolTip(numericUpDownSlotsArray49, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray49);
+                ToolTip(numericUpDownSlotsArray50, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray50);
+                ToolTip(numericUpDownSlotsArray51, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray51);
+                ToolTip(numericUpDownSlotsArray52, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray52);
+                ToolTip(numericUpDownSlotsArray53, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray53);
+                ToolTip(numericUpDownSlotsArray54, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray54);
+                ToolTip(numericUpDownSlotsArray55, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray55);
+                ToolTip(numericUpDownSlotsArray56, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray56);
+                ToolTip(numericUpDownSlotsArray57, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray57);
+                ToolTip(numericUpDownSlotsArray58, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray58);
+                ToolTip(numericUpDownSlotsArray59, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray59);
+                ToolTip(numericUpDownSlotsArray60, 0, KernelWorker.GetSelectedSlotArrayData.SlotArray60);
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadSlotArray(KernelWorker.Kernel);
             try
             {
                 numericUpDownSlotsArray1.Value = KernelWorker.GetSelectedSlotArrayData.SlotArray1;
@@ -4559,7 +4676,32 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadSlotsSets(listBoxSlotsSets.SelectedIndex);
+            KernelWorker.ReadSlotsSets(listBoxSlotsSets.SelectedIndex, KernelWorker.BackupKernel);
+            try
+            {
+                ToolTip(comboBoxSlotsMagic1, _bp_string,comboBoxSlotsMagic1.Items[KernelWorker.GetSelectedSlotsSetsData.Magic1]);
+                ToolTip(comboBoxSlotsMagic2, _bp_string, comboBoxSlotsMagic1.Items[KernelWorker.GetSelectedSlotsSetsData.Magic2]);
+                ToolTip(comboBoxSlotsMagic3, _bp_string, comboBoxSlotsMagic1.Items[KernelWorker.GetSelectedSlotsSetsData.Magic3]);
+                ToolTip(comboBoxSlotsMagic4, _bp_string, comboBoxSlotsMagic1.Items[KernelWorker.GetSelectedSlotsSetsData.Magic4]);
+                ToolTip(comboBoxSlotsMagic5, _bp_string, comboBoxSlotsMagic1.Items[KernelWorker.GetSelectedSlotsSetsData.Magic5]);
+                ToolTip(comboBoxSlotsMagic6, _bp_string, comboBoxSlotsMagic1.Items[KernelWorker.GetSelectedSlotsSetsData.Magic6]);
+                ToolTip(comboBoxSlotsMagic7, _bp_string, comboBoxSlotsMagic1.Items[KernelWorker.GetSelectedSlotsSetsData.Magic7]);
+                ToolTip(comboBoxSlotsMagic8, _bp_string, comboBoxSlotsMagic1.Items[KernelWorker.GetSelectedSlotsSetsData.Magic8]);
+                ToolTip(numericUpDownSlotsCount1,0x00,KernelWorker.GetSelectedSlotsSetsData.Count1);
+                ToolTip(numericUpDownSlotsCount2, 0x00, KernelWorker.GetSelectedSlotsSetsData.Count2);
+                ToolTip(numericUpDownSlotsCount3, 0x00, KernelWorker.GetSelectedSlotsSetsData.Count3);
+                ToolTip(numericUpDownSlotsCount4, 0x00, KernelWorker.GetSelectedSlotsSetsData.Count4);
+                ToolTip(numericUpDownSlotsCount5, 0x00, KernelWorker.GetSelectedSlotsSetsData.Count5);
+                ToolTip(numericUpDownSlotsCount6, 0x00, KernelWorker.GetSelectedSlotsSetsData.Count6);
+                ToolTip(numericUpDownSlotsCount7, 0x00, KernelWorker.GetSelectedSlotsSetsData.Count7);
+                ToolTip(numericUpDownSlotsCount8, 0x00, KernelWorker.GetSelectedSlotsSetsData.Count8);
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadSlotsSets(listBoxSlotsSets.SelectedIndex, KernelWorker.Kernel);
             try
             {
                 comboBoxSlotsMagic1.SelectedIndex = KernelWorker.GetSelectedSlotsSetsData.Magic1;
@@ -5163,7 +5305,28 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadRinoaCommands(listBoxBatComRinoa.SelectedIndex);
+
+            KernelWorker.ReadRinoaCommands(listBoxBatComRinoa.SelectedIndex, KernelWorker.BackupKernel);
+
+            try
+            {
+                ToolTip(checkBoxBatComRinoaFlag1, 1, (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxBatComRinoaFlag2, 1, (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxBatComRinoaFlag3, 1, (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxBatComRinoaFlag4, 1, (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxBatComRinoaFlag5, 1, (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxBatComRinoaFlag6, 1, (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxBatComRinoaFlag7, 1, (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxBatComRinoaFlag8, 1, (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x80) >= 1 ? true : false);
+                ToolTip(numericUpDownBatComRinoaTarget, 0, KernelWorker.GetSelectedRinoaCommandsData.Target);
+                ToolTip(comboBoxBatComRinoaID, 2, comboBoxBatComRinoaID.Items[KernelWorker.GetSelectedRinoaCommandsData.AbilityID]);
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadRinoaCommands(listBoxBatComRinoa.SelectedIndex, KernelWorker.Kernel);
 
             try
             {                
