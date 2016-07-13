@@ -20500,7 +20500,7 @@
             this.tabControlMain.Controls.Add(this.tabPageBattleCommands);
             this.tabControlMain.Controls.Add(this.tabPageEnemyAttacks);
             this.tabControlMain.Controls.Add(this.tabPageMisc);
-            this.tabControlMain.Font = new System.Drawing.Font("Calisto MT", 14F);
+            this.tabControlMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.tabControlMain.ItemSize = new System.Drawing.Size(115, 30);
             this.tabControlMain.Location = new System.Drawing.Point(0, 52);
             this.tabControlMain.Name = "tabControlMain";

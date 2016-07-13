@@ -8,6 +8,7 @@ namespace Doomtrain
         #region DECLARATIONS
 
         public static byte[] Kernel;
+        public static byte[] BackupKernel;
 
         public static int MagicDataOffset = -1;
         public static int OffsetToMagicSelected = -1;
@@ -3785,7 +3786,7 @@ namespace Doomtrain
 
         #region CHARACTERS
 
-        public static void ReadCharacters(int CharactersID_List)
+        public static void ReadCharacters(int CharactersID_List, byte[] Kernel)
         {
             GetSelectedCharactersData = new CharactersData();
             int selectedCharactersOffset = CharactersDataOffset + (CharactersID_List * 36);

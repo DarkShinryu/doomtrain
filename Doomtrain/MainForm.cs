@@ -16,9 +16,11 @@ namespace Doomtrain
     public partial class mainForm : Form
     {
         public static bool _loaded = false;
+        private string _backup;
         public mainForm()
         {
             InitializeComponent();
+            _backup = $"{System.IO.Path.GetTempPath()}\\kernelbin.backup";
 
             #region DISABLING OBJECTS
 
@@ -1575,7 +1577,7 @@ namespace Doomtrain
         }
 
 
-        #region OPEN, SAVE, CLOSE, EXIT, TOOLBAR, ABOUT
+        #region OPEN, SAVE, CLOSE, EXIT, TOOLBAR, ABOUT, BACKUP
 
         public string existingFilename; //used for open/save stuff
         
@@ -1596,10 +1598,10 @@ namespace Doomtrain
                     {
                         KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
                     }
-
                     SlotArray();
                     DuelParams();
                     Misc();
+                    Backup();
                 }
                 
                 existingFilename = openFileDialog.FileName;
@@ -1676,6 +1678,22 @@ namespace Doomtrain
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new AboutBox().ShowDialog();
+        }
+
+        private void Backup()
+        {
+            if (_backup == null || KernelWorker.Kernel == null)
+                return;
+
+            if (!System.IO.File.Exists(_backup))
+            {
+                File.WriteAllBytes(_backup, KernelWorker.Kernel);
+                KernelWorker.BackupKernel = KernelWorker.Kernel;
+            }
+            else
+            {
+                KernelWorker.BackupKernel = File.ReadAllBytes(_backup);
+            }
         }
 
         #endregion
@@ -2836,7 +2854,73 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadCharacters(listBoxCharacters.SelectedIndex);
+
+            KernelWorker.ReadCharacters(listBoxCharacters.SelectedIndex, KernelWorker.BackupKernel);
+
+            try
+            {
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(comboBoxCharGender, $"Default: {comboBoxCharGender.Items[KernelWorker.GetSelectedCharactersData.Gender]}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.LimitID}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.LimitParam}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.EXP1}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.EXP2}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.HP1}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
+                /*numericUpDownCharLimitID.Value = KernelWorker.GetSelectedCharactersData.LimitID;
+                numericUpDownCharLimitParam.Value = KernelWorker.GetSelectedCharactersData.LimitParam;
+                numericUpDownCharEXP1.Value = KernelWorker.GetSelectedCharactersData.EXP1;
+                numericUpDownCharEXP2.Value = KernelWorker.GetSelectedCharactersData.EXP2;
+                numericUpDownCharHP1.Value = KernelWorker.GetSelectedCharactersData.HP1;
+                numericUpDownCharHP2.Value = KernelWorker.GetSelectedCharactersData.HP2;
+                numericUpDownCharHP3.Value = KernelWorker.GetSelectedCharactersData.HP3;
+                numericUpDownCharHP4.Value = KernelWorker.GetSelectedCharactersData.HP4;
+                numericUpDownCharSTR1.Value = KernelWorker.GetSelectedCharactersData.STR1;
+                numericUpDownCharSTR2.Value = KernelWorker.GetSelectedCharactersData.STR2;
+                numericUpDownCharSTR3.Value = KernelWorker.GetSelectedCharactersData.STR3;
+                numericUpDownCharSTR4.Value = KernelWorker.GetSelectedCharactersData.STR4;
+                numericUpDownCharVIT1.Value = KernelWorker.GetSelectedCharactersData.VIT1;
+                numericUpDownCharVIT2.Value = KernelWorker.GetSelectedCharactersData.VIT2;
+                numericUpDownCharVIT3.Value = KernelWorker.GetSelectedCharactersData.VIT3;
+                numericUpDownCharVIT4.Value = KernelWorker.GetSelectedCharactersData.VIT4;
+                numericUpDownCharMAG1.Value = KernelWorker.GetSelectedCharactersData.MAG1;
+                numericUpDownCharMAG2.Value = KernelWorker.GetSelectedCharactersData.MAG2;
+                numericUpDownCharMAG3.Value = KernelWorker.GetSelectedCharactersData.MAG3;
+                numericUpDownCharMAG4.Value = KernelWorker.GetSelectedCharactersData.MAG4;
+                numericUpDownCharSPR1.Value = KernelWorker.GetSelectedCharactersData.SPR1;
+                numericUpDownCharSPR2.Value = KernelWorker.GetSelectedCharactersData.SPR2;
+                numericUpDownCharSPR3.Value = KernelWorker.GetSelectedCharactersData.SPR3;
+                numericUpDownCharSPR4.Value = KernelWorker.GetSelectedCharactersData.SPR4;
+                numericUpDownCharSPD1.Value = KernelWorker.GetSelectedCharactersData.SPD1;
+                numericUpDownCharSPD2.Value = KernelWorker.GetSelectedCharactersData.SPD2;
+                numericUpDownCharSPD3.Value = KernelWorker.GetSelectedCharactersData.SPD3;
+                numericUpDownCharSPD4.Value = KernelWorker.GetSelectedCharactersData.SPD4;
+                numericUpDownCharLUCK1.Value = KernelWorker.GetSelectedCharactersData.LUCK1;
+                numericUpDownCharLUCK2.Value = KernelWorker.GetSelectedCharactersData.LUCK2;
+                numericUpDownCharLUCK3.Value = KernelWorker.GetSelectedCharactersData.LUCK3;
+                numericUpDownCharLUCK4.Value = KernelWorker.GetSelectedCharactersData.LUCK4;*/
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+
+            KernelWorker.ReadCharacters(listBoxCharacters.SelectedIndex, KernelWorker.Kernel);
 
             try
             {
@@ -2880,6 +2964,7 @@ namespace Doomtrain
             {
                 MessageBox.Show(Exception.ToString());
             }
+
             _loaded = true;
         }
 
