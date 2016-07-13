@@ -3499,52 +3499,100 @@ namespace Doomtrain
             return elem;
         }
 
-        private void RenzoFinStatusWorker()
+        private void RenzoFinStatusWorker(bool bBackup)
         {
-            checkBoxRenzoFinDeath.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x01) >= 1 ? true : false;
-            checkBoxRenzoFinPoison.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x02) >= 1 ? true : false;
-            checkBoxRenzoFinPetrify.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x04) >= 1 ? true : false;
-            checkBoxRenzoFinDarkness.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x08) >= 1 ? true : false;
-            checkBoxRenzoFinSilence.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x10) >= 1 ? true : false;
-            checkBoxRenzoFinBerserk.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x20) >= 1 ? true : false;
-            checkBoxRenzoFinZombie.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x40) >= 1 ? true : false;
-            checkBoxRenzoFinUnk7.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x80) >= 1 ? true : false;
+            if (!bBackup)
+            {
+                checkBoxRenzoFinDeath.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x01) >= 1 ? true : false;
+                checkBoxRenzoFinPoison.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x02) >= 1 ? true : false;
+                checkBoxRenzoFinPetrify.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x04) >= 1 ? true : false;
+                checkBoxRenzoFinDarkness.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x08) >= 1 ? true : false;
+                checkBoxRenzoFinSilence.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x10) >= 1 ? true : false;
+                checkBoxRenzoFinBerserk.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x20) >= 1 ? true : false;
+                checkBoxRenzoFinZombie.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x40) >= 1 ? true : false;
+                checkBoxRenzoFinUnk7.Checked = (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x80) >= 1 ? true : false;
 
-            checkBoxRenzoFinSleep.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x01) >= 1 ? true : false;
-            checkBoxRenzoFinHaste.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x02) >= 1 ? true : false;
-            checkBoxRenzoFinSlow.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x04) >= 1 ? true : false;
-            checkBoxRenzoFinStop.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x08) >= 1 ? true : false;
-            checkBoxRenzoFinRegen.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x10) >= 1 ? true : false;
-            checkBoxRenzoFinProtect.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x20) >= 1 ? true : false;
-            checkBoxRenzoFinShell.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x40) >= 1 ? true : false;
-            checkBoxRenzoFinReflect.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x80) >= 1 ? true : false;
+                checkBoxRenzoFinSleep.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x01) >= 1 ? true : false;
+                checkBoxRenzoFinHaste.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x02) >= 1 ? true : false;
+                checkBoxRenzoFinSlow.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x04) >= 1 ? true : false;
+                checkBoxRenzoFinStop.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x08) >= 1 ? true : false;
+                checkBoxRenzoFinRegen.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x10) >= 1 ? true : false;
+                checkBoxRenzoFinProtect.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x20) >= 1 ? true : false;
+                checkBoxRenzoFinShell.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x40) >= 1 ? true : false;
+                checkBoxRenzoFinReflect.Checked = (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x80) >= 1 ? true : false;
 
-            checkBoxRenzoFinAura.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x01) >= 1 ? true : false;
-            checkBoxRenzoFinCurse.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x02) >= 1 ? true : false;
-            checkBoxRenzoFinDoom.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x04) >= 1 ? true : false;
-            checkBoxRenzoFinInvincible.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x08) >= 1 ? true : false;
-            checkBoxRenzoFinPetrifying.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x10) >= 1 ? true : false;
-            checkBoxRenzoFinFloat.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x20) >= 1 ? true : false;
-            checkBoxRenzoFinConfusion.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x40) >= 1 ? true : false;
-            checkBoxRenzoFinDrain.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x80) >= 1 ? true : false;
+                checkBoxRenzoFinAura.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x01) >= 1 ? true : false;
+                checkBoxRenzoFinCurse.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x02) >= 1 ? true : false;
+                checkBoxRenzoFinDoom.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x04) >= 1 ? true : false;
+                checkBoxRenzoFinInvincible.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x08) >= 1 ? true : false;
+                checkBoxRenzoFinPetrifying.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x10) >= 1 ? true : false;
+                checkBoxRenzoFinFloat.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x20) >= 1 ? true : false;
+                checkBoxRenzoFinConfusion.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x40) >= 1 ? true : false;
+                checkBoxRenzoFinDrain.Checked = (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x80) >= 1 ? true : false;
 
-            checkBoxRenzoFinEject.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x01) >= 1 ? true : false;
-            checkBoxRenzoFinDouble.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x02) >= 1 ? true : false;
-            checkBoxRenzoFinTriple.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x04) >= 1 ? true : false;
-            checkBoxRenzoFinDefend.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x08) >= 1 ? true : false;
-            checkBoxRenzoFinUnk1.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x10) >= 1 ? true : false;
-            checkBoxRenzoFinUnk2.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x20) >= 1 ? true : false;
-            checkBoxRenzoFinCharged.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x40) >= 1 ? true : false;
-            checkBoxRenzoFinBackAttack.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x80) >= 1 ? true : false;
+                checkBoxRenzoFinEject.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x01) >= 1 ? true : false;
+                checkBoxRenzoFinDouble.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x02) >= 1 ? true : false;
+                checkBoxRenzoFinTriple.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x04) >= 1 ? true : false;
+                checkBoxRenzoFinDefend.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x08) >= 1 ? true : false;
+                checkBoxRenzoFinUnk1.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x10) >= 1 ? true : false;
+                checkBoxRenzoFinUnk2.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x20) >= 1 ? true : false;
+                checkBoxRenzoFinCharged.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x40) >= 1 ? true : false;
+                checkBoxRenzoFinBackAttack.Checked = (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x80) >= 1 ? true : false;
 
-            checkBoxRenzoFinVit0.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x01) >= 1 ? true : false;
-            checkBoxRenzoFinAngelWing.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x02) >= 1 ? true : false;
-            checkBoxRenzoFinUnk3.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x04) >= 1 ? true : false;
-            checkBoxRenzoFinUnk4.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x08) >= 1 ? true : false;
-            checkBoxRenzoFinUnk5.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x10) >= 1 ? true : false;
-            checkBoxRenzoFinUnk6.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x20) >= 1 ? true : false;
-            checkBoxRenzoFinHasMagic.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x40) >= 1 ? true : false;
-            checkBoxRenzoFinSummonGF.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x80) >= 1 ? true : false;
+                checkBoxRenzoFinVit0.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x01) >= 1 ? true : false;
+                checkBoxRenzoFinAngelWing.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x02) >= 1 ? true : false;
+                checkBoxRenzoFinUnk3.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x04) >= 1 ? true : false;
+                checkBoxRenzoFinUnk4.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x08) >= 1 ? true : false;
+                checkBoxRenzoFinUnk5.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x10) >= 1 ? true : false;
+                checkBoxRenzoFinUnk6.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x20) >= 1 ? true : false;
+                checkBoxRenzoFinHasMagic.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x40) >= 1 ? true : false;
+                checkBoxRenzoFinSummonGF.Checked = (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x80) >= 1 ? true : false;
+                return;
+            }
+            ToolTip(checkBoxRenzoFinDeath,1, (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinPoison, 1, (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinPetrify, 1, (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinDarkness, 1, (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinSilence, 1, (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinBerserk, 1, (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinZombie, 1, (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinUnk7, 1, (KernelWorker.GetSelectedRenzoFinData.Status1 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxRenzoFinSleep, 1, (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinHaste, 1, (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinSlow, 1, (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinStop, 1, (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinRegen, 1, (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinProtect, 1, (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinShell, 1, (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinReflect, 1, (KernelWorker.GetSelectedRenzoFinData.Status2 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxRenzoFinAura, 1, (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinCurse, 1, (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinDoom, 1, (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinInvincible, 1, (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinPetrifying, 1, (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinFloat, 1, (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinConfusion, 1, (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinDrain, 1, (KernelWorker.GetSelectedRenzoFinData.Status3 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxRenzoFinEject, 1, (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinDouble, 1, (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinTriple, 1, (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinDefend, 1, (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinUnk1, 1, (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinUnk2, 1, (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinCharged, 1, (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinBackAttack, 1, (KernelWorker.GetSelectedRenzoFinData.Status4 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxRenzoFinVit0, 1, (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinAngelWing, 1, (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinUnk3, 1, (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinUnk4, 1, (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinUnk5, 1, (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinUnk6, 1, (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinHasMagic, 1, (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxRenzoFinSummonGF, 1, (KernelWorker.GetSelectedRenzoFinData.Status5 & 0x80) >= 1 ? true : false);
         }
 
         private void listBoxRenzoFin_SelectedIndexChanged(object sender, EventArgs e)
@@ -3552,7 +3600,41 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadRenzoFin(listBoxRenzoFin.SelectedIndex);
+
+            KernelWorker.ReadRenzoFin(listBoxRenzoFin.SelectedIndex, KernelWorker.BackupKernel);
+            try
+            {
+                ToolTip(comboBoxRenzoFinMagicID,2,comboBoxRenzoFinMagicID.Items[ KernelWorker.GetSelectedRenzoFinData.MagicID]);
+                ToolTip(comboBoxRenzoFinAttackType, 2, comboBoxRenzoFinAttackType.Items[KernelWorker.GetSelectedRenzoFinData.AttackType]);
+                ToolTip(numericUpDownRenzoFinAttackPower,0,KernelWorker.GetSelectedRenzoFinData.AttackPower);
+                ToolTip(checkBoxRenzoFinTarget1,1,(KernelWorker.GetSelectedRenzoFinData.Target & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinTarget2, 1, (KernelWorker.GetSelectedRenzoFinData.Target & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinTarget3, 1, (KernelWorker.GetSelectedRenzoFinData.Target & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinTarget4, 1, (KernelWorker.GetSelectedRenzoFinData.Target & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinTarget5, 1, (KernelWorker.GetSelectedRenzoFinData.Target & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinTarget6, 1, (KernelWorker.GetSelectedRenzoFinData.Target & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinTarget7, 1, (KernelWorker.GetSelectedRenzoFinData.Target & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinTarget8, 1, (KernelWorker.GetSelectedRenzoFinData.Target & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinFlag1, 1, (KernelWorker.GetSelectedRenzoFinData.AttackFlags & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinFlag2, 1, (KernelWorker.GetSelectedRenzoFinData.AttackFlags & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinFlag3, 1, (KernelWorker.GetSelectedRenzoFinData.AttackFlags & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinFlag4, 1, (KernelWorker.GetSelectedRenzoFinData.AttackFlags & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinFlag5, 1, (KernelWorker.GetSelectedRenzoFinData.AttackFlags & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinFlag6, 1, (KernelWorker.GetSelectedRenzoFinData.AttackFlags & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinFlag7, 1, (KernelWorker.GetSelectedRenzoFinData.AttackFlags & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxRenzoFinFlag8, 1, (KernelWorker.GetSelectedRenzoFinData.AttackFlags & 0x80) >= 1 ? true : false);
+                ToolTip(numericUpDownRenzoFinHitCount,0,KernelWorker.GetSelectedRenzoFinData.HitCount);
+                ToolTip(comboBoxRenzoFinElement,2, comboBoxRenzoFinElement.Items[RenzoFin_GetElement()]);
+                ToolTip(numericUpDownRenzoFinElementPerc,0,KernelWorker.GetSelectedRenzoFinData.ElementPerc);
+                ToolTip(numericUpDownRenzoFinStatusAttack,0,KernelWorker.GetSelectedRenzoFinData.StatusAttack);
+                RenzoFinStatusWorker(true);
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadRenzoFin(listBoxRenzoFin.SelectedIndex, KernelWorker.Kernel);
             try
             {
                 comboBoxRenzoFinMagicID.SelectedIndex = KernelWorker.GetSelectedRenzoFinData.MagicID;                
@@ -3578,7 +3660,7 @@ namespace Doomtrain
                 comboBoxRenzoFinElement.SelectedIndex = RenzoFin_GetElement();
                 numericUpDownRenzoFinElementPerc.Value = KernelWorker.GetSelectedRenzoFinData.ElementPerc;
                 numericUpDownRenzoFinStatusAttack.Value = KernelWorker.GetSelectedRenzoFinData.StatusAttack;
-                RenzoFinStatusWorker();
+                RenzoFinStatusWorker(false);
             }
 
             catch (Exception Exception)
@@ -4841,7 +4923,76 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadMisc();
+            KernelWorker.ReadMisc(KernelWorker.BackupKernel);
+            try
+            {
+                ToolTip(numericUpDownStatusTimer1,0,KernelWorker.GetSelectedMiscData.StatusTimer1);
+                ToolTip(numericUpDownStatusTimer2, 0, KernelWorker.GetSelectedMiscData.StatusTimer2);
+                ToolTip(numericUpDownStatusTimer3, 0, KernelWorker.GetSelectedMiscData.StatusTimer3);
+                ToolTip(numericUpDownStatusTimer4, 0, KernelWorker.GetSelectedMiscData.StatusTimer4);
+                ToolTip(numericUpDownStatusTimer5, 0, KernelWorker.GetSelectedMiscData.StatusTimer5);
+                ToolTip(numericUpDownStatusTimer6, 0, KernelWorker.GetSelectedMiscData.StatusTimer6);
+                ToolTip(numericUpDownStatusTimer7, 0, KernelWorker.GetSelectedMiscData.StatusTimer7);
+                ToolTip(numericUpDownStatusTimer8, 0, KernelWorker.GetSelectedMiscData.StatusTimer8);
+                ToolTip(numericUpDownStatusTimer9, 0, KernelWorker.GetSelectedMiscData.StatusTimer9);
+                ToolTip(numericUpDownStatusTimer10, 0, KernelWorker.GetSelectedMiscData.StatusTimer10);
+                ToolTip(numericUpDownStatusTimer11, 0, KernelWorker.GetSelectedMiscData.StatusTimer11);
+                ToolTip(numericUpDownStatusTimer12, 0, KernelWorker.GetSelectedMiscData.StatusTimer12);
+                ToolTip(numericUpDownStatusTimer13, 0, KernelWorker.GetSelectedMiscData.StatusTimer13);
+                ToolTip(numericUpDownStatusTimer14, 0, KernelWorker.GetSelectedMiscData.StatusTimer14);
+                ToolTip(numericUpDownATBMult,0,KernelWorker.GetSelectedMiscData.ATB);
+                ToolTip(numericUpDownDeadTimer,0,KernelWorker.GetSelectedMiscData.DeadTimer);
+                ToolTip(numericUpDownStatusLimit1,0,KernelWorker.GetSelectedMiscData.StatusLimit1);
+                ToolTip(numericUpDownStatusLimit2, 0, KernelWorker.GetSelectedMiscData.StatusLimit2);
+                ToolTip(numericUpDownStatusLimit3, 0, KernelWorker.GetSelectedMiscData.StatusLimit3);
+                ToolTip(numericUpDownStatusLimit4, 0, KernelWorker.GetSelectedMiscData.StatusLimit4);
+                ToolTip(numericUpDownStatusLimit5, 0, KernelWorker.GetSelectedMiscData.StatusLimit5);
+                ToolTip(numericUpDownStatusLimit6, 0, KernelWorker.GetSelectedMiscData.StatusLimit6);
+                ToolTip(numericUpDownStatusLimit7, 0, KernelWorker.GetSelectedMiscData.StatusLimit7);
+                ToolTip(numericUpDownStatusLimit8, 0, KernelWorker.GetSelectedMiscData.StatusLimit8);
+                ToolTip(numericUpDownStatusLimit9, 0, KernelWorker.GetSelectedMiscData.StatusLimit9);
+                ToolTip(numericUpDownStatusLimit10, 0, KernelWorker.GetSelectedMiscData.StatusLimit10);
+                ToolTip(numericUpDownStatusLimit11, 0, KernelWorker.GetSelectedMiscData.StatusLimit11);
+                ToolTip(numericUpDownStatusLimit12, 0, KernelWorker.GetSelectedMiscData.StatusLimit12);
+                ToolTip(numericUpDownStatusLimit13, 0, KernelWorker.GetSelectedMiscData.StatusLimit13);
+                ToolTip(numericUpDownStatusLimit14, 0, KernelWorker.GetSelectedMiscData.StatusLimit14);
+                ToolTip(numericUpDownStatusLimit15, 0, KernelWorker.GetSelectedMiscData.StatusLimit15);
+                ToolTip(numericUpDownStatusLimit16, 0, KernelWorker.GetSelectedMiscData.StatusLimit16);
+                ToolTip(numericUpDownStatusLimit17, 0, KernelWorker.GetSelectedMiscData.StatusLimit17);
+                ToolTip(numericUpDownStatusLimit18, 0, KernelWorker.GetSelectedMiscData.StatusLimit18);
+                ToolTip(numericUpDownStatusLimit19, 0, KernelWorker.GetSelectedMiscData.StatusLimit19);
+                ToolTip(numericUpDownStatusLimit20, 0, KernelWorker.GetSelectedMiscData.StatusLimit20);
+                ToolTip(numericUpDownStatusLimit21, 0, KernelWorker.GetSelectedMiscData.StatusLimit21);
+                ToolTip(numericUpDownStatusLimit22, 0, KernelWorker.GetSelectedMiscData.StatusLimit22);
+                ToolTip(numericUpDownStatusLimit23, 0, KernelWorker.GetSelectedMiscData.StatusLimit23);
+                ToolTip(numericUpDownStatusLimit24, 0, KernelWorker.GetSelectedMiscData.StatusLimit24);
+                ToolTip(numericUpDownStatusLimit25, 0, KernelWorker.GetSelectedMiscData.StatusLimit25);
+                ToolTip(numericUpDownStatusLimit26, 0, KernelWorker.GetSelectedMiscData.StatusLimit26);
+                ToolTip(numericUpDownStatusLimit27, 0, KernelWorker.GetSelectedMiscData.StatusLimit27);
+                ToolTip(numericUpDownStatusLimit28, 0, KernelWorker.GetSelectedMiscData.StatusLimit28);
+                ToolTip(numericUpDownStatusLimit29, 0, KernelWorker.GetSelectedMiscData.StatusLimit29);
+                ToolTip(numericUpDownStatusLimit30, 0, KernelWorker.GetSelectedMiscData.StatusLimit30);
+                ToolTip(numericUpDownStatusLimit31, 0, KernelWorker.GetSelectedMiscData.StatusLimit31);
+                ToolTip(numericUpDownStatusLimit32, 0, KernelWorker.GetSelectedMiscData.StatusLimit32);
+                ToolTip(numericUpDownDuelTimer1,0,KernelWorker.GetSelectedMiscData.DuelTimerCL1);
+                ToolTip(numericUpDownDuelTimer2, 0, KernelWorker.GetSelectedMiscData.DuelTimerCL2);
+                ToolTip(numericUpDownDuelTimer3, 0, KernelWorker.GetSelectedMiscData.DuelTimerCL3);
+                ToolTip(numericUpDownDuelTimer4, 0, KernelWorker.GetSelectedMiscData.DuelTimerCL4);
+                ToolTip(numericUpDownDuelStart1,0,KernelWorker.GetSelectedMiscData.DuelSeqCL1);
+                ToolTip(numericUpDownDuelStart2, 0, KernelWorker.GetSelectedMiscData.DuelSeqCL2);
+                ToolTip(numericUpDownDuelStart3, 0, KernelWorker.GetSelectedMiscData.DuelSeqCL3);
+                ToolTip(numericUpDownDuelStart4, 0, KernelWorker.GetSelectedMiscData.DuelSeqCL4);
+                ToolTip(numericUpDownShotTimer1,0,KernelWorker.GetSelectedMiscData.ShotTimerCL1);
+                ToolTip(numericUpDownShotTimer2, 0, KernelWorker.GetSelectedMiscData.ShotTimerCL2);
+                ToolTip(numericUpDownShotTimer3, 0, KernelWorker.GetSelectedMiscData.ShotTimerCL3);
+                ToolTip(numericUpDownShotTimer4, 0, KernelWorker.GetSelectedMiscData.ShotTimerCL4);
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadMisc(KernelWorker.Kernel);
             try
             {
                 numericUpDownStatusTimer1.Value = KernelWorker.GetSelectedMiscData.StatusTimer1;
@@ -5075,7 +5226,37 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadJunctionAbilities(listBoxAbJun.SelectedIndex);
+            KernelWorker.ReadJunctionAbilities(listBoxAbJun.SelectedIndex, KernelWorker.BackupKernel);
+
+            try
+            {
+                ToolTip(numericUpDownAbJunAP,0,KernelWorker.GetSelectedJunctionAbilitiesData.AP);
+                ToolTip(checkBoxAbJunFlag1,1,(KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag2, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag3, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag4, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag5, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag6, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag7, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag8, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag9, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag10, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag11, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag12, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag13, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag14, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag15, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag16, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag2 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag17, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag3 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag18, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag3 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxAbJunFlag19, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag3 & 0x04) >= 1 ? true : false);
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadJunctionAbilities(listBoxAbJun.SelectedIndex, KernelWorker.Kernel);
 
             try
             {
@@ -5119,7 +5300,25 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadPartyAbilities(listBoxAbParty.SelectedIndex);
+            KernelWorker.ReadPartyAbilities(listBoxAbParty.SelectedIndex, KernelWorker.BackupKernel);
+
+            try
+            {
+                ToolTip(numericUpDownAbPartyAP,0,KernelWorker.GetSelectedPartyAbilitiesData.AP);
+                ToolTip(checkBoxAbPartyFlag1,1,(KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxAbPartyFlag2, 1, (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxAbPartyFlag3, 1, (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxAbPartyFlag4, 1, (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxAbPartyFlag5, 1, (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxAbPartyFlag6, 1, (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxAbPartyFlag7, 1, (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxAbPartyFlag8, 1, (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x80) >= 1 ? true : false);
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadPartyAbilities(listBoxAbParty.SelectedIndex, KernelWorker.Kernel);
 
             try
             {
@@ -5171,7 +5370,20 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadGFAbilities(listBoxAbGF.SelectedIndex);
+            KernelWorker.ReadGFAbilities(listBoxAbGF.SelectedIndex,KernelWorker.BackupKernel);
+
+            try
+            {
+                ToolTip(numericUpDownAbGFAP,0,KernelWorker.GetSelectedGFAbilitiesData.AP);
+                ToolTip(checkBoxAbGFBoost,1, (KernelWorker.GetSelectedGFAbilitiesData.EnableBoost & 0x01) >= 1 ? true : false);
+                ToolTip(comboBoxAbGFStatToIncrease,2,comboBoxAbGFStatToIncrease.Items[GFAbilities_GetStat()]);
+                ToolTip(trackBarAbGFIncrementValue,0, KernelWorker.GetSelectedGFAbilitiesData.IncrementValue);
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadGFAbilities(listBoxAbGF.SelectedIndex, KernelWorker.Kernel);
 
             try
             {
@@ -5247,7 +5459,20 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadMenuAbilities(listBoxAbMenu.SelectedIndex);
+            KernelWorker.ReadMenuAbilities(listBoxAbMenu.SelectedIndex, KernelWorker.BackupKernel);
+
+            try
+            {
+                ToolTip(numericUpDownAbMenuAP,0,KernelWorker.GetSelectedMenuAbilitiesData.AP);
+                ToolTip(numericUpDownAbMenuIndex,0,KernelWorker.GetSelectedMenuAbilitiesData.Index);
+                ToolTip(numericUpDownAbMenuStartOffset,0,KernelWorker.GetSelectedMenuAbilitiesData.StartOffset);
+                ToolTip(numericUpDownAbMenuEndOffset,0,KernelWorker.GetSelectedMenuAbilitiesData.EndOffset);
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadMenuAbilities(listBoxAbMenu.SelectedIndex, KernelWorker.Kernel);
 
             try
             {
@@ -5272,7 +5497,26 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadBattleCommands(listBoxBatCom.SelectedIndex);
+            KernelWorker.ReadBattleCommands(listBoxBatCom.SelectedIndex, KernelWorker.BackupKernel);
+
+            try
+            {
+                ToolTip(comboBoxBatComAbilityID,2,comboBoxBatComAbilityID.Items[KernelWorker.GetSelectedBattleCommandsData.AbilityID]);
+                ToolTip(checkBoxBatComFlag1,1,(KernelWorker.GetSelectedBattleCommandsData.Flag & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxBatComFlag2, 1, (KernelWorker.GetSelectedBattleCommandsData.Flag & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxBatComFlag3, 1, (KernelWorker.GetSelectedBattleCommandsData.Flag & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxBatComFlag4, 1, (KernelWorker.GetSelectedBattleCommandsData.Flag & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxBatComFlag5, 1, (KernelWorker.GetSelectedBattleCommandsData.Flag & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxBatComFlag6, 1, (KernelWorker.GetSelectedBattleCommandsData.Flag & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxBatComFlag7, 1, (KernelWorker.GetSelectedBattleCommandsData.Flag & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxBatComFlag8, 1, (KernelWorker.GetSelectedBattleCommandsData.Flag & 0x80) >= 1 ? true : false);
+                ToolTip(numericUpDownBatComTarget,0,KernelWorker.GetSelectedBattleCommandsData.Target);
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadBattleCommands(listBoxBatCom.SelectedIndex, KernelWorker.Kernel);
 
             try
             {
