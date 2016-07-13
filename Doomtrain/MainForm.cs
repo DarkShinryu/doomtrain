@@ -17,6 +17,10 @@ namespace Doomtrain
     {
         public static bool _loaded = false;
         private string _backup;
+        private const byte _bp_numerical = 0x00;
+        private const byte _bp_checked = 0x01;
+        private const byte _bp_string = 0x02;
+
         public mainForm()
         {
             InitializeComponent();
@@ -2103,7 +2107,32 @@ namespace Doomtrain
         */
         #endregion
 
-
+        #region BackupAlgorithm
+        private void ToolTip(Control control, byte mode, object value)
+        {
+            switch(mode)
+            {
+                case _bp_numerical:
+                    {
+                        toolTip1.SetToolTip(control, $"Default: {Convert.ToInt32(value)}");
+                        break;
+                    }
+                case _bp_checked:
+                    {
+                        string check = Convert.ToBoolean(value) ? "Checked" : "Unchecked";
+                        toolTip1.SetToolTip(control, $"Default: {check}");
+                        break;
+                    }
+                case _bp_string:
+                    {
+                        toolTip1.SetToolTip(control, $"Default: {Convert.ToString(value)}");
+                        break;
+                    }
+                default:
+                    goto case _bp_numerical;
+            }
+        }
+        #endregion
 
         #region MAGIC
 
@@ -3590,52 +3619,102 @@ namespace Doomtrain
             return elem;
         }
 
-        private void TempCharLBStatusWorker()
+        private void TempCharLBStatusWorker(bool bBackup)
         {
-            checkBoxTempCharLBDeath.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x01) >= 1 ? true : false;
-            checkBoxTempCharLBPoison.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x02) >= 1 ? true : false;
-            checkBoxTempCharLBPetrify.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x04) >= 1 ? true : false;
-            checkBoxTempCharLBDarkness.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x08) >= 1 ? true : false;
-            checkBoxTempCharLBSilence.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x10) >= 1 ? true : false;
-            checkBoxTempCharLBBerserk.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x20) >= 1 ? true : false;
-            checkBoxTempCharLBZombie.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x40) >= 1 ? true : false;
-            checkBoxTempCharLBUnk7.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x80) >= 1 ? true : false;
+            if (!bBackup)
+            {
+                checkBoxTempCharLBDeath.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x01) >= 1 ? true : false;
+                checkBoxTempCharLBPoison.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x02) >= 1 ? true : false;
+                checkBoxTempCharLBPetrify.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x04) >= 1 ? true : false;
+                checkBoxTempCharLBDarkness.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x08) >= 1 ? true : false;
+                checkBoxTempCharLBSilence.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x10) >= 1 ? true : false;
+                checkBoxTempCharLBBerserk.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x20) >= 1 ? true : false;
+                checkBoxTempCharLBZombie.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x40) >= 1 ? true : false;
+                checkBoxTempCharLBUnk7.Checked = (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x80) >= 1 ? true : false;
 
-            checkBoxTempCharLBSleep.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x01) >= 1 ? true : false;
-            checkBoxTempCharLBHaste.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x02) >= 1 ? true : false;
-            checkBoxTempCharLBSlow.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x04) >= 1 ? true : false;
-            checkBoxTempCharLBStop.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x08) >= 1 ? true : false;
-            checkBoxTempCharLBRegen.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x10) >= 1 ? true : false;
-            checkBoxTempCharLBProtect.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x20) >= 1 ? true : false;
-            checkBoxTempCharLBShell.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x40) >= 1 ? true : false;
-            checkBoxTempCharLBReflect.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x80) >= 1 ? true : false;
+                checkBoxTempCharLBSleep.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x01) >= 1 ? true : false;
+                checkBoxTempCharLBHaste.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x02) >= 1 ? true : false;
+                checkBoxTempCharLBSlow.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x04) >= 1 ? true : false;
+                checkBoxTempCharLBStop.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x08) >= 1 ? true : false;
+                checkBoxTempCharLBRegen.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x10) >= 1 ? true : false;
+                checkBoxTempCharLBProtect.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x20) >= 1 ? true : false;
+                checkBoxTempCharLBShell.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x40) >= 1 ? true : false;
+                checkBoxTempCharLBReflect.Checked = (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x80) >= 1 ? true : false;
 
-            checkBoxTempCharLBAura.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x01) >= 1 ? true : false;
-            checkBoxTempCharLBCurse.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x02) >= 1 ? true : false;
-            checkBoxTempCharLBDoom.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x04) >= 1 ? true : false;
-            checkBoxTempCharLBInvincible.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x08) >= 1 ? true : false;
-            checkBoxTempCharLBPetrifying.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x10) >= 1 ? true : false;
-            checkBoxTempCharLBFloat.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x20) >= 1 ? true : false;
-            checkBoxTempCharLBConfusion.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x40) >= 1 ? true : false;
-            checkBoxTempCharLBDrain.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x80) >= 1 ? true : false;
+                checkBoxTempCharLBAura.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x01) >= 1 ? true : false;
+                checkBoxTempCharLBCurse.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x02) >= 1 ? true : false;
+                checkBoxTempCharLBDoom.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x04) >= 1 ? true : false;
+                checkBoxTempCharLBInvincible.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x08) >= 1 ? true : false;
+                checkBoxTempCharLBPetrifying.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x10) >= 1 ? true : false;
+                checkBoxTempCharLBFloat.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x20) >= 1 ? true : false;
+                checkBoxTempCharLBConfusion.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x40) >= 1 ? true : false;
+                checkBoxTempCharLBDrain.Checked = (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x80) >= 1 ? true : false;
 
-            checkBoxTempCharLBEject.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x01) >= 1 ? true : false;
-            checkBoxTempCharLBDouble.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x02) >= 1 ? true : false;
-            checkBoxTempCharLBTriple.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x04) >= 1 ? true : false;
-            checkBoxTempCharLBDefend.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x08) >= 1 ? true : false;
-            checkBoxTempCharLBUnk1.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x10) >= 1 ? true : false;
-            checkBoxTempCharLBUnk2.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x20) >= 1 ? true : false;
-            checkBoxTempCharLBCharged.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x40) >= 1 ? true : false;
-            checkBoxTempCharLBBackAttack.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x80) >= 1 ? true : false;
+                checkBoxTempCharLBEject.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x01) >= 1 ? true : false;
+                checkBoxTempCharLBDouble.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x02) >= 1 ? true : false;
+                checkBoxTempCharLBTriple.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x04) >= 1 ? true : false;
+                checkBoxTempCharLBDefend.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x08) >= 1 ? true : false;
+                checkBoxTempCharLBUnk1.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x10) >= 1 ? true : false;
+                checkBoxTempCharLBUnk2.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x20) >= 1 ? true : false;
+                checkBoxTempCharLBCharged.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x40) >= 1 ? true : false;
+                checkBoxTempCharLBBackAttack.Checked = (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x80) >= 1 ? true : false;
 
-            checkBoxTempCharLBVit0.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x01) >= 1 ? true : false;
-            checkBoxTempCharLBAngelWing.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x02) >= 1 ? true : false;
-            checkBoxTempCharLBUnk3.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x04) >= 1 ? true : false;
-            checkBoxTempCharLBUnk4.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x08) >= 1 ? true : false;
-            checkBoxTempCharLBUnk5.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x10) >= 1 ? true : false;
-            checkBoxTempCharLBUnk6.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x20) >= 1 ? true : false;
-            checkBoxTempCharLBHasMagic.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x40) >= 1 ? true : false;
-            checkBoxTempCharLBSummonGF.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x80) >= 1 ? true : false;
+                checkBoxTempCharLBVit0.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x01) >= 1 ? true : false;
+                checkBoxTempCharLBAngelWing.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x02) >= 1 ? true : false;
+                checkBoxTempCharLBUnk3.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x04) >= 1 ? true : false;
+                checkBoxTempCharLBUnk4.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x08) >= 1 ? true : false;
+                checkBoxTempCharLBUnk5.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x10) >= 1 ? true : false;
+                checkBoxTempCharLBUnk6.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x20) >= 1 ? true : false;
+                checkBoxTempCharLBHasMagic.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x40) >= 1 ? true : false;
+                checkBoxTempCharLBSummonGF.Checked = (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x80) >= 1 ? true : false;
+            }
+            else
+            {
+                ToolTip(checkBoxTempCharLBDeath, 0x01,(KernelWorker.GetSelectedTempCharLBData.Status1 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBPoison, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBPetrify, 0x01,  (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBDarkness, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBSilence, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBBerserk, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBZombie, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBUnk7, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status1 & 0x80) >= 1 ? true : false);
+
+                ToolTip(checkBoxTempCharLBSleep, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBHaste, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBSlow, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBStop, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBRegen, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBProtect, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBShell, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBReflect, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status2 & 0x80) >= 1 ? true : false);
+
+                ToolTip(checkBoxTempCharLBAura, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBCurse, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBDoom, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBInvincible, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBPetrifying, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBFloat, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBConfusion, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBDrain, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status3 & 0x80) >= 1 ? true : false);
+
+                ToolTip(checkBoxTempCharLBEject, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBDouble, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBTriple, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBDefend, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBUnk1, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBUnk2, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBCharged, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBBackAttack, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status4 & 0x80) >= 1 ? true : false);
+
+                ToolTip(checkBoxTempCharLBVit0, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBAngelWing, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBUnk3, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBUnk4, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBUnk5, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBUnk6, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBHasMagic, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBSummonGF, 0x01, (KernelWorker.GetSelectedTempCharLBData.Status5 & 0x80) >= 1 ? true : false);
+            }
         }
 
         private void listBoxTempCharLB_SelectedIndexChanged(object sender, EventArgs e)
@@ -3644,7 +3723,43 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadTempCharLB(listBoxTempCharLB.SelectedIndex);
+
+            KernelWorker.ReadTempCharLB(listBoxTempCharLB.SelectedIndex, KernelWorker.BackupKernel);
+            try
+            {
+                toolTip1.SetToolTip(comboBoxTempCharLBMagicID, $"Default: {comboBoxTempCharLBMagicID.Items[KernelWorker.GetSelectedTempCharLBData.MagicID]}");
+                toolTip1.SetToolTip(comboBoxTempCharLBAttackType, $"Default: {comboBoxTempCharLBMagicID.Items[KernelWorker.GetSelectedTempCharLBData.AttackType]}");
+                toolTip1.SetToolTip(numericUpDownTempCharLBAttackPower, $"Default: {KernelWorker.GetSelectedTempCharLBData.AttackPower}");
+                string check = (KernelWorker.GetSelectedTempCharLBData.Target & 0x01) >= 1 ? "Checked" : "Unchecked";
+                toolTip1.SetToolTip(checkBoxTempCharLBTarget1, $"Default: {check}");
+                ToolTip(checkBoxTempCharLBTarget2,_bp_checked,(KernelWorker.GetSelectedTempCharLBData.Target & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBTarget3, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBTarget4, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBTarget5, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBTarget6, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBTarget7, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBTarget8, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBFlag1, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBFlag2, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBFlag3, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBFlag4, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBFlag5, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBFlag6, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBFlag7, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxTempCharLBFlag8, _bp_checked, (KernelWorker.GetSelectedTempCharLBData.Target & 0x80) >= 1 ? true : false);
+                ToolTip(numericUpDownTempCharLBHitCount, 0x00, KernelWorker.GetSelectedTempCharLBData.HitCount);
+                ToolTip(comboBoxTempCharLBElement, _bp_string, comboBoxTempCharLBElement.Items[TempCharLB_GetElement()]);
+                ToolTip(numericUpDownTempCharLBElementPerc, 0x00,KernelWorker.GetSelectedTempCharLBData.ElementPerc);
+                ToolTip(numericUpDownTempCharLBStatusAttack, 0x00,KernelWorker.GetSelectedTempCharLBData.StatusAttack);
+                TempCharLBStatusWorker(true);
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+
+            KernelWorker.ReadTempCharLB(listBoxTempCharLB.SelectedIndex, KernelWorker.Kernel);
             try
             {
                 comboBoxTempCharLBMagicID.SelectedIndex = KernelWorker.GetSelectedTempCharLBData.MagicID;
@@ -3670,7 +3785,7 @@ namespace Doomtrain
                 comboBoxTempCharLBElement.SelectedIndex = TempCharLB_GetElement();
                 numericUpDownTempCharLBElementPerc.Value = KernelWorker.GetSelectedTempCharLBData.ElementPerc;
                 numericUpDownTempCharLBStatusAttack.Value = KernelWorker.GetSelectedTempCharLBData.StatusAttack;
-                TempCharLBStatusWorker();
+                TempCharLBStatusWorker(false);
             }
 
             catch (Exception Exception)
