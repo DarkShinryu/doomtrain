@@ -2812,12 +2812,28 @@ namespace Doomtrain
 
         #region WEAPONS
 
-        private void RenzokukenFinishersWorker()
+        private void RenzokukenFinishersWorker(bool bBackup)
         {
-            checkBoxWeaponsRenzoFinRough.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x01) >= 1 ? true : false;
-            checkBoxWeaponsRenzoFinFated.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x02) >= 1 ? true : false;
-            checkBoxWeaponsRenzoFinBlasting.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x04) >= 1 ? true : false;
-            checkBoxWeaponsRenzoFinLion.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x08) >= 1 ? true : false;
+            if (bBackup)
+            {
+                string check;
+                check = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x01) >= 1 ? "Checked" : "Unchecked";
+                toolTip1.SetToolTip(checkBoxWeaponsRenzoFinRough, $"Default: {check}");
+                check = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x02) >= 1 ? "Checked" : "Unchecked";
+                toolTip1.SetToolTip(checkBoxWeaponsRenzoFinFated, $"Default: {check}");
+                check = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x04) >= 1 ? "Checked" : "Unchecked";
+                toolTip1.SetToolTip(checkBoxWeaponsRenzoFinBlasting, $"Default: {check}");
+                check = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x08) >= 1 ? "Checked" : "Unchecked";
+                toolTip1.SetToolTip(checkBoxWeaponsRenzoFinLion, $"Default: {check}");
+            }
+            else
+            {
+                checkBoxWeaponsRenzoFinRough.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x01) >= 1 ? true : false;
+                checkBoxWeaponsRenzoFinFated.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x02) >= 1 ? true : false;
+                checkBoxWeaponsRenzoFinBlasting.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x04) >= 1 ? true : false;
+                checkBoxWeaponsRenzoFinLion.Checked = (KernelWorker.GetSelectedWeaponsData.RenzokukenFinishers & 0x08) >= 1 ? true : false;
+            }
+            
         }
 
 
@@ -2826,11 +2842,29 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadWeapons(listBoxWeapons.SelectedIndex);
+
+            KernelWorker.ReadWeapons(listBoxWeapons.SelectedIndex, KernelWorker.BackupKernel);
 
             try
             {
-                RenzokukenFinishersWorker();
+                RenzokukenFinishersWorker(true);
+                toolTip1.SetToolTip(comboBoxWeaponsCharacterID, $"Default: {comboBoxWeaponsCharacterID.Items[KernelWorker.GetSelectedWeaponsData.CharacterID]}");
+                toolTip1.SetToolTip(numericUpDownWeaponsAttackPower, $"Default: {KernelWorker.GetSelectedWeaponsData.AttackPower}");
+                toolTip1.SetToolTip(numericUpDownWeaponsHITBonus, $"Default: {KernelWorker.GetSelectedWeaponsData.HITBonus}");
+                toolTip1.SetToolTip(numericUpDownWeaponsSTRBonus, $"Default: {KernelWorker.GetSelectedWeaponsData.STRBonus}");
+                toolTip1.SetToolTip(numericUpDownWeaponsTier, $"Default: {KernelWorker.GetSelectedWeaponsData.Tier}");
+            }
+
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+
+            KernelWorker.ReadWeapons(listBoxWeapons.SelectedIndex, KernelWorker.Kernel);
+
+            try
+            {
+                RenzokukenFinishersWorker(false);
                 comboBoxWeaponsCharacterID.SelectedIndex = KernelWorker.GetSelectedWeaponsData.CharacterID;
                 numericUpDownWeaponsAttackPower.Value = KernelWorker.GetSelectedWeaponsData.AttackPower;
                 numericUpDownWeaponsHITBonus.Value = KernelWorker.GetSelectedWeaponsData.HITBonus;
@@ -2861,58 +2895,38 @@ namespace Doomtrain
             {
                 toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
                 toolTip1.SetToolTip(comboBoxCharGender, $"Default: {comboBoxCharGender.Items[KernelWorker.GetSelectedCharactersData.Gender]}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.LimitID}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.LimitParam}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.EXP1}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.EXP2}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.HP1}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
-                /*numericUpDownCharLimitID.Value = KernelWorker.GetSelectedCharactersData.LimitID;
-                numericUpDownCharLimitParam.Value = KernelWorker.GetSelectedCharactersData.LimitParam;
-                numericUpDownCharEXP1.Value = KernelWorker.GetSelectedCharactersData.EXP1;
-                numericUpDownCharEXP2.Value = KernelWorker.GetSelectedCharactersData.EXP2;
-                numericUpDownCharHP1.Value = KernelWorker.GetSelectedCharactersData.HP1;
-                numericUpDownCharHP2.Value = KernelWorker.GetSelectedCharactersData.HP2;
-                numericUpDownCharHP3.Value = KernelWorker.GetSelectedCharactersData.HP3;
-                numericUpDownCharHP4.Value = KernelWorker.GetSelectedCharactersData.HP4;
-                numericUpDownCharSTR1.Value = KernelWorker.GetSelectedCharactersData.STR1;
-                numericUpDownCharSTR2.Value = KernelWorker.GetSelectedCharactersData.STR2;
-                numericUpDownCharSTR3.Value = KernelWorker.GetSelectedCharactersData.STR3;
-                numericUpDownCharSTR4.Value = KernelWorker.GetSelectedCharactersData.STR4;
-                numericUpDownCharVIT1.Value = KernelWorker.GetSelectedCharactersData.VIT1;
-                numericUpDownCharVIT2.Value = KernelWorker.GetSelectedCharactersData.VIT2;
-                numericUpDownCharVIT3.Value = KernelWorker.GetSelectedCharactersData.VIT3;
-                numericUpDownCharVIT4.Value = KernelWorker.GetSelectedCharactersData.VIT4;
-                numericUpDownCharMAG1.Value = KernelWorker.GetSelectedCharactersData.MAG1;
-                numericUpDownCharMAG2.Value = KernelWorker.GetSelectedCharactersData.MAG2;
-                numericUpDownCharMAG3.Value = KernelWorker.GetSelectedCharactersData.MAG3;
-                numericUpDownCharMAG4.Value = KernelWorker.GetSelectedCharactersData.MAG4;
-                numericUpDownCharSPR1.Value = KernelWorker.GetSelectedCharactersData.SPR1;
-                numericUpDownCharSPR2.Value = KernelWorker.GetSelectedCharactersData.SPR2;
-                numericUpDownCharSPR3.Value = KernelWorker.GetSelectedCharactersData.SPR3;
-                numericUpDownCharSPR4.Value = KernelWorker.GetSelectedCharactersData.SPR4;
-                numericUpDownCharSPD1.Value = KernelWorker.GetSelectedCharactersData.SPD1;
-                numericUpDownCharSPD2.Value = KernelWorker.GetSelectedCharactersData.SPD2;
-                numericUpDownCharSPD3.Value = KernelWorker.GetSelectedCharactersData.SPD3;
-                numericUpDownCharSPD4.Value = KernelWorker.GetSelectedCharactersData.SPD4;
-                numericUpDownCharLUCK1.Value = KernelWorker.GetSelectedCharactersData.LUCK1;
-                numericUpDownCharLUCK2.Value = KernelWorker.GetSelectedCharactersData.LUCK2;
-                numericUpDownCharLUCK3.Value = KernelWorker.GetSelectedCharactersData.LUCK3;
-                numericUpDownCharLUCK4.Value = KernelWorker.GetSelectedCharactersData.LUCK4;*/
+                toolTip1.SetToolTip(numericUpDownCharLimitID, $"Default: {KernelWorker.GetSelectedCharactersData.LimitID}");
+                toolTip1.SetToolTip(numericUpDownCharLimitParam, $"Default: {KernelWorker.GetSelectedCharactersData.LimitParam}");
+                toolTip1.SetToolTip(numericUpDownCharEXP1, $"Default: {KernelWorker.GetSelectedCharactersData.EXP1}");
+                toolTip1.SetToolTip(numericUpDownCharEXP2, $"Default: {KernelWorker.GetSelectedCharactersData.EXP2}");
+                toolTip1.SetToolTip(numericUpDownCharHP1, $"Default: {KernelWorker.GetSelectedCharactersData.HP1}");
+                toolTip1.SetToolTip(numericUpDownCharHP2, $"Default: {KernelWorker.GetSelectedCharactersData.HP2}");
+                toolTip1.SetToolTip(numericUpDownCharHP3, $"Default: {KernelWorker.GetSelectedCharactersData.HP3}");
+                toolTip1.SetToolTip(numericUpDownCharHP4, $"Default: {KernelWorker.GetSelectedCharactersData.HP4}");
+                toolTip1.SetToolTip(numericUpDownCharSTR1, $"Default: {KernelWorker.GetSelectedCharactersData.STR1}");
+                toolTip1.SetToolTip(numericUpDownCharSTR2, $"Default: {KernelWorker.GetSelectedCharactersData.STR2}");
+                toolTip1.SetToolTip(numericUpDownCharSTR3, $"Default: {KernelWorker.GetSelectedCharactersData.STR3}");
+                toolTip1.SetToolTip(numericUpDownCharSTR4, $"Default: {KernelWorker.GetSelectedCharactersData.STR4}");
+                toolTip1.SetToolTip(numericUpDownCharVIT1, $"Default: {KernelWorker.GetSelectedCharactersData.VIT1}");
+                toolTip1.SetToolTip(numericUpDownCharVIT2, $"Default: {KernelWorker.GetSelectedCharactersData.VIT2}");
+                toolTip1.SetToolTip(numericUpDownCharVIT3, $"Default: {KernelWorker.GetSelectedCharactersData.VIT3}");
+                toolTip1.SetToolTip(numericUpDownCharVIT4, $"Default: {KernelWorker.GetSelectedCharactersData.VIT4}");
+                toolTip1.SetToolTip(numericUpDownCharMAG1, $"Default: {KernelWorker.GetSelectedCharactersData.MAG1}");
+                toolTip1.SetToolTip(numericUpDownCharMAG2, $"Default: {KernelWorker.GetSelectedCharactersData.MAG2}");
+                toolTip1.SetToolTip(numericUpDownCharMAG3, $"Default: {KernelWorker.GetSelectedCharactersData.MAG3}");
+                toolTip1.SetToolTip(numericUpDownCharMAG4, $"Default: {KernelWorker.GetSelectedCharactersData.MAG4}");
+                toolTip1.SetToolTip(numericUpDownCharSTR1, $"Default: {KernelWorker.GetSelectedCharactersData.SPR1}");
+                toolTip1.SetToolTip(numericUpDownCharSTR2, $"Default: {KernelWorker.GetSelectedCharactersData.SPR2}");
+                toolTip1.SetToolTip(numericUpDownCharSTR3, $"Default: {KernelWorker.GetSelectedCharactersData.SPR3}");
+                toolTip1.SetToolTip(numericUpDownCharSTR4, $"Default: {KernelWorker.GetSelectedCharactersData.SPR4}");
+                toolTip1.SetToolTip(numericUpDownCharVIT1, $"Default: {KernelWorker.GetSelectedCharactersData.SPD1}");
+                toolTip1.SetToolTip(numericUpDownCharVIT2, $"Default: {KernelWorker.GetSelectedCharactersData.SPD2}");
+                toolTip1.SetToolTip(numericUpDownCharVIT3, $"Default: {KernelWorker.GetSelectedCharactersData.SPD3}");
+                toolTip1.SetToolTip(numericUpDownCharVIT4, $"Default: {KernelWorker.GetSelectedCharactersData.SPD4}");
+                toolTip1.SetToolTip(numericUpDownCharMAG1, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK1}");
+                toolTip1.SetToolTip(numericUpDownCharMAG2, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK2}");
+                toolTip1.SetToolTip(numericUpDownCharMAG3, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK3}");
+                toolTip1.SetToolTip(numericUpDownCharMAG4, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK4}");
             }
 
             catch (Exception Exception)
