@@ -182,6 +182,7 @@
     <None Include="Resources\doomtrainbig.png" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\mainTabFont.ttf" />
     <None Include="Resources\saveas.png" />
   </ItemGroup>
   <ItemGroup>

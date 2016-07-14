@@ -3,6 +3,9 @@ using System.Windows.Forms;
 using System.IO;
 using Doomtrain.Characters_Stats_Charts;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Drawing;
+using System.Drawing.Text;
 
 namespace Doomtrain
 {
@@ -13,6 +16,12 @@ namespace Doomtrain
         private const byte _bp_numerical = 0x00;
         private const byte _bp_checked = 0x01;
         private const byte _bp_string = 0x02;
+
+        //For loading fonts
+        [DllImport("gdi32.dll")]
+        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont, IntPtr pdv, [In] ref uint pcFonts);
+        FontFamily ff;
+        Font font;
 
         public mainForm()
         {
@@ -2083,25 +2092,50 @@ namespace Doomtrain
             }
         }
 
-
-        /*DISABLE ELEMENT% WHEN NON-ELEMENTAL IS SELECTED                                    --- opted out for now
-        private void comboBoxShotElement_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-            if (comboBoxShotElement.SelectedIndex == 8)
-            {
-                numericUpDownShotElementPerc.Value = 0;
-                numericUpDownShotElementPerc.Enabled = false;
-            }
-            else
-            {
-                numericUpDownShotElementPerc.Enabled = true;
-            }           
-        }
-        */
         #endregion
 
-        #region BackupAlgorithm
+        #region FONTS
+
+        private void LoadPrivateFontCollection()
+        {
+            // Create the byte array and get its length
+            byte[] fontArray = Properties.Resources.mainTabFont;
+            int dataLength = Properties.Resources.mainTabFont.Length;
+
+            // ASSIGN MEMORY AND COPY  BYTE[] ON THAT MEMORY ADDRESS
+            IntPtr ptrData = Marshal.AllocCoTaskMem(dataLength);
+            Marshal.Copy(fontArray, 0, ptrData, dataLength);
+
+            uint cFonts = 0;
+            AddFontMemResourceEx(ptrData, (uint)fontArray.Length, IntPtr.Zero, ref cFonts);
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            //PASS THE FONT TO THE  PRIVATEFONTCOLLECTION OBJECT
+            pfc.AddMemoryFont(ptrData, dataLength);
+
+            //FREE THE "UNSAFE" MEMORY
+            Marshal.FreeCoTaskMem(ptrData);
+
+            ff = pfc.Families[0];
+            font = new Font(ff, 23f, FontStyle.Regular);
+        }
+
+        private void LoadTabControlMainFont(Font font)
+        {
+            FontStyle fontStyle = FontStyle.Regular;
+            tabControlMain.Font = new Font(ff, 13, fontStyle);
+        }
+
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+            LoadPrivateFontCollection();
+            LoadTabControlMainFont(font);
+        }
+
+        #endregion
+
+        #region BACKUP ALGORITHM
+
         private void ToolTip(Control control, byte mode, object value)
         {
             switch(mode)
@@ -2131,7 +2165,9 @@ namespace Doomtrain
                     goto case _bp_numerical;
             }
         }
+
         #endregion
+
 
         #region MAGIC
 
@@ -6978,6 +7014,7 @@ namespace Doomtrain
             }
             _loaded = true;
         }
+
 
         #endregion
 
