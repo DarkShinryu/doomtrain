@@ -8,6 +8,7 @@ namespace Doomtrain
         #region DECLARATIONS
 
         public static byte[] Kernel;
+        public static byte[] BackupKernel;
 
         public static int MagicDataOffset = -1;
         public static int OffsetToMagicSelected = -1;
@@ -3452,7 +3453,7 @@ namespace Doomtrain
 
         #region MAGIC
 
-        public static void ReadMagic(int MagicID_List)
+        public static void ReadMagic(int MagicID_List, byte[] Kernel)
         {
 
             GetSelectedMagicData = new MagicData();
@@ -3558,7 +3559,7 @@ namespace Doomtrain
 
         #region J-GF
 
-        public static void ReadGF(int GFID_List)
+        public static void ReadGF(int GFID_List, byte[] Kernel)
         {
             GetSelectedGFData = new GFData();
             int selectedGfOffset = GFDataOffset + (GFID_List * 132);
@@ -3716,7 +3717,7 @@ namespace Doomtrain
 
         #region NJ-GF
 
-        public static void ReadGFAttacks(int GFAttacksID_List)
+        public static void ReadGFAttacks(int GFAttacksID_List, byte[] Kernel)
         {
             GetSelectedGFAttacksData = new GFAttacksData();
             int selectedGfAttacksOffset = GFAttacksDataOffset + (GFAttacksID_List * 20);
@@ -3765,7 +3766,7 @@ namespace Doomtrain
 
         #region WEAPONS
 
-        public static void ReadWeapons(int WeaponsID_List)
+        public static void ReadWeapons(int WeaponsID_List, byte[] Kernel)
         {
             GetSelectedWeaponsData = new WeaponsData();
             int selectedWeaponsOffset = WeaponsDataOffset + (WeaponsID_List * 12);
@@ -3785,7 +3786,7 @@ namespace Doomtrain
 
         #region CHARACTERS
 
-        public static void ReadCharacters(int CharactersID_List)
+        public static void ReadCharacters(int CharactersID_List, byte[] Kernel)
         {
             GetSelectedCharactersData = new CharactersData();
             int selectedCharactersOffset = CharactersDataOffset + (CharactersID_List * 36);
@@ -3832,7 +3833,7 @@ namespace Doomtrain
 
         #region ENEMY ATTACKS
 
-        public static void ReadEnemyAttacks(int EnemyAttacksID_List)
+        public static void ReadEnemyAttacks(int EnemyAttacksID_List, byte[] Kernel)
         {
             GetSelectedEnemyAttacksData = new EnemyAttacksData();
             int selectedEnemyAttacksOffset = EnemyAttacksDataOffset + (EnemyAttacksID_List * 20);
@@ -3880,7 +3881,7 @@ namespace Doomtrain
 
         #region BLUE MAGIC
 
-        public static void ReadBlueMagic(int BlueMagicID_List)
+        public static void ReadBlueMagic(int BlueMagicID_List, byte[] Kernel)
         {
             GetSelectedBlueMagicData = new BlueMagicData();
             int selectedBlueMagicOffset = BlueMagicDataOffset + (BlueMagicID_List * 16);
@@ -3916,7 +3917,7 @@ namespace Doomtrain
             GetSelectedBlueMagicData.StatusAttack = Kernel[selectedBlueMagicOffset++];
         }
 
-        public static void ReadBlueMagicParam(int BlueMagicParamID_List)
+        public static void ReadBlueMagicParam(int BlueMagicParamID_List, byte[] Kernel)
         {
             GetSelectedBlueMagicParamData = new BlueMagicParamData();
             int selectedBlueMagicParamOffset = BlueMagicParamDataOffset + (BlueMagicParamID_List * 32); //pretending the section is 32 bytes instead of 8
@@ -3963,7 +3964,7 @@ namespace Doomtrain
 
         #region STAT PERCENTAGE ABILITIES
 
-        public static void ReadStatPercentageAbilities(int StatPercentageAbilitiesID_List)
+        public static void ReadStatPercentageAbilities(int StatPercentageAbilitiesID_List, byte[] Kernel)
         {
             GetSelectedStatPercentageAbilitiesData = new StatPercentageAbilitiesData();
             int selectedStatPercentageAbilitiesOffset = StatPercentageAbilitiesDataOffset + (StatPercentageAbilitiesID_List * 8);
@@ -3979,7 +3980,7 @@ namespace Doomtrain
 
         #region RENZOKUKEN FINISHERS
 
-        public static void ReadRenzoFin(int RenzoFinID_List)
+        public static void ReadRenzoFin(int RenzoFinID_List, byte[] Kernel)
         {
             GetSelectedRenzoFinData = new RenzoFinData();
             int selectedRenzoFinOffset = RenzoFinDataOffset + (RenzoFinID_List * 24);
@@ -4030,7 +4031,7 @@ namespace Doomtrain
 
         #region TEMP CHARACTERS LIMIT BREAKS
 
-        public static void ReadTempCharLB(int TempCharLBID_List)
+        public static void ReadTempCharLB(int TempCharLBID_List, byte[] Kernel)
         {
             GetSelectedTempCharLBData = new TempCharLBData();
             int selectedTempCharLBOffset = TempCharLBDataOffset + (TempCharLBID_List * 24);
@@ -4079,7 +4080,7 @@ namespace Doomtrain
 
         #region SHOT
 
-        public static void ReadShot(int ShotID_List)
+        public static void ReadShot(int ShotID_List, byte[] Kernel)
         {
             GetSelectedShotData = new ShotData();
             int selectedShotOffset = ShotDataOffset + (ShotID_List * 24);
@@ -4130,7 +4131,7 @@ namespace Doomtrain
 
         #region DUEL
 
-        public static void ReadDuel(int DuelID_List)
+        public static void ReadDuel(int DuelID_List, byte[] Kernel)
         {
             GetSelectedDuelData = new DuelData();
             int selectedDuelOffset = DuelDataOffset + (DuelID_List * 32);
@@ -4186,7 +4187,7 @@ namespace Doomtrain
             GetSelectedDuelData.Status5 = Kernel[selectedDuelOffset++];
         }
 
-        public static void ReadDuelParams()
+        public static void ReadDuelParams(byte[] Kernel)
         {
             GetSelectedDuelParamsData = new DuelParamsData();
             int selectedDuelParamsOffset = DuelParamsDataOffset;
@@ -4298,7 +4299,7 @@ namespace Doomtrain
 
         #region COMBINE
 
-        public static void ReadCombine(int CombineID_List)
+        public static void ReadCombine(int CombineID_List, byte[] Kernel)
         {
             GetSelectedCombineData = new CombineData();
             int selectedCombineOffset = CombineDataOffset + (CombineID_List * 20);
@@ -4348,7 +4349,7 @@ namespace Doomtrain
 
         #region BATTLE ITEMS
 
-        public static void ReadBattleItems(int BattleItemsID_List)
+        public static void ReadBattleItems(int BattleItemsID_List, byte[] Kernel)
         {
             GetSelectedBattleItemsData = new BattleItemsData();
             BattleItemsID_List++; //skip dummy entry
@@ -4400,7 +4401,7 @@ namespace Doomtrain
 
         #region SLOT
 
-        public static void ReadSlotArray()
+        public static void ReadSlotArray(byte[] Kernel)
         {
             GetSelectedSlotArrayData = new SlotArrayData();
             int selectedSlotArrayOffset = SlotArrayDataOffset;
@@ -4468,7 +4469,7 @@ namespace Doomtrain
             GetSelectedSlotArrayData.SlotArray60 = Kernel[selectedSlotArrayOffset++];
         }
 
-        public static void ReadSlotsSets(int SlotsSetsID_List)
+        public static void ReadSlotsSets(int SlotsSetsID_List, byte[] Kernel)
         {
             GetSelectedSlotsSetsData = new SlotsSetsData();
             int selectedSlotsSetsOffset = SlotsSetsDataOffset + (SlotsSetsID_List * 16);
@@ -4496,7 +4497,7 @@ namespace Doomtrain
 
         #region DEVOUR
 
-        public static void ReadDevour(int DevourID_List)
+        public static void ReadDevour(int DevourID_List, byte[] Kernel)
         {
             GetSelectedDevourData = new DevourData();
             int selectedDevourOffset = DevourDataOffset + (DevourID_List * 12);
@@ -4525,7 +4526,7 @@ namespace Doomtrain
 
         #region MISC
 
-        public static void ReadMisc()
+        public static void ReadMisc(byte[] Kernel)
         {
             GetSelectedMiscData = new MiscData();
             int selectedMiscOffset = MiscDataOffset;
@@ -4597,7 +4598,7 @@ namespace Doomtrain
 
         #region COMMAND ABILITY DATA
 
-        public static void ReadCommandAbilityData(int CommandAbilityDataID_List)
+        public static void ReadCommandAbilityData(int CommandAbilityDataID_List, byte[] Kernel)
         {
             GetSelectedCommandAbilityDataData = new CommandAbilityDataData();
             int selectedCommandAbilityDataDataOffset = CommandAbilityDataDataOffset + (CommandAbilityDataID_List * 16);
@@ -4643,7 +4644,7 @@ namespace Doomtrain
 
         #region COMMAND ABILITY
 
-        public static void ReadCommandAbility(int CommandAbilityID_List)
+        public static void ReadCommandAbility(int CommandAbilityID_List, byte[] Kernel)
         {
             GetSelectedCommandAbilityData = new CommandAbilityData();
             int selectedCommandAbilityDataOffset = CommandAbilityDataOffset + (CommandAbilityID_List * 8);
@@ -4658,7 +4659,7 @@ namespace Doomtrain
 
         #region JUNCTION ABILITIES
 
-        public static void ReadJunctionAbilities(int JunctionAbilitiesID_List)
+        public static void ReadJunctionAbilities(int JunctionAbilitiesID_List, byte[] Kernel)
         {
             GetSelectedJunctionAbilitiesData = new JunctionAbilitiesData();
             JunctionAbilitiesID_List++; //skip dummy entry
@@ -4676,7 +4677,7 @@ namespace Doomtrain
 
         #region PARTY ABILITIES
 
-        public static void ReadPartyAbilities(int PartyAbilitiesID_List)
+        public static void ReadPartyAbilities(int PartyAbilitiesID_List, byte[] Kernel)
         {
             GetSelectedPartyAbilitiesData = new PartyAbilitiesData();
             int selectedPartyAbilitiesOffset = PartyAbilitiesDataOffset + (PartyAbilitiesID_List * 8);
@@ -4691,7 +4692,7 @@ namespace Doomtrain
 
         #region GF ABILITIES
 
-        public static void ReadGFAbilities(int GFAbilitiesID_List)
+        public static void ReadGFAbilities(int GFAbilitiesID_List, byte[] Kernel)
         {
             GetSelectedGFAbilitiesData = new GFAbilitiesData();
             int selectedGFAbilitiesOffset = GFAbilitiesDataOffset + (GFAbilitiesID_List * 8);
@@ -4716,7 +4717,7 @@ namespace Doomtrain
 
         #region CHARACTER ABILITIES
 
-        public static void ReadCharacterAbilities(int CharacterAbilitiesID_List)
+        public static void ReadCharacterAbilities(int CharacterAbilitiesID_List, byte[] Kernel)
         {
             GetSelectedCharacterAbilitiesData = new CharacterAbilitiesData();
             int selectedCharacterAbilitiesOffset = CharacterAbilitiesDataOffset + (CharacterAbilitiesID_List * 8);
@@ -4733,7 +4734,7 @@ namespace Doomtrain
 
         #region MENU ABILITIES
 
-        public static void ReadMenuAbilities(int MenuAbilitiesID_List)
+        public static void ReadMenuAbilities(int MenuAbilitiesID_List, byte[] Kernel)
         {
             GetSelectedMenuAbilitiesData = new MenuAbilitiesData();
             int selectedMenuAbilitiesOffset = MenuAbilitiesDataOffset + (MenuAbilitiesID_List * 8);
@@ -4750,7 +4751,7 @@ namespace Doomtrain
 
         #region BATTLE COMMANDS
 
-        public static void ReadBattleCommands(int BattleCommandsID_List)
+        public static void ReadBattleCommands(int BattleCommandsID_List, byte[] Kernel)
         {
             GetSelectedBattleCommandsData = new BattleCommandsData();
             BattleCommandsID_List++; //skip dummy entry
@@ -4767,7 +4768,7 @@ namespace Doomtrain
 
         #region RINOA COMMANDS
 
-        public static void ReadRinoaCommands(int RinoaCommandsID_List)
+        public static void ReadRinoaCommands(int RinoaCommandsID_List, byte[] Kernel)
         {
             GetSelectedRinoaCommandsData = new RinoaCommandsData();
             int selectedRinoaCommandsOffset = RinoaCommandsDataOffset + (RinoaCommandsID_List * 8);
