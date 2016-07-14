@@ -1676,6 +1676,7 @@ namespace Doomtrain
             new AboutBox().ShowDialog();
         }
 
+        //BACKUP
         private void Backup()
         {
             if (_backup == null || KernelWorker.Kernel == null)
@@ -2269,7 +2270,7 @@ namespace Doomtrain
         private void listBoxMagic_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadMagic(listBoxMagic.SelectedIndex, KernelWorker.BackupKernel);
             try
@@ -2904,7 +2905,7 @@ namespace Doomtrain
         private void listBoxGF_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadGF(listBoxGF.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -3227,7 +3228,7 @@ namespace Doomtrain
         private void listBoxGFAttacks_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadGFAttacks(listBoxGFAttacks.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -3316,7 +3317,7 @@ namespace Doomtrain
         private void listBoxWeapons_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
 
             KernelWorker.ReadWeapons(listBoxWeapons.SelectedIndex, KernelWorker.BackupKernel);
@@ -3362,7 +3363,7 @@ namespace Doomtrain
         private void listBoxCharacters_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
 
             KernelWorker.ReadCharacters(listBoxCharacters.SelectedIndex, KernelWorker.BackupKernel);
@@ -3391,18 +3392,18 @@ namespace Doomtrain
                 toolTip1.SetToolTip(numericUpDownCharMAG2, $"Default: {KernelWorker.GetSelectedCharactersData.MAG2}");
                 toolTip1.SetToolTip(numericUpDownCharMAG3, $"Default: {KernelWorker.GetSelectedCharactersData.MAG3}");
                 toolTip1.SetToolTip(numericUpDownCharMAG4, $"Default: {KernelWorker.GetSelectedCharactersData.MAG4}");
-                toolTip1.SetToolTip(numericUpDownCharSTR1, $"Default: {KernelWorker.GetSelectedCharactersData.SPR1}");
-                toolTip1.SetToolTip(numericUpDownCharSTR2, $"Default: {KernelWorker.GetSelectedCharactersData.SPR2}");
-                toolTip1.SetToolTip(numericUpDownCharSTR3, $"Default: {KernelWorker.GetSelectedCharactersData.SPR3}");
-                toolTip1.SetToolTip(numericUpDownCharSTR4, $"Default: {KernelWorker.GetSelectedCharactersData.SPR4}");
-                toolTip1.SetToolTip(numericUpDownCharVIT1, $"Default: {KernelWorker.GetSelectedCharactersData.SPD1}");
-                toolTip1.SetToolTip(numericUpDownCharVIT2, $"Default: {KernelWorker.GetSelectedCharactersData.SPD2}");
-                toolTip1.SetToolTip(numericUpDownCharVIT3, $"Default: {KernelWorker.GetSelectedCharactersData.SPD3}");
-                toolTip1.SetToolTip(numericUpDownCharVIT4, $"Default: {KernelWorker.GetSelectedCharactersData.SPD4}");
-                toolTip1.SetToolTip(numericUpDownCharMAG1, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK1}");
-                toolTip1.SetToolTip(numericUpDownCharMAG2, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK2}");
-                toolTip1.SetToolTip(numericUpDownCharMAG3, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK3}");
-                toolTip1.SetToolTip(numericUpDownCharMAG4, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK4}");
+                toolTip1.SetToolTip(numericUpDownCharSPR1, $"Default: {KernelWorker.GetSelectedCharactersData.SPR1}");
+                toolTip1.SetToolTip(numericUpDownCharSPR2, $"Default: {KernelWorker.GetSelectedCharactersData.SPR2}");
+                toolTip1.SetToolTip(numericUpDownCharSPR3, $"Default: {KernelWorker.GetSelectedCharactersData.SPR3}");
+                toolTip1.SetToolTip(numericUpDownCharSPR4, $"Default: {KernelWorker.GetSelectedCharactersData.SPR4}");
+                toolTip1.SetToolTip(numericUpDownCharSPD1, $"Default: {KernelWorker.GetSelectedCharactersData.SPD1}");
+                toolTip1.SetToolTip(numericUpDownCharSPD2, $"Default: {KernelWorker.GetSelectedCharactersData.SPD2}");
+                toolTip1.SetToolTip(numericUpDownCharSPD3, $"Default: {KernelWorker.GetSelectedCharactersData.SPD3}");
+                toolTip1.SetToolTip(numericUpDownCharSPD4, $"Default: {KernelWorker.GetSelectedCharactersData.SPD4}");
+                toolTip1.SetToolTip(numericUpDownCharLUCK1, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK1}");
+                toolTip1.SetToolTip(numericUpDownCharLUCK2, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK2}");
+                toolTip1.SetToolTip(numericUpDownCharLUCK3, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK3}");
+                toolTip1.SetToolTip(numericUpDownCharLUCK4, $"Default: {KernelWorker.GetSelectedCharactersData.LUCK4}");
             }
 
             catch (Exception Exception)
@@ -3603,7 +3604,7 @@ namespace Doomtrain
         private void listBoxEnemyAttacks_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadEnemyAttacks(listBoxEnemyAttacks.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -4076,7 +4077,7 @@ namespace Doomtrain
         private void listBoxBlueMagic_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
 
             KernelWorker.ReadBlueMagic(listBoxBlueMagic.SelectedIndex, KernelWorker.BackupKernel);
@@ -4166,7 +4167,7 @@ namespace Doomtrain
         private void listBoxAbStats_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
 
             KernelWorker.ReadStatPercentageAbilities(listBoxAbStats.SelectedIndex, KernelWorker.BackupKernel);
@@ -4342,7 +4343,7 @@ namespace Doomtrain
         private void listBoxRenzoFin_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
 
             KernelWorker.ReadRenzoFin(listBoxRenzoFin.SelectedIndex, KernelWorker.BackupKernel);
@@ -4561,7 +4562,7 @@ namespace Doomtrain
         {
 
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
 
             KernelWorker.ReadTempCharLB(listBoxTempCharLB.SelectedIndex, KernelWorker.BackupKernel);
@@ -4731,7 +4732,7 @@ namespace Doomtrain
         private void listBoxShot_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadShot(listBoxShot.SelectedIndex, KernelWorker.BackupKernel);
             try
@@ -4951,7 +4952,7 @@ namespace Doomtrain
         private void listBoxDuel_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadDuel(listBoxDuel.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -5033,7 +5034,7 @@ namespace Doomtrain
         private void DuelParams()
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadDuelParams(KernelWorker.BackupKernel);
             try
@@ -5406,7 +5407,7 @@ namespace Doomtrain
         private void listBoxCombine_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadCombine(listBoxCombine.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -5629,7 +5630,7 @@ namespace Doomtrain
         private void listBoxBattleItems_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadBattleItems(listBoxBattleItems.SelectedIndex, KernelWorker.BackupKernel);
             try
@@ -5705,7 +5706,7 @@ namespace Doomtrain
         private void SlotArray()
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadSlotArray(KernelWorker.BackupKernel);
             try
@@ -5857,7 +5858,7 @@ namespace Doomtrain
         private void listBoxSlotsSets_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadSlotsSets(listBoxSlotsSets.SelectedIndex, KernelWorker.BackupKernel);
             try
@@ -6033,7 +6034,7 @@ namespace Doomtrain
         private void listBoxDevour_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadDevour(listBoxDevour.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -6093,7 +6094,7 @@ namespace Doomtrain
         private void Misc()
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadMisc(KernelWorker.BackupKernel);
             try
@@ -6382,7 +6383,7 @@ namespace Doomtrain
         private void listBoxAbComData_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadCommandAbilityData(listBoxAbComData.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -6446,7 +6447,7 @@ namespace Doomtrain
         private void listBoxAbCom_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadCommandAbility(listBoxAbCom.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -6480,7 +6481,7 @@ namespace Doomtrain
         private void listBoxAbJun_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadJunctionAbilities(listBoxAbJun.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -6554,7 +6555,7 @@ namespace Doomtrain
         private void listBoxAbParty_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadPartyAbilities(listBoxAbParty.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -6624,7 +6625,7 @@ namespace Doomtrain
         private void listBoxAbGF_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadGFAbilities(listBoxAbGF.SelectedIndex,KernelWorker.BackupKernel);
 
@@ -6664,7 +6665,7 @@ namespace Doomtrain
         private void listBoxAbChar_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadCharacterAbilities(listBoxAbChar.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -6748,7 +6749,7 @@ namespace Doomtrain
         private void listBoxAbMenu_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadMenuAbilities(listBoxAbMenu.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -6786,7 +6787,7 @@ namespace Doomtrain
         private void listBoxBatCom_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
             KernelWorker.ReadBattleCommands(listBoxBatCom.SelectedIndex, KernelWorker.BackupKernel);
 
@@ -6838,7 +6839,7 @@ namespace Doomtrain
         private void listBoxBatComRinoa_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
-            if (KernelWorker.Kernel == null)
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
 
             KernelWorker.ReadRinoaCommands(listBoxBatComRinoa.SelectedIndex, KernelWorker.BackupKernel);
