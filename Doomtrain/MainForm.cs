@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.IO;
 using Doomtrain.Characters_Stats_Charts;
+using System.Collections.Generic;
 
 namespace Doomtrain
 {
@@ -1594,10 +1595,10 @@ namespace Doomtrain
                     {
                         KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
                     }
+                    Backup();
                     SlotArray();
                     DuelParams();
                     Misc();
-                    Backup();
                 }
                 
                 existingFilename = openFileDialog.FileName;
@@ -2584,6 +2585,7 @@ namespace Doomtrain
 
         private void BackupStatusHoldWorker(byte State, byte Element = 0, ushort Stat = 0, byte Status2 = 0, byte Status3 = 0, byte Status4 = 0, byte Status5 = 0)
         {
+            //List<Control> 
             if (State == 0)
             {
                 switch (Element)
@@ -2592,125 +2594,214 @@ namespace Doomtrain
                         goto default;
                     case 0x01:
                         ToolTip(radioButtonJElemAttackFire,1,true);
+                        ToolTip(radioButtonJElemAttackIce, 1, false);
+                        ToolTip(radioButtonJElemAttackThunder, 1, false);
+                        ToolTip(radioButtonJElemAttackEarth, 1, false);
+                        ToolTip(radioButtonJElemAttackPoison, 1, false);
+                        ToolTip(radioButtonJElemAttackWind, 1, false);
+                        ToolTip(radioButtonJElemAttackWater, 1, false);
+                        ToolTip(radioButtonJElemAttackHoly, 1, false);
+                        ToolTip(radioButtonJElemAttackNElem, 1, false);
                         return;
                     case 0x02:
-                        ToolTip(radioButtonJElemAttackIce,1,true);
+                        ToolTip(radioButtonJElemAttackFire, 1, false);
+                        ToolTip(radioButtonJElemAttackIce, 1, true);
+                        ToolTip(radioButtonJElemAttackThunder, 1, false);
+                        ToolTip(radioButtonJElemAttackEarth, 1, false);
+                        ToolTip(radioButtonJElemAttackPoison, 1, false);
+                        ToolTip(radioButtonJElemAttackWind, 1, false);
+                        ToolTip(radioButtonJElemAttackWater, 1, false);
+                        ToolTip(radioButtonJElemAttackHoly, 1, false);
+                        ToolTip(radioButtonJElemAttackNElem, 1, false);
                         return;
                     case 0x04:
+                        ToolTip(radioButtonJElemAttackFire, 1, false);
+                        ToolTip(radioButtonJElemAttackIce, 1, false);
                         ToolTip(radioButtonJElemAttackThunder, 1, true);
+                        ToolTip(radioButtonJElemAttackEarth, 1, false);
+                        ToolTip(radioButtonJElemAttackPoison, 1, false);
+                        ToolTip(radioButtonJElemAttackWind, 1, false);
+                        ToolTip(radioButtonJElemAttackWater, 1, false);
+                        ToolTip(radioButtonJElemAttackHoly, 1, false);
+                        ToolTip(radioButtonJElemAttackNElem, 1, false);
                         return;
                     case 0x08:
+                        ToolTip(radioButtonJElemAttackFire, 1, false);
+                        ToolTip(radioButtonJElemAttackIce, 1, false);
+                        ToolTip(radioButtonJElemAttackThunder, 1, false);
                         ToolTip(radioButtonJElemAttackEarth, 1, true);
+                        ToolTip(radioButtonJElemAttackPoison, 1, false);
+                        ToolTip(radioButtonJElemAttackWind, 1, false);
+                        ToolTip(radioButtonJElemAttackWater, 1, false);
+                        ToolTip(radioButtonJElemAttackHoly, 1, false);
+                        ToolTip(radioButtonJElemAttackNElem, 1, false);
                         return;
                     case 0x10:
+                        ToolTip(radioButtonJElemAttackFire, 1, false);
+                        ToolTip(radioButtonJElemAttackIce, 1, false);
+                        ToolTip(radioButtonJElemAttackThunder, 1, false);
+                        ToolTip(radioButtonJElemAttackEarth, 1, false);
                         ToolTip(radioButtonJElemAttackPoison, 1, true);
+                        ToolTip(radioButtonJElemAttackWind, 1, false);
+                        ToolTip(radioButtonJElemAttackWater, 1, false);
+                        ToolTip(radioButtonJElemAttackHoly, 1, false);
+                        ToolTip(radioButtonJElemAttackNElem, 1, false);
                         return;
                     case 0x20:
+                        ToolTip(radioButtonJElemAttackFire, 1, false);
+                        ToolTip(radioButtonJElemAttackIce, 1, false);
+                        ToolTip(radioButtonJElemAttackThunder, 1, false);
+                        ToolTip(radioButtonJElemAttackEarth, 1, false);
+                        ToolTip(radioButtonJElemAttackPoison, 1, false);
                         ToolTip(radioButtonJElemAttackWind, 1, true);
+                        ToolTip(radioButtonJElemAttackWater, 1, false);
+                        ToolTip(radioButtonJElemAttackHoly, 1, false);
+                        ToolTip(radioButtonJElemAttackNElem, 1, false);
                         return;
                     case 0x40:
+                        ToolTip(radioButtonJElemAttackFire, 1, false);
+                        ToolTip(radioButtonJElemAttackIce, 1, false);
+                        ToolTip(radioButtonJElemAttackThunder, 1, false);
+                        ToolTip(radioButtonJElemAttackEarth, 1, false);
+                        ToolTip(radioButtonJElemAttackPoison, 1, false);
+                        ToolTip(radioButtonJElemAttackWind, 1, false);
                         ToolTip(radioButtonJElemAttackWater, 1, true);
+                        ToolTip(radioButtonJElemAttackHoly, 1, false);
+                        ToolTip(radioButtonJElemAttackNElem, 1, false);
                         return;
                     case 0x80:
+                        ToolTip(radioButtonJElemAttackFire, 1, false);
+                        ToolTip(radioButtonJElemAttackIce, 1, false);
+                        ToolTip(radioButtonJElemAttackThunder, 1, false);
+                        ToolTip(radioButtonJElemAttackEarth, 1, false);
+                        ToolTip(radioButtonJElemAttackPoison, 1, false);
+                        ToolTip(radioButtonJElemAttackWind, 1, false);
+                        ToolTip(radioButtonJElemAttackWater, 1, false);
                         ToolTip(radioButtonJElemAttackHoly, 1, true);
+                        ToolTip(radioButtonJElemAttackNElem, 1, false);
                         return;
                     default:
-                        ToolTip(radioButtonJElemAttackNElem ,1, true);
+                        ToolTip(radioButtonJElemAttackFire, 1, false);
+                        ToolTip(radioButtonJElemAttackIce, 1, false);
+                        ToolTip(radioButtonJElemAttackThunder, 1, false);
+                        ToolTip(radioButtonJElemAttackEarth, 1, false);
+                        ToolTip(radioButtonJElemAttackPoison, 1, false);
+                        ToolTip(radioButtonJElemAttackWind, 1, false);
+                        ToolTip(radioButtonJElemAttackWater, 1, false);
+                        ToolTip(radioButtonJElemAttackHoly, 1, false);
+                        ToolTip(radioButtonJElemAttackNElem, 1, true);
                         return;
                 }
             }
             if (State == 1)
             {
                 if ((Element & 0x01) > 0)
-                {
                     ToolTip(checkBoxJElemDefenseFire, 1, true);
-                }
+                else ToolTip(checkBoxJElemDefenseFire, 1, false);
                 if ((Element & 0x02) > 0)
-                {
                     ToolTip(checkBoxJElemDefenseIce, 1, true);
-                }
+                else ToolTip(checkBoxJElemDefenseIce, 1, false);
                 if ((Element & 0x04) > 0)
-                {
                     ToolTip(checkBoxJElemDefenseThunder, 1, true);
-                }
+                else ToolTip(checkBoxJElemDefenseThunder, 1, false);
                 if ((Element & 0x08) > 0)
-                {
                     ToolTip(checkBoxJElemDefenseEarth, 1, true);
-                }
+                else ToolTip(checkBoxJElemDefenseEarth, 1, false);
                 if ((Element & 0x10) > 0)
-                {
                     ToolTip(checkBoxJElemDefensePoison, 1, true);
-                }
+                else ToolTip(checkBoxJElemDefensePoison, 1, false);
                 if ((Element & 0x20) > 0)
-                {
                     ToolTip(checkBoxJElemDefenseWind, 1, true);
-                }
+                else ToolTip(checkBoxJElemDefenseWind, 1, false);
                 if ((Element & 0x40) > 0)
-                {
                     ToolTip(checkBoxJElemDefenseWater, 1, true);
-                }
+                else ToolTip(checkBoxJElemDefenseWater, 1, false);
                 if ((Element & 0x80) > 0)
-                {
                     ToolTip(checkBoxJElemDefenseHoly, 1, true);
-                }
+                else ToolTip(checkBoxJElemDefenseHoly, 1, false);
 
             }
 
             if (State == 2)
             {
                 if ((Stat & 0x0001) > 0)
-                    ToolTip(checkBoxJStatAttackDeath, 1, true); //DEATH
+                    ToolTip(checkBoxJStatAttackDeath, 1, true); 
+                else ToolTip(checkBoxJStatAttackDeath, 1, false);
                 if ((Stat & 0x0002) > 0)
-                    ToolTip(checkBoxJStatAttackPoison, 1, true); //POISON
+                    ToolTip(checkBoxJStatAttackPoison, 1, true); 
+                else ToolTip(checkBoxJStatAttackPoison, 1, false);
                 if ((Stat & 0x0004) > 0)
-                    ToolTip(checkBoxJStatAttackPetrify, 1, true); //PETRIFY
+                    ToolTip(checkBoxJStatAttackPetrify, 1, true);
+                else ToolTip(checkBoxJStatAttackPetrify, 1, false);
                 if ((Stat & 0x0008) > 0)
-                    ToolTip(checkBoxJStatAttackDarkness, 1, true); //DARKNESS
+                    ToolTip(checkBoxJStatAttackDarkness, 1, true); 
+                else ToolTip(checkBoxJStatAttackDarkness, 1, false);
                 if ((Stat & 0x0010) > 0)
-                    ToolTip(checkBoxJStatAttackSilence, 1, true); //SILENCE
+                    ToolTip(checkBoxJStatAttackSilence, 1, true);
+                else ToolTip(checkBoxJStatAttackSilence, 1, false);
                 if ((Stat & 0x0020) > 0)
-                    ToolTip(checkBoxJStatAttackBerserk, 1, true); //BERSERK
+                    ToolTip(checkBoxJStatAttackBerserk, 1, true);
+                else ToolTip(checkBoxJStatAttackBerserk, 1, false);
                 if ((Stat & 0x0040) > 0)
-                    ToolTip(checkBoxJStatAttackZombie, 1, true); //ZOMBIE
+                    ToolTip(checkBoxJStatAttackZombie, 1, true);
+                else ToolTip(checkBoxJStatAttackZombie, 1, false);
                 if ((Stat & 0x0080) > 0)
-                    ToolTip(checkBoxJStatAttackSleep, 1, true); //SLEEP
+                    ToolTip(checkBoxJStatAttackSleep, 1, true);
+                else ToolTip(checkBoxJStatAttackSleep, 1, false);
                 if ((Stat & 0x0100) > 0)
-                    ToolTip(checkBoxJStatAttackSlow, 1, true); //SLOW
+                    ToolTip(checkBoxJStatAttackSlow, 1, true);
+                else ToolTip(checkBoxJStatAttackSlow, 1, false);
                 if ((Stat & 0x0200) > 0)
-                    ToolTip(checkBoxJStatAttackStop, 1, true); //STOP
+                    ToolTip(checkBoxJStatAttackStop, 1, true);
+                else ToolTip(checkBoxJStatAttackStop, 1, false);
                 if ((Stat & 0x0800) > 0)
-                    ToolTip(checkBoxJStatAttackConfusion, 1, true); //CONFUSE
+                    ToolTip(checkBoxJStatAttackConfusion, 1, true);
+                else ToolTip(checkBoxJStatAttackConfusion, 1, false);
                 if ((Stat & 0x1000) > 0)
-                    ToolTip(checkBoxJStatAttackDrain, 1, true); //DRAIN
+                    ToolTip(checkBoxJStatAttackDrain, 1, true);
+                else ToolTip(checkBoxJStatAttackDrain, 1, false);
             }
             if (State == 3)
             {
                 if ((Stat & 0x01) > 0)
-                    ToolTip(checkBoxJStatDefenseDeath, 1, true); //DEATH
+                    ToolTip(checkBoxJStatDefenseDeath, 1, true);
+                else ToolTip(checkBoxJStatDefenseDeath, 1, false);
                 if ((Stat & 0x02) > 0)
-                    ToolTip(checkBoxJStatDefensePoison, 1, true); //POISON
+                    ToolTip(checkBoxJStatDefensePoison, 1, true);
+                else ToolTip(checkBoxJStatDefensePoison, 1, false);
                 if ((Stat & 0x04) > 0)
-                    ToolTip(checkBoxJStatDefensePetrify, 1, true); //PETRIFY
+                    ToolTip(checkBoxJStatDefensePetrify, 1, true);
+                else ToolTip(checkBoxJStatDefensePetrify, 1, false);
                 if ((Stat & 0x08) > 0)
-                    ToolTip(checkBoxJStatDefenseDarnkess, 1, true); //DARKNESS
+                    ToolTip(checkBoxJStatDefenseDarnkess, 1, true); //Darnkess? :D
+                else ToolTip(checkBoxJStatDefenseDarnkess, 1, false);
                 if ((Stat & 0x10) > 0)
-                    ToolTip(checkBoxJStatDefenseSilence, 1, true); //SILENCE
+                    ToolTip(checkBoxJStatDefenseSilence, 1, true);
+                else ToolTip(checkBoxJStatDefenseSilence, 1, false);
                 if ((Stat & 0x20) > 0)
-                    ToolTip(checkBoxJStatDefenseBerserk, 1, true); //BERSERK
+                    ToolTip(checkBoxJStatDefenseBerserk, 1, true);
+                else ToolTip(checkBoxJStatDefenseBerserk, 1, false);
                 if ((Stat & 0x40) > 0)
-                    ToolTip(checkBoxJStatDefenseZombie, 1, true); //ZOMBIE
+                    ToolTip(checkBoxJStatDefenseZombie, 1, true);
+                else ToolTip(checkBoxJStatDefenseZombie, 1, false);
                 if ((Stat & 0x80) > 0)
-                    ToolTip(checkBoxJStatDefenseSleep, 1, true); //SLEEP
+                    ToolTip(checkBoxJStatDefenseSleep, 1, true);
+                else ToolTip(checkBoxJStatDefenseSleep, 1, false);
                 if ((Stat & 0x100) > 0)
-                    ToolTip(checkBoxJStatDefenseSlow, 1, true); //SLOW
+                    ToolTip(checkBoxJStatDefenseSlow, 1, true);
+                else ToolTip(checkBoxJStatDefenseSlow, 1, false);
                 if ((Stat & 0x0200) > 0)
-                    ToolTip(checkBoxJStatDefenseStop, 1, true); //STOP
+                    ToolTip(checkBoxJStatDefenseStop, 1, true);
+                else ToolTip(checkBoxJStatDefenseStop, 1, false);
                 if ((Stat & 0x0400) > 0)
-                    ToolTip(checkBoxJStatDefenseCurse, 1, true); //PAIN
+                    ToolTip(checkBoxJStatDefenseCurse, 1, true);
+                else ToolTip(checkBoxJStatDefenseCurse, 1, false);
                 if ((Stat & 0x0800) > 0)
-                    ToolTip(checkBoxJStatDefenseConfusion, 1, true); //CONFUSE
+                    ToolTip(checkBoxJStatDefenseConfusion, 1, true);
+                else ToolTip(checkBoxJStatDefenseConfusion, 1, false);
                 if ((Stat & 0x1000) > 0)
-                    ToolTip(checkBoxJStatDefenseDrain, 1, true); //DRAIN
+                    ToolTip(checkBoxJStatDefenseDrain, 1, true);
+                else ToolTip(checkBoxJStatDefenseDrain, 1, false);
             }
         }
 
@@ -3181,50 +3272,50 @@ namespace Doomtrain
             return;
         }
             
-            checkBoxGFAttacksSleep.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x01) >= 1 ? true : false;
-            checkBoxGFAttacksHaste.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x02) >= 1 ? true : false;
-            checkBoxGFAttacksSlow.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x04) >= 1 ? true : false;
-            checkBoxGFAttacksStop.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x08) >= 1 ? true : false;
-            checkBoxGFAttacksRegen.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x10) >= 1 ? true : false;
-            checkBoxGFAttacksProtect.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x20) >= 1 ? true : false;
-            checkBoxGFAttacksShell.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x40) >= 1 ? true : false;
-            checkBoxGFAttacksReflect.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x80) >= 1 ? true : false;
+            ToolTip(checkBoxGFAttacksSleep,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksHaste,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksSlow,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksStop,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksRegen,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksProtect,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksShell,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksReflect,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks1 & 0x80) >= 1 ? true : false);
 
-            checkBoxGFAttacksAura.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x01) >= 1 ? true : false;
-            checkBoxGFAttacksCurse.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x02) >= 1 ? true : false;
-            checkBoxGFAttacksDoom.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x04) >= 1 ? true : false;
-            checkBoxGFAttacksInvincible.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x08) >= 1 ? true : false;
-            checkBoxGFAttacksPetrifying.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x10) >= 1 ? true : false;
-            checkBoxGFAttacksFloat.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x20) >= 1 ? true : false;
-            checkBoxGFAttacksConfusion.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x40) >= 1 ? true : false;
-            checkBoxGFAttacksDrain.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x80) >= 1 ? true : false;
+            ToolTip(checkBoxGFAttacksAura,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksCurse,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksDoom,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksInvincible,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksPetrifying,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksFloat,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksConfusion,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksDrain,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks2 & 0x80) >= 1 ? true : false);
 
-            checkBoxGFAttacksEject.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x01) >= 1 ? true : false;
-            checkBoxGFAttacksDouble.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x02) >= 1 ? true : false;
-            checkBoxGFAttacksTriple.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x04) >= 1 ? true : false;
-            checkBoxGFAttacksDefend.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x08) >= 1 ? true : false;
-            checkBoxGFAttacksUnk1.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x10) >= 1 ? true : false;
-            checkBoxGFAttacksUnk2.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x20) >= 1 ? true : false;
-            checkBoxGFAttacksCharged.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x40) >= 1 ? true : false;
-            checkBoxGFAttacksBackAttack.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x80) >= 1 ? true : false;
+            ToolTip(checkBoxGFAttacksEject,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksDouble,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksTriple,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksDefend,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksUnk1,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksUnk2,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksCharged,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksBackAttack,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks3 & 0x80) >= 1 ? true : false);
 
-            checkBoxGFAttacksVit0.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x01) >= 1 ? true : false;
-            checkBoxGFAttacksAngelWing.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x02) >= 1 ? true : false;
-            checkBoxGFAttacksUnk3.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x04) >= 1 ? true : false;
-            checkBoxGFAttacksUnk4.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x08) >= 1 ? true : false;
-            checkBoxGFAttacksUnk5.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x10) >= 1 ? true : false;
-            checkBoxGFAttacksUnk6.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x20) >= 1 ? true : false;
-            checkBoxGFAttacksHasMagic.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x40) >= 1 ? true : false;
-            checkBoxGFAttacksSummonGF.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x80) >= 1 ? true : false;
+            ToolTip(checkBoxGFAttacksVit0,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksAngelWing,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksUnk3,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksUnk4,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksUnk5,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksUnk6,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksHasMagic,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksSummonGF,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks4 & 0x80) >= 1 ? true : false);
 
-            checkBoxGFAttacksDeath.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x01) >= 1 ? true : false;
-            checkBoxGFAttacksPoison.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x02) >= 1 ? true : false;
-            checkBoxGFAttacksPetrify.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x04) >= 1 ? true : false;
-            checkBoxGFAttacksDarkness.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x08) >= 1 ? true : false;
-            checkBoxGFAttacksSilence.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x10) >= 1 ? true : false;
-            checkBoxGFAttacksBerserk.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x20) >= 1 ? true : false;
-            checkBoxGFAttacksZombie.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x40) >= 1 ? true : false;
-            checkBoxGFAttacksUnk7.Checked = (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x80) >= 1 ? true : false;
+            ToolTip(checkBoxGFAttacksDeath,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksPoison,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksPetrify,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksDarkness,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksSilence,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksBerserk,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksZombie,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxGFAttacksUnk7,1, (KernelWorker.GetSelectedGFAttacksData.StatusGFAttacks5 & 0x80) >= 1 ? true : false);
         }
 
 
