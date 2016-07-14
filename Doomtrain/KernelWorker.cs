@@ -4644,7 +4644,7 @@ namespace Doomtrain
 
         #region COMMAND ABILITY
 
-        public static void ReadCommandAbility(int CommandAbilityID_List byte[] Kernel)
+        public static void ReadCommandAbility(int CommandAbilityID_List, byte[] Kernel)
         {
             GetSelectedCommandAbilityData = new CommandAbilityData();
             int selectedCommandAbilityDataOffset = CommandAbilityDataOffset + (CommandAbilityID_List * 8);
