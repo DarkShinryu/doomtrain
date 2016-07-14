@@ -4634,8 +4634,56 @@ namespace Doomtrain
         }
 
 
-        private void DuelStatusWorker()
+        private void DuelStatusWorker(bool bBackup)
         {
+            if (!bBackup)
+            {
+                ToolTip(checkBoxDuelDeath,1, (KernelWorker.GetSelectedDuelData.Status1 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxDuelPoison,1, (KernelWorker.GetSelectedDuelData.Status1 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxDuelPetrify,1, (KernelWorker.GetSelectedDuelData.Status1 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxDuelDarkness,1, (KernelWorker.GetSelectedDuelData.Status1 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxDuelSilence,1, (KernelWorker.GetSelectedDuelData.Status1 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxDuelBerserk,1, (KernelWorker.GetSelectedDuelData.Status1 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxDuelZombie,1, (KernelWorker.GetSelectedDuelData.Status1 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxDuelUnk7,1, (KernelWorker.GetSelectedDuelData.Status1 & 0x80) >= 1 ? true : false);
+
+                ToolTip(checkBoxDuelSleep,1, (KernelWorker.GetSelectedDuelData.Status2 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxDuelHaste,1, (KernelWorker.GetSelectedDuelData.Status2 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxDuelSlow,1, (KernelWorker.GetSelectedDuelData.Status2 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxDuelStop,1, (KernelWorker.GetSelectedDuelData.Status2 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxDuelRegen,1, (KernelWorker.GetSelectedDuelData.Status2 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxDuelProtect,1, (KernelWorker.GetSelectedDuelData.Status2 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxDuelShell,1, (KernelWorker.GetSelectedDuelData.Status2 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxDuelReflect,1, (KernelWorker.GetSelectedDuelData.Status2 & 0x80) >= 1 ? true : false);
+
+                ToolTip(checkBoxDuelAura,1, (KernelWorker.GetSelectedDuelData.Status3 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxDuelCurse,1, (KernelWorker.GetSelectedDuelData.Status3 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxDuelDoom,1, (KernelWorker.GetSelectedDuelData.Status3 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxDuelInvincible,1, (KernelWorker.GetSelectedDuelData.Status3 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxDuelPetrifying,1, (KernelWorker.GetSelectedDuelData.Status3 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxDuelFloat,1, (KernelWorker.GetSelectedDuelData.Status3 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxDuelConfusion,1, (KernelWorker.GetSelectedDuelData.Status3 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxDuelDrain,1, (KernelWorker.GetSelectedDuelData.Status3 & 0x80) >= 1 ? true : false);
+
+                ToolTip(checkBoxDuelEject,1, (KernelWorker.GetSelectedDuelData.Status4 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxDuelDouble,1, (KernelWorker.GetSelectedDuelData.Status4 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxDuelTriple,1, (KernelWorker.GetSelectedDuelData.Status4 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxDuelDefend,1, (KernelWorker.GetSelectedDuelData.Status4 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxDuelUnk1,1, (KernelWorker.GetSelectedDuelData.Status4 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxDuelUnk2,1, (KernelWorker.GetSelectedDuelData.Status4 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxDuelCharged,1, (KernelWorker.GetSelectedDuelData.Status4 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxDuelBackAttack,1, (KernelWorker.GetSelectedDuelData.Status4 & 0x80) >= 1 ? true : false);
+
+                ToolTip(checkBoxDuelVit0,1, (KernelWorker.GetSelectedDuelData.Status5 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxDuelAngelWing,1, (KernelWorker.GetSelectedDuelData.Status5 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxDuelUnk3,1, (KernelWorker.GetSelectedDuelData.Status5 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxDuelUnk4,1, (KernelWorker.GetSelectedDuelData.Status5 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxDuelUnk5,1, (KernelWorker.GetSelectedDuelData.Status5 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxDuelUnk6,1, (KernelWorker.GetSelectedDuelData.Status5 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxDuelHasMagic,1, (KernelWorker.GetSelectedDuelData.Status5 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxDuelSummonGF,1, (KernelWorker.GetSelectedDuelData.Status5 & 0x80) >= 1 ? true : false);
+                return;
+            }
             checkBoxDuelDeath.Checked = (KernelWorker.GetSelectedDuelData.Status1 & 0x01) >= 1 ? true : false;
             checkBoxDuelPoison.Checked = (KernelWorker.GetSelectedDuelData.Status1 & 0x02) >= 1 ? true : false;
             checkBoxDuelPetrify.Checked = (KernelWorker.GetSelectedDuelData.Status1 & 0x04) >= 1 ? true : false;
@@ -4688,7 +4736,42 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadDuel(listBoxDuel.SelectedIndex);
+            KernelWorker.ReadDuel(listBoxDuel.SelectedIndex, KernelWorker.BackupKernel);
+
+            try
+            {
+                ToolTip(comboBoxDuelMagicID,2, comboBoxDuelMagicID.Items[KernelWorker.GetSelectedDuelData.MagicID]);
+                ToolTip(comboBoxDuelAttackType,2, comboBoxDuelAttackType.Items[KernelWorker.GetSelectedDuelData.AttackType]);
+                ToolTip(numericUpDownDuelAttackPower,0, KernelWorker.GetSelectedDuelData.AttackPower);
+                ToolTip(checkBoxDuelFlag1,1, (KernelWorker.GetSelectedDuelData.AttackFlags & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxDuelFlag2,1, (KernelWorker.GetSelectedDuelData.AttackFlags & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxDuelFlag3,1, (KernelWorker.GetSelectedDuelData.AttackFlags & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxDuelFlag4,1, (KernelWorker.GetSelectedDuelData.AttackFlags & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxDuelFlag5,1, (KernelWorker.GetSelectedDuelData.AttackFlags & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxDuelFlag6,1, (KernelWorker.GetSelectedDuelData.AttackFlags & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxDuelFlag7,1, (KernelWorker.GetSelectedDuelData.AttackFlags & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxDuelFlag8,1, (KernelWorker.GetSelectedDuelData.AttackFlags & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxDuelTarget1,1, (KernelWorker.GetSelectedDuelData.Target & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxDuelTarget2,1, (KernelWorker.GetSelectedDuelData.Target & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxDuelTarget3,1, (KernelWorker.GetSelectedDuelData.Target & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxDuelTarget4,1, (KernelWorker.GetSelectedDuelData.Target & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxDuelTarget5,1, (KernelWorker.GetSelectedDuelData.Target & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxDuelTarget6,1, (KernelWorker.GetSelectedDuelData.Target & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxDuelTarget7,1, (KernelWorker.GetSelectedDuelData.Target & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxDuelTarget8,1, (KernelWorker.GetSelectedDuelData.Target & 0x80) >= 1 ? true : false);
+                ToolTip(numericUpDownDuelHitCount,0, KernelWorker.GetSelectedDuelData.HitCount);
+                ToolTip(comboBoxDuelElement,2, comboBoxDuelElement.Items[Duel_GetElement()]);
+                ToolTip(numericUpDownDuelElementPerc,0, KernelWorker.GetSelectedDuelData.ElementPerc);
+                ToolTip(numericUpDownDuelStatusAttack,0, KernelWorker.GetSelectedDuelData.StatusAttack);
+                DuelStatusWorker(true);
+                //to do buttons
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadDuel(listBoxDuel.SelectedIndex, KernelWorker.Kernel);
 
             try
             {
@@ -4715,7 +4798,7 @@ namespace Doomtrain
                 comboBoxDuelElement.SelectedIndex = Duel_GetElement();
                 numericUpDownDuelElementPerc.Value = KernelWorker.GetSelectedDuelData.ElementPerc;
                 numericUpDownDuelStatusAttack.Value = KernelWorker.GetSelectedDuelData.StatusAttack;
-                DuelStatusWorker();
+                DuelStatusWorker(false);
                 //to do buttons
 
             }
@@ -5473,52 +5556,99 @@ namespace Doomtrain
             return healDmg;
         }
 
-        private void DevourStatusWorker()
+        private void DevourStatusWorker(bool bBackup)
         {
-            checkBoxDevourDeath.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x01) >= 1 ? true : false;
-            checkBoxDevourPoison.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x02) >= 1 ? true : false;
-            checkBoxDevourPetrify.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x04) >= 1 ? true : false;
-            checkBoxDevourDarkness.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x08) >= 1 ? true : false;
-            checkBoxDevourSilence.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x10) >= 1 ? true : false;
-            checkBoxDevourBerserk.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x20) >= 1 ? true : false;
-            checkBoxDevourZombie.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x40) >= 1 ? true : false;
-            checkBoxDevourUnk7.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x80) >= 1 ? true : false;
+            if (!bBackup)
+            {
+                checkBoxDevourDeath.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x01) >= 1 ? true : false;
+                checkBoxDevourPoison.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x02) >= 1 ? true : false;
+                checkBoxDevourPetrify.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x04) >= 1 ? true : false;
+                checkBoxDevourDarkness.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x08) >= 1 ? true : false;
+                checkBoxDevourSilence.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x10) >= 1 ? true : false;
+                checkBoxDevourBerserk.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x20) >= 1 ? true : false;
+                checkBoxDevourZombie.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x40) >= 1 ? true : false;
+                checkBoxDevourUnk7.Checked = (KernelWorker.GetSelectedDevourData.Status1 & 0x80) >= 1 ? true : false;
 
-            checkBoxDevourSleep.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x01) >= 1 ? true : false;
-            checkBoxDevourHaste.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x02) >= 1 ? true : false;
-            checkBoxDevourSlow.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x04) >= 1 ? true : false;
-            checkBoxDevourStop.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x08) >= 1 ? true : false;
-            checkBoxDevourRegen.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x10) >= 1 ? true : false;
-            checkBoxDevourProtect.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x20) >= 1 ? true : false;
-            checkBoxDevourShell.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x40) >= 1 ? true : false;
-            checkBoxDevourReflect.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x80) >= 1 ? true : false;
+                checkBoxDevourSleep.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x01) >= 1 ? true : false;
+                checkBoxDevourHaste.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x02) >= 1 ? true : false;
+                checkBoxDevourSlow.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x04) >= 1 ? true : false;
+                checkBoxDevourStop.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x08) >= 1 ? true : false;
+                checkBoxDevourRegen.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x10) >= 1 ? true : false;
+                checkBoxDevourProtect.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x20) >= 1 ? true : false;
+                checkBoxDevourShell.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x40) >= 1 ? true : false;
+                checkBoxDevourReflect.Checked = (KernelWorker.GetSelectedDevourData.Status2 & 0x80) >= 1 ? true : false;
 
-            checkBoxDevourAura.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x01) >= 1 ? true : false;
-            checkBoxDevourCurse.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x02) >= 1 ? true : false;
-            checkBoxDevourDoom.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x04) >= 1 ? true : false;
-            checkBoxDevourInvincible.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x08) >= 1 ? true : false;
-            checkBoxDevourPetrifying.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x10) >= 1 ? true : false;
-            checkBoxDevourFloat.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x20) >= 1 ? true : false;
-            checkBoxDevourConfusion.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x40) >= 1 ? true : false;
-            checkBoxDevourDrain.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x80) >= 1 ? true : false;
+                checkBoxDevourAura.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x01) >= 1 ? true : false;
+                checkBoxDevourCurse.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x02) >= 1 ? true : false;
+                checkBoxDevourDoom.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x04) >= 1 ? true : false;
+                checkBoxDevourInvincible.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x08) >= 1 ? true : false;
+                checkBoxDevourPetrifying.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x10) >= 1 ? true : false;
+                checkBoxDevourFloat.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x20) >= 1 ? true : false;
+                checkBoxDevourConfusion.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x40) >= 1 ? true : false;
+                checkBoxDevourDrain.Checked = (KernelWorker.GetSelectedDevourData.Status3 & 0x80) >= 1 ? true : false;
 
-            checkBoxDevourEject.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x01) >= 1 ? true : false;
-            checkBoxDevourDouble.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x02) >= 1 ? true : false;
-            checkBoxDevourTriple.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x04) >= 1 ? true : false;
-            checkBoxDevourDefend.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x08) >= 1 ? true : false;
-            checkBoxDevourUnk1.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x10) >= 1 ? true : false;
-            checkBoxDevourUnk2.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x20) >= 1 ? true : false;
-            checkBoxDevourCharged.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x40) >= 1 ? true : false;
-            checkBoxDevourBackAttack.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x80) >= 1 ? true : false;
+                checkBoxDevourEject.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x01) >= 1 ? true : false;
+                checkBoxDevourDouble.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x02) >= 1 ? true : false;
+                checkBoxDevourTriple.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x04) >= 1 ? true : false;
+                checkBoxDevourDefend.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x08) >= 1 ? true : false;
+                checkBoxDevourUnk1.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x10) >= 1 ? true : false;
+                checkBoxDevourUnk2.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x20) >= 1 ? true : false;
+                checkBoxDevourCharged.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x40) >= 1 ? true : false;
+                checkBoxDevourBackAttack.Checked = (KernelWorker.GetSelectedDevourData.Status4 & 0x80) >= 1 ? true : false;
 
-            checkBoxDevourVit0.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x01) >= 1 ? true : false;
-            checkBoxDevourAngelWing.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x02) >= 1 ? true : false;
-            checkBoxDevourUnk3.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x04) >= 1 ? true : false;
-            checkBoxDevourUnk4.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x08) >= 1 ? true : false;
-            checkBoxDevourUnk5.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x10) >= 1 ? true : false;
-            checkBoxDevourUnk6.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x20) >= 1 ? true : false;
-            checkBoxDevourHasMagic.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x40) >= 1 ? true : false;
-            checkBoxDevourSummonGF.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x80) >= 1 ? true : false;
+                checkBoxDevourVit0.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x01) >= 1 ? true : false;
+                checkBoxDevourAngelWing.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x02) >= 1 ? true : false;
+                checkBoxDevourUnk3.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x04) >= 1 ? true : false;
+                checkBoxDevourUnk4.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x08) >= 1 ? true : false;
+                checkBoxDevourUnk5.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x10) >= 1 ? true : false;
+                checkBoxDevourUnk6.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x20) >= 1 ? true : false;
+                checkBoxDevourHasMagic.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x40) >= 1 ? true : false;
+                checkBoxDevourSummonGF.Checked = (KernelWorker.GetSelectedDevourData.Status5 & 0x80) >= 1 ? true : false;
+            }
+            ToolTip(checkBoxDevourDeath,1,(KernelWorker.GetSelectedDevourData.Status1 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxDevourPoison,1,(KernelWorker.GetSelectedDevourData.Status1 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxDevourPetrify,1,(KernelWorker.GetSelectedDevourData.Status1 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxDevourDarkness,1,(KernelWorker.GetSelectedDevourData.Status1 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxDevourSilence,1,(KernelWorker.GetSelectedDevourData.Status1 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxDevourBerserk,1,(KernelWorker.GetSelectedDevourData.Status1 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxDevourZombie,1,(KernelWorker.GetSelectedDevourData.Status1 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxDevourUnk7,1,(KernelWorker.GetSelectedDevourData.Status1 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxDevourSleep,1,(KernelWorker.GetSelectedDevourData.Status2 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxDevourHaste,1,(KernelWorker.GetSelectedDevourData.Status2 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxDevourSlow,1,(KernelWorker.GetSelectedDevourData.Status2 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxDevourStop,1,(KernelWorker.GetSelectedDevourData.Status2 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxDevourRegen,1,(KernelWorker.GetSelectedDevourData.Status2 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxDevourProtect,1,(KernelWorker.GetSelectedDevourData.Status2 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxDevourShell,1,(KernelWorker.GetSelectedDevourData.Status2 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxDevourReflect,1,(KernelWorker.GetSelectedDevourData.Status2 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxDevourAura,1,(KernelWorker.GetSelectedDevourData.Status3 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxDevourCurse,1,(KernelWorker.GetSelectedDevourData.Status3 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxDevourDoom,1,(KernelWorker.GetSelectedDevourData.Status3 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxDevourInvincible,1,(KernelWorker.GetSelectedDevourData.Status3 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxDevourPetrifying,1,(KernelWorker.GetSelectedDevourData.Status3 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxDevourFloat,1,(KernelWorker.GetSelectedDevourData.Status3 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxDevourConfusion,1,(KernelWorker.GetSelectedDevourData.Status3 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxDevourDrain,1,(KernelWorker.GetSelectedDevourData.Status3 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxDevourEject,1,(KernelWorker.GetSelectedDevourData.Status4 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxDevourDouble,1,(KernelWorker.GetSelectedDevourData.Status4 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxDevourTriple,1,(KernelWorker.GetSelectedDevourData.Status4 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxDevourDefend,1,(KernelWorker.GetSelectedDevourData.Status4 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxDevourUnk1,1,(KernelWorker.GetSelectedDevourData.Status4 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxDevourUnk2,1,(KernelWorker.GetSelectedDevourData.Status4 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxDevourCharged,1,(KernelWorker.GetSelectedDevourData.Status4 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxDevourBackAttack,1,(KernelWorker.GetSelectedDevourData.Status4 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxDevourVit0,1,(KernelWorker.GetSelectedDevourData.Status5 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxDevourAngelWing,1,(KernelWorker.GetSelectedDevourData.Status5 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxDevourUnk3,1,(KernelWorker.GetSelectedDevourData.Status5 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxDevourUnk4,1,(KernelWorker.GetSelectedDevourData.Status5 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxDevourUnk5,1,(KernelWorker.GetSelectedDevourData.Status5 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxDevourUnk6,1,(KernelWorker.GetSelectedDevourData.Status5 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxDevourHasMagic,1,(KernelWorker.GetSelectedDevourData.Status5 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxDevourSummonGF,1,(KernelWorker.GetSelectedDevourData.Status5 & 0x80) >= 1 ? true : false);
         }
 
         private void listBoxDevour_SelectedIndexChanged(object sender, EventArgs e)
@@ -5526,7 +5656,31 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadDevour(listBoxDevour.SelectedIndex);
+            KernelWorker.ReadDevour(listBoxDevour.SelectedIndex, KernelWorker.BackupKernel);
+
+            try
+            {
+                ToolTip(comboBoxDevourHealDmg,2, comboBoxDevourHealDmg.Items[Devour_GetHealDmg()]);
+                ToolTip(checkBoxDevourHP1,1, (KernelWorker.GetSelectedDevourData.HpQuantity & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxDevourHP2,1, (KernelWorker.GetSelectedDevourData.HpQuantity & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxDevourHP3,1, (KernelWorker.GetSelectedDevourData.HpQuantity & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxDevourHP4,1, (KernelWorker.GetSelectedDevourData.HpQuantity & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxDevourHP5,1, (KernelWorker.GetSelectedDevourData.HpQuantity & 0x10) >= 1 ? true : false);
+                DevourStatusWorker(true);
+                ToolTip(checkBoxDevourStat1,1, (KernelWorker.GetSelectedDevourData.RaisedStat & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxDevourStat2,1, (KernelWorker.GetSelectedDevourData.RaisedStat & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxDevourStat3,1, (KernelWorker.GetSelectedDevourData.RaisedStat & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxDevourStat4,1, (KernelWorker.GetSelectedDevourData.RaisedStat & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxDevourStat5,1, (KernelWorker.GetSelectedDevourData.RaisedStat & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxDevourStat6,1, (KernelWorker.GetSelectedDevourData.RaisedStat & 0x20) >= 1 ? true : false);
+                ToolTip(numericUpDownDevourHP,0,KernelWorker.GetSelectedDevourData.RaisedHP);
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadDevour(listBoxDevour.SelectedIndex, KernelWorker.Kernel);
 
             try
             {
@@ -5536,7 +5690,7 @@ namespace Doomtrain
                 checkBoxDevourHP3.Checked = (KernelWorker.GetSelectedDevourData.HpQuantity & 0x04) >= 1 ? true : false;
                 checkBoxDevourHP4.Checked = (KernelWorker.GetSelectedDevourData.HpQuantity & 0x08) >= 1 ? true : false;
                 checkBoxDevourHP5.Checked = (KernelWorker.GetSelectedDevourData.HpQuantity & 0x10) >= 1 ? true : false;
-                DevourStatusWorker();
+                DevourStatusWorker(false);
                 checkBoxDevourStat1.Checked = (KernelWorker.GetSelectedDevourData.RaisedStat & 0x01) >= 1 ? true : false;
                 checkBoxDevourStat2.Checked = (KernelWorker.GetSelectedDevourData.RaisedStat & 0x02) >= 1 ? true : false;
                 checkBoxDevourStat3.Checked = (KernelWorker.GetSelectedDevourData.RaisedStat & 0x04) >= 1 ? true : false;
@@ -5750,52 +5904,100 @@ namespace Doomtrain
             return elem;
         }
 
-        private void CommandAbilityDataStatusWorker()
+        private void CommandAbilityDataStatusWorker(bool bBackup)
         {
-            checkBoxAbComDataDeath.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x01) >= 1 ? true : false;
-            checkBoxAbComDataPoison.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x02) >= 1 ? true : false;
-            checkBoxAbComDataPetrify.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x04) >= 1 ? true : false;
-            checkBoxAbComDataDarkness.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x08) >= 1 ? true : false;
-            checkBoxAbComDataSilence.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x10) >= 1 ? true : false;
-            checkBoxAbComDataBerserk.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x20) >= 1 ? true : false;
-            checkBoxAbComDataZombie.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x40) >= 1 ? true : false;
-            checkBoxAbComDataUnk7.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x80) >= 1 ? true : false;
+            if (!bBackup)
+            {
+                checkBoxAbComDataDeath.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x01) >= 1 ? true : false;
+                checkBoxAbComDataPoison.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x02) >= 1 ? true : false;
+                checkBoxAbComDataPetrify.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x04) >= 1 ? true : false;
+                checkBoxAbComDataDarkness.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x08) >= 1 ? true : false;
+                checkBoxAbComDataSilence.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x10) >= 1 ? true : false;
+                checkBoxAbComDataBerserk.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x20) >= 1 ? true : false;
+                checkBoxAbComDataZombie.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x40) >= 1 ? true : false;
+                checkBoxAbComDataUnk7.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x80) >= 1 ? true : false;
 
-            checkBoxAbComDataSleep.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x01) >= 1 ? true : false;
-            checkBoxAbComDataHaste.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x02) >= 1 ? true : false;
-            checkBoxAbComDataSlow.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x04) >= 1 ? true : false;
-            checkBoxAbComDataStop.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x08) >= 1 ? true : false;
-            checkBoxAbComDataRegen.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x10) >= 1 ? true : false;
-            checkBoxAbComDataProtect.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x20) >= 1 ? true : false;
-            checkBoxAbComDataShell.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x40) >= 1 ? true : false;
-            checkBoxAbComDataReflect.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x80) >= 1 ? true : false;
+                checkBoxAbComDataSleep.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x01) >= 1 ? true : false;
+                checkBoxAbComDataHaste.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x02) >= 1 ? true : false;
+                checkBoxAbComDataSlow.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x04) >= 1 ? true : false;
+                checkBoxAbComDataStop.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x08) >= 1 ? true : false;
+                checkBoxAbComDataRegen.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x10) >= 1 ? true : false;
+                checkBoxAbComDataProtect.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x20) >= 1 ? true : false;
+                checkBoxAbComDataShell.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x40) >= 1 ? true : false;
+                checkBoxAbComDataReflect.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x80) >= 1 ? true : false;
 
-            checkBoxAbComDataAura.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x01) >= 1 ? true : false;
-            checkBoxAbComDataCurse.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x02) >= 1 ? true : false;
-            checkBoxAbComDataDoom.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x04) >= 1 ? true : false;
-            checkBoxAbComDataInvincible.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x08) >= 1 ? true : false;
-            checkBoxAbComDataPetrifying.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x10) >= 1 ? true : false;
-            checkBoxAbComDataFloat.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x20) >= 1 ? true : false;
-            checkBoxAbComDataConfusion.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x40) >= 1 ? true : false;
-            checkBoxAbComDataDrain.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x80) >= 1 ? true : false;
+                checkBoxAbComDataAura.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x01) >= 1 ? true : false;
+                checkBoxAbComDataCurse.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x02) >= 1 ? true : false;
+                checkBoxAbComDataDoom.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x04) >= 1 ? true : false;
+                checkBoxAbComDataInvincible.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x08) >= 1 ? true : false;
+                checkBoxAbComDataPetrifying.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x10) >= 1 ? true : false;
+                checkBoxAbComDataFloat.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x20) >= 1 ? true : false;
+                checkBoxAbComDataConfusion.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x40) >= 1 ? true : false;
+                checkBoxAbComDataDrain.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x80) >= 1 ? true : false;
 
-            checkBoxAbComDataEject.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x01) >= 1 ? true : false;
-            checkBoxAbComDataDouble.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x02) >= 1 ? true : false;
-            checkBoxAbComDataTriple.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x04) >= 1 ? true : false;
-            checkBoxAbComDataDefend.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x08) >= 1 ? true : false;
-            checkBoxAbComDataUnk1.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x10) >= 1 ? true : false;
-            checkBoxAbComDataUnk2.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x20) >= 1 ? true : false;
-            checkBoxAbComDataCharged.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x40) >= 1 ? true : false;
-            checkBoxAbComDataBackAttack.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x80) >= 1 ? true : false;
+                checkBoxAbComDataEject.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x01) >= 1 ? true : false;
+                checkBoxAbComDataDouble.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x02) >= 1 ? true : false;
+                checkBoxAbComDataTriple.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x04) >= 1 ? true : false;
+                checkBoxAbComDataDefend.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x08) >= 1 ? true : false;
+                checkBoxAbComDataUnk1.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x10) >= 1 ? true : false;
+                checkBoxAbComDataUnk2.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x20) >= 1 ? true : false;
+                checkBoxAbComDataCharged.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x40) >= 1 ? true : false;
+                checkBoxAbComDataBackAttack.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x80) >= 1 ? true : false;
 
-            checkBoxAbComDataVit0.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x01) >= 1 ? true : false;
-            checkBoxAbComDataAngelWing.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x02) >= 1 ? true : false;
-            checkBoxAbComDataUnk3.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x04) >= 1 ? true : false;
-            checkBoxAbComDataUnk4.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x08) >= 1 ? true : false;
-            checkBoxAbComDataUnk5.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x10) >= 1 ? true : false;
-            checkBoxAbComDataUnk6.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x20) >= 1 ? true : false;
-            checkBoxAbComDataHasMagic.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x40) >= 1 ? true : false;
-            checkBoxAbComDataSummonGF.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x80) >= 1 ? true : false;
+                checkBoxAbComDataVit0.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x01) >= 1 ? true : false;
+                checkBoxAbComDataAngelWing.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x02) >= 1 ? true : false;
+                checkBoxAbComDataUnk3.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x04) >= 1 ? true : false;
+                checkBoxAbComDataUnk4.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x08) >= 1 ? true : false;
+                checkBoxAbComDataUnk5.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x10) >= 1 ? true : false;
+                checkBoxAbComDataUnk6.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x20) >= 1 ? true : false;
+                checkBoxAbComDataHasMagic.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x40) >= 1 ? true : false;
+                checkBoxAbComDataSummonGF.Checked = (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x80) >= 1 ? true : false;
+                return;
+            }
+            ToolTip(checkBoxAbComDataDeath,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataPoison,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataPetrify,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataDarkness,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataSilence,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataBerserk,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataZombie,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataUnk7,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status1 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxAbComDataSleep,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataHaste,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataSlow,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataStop,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataRegen,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataProtect,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataShell,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataReflect,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status2 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxAbComDataAura,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataCurse,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataDoom,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataInvincible,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataPetrifying,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataFloat,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataConfusion,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataDrain,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status3 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxAbComDataEject,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataDouble,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataTriple,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataDefend,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataUnk1,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataUnk2,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataCharged,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataBackAttack,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status4 & 0x80) >= 1 ? true : false);
+
+            ToolTip(checkBoxAbComDataVit0,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x01) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataAngelWing,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x02) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataUnk3,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x04) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataUnk4,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x08) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataUnk5,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x10) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataUnk6,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x20) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataHasMagic,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x40) >= 1 ? true : false);
+            ToolTip(checkBoxAbComDataSummonGF,1, (KernelWorker.GetSelectedCommandAbilityDataData.Status5 & 0x80) >= 1 ? true : false);
         }
 
         private void listBoxAbComData_SelectedIndexChanged(object sender, EventArgs e)
@@ -5803,7 +6005,32 @@ namespace Doomtrain
             _loaded = false;
             if (KernelWorker.Kernel == null)
                 return;
-            KernelWorker.ReadCommandAbilityData(listBoxAbComData.SelectedIndex);
+            KernelWorker.ReadCommandAbilityData(listBoxAbComData.SelectedIndex, KernelWorker.BackupKernel);
+
+            try
+            {
+                ToolTip(comboBoxAbComDataMagicID,2, comboBoxAbComDataMagicID.Items[KernelWorker.GetSelectedCommandAbilityDataData.MagicID]);
+                ToolTip(comboBoxAbComDataAttackType,2, comboBoxAbComDataAttackType.Items[KernelWorker.GetSelectedCommandAbilityDataData.AttackType]);
+                ToolTip(numericUpDownAbComDataAttackPower,0, KernelWorker.GetSelectedCommandAbilityDataData.AttackPower);
+                ToolTip(checkBoxAbComDataFlag1,1, (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxAbComDataFlag2,1, (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxAbComDataFlag3,1, (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxAbComDataFlag4,1, (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxAbComDataFlag5,1, (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxAbComDataFlag6,1, (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxAbComDataFlag7,1, (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxAbComDataFlag8,1, (KernelWorker.GetSelectedCommandAbilityDataData.AttackFlags & 0x80) >= 1 ? true : false);
+                ToolTip(numericUpDownAbComDataHitCount,0, KernelWorker.GetSelectedCommandAbilityDataData.HitCount);
+                ToolTip(comboBoxAbComDataElement,2, comboBoxAbComDataElement.Items[CommandAbilityData_GetElement()]);
+                ToolTip(numericUpDownAbComDataStatusAttack,0, KernelWorker.GetSelectedCommandAbilityDataData.StatusAttack);
+                CommandAbilityDataStatusWorker(true);
+
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            KernelWorker.ReadCommandAbilityData(listBoxAbComData.SelectedIndex, KernelWorker.Kernel);
 
             try
             {
@@ -5821,7 +6048,7 @@ namespace Doomtrain
                 numericUpDownAbComDataHitCount.Value = KernelWorker.GetSelectedCommandAbilityDataData.HitCount;
                 comboBoxAbComDataElement.SelectedIndex = CommandAbilityData_GetElement();
                 numericUpDownAbComDataStatusAttack.Value = KernelWorker.GetSelectedCommandAbilityDataData.StatusAttack;
-                CommandAbilityDataStatusWorker();
+                CommandAbilityDataStatusWorker(false);
 
             }
             catch (Exception Exception)
