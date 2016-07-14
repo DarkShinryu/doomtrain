@@ -2121,6 +2121,11 @@ namespace Doomtrain
                         toolTip1.SetToolTip(control, $"Default: {Convert.ToString(value)}");
                         break;
                     }
+                case 3:
+                    {
+                        toolTip1.SetToolTip(control, $"Default: {Convert.ToDouble(value)}");
+                        break;
+                    }
                 default:
                     goto case _bp_numerical;
             }
@@ -2315,23 +2320,23 @@ namespace Doomtrain
                 ToolTip(trackBarJStatAttack,0,KernelWorker.GetSelectedMagicData.StatusATKval);
                 BackupStatusHoldWorker(3, KernelWorker.GetSelectedMagicData.StatusMagic1, KernelWorker.GetSelectedMagicData.StatusDefEN, KernelWorker.GetSelectedMagicData.StatusMagic2, KernelWorker.GetSelectedMagicData.StatusMagic3, KernelWorker.GetSelectedMagicData.StatusMagic4, KernelWorker.GetSelectedMagicData.StatusMagic5);
                 ToolTip(trackBarJStatDefense,0, KernelWorker.GetSelectedMagicData.StatusDEFval);
-                ToolTip(numericUpDownMagicStatusAttack,0, KernelWorker.GetSelectedMagicData.StatusAttack);
-                ToolTip(numericUpDownMagicQuezacoltComp,0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.QuezacoltCompatibility)) / 5);
-                ToolTip(numericUpDownMagicShivaComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.ShivaCompatibility)) / 5);
-                ToolTip(numericUpDownMagicIfritComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.IfritCompatibility)) / 5);
-                ToolTip(numericUpDownMagicSirenComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.SirenCompatibility)) / 5);
-                ToolTip(numericUpDownMagicBrothersComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.BrothersCompatibility)) / 5);
-                ToolTip(numericUpDownMagicDiablosComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.DiablosCompatibility)) / 5);
-                ToolTip(numericUpDownMagicCarbuncleComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.CarbuncleCompatibility)) / 5);
-                ToolTip(numericUpDownMagicLeviathanComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.LeviathanCompatibility)) / 5);
-                ToolTip(numericUpDownMagicPandemonaComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.PandemonaCompatibility)) / 5);
-                ToolTip(numericUpDownMagicCerberusComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.CerberusCompatibility)) / 5);
-                ToolTip(numericUpDownMagicAlexanderComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.AlexanderCompatibility)) / 5);
-                ToolTip(numericUpDownMagicDoomtrainComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.DoomtrainCompatibility)) / 5);
-                ToolTip(numericUpDownMagicBahamutComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.BahamutCompatibility)) / 5);
-                ToolTip(numericUpDownMagicCactuarComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.CactuarCompatibility)) / 5);
-                ToolTip(numericUpDownMagicTonberryComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.TonberryCompatibility)) / 5);
-                ToolTip(numericUpDownMagicEdenComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.EdenCompatibility)) / 5);
+                ToolTip(numericUpDownMagicStatusAttack,3, KernelWorker.GetSelectedMagicData.StatusAttack);
+                ToolTip(numericUpDownMagicQuezacoltComp,3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.QuezacoltCompatibility)) / 5);
+                ToolTip(numericUpDownMagicShivaComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.ShivaCompatibility)) / 5);
+                ToolTip(numericUpDownMagicIfritComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.IfritCompatibility)) / 5);
+                ToolTip(numericUpDownMagicSirenComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.SirenCompatibility)) / 5);
+                ToolTip(numericUpDownMagicBrothersComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.BrothersCompatibility)) / 5);
+                ToolTip(numericUpDownMagicDiablosComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.DiablosCompatibility)) / 5);
+                ToolTip(numericUpDownMagicCarbuncleComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.CarbuncleCompatibility)) / 5);
+                ToolTip(numericUpDownMagicLeviathanComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.LeviathanCompatibility)) / 5);
+                ToolTip(numericUpDownMagicPandemonaComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.PandemonaCompatibility)) / 5);
+                ToolTip(numericUpDownMagicCerberusComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.CerberusCompatibility)) / 5);
+                ToolTip(numericUpDownMagicAlexanderComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.AlexanderCompatibility)) / 5);
+                ToolTip(numericUpDownMagicDoomtrainComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.DoomtrainCompatibility)) / 5);
+                ToolTip(numericUpDownMagicBahamutComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.BahamutCompatibility)) / 5);
+                ToolTip(numericUpDownMagicCactuarComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.CactuarCompatibility)) / 5);
+                ToolTip(numericUpDownMagicTonberryComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.TonberryCompatibility)) / 5);
+                ToolTip(numericUpDownMagicEdenComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedMagicData.EdenCompatibility)) / 5);
 
             }
 
@@ -2616,7 +2621,6 @@ namespace Doomtrain
             }
             if (State == 1)
             {
-                ResetUI(1);
                 if ((Element & 0x01) > 0)
                 {
                     ToolTip(checkBoxJElemDefenseFire, 1, true);
@@ -2654,7 +2658,6 @@ namespace Doomtrain
 
             if (State == 2)
             {
-                ResetUI(2);
                 if ((Stat & 0x0001) > 0)
                     ToolTip(checkBoxJStatAttackDeath, 1, true); //DEATH
                 if ((Stat & 0x0002) > 0)
@@ -2971,22 +2974,22 @@ namespace Doomtrain
                 ToolTip(comboBoxGFElement,2, comboBoxGFElement.Items[GF_GetElement()]);
                 GFStatusWorker(true);
                 ToolTip(numericUpDownGFStatusAttack,0, KernelWorker.GetSelectedGFData.GFStatusAttack);
-                ToolTip(numericUpDownGFQuezacoltComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFQuezacoltCompatibility)) / 5);
-                ToolTip(numericUpDownGFShivaComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFShivaCompatibility)) / 5);
-                ToolTip(numericUpDownGFIfritComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFIfritCompatibility)) / 5);
-                ToolTip(numericUpDownGFSirenComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFSirenCompatibility)) / 5);
-                ToolTip(numericUpDownGFBrothersComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFBrothersCompatibility)) / 5);
-                ToolTip(numericUpDownGFDiablosComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFDiablosCompatibility)) / 5);
-                ToolTip(numericUpDownGFCarbuncleComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFCarbuncleCompatibility)) / 5);
-                ToolTip(numericUpDownGFLeviathanComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFLeviathanCompatibility)) / 5);
-                ToolTip(numericUpDownGFPandemonaComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFPandemonaCompatibility)) / 5);
-                ToolTip(numericUpDownGFCerberusComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFCerberusCompatibility)) / 5);
-                ToolTip(numericUpDownGFAlexanderComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFAlexanderCompatibility)) / 5);
-                ToolTip(numericUpDownGFDoomtrainComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFDoomtrainCompatibility)) / 5);
-                ToolTip(numericUpDownGFBahamutComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFBahamutCompatibility)) / 5);
-                ToolTip(numericUpDownGFCactuarComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFCactuarCompatibility)) / 5);
-                ToolTip(numericUpDownGFTonberryComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFTonberryCompatibility)) / 5);
-                ToolTip(numericUpDownGFEdenComp, 0, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFEdenCompatibility)) / 5);
+                ToolTip(numericUpDownGFQuezacoltComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFQuezacoltCompatibility)) / 5);
+                ToolTip(numericUpDownGFShivaComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFShivaCompatibility)) / 5);
+                ToolTip(numericUpDownGFIfritComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFIfritCompatibility)) / 5);
+                ToolTip(numericUpDownGFSirenComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFSirenCompatibility)) / 5);
+                ToolTip(numericUpDownGFBrothersComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFBrothersCompatibility)) / 5);
+                ToolTip(numericUpDownGFDiablosComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFDiablosCompatibility)) / 5);
+                ToolTip(numericUpDownGFCarbuncleComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFCarbuncleCompatibility)) / 5);
+                ToolTip(numericUpDownGFLeviathanComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFLeviathanCompatibility)) / 5);
+                ToolTip(numericUpDownGFPandemonaComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFPandemonaCompatibility)) / 5);
+                ToolTip(numericUpDownGFCerberusComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFCerberusCompatibility)) / 5);
+                ToolTip(numericUpDownGFAlexanderComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFAlexanderCompatibility)) / 5);
+                ToolTip(numericUpDownGFDoomtrainComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFDoomtrainCompatibility)) / 5);
+                ToolTip(numericUpDownGFBahamutComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFBahamutCompatibility)) / 5);
+                ToolTip(numericUpDownGFCactuarComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFCactuarCompatibility)) / 5);
+                ToolTip(numericUpDownGFTonberryComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFTonberryCompatibility)) / 5);
+                ToolTip(numericUpDownGFEdenComp, 3, (100 - Convert.ToDecimal(KernelWorker.GetSelectedGFData.GFEdenCompatibility)) / 5);
             }
 
             catch (Exception Exception)
