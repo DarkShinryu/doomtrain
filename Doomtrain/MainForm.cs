@@ -56,7 +56,9 @@ namespace Doomtrain
             listBoxAbGF.Visible = false;
             listBoxAbParty.Visible = false;
             listBoxAbMenu.Visible = false;
+
             tabControlAbilities.SelectedIndexChanged += new EventHandler(tabControlAbilities_SelectedIndexChanged);
+            FormClosing += new FormClosingEventHandler(MainForm_FormClosing);
 
             #endregion
 
@@ -1598,7 +1600,6 @@ namespace Doomtrain
         #region OPEN, SAVE, CLOSE, EXIT, TOOLBAR, ABOUT, TOOLTIPS
 
         public string existingFilename; //used for open/save stuff
-        
 
         //OPEN
         private async void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1615,13 +1616,15 @@ namespace Doomtrain
                     using (var BR = new BinaryReader(fileStream))
                     {
                         KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
-                    }
-                    Backup();
+                    }                    
                     SlotArray();
                     DuelParams();
                     Misc();
-                }
-                
+
+                    CreateTooltipsFile();
+    }
+
+
                 existingFilename = openFileDialog.FileName;
 
                 saveToolStripMenuItem.Enabled = true;
@@ -1687,59 +1690,99 @@ namespace Doomtrain
 
 
         //TOOLTIPS FILE
-
         private void CreateTooltipsFile()
         {
             if (!File.Exists(_backup))
             {
-                DialogResult dialogResult = MessageBox.Show("Doomtrain will create a copy of the kernel.bin file " +
-                    "to show default values tooltips.\n\nSelect the kernel.bin file with the values you want to use.", "Create tooltips file", MessageBoxButtons.OK);
+                DialogResult dialogResult = MessageBox.Show("Do you want to create a copy of this kernel.bin file " +
+                    "to show default values tooltips?", "Create tooltips file", MessageBoxButtons.YesNo);
 
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Title = "Open FF8 kernel.bin";
-                openFileDialog.Filter = "FF8 Kernel File|*.bin";
-                openFileDialog.FileName = "kernel.bin";
-
-                if (openFileDialog.ShowDialog() != DialogResult.OK) return;
+                if (dialogResult == DialogResult.Yes)
                 {
-                    using (var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
+                    File.WriteAllBytes(_backup, KernelWorker.Kernel);
+                    KernelWorker.BackupKernel = KernelWorker.Kernel;
+                    MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.",
+                        "Tooltips file created", MessageBoxButtons.OK);
+                    deleteTooltipsToolStripMenuItem.Enabled = true;
+                    deleteTooltipsToolStripButton.Enabled = true;
+                }
+
+                else if (dialogResult == DialogResult.No)
+                {
+                    DialogResult dialogResult2 = MessageBox.Show("Do you want to point me to another kernel.bin file?" + 
+                        "\nIf you answer no the file will be created from the kernel.bin you opened previously.", "Create tooltips file", MessageBoxButtons.YesNo);
+                    if (dialogResult2 == DialogResult.Yes)
                     {
-                        using (var BR = new BinaryReader(fileStream))
+                        OpenFileDialog openFileDialog = new OpenFileDialog();
+                        openFileDialog.Title = "Open FF8 kernel.bin";
+                        openFileDialog.Filter = "FF8 Kernel File|*.bin";
+                        openFileDialog.FileName = "kernel.bin";
+
+                        if (openFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
+                            using (var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
+                            {
+                                using (var BR = new BinaryReader(fileStream))
+                                {
+                                    KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
+                                    File.WriteAllBytes(_backup, KernelWorker.Kernel);
+                                    KernelWorker.BackupKernel = KernelWorker.Kernel;
+                                }
+                            }
+                            MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.",
+                                "Tooltips file created", MessageBoxButtons.OK);
+                            deleteTooltipsToolStripMenuItem.Enabled = true;
+                            deleteTooltipsToolStripButton.Enabled = true;
+                        }
+                        else
+                        {
                             File.WriteAllBytes(_backup, KernelWorker.Kernel);
+                            KernelWorker.BackupKernel = KernelWorker.Kernel;
+                            MessageBox.Show("The file has created in the same folder of Doomtrain.exe from the kernel.bin you opened previously.",
+                                "Tooltips file created", MessageBoxButtons.OK);
+                            deleteTooltipsToolStripMenuItem.Enabled = true;
+                            deleteTooltipsToolStripButton.Enabled = true;
                         }
                     }
 
-                    MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.\nDoomtrain wiil now restart.",
-                        "Tooltips file created", MessageBoxButtons.OK);
-
-                    Process.Start(Application.ExecutablePath);
-                    Process.GetCurrentProcess().Kill();
+                    else if (dialogResult2 == DialogResult.No)
+                    {
+                        File.WriteAllBytes(_backup, KernelWorker.Kernel);
+                        KernelWorker.BackupKernel = KernelWorker.Kernel;
+                        MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.",
+                            "Tooltips file created", MessageBoxButtons.OK);
+                        deleteTooltipsToolStripMenuItem.Enabled = true;
+                        deleteTooltipsToolStripButton.Enabled = true;
+                    }
                 }
             }
+
+
+            else
+            {
+                KernelWorker.BackupKernel = File.ReadAllBytes(_backup);
+            }
+
+
+
         }
 
         private void deleteTooltipsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Doomtrain will restart and unsaved changes will be lost, do you want to continue?", 
+            DialogResult dialogResult = MessageBox.Show("This will delete the tooltips.bin file.\nDoomtrain will restart and unsaved changes will be lost, do you want to continue?", 
                 "Delete Tooltips File", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 File.Delete(_backup);
 
                 Process.Start(Application.ExecutablePath);
-                Process.GetCurrentProcess().Kill();
-            }
-            else if (dialogResult == DialogResult.No)
-            {
-                //do nothing
+                Environment.Exit(0);
             }
         }
 
+        //STATUS STRIP
         private void mainForm_Shown(object sender, EventArgs e)
         {
-            CreateTooltipsFile();
             toolStripStatusLabel1.Text = "Ready";
         }
 
@@ -1747,7 +1790,35 @@ namespace Doomtrain
         //EXIT
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.GetCurrentProcess().Kill();
+            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
+            {
+                DialogResult dialogResult = MessageBox.Show("Do you really want to exit?",
+                    "Close", MessageBoxButtons.YesNo);
+
+                if (dialogResult == DialogResult.Yes)
+                    Environment.Exit(0);
+            }
+            else
+                Environment.Exit(0);
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
+            {
+                DialogResult result = MessageBox.Show("Do you really want to exit?", 
+                    "Close", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+                Environment.Exit(0);
         }
 
 
@@ -1779,19 +1850,6 @@ namespace Doomtrain
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new AboutBox().ShowDialog();
-        }
-
-
-        //BACKUP
-        private void Backup()
-        {
-            if (_backup == null || KernelWorker.Kernel == null)
-                return;
-
-            if (File.Exists(_backup))
-            {
-                KernelWorker.BackupKernel = File.ReadAllBytes(_backup);
-            }
         }
 
 
@@ -7114,13 +7172,5 @@ namespace Doomtrain
 
         #endregion
 
-
-        private void StatusStripText()
-        {
-            if ((string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
-                statusStrip1.Text = "Ready";
-            else if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
-                statusStrip1.Text = existingFilename + "loaded correctly";
-        }
     }
 }
