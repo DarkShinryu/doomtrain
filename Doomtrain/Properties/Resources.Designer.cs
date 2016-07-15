@@ -73,6 +73,16 @@ namespace Doomtrain.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap deletetooltip {
+            get {
+                object obj = ResourceManager.GetObject("deletetooltip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap doomtrain {
             get {
                 object obj = ResourceManager.GetObject("doomtrain", resourceCulture);
@@ -106,6 +116,16 @@ namespace Doomtrain.Properties {
         internal static System.Drawing.Bitmap saveas {
             get {
                 object obj = ResourceManager.GetObject("saveas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tooltip {
+            get {
+                object obj = ResourceManager.GetObject("tooltip", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

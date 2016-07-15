@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Drawing;
 using System.Drawing.Text;
+using System.Diagnostics;
 
 namespace Doomtrain
 {
@@ -26,15 +27,26 @@ namespace Doomtrain
         public mainForm()
         {
             InitializeComponent();
-            _backup = $"{System.IO.Path.GetTempPath()}\\kernelbin.backup";
+
+            _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips";
+            //CreateTooltipsFile();
+
+            if (File.Exists(_backup))
+            {
+                deleteTooltipsToolStripMenuItem.Enabled = true;
+                deleteTooltipsToolStripButton.Enabled = true;
+            }
+
 
             #region DISABLING OBJECTS
 
-            //for disabling save buttons when no file is open
+            //for disabling save and tooltips buttons when no file is open
             saveToolStripMenuItem.Enabled = false;
             saveAsToolStripMenuItem.Enabled = false;
             saveAsToolStripButton.Enabled = false;
             saveToolStripButton.Enabled = false;
+
+
 
             //this is for enabling the switching of listboxes in the ability section
             listBoxAbStats.Visible = false;
@@ -1583,7 +1595,7 @@ namespace Doomtrain
         }
 
 
-        #region OPEN, SAVE, CLOSE, EXIT, TOOLBAR, ABOUT, BACKUP
+        #region OPEN, SAVE, CLOSE, EXIT, TOOLBAR, ABOUT, TOOLTIPS
 
         public string existingFilename; //used for open/save stuff
         
@@ -1616,7 +1628,6 @@ namespace Doomtrain
                 saveAsToolStripMenuItem.Enabled = true;
                 saveToolStripButton.Enabled = true;
                 saveAsToolStripButton.Enabled = true;
-                return;
             }
         }
 
@@ -1628,7 +1639,6 @@ namespace Doomtrain
             if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
             {
                 File.WriteAllBytes(existingFilename, KernelWorker.Kernel);
-                return;
             }
         }
 
@@ -1647,8 +1657,64 @@ namespace Doomtrain
                 if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
                 {
                     File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
-                    return;
                 }
+            }
+        }
+
+
+        //TOOLTIPS FILE
+
+        private void CreateTooltipsFile()
+        {
+            if (!File.Exists(_backup))
+            {
+                DialogResult dialogResult = MessageBox.Show("Doomtrain will create a copy of the kernel.bin file " +
+                    "to show default values tooltips.\n\nSelect the kernel.bin file with the values you want to use.", "Create tooltips file", MessageBoxButtons.OK);
+
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Title = "Open FF8 kernel.bin";
+                openFileDialog.Filter = "FF8 Kernel File|*.bin";
+                openFileDialog.FileName = "kernel.bin";
+
+                if (openFileDialog.ShowDialog() != DialogResult.OK) return;
+                {
+                    using (var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
+                    {
+                        using (var BR = new BinaryReader(fileStream))
+                        {
+                            KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
+                            File.WriteAllBytes(_backup, KernelWorker.Kernel);
+                        }
+                    }
+
+                    MessageBox.Show("The file has been created in the same folder of Doomtrain.exe.",
+                        "Tooltips file created correctly", MessageBoxButtons.OK);
+
+                    Process.Start(Application.ExecutablePath);
+                    Process.GetCurrentProcess().Kill();
+                }
+            }
+        }
+
+        private void mainForm_Shown(object sender, EventArgs e)
+        {
+            CreateTooltipsFile();
+        }
+
+        private void deleteTooltipsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Doomtrain will restart and unsaved changes will be lost, do you want to continue?", 
+                "Delete Tooltips File", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                File.Delete(_backup);
+
+                Process.Start(Application.ExecutablePath);
+                Process.GetCurrentProcess().Kill();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do nothing
             }
         }
 
@@ -1657,7 +1723,7 @@ namespace Doomtrain
         //EXIT
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Process.GetCurrentProcess().Kill();
         }
 
 
@@ -1678,6 +1744,11 @@ namespace Doomtrain
             saveAsToolStripMenuItem_Click(sender, e);
         }
 
+        private void deleteTooltipsToolStripButton_Click(object sender, EventArgs e)
+        {
+            deleteTooltipsToolStripMenuItem_Click(sender, e);
+        }
+
 
 
         //ABOUT
@@ -1686,22 +1757,19 @@ namespace Doomtrain
             new AboutBox().ShowDialog();
         }
 
+
         //BACKUP
         private void Backup()
         {
             if (_backup == null || KernelWorker.Kernel == null)
                 return;
 
-            if (!System.IO.File.Exists(_backup))
-            {
-                File.WriteAllBytes(_backup, KernelWorker.Kernel);
-                KernelWorker.BackupKernel = KernelWorker.Kernel;
-            }
-            else
+            if (File.Exists(_backup))
             {
                 KernelWorker.BackupKernel = File.ReadAllBytes(_backup);
             }
         }
+
 
         #endregion
 
@@ -7014,6 +7082,9 @@ namespace Doomtrain
             }
             _loaded = true;
         }
+
+
+
 
 
         #endregion

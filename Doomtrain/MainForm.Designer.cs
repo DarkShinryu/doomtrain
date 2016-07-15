@@ -270,15 +270,18 @@
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.deleteTooltipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolbarStrip = new System.Windows.Forms.ToolStrip();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.deleteTooltipsToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.tabPageGFAttacks = new System.Windows.Forms.TabPage();
             this.groupBoxGFAttacksFlags = new System.Windows.Forms.GroupBox();
             this.checkBoxGFAttacksFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
@@ -6203,7 +6206,8 @@
             this.toolStripSeparator,
             this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem,
-            this.toolStripSeparator1,
+            this.toolStripSeparator5,
+            this.deleteTooltipsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -6215,14 +6219,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
             this.openToolStripMenuItem.Text = "Open...";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(152, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(245, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -6230,7 +6234,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -6238,21 +6242,34 @@
             // 
             this.saveAsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveAsToolStripMenuItem.Image")));
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
             this.saveAsToolStripMenuItem.Text = "Save As...";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
-            // toolStripSeparator1
+            // toolStripSeparator5
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(152, 6);
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(245, 6);
+            // 
+            // deleteTooltipsToolStripMenuItem
+            // 
+            this.deleteTooltipsToolStripMenuItem.Enabled = false;
+            this.deleteTooltipsToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.deletetooltip;
+            this.deleteTooltipsToolStripMenuItem.Name = "deleteTooltipsToolStripMenuItem";
+            this.deleteTooltipsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.Q)));
+            this.deleteTooltipsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.deleteTooltipsToolStripMenuItem.Text = "Delete Tooltips File";
+            this.deleteTooltipsToolStripMenuItem.Click += new System.EventHandler(this.deleteTooltipsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.close;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -6284,9 +6301,11 @@
             // 
             this.toolbarStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripButton,
+            this.toolStripSeparator4,
             this.saveToolStripButton,
             this.saveAsToolStripButton,
-            this.toolStripSeparator2});
+            this.toolStripSeparator2,
+            this.deleteTooltipsToolStripButton});
             this.toolbarStrip.Location = new System.Drawing.Point(0, 24);
             this.toolbarStrip.Name = "toolbarStrip";
             this.toolbarStrip.Size = new System.Drawing.Size(654, 25);
@@ -6300,9 +6319,14 @@
             this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripButton.Name = "openToolStripButton";
             this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.openToolStripButton.Text = "&Open";
+            this.openToolStripButton.Text = "Open";
             this.openToolStripButton.ToolTipText = "Open...";
             this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
             // 
             // saveToolStripButton
             // 
@@ -6311,7 +6335,7 @@
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
             this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.saveToolStripButton.Text = "&Save";
+            this.saveToolStripButton.Text = "Save";
             this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
             // saveAsToolStripButton
@@ -6324,6 +6348,17 @@
             this.saveAsToolStripButton.Text = "saveAs";
             this.saveAsToolStripButton.ToolTipText = "Save As...";
             this.saveAsToolStripButton.Click += new System.EventHandler(this.saveAsToolStripButton_Click);
+            // 
+            // deleteTooltipsToolStripButton
+            // 
+            this.deleteTooltipsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.deleteTooltipsToolStripButton.Enabled = false;
+            this.deleteTooltipsToolStripButton.Image = global::Doomtrain.Properties.Resources.deletetooltip;
+            this.deleteTooltipsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.deleteTooltipsToolStripButton.Name = "deleteTooltipsToolStripButton";
+            this.deleteTooltipsToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.deleteTooltipsToolStripButton.Text = "Delete Tooltips File";
+            this.deleteTooltipsToolStripButton.Click += new System.EventHandler(this.deleteTooltipsToolStripButton_Click);
             // 
             // tabPageGFAttacks
             // 
@@ -40122,6 +40157,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doomtrain 0.1.0";
             this.Load += new System.EventHandler(this.mainForm_Load);
+            this.Shown += new System.EventHandler(this.mainForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).EndInit();
@@ -40720,11 +40756,9 @@
 
         #endregion
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -42681,6 +42715,11 @@
         private System.Windows.Forms.Label labelBatComRinoaID;
         private System.Windows.Forms.ListBox listBoxBatComRinoa;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem deleteTooltipsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton deleteTooltipsToolStripButton;
     }
 }
 
