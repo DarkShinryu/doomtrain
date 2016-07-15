@@ -28,7 +28,7 @@ namespace Doomtrain
         {
             InitializeComponent();
 
-            _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips";
+            _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips.bin";
             //CreateTooltipsFile();
 
             if (File.Exists(_backup))
@@ -1687,8 +1687,8 @@ namespace Doomtrain
                         }
                     }
 
-                    MessageBox.Show("The file has been created in the same folder of Doomtrain.exe.",
-                        "Tooltips file created correctly", MessageBoxButtons.OK);
+                    MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.\nDoomtrain wiil now restart.",
+                        "Tooltips file created", MessageBoxButtons.OK);
 
                     Process.Start(Application.ExecutablePath);
                     Process.GetCurrentProcess().Kill();
@@ -2401,9 +2401,9 @@ namespace Doomtrain
                 ToolTip(checkBoxMagicFlag3, 1, (KernelWorker.GetSelectedMagicData.Flags & 0x04) >= 1 ? true : false);
                 ToolTip(checkBoxMagicBreakDamageLimit,1,(KernelWorker.GetSelectedMagicData.Flags & 0x08) >= 1 ? true : false);
                 ToolTip(checkBoxMagicFlag5,1,(KernelWorker.GetSelectedMagicData.Flags & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxMagicFlag5, 1, (KernelWorker.GetSelectedMagicData.Flags & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxMagicFlag5, 1, (KernelWorker.GetSelectedMagicData.Flags & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxMagicFlag5, 1, (KernelWorker.GetSelectedMagicData.Flags & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxMagicFlag6, 1, (KernelWorker.GetSelectedMagicData.Flags & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxMagicFlag7, 1, (KernelWorker.GetSelectedMagicData.Flags & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxMagicFlag8, 1, (KernelWorker.GetSelectedMagicData.Flags & 0x80) >= 1 ? true : false);
                 ToolTip(numericUpDownMagicDrawResist,0,KernelWorker.GetSelectedMagicData.DrawResist);
                 ToolTip(numericUpDownMagicHitCount,0,KernelWorker.GetSelectedMagicData.HitCount);
                 ToolTip(comboBoxMagicElement,2,comboBoxMagicElement.Items[ Magic_GetElement()]);
