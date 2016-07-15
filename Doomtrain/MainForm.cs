@@ -1729,10 +1729,11 @@ namespace Doomtrain
                                     KernelWorker.BackupKernel = KernelWorker.Kernel;
                                 }
                             }
-                            MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.",
+                            MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.\nDoomtrain will now restart.",
                                 "Tooltips file created", MessageBoxButtons.OK);
-                            deleteTooltipsToolStripMenuItem.Enabled = true;
-                            deleteTooltipsToolStripButton.Enabled = true;
+
+                            Process.Start(Application.ExecutablePath);
+                            Environment.Exit(0);
                         }
                         else
                         {
