@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace Doomtrain
 {
@@ -26,10 +27,9 @@ namespace Doomtrain
 
         public mainForm()
         {
-            InitializeComponent();
+            InitializeComponent();            
 
             _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips.bin";
-            //CreateTooltipsFile();
 
             if (File.Exists(_backup))
             {
@@ -1601,7 +1601,7 @@ namespace Doomtrain
         
 
         //OPEN
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Title = "Open FF8 kernel.bin";
@@ -1628,24 +1628,40 @@ namespace Doomtrain
                 saveAsToolStripMenuItem.Enabled = true;
                 saveToolStripButton.Enabled = true;
                 saveAsToolStripButton.Enabled = true;
+
+                toolStripStatusLabel1.Text = Path.GetFileName(existingFilename) + " loaded";
+                statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                toolStripStatusLabel1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                await Task.Delay(3000);
+                statusStrip1.BackColor = Color.Gray;
+                toolStripStatusLabel1.BackColor = Color.Gray;
+                toolStripStatusLabel1.Text = "Ready";
             }
         }
 
 
 
         //SAVE
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
             {
                 File.WriteAllBytes(existingFilename, KernelWorker.Kernel);
+
+                statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                toolStripStatusLabel1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                toolStripStatusLabel1.Text = Path.GetFileName(existingFilename) + " saved";
+                await Task.Delay(3000);
+                statusStrip1.BackColor = Color.Gray;
+                toolStripStatusLabel1.BackColor = Color.Gray;
+                toolStripStatusLabel1.Text = "Ready";
             }
         }
 
 
 
         // SAVE AS
-        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveAsDialog = new SaveFileDialog();
             saveAsDialog.Title = "Save FF8 kernel.bin";
@@ -1657,6 +1673,14 @@ namespace Doomtrain
                 if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
                 {
                     File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
+
+                    toolStripStatusLabel1.Text = Path.GetFileName(saveAsDialog.FileName) + " saved";
+                    statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                    toolStripStatusLabel1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                    await Task.Delay(3000);
+                    statusStrip1.BackColor = Color.Gray;
+                    toolStripStatusLabel1.BackColor = Color.Gray;
+                    toolStripStatusLabel1.Text = "Ready";
                 }
             }
         }
@@ -1696,11 +1720,6 @@ namespace Doomtrain
             }
         }
 
-        private void mainForm_Shown(object sender, EventArgs e)
-        {
-            CreateTooltipsFile();
-        }
-
         private void deleteTooltipsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Doomtrain will restart and unsaved changes will be lost, do you want to continue?", 
@@ -1718,6 +1737,11 @@ namespace Doomtrain
             }
         }
 
+        private void mainForm_Shown(object sender, EventArgs e)
+        {
+            CreateTooltipsFile();
+            toolStripStatusLabel1.Text = "Ready";
+        }
 
 
         //EXIT
@@ -7087,8 +7111,16 @@ namespace Doomtrain
 
 
 
+
         #endregion
 
 
+        private void StatusStripText()
+        {
+            if ((string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
+                statusStrip1.Text = "Ready";
+            else if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
+                statusStrip1.Text = existingFilename + "loaded correctly";
+        }
     }
 }
