@@ -1996,6 +1996,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.panelMain = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -2496,6 +2497,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).BeginInit();
             this.statusStrip1.SuspendLayout();
+            this.panelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -20544,7 +20546,7 @@
             this.tabControlMain.Controls.Add(this.tabPageMisc);
             this.tabControlMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.tabControlMain.ItemSize = new System.Drawing.Size(115, 30);
-            this.tabControlMain.Location = new System.Drawing.Point(0, 52);
+            this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
             this.tabControlMain.Size = new System.Drawing.Size(634, 807);
@@ -40129,6 +40131,7 @@
             // statusStrip1
             // 
             this.statusStrip1.BackColor = System.Drawing.Color.Gray;
+            this.statusStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 860);
@@ -40147,14 +40150,23 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
+            // panelMain
+            // 
+            this.panelMain.AutoScroll = true;
+            this.panelMain.Controls.Add(this.tabControlMain);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 49);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(654, 811);
+            this.panelMain.TabIndex = 2;
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(654, 882);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolbarStrip);
-            this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -40163,7 +40175,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(670, 921);
-            this.MinimumSize = new System.Drawing.Size(670, 0);
+            this.MinimumSize = new System.Drawing.Size(670, 200);
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doomtrain 0.1.0";
@@ -40760,6 +40772,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.panelMain.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -42732,6 +42745,7 @@
         private System.Windows.Forms.ToolStripMenuItem deleteTooltipsToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton deleteTooltipsToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.Panel panelMain;
     }
 }
 
