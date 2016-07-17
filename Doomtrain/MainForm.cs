@@ -1601,6 +1601,7 @@ namespace Doomtrain
 
         public string existingFilename; //used for open/save stuff
 
+
         //OPEN
         private async void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -1695,14 +1696,15 @@ namespace Doomtrain
             if (!File.Exists(_backup))
             {
                 DialogResult dialogResult = MessageBox.Show("Do you want to create a copy of this kernel.bin file " +
-                    "to show default values tooltips?", "Create tooltips file", MessageBoxButtons.YesNo);
+                    "to show default values tooltips?", "Create tooltips file", 
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 
                 if (dialogResult == DialogResult.Yes)
                 {
                     File.WriteAllBytes(_backup, KernelWorker.Kernel);
                     KernelWorker.BackupKernel = KernelWorker.Kernel;
                     MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.",
-                        "Tooltips file created", MessageBoxButtons.OK);
+                        "Tooltips file created", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     deleteTooltipsToolStripMenuItem.Enabled = true;
                     deleteTooltipsToolStripButton.Enabled = true;
                 }
@@ -1710,7 +1712,8 @@ namespace Doomtrain
                 else if (dialogResult == DialogResult.No)
                 {
                     DialogResult dialogResult2 = MessageBox.Show("Do you want to point me to another kernel.bin file?" + 
-                        "\nIf you answer no the file will be created from the kernel.bin you opened previously.", "Create tooltips file", MessageBoxButtons.YesNo);
+                        "\nIf you answer no the file will be created from the kernel.bin you opened previously.", "Create tooltips file", 
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
                     if (dialogResult2 == DialogResult.Yes)
                     {
                         OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -1730,17 +1733,17 @@ namespace Doomtrain
                                 }
                             }
                             MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.\nDoomtrain will now restart.",
-                                "Tooltips file created", MessageBoxButtons.OK);
+                                "Tooltips file created", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             Process.Start(Application.ExecutablePath);
-                            Environment.Exit(0);
+                            Application.Exit();
                         }
                         else
                         {
                             File.WriteAllBytes(_backup, KernelWorker.Kernel);
                             KernelWorker.BackupKernel = KernelWorker.Kernel;
                             MessageBox.Show("The file has created in the same folder of Doomtrain.exe from the kernel.bin you opened previously.",
-                                "Tooltips file created", MessageBoxButtons.OK);
+                                "Tooltips file created", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             deleteTooltipsToolStripMenuItem.Enabled = true;
                             deleteTooltipsToolStripButton.Enabled = true;
                         }
@@ -1751,7 +1754,7 @@ namespace Doomtrain
                         File.WriteAllBytes(_backup, KernelWorker.Kernel);
                         KernelWorker.BackupKernel = KernelWorker.Kernel;
                         MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.",
-                            "Tooltips file created", MessageBoxButtons.OK);
+                            "Tooltips file created", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         deleteTooltipsToolStripMenuItem.Enabled = true;
                         deleteTooltipsToolStripButton.Enabled = true;
                     }
@@ -1770,14 +1773,15 @@ namespace Doomtrain
 
         private void deleteTooltipsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("This will delete the tooltips.bin file.\nDoomtrain will restart and unsaved changes will be lost, do you want to continue?", 
-                "Delete Tooltips File", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("This will delete the tooltips.bin file." + 
+                "\nDoomtrain will restart and unsaved changes will be lost, do you want to continue?", 
+                "Delete Tooltips File", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
             if (dialogResult == DialogResult.Yes)
             {
                 File.Delete(_backup);
 
                 Process.Start(Application.ExecutablePath);
-                Environment.Exit(0);
+                Application.Exit();
             }
         }
 
@@ -1794,32 +1798,25 @@ namespace Doomtrain
             if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
             {
                 DialogResult dialogResult = MessageBox.Show("Do you really want to exit?",
-                    "Close", MessageBoxButtons.YesNo);
+                    "Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
                 if (dialogResult == DialogResult.Yes)
-                    Environment.Exit(0);
+                    Application.Exit();
             }
             else
-                Environment.Exit(0);
+                Application.Exit();
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
             {
-                DialogResult result = MessageBox.Show("Do you really want to exit?", 
-                    "Close", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
-                {
-                    Environment.Exit(0);
-                }
-                else
-                {
+                if (DialogResult.No == MessageBox.Show("Are you sure you want to exit?", "Exit", 
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2))
                     e.Cancel = true;
-                }
             }
-            else
-                Environment.Exit(0);
+            else { }
+
         }
 
 
@@ -1902,93 +1899,93 @@ namespace Doomtrain
 
 
         //CHARACTERS CHARTS
-        private CharEXP CharEXP;
+        private CharEXP _CharEXP;
         private void buttonCharEXPChart_Click(object sender, EventArgs e)
         {
-            if ((CharEXP == null) || (CharEXP.IsDisposed))
+            if ((_CharEXP == null) || (_CharEXP.IsDisposed))
             {
-                CharEXP = new CharEXP();
+                _CharEXP = new CharEXP(this);
             }
-            CharEXP.Show();
-            CharEXP.Focus();
+            _CharEXP.Show();
+            _CharEXP.Focus();
         }
 
-        private CharHP CharHP;
+        private CharHP _CharHP;
         private void buttonCharHPChart_Click(object sender, EventArgs e)
         {
-            if ((CharHP == null) || (CharHP.IsDisposed))
+            if ((_CharHP == null) || (_CharHP.IsDisposed))
             {
-                CharHP = new CharHP();
+                _CharHP = new CharHP();
             }
-            CharHP.Show();
-            CharHP.Focus();
+            _CharHP.Show();
+            _CharHP.Focus();
 
 
         }
-        private charSTR CharSTR;
+        private charSTR _CharSTR;
         private void buttonCharSTRChart_Click(object sender, EventArgs e)
         {
-            if ((CharSTR == null) || (CharSTR.IsDisposed))
+            if ((_CharSTR == null) || (_CharSTR.IsDisposed))
             {
-                CharSTR = new charSTR();
+                _CharSTR = new charSTR();
             }
-            CharSTR.Show();
-            CharSTR.Focus();
+            _CharSTR.Show();
+            _CharSTR.Focus();
         }
 
-        private CharVIT CharVIT;
+        private CharVIT _CharVIT;
         private void buttonCharVITChart_Click(object sender, EventArgs e)
         {
-            if ((CharVIT == null) || (CharVIT.IsDisposed))
+            if ((_CharVIT == null) || (_CharVIT.IsDisposed))
             {
-                CharVIT = new CharVIT();
+                _CharVIT = new CharVIT();
             }
-            CharVIT.Show();
-            CharVIT.Focus();
+            _CharVIT.Show();
+            _CharVIT.Focus();
         }
 
-        private CharMAG CharMAG;
+        private CharMAG _CharMAG;
         private void buttonCharMAGChart_Click(object sender, EventArgs e)
         {
-            if ((CharMAG == null) || (CharMAG.IsDisposed))
+            if ((_CharMAG == null) || (_CharMAG.IsDisposed))
             {
-                CharMAG = new CharMAG();
+                _CharMAG = new CharMAG();
             }
-            CharMAG.Show();
-            CharMAG.Focus();
+            _CharMAG.Show();
+            _CharMAG.Focus();
         }
 
-        private CharSPR CharSPR;
+        private CharSPR _CharSPR;
         private void buttonCharSPRChart_Click(object sender, EventArgs e)
         {
-            if ((CharSPR == null) || (CharSPR.IsDisposed))
+            if ((_CharSPR == null) || (_CharSPR.IsDisposed))
             {
-                CharSPR = new CharSPR();
+                _CharSPR = new CharSPR();
             }
-            CharSPR.Show();
-            CharSPR.Focus();
+            _CharSPR.Show();
+            _CharSPR.Focus();
         }
 
-        private CharSPD CharSPD;
+        private CharSPD _CharSPD;
         private void buttonCharSPDChart_Click(object sender, EventArgs e)
         {
-            if ((CharSPD == null) || (CharSPD.IsDisposed))
+            if ((_CharSPD == null) || (_CharSPD.IsDisposed))
             {
-                CharSPD = new CharSPD();
+                _CharSPD = new CharSPD();
             }
-            CharSPD.Show();
-            CharSPD.Focus();
+            _CharSPD.Show();
+            _CharSPD.Focus();
         }
 
-        private CharLUCK CharLUCK;
+        private CharLUCK _CharLUCK;
         private void buttonCharLUCKChart_Click(object sender, EventArgs e)
         {
-            if ((CharLUCK == null) || (CharLUCK.IsDisposed))
+            if ((_CharLUCK == null) || (_CharLUCK.IsDisposed))
             {
-                CharLUCK = new CharLUCK();
+                _CharLUCK = new CharLUCK();
             }
-            CharLUCK.Show();
-            CharLUCK.Focus();
+            _CharLUCK.Show();
+            _CharLUCK.Focus();
         }
 
 

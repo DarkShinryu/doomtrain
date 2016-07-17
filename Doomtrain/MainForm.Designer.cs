@@ -41023,7 +41023,6 @@
         private System.Windows.Forms.Label labelCharHPB;
         private System.Windows.Forms.NumericUpDown numericUpDownCharHP1;
         private System.Windows.Forms.Label labelCharHPA;
-        private System.Windows.Forms.ListBox listBoxCharacters;
         private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
@@ -42746,6 +42745,7 @@
         private System.Windows.Forms.ToolStripButton deleteTooltipsToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.Panel panelMain;
+        public System.Windows.Forms.ListBox listBoxCharacters;
     }
 }
 
