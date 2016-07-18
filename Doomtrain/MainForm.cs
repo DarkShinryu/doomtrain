@@ -45,7 +45,7 @@ namespace Doomtrain
             saveAsToolStripButton.Enabled = false;
             saveToolStripButton.Enabled = false;
 
-            //disable charts buttons when no file is open
+            //disable charts and formula buttons when no file is open
             buttonCharEXPChart.Enabled = false;
             buttonCharHPChart.Enabled = false;
             buttonCharSTRChart.Enabled = false;
@@ -1886,29 +1886,32 @@ namespace Doomtrain
 
         #region Close
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
-            {
-                DialogResult dialogResult = MessageBox.Show("Are you sure you want to exit?", "Exit", 
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
-
-                if (dialogResult == DialogResult.Yes)
-                    Application.Exit();
-            }
-            else
-                Application.Exit();
-        }
-
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
             {
-                if (DialogResult.No == MessageBox.Show("Are you sure you want to exit?", "Exit", 
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2))
+                DialogResult dialogResult = MessageBox.Show("Save changes to " + Path.GetFileName(existingFilename) + " before closing?", "Close",
+                    MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    SaveFileDialog saveAsDialog = new SaveFileDialog();
+                    saveAsDialog.Title = "Save FF8 kernel.bin";
+                    saveAsDialog.Filter = "FF8 Kernel File|*.bin";
+                    saveAsDialog.FileName = Path.GetFileName(existingFilename);
+
+                    if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
+                    File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
+                }
+
+                else if (dialogResult == DialogResult.Cancel)
                     e.Cancel = true;
             }
-            else { }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         #endregion
