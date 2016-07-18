@@ -214,6 +214,7 @@
             this.MaximumSize = new System.Drawing.Size(640, 450);
             this.MinimumSize = new System.Drawing.Size(640, 450);
             this.Name = "CharEXP";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.chartEXP)).EndInit();
             this.ResumeLayout(false);

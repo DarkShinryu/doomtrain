@@ -1790,7 +1790,7 @@ namespace Doomtrain
                 if (dialogResult == DialogResult.Yes)
                 {
                     File.WriteAllBytes(_backup, KernelWorker.Kernel);
-                    KernelWorker.BackupKernel = KernelWorker.Kernel;
+                    KernelWorker.BackupKernel = File.ReadAllBytes(_backup);
                     MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.",
                         "Tooltips file created", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     deleteTooltipsToolStripMenuItem.Enabled = true;
@@ -1817,19 +1817,19 @@ namespace Doomtrain
                                 {
                                     KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
                                     File.WriteAllBytes(_backup, KernelWorker.Kernel);
-                                    KernelWorker.BackupKernel = KernelWorker.Kernel;
+                                    KernelWorker.BackupKernel = File.ReadAllBytes(_backup);
                                 }
                             }
                             MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.\nDoomtrain will now restart.",
                                 "Tooltips file created", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             Process.Start(Application.ExecutablePath);
-                            Application.Exit();
+                            Environment.Exit(0);
                         }
                         else
                         {
                             File.WriteAllBytes(_backup, KernelWorker.Kernel);
-                            KernelWorker.BackupKernel = KernelWorker.Kernel;
+                            KernelWorker.BackupKernel = File.ReadAllBytes(_backup);
                             MessageBox.Show("The file has created in the same folder of Doomtrain.exe from the kernel.bin you opened previously.",
                                 "Tooltips file created", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             deleteTooltipsToolStripMenuItem.Enabled = true;
@@ -1840,7 +1840,7 @@ namespace Doomtrain
                     else if (dialogResult2 == DialogResult.No)
                     {
                         File.WriteAllBytes(_backup, KernelWorker.Kernel);
-                        KernelWorker.BackupKernel = KernelWorker.Kernel;
+                        KernelWorker.BackupKernel = File.ReadAllBytes(_backup);
                         MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.",
                             "Tooltips file created", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         deleteTooltipsToolStripMenuItem.Enabled = true;
@@ -1869,7 +1869,7 @@ namespace Doomtrain
                 File.Delete(_backup);
 
                 Process.Start(Application.ExecutablePath);
-                Application.Exit();
+                Environment.Exit(0);
             }
         }
 
