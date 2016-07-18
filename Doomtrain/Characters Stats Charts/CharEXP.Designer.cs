@@ -29,6 +29,16 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel1 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel2 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel3 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel4 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel5 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel6 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel7 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel8 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel9 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel10 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
@@ -42,7 +52,7 @@
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 0D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 0D);
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 0D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint13 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 0D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint14 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 0D);
@@ -60,10 +70,53 @@
             // 
             // chartEXP
             // 
+            customLabel1.FromPosition = -0.5D;
+            customLabel1.Text = "10";
+            customLabel1.ToPosition = 0.5D;
+            customLabel2.FromPosition = 0.5D;
+            customLabel2.Text = "20";
+            customLabel2.ToPosition = 1.5D;
+            customLabel3.FromPosition = 1.5D;
+            customLabel3.Text = "30";
+            customLabel3.ToPosition = 2.5D;
+            customLabel4.FromPosition = 2.5D;
+            customLabel4.Text = "40";
+            customLabel4.ToPosition = 3.5D;
+            customLabel5.FromPosition = 3.5D;
+            customLabel5.Text = "50";
+            customLabel5.ToPosition = 4.5D;
+            customLabel6.FromPosition = 4.5D;
+            customLabel6.Text = "60";
+            customLabel6.ToPosition = 5.5D;
+            customLabel7.FromPosition = 5.5D;
+            customLabel7.Text = "70";
+            customLabel7.ToPosition = 6.5D;
+            customLabel8.FromPosition = 6.5D;
+            customLabel8.Text = "80";
+            customLabel8.ToPosition = 7.5D;
+            customLabel9.FromPosition = 7.5D;
+            customLabel9.Text = "90";
+            customLabel9.ToPosition = 8.5D;
+            customLabel10.FromPosition = 8.5D;
+            customLabel10.Text = "100";
+            customLabel10.ToPosition = 9.5D;
+            chartArea1.AxisX.CustomLabels.Add(customLabel1);
+            chartArea1.AxisX.CustomLabels.Add(customLabel2);
+            chartArea1.AxisX.CustomLabels.Add(customLabel3);
+            chartArea1.AxisX.CustomLabels.Add(customLabel4);
+            chartArea1.AxisX.CustomLabels.Add(customLabel5);
+            chartArea1.AxisX.CustomLabels.Add(customLabel6);
+            chartArea1.AxisX.CustomLabels.Add(customLabel7);
+            chartArea1.AxisX.CustomLabels.Add(customLabel8);
+            chartArea1.AxisX.CustomLabels.Add(customLabel9);
+            chartArea1.AxisX.CustomLabels.Add(customLabel10);
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.LabelAutoFitMinFontSize = 10;
+            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             chartArea1.AxisX.Title = "Level";
             chartArea1.AxisX.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10F);
             chartArea1.AxisY.Title = "Experience";
-            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10F);
             chartArea1.Name = "ChartAreaEXP";
             this.chartEXP.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
@@ -74,6 +127,8 @@
             series1.Legend = "Legend1";
             series1.Name = "Default";
             dataPoint1.AxisLabel = "";
+            dataPoint1.IsValueShownAsLabel = false;
+            dataPoint1.MarkerSize = 5;
             dataPoint2.AxisLabel = "";
             dataPoint3.AxisLabel = "";
             dataPoint4.AxisLabel = "";

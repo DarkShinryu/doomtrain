@@ -40148,7 +40148,8 @@
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(39, 17);
+            this.toolStripStatusLabel1.Text = "Ready";
             // 
             // panelMain
             // 
@@ -40180,7 +40181,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doomtrain 0.1.0";
             this.Load += new System.EventHandler(this.mainForm_Load);
-            this.Shown += new System.EventHandler(this.mainForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).EndInit();
@@ -41111,9 +41111,7 @@
         private System.Windows.Forms.Label labelGFAbilityUnlock4;
         private System.Windows.Forms.Label labelGFAbilityUnlock3;
         private System.Windows.Forms.Label labelGFAbilityUnlock2;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharEXP2;
         private System.Windows.Forms.Label labelCharEXPB;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharEXP1;
         private System.Windows.Forms.Label labelCharEXPA;
         private System.Windows.Forms.TabPage tabPageAbJunction;
         private System.Windows.Forms.TabPage tabPageAbComData;
@@ -42746,6 +42744,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.Panel panelMain;
         public System.Windows.Forms.ListBox listBoxCharacters;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharEXP2;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharEXP1;
     }
 }
 

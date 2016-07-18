@@ -2,7 +2,6 @@
 using System.Windows.Forms;
 using System.IO;
 using Doomtrain.Characters_Stats_Charts;
-using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Drawing;
 using System.Drawing.Text;
@@ -46,6 +45,24 @@ namespace Doomtrain
             saveAsToolStripButton.Enabled = false;
             saveToolStripButton.Enabled = false;
 
+            //disable charts buttons when no file is open
+            buttonCharEXPChart.Enabled = false;
+            buttonCharHPChart.Enabled = false;
+            buttonCharSTRChart.Enabled = false;
+            buttonCharVITChart.Enabled = false;
+            buttonCharMAGChart.Enabled = false;
+            buttonCharSPRChart.Enabled = false;
+            buttonCharSPDChart.Enabled = false;
+            buttonCharLUCKChart.Enabled = false;
+            buttonCharEXPFormula.Enabled = false;
+            buttonCharHPFormula.Enabled = false;
+            buttonCharSTRFormula.Enabled = false;
+            buttonCharVITFormula.Enabled = false;
+            buttonCharMAGFormula.Enabled = false;
+            buttonCharSPRFormula.Enabled = false;
+            buttonCharSPDFormula.Enabled = false;
+            buttonCharLUCKFormula.Enabled = false;
+
 
 
             //this is for enabling the switching of listboxes in the ability section
@@ -62,7 +79,9 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS MAGIC
+            #region EVENT HANDLERS
+
+            #region Magic
 
             comboBoxMagicMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(2, comboBoxMagicMagicID.SelectedIndex);
             comboBoxMagicAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(43, comboBoxMagicAttackType.SelectedIndex);
@@ -201,7 +220,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS J-GFs
+            #region J-GFs
 
             comboBoxGFMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(0, comboBoxGFMagicID.SelectedIndex);
             comboBoxGFAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(26, comboBoxGFAttackType.SelectedIndex);
@@ -321,7 +340,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS NON-J GFs ATTACK
+            #region Non-J GFs attacks
 
             comboBoxGFAttacksMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(0, comboBoxGFAttacksMagicID.SelectedIndex);
             comboBoxGFAttacksAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(8, comboBoxGFAttacksAttackType.SelectedIndex);
@@ -381,7 +400,8 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS WEAPONS
+            #region Weapons
+
             checkBoxWeaponsRenzoFinRough.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x01, 0);
             checkBoxWeaponsRenzoFinFated.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x02, 0);
             checkBoxWeaponsRenzoFinBlasting.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x04, 0);
@@ -394,7 +414,8 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS CHARACTERS
+            #region Characters
+
             numericUpDownCharCrisisLevelHP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(0, numericUpDownCharCrisisLevelHP.Value);
             comboBoxCharGender.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(1, comboBoxCharGender.SelectedIndex);
             numericUpDownCharLimitID.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(2, numericUpDownCharLimitID.Value);
@@ -432,7 +453,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS ENEMY ATTACKS
+            #region Enemy attacks
 
             comboBoxEnemyAttacksMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(0, comboBoxEnemyAttacksMagicID.SelectedIndex);
             comboBoxEnemyAttacksAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(1, comboBoxEnemyAttacksAttackType.SelectedIndex);
@@ -490,7 +511,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS BLUE MAGIC
+            #region Blue magic
 
             comboBoxBlueMagicMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(0, comboBoxBlueMagicMagicID.SelectedIndex);
             comboBoxBlueMagicAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(1, comboBoxBlueMagicAttackType.SelectedIndex);
@@ -507,7 +528,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS BLUE MAGIC PARAM
+            #region Blue magic params
 
             checkBoxBlueMagicCL1Sleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x01, 0);
             checkBoxBlueMagicCL1Haste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x02, 0);
@@ -683,7 +704,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS STATS INCREASE ABILITIES
+            #region Stats increment abilities
 
             numericUpDownAbStatsAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(0, numericUpDownAbStatsAP.Value);
             comboBoxAbStatsStatToIncrease.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(1, comboBoxAbStatsStatToIncrease.SelectedIndex);
@@ -691,7 +712,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS RENZOKUKEN FINISHERS
+            #region Renzokuken finishers
 
             comboBoxRenzoFinMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(0, comboBoxRenzoFinMagicID.SelectedIndex);
             comboBoxRenzoFinAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(1, comboBoxRenzoFinAttackType.SelectedIndex);
@@ -759,7 +780,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS TEMPORARY CHARACTERS LIMIT BREAKS
+            #region Temporary characters limit breaks
 
             comboBoxTempCharLBMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_TempCharLB(0, comboBoxTempCharLBMagicID.SelectedIndex);
             comboBoxTempCharLBAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_TempCharLB(1, comboBoxTempCharLBAttackType.SelectedIndex);
@@ -827,7 +848,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS SHOT
+            #region Shot
 
             comboBoxShotMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(0, comboBoxShotMagicID.SelectedIndex);
             comboBoxShotAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(1, comboBoxShotAttackType.SelectedIndex);
@@ -896,7 +917,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS DUEL
+            #region Duel
 
             comboBoxDuelMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(0, comboBoxDuelMagicID.SelectedIndex);
             comboBoxDuelAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(1, comboBoxDuelAttackType.SelectedIndex);
@@ -1067,7 +1088,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS COMBINE
+            #region Combine
 
             comboBoxCombineMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(0, comboBoxCombineMagicID.SelectedIndex);
             comboBoxCombineAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(1, comboBoxCombineAttackType.SelectedIndex);
@@ -1135,7 +1156,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS BATTLE ITEMS
+            #region Battle items
 
             comboBoxBattleItemsMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(0, comboBoxBattleItemsMagicID.SelectedIndex);
             comboBoxBattleItemsAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(1, comboBoxBattleItemsAttackType.SelectedIndex);
@@ -1202,7 +1223,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS SLOT ARRAY
+            #region Slot array
 
             numericUpDownSlotsArray1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(0, numericUpDownSlotsArray1.Value);
             numericUpDownSlotsArray2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(1, numericUpDownSlotsArray2.Value);
@@ -1267,7 +1288,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS SLOT SETS
+            #region Slot sets
 
             comboBoxSlotsMagic1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(0, comboBoxSlotsMagic1.SelectedIndex);
             numericUpDownSlotsCount1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotsSets(1, numericUpDownSlotsCount1.Value);
@@ -1288,7 +1309,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS DEVOUR
+            #region Devour
 
             comboBoxDevourHealDmg.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(0, Devour_GetHealDmg(comboBoxDevourHealDmg.SelectedIndex));
             checkBoxDevourHP1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(1, 0x01);
@@ -1346,7 +1367,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS MISC
+            #region Misc
 
             numericUpDownStatusTimer1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(0, numericUpDownStatusTimer1.Value);
             numericUpDownStatusTimer2.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Misc(1, numericUpDownStatusTimer2.Value);
@@ -1412,7 +1433,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS COMMAND ABILITY DATA
+            #region Command abilities data
 
             comboBoxAbComDataMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(0, comboBoxAbComDataMagicID.SelectedIndex);
             comboBoxAbComDataAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbilityData(1, comboBoxAbComDataAttackType.SelectedIndex);
@@ -1471,14 +1492,14 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS COMMAND ABILITY
+            #region Command abilities
 
             numericUpDownAbComAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbility(0, numericUpDownAbComAP.Value);
             comboBoxAbComBattleCommand.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbility(1, comboBoxAbComBattleCommand.SelectedIndex);
 
             #endregion
 
-            #region EVENT HANDLERS JUNCTION ABILITIES
+            #region Junction abilities
 
             numericUpDownAbJunAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(0, numericUpDownAbJunAP.Value);
             checkBoxAbJunFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x01);
@@ -1503,7 +1524,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS PARTY ABILITIES
+            #region Party abilities
 
             numericUpDownAbPartyAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(0, numericUpDownAbPartyAP.Value);
             checkBoxAbPartyFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x01);
@@ -1517,7 +1538,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS GF ABILITIES
+            #region GFs abilities
 
             numericUpDownAbGFAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(0, numericUpDownAbGFAP.Value);
             checkBoxAbGFBoost.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(1, 0x01);
@@ -1526,7 +1547,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS CHARACTER ABILITIES
+            #region Characters abilities
 
             numericUpDownAbCharAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(0, numericUpDownAbCharAP.Value);
             checkBoxAbCharFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x01);
@@ -1556,7 +1577,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS MENU ABILITIES
+            #region Menu abilities
 
             numericUpDownAbMenuAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(0, numericUpDownAbMenuAP.Value);
             numericUpDownAbMenuIndex.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(1, numericUpDownAbMenuIndex.Value);
@@ -1565,7 +1586,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS BATTLE COMMANDS
+            #region Battle commmands
 
             comboBoxBatComAbilityID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(0, comboBoxBatComAbilityID.SelectedIndex);
             checkBoxBatComFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(1, 0x01);
@@ -1580,7 +1601,7 @@ namespace Doomtrain
 
             #endregion
 
-            #region EVENT HANDLERS RINOA COMMANDS
+            #region Rinoa commands
             
             checkBoxBatComRinoaFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x01);
             checkBoxBatComRinoaFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x02);
@@ -1594,15 +1615,17 @@ namespace Doomtrain
             comboBoxBatComRinoaID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(2, comboBoxBatComAbilityID.SelectedIndex);
 
             #endregion
+
+            #endregion
         }
 
 
-        #region OPEN, SAVE, CLOSE, EXIT, TOOLBAR, ABOUT, TOOLTIPS
+        #region OPEN, SAVE, TOOLBAR, TOOLTIPS FILE, ABOUT, CLOSE
 
         public string existingFilename; //used for open/save stuff
 
+        #region Open
 
-        //OPEN
         private async void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -1625,13 +1648,54 @@ namespace Doomtrain
                     CreateTooltipsFile();
     }
 
-
                 existingFilename = openFileDialog.FileName;
 
                 saveToolStripMenuItem.Enabled = true;
                 saveAsToolStripMenuItem.Enabled = true;
                 saveToolStripButton.Enabled = true;
                 saveAsToolStripButton.Enabled = true;
+                buttonCharEXPChart.Enabled = true;
+                buttonCharHPChart.Enabled = true;
+                buttonCharSTRChart.Enabled = true;
+                buttonCharVITChart.Enabled = true;
+                buttonCharMAGChart.Enabled = true;
+                buttonCharSPRChart.Enabled = true;
+                buttonCharSPDChart.Enabled = true;
+                buttonCharLUCKChart.Enabled = true;
+                buttonCharEXPFormula.Enabled = true;
+                buttonCharHPFormula.Enabled = true;
+                buttonCharSTRFormula.Enabled = true;
+                buttonCharVITFormula.Enabled = true;
+                buttonCharMAGFormula.Enabled = true;
+                buttonCharSPRFormula.Enabled = true;
+                buttonCharSPDFormula.Enabled = true;
+                buttonCharLUCKFormula.Enabled = true;
+
+                listBoxCharacters.SelectedIndex = 0;
+                listBoxRenzoFin.SelectedIndex = 0;
+                listBoxBlueMagic.SelectedIndex = 0;
+                listBoxDuel.SelectedIndex = 0;
+                listBoxSlotsSets.SelectedIndex = 0;
+                listBoxCombine.SelectedIndex = 0;
+                listBoxBatComRinoa.SelectedIndex = 0;
+                listBoxShot.SelectedIndex = 0;
+                listBoxTempCharLB.SelectedIndex = 0;
+                listBoxBattleItems.SelectedIndex = 0;
+                listBoxWeapons.SelectedIndex = 0;
+                listBoxAbChar.SelectedIndex = 0;
+                listBoxAbStats.SelectedIndex = 0;
+                listBoxAbJun.SelectedIndex = 0;
+                listBoxAbCom.SelectedIndex = 0;
+                listBoxAbComData.SelectedIndex = 0;
+                listBoxAbGF.SelectedIndex = 0;
+                listBoxAbParty.SelectedIndex = 0;
+                listBoxAbMenu.SelectedIndex = 0;
+                listBoxMagic.SelectedIndex = 0;
+                listBoxGF.SelectedIndex = 0;
+                listBoxGFAttacks.SelectedIndex = 0;
+                listBoxDevour.SelectedIndex = 0;
+                listBoxBatCom.SelectedIndex = 0;
+                listBoxEnemyAttacks.SelectedIndex = 0;
 
                 toolStripStatusLabel1.Text = Path.GetFileName(existingFilename) + " loaded";
                 statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
@@ -1643,9 +1707,10 @@ namespace Doomtrain
             }
         }
 
+        #endregion
 
+        #region Save
 
-        //SAVE
         private async void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
@@ -1662,9 +1727,6 @@ namespace Doomtrain
             }
         }
 
-
-
-        // SAVE AS
         private async void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveAsDialog = new SaveFileDialog();
@@ -1689,8 +1751,34 @@ namespace Doomtrain
             }
         }
 
+        #endregion
 
-        //TOOLTIPS FILE
+        #region Toolbar
+
+        private void openToolStripButton_Click(object sender, EventArgs e)
+        {
+            openToolStripMenuItem_Click(sender, e);
+        }
+
+        private void saveToolStripButton_Click(object sender, EventArgs e)
+        {
+            saveToolStripMenuItem_Click(sender, e);
+        }
+
+        private void saveAsToolStripButton_Click(object sender, EventArgs e)
+        {
+            saveAsToolStripMenuItem_Click(sender, e);
+        }
+
+        private void deleteTooltipsToolStripButton_Click(object sender, EventArgs e)
+        {
+            deleteTooltipsToolStripMenuItem_Click(sender, e);
+        }
+
+        #endregion
+
+        #region Tooltips file
+
         private void CreateTooltipsFile()
         {
             if (!File.Exists(_backup))
@@ -1775,7 +1863,7 @@ namespace Doomtrain
         {
             DialogResult dialogResult = MessageBox.Show("This will delete the tooltips.bin file." + 
                 "\nDoomtrain will restart and unsaved changes will be lost, do you want to continue?", 
-                "Delete Tooltips File", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                "Delete Tooltips File", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
             if (dialogResult == DialogResult.Yes)
             {
                 File.Delete(_backup);
@@ -1785,20 +1873,25 @@ namespace Doomtrain
             }
         }
 
-        //STATUS STRIP
-        private void mainForm_Shown(object sender, EventArgs e)
+        #endregion
+
+        #region About
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "Ready";
+            new AboutBox().ShowDialog();
         }
 
+        #endregion
 
-        //EXIT
+        #region Close
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
             {
-                DialogResult dialogResult = MessageBox.Show("Do you really want to exit?",
-                    "Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                DialogResult dialogResult = MessageBox.Show("Are you sure you want to exit?", "Exit", 
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
 
                 if (dialogResult == DialogResult.Yes)
                     Application.Exit();
@@ -1812,50 +1905,20 @@ namespace Doomtrain
             if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
             {
                 if (DialogResult.No == MessageBox.Show("Are you sure you want to exit?", "Exit", 
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2))
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2))
                     e.Cancel = true;
             }
             else { }
-
         }
-
-
-
-        //TOOLBAR
-        private void openToolStripButton_Click(object sender, EventArgs e)
-        {
-            openToolStripMenuItem_Click(sender, e);
-        }
-
-        private void saveToolStripButton_Click(object sender, EventArgs e)
-        {
-            saveToolStripMenuItem_Click(sender, e);
-        }
-
-        private void saveAsToolStripButton_Click(object sender, EventArgs e)
-        {
-            saveAsToolStripMenuItem_Click(sender, e);
-        }
-
-        private void deleteTooltipsToolStripButton_Click(object sender, EventArgs e)
-        {
-            deleteTooltipsToolStripMenuItem_Click(sender, e);
-        }
-
-
-
-        //ABOUT
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new AboutBox().ShowDialog();
-        }
-
 
         #endregion
 
-        #region CHARTS, FORMULAS, LABELS, LISTBOXES SWITCH
+        #endregion
 
-        //CHARACTERS FORMULAS
+        #region FORMULAS, CHARTS, LABELS, LISTBOXES SWITCH, FONTS
+
+        #region Characters formulas
+
         private void buttonCharHPFormula_Click(object sender, EventArgs e)
         {
             MessageBox.Show("HP = ((stat_magic_J_value*magic_count + stat_bonus + lvl*a - (10*lvl^2)/b +c)*percent_modifier)/100", "HP Formula");
@@ -1896,9 +1959,10 @@ namespace Doomtrain
             MessageBox.Show("EXP for level x = ((lvl-1)^2*exp_b)/256 + (lvl-1)*exp_a*10", "EXP Formula");
         }
 
+        #endregion
 
+        #region Characters Charts
 
-        //CHARACTERS CHARTS
         private CharEXP _CharEXP;
         private void buttonCharEXPChart_Click(object sender, EventArgs e)
         {
@@ -1988,10 +2052,10 @@ namespace Doomtrain
             _CharLUCK.Focus();
         }
 
+        #endregion
 
+        #region Value labels
 
-
-        //LABELS VALUE
         //I added this.trackBar.ValueChanged += (this.trackBarJXY_Scroll) to MainForm.Designer, only this 4 are necessary here now
         private void trackBarJElemAttack_Scroll(object sender, EventArgs e)
         {
@@ -2012,7 +2076,6 @@ namespace Doomtrain
         {
             labelValueStatDefenseTrackBar.Text = trackBarJStatDefense.Value + "%".ToString();
         }
-
 
         private void numericUpDownShotTimer1_ValueChanged(object sender, EventArgs e)
         {
@@ -2125,10 +2188,6 @@ namespace Doomtrain
             labelStatusTimer14Value.Text = String.Format("{0:0.00}s", Math.Truncate((numericUpDownStatusTimer14.Value * 4 / 15) * 100) / 100);
         }
 
-
-
-
-        //ABILITIES TRACKBARS LABELS VALUE
         private void trackBarStatsIncrementValue_Scroll(object sender, EventArgs e)
         {
             labelAbStatsValueTrackBar.Text = trackBarAbStatsIncrementValue.Value + "%".ToString();
@@ -2139,8 +2198,10 @@ namespace Doomtrain
             labelAbGFValueTrackBar.Text = trackBarAbGFIncrementValue.Value + "%".ToString();
         }
 
+        #endregion
 
-        //ABILITIES LISTBOXES SWITCH
+        #region Abilities listbox switches
+
         private void tabControlAbilities_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (tabControlAbilities.SelectedIndex == 0)
@@ -2242,7 +2303,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region FONTS
+        #region Fonts
 
         private void LoadPrivateFontCollection()
         {
@@ -2282,6 +2343,9 @@ namespace Doomtrain
 
         #endregion
 
+        #endregion
+
+
         #region BACKUP ALGORITHM
 
         private void ToolTip(Control control, byte mode, object value)
@@ -2317,7 +2381,9 @@ namespace Doomtrain
         #endregion
 
 
-        #region MAGIC
+        #region WRITE TO GUI
+
+        #region Magic
 
         private int Magic_GetElement()
         {
@@ -3362,7 +3428,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region NON-J GFs ATTACK
+        #region Non-J GFs Attacks
 
         private int GFAttacks_GetElement()
         {
@@ -3565,7 +3631,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region WEAPONS
+        #region Weapons
 
         private void RenzokukenFinishersWorker(bool bBackup)
         {
@@ -3636,7 +3702,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region CHARACTERS
+        #region Characters
 
         private void listBoxCharacters_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -3734,12 +3800,12 @@ namespace Doomtrain
                 MessageBox.Show(Exception.ToString());
             }
 
-            _loaded = true;
+            _loaded = true;            
         }
 
         #endregion
 
-        #region ENEMY ATTACKS
+        #region Enemy attacks
 
         private int EnemyAttacks_GetElement()
         {
@@ -3937,7 +4003,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region BLUE MAGIC + PARAM
+        #region Blue magic + params
 
         private int BlueMagic_GetElement()
         {
@@ -4440,7 +4506,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region STATS INCREASE ABILITIES
+        #region Stat increment abilities
 
         private void listBoxAbStats_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -4479,7 +4545,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region RENZOKUKEN FINISHERS
+        #region Renzokuken finishers
 
         private int RenzoFin_GetElement()
         {
@@ -4695,7 +4761,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region TEMPORARY CHARACTERS LIMIT BREAKS
+        #region Temp characters limit breaks
 
         private int TempCharLB_GetElement()
         {
@@ -4916,7 +4982,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region SHOT
+        #region Shot
 
         private int Shot_GetElement()
         {
@@ -5086,7 +5152,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region DUEL
+        #region Duel
 
         private int Duel_GetElement()
         {
@@ -5307,7 +5373,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region DUEL PARAMS
+        #region Duel params
 
         private void DuelParams()
         {
@@ -5543,7 +5609,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region COMBINE
+        #region Combine
 
         private int Combine_GetElement()
         {
@@ -5766,7 +5832,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region BATTLE ITEMS
+        #region Battle items
 
         private int BattleItems_GetElement()
         {
@@ -5979,7 +6045,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region SLOT ARRAY
+        #region Slot array
 
         private void SlotArray()
         {
@@ -6131,7 +6197,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region SLOT SETS
+        #region Slot sets
 
         private void listBoxSlotsSets_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -6195,7 +6261,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region DEVOUR        
+        #region Devour     
 
         private int Devour_GetHealDmg()
         {
@@ -6367,7 +6433,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region MISC
+        #region Misc
 
         private void Misc()
         {
@@ -6519,7 +6585,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region COMMAND ABILITY DATA
+        #region Command abilities data
 
         private int CommandAbilityData_GetElement()
         {
@@ -6720,7 +6786,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region COMMAND ABILITY
+        #region Command abilities
 
         private void listBoxAbCom_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -6754,7 +6820,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region JUNCTION ABILITIES
+        #region Junction abilities
 
         private void listBoxAbJun_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -6828,7 +6894,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region PARTY ABILITIES
+        #region Party abilities
 
         private void listBoxAbParty_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -6876,7 +6942,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region GF ABILITIES
+        #region GFs abilities
 
         private int GFAbilities_GetStat()
         {
@@ -6938,7 +7004,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region PARTY ABILITIES
+        #region Party abilities
 
         private void listBoxAbChar_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -7022,7 +7088,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region MENU ABILITIES
+        #region Menu abilities
 
         private void listBoxAbMenu_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -7060,7 +7126,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region BATTLE COMMANDS
+        #region Battle commands
 
         private void listBoxBatCom_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -7112,7 +7178,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region RINOA COMMANDS
+        #region Rinoa commands
 
         private void listBoxBatComRinoa_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -7170,5 +7236,6 @@ namespace Doomtrain
 
         #endregion
 
+        #endregion
     }
 }
