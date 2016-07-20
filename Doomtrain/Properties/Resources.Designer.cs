@@ -103,6 +103,16 @@ namespace Doomtrain.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] labelDoomtrain {
+            get {
+                object obj = ResourceManager.GetObject("labelDoomtrain", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] mainTabFont {
             get {
                 object obj = ResourceManager.GetObject("mainTabFont", resourceCulture);

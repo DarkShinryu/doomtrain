@@ -175,6 +175,7 @@
   <ItemGroup>
     <Content Include="doomtrain.ico" />
     <None Include="Resources\deletetooltip.png" />
+    <None Include="Resources\labelDoomtrain.ttf" />
     <None Include="Resources\tooltip.png" />
   </ItemGroup>
   <ItemGroup>
