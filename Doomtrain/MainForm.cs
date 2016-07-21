@@ -13,6 +13,7 @@ namespace Doomtrain
     public partial class mainForm : Form
     {
         public static bool _loaded = false;
+        private string _existingFilename;
         private string _backup;
         private const byte _bp_numerical = 0x00;
         private const byte _bp_checked = 0x01;
@@ -1622,8 +1623,6 @@ namespace Doomtrain
 
         #region OPEN, SAVE, TOOLBAR, TOOLTIPS FILE, ABOUT, CLOSE
 
-        public string existingFilename; //used for open/save stuff
-
         #region Open
 
         private async void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1648,7 +1647,7 @@ namespace Doomtrain
                     CreateTooltipsFile();
     }
 
-                existingFilename = openFileDialog.FileName;
+                _existingFilename = openFileDialog.FileName;
 
                 saveToolStripMenuItem.Enabled = true;
                 saveAsToolStripMenuItem.Enabled = true;
@@ -1697,7 +1696,7 @@ namespace Doomtrain
                 listBoxBatCom.SelectedIndex = 0;
                 listBoxEnemyAttacks.SelectedIndex = 0;
 
-                toolStripStatusLabel1.Text = Path.GetFileName(existingFilename) + " loaded";
+                toolStripStatusLabel1.Text = Path.GetFileName(_existingFilename) + " loaded";
                 statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
                 toolStripStatusLabel1.BackColor = Color.FromArgb(255, 237, 110, 0);
                 await Task.Delay(3000);
@@ -1713,13 +1712,13 @@ namespace Doomtrain
 
         private async void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
+            if (!(string.IsNullOrEmpty(_existingFilename)) && KernelWorker.Kernel != null)
             {
-                File.WriteAllBytes(existingFilename, KernelWorker.Kernel);
+                File.WriteAllBytes(_existingFilename, KernelWorker.Kernel);
 
                 statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
                 toolStripStatusLabel1.BackColor = Color.FromArgb(255, 237, 110, 0);
-                toolStripStatusLabel1.Text = Path.GetFileName(existingFilename) + " saved";
+                toolStripStatusLabel1.Text = Path.GetFileName(_existingFilename) + " saved";
                 await Task.Delay(3000);
                 statusStrip1.BackColor = Color.Gray;
                 toolStripStatusLabel1.BackColor = Color.Gray;
@@ -1732,9 +1731,9 @@ namespace Doomtrain
             SaveFileDialog saveAsDialog = new SaveFileDialog();
             saveAsDialog.Title = "Save FF8 kernel.bin";
             saveAsDialog.Filter = "FF8 Kernel File|*.bin";
-            saveAsDialog.FileName = Path.GetFileName(existingFilename);
+            saveAsDialog.FileName = Path.GetFileName(_existingFilename);
 
-            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
+            if (!(string.IsNullOrEmpty(_existingFilename)) && KernelWorker.Kernel != null)
             {
                 if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
                 {
@@ -1912,9 +1911,9 @@ namespace Doomtrain
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (!(string.IsNullOrEmpty(existingFilename)) && KernelWorker.Kernel != null)
+            if (!(string.IsNullOrEmpty(_existingFilename)) && KernelWorker.Kernel != null)
             {
-                DialogResult dialogResult = MessageBox.Show("Save changes to " + Path.GetFileName(existingFilename) + " before closing?", "Close",
+                DialogResult dialogResult = MessageBox.Show("Save changes to " + Path.GetFileName(_existingFilename) + " before closing?", "Close",
                     MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
 
                 if (dialogResult == DialogResult.Yes)
@@ -1922,7 +1921,7 @@ namespace Doomtrain
                     SaveFileDialog saveAsDialog = new SaveFileDialog();
                     saveAsDialog.Title = "Save FF8 kernel.bin";
                     saveAsDialog.Filter = "FF8 Kernel File|*.bin";
-                    saveAsDialog.FileName = Path.GetFileName(existingFilename);
+                    saveAsDialog.FileName = Path.GetFileName(_existingFilename);
 
                     if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
                     File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
@@ -2006,7 +2005,7 @@ namespace Doomtrain
         {
             if ((_CharHP == null) || (_CharHP.IsDisposed))
             {
-                _CharHP = new CharHP();
+                _CharHP = new CharHP(this);
             }
             _CharHP.Show();
             _CharHP.Focus();
@@ -2018,7 +2017,7 @@ namespace Doomtrain
         {
             if ((_CharSTR == null) || (_CharSTR.IsDisposed))
             {
-                _CharSTR = new charSTR();
+                _CharSTR = new charSTR(this);
             }
             _CharSTR.Show();
             _CharSTR.Focus();
@@ -2029,7 +2028,7 @@ namespace Doomtrain
         {
             if ((_CharVIT == null) || (_CharVIT.IsDisposed))
             {
-                _CharVIT = new CharVIT();
+                _CharVIT = new CharVIT(this);
             }
             _CharVIT.Show();
             _CharVIT.Focus();
@@ -2040,7 +2039,7 @@ namespace Doomtrain
         {
             if ((_CharMAG == null) || (_CharMAG.IsDisposed))
             {
-                _CharMAG = new CharMAG();
+                _CharMAG = new CharMAG(this);
             }
             _CharMAG.Show();
             _CharMAG.Focus();
@@ -2051,7 +2050,7 @@ namespace Doomtrain
         {
             if ((_CharSPR == null) || (_CharSPR.IsDisposed))
             {
-                _CharSPR = new CharSPR();
+                _CharSPR = new CharSPR(this);
             }
             _CharSPR.Show();
             _CharSPR.Focus();
@@ -2062,7 +2061,7 @@ namespace Doomtrain
         {
             if ((_CharSPD == null) || (_CharSPD.IsDisposed))
             {
-                _CharSPD = new CharSPD();
+                _CharSPD = new CharSPD(this);
             }
             _CharSPD.Show();
             _CharSPD.Focus();
@@ -2073,7 +2072,7 @@ namespace Doomtrain
         {
             if ((_CharLUCK == null) || (_CharLUCK.IsDisposed))
             {
-                _CharLUCK = new CharLUCK();
+                _CharLUCK = new CharLUCK(this);
             }
             _CharLUCK.Show();
             _CharLUCK.Focus();

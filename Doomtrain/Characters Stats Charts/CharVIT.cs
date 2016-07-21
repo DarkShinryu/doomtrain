@@ -12,7 +12,7 @@ namespace Doomtrain.Characters_Stats_Charts
 {
     public partial class CharVIT : Form
     {
-        public CharVIT()
+        public CharVIT(mainForm mainForm)
         {
             InitializeComponent();
         }

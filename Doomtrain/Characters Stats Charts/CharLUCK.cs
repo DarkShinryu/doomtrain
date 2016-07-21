@@ -12,7 +12,7 @@ namespace Doomtrain.Characters_Stats_Charts
 {
     public partial class CharLUCK : Form
     {
-        public CharLUCK()
+        public CharLUCK(mainForm mainForm)
         {
             InitializeComponent();
         }

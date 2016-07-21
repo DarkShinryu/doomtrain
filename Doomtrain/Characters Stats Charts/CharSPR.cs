@@ -12,7 +12,7 @@ namespace Doomtrain.Characters_Stats_Charts
 {
     public partial class CharSPR : Form
     {
-        public CharSPR()
+        public CharSPR(mainForm mainForm)
         {
             InitializeComponent();
         }

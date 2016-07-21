@@ -12,7 +12,7 @@ namespace Doomtrain.Characters_Stats_Charts
 {
     public partial class CharMAG : Form
     {
-        public CharMAG()
+        public CharMAG(mainForm mainForm)
         {
             InitializeComponent();
         }

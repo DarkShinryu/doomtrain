@@ -266,23 +266,14 @@
             this.labelDevourStatsIncr = new System.Windows.Forms.Label();
             this.labelDevourHPIncr = new System.Windows.Forms.Label();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.deleteTooltipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolbarStrip = new System.Windows.Forms.ToolStrip();
-            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.deleteTooltipsToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.tabPageGFAttacks = new System.Windows.Forms.TabPage();
             this.groupBoxGFAttacksFlags = new System.Windows.Forms.GroupBox();
             this.checkBoxGFAttacksFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
@@ -1997,6 +1988,15 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
+            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.deleteTooltipsToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteTooltipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -6217,70 +6217,20 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
-            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.openToolStripMenuItem.Text = "Open...";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
-            // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
             this.toolStripSeparator.Size = new System.Drawing.Size(245, 6);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
-            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.saveToolStripMenuItem.Text = "Save";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveAsToolStripMenuItem.Image")));
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.S)));
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.saveAsToolStripMenuItem.Text = "Save a Copy As...";
-            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(245, 6);
             // 
-            // deleteTooltipsToolStripMenuItem
-            // 
-            this.deleteTooltipsToolStripMenuItem.Enabled = false;
-            this.deleteTooltipsToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.deletetooltip;
-            this.deleteTooltipsToolStripMenuItem.Name = "deleteTooltipsToolStripMenuItem";
-            this.deleteTooltipsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.Q)));
-            this.deleteTooltipsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.deleteTooltipsToolStripMenuItem.Text = "Delete Tooltips File";
-            this.deleteTooltipsToolStripMenuItem.Click += new System.EventHandler(this.deleteTooltipsToolStripMenuItem_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(245, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.close;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -6321,53 +6271,10 @@
             this.toolbarStrip.TabIndex = 1;
             this.toolbarStrip.Text = "toolbarStrip";
             // 
-            // openToolStripButton
-            // 
-            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
-            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.openToolStripButton.Text = "Open";
-            this.openToolStripButton.ToolTipText = "Open...";
-            this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
-            // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
-            // 
-            // saveToolStripButton
-            // 
-            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
-            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.saveToolStripButton.Text = "Save";
-            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
-            // 
-            // saveAsToolStripButton
-            // 
-            this.saveAsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveAsToolStripButton.Image = global::Doomtrain.Properties.Resources.saveas;
-            this.saveAsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveAsToolStripButton.Name = "saveAsToolStripButton";
-            this.saveAsToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.saveAsToolStripButton.Text = "saveAs";
-            this.saveAsToolStripButton.ToolTipText = "Save a Copy As...";
-            this.saveAsToolStripButton.Click += new System.EventHandler(this.saveAsToolStripButton_Click);
-            // 
-            // deleteTooltipsToolStripButton
-            // 
-            this.deleteTooltipsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.deleteTooltipsToolStripButton.Enabled = false;
-            this.deleteTooltipsToolStripButton.Image = global::Doomtrain.Properties.Resources.deletetooltip;
-            this.deleteTooltipsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.deleteTooltipsToolStripButton.Name = "deleteTooltipsToolStripButton";
-            this.deleteTooltipsToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.deleteTooltipsToolStripButton.Text = "Delete Tooltips File";
-            this.deleteTooltipsToolStripButton.Click += new System.EventHandler(this.deleteTooltipsToolStripButton_Click);
             // 
             // tabPageGFAttacks
             // 
@@ -20003,7 +19910,7 @@
             this.groupBox5.Controls.Add(this.labelCharSPDA);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
             this.groupBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.groupBox5.Location = new System.Drawing.Point(6, 451);
+            this.groupBox5.Location = new System.Drawing.Point(6, 455);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(452, 83);
             this.groupBox5.TabIndex = 5;
@@ -20077,7 +19984,7 @@
             this.groupBox2.Controls.Add(this.labelCharVITA);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.Coral;
-            this.groupBox2.Location = new System.Drawing.Point(6, 184);
+            this.groupBox2.Location = new System.Drawing.Point(6, 188);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(452, 83);
             this.groupBox2.TabIndex = 2;
@@ -20151,7 +20058,7 @@
             this.groupBox6.Controls.Add(this.labelCharLUCKA);
             this.groupBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
             this.groupBox6.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox6.Location = new System.Drawing.Point(6, 540);
+            this.groupBox6.Location = new System.Drawing.Point(6, 544);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(452, 83);
             this.groupBox6.TabIndex = 6;
@@ -20225,7 +20132,7 @@
             this.groupBox4.Controls.Add(this.labelCharSPRA);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
             this.groupBox4.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.groupBox4.Location = new System.Drawing.Point(6, 362);
+            this.groupBox4.Location = new System.Drawing.Point(6, 366);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(452, 83);
             this.groupBox4.TabIndex = 4;
@@ -20299,7 +20206,7 @@
             this.groupBox1.Controls.Add(this.labelCharSTRA);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.Crimson;
-            this.groupBox1.Location = new System.Drawing.Point(6, 95);
+            this.groupBox1.Location = new System.Drawing.Point(6, 99);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(452, 83);
             this.groupBox1.TabIndex = 1;
@@ -20373,7 +20280,7 @@
             this.groupBox3.Controls.Add(this.labelCharMAGA);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
             this.groupBox3.ForeColor = System.Drawing.Color.Green;
-            this.groupBox3.Location = new System.Drawing.Point(6, 273);
+            this.groupBox3.Location = new System.Drawing.Point(6, 277);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(452, 83);
             this.groupBox3.TabIndex = 3;
@@ -20449,7 +20356,7 @@
             this.groupBoxCharHP.ForeColor = System.Drawing.Color.Magenta;
             this.groupBoxCharHP.Location = new System.Drawing.Point(6, 6);
             this.groupBoxCharHP.Name = "groupBoxCharHP";
-            this.groupBoxCharHP.Size = new System.Drawing.Size(452, 83);
+            this.groupBoxCharHP.Size = new System.Drawing.Size(452, 87);
             this.groupBoxCharHP.TabIndex = 0;
             this.groupBoxCharHP.TabStop = false;
             this.groupBoxCharHP.Text = "HP";
@@ -40161,6 +40068,99 @@
             this.panelMain.Size = new System.Drawing.Size(654, 811);
             this.panelMain.TabIndex = 2;
             // 
+            // openToolStripButton
+            // 
+            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
+            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripButton.Name = "openToolStripButton";
+            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Text = "Open";
+            this.openToolStripButton.ToolTipText = "Open...";
+            this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
+            // 
+            // saveToolStripButton
+            // 
+            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
+            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripButton.Name = "saveToolStripButton";
+            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Text = "Save";
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
+            // 
+            // saveAsToolStripButton
+            // 
+            this.saveAsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveAsToolStripButton.Image = global::Doomtrain.Properties.Resources.saveas;
+            this.saveAsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveAsToolStripButton.Name = "saveAsToolStripButton";
+            this.saveAsToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveAsToolStripButton.Text = "saveAs";
+            this.saveAsToolStripButton.ToolTipText = "Save a Copy As...";
+            this.saveAsToolStripButton.Click += new System.EventHandler(this.saveAsToolStripButton_Click);
+            // 
+            // deleteTooltipsToolStripButton
+            // 
+            this.deleteTooltipsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.deleteTooltipsToolStripButton.Enabled = false;
+            this.deleteTooltipsToolStripButton.Image = global::Doomtrain.Properties.Resources.deletetooltip;
+            this.deleteTooltipsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.deleteTooltipsToolStripButton.Name = "deleteTooltipsToolStripButton";
+            this.deleteTooltipsToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.deleteTooltipsToolStripButton.Text = "Delete Tooltips File";
+            this.deleteTooltipsToolStripButton.Click += new System.EventHandler(this.deleteTooltipsToolStripButton_Click);
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.openToolStripMenuItem.Text = "Open...";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveAsToolStripMenuItem.Image")));
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.saveAsToolStripMenuItem.Text = "Save a Copy As...";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
+            // 
+            // deleteTooltipsToolStripMenuItem
+            // 
+            this.deleteTooltipsToolStripMenuItem.Enabled = false;
+            this.deleteTooltipsToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.deletetooltip;
+            this.deleteTooltipsToolStripMenuItem.Name = "deleteTooltipsToolStripMenuItem";
+            this.deleteTooltipsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.Q)));
+            this.deleteTooltipsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.deleteTooltipsToolStripMenuItem.Text = "Delete Tooltips File";
+            this.deleteTooltipsToolStripMenuItem.Click += new System.EventHandler(this.deleteTooltipsToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.close;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -40950,78 +40950,50 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button buttonCharSPDFormula;
         private System.Windows.Forms.Button buttonCharSPDChart;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSPD4;
         private System.Windows.Forms.Label labelCharSPDD;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSPD3;
         private System.Windows.Forms.Label labelCharSPDC;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSPD2;
         private System.Windows.Forms.Label labelCharSPDB;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSPD1;
         private System.Windows.Forms.Label labelCharSPDA;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button buttonCharVITFormula;
         private System.Windows.Forms.Button buttonCharVITChart;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharVIT4;
         private System.Windows.Forms.Label labelCharVITD;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharVIT3;
         private System.Windows.Forms.Label labelCharVITC;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharVIT2;
         private System.Windows.Forms.Label labelCharVITB;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharVIT1;
         private System.Windows.Forms.Label labelCharVITA;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button buttonCharLUCKFormula;
         private System.Windows.Forms.Button buttonCharLUCKChart;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharLUCK4;
         private System.Windows.Forms.Label labelCharLUCKD;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharLUCK3;
         private System.Windows.Forms.Label labelCharLUCKC;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharLUCK2;
         private System.Windows.Forms.Label labelCharLUCKB;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharLUCK1;
         private System.Windows.Forms.Label labelCharLUCKA;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button buttonCharSPRFormula;
         private System.Windows.Forms.Button buttonCharSPRChart;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSPR4;
         private System.Windows.Forms.Label labelCharSPRD;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSPR3;
         private System.Windows.Forms.Label labelCharSPRC;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSPR2;
         private System.Windows.Forms.Label labelCharSPRB;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSPR1;
         private System.Windows.Forms.Label labelCharSPRA;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button buttonCharSTRFormula;
         private System.Windows.Forms.Button buttonCharSTRChart;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSTR4;
         private System.Windows.Forms.Label labelCharSTRD;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSTR3;
         private System.Windows.Forms.Label labelCharSTRC;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSTR2;
         private System.Windows.Forms.Label labelCharSTRB;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharSTR1;
         private System.Windows.Forms.Label labelCharSTRA;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button buttonCharMAGFormula;
         private System.Windows.Forms.Button buttonCharMAGChart;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharMAG4;
         private System.Windows.Forms.Label labelCharMAGD;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharMAG3;
         private System.Windows.Forms.Label labelCharMAGC;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharMAG2;
         private System.Windows.Forms.Label labelCharMAGB;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharMAG1;
         private System.Windows.Forms.Label labelCharMAGA;
         private System.Windows.Forms.GroupBox groupBoxCharHP;
         private System.Windows.Forms.Button buttonCharHPFormula;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharHP4;
         private System.Windows.Forms.Label labelCharHPD;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharHP3;
         private System.Windows.Forms.Label labelCharHPC;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharHP2;
         private System.Windows.Forms.Label labelCharHPB;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharHP1;
         private System.Windows.Forms.Label labelCharHPA;
         private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.StatusStrip statusStrip1;
@@ -42746,6 +42718,34 @@
         public System.Windows.Forms.ListBox listBoxCharacters;
         public System.Windows.Forms.NumericUpDown numericUpDownCharEXP2;
         public System.Windows.Forms.NumericUpDown numericUpDownCharEXP1;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSPD4;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSPD3;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSPD2;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSPD1;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharVIT4;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharVIT3;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharVIT2;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharVIT1;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharLUCK4;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharLUCK3;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharLUCK2;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharLUCK1;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSPR4;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSPR3;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSPR2;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSPR1;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSTR4;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSTR3;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSTR2;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharSTR1;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharMAG4;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharMAG3;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharMAG2;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharMAG1;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharHP4;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharHP3;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharHP2;
+        public System.Windows.Forms.NumericUpDown numericUpDownCharHP1;
     }
 }
 
