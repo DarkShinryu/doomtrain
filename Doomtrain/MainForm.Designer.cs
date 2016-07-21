@@ -20396,9 +20396,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharHP2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharHP2.Name = "numericUpDownCharHP2";
             this.numericUpDownCharHP2.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharHP2.TabIndex = 1;
+            this.numericUpDownCharHP2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharHP1
             // 
