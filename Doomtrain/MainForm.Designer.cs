@@ -1985,7 +1985,7 @@
             this.labelStatusTimer2Value = new System.Windows.Forms.Label();
             this.labelStatusTimer1Value = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -1997,6 +1997,10 @@
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteTooltipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripStatusLabelRightAlign = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelKernel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelDash = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -40050,7 +40054,11 @@
             this.statusStrip1.BackColor = System.Drawing.Color.Gray;
             this.statusStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
+            this.toolStripStatusLabelStatus,
+            this.toolStripStatusLabelRightAlign,
+            this.toolStripStatusLabelKernel,
+            this.toolStripStatusLabelDash,
+            this.toolStripStatusLabelTooltips});
             this.statusStrip1.Location = new System.Drawing.Point(0, 860);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(654, 22);
@@ -40058,15 +40066,15 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // toolStripStatusLabelStatus
             // 
-            this.toolStripStatusLabel1.BackColor = System.Drawing.Color.Gray;
-            this.toolStripStatusLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripStatusLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(39, 17);
-            this.toolStripStatusLabel1.Text = "Ready";
+            this.toolStripStatusLabelStatus.BackColor = System.Drawing.Color.Gray;
+            this.toolStripStatusLabelStatus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripStatusLabelStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripStatusLabelStatus.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.toolStripStatusLabelStatus.Name = "toolStripStatusLabelStatus";
+            this.toolStripStatusLabelStatus.Size = new System.Drawing.Size(39, 17);
+            this.toolStripStatusLabelStatus.Text = "Ready";
             // 
             // panelMain
             // 
@@ -40170,6 +40178,35 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // toolStripStatusLabelRightAlign
+            // 
+            this.toolStripStatusLabelRightAlign.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripStatusLabelRightAlign.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.toolStripStatusLabelRightAlign.Name = "toolStripStatusLabelRightAlign";
+            this.toolStripStatusLabelRightAlign.Size = new System.Drawing.Size(320, 17);
+            this.toolStripStatusLabelRightAlign.Spring = true;
+            // 
+            // toolStripStatusLabelKernel
+            // 
+            this.toolStripStatusLabelKernel.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.toolStripStatusLabelKernel.Name = "toolStripStatusLabelKernel";
+            this.toolStripStatusLabelKernel.Size = new System.Drawing.Size(117, 17);
+            this.toolStripStatusLabelKernel.Text = "No kernel.bin loaded";
+            // 
+            // toolStripStatusLabelTooltips
+            // 
+            this.toolStripStatusLabelTooltips.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.toolStripStatusLabelTooltips.Name = "toolStripStatusLabelTooltips";
+            this.toolStripStatusLabelTooltips.Size = new System.Drawing.Size(120, 17);
+            this.toolStripStatusLabelTooltips.Text = "No tooltip.bin loaded";
+            // 
+            // toolStripStatusLabelDash
+            // 
+            this.toolStripStatusLabelDash.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.toolStripStatusLabelDash.Name = "toolStripStatusLabelDash";
+            this.toolStripStatusLabelDash.Size = new System.Drawing.Size(12, 17);
+            this.toolStripStatusLabelDash.Text = "/";
             // 
             // mainForm
             // 
@@ -41007,7 +41044,7 @@
         private System.Windows.Forms.Label labelCharHPA;
         private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelStatus;
         private System.Windows.Forms.Panel panelGFAbilities;
         private System.Windows.Forms.ComboBox comboBoxGFAbilityUnlock21;
         private System.Windows.Forms.ComboBox comboBoxGFAbility21;
@@ -42756,6 +42793,10 @@
         public System.Windows.Forms.NumericUpDown numericUpDownCharHP3;
         public System.Windows.Forms.NumericUpDown numericUpDownCharHP2;
         public System.Windows.Forms.NumericUpDown numericUpDownCharHP1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelRightAlign;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelKernel;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelDash;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelTooltips;
     }
 }
 

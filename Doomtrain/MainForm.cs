@@ -1696,13 +1696,14 @@ namespace Doomtrain
                 listBoxBatCom.SelectedIndex = 0;
                 listBoxEnemyAttacks.SelectedIndex = 0;
 
-                toolStripStatusLabel1.Text = Path.GetFileName(_existingFilename) + " loaded";
+                toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
+                toolStripStatusLabelKernel.Text = Path.GetFileName(_existingFilename) + " loaded";
                 statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
-                toolStripStatusLabel1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
                 await Task.Delay(3000);
                 statusStrip1.BackColor = Color.Gray;
-                toolStripStatusLabel1.BackColor = Color.Gray;
-                toolStripStatusLabel1.Text = "Ready";
+                toolStripStatusLabelStatus.BackColor = Color.Gray;
+                toolStripStatusLabelStatus.Text = "Ready";
             }
         }
 
@@ -1717,12 +1718,12 @@ namespace Doomtrain
                 File.WriteAllBytes(_existingFilename, KernelWorker.Kernel);
 
                 statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
-                toolStripStatusLabel1.BackColor = Color.FromArgb(255, 237, 110, 0);
-                toolStripStatusLabel1.Text = Path.GetFileName(_existingFilename) + " saved";
+                toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
+                toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " saved successfully";
                 await Task.Delay(3000);
                 statusStrip1.BackColor = Color.Gray;
-                toolStripStatusLabel1.BackColor = Color.Gray;
-                toolStripStatusLabel1.Text = "Ready";
+                toolStripStatusLabelStatus.BackColor = Color.Gray;
+                toolStripStatusLabelStatus.Text = "Ready";
             }
         }
 
@@ -1739,13 +1740,13 @@ namespace Doomtrain
                 {
                     File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
 
-                    toolStripStatusLabel1.Text = Path.GetFileName(saveAsDialog.FileName) + " saved";
+                    toolStripStatusLabelStatus.Text = Path.GetFileName(saveAsDialog.FileName) + " saved successfully";
                     statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
-                    toolStripStatusLabel1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                    toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
                     await Task.Delay(3000);
                     statusStrip1.BackColor = Color.Gray;
-                    toolStripStatusLabel1.BackColor = Color.Gray;
-                    toolStripStatusLabel1.Text = "Ready";
+                    toolStripStatusLabelStatus.BackColor = Color.Gray;
+                    toolStripStatusLabelStatus.Text = "Ready";
                 }
             }
         }
@@ -1794,6 +1795,7 @@ namespace Doomtrain
                     MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.",
                         "Tooltips file created", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
 
+                    toolStripStatusLabelTooltips.Text = Path.GetFileName(_backup) + " loaded";
                     deleteTooltipsToolStripMenuItem.Enabled = true;
                     deleteTooltipsToolStripButton.Enabled = true;
                 }
@@ -1835,6 +1837,7 @@ namespace Doomtrain
                             MessageBox.Show("The file has created in the same folder of Doomtrain.exe from the kernel.bin you opened previously.",
                                 "Tooltips file created", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
 
+                            toolStripStatusLabelTooltips.Text = Path.GetFileName(_backup) + " loaded";
                             deleteTooltipsToolStripMenuItem.Enabled = true;
                             deleteTooltipsToolStripButton.Enabled = true;
                         }
@@ -1848,6 +1851,7 @@ namespace Doomtrain
                         MessageBox.Show("The file has been created successfully in the same folder of Doomtrain.exe.",
                             "Tooltips file created", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
 
+                        toolStripStatusLabelTooltips.Text = Path.GetFileName(_backup) + " loaded";
                         deleteTooltipsToolStripMenuItem.Enabled = true;
                         deleteTooltipsToolStripButton.Enabled = true;
                     }
@@ -1858,6 +1862,7 @@ namespace Doomtrain
             else
             {
                 KernelWorker.BackupKernel = File.ReadAllBytes(_backup);
+                toolStripStatusLabelTooltips.Text = Path.GetFileName(_backup) + " loaded";
             }
 
 
