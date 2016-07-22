@@ -1639,12 +1639,12 @@ namespace Doomtrain
                     using (var BR = new BinaryReader(fileStream))
                     {
                         KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
-                    }                    
+                    }
+                    CreateTooltipsFile();
+
                     SlotArray();
                     DuelParams();
                     Misc();
-
-                    CreateTooltipsFile();
     }
 
                 _existingFilename = openFileDialog.FileName;

@@ -75,7 +75,7 @@
             this.buttonClose.BackColor = System.Drawing.Color.Linen;
             this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(77)))), ((int)(((byte)(0)))));
-            this.buttonClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PeachPuff;
+            this.buttonClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SandyBrown;
             this.buttonClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
