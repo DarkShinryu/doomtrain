@@ -48,7 +48,7 @@ namespace Doomtrain.Characters_Stats_Charts
 
         #endregion
 
-        private void buttonExpClose_Click(object sender, EventArgs e)
+        private void buttonClose_Click(object sender, EventArgs e)
         {
             Close();
         }
@@ -64,34 +64,37 @@ namespace Doomtrain.Characters_Stats_Charts
             try
             {
                 chartEXP.Series["Default"].Points.AddXY
-                    (0, Math.Floor((Math.Pow((10 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (10 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                    (0, Math.Floor((Math.Pow((2 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (2 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                 chartEXP.Series["Default"].Points.AddXY
-                    (1, Math.Floor((Math.Pow((20 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (20 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                    (1, Math.Floor((Math.Pow((10 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (10 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                 chartEXP.Series["Default"].Points.AddXY
-                    (2, Math.Floor((Math.Pow((30 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (30 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                    (2, Math.Floor((Math.Pow((20 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (20 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                 chartEXP.Series["Default"].Points.AddXY
-                    (3, Math.Floor((Math.Pow((40 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (40 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                    (3, Math.Floor((Math.Pow((30 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (30 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                 chartEXP.Series["Default"].Points.AddXY
-                    (4, Math.Floor((Math.Pow((50 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (50 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                    (4, Math.Floor((Math.Pow((40 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (40 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                 chartEXP.Series["Default"].Points.AddXY
-                    (5, Math.Floor((Math.Pow((60 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (60 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                    (5, Math.Floor((Math.Pow((50 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (50 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                 chartEXP.Series["Default"].Points.AddXY
-                    (6, Math.Floor((Math.Pow((70 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (70 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                    (6, Math.Floor((Math.Pow((60 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (60 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                 chartEXP.Series["Default"].Points.AddXY
-                    (7, Math.Floor((Math.Pow((80 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (80 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                    (7, Math.Floor((Math.Pow((70 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (70 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                 chartEXP.Series["Default"].Points.AddXY
-                    (8, Math.Floor((Math.Pow((90 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (90 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                    (8, Math.Floor((Math.Pow((80 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (80 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                 chartEXP.Series["Default"].Points.AddXY
-                    (9, Math.Floor((Math.Pow((100 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (100 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                    (9, Math.Floor((Math.Pow((90 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (90 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+
+                chartEXP.Series["Default"].Points.AddXY
+                    (10, Math.Floor((Math.Pow((100 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (100 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
             }
             catch (Exception Exception)
             {
@@ -103,34 +106,37 @@ namespace Doomtrain.Characters_Stats_Charts
             try
             {
                 chartEXP.Series["Current"].Points.AddXY
-                    (0, Math.Floor((Math.Pow((10 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (10 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
+                    (0, Math.Floor((Math.Pow((2 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (2 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                 chartEXP.Series["Current"].Points.AddXY
-                    (1, Math.Floor((Math.Pow((20 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (20 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
+                    (1, Math.Floor((Math.Pow((10 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (10 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
 
                 chartEXP.Series["Current"].Points.AddXY
-                    (2, Math.Floor((Math.Pow((30 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (30 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
+                    (2, Math.Floor((Math.Pow((20 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (20 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
 
                 chartEXP.Series["Current"].Points.AddXY
-                    (3, Math.Floor((Math.Pow((40 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (40 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
+                    (3, Math.Floor((Math.Pow((30 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (30 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
 
                 chartEXP.Series["Current"].Points.AddXY
-                    (4, Math.Floor((Math.Pow((50 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (50 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
+                    (4, Math.Floor((Math.Pow((40 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (40 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
 
                 chartEXP.Series["Current"].Points.AddXY
-                    (5, Math.Floor((Math.Pow((60 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (60 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
+                    (5, Math.Floor((Math.Pow((50 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (50 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
 
                 chartEXP.Series["Current"].Points.AddXY
-                    (6, Math.Floor((Math.Pow((70 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (70 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
+                    (6, Math.Floor((Math.Pow((60 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (60 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
 
                 chartEXP.Series["Current"].Points.AddXY
-                    (7, Math.Floor((Math.Pow((80 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (80 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
+                    (7, Math.Floor((Math.Pow((70 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (70 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
 
                 chartEXP.Series["Current"].Points.AddXY
-                    (8, Math.Floor((Math.Pow((90 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (90 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
+                    (8, Math.Floor((Math.Pow((80 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (80 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
 
                 chartEXP.Series["Current"].Points.AddXY
-                    (9, Math.Floor((Math.Pow((100 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (100 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
+                    (9, Math.Floor((Math.Pow((90 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (90 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
+
+                chartEXP.Series["Current"].Points.AddXY
+                    (10, Math.Floor((Math.Pow((100 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (100 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 *10) * 100 /100);
             }
             catch (Exception Exception)
             {
@@ -152,34 +158,37 @@ namespace Doomtrain.Characters_Stats_Charts
                     chartEXP.Series["Default"].Points.Clear();
 
                     chartEXP.Series["Default"].Points.AddXY
-                        (0, Math.Floor((Math.Pow((10 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (10 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (0, Math.Floor((Math.Pow((2 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (2 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Default"].Points.AddXY
-                        (1, Math.Floor((Math.Pow((20 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (20 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (1, Math.Floor((Math.Pow((10 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (10 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Default"].Points.AddXY
-                        (2, Math.Floor((Math.Pow((30 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (30 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (2, Math.Floor((Math.Pow((20 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (20 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Default"].Points.AddXY
-                        (3, Math.Floor((Math.Pow((40 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (40 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (3, Math.Floor((Math.Pow((30 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (30 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Default"].Points.AddXY
-                        (4, Math.Floor((Math.Pow((50 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (50 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (4, Math.Floor((Math.Pow((40 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (40 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Default"].Points.AddXY
-                        (5, Math.Floor((Math.Pow((60 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (60 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (5, Math.Floor((Math.Pow((50 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (50 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Default"].Points.AddXY
-                        (6, Math.Floor((Math.Pow((70 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (70 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (6, Math.Floor((Math.Pow((60 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (60 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Default"].Points.AddXY
-                        (7, Math.Floor((Math.Pow((80 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (80 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (7, Math.Floor((Math.Pow((70 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (70 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Default"].Points.AddXY
-                        (8, Math.Floor((Math.Pow((90 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (90 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (8, Math.Floor((Math.Pow((80 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (80 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Default"].Points.AddXY
-                        (9, Math.Floor((Math.Pow((100 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (100 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (9, Math.Floor((Math.Pow((90 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (90 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+
+                    chartEXP.Series["Default"].Points.AddXY
+                        (10, Math.Floor((Math.Pow((100 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (100 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
                 }
                 catch (Exception Exception)
                 {
@@ -193,34 +202,37 @@ namespace Doomtrain.Characters_Stats_Charts
                     chartEXP.Series["Current"].Points.Clear();
 
                     chartEXP.Series["Current"].Points.AddXY
-                        (0, Math.Floor((Math.Pow((10 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (10 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (0, Math.Floor((Math.Pow((2 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (2 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Current"].Points.AddXY
-                        (1, Math.Floor((Math.Pow((20 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (20 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (1, Math.Floor((Math.Pow((10 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (10 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Current"].Points.AddXY
-                        (2, Math.Floor((Math.Pow((30 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (30 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (2, Math.Floor((Math.Pow((20 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (20 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Current"].Points.AddXY
-                        (3, Math.Floor((Math.Pow((40 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (40 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (3, Math.Floor((Math.Pow((30 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (30 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Current"].Points.AddXY
-                        (4, Math.Floor((Math.Pow((50 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (50 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (4, Math.Floor((Math.Pow((40 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (40 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Current"].Points.AddXY
-                        (5, Math.Floor((Math.Pow((60 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (60 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (5, Math.Floor((Math.Pow((50 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (50 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Current"].Points.AddXY
-                        (6, Math.Floor((Math.Pow((70 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (70 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (6, Math.Floor((Math.Pow((60 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (60 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Current"].Points.AddXY
-                        (7, Math.Floor((Math.Pow((80 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (80 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (7, Math.Floor((Math.Pow((70 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (70 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Current"].Points.AddXY
-                        (8, Math.Floor((Math.Pow((90 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (90 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (8, Math.Floor((Math.Pow((80 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (80 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
 
                     chartEXP.Series["Current"].Points.AddXY
-                        (9, Math.Floor((Math.Pow((100 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (100 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+                        (9, Math.Floor((Math.Pow((90 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (90 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
+
+                    chartEXP.Series["Current"].Points.AddXY
+                        (10, Math.Floor((Math.Pow((100 - 1), 2) * KernelWorker.GetSelectedCharactersData.EXP2) / 256 + (100 - 1) * KernelWorker.GetSelectedCharactersData.EXP1 * 10) * 100 / 100);
                 }
                 catch (Exception Exception)
                 {

@@ -57,25 +57,24 @@ namespace Doomtrain.Characters_Stats_Charts
 
         #endregion
 
-        private void buttonHPClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void buttonInfo_Click(object sender, EventArgs e)
         {
             MessageBox.Show("The values here are only used for the chart and they have no connection to the kernel file.\n" +
                 "You need to change the values manually.\n\n" +
                 "Magic J-Value = The junction value of the junctioned magic.\n" + 
-                "Magic Count = The amount of junctioned magic that the character holds.\n" + 
+                "Magic Count = The amount of j-magic that the character holds.\n" + 
                 "Stat Bonus = Permanent bonus gained from X bonus skills and Devour.\n" + 
                 "Percent Modifier = Is 100 + any % bonuses added", "HP chart values info",
                 MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
         }
 
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
 
 
-        #region Read Chart Values        
+        #region Read chart values        
 
         private void HpChartWorker()
         {
@@ -83,52 +82,57 @@ namespace Doomtrain.Characters_Stats_Charts
             try
             {
                 chartHP.Series["Default"].Points.AddXY
-                    (0, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
+                    (0, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value + 
+                    1 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(1, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Default"].Points.AddXY
                     (1, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
+                    10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Default"].Points.AddXY
                     (2, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
+                    20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Default"].Points.AddXY
                     (3, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
+                    30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Default"].Points.AddXY
                     (4, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
+                    40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Default"].Points.AddXY
                     (5, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
+                    50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Default"].Points.AddXY
                     (6, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
+                    60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Default"].Points.AddXY
                     (7, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
+                    70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Default"].Points.AddXY
                     (8, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                    80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Default"].Points.AddXY
                     (9, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
+                    90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                    KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
+
+                chartHP.Series["Default"].Points.AddXY
+                    (10, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
                     100 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(100, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
             }
@@ -142,52 +146,57 @@ namespace Doomtrain.Characters_Stats_Charts
             try
             {
                 chartHP.Series["Current"].Points.AddXY
-                    (0, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
+                    (0, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value + 
+                    1 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(1, 2)) / 
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Current"].Points.AddXY
                     (1, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
+                    10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Current"].Points.AddXY
                     (2, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
+                    20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Current"].Points.AddXY
                     (3, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
+                    30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Current"].Points.AddXY
                     (4, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
+                    40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Current"].Points.AddXY
                     (5, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
+                    50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Current"].Points.AddXY
                     (6, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
+                    60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Current"].Points.AddXY
                     (7, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
+                    70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Current"].Points.AddXY
                     (8, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                    90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                    80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                 chartHP.Series["Current"].Points.AddXY
                     (9, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
+                    90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                    KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
+
+                chartHP.Series["Current"].Points.AddXY
+                    (10, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
                     100 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(100, 2)) /
                     KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
             }
@@ -214,51 +223,56 @@ namespace Doomtrain.Characters_Stats_Charts
 
                         chartHP.Series["Default"].Points.AddXY
                             (0, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
+                            1 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(1, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (1, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
+                            10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (2, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
+                            20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (3, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
+                            30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (4, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
+                            40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (5, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
+                            50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (6, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
+                            60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (7, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
+                            70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (8, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                            80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (9, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
+                            90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                            KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
+
+                        chartHP.Series["Default"].Points.AddXY
+                            (10, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
                             100 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(100, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
@@ -269,52 +283,57 @@ namespace Doomtrain.Characters_Stats_Charts
                         chartHP.Series["Default"].Points.Clear();
 
                         chartHP.Series["Default"].Points.AddXY
-                            (0, Math.Ceiling(((0 * 0 + 0 +
-                            10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
+                            (0, Math.Ceiling(((0 * 0 + 0 + 
+                            1 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(1, 2)) / 
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (1, Math.Ceiling(((0 * 0 + 0 +
-                            20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
+                            10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (2, Math.Ceiling(((0 * 0 + 0 +
-                            30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
+                            20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (3, Math.Ceiling(((0 * 0 + 0 +
-                            40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
+                            30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (4, Math.Ceiling(((0 * 0 + 0 +
-                            50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
+                            40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (5, Math.Ceiling(((0 * 0 + 0 +
-                            60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
+                            50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (6, Math.Ceiling(((0 * 0 + 0 +
-                            70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
+                            60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (7, Math.Ceiling(((0 * 0 + 0 +
-                            80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
+                            70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (8, Math.Ceiling(((0 * 0 + 0 +
-                            90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                            80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (9, Math.Ceiling(((0 * 0 + 0 +
+                            90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                            KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
+
+                        chartHP.Series["Default"].Points.AddXY
+                            (10, Math.Ceiling(((0 * 0 + 0 +
                             100 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(100, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
                     }
@@ -333,51 +352,56 @@ namespace Doomtrain.Characters_Stats_Charts
 
                     chartHP.Series["Current"].Points.AddXY
                         (0, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                        10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
+                        1 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(1, 2)) /
                         KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                     chartHP.Series["Current"].Points.AddXY
                         (1, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                        20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
+                        10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
                         KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                     chartHP.Series["Current"].Points.AddXY
                         (2, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                        30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
+                        20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
                         KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                     chartHP.Series["Current"].Points.AddXY
                         (3, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                        40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
+                        30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
                         KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                     chartHP.Series["Current"].Points.AddXY
                         (4, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                        50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
+                        40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
                         KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                     chartHP.Series["Current"].Points.AddXY
                         (5, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                        60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
+                        50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
                         KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                     chartHP.Series["Current"].Points.AddXY
                         (6, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                        70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
+                        60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
                         KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                     chartHP.Series["Current"].Points.AddXY
                         (7, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                        80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
+                        70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
                         KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                     chartHP.Series["Current"].Points.AddXY
                         (8, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                        90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                        80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
                         KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                     chartHP.Series["Current"].Points.AddXY
                         (9, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
+                        90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                        KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
+
+                    chartHP.Series["Current"].Points.AddXY
+                        (10, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
                         100 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(100, 2)) /
                         KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
                 }
@@ -405,51 +429,56 @@ namespace Doomtrain.Characters_Stats_Charts
 
                         chartHP.Series["Default"].Points.AddXY
                             (0, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
+                            1 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(1, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (1, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
+                            10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (2, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
+                            20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (3, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
+                            30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (4, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
+                            40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (5, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
+                            50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (6, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
+                            60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (7, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
+                            70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (8, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
-                            90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                            80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (9, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
+                            90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                            KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
+
+                        chartHP.Series["Default"].Points.AddXY
+                            (10, Math.Ceiling((((int)numericUpDownMagicValue.Value * (int)numericUpDownMagicCount.Value + (int)numericUpDownStatBonus.Value +
                             100 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(100, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * (int)numericUpDownPercent.Value) / 100) * 100 / 100);
                     }
@@ -459,51 +488,56 @@ namespace Doomtrain.Characters_Stats_Charts
 
                         chartHP.Series["Default"].Points.AddXY
                             (0, Math.Ceiling(((0 * 0 + 0 +
-                            10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
+                            1 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(1, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (1, Math.Ceiling(((0 * 0 + 0 +
-                            20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
+                            10 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(10, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (2, Math.Ceiling(((0 * 0 + 0 +
-                            30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
+                            20 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(20, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (3, Math.Ceiling(((0 * 0 + 0 +
-                            40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
+                            30 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(30, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (4, Math.Ceiling(((0 * 0 + 0 +
-                            50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
+                            40 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(40, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (5, Math.Ceiling(((0 * 0 + 0 +
-                            60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
+                            50 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(50, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (6, Math.Ceiling(((0 * 0 + 0 +
-                            70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
+                            60 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(60, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (7, Math.Ceiling(((0 * 0 + 0 +
-                            80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
+                            70 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(70, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (8, Math.Ceiling(((0 * 0 + 0 +
-                            90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                            80 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(80, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
 
                         chartHP.Series["Default"].Points.AddXY
                             (9, Math.Ceiling(((0 * 0 + 0 +
+                            90 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(90, 2)) /
+                            KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
+
+                        chartHP.Series["Default"].Points.AddXY
+                            (10, Math.Ceiling(((0 * 0 + 0 +
                             100 * KernelWorker.GetSelectedCharactersData.HP1 - (10 * Math.Pow(100, 2)) /
                             KernelWorker.GetSelectedCharactersData.HP2 + KernelWorker.GetSelectedCharactersData.HP3) * 100) / 100) * 100 / 100);
                     }
