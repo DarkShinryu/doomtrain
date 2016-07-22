@@ -212,6 +212,7 @@
             series9.Points.Add(dataPoint88);
             series9.Points.Add(dataPoint89);
             series9.Points.Add(dataPoint90);
+            series9.ToolTip = "#VALY";
             series10.ChartArea = "ChartAreaHP";
             series10.Legend = "Legend1";
             series10.Name = "Current";
@@ -239,6 +240,7 @@
             series10.Points.Add(dataPoint98);
             series10.Points.Add(dataPoint99);
             series10.Points.Add(dataPoint100);
+            series10.ToolTip = "#VALY";
             this.chartHP.Series.Add(series9);
             this.chartHP.Series.Add(series10);
             this.chartHP.Size = new System.Drawing.Size(640, 450);
@@ -526,6 +528,7 @@
             this.MaximumSize = new System.Drawing.Size(640, 450);
             this.MinimumSize = new System.Drawing.Size(640, 450);
             this.Name = "CharHP";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.chartHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicValue)).EndInit();

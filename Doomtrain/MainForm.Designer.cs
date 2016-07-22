@@ -40198,8 +40198,8 @@
             // 
             this.toolStripStatusLabelTooltips.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.toolStripStatusLabelTooltips.Name = "toolStripStatusLabelTooltips";
-            this.toolStripStatusLabelTooltips.Size = new System.Drawing.Size(120, 17);
-            this.toolStripStatusLabelTooltips.Text = "No tooltip.bin loaded";
+            this.toolStripStatusLabelTooltips.Size = new System.Drawing.Size(125, 17);
+            this.toolStripStatusLabelTooltips.Text = "No tooltips.bin loaded";
             // 
             // toolStripStatusLabelDash
             // 

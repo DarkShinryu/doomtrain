@@ -149,6 +149,7 @@
             series1.Points.Add(dataPoint8);
             series1.Points.Add(dataPoint9);
             series1.Points.Add(dataPoint10);
+            series1.ToolTip = "#VALY";
             series2.ChartArea = "ChartAreaEXP";
             series2.Legend = "Legend1";
             series2.Name = "Current";
@@ -176,6 +177,7 @@
             series2.Points.Add(dataPoint18);
             series2.Points.Add(dataPoint19);
             series2.Points.Add(dataPoint20);
+            series2.ToolTip = "#VALY";
             this.chartEXP.Series.Add(series1);
             this.chartEXP.Series.Add(series2);
             this.chartEXP.Size = new System.Drawing.Size(640, 450);
