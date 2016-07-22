@@ -40,7 +40,7 @@
             // 
             this.labelDoomtrain.AutoSize = true;
             this.labelDoomtrain.Font = new System.Drawing.Font("calendar note tfb", 35F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDoomtrain.ForeColor = System.Drawing.Color.Chocolate;
+            this.labelDoomtrain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(77)))), ((int)(((byte)(0)))));
             this.labelDoomtrain.Location = new System.Drawing.Point(48, 7);
             this.labelDoomtrain.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDoomtrain.Name = "labelDoomtrain";
@@ -52,7 +52,7 @@
             // 
             this.linkLabelWiki.AutoSize = true;
             this.linkLabelWiki.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelWiki.Location = new System.Drawing.Point(382, 146);
+            this.linkLabelWiki.Location = new System.Drawing.Point(382, 141);
             this.linkLabelWiki.Name = "linkLabelWiki";
             this.linkLabelWiki.Size = new System.Drawing.Size(34, 17);
             this.linkLabelWiki.TabIndex = 13;
@@ -63,7 +63,7 @@
             // 
             this.linkLabelGitHub.AutoSize = true;
             this.linkLabelGitHub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelGitHub.Location = new System.Drawing.Point(337, 127);
+            this.linkLabelGitHub.Location = new System.Drawing.Point(337, 122);
             this.linkLabelGitHub.Name = "linkLabelGitHub";
             this.linkLabelGitHub.Size = new System.Drawing.Size(124, 17);
             this.linkLabelGitHub.TabIndex = 11;
@@ -74,7 +74,7 @@
             // 
             this.buttonClose.BackColor = System.Drawing.Color.Linen;
             this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonClose.FlatAppearance.BorderColor = System.Drawing.Color.Chocolate;
+            this.buttonClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(77)))), ((int)(((byte)(0)))));
             this.buttonClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PeachPuff;
             this.buttonClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -92,7 +92,7 @@
             // 
             this.linkLabelForum.AutoSize = true;
             this.linkLabelForum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelForum.Location = new System.Drawing.Point(327, 108);
+            this.linkLabelForum.Location = new System.Drawing.Point(327, 103);
             this.linkLabelForum.Name = "linkLabelForum";
             this.linkLabelForum.Size = new System.Drawing.Size(145, 17);
             this.linkLabelForum.TabIndex = 12;

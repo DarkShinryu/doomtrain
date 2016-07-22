@@ -66,7 +66,7 @@ namespace Doomtrain.Characters_Stats_Charts
                 "Magic J-Value = The junction value of the junctioned magic.\n" +
                 "Magic Count = The amount of j-magic that the character holds.\n" +
                 "Stat Bonus = Permanent bonus gained from X bonus skills and Devour.\n" +
-                "Percent Modifier = Is 100 + any % bonuses added", "STR chart values info",
+                "Percent Modifier = Is 100 + any % bonuses added.", "Info",
                 MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
         }
 
@@ -74,7 +74,6 @@ namespace Doomtrain.Characters_Stats_Charts
         {
             Close();
         }
-
 
 
         #region Read Chart Values        
