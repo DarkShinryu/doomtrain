@@ -266,14 +266,23 @@
             this.labelDevourStatsIncr = new System.Windows.Forms.Label();
             this.labelDevourHPIncr = new System.Windows.Forms.Label();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.deleteTooltipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolbarStrip = new System.Windows.Forms.ToolStrip();
+            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.deleteTooltipsToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.tabPageGFAttacks = new System.Windows.Forms.TabPage();
             this.groupBoxGFAttacksFlags = new System.Windows.Forms.GroupBox();
             this.checkBoxGFAttacksFlagBreakDamageLimit = new System.Windows.Forms.CheckBox();
@@ -1986,21 +1995,12 @@
             this.labelStatusTimer1Value = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.panelMain = new System.Windows.Forms.Panel();
-            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.saveAsToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.deleteTooltipsToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteTooltipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripStatusLabelRightAlign = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelKernel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelDash = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.panelMain = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -6221,20 +6221,70 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.openToolStripMenuItem.Text = "Open...";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
             this.toolStripSeparator.Size = new System.Drawing.Size(245, 6);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveAsToolStripMenuItem.Image")));
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.saveAsToolStripMenuItem.Text = "Save a Copy As...";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(245, 6);
             // 
+            // deleteTooltipsToolStripMenuItem
+            // 
+            this.deleteTooltipsToolStripMenuItem.Enabled = false;
+            this.deleteTooltipsToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.deletetooltip;
+            this.deleteTooltipsToolStripMenuItem.Name = "deleteTooltipsToolStripMenuItem";
+            this.deleteTooltipsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.Q)));
+            this.deleteTooltipsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.deleteTooltipsToolStripMenuItem.Text = "Delete Tooltips File";
+            this.deleteTooltipsToolStripMenuItem.Click += new System.EventHandler(this.deleteTooltipsToolStripMenuItem_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(245, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.close;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -6275,10 +6325,53 @@
             this.toolbarStrip.TabIndex = 1;
             this.toolbarStrip.Text = "toolbarStrip";
             // 
+            // openToolStripButton
+            // 
+            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
+            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripButton.Name = "openToolStripButton";
+            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Text = "Open";
+            this.openToolStripButton.ToolTipText = "Open...";
+            this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
+            // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // saveToolStripButton
+            // 
+            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
+            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripButton.Name = "saveToolStripButton";
+            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Text = "Save";
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
+            // 
+            // saveAsToolStripButton
+            // 
+            this.saveAsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveAsToolStripButton.Image = global::Doomtrain.Properties.Resources.saveas;
+            this.saveAsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveAsToolStripButton.Name = "saveAsToolStripButton";
+            this.saveAsToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveAsToolStripButton.Text = "saveAs";
+            this.saveAsToolStripButton.ToolTipText = "Save a Copy As...";
+            this.saveAsToolStripButton.Click += new System.EventHandler(this.saveAsToolStripButton_Click);
+            // 
+            // deleteTooltipsToolStripButton
+            // 
+            this.deleteTooltipsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.deleteTooltipsToolStripButton.Enabled = false;
+            this.deleteTooltipsToolStripButton.Image = global::Doomtrain.Properties.Resources.deletetooltip;
+            this.deleteTooltipsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.deleteTooltipsToolStripButton.Name = "deleteTooltipsToolStripButton";
+            this.deleteTooltipsToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.deleteTooltipsToolStripButton.Text = "Delete Tooltips File";
+            this.deleteTooltipsToolStripButton.Click += new System.EventHandler(this.deleteTooltipsToolStripButton_Click);
             // 
             // tabPageGFAttacks
             // 
@@ -19930,9 +20023,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharSPD4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharSPD4.Name = "numericUpDownCharSPD4";
             this.numericUpDownCharSPD4.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharSPD4.TabIndex = 3;
+            this.numericUpDownCharSPD4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharSPD3
             // 
@@ -19956,9 +20059,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharSPD2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharSPD2.Name = "numericUpDownCharSPD2";
             this.numericUpDownCharSPD2.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharSPD2.TabIndex = 1;
+            this.numericUpDownCharSPD2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharSPD1
             // 
@@ -20004,9 +20117,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharVIT4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharVIT4.Name = "numericUpDownCharVIT4";
             this.numericUpDownCharVIT4.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharVIT4.TabIndex = 3;
+            this.numericUpDownCharVIT4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharVIT3
             // 
@@ -20030,9 +20153,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharVIT2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharVIT2.Name = "numericUpDownCharVIT2";
             this.numericUpDownCharVIT2.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharVIT2.TabIndex = 1;
+            this.numericUpDownCharVIT2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharVIT1
             // 
@@ -20078,9 +20211,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharLUCK4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharLUCK4.Name = "numericUpDownCharLUCK4";
             this.numericUpDownCharLUCK4.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharLUCK4.TabIndex = 3;
+            this.numericUpDownCharLUCK4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharLUCK3
             // 
@@ -20104,9 +20247,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharLUCK2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharLUCK2.Name = "numericUpDownCharLUCK2";
             this.numericUpDownCharLUCK2.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharLUCK2.TabIndex = 1;
+            this.numericUpDownCharLUCK2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharLUCK1
             // 
@@ -20152,9 +20305,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharSPR4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharSPR4.Name = "numericUpDownCharSPR4";
             this.numericUpDownCharSPR4.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharSPR4.TabIndex = 3;
+            this.numericUpDownCharSPR4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharSPR3
             // 
@@ -20178,9 +20341,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharSPR2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharSPR2.Name = "numericUpDownCharSPR2";
             this.numericUpDownCharSPR2.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharSPR2.TabIndex = 1;
+            this.numericUpDownCharSPR2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharSPR1
             // 
@@ -20226,9 +20399,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharSTR4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharSTR4.Name = "numericUpDownCharSTR4";
             this.numericUpDownCharSTR4.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharSTR4.TabIndex = 3;
+            this.numericUpDownCharSTR4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharSTR3
             // 
@@ -20252,9 +20435,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharSTR2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharSTR2.Name = "numericUpDownCharSTR2";
             this.numericUpDownCharSTR2.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharSTR2.TabIndex = 1;
+            this.numericUpDownCharSTR2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharSTR1
             // 
@@ -20300,9 +20493,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharMAG4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharMAG4.Name = "numericUpDownCharMAG4";
             this.numericUpDownCharMAG4.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharMAG4.TabIndex = 3;
+            this.numericUpDownCharMAG4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharMAG3
             // 
@@ -20326,9 +20529,19 @@
             0,
             0,
             0});
+            this.numericUpDownCharMAG2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownCharMAG2.Name = "numericUpDownCharMAG2";
             this.numericUpDownCharMAG2.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownCharMAG2.TabIndex = 1;
+            this.numericUpDownCharMAG2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDownCharMAG1
             // 
@@ -40076,115 +40289,12 @@
             this.toolStripStatusLabelStatus.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabelStatus.Text = "Ready";
             // 
-            // panelMain
-            // 
-            this.panelMain.AutoScroll = true;
-            this.panelMain.Controls.Add(this.tabControlMain);
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 49);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(654, 811);
-            this.panelMain.TabIndex = 2;
-            // 
-            // openToolStripButton
-            // 
-            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
-            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.openToolStripButton.Text = "Open";
-            this.openToolStripButton.ToolTipText = "Open...";
-            this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
-            // 
-            // saveToolStripButton
-            // 
-            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
-            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.saveToolStripButton.Text = "Save";
-            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
-            // 
-            // saveAsToolStripButton
-            // 
-            this.saveAsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveAsToolStripButton.Image = global::Doomtrain.Properties.Resources.saveas;
-            this.saveAsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveAsToolStripButton.Name = "saveAsToolStripButton";
-            this.saveAsToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.saveAsToolStripButton.Text = "saveAs";
-            this.saveAsToolStripButton.ToolTipText = "Save a Copy As...";
-            this.saveAsToolStripButton.Click += new System.EventHandler(this.saveAsToolStripButton_Click);
-            // 
-            // deleteTooltipsToolStripButton
-            // 
-            this.deleteTooltipsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.deleteTooltipsToolStripButton.Enabled = false;
-            this.deleteTooltipsToolStripButton.Image = global::Doomtrain.Properties.Resources.deletetooltip;
-            this.deleteTooltipsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.deleteTooltipsToolStripButton.Name = "deleteTooltipsToolStripButton";
-            this.deleteTooltipsToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.deleteTooltipsToolStripButton.Text = "Delete Tooltips File";
-            this.deleteTooltipsToolStripButton.Click += new System.EventHandler(this.deleteTooltipsToolStripButton_Click);
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
-            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.openToolStripMenuItem.Text = "Open...";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
-            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.saveToolStripMenuItem.Text = "Save";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveAsToolStripMenuItem.Image")));
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.S)));
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.saveAsToolStripMenuItem.Text = "Save a Copy As...";
-            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
-            // 
-            // deleteTooltipsToolStripMenuItem
-            // 
-            this.deleteTooltipsToolStripMenuItem.Enabled = false;
-            this.deleteTooltipsToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.deletetooltip;
-            this.deleteTooltipsToolStripMenuItem.Name = "deleteTooltipsToolStripMenuItem";
-            this.deleteTooltipsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.Q)));
-            this.deleteTooltipsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.deleteTooltipsToolStripMenuItem.Text = "Delete Tooltips File";
-            this.deleteTooltipsToolStripMenuItem.Click += new System.EventHandler(this.deleteTooltipsToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.close;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // toolStripStatusLabelRightAlign
             // 
             this.toolStripStatusLabelRightAlign.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripStatusLabelRightAlign.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.toolStripStatusLabelRightAlign.Name = "toolStripStatusLabelRightAlign";
-            this.toolStripStatusLabelRightAlign.Size = new System.Drawing.Size(320, 17);
+            this.toolStripStatusLabelRightAlign.Size = new System.Drawing.Size(346, 17);
             this.toolStripStatusLabelRightAlign.Spring = true;
             // 
             // toolStripStatusLabelKernel
@@ -40194,6 +40304,13 @@
             this.toolStripStatusLabelKernel.Size = new System.Drawing.Size(117, 17);
             this.toolStripStatusLabelKernel.Text = "No kernel.bin loaded";
             // 
+            // toolStripStatusLabelDash
+            // 
+            this.toolStripStatusLabelDash.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.toolStripStatusLabelDash.Name = "toolStripStatusLabelDash";
+            this.toolStripStatusLabelDash.Size = new System.Drawing.Size(12, 17);
+            this.toolStripStatusLabelDash.Text = "/";
+            // 
             // toolStripStatusLabelTooltips
             // 
             this.toolStripStatusLabelTooltips.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -40201,12 +40318,15 @@
             this.toolStripStatusLabelTooltips.Size = new System.Drawing.Size(125, 17);
             this.toolStripStatusLabelTooltips.Text = "No tooltips.bin loaded";
             // 
-            // toolStripStatusLabelDash
+            // panelMain
             // 
-            this.toolStripStatusLabelDash.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.toolStripStatusLabelDash.Name = "toolStripStatusLabelDash";
-            this.toolStripStatusLabelDash.Size = new System.Drawing.Size(12, 17);
-            this.toolStripStatusLabelDash.Text = "/";
+            this.panelMain.AutoScroll = true;
+            this.panelMain.Controls.Add(this.tabControlMain);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 49);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(654, 811);
+            this.panelMain.TabIndex = 2;
             // 
             // mainForm
             // 
