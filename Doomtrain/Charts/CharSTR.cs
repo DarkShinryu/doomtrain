@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Doomtrain.Characters_Stats_Charts
+namespace Doomtrain.Charts
 {
     public partial class charSTR : Form
     {

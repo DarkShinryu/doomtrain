@@ -1,4 +1,4 @@
-﻿namespace Doomtrain.Characters_Stats_Charts
+﻿namespace Doomtrain.Charts
 {
     partial class CharSPD
     {

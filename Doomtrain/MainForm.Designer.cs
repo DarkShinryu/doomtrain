@@ -399,6 +399,7 @@
             this.numericUpDownGFStatusAttack = new System.Windows.Forms.NumericUpDown();
             this.labelGFStatusAttackEnabler = new System.Windows.Forms.Label();
             this.groupBoxGFGeneral = new System.Windows.Forms.GroupBox();
+            this.buttonGFDamageChart = new System.Windows.Forms.Button();
             this.comboBoxGFAttackType = new System.Windows.Forms.ComboBox();
             this.comboBoxGFElement = new System.Windows.Forms.ComboBox();
             this.numericUpDownGFLevelMod = new System.Windows.Forms.NumericUpDown();
@@ -2001,6 +2002,7 @@
             this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
+            this.buttonGFDamageFormula = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -2520,11 +2522,11 @@
             this.labelGFAttacksPower.AutoSize = true;
             this.labelGFAttacksPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFAttacksPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAttacksPower.Location = new System.Drawing.Point(66, 158);
+            this.labelGFAttacksPower.Location = new System.Drawing.Point(75, 158);
             this.labelGFAttacksPower.Name = "labelGFAttacksPower";
-            this.labelGFAttacksPower.Size = new System.Drawing.Size(66, 17);
+            this.labelGFAttacksPower.Size = new System.Drawing.Size(46, 17);
             this.labelGFAttacksPower.TabIndex = 0;
-            this.labelGFAttacksPower.Text = "GF Power";
+            this.labelGFAttacksPower.Text = "Power";
             // 
             // labelGFAttacksPowerMod
             // 
@@ -2931,11 +2933,11 @@
             this.labelGFPower.AutoSize = true;
             this.labelGFPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFPower.Location = new System.Drawing.Point(25, 143);
+            this.labelGFPower.Location = new System.Drawing.Point(35, 143);
             this.labelGFPower.Name = "labelGFPower";
-            this.labelGFPower.Size = new System.Drawing.Size(66, 17);
+            this.labelGFPower.Size = new System.Drawing.Size(46, 17);
             this.labelGFPower.TabIndex = 0;
-            this.labelGFPower.Text = "GF Power";
+            this.labelGFPower.Text = "Power";
             // 
             // labelGFHP
             // 
@@ -3476,18 +3478,18 @@
             this.labelMagicSpellPower.AutoSize = true;
             this.labelMagicSpellPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelMagicSpellPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicSpellPower.Location = new System.Drawing.Point(61, 126);
+            this.labelMagicSpellPower.Location = new System.Drawing.Point(77, 144);
             this.labelMagicSpellPower.Name = "labelMagicSpellPower";
-            this.labelMagicSpellPower.Size = new System.Drawing.Size(78, 17);
+            this.labelMagicSpellPower.Size = new System.Drawing.Size(46, 17);
             this.labelMagicSpellPower.TabIndex = 0;
-            this.labelMagicSpellPower.Text = "Spell Power";
+            this.labelMagicSpellPower.Text = "Power";
             // 
             // labelMagicDrawResist
             // 
             this.labelMagicDrawResist.AutoSize = true;
             this.labelMagicDrawResist.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelMagicDrawResist.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicDrawResist.Location = new System.Drawing.Point(191, 126);
+            this.labelMagicDrawResist.Location = new System.Drawing.Point(191, 144);
             this.labelMagicDrawResist.Name = "labelMagicDrawResist";
             this.labelMagicDrawResist.Size = new System.Drawing.Size(78, 17);
             this.labelMagicDrawResist.TabIndex = 0;
@@ -3498,7 +3500,7 @@
             this.labelMagicHitCount.AutoSize = true;
             this.labelMagicHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelMagicHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicHitCount.Location = new System.Drawing.Point(323, 126);
+            this.labelMagicHitCount.Location = new System.Drawing.Point(323, 144);
             this.labelMagicHitCount.Name = "labelMagicHitCount";
             this.labelMagicHitCount.Size = new System.Drawing.Size(67, 17);
             this.labelMagicHitCount.TabIndex = 0;
@@ -3520,7 +3522,7 @@
             this.labelMagicAttackType.AutoSize = true;
             this.labelMagicAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelMagicAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelMagicAttackType.Location = new System.Drawing.Point(113, 76);
+            this.labelMagicAttackType.Location = new System.Drawing.Point(113, 84);
             this.labelMagicAttackType.Name = "labelMagicAttackType";
             this.labelMagicAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelMagicAttackType.TabIndex = 7;
@@ -7269,7 +7271,7 @@
             this.groupBoxGFFlags.Controls.Add(this.checkBoxGFFlag7);
             this.groupBoxGFFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxGFFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxGFFlags.Location = new System.Drawing.Point(6, 497);
+            this.groupBoxGFFlags.Location = new System.Drawing.Point(6, 556);
             this.groupBoxGFFlags.Name = "groupBoxGFFlags";
             this.groupBoxGFFlags.Size = new System.Drawing.Size(452, 89);
             this.groupBoxGFFlags.TabIndex = 6;
@@ -7419,9 +7421,9 @@
             this.groupBoxGFStatusAttack.Controls.Add(this.labelGFStatusAttackEnabler);
             this.groupBoxGFStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxGFStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBoxGFStatusAttack.Location = new System.Drawing.Point(6, 212);
+            this.groupBoxGFStatusAttack.Location = new System.Drawing.Point(6, 256);
             this.groupBoxGFStatusAttack.Name = "groupBoxGFStatusAttack";
-            this.groupBoxGFStatusAttack.Size = new System.Drawing.Size(452, 279);
+            this.groupBoxGFStatusAttack.Size = new System.Drawing.Size(452, 294);
             this.groupBoxGFStatusAttack.TabIndex = 5;
             this.groupBoxGFStatusAttack.TabStop = false;
             this.groupBoxGFStatusAttack.Text = "Status Attack";
@@ -7934,6 +7936,8 @@
             // groupBoxGFGeneral
             // 
             this.groupBoxGFGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxGFGeneral.Controls.Add(this.buttonGFDamageFormula);
+            this.groupBoxGFGeneral.Controls.Add(this.buttonGFDamageChart);
             this.groupBoxGFGeneral.Controls.Add(this.labelGFAttackType);
             this.groupBoxGFGeneral.Controls.Add(this.comboBoxGFAttackType);
             this.groupBoxGFGeneral.Controls.Add(this.comboBoxGFElement);
@@ -7954,10 +7958,22 @@
             this.groupBoxGFGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxGFGeneral.Location = new System.Drawing.Point(6, 6);
             this.groupBoxGFGeneral.Name = "groupBoxGFGeneral";
-            this.groupBoxGFGeneral.Size = new System.Drawing.Size(452, 200);
+            this.groupBoxGFGeneral.Size = new System.Drawing.Size(452, 244);
             this.groupBoxGFGeneral.TabIndex = 1;
             this.groupBoxGFGeneral.TabStop = false;
             this.groupBoxGFGeneral.Text = "General";
+            // 
+            // buttonGFDamageChart
+            // 
+            this.buttonGFDamageChart.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGFDamageChart.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonGFDamageChart.Location = new System.Drawing.Point(254, 208);
+            this.buttonGFDamageChart.Name = "buttonGFDamageChart";
+            this.buttonGFDamageChart.Size = new System.Drawing.Size(104, 25);
+            this.buttonGFDamageChart.TabIndex = 92;
+            this.buttonGFDamageChart.Text = "Damage Chart";
+            this.buttonGFDamageChart.UseVisualStyleBackColor = true;
+            this.buttonGFDamageChart.Click += new System.EventHandler(this.buttonGfDamageChart_Click);
             // 
             // comboBoxGFAttackType
             // 
@@ -14312,7 +14328,7 @@
             this.groupBox9.Controls.Add(this.checkBoxMagicTarget5);
             this.groupBox9.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBox9.Location = new System.Drawing.Point(6, 195);
+            this.groupBox9.Location = new System.Drawing.Point(6, 214);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(452, 94);
             this.groupBox9.TabIndex = 106;
@@ -14416,7 +14432,7 @@
             this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag7);
             this.groupBoxMagicFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxMagicFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxMagicFlags.Location = new System.Drawing.Point(6, 583);
+            this.groupBoxMagicFlags.Location = new System.Drawing.Point(6, 602);
             this.groupBoxMagicFlags.Name = "groupBoxMagicFlags";
             this.groupBoxMagicFlags.Size = new System.Drawing.Size(452, 98);
             this.groupBoxMagicFlags.TabIndex = 2;
@@ -14566,7 +14582,7 @@
             this.groupBoxMagicStatusAttack.Controls.Add(this.checkBoxMagicZombie);
             this.groupBoxMagicStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxMagicStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBoxMagicStatusAttack.Location = new System.Drawing.Point(6, 295);
+            this.groupBoxMagicStatusAttack.Location = new System.Drawing.Point(6, 314);
             this.groupBoxMagicStatusAttack.Name = "groupBoxMagicStatusAttack";
             this.groupBoxMagicStatusAttack.Size = new System.Drawing.Size(452, 282);
             this.groupBoxMagicStatusAttack.TabIndex = 2;
@@ -15096,7 +15112,7 @@
             this.groupBoxMagicGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxMagicGeneral.Location = new System.Drawing.Point(6, 6);
             this.groupBoxMagicGeneral.Name = "groupBoxMagicGeneral";
-            this.groupBoxMagicGeneral.Size = new System.Drawing.Size(452, 183);
+            this.groupBoxMagicGeneral.Size = new System.Drawing.Size(452, 202);
             this.groupBoxMagicGeneral.TabIndex = 2;
             this.groupBoxMagicGeneral.TabStop = false;
             this.groupBoxMagicGeneral.Text = "General";
@@ -15143,7 +15159,7 @@
             "Everyone\'s Grudge",
             "Excalipoor",
             "Terra Break/Great Attractor"});
-            this.comboBoxMagicAttackType.Location = new System.Drawing.Point(22, 96);
+            this.comboBoxMagicAttackType.Location = new System.Drawing.Point(22, 104);
             this.comboBoxMagicAttackType.Name = "comboBoxMagicAttackType";
             this.comboBoxMagicAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxMagicAttackType.TabIndex = 8;
@@ -15170,7 +15186,7 @@
             // numericUpDownMagicHitCount
             // 
             this.numericUpDownMagicHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicHitCount.Location = new System.Drawing.Point(333, 146);
+            this.numericUpDownMagicHitCount.Location = new System.Drawing.Point(333, 164);
             this.numericUpDownMagicHitCount.Maximum = new decimal(new int[] {
             255,
             0,
@@ -15183,7 +15199,7 @@
             // numericUpDownMagicDrawResist
             // 
             this.numericUpDownMagicDrawResist.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicDrawResist.Location = new System.Drawing.Point(205, 146);
+            this.numericUpDownMagicDrawResist.Location = new System.Drawing.Point(205, 164);
             this.numericUpDownMagicDrawResist.Maximum = new decimal(new int[] {
             255,
             0,
@@ -15196,7 +15212,7 @@
             // numericUpDownMagicSpellPower
             // 
             this.numericUpDownMagicSpellPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMagicSpellPower.Location = new System.Drawing.Point(77, 146);
+            this.numericUpDownMagicSpellPower.Location = new System.Drawing.Point(77, 164);
             this.numericUpDownMagicSpellPower.Maximum = new decimal(new int[] {
             255,
             0,
@@ -40328,6 +40344,18 @@
             this.panelMain.Size = new System.Drawing.Size(654, 811);
             this.panelMain.TabIndex = 2;
             // 
+            // buttonGFDamageFormula
+            // 
+            this.buttonGFDamageFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGFDamageFormula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonGFDamageFormula.Location = new System.Drawing.Point(94, 208);
+            this.buttonGFDamageFormula.Name = "buttonGFDamageFormula";
+            this.buttonGFDamageFormula.Size = new System.Drawing.Size(129, 25);
+            this.buttonGFDamageFormula.TabIndex = 92;
+            this.buttonGFDamageFormula.Text = "Damage Formula";
+            this.buttonGFDamageFormula.UseVisualStyleBackColor = true;
+            this.buttonGFDamageFormula.Click += new System.EventHandler(this.buttonGFDamageFormula_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -40985,10 +41013,7 @@
         private System.Windows.Forms.ComboBox comboBoxGFAttackType;
         private System.Windows.Forms.ComboBox comboBoxGFElement;
         private System.Windows.Forms.Label labelGFElement;
-        private System.Windows.Forms.NumericUpDown numericUpDownGFLevelMod;
-        private System.Windows.Forms.NumericUpDown numericUpDownGFPowerMod;
         private System.Windows.Forms.NumericUpDown numericUpDownGFHP;
-        private System.Windows.Forms.NumericUpDown numericUpDownGFPower;
         private System.Windows.Forms.ComboBox comboBoxGFMagicID;
         private System.Windows.Forms.Label labelGFLevelMod;
         private System.Windows.Forms.Label labelGFPowerMod;
@@ -40997,7 +41022,6 @@
         private System.Windows.Forms.Label labelGFMagicID;
         private System.Windows.Forms.TabPage tabPageGFAbilities;
         private System.Windows.Forms.GroupBox groupBoxGFAbilities;
-        private System.Windows.Forms.ListBox listBoxGF;
         private System.Windows.Forms.TabPage tabPageMagic;
         private System.Windows.Forms.TabControl tabControlMagic;
         private System.Windows.Forms.TabPage tabPageMagicGeneral;
@@ -42917,6 +42941,12 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelKernel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelDash;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelTooltips;
+        public System.Windows.Forms.NumericUpDown numericUpDownGFLevelMod;
+        public System.Windows.Forms.NumericUpDown numericUpDownGFPowerMod;
+        public System.Windows.Forms.NumericUpDown numericUpDownGFPower;
+        public System.Windows.Forms.ListBox listBoxGF;
+        private System.Windows.Forms.Button buttonGFDamageChart;
+        private System.Windows.Forms.Button buttonGFDamageFormula;
     }
 }
 

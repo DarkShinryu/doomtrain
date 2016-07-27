@@ -1,6 +1,6 @@
-﻿namespace Doomtrain.Characters_Stats_Charts
+﻿namespace Doomtrain.Charts
 {
-    partial class charSTR
+    partial class CharMAG
     {
         /// <summary>
         /// Required designer variable.
@@ -69,7 +69,9 @@
             this.checkBoxDefault = new System.Windows.Forms.CheckBox();
             this.buttonInfo = new System.Windows.Forms.Button();
             this.numericUpDownPercent = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownX = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownStatBonus = new System.Windows.Forms.NumericUpDown();
+            this.labelX = new System.Windows.Forms.Label();
             this.numericUpDownMagicCount = new System.Windows.Forms.NumericUpDown();
             this.labelPercent = new System.Windows.Forms.Label();
             this.numericUpDownMagicValue = new System.Windows.Forms.NumericUpDown();
@@ -77,15 +79,13 @@
             this.labelMagicCount = new System.Windows.Forms.Label();
             this.labelMagicValue = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.chartSTR = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.labelX = new System.Windows.Forms.Label();
-            this.numericUpDownX = new System.Windows.Forms.NumericUpDown();
+            this.chartMAG = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPercent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicValue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartSTR)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartMAG)).BeginInit();
             this.SuspendLayout();
             // 
             // checkBoxDefault
@@ -96,17 +96,17 @@
             this.checkBoxDefault.Location = new System.Drawing.Point(599, 397);
             this.checkBoxDefault.Name = "checkBoxDefault";
             this.checkBoxDefault.Size = new System.Drawing.Size(84, 34);
-            this.checkBoxDefault.TabIndex = 25;
+            this.checkBoxDefault.TabIndex = 53;
             this.checkBoxDefault.Text = "Use values \r\nfor default";
             this.checkBoxDefault.UseVisualStyleBackColor = false;
             // 
             // buttonInfo
             // 
             this.buttonInfo.Image = global::Doomtrain.Properties.Resources.info;
-            this.buttonInfo.Location = new System.Drawing.Point(657, 12);
+            this.buttonInfo.Location = new System.Drawing.Point(656, 11);
             this.buttonInfo.Name = "buttonInfo";
             this.buttonInfo.Size = new System.Drawing.Size(29, 24);
-            this.buttonInfo.TabIndex = 24;
+            this.buttonInfo.TabIndex = 52;
             this.buttonInfo.UseVisualStyleBackColor = true;
             this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
             // 
@@ -126,12 +126,25 @@
             0});
             this.numericUpDownPercent.Name = "numericUpDownPercent";
             this.numericUpDownPercent.Size = new System.Drawing.Size(51, 25);
-            this.numericUpDownPercent.TabIndex = 16;
+            this.numericUpDownPercent.TabIndex = 42;
             this.numericUpDownPercent.Value = new decimal(new int[] {
             100,
             0,
             0,
             0});
+            // 
+            // numericUpDownX
+            // 
+            this.numericUpDownX.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownX.Location = new System.Drawing.Point(613, 125);
+            this.numericUpDownX.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownX.Name = "numericUpDownX";
+            this.numericUpDownX.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownX.TabIndex = 45;
             // 
             // numericUpDownStatBonus
             // 
@@ -144,7 +157,19 @@
             0});
             this.numericUpDownStatBonus.Name = "numericUpDownStatBonus";
             this.numericUpDownStatBonus.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownStatBonus.TabIndex = 19;
+            this.numericUpDownStatBonus.TabIndex = 46;
+            // 
+            // labelX
+            // 
+            this.labelX.AutoSize = true;
+            this.labelX.BackColor = System.Drawing.Color.White;
+            this.labelX.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.labelX.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelX.Location = new System.Drawing.Point(629, 107);
+            this.labelX.Name = "labelX";
+            this.labelX.Size = new System.Drawing.Size(14, 15);
+            this.labelX.TabIndex = 47;
+            this.labelX.Text = "X";
             // 
             // numericUpDownMagicCount
             // 
@@ -157,7 +182,7 @@
             0});
             this.numericUpDownMagicCount.Name = "numericUpDownMagicCount";
             this.numericUpDownMagicCount.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicCount.TabIndex = 15;
+            this.numericUpDownMagicCount.TabIndex = 41;
             // 
             // labelPercent
             // 
@@ -168,7 +193,7 @@
             this.labelPercent.Location = new System.Drawing.Point(589, 314);
             this.labelPercent.Name = "labelPercent";
             this.labelPercent.Size = new System.Drawing.Size(95, 15);
-            this.labelPercent.TabIndex = 20;
+            this.labelPercent.TabIndex = 48;
             this.labelPercent.Text = "Percent Modifier";
             // 
             // numericUpDownMagicValue
@@ -182,7 +207,7 @@
             0});
             this.numericUpDownMagicValue.Name = "numericUpDownMagicValue";
             this.numericUpDownMagicValue.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicValue.TabIndex = 14;
+            this.numericUpDownMagicValue.TabIndex = 40;
             // 
             // labelStatBonus
             // 
@@ -193,7 +218,7 @@
             this.labelStatBonus.Location = new System.Drawing.Point(604, 262);
             this.labelStatBonus.Name = "labelStatBonus";
             this.labelStatBonus.Size = new System.Drawing.Size(64, 15);
-            this.labelStatBonus.TabIndex = 21;
+            this.labelStatBonus.TabIndex = 49;
             this.labelStatBonus.Text = "Stat Bonus";
             // 
             // labelMagicCount
@@ -205,7 +230,7 @@
             this.labelMagicCount.Location = new System.Drawing.Point(600, 209);
             this.labelMagicCount.Name = "labelMagicCount";
             this.labelMagicCount.Size = new System.Drawing.Size(75, 15);
-            this.labelMagicCount.TabIndex = 22;
+            this.labelMagicCount.TabIndex = 50;
             this.labelMagicCount.Text = "Magic Count";
             // 
             // labelMagicValue
@@ -217,7 +242,7 @@
             this.labelMagicValue.Location = new System.Drawing.Point(596, 157);
             this.labelMagicValue.Name = "labelMagicValue";
             this.labelMagicValue.Size = new System.Drawing.Size(82, 15);
-            this.labelMagicValue.TabIndex = 23;
+            this.labelMagicValue.TabIndex = 51;
             this.labelMagicValue.Text = "Magic J-Value";
             // 
             // buttonClose
@@ -226,12 +251,12 @@
             this.buttonClose.Location = new System.Drawing.Point(611, 463);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
-            this.buttonClose.TabIndex = 17;
+            this.buttonClose.TabIndex = 43;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // chartSTR
+            // chartMAG
             // 
             customLabel1.FromPosition = -0.5D;
             customLabel1.Text = "1";
@@ -282,17 +307,17 @@
             chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             chartArea1.AxisX.Title = "Level";
             chartArea1.AxisX.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-            chartArea1.AxisY.Title = "STR";
+            chartArea1.AxisY.Title = "MAG";
             chartArea1.AxisY.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-            chartArea1.Name = "ChartAreaSTR";
-            this.chartSTR.ChartAreas.Add(chartArea1);
+            chartArea1.Name = "ChartAreaMAG";
+            this.chartMAG.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chartSTR.Legends.Add(legend1);
-            this.chartSTR.Location = new System.Drawing.Point(0, 0);
-            this.chartSTR.MaximumSize = new System.Drawing.Size(700, 500);
-            this.chartSTR.MinimumSize = new System.Drawing.Size(700, 500);
-            this.chartSTR.Name = "chartSTR";
-            series1.ChartArea = "ChartAreaSTR";
+            this.chartMAG.Legends.Add(legend1);
+            this.chartMAG.Location = new System.Drawing.Point(0, 0);
+            this.chartMAG.MaximumSize = new System.Drawing.Size(700, 500);
+            this.chartMAG.MinimumSize = new System.Drawing.Size(700, 500);
+            this.chartMAG.Name = "chartMAG";
+            series1.ChartArea = "ChartAreaMAG";
             series1.Legend = "Legend1";
             series1.Name = "Default";
             dataPoint2.AxisLabel = "";
@@ -320,7 +345,7 @@
             series1.Points.Add(dataPoint10);
             series1.Points.Add(dataPoint11);
             series1.ToolTip = "#VALY";
-            series2.ChartArea = "ChartAreaSTR";
+            series2.ChartArea = "ChartAreaMAG";
             series2.Legend = "Legend1";
             series2.Name = "Current";
             dataPoint13.AxisLabel = "10";
@@ -349,44 +374,19 @@
             series2.Points.Add(dataPoint21);
             series2.Points.Add(dataPoint22);
             series2.ToolTip = "#VALY";
-            this.chartSTR.Series.Add(series1);
-            this.chartSTR.Series.Add(series2);
-            this.chartSTR.Size = new System.Drawing.Size(700, 500);
-            this.chartSTR.TabIndex = 18;
+            this.chartMAG.Series.Add(series1);
+            this.chartMAG.Series.Add(series2);
+            this.chartMAG.Size = new System.Drawing.Size(700, 500);
+            this.chartMAG.TabIndex = 44;
             title1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            title1.Name = "TitleSTR";
-            title1.Text = "STR CHART";
-            this.chartSTR.Titles.Add(title1);
-            this.chartSTR.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ChartSTR_MouseDown);
-            this.chartSTR.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ChartSTR_MouseMove);
-            this.chartSTR.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ChartSTR_MouseUp);
+            title1.Name = "TitleMAG";
+            title1.Text = "MAG CHART";
+            this.chartMAG.Titles.Add(title1);
+            this.chartMAG.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chartMAG_MouseDown);
+            this.chartMAG.MouseMove += new System.Windows.Forms.MouseEventHandler(this.chartMAG_MouseMove);
+            this.chartMAG.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chartMAG_MouseUp);
             // 
-            // labelX
-            // 
-            this.labelX.AutoSize = true;
-            this.labelX.BackColor = System.Drawing.Color.White;
-            this.labelX.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.labelX.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelX.Location = new System.Drawing.Point(629, 107);
-            this.labelX.Name = "labelX";
-            this.labelX.Size = new System.Drawing.Size(14, 15);
-            this.labelX.TabIndex = 20;
-            this.labelX.Text = "X";
-            // 
-            // numericUpDownX
-            // 
-            this.numericUpDownX.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownX.Location = new System.Drawing.Point(613, 125);
-            this.numericUpDownX.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownX.Name = "numericUpDownX";
-            this.numericUpDownX.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownX.TabIndex = 19;
-            // 
-            // charSTR
+            // CharMAG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -405,21 +405,21 @@
             this.Controls.Add(this.labelMagicCount);
             this.Controls.Add(this.labelMagicValue);
             this.Controls.Add(this.buttonClose);
-            this.Controls.Add(this.chartSTR);
+            this.Controls.Add(this.chartMAG);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximumSize = new System.Drawing.Size(700, 500);
             this.MinimumSize = new System.Drawing.Size(700, 500);
-            this.Name = "charSTR";
+            this.Name = "CharMAG";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPercent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatBonus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicValue)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartSTR)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartMAG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,7 +430,9 @@
         private System.Windows.Forms.CheckBox checkBoxDefault;
         private System.Windows.Forms.Button buttonInfo;
         private System.Windows.Forms.NumericUpDown numericUpDownPercent;
+        public System.Windows.Forms.NumericUpDown numericUpDownX;
         public System.Windows.Forms.NumericUpDown numericUpDownStatBonus;
+        private System.Windows.Forms.Label labelX;
         private System.Windows.Forms.NumericUpDown numericUpDownMagicCount;
         private System.Windows.Forms.Label labelPercent;
         private System.Windows.Forms.NumericUpDown numericUpDownMagicValue;
@@ -438,8 +440,6 @@
         private System.Windows.Forms.Label labelMagicCount;
         private System.Windows.Forms.Label labelMagicValue;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartSTR;
-        private System.Windows.Forms.Label labelX;
-        public System.Windows.Forms.NumericUpDown numericUpDownX;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartMAG;
     }
 }

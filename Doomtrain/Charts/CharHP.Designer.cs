@@ -1,4 +1,4 @@
-﻿namespace Doomtrain.Characters_Stats_Charts
+﻿namespace Doomtrain.Charts
 {
     partial class CharHP
     {
@@ -107,20 +107,20 @@
             this.numericUpDownMagicValue = new System.Windows.Forms.NumericUpDown();
             this.labelMagicValue = new System.Windows.Forms.Label();
             this.numericUpDownMagicCount = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownStatBonus = new System.Windows.Forms.NumericUpDown();
             this.labelMagicCount = new System.Windows.Forms.Label();
             this.labelStatBonus = new System.Windows.Forms.Label();
-            this.labelPercent = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.numericUpDownPercent = new System.Windows.Forms.NumericUpDown();
             this.buttonInfo = new System.Windows.Forms.Button();
             this.checkBoxDefault = new System.Windows.Forms.CheckBox();
+            this.numericUpDownStatBonus = new System.Windows.Forms.NumericUpDown();
+            this.labelPercent = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPercent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatBonus)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonClose
@@ -302,19 +302,6 @@
             this.numericUpDownMagicCount.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownMagicCount.TabIndex = 1;
             // 
-            // numericUpDownStatBonus
-            // 
-            this.numericUpDownStatBonus.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownStatBonus.Location = new System.Drawing.Point(610, 238);
-            this.numericUpDownStatBonus.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDownStatBonus.Name = "numericUpDownStatBonus";
-            this.numericUpDownStatBonus.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownStatBonus.TabIndex = 9;
-            // 
             // labelMagicCount
             // 
             this.labelMagicCount.AutoSize = true;
@@ -338,18 +325,6 @@
             this.labelStatBonus.Size = new System.Drawing.Size(64, 15);
             this.labelStatBonus.TabIndex = 10;
             this.labelStatBonus.Text = "Stat Bonus";
-            // 
-            // labelPercent
-            // 
-            this.labelPercent.AutoSize = true;
-            this.labelPercent.BackColor = System.Drawing.Color.White;
-            this.labelPercent.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.labelPercent.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelPercent.Location = new System.Drawing.Point(586, 272);
-            this.labelPercent.Name = "labelPercent";
-            this.labelPercent.Size = new System.Drawing.Size(95, 15);
-            this.labelPercent.TabIndex = 10;
-            this.labelPercent.Text = "Percent Modifier";
             // 
             // chart1
             // 
@@ -513,6 +488,31 @@
             this.checkBoxDefault.Text = "Use values \r\nfor default";
             this.checkBoxDefault.UseVisualStyleBackColor = false;
             // 
+            // numericUpDownStatBonus
+            // 
+            this.numericUpDownStatBonus.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownStatBonus.Location = new System.Drawing.Point(610, 238);
+            this.numericUpDownStatBonus.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownStatBonus.Name = "numericUpDownStatBonus";
+            this.numericUpDownStatBonus.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownStatBonus.TabIndex = 9;
+            // 
+            // labelPercent
+            // 
+            this.labelPercent.AutoSize = true;
+            this.labelPercent.BackColor = System.Drawing.Color.White;
+            this.labelPercent.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.labelPercent.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelPercent.Location = new System.Drawing.Point(586, 272);
+            this.labelPercent.Name = "labelPercent";
+            this.labelPercent.Size = new System.Drawing.Size(95, 15);
+            this.labelPercent.TabIndex = 10;
+            this.labelPercent.Text = "Percent Modifier";
+            // 
             // CharHP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -544,9 +544,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatBonus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPercent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatBonus)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -556,15 +556,15 @@
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartHP;
         private System.Windows.Forms.Label labelMagicValue;
-        public System.Windows.Forms.NumericUpDown numericUpDownStatBonus;
         private System.Windows.Forms.Label labelMagicCount;
         private System.Windows.Forms.Label labelStatBonus;
-        private System.Windows.Forms.Label labelPercent;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.NumericUpDown numericUpDownPercent;
         private System.Windows.Forms.NumericUpDown numericUpDownMagicValue;
         private System.Windows.Forms.NumericUpDown numericUpDownMagicCount;
         private System.Windows.Forms.Button buttonInfo;
         private System.Windows.Forms.CheckBox checkBoxDefault;
+        public System.Windows.Forms.NumericUpDown numericUpDownStatBonus;
+        private System.Windows.Forms.Label labelPercent;
     }
 }

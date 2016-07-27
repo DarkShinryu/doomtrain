@@ -62,52 +62,58 @@
     <Compile Include="AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharEXP.cs">
+    <Compile Include="Charts\CharEXP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharEXP.Designer.cs">
+    <Compile Include="Charts\CharEXP.Designer.cs">
       <DependentUpon>CharEXP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharHP.cs">
+    <Compile Include="Charts\GfDamage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharHP.Designer.cs">
+    <Compile Include="Charts\GfDamage.Designer.cs">
+      <DependentUpon>GfDamage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\CharHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charts\CharHP.Designer.cs">
       <DependentUpon>CharHP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharLUCK.cs">
+    <Compile Include="Charts\CharLUCK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharLUCK.Designer.cs">
+    <Compile Include="Charts\CharLUCK.Designer.cs">
       <DependentUpon>CharLUCK.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharMAG.cs">
+    <Compile Include="Charts\CharMAG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharMAG.Designer.cs">
+    <Compile Include="Charts\CharMAG.Designer.cs">
       <DependentUpon>CharMAG.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharSPD.cs">
+    <Compile Include="Charts\CharSPD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharSPD.Designer.cs">
+    <Compile Include="Charts\CharSPD.Designer.cs">
       <DependentUpon>CharSPD.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharSPR.cs">
+    <Compile Include="Charts\CharSPR.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharSPR.Designer.cs">
+    <Compile Include="Charts\CharSPR.Designer.cs">
       <DependentUpon>CharSPR.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharSTR.cs">
+    <Compile Include="Charts\CharSTR.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharSTR.Designer.cs">
+    <Compile Include="Charts\CharSTR.Designer.cs">
       <DependentUpon>CharSTR.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharVIT.cs">
+    <Compile Include="Charts\CharVIT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characters Stats Charts\CharVIT.Designer.cs">
+    <Compile Include="Charts\CharVIT.Designer.cs">
       <DependentUpon>CharVIT.cs</DependentUpon>
     </Compile>
     <Compile Include="KernelWorker.cs" />
@@ -122,28 +128,31 @@
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characters Stats Charts\CharEXP.resx">
+    <EmbeddedResource Include="Charts\CharEXP.resx">
       <DependentUpon>CharEXP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characters Stats Charts\CharHP.resx">
+    <EmbeddedResource Include="Charts\GfDamage.resx">
+      <DependentUpon>GfDamage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\CharHP.resx">
       <DependentUpon>CharHP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characters Stats Charts\CharLUCK.resx">
+    <EmbeddedResource Include="Charts\CharLUCK.resx">
       <DependentUpon>CharLUCK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characters Stats Charts\CharMAG.resx">
+    <EmbeddedResource Include="Charts\CharMAG.resx">
       <DependentUpon>CharMAG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characters Stats Charts\CharSPD.resx">
+    <EmbeddedResource Include="Charts\CharSPD.resx">
       <DependentUpon>CharSPD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characters Stats Charts\CharSPR.resx">
+    <EmbeddedResource Include="Charts\CharSPR.resx">
       <DependentUpon>CharSPR.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characters Stats Charts\CharSTR.resx">
+    <EmbeddedResource Include="Charts\CharSTR.resx">
       <DependentUpon>CharSTR.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characters Stats Charts\CharVIT.resx">
+    <EmbeddedResource Include="Charts\CharVIT.resx">
       <DependentUpon>CharVIT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">

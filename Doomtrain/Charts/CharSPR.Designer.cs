@@ -1,6 +1,6 @@
-﻿namespace Doomtrain.Characters_Stats_Charts
+﻿namespace Doomtrain.Charts
 {
-    partial class CharVIT
+    partial class CharSPR
     {
         /// <summary>
         /// Required designer variable.
@@ -79,13 +79,13 @@
             this.labelMagicCount = new System.Windows.Forms.Label();
             this.labelMagicValue = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.chartVIT = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartSPR = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPercent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicValue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartVIT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSPR)).BeginInit();
             this.SuspendLayout();
             // 
             // checkBoxDefault
@@ -96,7 +96,7 @@
             this.checkBoxDefault.Location = new System.Drawing.Point(599, 397);
             this.checkBoxDefault.Name = "checkBoxDefault";
             this.checkBoxDefault.Size = new System.Drawing.Size(84, 34);
-            this.checkBoxDefault.TabIndex = 39;
+            this.checkBoxDefault.TabIndex = 67;
             this.checkBoxDefault.Text = "Use values \r\nfor default";
             this.checkBoxDefault.UseVisualStyleBackColor = false;
             // 
@@ -106,7 +106,7 @@
             this.buttonInfo.Location = new System.Drawing.Point(656, 11);
             this.buttonInfo.Name = "buttonInfo";
             this.buttonInfo.Size = new System.Drawing.Size(29, 24);
-            this.buttonInfo.TabIndex = 38;
+            this.buttonInfo.TabIndex = 66;
             this.buttonInfo.UseVisualStyleBackColor = true;
             this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
             // 
@@ -126,7 +126,7 @@
             0});
             this.numericUpDownPercent.Name = "numericUpDownPercent";
             this.numericUpDownPercent.Size = new System.Drawing.Size(51, 25);
-            this.numericUpDownPercent.TabIndex = 28;
+            this.numericUpDownPercent.TabIndex = 56;
             this.numericUpDownPercent.Value = new decimal(new int[] {
             100,
             0,
@@ -144,7 +144,7 @@
             0});
             this.numericUpDownX.Name = "numericUpDownX";
             this.numericUpDownX.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownX.TabIndex = 31;
+            this.numericUpDownX.TabIndex = 59;
             // 
             // numericUpDownStatBonus
             // 
@@ -157,7 +157,7 @@
             0});
             this.numericUpDownStatBonus.Name = "numericUpDownStatBonus";
             this.numericUpDownStatBonus.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownStatBonus.TabIndex = 32;
+            this.numericUpDownStatBonus.TabIndex = 60;
             // 
             // labelX
             // 
@@ -168,7 +168,7 @@
             this.labelX.Location = new System.Drawing.Point(629, 107);
             this.labelX.Name = "labelX";
             this.labelX.Size = new System.Drawing.Size(14, 15);
-            this.labelX.TabIndex = 33;
+            this.labelX.TabIndex = 61;
             this.labelX.Text = "X";
             // 
             // numericUpDownMagicCount
@@ -182,7 +182,7 @@
             0});
             this.numericUpDownMagicCount.Name = "numericUpDownMagicCount";
             this.numericUpDownMagicCount.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicCount.TabIndex = 27;
+            this.numericUpDownMagicCount.TabIndex = 55;
             // 
             // labelPercent
             // 
@@ -193,7 +193,7 @@
             this.labelPercent.Location = new System.Drawing.Point(589, 314);
             this.labelPercent.Name = "labelPercent";
             this.labelPercent.Size = new System.Drawing.Size(95, 15);
-            this.labelPercent.TabIndex = 34;
+            this.labelPercent.TabIndex = 62;
             this.labelPercent.Text = "Percent Modifier";
             // 
             // numericUpDownMagicValue
@@ -207,7 +207,7 @@
             0});
             this.numericUpDownMagicValue.Name = "numericUpDownMagicValue";
             this.numericUpDownMagicValue.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownMagicValue.TabIndex = 26;
+            this.numericUpDownMagicValue.TabIndex = 54;
             // 
             // labelStatBonus
             // 
@@ -218,7 +218,7 @@
             this.labelStatBonus.Location = new System.Drawing.Point(604, 262);
             this.labelStatBonus.Name = "labelStatBonus";
             this.labelStatBonus.Size = new System.Drawing.Size(64, 15);
-            this.labelStatBonus.TabIndex = 35;
+            this.labelStatBonus.TabIndex = 63;
             this.labelStatBonus.Text = "Stat Bonus";
             // 
             // labelMagicCount
@@ -230,7 +230,7 @@
             this.labelMagicCount.Location = new System.Drawing.Point(600, 209);
             this.labelMagicCount.Name = "labelMagicCount";
             this.labelMagicCount.Size = new System.Drawing.Size(75, 15);
-            this.labelMagicCount.TabIndex = 36;
+            this.labelMagicCount.TabIndex = 64;
             this.labelMagicCount.Text = "Magic Count";
             // 
             // labelMagicValue
@@ -242,7 +242,7 @@
             this.labelMagicValue.Location = new System.Drawing.Point(596, 157);
             this.labelMagicValue.Name = "labelMagicValue";
             this.labelMagicValue.Size = new System.Drawing.Size(82, 15);
-            this.labelMagicValue.TabIndex = 37;
+            this.labelMagicValue.TabIndex = 65;
             this.labelMagicValue.Text = "Magic J-Value";
             // 
             // buttonClose
@@ -251,12 +251,12 @@
             this.buttonClose.Location = new System.Drawing.Point(611, 463);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
-            this.buttonClose.TabIndex = 29;
+            this.buttonClose.TabIndex = 57;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // chartVIT
+            // chartSPR
             // 
             customLabel1.FromPosition = -0.5D;
             customLabel1.Text = "1";
@@ -307,17 +307,17 @@
             chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             chartArea1.AxisX.Title = "Level";
             chartArea1.AxisX.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-            chartArea1.AxisY.Title = "VIT";
+            chartArea1.AxisY.Title = "SPR";
             chartArea1.AxisY.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-            chartArea1.Name = "ChartAreaVIT";
-            this.chartVIT.ChartAreas.Add(chartArea1);
+            chartArea1.Name = "ChartAreaSPR";
+            this.chartSPR.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chartVIT.Legends.Add(legend1);
-            this.chartVIT.Location = new System.Drawing.Point(0, 0);
-            this.chartVIT.MaximumSize = new System.Drawing.Size(700, 500);
-            this.chartVIT.MinimumSize = new System.Drawing.Size(700, 500);
-            this.chartVIT.Name = "chartVIT";
-            series1.ChartArea = "ChartAreaVIT";
+            this.chartSPR.Legends.Add(legend1);
+            this.chartSPR.Location = new System.Drawing.Point(0, 0);
+            this.chartSPR.MaximumSize = new System.Drawing.Size(700, 500);
+            this.chartSPR.MinimumSize = new System.Drawing.Size(700, 500);
+            this.chartSPR.Name = "chartSPR";
+            series1.ChartArea = "ChartAreaSPR";
             series1.Legend = "Legend1";
             series1.Name = "Default";
             dataPoint2.AxisLabel = "";
@@ -345,7 +345,7 @@
             series1.Points.Add(dataPoint10);
             series1.Points.Add(dataPoint11);
             series1.ToolTip = "#VALY";
-            series2.ChartArea = "ChartAreaVIT";
+            series2.ChartArea = "ChartAreaSPR";
             series2.Legend = "Legend1";
             series2.Name = "Current";
             dataPoint13.AxisLabel = "10";
@@ -374,19 +374,19 @@
             series2.Points.Add(dataPoint21);
             series2.Points.Add(dataPoint22);
             series2.ToolTip = "#VALY";
-            this.chartVIT.Series.Add(series1);
-            this.chartVIT.Series.Add(series2);
-            this.chartVIT.Size = new System.Drawing.Size(700, 500);
-            this.chartVIT.TabIndex = 30;
+            this.chartSPR.Series.Add(series1);
+            this.chartSPR.Series.Add(series2);
+            this.chartSPR.Size = new System.Drawing.Size(700, 500);
+            this.chartSPR.TabIndex = 58;
             title1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            title1.Name = "TitleVIT";
-            title1.Text = "VIT CHART";
-            this.chartVIT.Titles.Add(title1);
-            this.chartVIT.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chartVIT_MouseDown);
-            this.chartVIT.MouseMove += new System.Windows.Forms.MouseEventHandler(this.chartVIT_MouseMove);
-            this.chartVIT.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chartVIT_MouseUp);
+            title1.Name = "TitleSPR";
+            title1.Text = "SPR CHART";
+            this.chartSPR.Titles.Add(title1);
+            this.chartSPR.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chartSPR_MouseDown);
+            this.chartSPR.MouseMove += new System.Windows.Forms.MouseEventHandler(this.chartSPR_MouseMove);
+            this.chartSPR.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chartSPR_MouseUp);
             // 
-            // CharVIT
+            // CharSPR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -405,13 +405,13 @@
             this.Controls.Add(this.labelMagicCount);
             this.Controls.Add(this.labelMagicValue);
             this.Controls.Add(this.buttonClose);
-            this.Controls.Add(this.chartVIT);
+            this.Controls.Add(this.chartSPR);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximumSize = new System.Drawing.Size(700, 500);
             this.MinimumSize = new System.Drawing.Size(700, 500);
-            this.Name = "CharVIT";
+            this.Name = "CharSPR";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPercent)).EndInit();
@@ -419,7 +419,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatBonus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMagicValue)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartVIT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSPR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -440,6 +440,6 @@
         private System.Windows.Forms.Label labelMagicCount;
         private System.Windows.Forms.Label labelMagicValue;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartVIT;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSPR;
     }
 }

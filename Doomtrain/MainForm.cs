@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.IO;
-using Doomtrain.Characters_Stats_Charts;
 using System.Runtime.InteropServices;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Doomtrain.Charts;
 
 namespace Doomtrain
 {
@@ -46,7 +46,7 @@ namespace Doomtrain
             saveAsToolStripButton.Enabled = false;
             saveToolStripButton.Enabled = false;
 
-            //disable charts and formula buttons when no file is open
+            //disable charts buttons when no file is open
             buttonCharEXPChart.Enabled = false;
             buttonCharHPChart.Enabled = false;
             buttonCharSTRChart.Enabled = false;
@@ -63,7 +63,7 @@ namespace Doomtrain
             buttonCharSPRFormula.Enabled = false;
             buttonCharSPDFormula.Enabled = false;
             buttonCharLUCKFormula.Enabled = false;
-
+            buttonGFDamageChart.Enabled = false;
 
 
             //this is for enabling the switching of listboxes in the ability section
@@ -1669,6 +1669,7 @@ namespace Doomtrain
                 buttonCharSPRFormula.Enabled = true;
                 buttonCharSPDFormula.Enabled = true;
                 buttonCharLUCKFormula.Enabled = true;
+                buttonGFDamageChart.Enabled = true;
 
                 listBoxCharacters.SelectedIndex = 0;
                 listBoxRenzoFin.SelectedIndex = 0;
@@ -1948,7 +1949,7 @@ namespace Doomtrain
 
         #region FORMULAS, CHARTS, LABELS, LISTBOXES SWITCH, FONTS
 
-        #region Characters formulas
+        #region Formulas
 
         private void buttonCharHPFormula_Click(object sender, EventArgs e)
         {
@@ -1990,9 +1991,19 @@ namespace Doomtrain
             MessageBox.Show("EXP for level x = ((lvl-1)^2*exp_b)/256 + (lvl-1)*exp_a*10", "EXP Formula");
         }
 
+        private void buttonGFDamageFormula_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("a = LevelMod * Level / 10 + Power + PowerMod\n" +
+                "b = a * (265 - TargetSpr) / 8\n" +
+                "c = b * Power / 256\n" +
+                "d = c * boost / 100\n" +
+                "e = d * (100 + SummonMagBonus) / 100\n" +
+                "Damage = e * (900 - ElemDef) / 100\n", "GF Damage Formula");
+        }
+
         #endregion
 
-        #region Characters Charts
+        #region Charts
 
         private CharEXP _CharEXP;
         private void buttonCharEXPChart_Click(object sender, EventArgs e)
@@ -2081,6 +2092,17 @@ namespace Doomtrain
             }
             _CharLUCK.Show();
             _CharLUCK.Focus();
+        }
+
+        private GfDamage _GfDamage;
+        private void buttonGfDamageChart_Click(object sender, EventArgs e)
+        {
+            if ((_GfDamage == null) || (_GfDamage.IsDisposed))
+            {
+                _GfDamage = new GfDamage(this);
+            }
+            _GfDamage.Show();
+            _GfDamage.Focus();
         }
 
         #endregion
@@ -7268,5 +7290,7 @@ namespace Doomtrain
         #endregion
 
         #endregion
+
+
     }
 }
