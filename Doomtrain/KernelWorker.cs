@@ -1352,7 +1352,7 @@ namespace Doomtrain
                         Kernel[OffsetToGFSelected + 28 + (AbilityIndex * 4)] = Convert.ToByte(variable); //GF abilities
                         return;
                 case 29:
-                        //Kernel[OffsetToGFSelected + 24] = (byte)(Convert.ToInt16(variable) / 10); //GFEXP
+                        Kernel[OffsetToGFSelected + 24] = (byte)(Convert.ToInt16(variable) / 10); //GFEXP
                         return;
 
                 default:
