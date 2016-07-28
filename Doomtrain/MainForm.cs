@@ -1998,7 +1998,9 @@ namespace Doomtrain
                 "c = b * Power / 256\n" +
                 "d = c * boost / 100\n" +
                 "e = d * (100 + SummonMagBonus) / 100\n" +
-                "Damage = e * (900 - ElemDef) / 100\n", "GF Damage Formula");
+                "Damage = e * (900 - ElemDef) / 100\n\n" +
+                "Diablos = TargetMaxHP * Level / 100\n\n" +
+                "Cactuar = Level * 100", "GF Damage Formula");
         }
 
         #endregion
