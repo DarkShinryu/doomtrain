@@ -10,7 +10,18 @@ namespace Doomtrain.Charts
         {
             _mainForm = mainForm;
             InitializeComponent();
-            MagicDamageChartWorker();
+
+            labelAttMAG.Visible = false;
+            labelSPR.Visible = false;
+            labelHealMAG.Visible = false;
+            labelElemDef.Visible = false;
+            labelHP.Visible = false;
+            numericUpDownAttMAG.Visible = false;
+            numericUpDownSPR.Visible = false;
+            numericUpDownHealMAG.Visible = false;
+            numericUpDownElemDef.Visible = false;
+            numericUpDownHP.Visible = false;
+            checkBoxDefault.Visible = false;
 
             _mainForm.numericUpDownMagicSpellPower.ValueChanged += new EventHandler(this.numericUpDownMagicDamage_ValueChanged);
             numericUpDownAttMAG.ValueChanged += new EventHandler(numericUpDownMagicDamage_ValueChanged);
@@ -19,6 +30,10 @@ namespace Doomtrain.Charts
             numericUpDownElemDef.ValueChanged += new EventHandler(numericUpDownMagicDamage_ValueChanged);
             numericUpDownHP.ValueChanged += new EventHandler(numericUpDownMagicDamage_ValueChanged);
             checkBoxDefault.CheckedChanged += new EventHandler(Default_CheckedChanged);
+            _mainForm.listBoxMagic.SelectedIndexChanged += new EventHandler(this.numericUpDownMagicDamage_ValueChanged);
+            _mainForm.comboBoxMagicAttackType.SelectedIndexChanged += new EventHandler(this.numericUpDownMagicDamage_ValueChanged);
+
+            MagicDamageChartWorker();
         }
 
         private readonly mainForm _mainForm;
@@ -88,19 +103,86 @@ namespace Doomtrain.Charts
                 b = a * (265 - (int)numericUpDownSPR.Value) / 4;
                 c = b * KernelWorker.GetSelectedMagicData.SpellPower / 256;
 
+                if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 2) // Attack type "Magic Attack"
+                {
+                    labelAttMAG.Visible = true;
+                    labelSPR.Visible = true;
+                    labelHealMAG.Visible = false;
+                    labelElemDef.Visible = true;
+                    labelHP.Visible = false;
+                    numericUpDownAttMAG.Visible = true;
+                    numericUpDownSPR.Visible = true;
+                    numericUpDownHealMAG.Visible = false;
+                    numericUpDownElemDef.Visible = true;
+                    numericUpDownHP.Visible = false;
+                    checkBoxDefault.Visible = true;
 
-                chartMagicDamage.Series["Default"].Points.AddXY
-                    (0, c * (900 - numericUpDownElemDef.Value) / 100);
-                chartMagicDamage.Series["Default"].Points.AddXY
-                    (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
-                chartMagicDamage.Series["Default"].Points.AddXY
-                    (2, (KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+
+                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                    chartMagicDamage.Series["Default"].Points.AddXY
+                        (0, Math.Floor(c * (900 - numericUpDownElemDef.Value) / 100));
+                    chartMagicDamage.Series["Default"].Points.AddXY
+                        (1, 0);
+                }
+                else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 8) //Attack type "Demi"
+                {
+                    labelAttMAG.Visible = false;
+                    labelSPR.Visible = false;
+                    labelHealMAG.Visible = false;
+                    labelElemDef.Visible = false;
+                    labelHP.Visible = true;
+                    numericUpDownAttMAG.Visible = false;
+                    numericUpDownSPR.Visible = false;
+                    numericUpDownHealMAG.Visible = false;
+                    numericUpDownElemDef.Visible = false;
+                    numericUpDownHP.Visible = true;
+                    checkBoxDefault.Visible = false;
+
+
+                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                    chartMagicDamage.Series["Default"].Points.AddXY
+                        (0, Math.Floor(numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16));
+                    chartMagicDamage.Series["Default"].Points.AddXY
+                        (1, 0);
+                }
+                else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 3) //Attack type "Curative"
+                {
+                    labelAttMAG.Visible = false;
+                    labelSPR.Visible = false;
+                    labelHealMAG.Visible = true;
+                    labelElemDef.Visible = false;
+                    labelHP.Visible = false;
+                    numericUpDownAttMAG.Visible = false;
+                    numericUpDownSPR.Visible = false;
+                    numericUpDownHealMAG.Visible = true;
+                    numericUpDownElemDef.Visible = false;
+                    numericUpDownHP.Visible = false;
+                    checkBoxDefault.Visible = true;
+
+
+                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Healing Amount";
+
+                    chartMagicDamage.Series["Default"].Points.AddXY
+                        (0, 0);
+                    chartMagicDamage.Series["Default"].Points.AddXY
+                        (1, Math.Floor((KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2));
+                }
+                else
+                {
+                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                    chartMagicDamage.Series["Default"].Points.AddXY
+                        (0, 0);
+                    chartMagicDamage.Series["Default"].Points.AddXY
+                        (1, 0);
+                }
             }
             catch (Exception Exception)
             {
                 MessageBox.Show(Exception.ToString());
             }
-
 
             KernelWorker.ReadMagic(_mainForm.listBoxMagic.SelectedIndex, KernelWorker.Kernel);
             try
@@ -109,13 +191,79 @@ namespace Doomtrain.Charts
                 b = a * (265 - (int)numericUpDownSPR.Value) / 4;
                 c = b * KernelWorker.GetSelectedMagicData.SpellPower / 256;
 
+                if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 2) // Attack type "Magic Attack"
+                {
+                    labelAttMAG.Visible = true;
+                    labelSPR.Visible = true;
+                    labelHealMAG.Visible = false;
+                    labelElemDef.Visible = true;
+                    labelHP.Visible = false;
+                    numericUpDownAttMAG.Visible = true;
+                    numericUpDownSPR.Visible = true;
+                    numericUpDownHealMAG.Visible = false;
+                    numericUpDownElemDef.Visible = true;
+                    numericUpDownHP.Visible = false;
+                    checkBoxDefault.Visible = true;
 
-                chartMagicDamage.Series["Current"].Points.AddXY
-                    (0, c * (900 - numericUpDownElemDef.Value) / 100);
-                chartMagicDamage.Series["Current"].Points.AddXY
-                    (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
-                chartMagicDamage.Series["Current"].Points.AddXY
-                    (2, (KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+
+                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                    chartMagicDamage.Series["Current"].Points.AddXY
+                        (0, Math.Floor(c * (900 - numericUpDownElemDef.Value) / 100));
+                    chartMagicDamage.Series["Current"].Points.AddXY
+                        (1, 0);
+                }
+                else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 8) //Attack type "Demi"
+                {
+                    labelAttMAG.Visible = false;
+                    labelSPR.Visible = false;
+                    labelHealMAG.Visible = false;
+                    labelElemDef.Visible = false;
+                    labelHP.Visible = true;
+                    numericUpDownAttMAG.Visible = false;
+                    numericUpDownSPR.Visible = false;
+                    numericUpDownHealMAG.Visible = false;
+                    numericUpDownElemDef.Visible = false;
+                    numericUpDownHP.Visible = true;
+                    checkBoxDefault.Visible = false;
+
+                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                    chartMagicDamage.Series["Current"].Points.AddXY
+                        (0, Math.Floor(numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16));
+                    chartMagicDamage.Series["Current"].Points.AddXY
+                        (1, 0);
+                }
+                else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 3) //Attack type "Curative"
+                {
+                    labelAttMAG.Visible = false;
+                    labelSPR.Visible = false;
+                    labelHealMAG.Visible = true;
+                    labelElemDef.Visible = false;
+                    labelHP.Visible = false;
+                    numericUpDownAttMAG.Visible = false;
+                    numericUpDownSPR.Visible = false;
+                    numericUpDownHealMAG.Visible = true;
+                    numericUpDownElemDef.Visible = false;
+                    numericUpDownHP.Visible = false;
+                    checkBoxDefault.Visible = true;
+
+                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Healing Amount";
+
+                    chartMagicDamage.Series["Current"].Points.AddXY
+                        (0, 0);
+                    chartMagicDamage.Series["Current"].Points.AddXY
+                        (1, Math.Floor((KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2));
+                }
+                else
+                {
+                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                    chartMagicDamage.Series["Current"].Points.AddXY
+                        (0, 0);
+                    chartMagicDamage.Series["Current"].Points.AddXY
+                        (1, 0);
+                }
             }
             catch (Exception Exception)
             {
@@ -141,32 +289,182 @@ namespace Doomtrain.Charts
                         b = a * (265 - (int)numericUpDownSPR.Value) / 4;
                         c = b * KernelWorker.GetSelectedMagicData.SpellPower / 256;
 
+                        if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 2) // Attack type "Magic Attack"
+                        {
+                            labelAttMAG.Visible = true;
+                            labelSPR.Visible = true;
+                            labelHealMAG.Visible = false;
+                            labelElemDef.Visible = true;
+                            labelHP.Visible = false;
+                            numericUpDownAttMAG.Visible = true;
+                            numericUpDownSPR.Visible = true;
+                            numericUpDownHealMAG.Visible = false;
+                            numericUpDownElemDef.Visible = true;
+                            numericUpDownHP.Visible = false;
+                            checkBoxDefault.Visible = true;
+
+
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, Math.Floor(c * (900 - numericUpDownElemDef.Value) / 100));
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
+                        else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 8) //Attack type "Demi"
+                        {
+                            labelAttMAG.Visible = false;
+                            labelSPR.Visible = false;
+                            labelHealMAG.Visible = false;
+                            labelElemDef.Visible = false;
+                            labelHP.Visible = true;
+                            numericUpDownAttMAG.Visible = false;
+                            numericUpDownSPR.Visible = false;
+                            numericUpDownHealMAG.Visible = false;
+                            numericUpDownElemDef.Visible = false;
+                            numericUpDownHP.Visible = true;
+                            checkBoxDefault.Visible = false;
+
+
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, Math.Floor(numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16));
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
+                        else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 3) //Attack type "Curative"
+                        {
+                            labelAttMAG.Visible = false;
+                            labelSPR.Visible = false;
+                            labelHealMAG.Visible = true;
+                            labelElemDef.Visible = false;
+                            labelHP.Visible = false;
+                            numericUpDownAttMAG.Visible = false;
+                            numericUpDownSPR.Visible = false;
+                            numericUpDownHealMAG.Visible = true;
+                            numericUpDownElemDef.Visible = false;
+                            numericUpDownHP.Visible = false;
+                            checkBoxDefault.Visible = true;
+
+
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Healing Amount";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, 0);
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, Math.Floor((KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2));
+                        }
+                        else
+                        {
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, 0);
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
+                    }
+                    else
+                    {
+                        chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
 
                         chartMagicDamage.Series["Default"].Points.Clear();
-
                         chartMagicDamage.Series["Default"].Points.AddXY
-                            (0, c * (900 - numericUpDownElemDef.Value) / 100);
+                            (0, 0);
                         chartMagicDamage.Series["Default"].Points.AddXY
-                            (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
-                        chartMagicDamage.Series["Default"].Points.AddXY
-                            (2, (KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+                            (1, 0);
                     }
-
-                    else if (checkBoxDefault.Checked == false)
+                    if (checkBoxDefault.Checked == false)
                     {
                         a = KernelWorker.GetSelectedMagicData.SpellPower;
                         b = a * 265 / 4;
                         c = b * KernelWorker.GetSelectedMagicData.SpellPower / 256;
 
+                        if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 2) // Attack type "Magic Attack"
+                        {
+                            labelAttMAG.Visible = true;
+                            labelSPR.Visible = true;
+                            labelHealMAG.Visible = false;
+                            labelElemDef.Visible = true;
+                            labelHP.Visible = false;
+                            numericUpDownAttMAG.Visible = true;
+                            numericUpDownSPR.Visible = true;
+                            numericUpDownHealMAG.Visible = false;
+                            numericUpDownElemDef.Visible = true;
+                            numericUpDownHP.Visible = false;
+                            checkBoxDefault.Visible = true;
 
-                        chartMagicDamage.Series["Default"].Points.Clear();
 
-                        chartMagicDamage.Series["Default"].Points.AddXY
-                            (0, c);
-                        chartMagicDamage.Series["Default"].Points.AddXY
-                            (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
-                        chartMagicDamage.Series["Default"].Points.AddXY
-                            (2, KernelWorker.GetSelectedMagicData.SpellPower * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, Math.Floor(c +0.0));
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
+                        else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 8) //Attack type "Demi"
+                        {
+                            labelAttMAG.Visible = false;
+                            labelSPR.Visible = false;
+                            labelHealMAG.Visible = false;
+                            labelElemDef.Visible = false;
+                            labelHP.Visible = true;
+                            numericUpDownAttMAG.Visible = false;
+                            numericUpDownSPR.Visible = false;
+                            numericUpDownHealMAG.Visible = false;
+                            numericUpDownElemDef.Visible = false;
+                            numericUpDownHP.Visible = true;
+                            checkBoxDefault.Visible = false;
+
+
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, Math.Floor(numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16));
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
+                        else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 3) //Attack type "Curative"
+                        {
+                            labelAttMAG.Visible = false;
+                            labelSPR.Visible = false;
+                            labelHealMAG.Visible = true;
+                            labelElemDef.Visible = false;
+                            labelHP.Visible = false;
+                            numericUpDownAttMAG.Visible = false;
+                            numericUpDownSPR.Visible = false;
+                            numericUpDownHealMAG.Visible = true;
+                            numericUpDownElemDef.Visible = false;
+                            numericUpDownHP.Visible = false;
+                            checkBoxDefault.Visible = true;
+
+
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Healing Amount";
+
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, 0);
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, Math.Floor(KernelWorker.GetSelectedMagicData.SpellPower * KernelWorker.GetSelectedMagicData.SpellPower / 2.0));
+                        }
+                        else
+                        {
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, 0);
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
                     }
                 }
                 catch (Exception Exception)
@@ -182,15 +480,85 @@ namespace Doomtrain.Charts
                     b = a * (265 - (int)numericUpDownSPR.Value) / 4;
                     c = b * KernelWorker.GetSelectedMagicData.SpellPower / 256;
 
+                    if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 2) // Attack type "Magic Attack"
+                    {
+                        labelAttMAG.Visible = true;
+                        labelSPR.Visible = true;
+                        labelHealMAG.Visible = false;
+                        labelElemDef.Visible = true;
+                        labelHP.Visible = false;
+                        numericUpDownAttMAG.Visible = true;
+                        numericUpDownSPR.Visible = true;
+                        numericUpDownHealMAG.Visible = false;
+                        numericUpDownElemDef.Visible = true;
+                        numericUpDownHP.Visible = false;
+                        checkBoxDefault.Visible = true;
 
-                    chartMagicDamage.Series["Current"].Points.Clear();
 
-                    chartMagicDamage.Series["Current"].Points.AddXY
-                        (0, c * (900 - numericUpDownElemDef.Value) / 100);
-                    chartMagicDamage.Series["Current"].Points.AddXY
-                        (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
-                    chartMagicDamage.Series["Current"].Points.AddXY
-                        (2, (KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+                        chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                        chartMagicDamage.Series["Current"].Points.Clear();
+                        chartMagicDamage.Series["Current"].Points.AddXY
+                            (0, Math.Floor(c * (900 - numericUpDownElemDef.Value) / 100));
+                        chartMagicDamage.Series["Current"].Points.AddXY
+                            (1, 0);
+                    }
+                    else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 8) //Attack type "Demi"
+                    {
+                        labelAttMAG.Visible = false;
+                        labelSPR.Visible = false;
+                        labelHealMAG.Visible = false;
+                        labelElemDef.Visible = false;
+                        labelHP.Visible = true;
+                        numericUpDownAttMAG.Visible = false;
+                        numericUpDownSPR.Visible = false;
+                        numericUpDownHealMAG.Visible = false;
+                        numericUpDownElemDef.Visible = false;
+                        numericUpDownHP.Visible = true;
+                        checkBoxDefault.Visible = false;
+
+
+                        chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                        chartMagicDamage.Series["Current"].Points.Clear();
+                        chartMagicDamage.Series["Current"].Points.AddXY
+                            (0, Math.Floor(numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16));
+                        chartMagicDamage.Series["Current"].Points.AddXY
+                            (1, 0);
+                    }
+                    else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 3) //Attack type "Curative"
+                    {
+                        labelAttMAG.Visible = false;
+                        labelSPR.Visible = false;
+                        labelHealMAG.Visible = true;
+                        labelElemDef.Visible = false;
+                        labelHP.Visible = false;
+                        numericUpDownAttMAG.Visible = false;
+                        numericUpDownSPR.Visible = false;
+                        numericUpDownHealMAG.Visible = true;
+                        numericUpDownElemDef.Visible = false;
+                        numericUpDownHP.Visible = false;
+                        checkBoxDefault.Visible = true;
+
+
+                        chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Healing Amount";
+
+                        chartMagicDamage.Series["Current"].Points.Clear();
+                        chartMagicDamage.Series["Current"].Points.AddXY
+                            (0, 0);
+                        chartMagicDamage.Series["Current"].Points.AddXY
+                            (1, Math.Floor((KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2));
+                    }
+                    else
+                    {
+                        chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                        chartMagicDamage.Series["Current"].Points.Clear();
+                        chartMagicDamage.Series["Current"].Points.AddXY
+                            (0, 0);
+                        chartMagicDamage.Series["Current"].Points.AddXY
+                            (1, 0);
+                    }
                 }
                 catch (Exception Exception)
                 {
@@ -216,31 +584,171 @@ namespace Doomtrain.Charts
                         b = a * (265 - (int)numericUpDownSPR.Value) / 4;
                         c = b * KernelWorker.GetSelectedMagicData.SpellPower / 256;
 
+                        if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 2) // Attack type "Magic Attack"
+                        {
+                            labelAttMAG.Visible = true;
+                            labelSPR.Visible = true;
+                            labelHealMAG.Visible = false;
+                            labelElemDef.Visible = true;
+                            labelHP.Visible = false;
+                            numericUpDownAttMAG.Visible = true;
+                            numericUpDownSPR.Visible = true;
+                            numericUpDownHealMAG.Visible = false;
+                            numericUpDownElemDef.Visible = true;
+                            numericUpDownHP.Visible = false;
+                            checkBoxDefault.Visible = true;
 
-                        chartMagicDamage.Series["Default"].Points.Clear();
 
-                        chartMagicDamage.Series["Default"].Points.AddXY
-                            (0, c * (900 - numericUpDownElemDef.Value) / 100);
-                        chartMagicDamage.Series["Default"].Points.AddXY
-                            (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
-                        chartMagicDamage.Series["Default"].Points.AddXY
-                            (2, (KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, Math.Floor(c * (900 - numericUpDownElemDef.Value) / 100));
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
+                        else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 8) //Attack type "Demi"
+                        {
+                            labelAttMAG.Visible = false;
+                            labelSPR.Visible = false;
+                            labelHealMAG.Visible = false;
+                            labelElemDef.Visible = false;
+                            labelHP.Visible = true;
+                            numericUpDownAttMAG.Visible = false;
+                            numericUpDownSPR.Visible = false;
+                            numericUpDownHealMAG.Visible = false;
+                            numericUpDownElemDef.Visible = false;
+                            numericUpDownHP.Visible = true;
+                            checkBoxDefault.Visible = false;
+
+
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, Math.Floor(numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16));
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
+                        else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 3) //Attack type "Curative"
+                        {
+                            labelAttMAG.Visible = false;
+                            labelSPR.Visible = false;
+                            labelHealMAG.Visible = true;
+                            labelElemDef.Visible = false;
+                            labelHP.Visible = false;
+                            numericUpDownAttMAG.Visible = false;
+                            numericUpDownSPR.Visible = false;
+                            numericUpDownHealMAG.Visible = true;
+                            numericUpDownElemDef.Visible = false;
+                            numericUpDownHP.Visible = false;
+                            checkBoxDefault.Visible = true;
+
+
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Healing Amount";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, 0);
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, Math.Floor((KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2));
+                        }
+                        else
+                        {
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, 0);
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
                     }
-                    else if (checkBoxDefault.Checked == false)
+                    if (checkBoxDefault.Checked == false)
                     {
                         a = KernelWorker.GetSelectedMagicData.SpellPower;
                         b = a * 265 / 4;
                         c = b * KernelWorker.GetSelectedMagicData.SpellPower / 256;
 
+                        if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 2) // Attack type "Magic Attack"
+                        {
+                            labelAttMAG.Visible = true;
+                            labelSPR.Visible = true;
+                            labelHealMAG.Visible = false;
+                            labelElemDef.Visible = true;
+                            labelHP.Visible = false;
+                            numericUpDownAttMAG.Visible = true;
+                            numericUpDownSPR.Visible = true;
+                            numericUpDownHealMAG.Visible = false;
+                            numericUpDownElemDef.Visible = true;
+                            numericUpDownHP.Visible = false;
+                            checkBoxDefault.Visible = true;
 
-                        chartMagicDamage.Series["Default"].Points.Clear();
 
-                        chartMagicDamage.Series["Default"].Points.AddXY
-                            (0, c);
-                        chartMagicDamage.Series["Default"].Points.AddXY
-                            (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
-                        chartMagicDamage.Series["Default"].Points.AddXY
-                            (2, KernelWorker.GetSelectedMagicData.SpellPower * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, Math.Floor(c + 0.0));
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
+                        else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 8) //Attack type "Demi"
+                        {
+                            labelAttMAG.Visible = false;
+                            labelSPR.Visible = false;
+                            labelHealMAG.Visible = false;
+                            labelElemDef.Visible = false;
+                            labelHP.Visible = true;
+                            numericUpDownAttMAG.Visible = false;
+                            numericUpDownSPR.Visible = false;
+                            numericUpDownHealMAG.Visible = false;
+                            numericUpDownElemDef.Visible = false;
+                            numericUpDownHP.Visible = true;
+                            checkBoxDefault.Visible = false;
+
+
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, Math.Floor(numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16));
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
+                        else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 3) //Attack type "Curative"
+                        {
+                            labelAttMAG.Visible = false;
+                            labelSPR.Visible = false;
+                            labelHealMAG.Visible = true;
+                            labelElemDef.Visible = false;
+                            labelHP.Visible = false;
+                            numericUpDownAttMAG.Visible = false;
+                            numericUpDownSPR.Visible = false;
+                            numericUpDownHealMAG.Visible = true;
+                            numericUpDownElemDef.Visible = false;
+                            numericUpDownHP.Visible = false;
+                            checkBoxDefault.Visible = true;
+
+
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Healing Amount";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, 0);
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, Math.Floor(KernelWorker.GetSelectedMagicData.SpellPower * KernelWorker.GetSelectedMagicData.SpellPower / 2.0));
+                        }
+                        else
+                        {
+                            chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
+
+                            chartMagicDamage.Series["Default"].Points.Clear();
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (0, 0);
+                            chartMagicDamage.Series["Default"].Points.AddXY
+                                (1, 0);
+                        }
                     }
                 }
                 catch (Exception Exception)
