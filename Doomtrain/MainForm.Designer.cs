@@ -399,6 +399,7 @@
             this.numericUpDownGFStatusAttack = new System.Windows.Forms.NumericUpDown();
             this.labelGFStatusAttackEnabler = new System.Windows.Forms.Label();
             this.groupBoxGFGeneral = new System.Windows.Forms.GroupBox();
+            this.buttonGFDamageFormula = new System.Windows.Forms.Button();
             this.buttonGFDamageChart = new System.Windows.Forms.Button();
             this.comboBoxGFAttackType = new System.Windows.Forms.ComboBox();
             this.comboBoxGFElement = new System.Windows.Forms.ComboBox();
@@ -550,6 +551,8 @@
             this.checkBoxMagicUnk7 = new System.Windows.Forms.CheckBox();
             this.checkBoxMagicZombie = new System.Windows.Forms.CheckBox();
             this.groupBoxMagicGeneral = new System.Windows.Forms.GroupBox();
+            this.buttonMagicDamageFormula = new System.Windows.Forms.Button();
+            this.buttonMagicDamageChart = new System.Windows.Forms.Button();
             this.comboBoxMagicAttackType = new System.Windows.Forms.ComboBox();
             this.comboBoxMagicElement = new System.Windows.Forms.ComboBox();
             this.numericUpDownMagicHitCount = new System.Windows.Forms.NumericUpDown();
@@ -2002,7 +2005,6 @@
             this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
-            this.buttonGFDamageFormula = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -4540,7 +4542,7 @@
             this.checkBoxMagicTarget4.AutoSize = true;
             this.checkBoxMagicTarget4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget4.Location = new System.Drawing.Point(346, 37);
+            this.checkBoxMagicTarget4.Location = new System.Drawing.Point(346, 31);
             this.checkBoxMagicTarget4.Name = "checkBoxMagicTarget4";
             this.checkBoxMagicTarget4.Size = new System.Drawing.Size(83, 19);
             this.checkBoxMagicTarget4.TabIndex = 46;
@@ -7962,6 +7964,18 @@
             this.groupBoxGFGeneral.TabIndex = 1;
             this.groupBoxGFGeneral.TabStop = false;
             this.groupBoxGFGeneral.Text = "General";
+            // 
+            // buttonGFDamageFormula
+            // 
+            this.buttonGFDamageFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGFDamageFormula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonGFDamageFormula.Location = new System.Drawing.Point(94, 208);
+            this.buttonGFDamageFormula.Name = "buttonGFDamageFormula";
+            this.buttonGFDamageFormula.Size = new System.Drawing.Size(129, 25);
+            this.buttonGFDamageFormula.TabIndex = 92;
+            this.buttonGFDamageFormula.Text = "Damage Formula";
+            this.buttonGFDamageFormula.UseVisualStyleBackColor = true;
+            this.buttonGFDamageFormula.Click += new System.EventHandler(this.buttonGFDamageFormula_Click);
             // 
             // buttonGFDamageChart
             // 
@@ -14328,9 +14342,9 @@
             this.groupBox9.Controls.Add(this.checkBoxMagicTarget5);
             this.groupBox9.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBox9.Location = new System.Drawing.Point(6, 214);
+            this.groupBox9.Location = new System.Drawing.Point(6, 265);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(452, 94);
+            this.groupBox9.Size = new System.Drawing.Size(452, 78);
             this.groupBox9.TabIndex = 106;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Target Info";
@@ -14340,7 +14354,7 @@
             this.checkBoxMagicTarget3.AutoSize = true;
             this.checkBoxMagicTarget3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget3.Location = new System.Drawing.Point(241, 37);
+            this.checkBoxMagicTarget3.Location = new System.Drawing.Point(241, 31);
             this.checkBoxMagicTarget3.Name = "checkBoxMagicTarget3";
             this.checkBoxMagicTarget3.Size = new System.Drawing.Size(41, 19);
             this.checkBoxMagicTarget3.TabIndex = 45;
@@ -14352,7 +14366,7 @@
             this.checkBoxMagicTarget1.AutoSize = true;
             this.checkBoxMagicTarget1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget1.Location = new System.Drawing.Point(23, 37);
+            this.checkBoxMagicTarget1.Location = new System.Drawing.Point(23, 31);
             this.checkBoxMagicTarget1.Name = "checkBoxMagicTarget1";
             this.checkBoxMagicTarget1.Size = new System.Drawing.Size(53, 19);
             this.checkBoxMagicTarget1.TabIndex = 43;
@@ -14364,7 +14378,7 @@
             this.checkBoxMagicTarget7.AutoSize = true;
             this.checkBoxMagicTarget7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget7.Location = new System.Drawing.Point(241, 62);
+            this.checkBoxMagicTarget7.Location = new System.Drawing.Point(241, 56);
             this.checkBoxMagicTarget7.Name = "checkBoxMagicTarget7";
             this.checkBoxMagicTarget7.Size = new System.Drawing.Size(62, 19);
             this.checkBoxMagicTarget7.TabIndex = 50;
@@ -14376,7 +14390,7 @@
             this.checkBoxMagicTarget6.AutoSize = true;
             this.checkBoxMagicTarget6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget6.Location = new System.Drawing.Point(131, 62);
+            this.checkBoxMagicTarget6.Location = new System.Drawing.Point(131, 56);
             this.checkBoxMagicTarget6.Name = "checkBoxMagicTarget6";
             this.checkBoxMagicTarget6.Size = new System.Drawing.Size(41, 19);
             this.checkBoxMagicTarget6.TabIndex = 49;
@@ -14388,7 +14402,7 @@
             this.checkBoxMagicTarget8.AutoSize = true;
             this.checkBoxMagicTarget8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget8.Location = new System.Drawing.Point(346, 62);
+            this.checkBoxMagicTarget8.Location = new System.Drawing.Point(346, 56);
             this.checkBoxMagicTarget8.Name = "checkBoxMagicTarget8";
             this.checkBoxMagicTarget8.Size = new System.Drawing.Size(41, 19);
             this.checkBoxMagicTarget8.TabIndex = 47;
@@ -14400,7 +14414,7 @@
             this.checkBoxMagicTarget2.AutoSize = true;
             this.checkBoxMagicTarget2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget2.Location = new System.Drawing.Point(131, 37);
+            this.checkBoxMagicTarget2.Location = new System.Drawing.Point(131, 31);
             this.checkBoxMagicTarget2.Name = "checkBoxMagicTarget2";
             this.checkBoxMagicTarget2.Size = new System.Drawing.Size(41, 19);
             this.checkBoxMagicTarget2.TabIndex = 44;
@@ -14412,7 +14426,7 @@
             this.checkBoxMagicTarget5.AutoSize = true;
             this.checkBoxMagicTarget5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMagicTarget5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxMagicTarget5.Location = new System.Drawing.Point(23, 62);
+            this.checkBoxMagicTarget5.Location = new System.Drawing.Point(23, 56);
             this.checkBoxMagicTarget5.Name = "checkBoxMagicTarget5";
             this.checkBoxMagicTarget5.Size = new System.Drawing.Size(58, 19);
             this.checkBoxMagicTarget5.TabIndex = 48;
@@ -14432,7 +14446,7 @@
             this.groupBoxMagicFlags.Controls.Add(this.checkBoxMagicFlag7);
             this.groupBoxMagicFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxMagicFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxMagicFlags.Location = new System.Drawing.Point(6, 602);
+            this.groupBoxMagicFlags.Location = new System.Drawing.Point(6, 637);
             this.groupBoxMagicFlags.Name = "groupBoxMagicFlags";
             this.groupBoxMagicFlags.Size = new System.Drawing.Size(452, 98);
             this.groupBoxMagicFlags.TabIndex = 2;
@@ -14582,7 +14596,7 @@
             this.groupBoxMagicStatusAttack.Controls.Add(this.checkBoxMagicZombie);
             this.groupBoxMagicStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxMagicStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBoxMagicStatusAttack.Location = new System.Drawing.Point(6, 314);
+            this.groupBoxMagicStatusAttack.Location = new System.Drawing.Point(6, 349);
             this.groupBoxMagicStatusAttack.Name = "groupBoxMagicStatusAttack";
             this.groupBoxMagicStatusAttack.Size = new System.Drawing.Size(452, 282);
             this.groupBoxMagicStatusAttack.TabIndex = 2;
@@ -15096,6 +15110,8 @@
             // groupBoxMagicGeneral
             // 
             this.groupBoxMagicGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxMagicGeneral.Controls.Add(this.buttonMagicDamageFormula);
+            this.groupBoxMagicGeneral.Controls.Add(this.buttonMagicDamageChart);
             this.groupBoxMagicGeneral.Controls.Add(this.comboBoxMagicAttackType);
             this.groupBoxMagicGeneral.Controls.Add(this.labelMagicAttackType);
             this.groupBoxMagicGeneral.Controls.Add(this.comboBoxMagicElement);
@@ -15112,10 +15128,34 @@
             this.groupBoxMagicGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxMagicGeneral.Location = new System.Drawing.Point(6, 6);
             this.groupBoxMagicGeneral.Name = "groupBoxMagicGeneral";
-            this.groupBoxMagicGeneral.Size = new System.Drawing.Size(452, 202);
+            this.groupBoxMagicGeneral.Size = new System.Drawing.Size(452, 253);
             this.groupBoxMagicGeneral.TabIndex = 2;
             this.groupBoxMagicGeneral.TabStop = false;
             this.groupBoxMagicGeneral.Text = "General";
+            // 
+            // buttonMagicDamageFormula
+            // 
+            this.buttonMagicDamageFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMagicDamageFormula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonMagicDamageFormula.Location = new System.Drawing.Point(94, 213);
+            this.buttonMagicDamageFormula.Name = "buttonMagicDamageFormula";
+            this.buttonMagicDamageFormula.Size = new System.Drawing.Size(129, 25);
+            this.buttonMagicDamageFormula.TabIndex = 93;
+            this.buttonMagicDamageFormula.Text = "Damage Formula";
+            this.buttonMagicDamageFormula.UseVisualStyleBackColor = true;
+            this.buttonMagicDamageFormula.Click += new System.EventHandler(this.buttonMagicDamageFormula_Click);
+            // 
+            // buttonMagicDamageChart
+            // 
+            this.buttonMagicDamageChart.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMagicDamageChart.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.buttonMagicDamageChart.Location = new System.Drawing.Point(254, 213);
+            this.buttonMagicDamageChart.Name = "buttonMagicDamageChart";
+            this.buttonMagicDamageChart.Size = new System.Drawing.Size(104, 25);
+            this.buttonMagicDamageChart.TabIndex = 94;
+            this.buttonMagicDamageChart.Text = "Damage Chart";
+            this.buttonMagicDamageChart.UseVisualStyleBackColor = true;
+            this.buttonMagicDamageChart.Click += new System.EventHandler(this.buttonMagicDamageChart_Click);
             // 
             // comboBoxMagicAttackType
             // 
@@ -38406,390 +38446,390 @@
             this.listBoxEnemyAttacks.HorizontalScrollbar = true;
             this.listBoxEnemyAttacks.ItemHeight = 17;
             this.listBoxEnemyAttacks.Items.AddRange(new object[] {
-            "??",
-            "??",
-            "Physical attack",
-            "??",
-            "??",
-            "Blade Slice",
-            "Hind Kick",
-            "Blade Shot",
-            "Ray Bomb",
-            "Storm Breath",
-            "Dark Mist",
-            "Squeeze",
-            "Clash",
-            "Arm Crush",
-            "null",
-            "Tail Needle",
-            "Arm Slash",
-            "Bad Breath",
-            "null",
-            "Petrify Stare",
-            "Vampire",
-            "Poison Mist",
-            "Counter Slice",
-            "Counter Laser Eye",
-            "null",
-            "1000 Needles",
-            "Heartbreak",
-            "Upward Kick",
-            "Electric Discharge",
-            "Petrify Stare",
-            "null",
-            "Bite",
-            "Poison Gas",
-            "Poison Gas",
-            "Poison Gas",
-            "Acid",
-            "Melt-Eye",
-            "Breath",
-            "Ice Breath",
-            "Sand Storm",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Draw",
-            "Earthquake",
-            "null",
-            "null",
-            "null",
-            "Morph",
-            "Arm Hug",
-            "Power Bomb",
-            "Dribble",
-            "Shoot",
-            "Ultrasonic Waves",
-            "null",
-            "BiteBite",
-            "Shotgun",
-            "Suicide",
-            "Ultrasonic Waves",
-            "Breath of Death",
-            "Disease Breath",
-            "Sticky Icky",
-            "Shoulder Charge",
-            "Gatling Gun",
-            "Cannon Blow",
-            "Wild Cannon Blow",
-            "Store",
-            "Degenerator",
-            "Telekinesis",
-            "null",
-            "null",
-            "Hypnotize",
-            "Gastric Juice",
-            "null",
-            "null",
-            "Sand Storm",
-            "null",
-            "null",
-            "null",
-            "Stare",
-            "Sigh",
-            "Curse",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Grab Punch",
-            "Breath",
-            "Double Sword",
-            "Thrust",
-            "Iai Blow",
-            "Ultra Waves",
-            "null",
-            "Sticky Web",
-            "null",
-            "Breath",
-            "Tail Blade",
-            "null",
-            "null",
-            "Mega Spark",
-            "Onrush",
-            "null",
-            "null",
-            "Fart",
-            "Needle",
-            "Gastric Juice",
-            "Sleeping Gas",
-            "Breath",
-            "null",
-            "null",
-            "null",
-            "Beam Cannon",
-            "null",
-            "Magma Breath",
-            "Resonance",
-            "Blaster",
-            "Blaster",
-            "LV5 Death",
-            "Death Claw",
-            "Bear Hug",
-            "Gas",
-            "Explosion",
-            "Explosion",
-            "Explosion",
-            "\"Brrawghh!\"",
-            "null",
-            "Wind Blast",
-            "null",
-            "Scan",
-            "null",
-            "null",
-            "BGH251F2 Gatling Gun",
-            "Beam Cannon",
-            "BGH251F2 1st Turret Exploding",
-            "BGH251F2 2nd Turret Exploding",
-            "BGH251F2 3rd Turret Exploding",
-            "BGH251F2 4th Turret Exploding",
-            "BGH251F2 Death",
-            "null",
-            "Aqua Breath",
-            "BGH251F2 1st Turret Exploding",
-            "BGH251F2 2nd Turret Exploding",
-            "BGH251F2 3rd Turret Exploding",
-            "BGH251F2 4th Turret Exploding",
-            "Fake President Death",
-            "Evil-Eye",
-            "Counter Twist",
-            "Chaingun",
-            "Snipe Laser",
-            "null",
-            "Melting Bubble",
-            "Super Arm",
-            "Boomerang Sword",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Grand Sword",
-            "null",
-            "Psycho Blast",
-            "Sticky Web",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Sand Shake",
-            "Saliva",
-            "Beam Laser",
-            "Reflect Beam",
-            "null",
-            "null",
-            "Oil Shot",
-            "Oil Blast",
-            "Sonic Wave",
-            "Dissolving Acid",
-            "Bad Breath",
-            "Eerie Sound Wave",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Ochu Dance",
-            "Earthquake",
-            "Drink Magic",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Assault Horn",
-            "Ray Bomb",
-            "Micro Missiles",
-            "null",
-            "null",
-            "Astral Punch",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Raijin Special",
-            "null",
-            "null",
-            "Mad Cow Special",
-            "Zan",
-            "Metsu",
-            "Sai",
-            "null",
-            "null",
-            "null",
-            "Mower",
-            "null",
-            "Chef\'s Knife",
-            "Everyone\'s Grudge",
-            "null",
-            "Tonberry King Death",
-            "Junk",
-            "It\'s sharp!",
-            "null",
-            "null",
-            "10.000 Needles",
-            "Ker Plunk",
-            "null",
-            "Storm Breath",
-            "Mega Flare",
-            "Barrier Change",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Thunder Summon",
-            "Deadly Horn",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Gravija",
-            "null",
-            "null",
-            "null",
-            "Magic Summon",
-            "Mighty Guard",
-            "Doom",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Thunder",
-            "Thundara",
-            "Thundaga",
-            "Zantetsuken",
-            "null",
-            "White Wind",
-            "null",
-            "null",
-            "null",
-            "Charge",
-            "Homing Laser",
-            "Homing Laser",
-            "Twin Homing Laser",
-            "Corona",
-            "Megido Flame",
-            "null",
-            "NORG Pod Opening",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Mega Pulse Cannon",
-            "Mini Pulse Cannon",
-            "null",
-            "Mighty Guard",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Dark Flare",
-            "null",
-            "Soul Crush",
-            "Light Pillar",
-            "Gravija",
-            "Megido Flame",
-            "Terra Break",
-            "Ultima Weapon Death",
-            "null",
-            "Demon Slice",
-            "Bloodfest",
-            "Engery Bomber",
-            "Adel Death",
-            "Adel\'s Drain?",
-            "\"Sorceress\" Spawn",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "\"Sorceress\" Spawn",
-            "Final \"Sorceress\" Death",
-            "Zantetsuken",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Absorbed into time...",
-            "Ultimecia Blow Away Magic",
-            "Maelstrom",
-            "Ultimecia First Death",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "null",
-            "Griever Summon",
-            "Griever Death",
-            "Ultimecia Junctioning to Griever",
-            "Griever Tail Falling Off",
-            "Griever + Ultimecia Death",
-            "Ultimecia Final Form Spawn",
-            "Ultimecia Final Form Death",
-            "Draw Apocalypse",
-            "Hell\'s Judgement",
-            "Drain",
-            "Great Attractor",
-            "null",
-            "Shockwave Pulsar",
-            "null",
-            "Esuna",
-            "Maelstrom",
-            "null",
-            "null",
-            "null",
-            "Vacuum Wave",
-            "null",
-            "null",
-            "null",
-            "Apocalypse",
-            "null",
-            "Gigantic Sword",
-            "null",
-            "null",
-            "Ultima",
-            "Holy",
-            "Quake",
-            "Tornado",
-            "A382",
-            "A383"});
+            "000 Dummy?",
+            "001 ??",
+            "002 Physical attack",
+            "003 ??",
+            "004 ??",
+            "005 Blade Slice",
+            "006 Hind Kick",
+            "007 Blade Shot",
+            "008 Ray Bomb",
+            "009 Storm Breath",
+            "010 Dark Mist",
+            "011 Squeeze",
+            "012 Clash",
+            "013 Arm Crush",
+            "014 null",
+            "015 Tail Needle",
+            "016 Arm Slash",
+            "017 Bad Breath",
+            "018 null",
+            "019 Petrify Stare",
+            "020 Vampire",
+            "021 Poison Mist",
+            "022 Counter Slice",
+            "023 Counter Laser Eye",
+            "024 null",
+            "025 1000 Needles",
+            "026 Heartbreak",
+            "027 Upward Kick",
+            "028 Electric Discharge",
+            "029 Petrify Stare",
+            "030 null",
+            "031 Bite",
+            "032 Poison Gas",
+            "033 Poison Gas",
+            "034 Poison Gas",
+            "035 Acid",
+            "036 Melt-Eye",
+            "037 Breath",
+            "038 Ice Breath",
+            "039 Sand Storm",
+            "040 null",
+            "041 null",
+            "042 null",
+            "043 null",
+            "044 null",
+            "045 null",
+            "046 null",
+            "047 null",
+            "048 Draw",
+            "049 Earthquake",
+            "050 null",
+            "051 null",
+            "052 null",
+            "053 Morph",
+            "054 Arm Hug",
+            "055 Power Bomb",
+            "056 Dribble",
+            "057 Shoot",
+            "058 Ultrasonic Waves",
+            "059 null",
+            "060 BiteBite",
+            "061 Shotgun",
+            "062 Suicide",
+            "063 Ultrasonic Waves",
+            "064 Breath of Death",
+            "065 Disease Breath",
+            "066 Sticky Icky",
+            "067 Shoulder Charge",
+            "068 Gatling Gun",
+            "069 Cannon Blow",
+            "070 Wild Cannon Blow",
+            "071 Store",
+            "072 Degenerator",
+            "073 Telekinesis",
+            "074 null",
+            "075 null",
+            "076 Hypnotize",
+            "077 Gastric Juice",
+            "078 null",
+            "079 null",
+            "080 Sand Storm",
+            "081 null",
+            "082 null",
+            "083 null",
+            "084 Stare",
+            "085 Sigh",
+            "086 Curse",
+            "087 null",
+            "088 null",
+            "089 null",
+            "090 null",
+            "091 null",
+            "092 null",
+            "093 Grab Punch",
+            "094 Breath",
+            "095 Double Sword",
+            "096 Thrust",
+            "097 Iai Blow",
+            "098 Ultra Waves",
+            "099 null",
+            "100 Sticky Web",
+            "101 null",
+            "102 Breath",
+            "103 Tail Blade",
+            "104 null",
+            "105 null",
+            "106 Mega Spark",
+            "107 Onrush",
+            "108 null",
+            "109 null",
+            "110 Fart",
+            "111 Needle",
+            "112 Gastric Juice",
+            "113 Sleeping Gas",
+            "114 Breath",
+            "115 null",
+            "116 null",
+            "117 null",
+            "118 Beam Cannon",
+            "119 null",
+            "120 Magma Breath",
+            "121 Resonance",
+            "122 Blaster",
+            "123 Blaster",
+            "124 LV5 Death",
+            "125 Death Claw",
+            "126 Bear Hug",
+            "127 Gas",
+            "128 Explosion",
+            "129 Explosion",
+            "130 Explosion",
+            "131 \"Brrawghh!\"",
+            "132 null",
+            "133 Wind Blast",
+            "134 null",
+            "135 Scan",
+            "136 null",
+            "137 null",
+            "138 BGH251F2 Gatling Gun",
+            "139 Beam Cannon",
+            "140 BGH251F2 1st Turret Exploding",
+            "141 BGH251F2 2nd Turret Exploding",
+            "142 BGH251F2 3rd Turret Exploding",
+            "143 BGH251F2 4th Turret Exploding",
+            "144 BGH251F2 Death",
+            "145 null",
+            "146 Aqua Breath",
+            "147 BGH251F2 1st Turret Exploding",
+            "148 BGH251F2 2nd Turret Exploding",
+            "149 BGH251F2 3rd Turret Exploding",
+            "150 BGH251F2 4th Turret Exploding",
+            "151 Fake President Death",
+            "152 Evil-Eye",
+            "153 Counter Twist",
+            "154 Chaingun",
+            "155 Snipe Laser",
+            "156 null",
+            "157 Melting Bubble",
+            "158 Super Arm",
+            "159 Boomerang Sword",
+            "160 null",
+            "161 null",
+            "162 null",
+            "163 null",
+            "164 null",
+            "165 null",
+            "166 Grand Sword",
+            "167 null",
+            "168 Psycho Blast",
+            "169 Sticky Web",
+            "170 null",
+            "171 null",
+            "172 null",
+            "173 null",
+            "174 Sand Shake",
+            "175 Saliva",
+            "176 Beam Laser",
+            "177 Reflect Beam",
+            "178 null",
+            "179 null",
+            "180 Oil Shot",
+            "181 Oil Blast",
+            "182 Sonic Wave",
+            "183 Dissolving Acid",
+            "184 Bad Breath",
+            "185 Eerie Sound Wave",
+            "186 null",
+            "187 null",
+            "188 null",
+            "189 null",
+            "190 null",
+            "191 null",
+            "192 Ochu Dance",
+            "193 Earthquake",
+            "194 Drink Magic",
+            "195 null",
+            "196 null",
+            "197 null",
+            "198 null",
+            "199 Assault Horn",
+            "200 Ray Bomb",
+            "201 Micro Missiles",
+            "202 null",
+            "203 null",
+            "204 Astral Punch",
+            "205 null",
+            "206 null",
+            "207 null",
+            "208 null",
+            "209 null",
+            "210 Raijin Special",
+            "211 null",
+            "212 null",
+            "213 Mad Cow Special",
+            "214 Zan",
+            "215 Metsu",
+            "216 Sai",
+            "217 null",
+            "218 null",
+            "219 null",
+            "220 Mower",
+            "221 null",
+            "222 Chef\'s Knife",
+            "223 Everyone\'s Grudge",
+            "224 null",
+            "225 Tonberry King Death",
+            "226 Junk",
+            "227 It\'s sharp!",
+            "228 null",
+            "229 null",
+            "230 10.000 Needles",
+            "231 Ker Plunk",
+            "232 null",
+            "233 Storm Breath",
+            "234 Mega Flare",
+            "235 Barrier Change",
+            "236 null",
+            "237 null",
+            "238 null",
+            "239 null",
+            "240 null",
+            "241 null",
+            "242 Thunder Summon",
+            "243 Deadly Horn",
+            "244 null",
+            "245 null",
+            "246 null",
+            "247 null",
+            "248 null",
+            "249 null",
+            "250 null",
+            "251 null",
+            "252 null",
+            "253 null",
+            "254 null",
+            "255 null",
+            "256 null",
+            "257 Gravija",
+            "258 null",
+            "259 null",
+            "260 null",
+            "261 Magic Summon",
+            "262 Mighty Guard",
+            "263 Doom",
+            "264 null",
+            "265 null",
+            "266 null",
+            "267 null",
+            "268 null",
+            "269 null",
+            "270 null",
+            "271 Thunder",
+            "272 Thundara",
+            "273 Thundaga",
+            "274 Zantetsuken",
+            "275 null",
+            "276 White Wind",
+            "277 null",
+            "278 null",
+            "279 null",
+            "280 Charge",
+            "281 Homing Laser",
+            "282 Homing Laser",
+            "283 Twin Homing Laser",
+            "284 Corona",
+            "285 Megido Flame",
+            "286 null",
+            "287 NORG Pod Opening",
+            "288 null",
+            "289 null",
+            "290 null",
+            "291 null",
+            "292 Mega Pulse Cannon",
+            "293 Mini Pulse Cannon",
+            "294 null",
+            "295 Mighty Guard",
+            "296 null",
+            "297 null",
+            "298 null",
+            "299 null",
+            "300 null",
+            "301 null",
+            "302 null",
+            "303 null",
+            "304 null",
+            "305 Dark Flare",
+            "306 null",
+            "307 Soul Crush",
+            "308 Light Pillar",
+            "309 Gravija",
+            "310 Megido Flame",
+            "311 Terra Break",
+            "312 Ultima Weapon Death",
+            "313 null",
+            "314 Demon Slice",
+            "315 Bloodfest",
+            "316 Engery Bomber",
+            "317 Adel Death",
+            "318 Adel\'s Drain?",
+            "319 \"Sorceress\" Spawn",
+            "320 null",
+            "321 null",
+            "322 null",
+            "323 null",
+            "324 null",
+            "325 null",
+            "326 null",
+            "327 \"Sorceress\" Spawn",
+            "328 Final \"Sorceress\" Death",
+            "329 Zantetsuken",
+            "330 null",
+            "331 null",
+            "332 null",
+            "333 null",
+            "334 null",
+            "335 null",
+            "336 Absorbed into time...",
+            "337 Ultimecia Blow Away Magic",
+            "338 Maelstrom",
+            "339 Ultimecia First Death",
+            "340 null",
+            "341 null",
+            "342 null",
+            "343 null",
+            "344 null",
+            "345 null",
+            "346 null",
+            "347 null",
+            "348 null",
+            "349 null",
+            "350 Griever Summon",
+            "351 Griever Death",
+            "352 Ultimecia Junctioning to Griever",
+            "353 Griever Tail Falling Off",
+            "354 Griever + Ultimecia Death",
+            "355 Ultimecia Final Form Spawn",
+            "356 Ultimecia Final Form Death",
+            "357 Draw Apocalypse",
+            "358 Hell\'s Judgement",
+            "359 Drain",
+            "360 Great Attractor",
+            "361 null",
+            "362 Shockwave Pulsar",
+            "363 null",
+            "364 Esuna",
+            "365 Maelstrom",
+            "366 null",
+            "367 null",
+            "368 null",
+            "369 Vacuum Wave",
+            "370 null",
+            "371 null",
+            "372 null",
+            "373 Apocalypse",
+            "374 null",
+            "375 Gigantic Sword",
+            "376 null",
+            "377 null",
+            "378 Ultima",
+            "379 Holy",
+            "380 Quake",
+            "381 Tornado",
+            "382 A382",
+            "383 A383"});
             this.listBoxEnemyAttacks.Location = new System.Drawing.Point(0, 0);
             this.listBoxEnemyAttacks.Name = "listBoxEnemyAttacks";
             this.listBoxEnemyAttacks.ScrollAlwaysVisible = true;
@@ -40344,18 +40384,6 @@
             this.panelMain.Size = new System.Drawing.Size(654, 811);
             this.panelMain.TabIndex = 2;
             // 
-            // buttonGFDamageFormula
-            // 
-            this.buttonGFDamageFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGFDamageFormula.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.buttonGFDamageFormula.Location = new System.Drawing.Point(94, 208);
-            this.buttonGFDamageFormula.Name = "buttonGFDamageFormula";
-            this.buttonGFDamageFormula.Size = new System.Drawing.Size(129, 25);
-            this.buttonGFDamageFormula.TabIndex = 92;
-            this.buttonGFDamageFormula.Text = "Damage Formula";
-            this.buttonGFDamageFormula.UseVisualStyleBackColor = true;
-            this.buttonGFDamageFormula.Click += new System.EventHandler(this.buttonGFDamageFormula_Click);
-            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -41065,12 +41093,10 @@
         private System.Windows.Forms.CheckBox checkBoxMagicFlag2;
         private System.Windows.Forms.CheckBox checkBoxMagicFlag5;
         private System.Windows.Forms.CheckBox checkBoxMagicFlag6;
-        private System.Windows.Forms.ComboBox comboBoxMagicAttackType;
         private System.Windows.Forms.Label labelMagicAttackType;
         private System.Windows.Forms.ComboBox comboBoxMagicElement;
         private System.Windows.Forms.NumericUpDown numericUpDownMagicHitCount;
         private System.Windows.Forms.NumericUpDown numericUpDownMagicDrawResist;
-        private System.Windows.Forms.NumericUpDown numericUpDownMagicSpellPower;
         private System.Windows.Forms.ComboBox comboBoxMagicMagicID;
         private System.Windows.Forms.Label labelMagicElement;
         private System.Windows.Forms.Label labelMagicHitCount;
@@ -41099,7 +41125,6 @@
         private System.Windows.Forms.Label labelMagicVITJ;
         private System.Windows.Forms.Label labelMagicMAGJ;
         private System.Windows.Forms.Label labelMagicSPRJ;
-        private System.Windows.Forms.ListBox listBoxMagic;
         private System.Windows.Forms.TabPage tabPageAbilities;
         private System.Windows.Forms.TabControl tabControlAbilities;
         private System.Windows.Forms.TabPage tabPageAbStats;
@@ -42947,6 +42972,11 @@
         public System.Windows.Forms.ListBox listBoxGF;
         private System.Windows.Forms.Button buttonGFDamageChart;
         private System.Windows.Forms.Button buttonGFDamageFormula;
+        private System.Windows.Forms.Button buttonMagicDamageFormula;
+        private System.Windows.Forms.Button buttonMagicDamageChart;
+        public System.Windows.Forms.NumericUpDown numericUpDownMagicSpellPower;
+        public System.Windows.Forms.ListBox listBoxMagic;
+        public System.Windows.Forms.ComboBox comboBoxMagicAttackType;
     }
 }
 

@@ -27,7 +27,7 @@ namespace Doomtrain
 
         public mainForm()
         {
-            InitializeComponent();            
+            InitializeComponent();
 
             _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips.bin";
 
@@ -55,6 +55,8 @@ namespace Doomtrain
             buttonCharSPRChart.Enabled = false;
             buttonCharSPDChart.Enabled = false;
             buttonCharLUCKChart.Enabled = false;
+            buttonGFDamageChart.Enabled = false;
+            buttonMagicDamageChart.Enabled = false;
             buttonCharEXPFormula.Enabled = false;
             buttonCharHPFormula.Enabled = false;
             buttonCharSTRFormula.Enabled = false;
@@ -63,7 +65,9 @@ namespace Doomtrain
             buttonCharSPRFormula.Enabled = false;
             buttonCharSPDFormula.Enabled = false;
             buttonCharLUCKFormula.Enabled = false;
-            buttonGFDamageChart.Enabled = false;
+            buttonGFDamageFormula.Enabled = false;
+            buttonMagicDamageFormula.Enabled = false;
+
 
 
             //this is for enabling the switching of listboxes in the ability section
@@ -1661,6 +1665,8 @@ namespace Doomtrain
                 buttonCharSPRChart.Enabled = true;
                 buttonCharSPDChart.Enabled = true;
                 buttonCharLUCKChart.Enabled = true;
+                buttonGFDamageChart.Enabled = true;
+                buttonMagicDamageChart.Enabled = true;
                 buttonCharEXPFormula.Enabled = true;
                 buttonCharHPFormula.Enabled = true;
                 buttonCharSTRFormula.Enabled = true;
@@ -1669,7 +1675,9 @@ namespace Doomtrain
                 buttonCharSPRFormula.Enabled = true;
                 buttonCharSPDFormula.Enabled = true;
                 buttonCharLUCKFormula.Enabled = true;
-                buttonGFDamageChart.Enabled = true;
+                buttonGFDamageFormula.Enabled = true;
+                buttonMagicDamageFormula.Enabled = true;
+
 
                 listBoxCharacters.SelectedIndex = 0;
                 listBoxRenzoFin.SelectedIndex = 0;
@@ -1993,14 +2001,26 @@ namespace Doomtrain
 
         private void buttonGFDamageFormula_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("a = LevelMod * Level / 10 + Power + PowerMod\n" +
-                "b = a * (265 - TargetSpr) / 8\n" +
-                "c = b * Power / 256\n" +
-                "d = c * boost / 100\n" +
-                "e = d * (100 + SummonMagBonus) / 100\n" +
+            MessageBox.Show("Regular GF Attack =\n" + 
+                "a = AttackerMag + Power\n" +
+                "b = a * (265 - TargetSpr) / 4\n" +
+                "c = b * Power / 256\n" + 
+                "d = c * Boost / 100\n" + 
+                "e = d * (100 + SumMagBonus) / 100\n" +
                 "Damage = e * (900 - ElemDef) / 100\n\n" +
                 "Diablos = TargetMaxHP * Level / 100\n\n" +
                 "Cactuar = Level * 100", "GF Damage Formula");
+        }
+
+        private void buttonMagicDamageFormula_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Regular Magic Attack =\n" + 
+                "a = AttackerMag + Power\n" +
+                "b = a * (265 - TargetSpr) / 4\n" +
+                "c = b * Power / 256\n" +
+                "Damage = c * (900 - ElemDef) / 100\n\n" +
+                "Demi = TargetHP * Power / 16\n\n" +
+                "Curative Magic = (Power + HealerMag) * Power / 2", "Magic Damage Formula");
         }
 
         #endregion
@@ -2105,6 +2125,17 @@ namespace Doomtrain
             }
             _GfDamage.Show();
             _GfDamage.Focus();
+        }
+
+        private MagicDamage _MagicDamage;
+        private void buttonMagicDamageChart_Click(object sender, EventArgs e)
+        {
+            if ((_MagicDamage == null) || (_MagicDamage.IsDisposed))
+            {
+                _MagicDamage = new MagicDamage(this);
+            }
+            _MagicDamage.Show();
+            _MagicDamage.Focus();
         }
 
         #endregion
@@ -7289,10 +7320,10 @@ namespace Doomtrain
 
 
 
-        #endregion
 
         #endregion
 
+        #endregion
 
     }
 }

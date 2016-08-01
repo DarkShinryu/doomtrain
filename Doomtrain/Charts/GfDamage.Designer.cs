@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GfDamage));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel1 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
             System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel2 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
@@ -67,8 +66,8 @@
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint21 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 0D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint22 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(10D, 0D);
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GfDamage));
             this.checkBoxDefault = new System.Windows.Forms.CheckBox();
-            this.buttonInfo = new System.Windows.Forms.Button();
             this.numericUpDownSumMag = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownBoost = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownSPR = new System.Windows.Forms.NumericUpDown();
@@ -79,6 +78,7 @@
             this.chartGfDamage = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.labelElemDef = new System.Windows.Forms.Label();
             this.numericUpDownElemDef = new System.Windows.Forms.NumericUpDown();
+            this.buttonInfo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSumMag)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBoost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSPR)).BeginInit();
@@ -99,16 +99,6 @@
             this.checkBoxDefault.TabIndex = 4;
             this.checkBoxDefault.Text = "Use values \r\nfor default";
             this.checkBoxDefault.UseVisualStyleBackColor = false;
-            // 
-            // buttonInfo
-            // 
-            this.buttonInfo.Image = ((System.Drawing.Image)(resources.GetObject("buttonInfo.Image")));
-            this.buttonInfo.Location = new System.Drawing.Point(657, 12);
-            this.buttonInfo.Name = "buttonInfo";
-            this.buttonInfo.Size = new System.Drawing.Size(29, 24);
-            this.buttonInfo.TabIndex = 0;
-            this.buttonInfo.UseVisualStyleBackColor = true;
-            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
             // 
             // numericUpDownSumMag
             // 
@@ -365,6 +355,16 @@
             0,
             0,
             0});
+            // 
+            // buttonInfo
+            // 
+            this.buttonInfo.Image = ((System.Drawing.Image)(resources.GetObject("buttonInfo.Image")));
+            this.buttonInfo.Location = new System.Drawing.Point(657, 12);
+            this.buttonInfo.Name = "buttonInfo";
+            this.buttonInfo.Size = new System.Drawing.Size(29, 24);
+            this.buttonInfo.TabIndex = 0;
+            this.buttonInfo.UseVisualStyleBackColor = true;
+            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
             // 
             // GfDamage
             // 

@@ -116,6 +116,12 @@
     <Compile Include="Charts\CharVIT.Designer.cs">
       <DependentUpon>CharVIT.cs</DependentUpon>
     </Compile>
+    <Compile Include="Charts\MagicDamage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charts\MagicDamage.Designer.cs">
+      <DependentUpon>MagicDamage.cs</DependentUpon>
+    </Compile>
     <Compile Include="KernelWorker.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Charts\CharVIT.resx">
       <DependentUpon>CharVIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\MagicDamage.resx">
+      <DependentUpon>MagicDamage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
