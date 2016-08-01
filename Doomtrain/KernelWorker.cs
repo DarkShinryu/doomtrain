@@ -3466,15 +3466,18 @@ namespace Doomtrain
             int selectedMagicOffset = MagicDataOffset + (MagicID_List * 60);
             OffsetToMagicSelected = selectedMagicOffset;
 
+            /*
             #region UnusedNameRegion functionality. You can use it for future improvements
             GetSelectedMagicData.OffsetSpellName = BuildString((ushort)(
                     BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(Kernel, selectedMagicOffset))));
+            
 
             //BELOW DOESN'T WORK?
             // GetSelectedMagicData.OffsetSpellDescription = BuildString((ushort)(
             //BitConverter.ToInt32(kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(kernel, SelectedMagicOffset += 2))));
             //Console.WriteLine("DEBUG: {0}", GetSelectedMagicData.OffsetSpellName);
             #endregion
+            */
 
 
             GetSelectedMagicData.MagicID = BitConverter.ToUInt16(Kernel, selectedMagicOffset += 4);

@@ -88,76 +88,13 @@ namespace Doomtrain.Charts
                 b = a * (265 - (int)numericUpDownSPR.Value) / 4;
                 c = b * KernelWorker.GetSelectedMagicData.SpellPower / 256;
 
-                if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 2) // Attack type "Magic Attack"
-                {
-                    labelAttMAG.Visible = true;
-                    labelSPR.Visible = true;
-                    labelHealMAG.Visible = false;
-                    labelElemDef.Visible = true;
-                    labelHP.Visible = false;
-                    numericUpDownAttMAG.Visible = true;
-                    numericUpDownSPR.Visible = true;
-                    numericUpDownHealMAG.Visible = false;
-                    numericUpDownElemDef.Visible = true;
-                    numericUpDownHP.Visible = false;
 
-
-                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
-
-                    chartMagicDamage.Series["Default"].Points.AddXY
-                        (0, c * (900 - numericUpDownElemDef.Value) / 100);
-                    chartMagicDamage.Series["Default"].Points.AddXY
-                        (1, 0);
-                }
-                else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 8) //Attack type "Demi"
-                {
-                    labelAttMAG.Visible = false;
-                    labelSPR.Visible = false;
-                    labelHealMAG.Visible = false;
-                    labelElemDef.Visible = false;
-                    labelHP.Visible = true;
-                    numericUpDownAttMAG.Visible = false;
-                    numericUpDownSPR.Visible = false;
-                    numericUpDownHealMAG.Visible = false;
-                    numericUpDownElemDef.Visible = false;
-                    numericUpDownHP.Visible = true;
-
-
-                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
-
-                    chartMagicDamage.Series["Default"].Points.AddXY
-                        (0, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
-                    chartMagicDamage.Series["Default"].Points.AddXY
-                        (1, 0);
-                }
-                else if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 3) //Attack type "Curative"
-                {
-                    labelAttMAG.Visible = false;
-                    labelSPR.Visible = false;
-                    labelHealMAG.Visible = true;
-                    labelElemDef.Visible = false;
-                    labelHP.Visible = false;
-                    numericUpDownAttMAG.Visible = false;
-                    numericUpDownSPR.Visible = false;
-                    numericUpDownHealMAG.Visible = true;
-                    numericUpDownElemDef.Visible = false;
-                    numericUpDownHP.Visible = false;
-
-
-                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Healing Amount";
-
-                    chartMagicDamage.Series["Default"].Points.AddXY
-                        (0, 0);
-                    chartMagicDamage.Series["Default"].Points.AddXY
-                        (1, (KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
-                }
-                else
-                {
-                    MessageBox.Show("The magic chart only supports the following attack types:\n" +
-                        "Magic Attack;\n" +
-                        "Demi;\n" +
-                        "Curative.\n", "Unsupported attack type", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
-                }
+                chartMagicDamage.Series["Default"].Points.AddXY
+                    (0, c * (900 - numericUpDownElemDef.Value) / 100);
+                chartMagicDamage.Series["Default"].Points.AddXY
+                    (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
+                chartMagicDamage.Series["Default"].Points.AddXY
+                    (2, (KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
             }
             catch (Exception Exception)
             {
@@ -171,21 +108,14 @@ namespace Doomtrain.Charts
                 a = (int)numericUpDownAttMAG.Value + KernelWorker.GetSelectedMagicData.SpellPower;
                 b = a * (265 - (int)numericUpDownSPR.Value) / 4;
                 c = b * KernelWorker.GetSelectedMagicData.SpellPower / 256;
-                if (_mainForm.comboBoxMagicAttackType.SelectedIndex == 3)
-                {
-                    chartMagicDamage.Series["Current"].Points.AddXY
-                        (0, 0);
-                    chartMagicDamage.Series["Current"].Points.AddXY
-                        (1, (KernelWorker.GetSelectedMagicData.SpellPower + (int)numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
-                }
-                else
-                {
-                    chartMagicDamage.Series["Current"].Points.AddXY
-                        (0, c * (900 - numericUpDownElemDef.Value) / 100);
-                    chartMagicDamage.Series["Current"].Points.AddXY
-                        (1, 0);
-                }
 
+
+                chartMagicDamage.Series["Current"].Points.AddXY
+                    (0, c * (900 - numericUpDownElemDef.Value) / 100);
+                chartMagicDamage.Series["Current"].Points.AddXY
+                    (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
+                chartMagicDamage.Series["Current"].Points.AddXY
+                    (2, (KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
             }
             catch (Exception Exception)
             {
@@ -217,7 +147,9 @@ namespace Doomtrain.Charts
                         chartMagicDamage.Series["Default"].Points.AddXY
                             (0, c * (900 - numericUpDownElemDef.Value) / 100);
                         chartMagicDamage.Series["Default"].Points.AddXY
-                            (1, KernelWorker.GetSelectedMagicData.SpellPower * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+                            (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
+                        chartMagicDamage.Series["Default"].Points.AddXY
+                            (2, (KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
                     }
 
                     else if (checkBoxDefault.Checked == false)
@@ -232,7 +164,9 @@ namespace Doomtrain.Charts
                         chartMagicDamage.Series["Default"].Points.AddXY
                             (0, c);
                         chartMagicDamage.Series["Default"].Points.AddXY
-                            (1, KernelWorker.GetSelectedMagicData.SpellPower * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+                            (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
+                        chartMagicDamage.Series["Default"].Points.AddXY
+                            (2, KernelWorker.GetSelectedMagicData.SpellPower * KernelWorker.GetSelectedMagicData.SpellPower / 2);
                     }
                 }
                 catch (Exception Exception)
@@ -254,7 +188,9 @@ namespace Doomtrain.Charts
                     chartMagicDamage.Series["Current"].Points.AddXY
                         (0, c * (900 - numericUpDownElemDef.Value) / 100);
                     chartMagicDamage.Series["Current"].Points.AddXY
-                        (1, (KernelWorker.GetSelectedMagicData.SpellPower + (int)numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+                        (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
+                    chartMagicDamage.Series["Current"].Points.AddXY
+                        (2, (KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
                 }
                 catch (Exception Exception)
                 {
@@ -286,7 +222,9 @@ namespace Doomtrain.Charts
                         chartMagicDamage.Series["Default"].Points.AddXY
                             (0, c * (900 - numericUpDownElemDef.Value) / 100);
                         chartMagicDamage.Series["Default"].Points.AddXY
-                            (1, KernelWorker.GetSelectedMagicData.SpellPower * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+                            (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
+                        chartMagicDamage.Series["Default"].Points.AddXY
+                            (2, (KernelWorker.GetSelectedMagicData.SpellPower + numericUpDownHealMAG.Value) * KernelWorker.GetSelectedMagicData.SpellPower / 2);
                     }
                     else if (checkBoxDefault.Checked == false)
                     {
@@ -300,7 +238,9 @@ namespace Doomtrain.Charts
                         chartMagicDamage.Series["Default"].Points.AddXY
                             (0, c);
                         chartMagicDamage.Series["Default"].Points.AddXY
-                            (1, KernelWorker.GetSelectedMagicData.SpellPower * KernelWorker.GetSelectedMagicData.SpellPower / 2);
+                            (1, numericUpDownHP.Value * KernelWorker.GetSelectedMagicData.SpellPower / 16);
+                        chartMagicDamage.Series["Default"].Points.AddXY
+                            (2, KernelWorker.GetSelectedMagicData.SpellPower * KernelWorker.GetSelectedMagicData.SpellPower / 2);
                     }
                 }
                 catch (Exception Exception)
