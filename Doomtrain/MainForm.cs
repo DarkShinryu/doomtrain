@@ -29,6 +29,8 @@ namespace Doomtrain
         {
             InitializeComponent();
 
+            DisableTabStop(this);
+
             _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips.bin";
 
             if (File.Exists(_backup))
@@ -1624,6 +1626,14 @@ namespace Doomtrain
             #endregion
         }
 
+        private void DisableTabStop(Control ctrl)
+        {
+            ctrl.TabStop = false;
+            foreach (Control item in ctrl.Controls)
+            {
+                DisableTabStop(item);
+            }
+        } //To disable tab stop, temporary code until i order them
 
         #region OPEN, SAVE, TOOLBAR, TOOLTIPS FILE, ABOUT, CLOSE
 
@@ -2009,7 +2019,7 @@ namespace Doomtrain
                 "e = d * (100 + SumMagBonus) / 100\n" +
                 "Damage = e * (900 - ElemDef) / 100\n\n" +
                 "Diablos = TargetMaxHP * Level / 100\n\n" +
-                "Cactuar = Level * 100", "GF Damage Formula");
+                "Cactuar = (((GF level * Power) / 1,000) + 1) * 1,000", "GF Damage Formula");
         }
 
         private void buttonMagicDamageFormula_Click(object sender, EventArgs e)
@@ -7314,13 +7324,7 @@ namespace Doomtrain
             }
             _loaded = true;
         }
-
-
-
-
-
-
-
+        
         #endregion
 
         #endregion

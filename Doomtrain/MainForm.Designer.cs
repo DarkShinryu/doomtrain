@@ -4142,7 +4142,7 @@
             this.labelEnemyAttacksAttackType.AutoSize = true;
             this.labelEnemyAttacksAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelEnemyAttacksAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelEnemyAttacksAttackType.Location = new System.Drawing.Point(116, 87);
+            this.labelEnemyAttacksAttackType.Location = new System.Drawing.Point(104, 87);
             this.labelEnemyAttacksAttackType.Name = "labelEnemyAttacksAttackType";
             this.labelEnemyAttacksAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelEnemyAttacksAttackType.TabIndex = 93;
@@ -4153,7 +4153,7 @@
             this.labelEnemyAttacksElement.AutoSize = true;
             this.labelEnemyAttacksElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelEnemyAttacksElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelEnemyAttacksElement.Location = new System.Drawing.Point(349, 29);
+            this.labelEnemyAttacksElement.Location = new System.Drawing.Point(337, 29);
             this.labelEnemyAttacksElement.Name = "labelEnemyAttacksElement";
             this.labelEnemyAttacksElement.Size = new System.Drawing.Size(57, 17);
             this.labelEnemyAttacksElement.TabIndex = 89;
@@ -4510,7 +4510,7 @@
             "Renzokuken (vs Griever)",
             "Final Battle Music",
             "LV5 Death"});
-            this.comboBoxEnemyAttacksMagicID.Location = new System.Drawing.Point(25, 49);
+            this.comboBoxEnemyAttacksMagicID.Location = new System.Drawing.Point(13, 49);
             this.comboBoxEnemyAttacksMagicID.Name = "comboBoxEnemyAttacksMagicID";
             this.comboBoxEnemyAttacksMagicID.Size = new System.Drawing.Size(265, 25);
             this.comboBoxEnemyAttacksMagicID.TabIndex = 2;
@@ -4520,7 +4520,7 @@
             this.labelEnemyAttacksAttackPower.AutoSize = true;
             this.labelEnemyAttacksAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelEnemyAttacksAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelEnemyAttacksAttackPower.Location = new System.Drawing.Point(334, 87);
+            this.labelEnemyAttacksAttackPower.Location = new System.Drawing.Point(322, 87);
             this.labelEnemyAttacksAttackPower.Name = "labelEnemyAttacksAttackPower";
             this.labelEnemyAttacksAttackPower.Size = new System.Drawing.Size(89, 17);
             this.labelEnemyAttacksAttackPower.TabIndex = 0;
@@ -4531,7 +4531,7 @@
             this.labelEnemyAttacksMagicID.AutoSize = true;
             this.labelEnemyAttacksMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelEnemyAttacksMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelEnemyAttacksMagicID.Location = new System.Drawing.Point(127, 29);
+            this.labelEnemyAttacksMagicID.Location = new System.Drawing.Point(115, 29);
             this.labelEnemyAttacksMagicID.Name = "labelEnemyAttacksMagicID";
             this.labelEnemyAttacksMagicID.Size = new System.Drawing.Size(61, 17);
             this.labelEnemyAttacksMagicID.TabIndex = 0;
@@ -16963,62 +16963,62 @@
             this.listBoxMagic.FormattingEnabled = true;
             this.listBoxMagic.ItemHeight = 17;
             this.listBoxMagic.Items.AddRange(new object[] {
-            "Fire",
-            "Fira",
-            "Firaga",
-            "Blizzard",
-            "Blizzara",
-            "Blizzaga",
-            "Thunder",
-            "Thundara",
-            "Thundaga",
-            "Water",
-            "Aero",
-            "Bio",
-            "Demi",
-            "Holy",
-            "Flare",
-            "Meteor",
-            "Quake",
-            "Tornado",
-            "Ultima",
-            "Apocalypse",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Life",
-            "Full-Life",
-            "Regen",
-            "Esuna",
-            "Dispel",
-            "Protect",
-            "Shell",
-            "Reflect",
-            "Aura",
-            "Double",
-            "Triple",
-            "Haste",
-            "Slow",
-            "Stop",
-            "Blind",
-            "Confuse",
-            "Sleep",
-            "Silence",
-            "Break",
-            "Death",
-            "Drain",
-            "Pain",
-            "Berserk",
-            "Float",
-            "Zombie",
-            "Meltdown",
-            "Scan",
-            "Full Cure",
-            "Wall",
-            "Rapture",
-            "Percent",
-            "Catastrophe",
-            "The End"});
+            "01 - Fire",
+            "02 - Fira",
+            "03 - Firaga",
+            "04 - Blizzard",
+            "05 - Blizzara",
+            "06 - Blizzaga",
+            "07 - Thunder",
+            "08 - Thundara",
+            "09 - Thundaga",
+            "10 - Water",
+            "11 - Aero",
+            "12 - Bio",
+            "13 - Demi",
+            "14 - Holy",
+            "15 - Flare",
+            "16 - Meteor",
+            "17 - Quake",
+            "18 - Tornado",
+            "19 - Ultima",
+            "20 - Apocalypse",
+            "21 - Cure",
+            "22 - Cura",
+            "23 - Curaga",
+            "24 - Life",
+            "25 - Full-Life",
+            "26 - Regen",
+            "27 - Esuna",
+            "28 - Dispel",
+            "29 - Protect",
+            "30 - Shell",
+            "31 - Reflect",
+            "32 - Aura",
+            "33 - Double",
+            "34 - Triple",
+            "35 - Haste",
+            "36 - Slow",
+            "37 - Stop",
+            "38 - Blind",
+            "39 - Confuse",
+            "40 - Sleep",
+            "41 - Silence",
+            "42 - Break",
+            "43 - Death",
+            "44 - Drain",
+            "45 - Pain",
+            "46 - Berserk",
+            "47 - Float",
+            "48 - Zombie",
+            "49 - Meltdown",
+            "50 - Scan",
+            "51 - Full Cure",
+            "52 - Wall",
+            "53 - Rapture",
+            "54 - Percent",
+            "55 - Catastrophe",
+            "56 - The End"});
             this.listBoxMagic.Location = new System.Drawing.Point(0, 0);
             this.listBoxMagic.Name = "listBoxMagic";
             this.listBoxMagic.Size = new System.Drawing.Size(156, 769);
@@ -37679,9 +37679,9 @@
             this.groupBox14.Controls.Add(this.checkBoxEnemyAttacksFlag7);
             this.groupBox14.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBox14.Location = new System.Drawing.Point(162, 463);
+            this.groupBox14.Location = new System.Drawing.Point(186, 463);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(458, 91);
+            this.groupBox14.Size = new System.Drawing.Size(434, 91);
             this.groupBox14.TabIndex = 11;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Attack Flags";
@@ -37691,7 +37691,7 @@
             this.checkBoxEnemyAttacksFlagBreakDamageLimit.AutoSize = true;
             this.checkBoxEnemyAttacksFlagBreakDamageLimit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksFlagBreakDamageLimit.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksFlagBreakDamageLimit.Location = new System.Drawing.Point(302, 38);
+            this.checkBoxEnemyAttacksFlagBreakDamageLimit.Location = new System.Drawing.Point(290, 38);
             this.checkBoxEnemyAttacksFlagBreakDamageLimit.Name = "checkBoxEnemyAttacksFlagBreakDamageLimit";
             this.checkBoxEnemyAttacksFlagBreakDamageLimit.Size = new System.Drawing.Size(132, 19);
             this.checkBoxEnemyAttacksFlagBreakDamageLimit.TabIndex = 48;
@@ -37703,7 +37703,7 @@
             this.checkBoxEnemyAttacksFlag8.AutoSize = true;
             this.checkBoxEnemyAttacksFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksFlag8.Location = new System.Drawing.Point(302, 63);
+            this.checkBoxEnemyAttacksFlag8.Location = new System.Drawing.Point(290, 63);
             this.checkBoxEnemyAttacksFlag8.Name = "checkBoxEnemyAttacksFlag8";
             this.checkBoxEnemyAttacksFlag8.Size = new System.Drawing.Size(65, 19);
             this.checkBoxEnemyAttacksFlag8.TabIndex = 52;
@@ -37715,7 +37715,7 @@
             this.checkBoxEnemyAttacksFlag3.AutoSize = true;
             this.checkBoxEnemyAttacksFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksFlag3.Location = new System.Drawing.Point(217, 38);
+            this.checkBoxEnemyAttacksFlag3.Location = new System.Drawing.Point(205, 38);
             this.checkBoxEnemyAttacksFlag3.Name = "checkBoxEnemyAttacksFlag3";
             this.checkBoxEnemyAttacksFlag3.Size = new System.Drawing.Size(41, 19);
             this.checkBoxEnemyAttacksFlag3.TabIndex = 47;
@@ -37727,7 +37727,7 @@
             this.checkBoxEnemyAttacksFlag6.AutoSize = true;
             this.checkBoxEnemyAttacksFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksFlag6.Location = new System.Drawing.Point(132, 63);
+            this.checkBoxEnemyAttacksFlag6.Location = new System.Drawing.Point(120, 63);
             this.checkBoxEnemyAttacksFlag6.Name = "checkBoxEnemyAttacksFlag6";
             this.checkBoxEnemyAttacksFlag6.Size = new System.Drawing.Size(41, 19);
             this.checkBoxEnemyAttacksFlag6.TabIndex = 50;
@@ -37739,7 +37739,7 @@
             this.checkBoxEnemyAttacksFlagShelled.AutoSize = true;
             this.checkBoxEnemyAttacksFlagShelled.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksFlagShelled.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksFlagShelled.Location = new System.Drawing.Point(24, 38);
+            this.checkBoxEnemyAttacksFlagShelled.Location = new System.Drawing.Point(12, 38);
             this.checkBoxEnemyAttacksFlagShelled.Name = "checkBoxEnemyAttacksFlagShelled";
             this.checkBoxEnemyAttacksFlagShelled.Size = new System.Drawing.Size(64, 19);
             this.checkBoxEnemyAttacksFlagShelled.TabIndex = 45;
@@ -37751,7 +37751,7 @@
             this.checkBoxEnemyAttacksFlagReflected.AutoSize = true;
             this.checkBoxEnemyAttacksFlagReflected.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksFlagReflected.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksFlagReflected.Location = new System.Drawing.Point(24, 63);
+            this.checkBoxEnemyAttacksFlagReflected.Location = new System.Drawing.Point(12, 63);
             this.checkBoxEnemyAttacksFlagReflected.Name = "checkBoxEnemyAttacksFlagReflected";
             this.checkBoxEnemyAttacksFlagReflected.Size = new System.Drawing.Size(75, 19);
             this.checkBoxEnemyAttacksFlagReflected.TabIndex = 49;
@@ -37763,7 +37763,7 @@
             this.checkBoxEnemyAttacksFlag2.AutoSize = true;
             this.checkBoxEnemyAttacksFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksFlag2.Location = new System.Drawing.Point(132, 38);
+            this.checkBoxEnemyAttacksFlag2.Location = new System.Drawing.Point(120, 38);
             this.checkBoxEnemyAttacksFlag2.Name = "checkBoxEnemyAttacksFlag2";
             this.checkBoxEnemyAttacksFlag2.Size = new System.Drawing.Size(41, 19);
             this.checkBoxEnemyAttacksFlag2.TabIndex = 46;
@@ -37775,7 +37775,7 @@
             this.checkBoxEnemyAttacksFlag7.AutoSize = true;
             this.checkBoxEnemyAttacksFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksFlag7.Location = new System.Drawing.Point(217, 63);
+            this.checkBoxEnemyAttacksFlag7.Location = new System.Drawing.Point(205, 63);
             this.checkBoxEnemyAttacksFlag7.Name = "checkBoxEnemyAttacksFlag7";
             this.checkBoxEnemyAttacksFlag7.Size = new System.Drawing.Size(41, 19);
             this.checkBoxEnemyAttacksFlag7.TabIndex = 51;
@@ -37829,9 +37829,9 @@
             this.groupBox15.Controls.Add(this.labelEnemyAttacksStatusAttack);
             this.groupBox15.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox15.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBox15.Location = new System.Drawing.Point(162, 171);
+            this.groupBox15.Location = new System.Drawing.Point(186, 171);
             this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(458, 286);
+            this.groupBox15.Size = new System.Drawing.Size(434, 286);
             this.groupBox15.TabIndex = 10;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Status Attack";
@@ -37841,7 +37841,7 @@
             this.checkBoxEnemyAttacksPetrifying.AutoSize = true;
             this.checkBoxEnemyAttacksPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksPetrifying.Location = new System.Drawing.Point(284, 136);
+            this.checkBoxEnemyAttacksPetrifying.Location = new System.Drawing.Point(281, 136);
             this.checkBoxEnemyAttacksPetrifying.Name = "checkBoxEnemyAttacksPetrifying";
             this.checkBoxEnemyAttacksPetrifying.Size = new System.Drawing.Size(77, 19);
             this.checkBoxEnemyAttacksPetrifying.TabIndex = 115;
@@ -37853,7 +37853,7 @@
             this.checkBoxEnemyAttacksDarkness.AutoSize = true;
             this.checkBoxEnemyAttacksDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksDarkness.Location = new System.Drawing.Point(9, 261);
+            this.checkBoxEnemyAttacksDarkness.Location = new System.Drawing.Point(6, 261);
             this.checkBoxEnemyAttacksDarkness.Name = "checkBoxEnemyAttacksDarkness";
             this.checkBoxEnemyAttacksDarkness.Size = new System.Drawing.Size(73, 19);
             this.checkBoxEnemyAttacksDarkness.TabIndex = 138;
@@ -37865,7 +37865,7 @@
             this.checkBoxEnemyAttacksSilence.AutoSize = true;
             this.checkBoxEnemyAttacksSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksSilence.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksSilence.Location = new System.Drawing.Point(101, 261);
+            this.checkBoxEnemyAttacksSilence.Location = new System.Drawing.Point(98, 261);
             this.checkBoxEnemyAttacksSilence.Name = "checkBoxEnemyAttacksSilence";
             this.checkBoxEnemyAttacksSilence.Size = new System.Drawing.Size(63, 19);
             this.checkBoxEnemyAttacksSilence.TabIndex = 139;
@@ -37877,7 +37877,7 @@
             this.checkBoxEnemyAttacksStop.AutoSize = true;
             this.checkBoxEnemyAttacksStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksStop.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksStop.Location = new System.Drawing.Point(284, 86);
+            this.checkBoxEnemyAttacksStop.Location = new System.Drawing.Point(281, 86);
             this.checkBoxEnemyAttacksStop.Name = "checkBoxEnemyAttacksStop";
             this.checkBoxEnemyAttacksStop.Size = new System.Drawing.Size(50, 19);
             this.checkBoxEnemyAttacksStop.TabIndex = 106;
@@ -37887,21 +37887,22 @@
             // checkBoxEnemyAttacksConfusion
             // 
             this.checkBoxEnemyAttacksConfusion.AutoSize = true;
+            this.checkBoxEnemyAttacksConfusion.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxEnemyAttacksConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksConfusion.Location = new System.Drawing.Point(372, 136);
+            this.checkBoxEnemyAttacksConfusion.Location = new System.Drawing.Point(369, 136);
             this.checkBoxEnemyAttacksConfusion.Name = "checkBoxEnemyAttacksConfusion";
-            this.checkBoxEnemyAttacksConfusion.Size = new System.Drawing.Size(81, 19);
+            this.checkBoxEnemyAttacksConfusion.Size = new System.Drawing.Size(55, 19);
             this.checkBoxEnemyAttacksConfusion.TabIndex = 117;
-            this.checkBoxEnemyAttacksConfusion.Text = "Confusion";
-            this.checkBoxEnemyAttacksConfusion.UseVisualStyleBackColor = true;
+            this.checkBoxEnemyAttacksConfusion.Text = "Conf.";
+            this.checkBoxEnemyAttacksConfusion.UseVisualStyleBackColor = false;
             // 
             // checkBoxEnemyAttacksPetrify
             // 
             this.checkBoxEnemyAttacksPetrify.AutoSize = true;
             this.checkBoxEnemyAttacksPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksPetrify.Location = new System.Drawing.Point(372, 236);
+            this.checkBoxEnemyAttacksPetrify.Location = new System.Drawing.Point(369, 236);
             this.checkBoxEnemyAttacksPetrify.Name = "checkBoxEnemyAttacksPetrify";
             this.checkBoxEnemyAttacksPetrify.Size = new System.Drawing.Size(60, 19);
             this.checkBoxEnemyAttacksPetrify.TabIndex = 137;
@@ -37913,7 +37914,7 @@
             this.checkBoxEnemyAttacksSlow.AutoSize = true;
             this.checkBoxEnemyAttacksSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksSlow.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksSlow.Location = new System.Drawing.Point(195, 86);
+            this.checkBoxEnemyAttacksSlow.Location = new System.Drawing.Point(192, 86);
             this.checkBoxEnemyAttacksSlow.Name = "checkBoxEnemyAttacksSlow";
             this.checkBoxEnemyAttacksSlow.Size = new System.Drawing.Size(51, 19);
             this.checkBoxEnemyAttacksSlow.TabIndex = 105;
@@ -37925,7 +37926,7 @@
             this.checkBoxEnemyAttacksBerserk.AutoSize = true;
             this.checkBoxEnemyAttacksBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksBerserk.Location = new System.Drawing.Point(195, 261);
+            this.checkBoxEnemyAttacksBerserk.Location = new System.Drawing.Point(192, 261);
             this.checkBoxEnemyAttacksBerserk.Name = "checkBoxEnemyAttacksBerserk";
             this.checkBoxEnemyAttacksBerserk.Size = new System.Drawing.Size(64, 19);
             this.checkBoxEnemyAttacksBerserk.TabIndex = 140;
@@ -37937,7 +37938,7 @@
             this.checkBoxEnemyAttacksSleep.AutoSize = true;
             this.checkBoxEnemyAttacksSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksSleep.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksSleep.Location = new System.Drawing.Point(9, 86);
+            this.checkBoxEnemyAttacksSleep.Location = new System.Drawing.Point(6, 86);
             this.checkBoxEnemyAttacksSleep.Name = "checkBoxEnemyAttacksSleep";
             this.checkBoxEnemyAttacksSleep.Size = new System.Drawing.Size(54, 19);
             this.checkBoxEnemyAttacksSleep.TabIndex = 103;
@@ -37949,7 +37950,7 @@
             this.checkBoxEnemyAttacksInvincible.AutoSize = true;
             this.checkBoxEnemyAttacksInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksInvincible.Location = new System.Drawing.Point(101, 136);
+            this.checkBoxEnemyAttacksInvincible.Location = new System.Drawing.Point(98, 136);
             this.checkBoxEnemyAttacksInvincible.Name = "checkBoxEnemyAttacksInvincible";
             this.checkBoxEnemyAttacksInvincible.Size = new System.Drawing.Size(77, 19);
             this.checkBoxEnemyAttacksInvincible.TabIndex = 114;
@@ -37961,7 +37962,7 @@
             this.checkBoxEnemyAttacksCurse.AutoSize = true;
             this.checkBoxEnemyAttacksCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksCurse.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksCurse.Location = new System.Drawing.Point(372, 111);
+            this.checkBoxEnemyAttacksCurse.Location = new System.Drawing.Point(369, 111);
             this.checkBoxEnemyAttacksCurse.Name = "checkBoxEnemyAttacksCurse";
             this.checkBoxEnemyAttacksCurse.Size = new System.Drawing.Size(56, 19);
             this.checkBoxEnemyAttacksCurse.TabIndex = 112;
@@ -37973,7 +37974,7 @@
             this.checkBoxEnemyAttacksDoom.AutoSize = true;
             this.checkBoxEnemyAttacksDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksDoom.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksDoom.Location = new System.Drawing.Point(9, 136);
+            this.checkBoxEnemyAttacksDoom.Location = new System.Drawing.Point(6, 136);
             this.checkBoxEnemyAttacksDoom.Name = "checkBoxEnemyAttacksDoom";
             this.checkBoxEnemyAttacksDoom.Size = new System.Drawing.Size(59, 19);
             this.checkBoxEnemyAttacksDoom.TabIndex = 113;
@@ -37985,7 +37986,7 @@
             this.checkBoxEnemyAttacksFloat.AutoSize = true;
             this.checkBoxEnemyAttacksFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksFloat.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksFloat.Location = new System.Drawing.Point(195, 136);
+            this.checkBoxEnemyAttacksFloat.Location = new System.Drawing.Point(192, 136);
             this.checkBoxEnemyAttacksFloat.Name = "checkBoxEnemyAttacksFloat";
             this.checkBoxEnemyAttacksFloat.Size = new System.Drawing.Size(52, 19);
             this.checkBoxEnemyAttacksFloat.TabIndex = 116;
@@ -37997,7 +37998,7 @@
             this.checkBoxEnemyAttacksAura.AutoSize = true;
             this.checkBoxEnemyAttacksAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksAura.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksAura.Location = new System.Drawing.Point(284, 111);
+            this.checkBoxEnemyAttacksAura.Location = new System.Drawing.Point(281, 111);
             this.checkBoxEnemyAttacksAura.Name = "checkBoxEnemyAttacksAura";
             this.checkBoxEnemyAttacksAura.Size = new System.Drawing.Size(51, 19);
             this.checkBoxEnemyAttacksAura.TabIndex = 111;
@@ -38009,7 +38010,7 @@
             this.checkBoxEnemyAttacksDrain.AutoSize = true;
             this.checkBoxEnemyAttacksDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksDrain.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksDrain.Location = new System.Drawing.Point(9, 161);
+            this.checkBoxEnemyAttacksDrain.Location = new System.Drawing.Point(6, 161);
             this.checkBoxEnemyAttacksDrain.Name = "checkBoxEnemyAttacksDrain";
             this.checkBoxEnemyAttacksDrain.Size = new System.Drawing.Size(54, 19);
             this.checkBoxEnemyAttacksDrain.TabIndex = 118;
@@ -38021,7 +38022,7 @@
             this.checkBoxEnemyAttacksSummonGF.AutoSize = true;
             this.checkBoxEnemyAttacksSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksSummonGF.Location = new System.Drawing.Point(101, 236);
+            this.checkBoxEnemyAttacksSummonGF.Location = new System.Drawing.Point(98, 236);
             this.checkBoxEnemyAttacksSummonGF.Name = "checkBoxEnemyAttacksSummonGF";
             this.checkBoxEnemyAttacksSummonGF.Size = new System.Drawing.Size(92, 19);
             this.checkBoxEnemyAttacksSummonGF.TabIndex = 133;
@@ -38033,7 +38034,7 @@
             this.checkBoxEnemyAttacksHasMagic.AutoSize = true;
             this.checkBoxEnemyAttacksHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksHasMagic.Location = new System.Drawing.Point(9, 236);
+            this.checkBoxEnemyAttacksHasMagic.Location = new System.Drawing.Point(6, 236);
             this.checkBoxEnemyAttacksHasMagic.Name = "checkBoxEnemyAttacksHasMagic";
             this.checkBoxEnemyAttacksHasMagic.Size = new System.Drawing.Size(82, 19);
             this.checkBoxEnemyAttacksHasMagic.TabIndex = 132;
@@ -38045,7 +38046,7 @@
             this.checkBoxEnemyAttacksUnk6.AutoSize = true;
             this.checkBoxEnemyAttacksUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksUnk6.Location = new System.Drawing.Point(372, 211);
+            this.checkBoxEnemyAttacksUnk6.Location = new System.Drawing.Point(369, 211);
             this.checkBoxEnemyAttacksUnk6.Name = "checkBoxEnemyAttacksUnk6";
             this.checkBoxEnemyAttacksUnk6.Size = new System.Drawing.Size(41, 19);
             this.checkBoxEnemyAttacksUnk6.TabIndex = 131;
@@ -38057,7 +38058,7 @@
             this.checkBoxEnemyAttacksUnk5.AutoSize = true;
             this.checkBoxEnemyAttacksUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksUnk5.Location = new System.Drawing.Point(284, 211);
+            this.checkBoxEnemyAttacksUnk5.Location = new System.Drawing.Point(281, 211);
             this.checkBoxEnemyAttacksUnk5.Name = "checkBoxEnemyAttacksUnk5";
             this.checkBoxEnemyAttacksUnk5.Size = new System.Drawing.Size(41, 19);
             this.checkBoxEnemyAttacksUnk5.TabIndex = 130;
@@ -38069,7 +38070,7 @@
             this.checkBoxEnemyAttacksUnk4.AutoSize = true;
             this.checkBoxEnemyAttacksUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksUnk4.Location = new System.Drawing.Point(195, 211);
+            this.checkBoxEnemyAttacksUnk4.Location = new System.Drawing.Point(192, 211);
             this.checkBoxEnemyAttacksUnk4.Name = "checkBoxEnemyAttacksUnk4";
             this.checkBoxEnemyAttacksUnk4.Size = new System.Drawing.Size(41, 19);
             this.checkBoxEnemyAttacksUnk4.TabIndex = 127;
@@ -38081,7 +38082,7 @@
             this.checkBoxEnemyAttacksUnk3.AutoSize = true;
             this.checkBoxEnemyAttacksUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksUnk3.Location = new System.Drawing.Point(101, 211);
+            this.checkBoxEnemyAttacksUnk3.Location = new System.Drawing.Point(98, 211);
             this.checkBoxEnemyAttacksUnk3.Name = "checkBoxEnemyAttacksUnk3";
             this.checkBoxEnemyAttacksUnk3.Size = new System.Drawing.Size(41, 19);
             this.checkBoxEnemyAttacksUnk3.TabIndex = 129;
@@ -38093,7 +38094,7 @@
             this.checkBoxEnemyAttacksAngelWing.AutoSize = true;
             this.checkBoxEnemyAttacksAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksAngelWing.Location = new System.Drawing.Point(9, 211);
+            this.checkBoxEnemyAttacksAngelWing.Location = new System.Drawing.Point(6, 211);
             this.checkBoxEnemyAttacksAngelWing.Name = "checkBoxEnemyAttacksAngelWing";
             this.checkBoxEnemyAttacksAngelWing.Size = new System.Drawing.Size(88, 19);
             this.checkBoxEnemyAttacksAngelWing.TabIndex = 128;
@@ -38105,7 +38106,7 @@
             this.checkBoxEnemyAttacksVit0.AutoSize = true;
             this.checkBoxEnemyAttacksVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksVit0.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksVit0.Location = new System.Drawing.Point(372, 186);
+            this.checkBoxEnemyAttacksVit0.Location = new System.Drawing.Point(369, 186);
             this.checkBoxEnemyAttacksVit0.Name = "checkBoxEnemyAttacksVit0";
             this.checkBoxEnemyAttacksVit0.Size = new System.Drawing.Size(46, 19);
             this.checkBoxEnemyAttacksVit0.TabIndex = 134;
@@ -38117,7 +38118,7 @@
             this.checkBoxEnemyAttacksBackAttack.AutoSize = true;
             this.checkBoxEnemyAttacksBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksBackAttack.Location = new System.Drawing.Point(284, 186);
+            this.checkBoxEnemyAttacksBackAttack.Location = new System.Drawing.Point(281, 186);
             this.checkBoxEnemyAttacksBackAttack.Name = "checkBoxEnemyAttacksBackAttack";
             this.checkBoxEnemyAttacksBackAttack.Size = new System.Drawing.Size(88, 19);
             this.checkBoxEnemyAttacksBackAttack.TabIndex = 126;
@@ -38129,7 +38130,7 @@
             this.checkBoxEnemyAttacksCharged.AutoSize = true;
             this.checkBoxEnemyAttacksCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksCharged.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksCharged.Location = new System.Drawing.Point(195, 186);
+            this.checkBoxEnemyAttacksCharged.Location = new System.Drawing.Point(192, 186);
             this.checkBoxEnemyAttacksCharged.Name = "checkBoxEnemyAttacksCharged";
             this.checkBoxEnemyAttacksCharged.Size = new System.Drawing.Size(71, 19);
             this.checkBoxEnemyAttacksCharged.TabIndex = 122;
@@ -38141,7 +38142,7 @@
             this.checkBoxEnemyAttacksUnk2.AutoSize = true;
             this.checkBoxEnemyAttacksUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksUnk2.Location = new System.Drawing.Point(101, 186);
+            this.checkBoxEnemyAttacksUnk2.Location = new System.Drawing.Point(98, 186);
             this.checkBoxEnemyAttacksUnk2.Name = "checkBoxEnemyAttacksUnk2";
             this.checkBoxEnemyAttacksUnk2.Size = new System.Drawing.Size(41, 19);
             this.checkBoxEnemyAttacksUnk2.TabIndex = 125;
@@ -38153,7 +38154,7 @@
             this.checkBoxEnemyAttacksUnk1.AutoSize = true;
             this.checkBoxEnemyAttacksUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksUnk1.Location = new System.Drawing.Point(9, 186);
+            this.checkBoxEnemyAttacksUnk1.Location = new System.Drawing.Point(6, 186);
             this.checkBoxEnemyAttacksUnk1.Name = "checkBoxEnemyAttacksUnk1";
             this.checkBoxEnemyAttacksUnk1.Size = new System.Drawing.Size(41, 19);
             this.checkBoxEnemyAttacksUnk1.TabIndex = 124;
@@ -38163,21 +38164,22 @@
             // checkBoxEnemyAttacksDefend
             // 
             this.checkBoxEnemyAttacksDefend.AutoSize = true;
+            this.checkBoxEnemyAttacksDefend.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxEnemyAttacksDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksDefend.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksDefend.Location = new System.Drawing.Point(372, 161);
+            this.checkBoxEnemyAttacksDefend.Location = new System.Drawing.Point(369, 161);
             this.checkBoxEnemyAttacksDefend.Name = "checkBoxEnemyAttacksDefend";
             this.checkBoxEnemyAttacksDefend.Size = new System.Drawing.Size(64, 19);
             this.checkBoxEnemyAttacksDefend.TabIndex = 123;
             this.checkBoxEnemyAttacksDefend.Text = "Defend";
-            this.checkBoxEnemyAttacksDefend.UseVisualStyleBackColor = true;
+            this.checkBoxEnemyAttacksDefend.UseVisualStyleBackColor = false;
             // 
             // checkBoxEnemyAttacksTriple
             // 
             this.checkBoxEnemyAttacksTriple.AutoSize = true;
             this.checkBoxEnemyAttacksTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksTriple.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksTriple.Location = new System.Drawing.Point(284, 161);
+            this.checkBoxEnemyAttacksTriple.Location = new System.Drawing.Point(281, 161);
             this.checkBoxEnemyAttacksTriple.Name = "checkBoxEnemyAttacksTriple";
             this.checkBoxEnemyAttacksTriple.Size = new System.Drawing.Size(55, 19);
             this.checkBoxEnemyAttacksTriple.TabIndex = 121;
@@ -38189,7 +38191,7 @@
             this.checkBoxEnemyAttacksDouble.AutoSize = true;
             this.checkBoxEnemyAttacksDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksDouble.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksDouble.Location = new System.Drawing.Point(195, 161);
+            this.checkBoxEnemyAttacksDouble.Location = new System.Drawing.Point(192, 161);
             this.checkBoxEnemyAttacksDouble.Name = "checkBoxEnemyAttacksDouble";
             this.checkBoxEnemyAttacksDouble.Size = new System.Drawing.Size(64, 19);
             this.checkBoxEnemyAttacksDouble.TabIndex = 120;
@@ -38201,7 +38203,7 @@
             this.checkBoxEnemyAttacksEject.AutoSize = true;
             this.checkBoxEnemyAttacksEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksEject.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksEject.Location = new System.Drawing.Point(101, 161);
+            this.checkBoxEnemyAttacksEject.Location = new System.Drawing.Point(98, 161);
             this.checkBoxEnemyAttacksEject.Name = "checkBoxEnemyAttacksEject";
             this.checkBoxEnemyAttacksEject.Size = new System.Drawing.Size(51, 19);
             this.checkBoxEnemyAttacksEject.TabIndex = 119;
@@ -38213,7 +38215,7 @@
             this.checkBoxEnemyAttacksPoison.AutoSize = true;
             this.checkBoxEnemyAttacksPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksPoison.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksPoison.Location = new System.Drawing.Point(284, 236);
+            this.checkBoxEnemyAttacksPoison.Location = new System.Drawing.Point(281, 236);
             this.checkBoxEnemyAttacksPoison.Name = "checkBoxEnemyAttacksPoison";
             this.checkBoxEnemyAttacksPoison.Size = new System.Drawing.Size(62, 19);
             this.checkBoxEnemyAttacksPoison.TabIndex = 136;
@@ -38225,7 +38227,7 @@
             this.checkBoxEnemyAttacksDeath.AutoSize = true;
             this.checkBoxEnemyAttacksDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksDeath.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksDeath.Location = new System.Drawing.Point(195, 236);
+            this.checkBoxEnemyAttacksDeath.Location = new System.Drawing.Point(192, 236);
             this.checkBoxEnemyAttacksDeath.Name = "checkBoxEnemyAttacksDeath";
             this.checkBoxEnemyAttacksDeath.Size = new System.Drawing.Size(57, 19);
             this.checkBoxEnemyAttacksDeath.TabIndex = 135;
@@ -38237,7 +38239,7 @@
             this.checkBoxEnemyAttacksProtect.AutoSize = true;
             this.checkBoxEnemyAttacksProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksProtect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksProtect.Location = new System.Drawing.Point(9, 111);
+            this.checkBoxEnemyAttacksProtect.Location = new System.Drawing.Point(6, 111);
             this.checkBoxEnemyAttacksProtect.Name = "checkBoxEnemyAttacksProtect";
             this.checkBoxEnemyAttacksProtect.Size = new System.Drawing.Size(64, 19);
             this.checkBoxEnemyAttacksProtect.TabIndex = 108;
@@ -38249,7 +38251,7 @@
             this.checkBoxEnemyAttacksHaste.AutoSize = true;
             this.checkBoxEnemyAttacksHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksHaste.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksHaste.Location = new System.Drawing.Point(101, 86);
+            this.checkBoxEnemyAttacksHaste.Location = new System.Drawing.Point(98, 86);
             this.checkBoxEnemyAttacksHaste.Name = "checkBoxEnemyAttacksHaste";
             this.checkBoxEnemyAttacksHaste.Size = new System.Drawing.Size(56, 19);
             this.checkBoxEnemyAttacksHaste.TabIndex = 104;
@@ -38261,7 +38263,7 @@
             this.checkBoxEnemyAttacksRegen.AutoSize = true;
             this.checkBoxEnemyAttacksRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksRegen.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksRegen.Location = new System.Drawing.Point(372, 86);
+            this.checkBoxEnemyAttacksRegen.Location = new System.Drawing.Point(369, 86);
             this.checkBoxEnemyAttacksRegen.Name = "checkBoxEnemyAttacksRegen";
             this.checkBoxEnemyAttacksRegen.Size = new System.Drawing.Size(59, 19);
             this.checkBoxEnemyAttacksRegen.TabIndex = 107;
@@ -38273,7 +38275,7 @@
             this.checkBoxEnemyAttacksShell.AutoSize = true;
             this.checkBoxEnemyAttacksShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksShell.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksShell.Location = new System.Drawing.Point(101, 111);
+            this.checkBoxEnemyAttacksShell.Location = new System.Drawing.Point(98, 111);
             this.checkBoxEnemyAttacksShell.Name = "checkBoxEnemyAttacksShell";
             this.checkBoxEnemyAttacksShell.Size = new System.Drawing.Size(51, 19);
             this.checkBoxEnemyAttacksShell.TabIndex = 109;
@@ -38285,7 +38287,7 @@
             this.checkBoxEnemyAttacksReflect.AutoSize = true;
             this.checkBoxEnemyAttacksReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksReflect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksReflect.Location = new System.Drawing.Point(195, 111);
+            this.checkBoxEnemyAttacksReflect.Location = new System.Drawing.Point(192, 111);
             this.checkBoxEnemyAttacksReflect.Name = "checkBoxEnemyAttacksReflect";
             this.checkBoxEnemyAttacksReflect.Size = new System.Drawing.Size(62, 19);
             this.checkBoxEnemyAttacksReflect.TabIndex = 110;
@@ -38297,7 +38299,7 @@
             this.checkBoxEnemyAttacksUnk7.AutoSize = true;
             this.checkBoxEnemyAttacksUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksUnk7.Location = new System.Drawing.Point(372, 261);
+            this.checkBoxEnemyAttacksUnk7.Location = new System.Drawing.Point(369, 261);
             this.checkBoxEnemyAttacksUnk7.Name = "checkBoxEnemyAttacksUnk7";
             this.checkBoxEnemyAttacksUnk7.Size = new System.Drawing.Size(41, 19);
             this.checkBoxEnemyAttacksUnk7.TabIndex = 141;
@@ -38309,7 +38311,7 @@
             this.checkBoxEnemyAttacksZombie.AutoSize = true;
             this.checkBoxEnemyAttacksZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksZombie.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksZombie.Location = new System.Drawing.Point(284, 261);
+            this.checkBoxEnemyAttacksZombie.Location = new System.Drawing.Point(281, 261);
             this.checkBoxEnemyAttacksZombie.Name = "checkBoxEnemyAttacksZombie";
             this.checkBoxEnemyAttacksZombie.Size = new System.Drawing.Size(67, 19);
             this.checkBoxEnemyAttacksZombie.TabIndex = 142;
@@ -38319,7 +38321,7 @@
             // numericUpDownEnemyAttacksStatusAttack
             // 
             this.numericUpDownEnemyAttacksStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownEnemyAttacksStatusAttack.Location = new System.Drawing.Point(206, 46);
+            this.numericUpDownEnemyAttacksStatusAttack.Location = new System.Drawing.Point(194, 46);
             this.numericUpDownEnemyAttacksStatusAttack.Maximum = new decimal(new int[] {
             255,
             0,
@@ -38334,7 +38336,7 @@
             this.labelEnemyAttacksStatusAttack.AutoSize = true;
             this.labelEnemyAttacksStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelEnemyAttacksStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelEnemyAttacksStatusAttack.Location = new System.Drawing.Point(185, 26);
+            this.labelEnemyAttacksStatusAttack.Location = new System.Drawing.Point(173, 26);
             this.labelEnemyAttacksStatusAttack.Name = "labelEnemyAttacksStatusAttack";
             this.labelEnemyAttacksStatusAttack.Size = new System.Drawing.Size(89, 17);
             this.labelEnemyAttacksStatusAttack.TabIndex = 90;
@@ -38353,9 +38355,9 @@
             this.groupBox16.Controls.Add(this.labelEnemyAttacksMagicID);
             this.groupBox16.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
             this.groupBox16.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox16.Location = new System.Drawing.Point(162, 3);
+            this.groupBox16.Location = new System.Drawing.Point(186, 3);
             this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(458, 162);
+            this.groupBox16.Size = new System.Drawing.Size(434, 162);
             this.groupBox16.TabIndex = 9;
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "General";
@@ -38402,7 +38404,7 @@
             "Everyone\'s Grudge",
             "Excalipoor",
             "Terra Break/Great Attractor"});
-            this.comboBoxEnemyAttacksAttackType.Location = new System.Drawing.Point(25, 107);
+            this.comboBoxEnemyAttacksAttackType.Location = new System.Drawing.Point(13, 107);
             this.comboBoxEnemyAttacksAttackType.Name = "comboBoxEnemyAttacksAttackType";
             this.comboBoxEnemyAttacksAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxEnemyAttacksAttackType.TabIndex = 92;
@@ -38421,7 +38423,7 @@
             "Water",
             "Holy",
             "Non-Elemental"});
-            this.comboBoxEnemyAttacksElement.Location = new System.Drawing.Point(323, 49);
+            this.comboBoxEnemyAttacksElement.Location = new System.Drawing.Point(311, 49);
             this.comboBoxEnemyAttacksElement.Name = "comboBoxEnemyAttacksElement";
             this.comboBoxEnemyAttacksElement.Size = new System.Drawing.Size(110, 25);
             this.comboBoxEnemyAttacksElement.TabIndex = 6;
@@ -38429,7 +38431,7 @@
             // numericUpDownEnemyAttacksAttackPower
             // 
             this.numericUpDownEnemyAttacksAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownEnemyAttacksAttackPower.Location = new System.Drawing.Point(355, 107);
+            this.numericUpDownEnemyAttacksAttackPower.Location = new System.Drawing.Point(343, 107);
             this.numericUpDownEnemyAttacksAttackPower.Maximum = new decimal(new int[] {
             255,
             0,
@@ -38446,394 +38448,393 @@
             this.listBoxEnemyAttacks.HorizontalScrollbar = true;
             this.listBoxEnemyAttacks.ItemHeight = 17;
             this.listBoxEnemyAttacks.Items.AddRange(new object[] {
-            "000 Dummy?",
-            "001 ??",
-            "002 Physical attack",
-            "003 ??",
-            "004 ??",
-            "005 Blade Slice",
-            "006 Hind Kick",
-            "007 Blade Shot",
-            "008 Ray Bomb",
-            "009 Storm Breath",
-            "010 Dark Mist",
-            "011 Squeeze",
-            "012 Clash",
-            "013 Arm Crush",
-            "014 null",
-            "015 Tail Needle",
-            "016 Arm Slash",
-            "017 Bad Breath",
-            "018 null",
-            "019 Petrify Stare",
-            "020 Vampire",
-            "021 Poison Mist",
-            "022 Counter Slice",
-            "023 Counter Laser Eye",
-            "024 null",
-            "025 1000 Needles",
-            "026 Heartbreak",
-            "027 Upward Kick",
-            "028 Electric Discharge",
-            "029 Petrify Stare",
-            "030 null",
-            "031 Bite",
-            "032 Poison Gas",
-            "033 Poison Gas",
-            "034 Poison Gas",
-            "035 Acid",
-            "036 Melt-Eye",
-            "037 Breath",
-            "038 Ice Breath",
-            "039 Sand Storm",
-            "040 null",
-            "041 null",
-            "042 null",
-            "043 null",
-            "044 null",
-            "045 null",
-            "046 null",
-            "047 null",
-            "048 Draw",
-            "049 Earthquake",
-            "050 null",
-            "051 null",
-            "052 null",
-            "053 Morph",
-            "054 Arm Hug",
-            "055 Power Bomb",
-            "056 Dribble",
-            "057 Shoot",
-            "058 Ultrasonic Waves",
-            "059 null",
-            "060 BiteBite",
-            "061 Shotgun",
-            "062 Suicide",
-            "063 Ultrasonic Waves",
-            "064 Breath of Death",
-            "065 Disease Breath",
-            "066 Sticky Icky",
-            "067 Shoulder Charge",
-            "068 Gatling Gun",
-            "069 Cannon Blow",
-            "070 Wild Cannon Blow",
-            "071 Store",
-            "072 Degenerator",
-            "073 Telekinesis",
-            "074 null",
-            "075 null",
-            "076 Hypnotize",
-            "077 Gastric Juice",
-            "078 null",
-            "079 null",
-            "080 Sand Storm",
-            "081 null",
-            "082 null",
-            "083 null",
-            "084 Stare",
-            "085 Sigh",
-            "086 Curse",
-            "087 null",
-            "088 null",
-            "089 null",
-            "090 null",
-            "091 null",
-            "092 null",
-            "093 Grab Punch",
-            "094 Breath",
-            "095 Double Sword",
-            "096 Thrust",
-            "097 Iai Blow",
-            "098 Ultra Waves",
-            "099 null",
-            "100 Sticky Web",
-            "101 null",
-            "102 Breath",
-            "103 Tail Blade",
-            "104 null",
-            "105 null",
-            "106 Mega Spark",
-            "107 Onrush",
-            "108 null",
-            "109 null",
-            "110 Fart",
-            "111 Needle",
-            "112 Gastric Juice",
-            "113 Sleeping Gas",
-            "114 Breath",
-            "115 null",
-            "116 null",
-            "117 null",
-            "118 Beam Cannon",
-            "119 null",
-            "120 Magma Breath",
-            "121 Resonance",
-            "122 Blaster",
-            "123 Blaster",
-            "124 LV5 Death",
-            "125 Death Claw",
-            "126 Bear Hug",
-            "127 Gas",
-            "128 Explosion",
-            "129 Explosion",
-            "130 Explosion",
-            "131 \"Brrawghh!\"",
-            "132 null",
-            "133 Wind Blast",
-            "134 null",
-            "135 Scan",
-            "136 null",
-            "137 null",
-            "138 BGH251F2 Gatling Gun",
-            "139 Beam Cannon",
-            "140 BGH251F2 1st Turret Exploding",
-            "141 BGH251F2 2nd Turret Exploding",
-            "142 BGH251F2 3rd Turret Exploding",
-            "143 BGH251F2 4th Turret Exploding",
-            "144 BGH251F2 Death",
-            "145 null",
-            "146 Aqua Breath",
-            "147 BGH251F2 1st Turret Exploding",
-            "148 BGH251F2 2nd Turret Exploding",
-            "149 BGH251F2 3rd Turret Exploding",
-            "150 BGH251F2 4th Turret Exploding",
-            "151 Fake President Death",
-            "152 Evil-Eye",
-            "153 Counter Twist",
-            "154 Chaingun",
-            "155 Snipe Laser",
-            "156 null",
-            "157 Melting Bubble",
-            "158 Super Arm",
-            "159 Boomerang Sword",
-            "160 null",
-            "161 null",
-            "162 null",
-            "163 null",
-            "164 null",
-            "165 null",
-            "166 Grand Sword",
-            "167 null",
-            "168 Psycho Blast",
-            "169 Sticky Web",
-            "170 null",
-            "171 null",
-            "172 null",
-            "173 null",
-            "174 Sand Shake",
-            "175 Saliva",
-            "176 Beam Laser",
-            "177 Reflect Beam",
-            "178 null",
-            "179 null",
-            "180 Oil Shot",
-            "181 Oil Blast",
-            "182 Sonic Wave",
-            "183 Dissolving Acid",
-            "184 Bad Breath",
-            "185 Eerie Sound Wave",
-            "186 null",
-            "187 null",
-            "188 null",
-            "189 null",
-            "190 null",
-            "191 null",
-            "192 Ochu Dance",
-            "193 Earthquake",
-            "194 Drink Magic",
-            "195 null",
-            "196 null",
-            "197 null",
-            "198 null",
-            "199 Assault Horn",
-            "200 Ray Bomb",
-            "201 Micro Missiles",
-            "202 null",
-            "203 null",
-            "204 Astral Punch",
-            "205 null",
-            "206 null",
-            "207 null",
-            "208 null",
-            "209 null",
-            "210 Raijin Special",
-            "211 null",
-            "212 null",
-            "213 Mad Cow Special",
-            "214 Zan",
-            "215 Metsu",
-            "216 Sai",
-            "217 null",
-            "218 null",
-            "219 null",
-            "220 Mower",
-            "221 null",
-            "222 Chef\'s Knife",
-            "223 Everyone\'s Grudge",
-            "224 null",
-            "225 Tonberry King Death",
-            "226 Junk",
-            "227 It\'s sharp!",
-            "228 null",
-            "229 null",
-            "230 10.000 Needles",
-            "231 Ker Plunk",
-            "232 null",
-            "233 Storm Breath",
-            "234 Mega Flare",
-            "235 Barrier Change",
-            "236 null",
-            "237 null",
-            "238 null",
-            "239 null",
-            "240 null",
-            "241 null",
-            "242 Thunder Summon",
-            "243 Deadly Horn",
-            "244 null",
-            "245 null",
-            "246 null",
-            "247 null",
-            "248 null",
-            "249 null",
-            "250 null",
-            "251 null",
-            "252 null",
-            "253 null",
-            "254 null",
-            "255 null",
-            "256 null",
-            "257 Gravija",
-            "258 null",
-            "259 null",
-            "260 null",
-            "261 Magic Summon",
-            "262 Mighty Guard",
-            "263 Doom",
-            "264 null",
-            "265 null",
-            "266 null",
-            "267 null",
-            "268 null",
-            "269 null",
-            "270 null",
-            "271 Thunder",
-            "272 Thundara",
-            "273 Thundaga",
-            "274 Zantetsuken",
-            "275 null",
-            "276 White Wind",
-            "277 null",
-            "278 null",
-            "279 null",
-            "280 Charge",
-            "281 Homing Laser",
-            "282 Homing Laser",
-            "283 Twin Homing Laser",
-            "284 Corona",
-            "285 Megido Flame",
-            "286 null",
-            "287 NORG Pod Opening",
-            "288 null",
-            "289 null",
-            "290 null",
-            "291 null",
-            "292 Mega Pulse Cannon",
-            "293 Mini Pulse Cannon",
-            "294 null",
-            "295 Mighty Guard",
-            "296 null",
-            "297 null",
-            "298 null",
-            "299 null",
-            "300 null",
-            "301 null",
-            "302 null",
-            "303 null",
-            "304 null",
-            "305 Dark Flare",
-            "306 null",
-            "307 Soul Crush",
-            "308 Light Pillar",
-            "309 Gravija",
-            "310 Megido Flame",
-            "311 Terra Break",
-            "312 Ultima Weapon Death",
-            "313 null",
-            "314 Demon Slice",
-            "315 Bloodfest",
-            "316 Engery Bomber",
-            "317 Adel Death",
-            "318 Adel\'s Drain?",
-            "319 \"Sorceress\" Spawn",
-            "320 null",
-            "321 null",
-            "322 null",
-            "323 null",
-            "324 null",
-            "325 null",
-            "326 null",
-            "327 \"Sorceress\" Spawn",
-            "328 Final \"Sorceress\" Death",
-            "329 Zantetsuken",
-            "330 null",
-            "331 null",
-            "332 null",
-            "333 null",
-            "334 null",
-            "335 null",
-            "336 Absorbed into time...",
-            "337 Ultimecia Blow Away Magic",
-            "338 Maelstrom",
-            "339 Ultimecia First Death",
-            "340 null",
-            "341 null",
-            "342 null",
-            "343 null",
-            "344 null",
-            "345 null",
-            "346 null",
-            "347 null",
-            "348 null",
-            "349 null",
-            "350 Griever Summon",
-            "351 Griever Death",
-            "352 Ultimecia Junctioning to Griever",
-            "353 Griever Tail Falling Off",
-            "354 Griever + Ultimecia Death",
-            "355 Ultimecia Final Form Spawn",
-            "356 Ultimecia Final Form Death",
-            "357 Draw Apocalypse",
-            "358 Hell\'s Judgement",
-            "359 Drain",
-            "360 Great Attractor",
-            "361 null",
-            "362 Shockwave Pulsar",
-            "363 null",
-            "364 Esuna",
-            "365 Maelstrom",
-            "366 null",
-            "367 null",
-            "368 null",
-            "369 Vacuum Wave",
-            "370 null",
-            "371 null",
-            "372 null",
-            "373 Apocalypse",
-            "374 null",
-            "375 Gigantic Sword",
-            "376 null",
-            "377 null",
-            "378 Ultima",
-            "379 Holy",
-            "380 Quake",
-            "381 Tornado",
-            "382 A382",
-            "383 A383"});
+            "001 - ??",
+            "002 - Physical attack",
+            "003 - ??",
+            "004 - ??",
+            "005 - Blade Slice",
+            "006 - Hind Kick",
+            "007 - Blade Shot",
+            "008 - Ray Bomb",
+            "009 - Storm Breath",
+            "010 - Dark Mist",
+            "011 - Squeeze",
+            "012 - Clash",
+            "013 - Arm Crush",
+            "014 - null",
+            "015 - Tail Needle",
+            "016 - Arm Slash",
+            "017 - Bad Breath",
+            "018 - null",
+            "019 - Petrify Stare",
+            "020 - Vampire",
+            "021 - Poison Mist",
+            "022 - Counter Slice",
+            "023 - Counter Laser Eye",
+            "024 - null",
+            "025 - 1000 Needles",
+            "026 - Heartbreak",
+            "027 - Upward Kick",
+            "028 - Electric Discharge",
+            "029 - Petrify Stare",
+            "030 - null",
+            "031 - Bite",
+            "032 - Poison Gas",
+            "033 - Poison Gas",
+            "034 - Poison Gas",
+            "035 - Acid",
+            "036 - Melt-Eye",
+            "037 - Breath",
+            "038 - Ice Breath",
+            "039 - Sand Storm",
+            "040 - null",
+            "041 - null",
+            "042 - null",
+            "043 - null",
+            "044 - null",
+            "045 - null",
+            "046 - null",
+            "047 - null",
+            "048 - Draw",
+            "049 - Earthquake",
+            "050 - null",
+            "051 - null",
+            "052 - null",
+            "053 - Morph",
+            "054 - Arm Hug",
+            "055 - Power Bomb",
+            "056 - Dribble",
+            "057 - Shoot",
+            "058 - Ultrasonic Waves",
+            "059 - null",
+            "060 - BiteBite",
+            "061 - Shotgun",
+            "062 - Suicide",
+            "063 - Ultrasonic Waves",
+            "064 - Breath of Death",
+            "065 - Disease Breath",
+            "066 - Sticky Icky",
+            "067 - Shoulder Charge",
+            "068 - Gatling Gun",
+            "069 - Cannon Blow",
+            "070 - Wild Cannon Blow",
+            "071 - Store",
+            "072 - Degenerator",
+            "073 - Telekinesis",
+            "074 - null",
+            "075 - null",
+            "076 - Hypnotize",
+            "077 - Gastric Juice",
+            "078 - null",
+            "079 - null",
+            "080 - Sand Storm",
+            "081 - null",
+            "082 - null",
+            "083 - null",
+            "084 - Stare",
+            "085 - Sigh",
+            "086 - Curse",
+            "087 - null",
+            "088 - null",
+            "089 - null",
+            "090 - null",
+            "091 - null",
+            "092 - null",
+            "093 - Grab Punch",
+            "094 - Breath",
+            "095 - Double Sword",
+            "096 - Thrust",
+            "097 - Iai Blow",
+            "098 - Ultra Waves",
+            "099 - null",
+            "100 - Sticky Web",
+            "101 - null",
+            "102 - Breath",
+            "103 - Tail Blade",
+            "104 - null",
+            "105 - null",
+            "106 - Mega Spark",
+            "107 - Onrush",
+            "108 - null",
+            "109 - null",
+            "110 - Fart",
+            "111 - Needle",
+            "112 - Gastric Juice",
+            "113 - Sleeping Gas",
+            "114 - Breath",
+            "115 - null",
+            "116 - null",
+            "117 - null",
+            "118 - Beam Cannon",
+            "119 - null",
+            "120 - Magma Breath",
+            "121 - Resonance",
+            "122 - Blaster",
+            "123 - Blaster",
+            "124 - LV5 Death",
+            "125 - Death Claw",
+            "126 - Bear Hug",
+            "127 - Gas",
+            "128 - Explosion",
+            "129 - Explosion",
+            "130 - Explosion",
+            "131 - \"Brrawghh!\"",
+            "132 - null",
+            "133 - Wind Blast",
+            "134 - null",
+            "135 - Scan",
+            "136 - null",
+            "137 - null",
+            "138 - BGH251F2 Gatling Gun",
+            "139 - Beam Cannon",
+            "140 - BGH251F2 1st Turret Exploding",
+            "141 - BGH251F2 2nd Turret Exploding",
+            "142 - BGH251F2 3rd Turret Exploding",
+            "143 - BGH251F2 4th Turret Exploding",
+            "144 - BGH251F2 Death",
+            "145 - null",
+            "146 - Aqua Breath",
+            "147 - BGH251F2 1st Turret Exploding",
+            "148 - BGH251F2 2nd Turret Exploding",
+            "149 - BGH251F2 3rd Turret Exploding",
+            "150 - BGH251F2 4th Turret Exploding",
+            "151 - Fake President Death",
+            "152 - Evil-Eye",
+            "153 - Counter Twist",
+            "154 - Chaingun",
+            "155 - Snipe Laser",
+            "156 - null",
+            "157 - Melting Bubble",
+            "158 - Super Arm",
+            "159 - Boomerang Sword",
+            "160 - null",
+            "161 - null",
+            "162 - null",
+            "163 - null",
+            "164 - null",
+            "165 - null",
+            "166 - Grand Sword",
+            "167 - null",
+            "168 - Psycho Blast",
+            "169 - Sticky Web",
+            "170 - null",
+            "171 - null",
+            "172 - null",
+            "173 - null",
+            "174 - Sand Shake",
+            "175 - Saliva",
+            "176 - Beam Laser",
+            "177 - Reflect Beam",
+            "178 - null",
+            "179 - null",
+            "180 - Oil Shot",
+            "181 - Oil Blast",
+            "182 - Sonic Wave",
+            "183 - Dissolving Acid",
+            "184 - Bad Breath",
+            "185 - Eerie Sound Wave",
+            "186 - null",
+            "187 - null",
+            "188 - null",
+            "189 - null",
+            "190 - null",
+            "191 - null",
+            "192 - Ochu Dance",
+            "193 - Earthquake",
+            "194 - Drink Magic",
+            "195 - null",
+            "196 - null",
+            "197 - null",
+            "198 - null",
+            "199 - Assault Horn",
+            "200 - Ray Bomb",
+            "201 - Micro Missiles",
+            "202 - null",
+            "203 - null",
+            "204 - Astral Punch",
+            "205 - null",
+            "206 - null",
+            "207 - null",
+            "208 - null",
+            "209 - null",
+            "210 - Raijin Special",
+            "211 - null",
+            "212 - null",
+            "213 - Mad Cow Special",
+            "214 - Zan",
+            "215 - Metsu",
+            "216 - Sai",
+            "217 - null",
+            "218 - null",
+            "219 - null",
+            "220 - Mower",
+            "221 - null",
+            "222 - Chef\'s Knife",
+            "223 - Everyone\'s Grudge",
+            "224 - null",
+            "225 - Tonberry King Death",
+            "226 - Junk",
+            "227 - It\'s sharp!",
+            "228 - null",
+            "229 - null",
+            "230 - 10.000 Needles",
+            "231 - Ker Plunk",
+            "232 - null",
+            "233 - Storm Breath",
+            "234 - Mega Flare",
+            "235 - Barrier Change",
+            "236 - null",
+            "237 - null",
+            "238 - null",
+            "239 - null",
+            "240 - null",
+            "241 - null",
+            "242 - Thunder Summon",
+            "243 - Deadly Horn",
+            "244 - null",
+            "245 - null",
+            "246 - null",
+            "247 - null",
+            "248 - null",
+            "249 - null",
+            "250 - null",
+            "251 - null",
+            "252 - null",
+            "253 - null",
+            "254 - null",
+            "255 - null",
+            "256 - null",
+            "257 - Gravija",
+            "258 - null",
+            "259 - null",
+            "260 - null",
+            "261 - Magic Summon",
+            "262 - Mighty Guard",
+            "263 - Doom",
+            "264 - null",
+            "265 - null",
+            "266 - null",
+            "267 - null",
+            "268 - null",
+            "269 - null",
+            "270 - null",
+            "271 - Thunder",
+            "272 - Thundara",
+            "273 - Thundaga",
+            "274 - Zantetsuken",
+            "275 - null",
+            "276 - White Wind",
+            "277 - null",
+            "278 - null",
+            "279 - null",
+            "280 - Charge",
+            "281 - Homing Laser",
+            "282 - Homing Laser",
+            "283 - Twin Homing Laser",
+            "284 - Corona",
+            "285 - Megido Flame",
+            "286 - null",
+            "287 - NORG Pod Opening",
+            "288 - null",
+            "289 - null",
+            "290 - null",
+            "291 - null",
+            "292 - Mega Pulse Cannon",
+            "293 - Mini Pulse Cannon",
+            "294 - null",
+            "295 - Mighty Guard",
+            "296 - null",
+            "297 - null",
+            "298 - null",
+            "299 - null",
+            "300 - null",
+            "301 - null",
+            "302 - null",
+            "303 - null",
+            "304 - null",
+            "305 - Dark Flare",
+            "306 - null",
+            "307 - Soul Crush",
+            "308 - Light Pillar",
+            "309 - Gravija",
+            "310 - Megido Flame",
+            "311 - Terra Break",
+            "312 - Ultima Weapon Death",
+            "313 - null",
+            "314 - Demon Slice",
+            "315 - Bloodfest",
+            "316 - Engery Bomber",
+            "317 - Adel Death",
+            "318 - Adel\'s Drain?",
+            "319 - \"Sorceress\" Spawn",
+            "320 - null",
+            "321 - null",
+            "322 - null",
+            "323 - null",
+            "324 - null",
+            "325 - null",
+            "326 - null",
+            "327 - \"Sorceress\" Spawn",
+            "328 - Final \"Sorceress\" Death",
+            "329 - Zantetsuken",
+            "330 - null",
+            "331 - null",
+            "332 - null",
+            "333 - null",
+            "334 - null",
+            "335 - null",
+            "336 - Absorbed into time...",
+            "337 - Ultimecia Blow Away Magic",
+            "338 - Maelstrom",
+            "339 - Ultimecia First Death",
+            "340 - null",
+            "341 - null",
+            "342 - null",
+            "343 - null",
+            "344 - null",
+            "345 - null",
+            "346 - null",
+            "347 - null",
+            "348 - null",
+            "349 - null",
+            "350 - Griever Summon",
+            "351 - Griever Death",
+            "352 - Ultimecia Junctioning to Griever",
+            "353 - Griever Tail Falling Off",
+            "354 - Griever + Ultimecia Death",
+            "355 - Ultimecia Final Form Spawn",
+            "356 - Ultimecia Final Form Death",
+            "357 - Draw Apocalypse",
+            "358 - Hell\'s Judgement",
+            "359 - Drain",
+            "360 - Great Attractor",
+            "361 - null",
+            "362 - Shockwave Pulsar",
+            "363 - null",
+            "364 - Esuna",
+            "365 - Maelstrom",
+            "366 - null",
+            "367 - null",
+            "368 - null",
+            "369 - Vacuum Wave",
+            "370 - null",
+            "371 - null",
+            "372 - null",
+            "373 - Apocalypse",
+            "374 - null",
+            "375 - Gigantic Sword",
+            "376 - null",
+            "377 - null",
+            "378 - Ultima",
+            "379 - Holy",
+            "380 - Quake",
+            "381 - Tornado",
+            "382 - A382",
+            "383 - A383"});
             this.listBoxEnemyAttacks.Location = new System.Drawing.Point(0, 0);
             this.listBoxEnemyAttacks.Name = "listBoxEnemyAttacks";
             this.listBoxEnemyAttacks.ScrollAlwaysVisible = true;
-            this.listBoxEnemyAttacks.Size = new System.Drawing.Size(156, 769);
+            this.listBoxEnemyAttacks.Size = new System.Drawing.Size(180, 769);
             this.listBoxEnemyAttacks.TabIndex = 8;
             this.listBoxEnemyAttacks.SelectedIndexChanged += new System.EventHandler(this.listBoxEnemyAttacks_SelectedIndexChanged);
             // 
@@ -41038,7 +41039,6 @@
         private System.Windows.Forms.Label labelGFStatusAttackEnabler;
         private System.Windows.Forms.GroupBox groupBoxGFGeneral;
         private System.Windows.Forms.Label labelGFAttackType;
-        private System.Windows.Forms.ComboBox comboBoxGFAttackType;
         private System.Windows.Forms.ComboBox comboBoxGFElement;
         private System.Windows.Forms.Label labelGFElement;
         private System.Windows.Forms.NumericUpDown numericUpDownGFHP;
@@ -41095,7 +41095,6 @@
         private System.Windows.Forms.CheckBox checkBoxMagicFlag6;
         private System.Windows.Forms.Label labelMagicAttackType;
         private System.Windows.Forms.ComboBox comboBoxMagicElement;
-        private System.Windows.Forms.NumericUpDown numericUpDownMagicHitCount;
         private System.Windows.Forms.NumericUpDown numericUpDownMagicDrawResist;
         private System.Windows.Forms.ComboBox comboBoxMagicMagicID;
         private System.Windows.Forms.Label labelMagicElement;
@@ -42977,6 +42976,8 @@
         public System.Windows.Forms.NumericUpDown numericUpDownMagicSpellPower;
         public System.Windows.Forms.ListBox listBoxMagic;
         public System.Windows.Forms.ComboBox comboBoxMagicAttackType;
+        public System.Windows.Forms.NumericUpDown numericUpDownMagicHitCount;
+        public System.Windows.Forms.ComboBox comboBoxGFAttackType;
     }
 }
 

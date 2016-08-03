@@ -28,44 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel1 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel2 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel3 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel4 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel5 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel6 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel7 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel8 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel9 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel10 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel11 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(10D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint13 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint14 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint15 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint16 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint17 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint18 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint19 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint20 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint21 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint22 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(10D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel34 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel35 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel36 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel37 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel38 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel39 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel40 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel41 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel42 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel43 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel44 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint67 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint68 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint69 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint70 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint71 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint72 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint73 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint74 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint75 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint76 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint77 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(10D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint78 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint79 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint80 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint81 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint82 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint83 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint84 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint85 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint86 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint87 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint88 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(10D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GfDamage));
             this.checkBoxDefault = new System.Windows.Forms.CheckBox();
             this.numericUpDownSumMag = new System.Windows.Forms.NumericUpDown();
@@ -79,11 +79,15 @@
             this.labelElemDef = new System.Windows.Forms.Label();
             this.numericUpDownElemDef = new System.Windows.Forms.NumericUpDown();
             this.buttonInfo = new System.Windows.Forms.Button();
+            this.numericUpDownHP = new System.Windows.Forms.NumericUpDown();
+            this.labelHP = new System.Windows.Forms.Label();
+            this.labelAttackType = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSumMag)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBoost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSPR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartGfDamage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownElemDef)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHP)).BeginInit();
             this.SuspendLayout();
             // 
             // checkBoxDefault
@@ -93,7 +97,7 @@
             this.checkBoxDefault.Checked = true;
             this.checkBoxDefault.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxDefault.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.checkBoxDefault.Location = new System.Drawing.Point(597, 359);
+            this.checkBoxDefault.Location = new System.Drawing.Point(597, 384);
             this.checkBoxDefault.Name = "checkBoxDefault";
             this.checkBoxDefault.Size = new System.Drawing.Size(84, 34);
             this.checkBoxDefault.TabIndex = 4;
@@ -111,7 +115,7 @@
             0});
             this.numericUpDownSumMag.Name = "numericUpDownSumMag";
             this.numericUpDownSumMag.Size = new System.Drawing.Size(51, 25);
-            this.numericUpDownSumMag.TabIndex = 3;
+            this.numericUpDownSumMag.TabIndex = 2;
             // 
             // numericUpDownBoost
             // 
@@ -129,7 +133,7 @@
             0});
             this.numericUpDownBoost.Name = "numericUpDownBoost";
             this.numericUpDownBoost.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownBoost.TabIndex = 2;
+            this.numericUpDownBoost.TabIndex = 1;
             this.numericUpDownBoost.Value = new decimal(new int[] {
             100,
             0,
@@ -147,7 +151,7 @@
             0});
             this.numericUpDownSPR.Name = "numericUpDownSPR";
             this.numericUpDownSPR.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownSPR.TabIndex = 1;
+            this.numericUpDownSPR.TabIndex = 0;
             // 
             // labelSumMag
             // 
@@ -191,137 +195,137 @@
             this.buttonClose.Location = new System.Drawing.Point(611, 463);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
-            this.buttonClose.TabIndex = 17;
+            this.buttonClose.TabIndex = 5;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // chartGfDamage
             // 
-            customLabel1.FromPosition = -0.5D;
-            customLabel1.Text = "1";
-            customLabel1.ToPosition = 0.5D;
-            customLabel2.FromPosition = 0.5D;
-            customLabel2.Text = "10";
-            customLabel2.ToPosition = 1.5D;
-            customLabel3.FromPosition = 1.5D;
-            customLabel3.Text = "20";
-            customLabel3.ToPosition = 2.5D;
-            customLabel4.FromPosition = 2.5D;
-            customLabel4.Text = "30";
-            customLabel4.ToPosition = 3.5D;
-            customLabel5.FromPosition = 3.5D;
-            customLabel5.Text = "40";
-            customLabel5.ToPosition = 4.5D;
-            customLabel6.FromPosition = 4.5D;
-            customLabel6.Text = "50";
-            customLabel6.ToPosition = 5.5D;
-            customLabel7.FromPosition = 5.5D;
-            customLabel7.Text = "60";
-            customLabel7.ToPosition = 6.5D;
-            customLabel8.FromPosition = 6.5D;
-            customLabel8.Text = "70";
-            customLabel8.ToPosition = 7.5D;
-            customLabel9.FromPosition = 7.5D;
-            customLabel9.Text = "80";
-            customLabel9.ToPosition = 8.5D;
-            customLabel10.FromPosition = 8.5D;
-            customLabel10.Text = "90";
-            customLabel10.ToPosition = 9.5D;
-            customLabel11.FromPosition = 9.5D;
-            customLabel11.Text = "100";
-            customLabel11.ToPosition = 10.5D;
-            chartArea1.AxisX.CustomLabels.Add(customLabel1);
-            chartArea1.AxisX.CustomLabels.Add(customLabel2);
-            chartArea1.AxisX.CustomLabels.Add(customLabel3);
-            chartArea1.AxisX.CustomLabels.Add(customLabel4);
-            chartArea1.AxisX.CustomLabels.Add(customLabel5);
-            chartArea1.AxisX.CustomLabels.Add(customLabel6);
-            chartArea1.AxisX.CustomLabels.Add(customLabel7);
-            chartArea1.AxisX.CustomLabels.Add(customLabel8);
-            chartArea1.AxisX.CustomLabels.Add(customLabel9);
-            chartArea1.AxisX.CustomLabels.Add(customLabel10);
-            chartArea1.AxisX.CustomLabels.Add(customLabel11);
-            chartArea1.AxisX.IsLabelAutoFit = false;
-            chartArea1.AxisX.LabelAutoFitMinFontSize = 10;
-            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            chartArea1.AxisX.Title = "Level";
-            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-            chartArea1.AxisY.Title = "Damage";
-            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-            chartArea1.Name = "ChartAreaGfDamage";
-            this.chartGfDamage.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartGfDamage.Legends.Add(legend1);
+            customLabel34.FromPosition = -0.5D;
+            customLabel34.Text = "1";
+            customLabel34.ToPosition = 0.5D;
+            customLabel35.FromPosition = 0.5D;
+            customLabel35.Text = "10";
+            customLabel35.ToPosition = 1.5D;
+            customLabel36.FromPosition = 1.5D;
+            customLabel36.Text = "20";
+            customLabel36.ToPosition = 2.5D;
+            customLabel37.FromPosition = 2.5D;
+            customLabel37.Text = "30";
+            customLabel37.ToPosition = 3.5D;
+            customLabel38.FromPosition = 3.5D;
+            customLabel38.Text = "40";
+            customLabel38.ToPosition = 4.5D;
+            customLabel39.FromPosition = 4.5D;
+            customLabel39.Text = "50";
+            customLabel39.ToPosition = 5.5D;
+            customLabel40.FromPosition = 5.5D;
+            customLabel40.Text = "60";
+            customLabel40.ToPosition = 6.5D;
+            customLabel41.FromPosition = 6.5D;
+            customLabel41.Text = "70";
+            customLabel41.ToPosition = 7.5D;
+            customLabel42.FromPosition = 7.5D;
+            customLabel42.Text = "80";
+            customLabel42.ToPosition = 8.5D;
+            customLabel43.FromPosition = 8.5D;
+            customLabel43.Text = "90";
+            customLabel43.ToPosition = 9.5D;
+            customLabel44.FromPosition = 9.5D;
+            customLabel44.Text = "100";
+            customLabel44.ToPosition = 10.5D;
+            chartArea4.AxisX.CustomLabels.Add(customLabel34);
+            chartArea4.AxisX.CustomLabels.Add(customLabel35);
+            chartArea4.AxisX.CustomLabels.Add(customLabel36);
+            chartArea4.AxisX.CustomLabels.Add(customLabel37);
+            chartArea4.AxisX.CustomLabels.Add(customLabel38);
+            chartArea4.AxisX.CustomLabels.Add(customLabel39);
+            chartArea4.AxisX.CustomLabels.Add(customLabel40);
+            chartArea4.AxisX.CustomLabels.Add(customLabel41);
+            chartArea4.AxisX.CustomLabels.Add(customLabel42);
+            chartArea4.AxisX.CustomLabels.Add(customLabel43);
+            chartArea4.AxisX.CustomLabels.Add(customLabel44);
+            chartArea4.AxisX.IsLabelAutoFit = false;
+            chartArea4.AxisX.LabelAutoFitMinFontSize = 10;
+            chartArea4.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            chartArea4.AxisX.Title = "Level";
+            chartArea4.AxisX.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
+            chartArea4.AxisY.Title = "Damage";
+            chartArea4.AxisY.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
+            chartArea4.Name = "ChartAreaGfDamage";
+            this.chartGfDamage.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chartGfDamage.Legends.Add(legend4);
             this.chartGfDamage.Location = new System.Drawing.Point(0, 0);
             this.chartGfDamage.MaximumSize = new System.Drawing.Size(700, 500);
             this.chartGfDamage.MinimumSize = new System.Drawing.Size(700, 500);
             this.chartGfDamage.Name = "chartGfDamage";
-            series1.ChartArea = "ChartAreaGfDamage";
-            series1.Legend = "Legend1";
-            series1.Name = "Default";
-            dataPoint2.AxisLabel = "";
-            dataPoint2.IsValueShownAsLabel = false;
-            dataPoint2.MarkerSize = 5;
-            dataPoint3.AxisLabel = "";
-            dataPoint4.AxisLabel = "";
-            dataPoint5.AxisLabel = "";
-            dataPoint6.AxisLabel = "";
-            dataPoint7.AxisLabel = "";
-            dataPoint8.AxisLabel = "";
-            dataPoint9.AxisLabel = "";
-            dataPoint10.AxisLabel = "";
-            dataPoint11.AxisLabel = "";
-            dataPoint11.Label = "";
-            series1.Points.Add(dataPoint1);
-            series1.Points.Add(dataPoint2);
-            series1.Points.Add(dataPoint3);
-            series1.Points.Add(dataPoint4);
-            series1.Points.Add(dataPoint5);
-            series1.Points.Add(dataPoint6);
-            series1.Points.Add(dataPoint7);
-            series1.Points.Add(dataPoint8);
-            series1.Points.Add(dataPoint9);
-            series1.Points.Add(dataPoint10);
-            series1.Points.Add(dataPoint11);
-            series1.ToolTip = "#VALY";
-            series2.ChartArea = "ChartAreaGfDamage";
-            series2.Legend = "Legend1";
-            series2.Name = "Current";
-            dataPoint13.AxisLabel = "10";
-            dataPoint13.IsValueShownAsLabel = false;
-            dataPoint13.Label = "";
-            dataPoint14.AxisLabel = "20";
-            dataPoint15.AxisLabel = "30";
-            dataPoint16.AxisLabel = "40";
-            dataPoint17.AxisLabel = "50";
-            dataPoint18.AxisLabel = "60";
-            dataPoint19.AxisLabel = "70";
-            dataPoint20.AxisLabel = "80";
-            dataPoint21.AxisLabel = "90";
-            dataPoint22.AxisLabel = "100";
-            dataPoint22.IsValueShownAsLabel = false;
-            dataPoint22.Label = "";
-            series2.Points.Add(dataPoint12);
-            series2.Points.Add(dataPoint13);
-            series2.Points.Add(dataPoint14);
-            series2.Points.Add(dataPoint15);
-            series2.Points.Add(dataPoint16);
-            series2.Points.Add(dataPoint17);
-            series2.Points.Add(dataPoint18);
-            series2.Points.Add(dataPoint19);
-            series2.Points.Add(dataPoint20);
-            series2.Points.Add(dataPoint21);
-            series2.Points.Add(dataPoint22);
-            series2.ToolTip = "#VALY";
-            this.chartGfDamage.Series.Add(series1);
-            this.chartGfDamage.Series.Add(series2);
+            series7.ChartArea = "ChartAreaGfDamage";
+            series7.Legend = "Legend1";
+            series7.Name = "Default";
+            dataPoint68.AxisLabel = "";
+            dataPoint68.IsValueShownAsLabel = false;
+            dataPoint68.MarkerSize = 5;
+            dataPoint69.AxisLabel = "";
+            dataPoint70.AxisLabel = "";
+            dataPoint71.AxisLabel = "";
+            dataPoint72.AxisLabel = "";
+            dataPoint73.AxisLabel = "";
+            dataPoint74.AxisLabel = "";
+            dataPoint75.AxisLabel = "";
+            dataPoint76.AxisLabel = "";
+            dataPoint77.AxisLabel = "";
+            dataPoint77.Label = "";
+            series7.Points.Add(dataPoint67);
+            series7.Points.Add(dataPoint68);
+            series7.Points.Add(dataPoint69);
+            series7.Points.Add(dataPoint70);
+            series7.Points.Add(dataPoint71);
+            series7.Points.Add(dataPoint72);
+            series7.Points.Add(dataPoint73);
+            series7.Points.Add(dataPoint74);
+            series7.Points.Add(dataPoint75);
+            series7.Points.Add(dataPoint76);
+            series7.Points.Add(dataPoint77);
+            series7.ToolTip = "#VALY";
+            series8.ChartArea = "ChartAreaGfDamage";
+            series8.Legend = "Legend1";
+            series8.Name = "Current";
+            dataPoint79.AxisLabel = "10";
+            dataPoint79.IsValueShownAsLabel = false;
+            dataPoint79.Label = "";
+            dataPoint80.AxisLabel = "20";
+            dataPoint81.AxisLabel = "30";
+            dataPoint82.AxisLabel = "40";
+            dataPoint83.AxisLabel = "50";
+            dataPoint84.AxisLabel = "60";
+            dataPoint85.AxisLabel = "70";
+            dataPoint86.AxisLabel = "80";
+            dataPoint87.AxisLabel = "90";
+            dataPoint88.AxisLabel = "100";
+            dataPoint88.IsValueShownAsLabel = false;
+            dataPoint88.Label = "";
+            series8.Points.Add(dataPoint78);
+            series8.Points.Add(dataPoint79);
+            series8.Points.Add(dataPoint80);
+            series8.Points.Add(dataPoint81);
+            series8.Points.Add(dataPoint82);
+            series8.Points.Add(dataPoint83);
+            series8.Points.Add(dataPoint84);
+            series8.Points.Add(dataPoint85);
+            series8.Points.Add(dataPoint86);
+            series8.Points.Add(dataPoint87);
+            series8.Points.Add(dataPoint88);
+            series8.ToolTip = "#VALY";
+            this.chartGfDamage.Series.Add(series7);
+            this.chartGfDamage.Series.Add(series8);
             this.chartGfDamage.Size = new System.Drawing.Size(700, 500);
             this.chartGfDamage.TabIndex = 18;
-            title1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            title1.Name = "TitleGfDamage";
-            title1.Text = "GF DAMAGE CHART";
-            this.chartGfDamage.Titles.Add(title1);
+            title4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            title4.Name = "TitleGfDamage";
+            title4.Text = "GF DAMAGE CHART";
+            this.chartGfDamage.Titles.Add(title4);
             this.chartGfDamage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chartGfDamage_MouseDown);
             this.chartGfDamage.MouseMove += new System.Windows.Forms.MouseEventHandler(this.chartGfDamage_MouseMove);
             this.chartGfDamage.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chartGfDamage_MouseUp);
@@ -359,12 +363,55 @@
             // buttonInfo
             // 
             this.buttonInfo.Image = ((System.Drawing.Image)(resources.GetObject("buttonInfo.Image")));
-            this.buttonInfo.Location = new System.Drawing.Point(657, 12);
+            this.buttonInfo.Location = new System.Drawing.Point(670, 5);
             this.buttonInfo.Name = "buttonInfo";
-            this.buttonInfo.Size = new System.Drawing.Size(29, 24);
+            this.buttonInfo.Size = new System.Drawing.Size(25, 25);
             this.buttonInfo.TabIndex = 0;
+            this.buttonInfo.TabStop = false;
             this.buttonInfo.UseVisualStyleBackColor = true;
             this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
+            // 
+            // numericUpDownHP
+            // 
+            this.numericUpDownHP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownHP.Location = new System.Drawing.Point(592, 132);
+            this.numericUpDownHP.Maximum = new decimal(new int[] {
+            99999999,
+            0,
+            0,
+            0});
+            this.numericUpDownHP.Name = "numericUpDownHP";
+            this.numericUpDownHP.Size = new System.Drawing.Size(84, 25);
+            this.numericUpDownHP.TabIndex = 0;
+            this.numericUpDownHP.ThousandsSeparator = true;
+            this.numericUpDownHP.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            // 
+            // labelHP
+            // 
+            this.labelHP.AutoSize = true;
+            this.labelHP.BackColor = System.Drawing.Color.White;
+            this.labelHP.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.labelHP.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelHP.Location = new System.Drawing.Point(592, 114);
+            this.labelHP.Name = "labelHP";
+            this.labelHP.Size = new System.Drawing.Size(85, 15);
+            this.labelHP.TabIndex = 35;
+            this.labelHP.Text = "Target Max HP";
+            // 
+            // labelAttackType
+            // 
+            this.labelAttackType.AutoSize = true;
+            this.labelAttackType.BackColor = System.Drawing.Color.White;
+            this.labelAttackType.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelAttackType.Location = new System.Drawing.Point(12, 474);
+            this.labelAttackType.Name = "labelAttackType";
+            this.labelAttackType.Size = new System.Drawing.Size(72, 15);
+            this.labelAttackType.TabIndex = 36;
+            this.labelAttackType.Text = "Attack Type:";
             // 
             // GfDamage
             // 
@@ -373,6 +420,9 @@
             this.CancelButton = this.buttonClose;
             this.ClientSize = new System.Drawing.Size(698, 498);
             this.ControlBox = false;
+            this.Controls.Add(this.labelAttackType);
+            this.Controls.Add(this.numericUpDownHP);
+            this.Controls.Add(this.labelHP);
             this.Controls.Add(this.checkBoxDefault);
             this.Controls.Add(this.buttonInfo);
             this.Controls.Add(this.numericUpDownElemDef);
@@ -398,6 +448,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSPR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartGfDamage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownElemDef)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,5 +468,8 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartGfDamage;
         private System.Windows.Forms.Label labelElemDef;
         private System.Windows.Forms.NumericUpDown numericUpDownElemDef;
+        private System.Windows.Forms.NumericUpDown numericUpDownHP;
+        private System.Windows.Forms.Label labelHP;
+        private System.Windows.Forms.Label labelAttackType;
     }
 }

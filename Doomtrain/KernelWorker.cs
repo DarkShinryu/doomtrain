@@ -236,7 +236,7 @@ namespace Doomtrain
 
         public struct MagicData
         {
-            public string OffsetSpellName;
+            //public string OffsetSpellName;
             //public string OffsetSpellDescription;
             public UInt16 MagicID;
             public byte Unknown1;
@@ -3839,6 +3839,7 @@ namespace Doomtrain
         public static void ReadEnemyAttacks(int EnemyAttacksID_List, byte[] Kernel)
         {
             GetSelectedEnemyAttacksData = new EnemyAttacksData();
+            EnemyAttacksID_List++; //skip dummy entry
             int selectedEnemyAttacksOffset = EnemyAttacksDataOffset + (EnemyAttacksID_List * 20);
             OffsetToEnemyAttacksSelected = selectedEnemyAttacksOffset;
 
