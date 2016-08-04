@@ -474,47 +474,48 @@ namespace Doomtrain
             checkBoxEnemyAttacksFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(3, 0x40);
             checkBoxEnemyAttacksFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(3, 0x80);
             comboBoxEnemyAttacksElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(4, EnemyAttacks_GetElement(comboBoxEnemyAttacksElement.SelectedIndex));
-            numericUpDownEnemyAttacksStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(5, numericUpDownEnemyAttacksStatusAttack.Value);         
-            checkBoxEnemyAttacksSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x01, 1);
-            checkBoxEnemyAttacksHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x02, 1);
-            checkBoxEnemyAttacksSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x04, 1);
-            checkBoxEnemyAttacksStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x08, 1);
-            checkBoxEnemyAttacksRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x10, 1);
-            checkBoxEnemyAttacksProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x20, 1);
-            checkBoxEnemyAttacksShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x40, 1);
-            checkBoxEnemyAttacksReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x80, 1);
-            checkBoxEnemyAttacksAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x01, 2);
-            checkBoxEnemyAttacksCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x02, 2);
-            checkBoxEnemyAttacksDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x04, 2);
-            checkBoxEnemyAttacksInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x08, 2);
-            checkBoxEnemyAttacksPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x10, 2);
-            checkBoxEnemyAttacksFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x20, 2);
-            checkBoxEnemyAttacksConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x40, 2);
-            checkBoxEnemyAttacksDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x80, 2);
-            checkBoxEnemyAttacksEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x01, 3);
-            checkBoxEnemyAttacksDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x02, 3);
-            checkBoxEnemyAttacksTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x04, 3);
-            checkBoxEnemyAttacksDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x08, 3);
-            checkBoxEnemyAttacksUnk1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x10, 3);
-            checkBoxEnemyAttacksUnk2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x20, 3);
-            checkBoxEnemyAttacksCharged.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x40, 3);
-            checkBoxEnemyAttacksBackAttack.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x80, 3);
-            checkBoxEnemyAttacksVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x01, 4);
-            checkBoxEnemyAttacksAngelWing.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x02, 4);
-            checkBoxEnemyAttacksUnk3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x04, 4);
-            checkBoxEnemyAttacksUnk4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x08, 4);
-            checkBoxEnemyAttacksUnk5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x10, 4);
-            checkBoxEnemyAttacksUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x20, 4);
-            checkBoxEnemyAttacksHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x40, 4);
-            checkBoxEnemyAttacksSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x80, 4);
-            checkBoxEnemyAttacksDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x01, 0);
-            checkBoxEnemyAttacksPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x02, 0);
-            checkBoxEnemyAttacksPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x04, 0);
-            checkBoxEnemyAttacksDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x08, 0);
-            checkBoxEnemyAttacksSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x10, 0);
-            checkBoxEnemyAttacksBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x20, 0);
-            checkBoxEnemyAttacksZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x40, 0);
-            checkBoxEnemyAttacksUnk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, 0x80, 0);
+            numericUpDownEnemyAttacksStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(5, numericUpDownEnemyAttacksStatusAttack.Value);
+            numericUpDownEnemyAttacksAttackParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, numericUpDownEnemyAttacksStatusAttack.Value);
+            checkBoxEnemyAttacksSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x01, 1);
+            checkBoxEnemyAttacksHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x02, 1);
+            checkBoxEnemyAttacksSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x04, 1);
+            checkBoxEnemyAttacksStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x08, 1);
+            checkBoxEnemyAttacksRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x10, 1);
+            checkBoxEnemyAttacksProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x20, 1);
+            checkBoxEnemyAttacksShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x40, 1);
+            checkBoxEnemyAttacksReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x80, 1);
+            checkBoxEnemyAttacksAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x01, 2);
+            checkBoxEnemyAttacksCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x02, 2);
+            checkBoxEnemyAttacksDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x04, 2);
+            checkBoxEnemyAttacksInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x08, 2);
+            checkBoxEnemyAttacksPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x10, 2);
+            checkBoxEnemyAttacksFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x20, 2);
+            checkBoxEnemyAttacksConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x40, 2);
+            checkBoxEnemyAttacksDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x80, 2);
+            checkBoxEnemyAttacksEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x01, 3);
+            checkBoxEnemyAttacksDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x02, 3);
+            checkBoxEnemyAttacksTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x04, 3);
+            checkBoxEnemyAttacksDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x08, 3);
+            checkBoxEnemyAttacksUnk1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x10, 3);
+            checkBoxEnemyAttacksUnk2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x20, 3);
+            checkBoxEnemyAttacksCharged.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x40, 3);
+            checkBoxEnemyAttacksBackAttack.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x80, 3);
+            checkBoxEnemyAttacksVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x01, 4);
+            checkBoxEnemyAttacksAngelWing.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x02, 4);
+            checkBoxEnemyAttacksUnk3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x04, 4);
+            checkBoxEnemyAttacksUnk4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x08, 4);
+            checkBoxEnemyAttacksUnk5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x10, 4);
+            checkBoxEnemyAttacksUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x20, 4);
+            checkBoxEnemyAttacksHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x40, 4);
+            checkBoxEnemyAttacksSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x80, 4);
+            checkBoxEnemyAttacksDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x01, 0);
+            checkBoxEnemyAttacksPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x02, 0);
+            checkBoxEnemyAttacksPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x04, 0);
+            checkBoxEnemyAttacksDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x08, 0);
+            checkBoxEnemyAttacksSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x10, 0);
+            checkBoxEnemyAttacksBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x20, 0);
+            checkBoxEnemyAttacksZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x40, 0);
+            checkBoxEnemyAttacksUnk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x80, 0);
 
             #endregion
 
@@ -4063,6 +4064,7 @@ namespace Doomtrain
                 ToolTip(checkBoxEnemyAttacksFlag8,1, (KernelWorker.GetSelectedEnemyAttacksData.AttackFlags & 0x80) >= 1 ? true : false);
                 ToolTip(comboBoxEnemyAttacksElement,2, comboBoxEnemyAttacksElement.Items[EnemyAttacks_GetElement()]);
                 ToolTip(numericUpDownEnemyAttacksStatusAttack,0, KernelWorker.GetSelectedEnemyAttacksData.StatusAttack);
+                ToolTip(numericUpDownEnemyAttacksAttackParam, 0, KernelWorker.GetSelectedEnemyAttacksData.AttackParam);
                 EnemyAttacksStatusWorker(true);
             }
 
@@ -4087,6 +4089,7 @@ namespace Doomtrain
                 checkBoxEnemyAttacksFlag8.Checked = (KernelWorker.GetSelectedEnemyAttacksData.AttackFlags & 0x80) >= 1 ? true : false;
                 comboBoxEnemyAttacksElement.SelectedIndex = EnemyAttacks_GetElement();
                 numericUpDownEnemyAttacksStatusAttack.Value = KernelWorker.GetSelectedEnemyAttacksData.StatusAttack;
+                numericUpDownEnemyAttacksAttackParam.Value = KernelWorker.GetSelectedEnemyAttacksData.AttackParam;
                 EnemyAttacksStatusWorker(false);
             }
 

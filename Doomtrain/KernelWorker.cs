@@ -449,6 +449,7 @@ namespace Doomtrain
             public byte AttackFlags;
             public Element Element;
             public byte StatusAttack;
+            public byte AttackParam;
             public byte Status1;
             public byte Status2;
             public byte Status3;
@@ -1642,6 +1643,9 @@ namespace Doomtrain
                     Kernel[OffsetToEnemyAttacksSelected + 12] = Convert.ToByte(variable); //status attack
                     return;
                 case 6:
+                    Kernel[OffsetToEnemyAttacksSelected + 13] = Convert.ToByte(variable); //attack param
+                    return;
+                case 7:
                     EnemyAttacksStatusUpdator(arg0, variable); //Status
                     return;
 
@@ -3872,7 +3876,7 @@ namespace Doomtrain
                                                     : 0; //Error handler
             selectedEnemyAttacksOffset += 1;
             GetSelectedEnemyAttacksData.StatusAttack = Kernel[selectedEnemyAttacksOffset++];
-            selectedEnemyAttacksOffset += 1;
+            GetSelectedEnemyAttacksData.AttackParam = Kernel[selectedEnemyAttacksOffset++];
             GetSelectedEnemyAttacksData.Status1 = Kernel[selectedEnemyAttacksOffset++];
             selectedEnemyAttacksOffset += 1;
             GetSelectedEnemyAttacksData.Status2 = Kernel[selectedEnemyAttacksOffset++];

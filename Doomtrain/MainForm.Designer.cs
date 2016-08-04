@@ -2005,6 +2005,8 @@
             this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
+            this.labelEnemyAttacksAttackParam = new System.Windows.Forms.Label();
+            this.numericUpDownEnemyAttacksAttackParam = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -2506,6 +2508,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackParam)).BeginInit();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -4142,7 +4145,7 @@
             this.labelEnemyAttacksAttackType.AutoSize = true;
             this.labelEnemyAttacksAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelEnemyAttacksAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelEnemyAttacksAttackType.Location = new System.Drawing.Point(104, 87);
+            this.labelEnemyAttacksAttackType.Location = new System.Drawing.Point(176, 87);
             this.labelEnemyAttacksAttackType.Name = "labelEnemyAttacksAttackType";
             this.labelEnemyAttacksAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelEnemyAttacksAttackType.TabIndex = 93;
@@ -4520,7 +4523,7 @@
             this.labelEnemyAttacksAttackPower.AutoSize = true;
             this.labelEnemyAttacksAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelEnemyAttacksAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelEnemyAttacksAttackPower.Location = new System.Drawing.Point(322, 87);
+            this.labelEnemyAttacksAttackPower.Location = new System.Drawing.Point(94, 150);
             this.labelEnemyAttacksAttackPower.Name = "labelEnemyAttacksAttackPower";
             this.labelEnemyAttacksAttackPower.Size = new System.Drawing.Size(89, 17);
             this.labelEnemyAttacksAttackPower.TabIndex = 0;
@@ -37679,7 +37682,7 @@
             this.groupBox14.Controls.Add(this.checkBoxEnemyAttacksFlag7);
             this.groupBox14.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBox14.Location = new System.Drawing.Point(186, 463);
+            this.groupBox14.Location = new System.Drawing.Point(186, 509);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Size = new System.Drawing.Size(434, 91);
             this.groupBox14.TabIndex = 11;
@@ -37829,7 +37832,7 @@
             this.groupBox15.Controls.Add(this.labelEnemyAttacksStatusAttack);
             this.groupBox15.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox15.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBox15.Location = new System.Drawing.Point(186, 171);
+            this.groupBox15.Location = new System.Drawing.Point(186, 217);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Size = new System.Drawing.Size(434, 286);
             this.groupBox15.TabIndex = 10;
@@ -38349,7 +38352,9 @@
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksAttackType);
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksElement);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksElement);
+            this.groupBox16.Controls.Add(this.numericUpDownEnemyAttacksAttackParam);
             this.groupBox16.Controls.Add(this.numericUpDownEnemyAttacksAttackPower);
+            this.groupBox16.Controls.Add(this.labelEnemyAttacksAttackParam);
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksMagicID);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksAttackPower);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksMagicID);
@@ -38357,7 +38362,7 @@
             this.groupBox16.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBox16.Location = new System.Drawing.Point(186, 3);
             this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(434, 162);
+            this.groupBox16.Size = new System.Drawing.Size(434, 208);
             this.groupBox16.TabIndex = 9;
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "General";
@@ -38404,7 +38409,7 @@
             "Everyone\'s Grudge",
             "Excalipoor",
             "Terra Break/Great Attractor"});
-            this.comboBoxEnemyAttacksAttackType.Location = new System.Drawing.Point(13, 107);
+            this.comboBoxEnemyAttacksAttackType.Location = new System.Drawing.Point(85, 107);
             this.comboBoxEnemyAttacksAttackType.Name = "comboBoxEnemyAttacksAttackType";
             this.comboBoxEnemyAttacksAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxEnemyAttacksAttackType.TabIndex = 92;
@@ -38431,7 +38436,7 @@
             // numericUpDownEnemyAttacksAttackPower
             // 
             this.numericUpDownEnemyAttacksAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownEnemyAttacksAttackPower.Location = new System.Drawing.Point(343, 107);
+            this.numericUpDownEnemyAttacksAttackPower.Location = new System.Drawing.Point(115, 170);
             this.numericUpDownEnemyAttacksAttackPower.Maximum = new decimal(new int[] {
             255,
             0,
@@ -40385,6 +40390,30 @@
             this.panelMain.Size = new System.Drawing.Size(654, 811);
             this.panelMain.TabIndex = 2;
             // 
+            // labelEnemyAttacksAttackParam
+            // 
+            this.labelEnemyAttacksAttackParam.AutoSize = true;
+            this.labelEnemyAttacksAttackParam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelEnemyAttacksAttackParam.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelEnemyAttacksAttackParam.Location = new System.Drawing.Point(250, 150);
+            this.labelEnemyAttacksAttackParam.Name = "labelEnemyAttacksAttackParam";
+            this.labelEnemyAttacksAttackParam.Size = new System.Drawing.Size(90, 17);
+            this.labelEnemyAttacksAttackParam.TabIndex = 0;
+            this.labelEnemyAttacksAttackParam.Text = "Attack Param";
+            // 
+            // numericUpDownEnemyAttacksAttackParam
+            // 
+            this.numericUpDownEnemyAttacksAttackParam.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownEnemyAttacksAttackParam.Location = new System.Drawing.Point(271, 170);
+            this.numericUpDownEnemyAttacksAttackParam.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownEnemyAttacksAttackParam.Name = "numericUpDownEnemyAttacksAttackParam";
+            this.numericUpDownEnemyAttacksAttackParam.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownEnemyAttacksAttackParam.TabIndex = 5;
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -40997,6 +41026,7 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksAttackParam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -42978,6 +43008,8 @@
         public System.Windows.Forms.ComboBox comboBoxMagicAttackType;
         public System.Windows.Forms.NumericUpDown numericUpDownMagicHitCount;
         public System.Windows.Forms.ComboBox comboBoxGFAttackType;
+        private System.Windows.Forms.NumericUpDown numericUpDownEnemyAttacksAttackParam;
+        private System.Windows.Forms.Label labelEnemyAttacksAttackParam;
     }
 }
 
