@@ -201,6 +201,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="doomtrain.ico" />
+    <None Include="Resources\Magic_ID_List.txt" />
     <None Include="Resources\info.png" />
     <None Include="Resources\deletetooltip.png" />
     <None Include="Resources\labelDoomtrain.ttf" />

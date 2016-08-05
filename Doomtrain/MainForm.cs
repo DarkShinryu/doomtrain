@@ -29,6 +29,18 @@ namespace Doomtrain
         {
             InitializeComponent();
 
+            #region Load MagicID List
+
+
+            string[] magicIdList = File.ReadAllLines(@"Resources\Magic_ID_List.txt");
+            foreach (var line in magicIdList)
+            {
+                string[] tokens = line.Split('\n');
+                comboBoxMagicMagicID.Items.Add(tokens[0]);
+            }
+
+            #endregion
+
             DisableTabStop(this);
 
             _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips.bin";

@@ -121,6 +121,44 @@ namespace Doomtrain.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 000 - None
+        ///001 - Cure
+        ///002 - Fire
+        ///003 - Thunder
+        ///004 - Double
+        ///005 - Phoenix Down
+        ///006 - Leviathan Summon (Tsunami)
+        ///007 - Mega Phoenix
+        ///008 - Doom
+        ///009 - Doom Activation
+        ///010 - Ray-Bomb
+        ///011 - Storm Breath
+        ///012 - Blade Shot
+        ///013 - Dark Mist/Poison Mist
+        ///014 - Death/Death Stone
+        ///015 - Draw
+        ///016 - Recover
+        ///017 - Elvoret Entrance
+        ///018 - Elvoret Death
+        ///019 - Unknown
+        ///020 - NORG Pod Opening
+        ///021 - Triple
+        ///022 - Bio
+        ///023 - Psycho Blast
+        ///024 - Esuna
+        ///025 - Cura
+        ///026 - Clash
+        ///027 - Full-Life
+        ///028 - Curaga
+        ///029 - [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Magic_ID_List {
+            get {
+                return ResourceManager.GetString("Magic_ID_List", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] mainTabFont {
