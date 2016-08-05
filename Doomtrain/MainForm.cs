@@ -418,6 +418,8 @@ namespace Doomtrain
             numericUpDownWeaponsHITBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(3, numericUpDownWeaponsHITBonus.Value);
             numericUpDownWeaponsSTRBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(4, numericUpDownWeaponsSTRBonus.Value);
             numericUpDownWeaponsTier.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(5, numericUpDownWeaponsTier.Value);
+            numericUpDownWeaponsAttackParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(6, numericUpDownWeaponsAttackParam.Value);
+            numericUpDownWeaponsMelee.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(7, numericUpDownWeaponsMelee.Value);
 
             #endregion
 
@@ -475,7 +477,7 @@ namespace Doomtrain
             checkBoxEnemyAttacksFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(3, 0x80);
             comboBoxEnemyAttacksElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(4, EnemyAttacks_GetElement(comboBoxEnemyAttacksElement.SelectedIndex));
             numericUpDownEnemyAttacksStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(5, numericUpDownEnemyAttacksStatusAttack.Value);
-            numericUpDownEnemyAttacksAttackParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, numericUpDownEnemyAttacksStatusAttack.Value);
+            numericUpDownEnemyAttacksAttackParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(6, numericUpDownEnemyAttacksAttackParam.Value);
             checkBoxEnemyAttacksSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x01, 1);
             checkBoxEnemyAttacksHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x02, 1);
             checkBoxEnemyAttacksSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(7, 0x04, 1);
@@ -2033,6 +2035,20 @@ namespace Doomtrain
                 "Demi = TargetHP * Power / 16\n\n" +
                 "Curative Magic = (Power + HealerMag) * Power / 2", "Magic Damage Formula");
         }
+        private void buttonEnemyAttacksDamageFormula_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Basic Attack =\n" +
+                "a = AttackerStr^2 / 16 + AttackerStr\n" +
+                "b = a * (265 - TargetVit) / 256\n" +
+                "c = b * Power / 16\n\n" +
+                "Damage = c * ElemAtt * (800 - ElemDef) / 10000" + 
+                "Regular Magic Attack =\n" +
+                "a = AttackerMag + Power\n" +
+                "b = a * (265 - TargetSpr) / 4\n" +
+                "c = b * Power / 256\n" +
+                "Damage = c * (900 - ElemDef) / 100\n\n" +
+                "Fixed Damage = Power * 100 - AttackParam\n\n", "Enemy Attacks Damage Formulas");
+        }
 
         #endregion
 
@@ -2147,6 +2163,17 @@ namespace Doomtrain
             }
             _MagicDamage.Show();
             _MagicDamage.Focus();
+        }
+
+        private EnemyAttacksDamage _EnemyAttacksDamage;
+        private void buttonEnemyAttacksDamageChart_Click(object sender, EventArgs e)
+        {
+            if ((_EnemyAttacksDamage == null) || (_EnemyAttacksDamage.IsDisposed))
+            {
+                _EnemyAttacksDamage = new EnemyAttacksDamage(this);
+            }
+            _EnemyAttacksDamage.Show();
+            _EnemyAttacksDamage.Focus();
         }
 
         #endregion
@@ -3771,6 +3798,8 @@ namespace Doomtrain
                 toolTip1.SetToolTip(numericUpDownWeaponsHITBonus, $"Default: {KernelWorker.GetSelectedWeaponsData.HITBonus}");
                 toolTip1.SetToolTip(numericUpDownWeaponsSTRBonus, $"Default: {KernelWorker.GetSelectedWeaponsData.STRBonus}");
                 toolTip1.SetToolTip(numericUpDownWeaponsTier, $"Default: {KernelWorker.GetSelectedWeaponsData.Tier}");
+                toolTip1.SetToolTip(numericUpDownWeaponsAttackParam, $"Default: {KernelWorker.GetSelectedWeaponsData.AttackParam}");
+                toolTip1.SetToolTip(numericUpDownWeaponsMelee, $"Default: {KernelWorker.GetSelectedWeaponsData.Melee}");
             }
 
             catch (Exception Exception)
@@ -3788,6 +3817,8 @@ namespace Doomtrain
                 numericUpDownWeaponsHITBonus.Value = KernelWorker.GetSelectedWeaponsData.HITBonus;
                 numericUpDownWeaponsSTRBonus.Value = KernelWorker.GetSelectedWeaponsData.STRBonus;
                 numericUpDownWeaponsTier.Value = KernelWorker.GetSelectedWeaponsData.Tier;
+                numericUpDownWeaponsAttackParam.Value = KernelWorker.GetSelectedWeaponsData.AttackParam;
+                numericUpDownWeaponsMelee.Value = KernelWorker.GetSelectedWeaponsData.Melee;
             }
 
             catch (Exception Exception)
@@ -7327,7 +7358,7 @@ namespace Doomtrain
             }
             _loaded = true;
         }
-        
+
         #endregion
 
         #endregion

@@ -68,6 +68,12 @@
     <Compile Include="Charts\CharEXP.Designer.cs">
       <DependentUpon>CharEXP.cs</DependentUpon>
     </Compile>
+    <Compile Include="Charts\EnemyAttacksDamage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charts\EnemyAttacksDamage.Designer.cs">
+      <DependentUpon>EnemyAttacksDamage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Charts\GfDamage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Charts\CharEXP.resx">
       <DependentUpon>CharEXP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\EnemyAttacksDamage.resx">
+      <DependentUpon>EnemyAttacksDamage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Charts\GfDamage.resx">
       <DependentUpon>GfDamage.cs</DependentUpon>

@@ -399,6 +399,8 @@ namespace Doomtrain
             public byte HITBonus;
             public byte STRBonus;
             public byte Tier;
+            public byte AttackParam;
+            public byte Melee;
         }
 
         public struct CharactersData
@@ -1480,6 +1482,12 @@ namespace Doomtrain
                     return;
                 case 5:
                     Kernel[OffsetToWeaponsSelected + 9] = Convert.ToByte(variable); //weapon tier
+                    return;
+                case 6:
+                    Kernel[OffsetToWeaponsSelected + 10] = Convert.ToByte(variable); //attack param
+                    return;
+                case 7:
+                    Kernel[OffsetToWeaponsSelected + 11] = Convert.ToByte(variable); //melee weapon?
                     return;
 
                 default:
@@ -3787,6 +3795,8 @@ namespace Doomtrain
             GetSelectedWeaponsData.HITBonus = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.STRBonus = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.Tier = Kernel[selectedWeaponsOffset++];
+            GetSelectedWeaponsData.AttackParam = Kernel[selectedWeaponsOffset++];
+            GetSelectedWeaponsData.Melee = Kernel[selectedWeaponsOffset++];
         }
 
         #endregion

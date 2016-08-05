@@ -349,7 +349,7 @@ namespace Doomtrain.Charts
             {
                 MessageBox.Show(Exception.ToString());
             }
-        }
+            }
 
         private void CurrentChartWorker()
         {
