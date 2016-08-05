@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EnemyAttacksDamage));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel5 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel2 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.checkBoxDefault = new System.Windows.Forms.CheckBox();
             this.buttonInfo = new System.Windows.Forms.Button();
             this.numericUpDownElemDef = new System.Windows.Forms.NumericUpDown();
@@ -99,7 +99,7 @@
             // numericUpDownElemDef
             // 
             this.numericUpDownElemDef.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownElemDef.Location = new System.Drawing.Point(273, 239);
+            this.numericUpDownElemDef.Location = new System.Drawing.Point(273, 299);
             this.numericUpDownElemDef.Maximum = new decimal(new int[] {
             900,
             0,
@@ -120,7 +120,7 @@
             this.labelElemDef.BackColor = System.Drawing.Color.White;
             this.labelElemDef.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.labelElemDef.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelElemDef.Location = new System.Drawing.Point(257, 221);
+            this.labelElemDef.Location = new System.Drawing.Point(257, 281);
             this.labelElemDef.Name = "labelElemDef";
             this.labelElemDef.Size = new System.Drawing.Size(79, 15);
             this.labelElemDef.TabIndex = 41;
@@ -195,45 +195,45 @@
             // 
             // chartEADamage
             // 
-            customLabel5.FromPosition = -1D;
-            customLabel5.Text = "Basic Attack";
-            customLabel5.ToPosition = 3D;
-            chartArea5.AxisX.CustomLabels.Add(customLabel5);
-            chartArea5.AxisX.IsLabelAutoFit = false;
-            chartArea5.AxisX.LabelAutoFitMaxFontSize = 9;
-            chartArea5.AxisX.LabelAutoFitMinFontSize = 9;
-            chartArea5.AxisX.LabelStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea5.AxisX.Title = "Attack Type";
-            chartArea5.AxisX.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-            chartArea5.AxisY.Title = "Damage";
-            chartArea5.AxisY.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-            chartArea5.Name = "ChartAreaEADamage";
-            this.chartEADamage.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartEADamage.Legends.Add(legend5);
+            customLabel2.FromPosition = -1D;
+            customLabel2.Text = "Basic Attack";
+            customLabel2.ToPosition = 3D;
+            chartArea2.AxisX.CustomLabels.Add(customLabel2);
+            chartArea2.AxisX.IsLabelAutoFit = false;
+            chartArea2.AxisX.LabelAutoFitMaxFontSize = 9;
+            chartArea2.AxisX.LabelAutoFitMinFontSize = 9;
+            chartArea2.AxisX.LabelStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea2.AxisX.Title = "Attack Type";
+            chartArea2.AxisX.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
+            chartArea2.AxisY.Title = "Damage";
+            chartArea2.AxisY.TitleFont = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
+            chartArea2.Name = "ChartAreaEADamage";
+            this.chartEADamage.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartEADamage.Legends.Add(legend2);
             this.chartEADamage.Location = new System.Drawing.Point(0, 0);
             this.chartEADamage.MaximumSize = new System.Drawing.Size(350, 500);
             this.chartEADamage.MinimumSize = new System.Drawing.Size(350, 500);
             this.chartEADamage.Name = "chartEADamage";
-            series9.ChartArea = "ChartAreaEADamage";
-            series9.Legend = "Legend1";
-            series9.Name = "Default";
-            series9.Points.Add(dataPoint9);
-            series9.ToolTip = "#VALY";
-            series10.ChartArea = "ChartAreaEADamage";
-            series10.Legend = "Legend1";
-            series10.Name = "Current";
-            series10.Points.Add(dataPoint10);
-            series10.ToolTip = "#VALY";
-            this.chartEADamage.Series.Add(series9);
-            this.chartEADamage.Series.Add(series10);
+            series3.ChartArea = "ChartAreaEADamage";
+            series3.Legend = "Legend1";
+            series3.Name = "Default";
+            series3.Points.Add(dataPoint3);
+            series3.ToolTip = "#VALY";
+            series4.ChartArea = "ChartAreaEADamage";
+            series4.Legend = "Legend1";
+            series4.Name = "Current";
+            series4.Points.Add(dataPoint4);
+            series4.ToolTip = "#VALY";
+            this.chartEADamage.Series.Add(series3);
+            this.chartEADamage.Series.Add(series4);
             this.chartEADamage.Size = new System.Drawing.Size(350, 500);
             this.chartEADamage.TabIndex = 40;
             this.chartEADamage.TabStop = false;
-            title5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            title5.Name = "TitleEADamage";
-            title5.Text = "ENEMY A. DAMAGE CHART";
-            this.chartEADamage.Titles.Add(title5);
+            title2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            title2.Name = "TitleEADamage";
+            title2.Text = "ENEMY A. DAMAGE CHART";
+            this.chartEADamage.Titles.Add(title2);
             this.chartEADamage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chartEADamage_MouseDown);
             this.chartEADamage.MouseMove += new System.Windows.Forms.MouseEventHandler(this.chartEADamage_MouseMove);
             this.chartEADamage.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chartEADamage_MouseUp);
@@ -270,7 +270,7 @@
             this.labelVIT.BackColor = System.Drawing.Color.White;
             this.labelVIT.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.labelVIT.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelVIT.Location = new System.Drawing.Point(264, 271);
+            this.labelVIT.Location = new System.Drawing.Point(264, 167);
             this.labelVIT.Name = "labelVIT";
             this.labelVIT.Size = new System.Drawing.Size(62, 15);
             this.labelVIT.TabIndex = 43;
@@ -279,7 +279,7 @@
             // numericUpDownVIT
             // 
             this.numericUpDownVIT.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownVIT.Location = new System.Drawing.Point(273, 289);
+            this.numericUpDownVIT.Location = new System.Drawing.Point(273, 185);
             this.numericUpDownVIT.Maximum = new decimal(new int[] {
             255,
             0,
@@ -381,7 +381,7 @@
             this.labelElemAtt.BackColor = System.Drawing.Color.White;
             this.labelElemAtt.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.labelElemAtt.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelElemAtt.Location = new System.Drawing.Point(261, 167);
+            this.labelElemAtt.Location = new System.Drawing.Point(261, 224);
             this.labelElemAtt.Name = "labelElemAtt";
             this.labelElemAtt.Size = new System.Drawing.Size(70, 15);
             this.labelElemAtt.TabIndex = 41;
@@ -390,7 +390,7 @@
             // numericUpDownElemAtt
             // 
             this.numericUpDownElemAtt.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownElemAtt.Location = new System.Drawing.Point(273, 185);
+            this.numericUpDownElemAtt.Location = new System.Drawing.Point(273, 242);
             this.numericUpDownElemAtt.Maximum = new decimal(new int[] {
             255,
             0,

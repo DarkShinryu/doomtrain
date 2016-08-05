@@ -338,7 +338,7 @@ namespace Doomtrain.Charts
                         labelSPR.Visible = false;
                         labelElemDef.Visible = false;
                         labelHP.Visible = false;
-                        labelVIT.Visible = false;
+                        labelVIT.Visible = true;
                         labelSTR.Visible = true;
                         labelKilled.Visible = false;
                         labelElemAtt.Visible = true;
@@ -347,7 +347,7 @@ namespace Doomtrain.Charts
                         numericUpDownHealMAG.Visible = false;
                         numericUpDownElemDef.Visible = false;
                         numericUpDownHP.Visible = false;
-                        numericUpDownVIT.Visible = false;
+                        numericUpDownVIT.Visible = true;
                         numericUpDownSTR.Visible = true;
                         numericUpDownKilled.Visible = false;
                         numericUpDownElemAtt.Visible = true;

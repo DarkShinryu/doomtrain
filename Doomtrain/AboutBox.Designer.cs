@@ -58,6 +58,7 @@
             this.linkLabelWiki.TabIndex = 13;
             this.linkLabelWiki.TabStop = true;
             this.linkLabelWiki.Text = "Wiki";
+            this.linkLabelWiki.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelWiki_LinkClicked);
             // 
             // linkLabelGitHub
             // 
@@ -69,14 +70,15 @@
             this.linkLabelGitHub.TabIndex = 11;
             this.linkLabelGitHub.TabStop = true;
             this.linkLabelGitHub.Text = "GitHub Repository";
+            this.linkLabelGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelGitHub_LinkClicked);
             // 
             // buttonClose
             // 
             this.buttonClose.BackColor = System.Drawing.Color.Linen;
             this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(77)))), ((int)(((byte)(0)))));
-            this.buttonClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SandyBrown;
-            this.buttonClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
+            this.buttonClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PeachPuff;
+            this.buttonClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Bisque;
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.Location = new System.Drawing.Point(352, 192);
@@ -98,6 +100,7 @@
             this.linkLabelForum.TabIndex = 12;
             this.linkLabelForum.TabStop = true;
             this.linkLabelForum.Text = "Official Forum Thread";
+            this.linkLabelForum.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelForum_LinkClicked);
             // 
             // labelCredits
             // 

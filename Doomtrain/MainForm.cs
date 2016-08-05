@@ -31,26 +31,47 @@ namespace Doomtrain
 
             #region Load MagicID List
 
-            string[] magicIdList = Doomtrain.Properties.Resources.Magic_ID_List.Split('\n');
+            string[] magicIdList = Properties.Resources.Magic_ID_List.Split('\n');
             foreach (var line in magicIdList)
             {
+                comboBoxRenzoFinMagicID.Items.Add(line);
+                comboBoxBlueMagicMagicID.Items.Add(line);
+                comboBoxDuelMagicID.Items.Add(line);
+                comboBoxCombineMagicID.Items.Add(line);
+                comboBoxShotMagicID.Items.Add(line);
+                comboBoxTempCharLBMagicID.Items.Add(line);
+                comboBoxBattleItemsMagicID.Items.Add(line);
+                comboBoxAbComDataMagicID.Items.Add(line);
                 comboBoxMagicMagicID.Items.Add(line);
+                comboBoxGFMagicID.Items.Add(line);
+                comboBoxGFAttacksMagicID.Items.Add(line);
+                comboBoxEnemyAttacksMagicID.Items.Add(line);
             }
-            
+
             #endregion
 
-            DisableTabStop(this);
+            #region Load Attack Type List
 
-            _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips.bin";
-
-            if (File.Exists(_backup))
+            string[] attackTypeList = Properties.Resources.Attack_Type_List.Split('\n');
+            foreach (var line in attackTypeList)
             {
-                deleteTooltipsToolStripMenuItem.Enabled = true;
-                deleteTooltipsToolStripButton.Enabled = true;
+                comboBoxRenzoFinAttackType.Items.Add(line);
+                comboBoxBlueMagicAttackType.Items.Add(line);
+                comboBoxDuelAttackType.Items.Add(line);
+                comboBoxCombineAttackType.Items.Add(line);
+                comboBoxShotAttackType.Items.Add(line);
+                comboBoxTempCharLBAttackType.Items.Add(line);
+                comboBoxBattleItemsAttackType.Items.Add(line);
+                comboBoxAbComDataAttackType.Items.Add(line);
+                comboBoxMagicAttackType.Items.Add(line);
+                comboBoxGFAttackType.Items.Add(line);
+                comboBoxGFAttacksAttackType.Items.Add(line);
+                comboBoxEnemyAttacksAttackType.Items.Add(line);
             }
 
+            #endregion
 
-            #region DISABLING OBJECTS
+            #region Disable Objects
 
             //for disabling save and tooltips buttons when no file is open
             saveToolStripMenuItem.Enabled = false;
@@ -69,6 +90,7 @@ namespace Doomtrain
             buttonCharLUCKChart.Enabled = false;
             buttonGFDamageChart.Enabled = false;
             buttonMagicDamageChart.Enabled = false;
+            buttonEnemyAttacksDamageChart.Enabled = false;
             buttonCharEXPFormula.Enabled = false;
             buttonCharHPFormula.Enabled = false;
             buttonCharSTRFormula.Enabled = false;
@@ -79,6 +101,7 @@ namespace Doomtrain
             buttonCharLUCKFormula.Enabled = false;
             buttonGFDamageFormula.Enabled = false;
             buttonMagicDamageFormula.Enabled = false;
+            buttonEnemyAttacksDamageFormula.Enabled = false;
 
 
 
@@ -95,6 +118,16 @@ namespace Doomtrain
             FormClosing += new FormClosingEventHandler(MainForm_FormClosing);
 
             #endregion
+
+            DisableTabStop(this);
+
+            _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips.bin";
+            if (File.Exists(_backup))
+            {
+                deleteTooltipsToolStripMenuItem.Enabled = true;
+                deleteTooltipsToolStripButton.Enabled = true;
+            }
+
 
             #region EVENT HANDLERS
 
@@ -428,7 +461,7 @@ namespace Doomtrain
             numericUpDownWeaponsHITBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(3, numericUpDownWeaponsHITBonus.Value);
             numericUpDownWeaponsSTRBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(4, numericUpDownWeaponsSTRBonus.Value);
             numericUpDownWeaponsTier.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(5, numericUpDownWeaponsTier.Value);
-            numericUpDownWeaponsAttackParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(6, numericUpDownWeaponsAttackParam.Value);
+            numericUpDownWeaponsCrit.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(6, numericUpDownWeaponsCrit.Value);
             numericUpDownWeaponsMelee.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(7, numericUpDownWeaponsMelee.Value);
 
             #endregion
@@ -1661,83 +1694,94 @@ namespace Doomtrain
 
             if (openFileDialog.ShowDialog() != DialogResult.OK) return;
             {
-                using (var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
+                try
                 {
-                    using (var BR = new BinaryReader(fileStream))
+                    using (var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
                     {
-                        KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
+                        using (var BR = new BinaryReader(fileStream))
+                        {
+                            KernelWorker.ReadKernel(BR.ReadBytes((int)fileStream.Length));
+                        }
+                        CreateTooltipsFile();
+
+                        SlotArray();
+                        DuelParams();
+                        Misc();
                     }
-                    CreateTooltipsFile();
 
-                    SlotArray();
-                    DuelParams();
-                    Misc();
-    }
+                    _existingFilename = openFileDialog.FileName;
 
-                _existingFilename = openFileDialog.FileName;
+                    saveToolStripMenuItem.Enabled = true;
+                    saveAsToolStripMenuItem.Enabled = true;
+                    saveToolStripButton.Enabled = true;
+                    saveAsToolStripButton.Enabled = true;
+                    buttonCharEXPChart.Enabled = true;
+                    buttonCharHPChart.Enabled = true;
+                    buttonCharSTRChart.Enabled = true;
+                    buttonCharVITChart.Enabled = true;
+                    buttonCharMAGChart.Enabled = true;
+                    buttonCharSPRChart.Enabled = true;
+                    buttonCharSPDChart.Enabled = true;
+                    buttonCharLUCKChart.Enabled = true;
+                    buttonGFDamageChart.Enabled = true;
+                    buttonMagicDamageChart.Enabled = true;
+                    buttonEnemyAttacksDamageChart.Enabled = true;
+                    buttonCharEXPFormula.Enabled = true;
+                    buttonCharHPFormula.Enabled = true;
+                    buttonCharSTRFormula.Enabled = true;
+                    buttonCharVITFormula.Enabled = true;
+                    buttonCharMAGFormula.Enabled = true;
+                    buttonCharSPRFormula.Enabled = true;
+                    buttonCharSPDFormula.Enabled = true;
+                    buttonCharLUCKFormula.Enabled = true;
+                    buttonGFDamageFormula.Enabled = true;
+                    buttonMagicDamageFormula.Enabled = true;
+                    buttonEnemyAttacksDamageFormula.Enabled = true;
 
-                saveToolStripMenuItem.Enabled = true;
-                saveAsToolStripMenuItem.Enabled = true;
-                saveToolStripButton.Enabled = true;
-                saveAsToolStripButton.Enabled = true;
-                buttonCharEXPChart.Enabled = true;
-                buttonCharHPChart.Enabled = true;
-                buttonCharSTRChart.Enabled = true;
-                buttonCharVITChart.Enabled = true;
-                buttonCharMAGChart.Enabled = true;
-                buttonCharSPRChart.Enabled = true;
-                buttonCharSPDChart.Enabled = true;
-                buttonCharLUCKChart.Enabled = true;
-                buttonGFDamageChart.Enabled = true;
-                buttonMagicDamageChart.Enabled = true;
-                buttonCharEXPFormula.Enabled = true;
-                buttonCharHPFormula.Enabled = true;
-                buttonCharSTRFormula.Enabled = true;
-                buttonCharVITFormula.Enabled = true;
-                buttonCharMAGFormula.Enabled = true;
-                buttonCharSPRFormula.Enabled = true;
-                buttonCharSPDFormula.Enabled = true;
-                buttonCharLUCKFormula.Enabled = true;
-                buttonGFDamageFormula.Enabled = true;
-                buttonMagicDamageFormula.Enabled = true;
+                    listBoxCharacters.SelectedIndex = 0;
+                    listBoxRenzoFin.SelectedIndex = 0;
+                    listBoxBlueMagic.SelectedIndex = 0;
+                    listBoxDuel.SelectedIndex = 0;
+                    listBoxSlotsSets.SelectedIndex = 0;
+                    listBoxCombine.SelectedIndex = 0;
+                    listBoxBatComRinoa.SelectedIndex = 0;
+                    listBoxShot.SelectedIndex = 0;
+                    listBoxTempCharLB.SelectedIndex = 0;
+                    listBoxBattleItems.SelectedIndex = 0;
+                    listBoxWeapons.SelectedIndex = 0;
+                    listBoxAbChar.SelectedIndex = 0;
+                    listBoxAbStats.SelectedIndex = 0;
+                    listBoxAbJun.SelectedIndex = 0;
+                    listBoxAbCom.SelectedIndex = 0;
+                    listBoxAbComData.SelectedIndex = 0;
+                    listBoxAbGF.SelectedIndex = 0;
+                    listBoxAbParty.SelectedIndex = 0;
+                    listBoxAbMenu.SelectedIndex = 0;
+                    listBoxMagic.SelectedIndex = 0;
+                    listBoxGF.SelectedIndex = 0;
+                    listBoxGFAttacks.SelectedIndex = 0;
+                    listBoxDevour.SelectedIndex = 0;
+                    listBoxBatCom.SelectedIndex = 0;
+                    listBoxEnemyAttacks.SelectedIndex = 0;
 
-
-                listBoxCharacters.SelectedIndex = 0;
-                listBoxRenzoFin.SelectedIndex = 0;
-                listBoxBlueMagic.SelectedIndex = 0;
-                listBoxDuel.SelectedIndex = 0;
-                listBoxSlotsSets.SelectedIndex = 0;
-                listBoxCombine.SelectedIndex = 0;
-                listBoxBatComRinoa.SelectedIndex = 0;
-                listBoxShot.SelectedIndex = 0;
-                listBoxTempCharLB.SelectedIndex = 0;
-                listBoxBattleItems.SelectedIndex = 0;
-                listBoxWeapons.SelectedIndex = 0;
-                listBoxAbChar.SelectedIndex = 0;
-                listBoxAbStats.SelectedIndex = 0;
-                listBoxAbJun.SelectedIndex = 0;
-                listBoxAbCom.SelectedIndex = 0;
-                listBoxAbComData.SelectedIndex = 0;
-                listBoxAbGF.SelectedIndex = 0;
-                listBoxAbParty.SelectedIndex = 0;
-                listBoxAbMenu.SelectedIndex = 0;
-                listBoxMagic.SelectedIndex = 0;
-                listBoxGF.SelectedIndex = 0;
-                listBoxGFAttacks.SelectedIndex = 0;
-                listBoxDevour.SelectedIndex = 0;
-                listBoxBatCom.SelectedIndex = 0;
-                listBoxEnemyAttacks.SelectedIndex = 0;
-
-                toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
-                toolStripStatusLabelKernel.Text = Path.GetFileName(_existingFilename) + " loaded";
-                statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
-                toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
-                await Task.Delay(3000);
-                statusStrip1.BackColor = Color.Gray;
-                toolStripStatusLabelStatus.BackColor = Color.Gray;
-                toolStripStatusLabelStatus.Text = "Ready";
+                    toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
+                    toolStripStatusLabelKernel.Text = Path.GetFileName(_existingFilename) + " loaded";
+                    statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                    toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
+                    await Task.Delay(3000);
+                    statusStrip1.BackColor = Color.Gray;
+                    toolStripStatusLabelStatus.BackColor = Color.Gray;
+                    toolStripStatusLabelStatus.Text = "Ready";
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show
+                        (String.Format("I cannot open the file {0}, maybe it's locked by another software?", Path.GetFileName(openFileDialog.FileName)), "Error Opening File",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                }
             }
         }
+
 
         #endregion
 
@@ -1747,15 +1791,24 @@ namespace Doomtrain
         {
             if (!(string.IsNullOrEmpty(_existingFilename)) && KernelWorker.Kernel != null)
             {
-                File.WriteAllBytes(_existingFilename, KernelWorker.Kernel);
+                try
+                {
+                    File.WriteAllBytes(_existingFilename, KernelWorker.Kernel);
 
-                statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
-                toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
-                toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " saved successfully";
-                await Task.Delay(3000);
-                statusStrip1.BackColor = Color.Gray;
-                toolStripStatusLabelStatus.BackColor = Color.Gray;
-                toolStripStatusLabelStatus.Text = "Ready";
+                    statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                    toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
+                    toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " saved successfully";
+                    await Task.Delay(3000);
+                    statusStrip1.BackColor = Color.Gray;
+                    toolStripStatusLabelStatus.BackColor = Color.Gray;
+                    toolStripStatusLabelStatus.Text = "Ready";
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show
+                        (String.Format("I cannot save the file {0}, maybe it's locked by another software?", Path.GetFileName(_existingFilename)), "Error Saving File",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                }
             }
         }
 
@@ -1768,17 +1821,26 @@ namespace Doomtrain
 
             if (!(string.IsNullOrEmpty(_existingFilename)) && KernelWorker.Kernel != null)
             {
-                if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
+                try
                 {
-                    File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
+                    if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
+                    {
+                        File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
 
-                    toolStripStatusLabelStatus.Text = Path.GetFileName(saveAsDialog.FileName) + " saved successfully";
-                    statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
-                    toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
-                    await Task.Delay(3000);
-                    statusStrip1.BackColor = Color.Gray;
-                    toolStripStatusLabelStatus.BackColor = Color.Gray;
-                    toolStripStatusLabelStatus.Text = "Ready";
+                        toolStripStatusLabelStatus.Text = Path.GetFileName(saveAsDialog.FileName) + " saved successfully";
+                        statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                        toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
+                        await Task.Delay(3000);
+                        statusStrip1.BackColor = Color.Gray;
+                        toolStripStatusLabelStatus.BackColor = Color.Gray;
+                        toolStripStatusLabelStatus.Text = "Ready";
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show
+                        (String.Format("I cannot save the file {0}, maybe it's locked by another software?", Path.GetFileName(saveAsDialog.FileName)), "Error Saving File",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 }
             }
         }
@@ -2042,7 +2104,7 @@ namespace Doomtrain
                 "b = a * (265 - TargetSpr) / 4\n" +
                 "c = b * Power / 256\n" +
                 "Damage = c * (900 - ElemDef) / 100\n\n" +
-                "Demi = TargetHP * Power / 16\n\n" +
+                "Demi = TargetCurrentHP * Power / 16\n\n" +
                 "Curative Magic = (Power + HealerMag) * Power / 2", "Magic Damage Formula");
         }
         private void buttonEnemyAttacksDamageFormula_Click(object sender, EventArgs e)
@@ -2050,13 +2112,16 @@ namespace Doomtrain
             MessageBox.Show("Basic Attack =\n" +
                 "a = AttackerStr^2 / 16 + AttackerStr\n" +
                 "b = a * (265 - TargetVit) / 256\n" +
-                "c = b * Power / 16\n\n" +
-                "Damage = c * ElemAtt * (800 - ElemDef) / 10000" + 
+                "c = b * Power / 16\n" +
+                "Damage = c * ElemAtt * (900 - ElemDef) / 10000\n\n" + 
                 "Regular Magic Attack =\n" +
                 "a = AttackerMag + Power\n" +
                 "b = a * (265 - TargetSpr) / 4\n" +
                 "c = b * Power / 256\n" +
                 "Damage = c * (900 - ElemDef) / 100\n\n" +
+                "Demi = TargetCurrentHP * Power / 16\n\n" +
+                "Target Current HP -1 = TargetCurrentHP - 1\n\n" +
+                "% Damage = TargetCurrentHP * Power / 16\n\n" +
                 "Fixed Damage = Power * 100 - AttackParam\n\n", "Enemy Attacks Damage Formulas");
         }
 
@@ -3808,7 +3873,7 @@ namespace Doomtrain
                 toolTip1.SetToolTip(numericUpDownWeaponsHITBonus, $"Default: {KernelWorker.GetSelectedWeaponsData.HITBonus}");
                 toolTip1.SetToolTip(numericUpDownWeaponsSTRBonus, $"Default: {KernelWorker.GetSelectedWeaponsData.STRBonus}");
                 toolTip1.SetToolTip(numericUpDownWeaponsTier, $"Default: {KernelWorker.GetSelectedWeaponsData.Tier}");
-                toolTip1.SetToolTip(numericUpDownWeaponsAttackParam, $"Default: {KernelWorker.GetSelectedWeaponsData.AttackParam}");
+                toolTip1.SetToolTip(numericUpDownWeaponsCrit, $"Default: {KernelWorker.GetSelectedWeaponsData.CritBonus}");
                 toolTip1.SetToolTip(numericUpDownWeaponsMelee, $"Default: {KernelWorker.GetSelectedWeaponsData.Melee}");
             }
 
@@ -3827,7 +3892,7 @@ namespace Doomtrain
                 numericUpDownWeaponsHITBonus.Value = KernelWorker.GetSelectedWeaponsData.HITBonus;
                 numericUpDownWeaponsSTRBonus.Value = KernelWorker.GetSelectedWeaponsData.STRBonus;
                 numericUpDownWeaponsTier.Value = KernelWorker.GetSelectedWeaponsData.Tier;
-                numericUpDownWeaponsAttackParam.Value = KernelWorker.GetSelectedWeaponsData.AttackParam;
+                numericUpDownWeaponsCrit.Value = KernelWorker.GetSelectedWeaponsData.CritBonus;
                 numericUpDownWeaponsMelee.Value = KernelWorker.GetSelectedWeaponsData.Melee;
             }
 

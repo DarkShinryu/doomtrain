@@ -399,7 +399,7 @@ namespace Doomtrain
             public byte HITBonus;
             public byte STRBonus;
             public byte Tier;
-            public byte AttackParam;
+            public byte CritBonus;
             public byte Melee;
         }
 
@@ -3795,7 +3795,7 @@ namespace Doomtrain
             GetSelectedWeaponsData.HITBonus = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.STRBonus = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.Tier = Kernel[selectedWeaponsOffset++];
-            GetSelectedWeaponsData.AttackParam = Kernel[selectedWeaponsOffset++];
+            GetSelectedWeaponsData.CritBonus = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.Melee = Kernel[selectedWeaponsOffset++];
         }
 

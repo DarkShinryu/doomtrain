@@ -61,6 +61,51 @@ namespace Doomtrain.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to None
+        ///Basic Attack
+        ///Magic Attack
+        ///Curative Magic
+        ///Curative Item
+        ///Revive
+        ///Revive At Full HP
+        ///% Damage
+        ///Demi
+        ///Renzokuken Finisher
+        ///Squall Gunblade Attack
+        ///GF
+        ///Scan
+        ///LV Down
+        ///Summon Item?
+        ///GF (Ignore Target SPR)
+        ///LV Up
+        ///Card
+        ///Kamikaze
+        ///Devour
+        ///Diablos Gravity Attack
+        ///Unknown 1
+        ///Magic Attack (Ignore Target SPR)
+        ///Angelo Search
+        ///Moogle Dance
+        ///White Wind (Quistis)
+        ///LV? Attack
+        ///Fixed Damage
+        ///TargetHP - 1
+        ///Cactuar Summon
+        ///Unknown 2
+        ///Unknown 3
+        ///Give Percentage HP
+        ///Unknown 4
+        ///Everyone&apos;s Grudge
+        ///1 HP Damage
+        ///Terra Brea [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Attack_Type_List {
+            get {
+                return ResourceManager.GetString("Attack_Type_List", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap close {

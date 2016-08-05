@@ -1,0 +1,37 @@
+None
+Basic Attack
+Magic Attack
+Curative Magic
+Curative Item
+Revive
+Revive At Full HP
+% Damage
+Demi
+Renzokuken Finisher
+Squall Gunblade Attack
+GF
+Scan
+LV Down
+Summon Item?
+GF (Ignore Target SPR)
+LV Up
+Card
+Kamikaze
+Devour
+Diablos Gravity Attack
+Unknown 1
+Magic Attack (Ignore Target SPR)
+Angelo Search
+Moogle Dance
+White Wind (Quistis)
+LV? Attack
+Fixed Damage
+Target Current HP - 1
+Cactuar Summon
+Unknown 2
+Unknown 3
+Give Percentage HP
+Unknown 4
+Everyone's Grudge
+1 HP Damage
+Terra Break/Great Attractor

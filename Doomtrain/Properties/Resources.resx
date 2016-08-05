@@ -148,4 +148,7 @@
   <data name="Magic_ID_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Magic_ID_List.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
+  <data name="Attack_Type_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Attack_Type_List.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
 </root>
