@@ -31,14 +31,12 @@ namespace Doomtrain
 
             #region Load MagicID List
 
-
-            string[] magicIdList = File.ReadAllLines(@"Resources\Magic_ID_List.txt");
+            string[] magicIdList = Doomtrain.Properties.Resources.Magic_ID_List.Split('\n');
             foreach (var line in magicIdList)
             {
-                string[] tokens = line.Split('\n');
-                comboBoxMagicMagicID.Items.Add(tokens[0]);
+                comboBoxMagicMagicID.Items.Add(line);
             }
-
+            
             #endregion
 
             DisableTabStop(this);
