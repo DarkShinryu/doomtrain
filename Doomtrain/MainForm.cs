@@ -578,6 +578,7 @@ namespace Doomtrain
             checkBoxBlueMagicFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x80);
             comboBoxBlueMagicElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(3, BlueMagic_GetElement(comboBoxBlueMagicElement.SelectedIndex));
             numericUpDownBlueMagicStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(4, numericUpDownBlueMagicStatusAttack.Value);
+            numericUpDownBlueMagicCrit.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(5, numericUpDownBlueMagicCrit.Value);
 
             #endregion
 
@@ -624,7 +625,7 @@ namespace Doomtrain
             checkBoxBlueMagicCL1Zombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x40, 4);
             checkBoxBlueMagicCL1Unk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x80, 4);
             numericUpDownBlueMagicCL1AttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(1, numericUpDownBlueMagicCL1AttackPower.Value);
-            numericUpDownBlueMagicCL1DeathLevel.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(2, numericUpDownBlueMagicCL1DeathLevel.Value);
+            numericUpDownBlueMagicCL1AttackParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(2, numericUpDownBlueMagicCL1AttackParam.Value);
 
             checkBoxBlueMagicCL2Sleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x01, 5);
             checkBoxBlueMagicCL2Haste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x02, 5);
@@ -667,7 +668,7 @@ namespace Doomtrain
             checkBoxBlueMagicCL2Zombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x40, 9);
             checkBoxBlueMagicCL2Unk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x80, 9);
             numericUpDownBlueMagicCL2AttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(3, numericUpDownBlueMagicCL2AttackPower.Value);
-            numericUpDownBlueMagicCL2DeathLevel.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(4, numericUpDownBlueMagicCL2DeathLevel.Value);
+            numericUpDownBlueMagicCL2AttackParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(4, numericUpDownBlueMagicCL2AttackParam.Value);
 
             checkBoxBlueMagicCL3Sleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x01, 10);
             checkBoxBlueMagicCL3Haste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x02, 10);
@@ -710,7 +711,7 @@ namespace Doomtrain
             checkBoxBlueMagicCL3Zombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x40, 14);
             checkBoxBlueMagicCL3Unk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x80, 14);
             numericUpDownBlueMagicCL3AttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(5, numericUpDownBlueMagicCL3AttackPower.Value);
-            numericUpDownBlueMagicCL3DeathLevel.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(6, numericUpDownBlueMagicCL3DeathLevel.Value);
+            numericUpDownBlueMagicCL3AttackParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(6, numericUpDownBlueMagicCL3AttackParam.Value);
 
             checkBoxBlueMagicCL4Sleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x01, 15);
             checkBoxBlueMagicCL4Haste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x02, 15);
@@ -753,7 +754,7 @@ namespace Doomtrain
             checkBoxBlueMagicCL4Zombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x40, 19);
             checkBoxBlueMagicCL4Unk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(0, 0x80, 19);
             numericUpDownBlueMagicCL4AttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(7, numericUpDownBlueMagicCL4AttackPower.Value);
-            numericUpDownBlueMagicCL4DeathLevel.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(8, numericUpDownBlueMagicCL4DeathLevel.Value);
+            numericUpDownBlueMagicCL4AttackParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagicParam(8, numericUpDownBlueMagicCL4AttackParam.Value);
 
             #endregion
 
@@ -926,47 +927,48 @@ namespace Doomtrain
             comboBoxShotElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(6, Shot_GetElement(comboBoxShotElement.SelectedIndex));
             numericUpDownShotElementPerc.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(7, numericUpDownShotElementPerc.Value);
             numericUpDownShotStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(8, numericUpDownShotStatusAttack.Value);
-            checkBoxShotDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x01, 0);
-            checkBoxShotPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x02, 0);
-            checkBoxShotPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x04, 0);
-            checkBoxShotDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x08, 0);
-            checkBoxShotSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x10, 0);
-            checkBoxShotBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x20, 0);
-            checkBoxShotZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x40, 0);
-            checkBoxShotUnk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x80, 0);
-            comboBoxShotItem.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(8, comboBoxShotItem.SelectedIndex);
-            checkBoxShotSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x01, 1);
-            checkBoxShotHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x02, 1);
-            checkBoxShotSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x04, 1);
-            checkBoxShotStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x08, 1);
-            checkBoxShotRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x10, 1);
-            checkBoxShotProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x20, 1);
-            checkBoxShotShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x40, 1);
-            checkBoxShotReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x80, 1);
-            checkBoxShotAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x01, 2);
-            checkBoxShotCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x02, 2);
-            checkBoxShotDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x04, 2);
-            checkBoxShotInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x08, 2);
-            checkBoxShotPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x10, 2);
-            checkBoxShotFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x20, 2);
-            checkBoxShotConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x40, 2);
-            checkBoxShotDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x80, 2);
-            checkBoxShotEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x01, 3);
-            checkBoxShotDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x02, 3);
-            checkBoxShotTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x04, 3);
-            checkBoxShotDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x08, 3);
-            checkBoxShotUnk1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x10, 3);
-            checkBoxShotUnk2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x20, 3);
-            checkBoxShotCharged.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x40, 3);
-            checkBoxShotBackAttack.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x80, 3);
-            checkBoxShotVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x01, 4);
-            checkBoxShotAngelWing.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x02, 4);
-            checkBoxShotUnk3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x04, 4);
-            checkBoxShotUnk4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x08, 4);
-            checkBoxShotUnk5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x10, 4);
-            checkBoxShotUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x20, 4);
-            checkBoxShotHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x40, 4);
-            checkBoxShotSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, 0x80, 4);
+            comboBoxShotItem.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(9, comboBoxShotItem.SelectedIndex);
+            numericUpDownShotCrit.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(10, numericUpDownShotCrit.Value);
+            checkBoxShotDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x01, 0);
+            checkBoxShotPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x02, 0);
+            checkBoxShotPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x04, 0);
+            checkBoxShotDarkness.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x08, 0);
+            checkBoxShotSilence.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x10, 0);
+            checkBoxShotBerserk.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x20, 0);
+            checkBoxShotZombie.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x40, 0);
+            checkBoxShotUnk7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x80, 0);
+            checkBoxShotSleep.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x01, 1);
+            checkBoxShotHaste.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x02, 1);
+            checkBoxShotSlow.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x04, 1);
+            checkBoxShotStop.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x08, 1);
+            checkBoxShotRegen.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x10, 1);
+            checkBoxShotProtect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x20, 1);
+            checkBoxShotShell.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x40, 1);
+            checkBoxShotReflect.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x80, 1);
+            checkBoxShotAura.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x01, 2);
+            checkBoxShotCurse.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x02, 2);
+            checkBoxShotDoom.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x04, 2);
+            checkBoxShotInvincible.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x08, 2);
+            checkBoxShotPetrifying.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x10, 2);
+            checkBoxShotFloat.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x20, 2);
+            checkBoxShotConfusion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x40, 2);
+            checkBoxShotDrain.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x80, 2);
+            checkBoxShotEject.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x01, 3);
+            checkBoxShotDouble.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x02, 3);
+            checkBoxShotTriple.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x04, 3);
+            checkBoxShotDefend.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x08, 3);
+            checkBoxShotUnk1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x10, 3);
+            checkBoxShotUnk2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x20, 3);
+            checkBoxShotCharged.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x40, 3);
+            checkBoxShotBackAttack.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x80, 3);
+            checkBoxShotVit0.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x01, 4);
+            checkBoxShotAngelWing.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x02, 4);
+            checkBoxShotUnk3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x04, 4);
+            checkBoxShotUnk4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x08, 4);
+            checkBoxShotUnk5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x10, 4);
+            checkBoxShotUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x20, 4);
+            checkBoxShotHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x40, 4);
+            checkBoxShotSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(11, 0x80, 4);
 
             #endregion
 
@@ -1271,8 +1273,9 @@ namespace Doomtrain
             checkBoxBattleItemsUnk6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x20, 4);
             checkBoxBattleItemsHasMagic.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x40, 4);
             checkBoxBattleItemsSummonGF.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(6, 0x80, 4);
-            numericUpDownBattleItemsHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(7, numericUpDownBattleItemsHitCount.Value);
-            comboBoxBattleItemsElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(8, BattleItems_GetElement(comboBoxBattleItemsElement.SelectedIndex));
+            numericUpDownBattleItemsAttackParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(7, numericUpDownBattleItemsAttackParam.Value);
+            numericUpDownBattleItemsHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(8, numericUpDownBattleItemsHitCount.Value);
+            comboBoxBattleItemsElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(9, BattleItems_GetElement(comboBoxBattleItemsElement.SelectedIndex));
 
             #endregion
 
@@ -4646,21 +4649,22 @@ namespace Doomtrain
                 ToolTip(checkBoxBlueMagicFlag8,1, (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x80) >= 1 ? true : false);
                 ToolTip(comboBoxBlueMagicElement,2, comboBoxBlueMagicElement.Items[BlueMagic_GetElement()]);
                 ToolTip(numericUpDownBlueMagicStatusAttack,0, KernelWorker.GetSelectedBlueMagicData.StatusAttack);
+                ToolTip(numericUpDownBlueMagicCrit, 0, KernelWorker.GetSelectedBlueMagicData.CritBonus);
 
 
                 BlueMagicParamStatusWorker(true);
 
                 ToolTip(numericUpDownBlueMagicCL1AttackPower,0, KernelWorker.GetSelectedBlueMagicParamData.AttackPowerCL1);
-                ToolTip(numericUpDownBlueMagicCL1DeathLevel,0, KernelWorker.GetSelectedBlueMagicParamData.DeathLevelCL1);
+                ToolTip(numericUpDownBlueMagicCL1AttackParam,0, KernelWorker.GetSelectedBlueMagicParamData.AttackParamCL1);
 
                 ToolTip(numericUpDownBlueMagicCL2AttackPower,0, KernelWorker.GetSelectedBlueMagicParamData.AttackPowerCL2);
-                ToolTip(numericUpDownBlueMagicCL2DeathLevel,0, KernelWorker.GetSelectedBlueMagicParamData.DeathLevelCL2);
+                ToolTip(numericUpDownBlueMagicCL2AttackParam,0, KernelWorker.GetSelectedBlueMagicParamData.AttackParamCL2);
 
                 ToolTip(numericUpDownBlueMagicCL3AttackPower,0, KernelWorker.GetSelectedBlueMagicParamData.AttackPowerCL3);
-                ToolTip(numericUpDownBlueMagicCL3DeathLevel,0, KernelWorker.GetSelectedBlueMagicParamData.DeathLevelCL3);
+                ToolTip(numericUpDownBlueMagicCL3AttackParam,0, KernelWorker.GetSelectedBlueMagicParamData.AttackParamCL3);
 
                 ToolTip(numericUpDownBlueMagicCL4AttackPower,0, KernelWorker.GetSelectedBlueMagicParamData.AttackPowerCL4);
-                ToolTip(numericUpDownBlueMagicCL4DeathLevel,0, KernelWorker.GetSelectedBlueMagicParamData.DeathLevelCL4);
+                ToolTip(numericUpDownBlueMagicCL4AttackParam,0, KernelWorker.GetSelectedBlueMagicParamData.AttackParamCL4);
             }
 
             catch (Exception Exception)
@@ -4685,21 +4689,22 @@ namespace Doomtrain
                 checkBoxBlueMagicFlag8.Checked = (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x80) >= 1 ? true : false;
                 comboBoxBlueMagicElement.SelectedIndex = BlueMagic_GetElement();
                 numericUpDownBlueMagicStatusAttack.Value = KernelWorker.GetSelectedBlueMagicData.StatusAttack;
+                numericUpDownBlueMagicCrit.Value = KernelWorker.GetSelectedBlueMagicData.CritBonus;
 
 
                 BlueMagicParamStatusWorker(false);
 
                 numericUpDownBlueMagicCL1AttackPower.Value = KernelWorker.GetSelectedBlueMagicParamData.AttackPowerCL1;
-                numericUpDownBlueMagicCL1DeathLevel.Value = KernelWorker.GetSelectedBlueMagicParamData.DeathLevelCL1;
+                numericUpDownBlueMagicCL1AttackParam.Value = KernelWorker.GetSelectedBlueMagicParamData.AttackParamCL1;
 
                 numericUpDownBlueMagicCL2AttackPower.Value = KernelWorker.GetSelectedBlueMagicParamData.AttackPowerCL2;
-                numericUpDownBlueMagicCL2DeathLevel.Value = KernelWorker.GetSelectedBlueMagicParamData.DeathLevelCL2;
+                numericUpDownBlueMagicCL2AttackParam.Value = KernelWorker.GetSelectedBlueMagicParamData.AttackParamCL2;
 
                 numericUpDownBlueMagicCL3AttackPower.Value = KernelWorker.GetSelectedBlueMagicParamData.AttackPowerCL3;
-                numericUpDownBlueMagicCL3DeathLevel.Value = KernelWorker.GetSelectedBlueMagicParamData.DeathLevelCL3;
+                numericUpDownBlueMagicCL3AttackParam.Value = KernelWorker.GetSelectedBlueMagicParamData.AttackParamCL3;
 
                 numericUpDownBlueMagicCL4AttackPower.Value = KernelWorker.GetSelectedBlueMagicParamData.AttackPowerCL4;
-                numericUpDownBlueMagicCL4DeathLevel.Value = KernelWorker.GetSelectedBlueMagicParamData.DeathLevelCL4;
+                numericUpDownBlueMagicCL4AttackParam.Value = KernelWorker.GetSelectedBlueMagicParamData.AttackParamCL4;
             }
 
             catch (Exception Exception)
@@ -5311,7 +5316,7 @@ namespace Doomtrain
                 ToolTip(numericUpDownShotStatusAttack,0, KernelWorker.GetSelectedShotData.StatusAttack);
                 ShotStatusWorker();
                 ToolTip(comboBoxShotItem,2, comboBoxShotItem.Items[ KernelWorker.GetSelectedShotData.UsedItem]);
-
+                ToolTip(numericUpDownShotCrit, 0, KernelWorker.GetSelectedShotData.CritBonus);
             }
             catch (Exception Exception)
             {
@@ -5346,7 +5351,7 @@ namespace Doomtrain
                 numericUpDownShotStatusAttack.Value = KernelWorker.GetSelectedShotData.StatusAttack;
                 ShotStatusWorker();
                 comboBoxShotItem.SelectedIndex = KernelWorker.GetSelectedShotData.UsedItem;
-
+                numericUpDownShotCrit.Value = KernelWorker.GetSelectedShotData.CritBonus;
             }
             catch (Exception Exception)
             {
@@ -6205,6 +6210,7 @@ namespace Doomtrain
                 ToolTip(checkBoxBattleItemsFlag8,1, (KernelWorker.GetSelectedBattleItemsData.AttackFlags & 0x80) >= 1 ? true : false);
                 ToolTip(numericUpDownBattleItemsStatusAttack,0, KernelWorker.GetSelectedBattleItemsData.StatusAttack);
                 BattleItemsStatusWorker(true);
+                ToolTip(numericUpDownBattleItemsAttackParam, 0, KernelWorker.GetSelectedBattleItemsData.AttackParam);
                 ToolTip(numericUpDownBattleItemsHitCount,0, KernelWorker.GetSelectedBattleItemsData.HitCount);
                 ToolTip(comboBoxBattleItemsElement,2,comboBoxBattleItemsElement.Items[BattleItems_GetElement()]);
             }
@@ -6237,6 +6243,7 @@ namespace Doomtrain
                 checkBoxBattleItemsFlag8.Checked = (KernelWorker.GetSelectedBattleItemsData.AttackFlags & 0x80) >= 1 ? true : false;
                 numericUpDownBattleItemsStatusAttack.Value = KernelWorker.GetSelectedBattleItemsData.StatusAttack;
                 BattleItemsStatusWorker(false);
+                numericUpDownBattleItemsAttackParam.Value = KernelWorker.GetSelectedBattleItemsData.AttackParam;
                 numericUpDownBattleItemsHitCount.Value = KernelWorker.GetSelectedBattleItemsData.HitCount;
                 comboBoxBattleItemsElement.SelectedIndex = BattleItems_GetElement();
             }

@@ -130,13 +130,13 @@
             this.labelBlueMagicElement = new System.Windows.Forms.Label();
             this.labelBlueMagicMagicID = new System.Windows.Forms.Label();
             this.labelBlueMagicCL1AttackPower = new System.Windows.Forms.Label();
-            this.labelBlueMagicCL1DeathLevel = new System.Windows.Forms.Label();
+            this.labelBlueMagicCL1AttackParam = new System.Windows.Forms.Label();
             this.labelBlueMagicCL2AttackPower = new System.Windows.Forms.Label();
-            this.labelBlueMagicCL2DeathLevel = new System.Windows.Forms.Label();
+            this.labelBlueMagicCL2AttackParam = new System.Windows.Forms.Label();
             this.labelBlueMagicCL3AttackPower = new System.Windows.Forms.Label();
-            this.labelBlueMagicCL3DeathLevel = new System.Windows.Forms.Label();
+            this.labelBlueMagicCL3AttackParam = new System.Windows.Forms.Label();
             this.labelBlueMagicCL4AttackPower = new System.Windows.Forms.Label();
-            this.labelBlueMagicCL4DeathLevel = new System.Windows.Forms.Label();
+            this.labelBlueMagicCL4AttackParam = new System.Windows.Forms.Label();
             this.checkBoxDuelTarget4 = new System.Windows.Forms.CheckBox();
             this.checkBoxDuelFinisher = new System.Windows.Forms.CheckBox();
             this.labelDuelElement = new System.Windows.Forms.Label();
@@ -940,6 +940,8 @@
             this.checkBoxBlueMagicFlag2 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicFlag7 = new System.Windows.Forms.CheckBox();
             this.groupBoxBlueMagicGeneral = new System.Windows.Forms.GroupBox();
+            this.numericUpDownBlueMagicCrit = new System.Windows.Forms.NumericUpDown();
+            this.labelBlueMagicCrit = new System.Windows.Forms.Label();
             this.numericUpDownBlueMagicStatusAttack = new System.Windows.Forms.NumericUpDown();
             this.labelBlueMagicStatusAttack = new System.Windows.Forms.Label();
             this.comboBoxBlueMagicElement = new System.Windows.Forms.ComboBox();
@@ -987,7 +989,7 @@
             this.checkBoxBlueMagicCL1Reflect = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Unk7 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL1Zombie = new System.Windows.Forms.CheckBox();
-            this.numericUpDownBlueMagicCL1DeathLevel = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownBlueMagicCL1AttackParam = new System.Windows.Forms.NumericUpDown();
             this.labelBlueMagicCL1StatusAttack = new System.Windows.Forms.Label();
             this.numericUpDownBlueMagicCL1AttackPower = new System.Windows.Forms.NumericUpDown();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -1032,7 +1034,7 @@
             this.checkBoxBlueMagicCL2Reflect = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2Unk7 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL2Zombie = new System.Windows.Forms.CheckBox();
-            this.numericUpDownBlueMagicCL2DeathLevel = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownBlueMagicCL2AttackParam = new System.Windows.Forms.NumericUpDown();
             this.labelBlueMagicCL2StatusAttack = new System.Windows.Forms.Label();
             this.numericUpDownBlueMagicCL2AttackPower = new System.Windows.Forms.NumericUpDown();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -1077,7 +1079,7 @@
             this.checkBoxBlueMagicCL3Reflect = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL3Unk7 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL3Zombie = new System.Windows.Forms.CheckBox();
-            this.numericUpDownBlueMagicCL3DeathLevel = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownBlueMagicCL3AttackParam = new System.Windows.Forms.NumericUpDown();
             this.labelBlueMagicCL3StatusAttack = new System.Windows.Forms.Label();
             this.numericUpDownBlueMagicCL3AttackPower = new System.Windows.Forms.NumericUpDown();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -1122,7 +1124,7 @@
             this.checkBoxBlueMagicCL4Reflect = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL4Unk7 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicCL4Zombie = new System.Windows.Forms.CheckBox();
-            this.numericUpDownBlueMagicCL4DeathLevel = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownBlueMagicCL4AttackParam = new System.Windows.Forms.NumericUpDown();
             this.labelBlueMagicCL4StatusAttack = new System.Windows.Forms.Label();
             this.numericUpDownBlueMagicCL4AttackPower = new System.Windows.Forms.NumericUpDown();
             this.listBoxBlueMagic = new System.Windows.Forms.ListBox();
@@ -1606,6 +1608,8 @@
             this.checkBoxShotFlag2 = new System.Windows.Forms.CheckBox();
             this.checkBoxShotFlag7 = new System.Windows.Forms.CheckBox();
             this.groupBoxShotGeneral = new System.Windows.Forms.GroupBox();
+            this.numericUpDownShotCrit = new System.Windows.Forms.NumericUpDown();
+            this.labelShotCrit = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBoxShotElement = new System.Windows.Forms.ComboBox();
             this.comboBoxShotItem = new System.Windows.Forms.ComboBox();
@@ -2013,6 +2017,8 @@
             this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
+            this.labelBattleItemsAttackParam = new System.Windows.Forms.Label();
+            this.numericUpDownBattleItemsAttackParam = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -2212,22 +2218,23 @@
             this.tabPage2.SuspendLayout();
             this.groupBoxBlueMagicAttackFlags.SuspendLayout();
             this.groupBoxBlueMagicGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCrit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicStatusAttack)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBoxBlueMagicCS1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL1DeathLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL1AttackParam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL1AttackPower)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.groupBoxBlueMagicCS2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2DeathLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2AttackParam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2AttackPower)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.groupBoxBlueMagicCS3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL3DeathLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL3AttackParam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL3AttackPower)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL4DeathLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL4AttackParam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL4AttackPower)).BeginInit();
             this.tabPageLBZell.SuspendLayout();
             this.tabControlDuel.SuspendLayout();
@@ -2427,6 +2434,7 @@
             this.groupBoxShotTargetInfo.SuspendLayout();
             this.groupBoxShotAttackFlags.SuspendLayout();
             this.groupBoxShotGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotCrit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).BeginInit();
@@ -2517,6 +2525,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsAttackParam)).BeginInit();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -3579,7 +3588,7 @@
             this.labelBlueMagicAttackType.AutoSize = true;
             this.labelBlueMagicAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelBlueMagicAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicAttackType.Location = new System.Drawing.Point(114, 91);
+            this.labelBlueMagicAttackType.Location = new System.Drawing.Point(186, 91);
             this.labelBlueMagicAttackType.Name = "labelBlueMagicAttackType";
             this.labelBlueMagicAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelBlueMagicAttackType.TabIndex = 103;
@@ -3618,16 +3627,16 @@
             this.labelBlueMagicCL1AttackPower.TabIndex = 99;
             this.labelBlueMagicCL1AttackPower.Text = "Attack Power";
             // 
-            // labelBlueMagicCL1DeathLevel
+            // labelBlueMagicCL1AttackParam
             // 
-            this.labelBlueMagicCL1DeathLevel.AutoSize = true;
-            this.labelBlueMagicCL1DeathLevel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBlueMagicCL1DeathLevel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicCL1DeathLevel.Location = new System.Drawing.Point(252, 31);
-            this.labelBlueMagicCL1DeathLevel.Name = "labelBlueMagicCL1DeathLevel";
-            this.labelBlueMagicCL1DeathLevel.Size = new System.Drawing.Size(78, 17);
-            this.labelBlueMagicCL1DeathLevel.TabIndex = 98;
-            this.labelBlueMagicCL1DeathLevel.Text = "Death Level";
+            this.labelBlueMagicCL1AttackParam.AutoSize = true;
+            this.labelBlueMagicCL1AttackParam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicCL1AttackParam.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicCL1AttackParam.Location = new System.Drawing.Point(247, 31);
+            this.labelBlueMagicCL1AttackParam.Name = "labelBlueMagicCL1AttackParam";
+            this.labelBlueMagicCL1AttackParam.Size = new System.Drawing.Size(90, 17);
+            this.labelBlueMagicCL1AttackParam.TabIndex = 98;
+            this.labelBlueMagicCL1AttackParam.Text = "Attack Param";
             // 
             // labelBlueMagicCL2AttackPower
             // 
@@ -3640,16 +3649,16 @@
             this.labelBlueMagicCL2AttackPower.TabIndex = 99;
             this.labelBlueMagicCL2AttackPower.Text = "Attack Power";
             // 
-            // labelBlueMagicCL2DeathLevel
+            // labelBlueMagicCL2AttackParam
             // 
-            this.labelBlueMagicCL2DeathLevel.AutoSize = true;
-            this.labelBlueMagicCL2DeathLevel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBlueMagicCL2DeathLevel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicCL2DeathLevel.Location = new System.Drawing.Point(252, 31);
-            this.labelBlueMagicCL2DeathLevel.Name = "labelBlueMagicCL2DeathLevel";
-            this.labelBlueMagicCL2DeathLevel.Size = new System.Drawing.Size(78, 17);
-            this.labelBlueMagicCL2DeathLevel.TabIndex = 98;
-            this.labelBlueMagicCL2DeathLevel.Text = "Death Level";
+            this.labelBlueMagicCL2AttackParam.AutoSize = true;
+            this.labelBlueMagicCL2AttackParam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicCL2AttackParam.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicCL2AttackParam.Location = new System.Drawing.Point(247, 31);
+            this.labelBlueMagicCL2AttackParam.Name = "labelBlueMagicCL2AttackParam";
+            this.labelBlueMagicCL2AttackParam.Size = new System.Drawing.Size(90, 17);
+            this.labelBlueMagicCL2AttackParam.TabIndex = 98;
+            this.labelBlueMagicCL2AttackParam.Text = "Attack Param";
             // 
             // labelBlueMagicCL3AttackPower
             // 
@@ -3662,16 +3671,16 @@
             this.labelBlueMagicCL3AttackPower.TabIndex = 99;
             this.labelBlueMagicCL3AttackPower.Text = "Attack Power";
             // 
-            // labelBlueMagicCL3DeathLevel
+            // labelBlueMagicCL3AttackParam
             // 
-            this.labelBlueMagicCL3DeathLevel.AutoSize = true;
-            this.labelBlueMagicCL3DeathLevel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBlueMagicCL3DeathLevel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicCL3DeathLevel.Location = new System.Drawing.Point(252, 31);
-            this.labelBlueMagicCL3DeathLevel.Name = "labelBlueMagicCL3DeathLevel";
-            this.labelBlueMagicCL3DeathLevel.Size = new System.Drawing.Size(78, 17);
-            this.labelBlueMagicCL3DeathLevel.TabIndex = 98;
-            this.labelBlueMagicCL3DeathLevel.Text = "Death Level";
+            this.labelBlueMagicCL3AttackParam.AutoSize = true;
+            this.labelBlueMagicCL3AttackParam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicCL3AttackParam.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicCL3AttackParam.Location = new System.Drawing.Point(247, 31);
+            this.labelBlueMagicCL3AttackParam.Name = "labelBlueMagicCL3AttackParam";
+            this.labelBlueMagicCL3AttackParam.Size = new System.Drawing.Size(90, 17);
+            this.labelBlueMagicCL3AttackParam.TabIndex = 98;
+            this.labelBlueMagicCL3AttackParam.Text = "Attack Param";
             // 
             // labelBlueMagicCL4AttackPower
             // 
@@ -3684,16 +3693,16 @@
             this.labelBlueMagicCL4AttackPower.TabIndex = 99;
             this.labelBlueMagicCL4AttackPower.Text = "Attack Power";
             // 
-            // labelBlueMagicCL4DeathLevel
+            // labelBlueMagicCL4AttackParam
             // 
-            this.labelBlueMagicCL4DeathLevel.AutoSize = true;
-            this.labelBlueMagicCL4DeathLevel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBlueMagicCL4DeathLevel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicCL4DeathLevel.Location = new System.Drawing.Point(252, 31);
-            this.labelBlueMagicCL4DeathLevel.Name = "labelBlueMagicCL4DeathLevel";
-            this.labelBlueMagicCL4DeathLevel.Size = new System.Drawing.Size(78, 17);
-            this.labelBlueMagicCL4DeathLevel.TabIndex = 98;
-            this.labelBlueMagicCL4DeathLevel.Text = "Death Level";
+            this.labelBlueMagicCL4AttackParam.AutoSize = true;
+            this.labelBlueMagicCL4AttackParam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicCL4AttackParam.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicCL4AttackParam.Location = new System.Drawing.Point(247, 31);
+            this.labelBlueMagicCL4AttackParam.Name = "labelBlueMagicCL4AttackParam";
+            this.labelBlueMagicCL4AttackParam.Size = new System.Drawing.Size(90, 17);
+            this.labelBlueMagicCL4AttackParam.TabIndex = 98;
+            this.labelBlueMagicCL4AttackParam.Text = "Attack Param";
             // 
             // checkBoxDuelTarget4
             // 
@@ -3802,7 +3811,7 @@
             this.labelShotAttackType.AutoSize = true;
             this.labelShotAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotAttackType.Location = new System.Drawing.Point(122, 75);
+            this.labelShotAttackType.Location = new System.Drawing.Point(117, 75);
             this.labelShotAttackType.Name = "labelShotAttackType";
             this.labelShotAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelShotAttackType.TabIndex = 7;
@@ -3813,7 +3822,7 @@
             this.labelShotHitCount.AutoSize = true;
             this.labelShotHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotHitCount.Location = new System.Drawing.Point(357, 76);
+            this.labelShotHitCount.Location = new System.Drawing.Point(309, 75);
             this.labelShotHitCount.Name = "labelShotHitCount";
             this.labelShotHitCount.Size = new System.Drawing.Size(67, 17);
             this.labelShotHitCount.TabIndex = 0;
@@ -3947,7 +3956,7 @@
             this.labelBattleItemsHitCount.AutoSize = true;
             this.labelBattleItemsHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelBattleItemsHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBattleItemsHitCount.Location = new System.Drawing.Point(298, 140);
+            this.labelBattleItemsHitCount.Location = new System.Drawing.Point(198, 140);
             this.labelBattleItemsHitCount.Name = "labelBattleItemsHitCount";
             this.labelBattleItemsHitCount.Size = new System.Drawing.Size(67, 17);
             this.labelBattleItemsHitCount.TabIndex = 0;
@@ -3958,7 +3967,7 @@
             this.labelBattleItemsAttackPower.AutoSize = true;
             this.labelBattleItemsAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelBattleItemsAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBattleItemsAttackPower.Location = new System.Drawing.Point(91, 140);
+            this.labelBattleItemsAttackPower.Location = new System.Drawing.Point(61, 140);
             this.labelBattleItemsAttackPower.Name = "labelBattleItemsAttackPower";
             this.labelBattleItemsAttackPower.Size = new System.Drawing.Size(89, 17);
             this.labelBattleItemsAttackPower.TabIndex = 0;
@@ -19679,7 +19688,7 @@
             this.groupBoxBlueMagicAttackFlags.Controls.Add(this.checkBoxBlueMagicFlag7);
             this.groupBoxBlueMagicAttackFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxBlueMagicAttackFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxBlueMagicAttackFlags.Location = new System.Drawing.Point(6, 172);
+            this.groupBoxBlueMagicAttackFlags.Location = new System.Drawing.Point(3, 227);
             this.groupBoxBlueMagicAttackFlags.Name = "groupBoxBlueMagicAttackFlags";
             this.groupBoxBlueMagicAttackFlags.Size = new System.Drawing.Size(455, 96);
             this.groupBoxBlueMagicAttackFlags.TabIndex = 103;
@@ -19785,6 +19794,8 @@
             // groupBoxBlueMagicGeneral
             // 
             this.groupBoxBlueMagicGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxBlueMagicGeneral.Controls.Add(this.numericUpDownBlueMagicCrit);
+            this.groupBoxBlueMagicGeneral.Controls.Add(this.labelBlueMagicCrit);
             this.groupBoxBlueMagicGeneral.Controls.Add(this.numericUpDownBlueMagicStatusAttack);
             this.groupBoxBlueMagicGeneral.Controls.Add(this.labelBlueMagicStatusAttack);
             this.groupBoxBlueMagicGeneral.Controls.Add(this.labelBlueMagicAttackType);
@@ -19797,15 +19808,39 @@
             this.groupBoxBlueMagicGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxBlueMagicGeneral.Location = new System.Drawing.Point(6, 6);
             this.groupBoxBlueMagicGeneral.Name = "groupBoxBlueMagicGeneral";
-            this.groupBoxBlueMagicGeneral.Size = new System.Drawing.Size(455, 160);
+            this.groupBoxBlueMagicGeneral.Size = new System.Drawing.Size(455, 215);
             this.groupBoxBlueMagicGeneral.TabIndex = 101;
             this.groupBoxBlueMagicGeneral.TabStop = false;
             this.groupBoxBlueMagicGeneral.Text = "General";
             // 
+            // numericUpDownBlueMagicCrit
+            // 
+            this.numericUpDownBlueMagicCrit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBlueMagicCrit.Location = new System.Drawing.Point(269, 177);
+            this.numericUpDownBlueMagicCrit.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownBlueMagicCrit.Name = "numericUpDownBlueMagicCrit";
+            this.numericUpDownBlueMagicCrit.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBlueMagicCrit.TabIndex = 105;
+            // 
+            // labelBlueMagicCrit
+            // 
+            this.labelBlueMagicCrit.AutoSize = true;
+            this.labelBlueMagicCrit.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicCrit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicCrit.Location = new System.Drawing.Point(258, 157);
+            this.labelBlueMagicCrit.Name = "labelBlueMagicCrit";
+            this.labelBlueMagicCrit.Size = new System.Drawing.Size(71, 17);
+            this.labelBlueMagicCrit.TabIndex = 104;
+            this.labelBlueMagicCrit.Text = "Crit Bonus";
+            // 
             // numericUpDownBlueMagicStatusAttack
             // 
             this.numericUpDownBlueMagicStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBlueMagicStatusAttack.Location = new System.Drawing.Point(354, 111);
+            this.numericUpDownBlueMagicStatusAttack.Location = new System.Drawing.Point(147, 177);
             this.numericUpDownBlueMagicStatusAttack.Maximum = new decimal(new int[] {
             255,
             0,
@@ -19820,7 +19855,7 @@
             this.labelBlueMagicStatusAttack.AutoSize = true;
             this.labelBlueMagicStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelBlueMagicStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicStatusAttack.Location = new System.Drawing.Point(333, 91);
+            this.labelBlueMagicStatusAttack.Location = new System.Drawing.Point(126, 157);
             this.labelBlueMagicStatusAttack.Name = "labelBlueMagicStatusAttack";
             this.labelBlueMagicStatusAttack.Size = new System.Drawing.Size(89, 17);
             this.labelBlueMagicStatusAttack.TabIndex = 90;
@@ -19849,7 +19884,7 @@
             // 
             this.comboBoxBlueMagicAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxBlueMagicAttackType.FormattingEnabled = true;
-            this.comboBoxBlueMagicAttackType.Location = new System.Drawing.Point(23, 111);
+            this.comboBoxBlueMagicAttackType.Location = new System.Drawing.Point(95, 111);
             this.comboBoxBlueMagicAttackType.Name = "comboBoxBlueMagicAttackType";
             this.comboBoxBlueMagicAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxBlueMagicAttackType.TabIndex = 102;
@@ -19917,11 +19952,11 @@
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Reflect);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Unk7);
             this.groupBoxBlueMagicCS1.Controls.Add(this.checkBoxBlueMagicCL1Zombie);
-            this.groupBoxBlueMagicCS1.Controls.Add(this.numericUpDownBlueMagicCL1DeathLevel);
+            this.groupBoxBlueMagicCS1.Controls.Add(this.numericUpDownBlueMagicCL1AttackParam);
             this.groupBoxBlueMagicCS1.Controls.Add(this.labelBlueMagicCL1StatusAttack);
             this.groupBoxBlueMagicCS1.Controls.Add(this.labelBlueMagicCL1AttackPower);
             this.groupBoxBlueMagicCS1.Controls.Add(this.numericUpDownBlueMagicCL1AttackPower);
-            this.groupBoxBlueMagicCS1.Controls.Add(this.labelBlueMagicCL1DeathLevel);
+            this.groupBoxBlueMagicCS1.Controls.Add(this.labelBlueMagicCL1AttackParam);
             this.groupBoxBlueMagicCS1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxBlueMagicCS1.ForeColor = System.Drawing.Color.Blue;
             this.groupBoxBlueMagicCS1.Location = new System.Drawing.Point(6, 6);
@@ -20412,18 +20447,18 @@
             this.checkBoxBlueMagicCL1Zombie.Text = "Zombie";
             this.checkBoxBlueMagicCL1Zombie.UseVisualStyleBackColor = true;
             // 
-            // numericUpDownBlueMagicCL1DeathLevel
+            // numericUpDownBlueMagicCL1AttackParam
             // 
-            this.numericUpDownBlueMagicCL1DeathLevel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBlueMagicCL1DeathLevel.Location = new System.Drawing.Point(268, 51);
-            this.numericUpDownBlueMagicCL1DeathLevel.Maximum = new decimal(new int[] {
+            this.numericUpDownBlueMagicCL1AttackParam.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBlueMagicCL1AttackParam.Location = new System.Drawing.Point(268, 51);
+            this.numericUpDownBlueMagicCL1AttackParam.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownBlueMagicCL1DeathLevel.Name = "numericUpDownBlueMagicCL1DeathLevel";
-            this.numericUpDownBlueMagicCL1DeathLevel.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownBlueMagicCL1DeathLevel.TabIndex = 101;
+            this.numericUpDownBlueMagicCL1AttackParam.Name = "numericUpDownBlueMagicCL1AttackParam";
+            this.numericUpDownBlueMagicCL1AttackParam.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBlueMagicCL1AttackParam.TabIndex = 101;
             // 
             // labelBlueMagicCL1StatusAttack
             // 
@@ -20503,11 +20538,11 @@
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Reflect);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Unk7);
             this.groupBoxBlueMagicCS2.Controls.Add(this.checkBoxBlueMagicCL2Zombie);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.numericUpDownBlueMagicCL2DeathLevel);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.numericUpDownBlueMagicCL2AttackParam);
             this.groupBoxBlueMagicCS2.Controls.Add(this.labelBlueMagicCL2StatusAttack);
             this.groupBoxBlueMagicCS2.Controls.Add(this.labelBlueMagicCL2AttackPower);
             this.groupBoxBlueMagicCS2.Controls.Add(this.numericUpDownBlueMagicCL2AttackPower);
-            this.groupBoxBlueMagicCS2.Controls.Add(this.labelBlueMagicCL2DeathLevel);
+            this.groupBoxBlueMagicCS2.Controls.Add(this.labelBlueMagicCL2AttackParam);
             this.groupBoxBlueMagicCS2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxBlueMagicCS2.ForeColor = System.Drawing.Color.Green;
             this.groupBoxBlueMagicCS2.Location = new System.Drawing.Point(6, 6);
@@ -20998,18 +21033,18 @@
             this.checkBoxBlueMagicCL2Zombie.Text = "Zombie";
             this.checkBoxBlueMagicCL2Zombie.UseVisualStyleBackColor = true;
             // 
-            // numericUpDownBlueMagicCL2DeathLevel
+            // numericUpDownBlueMagicCL2AttackParam
             // 
-            this.numericUpDownBlueMagicCL2DeathLevel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBlueMagicCL2DeathLevel.Location = new System.Drawing.Point(268, 51);
-            this.numericUpDownBlueMagicCL2DeathLevel.Maximum = new decimal(new int[] {
+            this.numericUpDownBlueMagicCL2AttackParam.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBlueMagicCL2AttackParam.Location = new System.Drawing.Point(268, 51);
+            this.numericUpDownBlueMagicCL2AttackParam.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownBlueMagicCL2DeathLevel.Name = "numericUpDownBlueMagicCL2DeathLevel";
-            this.numericUpDownBlueMagicCL2DeathLevel.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownBlueMagicCL2DeathLevel.TabIndex = 101;
+            this.numericUpDownBlueMagicCL2AttackParam.Name = "numericUpDownBlueMagicCL2AttackParam";
+            this.numericUpDownBlueMagicCL2AttackParam.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBlueMagicCL2AttackParam.TabIndex = 101;
             // 
             // labelBlueMagicCL2StatusAttack
             // 
@@ -21089,11 +21124,11 @@
             this.groupBoxBlueMagicCS3.Controls.Add(this.checkBoxBlueMagicCL3Reflect);
             this.groupBoxBlueMagicCS3.Controls.Add(this.checkBoxBlueMagicCL3Unk7);
             this.groupBoxBlueMagicCS3.Controls.Add(this.checkBoxBlueMagicCL3Zombie);
-            this.groupBoxBlueMagicCS3.Controls.Add(this.numericUpDownBlueMagicCL3DeathLevel);
+            this.groupBoxBlueMagicCS3.Controls.Add(this.numericUpDownBlueMagicCL3AttackParam);
             this.groupBoxBlueMagicCS3.Controls.Add(this.labelBlueMagicCL3StatusAttack);
             this.groupBoxBlueMagicCS3.Controls.Add(this.labelBlueMagicCL3AttackPower);
             this.groupBoxBlueMagicCS3.Controls.Add(this.numericUpDownBlueMagicCL3AttackPower);
-            this.groupBoxBlueMagicCS3.Controls.Add(this.labelBlueMagicCL3DeathLevel);
+            this.groupBoxBlueMagicCS3.Controls.Add(this.labelBlueMagicCL3AttackParam);
             this.groupBoxBlueMagicCS3.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxBlueMagicCS3.ForeColor = System.Drawing.Color.DarkOrange;
             this.groupBoxBlueMagicCS3.Location = new System.Drawing.Point(6, 6);
@@ -21584,18 +21619,18 @@
             this.checkBoxBlueMagicCL3Zombie.Text = "Zombie";
             this.checkBoxBlueMagicCL3Zombie.UseVisualStyleBackColor = true;
             // 
-            // numericUpDownBlueMagicCL3DeathLevel
+            // numericUpDownBlueMagicCL3AttackParam
             // 
-            this.numericUpDownBlueMagicCL3DeathLevel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBlueMagicCL3DeathLevel.Location = new System.Drawing.Point(268, 51);
-            this.numericUpDownBlueMagicCL3DeathLevel.Maximum = new decimal(new int[] {
+            this.numericUpDownBlueMagicCL3AttackParam.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBlueMagicCL3AttackParam.Location = new System.Drawing.Point(268, 51);
+            this.numericUpDownBlueMagicCL3AttackParam.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownBlueMagicCL3DeathLevel.Name = "numericUpDownBlueMagicCL3DeathLevel";
-            this.numericUpDownBlueMagicCL3DeathLevel.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownBlueMagicCL3DeathLevel.TabIndex = 101;
+            this.numericUpDownBlueMagicCL3AttackParam.Name = "numericUpDownBlueMagicCL3AttackParam";
+            this.numericUpDownBlueMagicCL3AttackParam.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBlueMagicCL3AttackParam.TabIndex = 101;
             // 
             // labelBlueMagicCL3StatusAttack
             // 
@@ -21675,11 +21710,11 @@
             this.groupBox13.Controls.Add(this.checkBoxBlueMagicCL4Reflect);
             this.groupBox13.Controls.Add(this.checkBoxBlueMagicCL4Unk7);
             this.groupBox13.Controls.Add(this.checkBoxBlueMagicCL4Zombie);
-            this.groupBox13.Controls.Add(this.numericUpDownBlueMagicCL4DeathLevel);
+            this.groupBox13.Controls.Add(this.numericUpDownBlueMagicCL4AttackParam);
             this.groupBox13.Controls.Add(this.labelBlueMagicCL4StatusAttack);
             this.groupBox13.Controls.Add(this.labelBlueMagicCL4AttackPower);
             this.groupBox13.Controls.Add(this.numericUpDownBlueMagicCL4AttackPower);
-            this.groupBox13.Controls.Add(this.labelBlueMagicCL4DeathLevel);
+            this.groupBox13.Controls.Add(this.labelBlueMagicCL4AttackParam);
             this.groupBox13.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox13.ForeColor = System.Drawing.Color.Red;
             this.groupBox13.Location = new System.Drawing.Point(6, 6);
@@ -22170,18 +22205,18 @@
             this.checkBoxBlueMagicCL4Zombie.Text = "Zombie";
             this.checkBoxBlueMagicCL4Zombie.UseVisualStyleBackColor = true;
             // 
-            // numericUpDownBlueMagicCL4DeathLevel
+            // numericUpDownBlueMagicCL4AttackParam
             // 
-            this.numericUpDownBlueMagicCL4DeathLevel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBlueMagicCL4DeathLevel.Location = new System.Drawing.Point(268, 51);
-            this.numericUpDownBlueMagicCL4DeathLevel.Maximum = new decimal(new int[] {
+            this.numericUpDownBlueMagicCL4AttackParam.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBlueMagicCL4AttackParam.Location = new System.Drawing.Point(268, 51);
+            this.numericUpDownBlueMagicCL4AttackParam.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownBlueMagicCL4DeathLevel.Name = "numericUpDownBlueMagicCL4DeathLevel";
-            this.numericUpDownBlueMagicCL4DeathLevel.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownBlueMagicCL4DeathLevel.TabIndex = 101;
+            this.numericUpDownBlueMagicCL4AttackParam.Name = "numericUpDownBlueMagicCL4AttackParam";
+            this.numericUpDownBlueMagicCL4AttackParam.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBlueMagicCL4AttackParam.TabIndex = 101;
             // 
             // labelBlueMagicCL4StatusAttack
             // 
@@ -29648,6 +29683,8 @@
             // groupBoxShotGeneral
             // 
             this.groupBoxShotGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotGeneral.Controls.Add(this.numericUpDownShotCrit);
+            this.groupBoxShotGeneral.Controls.Add(this.labelShotCrit);
             this.groupBoxShotGeneral.Controls.Add(this.label5);
             this.groupBoxShotGeneral.Controls.Add(this.comboBoxShotElement);
             this.groupBoxShotGeneral.Controls.Add(this.labelShotElement);
@@ -29670,6 +29707,30 @@
             this.groupBoxShotGeneral.TabIndex = 113;
             this.groupBoxShotGeneral.TabStop = false;
             this.groupBoxShotGeneral.Text = "General";
+            // 
+            // numericUpDownShotCrit
+            // 
+            this.numericUpDownShotCrit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownShotCrit.Location = new System.Drawing.Point(397, 95);
+            this.numericUpDownShotCrit.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownShotCrit.Name = "numericUpDownShotCrit";
+            this.numericUpDownShotCrit.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownShotCrit.TabIndex = 93;
+            // 
+            // labelShotCrit
+            // 
+            this.labelShotCrit.AutoSize = true;
+            this.labelShotCrit.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotCrit.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotCrit.Location = new System.Drawing.Point(387, 75);
+            this.labelShotCrit.Name = "labelShotCrit";
+            this.labelShotCrit.Size = new System.Drawing.Size(71, 17);
+            this.labelShotCrit.TabIndex = 92;
+            this.labelShotCrit.Text = "Crit Bonus";
             // 
             // label5
             // 
@@ -29925,7 +29986,7 @@
             // 
             this.comboBoxShotAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxShotAttackType.FormattingEnabled = true;
-            this.comboBoxShotAttackType.Location = new System.Drawing.Point(31, 95);
+            this.comboBoxShotAttackType.Location = new System.Drawing.Point(21, 95);
             this.comboBoxShotAttackType.Name = "comboBoxShotAttackType";
             this.comboBoxShotAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxShotAttackType.TabIndex = 8;
@@ -29946,7 +30007,7 @@
             // numericUpDownShotHitCount
             // 
             this.numericUpDownShotHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotHitCount.Location = new System.Drawing.Point(367, 96);
+            this.numericUpDownShotHitCount.Location = new System.Drawing.Point(318, 95);
             this.numericUpDownShotHitCount.Maximum = new decimal(new int[] {
             255,
             0,
@@ -31721,8 +31782,10 @@
             this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsElement);
             this.groupBoxBattleItemsGeneral.Controls.Add(this.comboBoxBattleItemsAttackType);
             this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsAttackType);
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.numericUpDownBattleItemsAttackParam);
             this.groupBoxBattleItemsGeneral.Controls.Add(this.numericUpDownBattleItemsHitCount);
             this.groupBoxBattleItemsGeneral.Controls.Add(this.numericUpDownBattleItemsAttackPower);
+            this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsAttackParam);
             this.groupBoxBattleItemsGeneral.Controls.Add(this.comboBoxBattleItemsMagicID);
             this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsHitCount);
             this.groupBoxBattleItemsGeneral.Controls.Add(this.labelBattleItemsAttackPower);
@@ -31767,7 +31830,7 @@
             // numericUpDownBattleItemsHitCount
             // 
             this.numericUpDownBattleItemsHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBattleItemsHitCount.Location = new System.Drawing.Point(308, 160);
+            this.numericUpDownBattleItemsHitCount.Location = new System.Drawing.Point(207, 160);
             this.numericUpDownBattleItemsHitCount.Maximum = new decimal(new int[] {
             255,
             0,
@@ -31780,7 +31843,7 @@
             // numericUpDownBattleItemsAttackPower
             // 
             this.numericUpDownBattleItemsAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBattleItemsAttackPower.Location = new System.Drawing.Point(113, 160);
+            this.numericUpDownBattleItemsAttackPower.Location = new System.Drawing.Point(82, 160);
             this.numericUpDownBattleItemsAttackPower.Maximum = new decimal(new int[] {
             255,
             0,
@@ -35880,6 +35943,30 @@
             this.panelMain.Size = new System.Drawing.Size(654, 811);
             this.panelMain.TabIndex = 2;
             // 
+            // labelBattleItemsAttackParam
+            // 
+            this.labelBattleItemsAttackParam.AutoSize = true;
+            this.labelBattleItemsAttackParam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBattleItemsAttackParam.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBattleItemsAttackParam.Location = new System.Drawing.Point(307, 140);
+            this.labelBattleItemsAttackParam.Name = "labelBattleItemsAttackParam";
+            this.labelBattleItemsAttackParam.Size = new System.Drawing.Size(90, 17);
+            this.labelBattleItemsAttackParam.TabIndex = 0;
+            this.labelBattleItemsAttackParam.Text = "Attack Param";
+            // 
+            // numericUpDownBattleItemsAttackParam
+            // 
+            this.numericUpDownBattleItemsAttackParam.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBattleItemsAttackParam.Location = new System.Drawing.Point(329, 160);
+            this.numericUpDownBattleItemsAttackParam.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownBattleItemsAttackParam.Name = "numericUpDownBattleItemsAttackParam";
+            this.numericUpDownBattleItemsAttackParam.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBattleItemsAttackParam.TabIndex = 6;
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -36147,26 +36234,27 @@
             this.groupBoxBlueMagicAttackFlags.PerformLayout();
             this.groupBoxBlueMagicGeneral.ResumeLayout(false);
             this.groupBoxBlueMagicGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCrit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicStatusAttack)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.groupBoxBlueMagicCS1.ResumeLayout(false);
             this.groupBoxBlueMagicCS1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL1DeathLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL1AttackParam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL1AttackPower)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.groupBoxBlueMagicCS2.ResumeLayout(false);
             this.groupBoxBlueMagicCS2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2DeathLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2AttackParam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL2AttackPower)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.groupBoxBlueMagicCS3.ResumeLayout(false);
             this.groupBoxBlueMagicCS3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL3DeathLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL3AttackParam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL3AttackPower)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL4DeathLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL4AttackParam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCL4AttackPower)).EndInit();
             this.tabPageLBZell.ResumeLayout(false);
             this.tabControlDuel.ResumeLayout(false);
@@ -36385,6 +36473,7 @@
             this.groupBoxShotAttackFlags.PerformLayout();
             this.groupBoxShotGeneral.ResumeLayout(false);
             this.groupBoxShotGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotCrit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotElementPerc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShotAttackPower)).EndInit();
@@ -36495,6 +36584,7 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsAttackParam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -37213,11 +37303,11 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Reflect;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Unk7;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL1Zombie;
-        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL1DeathLevel;
+        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL1AttackParam;
         private System.Windows.Forms.Label labelBlueMagicCL1StatusAttack;
         private System.Windows.Forms.Label labelBlueMagicCL1AttackPower;
         private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL1AttackPower;
-        private System.Windows.Forms.Label labelBlueMagicCL1DeathLevel;
+        private System.Windows.Forms.Label labelBlueMagicCL1AttackParam;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.GroupBox groupBoxBlueMagicCS2;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Petrifying;
@@ -37260,11 +37350,11 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Reflect;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Unk7;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL2Zombie;
-        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL2DeathLevel;
+        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL2AttackParam;
         private System.Windows.Forms.Label labelBlueMagicCL2StatusAttack;
         private System.Windows.Forms.Label labelBlueMagicCL2AttackPower;
         private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL2AttackPower;
-        private System.Windows.Forms.Label labelBlueMagicCL2DeathLevel;
+        private System.Windows.Forms.Label labelBlueMagicCL2AttackParam;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.GroupBox groupBoxBlueMagicCS3;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3Petrifying;
@@ -37307,11 +37397,11 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3Reflect;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3Unk7;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL3Zombie;
-        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL3DeathLevel;
+        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL3AttackParam;
         private System.Windows.Forms.Label labelBlueMagicCL3StatusAttack;
         private System.Windows.Forms.Label labelBlueMagicCL3AttackPower;
         private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL3AttackPower;
-        private System.Windows.Forms.Label labelBlueMagicCL3DeathLevel;
+        private System.Windows.Forms.Label labelBlueMagicCL3AttackParam;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4Petrifying;
@@ -37354,11 +37444,11 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4Reflect;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4Unk7;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicCL4Zombie;
-        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL4DeathLevel;
+        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL4AttackParam;
         private System.Windows.Forms.Label labelBlueMagicCL4StatusAttack;
         private System.Windows.Forms.Label labelBlueMagicCL4AttackPower;
         private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCL4AttackPower;
-        private System.Windows.Forms.Label labelBlueMagicCL4DeathLevel;
+        private System.Windows.Forms.Label labelBlueMagicCL4AttackParam;
         private System.Windows.Forms.ListBox listBoxBlueMagic;
         private System.Windows.Forms.TabControl tabControlDuel;
         private System.Windows.Forms.TabPage tabPageDuelGeneral;
@@ -38484,6 +38574,12 @@
         private System.Windows.Forms.Label labelWeaponsCrit;
         private System.Windows.Forms.NumericUpDown numericUpDownWeaponsMelee;
         private System.Windows.Forms.Label labelWeaponsMelee;
+        public System.Windows.Forms.NumericUpDown numericUpDownShotCrit;
+        private System.Windows.Forms.Label labelShotCrit;
+        public System.Windows.Forms.NumericUpDown numericUpDownBlueMagicCrit;
+        private System.Windows.Forms.Label labelBlueMagicCrit;
+        private System.Windows.Forms.NumericUpDown numericUpDownBattleItemsAttackParam;
+        private System.Windows.Forms.Label labelBattleItemsAttackParam;
     }
 }
 

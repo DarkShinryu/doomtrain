@@ -468,6 +468,7 @@ namespace Doomtrain
             public byte AttackFlags;
             public Element Element;
             public byte StatusAttack;
+            public byte CritBonus;
         }
 
         public struct BlueMagicParamData
@@ -478,28 +479,28 @@ namespace Doomtrain
             public byte Status4CL1;
             public byte Status5CL1;
             public byte AttackPowerCL1;
-            public byte DeathLevelCL1;
+            public byte AttackParamCL1;
             public byte Status1CL2;
             public byte Status2CL2;
             public byte Status3CL2;
             public byte Status4CL2;
             public byte Status5CL2;
             public byte AttackPowerCL2;
-            public byte DeathLevelCL2;
+            public byte AttackParamCL2;
             public byte Status1CL3;
             public byte Status2CL3;
             public byte Status3CL3;
             public byte Status4CL3;
             public byte Status5CL3;
             public byte AttackPowerCL3;
-            public byte DeathLevelCL3;
+            public byte AttackParamCL3;
             public byte Status1CL4;
             public byte Status2CL4;
             public byte Status3CL4;
             public byte Status4CL4;
             public byte Status5CL4;
             public byte AttackPowerCL4;
-            public byte DeathLevelCL4;
+            public byte AttackParamCL4;
         }
 
         public struct StatPercentageAbilitiesData
@@ -562,6 +563,7 @@ namespace Doomtrain
             public Element Element;
             public byte ElementPerc;
             public byte StatusAttack;
+            public byte CritBonus;
             public byte Status1;
             public byte Status2;
             public byte Status3;
@@ -734,6 +736,7 @@ namespace Doomtrain
             public byte Status3;
             public byte Status4;
             public byte Status5;
+            public byte AttackParam;
             public byte HitCount;
             public Element Element;
         }
@@ -1708,6 +1711,9 @@ namespace Doomtrain
                 case 4:
                     Kernel[OffsetToBlueMagicSelected + 13] = Convert.ToByte(variable); //status attack
                     return;
+                case 5:
+                    Kernel[OffsetToBlueMagicSelected + 14] = Convert.ToByte(variable); //crit bonus
+                    return;
 
                 default:
                     return;
@@ -1726,25 +1732,25 @@ namespace Doomtrain
                     Kernel[OffsetToBlueMagicParamSelected + 6] = Convert.ToByte(variable); //attack power CL1
                     return;
                 case 2:
-                    Kernel[OffsetToBlueMagicParamSelected + 7] = Convert.ToByte(variable); //death level CL1
+                    Kernel[OffsetToBlueMagicParamSelected + 7] = Convert.ToByte(variable); //attack param CL1
                     return;
                 case 3:
                     Kernel[OffsetToBlueMagicParamSelected + 14] = Convert.ToByte(variable); //attack power CL2
                     return;
                 case 4:
-                    Kernel[OffsetToBlueMagicParamSelected + 15] = Convert.ToByte(variable); //death level CL2
+                    Kernel[OffsetToBlueMagicParamSelected + 15] = Convert.ToByte(variable); //attack param CL2
                     return;
                 case 5:
                     Kernel[OffsetToBlueMagicParamSelected + 22] = Convert.ToByte(variable); //attack power CL3
                     return;
                 case 6:
-                    Kernel[OffsetToBlueMagicParamSelected + 23] = Convert.ToByte(variable); //death level CL3
+                    Kernel[OffsetToBlueMagicParamSelected + 23] = Convert.ToByte(variable); //attack param CL3
                     return;
                 case 7:
                     Kernel[OffsetToBlueMagicParamSelected + 30] = Convert.ToByte(variable); //attack power CL4
                     return;
                 case 8:
-                    Kernel[OffsetToBlueMagicParamSelected + 31] = Convert.ToByte(variable); //death level CL4
+                    Kernel[OffsetToBlueMagicParamSelected + 31] = Convert.ToByte(variable); //attack param CL4
                     return;
 
                 default:
@@ -2018,6 +2024,9 @@ namespace Doomtrain
                     Kernel[OffsetToShotSelected + 18] = Convert.ToByte(variable); //Used Item
                     return;
                 case 10:
+                    Kernel[OffsetToShotSelected + 19] = Convert.ToByte(variable); //Crit Bonus
+                    return;
+                case 11:
                     ShotStatusUpdator(arg0, variable); //Status
                     return;
 
@@ -2540,9 +2549,12 @@ namespace Doomtrain
                     BattleItemsStatusUpdator(arg0, variable); //Status
                     return;
                 case 7:
-                    Kernel[OffsetToBattleItemsSelected + 22] = Convert.ToByte(variable); //Hit Count
+                    Kernel[OffsetToBattleItemsSelected + 20] = Convert.ToByte(variable); //Attack Param
                     return;
                 case 8:
+                    Kernel[OffsetToBattleItemsSelected + 22] = Convert.ToByte(variable); //Hit Count
+                    return;
+                case 9:
                     Kernel[OffsetToBattleItemsSelected + 23] = Convert.ToByte(variable); //Element
                     return;
 
@@ -3933,6 +3945,7 @@ namespace Doomtrain
                                                     ? Element.Earth
                                                     : 0; //Error handler
             GetSelectedBlueMagicData.StatusAttack = Kernel[selectedBlueMagicOffset++];
+            GetSelectedBlueMagicData.CritBonus = Kernel[selectedBlueMagicOffset++];
         }
 
         public static void ReadBlueMagicParam(int BlueMagicParamID_List, byte[] Kernel)
@@ -3948,7 +3961,7 @@ namespace Doomtrain
             GetSelectedBlueMagicParamData.Status5CL1 = Kernel[selectedBlueMagicParamOffset++];
             selectedBlueMagicParamOffset += 1;
             GetSelectedBlueMagicParamData.AttackPowerCL1 = Kernel[selectedBlueMagicParamOffset++];
-            GetSelectedBlueMagicParamData.DeathLevelCL1 = Kernel[selectedBlueMagicParamOffset++];
+            GetSelectedBlueMagicParamData.AttackParamCL1 = Kernel[selectedBlueMagicParamOffset++];
 
             GetSelectedBlueMagicParamData.Status1CL2 = Kernel[selectedBlueMagicParamOffset++];
             GetSelectedBlueMagicParamData.Status2CL2 = Kernel[selectedBlueMagicParamOffset++];
@@ -3957,7 +3970,7 @@ namespace Doomtrain
             GetSelectedBlueMagicParamData.Status5CL2 = Kernel[selectedBlueMagicParamOffset++];
             selectedBlueMagicParamOffset += 1;
             GetSelectedBlueMagicParamData.AttackPowerCL2 = Kernel[selectedBlueMagicParamOffset++];
-            GetSelectedBlueMagicParamData.DeathLevelCL2 = Kernel[selectedBlueMagicParamOffset++];
+            GetSelectedBlueMagicParamData.AttackParamCL2 = Kernel[selectedBlueMagicParamOffset++];
 
             GetSelectedBlueMagicParamData.Status1CL3 = Kernel[selectedBlueMagicParamOffset++];
             GetSelectedBlueMagicParamData.Status2CL3 = Kernel[selectedBlueMagicParamOffset++];
@@ -3966,7 +3979,7 @@ namespace Doomtrain
             GetSelectedBlueMagicParamData.Status5CL3 = Kernel[selectedBlueMagicParamOffset++];
             selectedBlueMagicParamOffset += 1;
             GetSelectedBlueMagicParamData.AttackPowerCL3 = Kernel[selectedBlueMagicParamOffset++];
-            GetSelectedBlueMagicParamData.DeathLevelCL3 = Kernel[selectedBlueMagicParamOffset++];
+            GetSelectedBlueMagicParamData.AttackParamCL3 = Kernel[selectedBlueMagicParamOffset++];
 
             GetSelectedBlueMagicParamData.Status1CL4 = Kernel[selectedBlueMagicParamOffset++];
             GetSelectedBlueMagicParamData.Status2CL4 = Kernel[selectedBlueMagicParamOffset++];
@@ -3975,7 +3988,7 @@ namespace Doomtrain
             GetSelectedBlueMagicParamData.Status5CL4 = Kernel[selectedBlueMagicParamOffset++];
             selectedBlueMagicParamOffset += 1;
             GetSelectedBlueMagicParamData.AttackPowerCL4 = Kernel[selectedBlueMagicParamOffset++];
-            GetSelectedBlueMagicParamData.DeathLevelCL4 = Kernel[selectedBlueMagicParamOffset++];
+            GetSelectedBlueMagicParamData.AttackParamCL4 = Kernel[selectedBlueMagicParamOffset++];
         }
 
         #endregion
@@ -4138,7 +4151,7 @@ namespace Doomtrain
             GetSelectedShotData.Status1 = Kernel[selectedShotOffset++];
             selectedShotOffset += 1;
             GetSelectedShotData.UsedItem = Kernel[selectedShotOffset++];
-            selectedShotOffset += 1;
+            GetSelectedShotData.CritBonus = Kernel[selectedShotOffset++];
             GetSelectedShotData.Status2 = Kernel[selectedShotOffset++];
             GetSelectedShotData.Status3 = Kernel[selectedShotOffset++];
             GetSelectedShotData.Status4 = Kernel[selectedShotOffset++];
@@ -4390,7 +4403,8 @@ namespace Doomtrain
             GetSelectedBattleItemsData.Status3 = Kernel[selectedBattleItemsOffset++];
             GetSelectedBattleItemsData.Status4 = Kernel[selectedBattleItemsOffset++];
             GetSelectedBattleItemsData.Status5 = Kernel[selectedBattleItemsOffset++];
-            selectedBattleItemsOffset += 2;
+            GetSelectedBattleItemsData.AttackParam = Kernel[selectedBattleItemsOffset++];
+            selectedBattleItemsOffset += 1;
             GetSelectedBattleItemsData.HitCount = Kernel[selectedBattleItemsOffset++];
             byte b = Kernel[selectedBattleItemsOffset++];
             GetSelectedBattleItemsData.Element =
