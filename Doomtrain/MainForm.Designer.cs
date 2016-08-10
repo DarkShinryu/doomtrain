@@ -1130,6 +1130,17 @@
             this.tabPageLBZell = new System.Windows.Forms.TabPage();
             this.tabControlDuel = new System.Windows.Forms.TabControl();
             this.tabPageDuelGeneral = new System.Windows.Forms.TabPage();
+            this.groupBoxShotInput1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxDuelButton5 = new System.Windows.Forms.ComboBox();
+            this.labelDuelButton5 = new System.Windows.Forms.Label();
+            this.comboBoxDuelButton4 = new System.Windows.Forms.ComboBox();
+            this.labelDuelButton4 = new System.Windows.Forms.Label();
+            this.comboBoxDuelButton3 = new System.Windows.Forms.ComboBox();
+            this.labelDuelButton3 = new System.Windows.Forms.Label();
+            this.comboBoxDuelButton2 = new System.Windows.Forms.ComboBox();
+            this.labelDuelButton2 = new System.Windows.Forms.Label();
+            this.comboBoxDuelButton1 = new System.Windows.Forms.ComboBox();
+            this.labelDuelButton1 = new System.Windows.Forms.Label();
             this.groupBoxDuelStatus = new System.Windows.Forms.GroupBox();
             this.checkBoxDuelPetrifying = new System.Windows.Forms.CheckBox();
             this.checkBoxDuelDarkness = new System.Windows.Forms.CheckBox();
@@ -1742,8 +1753,10 @@
             this.groupBoxBattleItemsGeneral = new System.Windows.Forms.GroupBox();
             this.comboBoxBattleItemsElement = new System.Windows.Forms.ComboBox();
             this.comboBoxBattleItemsAttackType = new System.Windows.Forms.ComboBox();
+            this.numericUpDownBattleItemsAttackParam = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownBattleItemsHitCount = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownBattleItemsAttackPower = new System.Windows.Forms.NumericUpDown();
+            this.labelBattleItemsAttackParam = new System.Windows.Forms.Label();
             this.comboBoxBattleItemsMagicID = new System.Windows.Forms.ComboBox();
             this.listBoxBattleItems = new System.Windows.Forms.ListBox();
             this.tabPageDevour = new System.Windows.Forms.TabPage();
@@ -2005,19 +2018,8 @@
             this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
-            this.labelBattleItemsAttackParam = new System.Windows.Forms.Label();
-            this.numericUpDownBattleItemsAttackParam = new System.Windows.Forms.NumericUpDown();
-            this.groupBoxShotInput1 = new System.Windows.Forms.GroupBox();
-            this.comboBoxDuelButton5 = new System.Windows.Forms.ComboBox();
-            this.labelDuelButton5 = new System.Windows.Forms.Label();
-            this.comboBoxDuelButton4 = new System.Windows.Forms.ComboBox();
-            this.labelDuelButton4 = new System.Windows.Forms.Label();
-            this.comboBoxDuelButton3 = new System.Windows.Forms.ComboBox();
-            this.labelDuelButton3 = new System.Windows.Forms.Label();
-            this.comboBoxDuelButton2 = new System.Windows.Forms.ComboBox();
-            this.labelDuelButton2 = new System.Windows.Forms.Label();
-            this.comboBoxDuelButton1 = new System.Windows.Forms.ComboBox();
-            this.labelDuelButton1 = new System.Windows.Forms.Label();
+            this.labelEnemyAttacksCamera = new System.Windows.Forms.Label();
+            this.numericUpDownEnemyAttacksCamera = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -2238,6 +2240,7 @@
             this.tabPageLBZell.SuspendLayout();
             this.tabControlDuel.SuspendLayout();
             this.tabPageDuelGeneral.SuspendLayout();
+            this.groupBoxShotInput1.SuspendLayout();
             this.groupBoxDuelStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelStatusAttack)).BeginInit();
             this.groupBoxDuelTarget.SuspendLayout();
@@ -2450,6 +2453,7 @@
             this.groupBoxBattleItemsTarget.SuspendLayout();
             this.groupBoxBattleItemsAttackFlags.SuspendLayout();
             this.groupBoxBattleItemsGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsAttackParam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsAttackPower)).BeginInit();
             this.tabPageDevour.SuspendLayout();
@@ -2522,8 +2526,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.panelMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsAttackParam)).BeginInit();
-            this.groupBoxShotInput1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksCamera)).BeginInit();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -3466,7 +3469,7 @@
             this.labelEnemyAttacksAttackType.AutoSize = true;
             this.labelEnemyAttacksAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelEnemyAttacksAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelEnemyAttacksAttackType.Location = new System.Drawing.Point(176, 87);
+            this.labelEnemyAttacksAttackType.Location = new System.Drawing.Point(104, 88);
             this.labelEnemyAttacksAttackType.Name = "labelEnemyAttacksAttackType";
             this.labelEnemyAttacksAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelEnemyAttacksAttackType.TabIndex = 93;
@@ -22297,6 +22300,198 @@
             this.tabPageDuelGeneral.TabIndex = 0;
             this.tabPageDuelGeneral.Text = "General";
             // 
+            // groupBoxShotInput1
+            // 
+            this.groupBoxShotInput1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton5);
+            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton5);
+            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton4);
+            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton4);
+            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton3);
+            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton3);
+            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton2);
+            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton2);
+            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton1);
+            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton1);
+            this.groupBoxShotInput1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxShotInput1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.groupBoxShotInput1.Location = new System.Drawing.Point(151, 627);
+            this.groupBoxShotInput1.Name = "groupBoxShotInput1";
+            this.groupBoxShotInput1.Size = new System.Drawing.Size(465, 77);
+            this.groupBoxShotInput1.TabIndex = 116;
+            this.groupBoxShotInput1.TabStop = false;
+            this.groupBoxShotInput1.Text = "Buttons";
+            // 
+            // comboBoxDuelButton5
+            // 
+            this.comboBoxDuelButton5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelButton5.FormattingEnabled = true;
+            this.comboBoxDuelButton5.Items.AddRange(new object[] {
+            "None",
+            "Up",
+            "Right",
+            "Down",
+            "Left",
+            "L2",
+            "R2",
+            "L1",
+            "R1",
+            "Triangle",
+            "Circle",
+            "Cross",
+            "Square"});
+            this.comboBoxDuelButton5.Location = new System.Drawing.Point(377, 47);
+            this.comboBoxDuelButton5.Name = "comboBoxDuelButton5";
+            this.comboBoxDuelButton5.Size = new System.Drawing.Size(70, 25);
+            this.comboBoxDuelButton5.TabIndex = 4;
+            // 
+            // labelDuelButton5
+            // 
+            this.labelDuelButton5.AutoSize = true;
+            this.labelDuelButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelButton5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelButton5.Location = new System.Drawing.Point(382, 27);
+            this.labelDuelButton5.Name = "labelDuelButton5";
+            this.labelDuelButton5.Size = new System.Drawing.Size(61, 17);
+            this.labelDuelButton5.TabIndex = 3;
+            this.labelDuelButton5.Text = "Button 5";
+            // 
+            // comboBoxDuelButton4
+            // 
+            this.comboBoxDuelButton4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelButton4.FormattingEnabled = true;
+            this.comboBoxDuelButton4.Items.AddRange(new object[] {
+            "None",
+            "Up",
+            "Right",
+            "Down",
+            "Left",
+            "L2",
+            "R2",
+            "L1",
+            "R1",
+            "Triangle",
+            "Circle",
+            "Cross",
+            "Square"});
+            this.comboBoxDuelButton4.Location = new System.Drawing.Point(287, 47);
+            this.comboBoxDuelButton4.Name = "comboBoxDuelButton4";
+            this.comboBoxDuelButton4.Size = new System.Drawing.Size(70, 25);
+            this.comboBoxDuelButton4.TabIndex = 4;
+            // 
+            // labelDuelButton4
+            // 
+            this.labelDuelButton4.AutoSize = true;
+            this.labelDuelButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelButton4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelButton4.Location = new System.Drawing.Point(292, 27);
+            this.labelDuelButton4.Name = "labelDuelButton4";
+            this.labelDuelButton4.Size = new System.Drawing.Size(61, 17);
+            this.labelDuelButton4.TabIndex = 3;
+            this.labelDuelButton4.Text = "Button 4";
+            // 
+            // comboBoxDuelButton3
+            // 
+            this.comboBoxDuelButton3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelButton3.FormattingEnabled = true;
+            this.comboBoxDuelButton3.Items.AddRange(new object[] {
+            "None",
+            "Up",
+            "Right",
+            "Down",
+            "Left",
+            "L2",
+            "R2",
+            "L1",
+            "R1",
+            "Triangle",
+            "Circle",
+            "Cross",
+            "Square"});
+            this.comboBoxDuelButton3.Location = new System.Drawing.Point(197, 47);
+            this.comboBoxDuelButton3.Name = "comboBoxDuelButton3";
+            this.comboBoxDuelButton3.Size = new System.Drawing.Size(70, 25);
+            this.comboBoxDuelButton3.TabIndex = 4;
+            // 
+            // labelDuelButton3
+            // 
+            this.labelDuelButton3.AutoSize = true;
+            this.labelDuelButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelButton3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelButton3.Location = new System.Drawing.Point(202, 27);
+            this.labelDuelButton3.Name = "labelDuelButton3";
+            this.labelDuelButton3.Size = new System.Drawing.Size(61, 17);
+            this.labelDuelButton3.TabIndex = 3;
+            this.labelDuelButton3.Text = "Button 3";
+            // 
+            // comboBoxDuelButton2
+            // 
+            this.comboBoxDuelButton2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelButton2.FormattingEnabled = true;
+            this.comboBoxDuelButton2.Items.AddRange(new object[] {
+            "None",
+            "Up",
+            "Right",
+            "Down",
+            "Left",
+            "L2",
+            "R2",
+            "L1",
+            "R1",
+            "Triangle",
+            "Circle",
+            "Cross",
+            "Square"});
+            this.comboBoxDuelButton2.Location = new System.Drawing.Point(107, 47);
+            this.comboBoxDuelButton2.Name = "comboBoxDuelButton2";
+            this.comboBoxDuelButton2.Size = new System.Drawing.Size(70, 25);
+            this.comboBoxDuelButton2.TabIndex = 4;
+            // 
+            // labelDuelButton2
+            // 
+            this.labelDuelButton2.AutoSize = true;
+            this.labelDuelButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelButton2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelButton2.Location = new System.Drawing.Point(112, 27);
+            this.labelDuelButton2.Name = "labelDuelButton2";
+            this.labelDuelButton2.Size = new System.Drawing.Size(61, 17);
+            this.labelDuelButton2.TabIndex = 3;
+            this.labelDuelButton2.Text = "Button 2";
+            // 
+            // comboBoxDuelButton1
+            // 
+            this.comboBoxDuelButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDuelButton1.FormattingEnabled = true;
+            this.comboBoxDuelButton1.Items.AddRange(new object[] {
+            "None",
+            "Up",
+            "Right",
+            "Down",
+            "Left",
+            "L2",
+            "R2",
+            "L1",
+            "R1",
+            "Triangle",
+            "Circle",
+            "Cross",
+            "Square"});
+            this.comboBoxDuelButton1.Location = new System.Drawing.Point(17, 47);
+            this.comboBoxDuelButton1.Name = "comboBoxDuelButton1";
+            this.comboBoxDuelButton1.Size = new System.Drawing.Size(70, 25);
+            this.comboBoxDuelButton1.TabIndex = 4;
+            // 
+            // labelDuelButton1
+            // 
+            this.labelDuelButton1.AutoSize = true;
+            this.labelDuelButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelButton1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelButton1.Location = new System.Drawing.Point(24, 27);
+            this.labelDuelButton1.Name = "labelDuelButton1";
+            this.labelDuelButton1.Size = new System.Drawing.Size(59, 17);
+            this.labelDuelButton1.TabIndex = 3;
+            this.labelDuelButton1.Text = "Button 1";
+            // 
             // groupBoxDuelStatus
             // 
             this.groupBoxDuelStatus.BackColor = System.Drawing.SystemColors.Control;
@@ -31622,6 +31817,19 @@
             this.comboBoxBattleItemsAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxBattleItemsAttackType.TabIndex = 8;
             // 
+            // numericUpDownBattleItemsAttackParam
+            // 
+            this.numericUpDownBattleItemsAttackParam.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBattleItemsAttackParam.Location = new System.Drawing.Point(329, 160);
+            this.numericUpDownBattleItemsAttackParam.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownBattleItemsAttackParam.Name = "numericUpDownBattleItemsAttackParam";
+            this.numericUpDownBattleItemsAttackParam.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBattleItemsAttackParam.TabIndex = 6;
+            // 
             // numericUpDownBattleItemsHitCount
             // 
             this.numericUpDownBattleItemsHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -31647,6 +31855,17 @@
             this.numericUpDownBattleItemsAttackPower.Name = "numericUpDownBattleItemsAttackPower";
             this.numericUpDownBattleItemsAttackPower.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownBattleItemsAttackPower.TabIndex = 3;
+            // 
+            // labelBattleItemsAttackParam
+            // 
+            this.labelBattleItemsAttackParam.AutoSize = true;
+            this.labelBattleItemsAttackParam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBattleItemsAttackParam.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBattleItemsAttackParam.Location = new System.Drawing.Point(307, 140);
+            this.labelBattleItemsAttackParam.Name = "labelBattleItemsAttackParam";
+            this.labelBattleItemsAttackParam.Size = new System.Drawing.Size(90, 17);
+            this.labelBattleItemsAttackParam.TabIndex = 0;
+            this.labelBattleItemsAttackParam.Text = "Attack Param";
             // 
             // comboBoxBattleItemsMagicID
             // 
@@ -33690,7 +33909,9 @@
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksAttackType);
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksElement);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksElement);
+            this.groupBox16.Controls.Add(this.numericUpDownEnemyAttacksCamera);
             this.groupBox16.Controls.Add(this.numericUpDownEnemyAttacksAttackParam);
+            this.groupBox16.Controls.Add(this.labelEnemyAttacksCamera);
             this.groupBox16.Controls.Add(this.numericUpDownEnemyAttacksAttackPower);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksAttackParam);
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksMagicID);
@@ -33733,7 +33954,7 @@
             // 
             this.comboBoxEnemyAttacksAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxEnemyAttacksAttackType.FormattingEnabled = true;
-            this.comboBoxEnemyAttacksAttackType.Location = new System.Drawing.Point(85, 107);
+            this.comboBoxEnemyAttacksAttackType.Location = new System.Drawing.Point(13, 108);
             this.comboBoxEnemyAttacksAttackType.Name = "comboBoxEnemyAttacksAttackType";
             this.comboBoxEnemyAttacksAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxEnemyAttacksAttackType.TabIndex = 92;
@@ -33801,10 +34022,10 @@
             this.listBoxEnemyAttacks.HorizontalScrollbar = true;
             this.listBoxEnemyAttacks.ItemHeight = 17;
             this.listBoxEnemyAttacks.Items.AddRange(new object[] {
-            "001 - ??",
+            "001 - null",
             "002 - Physical attack",
-            "003 - ??",
-            "004 - ??",
+            "003 - null",
+            "004 - null",
             "005 - Blade Slice",
             "006 - Hind Kick",
             "007 - Blade Shot",
@@ -33814,7 +34035,7 @@
             "011 - Squeeze",
             "012 - Clash",
             "013 - Arm Crush",
-            "014 - null",
+            "014 - Unused X-ATM092 Attack?",
             "015 - Tail Needle",
             "016 - Arm Slash",
             "017 - Bad Breath",
@@ -33845,7 +34066,7 @@
             "042 - null",
             "043 - null",
             "044 - null",
-            "045 - null",
+            "045 - Wedge Enter Battle",
             "046 - null",
             "047 - null",
             "048 - Draw",
@@ -33859,7 +34080,7 @@
             "056 - Dribble",
             "057 - Shoot",
             "058 - Ultrasonic Waves",
-            "059 - null",
+            "059 - Ifrit Strong Punch",
             "060 - BiteBite",
             "061 - Shotgun",
             "062 - Suicide",
@@ -33874,12 +34095,12 @@
             "071 - Store",
             "072 - Degenerator",
             "073 - Telekinesis",
-            "074 - null",
+            "074 - Do Nothing?",
             "075 - null",
             "076 - Hypnotize",
             "077 - Gastric Juice",
             "078 - null",
-            "079 - null",
+            "079 - Ifrit Weak Punch",
             "080 - Sand Storm",
             "081 - null",
             "082 - null",
@@ -33888,10 +34109,10 @@
             "085 - Sigh",
             "086 - Curse",
             "087 - null",
-            "088 - null",
-            "089 - null",
-            "090 - null",
-            "091 - null",
+            "088 - Ifrit HP < 50%",
+            "089 - Ifrit Shiva Summoned 1st time",
+            "090 - Ifrit Death",
+            "091 - Ifrit Defeated by Shiva",
             "092 - null",
             "093 - Grab Punch",
             "094 - Breath",
@@ -33936,8 +34157,8 @@
             "133 - Wind Blast",
             "134 - null",
             "135 - Scan",
-            "136 - null",
-            "137 - null",
+            "136 - Cerberus Counter 1",
+            "137 - Cerberus Counter 2",
             "138 - BGH251F2 Gatling Gun",
             "139 - Beam Cannon",
             "140 - BGH251F2 1st Turret Exploding",
@@ -33945,7 +34166,7 @@
             "142 - BGH251F2 3rd Turret Exploding",
             "143 - BGH251F2 4th Turret Exploding",
             "144 - BGH251F2 Death",
-            "145 - null",
+            "145 - X-ATM092 Death",
             "146 - Aqua Breath",
             "147 - BGH251F2 1st Turret Exploding",
             "148 - BGH251F2 2nd Turret Exploding",
@@ -33961,11 +34182,11 @@
             "158 - Super Arm",
             "159 - Boomerang Sword",
             "160 - null",
-            "161 - null",
-            "162 - null",
-            "163 - null",
-            "164 - null",
-            "165 - null",
+            "161 - Base Leader Message 1",
+            "162 - Base Leader Message 2",
+            "163 - Base Leader Message 3",
+            "164 - Base Leader Message 4",
+            "165 - Punch (Esthar Soldier)",
             "166 - Grand Sword",
             "167 - null",
             "168 - Psycho Blast",
@@ -34011,8 +34232,8 @@
             "208 - null",
             "209 - null",
             "210 - Raijin Special",
-            "211 - null",
-            "212 - null",
+            "211 - Minotaur Earth Regen",
+            "212 - Sacred Earth Regen",
             "213 - Mad Cow Special",
             "214 - Zan",
             "215 - Metsu",
@@ -34036,11 +34257,11 @@
             "233 - Storm Breath",
             "234 - Mega Flare",
             "235 - Barrier Change",
-            "236 - null",
-            "237 - null",
-            "238 - null",
-            "239 - null",
-            "240 - null",
+            "236 - Minotaur Death v1",
+            "237 - Minotaur Death v2",
+            "238 - Sacred Death (1st Battle)",
+            "239 - Sacred Death v1 (2nd battle)",
+            "240 - Sacred Death v2 (2nd battle)",
             "241 - null",
             "242 - Thunder Summon",
             "243 - Deadly Horn",
@@ -34050,13 +34271,13 @@
             "247 - null",
             "248 - null",
             "249 - null",
-            "250 - null",
-            "251 - null",
-            "252 - null",
-            "253 - null",
-            "254 - null",
-            "255 - null",
-            "256 - null",
+            "250 - Bahamut / Squall Dialog",
+            "251 - Bahamut / Zell Dialog",
+            "252 - Bahamut / Quistis Dialog",
+            "253 - Bahamut / Selphie Dialog",
+            "254 - Bahamut / Irvine Dialog",
+            "255 - Bahamut / Rinoa Dialog",
+            "256 - Bahamut Death",
             "257 - Gravija",
             "258 - null",
             "259 - null",
@@ -34088,8 +34309,8 @@
             "285 - Megiddo Flame",
             "286 - null",
             "287 - NORG Pod Opening",
-            "288 - null",
-            "289 - null",
+            "288 - NORG Tutorial?",
+            "289 - NORG Death",
             "290 - null",
             "291 - null",
             "292 - Mega Pulse Cannon",
@@ -34177,13 +34398,13 @@
             "374 - null",
             "375 - Gigantic Sword",
             "376 - null",
-            "377 - null",
+            "377 - Seifer Physical Attack",
             "378 - Ultima",
             "379 - Holy",
             "380 - Quake",
             "381 - Tornado",
-            "382 - A382",
-            "383 - A383"});
+            "382 - null",
+            "383 - null"});
             this.listBoxEnemyAttacks.Location = new System.Drawing.Point(0, 0);
             this.listBoxEnemyAttacks.Name = "listBoxEnemyAttacks";
             this.listBoxEnemyAttacks.ScrollAlwaysVisible = true;
@@ -35738,221 +35959,29 @@
             this.panelMain.Size = new System.Drawing.Size(654, 811);
             this.panelMain.TabIndex = 2;
             // 
-            // labelBattleItemsAttackParam
+            // labelEnemyAttacksCamera
             // 
-            this.labelBattleItemsAttackParam.AutoSize = true;
-            this.labelBattleItemsAttackParam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelBattleItemsAttackParam.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBattleItemsAttackParam.Location = new System.Drawing.Point(307, 140);
-            this.labelBattleItemsAttackParam.Name = "labelBattleItemsAttackParam";
-            this.labelBattleItemsAttackParam.Size = new System.Drawing.Size(90, 17);
-            this.labelBattleItemsAttackParam.TabIndex = 0;
-            this.labelBattleItemsAttackParam.Text = "Attack Param";
+            this.labelEnemyAttacksCamera.AutoSize = true;
+            this.labelEnemyAttacksCamera.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelEnemyAttacksCamera.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelEnemyAttacksCamera.Location = new System.Drawing.Point(319, 88);
+            this.labelEnemyAttacksCamera.Name = "labelEnemyAttacksCamera";
+            this.labelEnemyAttacksCamera.Size = new System.Drawing.Size(104, 17);
+            this.labelEnemyAttacksCamera.TabIndex = 0;
+            this.labelEnemyAttacksCamera.Text = "Camera Change";
             // 
-            // numericUpDownBattleItemsAttackParam
+            // numericUpDownEnemyAttacksCamera
             // 
-            this.numericUpDownBattleItemsAttackParam.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownBattleItemsAttackParam.Location = new System.Drawing.Point(329, 160);
-            this.numericUpDownBattleItemsAttackParam.Maximum = new decimal(new int[] {
+            this.numericUpDownEnemyAttacksCamera.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownEnemyAttacksCamera.Location = new System.Drawing.Point(344, 108);
+            this.numericUpDownEnemyAttacksCamera.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownBattleItemsAttackParam.Name = "numericUpDownBattleItemsAttackParam";
-            this.numericUpDownBattleItemsAttackParam.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownBattleItemsAttackParam.TabIndex = 6;
-            // 
-            // groupBoxShotInput1
-            // 
-            this.groupBoxShotInput1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton5);
-            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton5);
-            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton4);
-            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton4);
-            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton3);
-            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton3);
-            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton2);
-            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton2);
-            this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton1);
-            this.groupBoxShotInput1.Controls.Add(this.labelDuelButton1);
-            this.groupBoxShotInput1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxShotInput1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupBoxShotInput1.Location = new System.Drawing.Point(151, 627);
-            this.groupBoxShotInput1.Name = "groupBoxShotInput1";
-            this.groupBoxShotInput1.Size = new System.Drawing.Size(465, 77);
-            this.groupBoxShotInput1.TabIndex = 116;
-            this.groupBoxShotInput1.TabStop = false;
-            this.groupBoxShotInput1.Text = "Buttons";
-            // 
-            // comboBoxDuelButton5
-            // 
-            this.comboBoxDuelButton5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDuelButton5.FormattingEnabled = true;
-            this.comboBoxDuelButton5.Items.AddRange(new object[] {
-            "None",
-            "Up",
-            "Right",
-            "Down",
-            "Left",
-            "L2",
-            "R2",
-            "L1",
-            "R1",
-            "Triangle",
-            "Circle",
-            "Cross",
-            "Square"});
-            this.comboBoxDuelButton5.Location = new System.Drawing.Point(377, 47);
-            this.comboBoxDuelButton5.Name = "comboBoxDuelButton5";
-            this.comboBoxDuelButton5.Size = new System.Drawing.Size(70, 25);
-            this.comboBoxDuelButton5.TabIndex = 4;
-            // 
-            // labelDuelButton5
-            // 
-            this.labelDuelButton5.AutoSize = true;
-            this.labelDuelButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelDuelButton5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton5.Location = new System.Drawing.Point(382, 27);
-            this.labelDuelButton5.Name = "labelDuelButton5";
-            this.labelDuelButton5.Size = new System.Drawing.Size(61, 17);
-            this.labelDuelButton5.TabIndex = 3;
-            this.labelDuelButton5.Text = "Button 5";
-            // 
-            // comboBoxDuelButton4
-            // 
-            this.comboBoxDuelButton4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDuelButton4.FormattingEnabled = true;
-            this.comboBoxDuelButton4.Items.AddRange(new object[] {
-            "None",
-            "Up",
-            "Right",
-            "Down",
-            "Left",
-            "L2",
-            "R2",
-            "L1",
-            "R1",
-            "Triangle",
-            "Circle",
-            "Cross",
-            "Square"});
-            this.comboBoxDuelButton4.Location = new System.Drawing.Point(287, 47);
-            this.comboBoxDuelButton4.Name = "comboBoxDuelButton4";
-            this.comboBoxDuelButton4.Size = new System.Drawing.Size(70, 25);
-            this.comboBoxDuelButton4.TabIndex = 4;
-            // 
-            // labelDuelButton4
-            // 
-            this.labelDuelButton4.AutoSize = true;
-            this.labelDuelButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelDuelButton4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton4.Location = new System.Drawing.Point(292, 27);
-            this.labelDuelButton4.Name = "labelDuelButton4";
-            this.labelDuelButton4.Size = new System.Drawing.Size(61, 17);
-            this.labelDuelButton4.TabIndex = 3;
-            this.labelDuelButton4.Text = "Button 4";
-            // 
-            // comboBoxDuelButton3
-            // 
-            this.comboBoxDuelButton3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDuelButton3.FormattingEnabled = true;
-            this.comboBoxDuelButton3.Items.AddRange(new object[] {
-            "None",
-            "Up",
-            "Right",
-            "Down",
-            "Left",
-            "L2",
-            "R2",
-            "L1",
-            "R1",
-            "Triangle",
-            "Circle",
-            "Cross",
-            "Square"});
-            this.comboBoxDuelButton3.Location = new System.Drawing.Point(197, 47);
-            this.comboBoxDuelButton3.Name = "comboBoxDuelButton3";
-            this.comboBoxDuelButton3.Size = new System.Drawing.Size(70, 25);
-            this.comboBoxDuelButton3.TabIndex = 4;
-            // 
-            // labelDuelButton3
-            // 
-            this.labelDuelButton3.AutoSize = true;
-            this.labelDuelButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelDuelButton3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton3.Location = new System.Drawing.Point(202, 27);
-            this.labelDuelButton3.Name = "labelDuelButton3";
-            this.labelDuelButton3.Size = new System.Drawing.Size(61, 17);
-            this.labelDuelButton3.TabIndex = 3;
-            this.labelDuelButton3.Text = "Button 3";
-            // 
-            // comboBoxDuelButton2
-            // 
-            this.comboBoxDuelButton2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDuelButton2.FormattingEnabled = true;
-            this.comboBoxDuelButton2.Items.AddRange(new object[] {
-            "None",
-            "Up",
-            "Right",
-            "Down",
-            "Left",
-            "L2",
-            "R2",
-            "L1",
-            "R1",
-            "Triangle",
-            "Circle",
-            "Cross",
-            "Square"});
-            this.comboBoxDuelButton2.Location = new System.Drawing.Point(107, 47);
-            this.comboBoxDuelButton2.Name = "comboBoxDuelButton2";
-            this.comboBoxDuelButton2.Size = new System.Drawing.Size(70, 25);
-            this.comboBoxDuelButton2.TabIndex = 4;
-            // 
-            // labelDuelButton2
-            // 
-            this.labelDuelButton2.AutoSize = true;
-            this.labelDuelButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelDuelButton2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton2.Location = new System.Drawing.Point(112, 27);
-            this.labelDuelButton2.Name = "labelDuelButton2";
-            this.labelDuelButton2.Size = new System.Drawing.Size(61, 17);
-            this.labelDuelButton2.TabIndex = 3;
-            this.labelDuelButton2.Text = "Button 2";
-            // 
-            // comboBoxDuelButton1
-            // 
-            this.comboBoxDuelButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDuelButton1.FormattingEnabled = true;
-            this.comboBoxDuelButton1.Items.AddRange(new object[] {
-            "None",
-            "Up",
-            "Right",
-            "Down",
-            "Left",
-            "L2",
-            "R2",
-            "L1",
-            "R1",
-            "Triangle",
-            "Circle",
-            "Cross",
-            "Square"});
-            this.comboBoxDuelButton1.Location = new System.Drawing.Point(17, 47);
-            this.comboBoxDuelButton1.Name = "comboBoxDuelButton1";
-            this.comboBoxDuelButton1.Size = new System.Drawing.Size(70, 25);
-            this.comboBoxDuelButton1.TabIndex = 4;
-            // 
-            // labelDuelButton1
-            // 
-            this.labelDuelButton1.AutoSize = true;
-            this.labelDuelButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelDuelButton1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton1.Location = new System.Drawing.Point(24, 27);
-            this.labelDuelButton1.Name = "labelDuelButton1";
-            this.labelDuelButton1.Size = new System.Drawing.Size(59, 17);
-            this.labelDuelButton1.TabIndex = 3;
-            this.labelDuelButton1.Text = "Button 1";
+            this.numericUpDownEnemyAttacksCamera.Name = "numericUpDownEnemyAttacksCamera";
+            this.numericUpDownEnemyAttacksCamera.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownEnemyAttacksCamera.TabIndex = 5;
             // 
             // mainForm
             // 
@@ -36246,6 +36275,8 @@
             this.tabPageLBZell.ResumeLayout(false);
             this.tabControlDuel.ResumeLayout(false);
             this.tabPageDuelGeneral.ResumeLayout(false);
+            this.groupBoxShotInput1.ResumeLayout(false);
+            this.groupBoxShotInput1.PerformLayout();
             this.groupBoxDuelStatus.ResumeLayout(false);
             this.groupBoxDuelStatus.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuelStatusAttack)).EndInit();
@@ -36484,6 +36515,7 @@
             this.groupBoxBattleItemsAttackFlags.PerformLayout();
             this.groupBoxBattleItemsGeneral.ResumeLayout(false);
             this.groupBoxBattleItemsGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsAttackParam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsAttackPower)).EndInit();
             this.tabPageDevour.ResumeLayout(false);
@@ -36568,9 +36600,7 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.panelMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBattleItemsAttackParam)).EndInit();
-            this.groupBoxShotInput1.ResumeLayout(false);
-            this.groupBoxShotInput1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksCamera)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -38565,6 +38595,8 @@
         private System.Windows.Forms.Label labelDuelButton2;
         private System.Windows.Forms.ComboBox comboBoxDuelButton1;
         private System.Windows.Forms.Label labelDuelButton1;
+        public System.Windows.Forms.NumericUpDown numericUpDownEnemyAttacksCamera;
+        private System.Windows.Forms.Label labelEnemyAttacksCamera;
     }
 }
 

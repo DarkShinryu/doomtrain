@@ -274,7 +274,7 @@
 273 - Mad Rush
 274 - Duel
 275 - Electrocute (Quistis)
-276 - Unknown
+276 - X-ATM092 Death
 277 - Unknown
 278 - Carbuncle Summon (Ruby Light)
 279 - Mega Spark
