@@ -1894,6 +1894,7 @@
             this.comboBoxEnemyAttacksAttackType = new System.Windows.Forms.ComboBox();
             this.comboBoxEnemyAttacksElement = new System.Windows.Forms.ComboBox();
             this.numericUpDownEnemyAttacksAttackParam = new System.Windows.Forms.NumericUpDown();
+            this.labelEnemyAttacksCamera = new System.Windows.Forms.Label();
             this.numericUpDownEnemyAttacksAttackPower = new System.Windows.Forms.NumericUpDown();
             this.labelEnemyAttacksAttackParam = new System.Windows.Forms.Label();
             this.listBoxEnemyAttacks = new System.Windows.Forms.ListBox();
@@ -2018,8 +2019,7 @@
             this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
-            this.labelEnemyAttacksCamera = new System.Windows.Forms.Label();
-            this.numericUpDownEnemyAttacksCamera = new System.Windows.Forms.NumericUpDown();
+            this.hexUpDownEnemyAttacksCamera = new Doomtrain.HexUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -2526,7 +2526,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.panelMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksCamera)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownEnemyAttacksCamera)).BeginInit();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -33909,7 +33909,6 @@
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksAttackType);
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksElement);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksElement);
-            this.groupBox16.Controls.Add(this.numericUpDownEnemyAttacksCamera);
             this.groupBox16.Controls.Add(this.numericUpDownEnemyAttacksAttackParam);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksCamera);
             this.groupBox16.Controls.Add(this.numericUpDownEnemyAttacksAttackPower);
@@ -33917,6 +33916,7 @@
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksMagicID);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksAttackPower);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksMagicID);
+            this.groupBox16.Controls.Add(this.hexUpDownEnemyAttacksCamera);
             this.groupBox16.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
             this.groupBox16.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBox16.Location = new System.Drawing.Point(186, 3);
@@ -33990,6 +33990,17 @@
             this.numericUpDownEnemyAttacksAttackParam.Name = "numericUpDownEnemyAttacksAttackParam";
             this.numericUpDownEnemyAttacksAttackParam.Size = new System.Drawing.Size(47, 25);
             this.numericUpDownEnemyAttacksAttackParam.TabIndex = 5;
+            // 
+            // labelEnemyAttacksCamera
+            // 
+            this.labelEnemyAttacksCamera.AutoSize = true;
+            this.labelEnemyAttacksCamera.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelEnemyAttacksCamera.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelEnemyAttacksCamera.Location = new System.Drawing.Point(319, 88);
+            this.labelEnemyAttacksCamera.Name = "labelEnemyAttacksCamera";
+            this.labelEnemyAttacksCamera.Size = new System.Drawing.Size(104, 17);
+            this.labelEnemyAttacksCamera.TabIndex = 0;
+            this.labelEnemyAttacksCamera.Text = "Camera Change";
             // 
             // numericUpDownEnemyAttacksAttackPower
             // 
@@ -35959,29 +35970,19 @@
             this.panelMain.Size = new System.Drawing.Size(654, 811);
             this.panelMain.TabIndex = 2;
             // 
-            // labelEnemyAttacksCamera
+            // hexUpDownEnemyAttacksCamera
             // 
-            this.labelEnemyAttacksCamera.AutoSize = true;
-            this.labelEnemyAttacksCamera.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelEnemyAttacksCamera.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelEnemyAttacksCamera.Location = new System.Drawing.Point(319, 88);
-            this.labelEnemyAttacksCamera.Name = "labelEnemyAttacksCamera";
-            this.labelEnemyAttacksCamera.Size = new System.Drawing.Size(104, 17);
-            this.labelEnemyAttacksCamera.TabIndex = 0;
-            this.labelEnemyAttacksCamera.Text = "Camera Change";
-            // 
-            // numericUpDownEnemyAttacksCamera
-            // 
-            this.numericUpDownEnemyAttacksCamera.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownEnemyAttacksCamera.Location = new System.Drawing.Point(344, 108);
-            this.numericUpDownEnemyAttacksCamera.Maximum = new decimal(new int[] {
+            this.hexUpDownEnemyAttacksCamera.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.hexUpDownEnemyAttacksCamera.Hexadecimal = true;
+            this.hexUpDownEnemyAttacksCamera.Location = new System.Drawing.Point(344, 108);
+            this.hexUpDownEnemyAttacksCamera.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownEnemyAttacksCamera.Name = "numericUpDownEnemyAttacksCamera";
-            this.numericUpDownEnemyAttacksCamera.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownEnemyAttacksCamera.TabIndex = 5;
+            this.hexUpDownEnemyAttacksCamera.Name = "hexUpDownEnemyAttacksCamera";
+            this.hexUpDownEnemyAttacksCamera.Size = new System.Drawing.Size(47, 25);
+            this.hexUpDownEnemyAttacksCamera.TabIndex = 96;
             // 
             // mainForm
             // 
@@ -36600,7 +36601,7 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.panelMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksCamera)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownEnemyAttacksCamera)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -38595,8 +38596,8 @@
         private System.Windows.Forms.Label labelDuelButton2;
         private System.Windows.Forms.ComboBox comboBoxDuelButton1;
         private System.Windows.Forms.Label labelDuelButton1;
-        public System.Windows.Forms.NumericUpDown numericUpDownEnemyAttacksCamera;
         private System.Windows.Forms.Label labelEnemyAttacksCamera;
+        private HexUpDown hexUpDownEnemyAttacksCamera;
     }
 }
 

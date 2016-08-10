@@ -508,7 +508,7 @@ namespace Doomtrain
             #region Enemy attacks
 
             comboBoxEnemyAttacksMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(0, comboBoxEnemyAttacksMagicID.SelectedIndex);
-            numericUpDownEnemyAttacksCamera.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(1, numericUpDownEnemyAttacksCamera.Value);
+            hexUpDownEnemyAttacksCamera.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(1, hexUpDownEnemyAttacksCamera.Value);
             comboBoxEnemyAttacksAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(2, comboBoxEnemyAttacksAttackType.SelectedIndex);
             numericUpDownEnemyAttacksAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(3, numericUpDownEnemyAttacksAttackPower.Value);
             checkBoxEnemyAttacksFlagShelled.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(4, 0x01);
@@ -4163,7 +4163,7 @@ namespace Doomtrain
             {
                 ToolTip(comboBoxEnemyAttacksMagicID,2, comboBoxEnemyAttacksMagicID.Items[KernelWorker.GetSelectedEnemyAttacksData.MagicID]);
                 ToolTip(comboBoxEnemyAttacksAttackType,2, comboBoxEnemyAttacksAttackType.Items[KernelWorker.GetSelectedEnemyAttacksData.AttackType]);
-                ToolTip(numericUpDownEnemyAttacksCamera, 0, KernelWorker.GetSelectedEnemyAttacksData.CameraChange);
+                toolTip1.SetToolTip(hexUpDownEnemyAttacksCamera, $"Default: 0x{KernelWorker.GetSelectedEnemyAttacksData.CameraChange.ToString("X2")}");
                 ToolTip(numericUpDownEnemyAttacksAttackPower,0, KernelWorker.GetSelectedEnemyAttacksData.AttackPower);
                 ToolTip(checkBoxEnemyAttacksFlagShelled,1, (KernelWorker.GetSelectedEnemyAttacksData.AttackFlags & 0x01) >= 1 ? true : false);
                 ToolTip(checkBoxEnemyAttacksFlag2,1, (KernelWorker.GetSelectedEnemyAttacksData.AttackFlags & 0x02) >= 1 ? true : false);
@@ -4187,7 +4187,7 @@ namespace Doomtrain
             try
             {
                 comboBoxEnemyAttacksMagicID.SelectedIndex = KernelWorker.GetSelectedEnemyAttacksData.MagicID;
-                numericUpDownEnemyAttacksCamera.Value = KernelWorker.GetSelectedEnemyAttacksData.CameraChange;
+                hexUpDownEnemyAttacksCamera.Value = KernelWorker.GetSelectedEnemyAttacksData.CameraChange;
                 comboBoxEnemyAttacksAttackType.SelectedIndex = KernelWorker.GetSelectedEnemyAttacksData.AttackType;
                 numericUpDownEnemyAttacksAttackPower.Value = KernelWorker.GetSelectedEnemyAttacksData.AttackPower;
                 checkBoxEnemyAttacksFlagShelled.Checked = (KernelWorker.GetSelectedEnemyAttacksData.AttackFlags & 0x01) >= 1 ? true : false;
