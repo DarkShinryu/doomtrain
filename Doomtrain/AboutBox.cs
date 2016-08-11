@@ -37,7 +37,7 @@ namespace Doomtrain
         //Link Forum
         private void linkLabelForum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://forums.qhimm.com/index.php?topic=XXXXX.0");
+            System.Diagnostics.Process.Start("http://forums.qhimm.com/index.php?topic=17090.0");
         }
 
 
