@@ -1107,7 +1107,7 @@ namespace Doomtrain
                     {
                         ushort a = BitConverter.ToUInt16(Kernel, OffsetToMagicSelected + 38);
                         byte[] temp = BitConverter.GetBytes(a ^= Convert.ToUInt16(variable));
-                        Array.Copy(temp, 0, Kernel, OffsetToMagicSelected + 36, 2);
+                        Array.Copy(temp, 0, Kernel, OffsetToMagicSelected + 38, 2);
                         return;
                     }
 
@@ -1115,7 +1115,7 @@ namespace Doomtrain
                     {
                         ushort a = BitConverter.ToUInt16(Kernel, OffsetToMagicSelected + 40);
                         byte[] temp = BitConverter.GetBytes(a ^= Convert.ToUInt16(variable));
-                        Array.Copy(temp, 0, Kernel, OffsetToMagicSelected + 39, 2);
+                        Array.Copy(temp, 0, Kernel, OffsetToMagicSelected + 40, 2);
                         return;
                     }
 
