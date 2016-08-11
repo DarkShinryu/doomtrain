@@ -2019,6 +2019,7 @@
             this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
+            this.checkBoxEnemyAttacksCamera = new System.Windows.Forms.CheckBox();
             this.hexUpDownEnemyAttacksCamera = new Doomtrain.HexUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
@@ -33909,6 +33910,7 @@
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksAttackType);
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksElement);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksElement);
+            this.groupBox16.Controls.Add(this.checkBoxEnemyAttacksCamera);
             this.groupBox16.Controls.Add(this.numericUpDownEnemyAttacksAttackParam);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksCamera);
             this.groupBox16.Controls.Add(this.numericUpDownEnemyAttacksAttackPower);
@@ -35970,13 +35972,26 @@
             this.panelMain.Size = new System.Drawing.Size(654, 811);
             this.panelMain.TabIndex = 2;
             // 
+            // checkBoxEnemyAttacksCamera
+            // 
+            this.checkBoxEnemyAttacksCamera.AutoSize = true;
+            this.checkBoxEnemyAttacksCamera.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxEnemyAttacksCamera.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxEnemyAttacksCamera.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxEnemyAttacksCamera.Location = new System.Drawing.Point(331, 112);
+            this.checkBoxEnemyAttacksCamera.Name = "checkBoxEnemyAttacksCamera";
+            this.checkBoxEnemyAttacksCamera.Size = new System.Drawing.Size(31, 19);
+            this.checkBoxEnemyAttacksCamera.TabIndex = 46;
+            this.checkBoxEnemyAttacksCamera.Text = "?";
+            this.checkBoxEnemyAttacksCamera.UseVisualStyleBackColor = false;
+            // 
             // hexUpDownEnemyAttacksCamera
             // 
             this.hexUpDownEnemyAttacksCamera.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.hexUpDownEnemyAttacksCamera.Hexadecimal = true;
-            this.hexUpDownEnemyAttacksCamera.Location = new System.Drawing.Point(344, 108);
+            this.hexUpDownEnemyAttacksCamera.Location = new System.Drawing.Point(366, 108);
             this.hexUpDownEnemyAttacksCamera.Maximum = new decimal(new int[] {
-            255,
+            127,
             0,
             0,
             0});
@@ -38598,6 +38613,7 @@
         private System.Windows.Forms.Label labelDuelButton1;
         private System.Windows.Forms.Label labelEnemyAttacksCamera;
         private HexUpDown hexUpDownEnemyAttacksCamera;
+        private System.Windows.Forms.CheckBox checkBoxEnemyAttacksCamera;
     }
 }
 

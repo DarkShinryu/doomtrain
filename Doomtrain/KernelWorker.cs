@@ -1640,27 +1640,30 @@ namespace Doomtrain
                     UshortToKernel(Convert.ToUInt16(variable), 2, (byte)Mode.Mode_EnemyAttacks); //MagicID
                     return;
                 case 1:
-                    Kernel[OffsetToEnemyAttacksSelected + 4] = Convert.ToByte(variable); //camera change
+                    Kernel[OffsetToEnemyAttacksSelected + 4] = Convert.ToByte(variable); //camera change spinner
                     return;
                 case 2:
-                    Kernel[OffsetToEnemyAttacksSelected + 6] = Convert.ToByte(variable); //attack type
+                    Kernel[OffsetToEnemyAttacksSelected + 4] ^= Convert.ToByte(variable); //camera change tickbox
                     return;
                 case 3:
-                    Kernel[OffsetToEnemyAttacksSelected + 7] = Convert.ToByte(variable); //attack power
+                    Kernel[OffsetToEnemyAttacksSelected + 6] = Convert.ToByte(variable); //attack type
                     return;
                 case 4:
-                    Kernel[OffsetToEnemyAttacksSelected + 8] ^= Convert.ToByte(variable); //attack flags
+                    Kernel[OffsetToEnemyAttacksSelected + 7] = Convert.ToByte(variable); //attack power
                     return;
                 case 5:
-                    Kernel[OffsetToEnemyAttacksSelected + 10] = Convert.ToByte(variable); //element
+                    Kernel[OffsetToEnemyAttacksSelected + 8] ^= Convert.ToByte(variable); //attack flags
                     return;
                 case 6:
-                    Kernel[OffsetToEnemyAttacksSelected + 12] = Convert.ToByte(variable); //status attack
+                    Kernel[OffsetToEnemyAttacksSelected + 10] = Convert.ToByte(variable); //element
                     return;
                 case 7:
-                    Kernel[OffsetToEnemyAttacksSelected + 13] = Convert.ToByte(variable); //attack param
+                    Kernel[OffsetToEnemyAttacksSelected + 12] = Convert.ToByte(variable); //status attack
                     return;
                 case 8:
+                    Kernel[OffsetToEnemyAttacksSelected + 13] = Convert.ToByte(variable); //attack param
+                    return;
+                case 9:
                     EnemyAttacksStatusUpdator(arg0, variable); //Status
                     return;
 
