@@ -5427,7 +5427,7 @@ namespace Doomtrain
                  : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Up ? 8
                  : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Right ? 9
                  : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Down ? 10
-                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Left ? comboBoxDuelButton1.Items.Count - 1
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Left ? 11
                  : 0;
         }
 
@@ -5445,7 +5445,7 @@ namespace Doomtrain
                  : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Up ? 9
                  : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Right ? 10
                  : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Down ? 11
-                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Left ? comboBoxDuelButton1.Items.Count - 1
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Left ? 12 
                  : 0;
         }
 
@@ -5463,7 +5463,7 @@ namespace Doomtrain
                  : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Up ? 9
                  : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Right ? 10
                  : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Down ? 11
-                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Left ? comboBoxDuelButton1.Items.Count - 1
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Left ? 12
                  : 0;
         }
 
@@ -5481,7 +5481,7 @@ namespace Doomtrain
                  : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Up ? 9
                  : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Right ? 10
                  : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Down ? 11
-                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Left ? comboBoxDuelButton1.Items.Count - 1
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Left ? 12
                  : 0;
         }
 
@@ -5499,7 +5499,7 @@ namespace Doomtrain
                  : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Up ? 9
                  : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Right ? 10
                  : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Down ? 11
-                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Left ? comboBoxDuelButton1.Items.Count - 1
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Left ? 12
                  : 0;
         }
 
