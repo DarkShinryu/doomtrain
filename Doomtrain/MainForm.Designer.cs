@@ -2020,7 +2020,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
             this.checkBoxEnemyAttacksCamera = new System.Windows.Forms.CheckBox();
-            this.hexUpDownEnemyAttacksCamera = new Doomtrain.HexUpDown();
+            this.numericUpDownEnemyAttacksCamera = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -2527,7 +2527,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.panelMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownEnemyAttacksCamera)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksCamera)).BeginInit();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -3723,11 +3723,11 @@
             this.checkBoxDuelFinisher.AutoSize = true;
             this.checkBoxDuelFinisher.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelFinisher.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelFinisher.Location = new System.Drawing.Point(354, 145);
+            this.checkBoxDuelFinisher.Location = new System.Drawing.Point(349, 143);
             this.checkBoxDuelFinisher.Name = "checkBoxDuelFinisher";
-            this.checkBoxDuelFinisher.Size = new System.Drawing.Size(78, 19);
+            this.checkBoxDuelFinisher.Size = new System.Drawing.Size(83, 19);
             this.checkBoxDuelFinisher.TabIndex = 96;
-            this.checkBoxDuelFinisher.Text = "Is Finisher";
+            this.checkBoxDuelFinisher.Text = "Is Finisher?";
             this.checkBoxDuelFinisher.UseVisualStyleBackColor = true;
             // 
             // labelDuelElement
@@ -22329,18 +22329,18 @@
             this.comboBoxDuelButton5.FormattingEnabled = true;
             this.comboBoxDuelButton5.Items.AddRange(new object[] {
             "None",
+            "Escape Battle (D)",
+            "Escape Battle (F)",
+            "Rotation Left (H)",
+            "Rotation Right (G)",
+            "Cancel (C)",
+            "Menu (V)",
+            "Select (X)",
+            "Card Game (S)",
             "Up",
             "Right",
             "Down",
-            "Left",
-            "L2",
-            "R2",
-            "L1",
-            "R1",
-            "Triangle",
-            "Circle",
-            "Cross",
-            "Square"});
+            "Left"});
             this.comboBoxDuelButton5.Location = new System.Drawing.Point(377, 47);
             this.comboBoxDuelButton5.Name = "comboBoxDuelButton5";
             this.comboBoxDuelButton5.Size = new System.Drawing.Size(70, 25);
@@ -22363,18 +22363,18 @@
             this.comboBoxDuelButton4.FormattingEnabled = true;
             this.comboBoxDuelButton4.Items.AddRange(new object[] {
             "None",
+            "Escape Battle (D)",
+            "Escape Battle (F)",
+            "Rotation Left (H)",
+            "Rotation Right (G)",
+            "Cancel (C)",
+            "Menu (V)",
+            "Select (X)",
+            "Card Game (S)",
             "Up",
             "Right",
             "Down",
-            "Left",
-            "L2",
-            "R2",
-            "L1",
-            "R1",
-            "Triangle",
-            "Circle",
-            "Cross",
-            "Square"});
+            "Left"});
             this.comboBoxDuelButton4.Location = new System.Drawing.Point(287, 47);
             this.comboBoxDuelButton4.Name = "comboBoxDuelButton4";
             this.comboBoxDuelButton4.Size = new System.Drawing.Size(70, 25);
@@ -22397,18 +22397,18 @@
             this.comboBoxDuelButton3.FormattingEnabled = true;
             this.comboBoxDuelButton3.Items.AddRange(new object[] {
             "None",
+            "Escape Battle (D)",
+            "Escape Battle (F)",
+            "Rotation Left (H)",
+            "Rotation Right (G)",
+            "Cancel (C)",
+            "Menu (V)",
+            "Select (X)",
+            "Card Game (S)",
             "Up",
             "Right",
             "Down",
-            "Left",
-            "L2",
-            "R2",
-            "L1",
-            "R1",
-            "Triangle",
-            "Circle",
-            "Cross",
-            "Square"});
+            "Left"});
             this.comboBoxDuelButton3.Location = new System.Drawing.Point(197, 47);
             this.comboBoxDuelButton3.Name = "comboBoxDuelButton3";
             this.comboBoxDuelButton3.Size = new System.Drawing.Size(70, 25);
@@ -22431,18 +22431,18 @@
             this.comboBoxDuelButton2.FormattingEnabled = true;
             this.comboBoxDuelButton2.Items.AddRange(new object[] {
             "None",
+            "Escape Battle (D)",
+            "Escape Battle (F)",
+            "Rotation Left (H)",
+            "Rotation Right (G)",
+            "Cancel (C)",
+            "Menu (V)",
+            "Select (X)",
+            "Card Game (S)",
             "Up",
             "Right",
             "Down",
-            "Left",
-            "L2",
-            "R2",
-            "L1",
-            "R1",
-            "Triangle",
-            "Circle",
-            "Cross",
-            "Square"});
+            "Left"});
             this.comboBoxDuelButton2.Location = new System.Drawing.Point(107, 47);
             this.comboBoxDuelButton2.Name = "comboBoxDuelButton2";
             this.comboBoxDuelButton2.Size = new System.Drawing.Size(70, 25);
@@ -22465,18 +22465,18 @@
             this.comboBoxDuelButton1.FormattingEnabled = true;
             this.comboBoxDuelButton1.Items.AddRange(new object[] {
             "None",
+            "Escape Battle (D)",
+            "Escape Battle (F)",
+            "Rotation Left (H)",
+            "Rotation Right (G)",
+            "Cancel (C)",
+            "Menu (V)",
+            "Select (X)",
+            "Card Game (S)",
             "Up",
             "Right",
             "Down",
-            "Left",
-            "L2",
-            "R2",
-            "L1",
-            "R1",
-            "Triangle",
-            "Circle",
-            "Cross",
-            "Square"});
+            "Left"});
             this.comboBoxDuelButton1.Location = new System.Drawing.Point(17, 47);
             this.comboBoxDuelButton1.Name = "comboBoxDuelButton1";
             this.comboBoxDuelButton1.Size = new System.Drawing.Size(70, 25);
@@ -33918,7 +33918,7 @@
             this.groupBox16.Controls.Add(this.comboBoxEnemyAttacksMagicID);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksAttackPower);
             this.groupBox16.Controls.Add(this.labelEnemyAttacksMagicID);
-            this.groupBox16.Controls.Add(this.hexUpDownEnemyAttacksCamera);
+            this.groupBox16.Controls.Add(this.numericUpDownEnemyAttacksCamera);
             this.groupBox16.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
             this.groupBox16.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBox16.Location = new System.Drawing.Point(186, 3);
@@ -35978,26 +35978,24 @@
             this.checkBoxEnemyAttacksCamera.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxEnemyAttacksCamera.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxEnemyAttacksCamera.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxEnemyAttacksCamera.Location = new System.Drawing.Point(331, 112);
+            this.checkBoxEnemyAttacksCamera.Location = new System.Drawing.Point(334, 115);
             this.checkBoxEnemyAttacksCamera.Name = "checkBoxEnemyAttacksCamera";
-            this.checkBoxEnemyAttacksCamera.Size = new System.Drawing.Size(31, 19);
+            this.checkBoxEnemyAttacksCamera.Size = new System.Drawing.Size(15, 14);
             this.checkBoxEnemyAttacksCamera.TabIndex = 46;
-            this.checkBoxEnemyAttacksCamera.Text = "?";
             this.checkBoxEnemyAttacksCamera.UseVisualStyleBackColor = false;
             // 
-            // hexUpDownEnemyAttacksCamera
+            // numericUpDownEnemyAttacksCamera
             // 
-            this.hexUpDownEnemyAttacksCamera.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.hexUpDownEnemyAttacksCamera.Hexadecimal = true;
-            this.hexUpDownEnemyAttacksCamera.Location = new System.Drawing.Point(366, 108);
-            this.hexUpDownEnemyAttacksCamera.Maximum = new decimal(new int[] {
+            this.numericUpDownEnemyAttacksCamera.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownEnemyAttacksCamera.Location = new System.Drawing.Point(358, 109);
+            this.numericUpDownEnemyAttacksCamera.Maximum = new decimal(new int[] {
             127,
             0,
             0,
             0});
-            this.hexUpDownEnemyAttacksCamera.Name = "hexUpDownEnemyAttacksCamera";
-            this.hexUpDownEnemyAttacksCamera.Size = new System.Drawing.Size(47, 25);
-            this.hexUpDownEnemyAttacksCamera.TabIndex = 96;
+            this.numericUpDownEnemyAttacksCamera.Name = "numericUpDownEnemyAttacksCamera";
+            this.numericUpDownEnemyAttacksCamera.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownEnemyAttacksCamera.TabIndex = 5;
             // 
             // mainForm
             // 
@@ -36616,7 +36614,7 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.panelMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownEnemyAttacksCamera)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEnemyAttacksCamera)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -38612,8 +38610,8 @@
         private System.Windows.Forms.ComboBox comboBoxDuelButton1;
         private System.Windows.Forms.Label labelDuelButton1;
         private System.Windows.Forms.Label labelEnemyAttacksCamera;
-        private HexUpDown hexUpDownEnemyAttacksCamera;
         private System.Windows.Forms.CheckBox checkBoxEnemyAttacksCamera;
+        public System.Windows.Forms.NumericUpDown numericUpDownEnemyAttacksCamera;
     }
 }
 

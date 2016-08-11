@@ -211,15 +211,15 @@ namespace Doomtrain
 
         internal enum Buttons : UInt16 //used in duel
         {
-            L2 = 0x0001,
-            R2 = 0x0002,
-            L1 = 0x0004,
-            R1 = 0x0008,
-            Triangle = 0x0010,
-            Circle = 0x0020,
-            X = 0x0040,
-            Square = 0x0080,
-            IsFinisher = 0x0100,
+            None = 0x0000,
+            EscapeBattle_D = 0x0001,
+            EscapeBattle_F = 0x0002,
+            RotationLeft_H = 0x0004,
+            RotationRight_G= 0x0008,
+            Cancel_C = 0x0010,
+            Menu_V = 0x0020,
+            Select_X = 0x0040,
+            CardGame_S = 0x0080,
             Up = 0x1000,
             Right = 0x2000,
             Down = 0x4000,
@@ -591,11 +591,11 @@ namespace Doomtrain
             public byte Status3;
             public byte Status4;
             public byte Status5;
-            //public Buttons Button1;
-            //public Buttons Button2;
-            //public Buttons Button3;
-            //public Buttons Button4;
-            //public Buttons Button5;
+            public Buttons Button1;
+            public Buttons Button2;
+            public Buttons Button3;
+            public Buttons Button4;
+            public Buttons Button5;
         }
 
         public struct DuelParamsData
@@ -1640,10 +1640,10 @@ namespace Doomtrain
                     UshortToKernel(Convert.ToUInt16(variable), 2, (byte)Mode.Mode_EnemyAttacks); //MagicID
                     return;
                 case 1:
-                    Kernel[OffsetToEnemyAttacksSelected + 4] = Convert.ToByte(variable); //camera change spinner
+                    Kernel[OffsetToEnemyAttacksSelected + 4] = (byte)((Kernel[OffsetToEnemyAttacksSelected + 4] & 0x80) | Convert.ToByte(variable)); //camera change spinner
                     return;
                 case 2:
-                    Kernel[OffsetToEnemyAttacksSelected + 4] ^= Convert.ToByte(variable); //camera change tickbox
+                    Kernel[OffsetToEnemyAttacksSelected + 4] ^= 0x80; //camera change tickbox
                     return;
                 case 3:
                     Kernel[OffsetToEnemyAttacksSelected + 6] = Convert.ToByte(variable); //attack type
@@ -2101,21 +2101,24 @@ namespace Doomtrain
                     Kernel[OffsetToDuelSelected + 15] = Convert.ToByte(variable); //Status Attack
                     return;
                 case 9:
-                    Kernel[OffsetToDuelSelected + 16] ^= Convert.ToByte(variable); //button 1, not sure if correct
+                    Kernel[OffsetToDuelSelected + 16] = Convert.ToByte(variable); //button 1 combobox
                     return;
                 case 10:
-                    Kernel[OffsetToDuelSelected + 18] = Convert.ToByte(variable); //button 2
+                    Kernel[OffsetToDuelSelected + 16] ^= 0x01; //button 1 isfinisher
                     return;
                 case 11:
-                    Kernel[OffsetToDuelSelected + 20] = Convert.ToByte(variable); //button 3
+                    Kernel[OffsetToDuelSelected + 18] = Convert.ToByte(variable); //button 2
                     return;
                 case 12:
-                    Kernel[OffsetToDuelSelected + 22] = Convert.ToByte(variable); //button 4
+                    Kernel[OffsetToDuelSelected + 20] = Convert.ToByte(variable); //button 3
                     return;
                 case 13:
-                    Kernel[OffsetToDuelSelected + 24] = Convert.ToByte(variable); //button 5
+                    Kernel[OffsetToDuelSelected + 22] = Convert.ToByte(variable); //button 4
                     return;
                 case 14:
+                    Kernel[OffsetToDuelSelected + 24] = Convert.ToByte(variable); //button 5
+                    return;
+                case 15:
                     DuelStatusUpdator(arg0, variable); //Status
                     return;
 
@@ -4209,16 +4212,159 @@ namespace Doomtrain
                                                     : 0; //Error handler
             GetSelectedDuelData.ElementPerc = Kernel[selectedDuelOffset++];
             GetSelectedDuelData.StatusAttack = Kernel[selectedDuelOffset++];
-            //GetSelectedDuelData.Button1 = Kernel[selectedDuelOffset];
-            selectedDuelOffset += 2;
-            //GetSelectedDuelData.Button2 = Kernel[selectedDuelOffset];
-            selectedDuelOffset += 2;
-            //GetSelectedDuelData.Button3 = Kernel[selectedDuelOffset];
-            selectedDuelOffset += 2;
-            //GetSelectedDuelData.Button4 = Kernel[selectedDuelOffset];
-            selectedDuelOffset += 2;
-            //GetSelectedDuelData.Button5 = Kernel[selectedDuelOffset];
-            selectedDuelOffset += 2;
+
+            //buttons start
+            UInt16 button1 = Kernel[selectedDuelOffset += 2];
+            GetSelectedDuelData.Button1 =
+                button1 == (UInt16)Buttons.None
+                    ? Buttons.None
+                    : button1 == (UInt16)Buttons.EscapeBattle_D
+                        ? Buttons.EscapeBattle_D
+                        : button1 == (UInt16)Buttons.EscapeBattle_F
+                            ? Buttons.EscapeBattle_F
+                            : button1 == (UInt16)Buttons.RotationLeft_H
+                                ? Buttons.RotationLeft_H
+                                : button1 == (UInt16)Buttons.RotationRight_G
+                                    ? Buttons.RotationRight_G
+                                    : button1 == (UInt16)Buttons.Cancel_C
+                                        ? Buttons.Cancel_C
+                                        : button1 == (UInt16)Buttons.Menu_V
+                                            ? Buttons.Menu_V
+                                            : button1 == (UInt16)Buttons.Select_X
+                                                ? Buttons.Select_X
+                                                : button1 == (UInt16)Buttons.CardGame_S
+                                                    ? Buttons.CardGame_S
+                                                    : button1 == (UInt16)Buttons.Up
+                                                        ? Buttons.Up
+                                                        : button1 == (UInt16)Buttons.Right
+                                                            ? Buttons.Right
+                                                            : button1 == (UInt16)Buttons.Down
+                                                                ? Buttons.Down
+                                                                : button1 == (UInt16)Buttons.Left
+                                                                    ? Buttons.Left
+                                                                    : 0; //Error handler
+
+            UInt16 button2 = Kernel[selectedDuelOffset += 2];
+            GetSelectedDuelData.Button2 =
+                button2 == (UInt16)Buttons.None
+                    ? Buttons.None
+                    : button2 == (UInt16)Buttons.EscapeBattle_D
+                        ? Buttons.EscapeBattle_D
+                        : button2 == (UInt16)Buttons.EscapeBattle_F
+                            ? Buttons.EscapeBattle_F
+                            : button2 == (UInt16)Buttons.RotationLeft_H
+                                ? Buttons.RotationLeft_H
+                                : button2 == (UInt16)Buttons.RotationRight_G
+                                    ? Buttons.RotationRight_G
+                                    : button2 == (UInt16)Buttons.Cancel_C
+                                        ? Buttons.Cancel_C
+                                        : button2 == (UInt16)Buttons.Menu_V
+                                            ? Buttons.Menu_V
+                                            : button2 == (UInt16)Buttons.Select_X
+                                                ? Buttons.Select_X
+                                                : button2 == (UInt16)Buttons.CardGame_S
+                                                    ? Buttons.CardGame_S
+                                                    : button2 == (UInt16)Buttons.Up
+                                                        ? Buttons.Up
+                                                        : button2 == (UInt16)Buttons.Right
+                                                            ? Buttons.Right
+                                                            : button2 == (UInt16)Buttons.Down
+                                                                ? Buttons.Down
+                                                                : button2 == (UInt16)Buttons.Left
+                                                                    ? Buttons.Left
+                                                                    : 0; //Error handler
+
+            UInt16 button3 = Kernel[selectedDuelOffset += 2];
+            GetSelectedDuelData.Button3 =
+                button3 == (UInt16)Buttons.None
+                    ? Buttons.None
+                    : button3 == (UInt16)Buttons.EscapeBattle_D
+                        ? Buttons.EscapeBattle_D
+                        : button3 == (UInt16)Buttons.EscapeBattle_F
+                            ? Buttons.EscapeBattle_F
+                            : button3 == (UInt16)Buttons.RotationLeft_H
+                                ? Buttons.RotationLeft_H
+                                : button3 == (UInt16)Buttons.RotationRight_G
+                                    ? Buttons.RotationRight_G
+                                    : button3 == (UInt16)Buttons.Cancel_C
+                                        ? Buttons.Cancel_C
+                                        : button3 == (UInt16)Buttons.Menu_V
+                                            ? Buttons.Menu_V
+                                            : button3 == (UInt16)Buttons.Select_X
+                                                ? Buttons.Select_X
+                                                : button3 == (UInt16)Buttons.CardGame_S
+                                                    ? Buttons.CardGame_S
+                                                    : button3 == (UInt16)Buttons.Up
+                                                        ? Buttons.Up
+                                                        : button3 == (UInt16)Buttons.Right
+                                                            ? Buttons.Right
+                                                            : button3 == (UInt16)Buttons.Down
+                                                                ? Buttons.Down
+                                                                : button3 == (UInt16)Buttons.Left
+                                                                    ? Buttons.Left
+                                                                    : 0; //Error handler
+
+            UInt16 button4 = Kernel[selectedDuelOffset += 2];
+            GetSelectedDuelData.Button4 =
+                button4 == (UInt16)Buttons.None
+                    ? Buttons.None
+                    : button4 == (UInt16)Buttons.EscapeBattle_D
+                        ? Buttons.EscapeBattle_D
+                        : button4 == (UInt16)Buttons.EscapeBattle_F
+                            ? Buttons.EscapeBattle_F
+                            : button4 == (UInt16)Buttons.RotationLeft_H
+                                ? Buttons.RotationLeft_H
+                                : button4 == (UInt16)Buttons.RotationRight_G
+                                    ? Buttons.RotationRight_G
+                                    : button4 == (UInt16)Buttons.Cancel_C
+                                        ? Buttons.Cancel_C
+                                        : button4 == (UInt16)Buttons.Menu_V
+                                            ? Buttons.Menu_V
+                                            : button4 == (UInt16)Buttons.Select_X
+                                                ? Buttons.Select_X
+                                                : button4 == (UInt16)Buttons.CardGame_S
+                                                    ? Buttons.CardGame_S
+                                                    : button4 == (UInt16)Buttons.Up
+                                                        ? Buttons.Up
+                                                        : button4 == (UInt16)Buttons.Right
+                                                            ? Buttons.Right
+                                                            : button4 == (UInt16)Buttons.Down
+                                                                ? Buttons.Down
+                                                                : button4 == (UInt16)Buttons.Left
+                                                                    ? Buttons.Left
+                                                                    : 0; //Error handler
+
+            UInt16 button5 = Kernel[selectedDuelOffset += 2];
+            GetSelectedDuelData.Button5 =
+                button5 == (UInt16)Buttons.None
+                    ? Buttons.None
+                    : button5 == (UInt16)Buttons.EscapeBattle_D
+                        ? Buttons.EscapeBattle_D
+                        : button5 == (UInt16)Buttons.EscapeBattle_F
+                            ? Buttons.EscapeBattle_F
+                            : button5 == (UInt16)Buttons.RotationLeft_H
+                                ? Buttons.RotationLeft_H
+                                : button5 == (UInt16)Buttons.RotationRight_G
+                                    ? Buttons.RotationRight_G
+                                    : button5 == (UInt16)Buttons.Cancel_C
+                                        ? Buttons.Cancel_C
+                                        : button5 == (UInt16)Buttons.Menu_V
+                                            ? Buttons.Menu_V
+                                            : button5 == (UInt16)Buttons.Select_X
+                                                ? Buttons.Select_X
+                                                : button5 == (UInt16)Buttons.CardGame_S
+                                                    ? Buttons.CardGame_S
+                                                    : button5 == (UInt16)Buttons.Up
+                                                        ? Buttons.Up
+                                                        : button5 == (UInt16)Buttons.Right
+                                                            ? Buttons.Right
+                                                            : button5 == (UInt16)Buttons.Down
+                                                                ? Buttons.Down
+                                                                : button5 == (UInt16)Buttons.Left
+                                                                    ? Buttons.Left
+                                                                    : 0; //Error handler
+            //end buttons
+
             GetSelectedDuelData.Status1 = Kernel[selectedDuelOffset++];
             selectedDuelOffset += 1;
             GetSelectedDuelData.Status2 = Kernel[selectedDuelOffset++];
