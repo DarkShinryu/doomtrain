@@ -3723,7 +3723,7 @@
             this.checkBoxDuelFinisher.AutoSize = true;
             this.checkBoxDuelFinisher.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelFinisher.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelFinisher.Location = new System.Drawing.Point(349, 143);
+            this.checkBoxDuelFinisher.Location = new System.Drawing.Point(346, 100);
             this.checkBoxDuelFinisher.Name = "checkBoxDuelFinisher";
             this.checkBoxDuelFinisher.Size = new System.Drawing.Size(83, 19);
             this.checkBoxDuelFinisher.TabIndex = 96;
@@ -3735,7 +3735,7 @@
             this.labelDuelElement.AutoSize = true;
             this.labelDuelElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelElement.Location = new System.Drawing.Point(108, 122);
+            this.labelDuelElement.Location = new System.Drawing.Point(318, 72);
             this.labelDuelElement.Name = "labelDuelElement";
             this.labelDuelElement.Size = new System.Drawing.Size(57, 17);
             this.labelDuelElement.TabIndex = 95;
@@ -3746,7 +3746,7 @@
             this.labelDuelAttackType.AutoSize = true;
             this.labelDuelAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelAttackType.Location = new System.Drawing.Point(122, 70);
+            this.labelDuelAttackType.Location = new System.Drawing.Point(86, 72);
             this.labelDuelAttackType.Name = "labelDuelAttackType";
             this.labelDuelAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelDuelAttackType.TabIndex = 7;
@@ -3757,7 +3757,7 @@
             this.labelDuelHitCount.AutoSize = true;
             this.labelDuelHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelHitCount.Location = new System.Drawing.Point(357, 70);
+            this.labelDuelHitCount.Location = new System.Drawing.Point(390, 17);
             this.labelDuelHitCount.Name = "labelDuelHitCount";
             this.labelDuelHitCount.Size = new System.Drawing.Size(67, 17);
             this.labelDuelHitCount.TabIndex = 0;
@@ -3768,7 +3768,7 @@
             this.labelDuelAttackPower.AutoSize = true;
             this.labelDuelAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelAttackPower.Location = new System.Drawing.Point(345, 17);
+            this.labelDuelAttackPower.Location = new System.Drawing.Point(293, 17);
             this.labelDuelAttackPower.Name = "labelDuelAttackPower";
             this.labelDuelAttackPower.Size = new System.Drawing.Size(89, 17);
             this.labelDuelAttackPower.TabIndex = 0;
@@ -3779,7 +3779,7 @@
             this.labelDuelMagicID.AutoSize = true;
             this.labelDuelMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelMagicID.Location = new System.Drawing.Point(133, 17);
+            this.labelDuelMagicID.Location = new System.Drawing.Point(114, 17);
             this.labelDuelMagicID.Name = "labelDuelMagicID";
             this.labelDuelMagicID.Size = new System.Drawing.Size(61, 17);
             this.labelDuelMagicID.TabIndex = 0;
@@ -22304,6 +22304,7 @@
             // groupBoxShotInput1
             // 
             this.groupBoxShotInput1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxShotInput1.Controls.Add(this.checkBoxDuelFinisher);
             this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton5);
             this.groupBoxShotInput1.Controls.Add(this.labelDuelButton5);
             this.groupBoxShotInput1.Controls.Add(this.comboBoxDuelButton4);
@@ -22316,9 +22317,9 @@
             this.groupBoxShotInput1.Controls.Add(this.labelDuelButton1);
             this.groupBoxShotInput1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxShotInput1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupBoxShotInput1.Location = new System.Drawing.Point(151, 627);
+            this.groupBoxShotInput1.Location = new System.Drawing.Point(151, 579);
             this.groupBoxShotInput1.Name = "groupBoxShotInput1";
-            this.groupBoxShotInput1.Size = new System.Drawing.Size(465, 77);
+            this.groupBoxShotInput1.Size = new System.Drawing.Size(465, 130);
             this.groupBoxShotInput1.TabIndex = 116;
             this.groupBoxShotInput1.TabStop = false;
             this.groupBoxShotInput1.Text = "Buttons";
@@ -22341,9 +22342,9 @@
             "Right",
             "Down",
             "Left"});
-            this.comboBoxDuelButton5.Location = new System.Drawing.Point(377, 47);
+            this.comboBoxDuelButton5.Location = new System.Drawing.Point(167, 99);
             this.comboBoxDuelButton5.Name = "comboBoxDuelButton5";
-            this.comboBoxDuelButton5.Size = new System.Drawing.Size(70, 25);
+            this.comboBoxDuelButton5.Size = new System.Drawing.Size(130, 25);
             this.comboBoxDuelButton5.TabIndex = 4;
             // 
             // labelDuelButton5
@@ -22351,7 +22352,7 @@
             this.labelDuelButton5.AutoSize = true;
             this.labelDuelButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelButton5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton5.Location = new System.Drawing.Point(382, 27);
+            this.labelDuelButton5.Location = new System.Drawing.Point(201, 80);
             this.labelDuelButton5.Name = "labelDuelButton5";
             this.labelDuelButton5.Size = new System.Drawing.Size(61, 17);
             this.labelDuelButton5.TabIndex = 3;
@@ -22375,9 +22376,9 @@
             "Right",
             "Down",
             "Left"});
-            this.comboBoxDuelButton4.Location = new System.Drawing.Point(287, 47);
+            this.comboBoxDuelButton4.Location = new System.Drawing.Point(13, 99);
             this.comboBoxDuelButton4.Name = "comboBoxDuelButton4";
-            this.comboBoxDuelButton4.Size = new System.Drawing.Size(70, 25);
+            this.comboBoxDuelButton4.Size = new System.Drawing.Size(130, 25);
             this.comboBoxDuelButton4.TabIndex = 4;
             // 
             // labelDuelButton4
@@ -22385,7 +22386,7 @@
             this.labelDuelButton4.AutoSize = true;
             this.labelDuelButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelButton4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton4.Location = new System.Drawing.Point(292, 27);
+            this.labelDuelButton4.Location = new System.Drawing.Point(48, 80);
             this.labelDuelButton4.Name = "labelDuelButton4";
             this.labelDuelButton4.Size = new System.Drawing.Size(61, 17);
             this.labelDuelButton4.TabIndex = 3;
@@ -22409,9 +22410,9 @@
             "Right",
             "Down",
             "Left"});
-            this.comboBoxDuelButton3.Location = new System.Drawing.Point(197, 47);
+            this.comboBoxDuelButton3.Location = new System.Drawing.Point(321, 47);
             this.comboBoxDuelButton3.Name = "comboBoxDuelButton3";
-            this.comboBoxDuelButton3.Size = new System.Drawing.Size(70, 25);
+            this.comboBoxDuelButton3.Size = new System.Drawing.Size(130, 25);
             this.comboBoxDuelButton3.TabIndex = 4;
             // 
             // labelDuelButton3
@@ -22419,7 +22420,7 @@
             this.labelDuelButton3.AutoSize = true;
             this.labelDuelButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelButton3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton3.Location = new System.Drawing.Point(202, 27);
+            this.labelDuelButton3.Location = new System.Drawing.Point(355, 26);
             this.labelDuelButton3.Name = "labelDuelButton3";
             this.labelDuelButton3.Size = new System.Drawing.Size(61, 17);
             this.labelDuelButton3.TabIndex = 3;
@@ -22443,9 +22444,9 @@
             "Right",
             "Down",
             "Left"});
-            this.comboBoxDuelButton2.Location = new System.Drawing.Point(107, 47);
+            this.comboBoxDuelButton2.Location = new System.Drawing.Point(167, 47);
             this.comboBoxDuelButton2.Name = "comboBoxDuelButton2";
-            this.comboBoxDuelButton2.Size = new System.Drawing.Size(70, 25);
+            this.comboBoxDuelButton2.Size = new System.Drawing.Size(130, 25);
             this.comboBoxDuelButton2.TabIndex = 4;
             // 
             // labelDuelButton2
@@ -22453,7 +22454,7 @@
             this.labelDuelButton2.AutoSize = true;
             this.labelDuelButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelButton2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton2.Location = new System.Drawing.Point(112, 27);
+            this.labelDuelButton2.Location = new System.Drawing.Point(202, 26);
             this.labelDuelButton2.Name = "labelDuelButton2";
             this.labelDuelButton2.Size = new System.Drawing.Size(61, 17);
             this.labelDuelButton2.TabIndex = 3;
@@ -22464,7 +22465,6 @@
             this.comboBoxDuelButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDuelButton1.FormattingEnabled = true;
             this.comboBoxDuelButton1.Items.AddRange(new object[] {
-            "None",
             "Escape Battle (D)",
             "Escape Battle (F)",
             "Rotation Left (H)",
@@ -22477,9 +22477,9 @@
             "Right",
             "Down",
             "Left"});
-            this.comboBoxDuelButton1.Location = new System.Drawing.Point(17, 47);
+            this.comboBoxDuelButton1.Location = new System.Drawing.Point(13, 47);
             this.comboBoxDuelButton1.Name = "comboBoxDuelButton1";
-            this.comboBoxDuelButton1.Size = new System.Drawing.Size(70, 25);
+            this.comboBoxDuelButton1.Size = new System.Drawing.Size(130, 25);
             this.comboBoxDuelButton1.TabIndex = 4;
             // 
             // labelDuelButton1
@@ -22487,7 +22487,7 @@
             this.labelDuelButton1.AutoSize = true;
             this.labelDuelButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelButton1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton1.Location = new System.Drawing.Point(24, 27);
+            this.labelDuelButton1.Location = new System.Drawing.Point(49, 27);
             this.labelDuelButton1.Name = "labelDuelButton1";
             this.labelDuelButton1.Size = new System.Drawing.Size(59, 17);
             this.labelDuelButton1.TabIndex = 3;
@@ -22540,7 +22540,7 @@
             this.groupBoxDuelStatus.Controls.Add(this.labelDuelStatusAttack);
             this.groupBoxDuelStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDuelStatus.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBoxDuelStatus.Location = new System.Drawing.Point(151, 268);
+            this.groupBoxDuelStatus.Location = new System.Drawing.Point(151, 220);
             this.groupBoxDuelStatus.Name = "groupBoxDuelStatus";
             this.groupBoxDuelStatus.Size = new System.Drawing.Size(465, 272);
             this.groupBoxDuelStatus.TabIndex = 115;
@@ -23089,7 +23089,7 @@
             this.groupBoxDuelTarget.Controls.Add(this.checkBoxDuelTarget3);
             this.groupBoxDuelTarget.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDuelTarget.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBoxDuelTarget.Location = new System.Drawing.Point(151, 185);
+            this.groupBoxDuelTarget.Location = new System.Drawing.Point(151, 137);
             this.groupBoxDuelTarget.Name = "groupBoxDuelTarget";
             this.groupBoxDuelTarget.Size = new System.Drawing.Size(465, 77);
             this.groupBoxDuelTarget.TabIndex = 114;
@@ -23193,7 +23193,7 @@
             this.groupBoxDuelFlags.Controls.Add(this.checkBoxDuelFlag7);
             this.groupBoxDuelFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDuelFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxDuelFlags.Location = new System.Drawing.Point(151, 546);
+            this.groupBoxDuelFlags.Location = new System.Drawing.Point(151, 498);
             this.groupBoxDuelFlags.Name = "groupBoxDuelFlags";
             this.groupBoxDuelFlags.Size = new System.Drawing.Size(465, 75);
             this.groupBoxDuelFlags.TabIndex = 113;
@@ -23299,7 +23299,6 @@
             // groupBoxDuelGeneral
             // 
             this.groupBoxDuelGeneral.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBoxDuelGeneral.Controls.Add(this.checkBoxDuelFinisher);
             this.groupBoxDuelGeneral.Controls.Add(this.labelDuelElementPerc);
             this.groupBoxDuelGeneral.Controls.Add(this.comboBoxDuelElement);
             this.groupBoxDuelGeneral.Controls.Add(this.labelDuelElement);
@@ -23316,7 +23315,7 @@
             this.groupBoxDuelGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxDuelGeneral.Location = new System.Drawing.Point(151, 6);
             this.groupBoxDuelGeneral.Name = "groupBoxDuelGeneral";
-            this.groupBoxDuelGeneral.Size = new System.Drawing.Size(465, 173);
+            this.groupBoxDuelGeneral.Size = new System.Drawing.Size(465, 125);
             this.groupBoxDuelGeneral.TabIndex = 112;
             this.groupBoxDuelGeneral.TabStop = false;
             this.groupBoxDuelGeneral.Text = "General";
@@ -23326,7 +23325,7 @@
             this.labelDuelElementPerc.AutoSize = true;
             this.labelDuelElementPerc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelElementPerc.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelElementPerc.Location = new System.Drawing.Point(210, 122);
+            this.labelDuelElementPerc.Location = new System.Drawing.Point(420, 72);
             this.labelDuelElementPerc.Name = "labelDuelElementPerc";
             this.labelDuelElementPerc.Size = new System.Drawing.Size(19, 17);
             this.labelDuelElementPerc.TabIndex = 94;
@@ -23346,7 +23345,7 @@
             "Water",
             "Holy",
             "Non-Elemental"});
-            this.comboBoxDuelElement.Location = new System.Drawing.Point(81, 142);
+            this.comboBoxDuelElement.Location = new System.Drawing.Point(291, 92);
             this.comboBoxDuelElement.Name = "comboBoxDuelElement";
             this.comboBoxDuelElement.Size = new System.Drawing.Size(110, 25);
             this.comboBoxDuelElement.TabIndex = 93;
@@ -23354,7 +23353,7 @@
             // numericUpDownDuelElementPerc
             // 
             this.numericUpDownDuelElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelElementPerc.Location = new System.Drawing.Point(197, 142);
+            this.numericUpDownDuelElementPerc.Location = new System.Drawing.Point(407, 92);
             this.numericUpDownDuelElementPerc.Maximum = new decimal(new int[] {
             255,
             0,
@@ -23368,15 +23367,15 @@
             // 
             this.comboBoxDuelAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDuelAttackType.FormattingEnabled = true;
-            this.comboBoxDuelAttackType.Location = new System.Drawing.Point(31, 90);
+            this.comboBoxDuelAttackType.Location = new System.Drawing.Point(12, 92);
             this.comboBoxDuelAttackType.Name = "comboBoxDuelAttackType";
-            this.comboBoxDuelAttackType.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxDuelAttackType.Size = new System.Drawing.Size(235, 25);
             this.comboBoxDuelAttackType.TabIndex = 8;
             // 
             // numericUpDownDuelHitCount
             // 
             this.numericUpDownDuelHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelHitCount.Location = new System.Drawing.Point(367, 90);
+            this.numericUpDownDuelHitCount.Location = new System.Drawing.Point(400, 37);
             this.numericUpDownDuelHitCount.Maximum = new decimal(new int[] {
             255,
             0,
@@ -23389,7 +23388,7 @@
             // numericUpDownDuelAttackPower
             // 
             this.numericUpDownDuelAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelAttackPower.Location = new System.Drawing.Point(367, 37);
+            this.numericUpDownDuelAttackPower.Location = new System.Drawing.Point(315, 37);
             this.numericUpDownDuelAttackPower.Maximum = new decimal(new int[] {
             255,
             0,
@@ -23403,7 +23402,7 @@
             // 
             this.comboBoxDuelMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDuelMagicID.FormattingEnabled = true;
-            this.comboBoxDuelMagicID.Location = new System.Drawing.Point(31, 37);
+            this.comboBoxDuelMagicID.Location = new System.Drawing.Point(12, 37);
             this.comboBoxDuelMagicID.Name = "comboBoxDuelMagicID";
             this.comboBoxDuelMagicID.Size = new System.Drawing.Size(265, 25);
             this.comboBoxDuelMagicID.TabIndex = 2;

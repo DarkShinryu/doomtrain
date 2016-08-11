@@ -999,12 +999,12 @@ namespace Doomtrain
             comboBoxDuelElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(6, Duel_GetElement(comboBoxDuelElement.SelectedIndex));            
             numericUpDownDuelElementPerc.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(7, numericUpDownDuelElementPerc.Value);
             numericUpDownDuelStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(8, numericUpDownDuelStatusAttack.Value);
-            comboBoxDuelButton1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, comboBoxDuelButton1.SelectedIndex);
+            comboBoxDuelButton1.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(9, Duel_GetButton1(comboBoxDuelButton1.SelectedIndex));
             checkBoxDuelFinisher.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(10, checkBoxDuelFinisher.Checked);
-            comboBoxDuelButton2.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, comboBoxDuelButton2.SelectedIndex);
-            comboBoxDuelButton3.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, comboBoxDuelButton3.SelectedIndex);
-            comboBoxDuelButton4.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, comboBoxDuelButton4.SelectedIndex);
-            comboBoxDuelButton5.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, comboBoxDuelButton5.SelectedIndex);
+            comboBoxDuelButton2.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(11, Duel_GetButtonOthers(comboBoxDuelButton2.SelectedIndex));
+            comboBoxDuelButton3.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(12, Duel_GetButtonOthers(comboBoxDuelButton3.SelectedIndex));
+            comboBoxDuelButton4.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(13, Duel_GetButtonOthers(comboBoxDuelButton4.SelectedIndex));
+            comboBoxDuelButton5.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(14, Duel_GetButtonOthers(comboBoxDuelButton5.SelectedIndex));
             checkBoxDuelDeath.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(15, 0x01, 0);
             checkBoxDuelPoison.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(15, 0x02, 0);
             checkBoxDuelPetrify.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(15, 0x04, 0);
@@ -5414,6 +5414,131 @@ namespace Doomtrain
             return elem;
         }
 
+        private int Duel_GetButton1()
+        {
+            return KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.EscapeBattle_D ? 0
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.EscapeBattle_D ? 1
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.RotationLeft_H ? 2
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.RotationRight_G ? 3
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Cancel_C ? 4
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Menu_V ? 5
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Select_X ? 6
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.CardGame_S ? 7
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Up ? 8
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Right ? 9
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Down ? 10
+                 : KernelWorker.GetSelectedDuelData.Button1 == KernelWorker.Buttons.Left ? comboBoxDuelButton1.Items.Count - 1
+                 : 0;
+        }
+
+        private int Duel_GetButton2()
+        {
+            return KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.None ? 0
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.EscapeBattle_D ? 1
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.EscapeBattle_D ? 2
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.RotationLeft_H ? 3
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.RotationRight_G ? 4
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Cancel_C ? 5
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Menu_V ? 6
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Select_X ? 7
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.CardGame_S ? 8
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Up ? 9
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Right ? 10
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Down ? 11
+                 : KernelWorker.GetSelectedDuelData.Button2 == KernelWorker.Buttons.Left ? comboBoxDuelButton1.Items.Count - 1
+                 : 0;
+        }
+
+        private int Duel_GetButton3()
+        {
+            return KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.None ? 0
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.EscapeBattle_D ? 1
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.EscapeBattle_D ? 2
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.RotationLeft_H ? 3
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.RotationRight_G ? 4
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Cancel_C ? 5
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Menu_V ? 6
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Select_X ? 7
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.CardGame_S ? 8
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Up ? 9
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Right ? 10
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Down ? 11
+                 : KernelWorker.GetSelectedDuelData.Button3 == KernelWorker.Buttons.Left ? comboBoxDuelButton1.Items.Count - 1
+                 : 0;
+        }
+
+        private int Duel_GetButton4()
+        {
+            return KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.None ? 0
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.EscapeBattle_D ? 1
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.EscapeBattle_D ? 2
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.RotationLeft_H ? 3
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.RotationRight_G ? 4
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Cancel_C ? 5
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Menu_V ? 6
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Select_X ? 7
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.CardGame_S ? 8
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Up ? 9
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Right ? 10
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Down ? 11
+                 : KernelWorker.GetSelectedDuelData.Button4 == KernelWorker.Buttons.Left ? comboBoxDuelButton1.Items.Count - 1
+                 : 0;
+        }
+
+        private int Duel_GetButton5()
+        {
+            return KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.None ? 0
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.EscapeBattle_D ? 1
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.EscapeBattle_D ? 2
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.RotationLeft_H ? 3
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.RotationRight_G ? 4
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Cancel_C ? 5
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Menu_V ? 6
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Select_X ? 7
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.CardGame_S ? 8
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Up ? 9
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Right ? 10
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Down ? 11
+                 : KernelWorker.GetSelectedDuelData.Button5 == KernelWorker.Buttons.Left ? comboBoxDuelButton1.Items.Count - 1
+                 : 0;
+        }
+
+        private ushort Duel_GetButton1(int Index)
+        {
+            ushort button = (ushort)(Index == 0 ? (ushort)KernelWorker.Buttons.EscapeBattle_D :
+                Index == 1 ? (ushort)KernelWorker.Buttons.EscapeBattle_F :
+                Index == 2 ? (ushort)KernelWorker.Buttons.RotationLeft_H :
+                Index == 3 ? (ushort)KernelWorker.Buttons.RotationRight_G :
+                Index == 4 ? (ushort)KernelWorker.Buttons.Cancel_C :
+                Index == 5 ? (ushort)KernelWorker.Buttons.Menu_V :
+                Index == 6 ? (ushort)KernelWorker.Buttons.Select_X :
+                Index == 7 ? (ushort)KernelWorker.Buttons.CardGame_S :
+                Index == 8 ? (ushort)KernelWorker.Buttons.Up :
+                Index == 9 ? (ushort)KernelWorker.Buttons.Right :
+                Index == 10 ? (ushort)KernelWorker.Buttons.Down :
+                Index == 11 ? (ushort)KernelWorker.Buttons.Left :
+                0x0000 /*ErrorHandler*/);
+            return button;
+        }
+
+        private ushort Duel_GetButtonOthers(int Index)
+        {
+            ushort button = (ushort)(Index == 0 ? (ushort)KernelWorker.Buttons.None :
+                Index == 1 ? (ushort)KernelWorker.Buttons.EscapeBattle_D :
+                Index == 2 ? (ushort)KernelWorker.Buttons.EscapeBattle_F :
+                Index == 3 ? (ushort)KernelWorker.Buttons.RotationLeft_H :
+                Index == 4 ? (ushort)KernelWorker.Buttons.RotationRight_G :
+                Index == 5 ? (ushort)KernelWorker.Buttons.Cancel_C :
+                Index == 6 ? (ushort)KernelWorker.Buttons.Menu_V :
+                Index == 7 ? (ushort)KernelWorker.Buttons.Select_X :
+                Index == 8 ? (ushort)KernelWorker.Buttons.CardGame_S :
+                Index == 9 ? (ushort)KernelWorker.Buttons.Up :
+                Index == 10 ? (ushort)KernelWorker.Buttons.Right :
+                Index == 11 ? (ushort)KernelWorker.Buttons.Down :
+                Index == 12 ? (ushort)KernelWorker.Buttons.Left :
+                0x0000 /*ErrorHandler*/);
+            return button;
+        }
 
         private void DuelStatusWorker(bool bBackup)
         {
@@ -5544,6 +5669,12 @@ namespace Doomtrain
                 ToolTip(comboBoxDuelElement,2, comboBoxDuelElement.Items[Duel_GetElement()]);
                 ToolTip(numericUpDownDuelElementPerc,0, KernelWorker.GetSelectedDuelData.ElementPerc);
                 ToolTip(numericUpDownDuelStatusAttack,0, KernelWorker.GetSelectedDuelData.StatusAttack);
+                ToolTip(comboBoxDuelButton1, 2, comboBoxDuelButton1.Items[Duel_GetButton1()]);
+                ToolTip(checkBoxDuelFinisher, 1, ((KernelWorker.GetSelectedDuelData.IsFinisher >> 8) & 1) == 1);
+                ToolTip(comboBoxDuelButton2, 2, comboBoxDuelButton2.Items[Duel_GetButton2()]);
+                ToolTip(comboBoxDuelButton3, 2, comboBoxDuelButton3.Items[Duel_GetButton3()]);
+                ToolTip(comboBoxDuelButton4, 2, comboBoxDuelButton4.Items[Duel_GetButton4()]);
+                ToolTip(comboBoxDuelButton5, 2, comboBoxDuelButton5.Items[Duel_GetButton5()]);
                 DuelStatusWorker(true);
                 //to do buttons
 
@@ -5579,9 +5710,13 @@ namespace Doomtrain
                 comboBoxDuelElement.SelectedIndex = Duel_GetElement();
                 numericUpDownDuelElementPerc.Value = KernelWorker.GetSelectedDuelData.ElementPerc;
                 numericUpDownDuelStatusAttack.Value = KernelWorker.GetSelectedDuelData.StatusAttack;
+                comboBoxDuelButton1.SelectedIndex = Duel_GetButton1();
+                checkBoxDuelFinisher.Checked = ((KernelWorker.GetSelectedDuelData.IsFinisher >> 8) & 1) == 1;
+                comboBoxDuelButton2.SelectedIndex = Duel_GetButton2();
+                comboBoxDuelButton3.SelectedIndex = Duel_GetButton3();
+                comboBoxDuelButton4.SelectedIndex = Duel_GetButton4();
+                comboBoxDuelButton5.SelectedIndex = Duel_GetButton5();
                 DuelStatusWorker(false);
-                //to do buttons
-
             }
             catch (Exception Exception)
             {
