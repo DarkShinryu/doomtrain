@@ -108,9 +108,9 @@
             this.labelCredits.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCredits.Location = new System.Drawing.Point(302, 75);
             this.labelCredits.Name = "labelCredits";
-            this.labelCredits.Size = new System.Drawing.Size(199, 21);
+            this.labelCredits.Size = new System.Drawing.Size(198, 21);
             this.labelCredits.TabIndex = 10;
-            this.labelCredits.Text = "by alexfilth, MaKi && JWP";
+            this.labelCredits.Text = "by alexfilth, Maki && JWP";
             // 
             // AboutBox
             // 

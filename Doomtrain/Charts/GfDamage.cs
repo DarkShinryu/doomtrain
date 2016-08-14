@@ -87,7 +87,7 @@ namespace Doomtrain.Charts
                 "Target SPR = The SPR value of the target.\n" +
                 "Boost = GF boost, when not used is 100.\n" +
                 "SumMagBonus = The % of Sum Mag Bonus.\n" + 
-                "Elem Defense = The elemental defense of the target." + 
+                "Elem Defense = The elemental defense of the target.\n" + 
                 "Target Max HP = The max HP value of the target.", "Info",
                 MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
         }
