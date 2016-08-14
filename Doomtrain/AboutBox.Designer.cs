@@ -41,12 +41,12 @@
             this.labelDoomtrain.AutoSize = true;
             this.labelDoomtrain.Font = new System.Drawing.Font("calendar note tfb", 35F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDoomtrain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(77)))), ((int)(((byte)(0)))));
-            this.labelDoomtrain.Location = new System.Drawing.Point(48, 7);
+            this.labelDoomtrain.Location = new System.Drawing.Point(46, 7);
             this.labelDoomtrain.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDoomtrain.Name = "labelDoomtrain";
-            this.labelDoomtrain.Size = new System.Drawing.Size(437, 49);
+            this.labelDoomtrain.Size = new System.Drawing.Size(441, 49);
             this.labelDoomtrain.TabIndex = 1;
-            this.labelDoomtrain.Text = "DOOMTRAIN 1.0.0";
+            this.labelDoomtrain.Text = "DOOMTRAIN 1.0.1";
             // 
             // linkLabelWiki
             // 

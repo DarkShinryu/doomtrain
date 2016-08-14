@@ -81,8 +81,7 @@ namespace Doomtrain.Charts
 
         private void buttonInfo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("The values here are only used for the chart and they have no connection to the kernel file. " + 
-                "Also ignore the chart for attack type Diablos and Cactuar, they use  two different formulas.\n" +
+            MessageBox.Show("The values here are only used for the chart and they have no connection to the kernel file.\n" +
                 "You need to change the values manually.\n\n" +
                 "Target SPR = The SPR value of the target.\n" +
                 "Boost = GF boost, when not used is 100.\n" +
