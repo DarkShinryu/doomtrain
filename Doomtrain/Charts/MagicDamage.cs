@@ -398,7 +398,7 @@ namespace Doomtrain.Charts
 
                     chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
                     chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisX.CustomLabels.Clear();
-                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisX.CustomLabels.Add(-1D, 3D, "Demi Attack");
+                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisX.CustomLabels.Add(-1D, 3D, "% Magic Damage");
 
                     chartMagicDamage.Series["Current"].Points.Clear();
                     chartMagicDamage.Series["Current"].Points.AddXY
@@ -447,7 +447,7 @@ namespace Doomtrain.Charts
 
                     chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisY.Title = "Damage";
                     chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisX.CustomLabels.Clear();
-                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisX.CustomLabels.Add(-1D, 3D, "Ignore SPR Attack");
+                    chartMagicDamage.ChartAreas["ChartAreaMagicDamage"].AxisX.CustomLabels.Add(-1D, 3D, "Magic Attack (Ignore SPR)");
 
                     chartMagicDamage.Series["Current"].Points.Clear();
                     chartMagicDamage.Series["Current"].Points.AddXY

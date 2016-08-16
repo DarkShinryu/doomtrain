@@ -1,12 +1,12 @@
 None
-Basic Attack
+Physical Attack
 Magic Attack
 Curative Magic
 Curative Item
 Revive
 Revive At Full HP
-% Damage
-Demi
+% Physical Damage
+% Magic Damage
 Renzokuken Finisher
 Squall Gunblade Attack
 GF
@@ -18,7 +18,7 @@ LV Up
 Card
 Kamikaze
 Devour
-Diablos Gravity Attack
+% GF Damage
 Unknown 1
 Magic Attack (Ignore Target SPR)
 Angelo Search
@@ -27,11 +27,11 @@ White Wind (Quistis)
 LV? Attack
 Fixed Damage
 Target Current HP - 1
-Cactuar Summon
+Fixed Magic Damage Based on GF Level
 Unknown 2
 Unknown 3
 Give Percentage HP
 Unknown 4
 Everyone's Grudge
 1 HP Damage
-Terra Break/Great Attractor
+Physical Attack (Ignore Target VIT)

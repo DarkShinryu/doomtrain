@@ -669,7 +669,7 @@ namespace Doomtrain.Charts
                     chartGfDamage.Series["Current"].Points.AddXY
                         (10, Math.Floor(numericUpDownHP.Value * 100 / 100));
 
-                    labelAttackType.Text = "Attack Type: Diablos";
+                    labelAttackType.Text = "Attack Type: % GF Damage";
                 }
                 else if (_mainForm.comboBoxGFAttackType.SelectedIndex == 29) //Attack type "Cactuar"
                 {
@@ -697,7 +697,7 @@ namespace Doomtrain.Charts
                     chartGfDamage.Series["Current"].Points.AddXY
                         (10, (((100 * KernelWorker.GetSelectedGFData.GFPower) / 1000) + 1) * 1000);
 
-                    labelAttackType.Text = "Attack Type: Cactuar";
+                    labelAttackType.Text = "Attack Type: Fixed Damage Based on GF Level";
                 }
                 else if (_mainForm.comboBoxGFAttackType.SelectedIndex == 15) //Attack type "Ignore SPR"
                 {
@@ -749,7 +749,7 @@ namespace Doomtrain.Charts
                     chartGfDamage.Series["Current"].Points.AddXY
                         (10, Math.Floor(e100 * (900 - numericUpDownElemDef.Value) / 100));
 
-                    labelAttackType.Text = "Attack Type: Ignore SPR";
+                    labelAttackType.Text = "Attack Type: Magic Attack (Ignore SPR)";
                 }
                 else
                 {

@@ -202,6 +202,24 @@ namespace Doomtrain.Charts
                         chartEADamage.Series["Default"].Points.AddXY
                             (0, KernelWorker.GetSelectedEnemyAttacksData.AttackPower * numericUpDownKilled.Value);
                     }
+                    else if (_mainForm.comboBoxEnemyAttacksAttackType.SelectedIndex == 36) // Attack type "Physical Attack (Ignore VIT)"
+                    {
+                        chartEADamage.Series["Default"].Points.Clear();
+
+                        a = (int)Math.Pow((int)numericUpDownSTR.Value, 2) / 16 + (int)numericUpDownSTR.Value;
+                        b = a * (265 - 0) / 256;
+                        c = b * KernelWorker.GetSelectedEnemyAttacksData.AttackPower / 16;
+
+                        if (numericUpDownElemAtt.Value == 0)
+                        {
+                            chartEADamage.Series["Default"].Points.AddXY(0, c);
+                        }
+                        else
+                        {
+                            chartEADamage.Series["Default"].Points.AddXY
+                                (0, Math.Floor(c + (c * numericUpDownElemAtt.Value * (900 - numericUpDownElemDef.Value) / 10000)));
+                        }
+                    }
                     else
                     {
                         chartEADamage.Series["Default"].Points.Clear();
@@ -296,6 +314,24 @@ namespace Doomtrain.Charts
                         chartEADamage.Series["Default"].Points.AddXY
                             (0, KernelWorker.GetSelectedEnemyAttacksData.AttackPower * numericUpDownKilled.Value);
                     }
+                    else if (_mainForm.comboBoxEnemyAttacksAttackType.SelectedIndex == 36) // Attack type "Physical Attack (Ignore VIT)"
+                    {
+                        chartEADamage.Series["Default"].Points.Clear();
+
+                        a = (int)Math.Pow((int)numericUpDownSTR.Value, 2) / 16 + (int)numericUpDownSTR.Value;
+                        b = a * 265 / 256;
+                        c = b * KernelWorker.GetSelectedEnemyAttacksData.AttackPower / 16;
+
+                        if (numericUpDownElemAtt.Value == 0)
+                        {
+                            chartEADamage.Series["Default"].Points.AddXY(0, c);
+                        }
+                        else
+                        {
+                            chartEADamage.Series["Default"].Points.AddXY
+                                (0, Math.Floor(c + (c * numericUpDownElemAtt.Value / 10000)));
+                        }
+                    }
                     else
                     {
                         chartEADamage.Series["Default"].Points.Clear();
@@ -329,7 +365,7 @@ namespace Doomtrain.Charts
 
                     chartEADamage.ChartAreas["ChartAreaEADamage"].AxisY.Title = "Damage";
                     chartEADamage.ChartAreas["ChartAreaEADamage"].AxisX.CustomLabels.Clear();
-                    chartEADamage.ChartAreas["ChartAreaEADamage"].AxisX.CustomLabels.Add(-1D, 3D, "Basic Attack");
+                    chartEADamage.ChartAreas["ChartAreaEADamage"].AxisX.CustomLabels.Add(-1D, 3D, "Physical Attack");
                     
                     if (numericUpDownElemAtt.Value == 0)
                     {
@@ -437,7 +473,7 @@ namespace Doomtrain.Charts
 
                     chartEADamage.ChartAreas["ChartAreaEADamage"].AxisY.Title = "Damage";
                     chartEADamage.ChartAreas["ChartAreaEADamage"].AxisX.CustomLabels.Clear();
-                    chartEADamage.ChartAreas["ChartAreaEADamage"].AxisX.CustomLabels.Add(-1D, 3D, "Demi Attack");
+                    chartEADamage.ChartAreas["ChartAreaEADamage"].AxisX.CustomLabels.Add(-1D, 3D, "$ Magic Damage");
 
                     chartEADamage.Series["Current"].Points.Clear();
                     chartEADamage.Series["Current"].Points.AddXY
@@ -591,7 +627,7 @@ namespace Doomtrain.Charts
 
                     chartEADamage.ChartAreas["ChartAreaEADamage"].AxisY.Title = "Damage";
                     chartEADamage.ChartAreas["ChartAreaEADamage"].AxisX.CustomLabels.Clear();
-                    chartEADamage.ChartAreas["ChartAreaEADamage"].AxisX.CustomLabels.Add(-1D, 3D, "% Damage");
+                    chartEADamage.ChartAreas["ChartAreaEADamage"].AxisX.CustomLabels.Add(-1D, 3D, "% Physical Damage");
 
                     chartEADamage.Series["Current"].Points.Clear();
                     chartEADamage.Series["Current"].Points.AddXY
@@ -626,6 +662,68 @@ namespace Doomtrain.Charts
                     chartEADamage.Series["Current"].Points.Clear();
                     chartEADamage.Series["Current"].Points.AddXY
                         (0, KernelWorker.GetSelectedEnemyAttacksData.AttackPower * numericUpDownKilled.Value);
+                }
+                else if (_mainForm.comboBoxEnemyAttacksAttackType.SelectedIndex == 36) // Attack type "Physical Attack (Ignore VIT)"
+                {
+                    chartEADamage.ChartAreas["ChartAreaEADamage"].AxisY.Title = "Damage";
+                    chartEADamage.ChartAreas["ChartAreaEADamage"].AxisX.CustomLabels.Clear();
+                    chartEADamage.ChartAreas["ChartAreaEADamage"].AxisX.CustomLabels.Add(-1D, 3D, "Physical Attack (Ignore VIT)");
+
+                    a = (int)Math.Pow((int)numericUpDownSTR.Value, 2) / 16 + (int)numericUpDownSTR.Value;
+                    b = a * (265 - 0) / 256;
+                    c = b * KernelWorker.GetSelectedEnemyAttacksData.AttackPower / 16;
+
+                    if (numericUpDownElemAtt.Value == 0)
+                    {
+                        labelMAG.Visible = false;
+                        labelHealMAG.Visible = false;
+                        labelSPR.Visible = false;
+                        labelElemDef.Visible = false;
+                        labelHP.Visible = false;
+                        labelVIT.Visible = false;
+                        labelSTR.Visible = true;
+                        labelKilled.Visible = false;
+                        labelElemAtt.Visible = true;
+                        numericUpDownMAG.Visible = false;
+                        numericUpDownSPR.Visible = false;
+                        numericUpDownHealMAG.Visible = false;
+                        numericUpDownElemDef.Visible = false;
+                        numericUpDownHP.Visible = false;
+                        numericUpDownVIT.Visible = false;
+                        numericUpDownSTR.Visible = true;
+                        numericUpDownKilled.Visible = false;
+                        numericUpDownElemAtt.Visible = true;
+                        checkBoxDefault.Visible = true;
+
+                        chartEADamage.Series["Current"].Points.Clear();
+                        chartEADamage.Series["Current"].Points.AddXY(0, c);
+                    }
+                    else
+                    {
+                        labelMAG.Visible = false;
+                        labelHealMAG.Visible = false;
+                        labelSPR.Visible = false;
+                        labelElemDef.Visible = true;
+                        labelHP.Visible = false;
+                        labelVIT.Visible = false;
+                        labelSTR.Visible = true;
+                        labelKilled.Visible = false;
+                        labelElemAtt.Visible = true;
+                        numericUpDownMAG.Visible = false;
+                        numericUpDownSPR.Visible = false;
+                        numericUpDownHealMAG.Visible = false;
+                        numericUpDownElemDef.Visible = true;
+                        numericUpDownHP.Visible = false;
+                        numericUpDownVIT.Visible = false;
+                        numericUpDownSTR.Visible = true;
+                        numericUpDownKilled.Visible = false;
+                        numericUpDownElemAtt.Visible = true;
+                        checkBoxDefault.Visible = true;
+
+                        chartEADamage.Series["Current"].Points.Clear();
+                        chartEADamage.Series["Current"].Points.AddXY
+                            (0, Math.Floor(c + (c * numericUpDownElemAtt.Value * (900 - numericUpDownElemDef.Value) / 10000)));
+                    }
                 }
                 else
                 {

@@ -2103,33 +2103,33 @@ namespace Doomtrain
                 "d = c * Boost / 100\n" + 
                 "e = d * (100 + SumMagBonus) / 100\n" +
                 "Damage = e * (900 - ElemDef) / 100\n\n" +
-                "Diablos = TargetMaxHP * Level / 100\n\n" +
-                "Cactuar = (((GF level * Power) / 1,000) + 1) * 1,000", "GF Damage Formula");
+                "% GF Damage = TargetMaxHP * Level / 100\n\n" +
+                "Fixed GF Damage = (((GF level * Power) / 1,000) + 1) * 1,000", "GF Damage Formula");
         }
 
         private void buttonMagicDamageFormula_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Regular Magic Attack =\n" + 
+            MessageBox.Show("Magic Attack =\n" + 
                 "a = AttackerMag + Power\n" +
                 "b = a * (265 - TargetSpr) / 4\n" +
                 "c = b * Power / 256\n" +
                 "Damage = c * (900 - ElemDef) / 100\n\n" +
-                "Demi = TargetCurrentHP * Power / 16\n\n" +
+                "% Magic Damage = TargetCurrentHP * Power / 16\n\n" +
                 "Curative Magic = (Power + HealerMag) * Power / 2", "Magic Damage Formula");
         }
         private void buttonEnemyAttacksDamageFormula_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Basic Attack =\n" +
+            MessageBox.Show("Physical Attack =\n" +
                 "a = AttackerStr^2 / 16 + AttackerStr\n" +
                 "b = a * (265 - TargetVit) / 256\n" +
                 "c = b * Power / 16\n" +
                 "Damage = c * ElemAtt * (900 - ElemDef) / 10000\n\n" + 
-                "Regular Magic Attack =\n" +
+                "Magic Attack =\n" +
                 "a = AttackerMag + Power\n" +
                 "b = a * (265 - TargetSpr) / 4\n" +
                 "c = b * Power / 256\n" +
                 "Damage = c * (900 - ElemDef) / 100\n\n" +
-                "Demi = TargetCurrentHP * Power / 16\n\n" +
+                "% Magic Damage = TargetCurrentHP * Power / 16\n\n" +
                 "Target Current HP -1 = TargetCurrentHP - 1\n\n" +
                 "% Damage = TargetCurrentHP * Power / 16\n\n" +
                 "Fixed Damage = Power * 100 - AttackParam\n\n", "Enemy Attacks Damage Formulas");
