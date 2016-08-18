@@ -17,7 +17,7 @@
 016 - Recover
 017 - Elvoret Entrance
 018 - Elvoret Death
-019 - Unknown
+019 - Raldo Throw
 020 - NORG Pod Opening
 021 - Triple
 022 - Bio
