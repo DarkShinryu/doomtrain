@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Runtime.InteropServices;
 
 namespace Doomtrain
 {
@@ -17,6 +18,9 @@ namespace Doomtrain
         {
             if (_charstable == null)
                 _charstable = Chartable.Split(',');
+
+            //REMEMBER TO DELETE THIS:
+            SecretSquirrelClass.Squirrel();
         }
 
         /// <summary>
@@ -30,10 +34,12 @@ namespace Doomtrain
             while (true)
             {
                 if (buffer[index] == 0x00)
-                    return sb.ToString();
+                    break;
                 char c = _charstable[buffer[index++] - 31].ToCharArray()[0];
                 sb.Append(c);
             }
+                /* DELETE ME */ Console.WriteLine(sb.ToString());
+            return sb.ToString();
         }
 
         /// <summary>
@@ -81,8 +87,12 @@ namespace Doomtrain
 
     internal class SecretSquirrelClass
     {
-        public string Squirrel()
+        [DllImport("kernel32")]
+        static extern bool AllocConsole();
+
+        public static string Squirrel()
         {
+            AllocConsole();
             return "Squirrel";
         }
     }
