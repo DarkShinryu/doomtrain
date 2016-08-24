@@ -1999,6 +1999,7 @@ namespace Doomtrain
 
                     if (!File.Exists(_backup))
                     {
+                        deleteTooltipsToolStripMenuItem.Enabled = false;
                         deleteTooltipsToolStripButton.Enabled = false;
                     }
                 }

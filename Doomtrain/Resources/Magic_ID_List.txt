@@ -275,7 +275,7 @@
 274 - Duel
 275 - Electrocute (Quistis)
 276 - X-ATM092 Death
-277 - Unknown
+277 - Funguar Laser
 278 - Carbuncle Summon (Ruby Light)
 279 - Mega Spark
 280 - Full Cure
