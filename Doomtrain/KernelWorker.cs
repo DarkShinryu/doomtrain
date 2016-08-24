@@ -124,11 +124,6 @@ namespace Doomtrain
         public static BattleCommandsData GetSelectedBattleCommandsData;
         public static RinoaCommandsData GetSelectedRinoaCommandsData;
 
-        static string[] _charstable;
-        private static readonly string Chartable =
-        @" , ,1,2,3,4,5,6,7,8,9,%,/,:,!,?,…,+,-,=,*,&,「,」,(,),·,.,,,~,“,”,‘,#,$,',_,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,À,Á,Â,Ä,Ç,È,É,Ê,Ë,Ì,Í,Î,Ï,Ñ,Ò,Ó,Ô,Ö,Ù,Ú,Û,Ü,Œ,ß,à,á,â,ä,ç,è,é,ê,ë,ì,í,î,ï,ñ,ò";
-
-
         public enum KernelSections : ushort
         { //BitShift to left, to make fast and natural MULTIPLY BY 2 operation
             BattleCommands = 1 << 2,
@@ -3468,6 +3463,7 @@ namespace Doomtrain
         public static void ReadKernel(byte[] kernel)
         {
             Kernel = kernel;
+            FF8Text.SetKernel(kernel);
 
             BattleCommandsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BattleCommands);
             MagicDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.MagicData);
@@ -3622,7 +3618,7 @@ namespace Doomtrain
 
             GetSelectedGFData.GFMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfOffset + 4));
 
-            /* TEXT TEST*/GetSelectedGFData.OffsetGFName = BuildString((ushort)(
+            /* TEXT TEST*/GetSelectedGFData.OffsetGFName = FF8Text.BuildString((ushort)(
                     BitConverter.ToInt32(Kernel, (int)KernelSections.Text_JunctionableGF) + (BitConverter.ToUInt16(Kernel, selectedGfOffset))));
 
             selectedGfOffset += 4 + 2; //Name Offset + Description Offset + MagicID
@@ -4851,21 +4847,6 @@ namespace Doomtrain
         #endregion
 
         #endregion
-
-
-        private static string BuildString(int index)
-        {
-            if (_charstable == null)
-                _charstable = Chartable.Split(',');
-            StringBuilder sb = new StringBuilder();
-            while (true)
-            {
-                if (Kernel[index] == 0x00)
-                    return sb.ToString();
-                char c = _charstable[Kernel[index++] - 31].ToCharArray()[0];
-                sb.Append(c);
-            }
-        }
 
     }
 }

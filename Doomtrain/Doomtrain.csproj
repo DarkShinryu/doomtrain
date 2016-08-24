@@ -128,6 +128,7 @@
     <Compile Include="Charts\MagicDamage.Designer.cs">
       <DependentUpon>MagicDamage.cs</DependentUpon>
     </Compile>
+    <Compile Include="FF8Text.cs" />
     <Compile Include="HexUpDown.cs">
       <SubType>Component</SubType>
     </Compile>
