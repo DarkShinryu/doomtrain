@@ -3463,7 +3463,7 @@ namespace Doomtrain
         public static void ReadKernel(byte[] kernel)
         {
             Kernel = kernel;
-            FF8Text.SetKernel(kernel);
+            FF8Text.SetKernel(Kernel);
 
             BattleCommandsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BattleCommands);
             MagicDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.MagicData);
