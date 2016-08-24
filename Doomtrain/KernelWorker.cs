@@ -294,7 +294,7 @@ namespace Doomtrain
 
         public struct GFData
         {
-            //public string OffsetGFName;
+            public string OffsetGFName;
             //public string OffsetGFDescription;
             public UInt16 GFMagicID;
             public byte GFAttackType;
@@ -3621,6 +3621,10 @@ namespace Doomtrain
             OffsetToGFSelected = selectedGfOffset;
 
             GetSelectedGFData.GFMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfOffset + 4));
+
+            /* TEXT TEST*/GetSelectedGFData.OffsetGFName = BuildString((ushort)(
+                    BitConverter.ToInt32(Kernel, (int)KernelSections.Text_JunctionableGF) + (BitConverter.ToUInt16(Kernel, selectedGfOffset))));
+
             selectedGfOffset += 4 + 2; //Name Offset + Description Offset + MagicID
             GetSelectedGFData.GFAttackType = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFPower = Kernel[selectedGfOffset];
