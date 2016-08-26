@@ -20,7 +20,7 @@ namespace Doomtrain
                 _charstable = Chartable.Split(',');
 
             //REMEMBER TO DELETE THIS:
-            SecretSquirrelClass.Squirrel();
+            //SecretSquirrelClass.Squirrel();
         }
 
         /// <summary>
@@ -30,6 +30,7 @@ namespace Doomtrain
         /// <returns></returns>
         internal static string BuildString(int index)
         {
+            return null; //needs to be deleted later
             StringBuilder sb = new StringBuilder();
             while (true)
             {

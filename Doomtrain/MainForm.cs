@@ -1646,8 +1646,8 @@ namespace Doomtrain
 
             numericUpDownAbMenuAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(0, numericUpDownAbMenuAP.Value);
             numericUpDownAbMenuIndex.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(1, numericUpDownAbMenuIndex.Value);
-            numericUpDownAbMenuStartOffset.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(2, numericUpDownAbMenuStartOffset.Value);
-            numericUpDownAbMenuEndOffset.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(3, numericUpDownAbMenuEndOffset.Value);
+            numericUpDownAbMenuStartEntry.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(2, numericUpDownAbMenuStartEntry.Value);
+            numericUpDownAbMenuEndEntry.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(3, numericUpDownAbMenuEndEntry.Value);
 
             #endregion
 
@@ -7456,8 +7456,8 @@ namespace Doomtrain
             {
                 ToolTip(numericUpDownAbMenuAP,0,KernelWorker.GetSelectedMenuAbilitiesData.AP);
                 ToolTip(numericUpDownAbMenuIndex,0,KernelWorker.GetSelectedMenuAbilitiesData.Index);
-                ToolTip(numericUpDownAbMenuStartOffset,0,KernelWorker.GetSelectedMenuAbilitiesData.StartOffset);
-                ToolTip(numericUpDownAbMenuEndOffset,0,KernelWorker.GetSelectedMenuAbilitiesData.EndOffset);
+                ToolTip(numericUpDownAbMenuStartEntry,0,KernelWorker.GetSelectedMenuAbilitiesData.StartEntry);
+                ToolTip(numericUpDownAbMenuEndEntry,0,KernelWorker.GetSelectedMenuAbilitiesData.EndEntry);
             }
             catch (Exception Exception)
             {
@@ -7469,8 +7469,8 @@ namespace Doomtrain
             {
                 numericUpDownAbMenuAP.Value = KernelWorker.GetSelectedMenuAbilitiesData.AP;
                 numericUpDownAbMenuIndex.Value = KernelWorker.GetSelectedMenuAbilitiesData.Index;
-                numericUpDownAbMenuStartOffset.Value = KernelWorker.GetSelectedMenuAbilitiesData.StartOffset;
-                numericUpDownAbMenuEndOffset.Value = KernelWorker.GetSelectedMenuAbilitiesData.EndOffset;
+                numericUpDownAbMenuStartEntry.Value = KernelWorker.GetSelectedMenuAbilitiesData.StartEntry;
+                numericUpDownAbMenuEndEntry.Value = KernelWorker.GetSelectedMenuAbilitiesData.EndEntry;
             }
             catch (Exception Exception)
             {

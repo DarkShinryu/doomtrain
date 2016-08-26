@@ -957,8 +957,8 @@ namespace Doomtrain
         {
             public byte AP;
             public byte Index;
-            public byte StartOffset;
-            public byte EndOffset;
+            public byte StartEntry;
+            public byte EndEntry;
         }
 
         public struct BattleCommandsData
@@ -3305,10 +3305,10 @@ namespace Doomtrain
                     Kernel[OffsetToMenuAbilitiesSelected + 5] = Convert.ToByte(variable); //Index to m00X files
                     return;
                 case 2:
-                    Kernel[OffsetToMenuAbilitiesSelected + 6] = Convert.ToByte(variable); //Start offset
+                    Kernel[OffsetToMenuAbilitiesSelected + 6] = Convert.ToByte(variable); //Start entry
                     return;
                 case 3:
-                    Kernel[OffsetToMenuAbilitiesSelected + 7] = Convert.ToByte(variable); //End offset
+                    Kernel[OffsetToMenuAbilitiesSelected + 7] = Convert.ToByte(variable); //End entry
                     return;
 
                 default:
@@ -4810,8 +4810,8 @@ namespace Doomtrain
             selectedMenuAbilitiesOffset += 4;
             GetSelectedMenuAbilitiesData.AP = Kernel[selectedMenuAbilitiesOffset++];
             GetSelectedMenuAbilitiesData.Index = Kernel[selectedMenuAbilitiesOffset++];
-            GetSelectedMenuAbilitiesData.StartOffset = Kernel[selectedMenuAbilitiesOffset++];
-            GetSelectedMenuAbilitiesData.EndOffset = Kernel[selectedMenuAbilitiesOffset++];
+            GetSelectedMenuAbilitiesData.StartEntry = Kernel[selectedMenuAbilitiesOffset++];
+            GetSelectedMenuAbilitiesData.EndEntry = Kernel[selectedMenuAbilitiesOffset++];
         }
 
         #endregion
