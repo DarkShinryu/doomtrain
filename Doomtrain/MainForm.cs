@@ -62,6 +62,7 @@ namespace Doomtrain
                 comboBoxShotAttackType.Items.Add(line);
                 comboBoxTempCharLBAttackType.Items.Add(line);
                 comboBoxBattleItemsAttackType.Items.Add(line);
+                comboBoxWeaponsAttackType.Items.Add(line);
                 comboBoxAbComDataAttackType.Items.Add(line);
                 comboBoxMagicAttackType.Items.Add(line);
                 comboBoxGFAttackType.Items.Add(line);
@@ -457,12 +458,13 @@ namespace Doomtrain
             checkBoxWeaponsRenzoFinBlasting.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x04, 0);
             checkBoxWeaponsRenzoFinLion.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x08, 0);
             comboBoxWeaponsCharacterID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(1, comboBoxWeaponsCharacterID.SelectedIndex);
-            numericUpDownWeaponsAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(2, numericUpDownWeaponsAttackPower.Value);
-            numericUpDownWeaponsHITBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(3, numericUpDownWeaponsHITBonus.Value);
-            numericUpDownWeaponsSTRBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(4, numericUpDownWeaponsSTRBonus.Value);
-            numericUpDownWeaponsTier.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(5, numericUpDownWeaponsTier.Value);
-            numericUpDownWeaponsCrit.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(6, numericUpDownWeaponsCrit.Value);
-            numericUpDownWeaponsMelee.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(7, numericUpDownWeaponsMelee.Value);
+            comboBoxWeaponsAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(2, comboBoxWeaponsAttackType.SelectedIndex);
+            numericUpDownWeaponsAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(3, numericUpDownWeaponsAttackPower.Value);
+            numericUpDownWeaponsAttackParam.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(4, numericUpDownWeaponsAttackParam.Value);
+            numericUpDownWeaponsSTRBonus.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(5, numericUpDownWeaponsSTRBonus.Value);
+            numericUpDownWeaponsTier.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(6, numericUpDownWeaponsTier.Value);
+            numericUpDownWeaponsCrit.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(7, numericUpDownWeaponsCrit.Value);
+            numericUpDownWeaponsMelee.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(8, numericUpDownWeaponsMelee.Value);
 
             #endregion
 
@@ -3871,8 +3873,9 @@ namespace Doomtrain
             {
                 RenzokukenFinishersWorker(true);
                 toolTip1.SetToolTip(comboBoxWeaponsCharacterID, $"Default: {comboBoxWeaponsCharacterID.Items[KernelWorker.GetSelectedWeaponsData.CharacterID]}");
+                toolTip1.SetToolTip(comboBoxWeaponsAttackType, $"Default: {comboBoxWeaponsAttackType.Items[KernelWorker.GetSelectedWeaponsData.AttackType]}");
                 toolTip1.SetToolTip(numericUpDownWeaponsAttackPower, $"Default: {KernelWorker.GetSelectedWeaponsData.AttackPower}");
-                toolTip1.SetToolTip(numericUpDownWeaponsHITBonus, $"Default: {KernelWorker.GetSelectedWeaponsData.HITBonus}");
+                toolTip1.SetToolTip(numericUpDownWeaponsAttackParam, $"Default: {KernelWorker.GetSelectedWeaponsData.AttackParam}");
                 toolTip1.SetToolTip(numericUpDownWeaponsSTRBonus, $"Default: {KernelWorker.GetSelectedWeaponsData.STRBonus}");
                 toolTip1.SetToolTip(numericUpDownWeaponsTier, $"Default: {KernelWorker.GetSelectedWeaponsData.Tier}");
                 toolTip1.SetToolTip(numericUpDownWeaponsCrit, $"Default: {KernelWorker.GetSelectedWeaponsData.CritBonus}");
@@ -3888,8 +3891,9 @@ namespace Doomtrain
             {
                 RenzokukenFinishersWorker(false);
                 comboBoxWeaponsCharacterID.SelectedIndex = KernelWorker.GetSelectedWeaponsData.CharacterID;
+                comboBoxWeaponsAttackType.SelectedIndex = KernelWorker.GetSelectedWeaponsData.AttackType;
                 numericUpDownWeaponsAttackPower.Value = KernelWorker.GetSelectedWeaponsData.AttackPower;
-                numericUpDownWeaponsHITBonus.Value = KernelWorker.GetSelectedWeaponsData.HITBonus;
+                numericUpDownWeaponsAttackParam.Value = KernelWorker.GetSelectedWeaponsData.AttackParam;
                 numericUpDownWeaponsSTRBonus.Value = KernelWorker.GetSelectedWeaponsData.STRBonus;
                 numericUpDownWeaponsTier.Value = KernelWorker.GetSelectedWeaponsData.Tier;
                 numericUpDownWeaponsCrit.Value = KernelWorker.GetSelectedWeaponsData.CritBonus;

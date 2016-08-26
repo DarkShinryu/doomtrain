@@ -64,8 +64,8 @@
             this.labelWeaponsCharacterID = new System.Windows.Forms.Label();
             this.labelWeaponsAttackPower = new System.Windows.Forms.Label();
             this.labelWeaponsSTRBonus = new System.Windows.Forms.Label();
-            this.numericUpDownWeaponsHITBonus = new System.Windows.Forms.NumericUpDown();
-            this.labelWeaponsHITBonus = new System.Windows.Forms.Label();
+            this.numericUpDownWeaponsAttackParam = new System.Windows.Forms.NumericUpDown();
+            this.labelWeaponsAttackParam = new System.Windows.Forms.Label();
             this.labelCharCrisisLevelHP = new System.Windows.Forms.Label();
             this.labelCharLimitID = new System.Windows.Forms.Label();
             this.labelCharLimitParam = new System.Windows.Forms.Label();
@@ -2021,8 +2021,11 @@
             this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
+            this.comboBoxWeaponsAttackType = new System.Windows.Forms.ComboBox();
+            this.labelWeaponsAttackType = new System.Windows.Forms.Label();
+            this.labelWeaponsNote = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackParam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbStatsAP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbJunAP)).BeginInit();
@@ -2885,7 +2888,7 @@
             this.labelWeaponsAttackPower.AutoSize = true;
             this.labelWeaponsAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelWeaponsAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsAttackPower.Location = new System.Drawing.Point(21, 97);
+            this.labelWeaponsAttackPower.Location = new System.Drawing.Point(79, 97);
             this.labelWeaponsAttackPower.Name = "labelWeaponsAttackPower";
             this.labelWeaponsAttackPower.Size = new System.Drawing.Size(89, 17);
             this.labelWeaponsAttackPower.TabIndex = 0;
@@ -2896,35 +2899,35 @@
             this.labelWeaponsSTRBonus.AutoSize = true;
             this.labelWeaponsSTRBonus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelWeaponsSTRBonus.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsSTRBonus.Location = new System.Drawing.Point(249, 97);
+            this.labelWeaponsSTRBonus.Location = new System.Drawing.Point(307, 97);
             this.labelWeaponsSTRBonus.Name = "labelWeaponsSTRBonus";
             this.labelWeaponsSTRBonus.Size = new System.Drawing.Size(72, 17);
             this.labelWeaponsSTRBonus.TabIndex = 0;
             this.labelWeaponsSTRBonus.Text = "STR Bonus";
             // 
-            // numericUpDownWeaponsHITBonus
+            // numericUpDownWeaponsAttackParam
             // 
-            this.numericUpDownWeaponsHITBonus.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWeaponsHITBonus.Location = new System.Drawing.Point(371, 117);
-            this.numericUpDownWeaponsHITBonus.Maximum = new decimal(new int[] {
+            this.numericUpDownWeaponsAttackParam.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownWeaponsAttackParam.Location = new System.Drawing.Point(358, 183);
+            this.numericUpDownWeaponsAttackParam.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownWeaponsHITBonus.Name = "numericUpDownWeaponsHITBonus";
-            this.numericUpDownWeaponsHITBonus.Size = new System.Drawing.Size(47, 25);
-            this.numericUpDownWeaponsHITBonus.TabIndex = 7;
+            this.numericUpDownWeaponsAttackParam.Name = "numericUpDownWeaponsAttackParam";
+            this.numericUpDownWeaponsAttackParam.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownWeaponsAttackParam.TabIndex = 7;
             // 
-            // labelWeaponsHITBonus
+            // labelWeaponsAttackParam
             // 
-            this.labelWeaponsHITBonus.AutoSize = true;
-            this.labelWeaponsHITBonus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelWeaponsHITBonus.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsHITBonus.Location = new System.Drawing.Point(360, 97);
-            this.labelWeaponsHITBonus.Name = "labelWeaponsHITBonus";
-            this.labelWeaponsHITBonus.Size = new System.Drawing.Size(71, 17);
-            this.labelWeaponsHITBonus.TabIndex = 89;
-            this.labelWeaponsHITBonus.Text = "HIT Bonus";
+            this.labelWeaponsAttackParam.AutoSize = true;
+            this.labelWeaponsAttackParam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelWeaponsAttackParam.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsAttackParam.Location = new System.Drawing.Point(337, 163);
+            this.labelWeaponsAttackParam.Name = "labelWeaponsAttackParam";
+            this.labelWeaponsAttackParam.Size = new System.Drawing.Size(90, 17);
+            this.labelWeaponsAttackParam.TabIndex = 89;
+            this.labelWeaponsAttackParam.Text = "Attack Param";
             // 
             // labelCharCrisisLevelHP
             // 
@@ -17813,7 +17816,7 @@
             this.groupBoxWeaponsRenzokukenFinishers.Controls.Add(this.checkBoxWeaponsRenzoFinRough);
             this.groupBoxWeaponsRenzokukenFinishers.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold);
             this.groupBoxWeaponsRenzokukenFinishers.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.groupBoxWeaponsRenzokukenFinishers.Location = new System.Drawing.Point(162, 167);
+            this.groupBoxWeaponsRenzokukenFinishers.Location = new System.Drawing.Point(162, 274);
             this.groupBoxWeaponsRenzokukenFinishers.Name = "groupBoxWeaponsRenzokukenFinishers";
             this.groupBoxWeaponsRenzokukenFinishers.Size = new System.Drawing.Size(458, 87);
             this.groupBoxWeaponsRenzokukenFinishers.TabIndex = 4;
@@ -17871,16 +17874,19 @@
             // groupBoxWeaponsGeneral
             // 
             this.groupBoxWeaponsGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsNote);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.comboBoxWeaponsAttackType);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsAttackType);
             this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsCrit);
             this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsCrit);
             this.groupBoxWeaponsGeneral.Controls.Add(this.comboBoxWeaponsCharacterID);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsHITBonus);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsAttackParam);
             this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsSTRBonus);
             this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsMelee);
             this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsTier);
             this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsAttackPower);
             this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsMelee);
-            this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsHITBonus);
+            this.groupBoxWeaponsGeneral.Controls.Add(this.numericUpDownWeaponsAttackParam);
             this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsTier);
             this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsSTRBonus);
             this.groupBoxWeaponsGeneral.Controls.Add(this.labelWeaponsAttackPower);
@@ -17889,7 +17895,7 @@
             this.groupBoxWeaponsGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxWeaponsGeneral.Location = new System.Drawing.Point(162, 6);
             this.groupBoxWeaponsGeneral.Name = "groupBoxWeaponsGeneral";
-            this.groupBoxWeaponsGeneral.Size = new System.Drawing.Size(458, 155);
+            this.groupBoxWeaponsGeneral.Size = new System.Drawing.Size(458, 262);
             this.groupBoxWeaponsGeneral.TabIndex = 4;
             this.groupBoxWeaponsGeneral.TabStop = false;
             this.groupBoxWeaponsGeneral.Text = "General";
@@ -17897,7 +17903,7 @@
             // numericUpDownWeaponsCrit
             // 
             this.numericUpDownWeaponsCrit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWeaponsCrit.Location = new System.Drawing.Point(151, 117);
+            this.numericUpDownWeaponsCrit.Location = new System.Drawing.Point(209, 117);
             this.numericUpDownWeaponsCrit.Maximum = new decimal(new int[] {
             255,
             0,
@@ -17912,7 +17918,7 @@
             this.labelWeaponsCrit.AutoSize = true;
             this.labelWeaponsCrit.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelWeaponsCrit.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsCrit.Location = new System.Drawing.Point(140, 97);
+            this.labelWeaponsCrit.Location = new System.Drawing.Point(198, 97);
             this.labelWeaponsCrit.Name = "labelWeaponsCrit";
             this.labelWeaponsCrit.Size = new System.Drawing.Size(71, 17);
             this.labelWeaponsCrit.TabIndex = 90;
@@ -17942,7 +17948,7 @@
             // numericUpDownWeaponsSTRBonus
             // 
             this.numericUpDownWeaponsSTRBonus.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWeaponsSTRBonus.Location = new System.Drawing.Point(261, 117);
+            this.numericUpDownWeaponsSTRBonus.Location = new System.Drawing.Point(319, 117);
             this.numericUpDownWeaponsSTRBonus.Maximum = new decimal(new int[] {
             255,
             0,
@@ -17981,7 +17987,7 @@
             // numericUpDownWeaponsAttackPower
             // 
             this.numericUpDownWeaponsAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownWeaponsAttackPower.Location = new System.Drawing.Point(41, 117);
+            this.numericUpDownWeaponsAttackPower.Location = new System.Drawing.Point(99, 117);
             this.numericUpDownWeaponsAttackPower.Maximum = new decimal(new int[] {
             255,
             0,
@@ -35996,6 +36002,37 @@
             this.panelMain.Size = new System.Drawing.Size(654, 811);
             this.panelMain.TabIndex = 2;
             // 
+            // comboBoxWeaponsAttackType
+            // 
+            this.comboBoxWeaponsAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxWeaponsAttackType.FormattingEnabled = true;
+            this.comboBoxWeaponsAttackType.Location = new System.Drawing.Point(32, 182);
+            this.comboBoxWeaponsAttackType.Name = "comboBoxWeaponsAttackType";
+            this.comboBoxWeaponsAttackType.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxWeaponsAttackType.TabIndex = 93;
+            // 
+            // labelWeaponsAttackType
+            // 
+            this.labelWeaponsAttackType.AutoSize = true;
+            this.labelWeaponsAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelWeaponsAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsAttackType.Location = new System.Drawing.Point(123, 162);
+            this.labelWeaponsAttackType.Name = "labelWeaponsAttackType";
+            this.labelWeaponsAttackType.Size = new System.Drawing.Size(79, 17);
+            this.labelWeaponsAttackType.TabIndex = 92;
+            this.labelWeaponsAttackType.Text = "Attack Type";
+            // 
+            // labelWeaponsNote
+            // 
+            this.labelWeaponsNote.AutoSize = true;
+            this.labelWeaponsNote.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelWeaponsNote.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsNote.Location = new System.Drawing.Point(84, 239);
+            this.labelWeaponsNote.Name = "labelWeaponsNote";
+            this.labelWeaponsNote.Size = new System.Drawing.Size(369, 13);
+            this.labelWeaponsNote.TabIndex = 94;
+            this.labelWeaponsNote.Text = "Note: When Attack Type is Physical Attack, Attack Param is added to Hit";
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -36017,7 +36054,7 @@
             this.Text = "Doomtrain v1.0.1";
             this.Load += new System.EventHandler(this.mainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsHITBonus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackParam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbStatsAP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAbJunAP)).EndInit();
@@ -36753,11 +36790,11 @@
         private System.Windows.Forms.TabPage tabPageWeapons;
         private System.Windows.Forms.GroupBox groupBoxWeaponsGeneral;
         private System.Windows.Forms.ComboBox comboBoxWeaponsCharacterID;
-        private System.Windows.Forms.Label labelWeaponsHITBonus;
+        private System.Windows.Forms.Label labelWeaponsAttackParam;
         private System.Windows.Forms.NumericUpDown numericUpDownWeaponsSTRBonus;
         private System.Windows.Forms.NumericUpDown numericUpDownWeaponsTier;
         private System.Windows.Forms.NumericUpDown numericUpDownWeaponsAttackPower;
-        private System.Windows.Forms.NumericUpDown numericUpDownWeaponsHITBonus;
+        private System.Windows.Forms.NumericUpDown numericUpDownWeaponsAttackParam;
         private System.Windows.Forms.Label labelWeaponsTier;
         private System.Windows.Forms.Label labelWeaponsSTRBonus;
         private System.Windows.Forms.Label labelWeaponsAttackPower;
@@ -38611,6 +38648,9 @@
         private System.Windows.Forms.Label labelEnemyAttacksCamera;
         private System.Windows.Forms.CheckBox checkBoxEnemyAttacksCamera;
         public System.Windows.Forms.NumericUpDown numericUpDownEnemyAttacksCamera;
+        private System.Windows.Forms.ComboBox comboBoxWeaponsAttackType;
+        private System.Windows.Forms.Label labelWeaponsAttackType;
+        private System.Windows.Forms.Label labelWeaponsNote;
     }
 }
 

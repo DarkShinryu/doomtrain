@@ -386,12 +386,12 @@ namespace Doomtrain
 
         public struct WeaponsData
         {
-            //public string WeaponsName;
+            //public string Name;
             public byte RenzokukenFinishers;
             public byte CharacterID;
             public byte AttackType;
             public byte AttackPower;
-            public byte HITBonus;
+            public byte AttackParam;
             public byte STRBonus;
             public byte Tier;
             public byte CritBonus;
@@ -1472,21 +1472,24 @@ namespace Doomtrain
                     Kernel[OffsetToWeaponsSelected + 4] = Convert.ToByte(variable); //character id
                     return;
                 case 2:
-                    Kernel[OffsetToWeaponsSelected + 6] = Convert.ToByte(variable); //attack power
+                    Kernel[OffsetToWeaponsSelected + 5] = Convert.ToByte(variable); //attack type
                     return;
                 case 3:
-                    Kernel[OffsetToWeaponsSelected + 7] = Convert.ToByte(variable); //hit bonus
+                    Kernel[OffsetToWeaponsSelected + 6] = Convert.ToByte(variable); //attack power
                     return;
                 case 4:
-                    Kernel[OffsetToWeaponsSelected + 8] = Convert.ToByte(variable); //str bonus
+                    Kernel[OffsetToWeaponsSelected + 7] = Convert.ToByte(variable); //hit bonus
                     return;
                 case 5:
-                    Kernel[OffsetToWeaponsSelected + 9] = Convert.ToByte(variable); //weapon tier
+                    Kernel[OffsetToWeaponsSelected + 8] = Convert.ToByte(variable); //str bonus
                     return;
                 case 6:
-                    Kernel[OffsetToWeaponsSelected + 10] = Convert.ToByte(variable); //attack param
+                    Kernel[OffsetToWeaponsSelected + 9] = Convert.ToByte(variable); //weapon tier
                     return;
                 case 7:
+                    Kernel[OffsetToWeaponsSelected + 10] = Convert.ToByte(variable); //crit bonus
+                    return;
+                case 8:
                     Kernel[OffsetToWeaponsSelected + 11] = Convert.ToByte(variable); //melee weapon?
                     return;
 
@@ -3832,7 +3835,7 @@ namespace Doomtrain
             GetSelectedWeaponsData.CharacterID = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.AttackType = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.AttackPower = Kernel[selectedWeaponsOffset++];
-            GetSelectedWeaponsData.HITBonus = Kernel[selectedWeaponsOffset++];
+            GetSelectedWeaponsData.AttackParam = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.STRBonus = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.Tier = Kernel[selectedWeaponsOffset++];
             GetSelectedWeaponsData.CritBonus = Kernel[selectedWeaponsOffset++];
