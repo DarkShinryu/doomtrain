@@ -14,13 +14,13 @@ namespace Doomtrain
         /// <summary>
         /// This is subject to change; It's dirty approach, the basic chartable should be parsed from file with cultureInfo
         /// </summary>
-        private static void InitializeCharTable()
+        public static void InitializeCharTable()
         {
             if (_charstable == null)
                 _charstable = Chartable.Split(',');
 
             //REMEMBER TO DELETE THIS:
-            //SecretSquirrelClass.Squirrel();
+            SecretSquirrelClass.Squirrel();
         }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Doomtrain
         /// <returns></returns>
         internal static string BuildString(int index)
         {
-            return null; //needs to be deleted later
+            //return null; //needs to be deleted later
             StringBuilder sb = new StringBuilder();
             while (true)
             {
@@ -53,7 +53,7 @@ namespace Doomtrain
         {
             if (_in.Length == 0)
                 return null;
-            byte[] buffer = new byte[_in.Length];
+            buffer = new byte[_in.Length];
             for (int i = 0; i != buffer.Length; i++)
                 buffer[i] = (byte)(LocateChar((byte)_in[i]) + 31);
             return buffer;
@@ -74,16 +74,12 @@ namespace Doomtrain
                 }
                 if ((char)a == _charstable[index][0])
                     return index;
-                else index++;
+                index++;
             }
             return 0;
         }
 
-        internal static void SetKernel(byte[] b) // => I forgot how to make delta...
-        {
-            buffer = b;
-            InitializeCharTable();
-        }
+        internal static void SetKernel(byte[] b) => buffer = b; //Okay, that what Delta looks
     }
 
     internal class SecretSquirrelClass
