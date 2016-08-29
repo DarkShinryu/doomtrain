@@ -4,18 +4,21 @@ using System.Runtime.InteropServices;
 
 namespace Doomtrain
 {
-    static class FF8Text
+    class FF8Text
     {
+        public FF8Text()
+        {
+            InitializeCharTable();
+        }
+
         static string[] _charstable;
         private static readonly string Chartable =
         @" , ,1,2,3,4,5,6,7,8,9,%,/,:,!,?,…,+,-,=,*,&,「,」,(,),·,.,,,~,“,”,‘,#,$,',_,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,À,Á,Â,Ä,Ç,È,É,Ê,Ë,Ì,Í,Î,Ï,Ñ,Ò,Ó,Ô,Ö,Ù,Ú,Û,Ü,Œ,ß,à,á,â,ä,ç,è,é,ê,ë,ì,í,î,ï,ñ,ò";
         private static byte[] buffer;
 
-        /// <summary>
-        /// This is subject to change; It's dirty approach, the basic chartable should be parsed from file with cultureInfo
-        /// </summary>
-        public static void InitializeCharTable()
+        private void InitializeCharTable()
         {
+            //CHANGEME
             if (_charstable == null)
                 _charstable = Chartable.Split(',');
 
@@ -23,11 +26,6 @@ namespace Doomtrain
             SecretSquirrelClass.Squirrel();
         }
 
-        /// <summary>
-        /// This is subject to change; It's also dirty approach with all that character array add and sub..
-        /// </summary>
-        /// <param name="index"></param>
-        /// <returns></returns>
         internal static string BuildString(int index)
         {
             //return null; //needs to be deleted later
@@ -43,14 +41,9 @@ namespace Doomtrain
             return sb.ToString();
         }
 
-        /// <summary>
-        /// This is copied from Rinoa's toolset, it's again dirty code. The character is located and calculated inside array...
-        /// works, but needs to be changed because NOPE
-        /// </summary>
-        /// <param name="_in"></param>
-        /// <returns></returns>
         internal static byte[] Cipher(string _in)
         {
+            //SUBJECT TO CHANGE
             if (_in.Length == 0)
                 return null;
             buffer = new byte[_in.Length];
@@ -61,6 +54,7 @@ namespace Doomtrain
 
         internal static uint LocateChar(byte a)
         {
+            //AS ABOVE
             uint index = 0;
             while (true)
             {
@@ -79,7 +73,7 @@ namespace Doomtrain
             return 0;
         }
 
-        internal static void SetKernel(byte[] b) => buffer = b; //Okay, that what Delta looks
+        internal static void SetKernel(byte[] b) => buffer = b; //Okay, that's what Delta look like
     }
 
     internal class SecretSquirrelClass

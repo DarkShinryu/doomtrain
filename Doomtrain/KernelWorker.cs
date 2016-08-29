@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 namespace Doomtrain
 {
@@ -9,6 +8,7 @@ namespace Doomtrain
 
         public static byte[] Kernel;
         public static byte[] BackupKernel;
+        private FF8Text _ff8text;
 
         public static int MagicDataOffset = -1;
         public static int OffsetToMagicSelected = -1;
@@ -4851,6 +4851,10 @@ namespace Doomtrain
 
         #endregion
 
+        #region Text-related
+
+        public void InitializeText() => _ff8text = new FF8Text();
+        #endregion
     }
 }
 

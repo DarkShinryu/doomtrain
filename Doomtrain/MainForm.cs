@@ -28,7 +28,6 @@ namespace Doomtrain
         public mainForm()
         {
             InitializeComponent();
-            FF8Text.InitializeCharTable();
 
             #region Load MagicID List
 
