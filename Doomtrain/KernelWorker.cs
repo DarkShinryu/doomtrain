@@ -125,7 +125,7 @@ namespace Doomtrain
         public static RinoaCommandsData GetSelectedRinoaCommandsData;
 
         public enum KernelSections : ushort
-        { //BitShift to left, to make fast and natural MULTIPLY BY 2 operation
+        {
             BattleCommands = 1 << 2,
             MagicData = 2 << 2,
             GFs = 3 << 2,
@@ -231,8 +231,8 @@ namespace Doomtrain
 
         public struct MagicData
         {
-            //public string OffsetSpellName;
-            //public string OffsetSpellDescription;
+            public string OffsetSpellName;
+            public string OffsetSpellDescription;
             public UInt16 MagicID;
             public byte Unknown1;
             public byte AttackType;
@@ -290,7 +290,7 @@ namespace Doomtrain
         public struct GFData
         {
             public string OffsetGFName;
-            //public string OffsetGFDescription;
+            public string OffsetGFDescription;
             public UInt16 GFMagicID;
             public byte GFAttackType;
             public byte GFPower;
@@ -368,7 +368,7 @@ namespace Doomtrain
 
         public struct GFAttacksData
         {
-            //public string OffsetGFAttacksName;
+            public string OffsetGFAttacksName;
             public UInt16 GFAttacksMagicID;
             public byte GFAttacksAttackType;
             public byte GFAttacksPower;
@@ -386,7 +386,7 @@ namespace Doomtrain
 
         public struct WeaponsData
         {
-            //public string Name;
+            public string Name;
             public byte RenzokukenFinishers;
             public byte CharacterID;
             public byte AttackType;
@@ -400,7 +400,7 @@ namespace Doomtrain
 
         public struct CharactersData
         {
-            //public string Name;
+            public string Name;
             public byte CrisisLevel;
             public byte Gender;
             public byte LimitID;
@@ -439,7 +439,7 @@ namespace Doomtrain
 
         public struct EnemyAttacksData
         {
-            //public string OffsetToName
+            public string OffsetToName;
             public UInt16 MagicID;
             public byte CameraChange;
             public byte AttackType;
@@ -457,8 +457,8 @@ namespace Doomtrain
 
         public struct BlueMagicData
         {
-            //public string OffsetToName;
-            //public string OffsetToDescription;
+            public string OffsetToName;
+            public string OffsetToDescription;
             public UInt16 MagicID;
             public byte AttackType;
             public byte AttackFlags;
@@ -508,8 +508,8 @@ namespace Doomtrain
 
         public struct RenzoFinData
         {
-            //public string OffsetToName;
-            //public string OffsetToDescription;
+            public string OffsetToName;
+            public string OffsetToDescription;
             public UInt16 MagicID;
             public byte AttackType;
             public byte AttackPower;
@@ -528,8 +528,8 @@ namespace Doomtrain
         
         public struct TempCharLBData
         {
-            //public string OffsetToName;
-            //public string OffsetToDescription;
+            public string OffsetToName;
+            public string OffsetToDescription;
             public UInt16 MagicID;
             public byte AttackType;
             public byte AttackPower;
@@ -548,8 +548,8 @@ namespace Doomtrain
 
         public struct ShotData
         {
-            //public string OffsetToName;
-            //public string OffsetToDescription;
+            public string OffsetToName;
+            public string OffsetToDescription;
             public UInt16 MagicID;
             public byte AttackType;
             public byte AttackPower;
@@ -570,8 +570,8 @@ namespace Doomtrain
 
         public struct DuelData
         {
-            //public string OffsetToName;
-            //public string OffsetToDescription;
+            public string OffsetToName;
+            public string OffsetToDescription;
             public UInt16 MagicID;
             public byte AttackType;
             public byte AttackPower;
@@ -700,8 +700,8 @@ namespace Doomtrain
 
         public struct CombineData
         {
-            //public string OffsetToName;
-            //public string OffsetToDescription;
+            public string OffsetToName;
+            public string OffsetToDescription;
             public UInt16 MagicID;
             public byte AttackType;
             public byte AttackPower;
@@ -720,8 +720,8 @@ namespace Doomtrain
 
         public struct BattleItemsData
         {
-            //public string OffsetToName;
-            //public string OffsetToDescription;
+            public string OffsetToName;
+            public string OffsetToDescription;
             public UInt16 MagicID;
             public byte AttackType;
             public byte AttackPower;
@@ -824,7 +824,7 @@ namespace Doomtrain
 
         public struct DevourData
         {
-            //public string OffsetToDescription;
+            public string OffsetToDescription;
             public HealDmg HealDmg;
             public byte HpQuantity;
             public byte Status2;
@@ -3508,27 +3508,18 @@ namespace Doomtrain
         {
 
             GetSelectedMagicData = new MagicData();
-            MagicID_List++; //skip dummy entry
-            /*
-            int SelectedMagicOffset = MagicID_List == 0 ? 
-                MagicDataOffset + 8 + (MagicID_List * 60) 
-                : MagicDataOffset + (MagicID_List * 60);*/
+            MagicID_List++;
 
             int selectedMagicOffset = MagicDataOffset + (MagicID_List * 60);
             OffsetToMagicSelected = selectedMagicOffset;
 
-            /*
-            #region UnusedNameRegion functionality. You can use it for future improvements
-            GetSelectedMagicData.OffsetSpellName = BuildString((ushort)(
-                    BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(Kernel, selectedMagicOffset))));
-            
-
-            //BELOW DOESN'T WORK?
+            GetSelectedMagicData.OffsetSpellName = FF8Text.BuildString((ushort)(
+                    BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Magictext) + BitConverter.ToUInt16(Kernel, selectedMagicOffset)));
+            //TODO
             // GetSelectedMagicData.OffsetSpellDescription = BuildString((ushort)(
             //BitConverter.ToInt32(kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(kernel, SelectedMagicOffset += 2))));
             //Console.WriteLine("DEBUG: {0}", GetSelectedMagicData.OffsetSpellName);
-            #endregion
-            */
+            
 
 
             GetSelectedMagicData.MagicID = BitConverter.ToUInt16(Kernel, selectedMagicOffset += 4);
@@ -4849,11 +4840,6 @@ namespace Doomtrain
 
         #endregion
 
-        #endregion
-
-        #region Text-related
-
-        public void InitializeText() => _ff8text = new FF8Text();
         #endregion
     }
 }
