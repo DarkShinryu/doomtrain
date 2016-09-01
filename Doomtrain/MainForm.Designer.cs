@@ -2107,6 +2107,18 @@
             this.listBoxItems = new System.Windows.Forms.ListBox();
             this.textBoxEnemyAttacksName = new System.Windows.Forms.TextBox();
             this.labelEnemyAttacksName = new System.Windows.Forms.Label();
+            this.tabControlShot = new System.Windows.Forms.TabControl();
+            this.tabPageShotGeneral = new System.Windows.Forms.TabPage();
+            this.tabPageShotTimers = new System.Windows.Forms.TabPage();
+            this.textBoxShotDes = new System.Windows.Forms.TextBox();
+            this.labelShotDes = new System.Windows.Forms.Label();
+            this.textBoxShotName = new System.Windows.Forms.TextBox();
+            this.labelShotName = new System.Windows.Forms.Label();
+            this.tabPageDuelButtons = new System.Windows.Forms.TabPage();
+            this.textBoxDuelDes = new System.Windows.Forms.TextBox();
+            this.labelDuelDes = new System.Windows.Forms.Label();
+            this.textBoxDuelName = new System.Windows.Forms.TextBox();
+            this.labelDuelName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackParam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -2617,6 +2629,10 @@
             this.groupBoxDevourGeneral.SuspendLayout();
             this.tabPageItems.SuspendLayout();
             this.groupBoxItems.SuspendLayout();
+            this.tabControlShot.SuspendLayout();
+            this.tabPageShotGeneral.SuspendLayout();
+            this.tabPageShotTimers.SuspendLayout();
+            this.tabPageDuelButtons.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -3800,7 +3816,7 @@
             this.checkBoxDuelTarget4.AutoSize = true;
             this.checkBoxDuelTarget4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelTarget4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelTarget4.Location = new System.Drawing.Point(352, 27);
+            this.checkBoxDuelTarget4.Location = new System.Drawing.Point(352, 31);
             this.checkBoxDuelTarget4.Name = "checkBoxDuelTarget4";
             this.checkBoxDuelTarget4.Size = new System.Drawing.Size(83, 19);
             this.checkBoxDuelTarget4.TabIndex = 38;
@@ -3812,7 +3828,7 @@
             this.checkBoxDuelFinisher.AutoSize = true;
             this.checkBoxDuelFinisher.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelFinisher.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelFinisher.Location = new System.Drawing.Point(346, 100);
+            this.checkBoxDuelFinisher.Location = new System.Drawing.Point(341, 100);
             this.checkBoxDuelFinisher.Name = "checkBoxDuelFinisher";
             this.checkBoxDuelFinisher.Size = new System.Drawing.Size(83, 19);
             this.checkBoxDuelFinisher.TabIndex = 96;
@@ -3824,7 +3840,7 @@
             this.labelDuelElement.AutoSize = true;
             this.labelDuelElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelElement.Location = new System.Drawing.Point(318, 72);
+            this.labelDuelElement.Location = new System.Drawing.Point(318, 185);
             this.labelDuelElement.Name = "labelDuelElement";
             this.labelDuelElement.Size = new System.Drawing.Size(57, 17);
             this.labelDuelElement.TabIndex = 95;
@@ -3835,7 +3851,7 @@
             this.labelDuelAttackType.AutoSize = true;
             this.labelDuelAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelAttackType.Location = new System.Drawing.Point(86, 72);
+            this.labelDuelAttackType.Location = new System.Drawing.Point(96, 185);
             this.labelDuelAttackType.Name = "labelDuelAttackType";
             this.labelDuelAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelDuelAttackType.TabIndex = 7;
@@ -3846,7 +3862,7 @@
             this.labelDuelHitCount.AutoSize = true;
             this.labelDuelHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelHitCount.Location = new System.Drawing.Point(380, 17);
+            this.labelDuelHitCount.Location = new System.Drawing.Point(382, 133);
             this.labelDuelHitCount.Name = "labelDuelHitCount";
             this.labelDuelHitCount.Size = new System.Drawing.Size(67, 17);
             this.labelDuelHitCount.TabIndex = 0;
@@ -3857,7 +3873,7 @@
             this.labelDuelAttackPower.AutoSize = true;
             this.labelDuelAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelAttackPower.Location = new System.Drawing.Point(283, 17);
+            this.labelDuelAttackPower.Location = new System.Drawing.Point(285, 132);
             this.labelDuelAttackPower.Name = "labelDuelAttackPower";
             this.labelDuelAttackPower.Size = new System.Drawing.Size(89, 17);
             this.labelDuelAttackPower.TabIndex = 0;
@@ -3868,7 +3884,7 @@
             this.labelDuelMagicID.AutoSize = true;
             this.labelDuelMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelMagicID.Location = new System.Drawing.Point(93, 17);
+            this.labelDuelMagicID.Location = new System.Drawing.Point(104, 133);
             this.labelDuelMagicID.Name = "labelDuelMagicID";
             this.labelDuelMagicID.Size = new System.Drawing.Size(61, 17);
             this.labelDuelMagicID.TabIndex = 0;
@@ -3891,7 +3907,7 @@
             this.labelShotElement.AutoSize = true;
             this.labelShotElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotElement.Location = new System.Drawing.Point(58, 132);
+            this.labelShotElement.Location = new System.Drawing.Point(321, 167);
             this.labelShotElement.Name = "labelShotElement";
             this.labelShotElement.Size = new System.Drawing.Size(57, 17);
             this.labelShotElement.TabIndex = 91;
@@ -3902,7 +3918,7 @@
             this.labelShotAttackType.AutoSize = true;
             this.labelShotAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotAttackType.Location = new System.Drawing.Point(117, 75);
+            this.labelShotAttackType.Location = new System.Drawing.Point(104, 167);
             this.labelShotAttackType.Name = "labelShotAttackType";
             this.labelShotAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelShotAttackType.TabIndex = 7;
@@ -3913,7 +3929,7 @@
             this.labelShotHitCount.AutoSize = true;
             this.labelShotHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotHitCount.Location = new System.Drawing.Point(309, 75);
+            this.labelShotHitCount.Location = new System.Drawing.Point(204, 217);
             this.labelShotHitCount.Name = "labelShotHitCount";
             this.labelShotHitCount.Size = new System.Drawing.Size(67, 17);
             this.labelShotHitCount.TabIndex = 0;
@@ -3924,7 +3940,7 @@
             this.labelShotAttackPower.AutoSize = true;
             this.labelShotAttackPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotAttackPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotAttackPower.Location = new System.Drawing.Point(345, 21);
+            this.labelShotAttackPower.Location = new System.Drawing.Point(108, 217);
             this.labelShotAttackPower.Name = "labelShotAttackPower";
             this.labelShotAttackPower.Size = new System.Drawing.Size(89, 17);
             this.labelShotAttackPower.TabIndex = 0;
@@ -3935,7 +3951,7 @@
             this.labelShotMagicID.AutoSize = true;
             this.labelShotMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotMagicID.Location = new System.Drawing.Point(133, 21);
+            this.labelShotMagicID.Location = new System.Drawing.Point(110, 118);
             this.labelShotMagicID.Name = "labelShotMagicID";
             this.labelShotMagicID.Size = new System.Drawing.Size(61, 17);
             this.labelShotMagicID.TabIndex = 0;
@@ -22553,6 +22569,7 @@
             // 
             this.tabPageLBZell.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPageLBZell.Controls.Add(this.tabControlDuel);
+            this.tabPageLBZell.Controls.Add(this.listBoxDuel);
             this.tabPageLBZell.Location = new System.Drawing.Point(4, 29);
             this.tabPageLBZell.Name = "tabPageLBZell";
             this.tabPageLBZell.Padding = new System.Windows.Forms.Padding(3);
@@ -22563,29 +22580,28 @@
             // tabControlDuel
             // 
             this.tabControlDuel.Controls.Add(this.tabPageDuelGeneral);
+            this.tabControlDuel.Controls.Add(this.tabPageDuelButtons);
             this.tabControlDuel.Controls.Add(this.tabPageDuelMoveTimersButtons);
             this.tabControlDuel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlDuel.ItemSize = new System.Drawing.Size(105, 22);
-            this.tabControlDuel.Location = new System.Drawing.Point(-4, 0);
+            this.tabControlDuel.Location = new System.Drawing.Point(151, 0);
             this.tabControlDuel.Name = "tabControlDuel";
             this.tabControlDuel.SelectedIndex = 0;
-            this.tabControlDuel.Size = new System.Drawing.Size(630, 740);
+            this.tabControlDuel.Size = new System.Drawing.Size(475, 740);
             this.tabControlDuel.TabIndex = 1;
             this.tabControlDuel.TabStop = false;
             // 
             // tabPageDuelGeneral
             // 
             this.tabPageDuelGeneral.BackColor = System.Drawing.Color.White;
-            this.tabPageDuelGeneral.Controls.Add(this.groupBoxShotInput1);
             this.tabPageDuelGeneral.Controls.Add(this.groupBoxDuelStatus);
-            this.tabPageDuelGeneral.Controls.Add(this.listBoxDuel);
             this.tabPageDuelGeneral.Controls.Add(this.groupBoxDuelTarget);
             this.tabPageDuelGeneral.Controls.Add(this.groupBoxDuelFlags);
             this.tabPageDuelGeneral.Controls.Add(this.groupBoxDuelGeneral);
             this.tabPageDuelGeneral.Location = new System.Drawing.Point(4, 26);
             this.tabPageDuelGeneral.Name = "tabPageDuelGeneral";
             this.tabPageDuelGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDuelGeneral.Size = new System.Drawing.Size(622, 710);
+            this.tabPageDuelGeneral.Size = new System.Drawing.Size(467, 710);
             this.tabPageDuelGeneral.TabIndex = 0;
             this.tabPageDuelGeneral.Text = "General";
             // 
@@ -22605,9 +22621,9 @@
             this.groupBoxShotInput1.Controls.Add(this.labelDuelButton1);
             this.groupBoxShotInput1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxShotInput1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupBoxShotInput1.Location = new System.Drawing.Point(151, 579);
+            this.groupBoxShotInput1.Location = new System.Drawing.Point(6, 6);
             this.groupBoxShotInput1.Name = "groupBoxShotInput1";
-            this.groupBoxShotInput1.Size = new System.Drawing.Size(465, 130);
+            this.groupBoxShotInput1.Size = new System.Drawing.Size(455, 130);
             this.groupBoxShotInput1.TabIndex = 116;
             this.groupBoxShotInput1.TabStop = false;
             this.groupBoxShotInput1.Text = "Buttons";
@@ -22630,7 +22646,7 @@
             "Right",
             "Down",
             "Left"});
-            this.comboBoxDuelButton5.Location = new System.Drawing.Point(167, 99);
+            this.comboBoxDuelButton5.Location = new System.Drawing.Point(162, 99);
             this.comboBoxDuelButton5.Name = "comboBoxDuelButton5";
             this.comboBoxDuelButton5.Size = new System.Drawing.Size(130, 25);
             this.comboBoxDuelButton5.TabIndex = 4;
@@ -22640,7 +22656,7 @@
             this.labelDuelButton5.AutoSize = true;
             this.labelDuelButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelButton5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton5.Location = new System.Drawing.Point(201, 80);
+            this.labelDuelButton5.Location = new System.Drawing.Point(196, 80);
             this.labelDuelButton5.Name = "labelDuelButton5";
             this.labelDuelButton5.Size = new System.Drawing.Size(61, 17);
             this.labelDuelButton5.TabIndex = 3;
@@ -22664,7 +22680,7 @@
             "Right",
             "Down",
             "Left"});
-            this.comboBoxDuelButton4.Location = new System.Drawing.Point(13, 99);
+            this.comboBoxDuelButton4.Location = new System.Drawing.Point(8, 99);
             this.comboBoxDuelButton4.Name = "comboBoxDuelButton4";
             this.comboBoxDuelButton4.Size = new System.Drawing.Size(130, 25);
             this.comboBoxDuelButton4.TabIndex = 4;
@@ -22674,7 +22690,7 @@
             this.labelDuelButton4.AutoSize = true;
             this.labelDuelButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelButton4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton4.Location = new System.Drawing.Point(48, 80);
+            this.labelDuelButton4.Location = new System.Drawing.Point(43, 80);
             this.labelDuelButton4.Name = "labelDuelButton4";
             this.labelDuelButton4.Size = new System.Drawing.Size(61, 17);
             this.labelDuelButton4.TabIndex = 3;
@@ -22698,7 +22714,7 @@
             "Right",
             "Down",
             "Left"});
-            this.comboBoxDuelButton3.Location = new System.Drawing.Point(321, 47);
+            this.comboBoxDuelButton3.Location = new System.Drawing.Point(316, 47);
             this.comboBoxDuelButton3.Name = "comboBoxDuelButton3";
             this.comboBoxDuelButton3.Size = new System.Drawing.Size(130, 25);
             this.comboBoxDuelButton3.TabIndex = 4;
@@ -22708,7 +22724,7 @@
             this.labelDuelButton3.AutoSize = true;
             this.labelDuelButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelButton3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton3.Location = new System.Drawing.Point(355, 26);
+            this.labelDuelButton3.Location = new System.Drawing.Point(350, 26);
             this.labelDuelButton3.Name = "labelDuelButton3";
             this.labelDuelButton3.Size = new System.Drawing.Size(61, 17);
             this.labelDuelButton3.TabIndex = 3;
@@ -22732,7 +22748,7 @@
             "Right",
             "Down",
             "Left"});
-            this.comboBoxDuelButton2.Location = new System.Drawing.Point(167, 47);
+            this.comboBoxDuelButton2.Location = new System.Drawing.Point(162, 47);
             this.comboBoxDuelButton2.Name = "comboBoxDuelButton2";
             this.comboBoxDuelButton2.Size = new System.Drawing.Size(130, 25);
             this.comboBoxDuelButton2.TabIndex = 4;
@@ -22742,7 +22758,7 @@
             this.labelDuelButton2.AutoSize = true;
             this.labelDuelButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelButton2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton2.Location = new System.Drawing.Point(202, 26);
+            this.labelDuelButton2.Location = new System.Drawing.Point(197, 26);
             this.labelDuelButton2.Name = "labelDuelButton2";
             this.labelDuelButton2.Size = new System.Drawing.Size(61, 17);
             this.labelDuelButton2.TabIndex = 3;
@@ -22765,7 +22781,7 @@
             "Right",
             "Down",
             "Left"});
-            this.comboBoxDuelButton1.Location = new System.Drawing.Point(13, 47);
+            this.comboBoxDuelButton1.Location = new System.Drawing.Point(8, 47);
             this.comboBoxDuelButton1.Name = "comboBoxDuelButton1";
             this.comboBoxDuelButton1.Size = new System.Drawing.Size(130, 25);
             this.comboBoxDuelButton1.TabIndex = 4;
@@ -22775,7 +22791,7 @@
             this.labelDuelButton1.AutoSize = true;
             this.labelDuelButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelButton1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelButton1.Location = new System.Drawing.Point(49, 27);
+            this.labelDuelButton1.Location = new System.Drawing.Point(44, 27);
             this.labelDuelButton1.Name = "labelDuelButton1";
             this.labelDuelButton1.Size = new System.Drawing.Size(59, 17);
             this.labelDuelButton1.TabIndex = 3;
@@ -22828,9 +22844,9 @@
             this.groupBoxDuelStatus.Controls.Add(this.labelDuelStatusAttack);
             this.groupBoxDuelStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDuelStatus.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBoxDuelStatus.Location = new System.Drawing.Point(151, 220);
+            this.groupBoxDuelStatus.Location = new System.Drawing.Point(6, 339);
             this.groupBoxDuelStatus.Name = "groupBoxDuelStatus";
-            this.groupBoxDuelStatus.Size = new System.Drawing.Size(465, 272);
+            this.groupBoxDuelStatus.Size = new System.Drawing.Size(455, 278);
             this.groupBoxDuelStatus.TabIndex = 115;
             this.groupBoxDuelStatus.TabStop = false;
             this.groupBoxDuelStatus.Text = "Status Attack";
@@ -22840,7 +22856,7 @@
             this.checkBoxDuelPetrifying.AutoSize = true;
             this.checkBoxDuelPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelPetrifying.Location = new System.Drawing.Point(285, 125);
+            this.checkBoxDuelPetrifying.Location = new System.Drawing.Point(285, 127);
             this.checkBoxDuelPetrifying.Name = "checkBoxDuelPetrifying";
             this.checkBoxDuelPetrifying.Size = new System.Drawing.Size(77, 19);
             this.checkBoxDuelPetrifying.TabIndex = 115;
@@ -22852,7 +22868,7 @@
             this.checkBoxDuelDarkness.AutoSize = true;
             this.checkBoxDuelDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelDarkness.Location = new System.Drawing.Point(10, 250);
+            this.checkBoxDuelDarkness.Location = new System.Drawing.Point(10, 252);
             this.checkBoxDuelDarkness.Name = "checkBoxDuelDarkness";
             this.checkBoxDuelDarkness.Size = new System.Drawing.Size(73, 19);
             this.checkBoxDuelDarkness.TabIndex = 138;
@@ -22864,7 +22880,7 @@
             this.checkBoxDuelSilence.AutoSize = true;
             this.checkBoxDuelSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelSilence.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelSilence.Location = new System.Drawing.Point(102, 250);
+            this.checkBoxDuelSilence.Location = new System.Drawing.Point(102, 252);
             this.checkBoxDuelSilence.Name = "checkBoxDuelSilence";
             this.checkBoxDuelSilence.Size = new System.Drawing.Size(63, 19);
             this.checkBoxDuelSilence.TabIndex = 139;
@@ -22876,7 +22892,7 @@
             this.checkBoxDuelStop.AutoSize = true;
             this.checkBoxDuelStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelStop.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelStop.Location = new System.Drawing.Point(285, 75);
+            this.checkBoxDuelStop.Location = new System.Drawing.Point(285, 77);
             this.checkBoxDuelStop.Name = "checkBoxDuelStop";
             this.checkBoxDuelStop.Size = new System.Drawing.Size(50, 19);
             this.checkBoxDuelStop.TabIndex = 106;
@@ -22889,7 +22905,7 @@
             this.checkBoxDuelConfusion.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxDuelConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelConfusion.Location = new System.Drawing.Point(373, 125);
+            this.checkBoxDuelConfusion.Location = new System.Drawing.Point(373, 127);
             this.checkBoxDuelConfusion.Name = "checkBoxDuelConfusion";
             this.checkBoxDuelConfusion.Size = new System.Drawing.Size(81, 19);
             this.checkBoxDuelConfusion.TabIndex = 117;
@@ -22901,7 +22917,7 @@
             this.checkBoxDuelPetrify.AutoSize = true;
             this.checkBoxDuelPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelPetrify.Location = new System.Drawing.Point(373, 225);
+            this.checkBoxDuelPetrify.Location = new System.Drawing.Point(373, 227);
             this.checkBoxDuelPetrify.Name = "checkBoxDuelPetrify";
             this.checkBoxDuelPetrify.Size = new System.Drawing.Size(60, 19);
             this.checkBoxDuelPetrify.TabIndex = 137;
@@ -22913,7 +22929,7 @@
             this.checkBoxDuelSlow.AutoSize = true;
             this.checkBoxDuelSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelSlow.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelSlow.Location = new System.Drawing.Point(196, 75);
+            this.checkBoxDuelSlow.Location = new System.Drawing.Point(196, 77);
             this.checkBoxDuelSlow.Name = "checkBoxDuelSlow";
             this.checkBoxDuelSlow.Size = new System.Drawing.Size(51, 19);
             this.checkBoxDuelSlow.TabIndex = 105;
@@ -22925,7 +22941,7 @@
             this.checkBoxDuelBerserk.AutoSize = true;
             this.checkBoxDuelBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelBerserk.Location = new System.Drawing.Point(196, 250);
+            this.checkBoxDuelBerserk.Location = new System.Drawing.Point(196, 252);
             this.checkBoxDuelBerserk.Name = "checkBoxDuelBerserk";
             this.checkBoxDuelBerserk.Size = new System.Drawing.Size(64, 19);
             this.checkBoxDuelBerserk.TabIndex = 140;
@@ -22937,7 +22953,7 @@
             this.checkBoxDuelSleep.AutoSize = true;
             this.checkBoxDuelSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelSleep.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelSleep.Location = new System.Drawing.Point(10, 75);
+            this.checkBoxDuelSleep.Location = new System.Drawing.Point(10, 77);
             this.checkBoxDuelSleep.Name = "checkBoxDuelSleep";
             this.checkBoxDuelSleep.Size = new System.Drawing.Size(54, 19);
             this.checkBoxDuelSleep.TabIndex = 103;
@@ -22949,7 +22965,7 @@
             this.checkBoxDuelInvincible.AutoSize = true;
             this.checkBoxDuelInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelInvincible.Location = new System.Drawing.Point(102, 125);
+            this.checkBoxDuelInvincible.Location = new System.Drawing.Point(102, 127);
             this.checkBoxDuelInvincible.Name = "checkBoxDuelInvincible";
             this.checkBoxDuelInvincible.Size = new System.Drawing.Size(77, 19);
             this.checkBoxDuelInvincible.TabIndex = 114;
@@ -22961,7 +22977,7 @@
             this.checkBoxDuelCurse.AutoSize = true;
             this.checkBoxDuelCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelCurse.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelCurse.Location = new System.Drawing.Point(373, 100);
+            this.checkBoxDuelCurse.Location = new System.Drawing.Point(373, 102);
             this.checkBoxDuelCurse.Name = "checkBoxDuelCurse";
             this.checkBoxDuelCurse.Size = new System.Drawing.Size(56, 19);
             this.checkBoxDuelCurse.TabIndex = 112;
@@ -22973,7 +22989,7 @@
             this.checkBoxDuelDoom.AutoSize = true;
             this.checkBoxDuelDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelDoom.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelDoom.Location = new System.Drawing.Point(10, 125);
+            this.checkBoxDuelDoom.Location = new System.Drawing.Point(10, 127);
             this.checkBoxDuelDoom.Name = "checkBoxDuelDoom";
             this.checkBoxDuelDoom.Size = new System.Drawing.Size(59, 19);
             this.checkBoxDuelDoom.TabIndex = 113;
@@ -22985,7 +23001,7 @@
             this.checkBoxDuelFloat.AutoSize = true;
             this.checkBoxDuelFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelFloat.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelFloat.Location = new System.Drawing.Point(196, 125);
+            this.checkBoxDuelFloat.Location = new System.Drawing.Point(196, 127);
             this.checkBoxDuelFloat.Name = "checkBoxDuelFloat";
             this.checkBoxDuelFloat.Size = new System.Drawing.Size(52, 19);
             this.checkBoxDuelFloat.TabIndex = 116;
@@ -22997,7 +23013,7 @@
             this.checkBoxDuelAura.AutoSize = true;
             this.checkBoxDuelAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelAura.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelAura.Location = new System.Drawing.Point(285, 100);
+            this.checkBoxDuelAura.Location = new System.Drawing.Point(285, 102);
             this.checkBoxDuelAura.Name = "checkBoxDuelAura";
             this.checkBoxDuelAura.Size = new System.Drawing.Size(51, 19);
             this.checkBoxDuelAura.TabIndex = 111;
@@ -23009,7 +23025,7 @@
             this.checkBoxDuelDrain.AutoSize = true;
             this.checkBoxDuelDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelDrain.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelDrain.Location = new System.Drawing.Point(10, 150);
+            this.checkBoxDuelDrain.Location = new System.Drawing.Point(10, 152);
             this.checkBoxDuelDrain.Name = "checkBoxDuelDrain";
             this.checkBoxDuelDrain.Size = new System.Drawing.Size(54, 19);
             this.checkBoxDuelDrain.TabIndex = 118;
@@ -23021,7 +23037,7 @@
             this.checkBoxDuelSummonGF.AutoSize = true;
             this.checkBoxDuelSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelSummonGF.Location = new System.Drawing.Point(102, 225);
+            this.checkBoxDuelSummonGF.Location = new System.Drawing.Point(102, 227);
             this.checkBoxDuelSummonGF.Name = "checkBoxDuelSummonGF";
             this.checkBoxDuelSummonGF.Size = new System.Drawing.Size(92, 19);
             this.checkBoxDuelSummonGF.TabIndex = 133;
@@ -23033,7 +23049,7 @@
             this.checkBoxDuelHasMagic.AutoSize = true;
             this.checkBoxDuelHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelHasMagic.Location = new System.Drawing.Point(10, 225);
+            this.checkBoxDuelHasMagic.Location = new System.Drawing.Point(10, 227);
             this.checkBoxDuelHasMagic.Name = "checkBoxDuelHasMagic";
             this.checkBoxDuelHasMagic.Size = new System.Drawing.Size(82, 19);
             this.checkBoxDuelHasMagic.TabIndex = 132;
@@ -23045,7 +23061,7 @@
             this.checkBoxDuelUnk6.AutoSize = true;
             this.checkBoxDuelUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelUnk6.Location = new System.Drawing.Point(373, 200);
+            this.checkBoxDuelUnk6.Location = new System.Drawing.Point(373, 202);
             this.checkBoxDuelUnk6.Name = "checkBoxDuelUnk6";
             this.checkBoxDuelUnk6.Size = new System.Drawing.Size(41, 19);
             this.checkBoxDuelUnk6.TabIndex = 131;
@@ -23057,7 +23073,7 @@
             this.checkBoxDuelUnk5.AutoSize = true;
             this.checkBoxDuelUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelUnk5.Location = new System.Drawing.Point(285, 200);
+            this.checkBoxDuelUnk5.Location = new System.Drawing.Point(285, 202);
             this.checkBoxDuelUnk5.Name = "checkBoxDuelUnk5";
             this.checkBoxDuelUnk5.Size = new System.Drawing.Size(41, 19);
             this.checkBoxDuelUnk5.TabIndex = 130;
@@ -23069,7 +23085,7 @@
             this.checkBoxDuelUnk4.AutoSize = true;
             this.checkBoxDuelUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelUnk4.Location = new System.Drawing.Point(196, 200);
+            this.checkBoxDuelUnk4.Location = new System.Drawing.Point(196, 202);
             this.checkBoxDuelUnk4.Name = "checkBoxDuelUnk4";
             this.checkBoxDuelUnk4.Size = new System.Drawing.Size(41, 19);
             this.checkBoxDuelUnk4.TabIndex = 127;
@@ -23081,7 +23097,7 @@
             this.checkBoxDuelUnk3.AutoSize = true;
             this.checkBoxDuelUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelUnk3.Location = new System.Drawing.Point(102, 200);
+            this.checkBoxDuelUnk3.Location = new System.Drawing.Point(102, 202);
             this.checkBoxDuelUnk3.Name = "checkBoxDuelUnk3";
             this.checkBoxDuelUnk3.Size = new System.Drawing.Size(41, 19);
             this.checkBoxDuelUnk3.TabIndex = 129;
@@ -23093,7 +23109,7 @@
             this.checkBoxDuelAngelWing.AutoSize = true;
             this.checkBoxDuelAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelAngelWing.Location = new System.Drawing.Point(10, 200);
+            this.checkBoxDuelAngelWing.Location = new System.Drawing.Point(10, 202);
             this.checkBoxDuelAngelWing.Name = "checkBoxDuelAngelWing";
             this.checkBoxDuelAngelWing.Size = new System.Drawing.Size(88, 19);
             this.checkBoxDuelAngelWing.TabIndex = 128;
@@ -23105,7 +23121,7 @@
             this.checkBoxDuelVit0.AutoSize = true;
             this.checkBoxDuelVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelVit0.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelVit0.Location = new System.Drawing.Point(373, 175);
+            this.checkBoxDuelVit0.Location = new System.Drawing.Point(373, 177);
             this.checkBoxDuelVit0.Name = "checkBoxDuelVit0";
             this.checkBoxDuelVit0.Size = new System.Drawing.Size(46, 19);
             this.checkBoxDuelVit0.TabIndex = 134;
@@ -23117,7 +23133,7 @@
             this.checkBoxDuelBackAttack.AutoSize = true;
             this.checkBoxDuelBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelBackAttack.Location = new System.Drawing.Point(285, 175);
+            this.checkBoxDuelBackAttack.Location = new System.Drawing.Point(285, 177);
             this.checkBoxDuelBackAttack.Name = "checkBoxDuelBackAttack";
             this.checkBoxDuelBackAttack.Size = new System.Drawing.Size(88, 19);
             this.checkBoxDuelBackAttack.TabIndex = 126;
@@ -23129,7 +23145,7 @@
             this.checkBoxDuelCharged.AutoSize = true;
             this.checkBoxDuelCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelCharged.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelCharged.Location = new System.Drawing.Point(196, 175);
+            this.checkBoxDuelCharged.Location = new System.Drawing.Point(196, 177);
             this.checkBoxDuelCharged.Name = "checkBoxDuelCharged";
             this.checkBoxDuelCharged.Size = new System.Drawing.Size(71, 19);
             this.checkBoxDuelCharged.TabIndex = 122;
@@ -23141,7 +23157,7 @@
             this.checkBoxDuelUnk2.AutoSize = true;
             this.checkBoxDuelUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelUnk2.Location = new System.Drawing.Point(102, 175);
+            this.checkBoxDuelUnk2.Location = new System.Drawing.Point(102, 177);
             this.checkBoxDuelUnk2.Name = "checkBoxDuelUnk2";
             this.checkBoxDuelUnk2.Size = new System.Drawing.Size(41, 19);
             this.checkBoxDuelUnk2.TabIndex = 125;
@@ -23153,7 +23169,7 @@
             this.checkBoxDuelUnk1.AutoSize = true;
             this.checkBoxDuelUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelUnk1.Location = new System.Drawing.Point(10, 175);
+            this.checkBoxDuelUnk1.Location = new System.Drawing.Point(10, 177);
             this.checkBoxDuelUnk1.Name = "checkBoxDuelUnk1";
             this.checkBoxDuelUnk1.Size = new System.Drawing.Size(41, 19);
             this.checkBoxDuelUnk1.TabIndex = 124;
@@ -23165,7 +23181,7 @@
             this.checkBoxDuelDefend.AutoSize = true;
             this.checkBoxDuelDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelDefend.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelDefend.Location = new System.Drawing.Point(373, 150);
+            this.checkBoxDuelDefend.Location = new System.Drawing.Point(373, 152);
             this.checkBoxDuelDefend.Name = "checkBoxDuelDefend";
             this.checkBoxDuelDefend.Size = new System.Drawing.Size(64, 19);
             this.checkBoxDuelDefend.TabIndex = 123;
@@ -23177,7 +23193,7 @@
             this.checkBoxDuelTriple.AutoSize = true;
             this.checkBoxDuelTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelTriple.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelTriple.Location = new System.Drawing.Point(285, 150);
+            this.checkBoxDuelTriple.Location = new System.Drawing.Point(285, 152);
             this.checkBoxDuelTriple.Name = "checkBoxDuelTriple";
             this.checkBoxDuelTriple.Size = new System.Drawing.Size(55, 19);
             this.checkBoxDuelTriple.TabIndex = 121;
@@ -23189,7 +23205,7 @@
             this.checkBoxDuelDouble.AutoSize = true;
             this.checkBoxDuelDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelDouble.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelDouble.Location = new System.Drawing.Point(196, 150);
+            this.checkBoxDuelDouble.Location = new System.Drawing.Point(196, 152);
             this.checkBoxDuelDouble.Name = "checkBoxDuelDouble";
             this.checkBoxDuelDouble.Size = new System.Drawing.Size(64, 19);
             this.checkBoxDuelDouble.TabIndex = 120;
@@ -23201,7 +23217,7 @@
             this.checkBoxDuelEject.AutoSize = true;
             this.checkBoxDuelEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelEject.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelEject.Location = new System.Drawing.Point(102, 150);
+            this.checkBoxDuelEject.Location = new System.Drawing.Point(102, 152);
             this.checkBoxDuelEject.Name = "checkBoxDuelEject";
             this.checkBoxDuelEject.Size = new System.Drawing.Size(51, 19);
             this.checkBoxDuelEject.TabIndex = 119;
@@ -23213,7 +23229,7 @@
             this.checkBoxDuelPoison.AutoSize = true;
             this.checkBoxDuelPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelPoison.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelPoison.Location = new System.Drawing.Point(285, 225);
+            this.checkBoxDuelPoison.Location = new System.Drawing.Point(285, 227);
             this.checkBoxDuelPoison.Name = "checkBoxDuelPoison";
             this.checkBoxDuelPoison.Size = new System.Drawing.Size(62, 19);
             this.checkBoxDuelPoison.TabIndex = 136;
@@ -23225,7 +23241,7 @@
             this.checkBoxDuelDeath.AutoSize = true;
             this.checkBoxDuelDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelDeath.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelDeath.Location = new System.Drawing.Point(196, 225);
+            this.checkBoxDuelDeath.Location = new System.Drawing.Point(196, 227);
             this.checkBoxDuelDeath.Name = "checkBoxDuelDeath";
             this.checkBoxDuelDeath.Size = new System.Drawing.Size(57, 19);
             this.checkBoxDuelDeath.TabIndex = 135;
@@ -23237,7 +23253,7 @@
             this.checkBoxDuelProtect.AutoSize = true;
             this.checkBoxDuelProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelProtect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelProtect.Location = new System.Drawing.Point(10, 100);
+            this.checkBoxDuelProtect.Location = new System.Drawing.Point(10, 102);
             this.checkBoxDuelProtect.Name = "checkBoxDuelProtect";
             this.checkBoxDuelProtect.Size = new System.Drawing.Size(64, 19);
             this.checkBoxDuelProtect.TabIndex = 108;
@@ -23249,7 +23265,7 @@
             this.checkBoxDuelHaste.AutoSize = true;
             this.checkBoxDuelHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelHaste.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelHaste.Location = new System.Drawing.Point(102, 75);
+            this.checkBoxDuelHaste.Location = new System.Drawing.Point(102, 77);
             this.checkBoxDuelHaste.Name = "checkBoxDuelHaste";
             this.checkBoxDuelHaste.Size = new System.Drawing.Size(56, 19);
             this.checkBoxDuelHaste.TabIndex = 104;
@@ -23261,7 +23277,7 @@
             this.checkBoxDuelRegen.AutoSize = true;
             this.checkBoxDuelRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelRegen.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelRegen.Location = new System.Drawing.Point(373, 75);
+            this.checkBoxDuelRegen.Location = new System.Drawing.Point(373, 77);
             this.checkBoxDuelRegen.Name = "checkBoxDuelRegen";
             this.checkBoxDuelRegen.Size = new System.Drawing.Size(59, 19);
             this.checkBoxDuelRegen.TabIndex = 107;
@@ -23273,7 +23289,7 @@
             this.checkBoxDuelShell.AutoSize = true;
             this.checkBoxDuelShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelShell.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelShell.Location = new System.Drawing.Point(102, 100);
+            this.checkBoxDuelShell.Location = new System.Drawing.Point(102, 102);
             this.checkBoxDuelShell.Name = "checkBoxDuelShell";
             this.checkBoxDuelShell.Size = new System.Drawing.Size(51, 19);
             this.checkBoxDuelShell.TabIndex = 109;
@@ -23285,7 +23301,7 @@
             this.checkBoxDuelReflect.AutoSize = true;
             this.checkBoxDuelReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelReflect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelReflect.Location = new System.Drawing.Point(196, 100);
+            this.checkBoxDuelReflect.Location = new System.Drawing.Point(196, 102);
             this.checkBoxDuelReflect.Name = "checkBoxDuelReflect";
             this.checkBoxDuelReflect.Size = new System.Drawing.Size(62, 19);
             this.checkBoxDuelReflect.TabIndex = 110;
@@ -23297,7 +23313,7 @@
             this.checkBoxDuelUnk7.AutoSize = true;
             this.checkBoxDuelUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelUnk7.Location = new System.Drawing.Point(373, 250);
+            this.checkBoxDuelUnk7.Location = new System.Drawing.Point(373, 252);
             this.checkBoxDuelUnk7.Name = "checkBoxDuelUnk7";
             this.checkBoxDuelUnk7.Size = new System.Drawing.Size(41, 19);
             this.checkBoxDuelUnk7.TabIndex = 141;
@@ -23309,7 +23325,7 @@
             this.checkBoxDuelZombie.AutoSize = true;
             this.checkBoxDuelZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelZombie.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelZombie.Location = new System.Drawing.Point(285, 250);
+            this.checkBoxDuelZombie.Location = new System.Drawing.Point(285, 252);
             this.checkBoxDuelZombie.Name = "checkBoxDuelZombie";
             this.checkBoxDuelZombie.Size = new System.Drawing.Size(67, 19);
             this.checkBoxDuelZombie.TabIndex = 142;
@@ -23319,7 +23335,7 @@
             // numericUpDownDuelStatusAttack
             // 
             this.numericUpDownDuelStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelStatusAttack.Location = new System.Drawing.Point(207, 40);
+            this.numericUpDownDuelStatusAttack.Location = new System.Drawing.Point(207, 42);
             this.numericUpDownDuelStatusAttack.Maximum = new decimal(new int[] {
             255,
             0,
@@ -23334,7 +23350,7 @@
             this.labelDuelStatusAttack.AutoSize = true;
             this.labelDuelStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelStatusAttack.Location = new System.Drawing.Point(186, 20);
+            this.labelDuelStatusAttack.Location = new System.Drawing.Point(186, 22);
             this.labelDuelStatusAttack.Name = "labelDuelStatusAttack";
             this.labelDuelStatusAttack.Size = new System.Drawing.Size(89, 17);
             this.labelDuelStatusAttack.TabIndex = 90;
@@ -23360,7 +23376,7 @@
             "My Final Heaven"});
             this.listBoxDuel.Location = new System.Drawing.Point(0, 0);
             this.listBoxDuel.Name = "listBoxDuel";
-            this.listBoxDuel.Size = new System.Drawing.Size(145, 709);
+            this.listBoxDuel.Size = new System.Drawing.Size(145, 735);
             this.listBoxDuel.TabIndex = 109;
             this.listBoxDuel.SelectedIndexChanged += new System.EventHandler(this.listBoxDuel_SelectedIndexChanged);
             // 
@@ -23377,9 +23393,9 @@
             this.groupBoxDuelTarget.Controls.Add(this.checkBoxDuelTarget3);
             this.groupBoxDuelTarget.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDuelTarget.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBoxDuelTarget.Location = new System.Drawing.Point(151, 137);
+            this.groupBoxDuelTarget.Location = new System.Drawing.Point(6, 251);
             this.groupBoxDuelTarget.Name = "groupBoxDuelTarget";
-            this.groupBoxDuelTarget.Size = new System.Drawing.Size(465, 77);
+            this.groupBoxDuelTarget.Size = new System.Drawing.Size(455, 82);
             this.groupBoxDuelTarget.TabIndex = 114;
             this.groupBoxDuelTarget.TabStop = false;
             this.groupBoxDuelTarget.Text = "Target Info";
@@ -23389,7 +23405,7 @@
             this.checkBoxDuelTarget8.AutoSize = true;
             this.checkBoxDuelTarget8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelTarget8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelTarget8.Location = new System.Drawing.Point(352, 52);
+            this.checkBoxDuelTarget8.Location = new System.Drawing.Point(352, 56);
             this.checkBoxDuelTarget8.Name = "checkBoxDuelTarget8";
             this.checkBoxDuelTarget8.Size = new System.Drawing.Size(41, 19);
             this.checkBoxDuelTarget8.TabIndex = 39;
@@ -23401,7 +23417,7 @@
             this.checkBoxDuelTarget5.AutoSize = true;
             this.checkBoxDuelTarget5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelTarget5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelTarget5.Location = new System.Drawing.Point(29, 52);
+            this.checkBoxDuelTarget5.Location = new System.Drawing.Point(29, 56);
             this.checkBoxDuelTarget5.Name = "checkBoxDuelTarget5";
             this.checkBoxDuelTarget5.Size = new System.Drawing.Size(58, 19);
             this.checkBoxDuelTarget5.TabIndex = 40;
@@ -23413,7 +23429,7 @@
             this.checkBoxDuelTarget2.AutoSize = true;
             this.checkBoxDuelTarget2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelTarget2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelTarget2.Location = new System.Drawing.Point(137, 27);
+            this.checkBoxDuelTarget2.Location = new System.Drawing.Point(137, 31);
             this.checkBoxDuelTarget2.Name = "checkBoxDuelTarget2";
             this.checkBoxDuelTarget2.Size = new System.Drawing.Size(41, 19);
             this.checkBoxDuelTarget2.TabIndex = 36;
@@ -23425,7 +23441,7 @@
             this.checkBoxDuelTarget6.AutoSize = true;
             this.checkBoxDuelTarget6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelTarget6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelTarget6.Location = new System.Drawing.Point(137, 52);
+            this.checkBoxDuelTarget6.Location = new System.Drawing.Point(137, 56);
             this.checkBoxDuelTarget6.Name = "checkBoxDuelTarget6";
             this.checkBoxDuelTarget6.Size = new System.Drawing.Size(41, 19);
             this.checkBoxDuelTarget6.TabIndex = 41;
@@ -23437,7 +23453,7 @@
             this.checkBoxDuelTarget7.AutoSize = true;
             this.checkBoxDuelTarget7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelTarget7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelTarget7.Location = new System.Drawing.Point(247, 52);
+            this.checkBoxDuelTarget7.Location = new System.Drawing.Point(247, 56);
             this.checkBoxDuelTarget7.Name = "checkBoxDuelTarget7";
             this.checkBoxDuelTarget7.Size = new System.Drawing.Size(62, 19);
             this.checkBoxDuelTarget7.TabIndex = 42;
@@ -23449,7 +23465,7 @@
             this.checkBoxDuelTarget1.AutoSize = true;
             this.checkBoxDuelTarget1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelTarget1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelTarget1.Location = new System.Drawing.Point(29, 27);
+            this.checkBoxDuelTarget1.Location = new System.Drawing.Point(29, 31);
             this.checkBoxDuelTarget1.Name = "checkBoxDuelTarget1";
             this.checkBoxDuelTarget1.Size = new System.Drawing.Size(53, 19);
             this.checkBoxDuelTarget1.TabIndex = 35;
@@ -23461,7 +23477,7 @@
             this.checkBoxDuelTarget3.AutoSize = true;
             this.checkBoxDuelTarget3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDuelTarget3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxDuelTarget3.Location = new System.Drawing.Point(247, 27);
+            this.checkBoxDuelTarget3.Location = new System.Drawing.Point(247, 31);
             this.checkBoxDuelTarget3.Name = "checkBoxDuelTarget3";
             this.checkBoxDuelTarget3.Size = new System.Drawing.Size(41, 19);
             this.checkBoxDuelTarget3.TabIndex = 37;
@@ -23481,9 +23497,9 @@
             this.groupBoxDuelFlags.Controls.Add(this.checkBoxDuelFlag7);
             this.groupBoxDuelFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDuelFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxDuelFlags.Location = new System.Drawing.Point(151, 498);
+            this.groupBoxDuelFlags.Location = new System.Drawing.Point(6, 623);
             this.groupBoxDuelFlags.Name = "groupBoxDuelFlags";
-            this.groupBoxDuelFlags.Size = new System.Drawing.Size(465, 75);
+            this.groupBoxDuelFlags.Size = new System.Drawing.Size(455, 81);
             this.groupBoxDuelFlags.TabIndex = 113;
             this.groupBoxDuelFlags.TabStop = false;
             this.groupBoxDuelFlags.Text = "Attack Flags";
@@ -23587,10 +23603,14 @@
             // groupBoxDuelGeneral
             // 
             this.groupBoxDuelGeneral.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxDuelGeneral.Controls.Add(this.textBoxDuelName);
             this.groupBoxDuelGeneral.Controls.Add(this.labelDuelElementPerc);
             this.groupBoxDuelGeneral.Controls.Add(this.comboBoxDuelElement);
+            this.groupBoxDuelGeneral.Controls.Add(this.textBoxDuelDes);
             this.groupBoxDuelGeneral.Controls.Add(this.labelDuelElement);
+            this.groupBoxDuelGeneral.Controls.Add(this.labelDuelName);
             this.groupBoxDuelGeneral.Controls.Add(this.numericUpDownDuelElementPerc);
+            this.groupBoxDuelGeneral.Controls.Add(this.labelDuelDes);
             this.groupBoxDuelGeneral.Controls.Add(this.comboBoxDuelAttackType);
             this.groupBoxDuelGeneral.Controls.Add(this.labelDuelAttackType);
             this.groupBoxDuelGeneral.Controls.Add(this.numericUpDownDuelHitCount);
@@ -23601,9 +23621,9 @@
             this.groupBoxDuelGeneral.Controls.Add(this.labelDuelMagicID);
             this.groupBoxDuelGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDuelGeneral.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBoxDuelGeneral.Location = new System.Drawing.Point(151, 6);
+            this.groupBoxDuelGeneral.Location = new System.Drawing.Point(6, 6);
             this.groupBoxDuelGeneral.Name = "groupBoxDuelGeneral";
-            this.groupBoxDuelGeneral.Size = new System.Drawing.Size(465, 125);
+            this.groupBoxDuelGeneral.Size = new System.Drawing.Size(455, 239);
             this.groupBoxDuelGeneral.TabIndex = 112;
             this.groupBoxDuelGeneral.TabStop = false;
             this.groupBoxDuelGeneral.Text = "General";
@@ -23613,7 +23633,7 @@
             this.labelDuelElementPerc.AutoSize = true;
             this.labelDuelElementPerc.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelElementPerc.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelElementPerc.Location = new System.Drawing.Point(420, 72);
+            this.labelDuelElementPerc.Location = new System.Drawing.Point(420, 185);
             this.labelDuelElementPerc.Name = "labelDuelElementPerc";
             this.labelDuelElementPerc.Size = new System.Drawing.Size(19, 17);
             this.labelDuelElementPerc.TabIndex = 94;
@@ -23633,7 +23653,7 @@
             "Water",
             "Holy",
             "Non-Elemental"});
-            this.comboBoxDuelElement.Location = new System.Drawing.Point(291, 92);
+            this.comboBoxDuelElement.Location = new System.Drawing.Point(285, 205);
             this.comboBoxDuelElement.Name = "comboBoxDuelElement";
             this.comboBoxDuelElement.Size = new System.Drawing.Size(110, 25);
             this.comboBoxDuelElement.TabIndex = 93;
@@ -23641,7 +23661,7 @@
             // numericUpDownDuelElementPerc
             // 
             this.numericUpDownDuelElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelElementPerc.Location = new System.Drawing.Point(407, 92);
+            this.numericUpDownDuelElementPerc.Location = new System.Drawing.Point(401, 205);
             this.numericUpDownDuelElementPerc.Maximum = new decimal(new int[] {
             255,
             0,
@@ -23655,15 +23675,15 @@
             // 
             this.comboBoxDuelAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDuelAttackType.FormattingEnabled = true;
-            this.comboBoxDuelAttackType.Location = new System.Drawing.Point(12, 92);
+            this.comboBoxDuelAttackType.Location = new System.Drawing.Point(6, 205);
             this.comboBoxDuelAttackType.Name = "comboBoxDuelAttackType";
-            this.comboBoxDuelAttackType.Size = new System.Drawing.Size(235, 25);
+            this.comboBoxDuelAttackType.Size = new System.Drawing.Size(257, 25);
             this.comboBoxDuelAttackType.TabIndex = 8;
             // 
             // numericUpDownDuelHitCount
             // 
             this.numericUpDownDuelHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelHitCount.Location = new System.Drawing.Point(390, 37);
+            this.numericUpDownDuelHitCount.Location = new System.Drawing.Point(392, 153);
             this.numericUpDownDuelHitCount.Maximum = new decimal(new int[] {
             255,
             0,
@@ -23676,7 +23696,7 @@
             // numericUpDownDuelAttackPower
             // 
             this.numericUpDownDuelAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelAttackPower.Location = new System.Drawing.Point(305, 37);
+            this.numericUpDownDuelAttackPower.Location = new System.Drawing.Point(308, 152);
             this.numericUpDownDuelAttackPower.Maximum = new decimal(new int[] {
             255,
             0,
@@ -23690,9 +23710,9 @@
             // 
             this.comboBoxDuelMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDuelMagicID.FormattingEnabled = true;
-            this.comboBoxDuelMagicID.Location = new System.Drawing.Point(12, 37);
+            this.comboBoxDuelMagicID.Location = new System.Drawing.Point(6, 153);
             this.comboBoxDuelMagicID.Name = "comboBoxDuelMagicID";
-            this.comboBoxDuelMagicID.Size = new System.Drawing.Size(236, 25);
+            this.comboBoxDuelMagicID.Size = new System.Drawing.Size(257, 25);
             this.comboBoxDuelMagicID.TabIndex = 2;
             // 
             // tabPageDuelMoveTimersButtons
@@ -23703,7 +23723,7 @@
             this.tabPageDuelMoveTimersButtons.Location = new System.Drawing.Point(4, 26);
             this.tabPageDuelMoveTimersButtons.Name = "tabPageDuelMoveTimersButtons";
             this.tabPageDuelMoveTimersButtons.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDuelMoveTimersButtons.Size = new System.Drawing.Size(622, 710);
+            this.tabPageDuelMoveTimersButtons.Size = new System.Drawing.Size(467, 710);
             this.tabPageDuelMoveTimersButtons.TabIndex = 1;
             this.tabPageDuelMoveTimersButtons.Text = "Moves && Timers";
             // 
@@ -23734,7 +23754,7 @@
             this.groupBoxStartButtonsTimers.ForeColor = System.Drawing.Color.DarkCyan;
             this.groupBoxStartButtonsTimers.Location = new System.Drawing.Point(6, 6);
             this.groupBoxStartButtonsTimers.Name = "groupBoxStartButtonsTimers";
-            this.groupBoxStartButtonsTimers.Size = new System.Drawing.Size(606, 171);
+            this.groupBoxStartButtonsTimers.Size = new System.Drawing.Size(455, 171);
             this.groupBoxStartButtonsTimers.TabIndex = 113;
             this.groupBoxStartButtonsTimers.TabStop = false;
             this.groupBoxStartButtonsTimers.Text = "Start Sequences && Timers";
@@ -23744,7 +23764,7 @@
             this.labelDuelTimer4Value.AutoSize = true;
             this.labelDuelTimer4Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.labelDuelTimer4Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer4Value.Location = new System.Drawing.Point(467, 141);
+            this.labelDuelTimer4Value.Location = new System.Drawing.Point(379, 136);
             this.labelDuelTimer4Value.Name = "labelDuelTimer4Value";
             this.labelDuelTimer4Value.Size = new System.Drawing.Size(38, 17);
             this.labelDuelTimer4Value.TabIndex = 100;
@@ -23755,7 +23775,7 @@
             this.labelDuelTimer3Value.AutoSize = true;
             this.labelDuelTimer3Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.labelDuelTimer3Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer3Value.Location = new System.Drawing.Point(347, 141);
+            this.labelDuelTimer3Value.Location = new System.Drawing.Point(267, 136);
             this.labelDuelTimer3Value.Name = "labelDuelTimer3Value";
             this.labelDuelTimer3Value.Size = new System.Drawing.Size(38, 17);
             this.labelDuelTimer3Value.TabIndex = 101;
@@ -23766,7 +23786,7 @@
             this.labelDuelTimer2Value.AutoSize = true;
             this.labelDuelTimer2Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.labelDuelTimer2Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer2Value.Location = new System.Drawing.Point(223, 141);
+            this.labelDuelTimer2Value.Location = new System.Drawing.Point(151, 136);
             this.labelDuelTimer2Value.Name = "labelDuelTimer2Value";
             this.labelDuelTimer2Value.Size = new System.Drawing.Size(38, 17);
             this.labelDuelTimer2Value.TabIndex = 102;
@@ -23778,7 +23798,7 @@
             this.labelDuelTimer1Value.BackColor = System.Drawing.Color.Transparent;
             this.labelDuelTimer1Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.labelDuelTimer1Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer1Value.Location = new System.Drawing.Point(99, 141);
+            this.labelDuelTimer1Value.Location = new System.Drawing.Point(35, 136);
             this.labelDuelTimer1Value.Name = "labelDuelTimer1Value";
             this.labelDuelTimer1Value.Size = new System.Drawing.Size(38, 17);
             this.labelDuelTimer1Value.TabIndex = 103;
@@ -23789,7 +23809,7 @@
             this.labelDuelTimer4.AutoSize = true;
             this.labelDuelTimer4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelTimer4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer4.Location = new System.Drawing.Point(453, 96);
+            this.labelDuelTimer4.Location = new System.Drawing.Point(365, 91);
             this.labelDuelTimer4.Name = "labelDuelTimer4";
             this.labelDuelTimer4.Size = new System.Drawing.Size(67, 17);
             this.labelDuelTimer4.TabIndex = 96;
@@ -23798,7 +23818,7 @@
             // numericUpDownDuelStart4
             // 
             this.numericUpDownDuelStart4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelStart4.Location = new System.Drawing.Point(496, 51);
+            this.numericUpDownDuelStart4.Location = new System.Drawing.Point(373, 51);
             this.numericUpDownDuelStart4.Maximum = new decimal(new int[] {
             24,
             0,
@@ -23813,7 +23833,7 @@
             this.labelDuelTimer3.AutoSize = true;
             this.labelDuelTimer3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelTimer3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer3.Location = new System.Drawing.Point(334, 96);
+            this.labelDuelTimer3.Location = new System.Drawing.Point(254, 91);
             this.labelDuelTimer3.Name = "labelDuelTimer3";
             this.labelDuelTimer3.Size = new System.Drawing.Size(67, 17);
             this.labelDuelTimer3.TabIndex = 97;
@@ -23824,7 +23844,7 @@
             this.labelDuelTimer2.AutoSize = true;
             this.labelDuelTimer2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelTimer2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer2.Location = new System.Drawing.Point(208, 96);
+            this.labelDuelTimer2.Location = new System.Drawing.Point(136, 91);
             this.labelDuelTimer2.Name = "labelDuelTimer2";
             this.labelDuelTimer2.Size = new System.Drawing.Size(67, 17);
             this.labelDuelTimer2.TabIndex = 98;
@@ -23833,7 +23853,7 @@
             // numericUpDownDuelStart1
             // 
             this.numericUpDownDuelStart1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelStart1.Location = new System.Drawing.Point(57, 51);
+            this.numericUpDownDuelStart1.Location = new System.Drawing.Point(30, 51);
             this.numericUpDownDuelStart1.Maximum = new decimal(new int[] {
             24,
             0,
@@ -23848,7 +23868,7 @@
             this.labelDuelTimer1.AutoSize = true;
             this.labelDuelTimer1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelTimer1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelTimer1.Location = new System.Drawing.Point(87, 96);
+            this.labelDuelTimer1.Location = new System.Drawing.Point(23, 91);
             this.labelDuelTimer1.Name = "labelDuelTimer1";
             this.labelDuelTimer1.Size = new System.Drawing.Size(65, 17);
             this.labelDuelTimer1.TabIndex = 99;
@@ -23857,7 +23877,7 @@
             // numericUpDownDuelStart2
             // 
             this.numericUpDownDuelStart2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelStart2.Location = new System.Drawing.Point(205, 51);
+            this.numericUpDownDuelStart2.Location = new System.Drawing.Point(146, 51);
             this.numericUpDownDuelStart2.Maximum = new decimal(new int[] {
             24,
             0,
@@ -23870,7 +23890,7 @@
             // numericUpDownDuelTimer4
             // 
             this.numericUpDownDuelTimer4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelTimer4.Location = new System.Drawing.Point(461, 116);
+            this.numericUpDownDuelTimer4.Location = new System.Drawing.Point(373, 111);
             this.numericUpDownDuelTimer4.Maximum = new decimal(new int[] {
             255,
             0,
@@ -23884,7 +23904,7 @@
             // numericUpDownDuelTimer3
             // 
             this.numericUpDownDuelTimer3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelTimer3.Location = new System.Drawing.Point(342, 116);
+            this.numericUpDownDuelTimer3.Location = new System.Drawing.Point(262, 111);
             this.numericUpDownDuelTimer3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -23898,7 +23918,7 @@
             // numericUpDownDuelStart3
             // 
             this.numericUpDownDuelStart3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelStart3.Location = new System.Drawing.Point(353, 51);
+            this.numericUpDownDuelStart3.Location = new System.Drawing.Point(262, 51);
             this.numericUpDownDuelStart3.Maximum = new decimal(new int[] {
             24,
             0,
@@ -23911,7 +23931,7 @@
             // numericUpDownDuelTimer2
             // 
             this.numericUpDownDuelTimer2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelTimer2.Location = new System.Drawing.Point(218, 116);
+            this.numericUpDownDuelTimer2.Location = new System.Drawing.Point(146, 111);
             this.numericUpDownDuelTimer2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -23925,7 +23945,7 @@
             // numericUpDownDuelTimer1
             // 
             this.numericUpDownDuelTimer1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelTimer1.Location = new System.Drawing.Point(94, 116);
+            this.numericUpDownDuelTimer1.Location = new System.Drawing.Point(30, 111);
             this.numericUpDownDuelTimer1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -23941,44 +23961,44 @@
             this.labelDuelStart4.AutoSize = true;
             this.labelDuelStart4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelStart4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelStart4.Location = new System.Drawing.Point(460, 31);
+            this.labelDuelStart4.Location = new System.Drawing.Point(356, 31);
             this.labelDuelStart4.Name = "labelDuelStart4";
-            this.labelDuelStart4.Size = new System.Drawing.Size(124, 17);
+            this.labelDuelStart4.Size = new System.Drawing.Size(88, 17);
             this.labelDuelStart4.TabIndex = 3;
-            this.labelDuelStart4.Text = "Start Sequence CL4";
+            this.labelDuelStart4.Text = "Start Seq CL4";
             // 
             // labelDuelStart3
             // 
             this.labelDuelStart3.AutoSize = true;
             this.labelDuelStart3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelStart3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelStart3.Location = new System.Drawing.Point(317, 31);
+            this.labelDuelStart3.Location = new System.Drawing.Point(242, 31);
             this.labelDuelStart3.Name = "labelDuelStart3";
-            this.labelDuelStart3.Size = new System.Drawing.Size(124, 17);
+            this.labelDuelStart3.Size = new System.Drawing.Size(88, 17);
             this.labelDuelStart3.TabIndex = 3;
-            this.labelDuelStart3.Text = "Start Sequence CL3";
+            this.labelDuelStart3.Text = "Start Seq CL3";
             // 
             // labelDuelStart2
             // 
             this.labelDuelStart2.AutoSize = true;
             this.labelDuelStart2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelStart2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelStart2.Location = new System.Drawing.Point(168, 31);
+            this.labelDuelStart2.Location = new System.Drawing.Point(129, 31);
             this.labelDuelStart2.Name = "labelDuelStart2";
-            this.labelDuelStart2.Size = new System.Drawing.Size(124, 17);
+            this.labelDuelStart2.Size = new System.Drawing.Size(88, 17);
             this.labelDuelStart2.TabIndex = 3;
-            this.labelDuelStart2.Text = "Start Sequence CL2";
+            this.labelDuelStart2.Text = "Start Seq CL2";
             // 
             // labelDuelStart1
             // 
             this.labelDuelStart1.AutoSize = true;
             this.labelDuelStart1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelDuelStart1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelStart1.Location = new System.Drawing.Point(22, 31);
+            this.labelDuelStart1.Location = new System.Drawing.Point(13, 31);
             this.labelDuelStart1.Name = "labelDuelStart1";
-            this.labelDuelStart1.Size = new System.Drawing.Size(122, 17);
+            this.labelDuelStart1.Size = new System.Drawing.Size(86, 17);
             this.labelDuelStart1.TabIndex = 3;
-            this.labelDuelStart1.Text = "Start Sequence CL1";
+            this.labelDuelStart1.Text = "Start Seq CL1";
             // 
             // groupBoxDuelMoveSequences
             // 
@@ -24125,13 +24145,13 @@
             this.panel1.Controls.Add(this.comboBoxDuelMove0);
             this.panel1.Location = new System.Drawing.Point(6, 23);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 492);
+            this.panel1.Size = new System.Drawing.Size(449, 492);
             this.panel1.TabIndex = 0;
             // 
             // numericUpDownDuelNextSeq24_1
             // 
             this.numericUpDownDuelNextSeq24_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq24_1.Location = new System.Drawing.Point(319, 775);
+            this.numericUpDownDuelNextSeq24_1.Location = new System.Drawing.Point(241, 775);
             this.numericUpDownDuelNextSeq24_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24144,7 +24164,7 @@
             // numericUpDownDuelNextSeq15_1
             // 
             this.numericUpDownDuelNextSeq15_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq15_1.Location = new System.Drawing.Point(319, 496);
+            this.numericUpDownDuelNextSeq15_1.Location = new System.Drawing.Point(241, 496);
             this.numericUpDownDuelNextSeq15_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24157,7 +24177,7 @@
             // numericUpDownDuelNextSeq16_1
             // 
             this.numericUpDownDuelNextSeq16_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq16_1.Location = new System.Drawing.Point(319, 527);
+            this.numericUpDownDuelNextSeq16_1.Location = new System.Drawing.Point(241, 527);
             this.numericUpDownDuelNextSeq16_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24170,7 +24190,7 @@
             // numericUpDownDuelNextSeq7_1
             // 
             this.numericUpDownDuelNextSeq7_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq7_1.Location = new System.Drawing.Point(319, 248);
+            this.numericUpDownDuelNextSeq7_1.Location = new System.Drawing.Point(241, 248);
             this.numericUpDownDuelNextSeq7_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24183,7 +24203,7 @@
             // numericUpDownDuelNextSeq20_1
             // 
             this.numericUpDownDuelNextSeq20_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq20_1.Location = new System.Drawing.Point(319, 651);
+            this.numericUpDownDuelNextSeq20_1.Location = new System.Drawing.Point(241, 651);
             this.numericUpDownDuelNextSeq20_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24196,7 +24216,7 @@
             // numericUpDownDuelNextSeq11_1
             // 
             this.numericUpDownDuelNextSeq11_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq11_1.Location = new System.Drawing.Point(319, 372);
+            this.numericUpDownDuelNextSeq11_1.Location = new System.Drawing.Point(241, 372);
             this.numericUpDownDuelNextSeq11_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24209,7 +24229,7 @@
             // numericUpDownDuelNextSeq3_1
             // 
             this.numericUpDownDuelNextSeq3_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq3_1.Location = new System.Drawing.Point(319, 124);
+            this.numericUpDownDuelNextSeq3_1.Location = new System.Drawing.Point(241, 124);
             this.numericUpDownDuelNextSeq3_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24222,7 +24242,7 @@
             // numericUpDownDuelNextSeq22_1
             // 
             this.numericUpDownDuelNextSeq22_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq22_1.Location = new System.Drawing.Point(319, 713);
+            this.numericUpDownDuelNextSeq22_1.Location = new System.Drawing.Point(241, 713);
             this.numericUpDownDuelNextSeq22_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24235,7 +24255,7 @@
             // numericUpDownDuelNextSeq13_1
             // 
             this.numericUpDownDuelNextSeq13_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq13_1.Location = new System.Drawing.Point(319, 434);
+            this.numericUpDownDuelNextSeq13_1.Location = new System.Drawing.Point(241, 434);
             this.numericUpDownDuelNextSeq13_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24248,7 +24268,7 @@
             // numericUpDownDuelNextSeq5_1
             // 
             this.numericUpDownDuelNextSeq5_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq5_1.Location = new System.Drawing.Point(319, 186);
+            this.numericUpDownDuelNextSeq5_1.Location = new System.Drawing.Point(241, 186);
             this.numericUpDownDuelNextSeq5_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24261,7 +24281,7 @@
             // numericUpDownDuelNextSeq18_1
             // 
             this.numericUpDownDuelNextSeq18_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq18_1.Location = new System.Drawing.Point(319, 589);
+            this.numericUpDownDuelNextSeq18_1.Location = new System.Drawing.Point(241, 589);
             this.numericUpDownDuelNextSeq18_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24274,7 +24294,7 @@
             // numericUpDownDuelNextSeq9_1
             // 
             this.numericUpDownDuelNextSeq9_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq9_1.Location = new System.Drawing.Point(319, 310);
+            this.numericUpDownDuelNextSeq9_1.Location = new System.Drawing.Point(241, 310);
             this.numericUpDownDuelNextSeq9_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24287,7 +24307,7 @@
             // numericUpDownDuelNextSeq1_1
             // 
             this.numericUpDownDuelNextSeq1_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq1_1.Location = new System.Drawing.Point(319, 62);
+            this.numericUpDownDuelNextSeq1_1.Location = new System.Drawing.Point(241, 62);
             this.numericUpDownDuelNextSeq1_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24300,7 +24320,7 @@
             // numericUpDownDuelNextSeq23_1
             // 
             this.numericUpDownDuelNextSeq23_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq23_1.Location = new System.Drawing.Point(319, 744);
+            this.numericUpDownDuelNextSeq23_1.Location = new System.Drawing.Point(241, 744);
             this.numericUpDownDuelNextSeq23_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24313,7 +24333,7 @@
             // numericUpDownDuelNextSeq14_1
             // 
             this.numericUpDownDuelNextSeq14_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq14_1.Location = new System.Drawing.Point(319, 465);
+            this.numericUpDownDuelNextSeq14_1.Location = new System.Drawing.Point(241, 465);
             this.numericUpDownDuelNextSeq14_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24326,7 +24346,7 @@
             // numericUpDownDuelNextSeq6_1
             // 
             this.numericUpDownDuelNextSeq6_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq6_1.Location = new System.Drawing.Point(319, 217);
+            this.numericUpDownDuelNextSeq6_1.Location = new System.Drawing.Point(241, 217);
             this.numericUpDownDuelNextSeq6_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24339,7 +24359,7 @@
             // numericUpDownDuelNextSeq19_1
             // 
             this.numericUpDownDuelNextSeq19_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq19_1.Location = new System.Drawing.Point(319, 620);
+            this.numericUpDownDuelNextSeq19_1.Location = new System.Drawing.Point(241, 620);
             this.numericUpDownDuelNextSeq19_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24352,7 +24372,7 @@
             // numericUpDownDuelNextSeq10_1
             // 
             this.numericUpDownDuelNextSeq10_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq10_1.Location = new System.Drawing.Point(319, 341);
+            this.numericUpDownDuelNextSeq10_1.Location = new System.Drawing.Point(241, 341);
             this.numericUpDownDuelNextSeq10_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24365,7 +24385,7 @@
             // numericUpDownDuelNextSeq2_1
             // 
             this.numericUpDownDuelNextSeq2_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq2_1.Location = new System.Drawing.Point(319, 93);
+            this.numericUpDownDuelNextSeq2_1.Location = new System.Drawing.Point(241, 93);
             this.numericUpDownDuelNextSeq2_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24378,7 +24398,7 @@
             // numericUpDownDuelNextSeq21_1
             // 
             this.numericUpDownDuelNextSeq21_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq21_1.Location = new System.Drawing.Point(319, 682);
+            this.numericUpDownDuelNextSeq21_1.Location = new System.Drawing.Point(241, 682);
             this.numericUpDownDuelNextSeq21_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24391,7 +24411,7 @@
             // numericUpDownDuelNextSeq12_1
             // 
             this.numericUpDownDuelNextSeq12_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq12_1.Location = new System.Drawing.Point(319, 403);
+            this.numericUpDownDuelNextSeq12_1.Location = new System.Drawing.Point(241, 403);
             this.numericUpDownDuelNextSeq12_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24404,7 +24424,7 @@
             // numericUpDownDuelNextSeq4_1
             // 
             this.numericUpDownDuelNextSeq4_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq4_1.Location = new System.Drawing.Point(319, 155);
+            this.numericUpDownDuelNextSeq4_1.Location = new System.Drawing.Point(241, 155);
             this.numericUpDownDuelNextSeq4_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24417,7 +24437,7 @@
             // numericUpDownDuelNextSeq17_1
             // 
             this.numericUpDownDuelNextSeq17_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq17_1.Location = new System.Drawing.Point(319, 558);
+            this.numericUpDownDuelNextSeq17_1.Location = new System.Drawing.Point(241, 558);
             this.numericUpDownDuelNextSeq17_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24430,7 +24450,7 @@
             // numericUpDownDuelNextSeq8_1
             // 
             this.numericUpDownDuelNextSeq8_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq8_1.Location = new System.Drawing.Point(319, 279);
+            this.numericUpDownDuelNextSeq8_1.Location = new System.Drawing.Point(241, 279);
             this.numericUpDownDuelNextSeq8_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24443,7 +24463,7 @@
             // numericUpDownDuelNextSeq0_1
             // 
             this.numericUpDownDuelNextSeq0_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq0_1.Location = new System.Drawing.Point(319, 31);
+            this.numericUpDownDuelNextSeq0_1.Location = new System.Drawing.Point(241, 31);
             this.numericUpDownDuelNextSeq0_1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24469,7 +24489,7 @@
             this.labelDuelNextSeq.AutoSize = true;
             this.labelDuelNextSeq.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
             this.labelDuelNextSeq.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelDuelNextSeq.Location = new System.Drawing.Point(380, 5);
+            this.labelDuelNextSeq.Location = new System.Drawing.Point(275, 5);
             this.labelDuelNextSeq.Name = "labelDuelNextSeq";
             this.labelDuelNextSeq.Size = new System.Drawing.Size(109, 19);
             this.labelDuelNextSeq.TabIndex = 121;
@@ -24478,7 +24498,7 @@
             // numericUpDownDuelNextSeq24_2
             // 
             this.numericUpDownDuelNextSeq24_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq24_2.Location = new System.Drawing.Point(409, 775);
+            this.numericUpDownDuelNextSeq24_2.Location = new System.Drawing.Point(307, 775);
             this.numericUpDownDuelNextSeq24_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24491,7 +24511,7 @@
             // numericUpDownDuelNextSeq15_2
             // 
             this.numericUpDownDuelNextSeq15_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq15_2.Location = new System.Drawing.Point(409, 496);
+            this.numericUpDownDuelNextSeq15_2.Location = new System.Drawing.Point(307, 496);
             this.numericUpDownDuelNextSeq15_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24504,7 +24524,7 @@
             // numericUpDownDuelNextSeq16_2
             // 
             this.numericUpDownDuelNextSeq16_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq16_2.Location = new System.Drawing.Point(409, 527);
+            this.numericUpDownDuelNextSeq16_2.Location = new System.Drawing.Point(307, 527);
             this.numericUpDownDuelNextSeq16_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24517,7 +24537,7 @@
             // numericUpDownDuelNextSeq7_2
             // 
             this.numericUpDownDuelNextSeq7_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq7_2.Location = new System.Drawing.Point(409, 249);
+            this.numericUpDownDuelNextSeq7_2.Location = new System.Drawing.Point(307, 248);
             this.numericUpDownDuelNextSeq7_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24530,7 +24550,7 @@
             // numericUpDownDuelNextSeq20_2
             // 
             this.numericUpDownDuelNextSeq20_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq20_2.Location = new System.Drawing.Point(409, 651);
+            this.numericUpDownDuelNextSeq20_2.Location = new System.Drawing.Point(307, 651);
             this.numericUpDownDuelNextSeq20_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24543,7 +24563,7 @@
             // numericUpDownDuelNextSeq11_2
             // 
             this.numericUpDownDuelNextSeq11_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq11_2.Location = new System.Drawing.Point(409, 373);
+            this.numericUpDownDuelNextSeq11_2.Location = new System.Drawing.Point(307, 372);
             this.numericUpDownDuelNextSeq11_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24556,7 +24576,7 @@
             // numericUpDownDuelNextSeq3_2
             // 
             this.numericUpDownDuelNextSeq3_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq3_2.Location = new System.Drawing.Point(409, 125);
+            this.numericUpDownDuelNextSeq3_2.Location = new System.Drawing.Point(307, 124);
             this.numericUpDownDuelNextSeq3_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24569,7 +24589,7 @@
             // numericUpDownDuelNextSeq22_2
             // 
             this.numericUpDownDuelNextSeq22_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq22_2.Location = new System.Drawing.Point(409, 713);
+            this.numericUpDownDuelNextSeq22_2.Location = new System.Drawing.Point(307, 713);
             this.numericUpDownDuelNextSeq22_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24582,7 +24602,7 @@
             // numericUpDownDuelNextSeq13_2
             // 
             this.numericUpDownDuelNextSeq13_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq13_2.Location = new System.Drawing.Point(409, 435);
+            this.numericUpDownDuelNextSeq13_2.Location = new System.Drawing.Point(307, 434);
             this.numericUpDownDuelNextSeq13_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24595,7 +24615,7 @@
             // numericUpDownDuelNextSeq5_2
             // 
             this.numericUpDownDuelNextSeq5_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq5_2.Location = new System.Drawing.Point(409, 187);
+            this.numericUpDownDuelNextSeq5_2.Location = new System.Drawing.Point(307, 186);
             this.numericUpDownDuelNextSeq5_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24608,7 +24628,7 @@
             // numericUpDownDuelNextSeq18_2
             // 
             this.numericUpDownDuelNextSeq18_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq18_2.Location = new System.Drawing.Point(409, 589);
+            this.numericUpDownDuelNextSeq18_2.Location = new System.Drawing.Point(307, 589);
             this.numericUpDownDuelNextSeq18_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24621,7 +24641,7 @@
             // numericUpDownDuelNextSeq9_2
             // 
             this.numericUpDownDuelNextSeq9_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq9_2.Location = new System.Drawing.Point(409, 311);
+            this.numericUpDownDuelNextSeq9_2.Location = new System.Drawing.Point(307, 310);
             this.numericUpDownDuelNextSeq9_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24634,7 +24654,7 @@
             // numericUpDownDuelNextSeq1_2
             // 
             this.numericUpDownDuelNextSeq1_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq1_2.Location = new System.Drawing.Point(409, 63);
+            this.numericUpDownDuelNextSeq1_2.Location = new System.Drawing.Point(307, 62);
             this.numericUpDownDuelNextSeq1_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24647,7 +24667,7 @@
             // numericUpDownDuelNextSeq23_2
             // 
             this.numericUpDownDuelNextSeq23_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq23_2.Location = new System.Drawing.Point(409, 744);
+            this.numericUpDownDuelNextSeq23_2.Location = new System.Drawing.Point(307, 744);
             this.numericUpDownDuelNextSeq23_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24660,7 +24680,7 @@
             // numericUpDownDuelNextSeq14_2
             // 
             this.numericUpDownDuelNextSeq14_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq14_2.Location = new System.Drawing.Point(409, 465);
+            this.numericUpDownDuelNextSeq14_2.Location = new System.Drawing.Point(307, 464);
             this.numericUpDownDuelNextSeq14_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24673,7 +24693,7 @@
             // numericUpDownDuelNextSeq6_2
             // 
             this.numericUpDownDuelNextSeq6_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq6_2.Location = new System.Drawing.Point(409, 218);
+            this.numericUpDownDuelNextSeq6_2.Location = new System.Drawing.Point(307, 217);
             this.numericUpDownDuelNextSeq6_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24686,7 +24706,7 @@
             // numericUpDownDuelNextSeq19_2
             // 
             this.numericUpDownDuelNextSeq19_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq19_2.Location = new System.Drawing.Point(409, 620);
+            this.numericUpDownDuelNextSeq19_2.Location = new System.Drawing.Point(307, 620);
             this.numericUpDownDuelNextSeq19_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24699,7 +24719,7 @@
             // numericUpDownDuelNextSeq10_2
             // 
             this.numericUpDownDuelNextSeq10_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq10_2.Location = new System.Drawing.Point(409, 342);
+            this.numericUpDownDuelNextSeq10_2.Location = new System.Drawing.Point(307, 341);
             this.numericUpDownDuelNextSeq10_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24712,7 +24732,7 @@
             // numericUpDownDuelNextSeq2_2
             // 
             this.numericUpDownDuelNextSeq2_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq2_2.Location = new System.Drawing.Point(409, 94);
+            this.numericUpDownDuelNextSeq2_2.Location = new System.Drawing.Point(307, 93);
             this.numericUpDownDuelNextSeq2_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24725,7 +24745,7 @@
             // numericUpDownDuelNextSeq21_2
             // 
             this.numericUpDownDuelNextSeq21_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq21_2.Location = new System.Drawing.Point(409, 682);
+            this.numericUpDownDuelNextSeq21_2.Location = new System.Drawing.Point(307, 682);
             this.numericUpDownDuelNextSeq21_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24738,7 +24758,7 @@
             // numericUpDownDuelNextSeq12_2
             // 
             this.numericUpDownDuelNextSeq12_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq12_2.Location = new System.Drawing.Point(409, 404);
+            this.numericUpDownDuelNextSeq12_2.Location = new System.Drawing.Point(307, 403);
             this.numericUpDownDuelNextSeq12_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24751,7 +24771,7 @@
             // numericUpDownDuelNextSeq4_2
             // 
             this.numericUpDownDuelNextSeq4_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq4_2.Location = new System.Drawing.Point(409, 156);
+            this.numericUpDownDuelNextSeq4_2.Location = new System.Drawing.Point(307, 155);
             this.numericUpDownDuelNextSeq4_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24764,7 +24784,7 @@
             // numericUpDownDuelNextSeq17_2
             // 
             this.numericUpDownDuelNextSeq17_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq17_2.Location = new System.Drawing.Point(409, 558);
+            this.numericUpDownDuelNextSeq17_2.Location = new System.Drawing.Point(307, 558);
             this.numericUpDownDuelNextSeq17_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24777,7 +24797,7 @@
             // numericUpDownDuelNextSeq8_2
             // 
             this.numericUpDownDuelNextSeq8_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq8_2.Location = new System.Drawing.Point(409, 280);
+            this.numericUpDownDuelNextSeq8_2.Location = new System.Drawing.Point(307, 279);
             this.numericUpDownDuelNextSeq8_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24790,7 +24810,7 @@
             // numericUpDownDuelNextSeq0_2
             // 
             this.numericUpDownDuelNextSeq0_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq0_2.Location = new System.Drawing.Point(409, 31);
+            this.numericUpDownDuelNextSeq0_2.Location = new System.Drawing.Point(307, 31);
             this.numericUpDownDuelNextSeq0_2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24803,7 +24823,7 @@
             // numericUpDownDuelNextSeq24_3
             // 
             this.numericUpDownDuelNextSeq24_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq24_3.Location = new System.Drawing.Point(499, 775);
+            this.numericUpDownDuelNextSeq24_3.Location = new System.Drawing.Point(373, 775);
             this.numericUpDownDuelNextSeq24_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24816,7 +24836,7 @@
             // numericUpDownDuelNextSeq15_3
             // 
             this.numericUpDownDuelNextSeq15_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq15_3.Location = new System.Drawing.Point(499, 496);
+            this.numericUpDownDuelNextSeq15_3.Location = new System.Drawing.Point(373, 496);
             this.numericUpDownDuelNextSeq15_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24829,7 +24849,7 @@
             // numericUpDownDuelNextSeq23_3
             // 
             this.numericUpDownDuelNextSeq23_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq23_3.Location = new System.Drawing.Point(499, 744);
+            this.numericUpDownDuelNextSeq23_3.Location = new System.Drawing.Point(373, 744);
             this.numericUpDownDuelNextSeq23_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24842,7 +24862,7 @@
             // numericUpDownDuelNextSeq14_3
             // 
             this.numericUpDownDuelNextSeq14_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq14_3.Location = new System.Drawing.Point(499, 465);
+            this.numericUpDownDuelNextSeq14_3.Location = new System.Drawing.Point(373, 465);
             this.numericUpDownDuelNextSeq14_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24855,7 +24875,7 @@
             // numericUpDownDuelNextSeq16_3
             // 
             this.numericUpDownDuelNextSeq16_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq16_3.Location = new System.Drawing.Point(499, 527);
+            this.numericUpDownDuelNextSeq16_3.Location = new System.Drawing.Point(373, 527);
             this.numericUpDownDuelNextSeq16_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24868,7 +24888,7 @@
             // numericUpDownDuelNextSeq7_3
             // 
             this.numericUpDownDuelNextSeq7_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq7_3.Location = new System.Drawing.Point(499, 248);
+            this.numericUpDownDuelNextSeq7_3.Location = new System.Drawing.Point(373, 248);
             this.numericUpDownDuelNextSeq7_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24881,7 +24901,7 @@
             // numericUpDownDuelNextSeq20_3
             // 
             this.numericUpDownDuelNextSeq20_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq20_3.Location = new System.Drawing.Point(499, 651);
+            this.numericUpDownDuelNextSeq20_3.Location = new System.Drawing.Point(373, 651);
             this.numericUpDownDuelNextSeq20_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24894,7 +24914,7 @@
             // numericUpDownDuelNextSeq11_3
             // 
             this.numericUpDownDuelNextSeq11_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq11_3.Location = new System.Drawing.Point(499, 372);
+            this.numericUpDownDuelNextSeq11_3.Location = new System.Drawing.Point(373, 372);
             this.numericUpDownDuelNextSeq11_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24907,7 +24927,7 @@
             // numericUpDownDuelNextSeq6_3
             // 
             this.numericUpDownDuelNextSeq6_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq6_3.Location = new System.Drawing.Point(499, 217);
+            this.numericUpDownDuelNextSeq6_3.Location = new System.Drawing.Point(373, 217);
             this.numericUpDownDuelNextSeq6_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24920,7 +24940,7 @@
             // numericUpDownDuelNextSeq22_3
             // 
             this.numericUpDownDuelNextSeq22_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq22_3.Location = new System.Drawing.Point(499, 713);
+            this.numericUpDownDuelNextSeq22_3.Location = new System.Drawing.Point(373, 713);
             this.numericUpDownDuelNextSeq22_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24933,7 +24953,7 @@
             // numericUpDownDuelNextSeq13_3
             // 
             this.numericUpDownDuelNextSeq13_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq13_3.Location = new System.Drawing.Point(499, 434);
+            this.numericUpDownDuelNextSeq13_3.Location = new System.Drawing.Point(373, 434);
             this.numericUpDownDuelNextSeq13_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24946,7 +24966,7 @@
             // numericUpDownDuelNextSeq3_3
             // 
             this.numericUpDownDuelNextSeq3_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq3_3.Location = new System.Drawing.Point(499, 124);
+            this.numericUpDownDuelNextSeq3_3.Location = new System.Drawing.Point(373, 124);
             this.numericUpDownDuelNextSeq3_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24959,7 +24979,7 @@
             // numericUpDownDuelNextSeq19_3
             // 
             this.numericUpDownDuelNextSeq19_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq19_3.Location = new System.Drawing.Point(499, 620);
+            this.numericUpDownDuelNextSeq19_3.Location = new System.Drawing.Point(373, 620);
             this.numericUpDownDuelNextSeq19_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24972,7 +24992,7 @@
             // numericUpDownDuelNextSeq10_3
             // 
             this.numericUpDownDuelNextSeq10_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq10_3.Location = new System.Drawing.Point(499, 341);
+            this.numericUpDownDuelNextSeq10_3.Location = new System.Drawing.Point(373, 341);
             this.numericUpDownDuelNextSeq10_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24985,7 +25005,7 @@
             // numericUpDownDuelNextSeq5_3
             // 
             this.numericUpDownDuelNextSeq5_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq5_3.Location = new System.Drawing.Point(499, 186);
+            this.numericUpDownDuelNextSeq5_3.Location = new System.Drawing.Point(373, 186);
             this.numericUpDownDuelNextSeq5_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -24998,7 +25018,7 @@
             // numericUpDownDuelNextSeq21_3
             // 
             this.numericUpDownDuelNextSeq21_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq21_3.Location = new System.Drawing.Point(499, 682);
+            this.numericUpDownDuelNextSeq21_3.Location = new System.Drawing.Point(373, 682);
             this.numericUpDownDuelNextSeq21_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -25011,7 +25031,7 @@
             // numericUpDownDuelNextSeq12_3
             // 
             this.numericUpDownDuelNextSeq12_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq12_3.Location = new System.Drawing.Point(499, 403);
+            this.numericUpDownDuelNextSeq12_3.Location = new System.Drawing.Point(373, 403);
             this.numericUpDownDuelNextSeq12_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -25024,7 +25044,7 @@
             // numericUpDownDuelNextSeq2_3
             // 
             this.numericUpDownDuelNextSeq2_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq2_3.Location = new System.Drawing.Point(499, 93);
+            this.numericUpDownDuelNextSeq2_3.Location = new System.Drawing.Point(373, 93);
             this.numericUpDownDuelNextSeq2_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -25037,7 +25057,7 @@
             // numericUpDownDuelNextSeq18_3
             // 
             this.numericUpDownDuelNextSeq18_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq18_3.Location = new System.Drawing.Point(499, 589);
+            this.numericUpDownDuelNextSeq18_3.Location = new System.Drawing.Point(373, 589);
             this.numericUpDownDuelNextSeq18_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -25050,7 +25070,7 @@
             // numericUpDownDuelNextSeq9_3
             // 
             this.numericUpDownDuelNextSeq9_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq9_3.Location = new System.Drawing.Point(499, 310);
+            this.numericUpDownDuelNextSeq9_3.Location = new System.Drawing.Point(373, 310);
             this.numericUpDownDuelNextSeq9_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -25063,7 +25083,7 @@
             // numericUpDownDuelNextSeq4_3
             // 
             this.numericUpDownDuelNextSeq4_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq4_3.Location = new System.Drawing.Point(499, 155);
+            this.numericUpDownDuelNextSeq4_3.Location = new System.Drawing.Point(373, 155);
             this.numericUpDownDuelNextSeq4_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -25076,7 +25096,7 @@
             // numericUpDownDuelNextSeq17_3
             // 
             this.numericUpDownDuelNextSeq17_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq17_3.Location = new System.Drawing.Point(499, 558);
+            this.numericUpDownDuelNextSeq17_3.Location = new System.Drawing.Point(373, 558);
             this.numericUpDownDuelNextSeq17_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -25089,7 +25109,7 @@
             // numericUpDownDuelNextSeq8_3
             // 
             this.numericUpDownDuelNextSeq8_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq8_3.Location = new System.Drawing.Point(499, 279);
+            this.numericUpDownDuelNextSeq8_3.Location = new System.Drawing.Point(373, 279);
             this.numericUpDownDuelNextSeq8_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -25102,7 +25122,7 @@
             // numericUpDownDuelNextSeq1_3
             // 
             this.numericUpDownDuelNextSeq1_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq1_3.Location = new System.Drawing.Point(499, 62);
+            this.numericUpDownDuelNextSeq1_3.Location = new System.Drawing.Point(373, 62);
             this.numericUpDownDuelNextSeq1_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -25115,7 +25135,7 @@
             // numericUpDownDuelNextSeq0_3
             // 
             this.numericUpDownDuelNextSeq0_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownDuelNextSeq0_3.Location = new System.Drawing.Point(499, 31);
+            this.numericUpDownDuelNextSeq0_3.Location = new System.Drawing.Point(373, 31);
             this.numericUpDownDuelNextSeq0_3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -25417,7 +25437,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove24.Location = new System.Drawing.Point(47, 775);
             this.comboBoxDuelMove24.Name = "comboBoxDuelMove24";
-            this.comboBoxDuelMove24.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove24.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove24.TabIndex = 140;
             // 
             // comboBoxDuelMove15
@@ -25437,7 +25457,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove15.Location = new System.Drawing.Point(47, 496);
             this.comboBoxDuelMove15.Name = "comboBoxDuelMove15";
-            this.comboBoxDuelMove15.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove15.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove15.TabIndex = 140;
             // 
             // comboBoxDuelMove23
@@ -25457,7 +25477,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove23.Location = new System.Drawing.Point(47, 744);
             this.comboBoxDuelMove23.Name = "comboBoxDuelMove23";
-            this.comboBoxDuelMove23.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove23.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove23.TabIndex = 153;
             // 
             // comboBoxDuelMove14
@@ -25477,7 +25497,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove14.Location = new System.Drawing.Point(47, 465);
             this.comboBoxDuelMove14.Name = "comboBoxDuelMove14";
-            this.comboBoxDuelMove14.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove14.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove14.TabIndex = 153;
             // 
             // comboBoxDuelMove22
@@ -25497,7 +25517,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove22.Location = new System.Drawing.Point(47, 713);
             this.comboBoxDuelMove22.Name = "comboBoxDuelMove22";
-            this.comboBoxDuelMove22.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove22.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove22.TabIndex = 152;
             // 
             // comboBoxDuelMove13
@@ -25517,7 +25537,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove13.Location = new System.Drawing.Point(47, 434);
             this.comboBoxDuelMove13.Name = "comboBoxDuelMove13";
-            this.comboBoxDuelMove13.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove13.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove13.TabIndex = 152;
             // 
             // comboBoxDuelMove21
@@ -25537,7 +25557,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove21.Location = new System.Drawing.Point(47, 682);
             this.comboBoxDuelMove21.Name = "comboBoxDuelMove21";
-            this.comboBoxDuelMove21.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove21.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove21.TabIndex = 151;
             // 
             // comboBoxDuelMove12
@@ -25557,7 +25577,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove12.Location = new System.Drawing.Point(47, 403);
             this.comboBoxDuelMove12.Name = "comboBoxDuelMove12";
-            this.comboBoxDuelMove12.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove12.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove12.TabIndex = 151;
             // 
             // comboBoxDuelMove20
@@ -25577,7 +25597,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove20.Location = new System.Drawing.Point(47, 651);
             this.comboBoxDuelMove20.Name = "comboBoxDuelMove20";
-            this.comboBoxDuelMove20.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove20.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove20.TabIndex = 150;
             // 
             // comboBoxDuelMove11
@@ -25597,7 +25617,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove11.Location = new System.Drawing.Point(47, 372);
             this.comboBoxDuelMove11.Name = "comboBoxDuelMove11";
-            this.comboBoxDuelMove11.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove11.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove11.TabIndex = 150;
             // 
             // comboBoxDuelMove19
@@ -25617,7 +25637,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove19.Location = new System.Drawing.Point(47, 620);
             this.comboBoxDuelMove19.Name = "comboBoxDuelMove19";
-            this.comboBoxDuelMove19.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove19.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove19.TabIndex = 149;
             // 
             // comboBoxDuelMove10
@@ -25637,7 +25657,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove10.Location = new System.Drawing.Point(47, 341);
             this.comboBoxDuelMove10.Name = "comboBoxDuelMove10";
-            this.comboBoxDuelMove10.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove10.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove10.TabIndex = 149;
             // 
             // comboBoxDuelMove18
@@ -25657,7 +25677,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove18.Location = new System.Drawing.Point(47, 589);
             this.comboBoxDuelMove18.Name = "comboBoxDuelMove18";
-            this.comboBoxDuelMove18.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove18.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove18.TabIndex = 148;
             // 
             // comboBoxDuelMove9
@@ -25677,7 +25697,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove9.Location = new System.Drawing.Point(47, 310);
             this.comboBoxDuelMove9.Name = "comboBoxDuelMove9";
-            this.comboBoxDuelMove9.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove9.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove9.TabIndex = 148;
             // 
             // comboBoxDuelMove17
@@ -25697,7 +25717,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove17.Location = new System.Drawing.Point(47, 558);
             this.comboBoxDuelMove17.Name = "comboBoxDuelMove17";
-            this.comboBoxDuelMove17.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove17.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove17.TabIndex = 154;
             // 
             // comboBoxDuelMove8
@@ -25717,7 +25737,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove8.Location = new System.Drawing.Point(47, 279);
             this.comboBoxDuelMove8.Name = "comboBoxDuelMove8";
-            this.comboBoxDuelMove8.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove8.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove8.TabIndex = 154;
             // 
             // comboBoxDuelMove16
@@ -25737,7 +25757,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove16.Location = new System.Drawing.Point(47, 527);
             this.comboBoxDuelMove16.Name = "comboBoxDuelMove16";
-            this.comboBoxDuelMove16.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove16.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove16.TabIndex = 146;
             // 
             // comboBoxDuelMove7
@@ -25757,7 +25777,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove7.Location = new System.Drawing.Point(47, 248);
             this.comboBoxDuelMove7.Name = "comboBoxDuelMove7";
-            this.comboBoxDuelMove7.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove7.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove7.TabIndex = 146;
             // 
             // comboBoxDuelMove6
@@ -25777,7 +25797,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove6.Location = new System.Drawing.Point(47, 217);
             this.comboBoxDuelMove6.Name = "comboBoxDuelMove6";
-            this.comboBoxDuelMove6.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove6.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove6.TabIndex = 147;
             // 
             // comboBoxDuelMove5
@@ -25797,7 +25817,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove5.Location = new System.Drawing.Point(47, 186);
             this.comboBoxDuelMove5.Name = "comboBoxDuelMove5";
-            this.comboBoxDuelMove5.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove5.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove5.TabIndex = 144;
             // 
             // comboBoxDuelMove4
@@ -25817,7 +25837,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove4.Location = new System.Drawing.Point(47, 155);
             this.comboBoxDuelMove4.Name = "comboBoxDuelMove4";
-            this.comboBoxDuelMove4.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove4.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove4.TabIndex = 143;
             // 
             // comboBoxDuelMove3
@@ -25837,7 +25857,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove3.Location = new System.Drawing.Point(47, 124);
             this.comboBoxDuelMove3.Name = "comboBoxDuelMove3";
-            this.comboBoxDuelMove3.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove3.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove3.TabIndex = 142;
             // 
             // comboBoxDuelMove2
@@ -25857,7 +25877,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove2.Location = new System.Drawing.Point(47, 93);
             this.comboBoxDuelMove2.Name = "comboBoxDuelMove2";
-            this.comboBoxDuelMove2.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove2.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove2.TabIndex = 141;
             // 
             // comboBoxDuelMove1
@@ -25877,7 +25897,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove1.Location = new System.Drawing.Point(47, 62);
             this.comboBoxDuelMove1.Name = "comboBoxDuelMove1";
-            this.comboBoxDuelMove1.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove1.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove1.TabIndex = 145;
             // 
             // comboBoxDuelMove0
@@ -25897,7 +25917,7 @@
             "My Final Heaven"});
             this.comboBoxDuelMove0.Location = new System.Drawing.Point(47, 31);
             this.comboBoxDuelMove0.Name = "comboBoxDuelMove0";
-            this.comboBoxDuelMove0.Size = new System.Drawing.Size(184, 25);
+            this.comboBoxDuelMove0.Size = new System.Drawing.Size(160, 25);
             this.comboBoxDuelMove0.TabIndex = 139;
             // 
             // tabPageLBSelphie
@@ -29021,12 +29041,7 @@
             // tabPageLBIrvine
             // 
             this.tabPageLBIrvine.BackColor = System.Drawing.Color.White;
-            this.tabPageLBIrvine.Controls.Add(this.groupBoxShotStatusAttack);
-            this.tabPageLBIrvine.Controls.Add(this.groupBox10);
-            this.tabPageLBIrvine.Controls.Add(this.groupBoxShotTargetInfo);
-            this.tabPageLBIrvine.Controls.Add(this.groupBoxShotAttackFlags);
-            this.tabPageLBIrvine.Controls.Add(this.groupBoxShotGeneral);
-            this.tabPageLBIrvine.Controls.Add(this.listBoxShot);
+            this.tabPageLBIrvine.Controls.Add(this.tabControlShot);
             this.tabPageLBIrvine.Location = new System.Drawing.Point(4, 29);
             this.tabPageLBIrvine.Name = "tabPageLBIrvine";
             this.tabPageLBIrvine.Size = new System.Drawing.Size(622, 736);
@@ -29080,9 +29095,9 @@
             this.groupBoxShotStatusAttack.Controls.Add(this.labelShotStatusAttack);
             this.groupBoxShotStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxShotStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBoxShotStatusAttack.Location = new System.Drawing.Point(151, 280);
+            this.groupBoxShotStatusAttack.Location = new System.Drawing.Point(151, 361);
             this.groupBoxShotStatusAttack.Name = "groupBoxShotStatusAttack";
-            this.groupBoxShotStatusAttack.Size = new System.Drawing.Size(465, 269);
+            this.groupBoxShotStatusAttack.Size = new System.Drawing.Size(465, 266);
             this.groupBoxShotStatusAttack.TabIndex = 116;
             this.groupBoxShotStatusAttack.TabStop = false;
             this.groupBoxShotStatusAttack.Text = "Status Attack";
@@ -29092,7 +29107,7 @@
             this.checkBoxShotPetrifying.AutoSize = true;
             this.checkBoxShotPetrifying.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotPetrifying.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotPetrifying.Location = new System.Drawing.Point(285, 123);
+            this.checkBoxShotPetrifying.Location = new System.Drawing.Point(285, 120);
             this.checkBoxShotPetrifying.Name = "checkBoxShotPetrifying";
             this.checkBoxShotPetrifying.Size = new System.Drawing.Size(77, 19);
             this.checkBoxShotPetrifying.TabIndex = 115;
@@ -29104,7 +29119,7 @@
             this.checkBoxShotDarkness.AutoSize = true;
             this.checkBoxShotDarkness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotDarkness.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDarkness.Location = new System.Drawing.Point(10, 248);
+            this.checkBoxShotDarkness.Location = new System.Drawing.Point(10, 245);
             this.checkBoxShotDarkness.Name = "checkBoxShotDarkness";
             this.checkBoxShotDarkness.Size = new System.Drawing.Size(73, 19);
             this.checkBoxShotDarkness.TabIndex = 138;
@@ -29116,7 +29131,7 @@
             this.checkBoxShotSilence.AutoSize = true;
             this.checkBoxShotSilence.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotSilence.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotSilence.Location = new System.Drawing.Point(102, 248);
+            this.checkBoxShotSilence.Location = new System.Drawing.Point(102, 245);
             this.checkBoxShotSilence.Name = "checkBoxShotSilence";
             this.checkBoxShotSilence.Size = new System.Drawing.Size(63, 19);
             this.checkBoxShotSilence.TabIndex = 139;
@@ -29128,7 +29143,7 @@
             this.checkBoxShotStop.AutoSize = true;
             this.checkBoxShotStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotStop.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotStop.Location = new System.Drawing.Point(285, 73);
+            this.checkBoxShotStop.Location = new System.Drawing.Point(285, 70);
             this.checkBoxShotStop.Name = "checkBoxShotStop";
             this.checkBoxShotStop.Size = new System.Drawing.Size(50, 19);
             this.checkBoxShotStop.TabIndex = 106;
@@ -29141,7 +29156,7 @@
             this.checkBoxShotConfusion.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxShotConfusion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotConfusion.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotConfusion.Location = new System.Drawing.Point(373, 123);
+            this.checkBoxShotConfusion.Location = new System.Drawing.Point(373, 120);
             this.checkBoxShotConfusion.Name = "checkBoxShotConfusion";
             this.checkBoxShotConfusion.Size = new System.Drawing.Size(81, 19);
             this.checkBoxShotConfusion.TabIndex = 117;
@@ -29153,7 +29168,7 @@
             this.checkBoxShotPetrify.AutoSize = true;
             this.checkBoxShotPetrify.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotPetrify.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotPetrify.Location = new System.Drawing.Point(373, 223);
+            this.checkBoxShotPetrify.Location = new System.Drawing.Point(373, 220);
             this.checkBoxShotPetrify.Name = "checkBoxShotPetrify";
             this.checkBoxShotPetrify.Size = new System.Drawing.Size(60, 19);
             this.checkBoxShotPetrify.TabIndex = 137;
@@ -29165,7 +29180,7 @@
             this.checkBoxShotSlow.AutoSize = true;
             this.checkBoxShotSlow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotSlow.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotSlow.Location = new System.Drawing.Point(196, 73);
+            this.checkBoxShotSlow.Location = new System.Drawing.Point(196, 70);
             this.checkBoxShotSlow.Name = "checkBoxShotSlow";
             this.checkBoxShotSlow.Size = new System.Drawing.Size(51, 19);
             this.checkBoxShotSlow.TabIndex = 105;
@@ -29177,7 +29192,7 @@
             this.checkBoxShotBerserk.AutoSize = true;
             this.checkBoxShotBerserk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotBerserk.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotBerserk.Location = new System.Drawing.Point(196, 248);
+            this.checkBoxShotBerserk.Location = new System.Drawing.Point(196, 245);
             this.checkBoxShotBerserk.Name = "checkBoxShotBerserk";
             this.checkBoxShotBerserk.Size = new System.Drawing.Size(64, 19);
             this.checkBoxShotBerserk.TabIndex = 140;
@@ -29189,7 +29204,7 @@
             this.checkBoxShotSleep.AutoSize = true;
             this.checkBoxShotSleep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotSleep.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotSleep.Location = new System.Drawing.Point(10, 73);
+            this.checkBoxShotSleep.Location = new System.Drawing.Point(10, 70);
             this.checkBoxShotSleep.Name = "checkBoxShotSleep";
             this.checkBoxShotSleep.Size = new System.Drawing.Size(54, 19);
             this.checkBoxShotSleep.TabIndex = 103;
@@ -29201,7 +29216,7 @@
             this.checkBoxShotInvincible.AutoSize = true;
             this.checkBoxShotInvincible.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotInvincible.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotInvincible.Location = new System.Drawing.Point(102, 123);
+            this.checkBoxShotInvincible.Location = new System.Drawing.Point(102, 120);
             this.checkBoxShotInvincible.Name = "checkBoxShotInvincible";
             this.checkBoxShotInvincible.Size = new System.Drawing.Size(77, 19);
             this.checkBoxShotInvincible.TabIndex = 114;
@@ -29213,7 +29228,7 @@
             this.checkBoxShotCurse.AutoSize = true;
             this.checkBoxShotCurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotCurse.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotCurse.Location = new System.Drawing.Point(373, 98);
+            this.checkBoxShotCurse.Location = new System.Drawing.Point(373, 95);
             this.checkBoxShotCurse.Name = "checkBoxShotCurse";
             this.checkBoxShotCurse.Size = new System.Drawing.Size(56, 19);
             this.checkBoxShotCurse.TabIndex = 112;
@@ -29225,7 +29240,7 @@
             this.checkBoxShotDoom.AutoSize = true;
             this.checkBoxShotDoom.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotDoom.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDoom.Location = new System.Drawing.Point(10, 123);
+            this.checkBoxShotDoom.Location = new System.Drawing.Point(10, 120);
             this.checkBoxShotDoom.Name = "checkBoxShotDoom";
             this.checkBoxShotDoom.Size = new System.Drawing.Size(59, 19);
             this.checkBoxShotDoom.TabIndex = 113;
@@ -29237,7 +29252,7 @@
             this.checkBoxShotFloat.AutoSize = true;
             this.checkBoxShotFloat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotFloat.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFloat.Location = new System.Drawing.Point(196, 123);
+            this.checkBoxShotFloat.Location = new System.Drawing.Point(196, 120);
             this.checkBoxShotFloat.Name = "checkBoxShotFloat";
             this.checkBoxShotFloat.Size = new System.Drawing.Size(52, 19);
             this.checkBoxShotFloat.TabIndex = 116;
@@ -29249,7 +29264,7 @@
             this.checkBoxShotAura.AutoSize = true;
             this.checkBoxShotAura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotAura.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotAura.Location = new System.Drawing.Point(285, 98);
+            this.checkBoxShotAura.Location = new System.Drawing.Point(285, 95);
             this.checkBoxShotAura.Name = "checkBoxShotAura";
             this.checkBoxShotAura.Size = new System.Drawing.Size(51, 19);
             this.checkBoxShotAura.TabIndex = 111;
@@ -29261,7 +29276,7 @@
             this.checkBoxShotDrain.AutoSize = true;
             this.checkBoxShotDrain.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotDrain.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDrain.Location = new System.Drawing.Point(10, 148);
+            this.checkBoxShotDrain.Location = new System.Drawing.Point(10, 145);
             this.checkBoxShotDrain.Name = "checkBoxShotDrain";
             this.checkBoxShotDrain.Size = new System.Drawing.Size(54, 19);
             this.checkBoxShotDrain.TabIndex = 118;
@@ -29273,7 +29288,7 @@
             this.checkBoxShotSummonGF.AutoSize = true;
             this.checkBoxShotSummonGF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotSummonGF.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotSummonGF.Location = new System.Drawing.Point(102, 223);
+            this.checkBoxShotSummonGF.Location = new System.Drawing.Point(102, 220);
             this.checkBoxShotSummonGF.Name = "checkBoxShotSummonGF";
             this.checkBoxShotSummonGF.Size = new System.Drawing.Size(92, 19);
             this.checkBoxShotSummonGF.TabIndex = 133;
@@ -29285,7 +29300,7 @@
             this.checkBoxShotHasMagic.AutoSize = true;
             this.checkBoxShotHasMagic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotHasMagic.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotHasMagic.Location = new System.Drawing.Point(10, 223);
+            this.checkBoxShotHasMagic.Location = new System.Drawing.Point(10, 220);
             this.checkBoxShotHasMagic.Name = "checkBoxShotHasMagic";
             this.checkBoxShotHasMagic.Size = new System.Drawing.Size(82, 19);
             this.checkBoxShotHasMagic.TabIndex = 132;
@@ -29297,7 +29312,7 @@
             this.checkBoxShotUnk6.AutoSize = true;
             this.checkBoxShotUnk6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotUnk6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk6.Location = new System.Drawing.Point(373, 198);
+            this.checkBoxShotUnk6.Location = new System.Drawing.Point(373, 195);
             this.checkBoxShotUnk6.Name = "checkBoxShotUnk6";
             this.checkBoxShotUnk6.Size = new System.Drawing.Size(41, 19);
             this.checkBoxShotUnk6.TabIndex = 131;
@@ -29309,7 +29324,7 @@
             this.checkBoxShotUnk5.AutoSize = true;
             this.checkBoxShotUnk5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotUnk5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk5.Location = new System.Drawing.Point(285, 198);
+            this.checkBoxShotUnk5.Location = new System.Drawing.Point(285, 195);
             this.checkBoxShotUnk5.Name = "checkBoxShotUnk5";
             this.checkBoxShotUnk5.Size = new System.Drawing.Size(41, 19);
             this.checkBoxShotUnk5.TabIndex = 130;
@@ -29321,7 +29336,7 @@
             this.checkBoxShotUnk4.AutoSize = true;
             this.checkBoxShotUnk4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotUnk4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk4.Location = new System.Drawing.Point(196, 198);
+            this.checkBoxShotUnk4.Location = new System.Drawing.Point(196, 195);
             this.checkBoxShotUnk4.Name = "checkBoxShotUnk4";
             this.checkBoxShotUnk4.Size = new System.Drawing.Size(41, 19);
             this.checkBoxShotUnk4.TabIndex = 127;
@@ -29333,7 +29348,7 @@
             this.checkBoxShotUnk3.AutoSize = true;
             this.checkBoxShotUnk3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotUnk3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk3.Location = new System.Drawing.Point(102, 198);
+            this.checkBoxShotUnk3.Location = new System.Drawing.Point(102, 195);
             this.checkBoxShotUnk3.Name = "checkBoxShotUnk3";
             this.checkBoxShotUnk3.Size = new System.Drawing.Size(41, 19);
             this.checkBoxShotUnk3.TabIndex = 129;
@@ -29345,7 +29360,7 @@
             this.checkBoxShotAngelWing.AutoSize = true;
             this.checkBoxShotAngelWing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotAngelWing.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotAngelWing.Location = new System.Drawing.Point(10, 198);
+            this.checkBoxShotAngelWing.Location = new System.Drawing.Point(10, 195);
             this.checkBoxShotAngelWing.Name = "checkBoxShotAngelWing";
             this.checkBoxShotAngelWing.Size = new System.Drawing.Size(88, 19);
             this.checkBoxShotAngelWing.TabIndex = 128;
@@ -29357,7 +29372,7 @@
             this.checkBoxShotVit0.AutoSize = true;
             this.checkBoxShotVit0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotVit0.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotVit0.Location = new System.Drawing.Point(373, 173);
+            this.checkBoxShotVit0.Location = new System.Drawing.Point(373, 170);
             this.checkBoxShotVit0.Name = "checkBoxShotVit0";
             this.checkBoxShotVit0.Size = new System.Drawing.Size(46, 19);
             this.checkBoxShotVit0.TabIndex = 134;
@@ -29369,7 +29384,7 @@
             this.checkBoxShotBackAttack.AutoSize = true;
             this.checkBoxShotBackAttack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotBackAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotBackAttack.Location = new System.Drawing.Point(285, 173);
+            this.checkBoxShotBackAttack.Location = new System.Drawing.Point(285, 170);
             this.checkBoxShotBackAttack.Name = "checkBoxShotBackAttack";
             this.checkBoxShotBackAttack.Size = new System.Drawing.Size(88, 19);
             this.checkBoxShotBackAttack.TabIndex = 126;
@@ -29381,7 +29396,7 @@
             this.checkBoxShotCharged.AutoSize = true;
             this.checkBoxShotCharged.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotCharged.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotCharged.Location = new System.Drawing.Point(196, 173);
+            this.checkBoxShotCharged.Location = new System.Drawing.Point(196, 170);
             this.checkBoxShotCharged.Name = "checkBoxShotCharged";
             this.checkBoxShotCharged.Size = new System.Drawing.Size(71, 19);
             this.checkBoxShotCharged.TabIndex = 122;
@@ -29393,7 +29408,7 @@
             this.checkBoxShotUnk2.AutoSize = true;
             this.checkBoxShotUnk2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotUnk2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk2.Location = new System.Drawing.Point(102, 173);
+            this.checkBoxShotUnk2.Location = new System.Drawing.Point(102, 170);
             this.checkBoxShotUnk2.Name = "checkBoxShotUnk2";
             this.checkBoxShotUnk2.Size = new System.Drawing.Size(41, 19);
             this.checkBoxShotUnk2.TabIndex = 125;
@@ -29405,7 +29420,7 @@
             this.checkBoxShotUnk1.AutoSize = true;
             this.checkBoxShotUnk1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotUnk1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk1.Location = new System.Drawing.Point(10, 173);
+            this.checkBoxShotUnk1.Location = new System.Drawing.Point(10, 170);
             this.checkBoxShotUnk1.Name = "checkBoxShotUnk1";
             this.checkBoxShotUnk1.Size = new System.Drawing.Size(41, 19);
             this.checkBoxShotUnk1.TabIndex = 124;
@@ -29417,7 +29432,7 @@
             this.checkBoxShotDefend.AutoSize = true;
             this.checkBoxShotDefend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotDefend.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDefend.Location = new System.Drawing.Point(373, 148);
+            this.checkBoxShotDefend.Location = new System.Drawing.Point(373, 145);
             this.checkBoxShotDefend.Name = "checkBoxShotDefend";
             this.checkBoxShotDefend.Size = new System.Drawing.Size(64, 19);
             this.checkBoxShotDefend.TabIndex = 123;
@@ -29429,7 +29444,7 @@
             this.checkBoxShotTriple.AutoSize = true;
             this.checkBoxShotTriple.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotTriple.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotTriple.Location = new System.Drawing.Point(285, 148);
+            this.checkBoxShotTriple.Location = new System.Drawing.Point(285, 145);
             this.checkBoxShotTriple.Name = "checkBoxShotTriple";
             this.checkBoxShotTriple.Size = new System.Drawing.Size(55, 19);
             this.checkBoxShotTriple.TabIndex = 121;
@@ -29441,7 +29456,7 @@
             this.checkBoxShotDouble.AutoSize = true;
             this.checkBoxShotDouble.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotDouble.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDouble.Location = new System.Drawing.Point(196, 148);
+            this.checkBoxShotDouble.Location = new System.Drawing.Point(196, 145);
             this.checkBoxShotDouble.Name = "checkBoxShotDouble";
             this.checkBoxShotDouble.Size = new System.Drawing.Size(64, 19);
             this.checkBoxShotDouble.TabIndex = 120;
@@ -29453,7 +29468,7 @@
             this.checkBoxShotEject.AutoSize = true;
             this.checkBoxShotEject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotEject.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotEject.Location = new System.Drawing.Point(102, 148);
+            this.checkBoxShotEject.Location = new System.Drawing.Point(102, 145);
             this.checkBoxShotEject.Name = "checkBoxShotEject";
             this.checkBoxShotEject.Size = new System.Drawing.Size(51, 19);
             this.checkBoxShotEject.TabIndex = 119;
@@ -29465,7 +29480,7 @@
             this.checkBoxShotPoison.AutoSize = true;
             this.checkBoxShotPoison.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotPoison.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotPoison.Location = new System.Drawing.Point(285, 223);
+            this.checkBoxShotPoison.Location = new System.Drawing.Point(285, 220);
             this.checkBoxShotPoison.Name = "checkBoxShotPoison";
             this.checkBoxShotPoison.Size = new System.Drawing.Size(62, 19);
             this.checkBoxShotPoison.TabIndex = 136;
@@ -29477,7 +29492,7 @@
             this.checkBoxShotDeath.AutoSize = true;
             this.checkBoxShotDeath.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotDeath.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotDeath.Location = new System.Drawing.Point(196, 223);
+            this.checkBoxShotDeath.Location = new System.Drawing.Point(196, 220);
             this.checkBoxShotDeath.Name = "checkBoxShotDeath";
             this.checkBoxShotDeath.Size = new System.Drawing.Size(57, 19);
             this.checkBoxShotDeath.TabIndex = 135;
@@ -29489,7 +29504,7 @@
             this.checkBoxShotProtect.AutoSize = true;
             this.checkBoxShotProtect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotProtect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotProtect.Location = new System.Drawing.Point(10, 98);
+            this.checkBoxShotProtect.Location = new System.Drawing.Point(10, 95);
             this.checkBoxShotProtect.Name = "checkBoxShotProtect";
             this.checkBoxShotProtect.Size = new System.Drawing.Size(64, 19);
             this.checkBoxShotProtect.TabIndex = 108;
@@ -29501,7 +29516,7 @@
             this.checkBoxShotHaste.AutoSize = true;
             this.checkBoxShotHaste.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotHaste.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotHaste.Location = new System.Drawing.Point(102, 73);
+            this.checkBoxShotHaste.Location = new System.Drawing.Point(102, 70);
             this.checkBoxShotHaste.Name = "checkBoxShotHaste";
             this.checkBoxShotHaste.Size = new System.Drawing.Size(56, 19);
             this.checkBoxShotHaste.TabIndex = 104;
@@ -29513,7 +29528,7 @@
             this.checkBoxShotRegen.AutoSize = true;
             this.checkBoxShotRegen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotRegen.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotRegen.Location = new System.Drawing.Point(373, 73);
+            this.checkBoxShotRegen.Location = new System.Drawing.Point(373, 70);
             this.checkBoxShotRegen.Name = "checkBoxShotRegen";
             this.checkBoxShotRegen.Size = new System.Drawing.Size(59, 19);
             this.checkBoxShotRegen.TabIndex = 107;
@@ -29525,7 +29540,7 @@
             this.checkBoxShotShell.AutoSize = true;
             this.checkBoxShotShell.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotShell.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotShell.Location = new System.Drawing.Point(102, 98);
+            this.checkBoxShotShell.Location = new System.Drawing.Point(102, 95);
             this.checkBoxShotShell.Name = "checkBoxShotShell";
             this.checkBoxShotShell.Size = new System.Drawing.Size(51, 19);
             this.checkBoxShotShell.TabIndex = 109;
@@ -29537,7 +29552,7 @@
             this.checkBoxShotReflect.AutoSize = true;
             this.checkBoxShotReflect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotReflect.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotReflect.Location = new System.Drawing.Point(196, 98);
+            this.checkBoxShotReflect.Location = new System.Drawing.Point(196, 95);
             this.checkBoxShotReflect.Name = "checkBoxShotReflect";
             this.checkBoxShotReflect.Size = new System.Drawing.Size(62, 19);
             this.checkBoxShotReflect.TabIndex = 110;
@@ -29549,7 +29564,7 @@
             this.checkBoxShotUnk7.AutoSize = true;
             this.checkBoxShotUnk7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotUnk7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotUnk7.Location = new System.Drawing.Point(373, 248);
+            this.checkBoxShotUnk7.Location = new System.Drawing.Point(373, 245);
             this.checkBoxShotUnk7.Name = "checkBoxShotUnk7";
             this.checkBoxShotUnk7.Size = new System.Drawing.Size(41, 19);
             this.checkBoxShotUnk7.TabIndex = 141;
@@ -29561,7 +29576,7 @@
             this.checkBoxShotZombie.AutoSize = true;
             this.checkBoxShotZombie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotZombie.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotZombie.Location = new System.Drawing.Point(285, 248);
+            this.checkBoxShotZombie.Location = new System.Drawing.Point(285, 245);
             this.checkBoxShotZombie.Name = "checkBoxShotZombie";
             this.checkBoxShotZombie.Size = new System.Drawing.Size(67, 19);
             this.checkBoxShotZombie.TabIndex = 142;
@@ -29571,7 +29586,7 @@
             // numericUpDownShotStatusAttack
             // 
             this.numericUpDownShotStatusAttack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotStatusAttack.Location = new System.Drawing.Point(209, 40);
+            this.numericUpDownShotStatusAttack.Location = new System.Drawing.Point(209, 37);
             this.numericUpDownShotStatusAttack.Maximum = new decimal(new int[] {
             255,
             0,
@@ -29586,7 +29601,7 @@
             this.labelShotStatusAttack.AutoSize = true;
             this.labelShotStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotStatusAttack.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotStatusAttack.Location = new System.Drawing.Point(188, 20);
+            this.labelShotStatusAttack.Location = new System.Drawing.Point(188, 17);
             this.labelShotStatusAttack.Name = "labelShotStatusAttack";
             this.labelShotStatusAttack.Size = new System.Drawing.Size(89, 17);
             this.labelShotStatusAttack.TabIndex = 90;
@@ -29609,9 +29624,9 @@
             this.groupBox10.Controls.Add(this.labelShotTimer1Value);
             this.groupBox10.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox10.ForeColor = System.Drawing.Color.DarkOrange;
-            this.groupBox10.Location = new System.Drawing.Point(6, 635);
+            this.groupBox10.Location = new System.Drawing.Point(6, 6);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(610, 98);
+            this.groupBox10.Size = new System.Drawing.Size(610, 96);
             this.groupBox10.TabIndex = 115;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Timers";
@@ -29621,7 +29636,7 @@
             this.labelShotTimer4.AutoSize = true;
             this.labelShotTimer4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotTimer4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer4.Location = new System.Drawing.Point(441, 28);
+            this.labelShotTimer4.Location = new System.Drawing.Point(439, 23);
             this.labelShotTimer4.Name = "labelShotTimer4";
             this.labelShotTimer4.Size = new System.Drawing.Size(67, 17);
             this.labelShotTimer4.TabIndex = 91;
@@ -29630,7 +29645,7 @@
             // numericUpDownShotTimer1
             // 
             this.numericUpDownShotTimer1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotTimer1.Location = new System.Drawing.Point(112, 48);
+            this.numericUpDownShotTimer1.Location = new System.Drawing.Point(110, 43);
             this.numericUpDownShotTimer1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -29646,7 +29661,7 @@
             this.labelShotTimer3.AutoSize = true;
             this.labelShotTimer3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotTimer3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer3.Location = new System.Drawing.Point(328, 28);
+            this.labelShotTimer3.Location = new System.Drawing.Point(326, 23);
             this.labelShotTimer3.Name = "labelShotTimer3";
             this.labelShotTimer3.Size = new System.Drawing.Size(67, 17);
             this.labelShotTimer3.TabIndex = 91;
@@ -29655,7 +29670,7 @@
             // numericUpDownShotTimer2
             // 
             this.numericUpDownShotTimer2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotTimer2.Location = new System.Drawing.Point(223, 48);
+            this.numericUpDownShotTimer2.Location = new System.Drawing.Point(221, 43);
             this.numericUpDownShotTimer2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -29671,7 +29686,7 @@
             this.labelShotTimer2.AutoSize = true;
             this.labelShotTimer2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotTimer2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer2.Location = new System.Drawing.Point(214, 28);
+            this.labelShotTimer2.Location = new System.Drawing.Point(212, 23);
             this.labelShotTimer2.Name = "labelShotTimer2";
             this.labelShotTimer2.Size = new System.Drawing.Size(67, 17);
             this.labelShotTimer2.TabIndex = 91;
@@ -29680,7 +29695,7 @@
             // numericUpDownShotTimer3
             // 
             this.numericUpDownShotTimer3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotTimer3.Location = new System.Drawing.Point(337, 48);
+            this.numericUpDownShotTimer3.Location = new System.Drawing.Point(335, 43);
             this.numericUpDownShotTimer3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -29694,7 +29709,7 @@
             // numericUpDownShotTimer4
             // 
             this.numericUpDownShotTimer4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotTimer4.Location = new System.Drawing.Point(448, 48);
+            this.numericUpDownShotTimer4.Location = new System.Drawing.Point(446, 43);
             this.numericUpDownShotTimer4.Maximum = new decimal(new int[] {
             255,
             0,
@@ -29711,7 +29726,7 @@
             this.labelShotTimer4Value.BackColor = System.Drawing.Color.Transparent;
             this.labelShotTimer4Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.labelShotTimer4Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer4Value.Location = new System.Drawing.Point(452, 72);
+            this.labelShotTimer4Value.Location = new System.Drawing.Point(450, 67);
             this.labelShotTimer4Value.Name = "labelShotTimer4Value";
             this.labelShotTimer4Value.Size = new System.Drawing.Size(38, 17);
             this.labelShotTimer4Value.TabIndex = 91;
@@ -29723,7 +29738,7 @@
             this.labelShotTimer3Value.BackColor = System.Drawing.Color.Transparent;
             this.labelShotTimer3Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.labelShotTimer3Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer3Value.Location = new System.Drawing.Point(341, 72);
+            this.labelShotTimer3Value.Location = new System.Drawing.Point(339, 67);
             this.labelShotTimer3Value.Name = "labelShotTimer3Value";
             this.labelShotTimer3Value.Size = new System.Drawing.Size(38, 17);
             this.labelShotTimer3Value.TabIndex = 91;
@@ -29734,7 +29749,7 @@
             this.labelShotTimer1.AutoSize = true;
             this.labelShotTimer1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotTimer1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer1.Location = new System.Drawing.Point(106, 28);
+            this.labelShotTimer1.Location = new System.Drawing.Point(104, 23);
             this.labelShotTimer1.Name = "labelShotTimer1";
             this.labelShotTimer1.Size = new System.Drawing.Size(65, 17);
             this.labelShotTimer1.TabIndex = 91;
@@ -29746,7 +29761,7 @@
             this.labelShotTimer2Value.BackColor = System.Drawing.Color.Transparent;
             this.labelShotTimer2Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.labelShotTimer2Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer2Value.Location = new System.Drawing.Point(227, 72);
+            this.labelShotTimer2Value.Location = new System.Drawing.Point(225, 67);
             this.labelShotTimer2Value.Name = "labelShotTimer2Value";
             this.labelShotTimer2Value.Size = new System.Drawing.Size(38, 17);
             this.labelShotTimer2Value.TabIndex = 91;
@@ -29758,7 +29773,7 @@
             this.labelShotTimer1Value.BackColor = System.Drawing.Color.Transparent;
             this.labelShotTimer1Value.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.labelShotTimer1Value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotTimer1Value.Location = new System.Drawing.Point(116, 72);
+            this.labelShotTimer1Value.Location = new System.Drawing.Point(114, 67);
             this.labelShotTimer1Value.Name = "labelShotTimer1Value";
             this.labelShotTimer1Value.Size = new System.Drawing.Size(38, 17);
             this.labelShotTimer1Value.TabIndex = 91;
@@ -29777,7 +29792,7 @@
             this.groupBoxShotTargetInfo.Controls.Add(this.checkBoxShotTarget3);
             this.groupBoxShotTargetInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxShotTargetInfo.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.groupBoxShotTargetInfo.Location = new System.Drawing.Point(151, 199);
+            this.groupBoxShotTargetInfo.Location = new System.Drawing.Point(151, 280);
             this.groupBoxShotTargetInfo.Name = "groupBoxShotTargetInfo";
             this.groupBoxShotTargetInfo.Size = new System.Drawing.Size(465, 75);
             this.groupBoxShotTargetInfo.TabIndex = 115;
@@ -29881,9 +29896,9 @@
             this.groupBoxShotAttackFlags.Controls.Add(this.checkBoxShotFlag7);
             this.groupBoxShotAttackFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxShotAttackFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxShotAttackFlags.Location = new System.Drawing.Point(151, 555);
+            this.groupBoxShotAttackFlags.Location = new System.Drawing.Point(151, 633);
             this.groupBoxShotAttackFlags.Name = "groupBoxShotAttackFlags";
-            this.groupBoxShotAttackFlags.Size = new System.Drawing.Size(465, 74);
+            this.groupBoxShotAttackFlags.Size = new System.Drawing.Size(465, 71);
             this.groupBoxShotAttackFlags.TabIndex = 114;
             this.groupBoxShotAttackFlags.TabStop = false;
             this.groupBoxShotAttackFlags.Text = "Attack Flags";
@@ -29893,7 +29908,7 @@
             this.checkBoxShotFlag4.AutoSize = true;
             this.checkBoxShotFlag4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotFlag4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag4.Location = new System.Drawing.Point(305, 27);
+            this.checkBoxShotFlag4.Location = new System.Drawing.Point(305, 24);
             this.checkBoxShotFlag4.Name = "checkBoxShotFlag4";
             this.checkBoxShotFlag4.Size = new System.Drawing.Size(132, 19);
             this.checkBoxShotFlag4.TabIndex = 48;
@@ -29905,7 +29920,7 @@
             this.checkBoxShotFlag8.AutoSize = true;
             this.checkBoxShotFlag8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotFlag8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag8.Location = new System.Drawing.Point(305, 52);
+            this.checkBoxShotFlag8.Location = new System.Drawing.Point(305, 49);
             this.checkBoxShotFlag8.Name = "checkBoxShotFlag8";
             this.checkBoxShotFlag8.Size = new System.Drawing.Size(65, 19);
             this.checkBoxShotFlag8.TabIndex = 52;
@@ -29917,7 +29932,7 @@
             this.checkBoxShotFlag3.AutoSize = true;
             this.checkBoxShotFlag3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotFlag3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag3.Location = new System.Drawing.Point(220, 27);
+            this.checkBoxShotFlag3.Location = new System.Drawing.Point(220, 24);
             this.checkBoxShotFlag3.Name = "checkBoxShotFlag3";
             this.checkBoxShotFlag3.Size = new System.Drawing.Size(41, 19);
             this.checkBoxShotFlag3.TabIndex = 47;
@@ -29929,7 +29944,7 @@
             this.checkBoxShotFlag6.AutoSize = true;
             this.checkBoxShotFlag6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag6.Location = new System.Drawing.Point(135, 52);
+            this.checkBoxShotFlag6.Location = new System.Drawing.Point(135, 49);
             this.checkBoxShotFlag6.Name = "checkBoxShotFlag6";
             this.checkBoxShotFlag6.Size = new System.Drawing.Size(41, 19);
             this.checkBoxShotFlag6.TabIndex = 50;
@@ -29941,7 +29956,7 @@
             this.checkBoxShotFlag1.AutoSize = true;
             this.checkBoxShotFlag1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotFlag1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag1.Location = new System.Drawing.Point(27, 27);
+            this.checkBoxShotFlag1.Location = new System.Drawing.Point(27, 24);
             this.checkBoxShotFlag1.Name = "checkBoxShotFlag1";
             this.checkBoxShotFlag1.Size = new System.Drawing.Size(64, 19);
             this.checkBoxShotFlag1.TabIndex = 45;
@@ -29953,7 +29968,7 @@
             this.checkBoxShotFlag5.AutoSize = true;
             this.checkBoxShotFlag5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotFlag5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag5.Location = new System.Drawing.Point(27, 52);
+            this.checkBoxShotFlag5.Location = new System.Drawing.Point(27, 49);
             this.checkBoxShotFlag5.Name = "checkBoxShotFlag5";
             this.checkBoxShotFlag5.Size = new System.Drawing.Size(75, 19);
             this.checkBoxShotFlag5.TabIndex = 49;
@@ -29965,7 +29980,7 @@
             this.checkBoxShotFlag2.AutoSize = true;
             this.checkBoxShotFlag2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotFlag2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag2.Location = new System.Drawing.Point(135, 27);
+            this.checkBoxShotFlag2.Location = new System.Drawing.Point(135, 24);
             this.checkBoxShotFlag2.Name = "checkBoxShotFlag2";
             this.checkBoxShotFlag2.Size = new System.Drawing.Size(41, 19);
             this.checkBoxShotFlag2.TabIndex = 46;
@@ -29977,7 +29992,7 @@
             this.checkBoxShotFlag7.AutoSize = true;
             this.checkBoxShotFlag7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShotFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.checkBoxShotFlag7.Location = new System.Drawing.Point(220, 52);
+            this.checkBoxShotFlag7.Location = new System.Drawing.Point(220, 49);
             this.checkBoxShotFlag7.Name = "checkBoxShotFlag7";
             this.checkBoxShotFlag7.Size = new System.Drawing.Size(41, 19);
             this.checkBoxShotFlag7.TabIndex = 51;
@@ -29987,6 +30002,10 @@
             // groupBoxShotGeneral
             // 
             this.groupBoxShotGeneral.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxShotGeneral.Controls.Add(this.textBoxShotDes);
+            this.groupBoxShotGeneral.Controls.Add(this.labelShotDes);
+            this.groupBoxShotGeneral.Controls.Add(this.textBoxShotName);
+            this.groupBoxShotGeneral.Controls.Add(this.labelShotName);
             this.groupBoxShotGeneral.Controls.Add(this.numericUpDownShotCrit);
             this.groupBoxShotGeneral.Controls.Add(this.labelShotCrit);
             this.groupBoxShotGeneral.Controls.Add(this.label5);
@@ -30007,7 +30026,7 @@
             this.groupBoxShotGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxShotGeneral.Location = new System.Drawing.Point(151, 6);
             this.groupBoxShotGeneral.Name = "groupBoxShotGeneral";
-            this.groupBoxShotGeneral.Size = new System.Drawing.Size(465, 187);
+            this.groupBoxShotGeneral.Size = new System.Drawing.Size(465, 268);
             this.groupBoxShotGeneral.TabIndex = 113;
             this.groupBoxShotGeneral.TabStop = false;
             this.groupBoxShotGeneral.Text = "General";
@@ -30015,7 +30034,7 @@
             // numericUpDownShotCrit
             // 
             this.numericUpDownShotCrit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotCrit.Location = new System.Drawing.Point(397, 95);
+            this.numericUpDownShotCrit.Location = new System.Drawing.Point(296, 237);
             this.numericUpDownShotCrit.Maximum = new decimal(new int[] {
             255,
             0,
@@ -30030,7 +30049,7 @@
             this.labelShotCrit.AutoSize = true;
             this.labelShotCrit.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotCrit.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotCrit.Location = new System.Drawing.Point(387, 75);
+            this.labelShotCrit.Location = new System.Drawing.Point(286, 217);
             this.labelShotCrit.Name = "labelShotCrit";
             this.labelShotCrit.Size = new System.Drawing.Size(71, 17);
             this.labelShotCrit.TabIndex = 92;
@@ -30041,7 +30060,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.label5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label5.Location = new System.Drawing.Point(160, 132);
+            this.label5.Location = new System.Drawing.Point(423, 167);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(19, 17);
             this.label5.TabIndex = 91;
@@ -30061,7 +30080,7 @@
             "Water",
             "Holy",
             "Non-Elemental"});
-            this.comboBoxShotElement.Location = new System.Drawing.Point(31, 152);
+            this.comboBoxShotElement.Location = new System.Drawing.Point(294, 187);
             this.comboBoxShotElement.Name = "comboBoxShotElement";
             this.comboBoxShotElement.Size = new System.Drawing.Size(110, 25);
             this.comboBoxShotElement.TabIndex = 90;
@@ -30270,7 +30289,7 @@
             "Occult Fan II",
             "Occult Fan III",
             "Occult Fan IV"});
-            this.comboBoxShotItem.Location = new System.Drawing.Point(268, 152);
+            this.comboBoxShotItem.Location = new System.Drawing.Point(304, 138);
             this.comboBoxShotItem.Name = "comboBoxShotItem";
             this.comboBoxShotItem.Size = new System.Drawing.Size(146, 25);
             this.comboBoxShotItem.TabIndex = 11;
@@ -30280,7 +30299,7 @@
             this.labelShotItem.AutoSize = true;
             this.labelShotItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelShotItem.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelShotItem.Location = new System.Drawing.Point(306, 132);
+            this.labelShotItem.Location = new System.Drawing.Point(342, 118);
             this.labelShotItem.Name = "labelShotItem";
             this.labelShotItem.Size = new System.Drawing.Size(70, 17);
             this.labelShotItem.TabIndex = 12;
@@ -30290,7 +30309,7 @@
             // 
             this.comboBoxShotAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxShotAttackType.FormattingEnabled = true;
-            this.comboBoxShotAttackType.Location = new System.Drawing.Point(21, 95);
+            this.comboBoxShotAttackType.Location = new System.Drawing.Point(8, 187);
             this.comboBoxShotAttackType.Name = "comboBoxShotAttackType";
             this.comboBoxShotAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxShotAttackType.TabIndex = 8;
@@ -30298,7 +30317,7 @@
             // numericUpDownShotElementPerc
             // 
             this.numericUpDownShotElementPerc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotElementPerc.Location = new System.Drawing.Point(147, 152);
+            this.numericUpDownShotElementPerc.Location = new System.Drawing.Point(410, 187);
             this.numericUpDownShotElementPerc.Maximum = new decimal(new int[] {
             255,
             0,
@@ -30311,7 +30330,7 @@
             // numericUpDownShotHitCount
             // 
             this.numericUpDownShotHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotHitCount.Location = new System.Drawing.Point(318, 95);
+            this.numericUpDownShotHitCount.Location = new System.Drawing.Point(213, 237);
             this.numericUpDownShotHitCount.Maximum = new decimal(new int[] {
             255,
             0,
@@ -30324,7 +30343,7 @@
             // numericUpDownShotAttackPower
             // 
             this.numericUpDownShotAttackPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownShotAttackPower.Location = new System.Drawing.Point(367, 41);
+            this.numericUpDownShotAttackPower.Location = new System.Drawing.Point(130, 237);
             this.numericUpDownShotAttackPower.Maximum = new decimal(new int[] {
             255,
             0,
@@ -30338,7 +30357,7 @@
             // 
             this.comboBoxShotMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxShotMagicID.FormattingEnabled = true;
-            this.comboBoxShotMagicID.Location = new System.Drawing.Point(31, 41);
+            this.comboBoxShotMagicID.Location = new System.Drawing.Point(8, 138);
             this.comboBoxShotMagicID.Name = "comboBoxShotMagicID";
             this.comboBoxShotMagicID.Size = new System.Drawing.Size(265, 25);
             this.comboBoxShotMagicID.TabIndex = 2;
@@ -30361,7 +30380,7 @@
             "Hyper Shot"});
             this.listBoxShot.Location = new System.Drawing.Point(0, 0);
             this.listBoxShot.Name = "listBoxShot";
-            this.listBoxShot.Size = new System.Drawing.Size(145, 628);
+            this.listBoxShot.Size = new System.Drawing.Size(145, 709);
             this.listBoxShot.TabIndex = 112;
             this.listBoxShot.SelectedIndexChanged += new System.EventHandler(this.listBoxShot_SelectedIndexChanged);
             // 
@@ -37204,6 +37223,133 @@
             this.labelEnemyAttacksName.TabIndex = 121;
             this.labelEnemyAttacksName.Text = "Name";
             // 
+            // tabControlShot
+            // 
+            this.tabControlShot.Controls.Add(this.tabPageShotGeneral);
+            this.tabControlShot.Controls.Add(this.tabPageShotTimers);
+            this.tabControlShot.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tabControlShot.Location = new System.Drawing.Point(-4, 0);
+            this.tabControlShot.Name = "tabControlShot";
+            this.tabControlShot.SelectedIndex = 0;
+            this.tabControlShot.Size = new System.Drawing.Size(630, 740);
+            this.tabControlShot.TabIndex = 117;
+            // 
+            // tabPageShotGeneral
+            // 
+            this.tabPageShotGeneral.Controls.Add(this.groupBoxShotGeneral);
+            this.tabPageShotGeneral.Controls.Add(this.groupBoxShotStatusAttack);
+            this.tabPageShotGeneral.Controls.Add(this.listBoxShot);
+            this.tabPageShotGeneral.Controls.Add(this.groupBoxShotAttackFlags);
+            this.tabPageShotGeneral.Controls.Add(this.groupBoxShotTargetInfo);
+            this.tabPageShotGeneral.Location = new System.Drawing.Point(4, 26);
+            this.tabPageShotGeneral.Name = "tabPageShotGeneral";
+            this.tabPageShotGeneral.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageShotGeneral.Size = new System.Drawing.Size(622, 710);
+            this.tabPageShotGeneral.TabIndex = 0;
+            this.tabPageShotGeneral.Text = "General";
+            this.tabPageShotGeneral.UseVisualStyleBackColor = true;
+            // 
+            // tabPageShotTimers
+            // 
+            this.tabPageShotTimers.Controls.Add(this.groupBox10);
+            this.tabPageShotTimers.Location = new System.Drawing.Point(4, 26);
+            this.tabPageShotTimers.Name = "tabPageShotTimers";
+            this.tabPageShotTimers.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageShotTimers.Size = new System.Drawing.Size(622, 710);
+            this.tabPageShotTimers.TabIndex = 1;
+            this.tabPageShotTimers.Text = "Timers";
+            this.tabPageShotTimers.UseVisualStyleBackColor = true;
+            // 
+            // textBoxShotDes
+            // 
+            this.textBoxShotDes.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBoxShotDes.Location = new System.Drawing.Point(78, 86);
+            this.textBoxShotDes.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
+            this.textBoxShotDes.Name = "textBoxShotDes";
+            this.textBoxShotDes.Size = new System.Drawing.Size(309, 25);
+            this.textBoxShotDes.TabIndex = 116;
+            // 
+            // labelShotDes
+            // 
+            this.labelShotDes.AutoSize = true;
+            this.labelShotDes.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotDes.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotDes.Location = new System.Drawing.Point(194, 66);
+            this.labelShotDes.Name = "labelShotDes";
+            this.labelShotDes.Size = new System.Drawing.Size(76, 17);
+            this.labelShotDes.TabIndex = 117;
+            this.labelShotDes.Text = "Description";
+            // 
+            // textBoxShotName
+            // 
+            this.textBoxShotName.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBoxShotName.Location = new System.Drawing.Point(78, 33);
+            this.textBoxShotName.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
+            this.textBoxShotName.Name = "textBoxShotName";
+            this.textBoxShotName.Size = new System.Drawing.Size(309, 25);
+            this.textBoxShotName.TabIndex = 114;
+            // 
+            // labelShotName
+            // 
+            this.labelShotName.AutoSize = true;
+            this.labelShotName.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelShotName.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelShotName.Location = new System.Drawing.Point(210, 15);
+            this.labelShotName.Name = "labelShotName";
+            this.labelShotName.Size = new System.Drawing.Size(44, 17);
+            this.labelShotName.TabIndex = 115;
+            this.labelShotName.Text = "Name";
+            // 
+            // tabPageDuelButtons
+            // 
+            this.tabPageDuelButtons.Controls.Add(this.groupBoxShotInput1);
+            this.tabPageDuelButtons.Location = new System.Drawing.Point(4, 26);
+            this.tabPageDuelButtons.Name = "tabPageDuelButtons";
+            this.tabPageDuelButtons.Size = new System.Drawing.Size(467, 710);
+            this.tabPageDuelButtons.TabIndex = 2;
+            this.tabPageDuelButtons.Text = "Buttons";
+            this.tabPageDuelButtons.UseVisualStyleBackColor = true;
+            // 
+            // textBoxDuelDes
+            // 
+            this.textBoxDuelDes.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBoxDuelDes.Location = new System.Drawing.Point(73, 95);
+            this.textBoxDuelDes.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
+            this.textBoxDuelDes.Name = "textBoxDuelDes";
+            this.textBoxDuelDes.Size = new System.Drawing.Size(309, 25);
+            this.textBoxDuelDes.TabIndex = 112;
+            // 
+            // labelDuelDes
+            // 
+            this.labelDuelDes.AutoSize = true;
+            this.labelDuelDes.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelDes.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelDes.Location = new System.Drawing.Point(189, 75);
+            this.labelDuelDes.Name = "labelDuelDes";
+            this.labelDuelDes.Size = new System.Drawing.Size(76, 17);
+            this.labelDuelDes.TabIndex = 113;
+            this.labelDuelDes.Text = "Description";
+            // 
+            // textBoxDuelName
+            // 
+            this.textBoxDuelName.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.textBoxDuelName.Location = new System.Drawing.Point(73, 36);
+            this.textBoxDuelName.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
+            this.textBoxDuelName.Name = "textBoxDuelName";
+            this.textBoxDuelName.Size = new System.Drawing.Size(309, 25);
+            this.textBoxDuelName.TabIndex = 110;
+            // 
+            // labelDuelName
+            // 
+            this.labelDuelName.AutoSize = true;
+            this.labelDuelName.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelDuelName.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelDuelName.Location = new System.Drawing.Point(205, 18);
+            this.labelDuelName.Name = "labelDuelName";
+            this.labelDuelName.Size = new System.Drawing.Size(44, 17);
+            this.labelDuelName.TabIndex = 111;
+            this.labelDuelName.Text = "Name";
+            // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -37827,6 +37973,10 @@
             this.tabPageItems.ResumeLayout(false);
             this.groupBoxItems.ResumeLayout(false);
             this.groupBoxItems.PerformLayout();
+            this.tabControlShot.ResumeLayout(false);
+            this.tabPageShotGeneral.ResumeLayout(false);
+            this.tabPageShotTimers.ResumeLayout(false);
+            this.tabPageDuelButtons.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -39910,6 +40060,18 @@
         private System.Windows.Forms.Label labelDevourDes;
         private System.Windows.Forms.TextBox textBoxEnemyAttacksName;
         private System.Windows.Forms.Label labelEnemyAttacksName;
+        private System.Windows.Forms.TabControl tabControlShot;
+        private System.Windows.Forms.TabPage tabPageShotGeneral;
+        private System.Windows.Forms.TextBox textBoxShotDes;
+        private System.Windows.Forms.Label labelShotDes;
+        private System.Windows.Forms.TextBox textBoxShotName;
+        private System.Windows.Forms.Label labelShotName;
+        private System.Windows.Forms.TabPage tabPageShotTimers;
+        private System.Windows.Forms.TabPage tabPageDuelButtons;
+        private System.Windows.Forms.TextBox textBoxDuelName;
+        private System.Windows.Forms.TextBox textBoxDuelDes;
+        private System.Windows.Forms.Label labelDuelName;
+        private System.Windows.Forms.Label labelDuelDes;
     }
 }
 

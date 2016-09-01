@@ -131,6 +131,8 @@ namespace Doomtrain
 
             #region Magic
 
+            textBoxMagicName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(45, textBoxMagicName.Text);
+            textBoxMagicDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(46, textBoxMagicDes.Text);
             comboBoxMagicMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(2, comboBoxMagicMagicID.SelectedIndex);
             comboBoxMagicAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(43, comboBoxMagicAttackType.SelectedIndex);
             numericUpDownMagicSpellPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(3, numericUpDownMagicSpellPower.Value);
@@ -270,6 +272,8 @@ namespace Doomtrain
 
             #region J-GFs
 
+            textBoxGFAttackName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_GF(30, textBoxGFAttackName.Text);
+            textBoxGFAttackDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_GF(31, textBoxGFAttackDes.Text);
             comboBoxGFMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(0, comboBoxGFMagicID.SelectedIndex);
             comboBoxGFAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GF(26, comboBoxGFAttackType.SelectedIndex);
             numericUpDownGFPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GF(1, numericUpDownGFPower.Value);
@@ -390,6 +394,7 @@ namespace Doomtrain
 
             #region Non-J GFs attacks
 
+            textBoxGFAttacksAttackName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(10, textBoxGFAttacksAttackName.Text);
             comboBoxGFAttacksMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(0, comboBoxGFAttacksMagicID.SelectedIndex);
             comboBoxGFAttacksAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(8, comboBoxGFAttacksAttackType.SelectedIndex);
             numericUpDownGFAttacksPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAttacks(1, numericUpDownGFAttacksPower.Value);
@@ -450,6 +455,7 @@ namespace Doomtrain
 
             #region Weapons
 
+            textBoxWeaponsName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(9, textBoxWeaponsName.Text);
             checkBoxWeaponsRenzoFinRough.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x01, 0);
             checkBoxWeaponsRenzoFinFated.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x02, 0);
             checkBoxWeaponsRenzoFinBlasting.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Weapons(0, 0x04, 0);
@@ -507,6 +513,7 @@ namespace Doomtrain
 
             #region Enemy attacks
 
+            textBoxEnemyAttacksName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(10, textBoxEnemyAttacksName.Text);
             comboBoxEnemyAttacksMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(0, comboBoxEnemyAttacksMagicID.SelectedIndex);
             numericUpDownEnemyAttacksCamera.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(1, numericUpDownEnemyAttacksCamera.Value);
             checkBoxEnemyAttacksCamera.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_EnemyAttacks(2, checkBoxEnemyAttacksCamera.Checked);
@@ -765,6 +772,8 @@ namespace Doomtrain
 
             #region Stats increment abilities
 
+            textBoxAbStatsIncrementName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(3, textBoxAbStatsIncrementName.Text);
+            textBoxAbStatsIncrementDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(4, textBoxAbStatsIncrementDes.Text);
             numericUpDownAbStatsAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(0, numericUpDownAbStatsAP.Value);
             comboBoxAbStatsStatToIncrease.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(1, comboBoxAbStatsStatToIncrease.SelectedIndex);
             trackBarAbStatsIncrementValue.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_StatPercentageAbilities(2, trackBarAbStatsIncrementValue.Value);
@@ -843,6 +852,8 @@ namespace Doomtrain
 
             #region Temporary characters limit breaks
 
+            textBoxTempCharLBName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_TempCharLB(10, textBoxTempCharLBName.Text);
+            textBoxTempCharLBDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_TempCharLB(11, textBoxTempCharLBDes.Text);
             comboBoxTempCharLBMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_TempCharLB(0, comboBoxTempCharLBMagicID.SelectedIndex);
             comboBoxTempCharLBAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_TempCharLB(1, comboBoxTempCharLBAttackType.SelectedIndex);
             numericUpDownTempCharLBAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_TempCharLB(2, numericUpDownTempCharLBAttackPower.Value);
@@ -911,6 +922,8 @@ namespace Doomtrain
 
             #region Shot
 
+            textBoxShotName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(12, textBoxShotName.Text);
+            textBoxShotDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(13, textBoxShotDes.Text);
             comboBoxShotMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(0, comboBoxShotMagicID.SelectedIndex);
             comboBoxShotAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(1, comboBoxShotAttackType.SelectedIndex);
             numericUpDownShotAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Shot(2, numericUpDownShotAttackPower.Value);
@@ -981,6 +994,8 @@ namespace Doomtrain
 
             #region Duel
 
+            textBoxDuelName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(16, textBoxDuelName.Text);
+            textBoxDuelDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(17, textBoxDuelDes.Text);
             comboBoxDuelMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(0, comboBoxDuelMagicID.SelectedIndex);
             comboBoxDuelAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(1, comboBoxDuelAttackType.SelectedIndex);
             numericUpDownDuelAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Duel(2, numericUpDownDuelAttackPower.Value);
@@ -1157,6 +1172,7 @@ namespace Doomtrain
 
             #region Combine
 
+            textBoxCombineName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(10, textBoxCombineName.Text);
             comboBoxCombineMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(0, comboBoxCombineMagicID.SelectedIndex);
             comboBoxCombineAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(1, comboBoxCombineAttackType.SelectedIndex);
             numericUpDownCombineAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Combine(2, numericUpDownCombineAttackPower.Value);
@@ -1225,6 +1241,8 @@ namespace Doomtrain
 
             #region Battle items
 
+            textBoxBattleItemsName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(10, textBoxBattleItemsName.Text);
+            textBoxBattleItemsDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(11, textBoxBattleItemsDes.Text);
             comboBoxBattleItemsMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(0, comboBoxBattleItemsMagicID.SelectedIndex);
             comboBoxBattleItemsAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(1, comboBoxBattleItemsAttackType.SelectedIndex);
             numericUpDownBattleItemsAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BattleItems(2, numericUpDownBattleItemsAttackPower.Value);
@@ -1379,6 +1397,7 @@ namespace Doomtrain
 
             #region Devour
 
+            textBoxDevourDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(5, textBoxDevourDes.Text);
             comboBoxDevourHealDmg.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(0, Devour_GetHealDmg(comboBoxDevourHealDmg.SelectedIndex));
             checkBoxDevourHP1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(1, 0x01);
             checkBoxDevourHP2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_Devour(1, 0x02);
@@ -1562,6 +1581,8 @@ namespace Doomtrain
 
             #region Command abilities
 
+            textBoxAbComName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbility(2, textBoxAbComName.Text);
+            textBoxAbComDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbility(3, textBoxAbComDes.Text);
             numericUpDownAbComAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbility(0, numericUpDownAbComAP.Value);
             comboBoxAbComBattleCommand.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_CommandAbility(1, comboBoxAbComBattleCommand.SelectedIndex);
 
@@ -1569,6 +1590,8 @@ namespace Doomtrain
 
             #region Junction abilities
 
+            textBoxAbJunName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(4, textBoxAbJunName.Text);
+            textBoxAbJunDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(5, textBoxAbJunDes.Text);
             numericUpDownAbJunAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(0, numericUpDownAbJunAP.Value);
             checkBoxAbJunFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x01);
             checkBoxAbJunFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_JunctionAbilities(1, 0x02);
@@ -1594,6 +1617,8 @@ namespace Doomtrain
 
             #region Party abilities
 
+            textBoxAbPartyName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(2, textBoxAbPartyName.Text);
+            textBoxAbPartyDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(3, textBoxAbPartyDes.Text);
             numericUpDownAbPartyAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(0, numericUpDownAbPartyAP.Value);
             checkBoxAbPartyFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x01);
             checkBoxAbPartyFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_PartyAbilities(1, 0x02);
@@ -1608,6 +1633,8 @@ namespace Doomtrain
 
             #region GFs abilities
 
+            textBoxAbGFName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(4, textBoxAbGFName.Text);
+            textBoxAbGFDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(5, textBoxAbGFDes.Text);
             numericUpDownAbGFAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(0, numericUpDownAbGFAP.Value);
             checkBoxAbGFBoost.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(1, 0x01);
             comboBoxAbGFStatToIncrease.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_GFAbilities(2, GFAbilities_GetStat(comboBoxAbGFStatToIncrease.SelectedIndex));
@@ -1617,6 +1644,8 @@ namespace Doomtrain
 
             #region Characters abilities
 
+            textBoxAbCharName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(4, textBoxAbCharName.Text);
+            textBoxAbCharDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(5, textBoxAbCharDes.Text);
             numericUpDownAbCharAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(0, numericUpDownAbCharAP.Value);
             checkBoxAbCharFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x01);
             checkBoxAbCharFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_CharacterAbilities(1, 0x02);
@@ -1647,6 +1676,8 @@ namespace Doomtrain
 
             #region Menu abilities
 
+            textBoxAbMenuName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(4, textBoxAbMenuName.Text);
+            textBoxAbMenuDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(5, textBoxAbMenuName.Text);
             numericUpDownAbMenuAP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(0, numericUpDownAbMenuAP.Value);
             numericUpDownAbMenuIndex.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(1, numericUpDownAbMenuIndex.Value);
             numericUpDownAbMenuStartEntry.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_MenuAbilities(2, numericUpDownAbMenuStartEntry.Value);
@@ -1672,7 +1703,9 @@ namespace Doomtrain
             #endregion
 
             #region Rinoa commands
-            
+
+            textBoxBatComRinoaName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(3, textBoxBatComRinoaName.Text);
+            textBoxBatComRinoaDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(4, textBoxBatComRinoaDes.Text);
             checkBoxBatComRinoaFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x01);
             checkBoxBatComRinoaFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x02);
             checkBoxBatComRinoaFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_RinoaCommands(0, 0x04);

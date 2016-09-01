@@ -2586,9 +2586,6 @@ namespace Doomtrain
                 case 10:
                     //Name
                     return;
-                case 11:
-                    //Description
-                    return;
 
                 default:
                     return;
