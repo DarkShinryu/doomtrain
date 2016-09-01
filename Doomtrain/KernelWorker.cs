@@ -53,6 +53,9 @@ namespace Doomtrain
         public static int CombineDataOffset = -1;
         public static int OffsetToCombineSelected = -1;
 
+        public static int ItemsDataOffset = -1;
+        public static int OffsetToItemsSelected = -1;
+
         public static int BattleItemsDataOffset = -1;
         public static int OffsetToBattleItemsSelected = -1;
 
@@ -109,6 +112,7 @@ namespace Doomtrain
         public static DuelData GetSelectedDuelData;
         public static DuelParamsData GetSelectedDuelParamsData;
         public static CombineData GetSelectedCombineData;
+        public static ItemsData GetSelectedItemsData;
         public static BattleItemsData GetSelectedBattleItemsData;
         public static SlotArrayData GetSelectedSlotArrayData;
         public static SlotsSetsData GetSelectedSlotsSetsData;
@@ -703,7 +707,6 @@ namespace Doomtrain
         public struct CombineData
         {
             public string OffsetToName;
-            public string OffsetToDescription;
             public UInt16 MagicID;
             public byte AttackType;
             public byte AttackPower;
@@ -738,6 +741,12 @@ namespace Doomtrain
             public byte AttackParam;
             public byte HitCount;
             public Element Element;
+        }
+    
+        public struct ItemsData
+        {
+            public string OffsetToName;
+            public string OffsetToDescription;
         }
 
         public struct SlotArrayData
@@ -2688,6 +2697,28 @@ namespace Doomtrain
 
         #endregion
 
+        #region ITEMS
+
+        public static void UpdateVariable_Items(int index, object variable)
+        {
+            if (!mainForm._loaded || Kernel == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    //Name
+                    return;
+                case 1:
+                    //Description
+                    return;
+
+                default:
+                    return;
+            }
+        }
+
+        #endregion
+
         #region SLOT
 
         public static void UpdateVariable_SlotArray(int index, object variable)
@@ -3628,6 +3659,7 @@ namespace Doomtrain
             DuelParamsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Duel_ZellParam);
             CombineDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RinoaLimit2);
             BattleItemsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.BattleItems);
+            ItemsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.NonBattleItems);
             SlotArrayDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.SelphieSlotArray);
             SlotsSetsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.SelphieSlotsSets);
             DevourDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.Devour);
@@ -4630,6 +4662,22 @@ namespace Doomtrain
                                                 : b == (byte)Element.Earth
                                                     ? Element.Earth
                                                     : 0; //Error handler
+        }
+
+        #endregion
+
+        #region ITEMS
+
+        public static void ReadItems(int ItemsID_List, byte[] Kernel)
+        {
+            GetSelectedItemsData = new ItemsData();
+            int selectedItemsOffset = ItemsDataOffset + (ItemsID_List * 4);
+            OffsetToItemsSelected = selectedItemsOffset;
+
+            GetSelectedItemsData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Nonbattleitemnames) + (BitConverter.ToUInt16(Kernel, selectedItemsOffset))));
+            GetSelectedItemsData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Nonbattleitemnames) + (BitConverter.ToUInt16(Kernel, selectedItemsOffset + 2))));
         }
 
         #endregion

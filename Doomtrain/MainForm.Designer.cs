@@ -2091,8 +2091,6 @@
             this.labelGFAttackDes = new System.Windows.Forms.Label();
             this.textBoxGFAttackName = new System.Windows.Forms.TextBox();
             this.labelGFAttackName = new System.Windows.Forms.Label();
-            this.textBoxGFAttacksAttackDes = new System.Windows.Forms.TextBox();
-            this.labelGFAttacksAttackDes = new System.Windows.Forms.Label();
             this.textBoxGFAttacksAttackName = new System.Windows.Forms.TextBox();
             this.labelGFAttacksAttackName = new System.Windows.Forms.Label();
             this.groupBoxDevourGeneral = new System.Windows.Forms.GroupBox();
@@ -2640,7 +2638,7 @@
             this.labelGFAttacksMagicID.AutoSize = true;
             this.labelGFAttacksMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFAttacksMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAttacksMagicID.Location = new System.Drawing.Point(127, 152);
+            this.labelGFAttacksMagicID.Location = new System.Drawing.Point(127, 94);
             this.labelGFAttacksMagicID.Name = "labelGFAttacksMagicID";
             this.labelGFAttacksMagicID.Size = new System.Drawing.Size(61, 17);
             this.labelGFAttacksMagicID.TabIndex = 0;
@@ -2651,7 +2649,7 @@
             this.labelGFAttacksPower.AutoSize = true;
             this.labelGFAttacksPower.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFAttacksPower.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAttacksPower.Location = new System.Drawing.Point(75, 281);
+            this.labelGFAttacksPower.Location = new System.Drawing.Point(75, 223);
             this.labelGFAttacksPower.Name = "labelGFAttacksPower";
             this.labelGFAttacksPower.Size = new System.Drawing.Size(46, 17);
             this.labelGFAttacksPower.TabIndex = 0;
@@ -2662,7 +2660,7 @@
             this.labelGFAttacksPowerMod.AutoSize = true;
             this.labelGFAttacksPowerMod.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFAttacksPowerMod.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAttacksPowerMod.Location = new System.Drawing.Point(181, 281);
+            this.labelGFAttacksPowerMod.Location = new System.Drawing.Point(181, 223);
             this.labelGFAttacksPowerMod.Name = "labelGFAttacksPowerMod";
             this.labelGFAttacksPowerMod.Size = new System.Drawing.Size(78, 17);
             this.labelGFAttacksPowerMod.TabIndex = 0;
@@ -2673,7 +2671,7 @@
             this.labelGFAttacksLevelMod.AutoSize = true;
             this.labelGFAttacksLevelMod.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFAttacksLevelMod.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAttacksLevelMod.Location = new System.Drawing.Point(311, 281);
+            this.labelGFAttacksLevelMod.Location = new System.Drawing.Point(311, 223);
             this.labelGFAttacksLevelMod.Name = "labelGFAttacksLevelMod";
             this.labelGFAttacksLevelMod.Size = new System.Drawing.Size(70, 17);
             this.labelGFAttacksLevelMod.TabIndex = 0;
@@ -2683,7 +2681,7 @@
             // 
             this.comboBoxGFAttacksMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxGFAttacksMagicID.FormattingEnabled = true;
-            this.comboBoxGFAttacksMagicID.Location = new System.Drawing.Point(25, 172);
+            this.comboBoxGFAttacksMagicID.Location = new System.Drawing.Point(25, 114);
             this.comboBoxGFAttacksMagicID.Name = "comboBoxGFAttacksMagicID";
             this.comboBoxGFAttacksMagicID.Size = new System.Drawing.Size(265, 25);
             this.comboBoxGFAttacksMagicID.TabIndex = 2;
@@ -2693,7 +2691,7 @@
             this.labelGFAttacksElement.AutoSize = true;
             this.labelGFAttacksElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFAttacksElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAttacksElement.Location = new System.Drawing.Point(349, 152);
+            this.labelGFAttacksElement.Location = new System.Drawing.Point(349, 94);
             this.labelGFAttacksElement.Name = "labelGFAttacksElement";
             this.labelGFAttacksElement.Size = new System.Drawing.Size(57, 17);
             this.labelGFAttacksElement.TabIndex = 89;
@@ -3542,7 +3540,7 @@
             this.labelGFAttacksAttackType.AutoSize = true;
             this.labelGFAttacksAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelGFAttacksAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAttacksAttackType.Location = new System.Drawing.Point(116, 215);
+            this.labelGFAttacksAttackType.Location = new System.Drawing.Point(116, 157);
             this.labelGFAttacksAttackType.Name = "labelGFAttacksAttackType";
             this.labelGFAttacksAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelGFAttacksAttackType.TabIndex = 93;
@@ -5478,7 +5476,7 @@
             this.groupBoxGFAttacksFlags.Controls.Add(this.checkBoxGFAttacksFlag7);
             this.groupBoxGFAttacksFlags.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxGFAttacksFlags.ForeColor = System.Drawing.Color.Sienna;
-            this.groupBoxGFAttacksFlags.Location = new System.Drawing.Point(162, 648);
+            this.groupBoxGFAttacksFlags.Location = new System.Drawing.Point(162, 585);
             this.groupBoxGFAttacksFlags.Name = "groupBoxGFAttacksFlags";
             this.groupBoxGFAttacksFlags.Size = new System.Drawing.Size(458, 91);
             this.groupBoxGFAttacksFlags.TabIndex = 7;
@@ -5628,7 +5626,7 @@
             this.groupBoxGFAttacksStatusAttack.Controls.Add(this.labelGFAttacksStatusAttack);
             this.groupBoxGFAttacksStatusAttack.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxGFAttacksStatusAttack.ForeColor = System.Drawing.Color.DarkViolet;
-            this.groupBoxGFAttacksStatusAttack.Location = new System.Drawing.Point(162, 356);
+            this.groupBoxGFAttacksStatusAttack.Location = new System.Drawing.Point(162, 293);
             this.groupBoxGFAttacksStatusAttack.Name = "groupBoxGFAttacksStatusAttack";
             this.groupBoxGFAttacksStatusAttack.Size = new System.Drawing.Size(458, 286);
             this.groupBoxGFAttacksStatusAttack.TabIndex = 6;
@@ -6142,8 +6140,6 @@
             // groupBoxGFAttacksGeneral
             // 
             this.groupBoxGFAttacksGeneral.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBoxGFAttacksGeneral.Controls.Add(this.textBoxGFAttacksAttackDes);
-            this.groupBoxGFAttacksGeneral.Controls.Add(this.labelGFAttacksAttackDes);
             this.groupBoxGFAttacksGeneral.Controls.Add(this.textBoxGFAttacksAttackName);
             this.groupBoxGFAttacksGeneral.Controls.Add(this.labelGFAttacksAttackName);
             this.groupBoxGFAttacksGeneral.Controls.Add(this.labelGFAttacksAttackType);
@@ -6162,7 +6158,7 @@
             this.groupBoxGFAttacksGeneral.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBoxGFAttacksGeneral.Location = new System.Drawing.Point(162, 3);
             this.groupBoxGFAttacksGeneral.Name = "groupBoxGFAttacksGeneral";
-            this.groupBoxGFAttacksGeneral.Size = new System.Drawing.Size(458, 347);
+            this.groupBoxGFAttacksGeneral.Size = new System.Drawing.Size(458, 284);
             this.groupBoxGFAttacksGeneral.TabIndex = 5;
             this.groupBoxGFAttacksGeneral.TabStop = false;
             this.groupBoxGFAttacksGeneral.Text = "General";
@@ -6171,7 +6167,7 @@
             // 
             this.comboBoxGFAttacksAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxGFAttacksAttackType.FormattingEnabled = true;
-            this.comboBoxGFAttacksAttackType.Location = new System.Drawing.Point(25, 235);
+            this.comboBoxGFAttacksAttackType.Location = new System.Drawing.Point(25, 177);
             this.comboBoxGFAttacksAttackType.Name = "comboBoxGFAttacksAttackType";
             this.comboBoxGFAttacksAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxGFAttacksAttackType.TabIndex = 92;
@@ -6190,7 +6186,7 @@
             "Water",
             "Holy",
             "Non-Elemental"});
-            this.comboBoxGFAttacksElement.Location = new System.Drawing.Point(323, 172);
+            this.comboBoxGFAttacksElement.Location = new System.Drawing.Point(323, 114);
             this.comboBoxGFAttacksElement.Name = "comboBoxGFAttacksElement";
             this.comboBoxGFAttacksElement.Size = new System.Drawing.Size(110, 25);
             this.comboBoxGFAttacksElement.TabIndex = 6;
@@ -6198,7 +6194,7 @@
             // numericUpDownGFAttacksLevelMod
             // 
             this.numericUpDownGFAttacksLevelMod.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFAttacksLevelMod.Location = new System.Drawing.Point(322, 301);
+            this.numericUpDownGFAttacksLevelMod.Location = new System.Drawing.Point(322, 243);
             this.numericUpDownGFAttacksLevelMod.Maximum = new decimal(new int[] {
             255,
             0,
@@ -6211,7 +6207,7 @@
             // numericUpDownGFAttacksPowerMod
             // 
             this.numericUpDownGFAttacksPowerMod.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFAttacksPowerMod.Location = new System.Drawing.Point(196, 301);
+            this.numericUpDownGFAttacksPowerMod.Location = new System.Drawing.Point(196, 243);
             this.numericUpDownGFAttacksPowerMod.Maximum = new decimal(new int[] {
             255,
             0,
@@ -6224,7 +6220,7 @@
             // numericUpDownGFAttacksPower
             // 
             this.numericUpDownGFAttacksPower.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownGFAttacksPower.Location = new System.Drawing.Point(75, 301);
+            this.numericUpDownGFAttacksPower.Location = new System.Drawing.Point(75, 243);
             this.numericUpDownGFAttacksPower.Maximum = new decimal(new int[] {
             255,
             0,
@@ -22590,6 +22586,7 @@
             this.tabControlDuel.Size = new System.Drawing.Size(475, 740);
             this.tabControlDuel.TabIndex = 1;
             this.tabControlDuel.TabStop = false;
+            this.tabControlDuel.SelectedIndexChanged += new System.EventHandler(this.tabControlDuel_SelectedIndexChanged);
             // 
             // tabPageDuelGeneral
             // 
@@ -36884,26 +36881,6 @@
             this.labelGFAttackName.TabIndex = 151;
             this.labelGFAttackName.Text = "Attack Name";
             // 
-            // textBoxGFAttacksAttackDes
-            // 
-            this.textBoxGFAttacksAttackDes.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBoxGFAttacksAttackDes.Location = new System.Drawing.Point(75, 102);
-            this.textBoxGFAttacksAttackDes.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
-            this.textBoxGFAttacksAttackDes.Name = "textBoxGFAttacksAttackDes";
-            this.textBoxGFAttacksAttackDes.Size = new System.Drawing.Size(309, 25);
-            this.textBoxGFAttacksAttackDes.TabIndex = 156;
-            // 
-            // labelGFAttacksAttackDes
-            // 
-            this.labelGFAttacksAttackDes.AutoSize = true;
-            this.labelGFAttacksAttackDes.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelGFAttacksAttackDes.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelGFAttacksAttackDes.Location = new System.Drawing.Point(170, 82);
-            this.labelGFAttacksAttackDes.Name = "labelGFAttacksAttackDes";
-            this.labelGFAttacksAttackDes.Size = new System.Drawing.Size(119, 17);
-            this.labelGFAttacksAttackDes.TabIndex = 157;
-            this.labelGFAttacksAttackDes.Text = "Attack Description";
-            // 
             // textBoxGFAttacksAttackName
             // 
             this.textBoxGFAttacksAttackName.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -37202,6 +37179,7 @@
             this.listBoxItems.Name = "listBoxItems";
             this.listBoxItems.Size = new System.Drawing.Size(156, 769);
             this.listBoxItems.TabIndex = 114;
+            this.listBoxItems.SelectedIndexChanged += new System.EventHandler(this.listBoxItems_SelectedIndexChanged);
             // 
             // textBoxEnemyAttacksName
             // 
@@ -40040,8 +40018,6 @@
         private System.Windows.Forms.Label labelMagicDes;
         private System.Windows.Forms.TextBox textBoxMagicName;
         private System.Windows.Forms.Label labelMagicName;
-        private System.Windows.Forms.TextBox textBoxGFAttacksAttackDes;
-        private System.Windows.Forms.Label labelGFAttacksAttackDes;
         private System.Windows.Forms.TextBox textBoxGFAttacksAttackName;
         private System.Windows.Forms.Label labelGFAttacksAttackName;
         private System.Windows.Forms.TextBox textBoxGFAttackDes;

@@ -1309,6 +1309,13 @@ namespace Doomtrain
 
             #endregion
 
+            #region Items
+
+            textBoxItemsName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Items(0, textBoxItemsName.Text);
+            textBoxItemsDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Items(1, textBoxItemsDes.Text);
+
+            #endregion
+
             #region Slot array
 
             numericUpDownSlotsArray1.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_SlotArray(0, numericUpDownSlotsArray1.Value);
@@ -1722,6 +1729,7 @@ namespace Doomtrain
             #endregion
         }
 
+        //To disable tab stop, temporary code until i order them (maybe :P)
         private void DisableTabStop(Control ctrl)
         {
             ctrl.TabStop = false;
@@ -1729,7 +1737,16 @@ namespace Doomtrain
             {
                 DisableTabStop(item);
             }
-        } //To disable tab stop, temporary code until i order them
+        } 
+
+        //disable duel listbox when "move & timers" is selected
+        private void tabControlDuel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControlDuel.SelectedIndex == 2)
+                listBoxDuel.Enabled = false;
+            else
+                listBoxDuel.Enabled = true;
+        }
 
         #region OPEN, SAVE, TOOLBAR, TOOLTIPS FILE, ABOUT, CLOSE
 
@@ -1804,6 +1821,7 @@ namespace Doomtrain
                 listBoxBatComRinoa.SelectedIndex = 0;
                 listBoxShot.SelectedIndex = 0;
                 listBoxTempCharLB.SelectedIndex = 0;
+                listBoxItems.SelectedIndex = 0;
                 listBoxBattleItems.SelectedIndex = 0;
                 listBoxWeapons.SelectedIndex = 0;
                 listBoxAbChar.SelectedIndex = 0;
@@ -2782,6 +2800,8 @@ namespace Doomtrain
             KernelWorker.ReadMagic(listBoxMagic.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxMagicName, 2, KernelWorker.GetSelectedMagicData.OffsetSpellName);
+                ToolTip(textBoxMagicDes, 2, KernelWorker.GetSelectedMagicData.OffsetSpellDescription);
                 ToolTip(comboBoxMagicMagicID, 2, comboBoxMagicMagicID.Items[KernelWorker.GetSelectedMagicData.MagicID]);
                 ToolTip(numericUpDownMagicSpellPower,0,KernelWorker.GetSelectedMagicData.SpellPower);
                 ToolTip(comboBoxMagicAttackType,2,comboBoxMagicAttackType.Items[KernelWorker.GetSelectedMagicData.AttackType]);
@@ -2848,6 +2868,8 @@ namespace Doomtrain
             KernelWorker.ReadMagic(listBoxMagic.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxMagicName.Text = KernelWorker.GetSelectedMagicData.OffsetSpellName;
+                textBoxMagicDes.Text = KernelWorker.GetSelectedMagicData.OffsetSpellDescription;
                 comboBoxMagicMagicID.SelectedIndex = KernelWorker.GetSelectedMagicData.MagicID; //As in Vanilla FF8.exe: sub ESI, 1
                 numericUpDownMagicSpellPower.Value = KernelWorker.GetSelectedMagicData.SpellPower;
                 comboBoxMagicAttackType.SelectedIndex = KernelWorker.GetSelectedMagicData.AttackType;
@@ -3502,6 +3524,8 @@ namespace Doomtrain
             KernelWorker.ReadGF(listBoxGF.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxGFAttackName, 2, KernelWorker.GetSelectedGFData.OffsetGFAttackName);
+                ToolTip(textBoxGFAttackDes, 2, KernelWorker.GetSelectedGFData.OffsetGFAttackDescription);
                 ToolTip(comboBoxGFMagicID,2, comboBoxGFMagicID.Items[KernelWorker.GetSelectedGFData.GFMagicID]);
                 ToolTip(comboBoxGFAttackType, 2, comboBoxGFAttackType.Items[KernelWorker.GetSelectedGFData.GFAttackType]);
                 ToolTip(numericUpDownGFPower,0,KernelWorker.GetSelectedGFData.GFPower);
@@ -3587,6 +3611,8 @@ namespace Doomtrain
             KernelWorker.ReadGF(listBoxGF.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxGFAttackName.Text = KernelWorker.GetSelectedGFData.OffsetGFAttackName;
+                textBoxGFAttackDes.Text = KernelWorker.GetSelectedGFData.OffsetGFAttackDescription;
                 comboBoxGFMagicID.SelectedIndex = KernelWorker.GetSelectedGFData.GFMagicID;
                 comboBoxGFAttackType.SelectedIndex = KernelWorker.GetSelectedGFData.GFAttackType;
                 numericUpDownGFPower.Value = KernelWorker.GetSelectedGFData.GFPower;
@@ -3822,6 +3848,7 @@ namespace Doomtrain
             KernelWorker.ReadGFAttacks(listBoxGFAttacks.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxGFAttacksAttackName, 2, KernelWorker.GetSelectedGFAttacksData.OffsetGFAttacksName);
                 ToolTip(comboBoxGFAttacksMagicID,2, comboBoxGFAttacksMagicID.Items[KernelWorker.GetSelectedGFAttacksData.GFAttacksMagicID]);
                 ToolTip(comboBoxGFAttacksAttackType, 2, comboBoxGFAttacksAttackType.Items[KernelWorker.GetSelectedGFAttacksData.GFAttacksAttackType]);
                 ToolTip(numericUpDownGFAttacksPower,0,KernelWorker.GetSelectedGFAttacksData.GFAttacksPower);
@@ -3847,6 +3874,7 @@ namespace Doomtrain
             KernelWorker.ReadGFAttacks(listBoxGFAttacks.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxGFAttacksAttackName.Text = KernelWorker.GetSelectedGFAttacksData.OffsetGFAttacksName;
                 comboBoxGFAttacksMagicID.SelectedIndex = KernelWorker.GetSelectedGFAttacksData.GFAttacksMagicID;
                 comboBoxGFAttacksAttackType.SelectedIndex = KernelWorker.GetSelectedGFAttacksData.GFAttacksAttackType;
                 numericUpDownGFAttacksPower.Value = KernelWorker.GetSelectedGFAttacksData.GFAttacksPower;
@@ -3909,6 +3937,7 @@ namespace Doomtrain
             KernelWorker.ReadWeapons(listBoxWeapons.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxWeaponsName, 2, KernelWorker.GetSelectedWeaponsData.OffsetToName);
                 RenzokukenFinishersWorker(true);
                 toolTip1.SetToolTip(comboBoxWeaponsCharacterID, $"Default: {comboBoxWeaponsCharacterID.Items[KernelWorker.GetSelectedWeaponsData.CharacterID]}");
                 toolTip1.SetToolTip(comboBoxWeaponsAttackType, $"Default: {comboBoxWeaponsAttackType.Items[KernelWorker.GetSelectedWeaponsData.AttackType]}");
@@ -3928,6 +3957,7 @@ namespace Doomtrain
             try
             {
                 RenzokukenFinishersWorker(false);
+                textBoxWeaponsName.Text = KernelWorker.GetSelectedWeaponsData.OffsetToName;
                 comboBoxWeaponsCharacterID.SelectedIndex = KernelWorker.GetSelectedWeaponsData.CharacterID;
                 comboBoxWeaponsAttackType.SelectedIndex = KernelWorker.GetSelectedWeaponsData.AttackType;
                 numericUpDownWeaponsAttackPower.Value = KernelWorker.GetSelectedWeaponsData.AttackPower;
@@ -4210,6 +4240,7 @@ namespace Doomtrain
             KernelWorker.ReadEnemyAttacks(listBoxEnemyAttacks.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxEnemyAttacksName, 2, KernelWorker.GetSelectedEnemyAttacksData.OffsetToName);
                 ToolTip(comboBoxEnemyAttacksMagicID,2, comboBoxEnemyAttacksMagicID.Items[KernelWorker.GetSelectedEnemyAttacksData.MagicID]);
                 ToolTip(comboBoxEnemyAttacksAttackType,2, comboBoxEnemyAttacksAttackType.Items[KernelWorker.GetSelectedEnemyAttacksData.AttackType]);
                 ToolTip(numericUpDownEnemyAttacksCamera, 0, KernelWorker.GetSelectedEnemyAttacksData.CameraChange & 0x7F);
@@ -4236,6 +4267,7 @@ namespace Doomtrain
             KernelWorker.ReadEnemyAttacks(listBoxEnemyAttacks.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxEnemyAttacksName.Text = KernelWorker.GetSelectedEnemyAttacksData.OffsetToName;
                 comboBoxEnemyAttacksMagicID.SelectedIndex = KernelWorker.GetSelectedEnemyAttacksData.MagicID;
                 numericUpDownEnemyAttacksCamera.Value = KernelWorker.GetSelectedEnemyAttacksData.CameraChange & 0x7F;
                 checkBoxEnemyAttacksCamera.Checked = ((KernelWorker.GetSelectedEnemyAttacksData.CameraChange >> 7) & 1) == 1;
@@ -4777,6 +4809,8 @@ namespace Doomtrain
             KernelWorker.ReadStatPercentageAbilities(listBoxAbStats.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxAbStatsIncrementName, 2, KernelWorker.GetSelectedStatPercentageAbilitiesData.OffsetToName);
+                ToolTip(textBoxAbStatsIncrementDes, 2, KernelWorker.GetSelectedStatPercentageAbilitiesData.OffsetToDescription);
                 ToolTip(numericUpDownAbStatsAP,0x00,KernelWorker.GetSelectedStatPercentageAbilitiesData.AP);
                 ToolTip(comboBoxAbStatsStatToIncrease, 0x02,comboBoxAbStatsStatToIncrease.Items[KernelWorker.GetSelectedStatPercentageAbilitiesData.StatToincrease]);
                 ToolTip(trackBarAbStatsIncrementValue,0x00,KernelWorker.GetSelectedStatPercentageAbilitiesData.IncreasementValue);
@@ -4789,6 +4823,8 @@ namespace Doomtrain
             KernelWorker.ReadStatPercentageAbilities(listBoxAbStats.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxAbStatsIncrementName.Text = KernelWorker.GetSelectedStatPercentageAbilitiesData.OffsetToName;
+                textBoxAbStatsIncrementDes.Text = KernelWorker.GetSelectedStatPercentageAbilitiesData.OffsetToDescription;
                 numericUpDownAbStatsAP.Value = KernelWorker.GetSelectedStatPercentageAbilitiesData.AP;
                 comboBoxAbStatsStatToIncrease.SelectedIndex = KernelWorker.GetSelectedStatPercentageAbilitiesData.StatToincrease;
                 trackBarAbStatsIncrementValue.Value = KernelWorker.GetSelectedStatPercentageAbilitiesData.IncreasementValue;
@@ -5175,6 +5211,8 @@ namespace Doomtrain
             KernelWorker.ReadTempCharLB(listBoxTempCharLB.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxTempCharLBName, 2, KernelWorker.GetSelectedTempCharLBData.OffsetToName);
+                ToolTip(textBoxTempCharLBDes, 2, KernelWorker.GetSelectedTempCharLBData.OffsetToDescription);
                 toolTip1.SetToolTip(comboBoxTempCharLBMagicID, $"Default: {comboBoxTempCharLBMagicID.Items[KernelWorker.GetSelectedTempCharLBData.MagicID]}");
                 toolTip1.SetToolTip(comboBoxTempCharLBAttackType, $"Default: {comboBoxTempCharLBAttackType.Items[KernelWorker.GetSelectedTempCharLBData.AttackType]}");
                 toolTip1.SetToolTip(numericUpDownTempCharLBAttackPower, $"Default: {KernelWorker.GetSelectedTempCharLBData.AttackPower}");
@@ -5210,6 +5248,8 @@ namespace Doomtrain
             KernelWorker.ReadTempCharLB(listBoxTempCharLB.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxTempCharLBName.Text = KernelWorker.GetSelectedTempCharLBData.OffsetToName;
+                textBoxTempCharLBDes.Text = KernelWorker.GetSelectedTempCharLBData.OffsetToDescription;
                 comboBoxTempCharLBMagicID.SelectedIndex = KernelWorker.GetSelectedTempCharLBData.MagicID;
                 comboBoxTempCharLBAttackType.SelectedIndex = KernelWorker.GetSelectedTempCharLBData.AttackType;
                 numericUpDownTempCharLBAttackPower.Value = KernelWorker.GetSelectedTempCharLBData.AttackPower;
@@ -5392,6 +5432,8 @@ namespace Doomtrain
             KernelWorker.ReadShot(listBoxShot.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxShotName, 2, KernelWorker.GetSelectedShotData.OffsetToName);
+                ToolTip(textBoxShotDes, 2, KernelWorker.GetSelectedShotData.OffsetToDescription);
                 ToolTip(comboBoxShotMagicID, 0x02,comboBoxShotMagicID.Items[KernelWorker.GetSelectedShotData.MagicID]);
                 ToolTip(comboBoxShotAttackType, 0x02, comboBoxShotAttackType.Items[KernelWorker.GetSelectedShotData.AttackType]);
                 ToolTip(numericUpDownShotAttackPower,0,KernelWorker.GetSelectedShotData.AttackPower);
@@ -5427,6 +5469,8 @@ namespace Doomtrain
             KernelWorker.ReadShot(listBoxShot.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxShotName.Text = KernelWorker.GetSelectedShotData.OffsetToName;
+                textBoxShotDes.Text = KernelWorker.GetSelectedShotData.OffsetToDescription;
                 comboBoxShotMagicID.SelectedIndex = KernelWorker.GetSelectedShotData.MagicID;
                 comboBoxShotAttackType.SelectedIndex = KernelWorker.GetSelectedShotData.AttackType;
                 numericUpDownShotAttackPower.Value = KernelWorker.GetSelectedShotData.AttackPower;
@@ -5738,6 +5782,8 @@ namespace Doomtrain
             KernelWorker.ReadDuel(listBoxDuel.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxDuelName, 2, KernelWorker.GetSelectedDuelData.OffsetToName);
+                ToolTip(textBoxDuelDes, 2, KernelWorker.GetSelectedDuelData.OffsetToDescription);
                 ToolTip(comboBoxDuelMagicID,2, comboBoxDuelMagicID.Items[KernelWorker.GetSelectedDuelData.MagicID]);
                 ToolTip(comboBoxDuelAttackType,2, comboBoxDuelAttackType.Items[KernelWorker.GetSelectedDuelData.AttackType]);
                 ToolTip(numericUpDownDuelAttackPower,0, KernelWorker.GetSelectedDuelData.AttackPower);
@@ -5777,6 +5823,8 @@ namespace Doomtrain
             KernelWorker.ReadDuel(listBoxDuel.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxDuelName.Text = KernelWorker.GetSelectedDuelData.OffsetToName;
+                textBoxDuelDes.Text = KernelWorker.GetSelectedDuelData.OffsetToDescription;
                 comboBoxDuelMagicID.SelectedIndex = KernelWorker.GetSelectedDuelData.MagicID;
                 comboBoxDuelAttackType.SelectedIndex = KernelWorker.GetSelectedDuelData.AttackType;
                 numericUpDownDuelAttackPower.Value = KernelWorker.GetSelectedDuelData.AttackPower;
@@ -6201,6 +6249,7 @@ namespace Doomtrain
             KernelWorker.ReadCombine(listBoxCombine.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxCombineName, 2, KernelWorker.GetSelectedCombineData.OffsetToName);
                 ToolTip(comboBoxCombineMagicID,2, comboBoxCombineMagicID.Items[KernelWorker.GetSelectedCombineData.MagicID]);
                 ToolTip(comboBoxCombineAttackType,2, comboBoxCombineAttackType.Items[KernelWorker.GetSelectedCombineData.AttackType]);
                 ToolTip(numericUpDownCombineAttackPower,0, KernelWorker.GetSelectedCombineData.AttackPower);
@@ -6234,6 +6283,7 @@ namespace Doomtrain
             KernelWorker.ReadCombine(listBoxCombine.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxCombineName.Text = KernelWorker.GetSelectedCombineData.OffsetToName;
                 comboBoxCombineMagicID.SelectedIndex = KernelWorker.GetSelectedCombineData.MagicID;
                 comboBoxCombineAttackType.SelectedIndex = KernelWorker.GetSelectedCombineData.AttackType;
                 numericUpDownCombineAttackPower.Value = KernelWorker.GetSelectedCombineData.AttackPower;
@@ -6416,6 +6466,8 @@ namespace Doomtrain
             KernelWorker.ReadBattleItems(listBoxBattleItems.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxBattleItemsName, 2, KernelWorker.GetSelectedBattleItemsData.OffsetToName);
+                ToolTip(textBoxBattleItemsDes, 2, KernelWorker.GetSelectedBattleItemsData.OffsetToDescription);
                 ToolTip(comboBoxBattleItemsMagicID,2, comboBoxBattleItemsMagicID.Items[KernelWorker.GetSelectedBattleItemsData.MagicID]);
                 ToolTip(comboBoxBattleItemsAttackType,2, comboBoxBattleItemsAttackType.Items[KernelWorker.GetSelectedBattleItemsData.AttackType]);
                 ToolTip(numericUpDownBattleItemsAttackPower,0, KernelWorker.GetSelectedBattleItemsData.AttackPower);
@@ -6449,6 +6501,8 @@ namespace Doomtrain
             KernelWorker.ReadBattleItems(listBoxBattleItems.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxBattleItemsName.Text = KernelWorker.GetSelectedBattleItemsData.OffsetToName;
+                textBoxBattleItemsDes.Text = KernelWorker.GetSelectedBattleItemsData.OffsetToDescription;
                 comboBoxBattleItemsMagicID.SelectedIndex = KernelWorker.GetSelectedBattleItemsData.MagicID;
                 comboBoxBattleItemsAttackType.SelectedIndex = KernelWorker.GetSelectedBattleItemsData.AttackType;
                 numericUpDownBattleItemsAttackPower.Value = KernelWorker.GetSelectedBattleItemsData.AttackPower;
@@ -6473,6 +6527,40 @@ namespace Doomtrain
                 numericUpDownBattleItemsAttackParam.Value = KernelWorker.GetSelectedBattleItemsData.AttackParam;
                 numericUpDownBattleItemsHitCount.Value = KernelWorker.GetSelectedBattleItemsData.HitCount;
                 comboBoxBattleItemsElement.SelectedIndex = BattleItems_GetElement();
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        #endregion
+
+        #region Items
+
+        private void listBoxItems_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
+                return;
+
+            KernelWorker.ReadItems(listBoxItems.SelectedIndex, KernelWorker.BackupKernel);
+            try
+            {
+                ToolTip(textBoxItemsName, 2, KernelWorker.GetSelectedItemsData.OffsetToName);
+                ToolTip(textBoxItemsDes, 2, KernelWorker.GetSelectedItemsData.OffsetToDescription);
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+
+            KernelWorker.ReadBattleItems(listBoxBattleItems.SelectedIndex, KernelWorker.Kernel);
+            try
+            {
+                textBoxItemsName.Text = KernelWorker.GetSelectedItemsData.OffsetToName;
+                textBoxItemsDes.Text = KernelWorker.GetSelectedItemsData.OffsetToDescription;
             }
             catch (Exception Exception)
             {
@@ -6817,6 +6905,7 @@ namespace Doomtrain
             KernelWorker.ReadDevour(listBoxDevour.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxDevourDes, 2, KernelWorker.GetSelectedDevourData.OffsetToDescription);
                 ToolTip(comboBoxDevourHealDmg,2, comboBoxDevourHealDmg.Items[Devour_GetHealDmg()]);
                 ToolTip(checkBoxDevourHP1,1, (KernelWorker.GetSelectedDevourData.HpQuantity & 0x01) >= 1 ? true : false);
                 ToolTip(checkBoxDevourHP2,1, (KernelWorker.GetSelectedDevourData.HpQuantity & 0x02) >= 1 ? true : false);
@@ -6840,6 +6929,7 @@ namespace Doomtrain
             KernelWorker.ReadDevour(listBoxDevour.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxDevourDes.Text = KernelWorker.GetSelectedDevourData.OffsetToDescription;
                 comboBoxDevourHealDmg.SelectedIndex = Devour_GetHealDmg();
                 checkBoxDevourHP1.Checked = (KernelWorker.GetSelectedDevourData.HpQuantity & 0x01) >= 1 ? true : false;
                 checkBoxDevourHP2.Checked = (KernelWorker.GetSelectedDevourData.HpQuantity & 0x02) >= 1 ? true : false;
@@ -7222,6 +7312,8 @@ namespace Doomtrain
             KernelWorker.ReadCommandAbility(listBoxAbCom.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxAbComName, 2, KernelWorker.GetSelectedCommandAbilityData.OffsetToName);
+                ToolTip(textBoxAbComDes, 2, KernelWorker.GetSelectedCommandAbilityData.OffsetToDescription);
                 ToolTip(numericUpDownAbComAP,0,KernelWorker.GetSelectedCommandAbilityData.AP);
                 ToolTip(comboBoxAbComBattleCommand,2, comboBoxAbComBattleCommand.Items[KernelWorker.GetSelectedCommandAbilityData.BattleCommand]);
             }
@@ -7233,6 +7325,8 @@ namespace Doomtrain
             KernelWorker.ReadCommandAbility(listBoxAbCom.SelectedIndex,KernelWorker.Kernel);
             try
             {
+                textBoxAbComName.Text = KernelWorker.GetSelectedCommandAbilityData.OffsetToName;
+                textBoxAbComDes.Text = KernelWorker.GetSelectedCommandAbilityData.OffsetToDescription;
                 numericUpDownAbComAP.Value = KernelWorker.GetSelectedCommandAbilityData.AP;
                 comboBoxAbComBattleCommand.SelectedIndex = KernelWorker.GetSelectedCommandAbilityData.BattleCommand;               
             }
@@ -7256,6 +7350,8 @@ namespace Doomtrain
             KernelWorker.ReadJunctionAbilities(listBoxAbJun.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxAbJunName, 2, KernelWorker.GetSelectedJunctionAbilitiesData.OffsetToName);
+                ToolTip(textBoxAbJunDes, 2, KernelWorker.GetSelectedJunctionAbilitiesData.OffsetToDescription);
                 ToolTip(numericUpDownAbJunAP,0,KernelWorker.GetSelectedJunctionAbilitiesData.AP);
                 ToolTip(checkBoxAbJunFlag1,1,(KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x01) >= 1 ? true : false);
                 ToolTip(checkBoxAbJunFlag2, 1, (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x02) >= 1 ? true : false);
@@ -7285,6 +7381,8 @@ namespace Doomtrain
             KernelWorker.ReadJunctionAbilities(listBoxAbJun.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxAbJunName.Text = KernelWorker.GetSelectedJunctionAbilitiesData.OffsetToName;
+                textBoxAbJunDes.Text = KernelWorker.GetSelectedJunctionAbilitiesData.OffsetToDescription;
                 numericUpDownAbJunAP.Value = KernelWorker.GetSelectedJunctionAbilitiesData.AP;
                 checkBoxAbJunFlag1.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x01) >= 1 ? true : false;
                 checkBoxAbJunFlag2.Checked = (KernelWorker.GetSelectedJunctionAbilitiesData.Flag1 & 0x02) >= 1 ? true : false;
@@ -7326,6 +7424,8 @@ namespace Doomtrain
             KernelWorker.ReadPartyAbilities(listBoxAbParty.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxAbPartyName, 2, KernelWorker.GetSelectedPartyAbilitiesData.OffsetToName);
+                ToolTip(textBoxAbPartyDes, 2, KernelWorker.GetSelectedPartyAbilitiesData.OffsetToDescription);
                 ToolTip(numericUpDownAbPartyAP,0,KernelWorker.GetSelectedPartyAbilitiesData.AP);
                 ToolTip(checkBoxAbPartyFlag1,1,(KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x01) >= 1 ? true : false);
                 ToolTip(checkBoxAbPartyFlag2, 1, (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x02) >= 1 ? true : false);
@@ -7344,6 +7444,8 @@ namespace Doomtrain
             KernelWorker.ReadPartyAbilities(listBoxAbParty.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxAbPartyName.Text = KernelWorker.GetSelectedPartyAbilitiesData.OffsetToName;
+                textBoxAbPartyDes.Text = KernelWorker.GetSelectedPartyAbilitiesData.OffsetToDescription;
                 numericUpDownAbPartyAP.Value = KernelWorker.GetSelectedPartyAbilitiesData.AP;
                 checkBoxAbPartyFlag1.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x01) >= 1 ? true : false;
                 checkBoxAbPartyFlag2.Checked = (KernelWorker.GetSelectedPartyAbilitiesData.Flag & 0x02) >= 1 ? true : false;
@@ -7396,6 +7498,8 @@ namespace Doomtrain
             KernelWorker.ReadGFAbilities(listBoxAbGF.SelectedIndex,KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxAbGFName, 2, KernelWorker.GetSelectedGFAbilitiesData.OffsetToName);
+                ToolTip(textBoxAbGFDes, 2, KernelWorker.GetSelectedGFAbilitiesData.OffsetToDescription);
                 ToolTip(numericUpDownAbGFAP,0,KernelWorker.GetSelectedGFAbilitiesData.AP);
                 ToolTip(checkBoxAbGFBoost,1, (KernelWorker.GetSelectedGFAbilitiesData.EnableBoost & 0x01) >= 1 ? true : false);
                 ToolTip(comboBoxAbGFStatToIncrease,2,comboBoxAbGFStatToIncrease.Items[GFAbilities_GetStat()]);
@@ -7409,6 +7513,8 @@ namespace Doomtrain
             KernelWorker.ReadGFAbilities(listBoxAbGF.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxAbGFName.Text = KernelWorker.GetSelectedGFAbilitiesData.OffsetToName;
+                textBoxAbGFDes.Text = KernelWorker.GetSelectedGFAbilitiesData.OffsetToDescription;
                 numericUpDownAbGFAP.Value = KernelWorker.GetSelectedGFAbilitiesData.AP;
                 checkBoxAbGFBoost.Checked = (KernelWorker.GetSelectedGFAbilitiesData.EnableBoost & 0x01) >= 1 ? true : false;
                 comboBoxAbGFStatToIncrease.SelectedIndex = GFAbilities_GetStat();
@@ -7423,7 +7529,7 @@ namespace Doomtrain
 
         #endregion
 
-        #region Party abilities
+        #region Character abilities
 
         private void listBoxAbChar_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -7434,6 +7540,8 @@ namespace Doomtrain
             KernelWorker.ReadCharacterAbilities(listBoxAbChar.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxAbCharName, 2, KernelWorker.GetSelectedCharacterAbilitiesData.OffsetToName);
+                ToolTip(textBoxAbCharDes, 2, KernelWorker.GetSelectedCharacterAbilitiesData.OffsetToDescription);
                 ToolTip(numericUpDownAbCharAP,0, KernelWorker.GetSelectedCharacterAbilitiesData.AP);
                 ToolTip(checkBoxAbCharFlag1 ,1, (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x01) >= 1 ? true : false);
                 ToolTip(checkBoxAbCharFlag2, 1, (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x02) >= 1 ? true : false);
@@ -7468,6 +7576,8 @@ namespace Doomtrain
             KernelWorker.ReadCharacterAbilities(listBoxAbChar.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxAbCharName.Text = KernelWorker.GetSelectedCharacterAbilitiesData.OffsetToName;
+                textBoxAbCharDes.Text = KernelWorker.GetSelectedCharacterAbilitiesData.OffsetToDescription;
                 numericUpDownAbCharAP.Value = KernelWorker.GetSelectedCharacterAbilitiesData.AP;
                 checkBoxAbCharFlag1.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x01) >= 1 ? true : false;
                 checkBoxAbCharFlag2.Checked = (KernelWorker.GetSelectedCharacterAbilitiesData.Flag1 & 0x02) >= 1 ? true : false;
@@ -7516,6 +7626,8 @@ namespace Doomtrain
             KernelWorker.ReadMenuAbilities(listBoxAbMenu.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxAbMenuName, 2, KernelWorker.GetSelectedMenuAbilitiesData.OffsetToName);
+                ToolTip(textBoxAbMenuDes, 2, KernelWorker.GetSelectedMenuAbilitiesData.OffsetToDescription);
                 ToolTip(numericUpDownAbMenuAP,0,KernelWorker.GetSelectedMenuAbilitiesData.AP);
                 ToolTip(numericUpDownAbMenuIndex,0,KernelWorker.GetSelectedMenuAbilitiesData.Index);
                 ToolTip(numericUpDownAbMenuStartEntry,0,KernelWorker.GetSelectedMenuAbilitiesData.StartEntry);
@@ -7529,6 +7641,8 @@ namespace Doomtrain
             KernelWorker.ReadMenuAbilities(listBoxAbMenu.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxAbMenuName.Text = KernelWorker.GetSelectedMenuAbilitiesData.OffsetToName;
+                textBoxAbMenuDes.Text = KernelWorker.GetSelectedMenuAbilitiesData.OffsetToDescription;
                 numericUpDownAbMenuAP.Value = KernelWorker.GetSelectedMenuAbilitiesData.AP;
                 numericUpDownAbMenuIndex.Value = KernelWorker.GetSelectedMenuAbilitiesData.Index;
                 numericUpDownAbMenuStartEntry.Value = KernelWorker.GetSelectedMenuAbilitiesData.StartEntry;
@@ -7621,6 +7735,8 @@ namespace Doomtrain
             KernelWorker.ReadRinoaCommands(listBoxBatComRinoa.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxBatComRinoaName, 2, KernelWorker.GetSelectedRinoaCommandsData.OffsetToName);
+                ToolTip(textBoxBatComRinoaDes, 2, KernelWorker.GetSelectedRinoaCommandsData.OffsetToDescription);
                 ToolTip(checkBoxBatComRinoaFlag1, 1, (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x01) >= 1 ? true : false);
                 ToolTip(checkBoxBatComRinoaFlag2, 1, (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x02) >= 1 ? true : false);
                 ToolTip(checkBoxBatComRinoaFlag3, 1, (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x04) >= 1 ? true : false);
@@ -7639,7 +7755,9 @@ namespace Doomtrain
 
             KernelWorker.ReadRinoaCommands(listBoxBatComRinoa.SelectedIndex, KernelWorker.Kernel);
             try
-            {                
+            {
+                textBoxBatComRinoaName.Text = KernelWorker.GetSelectedRinoaCommandsData.OffsetToName;
+                textBoxBatComRinoaDes.Text = KernelWorker.GetSelectedRinoaCommandsData.OffsetToDescription;
                 checkBoxBatComRinoaFlag1.Checked = (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x01) >= 1 ? true : false;
                 checkBoxBatComRinoaFlag2.Checked = (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x02) >= 1 ? true : false;
                 checkBoxBatComRinoaFlag3.Checked = (KernelWorker.GetSelectedRinoaCommandsData.Flag & 0x04) >= 1 ? true : false;
@@ -7662,6 +7780,5 @@ namespace Doomtrain
         #endregion
 
         #endregion
-
     }
 }
