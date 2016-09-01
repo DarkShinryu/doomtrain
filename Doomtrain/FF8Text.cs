@@ -12,6 +12,7 @@ namespace Doomtrain
         {
             {0x00, "t"},
             {0x02, "\n"},
+            {0x03, "SPECIAL CHARACTER TODO"},
             {0x0E, "SPECIAL CHARACTER TODO"},
             {0x20, " "},
             {0x21, "0"},

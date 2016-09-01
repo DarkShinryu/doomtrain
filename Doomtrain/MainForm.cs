@@ -1725,68 +1725,6 @@ namespace Doomtrain
                     }
 
                     _existingFilename = openFileDialog.FileName;
-
-                    saveToolStripMenuItem.Enabled = true;
-                    saveAsToolStripMenuItem.Enabled = true;
-                    saveToolStripButton.Enabled = true;
-                    saveAsToolStripButton.Enabled = true;
-                    buttonCharEXPChart.Enabled = true;
-                    buttonCharHPChart.Enabled = true;
-                    buttonCharSTRChart.Enabled = true;
-                    buttonCharVITChart.Enabled = true;
-                    buttonCharMAGChart.Enabled = true;
-                    buttonCharSPRChart.Enabled = true;
-                    buttonCharSPDChart.Enabled = true;
-                    buttonCharLUCKChart.Enabled = true;
-                    buttonGFDamageChart.Enabled = true;
-                    buttonMagicDamageChart.Enabled = true;
-                    buttonEnemyAttacksDamageChart.Enabled = true;
-                    buttonCharEXPFormula.Enabled = true;
-                    buttonCharHPFormula.Enabled = true;
-                    buttonCharSTRFormula.Enabled = true;
-                    buttonCharVITFormula.Enabled = true;
-                    buttonCharMAGFormula.Enabled = true;
-                    buttonCharSPRFormula.Enabled = true;
-                    buttonCharSPDFormula.Enabled = true;
-                    buttonCharLUCKFormula.Enabled = true;
-                    buttonGFDamageFormula.Enabled = true;
-                    buttonMagicDamageFormula.Enabled = true;
-                    buttonEnemyAttacksDamageFormula.Enabled = true;
-
-                    listBoxCharacters.SelectedIndex = 0;
-                    listBoxRenzoFin.SelectedIndex = 0;
-                    listBoxBlueMagic.SelectedIndex = 0;
-                    listBoxDuel.SelectedIndex = 0;
-                    listBoxSlotsSets.SelectedIndex = 0;
-                    listBoxCombine.SelectedIndex = 0;
-                    listBoxBatComRinoa.SelectedIndex = 0;
-                    listBoxShot.SelectedIndex = 0;
-                    listBoxTempCharLB.SelectedIndex = 0;
-                    listBoxBattleItems.SelectedIndex = 0;
-                    listBoxWeapons.SelectedIndex = 0;
-                    listBoxAbChar.SelectedIndex = 0;
-                    listBoxAbStats.SelectedIndex = 0;
-                    listBoxAbJun.SelectedIndex = 0;
-                    listBoxAbCom.SelectedIndex = 0;
-                    listBoxAbComData.SelectedIndex = 0;
-                    listBoxAbGF.SelectedIndex = 0;
-                    listBoxAbParty.SelectedIndex = 0;
-                    listBoxAbMenu.SelectedIndex = 0;
-                    listBoxMagic.SelectedIndex = 0;
-                    listBoxGF.SelectedIndex = 0;
-                    listBoxGFAttacks.SelectedIndex = 0;
-                    listBoxDevour.SelectedIndex = 0;
-                    listBoxBatCom.SelectedIndex = 0;
-                    listBoxEnemyAttacks.SelectedIndex = 0;
-
-                    toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
-                    toolStripStatusLabelKernel.Text = Path.GetFileName(_existingFilename) + " loaded";
-                    statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
-                    toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
-                    await Task.Delay(3000);
-                    statusStrip1.BackColor = Color.Gray;
-                    toolStripStatusLabelStatus.BackColor = Color.Gray;
-                    toolStripStatusLabelStatus.Text = "Ready";
                 }
                 catch (Exception)
                 {
@@ -1794,6 +1732,68 @@ namespace Doomtrain
                         (String.Format("I cannot open the file {0}, maybe it's locked by another software?", Path.GetFileName(openFileDialog.FileName)), "Error Opening File",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 }
+
+                saveToolStripMenuItem.Enabled = true;
+                saveAsToolStripMenuItem.Enabled = true;
+                saveToolStripButton.Enabled = true;
+                saveAsToolStripButton.Enabled = true;
+                buttonCharEXPChart.Enabled = true;
+                buttonCharHPChart.Enabled = true;
+                buttonCharSTRChart.Enabled = true;
+                buttonCharVITChart.Enabled = true;
+                buttonCharMAGChart.Enabled = true;
+                buttonCharSPRChart.Enabled = true;
+                buttonCharSPDChart.Enabled = true;
+                buttonCharLUCKChart.Enabled = true;
+                buttonGFDamageChart.Enabled = true;
+                buttonMagicDamageChart.Enabled = true;
+                buttonEnemyAttacksDamageChart.Enabled = true;
+                buttonCharEXPFormula.Enabled = true;
+                buttonCharHPFormula.Enabled = true;
+                buttonCharSTRFormula.Enabled = true;
+                buttonCharVITFormula.Enabled = true;
+                buttonCharMAGFormula.Enabled = true;
+                buttonCharSPRFormula.Enabled = true;
+                buttonCharSPDFormula.Enabled = true;
+                buttonCharLUCKFormula.Enabled = true;
+                buttonGFDamageFormula.Enabled = true;
+                buttonMagicDamageFormula.Enabled = true;
+                buttonEnemyAttacksDamageFormula.Enabled = true;
+
+                listBoxCharacters.SelectedIndex = 0;
+                listBoxRenzoFin.SelectedIndex = 0;
+                listBoxBlueMagic.SelectedIndex = 0;
+                listBoxDuel.SelectedIndex = 0;
+                listBoxSlotsSets.SelectedIndex = 0;
+                listBoxCombine.SelectedIndex = 0;
+                listBoxBatComRinoa.SelectedIndex = 0;
+                listBoxShot.SelectedIndex = 0;
+                listBoxTempCharLB.SelectedIndex = 0;
+                listBoxBattleItems.SelectedIndex = 0;
+                listBoxWeapons.SelectedIndex = 0;
+                listBoxAbChar.SelectedIndex = 0;
+                listBoxAbStats.SelectedIndex = 0;
+                listBoxAbJun.SelectedIndex = 0;
+                listBoxAbCom.SelectedIndex = 0;
+                listBoxAbComData.SelectedIndex = 0;
+                listBoxAbGF.SelectedIndex = 0;
+                listBoxAbParty.SelectedIndex = 0;
+                listBoxAbMenu.SelectedIndex = 0;
+                listBoxMagic.SelectedIndex = 0;
+                listBoxGF.SelectedIndex = 0;
+                listBoxGFAttacks.SelectedIndex = 0;
+                listBoxDevour.SelectedIndex = 0;
+                listBoxBatCom.SelectedIndex = 0;
+                listBoxEnemyAttacks.SelectedIndex = 0;
+
+                toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
+                toolStripStatusLabelKernel.Text = Path.GetFileName(_existingFilename) + " loaded";
+                statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
+                await Task.Delay(3000);
+                statusStrip1.BackColor = Color.Gray;
+                toolStripStatusLabelStatus.BackColor = Color.Gray;
+                toolStripStatusLabelStatus.Text = "Ready";
             }
         }
 
@@ -1809,14 +1809,6 @@ namespace Doomtrain
                 try
                 {
                     File.WriteAllBytes(_existingFilename, KernelWorker.Kernel);
-
-                    statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
-                    toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
-                    toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " saved successfully";
-                    await Task.Delay(3000);
-                    statusStrip1.BackColor = Color.Gray;
-                    toolStripStatusLabelStatus.BackColor = Color.Gray;
-                    toolStripStatusLabelStatus.Text = "Ready";
                 }
                 catch (Exception)
                 {
@@ -1824,6 +1816,14 @@ namespace Doomtrain
                         (String.Format("I cannot save the file {0}, maybe it's locked by another software?", Path.GetFileName(_existingFilename)), "Error Saving File",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 }
+
+                statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
+                toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " saved successfully";
+                await Task.Delay(3000);
+                statusStrip1.BackColor = Color.Gray;
+                toolStripStatusLabelStatus.BackColor = Color.Gray;
+                toolStripStatusLabelStatus.Text = "Ready";
             }
         }
 
@@ -1841,14 +1841,6 @@ namespace Doomtrain
                     if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
                     {
                         File.WriteAllBytes(saveAsDialog.FileName, KernelWorker.Kernel);
-
-                        toolStripStatusLabelStatus.Text = Path.GetFileName(saveAsDialog.FileName) + " saved successfully";
-                        statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
-                        toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
-                        await Task.Delay(3000);
-                        statusStrip1.BackColor = Color.Gray;
-                        toolStripStatusLabelStatus.BackColor = Color.Gray;
-                        toolStripStatusLabelStatus.Text = "Ready";
                     }
                 }
                 catch (Exception)
@@ -1857,6 +1849,14 @@ namespace Doomtrain
                         (String.Format("I cannot save the file {0}, maybe it's locked by another software?", Path.GetFileName(saveAsDialog.FileName)), "Error Saving File",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 }
+
+                toolStripStatusLabelStatus.Text = Path.GetFileName(saveAsDialog.FileName) + " saved successfully";
+                statusStrip1.BackColor = Color.FromArgb(255, 237, 110, 0);
+                toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 237, 110, 0);
+                await Task.Delay(3000);
+                statusStrip1.BackColor = Color.Gray;
+                toolStripStatusLabelStatus.BackColor = Color.Gray;
+                toolStripStatusLabelStatus.Text = "Ready";
             }
         }
 
