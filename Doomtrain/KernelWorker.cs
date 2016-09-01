@@ -289,8 +289,8 @@ namespace Doomtrain
 
         public struct GFData
         {
-            public string OffsetGFName;
-            public string OffsetGFDescription;
+            public string OffsetGFAttackName;
+            public string OffsetGFAttackDescription;
             public UInt16 GFMagicID;
             public byte GFAttackType;
             public byte GFPower;
@@ -386,7 +386,7 @@ namespace Doomtrain
 
         public struct WeaponsData
         {
-            public string Name;
+            public string OffsetToName;
             public byte RenzokukenFinishers;
             public byte CharacterID;
             public byte AttackType;
@@ -400,7 +400,7 @@ namespace Doomtrain
 
         public struct CharactersData
         {
-            public string Name;
+            public string OffsetToName;
             public byte CrisisLevel;
             public byte Gender;
             public byte LimitID;
@@ -501,6 +501,8 @@ namespace Doomtrain
 
         public struct StatPercentageAbilitiesData
         {
+            public string OffsetToName;
+            public string OffsetToDescription;
             public byte StatToincrease;
             public byte IncreasementValue;
             public byte AP;
@@ -918,12 +920,16 @@ namespace Doomtrain
 
         public struct CommandAbilityData
         {
+            public string OffsetToName;
+            public string OffsetToDescription;
             public byte AP;
             public byte BattleCommand;
         }
 
         public struct JunctionAbilitiesData
         {
+            public string OffsetToName;
+            public string OffsetToDescription;
             public byte AP;
             public byte Flag1;
             public byte Flag2;
@@ -932,12 +938,16 @@ namespace Doomtrain
 
         public struct PartyAbilitiesData
         {
+            public string OffsetToName;
+            public string OffsetToDescription;
             public byte AP;
             public byte Flag;
         }
 
         public struct GFAbilitiesData
         {
+            public string OffsetToName;
+            public string OffsetToDescription;
             public byte AP;
             public byte EnableBoost;
             public StatToIncrease StatToIncrease;
@@ -947,6 +957,8 @@ namespace Doomtrain
 
         public struct CharacterAbilitiesData
         {
+            public string OffsetToName;
+            public string OffsetToDescription;
             public byte AP;
             public byte Flag1;
             public byte Flag2;
@@ -955,6 +967,8 @@ namespace Doomtrain
 
         public struct MenuAbilitiesData
         {
+            public string OffsetToName;
+            public string OffsetToDescription;
             public byte AP;
             public byte Index;
             public byte StartEntry;
@@ -963,13 +977,17 @@ namespace Doomtrain
 
         public struct BattleCommandsData
         {
+            public string OffsetToName;
+            public string OffsetToDescription;
             public byte AbilityID;
             public byte Flag;
             public byte Target;
         }
 
         public struct RinoaCommandsData
-        {            
+        {
+            public string OffsetToName;
+            public string OffsetToDescription;
             public byte Flag;
             public byte Target;
             public byte AbilityID;
@@ -1225,6 +1243,16 @@ namespace Doomtrain
                         Kernel[OffsetToMagicSelected + 11] ^= Convert.ToByte(variable); //flags
                         return;
                     }
+                case 45:
+                    {
+                        //name
+                        return;
+                    }
+                case 46:
+                    {
+                        //description
+                        return;
+                    }
 
                 default:
                     return;
@@ -1357,9 +1385,15 @@ namespace Doomtrain
                 case 29:
                         Kernel[OffsetToGFSelected + 24] = (byte)(Convert.ToInt16(variable) / 10); //GFEXP
                         return;
+                case 30:
+                    //Name
+                    return;
+                case 31:
+                    //Description
+                    return;
 
                 default:
-                        return;
+                    return;
             }
         }
         private static void GFStatusUpdator(byte StatusByteIndex, object variable)
@@ -1428,8 +1462,11 @@ namespace Doomtrain
                 case 9:
                     Kernel[OffsetToGFAttacksSelected + 8] ^= Convert.ToByte(variable); //flags
                     return;
-                default:
+                case 10:
+                    //Name
+                    return;
 
+                default:
                     return;
             }
         }
@@ -1491,6 +1528,9 @@ namespace Doomtrain
                     return;
                 case 8:
                     Kernel[OffsetToWeaponsSelected + 11] = Convert.ToByte(variable); //melee weapon?
+                    return;
+                case 9:
+                    //Name
                     return;
 
                 default:
@@ -1619,6 +1659,9 @@ namespace Doomtrain
                 case 33:
                     Kernel[OffsetToCharactersSelected + 35] = Convert.ToByte(variable); //luck 4
                     return;
+                case 34:
+                    //name
+                    return;
 
                 default:
                     return;
@@ -1665,8 +1708,11 @@ namespace Doomtrain
                 case 9:
                     EnemyAttacksStatusUpdator(arg0, variable); //Status
                     return;
+                case 10:
+                    //Name
+                    return;
 
-                    default:
+                default:
                     return;
             }
         }
@@ -1719,6 +1765,12 @@ namespace Doomtrain
                     return;
                 case 5:
                     Kernel[OffsetToBlueMagicSelected + 14] = Convert.ToByte(variable); //crit bonus
+                    return;
+                case 6:
+                    //name
+                    return;
+                case 7:
+                    //description
                     return;
 
                 default:
@@ -1849,6 +1901,12 @@ namespace Doomtrain
                 case 2:
                     Kernel[OffsetToStatPercentageAbilitiesSelected + 6] = Convert.ToByte(variable); //increasement value
                     return;
+                case 3:
+                    //Name
+                    return;
+                case 4:
+                    //Description
+                    return;
 
                 default:
                     return;
@@ -1894,6 +1952,12 @@ namespace Doomtrain
                     return;
                 case 9:
                     RenzoFinStatusUpdator(arg0, variable); //Status
+                    return;
+                case 10:
+                    //name
+                    return;
+                case 11:
+                    //description
                     return;
 
                 default:
@@ -1961,6 +2025,12 @@ namespace Doomtrain
                     return;
                 case 9:
                     TempCharLBStatusUpdator(arg0, variable); //Status
+                    return;
+                case 10:
+                    //Name
+                    return;
+                case 11:
+                    //Description
                     return;
 
                 default:
@@ -2035,8 +2105,14 @@ namespace Doomtrain
                 case 11:
                     ShotStatusUpdator(arg0, variable); //Status
                     return;
+                case 12:
+                    //Name
+                    return;
+                case 13:
+                    //Description
+                    return;
 
-                    default:
+                default:
                     return;
             }
         }
@@ -2121,6 +2197,12 @@ namespace Doomtrain
                     return;
                 case 15:
                     DuelStatusUpdator(arg0, variable); //Status
+                    return;
+                case 16:
+                    //Name
+                    return;
+                case 17:
+                    //Description
                     return;
 
                 default:
@@ -2501,6 +2583,12 @@ namespace Doomtrain
                 case 9:
                     CombineStatusUpdator(arg0, variable); //Status
                     return;
+                case 10:
+                    //Name
+                    return;
+                case 11:
+                    //Description
+                    return;
 
                 default:
                     return;
@@ -2567,6 +2655,12 @@ namespace Doomtrain
                     return;
                 case 9:
                     Kernel[OffsetToBattleItemsSelected + 23] = Convert.ToByte(variable); //Element
+                    return;
+                case 10:
+                    //Name
+                    return;
+                case 11:
+                    //Description
                     return;
 
                 default:
@@ -2876,6 +2970,9 @@ namespace Doomtrain
                 case 4:
                     Kernel[OffsetToDevourSelected + 11] = Convert.ToByte(variable); //Raised HP Quantity
                     return;
+                case 5:
+                    //Description
+                    return;
 
                 default:
                     return;
@@ -3176,6 +3273,13 @@ namespace Doomtrain
                 case 1:
                     Kernel[OffsetToCommandAbilitySelected + 5] = Convert.ToByte(variable); //Battle Command
                     return;
+                case 2:
+                    //Name
+                    return;
+                case 3:
+                    //Description
+                    return;
+
 
                 default:
                     return;
@@ -3204,6 +3308,12 @@ namespace Doomtrain
                 case 3:
                     Kernel[OffsetToJunctionAbilitiesSelected + 7] = (byte)(Kernel[OffsetToJunctionAbilitiesSelected + 7] ^ Convert.ToByte(variable)); // flag 3
                     return;
+                case 4:
+                    //Name
+                    return;
+                case 5:
+                    //Description
+                    return;
 
                 default:
                     return;
@@ -3225,6 +3335,12 @@ namespace Doomtrain
                     return;
                 case 1:
                     Kernel[OffsetToPartyAbilitiesSelected + 5] = (byte)(Kernel[OffsetToPartyAbilitiesSelected + 5] ^ Convert.ToByte(variable)); // flag
+                    return;
+                case 2:
+                    //Name
+                    return;
+                case 3:
+                    //Description
                     return;
 
                 default:
@@ -3254,6 +3370,12 @@ namespace Doomtrain
                 case 3:
                     Kernel[OffsetToGFAbilitiesSelected + 7] = Convert.ToByte(variable); //increasement value
                     return;
+                case 4:
+                    //Name
+                    return;
+                case 5:
+                    //Description
+                    return;
 
                 default:
                     return;
@@ -3281,6 +3403,12 @@ namespace Doomtrain
                     return;
                 case 3:
                     Kernel[OffsetToCharacterAbilitiesSelected + 7] = (byte)(Kernel[OffsetToCharacterAbilitiesSelected + 7] ^ Convert.ToByte(variable)); // flag 3
+                    return;
+                case 4:
+                    //Name
+                    return;
+                case 5:
+                    //Description
                     return;
 
                 default:
@@ -3310,6 +3438,12 @@ namespace Doomtrain
                 case 3:
                     Kernel[OffsetToMenuAbilitiesSelected + 7] = Convert.ToByte(variable); //End entry
                     return;
+                case 4:
+                    //Name
+                    return;
+                case 5:
+                    //Description
+                    return;
 
                 default:
                     return;
@@ -3335,6 +3469,12 @@ namespace Doomtrain
                 case 2:
                     Kernel[OffsetToBattleCommandsSelected + 6] = Convert.ToByte(variable); //Target
                     return;
+                case 3:
+                    //Name
+                    return;
+                case 4:
+                    //Description
+                    return;
 
                 default:
                     return;
@@ -3359,6 +3499,12 @@ namespace Doomtrain
                     return;
                 case 2:
                     Kernel[OffsetToRinoaCommandsSelected + 6] = Convert.ToByte(variable); //Ability ID
+                    return;
+                case 3:
+                    //Name
+                    return;
+                case 4:
+                    //Description
                     return;
 
                 default:
@@ -3506,24 +3652,18 @@ namespace Doomtrain
 
         public static void ReadMagic(int MagicID_List, byte[] Kernel)
         {
-
             GetSelectedMagicData = new MagicData();
-            MagicID_List++;
+            MagicID_List++;//skip dummy entry
 
             int selectedMagicOffset = MagicDataOffset + (MagicID_List * 60);
             OffsetToMagicSelected = selectedMagicOffset;
 
             GetSelectedMagicData.OffsetSpellName = FF8Text.BuildString((ushort)(
                     BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Magictext) + BitConverter.ToUInt16(Kernel, selectedMagicOffset)));
-            //TODO
-            // GetSelectedMagicData.OffsetSpellDescription = BuildString((ushort)(
-            //BitConverter.ToInt32(kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(kernel, SelectedMagicOffset += 2))));
-            //Console.WriteLine("DEBUG: {0}", GetSelectedMagicData.OffsetSpellName);
-            
-
-
-            GetSelectedMagicData.MagicID = BitConverter.ToUInt16(Kernel, selectedMagicOffset += 4);
-            selectedMagicOffset += 2;
+            GetSelectedMagicData.OffsetSpellDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Magictext) + (BitConverter.ToUInt16(Kernel, selectedMagicOffset + 2))));
+            GetSelectedMagicData.MagicID = BitConverter.ToUInt16(Kernel, selectedMagicOffset + 4);
+            selectedMagicOffset += 6;
             GetSelectedMagicData.Unknown1 = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.AttackType = Kernel[selectedMagicOffset++];
             GetSelectedMagicData.SpellPower = Kernel[selectedMagicOffset++];
@@ -3610,12 +3750,12 @@ namespace Doomtrain
             int selectedGfOffset = GFDataOffset + (GFID_List * 132);
             OffsetToGFSelected = selectedGfOffset;
 
+            GetSelectedGFData.OffsetGFAttackName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_JunctionableGF) + (BitConverter.ToUInt16(Kernel, selectedGfOffset))));
+            GetSelectedGFData.OffsetGFAttackDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_JunctionableGF) + (BitConverter.ToUInt16(Kernel, selectedGfOffset + 2))));
             GetSelectedGFData.GFMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfOffset + 4));
-
-            /* TEXT TEST*/GetSelectedGFData.OffsetGFName = FF8Text.BuildString((ushort)(
-                    BitConverter.ToInt32(Kernel, (int)KernelSections.Text_JunctionableGF) + (BitConverter.ToUInt16(Kernel, selectedGfOffset))));
-
-            selectedGfOffset += 4 + 2; //Name Offset + Description Offset + MagicID
+            selectedGfOffset += 6; //Name Offset + Description Offset + MagicID
             GetSelectedGFData.GFAttackType = Kernel[selectedGfOffset++];
             GetSelectedGFData.GFPower = Kernel[selectedGfOffset];
             selectedGfOffset += 3; //Unknown + GFPower
@@ -3772,6 +3912,8 @@ namespace Doomtrain
             int selectedGfAttacksOffset = GFAttacksDataOffset + (GFAttacksID_List * 20);
             OffsetToGFAttacksSelected = selectedGfAttacksOffset;
 
+            GetSelectedGFAttacksData.OffsetGFAttacksName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_NonjunctionableGFattackname) + (BitConverter.ToUInt16(Kernel, selectedGfAttacksOffset))));
             GetSelectedGFAttacksData.GFAttacksMagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedGfAttacksOffset + 2));
             selectedGfAttacksOffset += 4;
             GetSelectedGFAttacksData.GFAttacksAttackType = Kernel[selectedGfAttacksOffset++];
@@ -3821,6 +3963,8 @@ namespace Doomtrain
             int selectedWeaponsOffset = WeaponsDataOffset + (WeaponsID_List * 12);
             OffsetToWeaponsSelected = selectedWeaponsOffset;
 
+            GetSelectedWeaponsData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Weapontext) + (BitConverter.ToUInt16(Kernel, selectedWeaponsOffset))));
             GetSelectedWeaponsData.RenzokukenFinishers = Kernel[selectedWeaponsOffset + 2];
             selectedWeaponsOffset += 4;
             GetSelectedWeaponsData.CharacterID = Kernel[selectedWeaponsOffset++];
@@ -3843,8 +3987,10 @@ namespace Doomtrain
             int selectedCharactersOffset = CharactersDataOffset + (CharactersID_List * 36);
             OffsetToCharactersSelected = selectedCharactersOffset;
 
-            GetSelectedCharactersData.CrisisLevel = Kernel[selectedCharactersOffset + 2];
-            selectedCharactersOffset += 3;
+            GetSelectedCharactersData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Characternames) + (BitConverter.ToUInt16(Kernel, selectedCharactersOffset))));
+            selectedCharactersOffset += 2;
+            GetSelectedCharactersData.CrisisLevel = Kernel[selectedCharactersOffset++];
             GetSelectedCharactersData.Gender = Kernel[selectedCharactersOffset++];
             GetSelectedCharactersData.LimitID = Kernel[selectedCharactersOffset++];
             GetSelectedCharactersData.LimitParam = Kernel[selectedCharactersOffset++];
@@ -3891,6 +4037,8 @@ namespace Doomtrain
             int selectedEnemyAttacksOffset = EnemyAttacksDataOffset + (EnemyAttacksID_List * 20);
             OffsetToEnemyAttacksSelected = selectedEnemyAttacksOffset;
 
+            GetSelectedEnemyAttacksData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Enemyattacktext) + (BitConverter.ToUInt16(Kernel, selectedEnemyAttacksOffset))));
             GetSelectedEnemyAttacksData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedEnemyAttacksOffset + 2));
             selectedEnemyAttacksOffset += 4;
             GetSelectedEnemyAttacksData.CameraChange = Kernel[selectedEnemyAttacksOffset++];
@@ -3941,6 +4089,10 @@ namespace Doomtrain
             int selectedBlueMagicOffset = BlueMagicDataOffset + (BlueMagicID_List * 16);
             OffsetToBlueMagicSelected = selectedBlueMagicOffset;
 
+            GetSelectedBlueMagicData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Bluemagictext) + (BitConverter.ToUInt16(Kernel, selectedBlueMagicOffset))));
+            GetSelectedBlueMagicData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Bluemagictext) + (BitConverter.ToUInt16(Kernel, selectedBlueMagicOffset + 2))));
             GetSelectedBlueMagicData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedBlueMagicOffset + 4));
             selectedBlueMagicOffset += 7;
             GetSelectedBlueMagicData.AttackType = Kernel[selectedBlueMagicOffset++];
@@ -4025,6 +4177,12 @@ namespace Doomtrain
             int selectedStatPercentageAbilitiesOffset = StatPercentageAbilitiesDataOffset + (StatPercentageAbilitiesID_List * 8);
             OffsetToStatPercentageAbilitiesSelected = selectedStatPercentageAbilitiesOffset;
 
+            GetSelectedStatPercentageAbilitiesData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Statpercentageincreasingabilitiestext) + 
+                (BitConverter.ToUInt16(Kernel, selectedStatPercentageAbilitiesOffset))));
+            GetSelectedStatPercentageAbilitiesData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Statpercentageincreasingabilitiestext) + 
+                (BitConverter.ToUInt16(Kernel, selectedStatPercentageAbilitiesOffset + 2))));
             selectedStatPercentageAbilitiesOffset += 4;
             GetSelectedStatPercentageAbilitiesData.AP = Kernel[selectedStatPercentageAbilitiesOffset++];
             GetSelectedStatPercentageAbilitiesData.StatToincrease = Kernel[selectedStatPercentageAbilitiesOffset++];
@@ -4041,8 +4199,12 @@ namespace Doomtrain
             int selectedRenzoFinOffset = RenzoFinDataOffset + (RenzoFinID_List * 24);
             OffsetToRenzoFinSelected = selectedRenzoFinOffset;
 
+            GetSelectedRenzoFinData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Renzokukenfinisherstext) + (BitConverter.ToUInt16(Kernel, selectedRenzoFinOffset))));
+            GetSelectedRenzoFinData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Renzokukenfinisherstext) + (BitConverter.ToUInt16(Kernel, selectedRenzoFinOffset + 2))));
             GetSelectedRenzoFinData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedRenzoFinOffset + 4));
-            selectedRenzoFinOffset += 4 + 2;
+            selectedRenzoFinOffset += 6;
             GetSelectedRenzoFinData.AttackType = Kernel[selectedRenzoFinOffset++];
             selectedRenzoFinOffset += 1;
             GetSelectedRenzoFinData.AttackPower = Kernel[selectedRenzoFinOffset++];
@@ -4092,8 +4254,12 @@ namespace Doomtrain
             int selectedTempCharLBOffset = TempCharLBDataOffset + (TempCharLBID_List * 24);
             OffsetToTempCharLBSelected = selectedTempCharLBOffset;
 
+            GetSelectedTempCharLBData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Temporarycharacterlimitbreaktext) + (BitConverter.ToUInt16(Kernel, selectedTempCharLBOffset))));
+            GetSelectedTempCharLBData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Temporarycharacterlimitbreaktext) + (BitConverter.ToUInt16(Kernel, selectedTempCharLBOffset + 2))));
             GetSelectedTempCharLBData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedTempCharLBOffset + 4));
-            selectedTempCharLBOffset += 4 + 2;
+            selectedTempCharLBOffset += 6;
             GetSelectedTempCharLBData.AttackType = Kernel[selectedTempCharLBOffset++];
             GetSelectedTempCharLBData.AttackPower = Kernel[selectedTempCharLBOffset++];
             selectedTempCharLBOffset += 2;
@@ -4141,6 +4307,10 @@ namespace Doomtrain
             int selectedShotOffset = ShotDataOffset + (ShotID_List * 24);
             OffsetToShotSelected = selectedShotOffset;
 
+            GetSelectedShotData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Shottext) + (BitConverter.ToUInt16(Kernel, selectedShotOffset))));
+            GetSelectedShotData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Shottext) + (BitConverter.ToUInt16(Kernel, selectedShotOffset + 2))));
             GetSelectedShotData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedShotOffset + 4));
             selectedShotOffset += 4 + 2;
             GetSelectedShotData.AttackType = Kernel[selectedShotOffset++];
@@ -4192,6 +4362,10 @@ namespace Doomtrain
             int selectedDuelOffset = DuelDataOffset + (DuelID_List * 32);
             OffsetToDuelSelected = selectedDuelOffset;
 
+            GetSelectedDuelData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Dueltext) + (BitConverter.ToUInt16(Kernel, selectedDuelOffset))));
+            GetSelectedDuelData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Dueltext) + (BitConverter.ToUInt16(Kernel, selectedDuelOffset + 2))));
             GetSelectedDuelData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedDuelOffset + 4));
             selectedDuelOffset += 4 + 2;
             GetSelectedDuelData.AttackType = Kernel[selectedDuelOffset++];
@@ -4362,8 +4536,10 @@ namespace Doomtrain
             int selectedCombineOffset = CombineDataOffset + (CombineID_List * 20);
             OffsetToCombineSelected = selectedCombineOffset;
 
+            GetSelectedCombineData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Rinoalimitbreaktext2) + (BitConverter.ToUInt16(Kernel, selectedCombineOffset))));
             GetSelectedCombineData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedCombineOffset + 2));
-            selectedCombineOffset += 2 + 2;
+            selectedCombineOffset += 4;
             GetSelectedCombineData.AttackType = Kernel[selectedCombineOffset++];
             GetSelectedCombineData.AttackPower = Kernel[selectedCombineOffset++];
             GetSelectedCombineData.AttackFlags = Kernel[selectedCombineOffset++];
@@ -4413,8 +4589,12 @@ namespace Doomtrain
             int selectedBattleItemsOffset = BattleItemsDataOffset + (BattleItemsID_List * 24);
             OffsetToBattleItemsSelected = selectedBattleItemsOffset;
 
+            GetSelectedBattleItemsData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Battleitemnames) + (BitConverter.ToUInt16(Kernel, selectedBattleItemsOffset))));
+            GetSelectedBattleItemsData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Battleitemnames) + (BitConverter.ToUInt16(Kernel, selectedBattleItemsOffset + 2))));
             GetSelectedBattleItemsData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedBattleItemsOffset + 4));
-            selectedBattleItemsOffset += 4 + 2;
+            selectedBattleItemsOffset += 6;
             GetSelectedBattleItemsData.AttackType = Kernel[selectedBattleItemsOffset++];
             GetSelectedBattleItemsData.AttackPower = Kernel[selectedBattleItemsOffset++];
             selectedBattleItemsOffset += 1;
@@ -4561,6 +4741,8 @@ namespace Doomtrain
             int selectedDevourOffset = DevourDataOffset + (DevourID_List * 12);
             OffsetToDevourSelected = selectedDevourOffset;
 
+            GetSelectedDevourData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Devourtext) + (BitConverter.ToUInt16(Kernel, selectedDevourOffset))));
             selectedDevourOffset += 2;
             byte b = Kernel[selectedDevourOffset++];
             GetSelectedDevourData.HealDmg =
@@ -4708,6 +4890,10 @@ namespace Doomtrain
             int selectedCommandAbilityDataOffset = CommandAbilityDataOffset + (CommandAbilityID_List * 8);
             OffsetToCommandAbilitySelected = selectedCommandAbilityDataOffset;
 
+            GetSelectedCommandAbilityData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Commandabilitiestext) + (BitConverter.ToUInt16(Kernel, selectedCommandAbilityDataOffset))));
+            GetSelectedBlueMagicData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Commandabilitiestext) + (BitConverter.ToUInt16(Kernel, selectedCommandAbilityDataOffset + 2))));
             selectedCommandAbilityDataOffset += 4;
             GetSelectedCommandAbilityData.AP = Kernel[selectedCommandAbilityDataOffset++];
             GetSelectedCommandAbilityData.BattleCommand = Kernel[selectedCommandAbilityDataOffset++];
@@ -4724,6 +4910,10 @@ namespace Doomtrain
             int selectedJunctionAbilitiesOffset = JunctionAbilitiesDataOffset + (JunctionAbilitiesID_List * 8);
             OffsetToJunctionAbilitiesSelected = selectedJunctionAbilitiesOffset;
 
+            GetSelectedJunctionAbilitiesData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Junctionabilitiestext) + (BitConverter.ToUInt16(Kernel, selectedJunctionAbilitiesOffset))));
+            GetSelectedJunctionAbilitiesData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Junctionabilitiestext) + (BitConverter.ToUInt16(Kernel, selectedJunctionAbilitiesOffset + 2))));
             selectedJunctionAbilitiesOffset += 4;
             GetSelectedJunctionAbilitiesData.AP = Kernel[selectedJunctionAbilitiesOffset++];
             GetSelectedJunctionAbilitiesData.Flag1 = Kernel[selectedJunctionAbilitiesOffset++];
@@ -4741,6 +4931,10 @@ namespace Doomtrain
             int selectedPartyAbilitiesOffset = PartyAbilitiesDataOffset + (PartyAbilitiesID_List * 8);
             OffsetToPartyAbilitiesSelected = selectedPartyAbilitiesOffset;
 
+            GetSelectedPartyAbilitiesData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Partyabilitytext) + (BitConverter.ToUInt16(Kernel, selectedPartyAbilitiesOffset))));
+            GetSelectedPartyAbilitiesData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Partyabilitytext) + (BitConverter.ToUInt16(Kernel, selectedPartyAbilitiesOffset + 2))));
             selectedPartyAbilitiesOffset += 4;
             GetSelectedPartyAbilitiesData.AP = Kernel[selectedPartyAbilitiesOffset++];
             GetSelectedPartyAbilitiesData.Flag = Kernel[selectedPartyAbilitiesOffset++];
@@ -4756,6 +4950,10 @@ namespace Doomtrain
             int selectedGFAbilitiesOffset = GFAbilitiesDataOffset + (GFAbilitiesID_List * 8);
             OffsetToGFAbilitiesSelected = selectedGFAbilitiesOffset;
 
+            GetSelectedGFAbilitiesData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_GFabilitytext) + (BitConverter.ToUInt16(Kernel, selectedGFAbilitiesOffset))));
+            GetSelectedGFAbilitiesData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_GFabilitytext) + (BitConverter.ToUInt16(Kernel, selectedGFAbilitiesOffset + 2))));
             selectedGFAbilitiesOffset += 4;
             GetSelectedGFAbilitiesData.AP = Kernel[selectedGFAbilitiesOffset++];
             GetSelectedGFAbilitiesData.EnableBoost = Kernel[selectedGFAbilitiesOffset++];
@@ -4781,6 +4979,10 @@ namespace Doomtrain
             int selectedCharacterAbilitiesOffset = CharacterAbilitiesDataOffset + (CharacterAbilitiesID_List * 8);
             OffsetToCharacterAbilitiesSelected = selectedCharacterAbilitiesOffset;
 
+            GetSelectedCharacterAbilitiesData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Characterabilitytext) + (BitConverter.ToUInt16(Kernel, selectedCharacterAbilitiesOffset))));
+            GetSelectedCharacterAbilitiesData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Characterabilitytext) + (BitConverter.ToUInt16(Kernel, selectedCharacterAbilitiesOffset + 2))));
             selectedCharacterAbilitiesOffset += 4;
             GetSelectedCharacterAbilitiesData.AP = Kernel[selectedCharacterAbilitiesOffset++];
             GetSelectedCharacterAbilitiesData.Flag1 = Kernel[selectedCharacterAbilitiesOffset++];
@@ -4798,6 +5000,10 @@ namespace Doomtrain
             int selectedMenuAbilitiesOffset = MenuAbilitiesDataOffset + (MenuAbilitiesID_List * 8);
             OffsetToMenuAbilitiesSelected = selectedMenuAbilitiesOffset;
 
+            GetSelectedMenuAbilitiesData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Menuabilitytext) + (BitConverter.ToUInt16(Kernel, selectedMenuAbilitiesOffset))));
+            GetSelectedMenuAbilitiesData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Menuabilitytext) + (BitConverter.ToUInt16(Kernel, selectedMenuAbilitiesOffset + 2))));
             selectedMenuAbilitiesOffset += 4;
             GetSelectedMenuAbilitiesData.AP = Kernel[selectedMenuAbilitiesOffset++];
             GetSelectedMenuAbilitiesData.Index = Kernel[selectedMenuAbilitiesOffset++];
@@ -4816,6 +5022,10 @@ namespace Doomtrain
             int selectedBattleCommandsOffset = BattleCommandsDataOffset + (BattleCommandsID_List * 8);
             OffsetToBattleCommandsSelected = selectedBattleCommandsOffset;
 
+            GetSelectedBattleCommandsData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_BattleCommand) + (BitConverter.ToUInt16(Kernel, selectedBattleCommandsOffset))));
+            GetSelectedBattleCommandsData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_BattleCommand) + (BitConverter.ToUInt16(Kernel, selectedBattleCommandsOffset + 2))));
             selectedBattleCommandsOffset += 4;
             GetSelectedBattleCommandsData.AbilityID = Kernel[selectedBattleCommandsOffset++];
             GetSelectedBattleCommandsData.Flag = Kernel[selectedBattleCommandsOffset++];
@@ -4832,6 +5042,10 @@ namespace Doomtrain
             int selectedRinoaCommandsOffset = RinoaCommandsDataOffset + (RinoaCommandsID_List * 8);
             OffsetToRinoaCommandsSelected = selectedRinoaCommandsOffset;
 
+            GetSelectedRinoaCommandsData.OffsetToName = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Rinoalimitbreaktext) + (BitConverter.ToUInt16(Kernel, selectedRinoaCommandsOffset))));
+            GetSelectedRinoaCommandsData.OffsetToDescription = FF8Text.BuildString((ushort)(
+                BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Rinoalimitbreaktext) + (BitConverter.ToUInt16(Kernel, selectedRinoaCommandsOffset + 2))));
             selectedRinoaCommandsOffset += 4;
             GetSelectedRinoaCommandsData.Flag = Kernel[selectedRinoaCommandsOffset++];
             GetSelectedRinoaCommandsData.Target = Kernel[selectedRinoaCommandsOffset++];

@@ -104,8 +104,6 @@ namespace Doomtrain
             buttonMagicDamageFormula.Enabled = false;
             buttonEnemyAttacksDamageFormula.Enabled = false;
 
-
-
             //this is for enabling the switching of listboxes in the ability section
             listBoxAbStats.Visible = false;
             listBoxAbJun.Visible = false;
@@ -128,7 +126,6 @@ namespace Doomtrain
                 deleteTooltipsToolStripMenuItem.Enabled = true;
                 deleteTooltipsToolStripButton.Enabled = true;
             }
-
 
             #region EVENT HANDLERS
 
@@ -470,6 +467,7 @@ namespace Doomtrain
 
             #region Characters
 
+            textBoxCharName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(34, textBoxCharName.Text);
             numericUpDownCharCrisisLevelHP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(0, numericUpDownCharCrisisLevelHP.Value);
             comboBoxCharGender.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(1, comboBoxCharGender.SelectedIndex);
             numericUpDownCharLimitID.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_Characters(2, numericUpDownCharLimitID.Value);
@@ -570,6 +568,9 @@ namespace Doomtrain
 
             #region Blue magic
 
+            textBoxBlueMagicName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(6, textBoxBlueMagicName.Text);
+            textBoxBlueMagicDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(7, textBoxBlueMagicDes.Text);
+            numericUpDownCharCrisisLevelHP.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(0, numericUpDownCharCrisisLevelHP.Value);
             comboBoxBlueMagicMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(0, comboBoxBlueMagicMagicID.SelectedIndex);
             comboBoxBlueMagicAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(1, comboBoxBlueMagicAttackType.SelectedIndex);
             checkBoxBlueMagicFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x01);
@@ -772,6 +773,8 @@ namespace Doomtrain
 
             #region Renzokuken finishers
 
+            textBoxRenzoFinName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(10, textBoxRenzoFinName.Text);
+            textBoxRenzoFinDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(11, textBoxRenzoFinDes.Text);
             comboBoxRenzoFinMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(0, comboBoxRenzoFinMagicID.SelectedIndex);
             comboBoxRenzoFinAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(1, comboBoxRenzoFinAttackType.SelectedIndex);
             numericUpDownRenzoFinAttackPower.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_RenzoFin(2, numericUpDownRenzoFinAttackPower.Value);
@@ -3913,6 +3916,19 @@ namespace Doomtrain
 
         private void listBoxCharacters_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (listBoxCharacters.SelectedIndex == 0 || listBoxCharacters.SelectedIndex == 4)
+            {
+                labelCharName.Text = "The name is in FF8.exe";
+                labelCharName.Location = new Point(102, 26);
+                textBoxCharName.Enabled = false;
+            }
+            else
+            {
+                labelCharName.Text = "Name";
+                labelCharName.Location = new Point(149, 26);
+                textBoxCharName.Enabled = true;
+            }
+
             _loaded = false;
             if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
@@ -3920,6 +3936,7 @@ namespace Doomtrain
             KernelWorker.ReadCharacters(listBoxCharacters.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                toolTip1.SetToolTip(textBoxCharName, $"Default: {KernelWorker.GetSelectedCharactersData.OffsetToName}");
                 toolTip1.SetToolTip(numericUpDownCharCrisisLevelHP, $"Default: {KernelWorker.GetSelectedCharactersData.CrisisLevel}");
                 toolTip1.SetToolTip(comboBoxCharGender, $"Default: {comboBoxCharGender.Items[KernelWorker.GetSelectedCharactersData.Gender]}");
                 toolTip1.SetToolTip(numericUpDownCharLimitID, $"Default: {KernelWorker.GetSelectedCharactersData.LimitID}");
@@ -3963,6 +3980,7 @@ namespace Doomtrain
             KernelWorker.ReadCharacters(listBoxCharacters.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxCharName.Text = KernelWorker.GetSelectedCharactersData.OffsetToName;
                 numericUpDownCharCrisisLevelHP.Value = KernelWorker.GetSelectedCharactersData.CrisisLevel;
                 comboBoxCharGender.SelectedIndex = KernelWorker.GetSelectedCharactersData.Gender;
                 numericUpDownCharLimitID.Value = KernelWorker.GetSelectedCharactersData.LimitID;
@@ -4635,6 +4653,8 @@ namespace Doomtrain
             KernelWorker.ReadBlueMagicParam(listBoxBlueMagic.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxBlueMagicName, 2, KernelWorker.GetSelectedBlueMagicData.OffsetToName);
+                ToolTip(textBoxBlueMagicDes, 2, KernelWorker.GetSelectedBlueMagicData.OffsetToDescription);
                 ToolTip(comboBoxBlueMagicMagicID,2, comboBoxBlueMagicMagicID.Items[KernelWorker.GetSelectedBlueMagicData.MagicID]);
                 ToolTip(comboBoxBlueMagicAttackType,2, comboBoxBlueMagicAttackType.Items[KernelWorker.GetSelectedBlueMagicData.AttackType]);
                 ToolTip(checkBoxBlueMagicFlag1,1, (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x01) >= 1 ? true : false);
@@ -4672,6 +4692,8 @@ namespace Doomtrain
             KernelWorker.ReadBlueMagicParam(listBoxBlueMagic.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxBlueMagicName.Text = KernelWorker.GetSelectedBlueMagicData.OffsetToName;
+                textBoxBlueMagicDes.Text = KernelWorker.GetSelectedBlueMagicData.OffsetToDescription;
                 comboBoxBlueMagicMagicID.SelectedIndex = KernelWorker.GetSelectedBlueMagicData.MagicID;
                 comboBoxBlueMagicAttackType.SelectedIndex = KernelWorker.GetSelectedBlueMagicData.AttackType;
                 checkBoxBlueMagicFlag1.Checked = (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x01) >= 1 ? true : false;
@@ -4893,10 +4915,13 @@ namespace Doomtrain
             KernelWorker.ReadRenzoFin(listBoxRenzoFin.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
-                ToolTip(comboBoxRenzoFinMagicID,2,comboBoxRenzoFinMagicID.Items[ KernelWorker.GetSelectedRenzoFinData.MagicID]);
+                ToolTip(textBoxRenzoFinName, 2, KernelWorker.GetSelectedRenzoFinData.OffsetToName);
+                ToolTip(textBoxRenzoFinDes, 2, KernelWorker.GetSelectedRenzoFinData.OffsetToDescription);
+                toolTip1.SetToolTip(textBoxCharName, $"Default: {KernelWorker.GetSelectedCharactersData.OffsetToName}");
+                ToolTip(comboBoxRenzoFinMagicID, 2, comboBoxRenzoFinMagicID.Items[ KernelWorker.GetSelectedRenzoFinData.MagicID]);
                 ToolTip(comboBoxRenzoFinAttackType, 2, comboBoxRenzoFinAttackType.Items[KernelWorker.GetSelectedRenzoFinData.AttackType]);
-                ToolTip(numericUpDownRenzoFinAttackPower,0,KernelWorker.GetSelectedRenzoFinData.AttackPower);
-                ToolTip(checkBoxRenzoFinTarget1,1,(KernelWorker.GetSelectedRenzoFinData.Target & 0x01) >= 1 ? true : false);
+                ToolTip(numericUpDownRenzoFinAttackPower, 0, KernelWorker.GetSelectedRenzoFinData.AttackPower);
+                ToolTip(checkBoxRenzoFinTarget1, 1, (KernelWorker.GetSelectedRenzoFinData.Target & 0x01) >= 1 ? true : false);
                 ToolTip(checkBoxRenzoFinTarget2, 1, (KernelWorker.GetSelectedRenzoFinData.Target & 0x02) >= 1 ? true : false);
                 ToolTip(checkBoxRenzoFinTarget3, 1, (KernelWorker.GetSelectedRenzoFinData.Target & 0x04) >= 1 ? true : false);
                 ToolTip(checkBoxRenzoFinTarget4, 1, (KernelWorker.GetSelectedRenzoFinData.Target & 0x08) >= 1 ? true : false);
@@ -4912,10 +4937,10 @@ namespace Doomtrain
                 ToolTip(checkBoxRenzoFinFlag6, 1, (KernelWorker.GetSelectedRenzoFinData.AttackFlags & 0x20) >= 1 ? true : false);
                 ToolTip(checkBoxRenzoFinFlag7, 1, (KernelWorker.GetSelectedRenzoFinData.AttackFlags & 0x40) >= 1 ? true : false);
                 ToolTip(checkBoxRenzoFinFlag8, 1, (KernelWorker.GetSelectedRenzoFinData.AttackFlags & 0x80) >= 1 ? true : false);
-                ToolTip(numericUpDownRenzoFinHitCount,0,KernelWorker.GetSelectedRenzoFinData.HitCount);
-                ToolTip(comboBoxRenzoFinElement,2, comboBoxRenzoFinElement.Items[RenzoFin_GetElement()]);
-                ToolTip(numericUpDownRenzoFinElementPerc,0,KernelWorker.GetSelectedRenzoFinData.ElementPerc);
-                ToolTip(numericUpDownRenzoFinStatusAttack,0,KernelWorker.GetSelectedRenzoFinData.StatusAttack);
+                ToolTip(numericUpDownRenzoFinHitCount, 0, KernelWorker.GetSelectedRenzoFinData.HitCount);
+                ToolTip(comboBoxRenzoFinElement, 2, comboBoxRenzoFinElement.Items[RenzoFin_GetElement()]);
+                ToolTip(numericUpDownRenzoFinElementPerc, 0, KernelWorker.GetSelectedRenzoFinData.ElementPerc);
+                ToolTip(numericUpDownRenzoFinStatusAttack, 0, KernelWorker.GetSelectedRenzoFinData.StatusAttack);
                 RenzoFinStatusWorker(true);
             }
 
@@ -4926,6 +4951,8 @@ namespace Doomtrain
             KernelWorker.ReadRenzoFin(listBoxRenzoFin.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxRenzoFinName.Text = KernelWorker.GetSelectedRenzoFinData.OffsetToName;
+                textBoxRenzoFinDes.Text = KernelWorker.GetSelectedRenzoFinData.OffsetToDescription;
                 comboBoxRenzoFinMagicID.SelectedIndex = KernelWorker.GetSelectedRenzoFinData.MagicID;                
                 comboBoxRenzoFinAttackType.SelectedIndex = KernelWorker.GetSelectedRenzoFinData.AttackType;
                 numericUpDownRenzoFinAttackPower.Value = KernelWorker.GetSelectedRenzoFinData.AttackPower;
