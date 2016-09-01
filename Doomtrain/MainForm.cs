@@ -1656,6 +1656,8 @@ namespace Doomtrain
 
             #region Battle commmands
 
+            textBoxBatComName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(3, textBoxBatComName.Text);
+            textBoxBatComDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(4, textBoxBatComDes.Text);
             comboBoxBatComAbilityID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(0, comboBoxBatComAbilityID.SelectedIndex);
             checkBoxBatComFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(1, 0x01);
             checkBoxBatComFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(1, 0x02);
@@ -7512,6 +7514,19 @@ namespace Doomtrain
 
         private void listBoxBatCom_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (listBoxBatCom.SelectedIndex == 7 || listBoxBatCom.SelectedIndex == 12)
+            {
+                labelBatComDes.Text = "Description not available for this command";
+                labelBatComDes.Location = new Point(95, 82);
+                textBoxBatComDes.Enabled = false;
+            }
+            else
+            {
+                labelBatComDes.Text = "Description";
+                labelBatComDes.Location = new Point(191, 82);
+                textBoxBatComDes.Enabled = true;
+            }
+
             _loaded = false;
             if (KernelWorker.Kernel == null || KernelWorker.BackupKernel == null)
                 return;
@@ -7519,6 +7534,8 @@ namespace Doomtrain
             KernelWorker.ReadBattleCommands(listBoxBatCom.SelectedIndex, KernelWorker.BackupKernel);
             try
             {
+                ToolTip(textBoxBatComName, 2, KernelWorker.GetSelectedBattleCommandsData.OffsetToName);
+                ToolTip(textBoxBatComDes, 2, KernelWorker.GetSelectedBattleCommandsData.OffsetToDescription);
                 ToolTip(comboBoxBatComAbilityID,2,comboBoxBatComAbilityID.Items[KernelWorker.GetSelectedBattleCommandsData.AbilityID]);
                 ToolTip(checkBoxBatComFlag1,1,(KernelWorker.GetSelectedBattleCommandsData.Flag & 0x01) >= 1 ? true : false);
                 ToolTip(checkBoxBatComFlag2, 1, (KernelWorker.GetSelectedBattleCommandsData.Flag & 0x02) >= 1 ? true : false);
@@ -7538,6 +7555,8 @@ namespace Doomtrain
             KernelWorker.ReadBattleCommands(listBoxBatCom.SelectedIndex, KernelWorker.Kernel);
             try
             {
+                textBoxBatComName.Text = KernelWorker.GetSelectedBattleCommandsData.OffsetToName;
+                textBoxBatComDes.Text = KernelWorker.GetSelectedBattleCommandsData.OffsetToDescription;
                 comboBoxBatComAbilityID.SelectedIndex = KernelWorker.GetSelectedBattleCommandsData.AbilityID;
                 checkBoxBatComFlag1.Checked = (KernelWorker.GetSelectedBattleCommandsData.Flag & 0x01) >= 1 ? true : false;
                 checkBoxBatComFlag2.Checked = (KernelWorker.GetSelectedBattleCommandsData.Flag & 0x02) >= 1 ? true : false;

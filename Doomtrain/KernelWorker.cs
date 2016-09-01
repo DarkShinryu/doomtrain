@@ -4892,7 +4892,7 @@ namespace Doomtrain
 
             GetSelectedCommandAbilityData.OffsetToName = FF8Text.BuildString((ushort)(
                 BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Commandabilitiestext) + (BitConverter.ToUInt16(Kernel, selectedCommandAbilityDataOffset))));
-            GetSelectedBlueMagicData.OffsetToDescription = FF8Text.BuildString((ushort)(
+            GetSelectedCommandAbilityData.OffsetToDescription = FF8Text.BuildString((ushort)(
                 BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Commandabilitiestext) + (BitConverter.ToUInt16(Kernel, selectedCommandAbilityDataOffset + 2))));
             selectedCommandAbilityDataOffset += 4;
             GetSelectedCommandAbilityData.AP = Kernel[selectedCommandAbilityDataOffset++];
