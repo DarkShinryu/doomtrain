@@ -8,14 +8,22 @@ namespace Doomtrain
 {
     class FF8Text
     {
-#region CharTable
+        //CONST variables
+        private const string _AngeloVar = @"{Var_Angelo}";
+        private const string _UnknownVariable = @"{TODO}";
+        private const string _UnknownVariable2 = @"{TODO}";
+        private const string _UnknownVariable3 = @"{TODO}";
+        private const string _UnknownVariable4 = @"{TODO}";
+
+
+        #region CharTable
         private static Dictionary<byte, string> chartable = new Dictionary<byte, string>
         {
             {0x00, "t"},
             {0x02, "\n"},
             {0x03, _AngeloVar},
-            {0x04, "SPECIAL CHARACTER TODO" },
-            {0x0E, "SPECIAL CHARACTER TODO"},
+            {0x04, _UnknownVariable2 }, //Probably
+            {0x0E, _UnknownVariable3 }, //Probably
             {0x20, " "},
             {0x21, "0"},
             {0x22, "1"},
@@ -154,9 +162,6 @@ namespace Doomtrain
 #endregion
 
         private static byte[] buffer;
-
-        //CONST variables
-        private const string _AngeloVar = @"{Var_Angelo}";
 
         internal static string BuildString(int index)
         {
