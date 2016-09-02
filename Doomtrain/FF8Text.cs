@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
 
@@ -12,7 +13,8 @@ namespace Doomtrain
         {
             {0x00, "t"},
             {0x02, "\n"},
-            {0x03, "0x03"},
+            {0x03, _AngeloVar},
+            {0x04, "SPECIAL CHARACTER TODO" },
             {0x0E, "SPECIAL CHARACTER TODO"},
             {0x20, " "},
             {0x21, "0"},
@@ -153,6 +155,9 @@ namespace Doomtrain
 
         private static byte[] buffer;
 
+        //CONST variables
+        private const string _AngeloVar = @"{Var_Angelo}";
+
         internal static string BuildString(int index)
         {
             //DEBUG:
@@ -171,8 +176,46 @@ namespace Doomtrain
 
         internal static byte[] Cipher(string _in)
         {
-            //Reverse dictionary TODO
-            return null;
+            /*int byteLength = _in.Length;
+            int angelo = -1, special1 = -1, special2 = -1, special3, special4;
+
+            if (_in.Contains(@"{Var_Angelo}"))
+            {
+                angelo = _in.IndexOf("{Var_Angelo}");
+                byteLength -= "{Var_Angelo}".Length;
+            }
+            if (_in.Contains(@"{Var_TODO}"))
+            {
+                angelo = _in.IndexOf("{Var_TODO}");
+                byteLength -= "{Var_TODO}".Length;
+            }
+
+            byte[] buffer = new byte[byteLength];*/
+
+            List<byte> DynamicCipheredBuffer = new List<byte>();
+
+            for (int i = 0; i != _in.Length;)
+            {
+                //ANGELO:
+                if (string.Equals(_in.Substring(i, _AngeloVar.Length), _AngeloVar))
+                {
+                    DynamicCipheredBuffer.Add(0x04);
+                    i+= _AngeloVar.Length;
+                }
+                //TODO some other unknown variable and so on:
+                if (string.Equals(_in.Substring(i, "{Var_SquirrelTODO}".Length), "{Var_SquirrelTODO}"))
+                {
+                    DynamicCipheredBuffer.Add(0x04);
+                    i += 0; //Sizeof Squirrel
+                }
+                byte key = chartable.FirstOrDefault(x => x.Value == _in[i].ToString()).Key;
+                if (key < 0x20) //Variables are {, but what if user wants to input { that is not variable? All locals are under 0x20, so it's easy to solve it by doing this <---
+                    key = 0xAE;
+                DynamicCipheredBuffer.Add(key);
+            }
+            DynamicCipheredBuffer.Add(0x00); //NULL terminator
+            return DynamicCipheredBuffer.ToArray();
+
         }
 
         internal static void SetKernel(byte[] b) => buffer = b; //Okay, that's what Lambda** look like
