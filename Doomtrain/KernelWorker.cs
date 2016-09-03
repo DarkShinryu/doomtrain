@@ -8,7 +8,6 @@ namespace Doomtrain
 
         public static byte[] Kernel;
         public static byte[] BackupKernel;
-        private FF8Text _ff8text;
 
         public static int MagicDataOffset = -1;
         public static int OffsetToMagicSelected = -1;

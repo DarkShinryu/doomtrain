@@ -165,9 +165,6 @@ namespace Doomtrain
 
         internal static string BuildString(int index)
         {
-            //DEBUG:
-            SecretSquirrelClass.Squirrel();
-            //ENDDEBUG
             StringBuilder sb = new StringBuilder();
             while (true)
             {
@@ -179,24 +176,74 @@ namespace Doomtrain
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Builds byte[] decoded string with buffer specified in SetKernel
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        internal static byte[] BuildString_b(int index)
+        {
+            List<byte> DynamicBuffer = new List<byte>();
+            List<byte> DynamicReturn = new List<byte>();
+            while (true)
+            {
+                if(buffer[index] == 0x00 || index > buffer.Length - 1)
+                    break;
+                DynamicBuffer.Add(buffer[index++]);
+            }
+            int ind = 0;
+            while (true)
+            {
+                foreach (char c in chartable[DynamicBuffer[ind]])
+                {
+                    DynamicReturn.Add((byte)c);
+                }
+                if (ind == DynamicBuffer.Count - 1)
+                    break;
+                ind++;
+            }
+            return DynamicReturn.ToArray();
+        }
+
+        /// <summary>
+        /// Builds byte[] decoded string with buffer specified as input
+        /// </summary>
+        /// <param name="buffer"></param>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        internal static byte[] BuildString_b(byte[] buffer, int index = 0)
+        {
+            List<byte> DynamicBuffer = new List<byte>();
+            List<byte> DynamicReturn = new List<byte>();
+            while (true)
+            {
+                if (buffer[index] == 0x00 || index > buffer.Length-1)
+                    break;
+                DynamicBuffer.Add(buffer[index++]);
+            }
+            int ind = 0;
+            while (true)
+            {
+                foreach (char c in chartable[DynamicBuffer[ind]])
+                {
+                    DynamicReturn.Add((byte)c);
+                }
+                if (ind == DynamicBuffer.Count - 1)
+                    break;
+                ind++;
+            }
+            return DynamicReturn.ToArray();
+        }
+
+        /// <summary>
+        /// Use only for one character outputs
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        internal static char BuildString_c(int index) => chartable[buffer[index]].ToCharArray()[0];
+
         internal static byte[] Cipher(string _in)
         {
-            /*int byteLength = _in.Length;
-            int angelo = -1, special1 = -1, special2 = -1, special3, special4;
-
-            if (_in.Contains(@"{Var_Angelo}"))
-            {
-                angelo = _in.IndexOf("{Var_Angelo}");
-                byteLength -= "{Var_Angelo}".Length;
-            }
-            if (_in.Contains(@"{Var_TODO}"))
-            {
-                angelo = _in.IndexOf("{Var_TODO}");
-                byteLength -= "{Var_TODO}".Length;
-            }
-
-            byte[] buffer = new byte[byteLength];*/
-
             List<byte> DynamicCipheredBuffer = new List<byte>();
 
             for (int i = 0; i != _in.Length;)
@@ -220,7 +267,12 @@ namespace Doomtrain
             }
             DynamicCipheredBuffer.Add(0x00); //NULL terminator
             return DynamicCipheredBuffer.ToArray();
+        }
 
+        internal static byte[] Cipher(byte[] _in)
+        {
+            string s = System.Text.Encoding.UTF8.GetString(_in);
+            return Cipher(s);
         }
 
         internal static void SetKernel(byte[] b) => buffer = b; //Okay, that's what Lambda** look like
