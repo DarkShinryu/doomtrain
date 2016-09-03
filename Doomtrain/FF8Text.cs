@@ -177,6 +177,24 @@ namespace Doomtrain
         }
 
         /// <summary>
+        /// Same as BuildString(index), but takes buffer from input. Same as BuildString_b, but returns directly string
+        /// </summary>
+        /// <param name="buffer"></param>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        internal static string BuildString(byte[] buffer, int index)
+        {
+            StringBuilder sb = new StringBuilder();
+            while (true)
+            {
+                if (buffer[index] == 0x00)
+                    break;
+                sb.Append(chartable[buffer[index++]]);
+            }
+            return sb.ToString();
+        }
+
+        /// <summary>
         /// Builds byte[] decoded string with buffer specified in SetKernel
         /// </summary>
         /// <param name="index"></param>
