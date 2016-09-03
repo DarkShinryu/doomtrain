@@ -194,13 +194,9 @@ namespace Doomtrain
             int ind = 0;
             while (true)
             {
-                foreach (char c in chartable[DynamicBuffer[ind]])
-                {
-                    DynamicReturn.Add((byte)c);
-                }
-                if (ind == DynamicBuffer.Count - 1)
+                DynamicReturn.AddRange(chartable[DynamicBuffer[ind++]].Select(c => (byte) c));
+                if (ind == DynamicBuffer.Count)
                     break;
-                ind++;
             }
             return DynamicReturn.ToArray();
         }
@@ -224,13 +220,9 @@ namespace Doomtrain
             int ind = 0;
             while (true)
             {
-                foreach (char c in chartable[DynamicBuffer[ind]])
-                {
-                    DynamicReturn.Add((byte)c);
-                }
-                if (ind == DynamicBuffer.Count - 1)
+                DynamicReturn.AddRange(chartable[DynamicBuffer[ind++]].Select(c => (byte) c));
+                if (ind == DynamicBuffer.Count)
                     break;
-                ind++;
             }
             return DynamicReturn.ToArray();
         }
