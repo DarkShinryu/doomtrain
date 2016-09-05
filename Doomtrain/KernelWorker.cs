@@ -1253,12 +1253,41 @@ namespace Doomtrain
                         return;
                     }
                 case 45:
-                    {
+                    {//name
+                        if (sender == null) //NullReferenceException handling
+                            return;
+                        if (GetSelectedMagicData.OffsetSpellName.Length == (sender as TextBox).Text.Length)
+                            //if no moving pointers
+                        {
+                            int offset = BitConverter.ToInt32(Kernel, (int) KernelSections.Text_Magictext) +
+                                         BitConverter.ToUInt16(Kernel, OffsetToMagicSelected);
+                            byte[] buffer = FF8Text.Cipher((sender as TextBox).Text);
+                            for (int i = 0; i != buffer.Length; i++)
+                                Kernel[i + offset] = buffer[i];
+                        }
+                        else
+                        {
+                            ; //TODO 
+                        }
                         return;
                     }
                 case 46:
                     {
                         //description
+                        if (sender == null) //NullReferenceException handling
+                            return;
+                        if (GetSelectedMagicData.OffsetSpellDescription.Length == (sender as TextBox).Text.Length)
+                        {
+                            int offset = BitConverter.ToInt32(Kernel, (int)KernelSections.Text_Magictext) +
+                                         BitConverter.ToUInt16(Kernel, OffsetToMagicSelected+2);
+                            byte[] buffer = FF8Text.Cipher((sender as TextBox).Text);
+                            for (int i = 0; i != buffer.Length; i++)
+                                Kernel[i + offset] = buffer[i];
+                        }
+                        else
+                        {
+                            ; //TODO 
+                        }
                         return;
                     }
 

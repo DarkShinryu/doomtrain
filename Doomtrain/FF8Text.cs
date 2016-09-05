@@ -19,7 +19,6 @@ namespace Doomtrain
         #region CharTable
         private static Dictionary<byte, string> chartable = new Dictionary<byte, string>
         {
-            {0x00, "t"},
             {0x02, "\n"},
             {0x03, _AngeloVar},
             {0x04, _UnknownVariable2 }, //Probably
