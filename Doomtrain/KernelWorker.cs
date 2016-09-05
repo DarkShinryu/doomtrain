@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace Doomtrain
 {
@@ -1008,7 +1009,7 @@ namespace Doomtrain
 
         #region MAGIC
 
-        public static void UpdateVariable_Magic(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_Magic(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -1253,7 +1254,6 @@ namespace Doomtrain
                     }
                 case 45:
                     {
-                        //name
                         return;
                     }
                 case 46:
@@ -1293,7 +1293,7 @@ namespace Doomtrain
 
         #region J-GF
 
-        public static void UpdateVariable_GF(int index, object variable, byte AbilityIndex = 0, byte arg0 = 127)
+        public static void UpdateVariable_GF(int index, object variable, byte AbilityIndex = 0, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -1430,7 +1430,7 @@ namespace Doomtrain
 
         #region NJ-GF
 
-        public static void UpdateVariable_GFAttacks(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_GFAttacks(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -1504,7 +1504,7 @@ namespace Doomtrain
 
         #region WEAPONS
 
-        public static void UpdateVariable_Weapons(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_Weapons(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -1559,7 +1559,7 @@ namespace Doomtrain
 
         #region CHARACTERS
 
-        public static void UpdateVariable_Characters(int index, object variable)
+        public static void UpdateVariable_Characters(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -1680,7 +1680,7 @@ namespace Doomtrain
 
         #region ENEMY ATTACK
 
-        public static void UpdateVariable_EnemyAttacks(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_EnemyAttacks(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -1750,7 +1750,7 @@ namespace Doomtrain
 
         #region BLUE MAGIC
 
-        public static void UpdateVariable_BlueMagic(int index, object variable)
+        public static void UpdateVariable_BlueMagic(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -1894,7 +1894,7 @@ namespace Doomtrain
 
         #region STAT PERCENTAGE ABILITIES
 
-        public static void UpdateVariable_StatPercentageAbilities(int index, object variable)
+        public static void UpdateVariable_StatPercentageAbilities(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -1925,7 +1925,7 @@ namespace Doomtrain
 
         #region RENZOKUKEN FINISHERS
 
-        public static void UpdateVariable_RenzoFin(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_RenzoFin(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -1998,7 +1998,7 @@ namespace Doomtrain
 
         #region TEMP CHARACTERS LIMIT BREAKS
 
-        public static void UpdateVariable_TempCharLB(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_TempCharLB(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -2071,7 +2071,7 @@ namespace Doomtrain
 
         #region SHOT
 
-        public static void UpdateVariable_Shot(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_Shot(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -2150,7 +2150,7 @@ namespace Doomtrain
 
         #region DUEL
 
-        public static void UpdateVariable_Duel(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_Duel(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -2555,7 +2555,7 @@ namespace Doomtrain
 
         #region COMBINE
 
-        public static void UpdateVariable_Combine(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_Combine(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -2625,7 +2625,7 @@ namespace Doomtrain
 
         #region BATTLE ITEMS
 
-        public static void UpdateVariable_BattleItems(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_BattleItems(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -2698,7 +2698,7 @@ namespace Doomtrain
 
         #region ITEMS
 
-        public static void UpdateVariable_Items(int index, object variable)
+        public static void UpdateVariable_Items(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -2720,7 +2720,7 @@ namespace Doomtrain
 
         #region SLOT
 
-        public static void UpdateVariable_SlotArray(int index, object variable)
+        public static void UpdateVariable_SlotArray(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -2976,7 +2976,7 @@ namespace Doomtrain
 
         #region DEVOUR
 
-        public static void UpdateVariable_Devour(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_Devour(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3031,7 +3031,7 @@ namespace Doomtrain
 
         #region MISC
 
-        public static void UpdateVariable_Misc(int index, object variable)
+        public static void UpdateVariable_Misc(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3227,7 +3227,7 @@ namespace Doomtrain
 
         #region COMMAND ABILITY DATA
 
-        public static void UpdateVariable_CommandAbilityData(int index, object variable, byte arg0 = 127)
+        public static void UpdateVariable_CommandAbilityData(int index, object variable, byte arg0 = 127, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3288,7 +3288,7 @@ namespace Doomtrain
 
         #region COMMAND ABILITY
 
-        public static void UpdateVariable_CommandAbility(int index, object variable)
+        public static void UpdateVariable_CommandAbility(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3317,7 +3317,7 @@ namespace Doomtrain
 
         #region JUNCTION ABILITIES
 
-        public static void UpdateVariable_JunctionAbilities(int index, object variable)
+        public static void UpdateVariable_JunctionAbilities(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3351,7 +3351,7 @@ namespace Doomtrain
 
         #region PARTY ABILITIES
 
-        public static void UpdateVariable_PartyAbilities(int index, object variable)
+        public static void UpdateVariable_PartyAbilities(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3379,7 +3379,7 @@ namespace Doomtrain
 
         #region GF ABILITIES
 
-        public static void UpdateVariable_GFAbilities(int index, object variable)
+        public static void UpdateVariable_GFAbilities(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3413,7 +3413,7 @@ namespace Doomtrain
 
         #region CHARACTER ABILITIES
 
-        public static void UpdateVariable_CharacterAbilities(int index, object variable)
+        public static void UpdateVariable_CharacterAbilities(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3447,7 +3447,7 @@ namespace Doomtrain
 
         #region MENU ABILITIES
 
-        public static void UpdateVariable_MenuAbilities(int index, object variable)
+        public static void UpdateVariable_MenuAbilities(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3481,7 +3481,7 @@ namespace Doomtrain
 
         #region BATTLE COMMANDS
 
-        public static void UpdateVariable_BattleCommands(int index, object variable)
+        public static void UpdateVariable_BattleCommands(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3512,7 +3512,7 @@ namespace Doomtrain
 
         #region RINOA COMMANDS
 
-        public static void UpdateVariable_RinoaCommands(int index, object variable)
+        public static void UpdateVariable_RinoaCommands(int index, object variable, object sender = null)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3560,12 +3560,6 @@ namespace Doomtrain
         #endregion
 
         #region MAGIC ID TO KERNEL
-
-        /// <summary>
-        /// This is for MagicID list
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="add"></param>
         private static void UshortToKernel(ushort a, int add, byte mode)
         {
             byte[] magicIdBytes = BitConverter.GetBytes(a);

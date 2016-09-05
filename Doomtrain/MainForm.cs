@@ -131,7 +131,7 @@ namespace Doomtrain
 
             #region Magic
 
-            textBoxMagicName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(45, textBoxMagicName.Text);
+            textBoxMagicName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(45, textBoxMagicName.Text,0 ,sender);
             textBoxMagicDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(46, textBoxMagicDes.Text);
             comboBoxMagicMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(2, comboBoxMagicMagicID.SelectedIndex);
             comboBoxMagicAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_Magic(43, comboBoxMagicAttackType.SelectedIndex);
