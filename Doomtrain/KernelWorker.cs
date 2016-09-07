@@ -3565,16 +3565,18 @@ namespace Doomtrain
                     return;
                 case 3: //name
                     int newLength = (sender as TextBox).Text.Length;
-                    if(TextOffsets[Entry,0] == 0xFFFF)
-                        return;
-                    if (TextOffsets[Entry, 1] == newLength)
+                    if(BitConverter.ToUInt16(Kernel,(int)TextOffsets[Entry,0]) == 0xFFFF)
+                        return; //NULL name
+                    int textLEA = BitConverter.ToUInt16(Kernel, (int) TextOffsets[Entry, 0]);
+                    string s = FF8Text.BuildString(textLEA + (int)KernelSections.Text_BattleCommand);
+                    if (s.Length == newLength)
                     {
                         byte[] buffer = FF8Text.Cipher((sender as TextBox).Text);
                         for (int i = 0; i != buffer.Length; i++)
                             Kernel[i + TextOffsets[Entry, 0]] = buffer[i];
                     }
                     else
-                        Text_MovePointers(Entry, (sender as TextBox).Text, (sender as TextBox).Text.Length - (int)TextOffsets[Entry,1]);
+                        Text_MovePointers(Entry, (sender as TextBox).Text, (sender as TextBox).Text.Length - s.Length);
                     return;
                 case 4:
                     //Description
@@ -5203,21 +5205,22 @@ namespace Doomtrain
             size += Sections._26_RinoaLB2;
             size += Sections._29_Devour;
             TextOffsets = new uint[size, 2];
-            int index = 1;
+            int index = 0;
             for (int i = 0; i != Sections._1_BattleCommands * 2 - 2; i += 2) //BattleCommands
             {
-                TextOffsets[i, 0] = BitConverter.ToUInt16(Kernel, BattleCommandsDataOffset + index * 8 + 0);
-                if (TextOffsets[i, 0] != 0xFFFF)
+                TextOffsets[i, 0] = (uint)(BattleCommandsDataOffset + index * 8 + 0);
+                /*if (TextOffsets[i, 0] != 0xFFFF)
                     TextOffsets[i, 1] =
                         (uint)
                             FF8Text.BuildString(BitConverter.ToUInt16(Kernel, (int)KernelSections.Text_BattleCommand) +
                                                 (int)TextOffsets[i, 0]).Length;
-                TextOffsets[i + 1, 0] = BitConverter.ToUInt16(Kernel, BattleCommandsDataOffset + index * 8 + 2);
-                if (TextOffsets[i + 1, 0] != 0xFFFF)
+                                                */
+                TextOffsets[i + 1, 0] = (uint)(BattleCommandsDataOffset + index * 8 + 2);
+                /*if (TextOffsets[i + 1, 0] != 0xFFFF)
                     TextOffsets[i + 1, 1] =
                         (uint)
                             FF8Text.BuildString(BitConverter.ToUInt16(Kernel, (int)KernelSections.Text_BattleCommand) +
-                                                (int)TextOffsets[i + 1, 0]).Length;
+                                                (int)TextOffsets[i + 1, 0]).Length;*/
                 index++;
             }
             index = 0;
@@ -5231,17 +5234,21 @@ namespace Doomtrain
         /// <param name="change">change is natural difference between two strings</param>
         private static void Text_MovePointers(int entry, string sender, int change)
         {
-            //return; //It's huge function/data processing, so return to make the software working before this is finished
+            return; //It's huge function/data processing, so return to make the software working before this is finished
 
             //Update every possible pointer in all possible sections that have text
             for (int i = entry; i != TextOffsets.GetLength(0); i++)
             {
-                if (TextOffsets[i, 0] != 0)
+                if (entry < Sections._1_BattleCommands*2)
+                {
+                    //adjust pointers for Text_BattleCommands
+                }
+                /*if (TextOffsets[i, 0] != 0)
                 {
                     ushort buffer = (ushort) ((int) TextOffsets[i, 1] + change);
                     byte[] bufBytes = BitConverter.GetBytes(buffer);
                     Array.Copy(bufBytes, 0, Kernel, (int) TextOffsets[i, 0], 2);
-                }
+                }*/
             }
 
         }
