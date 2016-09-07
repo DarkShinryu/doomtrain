@@ -3564,22 +3564,39 @@ namespace Doomtrain
                     Kernel[OffsetToBattleCommandsSelected + 6] = Convert.ToByte(variable); //Target
                     return;
                 case 3: //name
+                    //if (Entry == 0)
+                       // Entry = 1;
                     int newLength = (sender as TextBox).Text.Length;
-                    if(BitConverter.ToUInt16(Kernel,(int)TextOffsets[Entry,0]) == 0xFFFF)
+                    if(BitConverter.ToUInt16(Kernel,(int)TextOffsets[2+Entry * 2, 0]) == 0xFFFF)
                         return; //NULL name
-                    int textLEA = BitConverter.ToUInt16(Kernel, (int) TextOffsets[Entry, 0]);
-                    string s = FF8Text.BuildString(textLEA + (int)KernelSections.Text_BattleCommand);
+                    int textLEA = BitConverter.ToUInt16(Kernel, (int) TextOffsets[2 + Entry *2, 0]);
+                    string s = FF8Text.BuildString(textLEA + BitConverter.ToUInt16(Kernel,(int)KernelSections.Text_BattleCommand));
                     if (s.Length == newLength)
                     {
                         byte[] buffer = FF8Text.Cipher((sender as TextBox).Text);
+
                         for (int i = 0; i != buffer.Length; i++)
-                            Kernel[i + TextOffsets[Entry, 0]] = buffer[i];
+                            Kernel[i + textLEA + BitConverter.ToUInt16(Kernel, (int)KernelSections.Text_BattleCommand)] = buffer[i];
                     }
                     else
-                        Text_MovePointers(Entry, (sender as TextBox).Text, (sender as TextBox).Text.Length - s.Length);
+                        Text_MovePointers(2 + Entry * 2, (sender as TextBox).Text, (sender as TextBox).Text.Length - s.Length);
                     return;
                 case 4:
                     //Description
+                    int newLengthd = (sender as TextBox).Text.Length;
+                    if (BitConverter.ToUInt16(Kernel, (int)TextOffsets[Entry * 2 + 3, 0]) == 0xFFFF)
+                        return; //NULL name
+                    int textLEAd = BitConverter.ToUInt16(Kernel, (int)TextOffsets[Entry * 2 + 3, 0]);
+                    string ss = FF8Text.BuildString(textLEAd + BitConverter.ToUInt16(Kernel, (int)KernelSections.Text_BattleCommand));
+                    if (ss.Length == newLengthd)
+                    {
+                        byte[] buffer = FF8Text.Cipher((sender as TextBox).Text);
+
+                        for (int i = 0; i != buffer.Length; i++)
+                            Kernel[i + textLEAd + BitConverter.ToUInt16(Kernel, (int)KernelSections.Text_BattleCommand)] = buffer[i];
+                    }
+                    else
+                        Text_MovePointers(Entry * 2 + 3, (sender as TextBox).Text, (sender as TextBox).Text.Length - ss.Length);
                     return;
 
                 default:
