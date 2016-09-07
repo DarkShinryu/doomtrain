@@ -9,6 +9,44 @@ namespace Doomtrain
 
         public static byte[] Kernel;
         public static byte[] BackupKernel;
+        private static uint[,] TextOffsets; //2D uint
+
+        struct Sections
+        {
+            public const int _1_BattleCommands = 39;
+            public const int _2_MagicData = 57;
+            public const int _3_JGF = 16;
+            public const int _4_EnAttack = 384;
+            public const int _5_Weap = 33;
+            public const int _6_renzokukenF = 4;
+            public const int _7_char = 11;
+            public const int _8_BatItems = 33;
+            public const int _9_Items = 166;
+            public const int _10_nonJGF = 16;
+            public const int _11_CommAbilities = 12;
+            public const int _12_JnctAblt = 20;
+            public const int _13_CommAbilities = 19;
+            public const int _14_offPercent = 19;
+            public const int _15_CharAbilt = 20;
+            public const int _16_PartyAbil = 5;
+            public const int _17_GFAbil = 9;
+            public const int _18_MenuAbil = 24;
+            public const int _19_tempCharAb = 5;
+            public const int _20_BlueMag = 20;
+            public const int _21_BlueMagParams = 64;
+            public const int _22_IrvineLB = 8;
+            public const int _23_ZellDuel = 10;
+            public const int _24_ZellParam = 1;
+            public const int _25_RinoaLB = 2;
+            public const int _26_RinoaLB2 = 33;
+            //public const int _27_SlotArray = 0;
+            //public const int _28_SelphieLB = 0;
+            public const int _29_Devour = 16;
+            //public const int _30_Misc = 0;
+            //public const int _31_MiscText = 0;
+
+
+        }
 
         public static int MagicDataOffset = -1;
         public static int OffsetToMagicSelected = -1;
@@ -3694,6 +3732,38 @@ namespace Doomtrain
             CharacterAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.CharacterAbilities);
             MenuAbilitiesDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.MenuAbilities);
             RinoaCommandsDataOffset = BitConverter.ToInt32(Kernel, (int)KernelSections.RinoaLimit1);
+
+            InitializeTextPointers();
+
+        }
+
+        private static void InitializeTextPointers()
+        {
+            int size = Sections._1_BattleCommands * 2;
+            size += Sections._2_MagicData * 2;
+            size += Sections._3_JGF * 2;
+            size += Sections._4_EnAttack;
+            size += Sections._5_Weap;
+            size += Sections._6_renzokukenF*2;
+            size += Sections._7_char;
+            size += Sections._8_BatItems*2;
+            size += Sections._9_Items*2; //<--
+            size += Sections._10_nonJGF;
+            size += Sections._12_JnctAblt*2;
+            size += Sections._13_CommAbilities*2;
+            size += Sections._14_offPercent*2;
+            size += Sections._15_CharAbilt*2;
+            size += Sections._16_PartyAbil*2;
+            size += Sections._17_GFAbil*2;
+            size += Sections._18_MenuAbil*2;
+            size += Sections._19_tempCharAb*2;
+            size += Sections._20_BlueMag*2;
+            size += Sections._22_IrvineLB*2;
+            size += Sections._23_ZellDuel*2;
+            size += Sections._25_RinoaLB*2;
+            size += Sections._26_RinoaLB2;
+            size += Sections._29_Devour;
+            TextOffsets = new uint[size,1];
         }
 
         #endregion
