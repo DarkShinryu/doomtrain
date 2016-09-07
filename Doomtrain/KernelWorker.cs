@@ -3548,7 +3548,7 @@ namespace Doomtrain
 
         #region BATTLE COMMANDS
 
-        public static void UpdateVariable_BattleCommands(int index, object variable, object sender = null)
+        public static void UpdateVariable_BattleCommands(int index, object variable, object sender = null, int Entry = 0)
         {
             if (!mainForm._loaded || Kernel == null)
                 return;
@@ -3563,8 +3563,18 @@ namespace Doomtrain
                 case 2:
                     Kernel[OffsetToBattleCommandsSelected + 6] = Convert.ToByte(variable); //Target
                     return;
-                case 3:
-                    //Name
+                case 3: //name
+                    int newLength = (sender as TextBox).Text.Length;
+                    if(TextOffsets[Entry,0] == 0xFFFF)
+                        return;
+                    if (TextOffsets[Entry, 1] == newLength)
+                    {
+                        byte[] buffer = FF8Text.Cipher((sender as TextBox).Text);
+                        for (int i = 0; i != buffer.Length; i++)
+                            Kernel[i + TextOffsets[Entry, 0]] = buffer[i];
+                    }
+                    else
+                        Text_MovePointers(Entry, (sender as TextBox).Text, (sender as TextBox).Text.Length - (int)TextOffsets[Entry,1]);
                     return;
                 case 4:
                     //Description
@@ -3737,34 +3747,7 @@ namespace Doomtrain
 
         }
 
-        private static void InitializeTextPointers()
-        {
-            int size = Sections._1_BattleCommands * 2;
-            size += Sections._2_MagicData * 2;
-            size += Sections._3_JGF * 2;
-            size += Sections._4_EnAttack;
-            size += Sections._5_Weap;
-            size += Sections._6_renzokukenF*2;
-            size += Sections._7_char;
-            size += Sections._8_BatItems*2;
-            size += Sections._9_Items*2; //<--
-            size += Sections._10_nonJGF;
-            size += Sections._12_JnctAblt*2;
-            size += Sections._13_CommAbilities*2;
-            size += Sections._14_offPercent*2;
-            size += Sections._15_CharAbilt*2;
-            size += Sections._16_PartyAbil*2;
-            size += Sections._17_GFAbil*2;
-            size += Sections._18_MenuAbil*2;
-            size += Sections._19_tempCharAb*2;
-            size += Sections._20_BlueMag*2;
-            size += Sections._22_IrvineLB*2;
-            size += Sections._23_ZellDuel*2;
-            size += Sections._25_RinoaLB*2;
-            size += Sections._26_RinoaLB2;
-            size += Sections._29_Devour;
-            TextOffsets = new uint[size,1];
-        }
+        
 
         #endregion
 
@@ -5192,6 +5175,76 @@ namespace Doomtrain
         #endregion
 
         #endregion
+
+        private static void InitializeTextPointers()
+        {
+            int size = Sections._1_BattleCommands * 2;
+            size += Sections._2_MagicData * 2;
+            size += Sections._3_JGF * 2;
+            size += Sections._4_EnAttack;
+            size += Sections._5_Weap;
+            size += Sections._6_renzokukenF * 2;
+            size += Sections._7_char;
+            size += Sections._8_BatItems * 2;
+            size += Sections._9_Items * 2; //<--
+            size += Sections._10_nonJGF;
+            size += Sections._12_JnctAblt * 2;
+            size += Sections._13_CommAbilities * 2;
+            size += Sections._14_offPercent * 2;
+            size += Sections._15_CharAbilt * 2;
+            size += Sections._16_PartyAbil * 2;
+            size += Sections._17_GFAbil * 2;
+            size += Sections._18_MenuAbil * 2;
+            size += Sections._19_tempCharAb * 2;
+            size += Sections._20_BlueMag * 2;
+            size += Sections._22_IrvineLB * 2;
+            size += Sections._23_ZellDuel * 2;
+            size += Sections._25_RinoaLB * 2;
+            size += Sections._26_RinoaLB2;
+            size += Sections._29_Devour;
+            TextOffsets = new uint[size, 2];
+            int index = 1;
+            for (int i = 0; i != Sections._1_BattleCommands * 2 - 2; i += 2) //BattleCommands
+            {
+                TextOffsets[i, 0] = BitConverter.ToUInt16(Kernel, BattleCommandsDataOffset + index * 8 + 0);
+                if (TextOffsets[i, 0] != 0xFFFF)
+                    TextOffsets[i, 1] =
+                        (uint)
+                            FF8Text.BuildString(BitConverter.ToUInt16(Kernel, (int)KernelSections.Text_BattleCommand) +
+                                                (int)TextOffsets[i, 0]).Length;
+                TextOffsets[i + 1, 0] = BitConverter.ToUInt16(Kernel, BattleCommandsDataOffset + index * 8 + 2);
+                if (TextOffsets[i + 1, 0] != 0xFFFF)
+                    TextOffsets[i + 1, 1] =
+                        (uint)
+                            FF8Text.BuildString(BitConverter.ToUInt16(Kernel, (int)KernelSections.Text_BattleCommand) +
+                                                (int)TextOffsets[i + 1, 0]).Length;
+                index++;
+            }
+            index = 0;
+        }
+
+        /// <summary>
+        /// entry should be the TextOffset[ENTRY] position!
+        /// </summary>
+        /// <param name="entry">should be all sections global to TextOffset[entry]</param>
+        /// <param name="sender">is string of sender.Text</param>
+        /// <param name="change">change is natural difference between two strings</param>
+        private static void Text_MovePointers(int entry, string sender, int change)
+        {
+            //return; //It's huge function/data processing, so return to make the software working before this is finished
+
+            //Update every possible pointer in all possible sections that have text
+            for (int i = entry; i != TextOffsets.GetLength(0); i++)
+            {
+                if (TextOffsets[i, 0] != 0)
+                {
+                    ushort buffer = (ushort) ((int) TextOffsets[i, 1] + change);
+                    byte[] bufBytes = BitConverter.GetBytes(buffer);
+                    Array.Copy(bufBytes, 0, Kernel, (int) TextOffsets[i, 0], 2);
+                }
+            }
+
+        }
     }
 }
 

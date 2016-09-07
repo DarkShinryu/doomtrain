@@ -1694,8 +1694,8 @@ namespace Doomtrain
 
             #region Battle commmands
 
-            textBoxBatComName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(3, textBoxBatComName.Text, sender);
-            textBoxBatComDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(4, textBoxBatComDes.Text, sender);
+            textBoxBatComName.TextChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(3, textBoxBatComName.Text, sender, listBoxBatCom.SelectedIndex);            
+            textBoxBatComDes.TextChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(4, textBoxBatComDes.Text, sender, listBoxBatCom.SelectedIndex);
             comboBoxBatComAbilityID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(0, comboBoxBatComAbilityID.SelectedIndex);
             checkBoxBatComFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(1, 0x01);
             checkBoxBatComFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BattleCommands(1, 0x02);
