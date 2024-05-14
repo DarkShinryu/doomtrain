@@ -1,35 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7418371A-18D5-4FEB-BF91-484088A5EA17}</ProjectGuid>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Doomtrain</RootNamespace>
-    <AssemblyName>Doomtrain</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Version>0.1.0.1</Version>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Doomtrain.Program</StartupObject>
@@ -38,200 +12,22 @@
     <ApplicationIcon>doomtrain.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
-    <Reference Include="System.Xaml" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AboutBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AboutBox.Designer.cs">
-      <DependentUpon>AboutBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\CharEXP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Charts\CharEXP.Designer.cs">
-      <DependentUpon>CharEXP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\EnemyAttacksDamage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Charts\EnemyAttacksDamage.Designer.cs">
-      <DependentUpon>EnemyAttacksDamage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\GfDamage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Charts\GfDamage.Designer.cs">
-      <DependentUpon>GfDamage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\CharHP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Charts\CharHP.Designer.cs">
-      <DependentUpon>CharHP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\CharLUCK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Charts\CharLUCK.Designer.cs">
-      <DependentUpon>CharLUCK.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\CharMAG.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Charts\CharMAG.Designer.cs">
-      <DependentUpon>CharMAG.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\CharSPD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Charts\CharSPD.Designer.cs">
-      <DependentUpon>CharSPD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\CharSPR.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Charts\CharSPR.Designer.cs">
-      <DependentUpon>CharSPR.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\CharSTR.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Charts\CharSTR.Designer.cs">
-      <DependentUpon>CharSTR.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\CharVIT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Charts\CharVIT.Designer.cs">
-      <DependentUpon>CharVIT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\MagicDamage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Charts\MagicDamage.Designer.cs">
-      <DependentUpon>MagicDamage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FF8Text.cs" />
-    <Compile Include="HexUpDown.cs">
+    <Compile Update="HexUpDown.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="KernelWorker.cs" />
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AboutBox.resx">
-      <DependentUpon>AboutBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Charts\CharEXP.resx">
-      <DependentUpon>CharEXP.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Charts\EnemyAttacksDamage.resx">
-      <DependentUpon>EnemyAttacksDamage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Charts\GfDamage.resx">
-      <DependentUpon>GfDamage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Charts\CharHP.resx">
-      <DependentUpon>CharHP.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Charts\CharLUCK.resx">
-      <DependentUpon>CharLUCK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Charts\CharMAG.resx">
-      <DependentUpon>CharMAG.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Charts\CharSPD.resx">
-      <DependentUpon>CharSPD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Charts\CharSPR.resx">
-      <DependentUpon>CharSPR.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Charts\CharSTR.resx">
-      <DependentUpon>CharSTR.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Charts\CharVIT.resx">
-      <DependentUpon>CharVIT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Charts\MagicDamage.resx">
-      <DependentUpon>MagicDamage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="doomtrain.ico" />
-    <None Include="Resources\Attack_Type_List.txt" />
-    <None Include="Resources\Magic_ID_List.txt" />
-    <None Include="Resources\info.png" />
-    <None Include="Resources\deletetooltip.png" />
-    <None Include="Resources\labelDoomtrain.ttf" />
-    <None Include="Resources\tooltip.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\doomtrain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\doomtrainbig.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\mainTabFont.ttf" />
-    <None Include="Resources\saveas.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\close.png" />
+    <PackageReference Include="FastReport.DataVisualization" Version="2024.2.3" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <ItemGroup>
+    <EmbeddedResource Remove="Charts\EXP.resx" />
+  </ItemGroup>
 </Project>

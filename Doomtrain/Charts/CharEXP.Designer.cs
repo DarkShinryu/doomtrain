@@ -28,46 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel1 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel2 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel3 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel4 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel5 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel6 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel7 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel8 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel9 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel10 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel11 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(10D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint13 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint14 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint15 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint16 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint17 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint18 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint19 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint20 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint21 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint22 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(10D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            FastReport.DataVisualization.Charting.ChartArea chartArea1 = new FastReport.DataVisualization.Charting.ChartArea();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel1 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel2 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel3 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel4 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel5 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel6 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel7 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel8 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel9 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel10 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel11 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.Legend legend1 = new FastReport.DataVisualization.Charting.Legend();
+            FastReport.DataVisualization.Charting.Series series1 = new FastReport.DataVisualization.Charting.Series();
+            FastReport.DataVisualization.Charting.DataPoint dataPoint1 = new FastReport.DataVisualization.Charting.DataPoint(0D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint2 = new FastReport.DataVisualization.Charting.DataPoint(1D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint3 = new FastReport.DataVisualization.Charting.DataPoint(2D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint4 = new FastReport.DataVisualization.Charting.DataPoint(3D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint5 = new FastReport.DataVisualization.Charting.DataPoint(4D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint6 = new FastReport.DataVisualization.Charting.DataPoint(5D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint7 = new FastReport.DataVisualization.Charting.DataPoint(6D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint8 = new FastReport.DataVisualization.Charting.DataPoint(7D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint9 = new FastReport.DataVisualization.Charting.DataPoint(8D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint10 = new FastReport.DataVisualization.Charting.DataPoint(9D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint11 = new FastReport.DataVisualization.Charting.DataPoint(10D, 0D);
+            FastReport.DataVisualization.Charting.Series series2 = new FastReport.DataVisualization.Charting.Series();
+            FastReport.DataVisualization.Charting.DataPoint dataPoint12 = new FastReport.DataVisualization.Charting.DataPoint(0D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint13 = new FastReport.DataVisualization.Charting.DataPoint(1D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint14 = new FastReport.DataVisualization.Charting.DataPoint(2D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint15 = new FastReport.DataVisualization.Charting.DataPoint(3D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint16 = new FastReport.DataVisualization.Charting.DataPoint(4D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint17 = new FastReport.DataVisualization.Charting.DataPoint(5D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint18 = new FastReport.DataVisualization.Charting.DataPoint(6D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint19 = new FastReport.DataVisualization.Charting.DataPoint(7D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint20 = new FastReport.DataVisualization.Charting.DataPoint(8D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint21 = new FastReport.DataVisualization.Charting.DataPoint(9D, 0D);
+            FastReport.DataVisualization.Charting.DataPoint dataPoint22 = new FastReport.DataVisualization.Charting.DataPoint(10D, 0D);
+            FastReport.DataVisualization.Charting.Title title1 = new FastReport.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CharEXP));
-            this.chartEXP = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartEXP = new FastReport.DataVisualization.Charting.Chart();
             this.buttonClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chartEXP)).BeginInit();
             this.SuspendLayout();
@@ -237,7 +237,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartEXP;
+        private FastReport.DataVisualization.Charting.Chart chartEXP;
         private System.Windows.Forms.Button buttonClose;
     }
 }
