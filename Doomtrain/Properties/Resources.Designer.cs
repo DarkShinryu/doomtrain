@@ -19,7 +19,7 @@ namespace Doomtrain.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -62,14 +62,14 @@ namespace Doomtrain.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to None
-        ///Basic Attack
+        ///Physical Attack
         ///Magic Attack
         ///Curative Magic
         ///Curative Item
         ///Revive
         ///Revive At Full HP
-        ///% Damage
-        ///Demi
+        ///% Physical Damage
+        ///% Magic Damage
         ///Renzokuken Finisher
         ///Squall Gunblade Attack
         ///GF
@@ -81,7 +81,7 @@ namespace Doomtrain.Properties {
         ///Card
         ///Kamikaze
         ///Devour
-        ///Diablos Gravity Attack
+        ///% GF Damage
         ///Unknown 1
         ///Magic Attack (Ignore Target SPR)
         ///Angelo Search
@@ -89,15 +89,13 @@ namespace Doomtrain.Properties {
         ///White Wind (Quistis)
         ///LV? Attack
         ///Fixed Damage
-        ///TargetHP - 1
-        ///Cactuar Summon
+        ///Target Current HP - 1
+        ///Fixed Magic Damage Based on GF Level
         ///Unknown 2
         ///Unknown 3
         ///Give Percentage HP
         ///Unknown 4
-        ///Everyone&apos;s Grudge
-        ///1 HP Damage
-        ///Terra Brea [rest of string was truncated]&quot;;.
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Attack_Type_List {
             get {
@@ -185,7 +183,7 @@ namespace Doomtrain.Properties {
         ///016 - Recover
         ///017 - Elvoret Entrance
         ///018 - Elvoret Death
-        ///019 - Unknown
+        ///019 - Raldo Ball
         ///020 - NORG Pod Opening
         ///021 - Triple
         ///022 - Bio
@@ -195,7 +193,7 @@ namespace Doomtrain.Properties {
         ///026 - Clash
         ///027 - Full-Life
         ///028 - Curaga
-        ///029 - [rest of string was truncated]&quot;;.
+        ///02 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Magic_ID_List {
             get {
