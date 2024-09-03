@@ -2,6 +2,7 @@
 {
     partial class mainForm
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -814,6 +815,10 @@
             this.checkBoxWeaponsRenzoFinFated = new System.Windows.Forms.CheckBox();
             this.checkBoxWeaponsRenzoFinRough = new System.Windows.Forms.CheckBox();
             this.groupBoxWeaponsGeneral = new System.Windows.Forms.GroupBox();
+            this.labelWeaponsNote1 = new System.Windows.Forms.Label();
+            this.labelWeaponsNote2 = new System.Windows.Forms.Label();
+            this.comboBoxWeaponsAttackType = new System.Windows.Forms.ComboBox();
+            this.labelWeaponsAttackType = new System.Windows.Forms.Label();
             this.numericUpDownWeaponsCrit = new System.Windows.Forms.NumericUpDown();
             this.labelWeaponsCrit = new System.Windows.Forms.Label();
             this.comboBoxWeaponsCharacterID = new System.Windows.Forms.ComboBox();
@@ -939,6 +944,8 @@
             this.checkBoxBlueMagicFlag2 = new System.Windows.Forms.CheckBox();
             this.checkBoxBlueMagicFlag7 = new System.Windows.Forms.CheckBox();
             this.groupBoxBlueMagicGeneral = new System.Windows.Forms.GroupBox();
+            this.numericUpDownBlueMagicHitCount = new System.Windows.Forms.NumericUpDown();
+            this.labelBlueMagicHitCount = new System.Windows.Forms.Label();
             this.numericUpDownBlueMagicCrit = new System.Windows.Forms.NumericUpDown();
             this.labelBlueMagicCrit = new System.Windows.Forms.Label();
             this.numericUpDownBlueMagicStatusAttack = new System.Windows.Forms.NumericUpDown();
@@ -2021,10 +2028,15 @@
             this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelMain = new System.Windows.Forms.Panel();
-            this.comboBoxWeaponsAttackType = new System.Windows.Forms.ComboBox();
-            this.labelWeaponsAttackType = new System.Windows.Forms.Label();
-            this.labelWeaponsNote2 = new System.Windows.Forms.Label();
-            this.labelWeaponsNote1 = new System.Windows.Forms.Label();
+            this.groupBoxBlueMagicTarget = new System.Windows.Forms.GroupBox();
+            this.checkBoxBlueMagicTarget8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicTarget5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicTarget2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicTarget4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicTarget6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicTarget7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicTarget1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagicTarget3 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackParam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarJElemDefense)).BeginInit();
@@ -2224,6 +2236,7 @@
             this.tabPage2.SuspendLayout();
             this.groupBoxBlueMagicAttackFlags.SuspendLayout();
             this.groupBoxBlueMagicGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicHitCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCrit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicStatusAttack)).BeginInit();
             this.tabPage3.SuspendLayout();
@@ -2532,6 +2545,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStatusTimer8)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.panelMain.SuspendLayout();
+            this.groupBoxBlueMagicTarget.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelGFAttacksMagicID
@@ -3594,7 +3608,7 @@
             this.labelBlueMagicAttackType.AutoSize = true;
             this.labelBlueMagicAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelBlueMagicAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicAttackType.Location = new System.Drawing.Point(186, 91);
+            this.labelBlueMagicAttackType.Location = new System.Drawing.Point(96, 91);
             this.labelBlueMagicAttackType.Name = "labelBlueMagicAttackType";
             this.labelBlueMagicAttackType.Size = new System.Drawing.Size(79, 17);
             this.labelBlueMagicAttackType.TabIndex = 103;
@@ -3605,7 +3619,7 @@
             this.labelBlueMagicElement.AutoSize = true;
             this.labelBlueMagicElement.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelBlueMagicElement.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicElement.Location = new System.Drawing.Point(347, 29);
+            this.labelBlueMagicElement.Location = new System.Drawing.Point(341, 91);
             this.labelBlueMagicElement.Name = "labelBlueMagicElement";
             this.labelBlueMagicElement.Size = new System.Drawing.Size(57, 17);
             this.labelBlueMagicElement.TabIndex = 0;
@@ -3616,7 +3630,7 @@
             this.labelBlueMagicMagicID.AutoSize = true;
             this.labelBlueMagicMagicID.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
             this.labelBlueMagicMagicID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelBlueMagicMagicID.Location = new System.Drawing.Point(125, 29);
+            this.labelBlueMagicMagicID.Location = new System.Drawing.Point(96, 29);
             this.labelBlueMagicMagicID.Name = "labelBlueMagicMagicID";
             this.labelBlueMagicMagicID.Size = new System.Drawing.Size(61, 17);
             this.labelBlueMagicMagicID.TabIndex = 0;
@@ -4102,7 +4116,7 @@
             this.checkBoxJElemDefenseThunder.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxJElemDefenseThunder.Location = new System.Drawing.Point(96, 202);
             this.checkBoxJElemDefenseThunder.Name = "checkBoxJElemDefenseThunder";
-            this.checkBoxJElemDefenseThunder.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxJElemDefenseThunder.Size = new System.Drawing.Size(70, 19);
             this.checkBoxJElemDefenseThunder.TabIndex = 51;
             this.checkBoxJElemDefenseThunder.Text = "Thunder";
             this.checkBoxJElemDefenseThunder.UseVisualStyleBackColor = true;
@@ -5205,14 +5219,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(283, 30);
             this.openToolStripMenuItem.Text = "Open...";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(245, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(280, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -5220,7 +5234,7 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(283, 30);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -5228,39 +5242,39 @@
             // 
             this.saveAsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveAsToolStripMenuItem.Image")));
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.S)));
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(283, 30);
             this.saveAsToolStripMenuItem.Text = "Save a Copy As...";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(245, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(280, 6);
             // 
             // deleteTooltipsToolStripMenuItem
             // 
             this.deleteTooltipsToolStripMenuItem.Enabled = false;
             this.deleteTooltipsToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.deletetooltip;
             this.deleteTooltipsToolStripMenuItem.Name = "deleteTooltipsToolStripMenuItem";
-            this.deleteTooltipsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.deleteTooltipsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.Q)));
-            this.deleteTooltipsToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.deleteTooltipsToolStripMenuItem.Size = new System.Drawing.Size(283, 30);
             this.deleteTooltipsToolStripMenuItem.Text = "Delete Tooltips File";
             this.deleteTooltipsToolStripMenuItem.Click += new System.EventHandler(this.deleteTooltipsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(245, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(280, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = global::Doomtrain.Properties.Resources.close;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(283, 30);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -5273,6 +5287,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.aboutToolStripMenuItem});
@@ -5286,10 +5301,11 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // toolbarStrip
             // 
+            this.toolbarStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolbarStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripButton,
             this.toolStripSeparator4,
@@ -5299,7 +5315,7 @@
             this.deleteTooltipsToolStripButton});
             this.toolbarStrip.Location = new System.Drawing.Point(0, 24);
             this.toolbarStrip.Name = "toolbarStrip";
-            this.toolbarStrip.Size = new System.Drawing.Size(654, 25);
+            this.toolbarStrip.Size = new System.Drawing.Size(654, 31);
             this.toolbarStrip.TabIndex = 1;
             this.toolbarStrip.Text = "toolbarStrip";
             // 
@@ -5309,7 +5325,7 @@
             this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
             this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Size = new System.Drawing.Size(28, 28);
             this.openToolStripButton.Text = "Open";
             this.openToolStripButton.ToolTipText = "Open...";
             this.openToolStripButton.Click += new System.EventHandler(this.openToolStripButton_Click);
@@ -5317,7 +5333,7 @@
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 31);
             // 
             // saveToolStripButton
             // 
@@ -5325,7 +5341,7 @@
             this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Size = new System.Drawing.Size(28, 28);
             this.saveToolStripButton.Text = "Save";
             this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
@@ -5335,7 +5351,7 @@
             this.saveAsToolStripButton.Image = global::Doomtrain.Properties.Resources.saveas;
             this.saveAsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveAsToolStripButton.Name = "saveAsToolStripButton";
-            this.saveAsToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveAsToolStripButton.Size = new System.Drawing.Size(28, 28);
             this.saveAsToolStripButton.Text = "saveAs";
             this.saveAsToolStripButton.ToolTipText = "Save a Copy As...";
             this.saveAsToolStripButton.Click += new System.EventHandler(this.saveAsToolStripButton_Click);
@@ -5347,7 +5363,7 @@
             this.deleteTooltipsToolStripButton.Image = global::Doomtrain.Properties.Resources.deletetooltip;
             this.deleteTooltipsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.deleteTooltipsToolStripButton.Name = "deleteTooltipsToolStripButton";
-            this.deleteTooltipsToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.deleteTooltipsToolStripButton.Size = new System.Drawing.Size(28, 28);
             this.deleteTooltipsToolStripButton.Text = "Delete Tooltips File";
             this.deleteTooltipsToolStripButton.Click += new System.EventHandler(this.deleteTooltipsToolStripButton_Click);
             // 
@@ -5877,7 +5893,7 @@
             this.checkBoxGFAttacksTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxGFAttacksTriple.Location = new System.Drawing.Point(284, 161);
             this.checkBoxGFAttacksTriple.Name = "checkBoxGFAttacksTriple";
-            this.checkBoxGFAttacksTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxGFAttacksTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxGFAttacksTriple.TabIndex = 121;
             this.checkBoxGFAttacksTriple.Text = "Triple";
             this.checkBoxGFAttacksTriple.UseVisualStyleBackColor = true;
@@ -6153,7 +6169,7 @@
             "Friendship (Moomba)"});
             this.listBoxGFAttacks.Location = new System.Drawing.Point(0, 0);
             this.listBoxGFAttacks.Name = "listBoxGFAttacks";
-            this.listBoxGFAttacks.Size = new System.Drawing.Size(156, 769);
+            this.listBoxGFAttacks.Size = new System.Drawing.Size(156, 752);
             this.listBoxGFAttacks.TabIndex = 4;
             this.listBoxGFAttacks.SelectedIndexChanged += new System.EventHandler(this.listBoxGFAttacks_SelectedIndexChanged);
             // 
@@ -6710,7 +6726,7 @@
             this.checkBoxGFTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxGFTriple.Location = new System.Drawing.Point(283, 153);
             this.checkBoxGFTriple.Name = "checkBoxGFTriple";
-            this.checkBoxGFTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxGFTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxGFTriple.TabIndex = 81;
             this.checkBoxGFTriple.Text = "Triple";
             this.checkBoxGFTriple.UseVisualStyleBackColor = true;
@@ -13182,7 +13198,7 @@
             "Eden"});
             this.listBoxGF.Location = new System.Drawing.Point(0, 0);
             this.listBoxGF.Name = "listBoxGF";
-            this.listBoxGF.Size = new System.Drawing.Size(156, 769);
+            this.listBoxGF.Size = new System.Drawing.Size(156, 752);
             this.listBoxGF.TabIndex = 1;
             this.listBoxGF.SelectedIndexChanged += new System.EventHandler(this.listBoxGF_SelectedIndexChanged);
             // 
@@ -13868,7 +13884,7 @@
             this.checkBoxMagicTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxMagicTriple.Location = new System.Drawing.Point(279, 153);
             this.checkBoxMagicTriple.Name = "checkBoxMagicTriple";
-            this.checkBoxMagicTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxMagicTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxMagicTriple.TabIndex = 53;
             this.checkBoxMagicTriple.Text = "Triple";
             this.checkBoxMagicTriple.UseVisualStyleBackColor = true;
@@ -14651,7 +14667,7 @@
             this.radioButtonJElemAttackThunder.ForeColor = System.Drawing.SystemColors.WindowText;
             this.radioButtonJElemAttackThunder.Location = new System.Drawing.Point(98, 56);
             this.radioButtonJElemAttackThunder.Name = "radioButtonJElemAttackThunder";
-            this.radioButtonJElemAttackThunder.Size = new System.Drawing.Size(70, 19);
+            this.radioButtonJElemAttackThunder.Size = new System.Drawing.Size(69, 19);
             this.radioButtonJElemAttackThunder.TabIndex = 42;
             this.radioButtonJElemAttackThunder.TabStop = true;
             this.radioButtonJElemAttackThunder.Text = "Thunder";
@@ -15534,7 +15550,7 @@
             "56 - The End"});
             this.listBoxMagic.Location = new System.Drawing.Point(0, 0);
             this.listBoxMagic.Name = "listBoxMagic";
-            this.listBoxMagic.Size = new System.Drawing.Size(156, 769);
+            this.listBoxMagic.Size = new System.Drawing.Size(156, 752);
             this.listBoxMagic.TabIndex = 1;
             this.listBoxMagic.SelectedIndexChanged += new System.EventHandler(this.listBoxMagic_SelectedIndexChanged);
             // 
@@ -15578,7 +15594,7 @@
             "Defend"});
             this.listBoxAbComData.Location = new System.Drawing.Point(0, 0);
             this.listBoxAbComData.Name = "listBoxAbComData";
-            this.listBoxAbComData.Size = new System.Drawing.Size(156, 769);
+            this.listBoxAbComData.Size = new System.Drawing.Size(156, 752);
             this.listBoxAbComData.TabIndex = 4;
             this.listBoxAbComData.SelectedIndexChanged += new System.EventHandler(this.listBoxAbComData_SelectedIndexChanged);
             // 
@@ -15751,7 +15767,7 @@
             this.checkBoxAbCharFlag7.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxAbCharFlag7.Location = new System.Drawing.Point(240, 64);
             this.checkBoxAbCharFlag7.Name = "checkBoxAbCharFlag7";
-            this.checkBoxAbCharFlag7.Size = new System.Drawing.Size(86, 19);
+            this.checkBoxAbCharFlag7.Size = new System.Drawing.Size(88, 19);
             this.checkBoxAbCharFlag7.TabIndex = 104;
             this.checkBoxAbCharFlag7.Text = "Expendx3-1";
             this.checkBoxAbCharFlag7.UseVisualStyleBackColor = true;
@@ -15823,7 +15839,7 @@
             this.checkBoxAbCharFlag6.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxAbCharFlag6.Location = new System.Drawing.Point(129, 64);
             this.checkBoxAbCharFlag6.Name = "checkBoxAbCharFlag6";
-            this.checkBoxAbCharFlag6.Size = new System.Drawing.Size(86, 19);
+            this.checkBoxAbCharFlag6.Size = new System.Drawing.Size(88, 19);
             this.checkBoxAbCharFlag6.TabIndex = 104;
             this.checkBoxAbCharFlag6.Text = "Expendx2-1";
             this.checkBoxAbCharFlag6.UseVisualStyleBackColor = true;
@@ -16166,7 +16182,7 @@
             this.checkBoxAbJunFlag19.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxAbJunFlag19.Location = new System.Drawing.Point(239, 179);
             this.checkBoxAbJunFlag19.Name = "checkBoxAbJunFlag19";
-            this.checkBoxAbJunFlag19.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxAbJunFlag19.Size = new System.Drawing.Size(72, 19);
             this.checkBoxAbJunFlag19.TabIndex = 104;
             this.checkBoxAbJunFlag19.Text = "Abilityx4";
             this.checkBoxAbJunFlag19.UseVisualStyleBackColor = true;
@@ -16190,7 +16206,7 @@
             this.checkBoxAbJunFlag18.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxAbJunFlag18.Location = new System.Drawing.Point(128, 179);
             this.checkBoxAbJunFlag18.Name = "checkBoxAbJunFlag18";
-            this.checkBoxAbJunFlag18.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxAbJunFlag18.Size = new System.Drawing.Size(72, 19);
             this.checkBoxAbJunFlag18.TabIndex = 104;
             this.checkBoxAbJunFlag18.Text = "Abilityx3";
             this.checkBoxAbJunFlag18.UseVisualStyleBackColor = true;
@@ -16202,7 +16218,7 @@
             this.checkBoxAbJunFlag13.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxAbJunFlag13.Location = new System.Drawing.Point(346, 106);
             this.checkBoxAbJunFlag13.Name = "checkBoxAbJunFlag13";
-            this.checkBoxAbJunFlag13.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxAbJunFlag13.Size = new System.Drawing.Size(70, 19);
             this.checkBoxAbJunFlag13.TabIndex = 104;
             this.checkBoxAbJunFlag13.Text = "ST-Def-J";
             this.checkBoxAbJunFlag13.UseVisualStyleBackColor = true;
@@ -16214,7 +16230,7 @@
             this.checkBoxAbJunFlag15.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxAbJunFlag15.Location = new System.Drawing.Point(128, 131);
             this.checkBoxAbJunFlag15.Name = "checkBoxAbJunFlag15";
-            this.checkBoxAbJunFlag15.Size = new System.Drawing.Size(86, 19);
+            this.checkBoxAbJunFlag15.Size = new System.Drawing.Size(87, 19);
             this.checkBoxAbJunFlag15.TabIndex = 104;
             this.checkBoxAbJunFlag15.Text = "Elem-Defx4";
             this.checkBoxAbJunFlag15.UseVisualStyleBackColor = true;
@@ -16238,7 +16254,7 @@
             this.checkBoxAbJunFlag14.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxAbJunFlag14.Location = new System.Drawing.Point(17, 131);
             this.checkBoxAbJunFlag14.Name = "checkBoxAbJunFlag14";
-            this.checkBoxAbJunFlag14.Size = new System.Drawing.Size(86, 19);
+            this.checkBoxAbJunFlag14.Size = new System.Drawing.Size(87, 19);
             this.checkBoxAbJunFlag14.TabIndex = 104;
             this.checkBoxAbJunFlag14.Text = "Elem-Defx2";
             this.checkBoxAbJunFlag14.UseVisualStyleBackColor = true;
@@ -16250,7 +16266,7 @@
             this.checkBoxAbJunFlag11.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxAbJunFlag11.Location = new System.Drawing.Point(128, 106);
             this.checkBoxAbJunFlag11.Name = "checkBoxAbJunFlag11";
-            this.checkBoxAbJunFlag11.Size = new System.Drawing.Size(71, 19);
+            this.checkBoxAbJunFlag11.Size = new System.Drawing.Size(70, 19);
             this.checkBoxAbJunFlag11.TabIndex = 104;
             this.checkBoxAbJunFlag11.Text = "ST-Atk-J";
             this.checkBoxAbJunFlag11.UseVisualStyleBackColor = true;
@@ -16861,7 +16877,7 @@
             this.checkBoxAbComDataTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxAbComDataTriple.Location = new System.Drawing.Point(279, 161);
             this.checkBoxAbComDataTriple.Name = "checkBoxAbComDataTriple";
-            this.checkBoxAbComDataTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxAbComDataTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxAbComDataTriple.TabIndex = 121;
             this.checkBoxAbComDataTriple.Text = "Triple";
             this.checkBoxAbComDataTriple.UseVisualStyleBackColor = true;
@@ -17619,7 +17635,7 @@
             "Ribbon"});
             this.listBoxAbChar.Location = new System.Drawing.Point(0, 0);
             this.listBoxAbChar.Name = "listBoxAbChar";
-            this.listBoxAbChar.Size = new System.Drawing.Size(156, 769);
+            this.listBoxAbChar.Size = new System.Drawing.Size(156, 752);
             this.listBoxAbChar.TabIndex = 3;
             this.listBoxAbChar.SelectedIndexChanged += new System.EventHandler(this.listBoxAbChar_SelectedIndexChanged);
             // 
@@ -17651,7 +17667,7 @@
             "LUCK+50%"});
             this.listBoxAbStats.Location = new System.Drawing.Point(0, 0);
             this.listBoxAbStats.Name = "listBoxAbStats";
-            this.listBoxAbStats.Size = new System.Drawing.Size(156, 769);
+            this.listBoxAbStats.Size = new System.Drawing.Size(156, 752);
             this.listBoxAbStats.TabIndex = 3;
             this.listBoxAbStats.SelectedIndexChanged += new System.EventHandler(this.listBoxAbStats_SelectedIndexChanged);
             // 
@@ -17688,7 +17704,7 @@
             "Card Mod"});
             this.listBoxAbMenu.Location = new System.Drawing.Point(0, 0);
             this.listBoxAbMenu.Name = "listBoxAbMenu";
-            this.listBoxAbMenu.Size = new System.Drawing.Size(156, 769);
+            this.listBoxAbMenu.Size = new System.Drawing.Size(156, 752);
             this.listBoxAbMenu.TabIndex = 3;
             this.listBoxAbMenu.SelectedIndexChanged += new System.EventHandler(this.listBoxAbMenu_SelectedIndexChanged);
             // 
@@ -17706,7 +17722,7 @@
             "Rare Item"});
             this.listBoxAbParty.Location = new System.Drawing.Point(0, 0);
             this.listBoxAbParty.Name = "listBoxAbParty";
-            this.listBoxAbParty.Size = new System.Drawing.Size(156, 769);
+            this.listBoxAbParty.Size = new System.Drawing.Size(156, 752);
             this.listBoxAbParty.TabIndex = 3;
             this.listBoxAbParty.SelectedIndexChanged += new System.EventHandler(this.listBoxAbParty_SelectedIndexChanged);
             // 
@@ -17728,7 +17744,7 @@
             "Boost"});
             this.listBoxAbGF.Location = new System.Drawing.Point(0, 0);
             this.listBoxAbGF.Name = "listBoxAbGF";
-            this.listBoxAbGF.Size = new System.Drawing.Size(156, 769);
+            this.listBoxAbGF.Size = new System.Drawing.Size(156, 752);
             this.listBoxAbGF.TabIndex = 3;
             this.listBoxAbGF.SelectedIndexChanged += new System.EventHandler(this.listBoxAbGF_SelectedIndexChanged);
             // 
@@ -17760,7 +17776,7 @@
             "MiniMog"});
             this.listBoxAbCom.Location = new System.Drawing.Point(0, 0);
             this.listBoxAbCom.Name = "listBoxAbCom";
-            this.listBoxAbCom.Size = new System.Drawing.Size(156, 769);
+            this.listBoxAbCom.Size = new System.Drawing.Size(156, 752);
             this.listBoxAbCom.TabIndex = 3;
             this.listBoxAbCom.SelectedIndexChanged += new System.EventHandler(this.listBoxAbCom_SelectedIndexChanged);
             // 
@@ -17792,7 +17808,7 @@
             "Abilityx4"});
             this.listBoxAbJun.Location = new System.Drawing.Point(0, 0);
             this.listBoxAbJun.Name = "listBoxAbJun";
-            this.listBoxAbJun.Size = new System.Drawing.Size(156, 769);
+            this.listBoxAbJun.Size = new System.Drawing.Size(156, 752);
             this.listBoxAbJun.TabIndex = 3;
             this.listBoxAbJun.SelectedIndexChanged += new System.EventHandler(this.listBoxAbJun_SelectedIndexChanged);
             // 
@@ -17901,6 +17917,48 @@
             this.groupBoxWeaponsGeneral.TabIndex = 4;
             this.groupBoxWeaponsGeneral.TabStop = false;
             this.groupBoxWeaponsGeneral.Text = "General";
+            // 
+            // labelWeaponsNote1
+            // 
+            this.labelWeaponsNote1.AutoSize = true;
+            this.labelWeaponsNote1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelWeaponsNote1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsNote1.Location = new System.Drawing.Point(104, 239);
+            this.labelWeaponsNote1.Name = "labelWeaponsNote1";
+            this.labelWeaponsNote1.Size = new System.Drawing.Size(318, 13);
+            this.labelWeaponsNote1.TabIndex = 94;
+            this.labelWeaponsNote1.Text = "Gunblades seems to not be affected by Attack Type changes.";
+            // 
+            // labelWeaponsNote2
+            // 
+            this.labelWeaponsNote2.AutoSize = true;
+            this.labelWeaponsNote2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelWeaponsNote2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsNote2.Location = new System.Drawing.Point(104, 256);
+            this.labelWeaponsNote2.Name = "labelWeaponsNote2";
+            this.labelWeaponsNote2.Size = new System.Drawing.Size(351, 13);
+            this.labelWeaponsNote2.TabIndex = 94;
+            this.labelWeaponsNote2.Text = "When Attack Type is Physical Attack, Attack Param is added to Hit%.";
+            // 
+            // comboBoxWeaponsAttackType
+            // 
+            this.comboBoxWeaponsAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxWeaponsAttackType.FormattingEnabled = true;
+            this.comboBoxWeaponsAttackType.Location = new System.Drawing.Point(32, 182);
+            this.comboBoxWeaponsAttackType.Name = "comboBoxWeaponsAttackType";
+            this.comboBoxWeaponsAttackType.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxWeaponsAttackType.TabIndex = 93;
+            // 
+            // labelWeaponsAttackType
+            // 
+            this.labelWeaponsAttackType.AutoSize = true;
+            this.labelWeaponsAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelWeaponsAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelWeaponsAttackType.Location = new System.Drawing.Point(123, 162);
+            this.labelWeaponsAttackType.Name = "labelWeaponsAttackType";
+            this.labelWeaponsAttackType.Size = new System.Drawing.Size(79, 17);
+            this.labelWeaponsAttackType.TabIndex = 92;
+            this.labelWeaponsAttackType.Text = "Attack Type";
             // 
             // numericUpDownWeaponsCrit
             // 
@@ -18062,7 +18120,7 @@
             "Harpoon"});
             this.listBoxWeapons.Location = new System.Drawing.Point(0, 0);
             this.listBoxWeapons.Name = "listBoxWeapons";
-            this.listBoxWeapons.Size = new System.Drawing.Size(156, 769);
+            this.listBoxWeapons.Size = new System.Drawing.Size(156, 752);
             this.listBoxWeapons.TabIndex = 5;
             this.listBoxWeapons.SelectedIndexChanged += new System.EventHandler(this.listBoxWeapons_SelectedIndexChanged);
             // 
@@ -18899,7 +18957,7 @@
             "Ward"});
             this.listBoxCharacters.Location = new System.Drawing.Point(0, 0);
             this.listBoxCharacters.Name = "listBoxCharacters";
-            this.listBoxCharacters.Size = new System.Drawing.Size(156, 769);
+            this.listBoxCharacters.Size = new System.Drawing.Size(156, 752);
             this.listBoxCharacters.TabIndex = 0;
             this.listBoxCharacters.SelectedIndexChanged += new System.EventHandler(this.listBoxCharacters_SelectedIndexChanged);
             // 
@@ -19368,7 +19426,7 @@
             this.checkBoxRenzoFinTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxRenzoFinTriple.Location = new System.Drawing.Point(285, 161);
             this.checkBoxRenzoFinTriple.Name = "checkBoxRenzoFinTriple";
-            this.checkBoxRenzoFinTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxRenzoFinTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxRenzoFinTriple.TabIndex = 121;
             this.checkBoxRenzoFinTriple.Text = "Triple";
             this.checkBoxRenzoFinTriple.UseVisualStyleBackColor = true;
@@ -19631,7 +19689,7 @@
             "Lion Heart"});
             this.listBoxRenzoFin.Location = new System.Drawing.Point(0, 0);
             this.listBoxRenzoFin.Name = "listBoxRenzoFin";
-            this.listBoxRenzoFin.Size = new System.Drawing.Size(145, 735);
+            this.listBoxRenzoFin.Size = new System.Drawing.Size(145, 718);
             this.listBoxRenzoFin.TabIndex = 0;
             this.listBoxRenzoFin.SelectedIndexChanged += new System.EventHandler(this.listBoxRenzoFin_SelectedIndexChanged);
             // 
@@ -19665,6 +19723,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage2.Controls.Add(this.groupBoxBlueMagicTarget);
             this.tabPage2.Controls.Add(this.groupBoxBlueMagicAttackFlags);
             this.tabPage2.Controls.Add(this.groupBoxBlueMagicGeneral);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
@@ -19793,6 +19852,8 @@
             // groupBoxBlueMagicGeneral
             // 
             this.groupBoxBlueMagicGeneral.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxBlueMagicGeneral.Controls.Add(this.numericUpDownBlueMagicHitCount);
+            this.groupBoxBlueMagicGeneral.Controls.Add(this.labelBlueMagicHitCount);
             this.groupBoxBlueMagicGeneral.Controls.Add(this.numericUpDownBlueMagicCrit);
             this.groupBoxBlueMagicGeneral.Controls.Add(this.labelBlueMagicCrit);
             this.groupBoxBlueMagicGeneral.Controls.Add(this.numericUpDownBlueMagicStatusAttack);
@@ -19811,6 +19872,30 @@
             this.groupBoxBlueMagicGeneral.TabIndex = 101;
             this.groupBoxBlueMagicGeneral.TabStop = false;
             this.groupBoxBlueMagicGeneral.Text = "General";
+            // 
+            // numericUpDownBlueMagicHitCount
+            // 
+            this.numericUpDownBlueMagicHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownBlueMagicHitCount.Location = new System.Drawing.Point(319, 50);
+            this.numericUpDownBlueMagicHitCount.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownBlueMagicHitCount.Name = "numericUpDownBlueMagicHitCount";
+            this.numericUpDownBlueMagicHitCount.Size = new System.Drawing.Size(47, 25);
+            this.numericUpDownBlueMagicHitCount.TabIndex = 107;
+            // 
+            // labelBlueMagicHitCount
+            // 
+            this.labelBlueMagicHitCount.AutoSize = true;
+            this.labelBlueMagicHitCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
+            this.labelBlueMagicHitCount.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelBlueMagicHitCount.Location = new System.Drawing.Point(309, 30);
+            this.labelBlueMagicHitCount.Name = "labelBlueMagicHitCount";
+            this.labelBlueMagicHitCount.Size = new System.Drawing.Size(67, 17);
+            this.labelBlueMagicHitCount.TabIndex = 106;
+            this.labelBlueMagicHitCount.Text = "Hit Count";
             // 
             // numericUpDownBlueMagicCrit
             // 
@@ -19874,7 +19959,7 @@
             "Water",
             "Holy",
             "Non-Elemental"});
-            this.comboBoxBlueMagicElement.Location = new System.Drawing.Point(321, 49);
+            this.comboBoxBlueMagicElement.Location = new System.Drawing.Point(319, 111);
             this.comboBoxBlueMagicElement.Name = "comboBoxBlueMagicElement";
             this.comboBoxBlueMagicElement.Size = new System.Drawing.Size(110, 25);
             this.comboBoxBlueMagicElement.TabIndex = 4;
@@ -19883,7 +19968,7 @@
             // 
             this.comboBoxBlueMagicAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxBlueMagicAttackType.FormattingEnabled = true;
-            this.comboBoxBlueMagicAttackType.Location = new System.Drawing.Point(95, 111);
+            this.comboBoxBlueMagicAttackType.Location = new System.Drawing.Point(6, 111);
             this.comboBoxBlueMagicAttackType.Name = "comboBoxBlueMagicAttackType";
             this.comboBoxBlueMagicAttackType.Size = new System.Drawing.Size(265, 25);
             this.comboBoxBlueMagicAttackType.TabIndex = 102;
@@ -19892,9 +19977,9 @@
             // 
             this.comboBoxBlueMagicMagicID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxBlueMagicMagicID.FormattingEnabled = true;
-            this.comboBoxBlueMagicMagicID.Location = new System.Drawing.Point(23, 49);
+            this.comboBoxBlueMagicMagicID.Location = new System.Drawing.Point(6, 49);
             this.comboBoxBlueMagicMagicID.Name = "comboBoxBlueMagicMagicID";
-            this.comboBoxBlueMagicMagicID.Size = new System.Drawing.Size(265, 25);
+            this.comboBoxBlueMagicMagicID.Size = new System.Drawing.Size(247, 25);
             this.comboBoxBlueMagicMagicID.TabIndex = 2;
             // 
             // tabPage3
@@ -20309,7 +20394,7 @@
             this.checkBoxBlueMagicCL1Triple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxBlueMagicCL1Triple.Location = new System.Drawing.Point(280, 185);
             this.checkBoxBlueMagicCL1Triple.Name = "checkBoxBlueMagicCL1Triple";
-            this.checkBoxBlueMagicCL1Triple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxBlueMagicCL1Triple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxBlueMagicCL1Triple.TabIndex = 161;
             this.checkBoxBlueMagicCL1Triple.Text = "Triple";
             this.checkBoxBlueMagicCL1Triple.UseVisualStyleBackColor = true;
@@ -20895,7 +20980,7 @@
             this.checkBoxBlueMagicCL2Triple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxBlueMagicCL2Triple.Location = new System.Drawing.Point(280, 185);
             this.checkBoxBlueMagicCL2Triple.Name = "checkBoxBlueMagicCL2Triple";
-            this.checkBoxBlueMagicCL2Triple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxBlueMagicCL2Triple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxBlueMagicCL2Triple.TabIndex = 161;
             this.checkBoxBlueMagicCL2Triple.Text = "Triple";
             this.checkBoxBlueMagicCL2Triple.UseVisualStyleBackColor = true;
@@ -21481,7 +21566,7 @@
             this.checkBoxBlueMagicCL3Triple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxBlueMagicCL3Triple.Location = new System.Drawing.Point(280, 185);
             this.checkBoxBlueMagicCL3Triple.Name = "checkBoxBlueMagicCL3Triple";
-            this.checkBoxBlueMagicCL3Triple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxBlueMagicCL3Triple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxBlueMagicCL3Triple.TabIndex = 161;
             this.checkBoxBlueMagicCL3Triple.Text = "Triple";
             this.checkBoxBlueMagicCL3Triple.UseVisualStyleBackColor = true;
@@ -22067,7 +22152,7 @@
             this.checkBoxBlueMagicCL4Triple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxBlueMagicCL4Triple.Location = new System.Drawing.Point(280, 185);
             this.checkBoxBlueMagicCL4Triple.Name = "checkBoxBlueMagicCL4Triple";
-            this.checkBoxBlueMagicCL4Triple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxBlueMagicCL4Triple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxBlueMagicCL4Triple.TabIndex = 161;
             this.checkBoxBlueMagicCL4Triple.Text = "Triple";
             this.checkBoxBlueMagicCL4Triple.UseVisualStyleBackColor = true;
@@ -22265,7 +22350,7 @@
             "Shockwave Pulsar"});
             this.listBoxBlueMagic.Location = new System.Drawing.Point(0, 0);
             this.listBoxBlueMagic.Name = "listBoxBlueMagic";
-            this.listBoxBlueMagic.Size = new System.Drawing.Size(145, 735);
+            this.listBoxBlueMagic.Size = new System.Drawing.Size(145, 718);
             this.listBoxBlueMagic.TabIndex = 22;
             this.listBoxBlueMagic.SelectedIndexChanged += new System.EventHandler(this.listBoxBlueMagic_SelectedIndexChanged);
             // 
@@ -22899,7 +22984,7 @@
             this.checkBoxDuelTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxDuelTriple.Location = new System.Drawing.Point(285, 150);
             this.checkBoxDuelTriple.Name = "checkBoxDuelTriple";
-            this.checkBoxDuelTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxDuelTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxDuelTriple.TabIndex = 121;
             this.checkBoxDuelTriple.Text = "Triple";
             this.checkBoxDuelTriple.UseVisualStyleBackColor = true;
@@ -25778,7 +25863,7 @@
             this.listBoxSlotsSets.Location = new System.Drawing.Point(121, 46);
             this.listBoxSlotsSets.Name = "listBoxSlotsSets";
             this.listBoxSlotsSets.ScrollAlwaysVisible = true;
-            this.listBoxSlotsSets.Size = new System.Drawing.Size(109, 310);
+            this.listBoxSlotsSets.Size = new System.Drawing.Size(109, 276);
             this.listBoxSlotsSets.TabIndex = 46;
             this.listBoxSlotsSets.SelectedIndexChanged += new System.EventHandler(this.listBoxSlotsSets_SelectedIndexChanged);
             // 
@@ -27759,7 +27844,7 @@
             this.checkBoxCombineTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxCombineTriple.Location = new System.Drawing.Point(285, 161);
             this.checkBoxCombineTriple.Name = "checkBoxCombineTriple";
-            this.checkBoxCombineTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxCombineTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxCombineTriple.TabIndex = 121;
             this.checkBoxCombineTriple.Text = "Triple";
             this.checkBoxCombineTriple.UseVisualStyleBackColor = true;
@@ -29125,7 +29210,7 @@
             this.checkBoxShotTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxShotTriple.Location = new System.Drawing.Point(285, 148);
             this.checkBoxShotTriple.Name = "checkBoxShotTriple";
-            this.checkBoxShotTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxShotTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxShotTriple.TabIndex = 121;
             this.checkBoxShotTriple.Text = "Triple";
             this.checkBoxShotTriple.UseVisualStyleBackColor = true;
@@ -30471,7 +30556,7 @@
             this.checkBoxTempCharLBTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxTempCharLBTriple.Location = new System.Drawing.Point(285, 161);
             this.checkBoxTempCharLBTriple.Name = "checkBoxTempCharLBTriple";
-            this.checkBoxTempCharLBTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxTempCharLBTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxTempCharLBTriple.TabIndex = 121;
             this.checkBoxTempCharLBTriple.Text = "Triple";
             this.checkBoxTempCharLBTriple.UseVisualStyleBackColor = true;
@@ -30977,7 +31062,7 @@
             "Massive Anchor (Ward)"});
             this.listBoxTempCharLB.Location = new System.Drawing.Point(0, 0);
             this.listBoxTempCharLB.Name = "listBoxTempCharLB";
-            this.listBoxTempCharLB.Size = new System.Drawing.Size(145, 735);
+            this.listBoxTempCharLB.Size = new System.Drawing.Size(145, 718);
             this.listBoxTempCharLB.TabIndex = 109;
             this.listBoxTempCharLB.SelectedIndexChanged += new System.EventHandler(this.listBoxTempCharLB_SelectedIndexChanged);
             // 
@@ -31392,7 +31477,7 @@
             this.checkBoxBattleItemsTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxBattleItemsTriple.Location = new System.Drawing.Point(285, 161);
             this.checkBoxBattleItemsTriple.Name = "checkBoxBattleItemsTriple";
-            this.checkBoxBattleItemsTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxBattleItemsTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxBattleItemsTriple.TabIndex = 121;
             this.checkBoxBattleItemsTriple.Text = "Triple";
             this.checkBoxBattleItemsTriple.UseVisualStyleBackColor = true;
@@ -31925,7 +32010,7 @@
             "Friendship"});
             this.listBoxBattleItems.Location = new System.Drawing.Point(0, 0);
             this.listBoxBattleItems.Name = "listBoxBattleItems";
-            this.listBoxBattleItems.Size = new System.Drawing.Size(156, 769);
+            this.listBoxBattleItems.Size = new System.Drawing.Size(156, 752);
             this.listBoxBattleItems.TabIndex = 112;
             this.listBoxBattleItems.SelectedIndexChanged += new System.EventHandler(this.listBoxBattleItems_SelectedIndexChanged);
             // 
@@ -32338,7 +32423,7 @@
             this.checkBoxDevourTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxDevourTriple.Location = new System.Drawing.Point(284, 107);
             this.checkBoxDevourTriple.Name = "checkBoxDevourTriple";
-            this.checkBoxDevourTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxDevourTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxDevourTriple.TabIndex = 121;
             this.checkBoxDevourTriple.Text = "Triple";
             this.checkBoxDevourTriple.UseVisualStyleBackColor = true;
@@ -32678,7 +32763,7 @@
             this.checkBoxDevourStat2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxDevourStat2.Location = new System.Drawing.Point(224, 70);
             this.checkBoxDevourStat2.Name = "checkBoxDevourStat2";
-            this.checkBoxDevourStat2.Size = new System.Drawing.Size(43, 19);
+            this.checkBoxDevourStat2.Size = new System.Drawing.Size(42, 19);
             this.checkBoxDevourStat2.TabIndex = 103;
             this.checkBoxDevourStat2.Text = "VIT";
             this.checkBoxDevourStat2.UseVisualStyleBackColor = true;
@@ -32690,7 +32775,7 @@
             this.checkBoxDevourStat1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxDevourStat1.Location = new System.Drawing.Point(224, 49);
             this.checkBoxDevourStat1.Name = "checkBoxDevourStat1";
-            this.checkBoxDevourStat1.Size = new System.Drawing.Size(46, 19);
+            this.checkBoxDevourStat1.Size = new System.Drawing.Size(45, 19);
             this.checkBoxDevourStat1.TabIndex = 103;
             this.checkBoxDevourStat1.Text = "STR";
             this.checkBoxDevourStat1.UseVisualStyleBackColor = true;
@@ -32719,7 +32804,7 @@
             "All systems go!"});
             this.listBoxDevour.Location = new System.Drawing.Point(0, 0);
             this.listBoxDevour.Name = "listBoxDevour";
-            this.listBoxDevour.Size = new System.Drawing.Size(156, 769);
+            this.listBoxDevour.Size = new System.Drawing.Size(156, 752);
             this.listBoxDevour.TabIndex = 7;
             this.listBoxDevour.SelectedIndexChanged += new System.EventHandler(this.listBoxDevour_SelectedIndexChanged);
             // 
@@ -33214,7 +33299,7 @@
             "Minimog"});
             this.listBoxBatCom.Location = new System.Drawing.Point(0, 0);
             this.listBoxBatCom.Name = "listBoxBatCom";
-            this.listBoxBatCom.Size = new System.Drawing.Size(156, 769);
+            this.listBoxBatCom.Size = new System.Drawing.Size(156, 752);
             this.listBoxBatCom.TabIndex = 7;
             this.listBoxBatCom.SelectedIndexChanged += new System.EventHandler(this.listBoxBatCom_SelectedIndexChanged);
             // 
@@ -33747,7 +33832,7 @@
             this.checkBoxEnemyAttacksTriple.ForeColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxEnemyAttacksTriple.Location = new System.Drawing.Point(281, 161);
             this.checkBoxEnemyAttacksTriple.Name = "checkBoxEnemyAttacksTriple";
-            this.checkBoxEnemyAttacksTriple.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxEnemyAttacksTriple.Size = new System.Drawing.Size(54, 19);
             this.checkBoxEnemyAttacksTriple.TabIndex = 121;
             this.checkBoxEnemyAttacksTriple.Text = "Triple";
             this.checkBoxEnemyAttacksTriple.UseVisualStyleBackColor = true;
@@ -34453,7 +34538,7 @@
             this.listBoxEnemyAttacks.Location = new System.Drawing.Point(0, 0);
             this.listBoxEnemyAttacks.Name = "listBoxEnemyAttacks";
             this.listBoxEnemyAttacks.ScrollAlwaysVisible = true;
-            this.listBoxEnemyAttacks.Size = new System.Drawing.Size(180, 769);
+            this.listBoxEnemyAttacks.Size = new System.Drawing.Size(180, 752);
             this.listBoxEnemyAttacks.TabIndex = 8;
             this.listBoxEnemyAttacks.SelectedIndexChanged += new System.EventHandler(this.listBoxEnemyAttacks_SelectedIndexChanged);
             // 
@@ -35942,13 +36027,14 @@
             // 
             this.statusStrip1.BackColor = System.Drawing.Color.Gray;
             this.statusStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabelStatus,
             this.toolStripStatusLabelRightAlign,
             this.toolStripStatusLabelKernel,
             this.toolStripStatusLabelDash,
             this.toolStripStatusLabelTooltips});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 860);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 843);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(654, 22);
             this.statusStrip1.SizingGrip = false;
@@ -35999,57 +36085,132 @@
             this.panelMain.AutoScroll = true;
             this.panelMain.Controls.Add(this.tabControlMain);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 49);
+            this.panelMain.Location = new System.Drawing.Point(0, 55);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(654, 811);
+            this.panelMain.Size = new System.Drawing.Size(654, 788);
             this.panelMain.TabIndex = 2;
             // 
-            // comboBoxWeaponsAttackType
+            // groupBoxBlueMagicTarget
             // 
-            this.comboBoxWeaponsAttackType.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxWeaponsAttackType.FormattingEnabled = true;
-            this.comboBoxWeaponsAttackType.Location = new System.Drawing.Point(32, 182);
-            this.comboBoxWeaponsAttackType.Name = "comboBoxWeaponsAttackType";
-            this.comboBoxWeaponsAttackType.Size = new System.Drawing.Size(265, 25);
-            this.comboBoxWeaponsAttackType.TabIndex = 93;
+            this.groupBoxBlueMagicTarget.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBoxBlueMagicTarget.Controls.Add(this.checkBoxBlueMagicTarget8);
+            this.groupBoxBlueMagicTarget.Controls.Add(this.checkBoxBlueMagicTarget5);
+            this.groupBoxBlueMagicTarget.Controls.Add(this.checkBoxBlueMagicTarget2);
+            this.groupBoxBlueMagicTarget.Controls.Add(this.checkBoxBlueMagicTarget4);
+            this.groupBoxBlueMagicTarget.Controls.Add(this.checkBoxBlueMagicTarget6);
+            this.groupBoxBlueMagicTarget.Controls.Add(this.checkBoxBlueMagicTarget7);
+            this.groupBoxBlueMagicTarget.Controls.Add(this.checkBoxBlueMagicTarget1);
+            this.groupBoxBlueMagicTarget.Controls.Add(this.checkBoxBlueMagicTarget3);
+            this.groupBoxBlueMagicTarget.Font = new System.Drawing.Font("Segoe UI Semibold", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxBlueMagicTarget.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.groupBoxBlueMagicTarget.Location = new System.Drawing.Point(3, 329);
+            this.groupBoxBlueMagicTarget.Name = "groupBoxBlueMagicTarget";
+            this.groupBoxBlueMagicTarget.Size = new System.Drawing.Size(458, 77);
+            this.groupBoxBlueMagicTarget.TabIndex = 115;
+            this.groupBoxBlueMagicTarget.TabStop = false;
+            this.groupBoxBlueMagicTarget.Text = "Target Info";
             // 
-            // labelWeaponsAttackType
+            // checkBoxBlueMagicTarget8
             // 
-            this.labelWeaponsAttackType.AutoSize = true;
-            this.labelWeaponsAttackType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F);
-            this.labelWeaponsAttackType.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsAttackType.Location = new System.Drawing.Point(123, 162);
-            this.labelWeaponsAttackType.Name = "labelWeaponsAttackType";
-            this.labelWeaponsAttackType.Size = new System.Drawing.Size(79, 17);
-            this.labelWeaponsAttackType.TabIndex = 92;
-            this.labelWeaponsAttackType.Text = "Attack Type";
+            this.checkBoxBlueMagicTarget8.AutoSize = true;
+            this.checkBoxBlueMagicTarget8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicTarget8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicTarget8.Location = new System.Drawing.Point(352, 52);
+            this.checkBoxBlueMagicTarget8.Name = "checkBoxBlueMagicTarget8";
+            this.checkBoxBlueMagicTarget8.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicTarget8.TabIndex = 39;
+            this.checkBoxBlueMagicTarget8.Text = "???";
+            this.checkBoxBlueMagicTarget8.UseVisualStyleBackColor = true;
             // 
-            // labelWeaponsNote2
+            // checkBoxBlueMagicTarget5
             // 
-            this.labelWeaponsNote2.AutoSize = true;
-            this.labelWeaponsNote2.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelWeaponsNote2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsNote2.Location = new System.Drawing.Point(104, 256);
-            this.labelWeaponsNote2.Name = "labelWeaponsNote2";
-            this.labelWeaponsNote2.Size = new System.Drawing.Size(350, 13);
-            this.labelWeaponsNote2.TabIndex = 94;
-            this.labelWeaponsNote2.Text = "When Attack Type is Physical Attack, Attack Param is added to Hit%.";
+            this.checkBoxBlueMagicTarget5.AutoSize = true;
+            this.checkBoxBlueMagicTarget5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicTarget5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicTarget5.Location = new System.Drawing.Point(29, 52);
+            this.checkBoxBlueMagicTarget5.Name = "checkBoxBlueMagicTarget5";
+            this.checkBoxBlueMagicTarget5.Size = new System.Drawing.Size(58, 19);
+            this.checkBoxBlueMagicTarget5.TabIndex = 40;
+            this.checkBoxBlueMagicTarget5.Text = "Single";
+            this.checkBoxBlueMagicTarget5.UseVisualStyleBackColor = true;
             // 
-            // labelWeaponsNote1
+            // checkBoxBlueMagicTarget2
             // 
-            this.labelWeaponsNote1.AutoSize = true;
-            this.labelWeaponsNote1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelWeaponsNote1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelWeaponsNote1.Location = new System.Drawing.Point(104, 239);
-            this.labelWeaponsNote1.Name = "labelWeaponsNote1";
-            this.labelWeaponsNote1.Size = new System.Drawing.Size(317, 13);
-            this.labelWeaponsNote1.TabIndex = 94;
-            this.labelWeaponsNote1.Text = "Gunblades seems to not be affected by Attack Type changes.";
+            this.checkBoxBlueMagicTarget2.AutoSize = true;
+            this.checkBoxBlueMagicTarget2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicTarget2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicTarget2.Location = new System.Drawing.Point(137, 27);
+            this.checkBoxBlueMagicTarget2.Name = "checkBoxBlueMagicTarget2";
+            this.checkBoxBlueMagicTarget2.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicTarget2.TabIndex = 36;
+            this.checkBoxBlueMagicTarget2.Text = "???";
+            this.checkBoxBlueMagicTarget2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicTarget4
+            // 
+            this.checkBoxBlueMagicTarget4.AutoSize = true;
+            this.checkBoxBlueMagicTarget4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicTarget4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicTarget4.Location = new System.Drawing.Point(352, 27);
+            this.checkBoxBlueMagicTarget4.Name = "checkBoxBlueMagicTarget4";
+            this.checkBoxBlueMagicTarget4.Size = new System.Drawing.Size(83, 19);
+            this.checkBoxBlueMagicTarget4.TabIndex = 38;
+            this.checkBoxBlueMagicTarget4.Text = "Single Side";
+            this.checkBoxBlueMagicTarget4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicTarget6
+            // 
+            this.checkBoxBlueMagicTarget6.AutoSize = true;
+            this.checkBoxBlueMagicTarget6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicTarget6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicTarget6.Location = new System.Drawing.Point(137, 52);
+            this.checkBoxBlueMagicTarget6.Name = "checkBoxBlueMagicTarget6";
+            this.checkBoxBlueMagicTarget6.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicTarget6.TabIndex = 41;
+            this.checkBoxBlueMagicTarget6.Text = "???";
+            this.checkBoxBlueMagicTarget6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicTarget7
+            // 
+            this.checkBoxBlueMagicTarget7.AutoSize = true;
+            this.checkBoxBlueMagicTarget7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicTarget7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicTarget7.Location = new System.Drawing.Point(247, 52);
+            this.checkBoxBlueMagicTarget7.Name = "checkBoxBlueMagicTarget7";
+            this.checkBoxBlueMagicTarget7.Size = new System.Drawing.Size(62, 19);
+            this.checkBoxBlueMagicTarget7.TabIndex = 42;
+            this.checkBoxBlueMagicTarget7.Text = "Enemy";
+            this.checkBoxBlueMagicTarget7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicTarget1
+            // 
+            this.checkBoxBlueMagicTarget1.AutoSize = true;
+            this.checkBoxBlueMagicTarget1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicTarget1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicTarget1.Location = new System.Drawing.Point(29, 27);
+            this.checkBoxBlueMagicTarget1.Name = "checkBoxBlueMagicTarget1";
+            this.checkBoxBlueMagicTarget1.Size = new System.Drawing.Size(53, 19);
+            this.checkBoxBlueMagicTarget1.TabIndex = 35;
+            this.checkBoxBlueMagicTarget1.Text = "Dead";
+            this.checkBoxBlueMagicTarget1.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxBlueMagicTarget3
+            // 
+            this.checkBoxBlueMagicTarget3.AutoSize = true;
+            this.checkBoxBlueMagicTarget3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlueMagicTarget3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.checkBoxBlueMagicTarget3.Location = new System.Drawing.Point(247, 27);
+            this.checkBoxBlueMagicTarget3.Name = "checkBoxBlueMagicTarget3";
+            this.checkBoxBlueMagicTarget3.Size = new System.Drawing.Size(41, 19);
+            this.checkBoxBlueMagicTarget3.TabIndex = 37;
+            this.checkBoxBlueMagicTarget3.Text = "???";
+            this.checkBoxBlueMagicTarget3.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagicTarget3.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // mainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(654, 882);
+            this.ClientSize = new System.Drawing.Size(654, 865);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolbarStrip);
@@ -36064,7 +36225,7 @@
             this.MinimumSize = new System.Drawing.Size(670, 200);
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Doomtrain v1.0.1";
+            this.Text = "Doomtrain v1.0.3";
             this.Load += new System.EventHandler(this.mainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackParam)).EndInit();
@@ -36313,6 +36474,7 @@
             this.groupBoxBlueMagicAttackFlags.PerformLayout();
             this.groupBoxBlueMagicGeneral.ResumeLayout(false);
             this.groupBoxBlueMagicGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicHitCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicCrit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBlueMagicStatusAttack)).EndInit();
             this.tabPage3.ResumeLayout(false);
@@ -36664,6 +36826,8 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.panelMain.ResumeLayout(false);
+            this.groupBoxBlueMagicTarget.ResumeLayout(false);
+            this.groupBoxBlueMagicTarget.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -37332,9 +37496,20 @@
         private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag2;
         private System.Windows.Forms.CheckBox checkBoxBlueMagicFlag7;
         private System.Windows.Forms.GroupBox groupBoxBlueMagicGeneral;
+        private System.Windows.Forms.GroupBox groupBoxBlueMagicTarget;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicTarget8;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicTarget5;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicTarget2;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicTarget4;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicTarget6;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicTarget7;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicTarget1;
+        private System.Windows.Forms.CheckBox checkBoxBlueMagicTarget3;
         private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicStatusAttack;
         private System.Windows.Forms.Label labelBlueMagicStatusAttack;
         private System.Windows.Forms.Label labelBlueMagicAttackType;
+        private System.Windows.Forms.NumericUpDown numericUpDownBlueMagicHitCount;
+        private System.Windows.Forms.Label labelBlueMagicHitCount;
         private System.Windows.Forms.ComboBox comboBoxBlueMagicElement;
         private System.Windows.Forms.ComboBox comboBoxBlueMagicAttackType;
         private System.Windows.Forms.ComboBox comboBoxBlueMagicMagicID;
@@ -38665,6 +38840,7 @@
         private System.Windows.Forms.Label labelWeaponsAttackType;
         private System.Windows.Forms.Label labelWeaponsNote2;
         private System.Windows.Forms.Label labelWeaponsNote1;
+
     }
 }
 

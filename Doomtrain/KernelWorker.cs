@@ -462,6 +462,8 @@ namespace Doomtrain
             public UInt16 MagicID;
             public byte AttackType;
             public byte AttackFlags;
+            public byte Target;
+            public byte HitCount;
             public Element Element;
             public byte StatusAttack;
             public byte CritBonus;
@@ -1709,15 +1711,21 @@ namespace Doomtrain
                     Kernel[OffsetToBlueMagicSelected + 7] = Convert.ToByte(variable); //attack type
                     return;
                 case 2:
-                    Kernel[OffsetToBlueMagicSelected + 10] ^= Convert.ToByte(variable); //flags
+                    Kernel[OffsetToBlueMagicSelected + 9] ^= Convert.ToByte(variable); //target info
                     return;
                 case 3:
-                    Kernel[OffsetToBlueMagicSelected + 12] = Convert.ToByte(variable); //element
+                    Kernel[OffsetToBlueMagicSelected + 10] ^= Convert.ToByte(variable); //attack flags
                     return;
                 case 4:
-                    Kernel[OffsetToBlueMagicSelected + 13] = Convert.ToByte(variable); //status attack
+                    Kernel[OffsetToBlueMagicSelected + 11] = Convert.ToByte(variable); //hit count
                     return;
                 case 5:
+                    Kernel[OffsetToBlueMagicSelected + 12] = Convert.ToByte(variable); //element
+                    return;
+                case 6:
+                    Kernel[OffsetToBlueMagicSelected + 13] = Convert.ToByte(variable); //status attack
+                    return;
+                case 7:
                     Kernel[OffsetToBlueMagicSelected + 14] = Convert.ToByte(variable); //crit bonus
                     return;
 
@@ -2082,7 +2090,7 @@ namespace Doomtrain
                     Kernel[OffsetToDuelSelected + 7] = Convert.ToByte(variable); //Attack power
                     return;
                 case 3:
-                    Kernel[OffsetToDuelSelected + 8] = (byte)(Kernel[OffsetToDuelSelected + 8] ^ Convert.ToByte(variable)); //attack flags
+                    Kernel[OffsetToDuelSelected + 11] = (byte)(Kernel[OffsetToDuelSelected + 11] ^ Convert.ToByte(variable)); //attack flags, bugfix correct offset is 11
                     return;
                 case 4:
                     Kernel[OffsetToDuelSelected + 10] = (byte)(Kernel[OffsetToDuelSelected + 10] ^ Convert.ToByte(variable)); //default target
@@ -3953,8 +3961,9 @@ namespace Doomtrain
             GetSelectedBlueMagicData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedBlueMagicOffset + 4));
             selectedBlueMagicOffset += 7;
             GetSelectedBlueMagicData.AttackType = Kernel[selectedBlueMagicOffset++];
-            selectedBlueMagicOffset += 2;
+            GetSelectedBlueMagicData.Target = Kernel[selectedBlueMagicOffset++];
             GetSelectedBlueMagicData.AttackFlags = Kernel[selectedBlueMagicOffset++];
+            GetSelectedBlueMagicData.HitCount = Kernel[selectedBlueMagicOffset++];
             selectedBlueMagicOffset += 1;
             byte b = Kernel[selectedBlueMagicOffset++];
             GetSelectedBlueMagicData.Element =
@@ -4205,10 +4214,9 @@ namespace Doomtrain
             selectedDuelOffset += 4 + 2;
             GetSelectedDuelData.AttackType = Kernel[selectedDuelOffset++];
             GetSelectedDuelData.AttackPower = Kernel[selectedDuelOffset++];
-            GetSelectedDuelData.AttackFlags = Kernel[selectedDuelOffset++];
-            selectedDuelOffset += 1;
+            selectedDuelOffset += 2;
             GetSelectedDuelData.Target = Kernel[selectedDuelOffset++];
-            selectedDuelOffset += 1;
+            GetSelectedDuelData.AttackFlags = Kernel[selectedDuelOffset++];
             GetSelectedDuelData.HitCount = Kernel[selectedDuelOffset++];
 
             byte b = Kernel[selectedDuelOffset++];
