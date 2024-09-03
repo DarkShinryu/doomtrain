@@ -572,17 +572,26 @@ namespace Doomtrain
 
             comboBoxBlueMagicMagicID.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(0, comboBoxBlueMagicMagicID.SelectedIndex);
             comboBoxBlueMagicAttackType.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(1, comboBoxBlueMagicAttackType.SelectedIndex);
-            checkBoxBlueMagicFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x01);
-            checkBoxBlueMagicFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x02);
-            checkBoxBlueMagicFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x04);
-            checkBoxBlueMagicFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x08);
-            checkBoxBlueMagicFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x10);
-            checkBoxBlueMagicFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x20);
-            checkBoxBlueMagicFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x40);
-            checkBoxBlueMagicFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x80);
-            comboBoxBlueMagicElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(3, BlueMagic_GetElement(comboBoxBlueMagicElement.SelectedIndex));
-            numericUpDownBlueMagicStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(4, numericUpDownBlueMagicStatusAttack.Value);
-            numericUpDownBlueMagicCrit.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(5, numericUpDownBlueMagicCrit.Value);
+            checkBoxBlueMagicTarget1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x01);
+            checkBoxBlueMagicTarget2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x02);
+            checkBoxBlueMagicTarget3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x04);
+            checkBoxBlueMagicTarget4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x08);
+            checkBoxBlueMagicTarget5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x10);
+            checkBoxBlueMagicTarget6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x20);
+            checkBoxBlueMagicTarget7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x40);
+            checkBoxBlueMagicTarget8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(2, 0x80);
+            checkBoxBlueMagicFlag1.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(3, 0x01);
+            checkBoxBlueMagicFlag2.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(3, 0x02);
+            checkBoxBlueMagicFlag3.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(3, 0x04);
+            checkBoxBlueMagicFlag4.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(3, 0x08);
+            checkBoxBlueMagicFlag5.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(3, 0x10);
+            checkBoxBlueMagicFlag6.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(3, 0x20);
+            checkBoxBlueMagicFlag7.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(3, 0x40);
+            checkBoxBlueMagicFlag8.CheckedChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(3, 0x80);
+            numericUpDownBlueMagicHitCount.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(4, numericUpDownBlueMagicHitCount.Value);
+            comboBoxBlueMagicElement.SelectedIndexChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(5, BlueMagic_GetElement(comboBoxBlueMagicElement.SelectedIndex));
+            numericUpDownBlueMagicStatusAttack.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(6, numericUpDownBlueMagicStatusAttack.Value);
+            numericUpDownBlueMagicCrit.ValueChanged += (sender, args) => KernelWorker.UpdateVariable_BlueMagic(7, numericUpDownBlueMagicCrit.Value);
 
             #endregion
 
@@ -4637,6 +4646,7 @@ namespace Doomtrain
             {
                 ToolTip(comboBoxBlueMagicMagicID,2, comboBoxBlueMagicMagicID.Items[KernelWorker.GetSelectedBlueMagicData.MagicID]);
                 ToolTip(comboBoxBlueMagicAttackType,2, comboBoxBlueMagicAttackType.Items[KernelWorker.GetSelectedBlueMagicData.AttackType]);
+                ToolTip(numericUpDownBlueMagicHitCount, 0, KernelWorker.GetSelectedBlueMagicData.HitCount);
                 ToolTip(checkBoxBlueMagicFlag1,1, (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x01) >= 1 ? true : false);
                 ToolTip(checkBoxBlueMagicFlag2,1, (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x02) >= 1 ? true : false);
                 ToolTip(checkBoxBlueMagicFlag3,1, (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x04) >= 1 ? true : false);
@@ -4645,6 +4655,14 @@ namespace Doomtrain
                 ToolTip(checkBoxBlueMagicFlag6,1, (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x20) >= 1 ? true : false);
                 ToolTip(checkBoxBlueMagicFlag7,1, (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x40) >= 1 ? true : false);
                 ToolTip(checkBoxBlueMagicFlag8,1, (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagicTarget1, 1, (KernelWorker.GetSelectedBlueMagicData.Target & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagicTarget2, 1, (KernelWorker.GetSelectedBlueMagicData.Target & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagicTarget3, 1, (KernelWorker.GetSelectedBlueMagicData.Target & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagicTarget4, 1, (KernelWorker.GetSelectedBlueMagicData.Target & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagicTarget5, 1, (KernelWorker.GetSelectedBlueMagicData.Target & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagicTarget6, 1, (KernelWorker.GetSelectedBlueMagicData.Target & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagicTarget7, 1, (KernelWorker.GetSelectedBlueMagicData.Target & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagicTarget8, 1, (KernelWorker.GetSelectedBlueMagicData.Target & 0x80) >= 1 ? true : false);
                 ToolTip(comboBoxBlueMagicElement,2, comboBoxBlueMagicElement.Items[BlueMagic_GetElement()]);
                 ToolTip(numericUpDownBlueMagicStatusAttack,0, KernelWorker.GetSelectedBlueMagicData.StatusAttack);
                 ToolTip(numericUpDownBlueMagicCrit, 0, KernelWorker.GetSelectedBlueMagicData.CritBonus);
@@ -4682,6 +4700,15 @@ namespace Doomtrain
                 checkBoxBlueMagicFlag6.Checked = (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x20) >= 1 ? true : false;
                 checkBoxBlueMagicFlag7.Checked = (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x40) >= 1 ? true : false;
                 checkBoxBlueMagicFlag8.Checked = (KernelWorker.GetSelectedBlueMagicData.AttackFlags & 0x80) >= 1 ? true : false;
+                checkBoxBlueMagicTarget1.Checked = (KernelWorker.GetSelectedBlueMagicData.Target & 0x01) >= 1 ? true : false;
+                checkBoxBlueMagicTarget2.Checked = (KernelWorker.GetSelectedBlueMagicData.Target & 0x02) >= 1 ? true : false;
+                checkBoxBlueMagicTarget3.Checked = (KernelWorker.GetSelectedBlueMagicData.Target & 0x04) >= 1 ? true : false;
+                checkBoxBlueMagicTarget4.Checked = (KernelWorker.GetSelectedBlueMagicData.Target & 0x08) >= 1 ? true : false;
+                checkBoxBlueMagicTarget5.Checked = (KernelWorker.GetSelectedBlueMagicData.Target & 0x10) >= 1 ? true : false;
+                checkBoxBlueMagicTarget6.Checked = (KernelWorker.GetSelectedBlueMagicData.Target & 0x20) >= 1 ? true : false;
+                checkBoxBlueMagicTarget7.Checked = (KernelWorker.GetSelectedBlueMagicData.Target & 0x40) >= 1 ? true : false;
+                checkBoxBlueMagicTarget8.Checked = (KernelWorker.GetSelectedBlueMagicData.Target & 0x80) >= 1 ? true : false;
+                numericUpDownBlueMagicHitCount.Value = KernelWorker.GetSelectedBlueMagicData.HitCount;
                 comboBoxBlueMagicElement.SelectedIndex = BlueMagic_GetElement();
                 numericUpDownBlueMagicStatusAttack.Value = KernelWorker.GetSelectedBlueMagicData.StatusAttack;
                 numericUpDownBlueMagicCrit.Value = KernelWorker.GetSelectedBlueMagicData.CritBonus;
@@ -7584,5 +7611,9 @@ namespace Doomtrain
 
         #endregion
 
+        private void checkBox8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
