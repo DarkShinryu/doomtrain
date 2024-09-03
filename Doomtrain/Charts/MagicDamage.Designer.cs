@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MagicDamage));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel4 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            FastReport.DataVisualization.Charting.ChartArea chartArea4 = new FastReport.DataVisualization.Charting.ChartArea();
+            FastReport.DataVisualization.Charting.CustomLabel customLabel4 = new FastReport.DataVisualization.Charting.CustomLabel();
+            FastReport.DataVisualization.Charting.Legend legend4 = new FastReport.DataVisualization.Charting.Legend();
+            FastReport.DataVisualization.Charting.Series series7 = new FastReport.DataVisualization.Charting.Series();
+            FastReport.DataVisualization.Charting.DataPoint dataPoint7 = new FastReport.DataVisualization.Charting.DataPoint(0D, 0D);
+            FastReport.DataVisualization.Charting.Series series8 = new FastReport.DataVisualization.Charting.Series();
+            FastReport.DataVisualization.Charting.DataPoint dataPoint8 = new FastReport.DataVisualization.Charting.DataPoint(0D, 0D);
+            FastReport.DataVisualization.Charting.Title title4 = new FastReport.DataVisualization.Charting.Title();
             this.buttonInfo = new System.Windows.Forms.Button();
             this.numericUpDownElemDef = new System.Windows.Forms.NumericUpDown();
             this.labelElemDef = new System.Windows.Forms.Label();
             this.numericUpDownAttMAG = new System.Windows.Forms.NumericUpDown();
             this.labelAttMAG = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.chartMagicDamage = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartMagicDamage = new FastReport.DataVisualization.Charting.Chart();
             this.labelSPR = new System.Windows.Forms.Label();
             this.numericUpDownSPR = new System.Windows.Forms.NumericUpDown();
             this.labelHealMAG = new System.Windows.Forms.Label();
@@ -324,7 +324,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDownAttMAG;
         private System.Windows.Forms.Label labelAttMAG;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartMagicDamage;
+        private FastReport.DataVisualization.Charting.Chart chartMagicDamage;
         private System.Windows.Forms.Label labelSPR;
         private System.Windows.Forms.NumericUpDown numericUpDownSPR;
         private System.Windows.Forms.Label labelHealMAG;
