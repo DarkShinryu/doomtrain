@@ -36225,7 +36225,6 @@
             this.MinimumSize = new System.Drawing.Size(670, 200);
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Doomtrain v1.0.3";
             this.Load += new System.EventHandler(this.mainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGFHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeaponsAttackParam)).EndInit();

@@ -46,7 +46,6 @@
             this.labelDoomtrain.Name = "labelDoomtrain";
             this.labelDoomtrain.Size = new System.Drawing.Size(441, 49);
             this.labelDoomtrain.TabIndex = 1;
-            this.labelDoomtrain.Text = "DOOMTRAIN 1.0.1";
             // 
             // linkLabelWiki
             // 

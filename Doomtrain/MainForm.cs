@@ -28,6 +28,7 @@ namespace Doomtrain
         public mainForm()
         {
             InitializeComponent();
+            this.Text = $"Doomtrain v{Application.ProductVersion.Split('+')[0]}";
 
             #region Load MagicID List
 

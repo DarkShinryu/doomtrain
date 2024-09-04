@@ -17,6 +17,7 @@ namespace Doomtrain
         public AboutBox()
         {
             InitializeComponent();
+            labelDoomtrain.Text = $"DOOMTRAIN {Application.ProductVersion.Split('+')[0]}";
             backgroundImage = Properties.Resources.doomtrainbig;
 
         }

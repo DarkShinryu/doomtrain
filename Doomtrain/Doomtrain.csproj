@@ -3,7 +3,7 @@
     <TargetFramework>net8.0-windows7.0</TargetFramework>
     <OutputType>WinExe</OutputType>
     <UseWindowsForms>true</UseWindowsForms>
-    <Version>0.1.0.1</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Doomtrain.Program</StartupObject>
