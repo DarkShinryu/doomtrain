@@ -85,16 +85,4 @@ namespace Doomtrain
             InitializeCharTable();
         }
     }
-
-    internal class SecretSquirrelClass
-    {
-        [DllImport("kernel32")]
-        static extern bool AllocConsole();
-
-        public static string Squirrel()
-        {
-            AllocConsole();
-            return "Squirrel";
-        }
-    }
 }
