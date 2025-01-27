@@ -3961,10 +3961,10 @@ namespace Doomtrain
             GetSelectedBlueMagicData.MagicID = (ushort)(BitConverter.ToUInt16(Kernel, selectedBlueMagicOffset + 4));
             selectedBlueMagicOffset += 7;
             GetSelectedBlueMagicData.AttackType = Kernel[selectedBlueMagicOffset++];
+            selectedBlueMagicOffset += 1;
             GetSelectedBlueMagicData.Target = Kernel[selectedBlueMagicOffset++];
             GetSelectedBlueMagicData.AttackFlags = Kernel[selectedBlueMagicOffset++];
             GetSelectedBlueMagicData.HitCount = Kernel[selectedBlueMagicOffset++];
-            selectedBlueMagicOffset += 1;
             byte b = Kernel[selectedBlueMagicOffset++];
             GetSelectedBlueMagicData.Element =
                 b == (byte)Element.Fire
