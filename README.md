@@ -1,3 +1,7 @@
+## Deprecation notice
+This software is no longer maintained. Please use newer tool:
+https://github.com/HobbitDur/FF8UltimateEditor
+
 # Doomtrain
 Doomtrain is a C# editor for Final Fantasy VIII kernel.bin file.
 
